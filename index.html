@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷代帝王將相名臣評鑑 (v15.0 深度優化版)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap');
+        
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; transition: padding-bottom 0.3s; overscroll-behavior: none; }
+        h1, h2, h3, h4, .calligraphy { font-family: 'Ma Shan Zheng', cursive; }
+        .serif { font-family: 'Noto Serif TC', serif; }
+        .poem-font { font-family: 'Ma Shan Zheng', cursive; font-style: normal; letter-spacing: 0.05em; }
+
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #d6d3c9; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
+
+        .rank-badge { font-family: 'Noto Serif TC', serif; font-weight: 900; padding: 0.15rem 0.6rem; border-radius: 4px; font-size: 0.9rem; display: inline-block; min-width: 48px; text-align: center; border: 2px solid rgba(255,255,255,0.3); box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        .rank-S-plus { background: linear-gradient(135deg, #4a0404 0%, #7f1d1d 100%) !important; color: #ffd700 !important; border-color: #d4af37 !important; text-shadow: 0 1px 2px rgba(0,0,0,0.5); box-shadow: 0 0 10px rgba(212, 175, 55, 0.4); }
+        .rank-S { background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%) !important; color: #fff !important; }
+        .rank-S-minus { background: linear-gradient(135deg, #991b1b 0%, #ef4444 100%) !important; color: #fff !important; }
+        .rank-A-plus { background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%) !important; color: #fff !important; }
+        .rank-A { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%) !important; color: #fff !important; }
+        .rank-A-minus { background: linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%) !important; color: #fff !important; }
+        .rank-B-plus { background: linear-gradient(135deg, #065f46 0%, #10b981 100%) !important; color: #fff !important; }
+        .rank-B { background: linear-gradient(135deg, #374151 0%, #6b7280 100%) !important; color: #fff !important; } 
+        .rank-B-minus { background: linear-gradient(135deg, #57534e 0%, #78716c 100%) !important; color: #f5f5f5 !important; border-color: #a8a29e !important; }
+        .rank-C-plus { background: linear-gradient(135deg, #92400e 0%, #d97706 100%) !important; color: #fff !important; } 
+        .rank-C { background: linear-gradient(135deg, #52525b 0%, #71717a 100%) !important; color: #fff !important; } 
+        .rank-C-minus { background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%) !important; color: #fff !important; } 
+        .rank-D { background: linear-gradient(135deg, #000000 0%, #1f2937 100%) !important; color: #9ca3af !important; }
+
+        .paper-card { background-color: #fffdf9; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), inset 0 0 40px rgba(227, 222, 206, 0.2); border: 1px solid #e5e0d3; transition: all 0.3s; position: relative; }
+        .paper-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -4px rgba(0,0,0,0.1); border-color: #d4af37; }
+        .type-emperor { border-top: 4px solid #b45309; }
+        .type-general { border-top: 4px solid #1e3a8a; }
+        .type-minister { border-top: 4px solid #047857; }
+        .card-s-plus::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 0.75rem; box-shadow: inset 0 0 20px rgba(212, 175, 55, 0.15); pointer-events: none; z-index: 0; }
+
+        .selected-red { border: 2px solid #ef4444; background-color: #fef2f2; transform: scale(1.02); }
+        .selected-blue { border: 2px solid #3b82f6; background-color: #eff6ff; transform: scale(1.02); }
+        .selected-host { border: 2px solid #475569; background-color: #f1f5f9; transform: scale(1.02); }
+        .selected-soul { border: 2px solid #9333ea; background-color: #f3e8ff; transform: scale(1.02); }
+        .selected-compare { border: 2px solid #0d9488; background-color: #f0fdf4; transform: scale(1.02); }
+
+        .new-badge { position: absolute; top: -6px; right: -6px; background-color: #be123c; color: white; font-size: 10px; padding: 2px 8px; border-radius: 999px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2); z-index: 10; font-family: 'Noto Sans TC'; }
+        .mod-badge { position: absolute; top: -6px; right: -6px; background-color: #1d4ed8; color: white; font-size: 10px; padding: 2px 8px; border-radius: 999px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2); z-index: 10; font-family: 'Noto Sans TC'; }
+
+        .filter-btn { border: 1px solid #e5e0d3; background: #fff; color: #57534e; transition: all 0.2s; font-family: 'Noto Serif TC', serif; }
+        .filter-btn:hover { transform: scale(1.05); border-color: #a8a29e; }
+        .filter-btn.active { background-color: #2c2826; color: #f5f5f4; border-color: #2c2826; box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); }
+        .type-btn { opacity: 0.6; transition: all 0.3s; border-bottom: 3px solid transparent; }
+        .type-btn.active { opacity: 1; border-bottom-color: #d4af37; font-weight: bold; }
+
+        .modal-overlay { background-color: rgba(26, 24, 22, 0.85); backdrop-filter: blur(4px); }
+        .typing-dot { animation: typing 1.4s infinite ease-in-out both; background-color: #d4af37; }
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes typing { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+
+        .bottom-panel { box-shadow: 0 -4px 20px rgba(0,0,0,0.15); border-top: 3px solid #d4af37; transition: transform 0.3s ease-in-out, height 0.3s ease-in-out; }
+        .role-slot { border: 1px dashed #a8a29e; background: rgba(255,255,255,0.6); transition: all 0.2s; }
+        .role-slot:hover { border-color: #78716c; background: #fff; }
+        .role-slot.filled { border-style: solid; background-color: #fff; border-color: #d6d3c9; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .role-slot.active-selection { border-color: #d4af37; background-color: #fffbeb; animation: pulse-gold 2s infinite; }
+        @keyframes pulse-gold { 0% { box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.4); } 50% { box-shadow: inset 0 0 0 3px rgba(212, 175, 55, 0.6); } 100% { box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.4); } }
+
+        .prose h3 { font-family: 'Noto Serif TC', serif; color: #451a03; border-left: 4px solid #b45309; padding-left: 1rem; margin-top: 1.5rem; }
+        .prose p { color: #44403c; line-height: 1.8; margin-bottom: 1rem; text-align: justify; }
+        .prose strong { color: #78350f; font-weight: 700; }
+        .chart-container { position: relative; height: 300px; width: 100%; margin-bottom: 1.5rem; background: #fff; border-radius: 12px; padding: 10px; border: 1px solid #e2e8f0; }
+
+        .chat-bubble { max-width: 85%; padding: 12px 16px; border-radius: 16px; margin-bottom: 12px; line-height: 1.6; font-size: 0.95rem; position: relative; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .chat-user { background-color: #e5e7eb; color: #1f2937; align-self: flex-end; border-bottom-right-radius: 4px; font-family: 'Noto Sans TC'; }
+        .chat-ai { background-color: #fffdf9; color: #44403c; align-self: flex-start; border-bottom-left-radius: 4px; border: 1px solid #e5e0d3; font-family: 'Noto Serif TC'; }
+        
+        .btn-gold { background: linear-gradient(to bottom, #d4af37, #b8860b); color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.2); box-shadow: 0 2px 5px rgba(184, 134, 11, 0.3); transition: all 0.2s; }
+        .btn-gold:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(184, 134, 11, 0.4); }
+        .btn-gold:disabled { background: #d6d3c9; color: #a8a29e; box-shadow: none; cursor: not-allowed; transform: none; }
+        .btn-ink { background-color: #2c2826; color: #f5f5f4; transition: all 0.3s ease; }
+        .btn-ink:hover { background-color: #000; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translateY(-1px); }
+        
+        #connectionStatus { position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 20px; font-size: 10px; pointer-events: none; z-index: 100; opacity: 0; transition: opacity 0.5s; }
+        
+        /* Compare Bar */
+        #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-orange-100 selection:text-orange-900">
+
+    <div id="connectionStatus"><i class="fa-solid fa-wifi"></i> 連線狀態</div>
+
+    <!-- UI Overlay System (Replaces Alert/Confirm) -->
+    <div id="uiMsgBox" class="fixed inset-0 z-[100] hidden items-center justify-center">
+        <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" onclick="closeUIMsg()"></div>
+        <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full mx-4 relative z-10 transform transition-all scale-95 opacity-0" id="uiMsgContent">
+            <h3 class="text-lg font-bold text-slate-800 mb-2 font-serif" id="uiMsgTitle">提示</h3>
+            <p class="text-slate-600 mb-6 text-sm" id="uiMsgText"></p>
+            <div class="flex justify-end gap-3" id="uiMsgBtns">
+                <button onclick="closeUIMsg()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded font-bold text-sm transition-colors" id="uiMsgCancelBtn" style="display:none;">取消</button>
+                <button onclick="closeUIMsg()" class="px-4 py-2 bg-[#b45309] hover:bg-[#92400e] text-white rounded font-bold text-sm transition-colors" id="uiMsgOkBtn">確定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-[#1c1917] text-[#f5f5f4] shadow-xl sticky top-0 z-50 border-b border-[#44403c]">
+        <div class="max-w-[1400px] mx-auto px-4 py-3 flex justify-between items-center flex-wrap gap-4">
+            <div class="flex items-center gap-3 cursor-pointer group" onclick="resetApp()">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#d4af37] to-[#8b6914] rounded flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-dragon text-xl text-[#2c0b0e]"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.0 深度優化版</span>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center">
+                <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
+                    <button onclick="handleDownloadJSON()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif">
+                        <i class="fa-solid fa-floppy-disk text-[#f97316]"></i> <span class="hidden md:inline">匯出</span>
+                    </button>
+                    <button onclick="document.getElementById('fileInput').click()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif">
+                        <i class="fa-solid fa-folder-open text-[#14b8a6]"></i> <span class="hidden md:inline">讀檔</span>
+                    </button>
+                    <input type="file" id="fileInput" accept=".json" class="hidden" onchange="loadDataFile(this)">
+                </div>
+                
+                <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
+                
+                <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
+                    <button onclick="openAddModal()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-2">
+                        <i class="fa-solid fa-plus text-[#d4af37]"></i> <span class="hidden md:inline">新增</span>
+                    </button>
+                    <button onclick="openEditHub()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-2" title="修訂史料">
+                        <i class="fa-solid fa-brush text-[#60a5fa]"></i> <span class="hidden md:inline">修訂</span>
+                    </button>
+                </div>
+
+                <!-- Manual API Key Button -->
+                <button onclick="openApiKeyModal()" class="text-[#a8a29e] hover:text-white transition-colors" title="手動設定 API Key">
+                    <i class="fa-solid fa-key"></i>
+                </button>
+
+                <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
+                
+                <!-- 模式切換 -->
+                <div class="flex gap-2">
+                    <button onclick="toggleMode('warRoom')" class="bg-[#2c2826] hover:bg-[#0f172a] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-warRoom">
+                        <i class="fa-solid fa-chess-board text-indigo-400"></i> <span class="hidden md:inline">戰情</span>
+                    </button>
+                    <button onclick="toggleMode('courtMode')" class="bg-[#2c2826] hover:bg-[#064e3b] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-courtMode">
+                        <i class="fa-solid fa-landmark text-emerald-400"></i> <span class="hidden md:inline">朝堂</span>
+                    </button>
+                    <button onclick="toggleMode('soulMode')" class="bg-[#2c2826] hover:bg-[#2e1065] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-soulMode">
+                        <i class="fa-solid fa-yin-yang text-purple-400"></i> <span class="hidden md:inline">魂穿</span>
+                    </button>
+                    <button onclick="toggleMode('scenarioMode')" class="bg-[#2c2826] hover:bg-[#450a0a] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-scenarioMode">
+                        <i class="fa-solid fa-fire-flame-curved text-red-500"></i> <span class="hidden md:inline">絕境</span>
+                    </button>
+                    <button onclick="toggleMode('compareMode')" class="bg-[#2c2826] hover:bg-[#0f766e] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-compareMode">
+                        <i class="fa-solid fa-code-compare text-teal-400"></i> <span class="hidden md:inline">比對</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="max-w-[1400px] mx-auto px-4 py-8">
+        <!-- 控制面板 -->
+        <div class="bg-[#fffdf9] rounded-xl shadow-sm border border-[#e5e0d3] p-5 mb-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 opacity-5 pointer-events-none">
+                <i class="fa-solid fa-scroll text-9xl text-black transform rotate-12 translate-x-10 -translate-y-10"></i>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-6 items-center justify-between relative z-10">
+                <!-- 類型切換 -->
+                <div class="flex gap-4 text-lg font-serif tracking-widest text-[#57534e]">
+                    <button onclick="setTypeFilter('all')" class="type-btn active" id="btn-type-all">全覽</button>
+                    <button onclick="setTypeFilter('emperor')" class="type-btn" id="btn-type-emperor"><i class="fa-solid fa-dragon text-[#b45309] mr-1"></i>帝王</button>
+                    <button onclick="setTypeFilter('general')" class="type-btn" id="btn-type-general"><i class="fa-solid fa-horse-head text-[#1e3a8a] mr-1"></i>名將</button>
+                    <button onclick="setTypeFilter('minister')" class="type-btn" id="btn-type-minister"><i class="fa-solid fa-scroll text-[#047857] mr-1"></i>名臣</button>
+                </div>
+                
+                <!-- 朝代篩選 -->
+                <div class="relative">
+                    <select id="dynastyFilter" onchange="setDynastyFilter(this.value)" class="pl-3 pr-8 py-2 rounded-lg text-[#2c2826] bg-[#f5f5f4] border border-transparent focus:border-[#d6d3c9] outline-none font-serif transition-all appearance-none cursor-pointer">
+                        <option value="all">所有朝代</option>
+                        <option value="春秋戰國">春秋戰國</option>
+                        <option value="秦朝">秦朝</option>
+                        <option value="漢朝">漢朝</option>
+                        <option value="三國">三國</option>
+                        <option value="晉朝">晉朝</option>
+                        <option value="南北朝">南北朝</option>
+                        <option value="隋朝">隋朝</option>
+                        <option value="唐朝">唐朝</option>
+                        <option value="五代十國">五代十國</option>
+                        <option value="宋朝">宋朝</option>
+                        <option value="元朝">元朝</option>
+                        <option value="明朝">明朝</option>
+                        <option value="清朝">清朝</option>
+                        <option value="民國與現代">民國與現代</option>
+                        <option value="未分類">未分類 / 其他</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[#a8a29e]">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- 搜尋 -->
+                <div class="relative w-full md:w-64 lg:w-80 group">
+                    <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#a8a29e]"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" id="searchInput" placeholder="尋訪帝王將相名臣..." class="w-full pl-10 pr-4 py-2 rounded-lg text-[#2c2826] bg-[#f5f5f4] focus:bg-white border border-transparent focus:border-[#d6d3c9] outline-none font-serif transition-all">
+                </div>
+
+                <div class="flex items-center gap-2">
+                     <div id="selectionModeTip" class="hidden flex items-center gap-2 text-[#b45309] bg-[#fffbeb] border border-[#fcd34d] px-4 py-2 rounded-lg text-sm font-bold animate-pulse shadow-sm">
+                        <i class="fa-solid fa-hand-pointer"></i><span id="tipText">點擊下方人物入陣</span>
+                    </div>
+                    <div class="text-[#78716c] font-serif border-l border-[#d6d3c9] pl-4">
+                        <span class="text-xs uppercase tracking-widest">Total</span>
+                        <span id="countDisplay" class="text-2xl font-bold text-[#2c2826] calligraphy ml-1">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分級篩選 -->
+            <div class="mt-6 flex flex-wrap gap-2 items-center justify-center md:justify-start select-none border-t border-[#f0ebe0] pt-4" id="rankFilters">
+                <button class="filter-btn active px-4 py-1.5 rounded shadow-sm text-sm bg-[#2c2826] text-[#f5f5f4] shadow-inner" data-rank="all">全部</button>
+                <div class="h-6 w-px bg-[#e5e0d3] mx-2"></div>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#b91c1c]" data-rank="S+">S+ 巔峰</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#991b1b]" data-rank="S">S 卓越</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#b91c1c]" data-rank="S-">S- 梟雄</button>
+                <div class="h-6 w-px bg-[#e5e0d3] mx-2"></div>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#4c1d95]" data-rank="A+">A+ 宏業</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#1e40af]" data-rank="A">A 安邦</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#1d4ed8]" data-rank="A-">A- 守序</button>
+                <div class="h-6 w-px bg-[#e5e0d3] mx-2"></div>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#065f46]" data-rank="B+">B+ 強者</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#475569]" data-rank="B">B 守成</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#57534e]" data-rank="B-">B- 將傾</button>
+                <div class="h-6 w-px bg-[#e5e0d3] mx-2"></div>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#92400e]" data-rank="C+">C+ 衰退</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#52525b]" data-rank="C">C 敗國</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-[#450a0a]" data-rank="C-">C- 毀國</button>
+                <button class="filter-btn px-3 py-1 rounded text-xs text-gray-500" data-rank="D">D 無能</button>
+            </div>
+        </div>
+
+        <!-- 畫廊 (Grid) -->
+        <div id="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-32"></div>
+    </div>
+
+    <!-- 人物對比列 (Compare Bar) -->
+    <div id="compareBar" class="fixed bottom-0 left-0 right-0 bg-white z-40 transform translate-y-full flex h-20 items-center px-6 justify-between transition-all duration-300">
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center text-xl shadow-sm border border-teal-100"><i class="fa-solid fa-code-compare"></i></div>
+            <div>
+                <h3 class="font-bold text-slate-800 font-serif tracking-widest">雙雄對決</h3>
+                <p class="text-xs text-slate-500" id="compareStatusText">請選擇兩位人物 (0/2)</p>
+            </div>
+        </div>
+        <div class="flex gap-4 flex-1 justify-center" id="compareSlots">
+            <div class="px-4 py-2 border-2 border-dashed border-slate-300 rounded-lg text-sm text-slate-400 w-40 text-center font-bold" id="compareSlot1">虛位</div>
+            <div class="text-slate-300 font-black italic text-xl mt-1">VS</div>
+            <div class="px-4 py-2 border-2 border-dashed border-slate-300 rounded-lg text-sm text-slate-400 w-40 text-center font-bold" id="compareSlot2">虛位</div>
+        </div>
+        <div class="flex gap-3">
+            <button onclick="clearCompare()" class="text-slate-400 hover:text-slate-600 transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
+            <button onclick="startCompare()" id="startCompareBtn" disabled class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-lg font-bold font-serif shadow-md disabled:opacity-50 disabled:cursor-not-allowed transition-all">推演對比</button>
+            <button onclick="toggleMode('browse')" class="text-red-400 hover:text-red-600 transition-colors ml-2"><i class="fa-solid fa-xmark text-lg"></i></button>
+        </div>
+    </div>
+
+    <!-- 戰情室面板 (War Room) -->
+    <div id="warRoomPanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[70vh] border-t-4 border-[#2c2826] transition-all duration-300">
+        <div class="bg-[#1c1917] text-[#e7e5e4] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('warRoom')">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-chess text-[#d4af37] text-xl"></i>
+                <div><h3 class="font-bold text-base tracking-widest font-serif">跨代戰情室 (軍事)</h3></div>
+            </div>
+            <div id="warRoomStatus" class="hidden flex-1 text-center px-4">
+                <span class="text-sm text-[#d4af37] font-serif animate-pulse">點將中：<span class="selecting-role-text font-bold">...</span></span>
+            </div>
+            <div class="flex gap-4 text-[#a8a29e]">
+                <button onclick="event.stopPropagation(); addFaction('warRoom')" class="hover:text-white transition-colors text-sm border border-[#44403c] rounded px-2"><i class="fa-solid fa-plus mr-1"></i>勢力</button>
+                <button onclick="event.stopPropagation(); clearFactions('warRoom')" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
+                <button onclick="event.stopPropagation(); togglePanelSize('warRoom')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
+                <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+        </div>
+        
+        <div id="warRoomContent" class="flex-1 overflow-x-auto overflow-y-auto p-6 bg-[#f0ede6] flex gap-6 items-stretch justify-start min-w-full pb-24">
+            <div class="flex gap-6" id="warRoomFactionsContainer"></div>
+            <!-- Action Area -->
+            <div class="flex flex-col justify-center items-center gap-3 min-w-[100px] border-l border-[#d6d3c9] pl-6 sticky right-0">
+                <div class="w-14 h-14 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-xl italic shadow-xl border-4 border-[#f5f5f4] z-10 serif">VS</div>
+                <button onclick="startTeamBattle()" id="startBattleBtn" disabled class="btn-gold px-6 py-3 rounded-lg font-bold font-serif tracking-widest text-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95 whitespace-nowrap">戰場推演</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 朝堂模式面板 (Court Mode) -->
+    <div id="courtModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f0fdf4] z-40 transform translate-y-full flex flex-col h-[70vh] border-t-4 border-[#064e3b] transition-all duration-300">
+        <div class="bg-[#064e3b] text-[#ecfdf5] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('courtMode')">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-landmark text-[#34d399] text-xl"></i>
+                <div><h3 class="font-bold text-base tracking-widest font-serif">盛世朝堂 (治國)</h3></div>
+            </div>
+            <div id="courtModeStatus" class="hidden flex-1 text-center px-4">
+                <span class="text-sm text-[#34d399] font-serif animate-pulse">任命：<span class="selecting-role-text font-bold">...</span></span>
+            </div>
+            <div class="flex gap-4 text-[#a7f3d0]">
+                <button onclick="event.stopPropagation(); addFaction('courtMode')" class="hover:text-white transition-colors text-sm border border-[#065f46] rounded px-2"><i class="fa-solid fa-plus mr-1"></i>建立王朝</button>
+                <button onclick="event.stopPropagation(); clearFactions('courtMode')" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
+                <button onclick="event.stopPropagation(); togglePanelSize('courtMode')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
+                <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-white transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+        </div>
+        
+        <div id="courtModeContent" class="flex-1 overflow-x-auto overflow-y-auto p-6 bg-[#f0fdf4] flex gap-6 items-stretch justify-start min-w-full pb-24">
+            <div class="flex gap-6" id="courtFactionsContainer"></div>
+            <!-- Action Area -->
+            <div class="flex flex-col justify-center items-center gap-3 min-w-[100px] border-l border-[#d1fae5] pl-6 sticky right-0">
+                <div class="w-14 h-14 rounded-full bg-[#064e3b] text-[#34d399] flex items-center justify-center font-black text-xl italic shadow-xl border-4 border-[#f0fdf4] z-10 serif"><i class="fa-solid fa-scale-balanced"></i></div>
+                <button onclick="startCourtSimulation()" id="startCourtBtn" disabled class="btn-ink px-6 py-3 rounded-lg font-bold font-serif tracking-widest text-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95 whitespace-nowrap bg-[#047857] hover:bg-[#065f46]">治世推演</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 魂穿面板 (Soul Mode) -->
+    <div id="soulModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[300px] border-t-4 border-[#581c87] transition-all duration-300">
+        <div class="bg-[#3b0764] text-[#f3e8ff] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('soulMode')">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-yin-yang text-[#d8b4fe] text-xl"></i>
+                <h3 class="font-bold text-base tracking-widest font-serif">魂穿模擬器</h3>
+            </div>
+            <div id="soulModeStatus" class="hidden flex-1 text-center px-4">
+                <span class="text-sm text-[#d8b4fe] font-serif animate-pulse">正在選擇：<span class="selecting-role-text font-bold">...</span></span>
+            </div>
+            <div class="flex gap-4 text-[#d8b4fe]">
+                <button onclick="event.stopPropagation(); clearSoulSlots()" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
+                <button onclick="event.stopPropagation(); togglePanelSize('soulMode')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
+                <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-white transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+        </div>
+        <div id="soulModeContent" class="flex-1 overflow-x-auto p-8 bg-[#f3e8ff] bg-opacity-20 flex gap-12 justify-center items-center">
+            <div onclick="selectSoulSlot('host')" id="slot-soul-host" class="role-slot w-72 h-40 rounded-xl bg-white p-5 cursor-pointer flex flex-col justify-center items-center gap-3 shadow-sm border border-slate-300 hover:border-slate-500 transition-all hover:shadow-md relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-1 h-full bg-slate-400"></div>
+                <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-2xl group-hover:bg-slate-700 group-hover:text-white transition-colors"><i class="fa-solid fa-user-injured"></i></div>
+                <div class="text-center">
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">HOST</p>
+                    <p class="font-bold text-slate-800 font-serif text-lg">肉身 (宿主)</p>
+                    <p id="hostNameDisplay" class="text-sm font-bold text-indigo-900 truncate w-56 slot-name mt-1 border-t border-dashed border-slate-300 pt-1">點擊選擇...</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center text-[#7e22ce] opacity-50">
+                <i class="fa-solid fa-arrow-right-long text-4xl animate-pulse"></i>
+                <span class="text-xs font-serif mt-2 tracking-widest">穿越</span>
+            </div>
+            <div onclick="selectSoulSlot('soul')" id="slot-soul-soul" class="role-slot w-72 h-40 rounded-xl bg-white p-5 cursor-pointer flex flex-col justify-center items-center gap-3 shadow-sm border border-purple-300 hover:border-purple-500 transition-all hover:shadow-md relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
+                <div class="w-12 h-12 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-2xl group-hover:bg-purple-600 group-hover:text-white transition-colors"><i class="fa-solid fa-ghost"></i></div>
+                <div class="text-center">
+                    <p class="text-xs font-bold text-purple-400 uppercase tracking-[0.2em] mb-1">SOUL</p>
+                    <p class="font-bold text-purple-900 font-serif text-lg">靈魂 (穿越者)</p>
+                    <p class="text-sm font-bold text-purple-700 truncate w-56 slot-name mt-1 border-t border-dashed border-purple-200 pt-1">點擊選擇...</p>
+                </div>
+            </div>
+            <div class="ml-8">
+                <button onclick="handleSoulAction()" id="startSoulBtn" disabled class="btn-ink px-8 py-4 rounded-xl font-bold font-serif text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-bolt"></i> 逆天改命</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 絕境挑戰 (Scenarios) -->
+    <div id="scenarioModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#fff1f2] border-t-4 border-[#be123c] shadow-[0_-10px_40px_rgba(0,0,0,0.15)] z-40 transform translate-y-full flex flex-col h-[380px]">
+        <div class="bg-[#881337] text-white px-6 py-3 flex justify-between items-center shrink-0 h-14">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-fire-flame-curved text-[#fda4af] text-xl"></i>
+                <h3 class="font-bold text-base tracking-widest font-serif">絕境挑戰 <span class="text-xs bg-[#be123c] px-2 py-0.5 rounded ml-2 text-white font-sans font-normal opacity-80">Hell Scenarios</span></h3>
+            </div>
+            <button onclick="closeAllPanels()" class="text-[#fda4af] hover:text-white transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
+        </div>
+        <div id="scenarioContent" class="flex-1 overflow-x-auto p-8 bg-[#fff1f2] flex gap-5 items-center"></div>
+    </div>
+
+    <!-- AI Modal -->
+    <div id="aiModal" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 modal-overlay" onclick="closeModal()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] overflow-hidden flex flex-col transition-all border border-[#e5e0d3]">
+            <div class="bg-[#1c1917] text-[#e5e5e5] p-5 flex justify-between items-center shrink-0 border-b-4 border-[#d4af37]">
+                <h3 id="modalTitle" class="text-xl font-bold font-serif tracking-wide flex items-center gap-3">
+                    <i class="fa-solid fa-scroll text-[#d4af37]"></i> <span>系統推演</span>
+                </h3>
+                <div class="flex gap-3 items-center">
+                    <!-- RegExp button for Radar regeneration -->
+                    <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="hidden text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
+                    <button id="clearMemoryBtn" onclick="clearCurrentMemory()" class="hidden text-xs bg-[#7f1d1d] hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider">忘卻</button>
+                    <button onclick="closeModal()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
+                </div>
+            </div>
+            <div id="chatContainer" class="hidden flex flex-col flex-1 min-h-0 bg-[#fcfaf5] overflow-hidden relative">
+                <div id="chatHistory" class="flex-1 overflow-y-auto p-6 flex flex-col gap-4 custom-scrollbar z-10 overscroll-contain"></div>
+                <div class="p-5 border-t border-[#e5e0d3] bg-white flex gap-3 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-20 shrink-0">
+                    <input type="text" id="chatInput" placeholder="請輸入您的問題..." class="flex-1 px-5 py-3 border border-[#d6d3c9] rounded-lg focus:outline-none focus:border-[#d4af37] bg-[#fafaf9] font-serif text-[#2c2826]" onkeypress="if(event.key==='Enter') sendChatMessage()">
+                    <button onclick="sendChatMessage()" class="btn-ink px-6 py-3 rounded-lg font-bold"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div id="contentContainer" class="flex flex-col flex-1 min-h-0 overflow-hidden relative bg-[#fffdf9]">
+                <div class="p-10 overflow-y-auto custom-scrollbar flex-grow h-full overscroll-contain">
+                    <div id="loadingState" class="hidden flex-col items-center justify-center py-20 space-y-6">
+                        <div class="flex space-x-4">
+                            <div class="w-3 h-3 bg-[#d4af37] rounded-full typing-dot"></div><div class="w-3 h-3 bg-[#d4af37] rounded-full typing-dot" style="animation-delay: 0.2s"></div><div class="w-3 h-3 bg-[#d4af37] rounded-full typing-dot" style="animation-delay: 0.4s"></div>
+                        </div>
+                        <p class="text-[#57534e] font-serif tracking-widest animate-pulse">正在翻閱史籍...</p>
+                    </div>
+                    <div id="radarChartContainer" class="chart-container hidden mx-auto max-w-md mb-8 bg-white p-4 rounded-xl border border-[#e5e0d3] shadow-sm"><canvas id="radarChart"></canvas></div>
+                    <div id="modalContent" class="prose prose-slate max-w-none font-serif text-[#2c2826]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Hub -->
+    <div id="editHubModal" class="fixed inset-0 z-[70] hidden">
+        <div class="absolute inset-0 modal-overlay" onclick="closeEditHub()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col max-h-[90vh] border border-[#e5e0d3]">
+            <div class="bg-[#1e3a8a] text-white p-5 flex justify-between items-center shrink-0 border-b-4 border-[#60a5fa]">
+                <h3 class="text-xl font-bold font-serif flex items-center gap-3"><i class="fa-solid fa-pen-nib"></i> 史觀辯論庭</h3>
+                <button onclick="closeEditHub()" class="text-blue-200 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 bg-[#f8fafc] flex flex-col gap-6 overflow-y-auto">
+                <div id="editSearchSection">
+                    <label class="block text-sm font-bold text-slate-700 mb-2 font-serif">搜尋要修訂的人物：</label>
+                    <div class="flex gap-2 relative">
+                        <input type="text" id="editSearchInput" placeholder="輸入姓名..." class="flex-1 px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500 font-serif" list="legendsList">
+                        <datalist id="legendsList"></datalist>
+                        <button onclick="loadLegendForEdit()" class="bg-[#1e3a8a] hover:bg-[#1e40af] text-white px-5 py-2 rounded-lg font-bold font-serif shadow-sm transition-all">載入</button>
+                    </div>
+                </div>
+                <div id="editFormSection" class="hidden flex flex-col gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                        <div class="grid grid-cols-4 gap-4 mb-3">
+                            <div class="col-span-1">
+                                <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">評級</label>
+                                <select id="editRank" class="w-full p-2 border border-slate-300 rounded font-bold text-slate-800 bg-slate-50 focus:border-blue-500 outline-none"><option value="S+">S+</option><option value="S">S</option><option value="S-">S-</option><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D">D</option></select>
+                            </div>
+                            <div class="col-span-1">
+                                <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">朝代</label>
+                                <select id="editDynasty" class="w-full p-2 border border-slate-300 rounded font-bold text-slate-800 bg-slate-50 focus:border-blue-500 outline-none">
+                                    <option value="春秋戰國">春秋戰國</option><option value="秦朝">秦朝</option><option value="漢朝">漢朝</option>
+                                    <option value="三國">三國</option><option value="晉朝">晉朝</option><option value="南北朝">南北朝</option>
+                                    <option value="隋朝">隋朝</option><option value="唐朝">唐朝</option><option value="五代十國">五代十國</option>
+                                    <option value="宋朝">宋朝</option><option value="元朝">元朝</option><option value="明朝">明朝</option>
+                                    <option value="清朝">清朝</option><option value="民國與現代">民國與現代</option><option value="未分類">未分類</option>
+                                </select>
+                            </div>
+                            <div class="col-span-2">
+                                <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">稱號</label>
+                                <input id="editTitle" class="w-full p-2 border border-slate-300 rounded text-slate-800 bg-slate-50 focus:border-blue-500 outline-none font-serif">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">特質標籤</label>
+                            <input id="editTag" class="w-full p-2 border border-slate-300 rounded text-slate-800 bg-slate-50 focus:border-blue-500 outline-none">
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">判詞</label>
+                            <input id="editPoem" class="w-full p-2 border border-slate-300 rounded text-slate-800 bg-slate-50 focus:border-blue-500 outline-none italic font-serif">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">簡評</label>
+                            <textarea id="editDesc" class="w-full p-2 border border-slate-300 rounded text-slate-800 bg-slate-50 focus:border-blue-500 outline-none h-24 text-sm leading-relaxed"></textarea>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                        <label class="block text-xs font-bold text-indigo-800 mb-2 flex items-center gap-2"><i class="fa-solid fa-gavel"></i> AI 參謀意見</label>
+                        <div class="flex gap-2 mb-3">
+                            <input id="consultInput" class="flex-1 p-2 border border-indigo-200 rounded text-sm bg-white focus:outline-none focus:border-indigo-400" placeholder="例如：我覺得崇禎應該有B...">
+                            <button onclick="askAIConsultant()" class="bg-indigo-600 text-white px-4 py-1 rounded text-xs font-bold hover:bg-indigo-700 transition-colors">詢問</button>
+                        </div>
+                        <div id="consultResult" class="text-xs text-indigo-900 hidden bg-white p-3 rounded border border-indigo-100 italic leading-relaxed shadow-sm"></div>
+                    </div>
+                    <div class="flex gap-3 pt-2">
+                        <button onclick="saveLegendEdits()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-lg font-bold shadow-md transform active:scale-95 transition-all">確認修訂</button>
+                        <button id="deleteLegendBtn" onclick="deleteCustomLegend()" class="hidden bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg font-bold shadow-md transform active:scale-95 transition-all"><i class="fa-solid fa-trash"></i></button>
+                        <button onclick="closeEditHub()" class="px-6 py-3 border border-slate-300 rounded-lg hover:bg-slate-100 text-slate-600 font-bold transition-colors">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Modal -->
+    <div id="addModal" class="fixed inset-0 z-[70] hidden">
+        <div class="absolute inset-0 modal-overlay" onclick="closeAddModal()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col border border-[#e5e0d3]">
+            <div class="bg-[#047857] text-white p-5 flex justify-between items-center border-b-4 border-[#34d399]">
+                <h3 class="text-xl font-bold font-serif flex items-center gap-2"><i class="fa-solid fa-scroll text-[#d1fae5]"></i> 人物入冊</h3>
+                <button onclick="closeAddModal()" class="text-emerald-200 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 bg-[#f8fafc] flex flex-col gap-6">
+                <div id="addStep1">
+                    <label class="block text-sm font-bold text-slate-700 mb-3 font-serif">請輸入歷史人物姓名：</label>
+                    <div class="flex gap-4 mb-4">
+                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="addType" value="general" checked class="accent-emerald-600"> <span>名將</span></label>
+                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="addType" value="emperor" class="accent-emerald-600"> <span>帝王</span></label>
+                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="addType" value="minister" class="accent-emerald-600"> <span>名臣</span></label>
+                    </div>
+                    <div class="flex gap-3">
+                        <input type="text" id="addInputName" placeholder="例如：管仲、王安石..." class="flex-1 px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-emerald-500 font-serif">
+                        <button onclick="analyzeNewLegend()" class="bg-[#047857] hover:bg-[#059669] text-white px-6 py-3 rounded-lg font-bold font-serif shadow-sm transition-all">AI 評鑑</button>
+                    </div>
+                </div>
+                <div id="addLoading" class="hidden flex-col items-center justify-center py-8">
+                    <p class="text-sm text-slate-500 font-serif animate-pulse">正在調閱史料...</p>
+                </div>
+                <div id="addStep2" class="hidden flex flex-col gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-emerald-100 shadow-sm flex flex-col gap-3">
+                        <div class="flex gap-3">
+                            <input id="newRank" class="w-20 p-2 border border-slate-300 rounded text-center font-bold bg-emerald-50" readonly>
+                            <input id="newTitle" class="flex-1 p-2 border border-slate-300 rounded text-sm" readonly>
+                        </div>
+                        <input id="newTag" class="w-full p-2 border border-slate-300 rounded text-sm" readonly>
+                        <input id="newPoem" class="w-full p-2 border border-slate-300 rounded text-sm italic font-serif" readonly>
+                        <textarea id="newDesc" class="w-full p-2 border border-slate-300 rounded text-sm h-24 leading-relaxed" readonly></textarea>
+                    </div>
+                    <button onclick="saveNewLegend()" class="w-full bg-[#047857] hover:bg-[#059669] text-white py-3 rounded-lg font-bold font-serif shadow-md transform active:scale-95 transition-all">確認入冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Key Modal -->
+    <div id="apiKeyModal" class="fixed inset-0 z-[80] hidden">
+        <div class="absolute inset-0 modal-overlay" onclick="closeApiKeyModal()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-2xl w-full max-w-md p-6 border border-gray-200">
+            <h3 class="text-lg font-bold mb-4 text-gray-800">手動設定 API Key</h3>
+            <p class="text-sm text-gray-500 mb-4">如果自動連線失敗，請在此輸入您的 Google Gemini API Key。</p>
+            <input type="password" id="manualApiKeyInput" class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="AIza...">
+            <div class="flex justify-end gap-2">
+                <button onclick="closeApiKeyModal()" class="px-4 py-2 text-gray-500 hover:bg-gray-100 rounded">取消</button>
+                <button onclick="saveManualApiKey()" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">儲存</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // --- CONSTANTS & UTILS ---
+        const APP_VERSION = "15.0";
+        function el(id) { return document.getElementById(id); }
+        function safeJSONParse(str, fallback) {
+            try { return JSON.parse(str) || fallback; } 
+            catch (e) { console.warn("JSON Parse Error", e); return fallback; }
+        }
+
+        // Custom UI Alert/Confirm (Replaces native blocking dialogs)
+        function customAlert(msg) {
+            el('uiMsgTitle').innerText = '提示';
+            el('uiMsgText').innerText = msg;
+            el('uiMsgCancelBtn').style.display = 'none';
+            el('uiMsgOkBtn').onclick = closeUIMsg;
+            openUIMsg();
+        }
+        function customConfirm(msg, onConfirm) {
+            el('uiMsgTitle').innerText = '確認';
+            el('uiMsgText').innerText = msg;
+            el('uiMsgCancelBtn').style.display = 'inline-block';
+            el('uiMsgOkBtn').onclick = () => { closeUIMsg(); onConfirm(); };
+            openUIMsg();
+        }
+        function openUIMsg() {
+            el('uiMsgBox').classList.remove('hidden');
+            el('uiMsgBox').classList.add('flex');
+            setTimeout(() => {
+                el('uiMsgContent').classList.remove('scale-95', 'opacity-0');
+                el('uiMsgContent').classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+        function closeUIMsg() {
+            el('uiMsgContent').classList.remove('scale-100', 'opacity-100');
+            el('uiMsgContent').classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                el('uiMsgBox').classList.add('hidden');
+                el('uiMsgBox').classList.remove('flex');
+            }, 150);
+        }
+
+        let radarChartInstance = null;
+        let searchTimer = null; // For debounce
+        
+        // --- ID & DYNASTY GENERATION ---
+        function generateId(type, name) { return `${type}_${name}`; }
+        
+        function guessDynasty(l) {
+            if (l.dynasty && l.dynasty !== '其他') return l.dynasty; 
+            
+            const exactMap = {
+                "春秋戰國": ["管仲","商鞅","白起","吳起","王翦","廉頗","李牧","孫武","孫臏","田單","伍子胥","齊桓公","晉文公","楚莊王","趙武靈王","燕昭王","楚威王","秦孝公","秦昭襄王","張儀","范雎","晏嬰","子產","李悝","呂不韋","隰朋","王賁","李信"],
+                "秦朝": ["秦始皇","秦二世","李斯","趙高","章邯","蒙恬","項羽"], 
+                "漢朝": ["漢武帝","漢光武帝","漢高祖","漢文帝","漢宣帝","漢明帝","漢景帝","漢元帝","漢安帝","漢桓帝","漢獻帝","漢靈帝","呂后","劉邦","韓信","蕭何","張良","陳平","霍去病","衛青","周亞夫","馬援","班超","霍光","周昌","陸賈","董卓","皇甫嵩","馮異"],
+                "三國": ["魏武帝","昭烈帝","吳大帝","魏文帝","諸葛亮","司馬懿","曹操","周瑜","陸遜","鄧艾","呂蒙","關羽","張遼","孫策","魏延","姜維","趙雲","陸抗","張郃","馬超","馬謖","諸葛亮(名臣)","荀彧","陳群","魯肅","陸遜(名臣)"],
+                "晉朝": ["晉懷帝","晉惠帝","杜預","桓溫","謝安","王導","王衍","殷浩"],
+                "南北朝": ["北魏孝文帝","宋武帝","北周文帝","神武帝","梁武帝","劉裕","宇文泰","拓跋燾","高歡","爾朱榮","拓跋珪","陳慶之","王僧辯","劉穆之"],
+                "隋朝": ["隋文帝","隋煬帝","楊素","韓擒虎","高熲","楊素(名臣)"],
+                "唐朝": ["唐太宗","武則天","唐高祖","唐高宗","唐憲宗","唐玄宗","唐肅宗","唐穆宗","唐中宗","李世民","李靖","李勣","蘇定方","郭子儀","王忠嗣","李光弼","僕固懷恩","裴行儉","張巡","李克用","封常清","哥舒翰","王毛仲","秦叔寶","程知節","張仁愿","房玄齡","魏徵","杜如晦","狄仁傑","長孫無忌","姚崇","宋璟","李林甫","楊國忠"],
+                "五代十國": ["兒皇帝","韓熙載"],
+                "宋朝": ["宋太祖","宋仁宗","宋太宗","宋孝宗","宋真宗","宋高宗","宋欽宗","岳飛","孟珙","韓世忠","劉錡","种師道","狄青","虞允文","王安石","范仲淹","寇準","司馬光","包拯","呂蒙正","秦檜","賈似道","蔡京"],
+                "元朝": ["元世祖","元文宗","元順帝","成吉思汗","速不台","伯顏","木華黎","王保保","忽必烈","哲別","耶律楚材","阿合馬","脫脫","賈魯"],
+                "明朝": ["明太祖","明成祖","明孝宗","明世宗","明英宗","崇禎帝","徐達","朱棣","于謙","常遇春","李定國","藍玉","傅友德","袁崇煥","俞大猷","孫傳庭","盧象昇","李如松","毛文龍","李成梁","左良玉","史可法","李自成","張獻忠","王守仁","張居正","于謙(名臣)","劉基","徐光啟","徐階","楊廷和","孫承宗","李賢","徐溥","高拱","海瑞","方孝孺","沈一貫","楊嗣昌","嚴嵩","溫體仁","陳演","魏藻德","魏忠賢"],
+                "清朝": ["康熙帝","乾隆帝","雍正帝","嘉慶帝","慈禧太后","同治帝","道光帝","光緒帝","努爾哈赤","多爾袞","左宗棠","施琅","李鴻章","曾國荃","吳三桂","洪承疇","年羹堯","石達開","楊秀清","鄧世昌","陳化成","曾國藩","李鴻章(名臣)","左宗棠(名臣)","張廷玉","張之洞","范文程","和珅"],
+                "民國與現代": ["毛澤東","孫文","蔣介石","洪憲帝","林彪","粟裕","彭德懷","朱德","白崇禧","孫立人","薛岳","李宗仁","張靈甫","蔣中正","劉湘","蔡鍔","馮玉祥","黃百韜","唐生智","鄧小平","周恩來","朱鎔基","陳雲","胡耀邦","宋子文","李宗仁(名臣)","李鵬","孫科"]
+            };
+
+            for (const [dynasty, names] of Object.entries(exactMap)) {
+                if (names.includes(l.name)) return dynasty;
+            }
+
+            // 嚴格模式推斷 (移除容易造成誤判的單字，只抓具體政權與大事件)
+            const str = (l.title || '') + (l.desc || '') + (l.tag || '') + (l.poem || '');
+            
+            if (/民國|抗戰|北洋政府|紅軍|中共|十大建設|半導體|台灣奇蹟/.test(str)) return "民國與現代";
+            if (/大清|清朝|八旗|洋務運動|太平天國|湘軍|總理衙門/.test(str)) return "清朝";
+            if (/大明|明朝|晚明|東林黨|閹黨|靖難之役|土木堡|東廠|錦衣衛/.test(str)) return "明朝";
+            if (/大元|元朝|蒙古帝國|怯薛軍|四大汗國/.test(str)) return "元朝";
+            if (/北宋|南宋|大宋|靖康之恥|熙寧變法|端平入洛|理學/.test(str)) return "宋朝";
+            if (/五代十國|後梁|後唐|後晉|後漢|後周/.test(str)) return "五代十國";
+            if (/大唐|唐朝|初唐|盛唐|中唐|晚唐|安史之亂|貞觀|開元|天寶|玄武門/.test(str)) return "唐朝";
+            if (/大隋|隋朝|開皇|大業|瓦崗/.test(str)) return "隋朝";
+            if (/南北朝|北魏|東魏|西魏|北齊|北周|劉宋|南齊|南梁|南陳|侯景之亂|關隴集團/.test(str)) return "南北朝";
+            if (/西晉|東晉|八王之亂|五胡亂華|永嘉之亂/.test(str)) return "晉朝";
+            if (/三國|東漢末|曹魏|蜀漢|東吳|黃巾之亂|三分天下/.test(str)) return "三國";
+            if (/西漢|東漢|大漢|漢朝|楚漢相爭|文景之治|昭宣中興|王莽|新朝/.test(str)) return "漢朝";
+            if (/秦朝|大秦|秦末/.test(str)) return "秦朝";
+            if (/春秋|戰國|齊國|楚國|燕國|韓國|趙國|魏國|秦國/.test(str)) return "春秋戰國";
+            
+            // 如果連明確的強關聯詞都沒有，一律歸入未分類，讓使用者手動改
+            return "未分類";
+        }
+
+        // --- FULL DATABASE (296 Entries) ---
+        const staticLegendsData = [
+            // === EMPERORS (74) ===
+            {type:"emperor", name:"秦始皇", rank:"S+", title:"始皇帝", tag:"締造中華", desc:"廢分封行郡縣，書同文車同軌，奠定兩千年政治格局。", poem:"六王畢，四海一，蜀山兀，阿房出。"},
+            {type:"emperor", name:"漢武帝", rank:"S+", title:"劉徹", tag:"雄才大略", desc:"鑿空西域，獨尊儒術，奠定漢民族生存空間與文化認同。", poem:"秋風起兮白雲飛，草木黃落兮雁南歸。"},
+            {type:"emperor", name:"唐太宗", rank:"S+", title:"天可汗", tag:"貞觀之治", desc:"文治武功的完美典範，萬國來朝。", poem:"心隨朗日高，志與秋霜潔。"},
+            {type:"emperor", name:"隋文帝", rank:"S", title:"楊堅", tag:"開皇之治", desc:"結束三百年分裂，開創科舉與三省六部。", poem:"開皇之治興科舉，三省六部定乾坤。"},
+            {type:"emperor", name:"漢光武帝", rank:"S", title:"劉秀", tag:"柔道治國", desc:"史上學歷最高、代價最小的完美復國。", poem:"仕宦當作執金吾，娶妻當得陰麗華。"},
+            {type:"emperor", name:"秦孝公", rank:"S", title:"嬴渠梁", tag:"商鞅變法", desc:"強秦之基，戰國格局的改變者。", poem:"求賢令下秦基立，變法圖強霸業興。"},
+            {type:"emperor", name:"漢高祖", rank:"S-", title:"劉邦", tag:"知人善任", desc:"布衣天子，駕馭韓信、彭越的終極操盤手。", poem:"大風起兮雲飛揚，威加海內兮歸故鄉。"},
+            {type:"emperor", name:"宋太祖", rank:"S-", title:"趙匡胤", tag:"杯酒釋兵權", desc:"結束五代十國，確立文官制度。", poem:"臥榻之側，豈容他人鼾睡。"},
+            {type:"emperor", name:"康熙帝", rank:"S-", title:"玄燁", tag:"千古一帝", desc:"奠定清朝版圖，收復台灣，在位六十一年。", poem:"萬里扶桑早掛弓，水犀軍指島門空。"},
+            {type:"emperor", name:"明太祖", rank:"S-", title:"朱元璋", tag:"恢復中華", desc:"驅逐胡虜，恢復中華，極權政治的建立者。", poem:"殺盡江南百萬兵，腰間寶劍血猶腥。"},
+            {type:"emperor", name:"明成祖", rank:"S-", title:"朱棣", tag:"天子守國門", desc:"五征漠北，鄭和下西洋，修永樂大典。", poem:"靖難兵起清君側，五出漠北掃胡塵。"},
+            {type:"emperor", name:"唐高宗", rank:"S-", title:"李治", tag:"版圖最大", desc:"被低估的實權者，滅高句麗、西突厥。", poem:"龍朔版圖達蔥嶺，二聖臨朝定八荒。"},
+            {type:"emperor", name:"秦昭襄王", rank:"S-", title:"嬴稷", tag:"遠交近攻", desc:"長平勝趙，在位五十六年為帝業奠基。", poem:"長平血戰定趙魏，五十六載霸業基。"},
+            {type:"emperor", name:"毛澤東", rank:"A+", title:"開國領袖", tag:"戰略S+", desc:"開國功S+，戰略S+，游擊戰神，但治理有爭議。", poem:"北國風光，千里冰封，萬里雪飄。"},
+            {type:"emperor", name:"乾隆帝", rank:"A+", title:"十全老人", tag:"十全武功", desc:"清朝疆域極盛，人口爆炸，但晚年僵化。", poem:"十全武功威遐邇，六巡江南耗民財。"},
+            {type:"emperor", name:"北魏孝文帝", rank:"A+", title:"元宏", tag:"漢化改革", desc:"遷都洛陽，全面漢化，促進民族大融合。", poem:"遷都洛陽更衣冠，漢化融合開新篇。"},
+            {type:"emperor", name:"漢文帝", rank:"A+", title:"劉恆", tag:"文景之治", desc:"與民休息，輕徭薄賦，古代治世楷模。", poem:"輕徭薄賦安黎庶，文景之治史冊名。"},
+            {type:"emperor", name:"漢宣帝", rank:"A+", title:"劉詢", tag:"霸王道雜之", desc:"西漢中興，設立西域都護府，綜核名實。", poem:"故劍情深憶許后，霸王道雜治漢家。"},
+            {type:"emperor", name:"宋武帝", rank:"A+", title:"劉裕", tag:"氣吞萬里", desc:"北伐戰神，卻月陣以步克騎，南朝第一帝。", poem:"想當年，金戈鐵馬，氣吞萬里如虎。"},
+            {type:"emperor", name:"元世祖", rank:"A+", title:"忽必烈", tag:"大元一統", desc:"建立元朝，滅南宋，行漢法。", poem:"大哉乾元，萬物資始，乃統天。"},
+            {type:"emperor", name:"雍正帝", rank:"A+", title:"胤禛", tag:"最勤政", desc:"攤丁入畝，火耗歸公，為乾隆盛世打底。", poem:"朝乾夕惕批奏章，改革積弊正頹風。"},
+            {type:"emperor", name:"北周文帝", rank:"A+", title:"宇文泰", tag:"府兵之祖", desc:"創立府兵制，沙苑之戰以弱勝強，奠定隋唐基業。", poem:"沙苑蘆深破高歡，關隴基業傳隋唐。"},
+            {type:"emperor", name:"宋仁宗", rank:"A", title:"趙禎", tag:"千古第一仁", desc:"文治巔峰，名人堂製造機，包容異見。", poem:"百司庶府皆賢士，天下歸心號仁宗。"},
+            {type:"emperor", name:"武則天", rank:"A", title:"聖神皇帝", tag:"唯一女皇", desc:"承貞觀啟開元，打擊門閥，唯才是舉。", poem:"日月當空照萬方，無字碑頭話滄桑。"},
+            {type:"emperor", name:"魏武帝", rank:"A", title:"曹操", tag:"魏晉奠基", desc:"挾天子以令諸侯，屯田建安風骨，戰略政治S。", poem:"老驥伏櫪志千里，東臨碣石有遺篇。"},
+            {type:"emperor", name:"宋太宗", rank:"A", title:"趙光義", tag:"鞏固宋室", desc:"滅北漢統一中原，但高粱河車神扣分。", poem:"燭影斧聲千古謎，滅漢一統定中原。"},
+            {type:"emperor", name:"明孝宗", rank:"A", title:"朱祐樘", tag:"弘治中興", desc:"寬厚仁慈，大明中興之主，私德完美。", poem:"弘治中興垂青史，一生只娶張皇后。"},
+            {type:"emperor", name:"唐高祖", rank:"A", title:"李淵", tag:"老練開國", desc:"晉陽起兵，利用突厥，順勢而為。", poem:"晉陽起義興唐祚，順天應人定關中。"},
+            {type:"emperor", name:"神武帝", rank:"A", title:"高歡", tag:"北朝梟雄", desc:"關東霸主，起於微末，宇文泰的一生之敵。", poem:"敕勒川上射雕手，玉壁城下英雄淚。"},
+            {type:"emperor", name:"齊桓公", rank:"A", title:"小白", tag:"春秋首霸", desc:"九合諸侯，一匡天下，尊王攘夷。", poem:"九合諸侯一匡世，尊王攘夷霸業成。"},
+            {type:"emperor", name:"晉文公", rank:"A", title:"重耳", tag:"退避三舍", desc:"流亡十九年，城濮之戰敗楚稱霸。", poem:"流亡十九年終霸，退避三舍報楚恩。"},
+            {type:"emperor", name:"楚莊王", rank:"A", title:"旅", tag:"一鳴驚人", desc:"問鼎中原，飲馬黃河，春秋五霸之一。", poem:"三年不飛飛沖天，一鳴驚人震諸侯。"},
+            {type:"emperor", name:"趙武靈王", rank:"A", title:"雍", tag:"胡服騎射", desc:"軍事改革先行者，滅中山，死於沙丘。", poem:"胡服騎射開新制，沙丘宮變嘆英雄。"},
+            {type:"emperor", name:"漢明帝", rank:"A-", title:"劉莊", tag:"明章之治", desc:"刑名治國，引入佛教。", poem:"永平求法白馬寺，明章之治繼前修。"},
+            {type:"emperor", name:"宋孝宗", rank:"A-", title:"趙昚", tag:"南宋第一", desc:"勵精圖治，試圖北伐，南宋最有作為之君。", poem:"隆興北伐志未酬，南渡君臣第一流。"},
+            {type:"emperor", name:"孫文", rank:"A-", title:"孫中山", tag:"精神領袖", desc:"推翻帝制，建立共和，思想遺產S級。", poem:"革命尚未成功，同志仍須努力。"},
+            {type:"emperor", name:"唐憲宗", rank:"A-", title:"李純", tag:"元和中興", desc:"平定藩鎮，重振大唐威信，晚年求仙。", poem:"元和中興平藩鎮，雪夜入淮擒吳元。"},
+            {type:"emperor", name:"明世宗", rank:"A-", title:"嘉靖", tag:"權術大師", desc:"二十年不上朝而掌大權，聰明反被聰明誤。", poem:"齋醮青詞求長生，權術深沉御群臣。"},
+            {type:"emperor", name:"燕昭王", rank:"A-", title:"職", tag:"千金買骨", desc:"築黃金台招賢，樂毅伐齊雪恥。", poem:"千金買骨招賢士，黃金台高復仇心。"},
+            {type:"emperor", name:"楚威王", rank:"A-", title:"商", tag:"宣威盛世", desc:"敗越滅徐，戰國時期楚國版圖極盛。", poem:"敗越滅徐拓疆土，楚威盛世震東南。"},
+            {type:"emperor", name:"唐玄宗", rank:"B+", title:"李隆基", tag:"開元天寶", desc:"前S後C，開元盛世與安史之亂的締造者。", poem:"漁陽鼙鼓動地來，驚破霓裳羽衣曲。"},
+            {type:"emperor", name:"蔣介石", rank:"B+", title:"蔣中正", tag:"功過參半", desc:"抗戰有功，統治崩潰，戰略A戰術C。", poem:"黃埔建軍定中原，越級微操失江山。"},
+            {type:"emperor", name:"宋真宗", rank:"B+", title:"趙恆", tag:"澶淵之盟", desc:"花錢買和平，封禪勞民傷財。", poem:"澶淵之盟安邊境，東封西祀費民財。"},
+            {type:"emperor", name:"吳大帝", rank:"B+", title:"孫權", tag:"坐斷東南", desc:"守成有餘，進取不足，晚年昏庸。", poem:"千古江山，英雄無覓孫仲謀處。"},
+            {type:"emperor", name:"呂后", rank:"B+", title:"呂雉", tag:"女主臨朝", desc:"手段毒辣，但休養生息，為文景之治奠基。", poem:"佐高祖定天下，臨朝稱制刑罰嚴。"},
+            {type:"emperor", name:"魏文帝", rank:"B+", title:"曹丕", tag:"九品中正", desc:"接受禪讓，確立九品中正制，鞏固士族。", poem:"煮豆燃豆萁，九品中正定門第。"},
+            {type:"emperor", name:"漢景帝", rank:"B+", title:"劉啟", tag:"平七國亂", desc:"削藩引發叛亂，周亞夫平定，殺晁錯。", poem:"削藩策下七國反，細柳營中亞夫功。"},
+            {type:"emperor", name:"唐肅宗", rank:"B+", title:"李亨", tag:"靈武即位", desc:"平定安史之亂，但寵信宦官，開唐代宦官之禍。", poem:"靈武即位收兩京，宦官之禍由此生。"},
+            {type:"emperor", name:"嘉慶帝", rank:"B+", title:"顒琰", tag:"除和珅", desc:"整頓吏治，平定白蓮教，但清朝已入頹勢。", poem:"和珅跌倒嘉慶飽，白蓮教亂國勢衰。"},
+            {type:"emperor", name:"昭烈帝", rank:"B", title:"劉備", tag:"意志力S", desc:"百折不撓，以弱小國力回歸割據。", poem:"勿以惡小而為之，勿以善小而不為。"},
+            {type:"emperor", name:"洪憲帝", rank:"B", title:"袁世凱", tag:"竊國大盜", desc:"小站練兵，逼清帝退位，稱帝失敗。", poem:"小站練兵興北洋，洪憲稱帝夢一場。"},
+            {type:"emperor", name:"慈禧太后", rank:"B", title:"老佛爺", tag:"垂簾聽政", desc:"擅長權術平衡，維持晚清局面，但阻礙革新。", poem:"量中華之物力，結與國之歡心。"},
+            {type:"emperor", name:"梁武帝", rank:"B", title:"蕭衍", tag:"崇信佛教", desc:"早年英明，晚年佞佛，侯景之亂餓死。", poem:"南朝四百八十寺，多少樓台煙雨中。"},
+            {type:"emperor", name:"漢元帝", rank:"B", title:"劉奭", tag:"漢室中衰", desc:"柔仁好儒，優柔寡斷，西漢轉衰。", poem:"柔仁好儒致中衰，昭君出塞和親去。"},
+            {type:"emperor", name:"唐穆宗", rank:"B", title:"李恆", tag:"宴樂無度", desc:"擊球飲酒，不理朝政，長慶之治曇花一現。", poem:"擊球飲酒廢朝綱，中興希望付東流。"},
+            {type:"emperor", name:"同治帝", rank:"B", title:"載淳", tag:"同治中興", desc:"短暫中興，實權在慈禧，修圓明園。", poem:"同治中興雖有名，實權盡在太后手。"},
+            {type:"emperor", name:"宋高宗", rank:"B-", title:"趙構", tag:"偏安", desc:"殺岳飛，重秦檜，偏安一隅。", poem:"泥馬渡江開南宋，風波亭上殺忠良。"},
+            {type:"emperor", name:"道光帝", rank:"B-", title:"旻寧", tag:"鴉片戰爭", desc:"節儉卻無能，開啟百年國恥。", poem:"節儉無補國家事，鴉片硝煙起虎門。"},
+            {type:"emperor", name:"漢安帝", rank:"B-", title:"劉祜", tag:"外戚宦官", desc:"聽信讒言，外戚宦官輪流專權。", poem:"外戚宦官輪流坐，漢室江山日西斜。"},
+            {type:"emperor", name:"元文宗", rank:"B-", title:"圖帖睦爾", tag:"宮廷政變", desc:"弒兄奪位，文化造詣高，政治混亂。", poem:"奎章閣上文采風，弒兄奪位血腥濃。"},
+            {type:"emperor", name:"明英宗", rank:"C+", title:"朱祁鎮", tag:"土木堡", desc:"寵信王振，喪師辱國，殺于謙。", poem:"土木蒙塵北狩去，奪門復辟殺忠良。"},
+            {type:"emperor", name:"光緒帝", rank:"C+", title:"載湉", tag:"戊戌變法", desc:"力圖變法，被囚瀛台，傀儡一生。", poem:"瀛台落日望蒼穹，變法圖強夢成空。"},
+            {type:"emperor", name:"秦二世", rank:"C+", title:"胡亥", tag:"指鹿為馬", desc:"殘殺手足，寵信趙高，秦朝二世而亡。", poem:"指鹿為馬亂朝綱，二世而亡笑荒唐。"},
+            {type:"emperor", name:"漢桓帝", rank:"C+", title:"劉志", tag:"黨錮之禍", desc:"誅滅樑氏，重用宦官，發起黨錮。", poem:"黨錮之禍禁賢良，宦官專權漢祚傷。"},
+            {type:"emperor", name:"晉懷帝", rank:"C+", title:"司馬熾", tag:"永嘉之亂", desc:"被俘受辱，青衣行酒，西晉滅亡。", poem:"永嘉之亂衣冠南，青衣行酒淚潸然。"},
+            {type:"emperor", name:"崇禎帝", rank:"C", title:"朱由檢", tag:"勤政亡國", desc:"勤政卻多疑，剛愎自用，加速滅亡。", poem:"煤山自縊殉社稷，君王死社稷。"},
+            {type:"emperor", name:"兒皇帝", rank:"C", title:"石敬瑭", tag:"割讓幽雲", desc:"認賊作父，割讓幽雲十六州，遺禍無窮。", poem:"認賊作父稱兒皇，幽雲十六恨綿長。"},
+            {type:"emperor", name:"漢獻帝", rank:"C", title:"劉協", tag:"悲情傀儡", desc:"一生被挾持，最終禪讓，漢朝終結。", poem:"生於亂世為傀儡，禪讓魏文漢祚終。"},
+            {type:"emperor", name:"唐中宗", rank:"C", title:"李顯", tag:"韋后之亂", desc:"被母廢，被妻毒，懦弱無能。", poem:"六位帝皇丸，韋后亂政禍蕭墻。"},
+            {type:"emperor", name:"隋煬帝", rank:"C-", title:"楊廣", tag:"毀國", desc:"好大喜功，三征高句麗，濫用民力。", poem:"大業運河連南北，龍舟南下國隨亡。"},
+            {type:"emperor", name:"宋欽宗", rank:"C-", title:"趙桓", tag:"靖康恥", desc:"反覆無常，誤信妖道，終致北宋滅亡。", poem:"靖康恥，猶未雪，臣子恨，何時滅。"},
+            {type:"emperor", name:"漢靈帝", rank:"C-", title:"劉宏", tag:"賣官鬻爵", desc:"設西園賣官，黃巾之亂爆發。", poem:"賣官鬻爵亂朝綱，黃巾遍地漢室亡。"},
+            {type:"emperor", name:"元順帝", rank:"C-", title:"妥懽帖睦爾", tag:"元朝末代", desc:"荒淫怠政，紅巾軍起，逃回漠北。", poem:"荒淫怠政失中原，北走大漠嘆蒼天。"},
+            {type:"emperor", name:"晉惠帝", rank:"D", title:"司馬衷", tag:"何不食肉糜", desc:"白痴皇帝，八王之亂導火線。", poem:"何不食肉糜千古笑，八王之亂晉室傾。"},
+
+            // === GENERALS (129) ===
+            {type:"general", name:"成吉思汗",rank:"S+",title:"世界征服者",tag:"上帝之鞭",desc:"戰略與版圖的人類極限，怯薛軍與千戶制締造者。",poem:"鐵騎鑿空歐亞路，金帳鞭斷萬山脊。"},
+            {type:"general", name:"速不台",rank:"S+",title:"萬里兵鋒",tag:"最強戰役指揮",desc:"從東亞打到多瑙河，大兵團長距離機動的巔峰。",poem:"飲馬多瑙驚泰西，雪夜彎弓射大羅。"},
+            {type:"general", name:"韓信",rank:"S+",title:"兵仙",tag:"戰術天花板",desc:"背水一戰、十面埋伏，純軍事技術的極致。",poem:"背水奇謀吞趙魏，十面楚歌滅霸王。"},
+            {type:"general", name:"白起",rank:"S+",title:"人屠",tag:"殲滅戰鼻祖",desc:"長平坑殺四十萬，改變了戰國戰爭的本質。",poem:"憑君莫話封侯事，一將功成萬骨枯。"},
+            {type:"general", name:"李世民",rank:"S+",title:"天策上將",tag:"六邊形戰士",desc:"親冒矢石的開國皇帝，文治武功的最高標準。",poem:"三千玄甲破萬敵，天策旌旗定中原。"},
+            {type:"general", name:"劉邦",rank:"S",title:"漢高祖",tag:"戰略之神",desc:"駕馭韓信、彭越的終極操盤手，容錯率極高的統帥。",poem:"大風起兮雲飛揚，威加海內兮歸故鄉。"},
+            {type:"general", name:"李靖",rank:"S",title:"大唐軍神",tag:"出將入相",desc:"軍事理論集大成者，滅突厥、平蕭銑，近乎S+。",poem:"北擒可汗清大漠，南定蕭銑六花開。"},
+            {type:"general", name:"霍去病",rank:"S",title:"冠軍侯",tag:"進攻圖騰",desc:"封狼居胥，閃電戰鼻祖，漢匈戰爭的最強鋒刃。",poem:"匈奴未滅不為家，封狼居胥第一人。"},
+            {type:"general", name:"衛青",rank:"S",title:"帝國長城",tag:"大兵團標竿",desc:"七戰七捷，收復河套，穩重與大局觀的典範。",poem:"但使龍城飛將在，不教胡馬度陰山。"},
+            {type:"general", name:"王翦",rank:"S",title:"滅三國",tag:"戰國計算機",desc:"統一天下的執行者，求田問舍展現頂級政治智慧。",poem:"請田問舍安秦帝，六十萬甲吞楚疆。"},
+            {type:"general", name:"劉裕",rank:"S",title:"北伐戰神",tag:"南朝第一帝",desc:"氣吞萬里如虎，卻月陣以步克騎，滅南燕後秦。",poem:"想當年，金戈鐵馬，氣吞萬里如虎。"},
+            {type:"general", name:"吳起",rank:"S",title:"兵家亞聖",tag:"一生無敗",desc:"魏武卒改革宗師，軍事與政治雙修的改革家。",poem:"西河立信魏武卒，楚悼崩時萬箭穿。"},
+            {type:"general", name:"宇文泰",rank:"S",title:"府兵之祖",tag:"關隴締造者",desc:"創立府兵制，沙苑之戰以弱勝強，奠定隋唐基業。",poem:"沙苑蘆深破高歡，關隴基業傳隋唐。"},
+            {type:"general", name:"徐達",rank:"S",title:"大明第一將",tag:"開國基石",desc:"北伐滅元，驅逐韃虜，穩如泰山的統帥。",poem:"提師北伐清沙漠，開國功臣第一人。"},
+            {type:"general", name:"林彪",rank:"S",title:"紅軍之鷹",tag:"現代軍神",desc:"百萬大軍統帥，三三制與現代戰爭體系的締造者。",poem:"運籌帷幄算無遺，百萬雄師過大江。"},
+            {type:"general", name:"項羽",rank:"S-",title:"西楚霸王",tag:"戰術之神",desc:"彭城之戰S++，但戰略C，悲劇英雄的極致。",poem:"生當作人傑，死亦為鬼雄。"},
+            {type:"general", name:"拓跋燾",rank:"S-",title:"北魏太武帝",tag:"統一北方",desc:"結束五胡亂世，閃電戰大師，飲馬長江。",poem:"掃清十六國煙塵，佛狸祠下亦英雄。"},
+            {type:"general", name:"高歡",rank:"S-",title:"神武帝",tag:"北朝曹操",desc:"關東霸主，起於微末，宇文泰的一生之敵。",poem:"敕勒川上射雕手，玉壁城下英雄淚。"},
+            {type:"general", name:"努爾哈赤",rank:"S-",title:"後金太祖",tag:"八旗始祖",desc:"薩爾滸神蹟，以6萬破47萬，清朝奠基人。",poem:"十三遺甲起白山，薩爾滸邊破大明。"},
+            {type:"general", name:"伯顏",rank:"S-",title:"滅宋統帥",tag:"元朝王翦",desc:"跨江滅南宋，指揮大兵團水陸協同作戰。",poem:"百萬貔貅渡大江，一戰焦山定臨安。"},
+            {type:"general", name:"多爾袞",rank:"S-",title:"攝政王",tag:"定鼎中原",desc:"山海關決策S+，確立清朝入主中原的大戰略。",poem:"鐵騎入關掃流寇，定鼎燕京攝帝位。"},
+            {type:"general", name:"諸葛亮",rank:"S-",title:"武侯",tag:"軍制宗師",desc:"以弱抗強，六出祁山，治軍與發明S級。",poem:"出師未捷身先死，長使英雄淚滿襟。"},
+            {type:"general", name:"司馬懿",rank:"S-",title:"塚虎",tag:"三國終結者",desc:"忍者之神，熬死所有對手，平遼東展現閃擊能力。",poem:"忍將白髮對瑤琴，一劍霜寒定九州。"},
+            {type:"general", name:"爾朱榮",rank:"S-",title:"北朝項羽",tag:"亂世魔星",desc:"7000騎破30萬，戰術S+，政治D的梟雄。",poem:"河陰血染天闕紅，七千精騎踏葛榮。"},
+            {type:"general", name:"曹操",rank:"S-",title:"魏武帝",tag:"橫槊賦詩",desc:"戰略與政治S，但有赤壁、漢中之敗。",poem:"老驥伏櫪志千里，東臨碣石有遺篇。"},
+            {type:"general", name:"朱棣",rank:"S-",title:"永樂帝",tag:"馬上皇帝",desc:"五征漠北，靖難之役以一隅敵全國。",poem:"靖難兵起清君側，五出漠北掃胡塵。"},
+            {type:"general", name:"李勣",rank:"S-",title:"徐懋功",tag:"大唐雙壁",desc:"滅高句麗，政治智慧S，明哲保身的典範。",poem:"東平高麗雪前恥，智避權鋒保令名。"},
+            {type:"general", name:"蘇定方",rank:"S-",title:"滅國狂魔",tag:"外戰之王",desc:"前後滅三國，擒三主，戰績華麗但缺乏宗師感。",poem:"雪夜襲營擒可汗，前後滅國奏凱歌。"},
+            {type:"general", name:"岳飛",rank:"S-",title:"武穆",tag:"岳家軍魂",desc:"撼山易撼岳家軍難，戰術S，政治悲劇。",poem:"三十功名塵與土，八千里路雲和月。"},
+            {type:"general", name:"粟裕",rank:"S-",title:"戰神",tag:"微操大師",desc:"淮海戰役總指揮，大兵團作戰的天才，戰略層級受限。",poem:"七戰七捷威名震，百萬軍中取上將。"},
+            {type:"general", name:"郭子儀",rank:"S-",title:"汾陽王",tag:"再造大唐",desc:"政治S+，安史之亂擎天柱，功高不震主。",poem:"權傾天下而朝不忌，功蓋一代而主不疑。"},
+            {type:"general", name:"彭德懷",rank:"S-",title:"彭大將軍",tag:"硬仗專家",desc:"意志力S，抗美援朝立國之戰，擅打逆風局。",poem:"誰敢橫刀立馬，唯我彭大將軍。"},
+            {type:"general", name:"王忠嗣",rank:"A+",title:"四鎮節度使",tag:"儲帥之師",desc:"掌控萬里邊防，郭子儀與李光弼的恩師，因反戰而死。",poem:"佩印四鎮安天下，不教石堡萬骨枯。"},
+            {type:"general", name:"孫武",rank:"A+",title:"兵聖",tag:"理論之祖",desc:"《孫子兵法》作者，供在神壇的宗師。",poem:"兵無常勢水無形，十三篇章萬古名。"},
+            {type:"general", name:"毛澤東",rank:"A+",title:"戰略家",tag:"游擊戰神",desc:"戰略與軍事哲學S++，不親臨指揮。",poem:"敵進我退疲敵術，星火燎原定九州。"},
+            {type:"general", name:"朱德",rank:"A+",title:"紅軍之父",tag:"建軍宗師",desc:"軍隊締造者，地位高於實戰指揮。",poem:"南昌城頭第一槍，太行山上把名揚。"},
+            {type:"general", name:"李牧",rank:"A+",title:"戰國屏障",tag:"防禦大師",desc:"獵殺匈奴十萬，趙國最後的守護神。",poem:"獵殺匈奴十萬騎，可惜讒言殺良將。"},
+            {type:"general", name:"周瑜",rank:"A+",title:"公瑾",tag:"水戰巔峰",desc:"赤壁一戰定三國，英年早逝的儒將。",poem:"遙想公瑾當年，小喬初嫁了，雄姿英發。"},
+            {type:"general", name:"陸遜",rank:"A+",title:"社稷之臣",tag:"夷陵火攻",desc:"火燒連營，東吳中流砥柱，防守反擊大師。",poem:"火燒連營七百里，書生拜將護江東。"},
+            {type:"general", name:"孟珙",rank:"A+",title:"防禦大師",tag:"機動防禦",desc:"南宋擎天柱，一人統御三分之二戰線。",poem:"機動防禦撐半壁，襄陽城頭哭遺民。"},
+            {type:"general", name:"于謙",rank:"A+",title:"救時宰相",tag:"北京保衛戰",desc:"社稷為重君為輕，大明續命人。",poem:"粉身碎骨全不惜，九門死戰護京華。"},
+            {type:"general", name:"李光弼",rank:"A+",title:"中興第一",tag:"太原奇蹟",desc:"太原保衛戰，安史之亂軍事貢獻第一人。",poem:"太原城下出奇謀，地道借箭退叛軍。"},
+            {type:"general", name:"拓跋珪",rank:"A+",title:"道武帝",tag:"參合陂屠夫",desc:"北魏開國，坑殺後燕八萬，建立北朝基業。",poem:"參合陂頭殺氣高，北魏開基第一皇。"},
+            {type:"general", name:"孫臏",rank:"A+",title:"兵家亞聖",tag:"鬼謀殘軀",desc:"圍魏救趙，減灶誘敵，智商碾壓對手。",poem:"減灶誘敵除龐涓，圍魏救趙史無前。"},
+            {type:"general", name:"伍子胥",rank:"A+",title:"復仇男神",tag:"疲楚戰略",desc:"柏舉之戰3萬破20萬，游擊戰鼻祖。",poem:"掘墓鞭屍雪父仇，日暮途遠倒行施。"},
+            {type:"general", name:"白崇禧",rank:"A+",title:"小諸葛",tag:"戰略大師",desc:"北伐與抗戰智囊，國軍戰略天花板。",poem:"小諸葛名震中原，龍潭大捷定東南。"},
+            {type:"general", name:"左宗棠",rank:"A+",title:"湘上農人",tag:"收復新疆",desc:"戰略遠見S，抬棺出征，晚清外戰全勝。",poem:"大將籌邊人未還，湖湘子弟滿天山。"},
+            {type:"general", name:"戚繼光",rank:"A+",title:"武毅公",tag:"革新宗師",desc:"鴛鴦陣，軍事工程學，現代練兵之祖。",poem:"封侯非我意，但願海波平。"},
+            {type:"general", name:"班超",rank:"A+",title:"定遠侯",tag:"西域守護",desc:"外交特種戰，三十六人定西域，以夷制夷。",poem:"投筆從戎萬里去，三十六國盡封侯。"},
+            {type:"general", name:"木華黎",rank:"A+",title:"東方經略",tag:"獨當一面",desc:"成吉思汗的分身，全權負責滅金戰事。",poem:"受命太師開漢地，孤軍百戰定中原。"},
+            {type:"general", name:"僕固懷恩",rank:"A+",title:"悲劇泰坦",tag:"滿門忠烈",desc:"戰場瘋狗，被逼造反的安史名將。",poem:"滿門忠烈皆為國，奈何被逼反長安。"},
+            {type:"general", name:"陳慶之",rank:"A+",title:"白袍戰神",tag:"戰術神蹟",desc:"7000白袍軍橫掃北魏，47戰全勝。",poem:"名師大將莫自牢，千軍萬馬避白袍。"},
+            {type:"general", name:"鄧艾",rank:"A+",title:"滅蜀首功",tag:"地理大師",desc:"偷渡陰平，滾氈度崖，特種戰略奇襲。",poem:"裹氈滾落陰平道，從此蜀漢無劍閣。"},
+            {type:"general", name:"常遇春",rank:"A+",title:"大明先鋒",tag:"摧鋒陷陣",desc:"單兵能力S+，常十萬橫行天下。",poem:"十萬貔貅橫天下，一槍獨斷採石磯。"},
+            {type:"general", name:"李定國",rank:"A+",title:"南明武穆",tag:"兩蹶名王",desc:"陣斬孔有德、尼堪，南明最後的輝煌。",poem:"兩蹶名王震天下，孤臣血淚灑邊疆。"},
+            {type:"general", name:"呂蒙",rank:"A+",title:"白衣渡江",tag:"刺客統帥",desc:"攻心為上，奪荊州，關羽的終結者。",poem:"吳下阿蒙今已非，白衣渡江擒武聖。"},
+            {type:"general", name:"王賁",rank:"A+",title:"滅國執行",tag:"水攻大師",desc:"水淹大梁，滅魏燕齊，完美的執行者。",poem:"黃河水灌大梁城，北虜燕王定齊魯。"},
+            {type:"general", name:"馬援",rank:"A",title:"伏波將軍",tag:"馬革裹屍",desc:"東漢救火隊長，平定邊疆，老當益壯。",poem:"聚米為山籌邊策，馬革裹屍英雄願。"},
+            {type:"general", name:"楊素",rank:"A",title:"越國公",tag:"滅陳總管",desc:"風格冷酷迅猛，隋朝統一天下的推手。",poem:"樓船夜下廣陵濤，從此江南屬大隋。"},
+            {type:"general", name:"藍玉",rank:"A",title:"大明鋒刃",tag:"捕魚兒海",desc:"穿越戈壁殲滅北元朝廷，政治低能。",poem:"捕魚兒海擒偽主，驕橫跋扈致殺身。"},
+            {type:"general", name:"傅友德",rank:"A",title:"潁國公",tag:"七戰七勝",desc:"平定雲貴，穩健無短板的統帥。",poem:"七戰七勝平雲貴，明初虎將第三人。"},
+            {type:"general", name:"孫立人",rank:"A",title:"叢林之狐",tag:"東方隆美爾",desc:"仁安羌大捷，現代戰術標竿，美械軍魂。",poem:"仁安羌邊救英軍，叢林之狐震緬甸。"},
+            {type:"general", name:"王保保",rank:"A",title:"擴廓帖木兒",tag:"元朝支柱",desc:"徐達的一生之敵，防禦與反擊大師。",poem:"塞北秋風悲戰馬，中原落日哭英雄。"},
+            {type:"general", name:"薛岳",rank:"A",title:"長沙之虎",tag:"天爐戰法",desc:"抗日殺敵最多，戰區防禦專家。",poem:"天爐戰法燒日寇，長沙城下鬼神愁。"},
+            {type:"general", name:"袁崇煥",rank:"A",title:"關寧督師",tag:"寧遠大捷",desc:"憑堅城用大砲，但擅殺毛文龍釀成大錯。",poem:"寧遠城頭炮聲隆，身死西市恨無窮。"},
+            {type:"general", name:"裴行儉",rank:"A",title:"儒將",tag:"智取西域",desc:"蘇定方傳人，兵不血刃擒敵酋。",poem:"智取西域擒突厥，一代儒將繼蘇定。"},
+            {type:"general", name:"杜預",rank:"A",title:"杜武庫",tag:"破竹統帥",desc:"滅吳元勳，文武雙全的儒帥。",poem:"勢如破竹平江東，文武雙全杜武庫。"},
+            {type:"general", name:"忽必烈",rank:"A",title:"元世祖",tag:"混一宇內",desc:"戰略包圍滅大理S，但征日失敗B。",poem:"革囊渡江襲大理，金甌無缺混一統。"},
+            {type:"general", name:"施琅",rank:"A",title:"海霹靂",tag:"平台主將",desc:"澎湖海戰S級，風信操盤手。",poem:"南風一夜渡澎湖，從此海疆歸版圖。"},
+            {type:"general", name:"李鴻章",rank:"A",title:"裱糊匠",tag:"北洋建軍",desc:"建軍之功S，外戰失敗C，近代化推手。",poem:"勞勞車馬未離鞍，臨事方知一死難。"},
+            {type:"general", name:"張巡",rank:"A",title:"守城之魔",tag:"睢陽死守",desc:"以人為糧，極限防禦，阻止叛軍南下。",poem:"睢陽齒碎城猶在，江淮安堵唐祚延。"},
+            {type:"general", name:"狄青",rank:"A",title:"面涅將軍",tag:"夜襲崑崙關",desc:"宋代之光，戴銅面具衝陣，被文官壓制。",poem:"銅面夜襲崑崙險，卻被文臣筆底刪。"},
+            {type:"general", name:"虞允文",rank:"A-",title:"丞相",tag:"文人救國",desc:"采石磯大捷，書生退敵，挽救南宋國運。",poem:"書生輕議封侯事，采石磯頭破虜師。"},
+            {type:"general", name:"哲別",rank:"A-",title:"蒙古神箭",tag:"第一先鋒",desc:"速不台最佳拍檔，曼古歹戰術大師。",poem:"彎弓射鵰落飛雁，鐵騎西征第一鋒。"},
+            {type:"general", name:"桓溫",rank:"A-",title:"大司馬",tag:"梟雄野心",desc:"滅成漢，三次北伐，東晉最有權勢的權臣。",poem:"樹猶如此人何堪，流芳遺臭兩為難。"},
+            {type:"general", name:"關羽",rank:"A-",title:"武聖",tag:"威震華夏",desc:"水淹七軍S，大意荊州C，性格傲慢的悲劇。",poem:"水淹七軍威華夏，大意荊州悔已遲。"},
+            {type:"general", name:"田單",rank:"A-",title:"安平君",tag:"火牛復國",desc:"一生只為這一戰，火牛陣奇蹟。",poem:"火牛千頭衝敵陣，七十城池一夜還。"},
+            {type:"general", name:"俞大猷",rank:"A-",title:"俞龍",tag:"武學宗師",desc:"棍法無敵，抗倭名將，仕途坎坷。",poem:"劍經一卷傳千古，獨有俞龍老更剛。"},
+            {type:"general", name:"孫傳庭",rank:"A-",title:"秦督",tag:"大明長城",desc:"傳庭死而明亡，崇禎催命的悲劇。",poem:"傳庭死而明亡矣，潼關魂斷帝城秋。"},
+            {type:"general", name:"盧象昇",rank:"A-",title:"盧忠烈",tag:"天雄死士",desc:"天雄軍魂，巨鹿戰死，忠誠的極致。",poem:"知君已作千秋骨，猶是人間第一流。"},
+            {type:"general", name:"吳三桂",rank:"A-",title:"平西王",tag:"亂世梟雄",desc:"關寧鐵騎統帥，戰鬥力A+，人品D。",poem:"慟哭六軍俱縞素，衝冠一怒為紅顏。"},
+            {type:"general", name:"李如松",rank:"A-",title:"提督",tag:"抗日鐵鎚",desc:"平壤大捷，遼東鐵騎硬撼日軍，英年早逝。",poem:"提師十萬入朝鮮，平壤城頭炮火連。"},
+            {type:"general", name:"張遼",rank:"A-",title:"晉陽侯",tag:"逍遙津",desc:"800破10萬，孫權一生的心理陰影。",poem:"八百壯士衝吳陣，遼來遼去哭孫權。"},
+            {type:"general", name:"孫策",rank:"A-",title:"小霸王",tag:"江東奠基",desc:"席捲江東，性格輕率死於刺客，潛力未兌現。",poem:"獨騎江東掃六郡，英氣傑出似霸王。"},
+            {type:"general", name:"廉頗",rank:"A-",title:"信平君",tag:"尚能飯否",desc:"戰國鐵壁，晚年流亡，趙國的遺憾。",poem:"一飯斗米肉十斤，誰知客死在大梁。"},
+            {type:"general", name:"周亞夫",rank:"A-",title:"條侯",tag:"細柳營",desc:"平定七國之亂，治軍森嚴，死於剛直。",poem:"亞夫營中真將軍，絕食獄底漢家臣。"},
+            {type:"general", name:"蒙恬",rank:"A-",title:"內史",tag:"北疆長城",desc:"卻匈奴，築長城，死於政治陰謀。",poem:"卻客七百里胡馬，冤死沙丘恨未平。"},
+            {type:"general", name:"韓世忠",rank:"A-",title:"蘄王",tag:"黃天蕩",desc:"困住金兀朮48天，南宋中興武將。",poem:"八千死士困兀朮，騎驢西湖老將軍。"},
+            {type:"general", name:"李宗仁",rank:"A-",title:"代總統",tag:"台兒莊",desc:"抗戰首勝，桂系魁首，政治軍事複合體。",poem:"徐州城下驚天地，台兒莊邊破日軍。"},
+            {type:"general", name:"魏延",rank:"A-",title:"漢中太守",tag:"子午谷",desc:"漢中屏障，反骨猛將，死於內鬥。",poem:"子午谷中奇謀在，漢中城頭將星孤。"},
+            {type:"general", name:"張靈甫",rank:"A-",title:"鐵軍軍長",tag:"孟良崮",desc:"御林軍74師，戰術硬朗，死於愚忠。",poem:"萬家嶺上跛腿將，孟良崮頭斷腸魂。"},
+            {type:"general", name:"韓擒虎",rank:"A-",title:"上柱國",tag:"擒龍先鋒",desc:"500人渡江滅陳，隋朝快刀。",poem:"五百精騎渡大江，井中活捉陳後主。"},
+            {type:"general", name:"李克用",rank:"B+",title:"晉王",tag:"獨眼龍",desc:"沙陀飛虎，晚唐戰力天花板，政治低能。",poem:"鴉軍黑甲掃黃巢，獨眼龍威震河東。"},
+            {type:"general", name:"封常清",rank:"B+",title:"西域副都護",tag:"潼關冤魂",desc:"安史之亂救火隊長，含冤而死。",poem:"自古名將如美人，不許人間見白頭。"},
+            {type:"general", name:"劉錡",rank:"B+",title:"太尉",tag:"順昌鐵壁",desc:"鐵浮圖剋星，長斧砍馬腿，南宋中興名將。",poem:"順昌城下鐵浮圖，長斧鐮刀盡斷軀。"},
+            {type:"general", name:"章邯",rank:"B+",title:"雍王",tag:"刑徒軍魂",desc:"大秦最後支柱，被項羽擊敗的悲劇背景板。",poem:"驪山囚徒以此兵，奈何項王是天神。"},
+            {type:"general", name:"姜維",rank:"B+",title:"幼麟",tag:"九伐中原",desc:"繼承諸葛遺志，孤臣撐天，悲劇英雄。",poem:"計不成乃天命也，一將獨撐蜀漢天。"},
+            {type:"general", name:"趙雲",rank:"B+",title:"虎威將軍",tag:"一身是膽",desc:"完美的職業軍人，漢水空營，缺乏大兵團紀錄。",poem:"昔日長坂救幼主，今朝漢水一身膽。"},
+            {type:"general", name:"皇甫嵩",rank:"B+",title:"車騎將軍",tag:"大漢餘暉",desc:"平定黃巾之亂首功，東漢最後的正規軍統帥。",poem:"平定黃巾第一功，漢室餘暉照洛陽。"},
+            {type:"general", name:"陸抗",rank:"B+",title:"大司馬",tag:"東吳長城",desc:"陸遜之子，西陵擊敗羊祜，維持最後尊嚴。",poem:"西陵一戰破羊祜，東吳最後護國牆。"},
+            {type:"general", name:"張郃",rank:"B+",title:"巧變",tag:"五子良將",desc:"街亭敗馬謖，曹魏後期第一名將，死於木門道。",poem:"街亭高處斷馬謖，木門道中矢如雨。"},
+            {type:"general", name:"馬超",rank:"B+",title:"神威天將軍",tag:"潼關惡戰",desc:"殺得曹操割鬚棄袍，有勇無謀，晚年抑鬱。",poem:"潼關殺得曹瞞懼，神威天將震西涼。"},
+            {type:"general", name:"李成梁",rank:"B+",title:"遼東王",tag:"養虎為患",desc:"鎮守遼東三十年，扶植努爾哈赤，戰術A戰略D。",poem:"三十年威震遼左，一朝養虎以此噬明。"},
+            {type:"general", name:"洪承疇",rank:"B+",title:"經略大學士",tag:"開清第一功",desc:"松山兵敗，經略江南，有能力的貳臣。",poem:"松山兵敗降北虜，江南半壁屬洪公。"},
+            {type:"general", name:"年羹堯",rank:"B+",title:"撫遠大將軍",tag:"恃才傲物",desc:"平定青海，功高震主，死於跋扈。",poem:"平西定藏功雖大，御前箕坐命難留。"},
+            {type:"general", name:"蔣中正",rank:"B+",title:"委員長",tag:"政治統帥",desc:"戰略A（抗戰到底），戰術C（微操大師）。",poem:"黃埔建軍定中原，越級微操失江山。"},
+            {type:"general", name:"劉湘",rank:"B+",title:"甫公",tag:"四川王",desc:"抗戰甫公，川軍死戰不退，愛國軍閥。",poem:"敵軍未退誓不還，出師未捷身先死。"},
+            {type:"general", name:"蔡鍔",rank:"B+",title:"再造共和",tag:"護國軍神",desc:"護國戰爭擊敗袁世凱北洋軍，近代軍魂。",poem:"護國討袁再造日，留得清名在人間。"},
+            {type:"general", name:"左良玉",rank:"B+",title:"寧南侯",tag:"跋扈軍閥",desc:"擁兵80萬避戰不出，坐看明亡。",poem:"擁兵八十萬，坐看大明亡。"},
+            {type:"general", name:"史可法",rank:"B",title:"督師",tag:"氣節S+",desc:"揚州十日，道德完人，但軍事指揮能力平庸。",poem:"點點梅花亡國淚，二分明月故臣心。"},
+            {type:"general", name:"毛文龍",rank:"B",title:"東江鎮",tag:"游擊鼻祖",desc:"開闢敵後戰場牽制後金，被袁崇煥擅殺。",poem:"海外孤懸東江鎮，可惜冤死尚方劍。"},
+            {type:"general", name:"哥舒翰",rank:"B",title:"潼關敗將",tag:"被迫出戰",desc:"早年威震吐蕃，晚年被迫出潼關戰敗被俘。",poem:"潼關被迫出師去，一世英名付東流。"},
+            {type:"general", name:"王毛仲",rank:"B",title:"輔國大將軍",tag:"禁軍統領",desc:"唐玄宗親信，雖有擁立之功但軍事平平。",poem:"禁軍擁立功雖大，恃寵而驕禍必隨。"},
+            {type:"general", name:"秦叔寶",rank:"B",title:"門神",tag:"單挑猛將",desc:"隋唐好漢，勇武過人，後期多病養身。",poem:"雙鐧打遍山東路，凌煙閣上第一流。"},
+            {type:"general", name:"程知節",rank:"B",title:"盧國公",tag:"福將",desc:"混世魔王，生存智慧極高，長壽善終。",poem:"混世魔王福將名，半生征戰得善終。"},
+            {type:"general", name:"張仁愿",rank:"B",title:"受降城",tag:"戰略築城",desc:"築三受降城，卻突厥於漠北，防禦戰略家。",poem:"築城漠北卻突厥，不戰而屈人之兵。"},
+            {type:"general", name:"馮玉祥",rank:"B",title:"倒戈將軍",tag:"基督將軍",desc:"中原大戰關鍵變數，練兵有方但政治投機。",poem:"倒戈將軍變幻旗，中原大戰亂局迷。"},
+            {type:"general", name:"黃百韜",rank:"B",title:"兵團司令",tag:"碾莊死戰",desc:"雜牌軍打出王牌戰力，淮海戰役力戰殉國。",poem:"碾莊死戰報君恩，雜牌打出王牌魂。"},
+            {type:"general", name:"种師道",rank:"B",title:"老种經略",tag:"抗金名將",desc:"北宋末年唯一可靠的老將，被朝廷閒置。",poem:"老种經略不可用，北宋長城自毀之。"},
+            {type:"general", name:"李自成",rank:"C+",title:"闖王",tag:"入主北京",desc:"推翻明朝，但迅速敗於清軍，缺乏治國能力。",poem:"闖王入京如一夢，九宮山下落斜陽。"},
+            {type:"general", name:"張獻忠",rank:"C+",title:"八大王",tag:"屠川魔王",desc:"流動作戰能力強，但殘暴嗜殺，無政治建設。",poem:"屠川魔王殺氣重，七殺碑文驚鬼神。"},
+            {type:"general", name:"石達開",rank:"C+",title:"翼王",tag:"出走天國",desc:"太平天國最強將領，但兵敗大渡河，結局悲劇。",poem:"大渡橋橫鐵索寒，翼王悲劇此中看。"},
+            {type:"general", name:"楊秀清",rank:"C+",title:"東王",tag:"天國大腦",desc:"軍事指揮出色，但野心膨脹死於內鬥。",poem:"天國大腦籌謀深，禍起蕭墻命歸陰。"},
+            {type:"general", name:"唐生智",rank:"C+",title:"南京衛戍",tag:"棄城而逃",desc:"誓死守南京，結果率先逃跑，指揮混亂。",poem:"誓死守城先棄遁，金陵城下哭冤魂。"},
+            {type:"general", name:"李信",rank:"C+",title:"秦將",tag:"輕敵冒進",desc:"誇口20萬滅楚，被項燕大敗，年輕氣盛。",poem:"輕敵冒進誇海口，二十萬軍敗辱身。"},
+            {type:"general", name:"馬謖",rank:"C",title:"參軍",tag:"紙上談兵",desc:"失街亭，導致諸葛亮第一次北伐功敗垂成。",poem:"攻心為上言雖妙，街亭山上紙談兵。"},
+            {type:"general", name:"馮異",rank:"C",title:"大樹將軍?",tag:"爭議歸類",desc:"夷陵之戰馮習之誤? 若為東漢馮異則為A級。",poem:"猇亭烈火燒連營，漢軍精銳盡成灰。"},
+            {type:"general", name:"鄧世昌",rank:"C-",title:"致遠艦長",tag:"甲午忠魂",desc:"撞擊吉野，壯烈殉國，精神S級但戰果有限。",poem:"此日漫揮天下淚，有公足壯海軍威。"},
+            {type:"general", name:"陳化成",rank:"C-",title:"江南提督",tag:"吳淞血戰",desc:"鴉片戰爭中孤軍抗英，力戰而亡，民族氣節。",poem:"吳淞炮台孤軍戰，化作碧血染海疆。"},
+
+            // === MINISTERS (93) ===
+            {type:"minister", name:"管仲", rank:"S+", title:"華夏第一相", tag:"尊王攘夷", desc:"九合諸侯，一匡天下，齊國霸業的設計師。", poem:"九合諸侯一匡世，華夏文明賴保存。"},
+            {type:"minister", name:"商鞅", rank:"S+", title:"秦國基石", tag:"變法圖強", desc:"徙木立信，廢井田開阡陌，秦帝國的真正奠基人。", poem:"徙木立信變法嚴，秦基萬世賴此賢。"},
+            {type:"minister", name:"王守仁", rank:"S+", title:"陽明先生", tag:"知行合一", desc:"心學宗師，立德立功立言，平定寧王之亂。", poem:"無善無惡心之體，知行合一聖人功。"},
+            {type:"minister", name:"曾國藩", rank:"S+", title:"曾文正公", tag:"晚清續命", desc:"修身齊家治國平天下，組建湘軍，洋務運動先驅。", poem:"扎硬寨打呆仗，力挽狂瀾續清祚。"},
+            {type:"minister", name:"鄧小平", rank:"S+", title:"總設計師", tag:"改革開放", desc:"三落三起，扭轉國運，確立中國現代化方向。", poem:"春天的故事傳神州，改革開放富強路。"},
+            {type:"minister", name:"蕭何", rank:"S", title:"酇侯", tag:"後勤之神", desc:"鎮守關中，足食足兵，漢朝開國第一功臣。", poem:"鎮守關中糧草足，漢家基業賴蕭何。"},
+            {type:"minister", name:"周恩來", rank:"S", title:"人民總理", tag:"宰相典範", desc:"外交與行政的天才，在動盪中維持國家運轉。", poem:"鞠躬盡瘁為人民，十里長街送總理。"},
+            {type:"minister", name:"諸葛亮(名臣)", rank:"S", title:"武侯", tag:"萬世楷模", desc:"鞠躬盡瘁，死而後已，治理蜀漢井井有條。", poem:"鞠躬盡瘁死後已，出師一表真名世。"},
+            {type:"minister", name:"張居正", rank:"S", title:"太師", tag:"一條鞭法", desc:"萬曆中興的締造者，考成法與一條鞭法。", poem:"一條鞭法救時弊，萬曆中興賴此公。"},
+            {type:"minister", name:"王安石", rank:"S", title:"拗相公", tag:"熙寧變法", desc:"天變不足畏，祖宗不足法，北宋最偉大的改革家。", poem:"天變不足畏，祖宗不足法，人言不足恤。"},
+            {type:"minister", name:"房玄齡", rank:"S", title:"梁國公", tag:"房謀杜斷", desc:"貞觀之治的策劃者，善於謀略與用人。", poem:"房謀杜斷貞觀治，一代賢相萬古芳。"},
+            {type:"minister", name:"魏徵", rank:"S", title:"鄭國公", tag:"千古直諫", desc:"以人為鏡，直言敢諫，唐太宗的鏡子。", poem:"以銅為鏡正衣冠，以人為鏡明得失。"},
+            {type:"minister", name:"李鴻章(名臣)", rank:"S", title:"中堂", tag:"裱糊匠", desc:"晚清外交與洋務的核心，獨力支撐殘局。", poem:"秋風寶劍孤臣淚，落日旌旗大將壇。"},
+            {type:"minister", name:"荀彧", rank:"S", title:"令君", tag:"王佐之才", desc:"曹操的戰略大腦，舉薦無數人才，終於漢室。", poem:"王佐之才輔魏武，空盒遺恨嘆忠貞。"},
+            {type:"minister", name:"張良", rank:"S", title:"留侯", tag:"運籌帷幄", desc:"決勝千里之外，功成身退的智慧。", poem:"運籌帷幄決勝千，功成身退赤松遊。"},
+            {type:"minister", name:"李斯", rank:"S", title:"丞相", tag:"郡縣制", desc:"書同文，行郡縣，能力S+，但沙丘之謀道德扣分。", poem:"倉鼠哲學嘆無常，沙丘之謀誤秦疆。"},
+            {type:"minister", name:"于謙(名臣)", rank:"S-", title:"忠肅公", tag:"再造大明", desc:"北京保衛戰力挽狂瀾，粉身碎骨全不惜。", poem:"粉身碎骨全不惜，要留清白在人間。"},
+            {type:"minister", name:"謝安", rank:"S-", title:"太傅", tag:"東林再起", desc:"淝水之戰的幕後指揮，鎮定自若。", poem:"東山再起定江左，淝水捷報弈棋中。"},
+            {type:"minister", name:"范仲淹", rank:"S-", title:"文正公", tag:"先憂後樂", desc:"慶曆新政，開創宋代士大夫風骨。", poem:"先天下之憂而憂，後天下之樂而樂。"},
+            {type:"minister", name:"杜如晦", rank:"S-", title:"萊國公", tag:"房謀杜斷", desc:"善於決斷，與房玄齡並稱大唐賢相。", poem:"果敢決斷輔貞觀，房杜同心濟盛世。"},
+            {type:"minister", name:"耶律楚材", rank:"S-", title:"中書令", tag:"以儒治國", desc:"說服蒙古人不行屠城，保存華夏元氣。", poem:"五刑不殺活萬人，以儒治國安天下。"},
+            {type:"minister", name:"張儀", rank:"S-", title:"武信君", tag:"連橫破縱", desc:"憑三寸不爛之舌，瓦解六國合縱。", poem:"連橫破縱憑口舌，戲弄諸侯掌中看。"},
+            {type:"minister", name:"左宗棠(名臣)", rank:"S-", title:"文襄公", tag:"收復新疆", desc:"力排眾議收復新疆，維護國家統一。", poem:"大將籌邊人未還，湖湘子弟滿天山。"},
+            {type:"minister", name:"朱鎔基", rank:"S-", title:"鐵面總理", tag:"經濟改革", desc:"國企改革，分稅制，加入WTO，風格強硬。", poem:"不管前面是地雷陣，還是萬丈深淵。"},
+            {type:"minister", name:"劉基", rank:"S-", title:"誠意伯", tag:"神機妙算", desc:"朱元璋的張良，三分天下諸葛亮，一統江山劉伯溫。", poem:"三分天下諸葛亮，一統江山劉伯溫。"},
+            {type:"minister", name:"張廷玉", rank:"S-", title:"大學士", tag:"配享太廟", desc:"清朝唯一配享太廟的漢臣，制度完善者。", poem:"三朝元老勤政事，配享太廟漢臣榮。"},
+            {type:"minister", name:"霍光", rank:"S-", title:"博陸侯", tag:"昭宣中興", desc:"廢立皇帝，輔政兩朝，權傾朝野但安定漢室。", poem:"廢立由心權勢重，輔佐漢室致中興。"},
+            {type:"minister", name:"高熲", rank:"S-", title:"齊國公", tag:"開皇柱石", desc:"隋朝第一名臣，規劃新都，修訂律法。", poem:"開皇之治第一功，規劃長安萬世基。"},
+            {type:"minister", name:"姚崇", rank:"S-", title:"救時宰相", tag:"開元奠基", desc:"十事要說，奠定開元盛世的基礎。", poem:"十事要說定天下，救時宰相開元風。"},
+            {type:"minister", name:"張之洞", rank:"S-", title:"香帥", tag:"中體西用", desc:"洋務運動後期領袖，漢陽鐵廠，勸學篇。", poem:"中體西用興洋務，漢陽鐵廠開先河。"},
+            {type:"minister", name:"范文程", rank:"S-", title:"文肅公", tag:"清初智囊", desc:"輔佐清初四帝，策劃入關，安撫漢民。", poem:"運籌帷幄定中原，輔佐四朝開清基。"},
+            {type:"minister", name:"子產", rank:"S-", title:"鄭相", tag:"鑄刑書", desc:"春秋名相，鑄刑書，不毀鄉校，孔子敬重。", poem:"鑄刑書以立治，不毀鄉校聽民聲。"},
+            {type:"minister", name:"李悝", rank:"S-", title:"法家先驅", tag:"變法始祖", desc:"魏國變法，著《法經》，商鞅的老師。", poem:"變法強魏著法經，法家先驅啟商鞅。"},
+            {type:"minister", name:"陳雲", rank:"S-", title:"財經大腦", tag:"鳥籠經濟", desc:"新中國經濟建設的奠基人之一，穩健派。", poem:"計劃經濟調控手，穩健持重安國邦。"},
+            {type:"minister", name:"徐光啟", rank:"A+", title:"文定公", tag:"西學東漸", desc:"引進西學，翻譯幾何原本，農政全書。", poem:"西學東漸開風氣，農政全書利萬民。"},
+            {type:"minister", name:"狄仁傑", rank:"A+", title:"樑國公", tag:"桃李滿門", desc:"武周時期的中流砥柱，恢復李唐的推手。", poem:"桃李滿門安天下，恢復李唐第一功。"},
+            {type:"minister", name:"長孫無忌", rank:"A+", title:"趙國公", tag:"凌煙第一", desc:"唐太宗大舅子，修訂唐律疏議。", poem:"凌煙閣上第一功，修訂唐律法度嚴。"},
+            {type:"minister", name:"呂不韋", rank:"A+", title:"文信侯", tag:"奇貨可居", desc:"扶植秦莊襄王，編纂呂氏春秋。", poem:"奇貨可居謀國政，呂氏春秋集大成。"},
+            {type:"minister", name:"陳平", rank:"A+", title:"曲逆侯", tag:"六出奇計", desc:"智謀過人，解白登之圍，安劉氏天下。", poem:"六出奇計解危難，安劉滅呂顯智謀。"},
+            {type:"minister", name:"寇準", rank:"A+", title:"萊國公", tag:"澶淵定策", desc:"力主真宗親征，促成澶淵之盟。", poem:"澶淵定策功勳著，剛直不阿一代賢。"},
+            {type:"minister", name:"司馬光", rank:"A+", title:"溫國公", tag:"資治通鑑", desc:"編纂編年體通史，反對王安石變法。", poem:"資治通鑑傳千古，保守持重亦名臣。"},
+            {type:"minister", name:"徐階", rank:"A+", title:"文貞公", tag:"扳倒嚴嵩", desc:"隱忍多年，最終扳倒權奸嚴嵩。", poem:"隱忍多年除奸黨，整頓朝綱晚節香。"},
+            {type:"minister", name:"楊廷和", rank:"A+", title:"首輔", tag:"總攬朝綱", desc:"正德嘉靖交替時期的定海神針。", poem:"總攬朝綱安社稷，大禮議中顯風骨。"},
+            {type:"minister", name:"王導", rank:"A+", title:"文獻公", tag:"江左夷吾", desc:"王與馬共天下，東晉政局的穩壓器。", poem:"王與馬共天下事，江左風流宰相家。"},
+            {type:"minister", name:"晏嬰", rank:"A+", title:"晏子", tag:"機智善辯", desc:"二桃殺三士，出使楚國不辱使命。", poem:"機智善辯維國體，二桃三士顯權謀。"},
+            {type:"minister", name:"范雎", rank:"A+", title:"應侯", tag:"遠交近攻", desc:"提出遠交近攻戰略，秦國統一路線圖。", poem:"遠交近攻定國策，睚眥必報真小人。"},
+            {type:"minister", name:"陳群", rank:"A+", title:"司空", tag:"九品中正", desc:"創立九品中正制，影響後世選官制度。", poem:"九品中正定品第，魏晉門閥由此興。"},
+            {type:"minister", name:"索尼", rank:"A+", title:"輔政大臣", tag:"四朝元老", desc:"康熙初年首輔，老成持重。", poem:"四朝元老輔幼主，忠心耿耿護清廷。"},
+            {type:"minister", name:"孫承宗", rank:"A+", title:"帝師", tag:"關寧防線", desc:"構建關寧錦防線，大明最後的戰略家。", poem:"關寧防線護京師，白髮帝師淚滿襟。"},
+            {type:"minister", name:"楊素(名臣)", rank:"A", title:"越國公", tag:"雙榜提名", desc:"文武雙全，隋朝開國功臣，但助紂為虐。", poem:"文武雙全當時傑，助紂為虐身後名。"},
+            {type:"minister", name:"魯肅", rank:"A", title:"子敬", tag:"榻上對", desc:"提出江東版隆中對，孫劉聯盟的締造者。", poem:"榻上奇策定三分，聯劉抗曹識大體。"},
+            {type:"minister", name:"陸遜(名臣)", rank:"A", title:"丞相", tag:"出將入相", desc:"夷陵破蜀，石亭破魏，晚年捲入立儲之爭。", poem:"出將入相安江東，晚年捲入儲位爭。"},
+            {type:"minister", name:"曹參", rank:"A", title:"平陽侯", tag:"蕭規曹隨", desc:"繼承蕭何政策，無為而治。", poem:"蕭規曹隨無為治，休養生息安萬民。"},
+            {type:"minister", name:"宋璟", rank:"A", title:"廣平郡公", tag:"守法持正", desc:"姚崇之後的賢相，堅持原則。", poem:"守法持正繼姚崇，開元盛世有其功。"},
+            {type:"minister", name:"包拯", rank:"A", title:"包青天", tag:"鐵面無私", desc:"執法嚴明，民間正義的化身。", poem:"鐵面無私辨忠奸，青天之名萬古傳。"},
+            {type:"minister", name:"呂蒙正", rank:"A", title:"文穆公", tag:"三度拜相", desc:"知人善任，氣量宏大。", poem:"三度拜相量寬宏，寒窯賦里見精神。"},
+            {type:"minister", name:"李賢", rank:"A", title:"文達公", tag:"天順輔政", desc:"明英宗復辟後的能臣，處事公正。", poem:"天順輔政心無愧，公正廉明一代臣。"},
+            {type:"minister", name:"徐溥", rank:"A", title:"文靖公", tag:"積善成德", desc:"弘治年間賢相，貯豆律己。", poem:"貯豆律己修德行，弘治賢相輔明君。"},
+            {type:"minister", name:"高拱", rank:"A", title:"文襄公", tag:"改革幹將", desc:"隆慶新政的主導者，才略過人但性格急躁。", poem:"隆慶新政顯才略，性格急躁招怨尤。"},
+            {type:"minister", name:"胡耀邦", rank:"A", title:"總書記", tag:"撥亂反正", desc:"平反冤假錯案，推動真理標準大討論。", poem:"撥亂反正順民心，真理討論啟新程。"},
+            {type:"minister", name:"宋子文", rank:"A", title:"財政部長", tag:"金融專家", desc:"建立現代財稅金融體系，抗戰外交。", poem:"現代財稅奠基人，抗戰外交奔走忙。"},
+            {type:"minister", name:"賈魯", rank:"A", title:"治河名臣", tag:"修治黃河", desc:"元末治河，雖有爭議但工程浩大。", poem:"修治黃河功雖在，挑動天下反元心。"},
+            {type:"minister", name:"劉穆之", rank:"A", title:"劉柳", tag:"後勤總管", desc:"劉裕的心腹，坐鎮後方，保證北伐糧草。", poem:"坐鎮後方輸糧草，寄奴北伐賴其功。"},
+            {type:"minister", name:"海瑞", rank:"A-", title:"海青天", tag:"剛直不阿", desc:"道德楷模，直諫嘉靖，但行政能力有爭議。", poem:"剛直不阿震官場，治安疏上驚帝王。"},
+            {type:"minister", name:"方孝孺", rank:"A-", title:"讀書種子", tag:"寧死不屈", desc:"拒絕為朱棣草詔，被誅十族，氣節S+。", poem:"讀書種子遭慘禍，寧死不屈氣節高。"},
+            {type:"minister", name:"周昌", rank:"A-", title:"汾陰侯", tag:"期期艾艾", desc:"直言敢諫，保護趙王如意。", poem:"期期艾艾諫高祖，耿介忠直護趙王。"},
+            {type:"minister", name:"陸賈", rank:"A-", title:"太中大夫", tag:"馬上治國", desc:"勸諫劉邦以文治國，出使南越。", poem:"馬上得之安能治，新語一書醒帝王。"},
+            {type:"minister", name:"隰朋", rank:"A-", title:"齊相", tag:"管仲助手", desc:"輔佐管仲，知人善任。", poem:"輔佐管仲成霸業，知人善任有賢名。"},
+            {type:"minister", name:"曾國荃", rank:"A-", title:"忠襄公", tag:"攻破天京", desc:"攻陷天京，手段殘忍，曾國藩之弟。", poem:"攻破天京立大功，殺戮過重損陰德。"},
+            {type:"minister", name:"李宗仁(名臣)", rank:"A-", title:"代總統", tag:"桂系首領", desc:"政治軍事複合體，晚年回歸大陸。", poem:"桂系首領據廣西，晚年回歸葉歸根。"},
+            {type:"minister", name:"阿合馬", rank:"A-", title:"理財大臣", tag:"聚斂之臣", desc:"元初理財，增加國庫但民怨沸騰。", poem:"聚斂錢財充國庫，民怨沸騰身先死。"},
+            {type:"minister", name:"脫脫", rank:"A-", title:"丞相", tag:"修宋遼金史", desc:"元末賢相，試圖挽救危局，修三史。", poem:"修史治河圖中興，奈何大廈已將傾。"},
+            {type:"minister", name:"沈一貫", rank:"A-", title:"首輔", tag:"東林黨爭", desc:"萬曆首輔，開啟黨爭之門。", poem:"萬曆首輔爭權勢，黨爭之禍自此開。"},
+            {type:"minister", name:"李林甫", rank:"B+", title:"口蜜腹劍", tag:"行政天才", desc:"行政能力S，打擊政敵S+，開元盛世掘墓人。", poem:"口蜜腹劍害忠良，盛世崩塌由此始。"},
+            {type:"minister", name:"和珅", rank:"B+", title:"二皇帝", tag:"貪腐之王", desc:"理財外交天才，但貪腐亡國，富可敵國。", poem:"富可敵國貪婪心，一朝跌倒嘉慶飽。"},
+            {type:"minister", name:"楊嗣昌", rank:"B+", title:"督師", tag:"四正六隅", desc:"戰略構想A，但心胸狹隘，坑死盧象昇。", poem:"四正六隅圖剿寇，心胸狹隘誤忠良。"},
+            {type:"minister", name:"李鵬", rank:"B+", title:"總理", tag:"三峽工程", desc:"推動三峽大壩，政治立場強硬。", poem:"推動三峽利與弊，政治風雲任評說。"},
+            {type:"minister", name:"孫科", rank:"B+", title:"行政院長", tag:"國父之子", desc:"孫中山之子，長期身居高位。", poem:"國父之子居高位，時局動盪難作為。"},
+            {type:"minister", name:"王僧辯", rank:"B+", title:"太尉", tag:"平定侯景", desc:"與陳霸先平定侯景之亂，後被陳霸先所殺。", poem:"平定侯景功勳在，優柔寡斷喪其身。"},
+            {type:"minister", name:"韓熙載", rank:"B+", title:"夜宴圖", tag:"佯狂自保", desc:"南唐名臣，夜宴圖主角，才華橫溢但縱情聲色。", poem:"夜宴圖中佯狂態，才華橫溢嘆南唐。"},
+            {type:"minister", name:"嚴嵩", rank:"B-", title:"青詞宰相", tag:"專權誤國", desc:"擅寫青詞媚上，排擠忠良，雖然有才但誤國。", poem:"青詞媚上專權久，陷害忠良萬世嫌。"},
+            {type:"minister", name:"楊國忠", rank:"B-", title:"宰相", tag:"安史導火線", desc:"楊貴妃族兄，專權誤國，逼反安祿山。", poem:"專權誤國禍蕭墻，馬嵬坡下同命喪。"},
+            {type:"minister", name:"溫體仁", rank:"B-", title:"首輔", tag:"孤立無援", desc:"崇禎寵臣，排斥異己，毫無建樹。", poem:"排斥異己保權位，大明江山日西沉。"},
+            {type:"minister", name:"王衍", rank:"C+", title:"清談誤國", tag:"捫蝨而談", desc:"崇尚清談，不務實事，西晉滅亡罪人。", poem:"口中雌黃清談客，誤國誤民罪難逃。"},
+            {type:"minister", name:"殷浩", rank:"C+", title:"空談北伐", tag:"屢戰屢敗", desc:"空談北伐，被桓溫廢為庶人。", poem:"空談北伐無實績，書空咄咄嘆奈何。"},
+            {type:"minister", name:"秦檜", rank:"C", title:"宋相", tag:"莫須有", desc:"殺岳飛，跪像千年，投降派代表。", poem:"青山有幸埋忠骨，白鐵無辜鑄佞臣。"},
+            {type:"minister", name:"賈似道", rank:"C", title:"太師", tag:"蟋蟀宰相", desc:"隱瞞軍情，推行公田法失敗，襄陽失陷。", poem:"襄陽烽火燃眉急，西湖歌舞鬥蟋蟀。"},
+            {type:"minister", name:"蔡京", rank:"C", title:"太師", tag:"六賊之首", desc:"書法大家，但巧立名目搜刮民財。", poem:"書法雖工德行虧，六賊之首禍北宋。"},
+            {type:"minister", name:"陳演", rank:"C", title:"首輔", tag:"成事不足", desc:"崇禎末年首輔，無能且貪婪。", poem:"庸碌無能居相位，大明覆滅有其因。"},
+            {type:"minister", name:"魏藻德", rank:"C", title:"狀元首輔", tag:"寡廉鮮恥", desc:"城破投降，被李自成部下拷打致死。", poem:"狀元首輔無氣節，酷刑之下悔當初。"},
+            {type:"minister", name:"魏忠賢", rank:"C-", title:"九千歲", tag:"閹黨專權", desc:"摧毀文官體系，自稱九千歲，明朝滅亡加速器。", poem:"閹黨專權亂朝綱，九千歲名臭萬年。"},
+            {type:"minister", name:"趙高", rank:"C-", title:"中車府令", tag:"指鹿為馬", desc:"毀滅秦朝的元兇，殺李斯、胡亥。", poem:"指鹿為馬欺二世，大秦基業一朝亡。"},
+            {type:"minister", name:"董卓", rank:"C-", title:"太師", tag:"殘暴不仁", desc:"燒洛陽，亂漢室，引發天下大亂。", poem:"焚燒宮室遷西都，殘暴不仁天下誅。"}
+        ];
+        
+        // --- DATA INITIALIZATION & CLEANUP ---
+        // 1. Ensure all static data has ID & Dynasty. Clean up text.
+        staticLegendsData.forEach(l => {
+            l.id = generateId(l.type, l.name);
+            l.dynasty = guessDynasty(l);
+            // Clean up description (trailing \n, duplicate poem, double periods)
+            l.desc = l.desc.replace(/\\n/g, '').replace(/。。/g, '。').trim();
+            if (l.poem && l.desc.endsWith(l.poem)) {
+                l.desc = l.desc.substring(0, l.desc.length - l.poem.length).trim();
+            }
+        });
+
+        // --- CONFIG ---
+        const FACTION_COLORS = [
+            { id: 'red', name: '紅軍', bg: 'bg-red-50', border: 'border-red-200', text: 'text-red-800', icon: 'text-red-600' },
+            { id: 'blue', name: '藍軍', bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-800', icon: 'text-blue-600' },
+            { id: 'green', name: '綠軍', bg: 'bg-emerald-50', border: 'border-emerald-200', text: 'text-emerald-800', icon: 'text-emerald-600' },
+            { id: 'yellow', name: '黃軍', bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-800', icon: 'text-amber-600' },
+            { id: 'purple', name: '紫軍', bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-800', icon: 'text-purple-600' },
+            { id: 'cyan', name: '青軍', bg: 'bg-cyan-50', border: 'border-cyan-200', text: 'text-cyan-800', icon: 'text-cyan-600' }
+        ];
+
+        const TERRITORIES = ["關中 (天府)", "中原 (四戰)", "江東 (天險)", "巴蜀 (險阻)", "荊州 (通衢)", "河北 (精兵)", "西涼 (鐵騎)", "遼東 (偏霸)", "嶺南 (化外)", "漠北 (苦寒)"];
+
+        // State
+        const appState = {
+            mode: 'browse',
+            typeFilter: 'all',
+            dynastyFilter: 'all',
+            rankFilter: 'all',
+            compareList: [], // Store IDs for comparison
+            warRoom: { 
+                minimized: false, 
+                activeSlot: null, 
+                factions: [
+                    { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } },
+                    { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } }
+                ] 
+            },
+            courtMode: {
+                minimized: false,
+                activeSlot: null,
+                factions: [
+                    { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, chancellor: null, general: null, personnel: null, revenue: null, rites: null } }
+                ]
+            },
+            soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
+            chatMode: { targetId: null, history: [] },
+            chatHistories: safeJSONParse(localStorage.getItem('legendChatHistories_v15_0'), {}),
+            customLegends: safeJSONParse(localStorage.getItem('customLegends_v15_0'), []),
+            modifiedLegends: safeJSONParse(localStorage.getItem('modifiedLegends_v15_0'), {})
+        };
+        
+        let legendsData = []; 
+        const rankOrder = { "S+": 1, "S": 2, "S-": 3, "A+": 4, "A": 5, "A-": 6, "B+": 7, "B": 8, "B-": 8.5, "C+": 9, "C": 10, "C-": 11, "D": 12 };
+
+        function init() {
+            migrateOldData();
+            refreshData();
+            initScenarios();
+            updateWarRoomUI();
+            updateCourtModeUI();
+        }
+
+        // Migrate from 13.9 name-based keys to 15.0 id-based keys if needed
+        function migrateOldData() {
+            const oldMods = safeJSONParse(localStorage.getItem('modifiedLegends_v13_9'), null);
+            if (oldMods && Object.keys(appState.modifiedLegends).length === 0) {
+                Object.keys(oldMods).forEach(oldName => {
+                    const found = staticLegendsData.find(l => l.name === oldName);
+                    if(found) { appState.modifiedLegends[found.id] = oldMods[oldName]; }
+                });
+                saveToLocalStorage();
+            }
+            const oldChats = safeJSONParse(localStorage.getItem('legendChatHistories_v13_9'), null);
+            if (oldChats && Object.keys(appState.chatHistories).length === 0) {
+                Object.keys(oldChats).forEach(oldName => {
+                    const found = staticLegendsData.find(l => l.name === oldName);
+                    if(found) { appState.chatHistories[found.id] = oldChats[oldName]; }
+                });
+                saveToLocalStorage();
+            }
+            // Ensure customs have ID & Dynasty
+            appState.customLegends.forEach(l => {
+                if(!l.id) l.id = generateId(l.type, l.name);
+                if(!l.dynasty) l.dynasty = guessDynasty(l);
+            });
+        }
+
+        function saveToLocalStorage() {
+            localStorage.setItem('customLegends_v15_0', JSON.stringify(appState.customLegends));
+            localStorage.setItem('modifiedLegends_v15_0', JSON.stringify(appState.modifiedLegends));
+            localStorage.setItem('legendChatHistories_v15_0', JSON.stringify(appState.chatHistories));
+        }
+
+        function refreshData() {
+            legendsData = [...staticLegendsData, ...appState.customLegends];
+            legendsData = legendsData.map(g => appState.modifiedLegends[g.id] ? { ...g, ...appState.modifiedLegends[g.id], isModified: true } : g);
+            renderLegends();
+        }
+
+        function setTypeFilter(type) {
+            appState.typeFilter = type;
+            document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+            el(`btn-type-${type}`).classList.add('active');
+            renderLegends();
+        }
+        
+        function setDynastyFilter(dynasty) {
+            appState.dynastyFilter = dynasty;
+            renderLegends();
+        }
+
+        // Optimized Render with textContent for safety
+        function renderLegends() {
+            const container = el('gridContainer');
+            container.innerHTML = '';
+            
+            const searchQuery = el('searchInput').value.trim();
+            const filtered = legendsData.filter(g => {
+                const matchType = appState.typeFilter === 'all' || g.type === appState.typeFilter;
+                const matchRank = appState.rankFilter === 'all' || g.rank === appState.rankFilter;
+                const matchDynasty = appState.dynastyFilter === 'all' || g.dynasty === appState.dynastyFilter;
+                const matchSearch = g.name.includes(searchQuery) || g.title.includes(searchQuery) || g.tag.includes(searchQuery);
+                return matchType && matchRank && matchDynasty && matchSearch;
+            }).sort((a, b) => rankOrder[a.rank] - rankOrder[b.rank]);
+
+            el('countDisplay').innerText = filtered.length;
+
+            // Use DocumentFragment for performance
+            const fragment = document.createDocumentFragment();
+
+            filtered.forEach(g => {
+                let rankClass = `rank-${g.rank.replace('+','-plus').replace('-','-minus')}`;
+                let typeIcon = '';
+                let typeClass = '';
+                if(g.type==='emperor') { typeIcon='<i class="fa-solid fa-dragon text-[#b45309]"></i>'; typeClass='type-emperor'; }
+                else if(g.type==='general') { typeIcon='<i class="fa-solid fa-horse-head text-[#1e3a8a]"></i>'; typeClass='type-general'; }
+                else { typeIcon='<i class="fa-solid fa-scroll text-[#047857]"></i>'; typeClass='type-minister'; }
+                
+                let selectionClass = '';
+                appState.warRoom.factions.forEach(f => { Object.values(f.slots).forEach(id => { if(id === g.id) selectionClass = 'selected-red'; }); });
+                appState.courtMode.factions.forEach(f => { Object.values(f.slots).forEach(id => { if(id === g.id) selectionClass = 'selected-blue'; }); });
+                if(appState.soulMode.selection.host === g.id) selectionClass = 'selected-host';
+                if(appState.soulMode.selection.soul === g.id) selectionClass = 'selected-soul';
+                if(appState.compareList.includes(g.id)) selectionClass = 'selected-compare';
+
+                const isMod = g.isModified ? '<span class="mod-badge">修</span>' : '';
+                const isNew = appState.customLegends.some(cg => cg.id === g.id) ? '<span class="new-badge">新</span>' : '';
+
+                const cardHtml = `
+                <div class="paper-card rounded-xl p-5 relative flex flex-col h-full cursor-pointer ${selectionClass} ${typeClass} ${g.rank==='S+'?'card-s-plus':''}" onclick="handleCardClick('${g.id}')">
+                    ${isMod || isNew}
+                    <div class="flex justify-between items-start mb-3 relative z-10">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#2c2826] tracking-tight flex items-center gap-2">${typeIcon} ${escapeHtml(g.name)}</h3>
+                            <p class="text-xs text-[#78716c] font-serif font-medium mt-1">${escapeHtml(g.title)}</p>
+                        </div>
+                        <span class="rank-badge ${rankClass} shadow-sm shrink-0 ml-2">${g.rank}</span>
+                    </div>
+                    <div class="flex gap-2 mb-3 relative z-10">
+                        <span class="inline-flex items-center gap-1 bg-[#f5f5f4] text-[#57534e] text-[10px] font-bold px-2 py-0.5 rounded border border-[#e5e0d3]"><i class="fa-solid fa-tag text-[#d4af37] text-[9px]"></i>${escapeHtml(g.tag)}</span>
+                        <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-500 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200"><i class="fa-solid fa-hourglass-half text-slate-400 text-[9px]"></i>${escapeHtml(g.dynasty)}</span>
+                    </div>
+                    <div class="relative py-2 my-2 bg-[#f9f7f1] rounded px-3 border-l-2 border-[#d4af37] shadow-sm z-10"><p class="text-lg text-[#44403c] italic poem-font leading-relaxed tracking-wide text-center">"${escapeHtml(g.poem)}"</p></div>
+                    <p class="text-xs text-[#57534e] leading-relaxed pt-3 border-t border-[#e5e0d3] mb-4 flex-grow font-serif z-10">${escapeHtml(g.desc)}</p>
+                    <div class="flex gap-2 mt-auto pt-1 relative z-10" onclick="event.stopPropagation()">
+                        <button onclick="startChat('${g.id}')" class="flex-1 bg-white hover:bg-[#f5f5f4] text-[#57534e] text-xs font-serif font-bold py-2 rounded border border-[#e5e0d3] transition-colors"><i class="fa-solid fa-comment-dots text-[#a8a29e] mr-1"></i>對話</button>
+                        <button onclick="showAIAnalysis('${g.id}')" class="flex-1 btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
+                        <button onclick="toggleCompare('${g.id}')" class="w-10 bg-teal-50 hover:bg-teal-100 text-teal-600 text-xs font-bold rounded border border-teal-200 transition-colors" title="加入比對"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>`;
+                
+                const div = document.createElement('div');
+                div.innerHTML = cardHtml.trim();
+                fragment.appendChild(div.firstChild);
+            });
+            container.appendChild(fragment);
+        }
+
+        function escapeHtml(unsafe) {
+            return (unsafe||'').replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+        // Modal & AI Logic
+        function openModal(title, type = 'content') {
+            el('aiModal').classList.remove('hidden');
+            el('modalTitle').innerHTML = `<i class="fa-solid fa-scroll text-[#d4af37] mr-2"></i> ${title}`;
+            if (type === 'chat') {
+                el('chatContainer').classList.remove('hidden');
+                el('contentContainer').classList.add('hidden');
+                el('clearMemoryBtn').classList.remove('hidden');
+                el('regenStatsBtn').classList.add('hidden');
+            } else {
+                el('chatContainer').classList.add('hidden');
+                el('contentContainer').classList.remove('hidden');
+                el('clearMemoryBtn').classList.add('hidden');
+                el('modalContent').innerHTML = ''; // Clear previous content
+                el('regenStatsBtn').classList.add('hidden');
+            }
+        }
+
+        function closeModal() {
+            el('aiModal').classList.add('hidden');
+            appState.chatMode.targetId = null;
+        }
+
+        function setModalContent(html) {
+            el('loadingState').classList.add('hidden');
+            el('modalContent').innerHTML = marked.parse(html);
+        }
+
+        function clearCurrentMemory() {
+            if (appState.chatMode.targetId) {
+                customConfirm("確定要清除與此人物的對話記憶嗎？", () => {
+                    delete appState.chatHistories[appState.chatMode.targetId];
+                    el('chatHistory').innerHTML = '<div class="text-center text-xs text-gray-400 py-4">- 記憶已重置 -</div>';
+                    saveToLocalStorage();
+                });
+            }
+        }
+
+        // AI Analysis & Stats Caching Logic
+        let currentAnalysisId = null;
+        
+        async function showAIAnalysis(id, forceRegen = false) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+
+            currentAnalysisId = id;
+            openModal(`${legend.name} · 歷史評鑑`, 'content');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            el('radarChartContainer').classList.add('hidden');
+            el('regenStatsBtn').classList.add('hidden');
+
+            const typeMap = { 'emperor': '帝王', 'general': '名將', 'minister': '名臣' };
+            
+            // Check cache
+            const cachedStats = appState.modifiedLegends[id]?.stats;
+            const needsStats = forceRegen || !cachedStats;
+
+            let prompt = `請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${legend.name}（${legend.title}）。
+
+            【分析準則】：
+            1. **拒絕刻板印象**：不局限於史料的白紙黑字以及慣有的刻板印象。
+            2. **多維度分析**：懂得結合史料、當時局勢（時勢）以及人心（心理動機）進行多方面且有理有據更深入的分析。
+            3. **角色本位**：
+               - 若是帝王，請純粹根據其「作為帝王」的表現（統御、決策、國運）來分析。
+               - 若是名將，請純粹根據其「作為將領」的表現（戰略、戰術、治軍）來分析。
+               - 若是名臣，請純粹根據其「作為臣子」的表現（施政、輔佐、權謀）來分析。
+            
+            請依此撰寫以下章節：
+            1. **【歷史局勢與定位】**：置身於當時的時空背景，他面對的是什麼局，又在歷史長河中站什麼位置。
+            2. **【深度功過剖析】**：具體事例分析，探討其決策背後的深層邏輯與得失。
+            3. **【人性與性格側寫】**：還原其作為「人」的真實面貌與心理特質。
+            4. **【如果生在現代】**：推測他適合什麼職業。`;
+
+            if (needsStats) {
+                prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n請以JSON格式返回最後的五維數值，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}。但JSON放在最後，前面請用Markdown格式撰寫分析文章。`;
+            } else {
+                // If we already have stats, don't ask AI to generate JSON again.
+                renderRadarChart(legend.name, cachedStats);
+                el('regenStatsBtn').classList.remove('hidden'); // Show button to regenerate
+            }
+
+            try {
+                const text = await callGemini(prompt);
+                
+                let cleanText = text;
+                if (needsStats) {
+                    const jsonMatch = text.match(/\{"stats":\s*\[.*?\]\}/);
+                    if (jsonMatch) {
+                        const statsData = JSON.parse(jsonMatch[0]);
+                        // Cache it
+                        appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
+                        appState.modifiedLegends[id].stats = statsData.stats;
+                        saveToLocalStorage();
+                        refreshData(); // to keep legendsData in sync
+                        
+                        renderRadarChart(legend.name, statsData.stats);
+                        cleanText = text.replace(jsonMatch[0], '');
+                        el('regenStatsBtn').classList.remove('hidden');
+                    }
+                }
+                
+                setModalContent(cleanText);
+            } catch (e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>評鑑生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+            }
+        }
+
+        function forceRegenerateStats() {
+            if(currentAnalysisId) showAIAnalysis(currentAnalysisId, true);
+        }
+
+        function renderRadarChart(label, data, label2 = null, data2 = null) {
+            el('radarChartContainer').classList.remove('hidden');
+            const ctx = el('radarChart').getContext('2d');
+            
+            if (radarChartInstance) radarChartInstance.destroy();
+            
+            const datasets = [{
+                label: label,
+                data: data,
+                backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                borderColor: 'rgba(212, 175, 55, 1)',
+                pointBackgroundColor: 'rgba(212, 175, 55, 1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(212, 175, 55, 1)'
+            }];
+
+            if(data2) {
+                datasets.push({
+                    label: label2,
+                    data: data2,
+                    backgroundColor: 'rgba(13, 148, 136, 0.2)', // Teal
+                    borderColor: 'rgba(13, 148, 136, 1)',
+                    pointBackgroundColor: 'rgba(13, 148, 136, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(13, 148, 136, 1)'
+                });
+            }
+            
+            radarChartInstance = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['統率', '武力', '智謀', '政治', '魅力'],
+                    datasets: datasets
+                },
+                options: {
+                    scales: {
+                        r: {
+                            angleLines: { color: 'rgba(0,0,0,0.1)' },
+                            grid: { color: 'rgba(0,0,0,0.1)' },
+                            pointLabels: { font: { family: 'Noto Serif TC', size: 12 }, color: '#44403c' },
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            ticks: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: data2 !== null } // Show legend only if comparing
+                    }
+                }
+            });
+        }
+
+        // Compare Feature
+        function toggleCompare(id) {
+            const idx = appState.compareList.indexOf(id);
+            if (idx > -1) {
+                appState.compareList.splice(idx, 1);
+            } else {
+                if (appState.compareList.length >= 2) {
+                    appState.compareList.shift(); // Remove oldest
+                }
+                appState.compareList.push(id);
+            }
+            if(appState.mode !== 'compareMode') toggleMode('compareMode');
+            updateCompareUI();
+            renderLegends();
+        }
+
+        function clearCompare() {
+            appState.compareList = [];
+            updateCompareUI();
+            renderLegends();
+        }
+
+        function updateCompareUI() {
+            const count = appState.compareList.length;
+            el('compareStatusText').innerText = `請選擇兩位人物 (${count}/2)`;
+            
+            const slot1 = el('compareSlot1');
+            const slot2 = el('compareSlot2');
+            
+            if (count > 0) {
+                const p1 = legendsData.find(l => l.id === appState.compareList[0]);
+                slot1.innerHTML = p1 ? `<span class="text-teal-700">${p1.name}</span>` : '虛位';
+                slot1.classList.add('border-teal-400', 'bg-teal-50');
+            } else {
+                slot1.innerText = '虛位';
+                slot1.classList.remove('border-teal-400', 'bg-teal-50');
+            }
+
+            if (count > 1) {
+                const p2 = legendsData.find(l => l.id === appState.compareList[1]);
+                slot2.innerHTML = p2 ? `<span class="text-teal-700">${p2.name}</span>` : '虛位';
+                slot2.classList.add('border-teal-400', 'bg-teal-50');
+                el('startCompareBtn').disabled = false;
+            } else {
+                slot2.innerText = '虛位';
+                slot2.classList.remove('border-teal-400', 'bg-teal-50');
+                el('startCompareBtn').disabled = true;
+            }
+        }
+
+        async function startCompare() {
+            if (appState.compareList.length < 2) return;
+            const p1 = legendsData.find(l => l.id === appState.compareList[0]);
+            const p2 = legendsData.find(l => l.id === appState.compareList[1]);
+            
+            openModal(`雙雄對決：${p1.name} vs ${p2.name}`, 'content');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            el('radarChartContainer').classList.add('hidden');
+
+            // Force cache generation if missing
+            let prompt = `請以資深歷史學者的角度，對比分析這兩位歷史人物：${p1.name} 與 ${p2.name}。
+            1. **【同異對比】**：兩人時代背景、性格、成就的異同。
+            2. **【關公戰秦瓊】**：若兩人處於同一時代競爭，推演可能的結果。
+            3. **【綜合評價】**。`;
+
+            // If either misses stats, request them
+            const p1Stats = appState.modifiedLegends[p1.id]?.stats;
+            const p2Stats = appState.modifiedLegends[p2.id]?.stats;
+            const needStats = !p1Stats || !p2Stats;
+
+            if (needStats) {
+                prompt += `\n\n請在最後以JSON格式返回兩人的五維數值（統率,武力,智謀,政治,魅力），格式為：
+                {"stats1": [..], "stats2": [..]}。`;
+            }
+
+            try {
+                const text = await callGemini(prompt);
+                let cleanText = text;
+                
+                let s1 = p1Stats;
+                let s2 = p2Stats;
+
+                if (needStats) {
+                    const jsonMatch = text.match(/\{"stats1":\s*\[.*?\],\s*"stats2":\s*\[.*?\]\}/);
+                    if (jsonMatch) {
+                        const statsData = JSON.parse(jsonMatch[0]);
+                        s1 = statsData.stats1;
+                        s2 = statsData.stats2;
+                        appState.modifiedLegends[p1.id] = appState.modifiedLegends[p1.id] || {};
+                        appState.modifiedLegends[p2.id] = appState.modifiedLegends[p2.id] || {};
+                        appState.modifiedLegends[p1.id].stats = s1;
+                        appState.modifiedLegends[p2.id].stats = s2;
+                        saveToLocalStorage();
+                        cleanText = text.replace(jsonMatch[0], '');
+                    }
+                }
+
+                if(s1 && s2) {
+                    renderRadarChart(p1.name, s1, p2.name, s2);
+                }
+                
+                setModalContent(cleanText);
+            } catch (e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>比對推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+            }
+        }
+
+        // Native Multi-turn Chat Logic
+        function startChat(id) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+
+            appState.chatMode.targetId = id;
+            openModal(`與 ${legend.name} 對話`, 'chat');
+            
+            const history = appState.chatHistories[id] || [];
+            const chatContainer = el('chatHistory');
+            chatContainer.innerHTML = '';
+            
+            if (history.length === 0) {
+                const intro = `吾乃${legend.title}${legend.name}。後世之人，有何指教？`;
+                addChatBubble('model', intro);
+                appState.chatHistories[id] = [{role: 'model', content: intro}];
+                saveToLocalStorage();
+            } else {
+                history.forEach(msg => addChatBubble(msg.role, msg.content));
+            }
+        }
+
+        function addChatBubble(role, text) {
+            const div = document.createElement('div');
+            // Using 'user' for user, 'model' for AI to match Gemini API naming
+            div.className = `chat-bubble ${role === 'user' ? 'chat-user' : 'chat-ai'}`;
+            div.innerHTML = marked.parse(text);
+            el('chatHistory').appendChild(div);
+            el('chatHistory').scrollTop = el('chatHistory').scrollHeight;
+        }
+
+        async function sendChatMessage() {
+            const input = el('chatInput');
+            const text = input.value.trim();
+            const targetId = appState.chatMode.targetId;
+            if (!text || !targetId) return;
+
+            addChatBubble('user', text);
+            input.value = '';
+            
+            if (!appState.chatHistories[targetId]) appState.chatHistories[targetId] = [];
+            appState.chatHistories[targetId].push({role: 'user', content: text});
+            saveToLocalStorage();
+
+            const loadingId = 'chat-loading-' + Date.now();
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'chat-bubble chat-ai';
+            loadingDiv.id = loadingId;
+            loadingDiv.innerHTML = '<div class="flex space-x-2"><div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div><div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div><div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div></div>';
+            el('chatHistory').appendChild(loadingDiv);
+            el('chatHistory').scrollTop = el('chatHistory').scrollHeight;
+
+            const legend = legendsData.find(l => l.id === targetId);
+            const systemPrompt = `你現在是${legend.name}（${legend.title}）。
+            生平簡介：${legend.desc}。
+            性格標籤：${legend.tag}。
+            請完全沉浸在這個歷史人物的角色中，用符合其時代和性格的語氣（可以使用半文半白，但要讓現代人聽得懂）回答使用者的問題。
+            切記：你不知道你死後很久才發生的現代科技（除非你是穿越者），保持歷史沉浸感。嚴禁使用制式化AI開場白。`;
+
+            // Build native Gemini contents array
+            const contents = [
+                { role: "user", parts: [{ text: systemPrompt + "\n\n(系統指示：請直接以上述人物身份開始對話)" }] },
+                { role: "model", parts: [{ text: "吾乃" + legend.name + "，已知悉。" }] } // Ack prompt
+            ];
+            
+            const recentHistory = appState.chatHistories[targetId].slice(-20); // Keep last 20 msgs
+            recentHistory.forEach(h => {
+                contents.push({
+                    role: h.role === 'user' ? 'user' : 'model',
+                    parts: [{ text: h.content }]
+                });
+            });
+
+            try {
+                const response = await callGeminiNative(contents);
+                el(loadingId).remove();
+                addChatBubble('model', response);
+                appState.chatHistories[targetId].push({role: 'model', content: response});
+                saveToLocalStorage();
+            } catch (e) {
+                if(el(loadingId)) el(loadingId).remove();
+                addChatBubble('model', `(咳咳... 跨越時空的連線似乎中斷了: ${e.message})`);
+            }
+        }
+
+        // Add/Edit Modal Logic
+        function openAddModal() { el('addModal').classList.remove('hidden'); el('addStep1').classList.remove('hidden'); el('addStep2').classList.add('hidden'); el('addInputName').value = ''; }
+        function closeAddModal() { el('addModal').classList.add('hidden'); }
+        
+        let pendingNewLegendType = 'general';
+        async function analyzeNewLegend() {
+            const name = el('addInputName').value.trim();
+            const typeRadio = document.querySelector('input[name="addType"]:checked');
+            pendingNewLegendType = typeRadio ? typeRadio.value : 'general';
+            
+            if (!name) return customAlert("請輸入姓名");
+            
+            el('addStep1').classList.add('hidden');
+            el('addLoading').classList.remove('hidden');
+            el('addLoading').classList.add('flex');
+
+            const prompt = `請評鑑歷史人物：${name}（類型：${pendingNewLegendType === 'emperor' ? '帝王' : (pendingNewLegendType === 'general' ? '名將' : '名臣')}）。
+            請回傳一個 JSON 物件，格式如下：
+            {
+                "name": "${name}",
+                "dynasty": "所屬朝代 (如唐朝、漢朝)",
+                "rank": "評級(S+,S,S-,A+,A,A-,B+,B,B-,C+,C,C-,D)",
+                "title": "最知名的稱號或官職 (4字內)",
+                "tag": "四字特質標籤",
+                "poem": "一句代表性的詩詞或名言 (20字內)",
+                "desc": "簡短評價 (50字內)"
+            }
+            如果不認識此人，請根據名字瞎編一個看起來像真的，但rank給D。`;
+
+            try {
+                const text = await callGemini(prompt, true); 
+                const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
+                const data = JSON.parse(jsonStr);
+
+                // Need a hidden field for dynasty mapping
+                el('addStep2').dataset.dynasty = data.dynasty || '其他';
+                el('newRank').value = data.rank;
+                el('newTitle').value = data.title;
+                el('newTag').value = data.tag;
+                el('newPoem').value = data.poem;
+                el('newDesc').value = data.desc;
+
+                el('addLoading').classList.add('hidden');
+                el('addLoading').classList.remove('flex');
+                el('addStep2').classList.remove('hidden');
+            } catch (e) {
+                el('addLoading').classList.add('hidden');
+                el('addLoading').classList.remove('flex');
+                el('addStep1').classList.remove('hidden');
+                customAlert("AI 評鑑失敗：" + e.message);
+            }
+        }
+
+        function saveNewLegend() {
+            const newLegend = {
+                id: generateId(pendingNewLegendType, el('addInputName').value.trim()),
+                type: pendingNewLegendType,
+                name: el('addInputName').value.trim(),
+                dynasty: el('addStep2').dataset.dynasty,
+                rank: el('newRank').value,
+                title: el('newTitle').value,
+                tag: el('newTag').value,
+                poem: el('newPoem').value,
+                desc: el('newDesc').value
+            };
+            
+            appState.customLegends.push(newLegend);
+            saveToLocalStorage();
+            refreshData();
+            closeAddModal();
+            customAlert(`${newLegend.name} 已入冊！`);
+        }
+
+        // Edit Hub Logic
+        function openEditHub() { 
+            el('editHubModal').classList.remove('hidden'); 
+            el('editFormSection').classList.add('hidden');
+            
+            const datalist = el('legendsList');
+            datalist.innerHTML = '';
+            legendsData.forEach(l => {
+                const option = document.createElement('option');
+                option.value = l.name; // User searches by name
+                option.dataset.id = l.id;
+                datalist.appendChild(option);
+            });
+        }
+        function closeEditHub() { el('editHubModal').classList.add('hidden'); }
+
+        let currentEditingId = null;
+
+        function loadLegendForEdit() {
+            const searchVal = el('editSearchInput').value.trim();
+            // Try to find exact match
+            let legend = legendsData.find(l => l.name === searchVal);
+            
+            if (!legend) return customAlert("找不到此人物");
+            
+            currentEditingId = legend.id;
+            el('editRank').value = legend.rank;
+            el('editTitle').value = legend.title;
+            el('editTag').value = legend.tag;
+            el('editPoem').value = legend.poem;
+            el('editDesc').value = legend.desc;
+            
+            // 載入朝代，若無則預設未分類
+            let dyn = legend.dynasty || '未分類';
+            if (dyn === '其他') dyn = '未分類';
+            el('editDynasty').value = dyn;
+            
+            el('editFormSection').classList.remove('hidden');
+            
+            const isCustom = appState.customLegends.some(l => l.id === legend.id);
+            if (isCustom) el('deleteLegendBtn').classList.remove('hidden');
+            else el('deleteLegendBtn').classList.add('hidden');
+        }
+
+        function saveLegendEdits() {
+            if (!currentEditingId) return;
+            
+            const updates = {
+                rank: el('editRank').value,
+                dynasty: el('editDynasty').value,
+                title: el('editTitle').value,
+                tag: el('editTag').value,
+                poem: el('editPoem').value,
+                desc: el('editDesc').value
+            };
+
+            const customIndex = appState.customLegends.findIndex(l => l.id === currentEditingId);
+            if (customIndex !== -1) {
+                appState.customLegends[customIndex] = { ...appState.customLegends[customIndex], ...updates };
+            } else {
+                appState.modifiedLegends[currentEditingId] = { ...appState.modifiedLegends[currentEditingId], ...updates };
+            }
+
+            saveToLocalStorage();
+            refreshData();
+            closeEditHub();
+            customAlert("修訂已保存！");
+        }
+
+        function deleteCustomLegend() {
+            if (!currentEditingId) return;
+            customConfirm(`確定要刪除此自訂人物嗎？`, () => {
+                appState.customLegends = appState.customLegends.filter(l => l.id !== currentEditingId);
+                delete appState.modifiedLegends[currentEditingId]; 
+                saveToLocalStorage();
+                refreshData();
+                closeEditHub();
+            });
+        }
+
+        async function askAIConsultant() {
+            const query = el('consultInput').value;
+            if(!query) return;
+            
+            el('consultResult').classList.remove('hidden');
+            el('consultResult').innerText = "AI 參謀思考中...";
+            
+            const legend = legendsData.find(l => l.id === currentEditingId);
+            const prompt = `關於歷史人物 ${legend.name} (${legend ? legend.desc : ''})，使用者問：${query}。請給出簡短的歷史評價建議 (50字內)。`;
+            
+            try {
+                const text = await callGemini(prompt);
+                el('consultResult').innerText = text;
+            } catch (e) {
+                el('consultResult').innerText = "參謀暫時離線。";
+            }
+        }
+
+        // --- NEW MULTI-FACTION LOGIC ---
+        function addFaction(mode) {
+            const state = mode === 'warRoom' ? appState.warRoom : appState.courtMode;
+            if(state.factions.length >= 6) { customAlert("勢力已達上限"); return; }
+            const newIdx = state.factions.length;
+            const colorIdx = newIdx % FACTION_COLORS.length;
+            const id = `faction_${Date.now()}`;
+            
+            let slots = {};
+            if(mode === 'warRoom') slots = { commander: null, strategist: null, vanguard: null, defender: null, raider: null };
+            else slots = { emperor: null, chancellor: null, general: null, personnel: null, revenue: null, rites: null };
+            
+            let faction = { id: id, name: `${mode==='warRoom'?'軍團':'王朝'} ${newIdx+1}`, colorIdx: colorIdx, slots: slots };
+            if(mode === 'courtMode') faction.territory = '關中 (天府)';
+            
+            state.factions.push(faction);
+            if(mode === 'warRoom') updateWarRoomUI(); else updateCourtModeUI();
+            
+            setTimeout(() => {
+                const container = el(mode === 'warRoom' ? 'warRoomFactionsContainer' : 'courtFactionsContainer');
+                container.lastElementChild?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
+            }, 100);
+        }
+
+        function clearFactions(mode) {
+            customConfirm("確定重置所有勢力？", () => {
+                const state = mode === 'warRoom' ? appState.warRoom : appState.courtMode;
+                state.activeSlot = null;
+                if(mode === 'warRoom') {
+                    state.factions = [
+                        { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } },
+                        { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } }
+                    ];
+                    updateWarRoomUI();
+                } else {
+                    state.factions = [
+                        { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, chancellor: null, general: null, personnel: null, revenue: null, rites: null } }
+                    ];
+                    updateCourtModeUI();
+                }
+                renderLegends(); // update selected state
+            });
+        }
+
+        function selectSlot(mode, factionId, role) {
+            const state = mode === 'warRoom' ? appState.warRoom : appState.courtMode;
+            state.activeSlot = { factionId, role };
+            const f = state.factions.find(x => x.id === factionId);
+            if(f) f.slots[role] = null; // Clear slot visually to select new
+            if(mode === 'warRoom') updateWarRoomUI(); else updateCourtModeUI();
+            renderLegends();
+            
+            if(!state.minimized) togglePanelSize(mode);
+        }
+
+        function updateTerritory(factionId, value) {
+            const f = appState.courtMode.factions.find(x => x.id === factionId);
+            if(f) f.territory = value;
+        }
+
+        function handleCardClick(id) {
+            if (appState.mode === 'browse') { showAIAnalysis(id); return; }
+            
+            if (appState.mode === 'compareMode') { toggleCompare(id); return; }
+            
+            if (appState.mode === 'warRoom' && appState.warRoom.activeSlot) {
+                const {factionId, role} = appState.warRoom.activeSlot;
+                const f = appState.warRoom.factions.find(x => x.id === factionId);
+                if(f) {
+                    let exists = false;
+                    appState.warRoom.factions.forEach(fac => { if(Object.values(fac.slots).includes(id)) exists = true; });
+                    if(exists) { customAlert('該人物已在陣中'); return; }
+                    f.slots[role] = id;
+                    appState.warRoom.activeSlot = null;
+                    updateWarRoomUI();
+                    renderLegends();
+                    if(appState.warRoom.minimized) togglePanelSize('warRoom');
+                }
+            }
+            
+            if (appState.mode === 'courtMode' && appState.courtMode.activeSlot) {
+                const {factionId, role} = appState.courtMode.activeSlot;
+                const f = appState.courtMode.factions.find(x => x.id === factionId);
+                if(f) {
+                    let exists = false;
+                    appState.courtMode.factions.forEach(fac => { if(Object.values(fac.slots).includes(id)) exists = true; });
+                    if(exists) { customAlert('該人物已在陣中'); return; }
+                    f.slots[role] = id;
+                    appState.courtMode.activeSlot = null;
+                    updateCourtModeUI();
+                    renderLegends();
+                    if(appState.courtMode.minimized) togglePanelSize('courtMode');
+                }
+            }
+
+            if (appState.mode === 'soulMode' && appState.soulMode.activeSlot) {
+                 const slot = appState.soulMode.activeSlot;
+                 if (appState.soulMode.activeScenario && slot === 'host') { customAlert("劇本模式下無法更換宿主！"); return; }
+                 appState.soulMode.selection[slot] = id;
+                 appState.soulMode.activeSlot = null;
+                 updateSoulModeUI();
+                 renderLegends();
+                 if(appState.soulMode.minimized) togglePanelSize('soulMode');
+            }
+        }
+
+        function getLegendName(id) {
+            const l = legendsData.find(x => x.id === id);
+            return l ? l.name : null;
+        }
+
+        // --- WAR ROOM UI ---
+        function updateWarRoomUI() {
+            const container = el('warRoomFactionsContainer');
+            container.innerHTML = '';
+            
+            const roleLabels = { commander: '元帥', strategist: '軍師', vanguard: '先鋒', defender: '鐵壁', raider: '遊擊' };
+            const roleIcons = { commander: 'crown', strategist: 'brain', vanguard: 'horse-head', defender: 'shield-halved', raider: 'bolt' };
+
+            appState.warRoom.factions.forEach(f => {
+                const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
+                let slotsHtml = '';
+                Object.keys(f.slots).forEach(role => {
+                    const id = f.slots[role];
+                    const name = getLegendName(id);
+                    const isActive = appState.warRoom.activeSlot && appState.warRoom.activeSlot.factionId === f.id && appState.warRoom.activeSlot.role === role;
+                    
+                    let slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border ${isActive ? 'active-selection' : 'border-dashed border-slate-300'} bg-white bg-opacity-80`;
+                    if(name && !isActive) slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border-solid border-slate-200 ${styles.bg}`;
+
+                    slotsHtml += `
+                    <div onclick="selectSlot('warRoom', '${f.id}', '${role}')" class="${slotClass}">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs border ${styles.border} ${styles.text}"><i class="fa-solid fa-${roleIcons[role]}"></i></div>
+                        <div class="flex-1 min-w-0 overflow-hidden">
+                            <p class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">${roleLabels[role]}</p>
+                            <p class="text-xs font-bold truncate ${name ? styles.text : 'text-slate-400'}">${isActive ? '點將...' : (name || '虛位')}</p>
+                        </div>
+                    </div>`;
+                });
+
+                const factionCard = `
+                <div class="min-w-[200px] w-[200px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-hidden">
+                    <div class="${styles.bg} px-3 py-2 border-b ${styles.border} flex justify-between items-center">
+                        <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-flag mr-1"></i>${f.name}</span>
+                        <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/5</span>
+                    </div>
+                    <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[60vh]">
+                        ${slotsHtml}
+                    </div>
+                </div>`;
+                container.innerHTML += factionCard;
+            });
+
+            const activeCount = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n)).length;
+            el('startBattleBtn').disabled = activeCount < 2;
+            if(activeCount >= 2) el('startBattleBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); 
+            else el('startBattleBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
+        }
+
+        // --- COURT MODE UI ---
+        function updateCourtModeUI() {
+            const container = el('courtFactionsContainer');
+            container.innerHTML = '';
+            
+            const roleLabels = { emperor: '君主', chancellor: '宰相', general: '大將軍', personnel: '吏部', revenue: '戶部', rites: '禮部' };
+            const roleIcons = { emperor: 'dragon', chancellor: 'scroll', general: 'khanda', personnel: 'users', revenue: 'coins', rites: 'place-of-worship' };
+
+            appState.courtMode.factions.forEach(f => {
+                const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
+                let slotsHtml = '';
+                Object.keys(f.slots).forEach(role => {
+                    const id = f.slots[role];
+                    const name = getLegendName(id);
+                    const isActive = appState.courtMode.activeSlot && appState.courtMode.activeSlot.factionId === f.id && appState.courtMode.activeSlot.role === role;
+                    
+                    let slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border ${isActive ? 'active-selection' : 'border-dashed border-slate-300'} bg-white bg-opacity-80`;
+                    if(name && !isActive) slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border-solid border-slate-200 ${styles.bg}`;
+
+                    slotsHtml += `
+                    <div onclick="selectSlot('courtMode', '${f.id}', '${role}')" class="${slotClass}">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs border ${styles.border} ${styles.text}"><i class="fa-solid fa-${roleIcons[role]}"></i></div>
+                        <div class="flex-1 min-w-0 overflow-hidden">
+                            <p class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">${roleLabels[role]}</p>
+                            <p class="text-xs font-bold truncate ${name ? styles.text : 'text-slate-400'}">${isActive ? '任命...' : (name || '虛位')}</p>
+                        </div>
+                    </div>`;
+                });
+
+                const terrOptions = TERRITORIES.map(t => `<option value="${t}" ${f.territory===t?'selected':''}>${t}</option>`).join('');
+
+                const factionCard = `
+                <div class="min-w-[200px] w-[200px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-hidden">
+                    <div class="${styles.bg} px-3 py-2 border-b ${styles.border}">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-landmark mr-1"></i>${f.name}</span>
+                            <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/6</span>
+                        </div>
+                        <select onchange="updateTerritory('${f.id}', this.value)" class="w-full text-xs p-1 rounded border border-slate-300 bg-white bg-opacity-80 outline-none text-slate-700 font-serif">
+                            ${terrOptions}
+                        </select>
+                    </div>
+                    <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[60vh]">
+                        ${slotsHtml}
+                    </div>
+                </div>`;
+                container.innerHTML += factionCard;
+            });
+
+            const activeCount = appState.courtMode.factions.filter(f => Object.values(f.slots).some(n => n)).length;
+            el('startCourtBtn').disabled = activeCount < 1; 
+            if(activeCount >= 1) el('startCourtBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); 
+            else el('startCourtBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
+        }
+
+        // --- AI LOGIC UPDATES ---
+        async function startCourtSimulation() {
+            openModal('盛世王朝推演', 'content');
+            el('radarChartContainer').classList.add('hidden');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            
+            const factions = appState.courtMode.factions.filter(f => Object.values(f.slots).some(n => n));
+            // Map IDs to actual Names for AI
+            const factionData = factions.map(f => {
+                const mappedRoster = {};
+                for (const [r, id] of Object.entries(f.slots)) { mappedRoster[r] = getLegendName(id); }
+                return { name: f.name, territory: f.territory, roster: mappedRoster };
+            });
+            
+            const prompt = `史詩級朝堂治理與大國博弈推演 (Tang Dynasty Structure)。
+            【參與勢力】：${JSON.stringify(factionData)}
+            
+            請進行深度推演 (若只有一個王朝，則推演其盛衰興替；若有多個，則推演大國競爭)：
+            1. **【地緣戰略】(Geopolitics)**：分析各勢力據點的優劣勢。
+            2. **【君臣相性】(Internal)**：各勢力的皇帝與大臣能否共存？（例如：猜忌、輔佐、權鬥）。
+            3. **【治國實績】(Governance)**：各部會能力與整體國力發展。
+            4. **【外部博弈】(External)**：軍事衝突與勝敗。
+            5. **【歷史結局】**：國祚長短，是盛世還是亡國？
+            
+            規範：請保持歷史學者的嚴謹與文學性。繁體中文。`;
+
+            try {
+                const text = await callGemini(prompt);
+                setModalContent(text);
+            } catch(e) { 
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
+            }
+        }
+
+        async function startTeamBattle() {
+            openModal('跨代戰情室推演', 'content');
+            el('radarChartContainer').classList.add('hidden');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            
+            const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
+            const factionData = factions.map(f => {
+                const mappedRoster = {};
+                for (const [r, id] of Object.entries(f.slots)) { mappedRoster[r] = getLegendName(id); }
+                return { name: f.name, roster: mappedRoster };
+            });
+
+            const prompt = `史詩級多方軍團混戰推演。
+            【參戰勢力】：${JSON.stringify(factionData)}
+            
+            戰場設定：隨機選定一個歷史戰略要衝。
+            請推演：
+            1. **戰前局勢**：${factions.length}方勢力的合縱連橫。
+            2. **戰術博弈**：各方元帥與軍師的具體指揮。
+            3. **決勝時刻**：關鍵轉折點。
+            4. **最終勝者**。`;
+
+            try {
+                const text = await callGemini(prompt);
+                setModalContent(text);
+            } catch(e) { 
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
+            }
+        }
+        
+        async function handleSoulAction() {
+            const hostId = appState.soulMode.selection.host;
+            const soulId = appState.soulMode.selection.soul;
+            const hostName = getLegendName(hostId);
+            const soulName = getLegendName(soulId);
+            const scenario = appState.soulMode.activeScenario;
+            
+            if(!hostName || !soulName) return;
+            
+            openModal('魂穿逆天改命', 'content');
+            el('radarChartContainer').classList.add('hidden');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            
+            let prompt = "";
+            if (scenario) {
+                prompt = `【絕境挑戰模式】
+                劇本：${scenario.title} (${scenario.era})
+                危機：${scenario.crisis}
+                對手：${scenario.enemy}
+                
+                現在，${soulName} 的靈魂穿越到了 ${hostName} 的身上。
+                請以深度的歷史推演角度分析：
+                1. **【靈魂適配度】**：穿越者的強項與宿主原有能力的重疊/互補分析。
+                2. **【性格衝突矩陣】**：兩人性格在哪些維度會產生內部張力，這將如何影響他的外在決策？
+                3. **【歷史時空干擾指數】**：利用 ${soulName} 的能力，如何應對眼前的具體死局？破局的機率為何？
+                4. **【與宿敵交鋒】**：面對 ${scenario.enemy}，新的「${hostName}」的戰略戰術會發生何種變形？
+                5. **【最終結局】**：歷史是否被改寫？長遠來看影響了什麼？`;
+            } else {
+                prompt = `【自由魂穿模式】
+                ${soulName} 的靈魂穿越到了 ${hostName} 的身上。
+                請進行深度的歷史化學反應推演：
+                1. **【靈魂適配度】**：穿越者與宿主的能力互補與排斥。
+                2. **【性格衝突矩陣】**：兩人價值觀與行事作風的融合過程。
+                3. **【歷史軌跡干擾】**：他將如何改變原本的歷史軌跡？
+                4. **【結局預測】**。`;
+            }
+
+            try {
+                const text = await callGemini(prompt);
+                setModalContent(text);
+            } catch(e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
+            }
+        }
+
+        // --- SHARED UI & LOGIC ---
+        function toggleMode(modeName) {
+            closeAllPanels();
+            // Reset Compare UI state if leaving
+            el('compareBar').classList.add('translate-y-full');
+            document.querySelectorAll('[id^="btn-mode-"]').forEach(btn => btn.classList.remove('ring-2', 'ring-offset-2', 'ring-gray-400'));
+
+            if (appState.mode !== modeName) {
+                appState.mode = modeName;
+                const btnId = `btn-mode-${modeName}`;
+                if(el(btnId)) el(btnId).classList.add('ring-2', 'ring-offset-2', 'ring-gray-400');
+
+                if (modeName === 'compareMode') {
+                    el('compareBar').classList.remove('translate-y-full');
+                    document.body.style.paddingBottom = '80px';
+                } else {
+                    const panelMap = { 'warRoom': 'warRoomPanel', 'courtMode': 'courtModePanel', 'soulMode': 'soulModePanel', 'scenarioMode': 'scenarioModePanel' };
+                    const panel = el(panelMap[modeName]);
+                    if(panel) panel.classList.remove('translate-y-full');
+                    
+                    const tip = el('selectionModeTip');
+                    if(modeName !== 'scenarioMode') {
+                        tip.classList.remove('hidden');
+                        el('tipText').innerText = modeName.includes('Room') || modeName.includes('Court') ? '點擊下方職位，再點擊上方人物加入' : '選擇【肉身】與【靈魂】';
+                    }
+                    const heightMap = { 'warRoom': '65vh', 'courtMode': '65vh', 'soulMode': '300px', 'scenarioMode': '380px' };
+                    document.body.style.paddingBottom = heightMap[modeName] || '0px';
+                }
+            } else {
+                appState.mode = 'browse';
+                document.body.style.paddingBottom = '0px';
+            }
+            renderLegends(); // Refresh selected visual states
+        }
+
+        function closeAllPanels() {
+            document.querySelectorAll('.bottom-panel').forEach(p => p.classList.add('translate-y-full'));
+            el('compareBar').classList.add('translate-y-full');
+            el('selectionModeTip').classList.add('hidden');
+            document.body.style.paddingBottom = '0px';
+            appState.warRoom.activeSlot = null;
+            appState.courtMode.activeSlot = null;
+            appState.soulMode.activeSlot = null;
+            updateWarRoomUI();
+            updateCourtModeUI();
+            updateSoulModeUI();
+        }
+
+        function togglePanelSize(mode) {
+             const state = mode === 'warRoom' ? appState.warRoom : (mode === 'courtMode' ? appState.courtMode : appState.soulMode);
+             state.minimized = !state.minimized;
+             const panelId = mode === 'warRoom' ? 'warRoomPanel' : (mode === 'courtMode' ? 'courtModePanel' : 'soulModePanel');
+             const contentId = mode === 'warRoom' ? 'warRoomContent' : (mode === 'courtMode' ? 'courtModeContent' : 'soulModeContent');
+             const statusId = mode === 'warRoom' ? 'warRoomStatus' : (mode === 'courtMode' ? 'courtModeStatus' : 'soulModeStatus');
+             const panel = el(panelId); const content = el(contentId); const status = el(statusId);
+             const height = mode === 'warRoom' ? '65vh' : (mode === 'courtMode' ? '65vh' : '300px'); 
+             
+             if (state.minimized) { panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText(mode); } 
+             else { panel.style.height = height; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = height; }
+        }
+
+        function updateStatusText(mode) {
+             const elements = document.querySelectorAll('.selecting-role-text');
+             let text = "暫無選擇";
+             if (mode === 'warRoom' && appState.warRoom.activeSlot) text = `選擇 ${appState.warRoom.activeSlot.role}`;
+             else if (mode === 'courtMode' && appState.courtMode.activeSlot) text = `選擇 ${appState.courtMode.activeSlot.role}`;
+             else if (mode === 'soulMode' && appState.soulMode.activeSlot) text = appState.soulMode.activeSlot;
+             elements.forEach(e => e.innerText = text);
+        }
+
+        // Soul/Scenario logic 
+        function selectSoulSlot(slot) {
+             if (slot === 'host' && appState.soulMode.activeScenario) { 
+                 customConfirm("退出當前絕境劇本？", () => {
+                     appState.soulMode.activeScenario = null; 
+                     el('hostNameDisplay').innerText = "點擊選擇..."; 
+                     el('hostNameDisplay').classList.remove('text-red-600');
+                     appState.soulMode.activeSlot = slot; appState.soulMode.selection[slot] = null; updateSoulModeUI(); if(!appState.soulMode.minimized) togglePanelSize('soulMode');
+                 });
+                 return;
+             }
+             appState.soulMode.activeSlot = slot; appState.soulMode.selection[slot] = null; updateSoulModeUI(); if(!appState.soulMode.minimized) togglePanelSize('soulMode');
+        }
+
+        function updateSoulModeUI() {
+             ['host', 'soul'].forEach(slot => {
+                 const elem = el(`slot-soul-${slot}`); const id = appState.soulMode.selection[slot]; const isActive = appState.soulMode.activeSlot === slot; const nameEl = elem.querySelector('.slot-name');
+                 elem.classList.remove('active-selection', 'filled');
+                 if (isActive) { elem.classList.add('active-selection'); nameEl.innerText = "請點擊上方人物..."; } else if (id) { nameEl.innerText = getLegendName(id); elem.classList.add('filled'); } else { nameEl.innerText = "點擊選擇..."; }
+             });
+             const ready = appState.soulMode.selection.host && appState.soulMode.selection.soul; el('startSoulBtn').disabled = !ready; if(ready) el('startSoulBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); else el('startSoulBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
+        }
+
+        function clearSoulSlots() { appState.soulMode.selection = { host: null, soul: null }; appState.soulMode.activeSlot = null; appState.soulMode.activeScenario = null; el('hostNameDisplay').innerText = "點擊選擇..."; el('hostNameDisplay').classList.remove('text-red-600'); updateSoulModeUI(); renderLegends(); }
+        
+        // --- SCENARIOS ---
+        const scenarios = [
+            { era: "戰國", title: "長平之戰", host: "趙括", crisis: "斷糧46日，四十萬趙軍被白起包圍。", enemy: "白起", id: "sc1" },
+            { era: "大明", title: "煤山之變", host: "崇禎", crisis: "李自成破城，百官逃散，身邊僅一太監。", enemy: "李自成", id: "sc2" },
+            { era: "三國", title: "敗走麥城", host: "關羽", crisis: "呂蒙白衣渡江，腹背受敵，困守孤城。", enemy: "呂蒙", id: "sc3" },
+            { era: "三國", title: "五丈原", host: "諸葛亮", crisis: "積勞成疾，司馬懿堅守不出，蜀軍糧盡。", enemy: "司馬懿", id: "sc4" },
+            { era: "南宋", title: "崖山海戰", host: "陸秀夫", crisis: "宋軍被逼至海上，元軍包圍，無路可退。", enemy: "張弘範", id: "sc5" },
+            { era: "楚漢", title: "垓下之圍", host: "項羽", crisis: "四面楚歌，十面埋伏，虞姬自刎。", enemy: "韓信", id: "sc6" },
+            { era: "明初", title: "靖難之役", host: "建文帝", crisis: "朱棣攻破南京，宮中大火，不知所蹤。", enemy: "朱棣", id: "sc7" },
+            { era: "唐朝", title: "玄武門", host: "李建成", crisis: "李世民發動政變，尉遲恭帶兵逼近。", enemy: "李世民", id: "sc8" },
+            { era: "大明", title: "土木堡", host: "明英宗", crisis: "五十萬大軍潰敗，被瓦剌騎兵包圍。", enemy: "也先", id: "sc9" },
+            { era: "太平", title: "天京陷落", host: "李秀成", crisis: "湘軍攻破天京，糧盡援絕，幼天王尚在。", enemy: "曾國荃", id: "sc10" },
+            { era: "三國", title: "白門樓", host: "呂布", crisis: "部下叛變，被曹操劉備縛於階下。", enemy: "曹操", id: "sc11" },
+            { era: "北宋", title: "靖康之變", host: "宋欽宗", crisis: "金兵圍城，索要天價賠款，京師將破。", enemy: "金兀朮", id: "sc12" },
+            { era: "秦末", title: "巨鹿之戰", host: "章邯", crisis: "項羽破釜沉舟，王離被擒，甬道被斷。", enemy: "項羽", id: "sc13" },
+            { era: "隋末", title: "江都之變", host: "隋煬帝", crisis: "宇文化及兵變，禁軍倒戈，唯求好死。", enemy: "宇文化及", id: "sc14" },
+            { era: "戰國", title: "圍魏救趙", host: "龐涓", crisis: "桂陵之戰中伏，孫臏減灶誘敵。", enemy: "孫臏", id: "sc15" },
+            { era: "東晉", title: "淝水之戰", host: "苻堅", crisis: "八十萬大軍風聲鶴唳，草木皆兵。", enemy: "謝安", id: "sc16" },
+            { era: "明末", title: "一片石", host: "李自成", crisis: "吳三桂開關，清軍突襲，腹背受敵。", enemy: "多爾袞", id: "sc17" },
+            { era: "南宋", title: "風波亭", host: "岳飛", crisis: "十二道金牌召回，身陷囹圄，莫須有。", enemy: "秦檜", id: "sc18" },
+            { era: "唐朝", title: "馬嵬坡", host: "楊貴妃", crisis: "禁軍嘩變，誅殺楊國忠，逼帝賜死。", enemy: "陳玄禮", id: "sc19" },
+            { era: "新朝", title: "漸台之戰", host: "王莽", crisis: "綠林軍攻入長安，復古改制全面失敗。", enemy: "劉秀", id: "sc20" }
+        ];
+
+        function initScenarios() {
+            const container = el('scenarioContent'); let html = '';
+            scenarios.forEach(s => { html += `<div onclick="startScenario('${s.id}')" class="min-w-[240px] bg-[#fffdf9] rounded-xl border border-[#fda4af] p-5 cursor-pointer hover:border-[#be123c] hover:shadow-lg transition-all group flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 right-0 w-16 h-16 bg-[#be123c] opacity-5 rounded-bl-full pointer-events-none"></div><div><span class="text-[10px] font-bold bg-[#ffe4e6] text-[#9f1239] px-2 py-0.5 rounded border border-[#fecdd3]">${s.era}</span><h4 class="font-bold text-[#881337] mt-2 text-lg font-serif group-hover:text-[#be123c]">${s.title}</h4><div class="text-xs text-[#57534e] mt-1 mb-2 font-serif"><i class="fa-solid fa-user-injured mr-1 text-[#fda4af]"></i>宿主: ${s.host}</div><p class="text-[11px] text-[#44403c] leading-relaxed border-t border-[#fecdd3] pt-2 font-serif italic opacity-80">"${s.crisis}"</p></div><div class="mt-3 text-xs font-bold text-[#be123c] flex items-center gap-1 group-hover:translate-x-1 transition-transform uppercase tracking-wider">挑戰 ${s.enemy} <i class="fa-solid fa-arrow-right"></i></div></div>`; });
+            container.appendChild(document.createRange().createContextualFragment(html));
+        }
+
+        function startScenario(id) { 
+            const s = scenarios.find(x => x.id === id); 
+            toggleMode('soulMode'); 
+            appState.soulMode.activeScenario = s; 
+            
+            // Find host ID by name for safety
+            const h = legendsData.find(l => l.name.includes(s.host));
+            const hostId = h ? h.id : null;
+
+            appState.soulMode.selection.host = hostId; 
+            el('hostNameDisplay').innerText = h ? h.name : s.host; 
+            el('hostNameDisplay').classList.add('text-red-600'); 
+            selectSoulSlot('soul'); 
+        }
+        
+        // Manual API Key Logic
+        function openApiKeyModal() { el('apiKeyModal').classList.remove('hidden'); }
+        function closeApiKeyModal() { el('apiKeyModal').classList.add('hidden'); }
+        function saveManualApiKey() {
+            const key = el('manualApiKeyInput').value.trim();
+            if(key) {
+                localStorage.setItem('gemini_api_key', key);
+                customAlert("API Key 已儲存");
+                closeApiKeyModal();
+            }
+        }
+
+        // --- 對接本地端 Python FastAPI 後端 ---
+const BACKEND_URL = "http://localhost:8000";
+
+async function callGemini(promptText, isJson = false) {
+    const contents = [{ role: "user", parts: [{ text: promptText }] }];
+    return callGeminiNative(contents, isJson);
+}
+
+async function callGeminiNative(contentsArray, isJson = false) {
+    try {
+        const response = await fetch(`${BACKEND_URL}/api/gemini`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ contents: contentsArray, is_json: isJson })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || `HTTP ${response.status}`);
+        return data.result;
+    } catch (e) {
+        console.error("後端連線錯誤:", e);
+        throw new Error("伺服器連線失敗，請確認 FastAPI 後端已啟動。(" + e.message + ")");
+    }
+}
+        function showStatus(text, bgClass) {
+            const statusEl = document.getElementById('connectionStatus');
+            statusEl.innerText = text;
+            statusEl.className = `fixed bottom-10 right-10 text-white px-3 py-1 rounded-full text-xs pointer-events-none z-50 opacity-100 transition-opacity duration-500 ${bgClass}`;
+            if (!text.includes("重試")) {
+                setTimeout(() => { statusEl.style.opacity = '0'; }, 3000);
+            } else {
+                statusEl.style.opacity = '1';
+            }
+        }
+
+        // Save Download
+        function handleDownloadJSON() { 
+            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories, version: APP_VERSION }; 
+            const blob = new Blob([JSON.stringify(data)], {type: "application/json"}); 
+            const url = URL.createObjectURL(blob); 
+            const a = document.createElement('a'); 
+            a.href = url; 
+            a.download = `legends_v${APP_VERSION.replace('.','_')}.json`; 
+            a.click(); 
+        }
+
+        function loadDataFile(input) { 
+            const file = input.files[0]; 
+            if (!file) return; 
+            const reader = new FileReader(); 
+            reader.onload = function(e) { 
+                try { 
+                    const data = JSON.parse(e.target.result); 
+                    
+                    // 1. 處理自訂人物：幫舊存檔補齊 id 與 dynasty
+                    let loadedCustoms = data.customLegends || [];
+                    loadedCustoms.forEach(l => {
+                        if (!l.id) l.id = generateId(l.type, l.name);
+                        if (!l.dynasty) l.dynasty = guessDynasty(l);
+                    });
+                    appState.customLegends = loadedCustoms; 
+                    
+                    // 2. 舊版升級：將 modifiedLegends 與 chatHistories 的 key 從 name 轉為 id
+                    let oldMods = data.modifiedLegends || {};
+                    let newMods = {};
+                    Object.keys(oldMods).forEach(key => {
+                        const found = staticLegendsData.find(l => l.name === key) || loadedCustoms.find(l => l.name === key);
+                        newMods[found ? found.id : key] = oldMods[key];
+                    });
+                    appState.modifiedLegends = newMods; 
+                    
+                    let oldChats = data.chatHistories || {};
+                    let newChats = {};
+                    Object.keys(oldChats).forEach(key => {
+                        const found = staticLegendsData.find(l => l.name === key) || loadedCustoms.find(l => l.name === key);
+                        newChats[found ? found.id : key] = oldChats[key];
+                    });
+                    appState.chatHistories = newChats; 
+
+                    saveToLocalStorage(); // Persist immediately
+                    refreshData(); 
+                    customAlert("讀檔成功！舊版存檔已自動升級適配。"); 
+                } catch (err) { 
+                    console.error(err);
+                    customAlert("讀檔失敗，檔案格式可能損壞。"); 
+                } 
+            }; 
+            reader.readAsText(file); 
+            input.value = ''; // clear
+        }
+        
+        // Init Bindings
+        document.querySelectorAll('.filter-btn').forEach(btn => { 
+            btn.addEventListener('click', (e) => { 
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active', 'bg-[#2c2826]', 'text-[#f5f5f4]', 'shadow-inner')); 
+                e.target.classList.add('active', 'bg-[#2c2826]', 'text-[#f5f5f4]', 'shadow-inner'); 
+                appState.rankFilter = e.target.getAttribute('data-rank'); 
+                renderLegends(); 
+            }); 
+        });
+        
+        // Debounced Search
+        el('searchInput').addEventListener('input', () => {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(renderLegends, 300);
+        });
+
+        function resetApp() { closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; renderLegends(); }
+        
+        // Start
+        init();
+    </script>
+</body>
+</html>
