@@ -1782,7 +1782,7 @@ const text = streamText;
             
             const roleLabels = { commander: '元帥', strategist: '軍師', vanguard: '先鋒', defender: '鐵壁', raider: '遊擊' };
             const roleIcons = { commander: 'crown', strategist: 'brain', vanguard: 'horse-head', defender: 'shield-halved', raider: 'bolt' };
-
+const fragment = document.createDocumentFragment();
             appState.warRoom.factions.forEach(f => {
                 const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
                 let slotsHtml = '';
@@ -1814,9 +1814,11 @@ const text = streamText;
                         ${slotsHtml}
                     </div>
                 </div>`;
-                container.innerHTML += factionCard;
+                const div = document.createElement('div');
+div.innerHTML = factionCard.trim();
+fragment.appendChild(div.firstChild);
             });
-
+container.appendChild(fragment);
             const activeCount = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n)).length;
             el('startBattleBtn').disabled = activeCount < 2;
             if(activeCount >= 2) el('startBattleBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); 
@@ -1830,7 +1832,7 @@ const text = streamText;
             
             const roleLabels = { emperor: '君主', chancellor: '宰相', general: '大將軍', personnel: '吏部', revenue: '戶部', rites: '禮部' };
             const roleIcons = { emperor: 'dragon', chancellor: 'scroll', general: 'khanda', personnel: 'users', revenue: 'coins', rites: 'place-of-worship' };
-
+const fragment = document.createDocumentFragment();
             appState.courtMode.factions.forEach(f => {
                 const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
                 let slotsHtml = '';
@@ -1869,8 +1871,11 @@ const text = streamText;
                         ${slotsHtml}
                     </div>
                 </div>`;
-                container.innerHTML += factionCard;
+                const div = document.createElement('div');
+div.innerHTML = factionCard.trim();
+fragment.appendChild(div.firstChild);
             });
+            container.appendChild(fragment);
 
             const activeCount = appState.courtMode.factions.filter(f => Object.values(f.slots).some(n => n)).length;
             el('startCourtBtn').disabled = activeCount < 1; 
