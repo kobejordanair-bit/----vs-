@@ -582,7 +582,7 @@
         let searchTimer = null; // For debounce
         
         // --- ID & DYNASTY GENERATION ---
-        function generateId(type, name) { return `${type}_${name}`; }
+        function generateId(type, name) { return `${type}_${name}_${Date.now()}`; }
         
         function guessDynasty(l) {
             if (l.dynasty && l.dynasty !== '其他') return l.dynasty; 
@@ -2127,7 +2127,7 @@ const text = streamText;
             appState.soulMode.activeScenario = s; 
             
             // Find host ID by name for safety
-            const h = legendsData.find(l => l.name.includes(s.host));
+            const h = legendsData.find(l => l.name === s.host);
             const hostId = h ? h.id : null;
 
             appState.soulMode.selection.host = hostId; 
@@ -2188,16 +2188,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
         throw new Error("伺服器連線失敗，請確認 FastAPI 後端已啟動。(" + e.message + ")");
     }
 }
-        function showStatus(text, bgClass) {
-            const statusEl = document.getElementById('connectionStatus');
-            statusEl.innerText = text;
-            statusEl.className = `fixed bottom-10 right-10 text-white px-3 py-1 rounded-full text-xs pointer-events-none z-50 opacity-100 transition-opacity duration-500 ${bgClass}`;
-            if (!text.includes("重試")) {
-                setTimeout(() => { statusEl.style.opacity = '0'; }, 3000);
-            } else {
-                statusEl.style.opacity = '1';
-            }
-        }
+        
 
         // Save Download
         function handleDownloadJSON() { 
