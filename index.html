@@ -143,11 +143,6 @@
                     </button>
                 </div>
 
-                <!-- Manual API Key Button -->
-                <button onclick="openApiKeyModal()" class="text-[#a8a29e] hover:text-white transition-colors" title="手動設定 API Key">
-                    <i class="fa-solid fa-key"></i>
-                </button>
-
                 <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
                 
                 <!-- 模式切換 -->
@@ -541,19 +536,6 @@
         </div>
     </div>
 
-    <!-- API Key Modal -->
-    <div id="apiKeyModal" class="fixed inset-0 z-[80] hidden">
-        <div class="absolute inset-0 modal-overlay" onclick="closeApiKeyModal()"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-2xl w-full max-w-md p-6 border border-gray-200">
-            <h3 class="text-lg font-bold mb-4 text-gray-800">手動設定 API Key</h3>
-            <p class="text-sm text-gray-500 mb-4">如果自動連線失敗，請在此輸入您的 Google Gemini API Key。</p>
-            <input type="password" id="manualApiKeyInput" class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="AIza...">
-            <div class="flex justify-end gap-2">
-                <button onclick="closeApiKeyModal()" class="px-4 py-2 text-gray-500 hover:bg-gray-100 rounded">取消</button>
-                <button onclick="saveManualApiKey()" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">儲存</button>
-            </div>
-        </div>
-    </div>
     
     <script>
         // --- CONSTANTS & UTILS ---
@@ -1177,12 +1159,14 @@
 
         // AI Analysis & Stats Caching Logic
         let currentAnalysisId = null;
+        let currentRequestToken = 0;
         
         async function showAIAnalysis(id, forceRegen = false) {
             const legend = legendsData.find(l => l.id === id);
             if (!legend) return;
 
             currentAnalysisId = id;
+            const myToken = ++currentRequestToken;
             openModal(`${legend.name} · 歷史評鑑`, 'content');
             el('loadingState').classList.remove('hidden');
             el('loadingState').classList.add('flex');
@@ -1221,7 +1205,16 @@
             }
 
             try {
-                const text = await callGemini(prompt);
+                let streamText = '';
+await callGeminiStream(prompt, (partial) => {
+    if (myToken !== currentRequestToken) return;
+    streamText = partial;
+    el('loadingState').classList.add('hidden');
+    el('modalContent').innerHTML = marked.parse(partial);
+});
+
+if (myToken !== currentRequestToken) return;
+const text = streamText;
                 
                 let cleanText = text;
                 if (needsStats) {
@@ -2143,21 +2136,38 @@
             selectSoulSlot('soul'); 
         }
         
-        // Manual API Key Logic
-        function openApiKeyModal() { el('apiKeyModal').classList.remove('hidden'); }
-        function closeApiKeyModal() { el('apiKeyModal').classList.add('hidden'); }
-        function saveManualApiKey() {
-            const key = el('manualApiKeyInput').value.trim();
-            if(key) {
-                localStorage.setItem('gemini_api_key', key);
-                customAlert("API Key 已儲存");
-                closeApiKeyModal();
-            }
-        }
-
         // --- 對接本地端 Python FastAPI 後端 ---
 const BACKEND_URL = "http://localhost:8000";
+async function callGeminiStream(promptText, onChunk) {
+    const contents = [{ role: "user", parts: [{ text: promptText }] }];
+    const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: contents, is_json: false })
+    });
 
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let fullText = '';
+
+    while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        const lines = decoder.decode(value).split('\n');
+        for (const line of lines) {
+            if (line.startsWith('data: ')) {
+                const data = line.slice(6);
+                if (data === '[DONE]') return fullText;
+                try {
+                    const parsed = JSON.parse(data);
+                    fullText += parsed.text;
+                    onChunk(fullText);
+                } catch(e) {}
+            }
+        }
+    }
+    return fullText;
+}
 async function callGemini(promptText, isJson = false) {
     const contents = [{ role: "user", parts: [{ text: promptText }] }];
     return callGeminiNative(contents, isJson);
