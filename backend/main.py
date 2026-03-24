@@ -52,7 +52,7 @@ async def call_gemini(request: ChatRequest):
             config["response_mime_type"] = "application/json"
 
         response = client.models.generate_content(
-            model="gemini-2.5-pro",
+            model="gemini-3.1-pro-preview",
             contents=contents,
             config=config if config else None
         )
@@ -78,7 +78,7 @@ async def call_gemini_stream(request: ChatRequest):
 
         def generate():
             for chunk in client.models.generate_content_stream(
-                model="gemini-2.5-pro",
+                model="gemini-3.1-pro-preview",
                 contents=contents,
             ):
                 if chunk.text:

@@ -478,14 +478,6 @@
                             <textarea id="editDesc" class="w-full p-2 border border-slate-300 rounded text-slate-800 bg-slate-50 focus:border-blue-500 outline-none h-24 text-sm leading-relaxed"></textarea>
                         </div>
                     </div>
-                    <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
-                        <label class="block text-xs font-bold text-indigo-800 mb-2 flex items-center gap-2"><i class="fa-solid fa-gavel"></i> AI 參謀意見</label>
-                        <div class="flex gap-2 mb-3">
-                            <input id="consultInput" class="flex-1 p-2 border border-indigo-200 rounded text-sm bg-white focus:outline-none focus:border-indigo-400" placeholder="例如：我覺得崇禎應該有B...">
-                            <button onclick="askAIConsultant()" class="bg-indigo-600 text-white px-4 py-1 rounded text-xs font-bold hover:bg-indigo-700 transition-colors">詢問</button>
-                        </div>
-                        <div id="consultResult" class="text-xs text-indigo-900 hidden bg-white p-3 rounded border border-indigo-100 italic leading-relaxed shadow-sm"></div>
-                    </div>
                     <div class="flex gap-3 pt-2">
                         <button onclick="saveLegendEdits()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-lg font-bold shadow-md transform active:scale-95 transition-all">確認修訂</button>
                         <button id="deleteLegendBtn" onclick="deleteCustomLegend()" class="hidden bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg font-bold shadow-md transform active:scale-95 transition-all"><i class="fa-solid fa-trash"></i></button>
@@ -523,12 +515,12 @@
                 <div id="addStep2" class="hidden flex flex-col gap-4">
                     <div class="bg-white p-5 rounded-xl border border-emerald-100 shadow-sm flex flex-col gap-3">
                         <div class="flex gap-3">
-                            <input id="newRank" class="w-20 p-2 border border-slate-300 rounded text-center font-bold bg-emerald-50" readonly>
-                            <input id="newTitle" class="flex-1 p-2 border border-slate-300 rounded text-sm" readonly>
+                            <input id="newRank" class="w-20 p-2 border border-slate-300 rounded text-center font-bold bg-emerald-50" >
+                            <input id="newTitle" class="flex-1 p-2 border border-slate-300 rounded text-sm" >
                         </div>
-                        <input id="newTag" class="w-full p-2 border border-slate-300 rounded text-sm" readonly>
-                        <input id="newPoem" class="w-full p-2 border border-slate-300 rounded text-sm italic font-serif" readonly>
-                        <textarea id="newDesc" class="w-full p-2 border border-slate-300 rounded text-sm h-24 leading-relaxed" readonly></textarea>
+                        <input id="newTag" class="w-full p-2 border border-slate-300 rounded text-sm" >
+                        <input id="newPoem" class="w-full p-2 border border-slate-300 rounded text-sm italic font-serif" >
+                        <textarea id="newDesc" class="w-full p-2 border border-slate-300 rounded text-sm h-24 leading-relaxed" ></textarea>
                     </div>
                     <button onclick="saveNewLegend()" class="w-full bg-[#047857] hover:bg-[#059669] text-white py-3 rounded-lg font-bold font-serif shadow-md transform active:scale-95 transition-all">確認入冊</button>
                 </div>
@@ -1161,6 +1153,46 @@
         // AI Analysis & Stats Caching Logic
         let currentAnalysisId = null;
         let currentRequestToken = 0;
+        async function showRelatedReactions(id, actionType) {
+    const legend = legendsData.find(l => l.id === id);
+    if (!legend) return;
+
+    // 把榜單裡所有人名傳給AI，讓他從裡面挑
+    const allNames = legendsData.map(l => l.name).join('、');
+
+    openModal(`史觀辯論庭：眾人評${legend.name}`, 'content');
+    el('loadingState').classList.remove('hidden');
+    el('loadingState').classList.add('flex');
+    el('modalContent').innerHTML = '';
+    el('radarChartContainer').classList.add('hidden');
+
+    const prompt = `歷史人物「${legend.name}」（${legend.title}，評級${legend.rank}）剛剛被${actionType}。
+
+以下是歷史人物名單，請從中挑選3至5位與「${legend.name}」最相關的人物（可以是盟友、敵人、同時代競爭者或師承關係）：
+${allNames}
+
+請讓這些人用符合其歷史性格與時代背景的語氣，各說一句話評論「${legend.name}」的評級與定位。
+格式範例：
+**秦檜**（南宋奸相）：「此人不過莽夫，評S-實屬高估...」
+
+要求：
+1. 每個人的評論要符合他們的歷史立場（敵人會批評，盟友會讚揚，競爭者會嫉妒或欽佩）
+2. 語氣要半文半白，有歷史感
+3. 最後加一段**【史家總評】**，客觀評論眾人的反應`;
+
+    const myToken = ++currentRequestToken;
+
+    try {
+        await callGeminiStream(prompt, (partial) => {
+            if (myToken !== currentRequestToken) return;
+            el('loadingState').classList.add('hidden');
+            el('modalContent').innerHTML = marked.parse(partial);
+        });
+    } catch (e) {
+        el('loadingState').classList.add('hidden');
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+    }
+}
         async function showRelations(id) {
     const legend = legendsData.find(l => l.id === id);
     if (!legend) return;
@@ -1704,7 +1736,7 @@ D：因先天缺陷完全喪失統治機能。（晉惠帝）
             saveToLocalStorage();
             refreshData();
             closeEditHub();
-            customAlert("修訂已保存！");
+showRelatedReactions(currentEditingId, '修訂');
         }
 
         function deleteCustomLegend() {
@@ -1718,23 +1750,6 @@ D：因先天缺陷完全喪失統治機能。（晉惠帝）
             });
         }
 
-        async function askAIConsultant() {
-            const query = el('consultInput').value;
-            if(!query) return;
-            
-            el('consultResult').classList.remove('hidden');
-            el('consultResult').innerText = "AI 參謀思考中...";
-            
-            const legend = legendsData.find(l => l.id === currentEditingId);
-            const prompt = `關於歷史人物 ${legend.name} (${legend ? legend.desc : ''})，使用者問：${query}。請給出簡短的歷史評價建議 (50字內)。`;
-            
-            try {
-                const text = await callGemini(prompt);
-                el('consultResult').innerText = text;
-            } catch (e) {
-                el('consultResult').innerText = "參謀暫時離線。";
-            }
-        }
 
         // --- NEW MULTI-FACTION LOGIC ---
         function addFaction(mode) {
