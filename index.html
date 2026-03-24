@@ -1417,32 +1417,41 @@ const text = streamText;
             }
 
             try {
-                const text = await callGemini(prompt);
-                let cleanText = text;
-                
-                let s1 = p1Stats;
-                let s2 = p2Stats;
+                let streamText = '';
+const myToken = ++currentRequestToken;
 
-                if (needStats) {
-                    const jsonMatch = text.match(/\{"stats1":\s*\[.*?\],\s*"stats2":\s*\[.*?\]\}/);
-                    if (jsonMatch) {
-                        const statsData = JSON.parse(jsonMatch[0]);
-                        s1 = statsData.stats1;
-                        s2 = statsData.stats2;
-                        appState.modifiedLegends[p1.id] = appState.modifiedLegends[p1.id] || {};
-                        appState.modifiedLegends[p2.id] = appState.modifiedLegends[p2.id] || {};
-                        appState.modifiedLegends[p1.id].stats = s1;
-                        appState.modifiedLegends[p2.id].stats = s2;
-                        saveToLocalStorage();
-                        cleanText = text.replace(jsonMatch[0], '');
-                    }
-                }
+await callGeminiStream(prompt, (partial) => {
+    if (myToken !== currentRequestToken) return;
+    streamText = partial;
+    el('loadingState').classList.add('hidden');
+    el('modalContent').innerHTML = marked.parse(partial);
+});
 
-                if(s1 && s2) {
-                    renderRadarChart(p1.name, s1, p2.name, s2);
-                }
-                
-                setModalContent(cleanText);
+if (myToken !== currentRequestToken) return;
+
+let cleanText = streamText;
+let s1 = p1Stats;
+let s2 = p2Stats;
+
+if (needStats) {
+    const jsonMatch = streamText.match(/\{"stats1":\s*\[.*?\],\s*"stats2":\s*\[.*?\]\}/);
+    if (jsonMatch) {
+        const statsData = JSON.parse(jsonMatch[0]);
+        s1 = statsData.stats1;
+        s2 = statsData.stats2;
+        appState.modifiedLegends[p1.id] = appState.modifiedLegends[p1.id] || {};
+        appState.modifiedLegends[p2.id] = appState.modifiedLegends[p2.id] || {};
+        appState.modifiedLegends[p1.id].stats = s1;
+        appState.modifiedLegends[p2.id].stats = s2;
+        saveToLocalStorage();
+        cleanText = streamText.replace(jsonMatch[0], '');
+        el('modalContent').innerHTML = marked.parse(cleanText);
+    }
+}
+
+if(s1 && s2) {
+    renderRadarChart(p1.name, s1, p2.name, s2);
+}
             } catch (e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>比對推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
@@ -1972,8 +1981,12 @@ fragment.appendChild(div.firstChild);
             規範：請保持歷史學者的嚴謹與文學性。繁體中文。`;
 
             try {
-                const text = await callGemini(prompt);
-                setModalContent(text);
+                const myToken = ++currentRequestToken;
+await callGeminiStream(prompt, (partial) => {
+    if (myToken !== currentRequestToken) return;
+    el('loadingState').classList.add('hidden');
+    el('modalContent').innerHTML = marked.parse(partial);
+});
             } catch(e) { 
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2005,8 +2018,12 @@ fragment.appendChild(div.firstChild);
             4. **最終勝者**。`;
 
             try {
-                const text = await callGemini(prompt);
-                setModalContent(text);
+                const myToken = ++currentRequestToken;
+await callGeminiStream(prompt, (partial) => {
+    if (myToken !== currentRequestToken) return;
+    el('loadingState').classList.add('hidden');
+    el('modalContent').innerHTML = marked.parse(partial);
+});
             } catch(e) { 
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2053,8 +2070,12 @@ fragment.appendChild(div.firstChild);
             }
 
             try {
-                const text = await callGemini(prompt);
-                setModalContent(text);
+                const myToken = ++currentRequestToken;
+await callGeminiStream(prompt, (partial) => {
+    if (myToken !== currentRequestToken) return;
+    el('loadingState').classList.add('hidden');
+    el('modalContent').innerHTML = marked.parse(partial);
+});
             } catch(e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
