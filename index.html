@@ -1104,6 +1104,7 @@
                     <div class="flex gap-2 mt-auto pt-1 relative z-10" onclick="event.stopPropagation()">
                         <button onclick="startChat('${g.id}')" class="flex-1 bg-white hover:bg-[#f5f5f4] text-[#57534e] text-xs font-serif font-bold py-2 rounded border border-[#e5e0d3] transition-colors"><i class="fa-solid fa-comment-dots text-[#a8a29e] mr-1"></i>對話</button>
                         <button onclick="showAIAnalysis('${g.id}')" class="flex-1 btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
+                        <button onclick=\"showRelations('${g.id}')\" class=\"flex-1 bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-serif font-bold py-2 rounded border border-amber-200 transition-colors\"><i class=\"fa-solid fa-diagram-project text-amber-500 mr-1\"></i>關係</button>
                         <button onclick="toggleCompare('${g.id}')" class="w-10 bg-teal-50 hover:bg-teal-100 text-teal-600 text-xs font-bold rounded border border-teal-200 transition-colors" title="加入比對"><i class="fa-solid fa-code-compare"></i></button>
                     </div>
                 </div>`;
@@ -1160,7 +1161,47 @@
         // AI Analysis & Stats Caching Logic
         let currentAnalysisId = null;
         let currentRequestToken = 0;
-        
+        async function showRelations(id) {
+    const legend = legendsData.find(l => l.id === id);
+    if (!legend) return;
+
+    openModal(`${legend.name} · 歷史關係網`, 'content');
+    el('loadingState').classList.remove('hidden');
+    el('loadingState').classList.add('flex');
+    el('modalContent').innerHTML = '';
+    el('radarChartContainer').classList.add('hidden');
+
+    const prompt = `請分析歷史人物「${legend.name}」（${legend.title}）的歷史關係網絡。
+
+請依照以下四個維度分析，每個維度列出3-5個最重要的人物，並說明關係：
+
+1. **【盟友／君臣關係】**：誰是他最重要的合作夥伴或君主/臣子？這段關係如何影響歷史？
+
+2. **【敵對關係】**：他一生最重要的對手是誰？雙方的博弈如何改變局勢？
+
+3. **【師承關係】**：他師承何人？又影響了哪些後輩？思想或技藝的傳承脈絡。
+
+4. **【同時代競爭者】**：同一時代中，與他地位相當、互相競爭的人物有哪些？
+
+最後加一段**【總結】**：這個關係網如何塑造了他的歷史定位？
+
+請用繁體中文，保持歷史學者的嚴謹風格。`;
+
+    const myToken = ++currentRequestToken;
+    let streamText = '';
+
+    try {
+        await callGeminiStream(prompt, (partial) => {
+            if (myToken !== currentRequestToken) return;
+            streamText = partial;
+            el('loadingState').classList.add('hidden');
+            el('modalContent').innerHTML = marked.parse(partial);
+        });
+    } catch (e) {
+        el('loadingState').classList.add('hidden');
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>關係網生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+    }
+}
         async function showAIAnalysis(id, forceRegen = false) {
             const legend = legendsData.find(l => l.id === id);
             if (!legend) return;
