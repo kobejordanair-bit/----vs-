@@ -12,7 +12,11 @@ import openpyxl
 load_dotenv()
 
 app = FastAPI(title="帝王將相名臣評鑑 API", version="15.2")
+from fastapi.responses import FileResponse
 
+@app.get("/")
+def serve_frontend():
+    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html"))
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -29,7 +33,8 @@ if not GEMINI_API_KEY:
 client = genai.Client(api_key=GEMINI_API_KEY)
 def load_ranking_reference():
     try:
-        wb = openpyxl.load_workbook('王侯將相最新版.xlsx')
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        wb = openpyxl.load_workbook(os.path.join(BASE_DIR, '王侯將相最新版.xlsx'))       
         ws = wb.active
         rank_groups = {}
         for row in ws.iter_rows(min_row=2, values_only=True):
