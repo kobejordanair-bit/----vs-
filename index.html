@@ -1593,8 +1593,11 @@ if(s1 && s2) {
             el('addStep1').classList.add('hidden');
             el('addLoading').classList.remove('hidden');
             el('addLoading').classList.add('flex');
+            const refResponse = await fetch(`${BACKEND_URL}/api/ranking-reference`);
+const refData = await refResponse.json();
+const rankingRef = refData.result || '';
 const prompt = `請評鑑歷史人物：${name}（類型：${pendingNewLegendType === 'emperor' ? '帝王' : (pendingNewLegendType === 'general' ? '名將' : '名臣')}）。
-
+${rankingRef}
 請嚴格依照以下評級標準給出評級：
 
 一、核心考核維度（三大身分隔離）
@@ -1628,8 +1631,10 @@ D：因先天缺陷完全喪失統治機能。（晉惠帝）
 
             try {
                 const text = await callGemini(prompt, true); 
-                const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
-                const data = JSON.parse(jsonStr);
+                const jsonMatch = text.match(/\{[\s\S]*\}/);
+if (!jsonMatch) throw new Error("AI 回傳格式錯誤，請重試");
+const jsonStr = jsonMatch[0];
+const data = JSON.parse(jsonStr);
 
                 // Need a hidden field for dynasty mapping
                 el('addStep2').dataset.dynasty = data.dynasty || '其他';
