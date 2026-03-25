@@ -17,6 +17,13 @@ from fastapi.responses import FileResponse
 @app.get("/")
 def serve_frontend():
     return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html"))
+@app.get("/manifest.json")
+def serve_manifest():
+    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json"))
+
+@app.get("/sw.js")
+def serve_sw():
+    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sw.js"))
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

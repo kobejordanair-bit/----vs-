@@ -1,0 +1,22 @@
+{
+  "name": "帝王將相名臣評鑑",
+  "short_name": "王侯評鑑",
+  "description": "歷代帝王將相名臣 AI 評鑑系統",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f0e9",
+  "theme_color": "#7f1d1d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
