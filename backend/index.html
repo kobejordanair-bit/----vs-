@@ -306,6 +306,14 @@
         </div>
 
         <!-- 畫廊 (Grid) -->
+         <div id="dataLoadingScreen" class="fixed inset-0 z-[998] bg-[#f2f0e9] flex items-center justify-center">
+    <div class="flex flex-col items-center gap-4">
+        <div class="w-12 h-12 bg-gradient-to-br from-[#d4af37] to-[#8b6914] rounded flex items-center justify-center shadow-lg">
+            <i class="fa-solid fa-dragon text-xl text-[#2c0b0e]"></i>
+        </div>
+        <p class="text-[#57534e] font-serif tracking-widest animate-pulse">正在翻閱史籍...</p>
+    </div>
+</div>
         <div id="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-32"></div>
     </div>
 
@@ -1058,6 +1066,7 @@ modifiedLegends: {}
     initScenarios();
     updateWarRoomUI();
     updateCourtModeUI();
+    document.getElementById('dataLoadingScreen').style.display = 'none';
 }
 
         // Migrate from 13.9 name-based keys to 15.0 id-based keys if needed
