@@ -2,6 +2,7 @@ import os
 import json
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any
@@ -14,7 +15,7 @@ load_dotenv()
 APP_VERSION = "15.2"
 
 app = FastAPI(title="帝王將相名臣評鑑 API", version=APP_VERSION)
-
+app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
