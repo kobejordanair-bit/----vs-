@@ -1,21 +1,30 @@
 import os
 import json
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import StreamingResponse, FileResponse
+from fastapi import FastAPI, HTTPException, Request, Header
+from fastapi.responses import StreamingResponse, FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from google import genai
 from dotenv import load_dotenv
 import openpyxl
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
 load_dotenv()
 
 APP_VERSION = "15.2"
+APP_SECRET = os.getenv("APP_SECRET", "24080409")
 
+limiter = Limiter(key_func=get_remote_address)
 app = FastAPI(title="帝王將相名臣評鑑 API", version=APP_VERSION)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
 app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -59,6 +68,10 @@ class ChatRequest(BaseModel):
     contents: List[Dict[str, Any]]
     is_json: bool = False
 
+def verify_token(x_app_token: Optional[str] = Header(None)):
+    if x_app_token != APP_SECRET:
+        raise HTTPException(status_code=403, detail="無效的存取金鑰")
+
 @app.get("/")
 def serve_frontend():
     return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html"))
@@ -71,22 +84,32 @@ def serve_manifest():
 def serve_sw():
     return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sw.js"))
 
+@app.post("/api/auth")
+async def auth(request: Request):
+    body = await request.json()
+    password = body.get("password", "")
+    if password == APP_SECRET:
+        return {"token": APP_SECRET}
+    raise HTTPException(status_code=401, detail="密碼錯誤")
+
 @app.get("/api/ranking-reference")
 def get_ranking_reference():
     return {"result": RANKING_REFERENCE}
 
 @app.post("/api/gemini")
-async def call_gemini(request: ChatRequest):
+@limiter.limit("20/minute")
+async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional[str] = Header(None)):
+    verify_token(x_app_token)
     try:
         contents = []
-        for msg in request.contents:
+        for msg in body.contents:
             role = "user" if msg["role"] == "user" else "model"
             text = msg["parts"][0]["text"]
             contents.append({"role": role, "parts": [{"text": text}]})
         if not contents:
             raise HTTPException(status_code=400, detail="對話內容不能為空")
         config = {}
-        if request.is_json:
+        if body.is_json:
             config["response_mime_type"] = "application/json"
         response = client.models.generate_content(
             model="gemini-2.5-pro",
@@ -94,14 +117,18 @@ async def call_gemini(request: ChatRequest):
             config=config if config else None
         )
         return {"result": response.text}
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/gemini/stream")
-async def call_gemini_stream(request: ChatRequest):
+@limiter.limit("20/minute")
+async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: Optional[str] = Header(None)):
+    verify_token(x_app_token)
     try:
         contents = []
-        for msg in request.contents:
+        for msg in body.contents:
             role = "user" if msg["role"] == "user" else "model"
             text = msg["parts"][0]["text"]
             contents.append({"role": role, "parts": [{"text": text}]})
@@ -116,5 +143,7 @@ async def call_gemini_stream(request: ChatRequest):
                     yield f"data: {json.dumps({'text': chunk.text})}\n\n"
             yield "data: [DONE]\n\n"
         return StreamingResponse(generate(), media_type="text/event-stream")
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

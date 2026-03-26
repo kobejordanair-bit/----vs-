@@ -118,22 +118,41 @@
     </div>
 </div>
 <script>
-    (function() {
-        const PASS = '24080409';
-        if (localStorage.getItem('dynasty_auth') === PASS) {
-            document.getElementById('passwordScreen').style.display = 'none';
+    let APP_TOKEN = null;
+
+    (async function() {
+        const saved = localStorage.getItem('dynasty_token');
+        if (saved) {
+            const res = await fetch('/api/auth', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({password: saved})
+            });
+            if (res.ok) {
+                APP_TOKEN = saved;
+                document.getElementById('passwordScreen').style.display = 'none';
+                return;
+            }
         }
     })();
-    function checkPassword() {
+
+    async function checkPassword() {
         const input = document.getElementById('passwordInput').value;
-        if (input === '24080409') {
-            localStorage.setItem('dynasty_auth', '24080409');
+        const res = await fetch('/api/auth', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({password: input})
+        });
+        if (res.ok) {
+            APP_TOKEN = input;
+            localStorage.setItem('dynasty_token', input);
             document.getElementById('passwordScreen').style.display = 'none';
         } else {
             document.getElementById('passwordError').classList.remove('hidden');
             document.getElementById('passwordInput').value = '';
         }
     }
+</script>
 </script>
     <div id="connectionStatus"><i class="fa-solid fa-wifi"></i> 連線狀態</div>
 
@@ -2292,7 +2311,7 @@ async function callGeminiStream(promptText, onChunk) {
     const contents = [{ role: "user", parts: [{ text: promptText }] }];
     const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
         body: JSON.stringify({ contents: contents, is_json: false })
     });
 
@@ -2327,7 +2346,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
     try {
         const response = await fetch(`${BACKEND_URL}/api/gemini`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
             body: JSON.stringify({ contents: contentsArray, is_json: isJson })
         });
         const data = await response.json();
