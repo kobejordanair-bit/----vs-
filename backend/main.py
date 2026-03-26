@@ -12,6 +12,7 @@ import openpyxl
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
+from pymongo import MongoClient
 
 load_dotenv()
 
@@ -19,6 +20,14 @@ APP_VERSION = "15.2"
 APP_SECRET = os.getenv("APP_SECRET")
 if not APP_SECRET:
     raise ValueError("環境變數 APP_SECRET 尚未設定！")
+
+MONGODB_URL = os.getenv("MONGODB_URL")
+if not MONGODB_URL:
+    raise ValueError("環境變數 MONGODB_URL 尚未設定！")
+
+mongo_client = MongoClient(MONGODB_URL)
+db = mongo_client["dynasty"]
+userdata_col = db["userdata"]
 
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI(title="帝王將相名臣評鑑 API", version=APP_VERSION)
@@ -70,6 +79,11 @@ class ChatRequest(BaseModel):
     contents: List[Dict[str, Any]]
     is_json: bool = False
 
+class UserDataRequest(BaseModel):
+    customLegends: List[Dict[str, Any]] = []
+    modifiedLegends: Dict[str, Any] = {}
+    chatHistories: Dict[str, Any] = {}
+
 def verify_token(x_app_token: Optional[str] = Header(None)):
     if x_app_token != APP_SECRET:
         raise HTTPException(status_code=403, detail="無效的存取金鑰")
@@ -98,6 +112,24 @@ async def auth(request: Request):
 @app.get("/api/ranking-reference")
 def get_ranking_reference():
     return {"result": RANKING_REFERENCE}
+
+@app.get("/api/userdata")
+async def get_userdata(x_app_token: Optional[str] = Header(None)):
+    verify_token(x_app_token)
+    doc = userdata_col.find_one({"_id": "main"}, {"_id": 0})
+    if not doc:
+        return {"customLegends": [], "modifiedLegends": {}, "chatHistories": {}}
+    return doc
+
+@app.post("/api/userdata")
+async def save_userdata(request: Request, body: UserDataRequest, x_app_token: Optional[str] = Header(None)):
+    verify_token(x_app_token)
+    userdata_col.replace_one(
+        {"_id": "main"},
+        {"_id": "main", "customLegends": body.customLegends, "modifiedLegends": body.modifiedLegends, "chatHistories": body.chatHistories},
+        upsert=True
+    )
+    return {"status": "ok"}
 
 @app.post("/api/gemini")
 @limiter.limit("20/minute")

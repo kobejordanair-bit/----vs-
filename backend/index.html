@@ -1031,21 +1031,34 @@
             },
             soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
             chatMode: { targetId: null, history: [] },
-            chatHistories: safeJSONParse(localStorage.getItem('legendChatHistories_v15_0'), {}),
-            customLegends: safeJSONParse(localStorage.getItem('customLegends_v15_0'), []),
-            modifiedLegends: safeJSONParse(localStorage.getItem('modifiedLegends_v15_0'), {})
+            chatHistories: {},
+customLegends: [],
+modifiedLegends: {}
         };
         
         let legendsData = []; 
         const rankOrder = { "S+": 1, "S": 2, "S-": 3, "A+": 4, "A": 5, "A-": 6, "B+": 7, "B": 8, "B-": 8.5, "C+": 9, "C": 10, "C-": 11, "D": 12 };
 
-        function init() {
-            migrateOldData();
-            refreshData();
-            initScenarios();
-            updateWarRoomUI();
-            updateCourtModeUI();
+        async function init() {
+    try {
+        const res = await fetch(`${BACKEND_URL}/api/userdata`, {
+            headers: { 'x-app-token': APP_TOKEN }
+        });
+        if (res.ok) {
+            const data = await res.json();
+            appState.customLegends = data.customLegends || [];
+            appState.modifiedLegends = data.modifiedLegends || {};
+            appState.chatHistories = data.chatHistories || {};
         }
+    } catch(e) {
+        console.error('載入資料失敗:', e);
+    }
+    migrateOldData();
+    refreshData();
+    initScenarios();
+    updateWarRoomUI();
+    updateCourtModeUI();
+}
 
         // Migrate from 13.9 name-based keys to 15.0 id-based keys if needed
         function migrateOldData() {
@@ -1072,11 +1085,21 @@
             });
         }
 
-        function saveToLocalStorage() {
-            localStorage.setItem('customLegends_v15_0', JSON.stringify(appState.customLegends));
-            localStorage.setItem('modifiedLegends_v15_0', JSON.stringify(appState.modifiedLegends));
-            localStorage.setItem('legendChatHistories_v15_0', JSON.stringify(appState.chatHistories));
-        }
+        async function saveToLocalStorage() {
+    try {
+        await fetch(`${BACKEND_URL}/api/userdata`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
+            body: JSON.stringify({
+                customLegends: appState.customLegends,
+                modifiedLegends: appState.modifiedLegends,
+                chatHistories: appState.chatHistories
+            })
+        });
+    } catch(e) {
+        console.error('儲存失敗:', e);
+    }
+}
 
         function refreshData() {
             legendsData = [...staticLegendsData, ...appState.customLegends];
@@ -2433,7 +2456,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
         function resetApp() { closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; renderLegends(); }
         
         // Start
-        init();
+        init().catch(console.error);
     </script>
 </body>
 </html>
