@@ -1371,7 +1371,8 @@ ${allNames}
                 renderRadarChart(legend.name, cachedStats);
                 el('regenStatsBtn').classList.remove('hidden'); // Show button to regenerate
                 if (!needsAnalysis) {
-    setModalContent(cachedAnalysis);
+    console.log('using cache', cachedAnalysis?.length, cachedAnalysis?.slice(0,30));
+                    setModalContent(cachedAnalysis);
     return;
 }
             }
