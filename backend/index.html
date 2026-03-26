@@ -120,21 +120,13 @@
 <script>
     let APP_TOKEN = null;
 
-    (async function() {
-        const saved = localStorage.getItem('dynasty_token');
-        if (saved) {
-            const res = await fetch('/api/auth', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({password: saved})
-            });
-            if (res.ok) {
-                APP_TOKEN = saved;
-                document.getElementById('passwordScreen').style.display = 'none';
-                return;
-            }
-        }
-    })();
+    (function() {
+    const saved = localStorage.getItem('dynasty_token');
+    if (saved) {
+        APP_TOKEN = saved;
+        document.getElementById('passwordScreen').style.display = 'none';
+    }
+})();
 
     async function checkPassword() {
         const input = document.getElementById('passwordInput').value;
@@ -2313,7 +2305,10 @@ async function callGeminiStream(promptText, onChunk) {
         headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
         body: JSON.stringify({ contents: contents, is_json: false })
     });
-
+if (!response.ok) {
+    const errData = await response.json().catch(() => ({}));
+    throw new Error(errData.detail || `伺服器錯誤 HTTP ${response.status}`);
+}
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let fullText = '';
