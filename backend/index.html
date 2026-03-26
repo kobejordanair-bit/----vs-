@@ -125,7 +125,7 @@
     if (saved) {
         APP_TOKEN = saved;
         document.getElementById('passwordScreen').style.display = 'none';
-        init().catch(console.error);
+        document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
     }
 })();
 
