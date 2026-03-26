@@ -129,21 +129,26 @@
 })();
 
     async function checkPassword() {
-        const input = document.getElementById('passwordInput').value;
-        const res = await fetch('/api/auth', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({password: input})
-        });
-        if (res.ok) {
-            APP_TOKEN = input;
-            localStorage.setItem('dynasty_token', input);
-            document.getElementById('passwordScreen').style.display = 'none';
-        } else {
-            document.getElementById('passwordError').classList.remove('hidden');
-            document.getElementById('passwordInput').value = '';
-        }
+    const input = document.getElementById('passwordInput').value;
+    const btn = document.querySelector('#passwordScreen button');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 驗證中...';
+    const res = await fetch('/api/auth', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({password: input})
+    });
+    if (res.ok) {
+        APP_TOKEN = input;
+        localStorage.setItem('dynasty_token', input);
+        document.getElementById('passwordScreen').style.display = 'none';
+    } else {
+        document.getElementById('passwordError').classList.remove('hidden');
+        document.getElementById('passwordInput').value = '';
+        btn.disabled = false;
+        btn.innerHTML = '入朝覲見';
     }
+}
 </script>
     <div id="connectionStatus"><i class="fa-solid fa-wifi"></i> 連線狀態</div>
 
@@ -1101,7 +1106,7 @@
                 const matchType = appState.typeFilter === 'all' || g.type === appState.typeFilter;
                 const matchRank = appState.rankFilter === 'all' || g.rank === appState.rankFilter;
                 const matchDynasty = appState.dynastyFilter === 'all' || g.dynasty === appState.dynastyFilter;
-                const matchSearch = g.name.includes(searchQuery) || g.title.includes(searchQuery) || g.tag.includes(searchQuery);
+                const matchSearch = g.name.includes(searchQuery) || g.title.includes(searchQuery) || g.tag.includes(searchQuery) || (g.desc && g.desc.includes(searchQuery));
                 return matchType && matchRank && matchDynasty && matchSearch;
             }).sort((a, b) => rankOrder[a.rank] - rankOrder[b.rank]);
 
