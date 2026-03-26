@@ -1070,7 +1070,7 @@
             const fragment = document.createDocumentFragment();
 
             filtered.forEach(g => {
-                let rankClass = `rank-${g.rank.replace('+','-plus').replace('-','-minus')}`;
+                let rankClass = `rank-${g.rank.replace('-','-minus').replace('+','-plus')}`;
                 let typeIcon = '';
                 let typeClass = '';
                 if(g.type==='emperor') { typeIcon='<i class="fa-solid fa-dragon text-[#b45309]"></i>'; typeClass='type-emperor'; }
