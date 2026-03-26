@@ -1405,6 +1405,7 @@ const text = streamText;
                         el('regenStatsBtn').classList.remove('hidden');
                     }
                 }
+                console.log('saving analysis', id, cleanText?.length);
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].analysis = cleanText;
                 saveToLocalStorage();
