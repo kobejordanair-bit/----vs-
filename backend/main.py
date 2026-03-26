@@ -16,7 +16,9 @@ from slowapi.errors import RateLimitExceeded
 load_dotenv()
 
 APP_VERSION = "15.2"
-APP_SECRET = os.getenv("APP_SECRET", "24080409")
+APP_SECRET = os.getenv("APP_SECRET")
+if not APP_SECRET:
+    raise ValueError("環境變數 APP_SECRET 尚未設定！")
 
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI(title="帝王將相名臣評鑑 API", version=APP_VERSION)
@@ -85,6 +87,7 @@ def serve_sw():
     return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sw.js"))
 
 @app.post("/api/auth")
+@limiter.limit("5/minute")
 async def auth(request: Request):
     body = await request.json()
     password = body.get("password", "")
