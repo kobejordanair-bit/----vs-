@@ -1390,7 +1390,7 @@ const text = streamText;
                 
                 let cleanText = text;
                 if (needsStats) {
-                    const jsonMatch = text.match(/\{"stats":\s*\[.*?\]\}/);
+                    const jsonMatch = text.match(/\{"stats":\s*\[.*?\]\}/s);
                     if (jsonMatch) {
                         const statsData = JSON.parse(jsonMatch[0]);
                         // Cache it
@@ -1405,7 +1405,6 @@ const text = streamText;
                         el('regenStatsBtn').classList.remove('hidden');
                     }
                 }
-                console.log('saving analysis', id, cleanText?.length);
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].analysis = cleanText;
                 saveToLocalStorage();
