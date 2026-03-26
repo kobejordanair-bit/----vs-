@@ -640,7 +640,7 @@
         let searchTimer = null; // For debounce
         
         // --- ID & DYNASTY GENERATION ---
-        function generateId(type, name) { return `${type}_${name}_${Date.now()}`; }
+        function generateId(type, name) { let h=0; for(let c of `${type}_${name}`) h=(Math.imul(31,h)+c.charCodeAt(0))|0; return `${type}_${name}_${Math.abs(h)}`; }
         
         function guessDynasty(l) {
             if (l.dynasty && l.dynasty !== '其他') return l.dynasty; 
