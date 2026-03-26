@@ -125,6 +125,7 @@
     if (saved) {
         APP_TOKEN = saved;
         document.getElementById('passwordScreen').style.display = 'none';
+        init().catch(console.error);
     }
 })();
 
@@ -142,6 +143,7 @@
         APP_TOKEN = input;
         localStorage.setItem('dynasty_token', input);
         document.getElementById('passwordScreen').style.display = 'none';
+        init().catch(console.error);
     } else {
         document.getElementById('passwordError').classList.remove('hidden');
         document.getElementById('passwordInput').value = '';
@@ -2465,7 +2467,6 @@ async function callGeminiNative(contentsArray, isJson = false) {
         function resetApp() { closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; renderLegends(); }
         
         // Start
-        init().catch(console.error);
     </script>
 </body>
 </html>
