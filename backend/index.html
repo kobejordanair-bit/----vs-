@@ -103,7 +103,38 @@
 </script>
 </head>
 <body class="min-h-screen selection:bg-orange-100 selection:text-orange-900">
-
+<!-- 密碼鎖 -->
+<div id="passwordScreen" class="fixed inset-0 z-[999] bg-[#1c1917] flex items-center justify-center">
+    <div class="bg-[#2c2826] rounded-2xl p-10 flex flex-col items-center gap-6 shadow-2xl border border-[#44403c] w-80">
+        <div class="w-16 h-16 bg-gradient-to-br from-[#d4af37] to-[#8b6914] rounded-full flex items-center justify-center shadow-lg">
+            <i class="fa-solid fa-lock text-2xl text-[#2c0b0e]"></i>
+        </div>
+        <h2 class="text-[#e5e5e5] text-xl font-bold font-serif tracking-widest">帝王將相名臣評鑑</h2>
+        <input type="password" id="passwordInput" placeholder="請輸入密碼" 
+            class="w-full px-4 py-3 rounded-lg bg-[#1c1917] border border-[#44403c] text-white text-center tracking-widest focus:outline-none focus:border-[#d4af37] font-serif"
+            onkeypress="if(event.key==='Enter') checkPassword()">
+        <button onclick="checkPassword()" class="w-full btn-gold py-3 rounded-lg font-bold font-serif tracking-widest">入朝覲見</button>
+        <p id="passwordError" class="text-red-400 text-sm font-serif hidden">密碼有誤，請再試一次</p>
+    </div>
+</div>
+<script>
+    (function() {
+        const PASS = '24080409';
+        if (localStorage.getItem('dynasty_auth') === PASS) {
+            document.getElementById('passwordScreen').style.display = 'none';
+        }
+    })();
+    function checkPassword() {
+        const input = document.getElementById('passwordInput').value;
+        if (input === '24080409') {
+            localStorage.setItem('dynasty_auth', '24080409');
+            document.getElementById('passwordScreen').style.display = 'none';
+        } else {
+            document.getElementById('passwordError').classList.remove('hidden');
+            document.getElementById('passwordInput').value = '';
+        }
+    }
+</script>
     <div id="connectionStatus"><i class="fa-solid fa-wifi"></i> 連線狀態</div>
 
     <!-- UI Overlay System (Replaces Alert/Confirm) -->
