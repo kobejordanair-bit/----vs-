@@ -1341,7 +1341,9 @@ ${allNames}
             
             // Check cache
             const cachedStats = appState.modifiedLegends[id]?.stats;
+            const cachedAnalysis = appState.modifiedLegends[id]?.analysis;
             const needsStats = forceRegen || !cachedStats;
+            const needsAnalysis = forceRegen || !cachedAnalysis;
 
             let prompt = `請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${legend.name}（${legend.title}）。
 
@@ -1368,6 +1370,10 @@ ${allNames}
                 // If we already have stats, don't ask AI to generate JSON again.
                 renderRadarChart(legend.name, cachedStats);
                 el('regenStatsBtn').classList.remove('hidden'); // Show button to regenerate
+                if (!needsAnalysis) {
+    setModalContent(cachedAnalysis);
+    return;
+}
             }
 
             try {
@@ -1394,11 +1400,14 @@ const text = streamText;
                         refreshData(); // to keep legendsData in sync
                         
                         renderRadarChart(legend.name, statsData.stats);
+                     
                         cleanText = text.replace(jsonMatch[0], '');
                         el('regenStatsBtn').classList.remove('hidden');
                     }
                 }
-                
+                appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
+                appState.modifiedLegends[id].analysis = cleanText;
+                saveToLocalStorage();
                 setModalContent(cleanText);
             } catch (e) {
                 el('loadingState').classList.add('hidden');
