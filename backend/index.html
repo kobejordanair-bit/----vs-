@@ -1364,18 +1364,18 @@ ${allNames}
             3. **【人性與性格側寫】**：還原其作為「人」的真實面貌與心理特質。
             4. **【如果生在現代】**：推測他適合什麼職業。`;
 
-            if (needsStats) {
-                prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n請以JSON格式返回最後的五維數值，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}。但JSON放在最後，前面請用Markdown格式撰寫分析文章。`;
-            } else {
-                // If we already have stats, don't ask AI to generate JSON again.
-                renderRadarChart(legend.name, cachedStats);
-                el('regenStatsBtn').classList.remove('hidden'); // Show button to regenerate
-                if (!needsAnalysis) {
-    console.log('using cache', cachedAnalysis?.length, cachedAnalysis?.slice(0,30));
-                    setModalContent(cachedAnalysis);
+            if (!needsStats && !needsAnalysis) {
+    renderRadarChart(legend.name, cachedStats);
+    el('regenStatsBtn').classList.remove('hidden');
+    setModalContent(cachedAnalysis);
     return;
 }
-            }
+if (needsStats) {
+    prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n請以JSON格式返回最後的五維數值，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}。但JSON放在最後，前面請用Markdown格式撰寫分析文章。`;
+} else {
+    renderRadarChart(legend.name, cachedStats);
+    el('regenStatsBtn').classList.remove('hidden');
+}
 
             try {
                 let streamText = '';
