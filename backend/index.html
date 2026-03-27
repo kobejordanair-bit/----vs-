@@ -1392,7 +1392,7 @@ const text = streamText;
                 
                 let cleanText = text;
                 if (needsStats) {
-                    const jsonMatch = text.match(/\{"stats":\s*\[.*?\]\}/s);
+                    const jsonMatch = text.match(/\{\s*"stats":\s*\[.*?\]\s*\}/s);
                     if (jsonMatch) {
                         const statsData = JSON.parse(jsonMatch[0]);
                         // Cache it
