@@ -1342,6 +1342,7 @@ ${allNames}
             // Check cache
             const cachedStats = appState.modifiedLegends[id]?.stats;
             const cachedAnalysis = appState.modifiedLegends[id]?.analysis;
+            console.log('cache check', id, 'stats:', !!cachedStats, 'analysis:', !!cachedAnalysis);
             const needsStats = forceRegen || !cachedStats;
             const needsAnalysis = forceRegen || !cachedAnalysis;
 
