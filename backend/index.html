@@ -1114,7 +1114,12 @@ modifiedLegends: {}
 
         function refreshData() {
             legendsData = [...staticLegendsData, ...appState.customLegends];
-            legendsData = legendsData.map(g => appState.modifiedLegends[g.id] ? { ...g, ...appState.modifiedLegends[g.id], isModified: true } : g);
+            legendsData = legendsData.map(g => {
+    const mod = appState.modifiedLegends[g.id];
+    if (!mod) return g;
+    const hasRealMod = Object.keys(mod).some(k => !['stats','analysis'].includes(k));
+    return { ...g, ...mod, isModified: hasRealMod };
+});
             renderLegends();
         }
 
