@@ -154,7 +154,36 @@
 </script>
     <div id="connectionStatus"><i class="fa-solid fa-wifi"></i> 連線狀態</div>
     <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>console.error('儲存失敗:', e);
+<!-- 推演史冊抽屜 -->
+<div id="chronicleDrawer" class="fixed inset-y-0 right-0 w-full sm:w-96 bg-[#fffdf9] shadow-2xl z-[60] transform translate-x-full transition-transform duration-300 ease-in-out border-l border-[#e5e0d3] flex flex-col">
+    <div class="bg-[#1c1917] px-5 py-4 flex justify-between items-center border-b border-[#44403c] flex-shrink-0">
+        <h2 class="text-lg font-serif text-[#e5e5e5] tracking-widest flex items-center gap-2">
+            <i class="fa-solid fa-book-open text-amber-400"></i> 推演史冊
+        </h2>
+        <div class="flex items-center gap-3">
+            <button onclick="clearAllChronicle()" class="text-xs text-red-400 hover:text-red-300 px-2 py-1 rounded hover:bg-[#44403c] transition-colors font-serif flex items-center gap-1">
+                <i class="fa-solid fa-trash-can"></i> 清空
+            </button>
+            <button onclick="closeChronicle()" class="text-[#a8a29e] hover:text-white px-2 py-1 rounded hover:bg-[#44403c] transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+    </div>
+    <div id="chronicleList" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
+</div>
+<div id="chronicleOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-[55] hidden" onclick="closeChronicle()"></div>
 
+<!-- 史冊全文 Modal -->
+<div id="chronicleDetailModal" class="fixed inset-0 z-[70] hidden items-center justify-center">
+    <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm" onclick="closeChronicleDetail()"></div>
+    <div class="bg-[#fffdf9] rounded-xl shadow-2xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-hidden relative z-10 flex flex-col">
+        <div class="bg-[#1c1917] px-5 py-4 flex justify-between items-center flex-shrink-0">
+            <h3 class="text-base font-serif text-[#e5e5e5] flex items-center gap-2" id="chronicleDetailTitle"></h3>
+            <button onclick="closeChronicleDetail()" class="text-[#a8a29e] hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+        </div>
+        <div id="chronicleDetailContent" class="p-6 overflow-y-auto prose max-w-none flex-1"></div>
+    </div>
+</div>
     <!-- UI Overlay System (Replaces Alert/Confirm) -->
     <div id="uiMsgBox" class="fixed inset-0 z-[100] hidden items-center justify-center">
         <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" onclick="closeUIMsg()"></div>
@@ -220,6 +249,9 @@
                     </button>
                     <button onclick="toggleMode('compareMode')" class="bg-[#2c2826] hover:bg-[#0f766e] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-compareMode">
                         <i class="fa-solid fa-code-compare text-teal-400"></i> <span class="hidden md:inline">比對</span>
+                    </button>
+                    <button onclick="openChronicle()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-chronicle">
+                        <i class="fa-solid fa-book-open text-amber-400"></i> <span class="hidden md:inline">史冊</span>
                     </button>
                 </div>
             </div>
@@ -1043,8 +1075,9 @@
             soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
             chatMode: { targetId: null, history: [] },
             chatHistories: {},
-customLegends: [],
-modifiedLegends: {}
+            customLegends: [],
+            modifiedLegends: {},
+            simulationHistory: [],
         };
         
         let legendsData = []; 
@@ -1060,6 +1093,7 @@ modifiedLegends: {}
             appState.customLegends = data.customLegends || [];
             appState.modifiedLegends = data.modifiedLegends || {};
             appState.chatHistories = data.chatHistories || {};
+            appState.simulationHistory = data.simulationHistory || [];
         }
     } catch(e) {
         console.error('載入資料失敗:', e);
@@ -1105,14 +1139,15 @@ modifiedLegends: {}
             body: JSON.stringify({
                 customLegends: appState.customLegends,
                 modifiedLegends: appState.modifiedLegends,
-                chatHistories: appState.chatHistories
+                chatHistories: appState.chatHistories,
+                simulationHistory: appState.simulationHistory
             })
         });
     } catch(e) {
         console.error('儲存失敗:', e);
         const t = document.getElementById('saveToast');
-        t.style.display = 'block';
-        setTimeout(() => t.style.display = 'none', 3000);
+    t.style.display = 'block';
+    setTimeout(() => t.style.display = 'none', 3000);
     }
 }
 
@@ -2114,11 +2149,14 @@ fragment.appendChild(div.firstChild);
 
             try {
                 const myToken = ++currentRequestToken;
-await callGeminiStream(prompt, (partial) => {
+const courtResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
     el('modalContent').innerHTML = marked.parse(partial);
 });
+const dynastyNames = factions.map(f => f.name).join(' vs ');
+appState.simulationHistory.unshift({ type: '朝堂', icon: '🏛️', title: dynastyNames, result: courtResult.slice(0, 100), fullResult: courtResult, time: new Date().toLocaleString('zh-TW') });if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+saveToLocalStorage();
             } catch(e) { 
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2151,11 +2189,14 @@ await callGeminiStream(prompt, (partial) => {
 
             try {
                 const myToken = ++currentRequestToken;
-await callGeminiStream(prompt, (partial) => {
+const battleResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
     el('modalContent').innerHTML = marked.parse(partial);
 });
+const factionNames = factions.map(f => f.name).join(' vs ');
+appState.simulationHistory.unshift({ type: '戰情', icon: '⚔️', title: factionNames, result: battleResult.slice(0, 100), fullResult: battleResult, time: new Date().toLocaleString('zh-TW') });if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+saveToLocalStorage();
             } catch(e) { 
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2203,11 +2244,17 @@ await callGeminiStream(prompt, (partial) => {
 
             try {
                 const myToken = ++currentRequestToken;
-await callGeminiStream(prompt, (partial) => {
+const soulResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
     el('modalContent').innerHTML = marked.parse(partial);
 });
+const soulType = scenario ? '絕境' : '魂穿';
+const soulIcon = scenario ? '🔥' : '👻';
+const soulTitle = `${soulName} → ${hostName}`;
+appState.simulationHistory.unshift({ type: soulType, icon: soulIcon, title: soulTitle, result: soulResult.slice(0, 100), fullResult: soulResult, time: new Date().toLocaleString('zh-TW') });
+if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+saveToLocalStorage();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2413,7 +2460,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
 
         // Save Download
         function handleDownloadJSON() { 
-            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories, version: APP_VERSION }; 
+            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories,simulationHistory: appState.simulationHistory, version: APP_VERSION }; 
             const blob = new Blob([JSON.stringify(data)], {type: "application/json"}); 
             const url = URL.createObjectURL(blob); 
             const a = document.createElement('a'); 
@@ -2466,7 +2513,68 @@ async function callGeminiNative(contentsArray, isJson = false) {
             reader.readAsText(file); 
             input.value = ''; // clear
         }
-        
+        // --- 推演史冊 ---
+function openChronicle() {
+    renderChronicleList();
+    el('chronicleDrawer').classList.remove('translate-x-full');
+    el('chronicleOverlay').classList.remove('hidden');
+}
+function closeChronicle() {
+    el('chronicleDrawer').classList.add('translate-x-full');
+    el('chronicleOverlay').classList.add('hidden');
+}
+function renderChronicleList() {
+    const list = el('chronicleList');
+    const history = appState.simulationHistory;
+    if (history.length === 0) {
+        list.innerHTML = '<div class="text-center text-[#a8a29e] py-16 font-serif"><i class="fa-solid fa-scroll text-4xl mb-4 block"></i>尚無推演紀錄</div>';
+        return;
+    }
+    list.innerHTML = history.map((item, i) => `
+        <div class="bg-white rounded-lg border border-[#e5e0d3] p-3 shadow-sm hover:border-[#d4af37] transition-all">
+            <div class="flex justify-between items-start gap-2">
+                <div class="flex items-center gap-2 flex-1 min-w-0">
+                    <span class="text-xl flex-shrink-0">${item.icon}</span>
+                    <div class="min-w-0">
+                        <p class="font-serif font-bold text-[#2c2826] text-sm truncate">${item.title}</p>
+                        <p class="text-xs text-[#a8a29e] mt-0.5">${item.type} · ${item.time}</p>
+                        <p class="text-xs text-[#78716c] mt-1 line-clamp-2">${item.result}...</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 flex-shrink-0">
+                    <button onclick="openChronicleDetail(${i})" class="text-xs bg-[#f5f5f4] hover:bg-[#e5e0d3] text-[#57534e] px-2 py-1 rounded font-serif transition-colors">全文</button>
+                    <button onclick="deleteChronicleItem(${i})" class="text-xs text-red-400 hover:text-red-600 px-2 py-1 rounded hover:bg-red-50 transition-colors">刪除</button>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+function openChronicleDetail(index) {
+    const item = appState.simulationHistory[index];
+    if (!item) return;
+    el('chronicleDetailTitle').innerHTML = `${item.icon} ${item.title} <span class="text-xs text-[#a8a29e] font-sans ml-2">${item.time}</span>`;
+    el('chronicleDetailContent').innerHTML = item.fullResult ? marked.parse(item.fullResult) : `<p>${item.result}</p>`;
+    el('chronicleDetailModal').classList.remove('hidden');
+    el('chronicleDetailModal').classList.add('flex');
+}
+function closeChronicleDetail() {
+    el('chronicleDetailModal').classList.add('hidden');
+    el('chronicleDetailModal').classList.remove('flex');
+}
+function deleteChronicleItem(index) {
+    customConfirm('確定刪除此筆紀錄？', () => {
+        appState.simulationHistory.splice(index, 1);
+        saveToLocalStorage();
+        renderChronicleList();
+    });
+}
+function clearAllChronicle() {
+    customConfirm('確定清空所有推演史冊？', () => {
+        appState.simulationHistory = [];
+        saveToLocalStorage();
+        renderChronicleList();
+    });
+}
         // Init Bindings
         document.querySelectorAll('.filter-btn').forEach(btn => { 
             btn.addEventListener('click', (e) => { 

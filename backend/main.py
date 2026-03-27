@@ -83,6 +83,7 @@ class UserDataRequest(BaseModel):
     customLegends: List[Dict[str, Any]] = []
     modifiedLegends: Dict[str, Any] = {}
     chatHistories: Dict[str, Any] = {}
+    simulationHistory: List[Dict[str, Any]] = []
 
 def verify_token(x_app_token: Optional[str] = Header(None)):
     if x_app_token != APP_SECRET:
@@ -126,7 +127,7 @@ async def save_userdata(request: Request, body: UserDataRequest, x_app_token: Op
     verify_token(x_app_token)
     userdata_col.replace_one(
         {"_id": "main"},
-        {"_id": "main", "customLegends": body.customLegends, "modifiedLegends": body.modifiedLegends, "chatHistories": body.chatHistories},
+        {"_id": "main", "customLegends": body.customLegends, "modifiedLegends": body.modifiedLegends, "chatHistories": body.chatHistories, "simulationHistory": body.simulationHistory},
         upsert=True
     )
     return {"status": "ok"}
