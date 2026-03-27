@@ -153,6 +153,7 @@
 }
 </script>
     <div id="connectionStatus"><i class="fa-solid fa-wifi"></i> 連線狀態</div>
+    <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>console.error('儲存失敗:', e);
 
     <!-- UI Overlay System (Replaces Alert/Confirm) -->
     <div id="uiMsgBox" class="fixed inset-0 z-[100] hidden items-center justify-center">
@@ -1109,6 +1110,9 @@ modifiedLegends: {}
         });
     } catch(e) {
         console.error('儲存失敗:', e);
+        const t = document.getElementById('saveToast');
+t.style.display = 'block';
+setTimeout(() => t.style.display = 'none', 3000);
     }
 }
 
