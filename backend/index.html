@@ -11,8 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap');
         
-        body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; transition: padding-bottom 0.3s; overscroll-behavior: none; }
-        h1, h2, h3, h4, .calligraphy { font-family: 'Ma Shan Zheng', cursive; }
+body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; transition: padding-bottom 0.3s; overscroll-behavior: none; overflow-x: hidden; }        h1, h2, h3, h4, .calligraphy { font-family: 'Ma Shan Zheng', cursive; }
         .serif { font-family: 'Noto Serif TC', serif; }
         .poem-font { font-family: 'Ma Shan Zheng', cursive; font-style: normal; letter-spacing: 0.05em; }
 
@@ -269,7 +268,7 @@
                 <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
                 
                 <!-- 模式切換 -->
-                <div class="flex gap-2">
+                <div class="flex gap-2 overflow-x-auto max-w-[calc(100vw-2rem)] pb-0.5">
                     <button onclick="toggleMode('warRoom')" class="bg-[#2c2826] hover:bg-[#0f172a] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-warRoom">
                         <i class="fa-solid fa-chess-board text-indigo-400"></i> <span class="hidden md:inline">戰情</span>
                     </button>
