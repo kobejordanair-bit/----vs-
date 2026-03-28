@@ -170,7 +170,7 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
             contents.append({"role": role, "parts": [{"text": text}]})
         if not contents:
             raise HTTPException(status_code=400, detail="對話內容不能為空")
-        def generate():
+        async def generate():
             for chunk in client.models.generate_content_stream(
                 model="gemini-2.5-pro",
                 contents=contents,
