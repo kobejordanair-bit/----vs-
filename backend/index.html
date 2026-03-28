@@ -151,7 +151,45 @@
 }
 </script>
     <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>
-<!-- 推演史冊抽屜 -->
+<!-- 辯論模式面板 -->
+<div id="debateModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#fffdf9] z-40 translate-y-full" style="height:340px;">
+    <div class="flex justify-between items-center px-4 py-2 border-b border-[#e5e0d3] cursor-pointer" onclick="togglePanelSize('debateMode')">
+        <span class="font-serif font-bold text-[#2c2826] flex items-center gap-2"><i class="fa-solid fa-scale-balanced text-indigo-500"></i> 歷史辯論場</span>
+        <div class="flex items-center gap-3">
+            <span id="debateModeStatus" class="hidden text-xs text-[#a8a29e] selecting-role-text"></span>
+            <button onclick="event.stopPropagation(); clearDebateSlots()" class="text-xs text-[#a8a29e] hover:text-red-500 font-serif px-2 py-1 rounded hover:bg-red-50 transition-colors">重置</button>
+            <i class="fa-solid fa-chevron-down text-[#a8a29e] text-sm"></i>
+        </div>
+    </div>
+    <div id="debateModeContent" class="p-3 overflow-y-auto" style="height:calc(340px - 44px);">
+        <div class="grid grid-cols-2 gap-3 mb-3">
+            <!-- 正方 -->
+            <div class="bg-red-50 border border-red-200 rounded-lg p-2">
+                <p class="text-xs font-bold text-red-700 font-serif mb-2 flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> 正方</p>
+                <div class="space-y-1" id="proSlots"></div>
+            </div>
+            <!-- 反方 -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-2">
+                <p class="text-xs font-bold text-blue-700 font-serif mb-2 flex items-center gap-1"><i class="fa-solid fa-sword"></i> 反方</p>
+                <div class="space-y-1" id="conSlots"></div>
+            </div>
+        </div>
+        <!-- 議題區 -->
+        <div class="flex gap-2 items-center">
+            <input type="text" id="debateTopicInput" placeholder="輸入辯題，或點 AI 推薦..." 
+                class="flex-1 px-3 py-2 rounded-lg border border-[#e5e0d3] bg-white text-sm font-serif focus:outline-none focus:border-indigo-400"
+                oninput="appState.debateMode.topic = this.value">
+            <button onclick="recommendDebateTopic()" class="px-3 py-2 bg-indigo-100 hover:bg-indigo-200 text-indigo-700 rounded-lg text-xs font-serif transition-colors whitespace-nowrap">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> AI推薦
+            </button>
+            <button id="startDebateBtn" onclick="startDebate()" disabled
+                class="px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-serif font-bold transition-all opacity-50 grayscale cursor-not-allowed">
+                開戰
+            </button>
+        </div>
+    </div>
+</div>
+    <!-- 推演史冊抽屜 -->
 <div id="chronicleDrawer" class="fixed inset-y-0 right-0 w-full sm:w-96 bg-[#fffdf9] shadow-2xl z-[60] transform translate-x-full transition-transform duration-300 ease-in-out border-l border-[#e5e0d3] flex flex-col">
     <div class="bg-[#1c1917] px-5 py-4 flex justify-between items-center border-b border-[#44403c] flex-shrink-0">
         <h2 class="text-lg font-serif text-[#e5e5e5] tracking-widest flex items-center gap-2">
@@ -246,6 +284,9 @@
                     </button>
                     <button onclick="toggleMode('compareMode')" class="bg-[#2c2826] hover:bg-[#0f766e] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-compareMode">
                         <i class="fa-solid fa-code-compare text-teal-400"></i> <span class="hidden md:inline">比對</span>
+                    </button>
+                    <button onclick="toggleMode('debateMode')" class="bg-[#2c2826] hover:bg-[#312e81] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-debateMode">
+                        <i class="fa-solid fa-scale-balanced text-indigo-400"></i> <span class="hidden md:inline">辯論</span>
                     </button>
                     <button onclick="openChronicle()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-chronicle">
                         <i class="fa-solid fa-book-open text-amber-400"></i> <span class="hidden md:inline">史冊</span>
@@ -1075,6 +1116,12 @@
             customLegends: [],
             modifiedLegends: {},
             simulationHistory: [],
+            debateMode: {
+                activeSlot: null,
+                pro: { debater1: null, debater2: null, debater3: null, debater4: null },
+                con: { debater1: null, debater2: null, debater3: null, debater4: null },
+                topic: ''
+            },
         };
         
         let legendsData = []; 
@@ -1991,7 +2038,15 @@ showRelatedReactions(currentEditingId, '修訂');
                     if(appState.courtMode.minimized) togglePanelSize('courtMode');
                 }
             }
-
+if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
+                const slot = appState.debateMode.activeSlot;
+                const side = slot.side;
+                const pos = slot.pos;
+                appState.debateMode[side][pos] = id;
+                appState.debateMode.activeSlot = null;
+                updateDebateModeUI();
+                renderLegends();
+            }
             if (appState.mode === 'soulMode' && appState.soulMode.activeSlot) {
                  const slot = appState.soulMode.activeSlot;
                  if (appState.soulMode.activeScenario && slot === 'host') { customAlert("劇本模式下無法更換宿主！"); return; }
@@ -2274,16 +2329,16 @@ saveToLocalStorage();
                     el('compareBar').classList.remove('translate-y-full');
                     document.body.style.paddingBottom = '80px';
                 } else {
-                    const panelMap = { 'warRoom': 'warRoomPanel', 'courtMode': 'courtModePanel', 'soulMode': 'soulModePanel', 'scenarioMode': 'scenarioModePanel' };
-                    const panel = el(panelMap[modeName]);
+                    const panelMap = { 'warRoom': 'warRoomPanel', 'courtMode': 'courtModePanel', 'soulMode': 'soulModePanel', 'scenarioMode': 'scenarioModePanel', 'debateMode': 'debateModePanel' };                    const panel = el(panelMap[modeName]);
                     if(panel) panel.classList.remove('translate-y-full');
                     
                     const tip = el('selectionModeTip');
                     if(modeName !== 'scenarioMode') {
                         tip.classList.remove('hidden');
-                        el('tipText').innerText = modeName.includes('Room') || modeName.includes('Court') ? '點擊下方職位，再點擊上方人物加入' : '選擇【肉身】與【靈魂】';
-                    }
-                    const heightMap = { 'warRoom': '65vh', 'courtMode': '65vh', 'soulMode': '300px', 'scenarioMode': '380px' };
+if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').innerText = '點擊下方職位，再點擊上方人物加入';
+                        else if (modeName === 'debateMode') el('tipText').innerText = '點擊下方正方／反方槽位，再點擊上方人物加入';
+                        else el('tipText').innerText = '選擇【肉身】與【靈魂】';                    }
+                    const heightMap = { 'warRoom': '65vh', 'courtMode': '65vh', 'soulMode': '300px', 'scenarioMode': '380px', 'debateMode': '340px' };
                     document.body.style.paddingBottom = heightMap[modeName] || '0px';
                 }
             } else {
@@ -2301,6 +2356,7 @@ saveToLocalStorage();
             appState.warRoom.activeSlot = null;
             appState.courtMode.activeSlot = null;
             appState.soulMode.activeSlot = null;
+            appState.debateMode.activeSlot = null;
             updateWarRoomUI();
             updateCourtModeUI();
             updateSoulModeUI();
@@ -2510,6 +2566,130 @@ async function callGeminiNative(contentsArray, isJson = false) {
             reader.readAsText(file); 
             input.value = ''; // clear
         }
+        // --- 辯論模式 ---
+const DEBATE_ROLES = { debater1: '一辯', debater2: '二辯', debater3: '三辯', debater4: '四辯' };
+
+function updateDebateModeUI() {
+    ['pro', 'con'].forEach(side => {
+        const container = el(side + 'Slots');
+        container.innerHTML = '';
+        Object.keys(appState.debateMode[side]).forEach(pos => {
+            const id = appState.debateMode[side][pos];
+            const name = getLegendName(id);
+            const isActive = appState.debateMode.activeSlot && appState.debateMode.activeSlot.side === side && appState.debateMode.activeSlot.pos === pos;
+            const colorClass = side === 'pro' ? 'border-red-300 text-red-700' : 'border-blue-300 text-blue-700';
+            const activeClass = isActive ? 'active-selection' : '';
+            container.innerHTML += `
+                <div onclick="selectDebateSlot('${side}', '${pos}')" class="role-slot rounded p-1.5 flex items-center gap-2 cursor-pointer border ${activeClass} ${name && !isActive ? colorClass : 'border-dashed border-slate-300'}">
+                    <span class="text-[10px] font-bold ${side === 'pro' ? 'text-red-500' : 'text-blue-500'} w-6 text-center flex-shrink-0">${DEBATE_ROLES[pos]}</span>
+                    <span class="text-xs font-bold truncate ${name ? (side === 'pro' ? 'text-red-700' : 'text-blue-700') : 'text-slate-400'}">${isActive ? '點擊人物...' : (name || '虛位')}</span>
+                    ${name ? `<button onclick="event.stopPropagation(); appState.debateMode['${side}']['${pos}']=null; updateDebateModeUI(); renderLegends();" class="ml-auto text-slate-300 hover:text-red-400 text-xs">✕</button>` : ''}
+                </div>`;
+        });
+    });
+    const hasPro = Object.values(appState.debateMode.pro).some(v => v);
+    const hasCon = Object.values(appState.debateMode.con).some(v => v);
+    const hasTopic = appState.debateMode.topic.trim().length > 0;
+    const ready = hasPro && hasCon && hasTopic;
+    el('startDebateBtn').disabled = !ready;
+    if (ready) el('startDebateBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed');
+    else el('startDebateBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
+}
+
+function selectDebateSlot(side, pos) {
+    appState.debateMode.activeSlot = { side, pos };
+    updateDebateModeUI();
+    renderLegends();
+}
+
+function clearDebateSlots() {
+    appState.debateMode.pro = { debater1: null, debater2: null, debater3: null, debater4: null };
+    appState.debateMode.con = { debater1: null, debater2: null, debater3: null, debater4: null };
+    appState.debateMode.topic = '';
+    appState.debateMode.activeSlot = null;
+    el('debateTopicInput').value = '';
+    updateDebateModeUI();
+    renderLegends();
+}
+
+async function recommendDebateTopic() {
+    const proNames = Object.values(appState.debateMode.pro).map(id => getLegendName(id)).filter(Boolean);
+    const conNames = Object.values(appState.debateMode.con).map(id => getLegendName(id)).filter(Boolean);
+    if (proNames.length === 0 && conNames.length === 0) { customAlert('請先選擇至少一位辯手再推薦議題'); return; }
+    const btn = document.querySelector('[onclick="recommendDebateTopic()"]');
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+    btn.disabled = true;
+    try {
+        const prompt = `正方辯手：${proNames.join('、') || '未定'}；反方辯手：${conNames.join('、') || '未定'}。
+請針對這些歷史人物的特質與對立性，推薦3個適合辯論的議題。
+直接列出3個議題，每行一個，不要編號，不要解釋，繁體中文。`;
+        const result = await callGemini(prompt);
+        const topics = result.split('\n').map(t => t.trim()).filter(Boolean).slice(0, 3);
+        customConfirm(`推薦議題：\n\n${topics.map((t, i) => `${i+1}. ${t}`).join('\n')}\n\n選第幾個？（輸入1/2/3）`, () => {});
+        const choice = await new Promise(resolve => {
+            const btns = document.getElementById('uiMsgBtns');
+            btns.innerHTML = topics.map((t, i) => 
+                `<button onclick="appState.debateMode.topic='${t.replace(/'/g,"\\'")}'; el('debateTopicInput').value='${t.replace(/'/g,"\\'")}'; updateDebateModeUI(); closeUIMsg();" 
+                class="px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded font-bold text-xs transition-colors">${i+1}</button>`
+            ).join('');
+            document.getElementById('uiMsgText').innerText = topics.map((t, i) => `${i+1}. ${t}`).join('\n');
+            document.getElementById('uiMsgTitle').innerText = 'AI 推薦議題';
+            document.getElementById('uiMsgBox').classList.remove('hidden');
+            document.getElementById('uiMsgBox').classList.add('flex');
+        });
+    } catch(e) {
+        customAlert('推薦失敗：' + e.message);
+    } finally {
+        btn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i> AI推薦';
+        btn.disabled = false;
+    }
+}
+
+async function startDebate() {
+    const pro = appState.debateMode.pro;
+    const con = appState.debateMode.con;
+    const topic = appState.debateMode.topic.trim();
+    const proNames = Object.entries(pro).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}`);
+    const conNames = Object.entries(con).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}`);
+    if (!proNames.length || !conNames.length || !topic) return;
+
+    openModal('歷史辯論場', 'content');
+    el('radarChartContainer').classList.add('hidden');
+    el('loadingState').classList.remove('hidden');
+    el('loadingState').classList.add('flex');
+    el('modalContent').innerHTML = '';
+
+    const prompt = `你是一位頂級歷史辯論賽主持人兼撰稿人。請模擬以下歷史人物進行一場正式辯論賽。
+
+【辯題】${topic}
+
+【正方】${proNames.join('、')}
+【反方】${conNames.join('、')}
+
+辯論規則：
+- 每位辯手根據其歷史身份、性格、思想、事蹟發言，語氣符合其時代背景
+- 按照 一辯立論 → 反方一辯立論 → 二辯質詢 → 反方二辯質詢 → 三辯回應 → 反方三辯回應 → 四辯總結 → 反方四辯總結 的順序（若某方只有一辯則由一辯包辦所有環節）
+- 每段發言約150-200字，有血有肉，避免空洞套話
+- 最後由【裁判總評】宣布勝方，並說明理由（約100字）
+
+請直接開始辯論，用 **【正方X辯・人名】** 和 **【反方X辯・人名】** 格式標示每段發言。繁體中文。`;
+
+    try {
+        const myToken = ++currentRequestToken;
+        const debateResult = await callGeminiStream(prompt, (partial) => {
+            if (myToken !== currentRequestToken) return;
+            el('loadingState').classList.add('hidden');
+            el('modalContent').innerHTML = marked.parse(partial);
+        });
+        const title = `${proNames.map(n=>n.replace(/^.*?(?=[^\u0000-\u007F])/, '')).join('+')} vs ${conNames.map(n=>n.replace(/^.*?(?=[^\u0000-\u007F])/, '')).join('+')}`;
+        appState.simulationHistory.unshift({ type: '辯論', icon: '⚖️', title: topic, result: debateResult.slice(0, 100), fullResult: debateResult, time: new Date().toLocaleString('zh-TW') });
+        if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+        saveToLocalStorage();
+    } catch(e) {
+        el('loadingState').classList.add('hidden');
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>辯論失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+    }
+}
         // --- 推演史冊 ---
 function openChronicle() {
     renderChronicleList();
