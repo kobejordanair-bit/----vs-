@@ -243,7 +243,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.2 深度優化版</span>
                 </div>
             </div>
-            <div class="flex gap-3 items-center">
+            <div class="flex gap-3 items-center flex-wrap justify-end w-full md:w-auto">
                 <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
                     <button onclick="handleDownloadJSON()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif">
                         <i class="fa-solid fa-floppy-disk text-[#f97316]"></i> <span class="hidden md:inline">匯出</span>
@@ -303,7 +303,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <i class="fa-solid fa-scroll text-9xl text-black transform rotate-12 translate-x-10 -translate-y-10"></i>
             </div>
 
-            <div class="flex flex-col md:flex-row gap-6 items-center justify-between relative z-10 overflow-x-hidden">git add .
+            <div class="flex flex-col md:flex-row gap-6 items-center justify-between relative z-10 overflow-x-hidden">
                 <!-- 類型切換 -->
                 <div class="flex gap-4 text-lg font-serif tracking-widest text-[#57534e]">
                     <button onclick="setTypeFilter('all')" class="type-btn active" id="btn-type-all">全覽</button>
