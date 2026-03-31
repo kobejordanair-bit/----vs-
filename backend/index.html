@@ -1777,6 +1777,9 @@ if(s1 && s2) {
             
             if (!name) return customAlert("請輸入姓名");
             
+            const duplicate = legendsData.find(l => l.name === name && l.type === pendingNewLegendType);
+            if (duplicate) return customAlert(`「${name}」已存在於${pendingNewLegendType === 'emperor' ? '帝王' : pendingNewLegendType === 'general' ? '名將' : '名臣'}分類中，無需重複新增。`);
+            
             el('addStep1').classList.add('hidden');
             el('addLoading').classList.remove('hidden');
             el('addLoading').classList.add('flex');
