@@ -50,7 +50,7 @@ if not GEMINI_API_KEY:
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 PRIMARY_MODEL = "gemini-2.5-pro"
-FALLBACK_MODEL = "gemini-2.0-flash"
+FALLBACK_MODEL = "gemini-3-flash-preview"
 def load_ranking_reference():
     try:
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
