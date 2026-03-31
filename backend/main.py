@@ -148,6 +148,7 @@ async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional
         config = {}
         if body.is_json:
             config["response_mime_type"] = "application/json"
+        used_model = PRIMARY_MODEL
         response = None
         try:
             response = client.models.generate_content(
