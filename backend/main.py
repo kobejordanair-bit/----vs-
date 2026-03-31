@@ -148,7 +148,7 @@ async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional
         config = {}
         if body.is_json:
             config["response_mime_type"] = "application/json"
-        respoused_model = PRIMARY_MODEL
+        response = None
         try:
             response = client.models.generate_content(
                 model=PRIMARY_MODEL,
@@ -165,6 +165,8 @@ async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional
                 )
             else:
                 raise
+        if response is None:
+            raise HTTPException(status_code=500, detail="模型呼叫失敗")
         return {"result": response.text, "model": used_model}
     except HTTPException:
         raise
