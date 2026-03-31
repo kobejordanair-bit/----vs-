@@ -1399,12 +1399,18 @@ ${allNames}
 
     const myToken = ++currentRequestToken;
 
-    try {
-        await callGeminiStream(prompt, (partial) => {
+   try {
+        const reactionResult = await callGeminiStream(prompt, (partial) => {
             if (myToken !== currentRequestToken) return;
             el('loadingState').classList.add('hidden');
             el('modalContent').innerHTML = marked.parse(partial);
+        }, (model) => {
+            el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
         });
+        const icon = actionType === '新增入冊' ? '📜' : '✍️';
+        appState.simulationHistory.unshift({ type: actionType, icon, title: `眾人評${legend.name}（${legend.rank}）`, result: reactionResult.slice(0, 100), fullResult: reactionResult, time: new Date().toLocaleString('zh-TW') });
+        if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+        saveToLocalStorage();
     } catch (e) {
         el('loadingState').classList.add('hidden');
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
