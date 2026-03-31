@@ -49,7 +49,8 @@ if not GEMINI_API_KEY:
     raise ValueError("環境變數 GEMINI_API_KEY 尚未設定！")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-
+PRIMARY_MODEL = "gemini-2.5-pro"
+FALLBACK_MODEL = "gemini-2.0-flash"
 def load_ranking_reference():
     try:
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -147,12 +148,24 @@ async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional
         config = {}
         if body.is_json:
             config["response_mime_type"] = "application/json"
-        response = client.models.generate_content(
-            model="gemini-2.5-pro",
-            contents=contents,
-            config=config if config else None
-        )
-        return {"result": response.text}
+        respoused_model = PRIMARY_MODEL
+        try:
+            response = client.models.generate_content(
+                model=PRIMARY_MODEL,
+                contents=contents,
+                config=config if config else None
+            )
+        except Exception as model_err:
+            if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
+                used_model = FALLBACK_MODEL
+                response = client.models.generate_content(
+                    model=FALLBACK_MODEL,
+                    contents=contents,
+                    config=config if config else None
+                )
+            else:
+                raise
+        return {"result": response.text, "model": used_model}
     except HTTPException:
         raise
     except Exception as e:
@@ -171,10 +184,23 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
         if not contents:
             raise HTTPException(status_code=400, detail="對話內容不能為空")
         async def generate():
-            for chunk in client.models.generate_content_stream(
-                model="gemini-2.5-pro",
-                contents=contents,
-            ):
+            used_model = PRIMARY_MODEL
+            try:
+                chunks = list(client.models.generate_content_stream(
+                    model=PRIMARY_MODEL,
+                    contents=contents,
+                ))
+            except Exception as model_err:
+                if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
+                    used_model = FALLBACK_MODEL
+                    chunks = list(client.models.generate_content_stream(
+                        model=FALLBACK_MODEL,
+                        contents=contents,
+                    ))
+                else:
+                    raise
+            yield f"data: {json.dumps({'model': used_model})}\n\n"
+            for chunk in chunks:
                 if chunk.text:
                     yield f"data: {json.dumps({'text': chunk.text})}\n\n"
             yield "data: [DONE]\n\n"

@@ -2207,6 +2207,8 @@ const courtResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
     el('modalContent').innerHTML = marked.parse(partial);
+}, (model) => {
+    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
 });
 const dynastyNames = factions.map(f => f.name).join(' vs ');
 appState.simulationHistory.unshift({ type: '朝堂', icon: '🏛️', title: dynastyNames, result: courtResult.slice(0, 100), fullResult: courtResult, time: new Date().toLocaleString('zh-TW') });if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
@@ -2247,6 +2249,8 @@ const battleResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
     el('modalContent').innerHTML = marked.parse(partial);
+}, (model) => {
+    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
 });
 const factionNames = factions.map(f => f.name).join(' vs ');
 appState.simulationHistory.unshift({ type: '戰情', icon: '⚔️', title: factionNames, result: battleResult.slice(0, 100), fullResult: battleResult, time: new Date().toLocaleString('zh-TW') });if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
@@ -2302,6 +2306,8 @@ const soulResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
     el('modalContent').innerHTML = marked.parse(partial);
+}, (model) => {
+    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
 });
 const soulType = scenario ? '絕境' : '魂穿';
 const soulIcon = scenario ? '🔥' : '👻';
@@ -2458,7 +2464,7 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
         
         // --- 對接本地端 Python FastAPI 後端 ---
 const BACKEND_URL = window.location.origin;
-async function callGeminiStream(promptText, onChunk) {
+async function callGeminiStream(promptText, onChunk, onModel = null) {
     const contents = [{ role: "user", parts: [{ text: promptText }] }];
     const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
         method: 'POST',
@@ -2483,6 +2489,12 @@ if (!response.ok) {
                 if (data === '[DONE]') return fullText;
                 try {
                     const parsed = JSON.parse(data);
+                    if (parsed.model) {
+                        if (parsed.model.includes('flash') && onModel) {
+                        onModel(parsed.model);
+                    }
+                        continue;
+                    }
                     fullText += parsed.text;
                     onChunk(fullText);
                 } catch(e) {}
@@ -2682,6 +2694,8 @@ async function startDebate() {
             if (myToken !== currentRequestToken) return;
             el('loadingState').classList.add('hidden');
             el('modalContent').innerHTML = marked.parse(partial);
+        }, (model) => {
+            el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
         });
         const title = `${proNames.map(n=>n.replace(/^.*?(?=[^\u0000-\u007F])/, '')).join('+')} vs ${conNames.map(n=>n.replace(/^.*?(?=[^\u0000-\u007F])/, '')).join('+')}`;
         appState.simulationHistory.unshift({ type: '辯論', icon: '⚖️', title: topic, result: debateResult.slice(0, 100), fullResult: debateResult, time: new Date().toLocaleString('zh-TW') });
