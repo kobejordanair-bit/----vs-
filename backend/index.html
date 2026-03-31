@@ -150,6 +150,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 }
 </script>
     <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>
+    <div id="flashToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#92400e;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>
 <!-- 辯論模式面板 -->
 <div id="debateModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#fffdf9] z-40 translate-y-full" style="height:340px;">
     <div class="flex justify-between items-center px-4 py-2 border-b border-[#e5e0d3] cursor-pointer" onclick="togglePanelSize('debateMode')">
@@ -2517,6 +2518,11 @@ async function callGeminiNative(contentsArray, isJson = false) {
         });
         const data = await response.json();
         if (!response.ok) throw new Error(data.detail || `HTTP ${response.status}`);
+        if (data.model && data.model.includes('flash')) {
+            const t = document.getElementById('flashToast');
+            t.style.display = 'block';
+            setTimeout(() => t.style.display = 'none', 3000);
+        }
         return data.result;
     } catch (e) {
         console.error("後端連線錯誤:", e);
