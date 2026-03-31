@@ -189,7 +189,43 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         </div>
     </div>
 </div>
-    <!-- 推演史冊抽屜 -->
+<!-- 世界快照 Modal -->
+<div id="snapshotModal" class="fixed inset-0 z-[60] hidden items-center justify-center">
+    <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm" onclick="closeSnapshot()"></div>
+    <div class="bg-[#fffdf9] rounded-xl shadow-2xl max-w-lg w-full mx-4 relative z-10 border border-[#e5e0d3]">
+        <div class="bg-[#1c1917] px-5 py-4 flex justify-between items-center rounded-t-xl">
+            <h2 class="text-lg font-serif text-[#e5e5e5] flex items-center gap-2">
+                <i class="fa-solid fa-earth-asia text-emerald-400"></i> 天下快照
+            </h2>
+            <button onclick="closeSnapshot()" class="text-[#a8a29e] hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+                <div class="relative flex-1">
+                    <input type="number" id="snapshotYear" placeholder="輸入年份（負數為BC）"
+                        class="w-full px-4 py-2.5 rounded-lg border border-[#e5e0d3] bg-white text-sm font-serif focus:outline-none focus:border-emerald-400">
+                </div>
+                <select id="snapshotPreset" onchange="if(this.value){el('snapshotYear').value=this.value;this.value=''}"
+                    class="px-3 py-2.5 rounded-lg border border-[#e5e0d3] bg-white text-sm font-serif focus:outline-none cursor-pointer">
+                    <option value="">重要時刻</option>
+                    <option value="-221">BC221 秦統一</option>
+                    <option value="-202">BC202 漢朝建立</option>
+                    <option value="200">200 官渡前夕</option>
+                    <option value="618">618 唐朝建立</option>
+                    <option value="755">755 安史之亂</option>
+                    <option value="1127">1127 靖康之變</option>
+                    <option value="1368">1368 明朝建立</option>
+                    <option value="1644">1644 明亡清興</option>
+                    <option value="1912">1912 民國建立</option>
+                </select>
+            </div>
+            <button onclick="generateSnapshot()" class="w-full py-3 bg-gradient-to-r from-emerald-700 to-teal-600 hover:from-emerald-800 hover:to-teal-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
+                <i class="fa-solid fa-scroll mr-2"></i>生成天下快照
+            </button>
+        </div>
+    </div>
+</div>    
+<!-- 推演史冊抽屜 -->
 <div id="chronicleDrawer" class="fixed inset-y-0 right-0 w-full sm:w-96 bg-[#fffdf9] shadow-2xl z-[60] transform translate-x-full transition-transform duration-300 ease-in-out border-l border-[#e5e0d3] flex flex-col">
     <div class="bg-[#1c1917] px-5 py-4 flex justify-between items-center border-b border-[#44403c] flex-shrink-0">
         <h2 class="text-lg font-serif text-[#e5e5e5] tracking-widest flex items-center gap-2">
@@ -287,6 +323,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     </button>
                     <button onclick="toggleMode('debateMode')" class="bg-[#2c2826] hover:bg-[#312e81] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-debateMode">
                         <i class="fa-solid fa-scale-balanced text-indigo-400"></i> <span class="hidden md:inline">辯論</span>
+                    </button>
+                    <button onclick="openSnapshot()" class="bg-[#2c2826] hover:bg-[#14532d] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-snapshot">
+                        <i class="fa-solid fa-earth-asia text-emerald-400"></i> <span class="hidden md:inline">快照</span>
                     </button>
                     <button onclick="openChronicle()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-chronicle">
                         <i class="fa-solid fa-book-open text-amber-400"></i> <span class="hidden md:inline">史冊</span>
@@ -2586,6 +2625,88 @@ async function callGeminiNative(contentsArray, isJson = false) {
             reader.readAsText(file); 
             input.value = ''; // clear
         }
+// --- 世界快照 ---
+const ERA_YEAR_MAP = [
+    { dynasty: '春秋戰國', start: -770, end: -221 },
+    { dynasty: '秦朝', start: -221, end: -206 },
+    { dynasty: '漢朝', start: -206, end: 220 },
+    { dynasty: '三國', start: 220, end: 280 },
+    { dynasty: '晉朝', start: 280, end: 420 },
+    { dynasty: '南北朝', start: 420, end: 589 },
+    { dynasty: '隋朝', start: 589, end: 618 },
+    { dynasty: '唐朝', start: 618, end: 907 },
+    { dynasty: '五代十國', start: 907, end: 960 },
+    { dynasty: '宋朝', start: 960, end: 1279 },
+    { dynasty: '元朝', start: 1271, end: 1368 },
+    { dynasty: '明朝', start: 1368, end: 1644 },
+    { dynasty: '清朝', start: 1644, end: 1912 },
+    { dynasty: '民國與現代', start: 1912, end: 2100 },
+];
+
+function openSnapshot() {
+    el('snapshotModal').classList.remove('hidden');
+    el('snapshotModal').classList.add('flex');
+}
+function closeSnapshot() {
+    el('snapshotModal').classList.add('hidden');
+    el('snapshotModal').classList.remove('flex');
+}
+
+async function generateSnapshot() {
+    const yearVal = el('snapshotYear').value.trim();
+    if (!yearVal) { customAlert('請輸入年份'); return; }
+    const year = parseInt(yearVal);
+    if (isNaN(year)) { customAlert('請輸入有效年份'); return; }
+
+    const yearLabel = year < 0 ? `西元前${Math.abs(year)}年` : `西元${year}年`;
+
+    // 找對應朝代
+    const matchedEras = ERA_YEAR_MAP.filter(e => year >= e.start && year < e.end);
+    const dynastyNames = matchedEras.map(e => e.dynasty);
+
+    // 抓出該時代人物與評級
+    const eraLegends = legendsData.filter(l => dynastyNames.includes(l.dynasty));
+    const legendRef = eraLegends.length > 0
+        ? '【本系統評鑑人物參考】\n' + eraLegends.map(l => `${l.name}(${l.rank})`).join('、')
+        : '';
+
+    closeSnapshot();
+    openModal(`${yearLabel} · 天下快照`, 'content');
+    el('radarChartContainer').classList.add('hidden');
+    el('loadingState').classList.remove('hidden');
+    el('loadingState').classList.add('flex');
+    el('modalContent').innerHTML = '';
+
+    const prompt = `你是一位博學的歷史學者。請為「${yearLabel}」生成一份天下快照。
+
+${legendRef}
+
+請依以下四個章節撰寫，引用上方評鑑人物時請帶入其評級（如「評鑑為S+的韓信」）：
+
+1. **【天下格局】** 當時主要政權、版圖與勢力分布（約150字）
+2. **【風雲人物】** 當時最具影響力的3-5人，結合本系統評級進行點評（約200字）
+3. **【歷史走向】** 當下正在發生的關鍵事件與趨勢（約150字）
+4. **【命運之人】** 此刻誰的選擇最能改變歷史走向？為什麼是他？（約100字）
+
+繁體中文，保持歷史學者的嚴謹與文學性。`;
+
+    try {
+        const myToken = ++currentRequestToken;
+        const snapshotResult = await callGeminiStream(prompt, (partial) => {
+            if (myToken !== currentRequestToken) return;
+            el('loadingState').classList.add('hidden');
+            el('modalContent').innerHTML = marked.parse(partial);
+        }, (model) => {
+            el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
+        });
+        appState.simulationHistory.unshift({ type: '快照', icon: '🌍', title: yearLabel, result: snapshotResult.slice(0, 100), fullResult: snapshotResult, time: new Date().toLocaleString('zh-TW') });
+        if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+        saveToLocalStorage();
+    } catch(e) {
+        el('loadingState').classList.add('hidden');
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>快照生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+    }  
+    }      
         // --- 辯論模式 ---
 const DEBATE_ROLES = { debater1: '一辯', debater2: '二辯', debater3: '三辯', debater4: '四辯' };
 
