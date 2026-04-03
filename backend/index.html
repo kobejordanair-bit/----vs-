@@ -115,6 +115,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 </div>
 <script>
+    const BACKEND_URL = window.location.origin;
     let APP_TOKEN = null;
 
     (function() {
@@ -1190,14 +1191,14 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 }
 
         // Migrate from 13.9 name-based keys to 15.0 id-based keys if needed
-        function migrateOldData() {
+         async function migrateOldData() {
             const oldMods = safeJSONParse(localStorage.getItem('modifiedLegends_v13_9'), null);
             if (oldMods && Object.keys(appState.modifiedLegends).length === 0) {
                 Object.keys(oldMods).forEach(oldName => {
                     const found = staticLegendsData.find(l => l.name === oldName);
                     if(found) { appState.modifiedLegends[found.id] = oldMods[oldName]; }
                 });
-                saveToLocalStorage();
+                await syncToCloud();
             }
             const oldChats = safeJSONParse(localStorage.getItem('legendChatHistories_v13_9'), null);
             if (oldChats && Object.keys(appState.chatHistories).length === 0) {
@@ -1205,7 +1206,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     const found = staticLegendsData.find(l => l.name === oldName);
                     if(found) { appState.chatHistories[found.id] = oldChats[oldName]; }
                 });
-                saveToLocalStorage();
+                await syncToCloud();
             }
             // Ensure customs have ID & Dynasty
             appState.customLegends.forEach(l => {
@@ -1214,7 +1215,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             });
         }
 
-        async function saveToLocalStorage() {
+        async function syncToCloud() {
     try {
         await fetch(`${BACKEND_URL}/api/userdata`, {
             method: 'POST',
@@ -1362,7 +1363,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 customConfirm("確定要清除與此人物的對話記憶嗎？", () => {
                     delete appState.chatHistories[appState.chatMode.targetId];
                     el('chatHistory').innerHTML = '<div class="text-center text-xs text-gray-400 py-4">- 記憶已重置 -</div>';
-                    saveToLocalStorage();
+                    syncToCloud();
                 });
             }
         }
@@ -1410,7 +1411,7 @@ ${allNames}
         const icon = actionType === '新增入冊' ? '📜' : '✍️';
         appState.simulationHistory.unshift({ type: actionType, icon, title: `眾人評${legend.name}（${legend.rank}）`, result: reactionResult.slice(0, 100), fullResult: reactionResult, time: new Date().toLocaleString('zh-TW') });
         if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
-        saveToLocalStorage();
+        syncToCloud();
     } catch (e) {
         el('loadingState').classList.add('hidden');
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
@@ -1530,7 +1531,7 @@ const text = streamText;
                         // Cache it
                         appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                         appState.modifiedLegends[id].stats = statsData.stats;
-                        saveToLocalStorage();
+                        syncToCloud();
                         refreshData(); // to keep legendsData in sync
                         
                         renderRadarChart(legend.name, statsData.stats);
@@ -1541,7 +1542,7 @@ const text = streamText;
                 }
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].analysis = cleanText;
-                saveToLocalStorage();
+                syncToCloud();
                 setModalContent(cleanText);
             } catch (e) {
                 el('loadingState').classList.add('hidden');
@@ -1711,7 +1712,7 @@ if (needStats) {
         appState.modifiedLegends[p2.id] = appState.modifiedLegends[p2.id] || {};
         appState.modifiedLegends[p1.id].stats = s1;
         appState.modifiedLegends[p2.id].stats = s2;
-        saveToLocalStorage();
+        syncToCloud();
         cleanText = streamText.replace(jsonMatch[0], '');
         el('modalContent').innerHTML = marked.parse(cleanText);
     }
@@ -1742,7 +1743,7 @@ if(s1 && s2) {
                 const intro = `吾乃${legend.title}${legend.name}。後世之人，有何指教？`;
                 addChatBubble('model', intro);
                 appState.chatHistories[id] = [{role: 'model', content: intro}];
-                saveToLocalStorage();
+                syncToCloud();
             } else {
                 history.forEach(msg => addChatBubble(msg.role, msg.content));
             }
@@ -1768,7 +1769,7 @@ if(s1 && s2) {
             
             if (!appState.chatHistories[targetId]) appState.chatHistories[targetId] = [];
             appState.chatHistories[targetId].push({role: 'user', content: text});
-            saveToLocalStorage();
+            syncToCloud();
 
             const loadingId = 'chat-loading-' + Date.now();
             const loadingDiv = document.createElement('div');
@@ -1804,7 +1805,7 @@ if(s1 && s2) {
                 el(loadingId).remove();
                 addChatBubble('model', response);
                 appState.chatHistories[targetId].push({role: 'model', content: response});
-                saveToLocalStorage();
+                syncToCloud();
             } catch (e) {
                 if(el(loadingId)) el(loadingId).remove();
                 addChatBubble('model', `(咳咳... 跨越時空的連線似乎中斷了: ${e.message})`);
@@ -1905,7 +1906,7 @@ const data = JSON.parse(jsonStr);
             };
             
             appState.customLegends.push(newLegend);
-            saveToLocalStorage();
+            syncToCloud();
             refreshData();
             closeAddModal();
 showRelatedReactions(newLegend.id, '新增入冊');
@@ -1974,7 +1975,7 @@ showRelatedReactions(newLegend.id, '新增入冊');
                 appState.modifiedLegends[currentEditingId] = { ...appState.modifiedLegends[currentEditingId], ...updates };
             }
 
-            saveToLocalStorage();
+            syncToCloud();
             refreshData();
             closeEditHub();
 showRelatedReactions(currentEditingId, '修訂');
@@ -1985,7 +1986,7 @@ showRelatedReactions(currentEditingId, '修訂');
             customConfirm(`確定要刪除此自訂人物嗎？`, () => {
                 appState.customLegends = appState.customLegends.filter(l => l.id !== currentEditingId);
                 delete appState.modifiedLegends[currentEditingId]; 
-                saveToLocalStorage();
+                syncToCloud();
                 refreshData();
                 closeEditHub();
             });
@@ -2258,7 +2259,7 @@ const courtResult = await callGeminiStream(prompt, (partial) => {
 });
 const dynastyNames = factions.map(f => f.name).join(' vs ');
 appState.simulationHistory.unshift({ type: '朝堂', icon: '🏛️', title: dynastyNames, result: courtResult.slice(0, 100), fullResult: courtResult, time: new Date().toLocaleString('zh-TW') });if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
-saveToLocalStorage();
+syncToCloud();
             } catch(e) { 
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2300,7 +2301,7 @@ const battleResult = await callGeminiStream(prompt, (partial) => {
 });
 const factionNames = factions.map(f => f.name).join(' vs ');
 appState.simulationHistory.unshift({ type: '戰情', icon: '⚔️', title: factionNames, result: battleResult.slice(0, 100), fullResult: battleResult, time: new Date().toLocaleString('zh-TW') });if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
-saveToLocalStorage();
+syncToCloud();
             } catch(e) { 
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2360,7 +2361,7 @@ const soulIcon = scenario ? '🔥' : '👻';
 const soulTitle = `${soulName} → ${hostName}`;
 appState.simulationHistory.unshift({ type: soulType, icon: soulIcon, title: soulTitle, result: soulResult.slice(0, 100), fullResult: soulResult, time: new Date().toLocaleString('zh-TW') });
 if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
-saveToLocalStorage();
+syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
@@ -2509,7 +2510,6 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
         }
         
         // --- 對接本地端 Python FastAPI 後端 ---
-const BACKEND_URL = window.location.origin;
 async function callGeminiStream(promptText, onChunk, onModel = null) {
     const contents = [{ role: "user", parts: [{ text: promptText }] }];
     const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
@@ -2620,7 +2620,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
                     });
                     appState.chatHistories = newChats; 
 
-                    saveToLocalStorage(); // Persist immediately
+                    syncToCloud(); // Persist immediately
                     refreshData(); 
                     customAlert("讀檔成功！舊版存檔已自動升級適配。"); 
                 } catch (err) { 
@@ -2707,7 +2707,7 @@ ${legendRef}
         });
         appState.simulationHistory.unshift({ type: '快照', icon: '🌍', title: yearLabel, result: snapshotResult.slice(0, 100), fullResult: snapshotResult, time: new Date().toLocaleString('zh-TW') });
         if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
-        saveToLocalStorage();
+        syncToCloud();
     } catch(e) {
         el('loadingState').classList.add('hidden');
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>快照生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
@@ -2833,7 +2833,7 @@ async function startDebate() {
         const title = `${proNames.map(n=>n.replace(/^.*?(?=[^\u0000-\u007F])/, '')).join('+')} vs ${conNames.map(n=>n.replace(/^.*?(?=[^\u0000-\u007F])/, '')).join('+')}`;
         appState.simulationHistory.unshift({ type: '辯論', icon: '⚖️', title: topic, result: debateResult.slice(0, 100), fullResult: debateResult, time: new Date().toLocaleString('zh-TW') });
         if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
-        saveToLocalStorage();
+        syncToCloud();
     } catch(e) {
         el('loadingState').classList.add('hidden');
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>辯論失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
@@ -2890,14 +2890,14 @@ function closeChronicleDetail() {
 function deleteChronicleItem(index) {
     customConfirm('確定刪除此筆紀錄？', () => {
         appState.simulationHistory.splice(index, 1);
-        saveToLocalStorage();
+        syncToCloud();
         renderChronicleList();
     });
 }
 function clearAllChronicle() {
     customConfirm('確定清空所有推演史冊？', () => {
         appState.simulationHistory = [];
-        saveToLocalStorage();
+        syncToCloud();
         renderChronicleList();
     });
 }
