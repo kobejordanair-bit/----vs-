@@ -13,6 +13,7 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from pymongo import MongoClient
+import asyncio
 
 load_dotenv()
 
@@ -191,25 +192,27 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
         async def generate():
             used_model = PRIMARY_MODEL
             try:
-                yield f"data: {json.dumps({'model': used_model})}\n\n"
-                async for chunk in await client.aio.models.generate_content_stream(
-                    model=PRIMARY_MODEL,
-                    contents=contents,
-                ):
-                    if chunk.text:
-                        yield f"data: {json.dumps({'text': chunk.text})}\n\n"
+                chunks = await asyncio.to_thread(
+                    lambda: list(client.models.generate_content_stream(
+                        model=PRIMARY_MODEL,
+                        contents=contents,
+                    ))
+                )
             except Exception as model_err:
                 if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
                     used_model = FALLBACK_MODEL
-                    yield f"data: {json.dumps({'model': used_model})}\n\n"
-                    async for chunk in await client.aio.models.generate_content_stream(
-                        model=FALLBACK_MODEL,
-                        contents=contents,
-                    ):
-                        if chunk.text:
-                            yield f"data: {json.dumps({'text': chunk.text})}\n\n"
+                    chunks = await asyncio.to_thread(
+                        lambda: list(client.models.generate_content_stream(
+                            model=FALLBACK_MODEL,
+                            contents=contents,
+                        ))
+                    )
                 else:
                     raise
+            yield f"data: {json.dumps({'model': used_model})}\n\n"
+            for chunk in chunks:
+                if chunk.text:
+                    yield f"data: {json.dumps({'text': chunk.text})}\n\n"
             yield "data: [DONE]\n\n"
 
         return StreamingResponse(generate(), media_type="text/event-stream")
