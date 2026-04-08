@@ -192,7 +192,7 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
             used_model = PRIMARY_MODEL
             try:
                 yield f"data: {json.dumps({'model': used_model})}\n\n"
-                async for chunk in client.aio.models.generate_content_stream(
+                async for chunk in await client.aio.models.generate_content_stream(
                     model=PRIMARY_MODEL,
                     contents=contents,
                 ):
@@ -202,7 +202,7 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
                 if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
                     used_model = FALLBACK_MODEL
                     yield f"data: {json.dumps({'model': used_model})}\n\n"
-                    async for chunk in client.aio.models.generate_content_stream(
+                    async for chunk in await client.aio.models.generate_content_stream(
                         model=FALLBACK_MODEL,
                         contents=contents,
                     ):
