@@ -49,7 +49,7 @@ if not GEMINI_API_KEY:
     raise ValueError("環境變數 GEMINI_API_KEY 尚未設定！")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-PRIMARY_MODEL = "gemini-3-flash-preview"
+PRIMARY_MODEL = "gemini-2.5-pro"
 FALLBACK_MODEL = "gemini-2.5-flash"
 
 def load_ranking_reference():
