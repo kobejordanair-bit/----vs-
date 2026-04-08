@@ -6,3 +6,4 @@ pydantic
 openpyxl
 slowapi
 pymongo[srv]
+google-auth
