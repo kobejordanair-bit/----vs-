@@ -49,8 +49,9 @@ if not GEMINI_API_KEY:
     raise ValueError("環境變數 GEMINI_API_KEY 尚未設定！")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-PRIMARY_MODEL = "gemini-2.5-pro"
-FALLBACK_MODEL = "gemini-3-flash-preview"
+PRIMARY_MODEL = "gemini-3-flash-preview"
+FALLBACK_MODEL = "gemini-2.5-flash"
+
 def load_ranking_reference():
     try:
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -186,27 +187,31 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
             contents.append({"role": role, "parts": [{"text": text}]})
         if not contents:
             raise HTTPException(status_code=400, detail="對話內容不能為空")
+
         async def generate():
             used_model = PRIMARY_MODEL
             try:
-                chunks = list(client.models.generate_content_stream(
+                yield f"data: {json.dumps({'model': used_model})}\n\n"
+                async for chunk in client.aio.models.generate_content_stream(
                     model=PRIMARY_MODEL,
                     contents=contents,
-                ))
+                ):
+                    if chunk.text:
+                        yield f"data: {json.dumps({'text': chunk.text})}\n\n"
             except Exception as model_err:
                 if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
                     used_model = FALLBACK_MODEL
-                    chunks = list(client.models.generate_content_stream(
+                    yield f"data: {json.dumps({'model': used_model})}\n\n"
+                    async for chunk in client.aio.models.generate_content_stream(
                         model=FALLBACK_MODEL,
                         contents=contents,
-                    ))
+                    ):
+                        if chunk.text:
+                            yield f"data: {json.dumps({'text': chunk.text})}\n\n"
                 else:
                     raise
-            yield f"data: {json.dumps({'model': used_model})}\n\n"
-            for chunk in chunks:
-                if chunk.text:
-                    yield f"data: {json.dumps({'text': chunk.text})}\n\n"
             yield "data: [DONE]\n\n"
+
         return StreamingResponse(generate(), media_type="text/event-stream")
     except HTTPException:
         raise
