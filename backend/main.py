@@ -65,8 +65,8 @@ client = genai.Client(
     location="us-central1"
 )
 
-PRIMARY_MODEL = "gemini-3.1-pro-preview"
-FALLBACK_MODEL = "	gemini-3.1-flash-lite-preview"
+PRIMARY_MODEL = "gemini-2.5-pro"
+FALLBACK_MODEL = "gemini-2.5-flash"
 
 def load_ranking_reference():
     try:
