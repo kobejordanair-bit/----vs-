@@ -1157,6 +1157,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             modifiedLegends: {},
             simulationHistory: [],
             debateMode: {
+                minimized: false,
                 activeSlot: null,
                 pro: { debater1: null, debater2: null, debater3: null, debater4: null },
                 con: { debater1: null, debater2: null, debater3: null, debater4: null },
@@ -2418,15 +2419,32 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
         }
 
         function togglePanelSize(mode) {
+             if (mode === 'debateMode') {
+                 appState.debateMode.minimized = !appState.debateMode.minimized;
+                 const panel = el('debateModePanel');
+                 const content = el('debateModeContent');
+                 const status = el('debateModeStatus');
+                 if (appState.debateMode.minimized) {
+                     panel.style.height = '44px';
+                     content.classList.add('hidden');
+                     status.classList.remove('hidden');
+                     document.body.style.paddingBottom = '70px';
+                 } else {
+                     panel.style.height = '340px';
+                     content.classList.remove('hidden');
+                     status.classList.add('hidden');
+                     document.body.style.paddingBottom = '340px';
+                 }
+                 return;
+             }
              const state = mode === 'warRoom' ? appState.warRoom : (mode === 'courtMode' ? appState.courtMode : appState.soulMode);
              state.minimized = !state.minimized;
              const panelId = mode === 'warRoom' ? 'warRoomPanel' : (mode === 'courtMode' ? 'courtModePanel' : 'soulModePanel');
              const contentId = mode === 'warRoom' ? 'warRoomContent' : (mode === 'courtMode' ? 'courtModeContent' : 'soulModeContent');
              const statusId = mode === 'warRoom' ? 'warRoomStatus' : (mode === 'courtMode' ? 'courtModeStatus' : 'soulModeStatus');
              const panel = el(panelId); const content = el(contentId); const status = el(statusId);
-             const height = mode === 'warRoom' ? '65vh' : (mode === 'courtMode' ? '65vh' : '300px'); 
-             
-             if (state.minimized) { panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText(mode); } 
+             const height = mode === 'warRoom' ? '65vh' : (mode === 'courtMode' ? '65vh' : '300px');
+             if (state.minimized) { panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText(mode); }
              else { panel.style.height = height; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = height; }
         }
 
