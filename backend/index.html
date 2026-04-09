@@ -2934,8 +2934,7 @@ function clearAllChronicle() {
             searchTimer = setTimeout(renderLegends, 300);
         });
 
-        function resetApp() { closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; renderLegends(); }
-        
+        function resetApp() { appState.mode = 'browse'; closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; appState.compareList = []; updateCompareUI(); renderLegends(); }
         // Start
     </script>
 </body>
