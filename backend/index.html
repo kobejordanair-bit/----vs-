@@ -1292,7 +1292,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 if(appState.soulMode.selection.host === g.id) selectionClass = 'selected-host';
                 if(appState.soulMode.selection.soul === g.id) selectionClass = 'selected-soul';
                 if(appState.compareList.includes(g.id)) selectionClass = 'selected-compare';
-
+                const debateIds = [...Object.values(appState.debateMode.pro), ...Object.values(appState.debateMode.con)];
+                if(debateIds.includes(g.id)) selectionClass = 'selected-red';
                 const isMod = g.isModified ? '<span class="mod-badge">修</span>' : '';
                 const isNew = appState.customLegends.some(cg => cg.id === g.id) ? '<span class="new-badge">新</span>' : '';
 
@@ -1985,12 +1986,19 @@ showRelatedReactions(currentEditingId, '修訂');
         function deleteCustomLegend() {
             if (!currentEditingId) return;
             customConfirm(`確定要刪除此自訂人物嗎？`, () => {
-                appState.customLegends = appState.customLegends.filter(l => l.id !== currentEditingId);
-                delete appState.modifiedLegends[currentEditingId]; 
+                const id = currentEditingId;
+                appState.customLegends = appState.customLegends.filter(l => l.id !== id);
+                delete appState.modifiedLegends[id];
+                // 清理所有 slot 殘留
+                appState.warRoom.factions.forEach(f => { Object.keys(f.slots).forEach(k => { if(f.slots[k] === id) f.slots[k] = null; }); });
+                appState.courtMode.factions.forEach(f => { Object.keys(f.slots).forEach(k => { if(f.slots[k] === id) f.slots[k] = null; }); });
+                if(appState.soulMode.selection.host === id) appState.soulMode.selection.host = null;
+                if(appState.soulMode.selection.soul === id) appState.soulMode.selection.soul = null;
+                ['pro','con'].forEach(side => { Object.keys(appState.debateMode[side]).forEach(k => { if(appState.debateMode[side][k] === id) appState.debateMode[side][k] = null; }); });
                 syncToCloud();
                 refreshData();
                 closeEditHub();
-            });
+});
         }
 
 
@@ -2418,6 +2426,8 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
             updateWarRoomUI();
             updateCourtModeUI();
             updateSoulModeUI();
+            updateDebateModeUI();
+            renderLegends();
         }
 
         function togglePanelSize(mode) {
