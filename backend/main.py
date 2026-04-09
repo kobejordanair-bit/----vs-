@@ -135,7 +135,7 @@ def get_ranking_reference():
     return {"result": RANKING_REFERENCE}
 
 @app.get("/api/userdata")
-async def get_userdata(x_app_token: Optional[str] = Header(None)):
+def get_userdata(x_app_token: Optional[str] = Header(None)):
     verify_token(x_app_token)
     doc = userdata_col.find_one({"_id": "main"}, {"_id": 0})
     if not doc:
@@ -143,7 +143,7 @@ async def get_userdata(x_app_token: Optional[str] = Header(None)):
     return doc
 
 @app.post("/api/userdata")
-async def save_userdata(request: Request, body: UserDataRequest, x_app_token: Optional[str] = Header(None)):
+def save_userdata(request: Request, body: UserDataRequest, x_app_token: Optional[str] = Header(None)):
     verify_token(x_app_token)
     userdata_col.replace_one(
         {"_id": "main"},
