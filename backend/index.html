@@ -2096,6 +2096,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 appState.debateMode.activeSlot = null;
                 updateDebateModeUI();
                 renderLegends();
+                if (appState.debateMode.minimized) togglePanelSize('debateMode');
             }
             if (appState.mode === 'soulMode' && appState.soulMode.activeSlot) {
                  const slot = appState.soulMode.activeSlot;
@@ -2765,6 +2766,7 @@ function selectDebateSlot(side, pos) {
     appState.debateMode.activeSlot = { side, pos };
     updateDebateModeUI();
     renderLegends();
+    if (!appState.debateMode.minimized) togglePanelSize('debateMode');
 }
 
 function clearDebateSlots() {
