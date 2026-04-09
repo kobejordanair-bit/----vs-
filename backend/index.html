@@ -2397,6 +2397,7 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
                         else el('tipText').innerText = '選擇【肉身】與【靈魂】';                    }
                     const heightMap = { 'warRoom': '65vh', 'courtMode': '65vh', 'soulMode': '300px', 'scenarioMode': '380px', 'debateMode': '340px' };
                     document.body.style.paddingBottom = heightMap[modeName] || '0px';
+                     if (modeName === 'debateMode') updateDebateModeUI();
                 }
             } else {
                 appState.mode = 'browse';
