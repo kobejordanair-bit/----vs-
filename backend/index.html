@@ -2790,18 +2790,14 @@ async function recommendDebateTopic() {
 直接列出3個議題，每行一個，不要編號，不要解釋，繁體中文。`;
         const result = await callGemini(prompt);
         const topics = result.split('\n').map(t => t.trim()).filter(Boolean).slice(0, 3);
-        customConfirm(`推薦議題：\n\n${topics.map((t, i) => `${i+1}. ${t}`).join('\n')}\n\n選第幾個？（輸入1/2/3）`, () => {});
-        const choice = await new Promise(resolve => {
-            const btns = document.getElementById('uiMsgBtns');
-            btns.innerHTML = topics.map((t, i) => 
-                `<button onclick="appState.debateMode.topic='${t.replace(/'/g,"\\'")}'; el('debateTopicInput').value='${t.replace(/'/g,"\\'")}'; updateDebateModeUI(); closeUIMsg();" 
-                class="px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded font-bold text-xs transition-colors">${i+1}</button>`
-            ).join('');
-            document.getElementById('uiMsgText').innerText = topics.map((t, i) => `${i+1}. ${t}`).join('\n');
-            document.getElementById('uiMsgTitle').innerText = 'AI 推薦議題';
-            document.getElementById('uiMsgBox').classList.remove('hidden');
-            document.getElementById('uiMsgBox').classList.add('flex');
-        });
+        el('uiMsgTitle').innerText = 'AI 推薦議題';
+        el('uiMsgText').innerText = topics.map((t, i) => `${i+1}. ${t}`).join('\n');
+        el('uiMsgBtns').innerHTML = topics.map((t, i) =>
+            `<button onclick="appState.debateMode.topic=${JSON.stringify(t)}; el('debateTopicInput').value=${JSON.stringify(t)}; updateDebateModeUI(); closeUIMsg();"
+            class="px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded font-bold text-xs transition-colors">${i+1}</button>`
+        ).join('');
+        el('uiMsgCancelBtn').style.display = 'none';
+        openUIMsg();
     } catch(e) {
         customAlert('推薦失敗：' + e.message);
     } finally {
