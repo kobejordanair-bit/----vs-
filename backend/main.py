@@ -14,6 +14,8 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from pymongo import MongoClient
 import asyncio
+import threading
+import queue as stdlib_queue
 
 load_dotenv()
 
@@ -206,28 +208,40 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
 
         async def generate():
             used_model = PRIMARY_MODEL
-            try:
-                chunks = await asyncio.to_thread(
-                    lambda: list(client.models.generate_content_stream(
-                        model=PRIMARY_MODEL,
-                        contents=contents,
-                    ))
-                )
-            except Exception as model_err:
-                if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
-                    used_model = FALLBACK_MODEL
-                    chunks = await asyncio.to_thread(
-                        lambda: list(client.models.generate_content_stream(
-                            model=FALLBACK_MODEL,
-                            contents=contents,
-                        ))
-                    )
-                else:
-                    raise
             yield f"data: {json.dumps({'model': used_model})}\n\n"
-            for chunk in chunks:
-                if chunk.text:
-                    yield f"data: {json.dumps({'text': chunk.text})}\n\n"
+
+            q = stdlib_queue.Queue()
+
+            def _producer(model):
+                try:
+                    for chunk in client.models.generate_content_stream(
+                        model=model, contents=contents
+                    ):
+                        q.put(('chunk', chunk))
+                except Exception as e:
+                    if "503" in str(e) or "UNAVAILABLE" in str(e):
+                        try:
+                            for chunk in client.models.generate_content_stream(
+                                model=FALLBACK_MODEL, contents=contents
+                            ):
+                                q.put(('chunk', chunk))
+                        except Exception as e2:
+                            q.put(('error', e2))
+                    else:
+                        q.put(('error', e))
+                q.put(('done', None))
+
+            threading.Thread(target=_producer, args=(PRIMARY_MODEL,), daemon=True).start()
+
+            while True:
+                type_, data = await asyncio.to_thread(q.get)
+                if type_ == 'done':
+                    break
+                elif type_ == 'error':
+                    raise data
+                elif type_ == 'chunk' and data.text:
+                    yield f"data: {json.dumps({'text': data.text})}\n\n"
+
             yield "data: [DONE]\n\n"
 
         return StreamingResponse(generate(), media_type="text/event-stream")
