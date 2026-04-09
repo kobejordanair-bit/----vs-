@@ -2,3 +2,4 @@
 __pycache__/
 import_data.py
 legends_v15_0.json
+gcp_key.json

@@ -62,11 +62,11 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = _key_file.name
 client = genai.Client(
     vertexai=True,
     project=GCP_PROJECT_ID,
-    location="us-central1"
+    location="global"
 )
 
-PRIMARY_MODEL = "gemini-2.5-pro"
-FALLBACK_MODEL = "gemini-2.5-flash"
+PRIMARY_MODEL = "gemini-3.1-pro-preview"
+FALLBACK_MODEL = "gemini-3.1-flash-lite-preview"
 
 def load_ranking_reference():
     try:
