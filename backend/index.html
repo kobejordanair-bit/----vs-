@@ -241,6 +241,16 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             </button>
         </div>
     </div>
+    <div class="flex gap-1 p-2 bg-[#f5f0e8] border-b border-[#e5e0d3] flex-wrap flex-shrink-0">
+        <button onclick="setChronicleFilter('all')" data-filter="all" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] transition-colors" style="background:#2c2826;color:white">全部</button>
+        <button onclick="setChronicleFilter('戰情')" data-filter="戰情" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">⚔️戰情</button>
+        <button onclick="setChronicleFilter('朝堂')" data-filter="朝堂" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">🏛️朝堂</button>
+        <button onclick="setChronicleFilter('辯論')" data-filter="辯論" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">⚖️辯論</button>
+        <button onclick="setChronicleFilter('魂穿')" data-filter="魂穿" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">👻魂穿</button>
+        <button onclick="setChronicleFilter('絕境')" data-filter="絕境" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">🔥絕境</button>
+        <button onclick="setChronicleFilter('快照')" data-filter="快照" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">🌍快照</button>
+        <button onclick="setChronicleFilter('評鑑')" data-filter="評鑑" class="chronicle-filter-btn text-xs px-2 py-1 rounded font-serif border border-[#e5e0d3] bg-white text-[#57534e] transition-colors">🔬評鑑</button>
+    </div>
     <div id="chronicleList" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
 </div>
 <div id="chronicleOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-[55] hidden" onclick="closeChronicle()"></div>
@@ -3182,9 +3192,23 @@ function closeChronicle() {
     el('chronicleDrawer').classList.add('translate-x-full');
     el('chronicleOverlay').classList.add('hidden');
 }
+let chronicleFilter = 'all';
+function setChronicleFilter(type) {
+    chronicleFilter = type;
+    document.querySelectorAll('.chronicle-filter-btn').forEach(b => {
+        if (b.dataset.filter === type) { b.style.background = '#2c2826'; b.style.color = 'white'; }
+        else { b.style.background = ''; b.style.color = ''; }
+    });
+    renderChronicleList();
+}
 function renderChronicleList() {
     const list = el('chronicleList');
-    const history = appState.simulationHistory;
+    const EVAL_TYPES = ['深度評鑑', '新增入冊', '修訂'];
+    const history = appState.simulationHistory.filter(item => {
+        if (chronicleFilter === 'all') return true;
+        if (chronicleFilter === '評鑑') return EVAL_TYPES.includes(item.type);
+        return item.type === chronicleFilter;
+    });
     if (history.length === 0) {
         list.innerHTML = '<div class="text-center text-[#a8a29e] py-16 font-serif"><i class="fa-solid fa-scroll text-4xl mb-4 block"></i>尚無推演紀錄</div>';
         return;
