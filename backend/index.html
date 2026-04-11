@@ -1183,7 +1183,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     } catch(e) {
         console.error('載入資料失敗:', e);
     }
-    migrateOldData();
+    await migrateOldData();
     refreshData();
     initScenarios();
     updateWarRoomUI();
@@ -1271,7 +1271,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 const matchDynasty = appState.dynastyFilter === 'all' || g.dynasty === appState.dynastyFilter;
                 const matchSearch = g.name.includes(searchQuery) || g.title.includes(searchQuery) || g.tag.includes(searchQuery) || (g.desc && g.desc.includes(searchQuery));
                 return matchType && matchRank && matchDynasty && matchSearch;
-            }).sort((a, b) => rankOrder[a.rank] - rankOrder[b.rank]);
+            }).sort((a, b) => (rankOrder[a.rank] ?? 99) - (rankOrder[b.rank] ?? 99));
 
             el('countDisplay').innerText = filtered.length;
 
