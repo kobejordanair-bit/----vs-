@@ -3,7 +3,6 @@ uvicorn
 google-genai
 python-dotenv
 pydantic
-openpyxl
 slowapi
 pymongo[srv]
 google-auth

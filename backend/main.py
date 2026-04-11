@@ -8,7 +8,6 @@ from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 from google import genai
 from dotenv import load_dotenv
-import openpyxl
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
@@ -70,30 +69,6 @@ client = genai.Client(
 PRIMARY_MODEL = "gemini-3.1-pro-preview"
 FALLBACK_MODEL = "gemini-3.1-flash-lite-preview"
 
-def load_ranking_reference():
-    try:
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-        wb = openpyxl.load_workbook(os.path.join(BASE_DIR, '王侯將相最新版.xlsx'))
-        ws = wb.active
-        rank_groups = {}
-        for row in ws.iter_rows(min_row=2, values_only=True):
-            if row[1] and row[2]:
-                rank = row[2]
-                name = row[1]
-                if rank not in rank_groups:
-                    rank_groups[rank] = []
-                if len(rank_groups[rank]) < 5:
-                    rank_groups[rank].append(name)
-        result = "【現有人物評級參考表】\n"
-        for rank in ['S+', 'S', 'S-', 'A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D']:
-            if rank in rank_groups:
-                result += f"{rank}：{'、'.join(rank_groups[rank])}\n"
-        return result
-    except Exception as e:
-        print(f"讀取Excel失敗: {e}")
-        return ""
-
-RANKING_REFERENCE = load_ranking_reference()
 
 class ChatRequest(BaseModel):
     contents: List[Dict[str, Any]]
@@ -129,11 +104,6 @@ async def auth(request: Request):
     if password == APP_SECRET:
         return {"token": APP_SECRET}
     raise HTTPException(status_code=401, detail="密碼錯誤")
-
-@app.get("/api/ranking-reference")
-def get_ranking_reference():
-    return {"result": RANKING_REFERENCE}
-
 @app.get("/api/userdata")
 def get_userdata(x_app_token: Optional[str] = Header(None)):
     verify_token(x_app_token)
