@@ -1522,7 +1522,7 @@ ${rankingRef}
                             ${suggestions.desc ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_desc" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">簡評</span><span class="text-purple-800">→ ${escapeHtml(suggestions.desc)}</span></span></label>` : ''}
                             ${suggestions.poem ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_poem" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">判詞</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.poem)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.poem)}</span></span></label>` : ''}
                         </div>
-                        <button onclick="applyDeepSuggestions('${id}', ${JSON.stringify(suggestions).replace(/'/g, "\\'")})" class="mt-4 w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
+                        <button id="applyDeepBtn" class="mt-4 w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
                             <i class="fa-solid fa-check mr-2"></i>套用勾選的欄位
                         </button>
                     </div>`;
