@@ -2410,6 +2410,18 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             const l = legendsData.find(x => x.id === id);
             return l ? l.name : null;
         }
+        function getLegendRank(id) {
+            const l = legendsData.find(x => x.id === id);
+            return l ? l.rank : null;
+        }
+        function rankBadge(rank) {
+            if (!rank) return '';
+            const color = rank.startsWith('S') ? 'bg-amber-100 text-amber-800 border-amber-300' :
+                          rank.startsWith('A') ? 'bg-blue-100 text-blue-700 border-blue-300' :
+                          rank.startsWith('B') ? 'bg-emerald-100 text-emerald-700 border-emerald-300' :
+                          'bg-slate-100 text-slate-500 border-slate-300';
+            return `<span class="text-[9px] font-bold px-1 py-0.5 rounded border ${color} flex-shrink-0 font-mono">${rank}</span>`;
+        }
 
         // --- WAR ROOM UI ---
         function updateWarRoomUI() {
@@ -2437,6 +2449,7 @@ const fragment = document.createDocumentFragment();
                             <p class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">${roleLabels[role]}</p>
                             <p class="text-xs font-bold truncate ${name ? styles.text : 'text-slate-400'}">${isActive ? '點將...' : (name || '虛位')}</p>
                         </div>
+                        ${!isActive ? rankBadge(getLegendRank(id)) : ''}
                     </div>`;
                 });
 
@@ -2487,6 +2500,7 @@ const fragment = document.createDocumentFragment();
                             <p class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">${roleLabels[role]}</p>
                             <p class="text-xs font-bold truncate ${name ? styles.text : 'text-slate-400'}">${isActive ? '任命...' : (name || '虛位')}</p>
                         </div>
+                        ${!isActive ? rankBadge(getLegendRank(id)) : ''}
                     </div>`;
                 });
 
@@ -2531,7 +2545,7 @@ fragment.appendChild(div.firstChild);
             // Map IDs to actual Names for AI
             const factionData = factions.map(f => {
                 const mappedRoster = {};
-                for (const [r, id] of Object.entries(f.slots)) { mappedRoster[r] = getLegendName(id); }
+                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[r] = n ? `${n}（${rk || '未評'}）` : null; }
                 return { name: f.name, territory: f.territory, roster: mappedRoster };
             });
             
@@ -2575,7 +2589,7 @@ syncToCloud();
             const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
             const factionData = factions.map(f => {
                 const mappedRoster = {};
-                for (const [r, id] of Object.entries(f.slots)) { mappedRoster[r] = getLegendName(id); }
+                 for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[r] = n ? `${n}（${rk || '未評'}）` : null; }
                 return { name: f.name, roster: mappedRoster };
             });
 
@@ -3052,7 +3066,7 @@ function updateDebateModeUI() {
                 <div onclick="selectDebateSlot('${side}', '${pos}')" class="role-slot rounded p-1.5 flex items-center gap-2 cursor-pointer border ${activeClass} ${name && !isActive ? colorClass : 'border-dashed border-slate-300'}">
                     <span class="text-[10px] font-bold ${side === 'pro' ? 'text-red-500' : 'text-blue-500'} w-6 text-center flex-shrink-0">${DEBATE_ROLES[pos]}</span>
                     <span class="text-xs font-bold truncate ${name ? (side === 'pro' ? 'text-red-700' : 'text-blue-700') : 'text-slate-400'}">${isActive ? '點擊人物...' : (name || '虛位')}</span>
-                    ${name ? `<button onclick="event.stopPropagation(); appState.debateMode['${side}']['${pos}']=null; updateDebateModeUI(); renderLegends();" class="ml-auto text-slate-300 hover:text-red-400 text-xs">✕</button>` : ''}
+                     ${name && !isActive ? rankBadge(getLegendRank(id)) : ''}${name ? `<button onclick="event.stopPropagation(); appState.debateMode['${side}']['${pos}']=null; updateDebateModeUI(); renderLegends();" class="ml-auto text-slate-300 hover:text-red-400 text-xs">✕</button>` : ''}
                 </div>`;
         });
     });
@@ -3115,8 +3129,8 @@ async function startDebate() {
     const pro = appState.debateMode.pro;
     const con = appState.debateMode.con;
     const topic = appState.debateMode.topic.trim();
-    const proNames = Object.entries(pro).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}`);
-    const conNames = Object.entries(con).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}`);
+    const proNames = Object.entries(pro).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}（${getLegendRank(v) || '未評'}）`);
+    const conNames = Object.entries(con).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}（${getLegendRank(v) || '未評'}）`);
     if (!proNames.length || !conNames.length || !topic) return;
 
     openModal('歷史辯論場', 'content');
