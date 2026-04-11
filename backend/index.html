@@ -1565,6 +1565,7 @@ ${rankingRef}
             syncToCloud();
             refreshData();
             customAlert('已套用！人物資料已更新。');
+            closeModal();
         }
         async function showRelations(id) {
     const legend = legendsData.find(l => l.id === id);
