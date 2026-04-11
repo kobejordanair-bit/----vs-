@@ -684,6 +684,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <div class="flex gap-3">
                         <input type="text" id="addInputName" placeholder="例如：管仲、王安石..." class="flex-1 px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-emerald-500 font-serif">
                         <button onclick="analyzeNewLegend()" class="bg-[#047857] hover:bg-[#059669] text-white px-6 py-3 rounded-lg font-bold font-serif shadow-sm transition-all">AI 評鑑</button>
+                        <button onclick="deepAnalyzeNewLegend()" class="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-3 rounded-lg font-bold font-serif shadow-sm transition-all">深度評鑑</button>
                     </div>
                 </div>
                 <div id="addLoading" class="hidden flex-col items-center justify-center py-8">
@@ -1963,6 +1964,138 @@ if(s1 && s2) {
         }
 
         // Add/Edit Modal Logic
+        async function deepAnalyzeNewLegend() {
+            const name = el('addInputName').value.trim();
+            const typeRadio = document.querySelector('input[name="addType"]:checked');
+            const type = typeRadio ? typeRadio.value : 'general';
+            const typeLabel = type === 'emperor' ? '帝王' : type === 'general' ? '將領' : '名臣';
+
+            if (!name) return customAlert('請輸入姓名');
+
+            const duplicate = legendsData.find(l => l.name === name && l.type === type);
+            if (duplicate) return customAlert(`「${name}」已存在於${typeLabel}分類中，無需重複新增。`);
+
+            closeAddModal();
+
+            const myToken = ++currentRequestToken;
+            openModal(`${name} · 深度評鑑入冊`, 'content');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            el('radarChartContainer').classList.add('hidden');
+            el('regenStatsBtn').classList.add('hidden');
+
+            const allLegends = [...staticLegendsData, ...appState.customLegends].map(l => {
+                const mod = appState.modifiedLegends[l.id];
+                const rank = (mod && mod.rank) ? mod.rank : l.rank;
+                return `${l.name}(${rank})`;
+            });
+            const rankingRef = '【現有人物評級參考表】\n' + allLegends.join('、');
+
+            const prompt = `你是一位極具學術嚴謹度的「歷史名錄總評官」。你已載入一份包含逾四百位歷史人物的《歷史人物評級總表》，榜單評級系統橫跨 S+ 至 D 共十三檔，涵蓋帝王、將領、名臣三大類型。
+
+${rankingRef}
+
+【當前任務】新增人物評鑑
+姓名：${name}
+類型：${typeLabel}
+
+【核心史觀】
+評估時奉行「實體建制為主，文明底線為輔」的大歷史觀。道德氣節是加分項但不能掩蓋戰略災難；實體政績與戰略破局是評級核心權重。
+
+【三大維度評分邏輯】
+帝王：考核國家機器實體掌控力、地緣戰略版圖拓展、底層經濟稅收體系重塑、極端危機政治手腕。
+將領：考核大兵團會戰殲滅能力、極端逆境戰術破局、地緣戰略目標實體兌現、政治絞肉機中保全軍事實力的生存智慧。
+名臣：考核實體行政效能與國家戰略紅利（最高權重）、危機處理與制度建構、治國理財水準。
+
+請依以下四步驟完成評估：
+
+第一步【榜單錨定】：從參照表中找出與本次評估對象同類型且評級相近的現有人物，明列並實質比較。
+
+第二步【獨立史學剖析】：綜合史書、制度背景、時代環境，針對功過、時代難度、權力結構、後世影響進行深度剖析。
+
+第三步【縱向標定與雙向防線】：向上對標高一檔人物說明為何無法觸及，向下對標低一檔人物說明底線為何不至滑落。
+
+第四步【全榜邏輯一致性校準】：確保評級完全吻合整份總表給分哲學。
+
+完成論證後，輸出以下格式（必須包含，供系統解析）：
+
+【建議定案】
+評級：（填入 S+ 至 D 其中一個）
+稱號：（填入，4字內）
+標籤：（填入，4字特質標籤）
+簡評：（填入，50字內）
+判詞：（填入，代表性詩詞或名言，20字內）
+朝代：（填入所屬朝代）
+
+繁體中文，保持學術嚴謹度。如果不認識此人，請明說並給 D 級。`;
+
+            try {
+                let streamText = '';
+                await callGeminiStream(prompt, (partial) => {
+                    if (myToken !== currentRequestToken) return;
+                    streamText = partial;
+                    el('loadingState').classList.add('hidden');
+                    el('modalContent').innerHTML = marked.parse(partial);
+                });
+
+                if (myToken !== currentRequestToken) return;
+
+                const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
+                const suggestions = {};
+                const rankMatch = streamText.match(/【建議定案】[\s\S]*?評級：([^\n]+)/);
+                const titleMatch = streamText.match(/【建議定案】[\s\S]*?稱號：([^\n]+)/);
+                const tagMatch = streamText.match(/【建議定案】[\s\S]*?標籤：([^\n]+)/);
+                const descMatch = streamText.match(/【建議定案】[\s\S]*?簡評：([^\n]+)/);
+                const poemMatch = streamText.match(/【建議定案】[\s\S]*?判詞：([^\n]+)/);
+                const dynastyMatch = streamText.match(/【建議定案】[\s\S]*?朝代：([^\n]+)/);
+
+                if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
+                if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
+                if (tagMatch) suggestions.tag = cleanSuggestion(tagMatch[1]);
+                if (descMatch) suggestions.desc = cleanSuggestion(descMatch[1]);
+                if (poemMatch) suggestions.poem = cleanSuggestion(poemMatch[1]);
+                if (dynastyMatch) suggestions.dynasty = cleanSuggestion(dynastyMatch[1]);
+
+                if (Object.keys(suggestions).length > 0) {
+                    const previewPanel = `
+                    <div class="mt-8 border-t-2 border-purple-200 pt-6">
+                        <h4 class="font-serif font-bold text-purple-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-scroll text-purple-500"></i> 建議入冊資料</h4>
+                        <div class="bg-purple-50 rounded-xl p-4 space-y-2 border border-purple-100 font-serif text-sm mb-4">
+                            ${suggestions.rank ? `<p><span class="text-purple-500 font-bold w-12 inline-block">評級</span><span class="text-purple-800 font-bold">${escapeHtml(suggestions.rank)}</span></p>` : ''}
+                            ${suggestions.title ? `<p><span class="text-purple-500 font-bold w-12 inline-block">稱號</span><span class="text-slate-700">${escapeHtml(suggestions.title)}</span></p>` : ''}
+                            ${suggestions.tag ? `<p><span class="text-purple-500 font-bold w-12 inline-block">標籤</span><span class="text-slate-700">${escapeHtml(suggestions.tag)}</span></p>` : ''}
+                            ${suggestions.desc ? `<p><span class="text-purple-500 font-bold w-12 inline-block">簡評</span><span class="text-slate-700">${escapeHtml(suggestions.desc)}</span></p>` : ''}
+                            ${suggestions.poem ? `<p><span class="text-purple-500 font-bold w-12 inline-block">判詞</span><span class="text-slate-700 italic">${escapeHtml(suggestions.poem)}</span></p>` : ''}
+                        </div>
+                        <button id="prefillNewBtn" class="w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
+                            <i class="fa-solid fa-pen-to-square mr-2"></i>預填入冊資料，進入確認步驟
+                        </button>
+                    </div>`;
+                    el('modalContent').innerHTML += previewPanel;
+                    setTimeout(() => {
+                        const btn = document.getElementById('prefillNewBtn');
+                        if (btn) btn.addEventListener('click', () => {
+                            closeModal();
+                            el('addInputName').value = name;
+                            document.querySelector(`input[name="addType"][value="${type}"]`).checked = true;
+                            el('newRank').value = suggestions.rank || '';
+                            el('newTitle').value = suggestions.title || '';
+                            el('newTag').value = suggestions.tag || '';
+                            el('newPoem').value = suggestions.poem || '';
+                            el('newDesc').value = suggestions.desc || '';
+                            el('addStep2').dataset.dynasty = suggestions.dynasty || '未分類';
+                            el('addStep1').classList.add('hidden');
+                            el('addStep2').classList.remove('hidden');
+                            el('addModal').classList.remove('hidden');
+                        });
+                    }, 50);
+                }
+            } catch(e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
+            }
+        }
         function openAddModal() { el('addModal').classList.remove('hidden'); el('addStep1').classList.remove('hidden'); el('addStep2').classList.add('hidden'); el('addInputName').value = ''; }
         function closeAddModal() { el('addModal').classList.add('hidden'); }
         
