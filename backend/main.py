@@ -176,7 +176,7 @@ async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional
                 config=config if config else None
             )
         except Exception as model_err:
-            if "503" in str(model_err) or "UNAVAILABLE" in str(model_err):
+            if "503" in str(model_err) or "UNAVAILABLE" in str(model_err) or "429" in str(model_err) or "RESOURCE_EXHAUSTED" in str(model_err):
                 used_model = FALLBACK_MODEL
                 response = client.models.generate_content(
                     model=FALLBACK_MODEL,
@@ -219,7 +219,7 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
                     ):
                         q.put(('chunk', chunk))
                 except Exception as e:
-                    if "503" in str(e) or "UNAVAILABLE" in str(e):
+                    if "503" in str(e) or "UNAVAILABLE" in str(e) or "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
                         try:
                             for chunk in client.models.generate_content_stream(
                                 model=FALLBACK_MODEL, contents=contents

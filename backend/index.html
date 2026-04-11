@@ -1641,7 +1641,7 @@ const text = streamText;
             
             if (count > 0) {
                 const p1 = legendsData.find(l => l.id === appState.compareList[0]);
-                slot1.innerHTML = p1 ? `<span class="text-teal-700">${p1.name}</span>` : '虛位';
+                slot1.innerHTML = p1 ? `<span class="text-teal-700">${escapeHtml(p1.name)}</span>` : '虛位';
                 slot1.classList.add('border-teal-400', 'bg-teal-50');
             } else {
                 slot1.innerText = '虛位';
@@ -1650,7 +1650,7 @@ const text = streamText;
 
             if (count > 1) {
                 const p2 = legendsData.find(l => l.id === appState.compareList[1]);
-                slot2.innerHTML = p2 ? `<span class="text-teal-700">${p2.name}</span>` : '虛位';
+                slot2.innerHTML = p2 ? `<span class="text-teal-700">${escapeHtml(p2.name)}</span>` : '虛位';
                 slot2.classList.add('border-teal-400', 'bg-teal-50');
                 el('startCompareBtn').disabled = false;
             } else {
