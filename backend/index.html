@@ -1317,6 +1317,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <button onclick="startChat('${g.id}')" class="flex-1 bg-white hover:bg-[#f5f5f4] text-[#57534e] text-xs font-serif font-bold py-2 rounded border border-[#e5e0d3] transition-colors"><i class="fa-solid fa-comment-dots text-[#a8a29e] mr-1"></i>對話</button>
                         <button onclick="showAIAnalysis('${g.id}')" class="flex-1 btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
                         <button onclick=\"showRelations('${g.id}')\" class=\"flex-1 bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-serif font-bold py-2 rounded border border-amber-200 transition-colors\"><i class=\"fa-solid fa-diagram-project text-amber-500 mr-1\"></i>關係</button>
+                        <button onclick=\"showDeepAnalysis('${g.id}')\" class=\"flex-1 bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-serif font-bold py-2 rounded border border-purple-200 transition-colors\"><i class=\"fa-solid fa-magnifying-glass-chart text-purple-500 mr-1\"></i>深度</button>
                         <button onclick="toggleCompare('${g.id}')" class="w-10 bg-teal-50 hover:bg-teal-100 text-teal-600 text-xs font-bold rounded border border-teal-200 transition-colors" title="加入比對"><i class="fa-solid fa-code-compare"></i></button>
                     </div>
                 </div>`;
@@ -1419,6 +1420,147 @@ ${allNames}
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
     }
 }
+async function showDeepAnalysis(id) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+
+            const myToken = ++currentRequestToken;
+            openModal(`${legend.name} · 深度評鑑`, 'content');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            el('radarChartContainer').classList.add('hidden');
+            el('regenStatsBtn').classList.add('hidden');
+
+            const typeLabel = legend.type === 'emperor' ? '帝王' : legend.type === 'general' ? '將領' : '名臣';
+
+            const allLegends = [...staticLegendsData, ...appState.customLegends].map(l => {
+                const mod = appState.modifiedLegends[l.id];
+                const rank = (mod && mod.rank) ? mod.rank : l.rank;
+                return `${l.name}(${rank})`;
+            });
+            const rankingRef = '【現有人物評級參考表】\n' + allLegends.join('、');
+
+            const prompt = `你是一位極具學術嚴謹度的「歷史名錄總評官」。你已載入一份包含逾四百位歷史人物的《歷史人物評級總表》，榜單評級系統橫跨 S+ 至 D 共十三檔，涵蓋帝王、將領、名臣三大類型。
+
+${rankingRef}
+
+【當前評估對象】
+姓名：${legend.name}
+類型：${typeLabel}
+現有評級：${legend.rank}
+稱號：${legend.title}
+標籤：${legend.tag}
+簡評：${legend.desc}
+判詞：${legend.poem}
+
+【核心史觀】
+評估時奉行「實體建制為主，文明底線為輔」的大歷史觀。道德氣節是加分項但不能掩蓋戰略災難；實體政績與戰略破局是評級核心權重。
+
+【三大維度評分邏輯】
+帝王：考核國家機器實體掌控力、地緣戰略版圖拓展、底層經濟稅收體系重塑、極端危機政治手腕。
+將領：考核大兵團會戰殲滅能力、極端逆境戰術破局、地緣戰略目標實體兌現、政治絞肉機中保全軍事實力的生存智慧。
+名臣：考核實體行政效能與國家戰略紅利（最高權重）、危機處理與制度建構、治國理財水準。
+
+【多重身份隔離法則】
+評估時嚴格鎖定當前類型維度，禁止跨界混算。
+
+請依以下四步驟完成評估：
+
+第一步【榜單錨定】：從參照表中找出與本次評估對象同類型且評級相近的現有人物，明列並實質比較。
+
+第二步【獨立史學剖析】：綜合史書、制度背景、時代環境，針對功過、時代難度、權力結構、後世影響進行深度剖析。
+
+第三步【縱向標定與雙向防線】：向上對標高一檔人物說明為何無法觸及，向下對標低一檔人物說明底線為何不至滑落。
+
+第四步【全榜邏輯一致性校準】：確保評級完全吻合整份總表給分哲學。
+
+完成論證後，輸出以下格式（必須包含，供系統解析）：
+
+【建議定案】
+評級：（填入）
+稱號：（填入）
+標籤：（填入）
+簡評：（填入，50字內）
+判詞：（填入，20字內）
+
+繁體中文，保持學術嚴謹度。`;
+
+            try {
+                let streamText = '';
+                await callGeminiStream(prompt, (partial) => {
+                    if (myToken !== currentRequestToken) return;
+                    streamText = partial;
+                    el('loadingState').classList.add('hidden');
+                    el('modalContent').innerHTML = marked.parse(partial);
+                });
+
+                if (myToken !== currentRequestToken) return;
+
+                // 解析建議定案
+                const suggestions = {};
+                const rankMatch = streamText.match(/【建議定案】[\s\S]*?評級：([^\n]+)/);
+                const titleMatch = streamText.match(/【建議定案】[\s\S]*?稱號：([^\n]+)/);
+                const tagMatch = streamText.match(/【建議定案】[\s\S]*?標籤：([^\n]+)/);
+                const descMatch = streamText.match(/【建議定案】[\s\S]*?簡評：([^\n]+)/);
+                const poemMatch = streamText.match(/【建議定案】[\s\S]*?判詞：([^\n]+)/);
+
+                if (rankMatch) suggestions.rank = rankMatch[1].trim();
+                if (titleMatch) suggestions.title = titleMatch[1].trim();
+                if (tagMatch) suggestions.tag = tagMatch[1].trim();
+                if (descMatch) suggestions.desc = descMatch[1].trim();
+                if (poemMatch) suggestions.poem = poemMatch[1].trim();
+
+                if (Object.keys(suggestions).length > 0) {
+                    const applyPanel = `
+                    <div class="mt-8 border-t-2 border-purple-200 pt-6">
+                        <h4 class="font-serif font-bold text-purple-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles text-purple-500"></i> 套用建議至人物資料</h4>
+                        <div class="bg-purple-50 rounded-xl p-4 space-y-3 border border-purple-100">
+                            ${suggestions.rank ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_rank" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">評級</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.rank)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.rank)}</span></span></label>` : ''}
+                            ${suggestions.title ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_title" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">稱號</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.title)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.title)}</span></span></label>` : ''}
+                            ${suggestions.tag ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_tag" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">標籤</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.tag)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.tag)}</span></span></label>` : ''}
+                            ${suggestions.desc ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_desc" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">簡評</span><span class="text-purple-800">→ ${escapeHtml(suggestions.desc)}</span></span></label>` : ''}
+                            ${suggestions.poem ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_poem" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">判詞</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.poem)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.poem)}</span></span></label>` : ''}
+                        </div>
+                        <button onclick="applyDeepSuggestions('${id}', ${JSON.stringify(suggestions).replace(/'/g, "\\'")})" class="mt-4 w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
+                            <i class="fa-solid fa-check mr-2"></i>套用勾選的欄位
+                        </button>
+                    </div>`;
+                    el('modalContent').innerHTML += applyPanel;
+                }
+
+                // 存入史冊
+                appState.simulationHistory.unshift({ type: '深度評鑑', icon: '🔬', title: `${legend.name} 深度評鑑`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
+                if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+                syncToCloud();
+
+            } catch(e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
+            }
+        }
+
+        function applyDeepSuggestions(id, suggestions) {
+            const updates = {};
+            if (document.getElementById('apply_rank')?.checked && suggestions.rank) updates.rank = suggestions.rank;
+            if (document.getElementById('apply_title')?.checked && suggestions.title) updates.title = suggestions.title;
+            if (document.getElementById('apply_tag')?.checked && suggestions.tag) updates.tag = suggestions.tag;
+            if (document.getElementById('apply_desc')?.checked && suggestions.desc) updates.desc = suggestions.desc;
+            if (document.getElementById('apply_poem')?.checked && suggestions.poem) updates.poem = suggestions.poem;
+
+            if (Object.keys(updates).length === 0) { customAlert('請至少勾選一個欄位'); return; }
+
+            const customIndex = appState.customLegends.findIndex(l => l.id === id);
+            if (customIndex !== -1) {
+                appState.customLegends[customIndex] = { ...appState.customLegends[customIndex], ...updates };
+            } else {
+                appState.modifiedLegends[id] = { ...appState.modifiedLegends[id], ...updates };
+            }
+
+            syncToCloud();
+            refreshData();
+            customAlert('已套用！人物資料已更新。');
+        }
         async function showRelations(id) {
     const legend = legendsData.find(l => l.id === id);
     if (!legend) return;
