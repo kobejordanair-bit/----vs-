@@ -1375,7 +1375,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         function setModalContent(html) {
             el('loadingState').classList.add('hidden');
-            el('modalContent').innerHTML = safeMarkdown(Shtml);
+            el('modalContent').innerHTML = safeMarkdown(html);
         }
 
         function clearCurrentMemory() {
@@ -1424,7 +1424,7 @@ ${allNames}
         const reactionResult = await callGeminiStream(prompt, (partial) => {
             if (myToken !== currentRequestToken) return;
             el('loadingState').classList.add('hidden');
-            el('modalContent').innerHTML = safeMarkdown(Spartial);
+            el('modalContent').innerHTML = safeMarkdown(partial);
         }, (model) => {
             el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
         });
@@ -1509,7 +1509,7 @@ ${rankingRef}
                     if (myToken !== currentRequestToken) return;
                     streamText = partial;
                     el('loadingState').classList.add('hidden');
-                    el('modalContent').innerHTML = safeMarkdown(Spartial);
+                    el('modalContent').innerHTML = safeMarkdown(partial);
                 });
 
                 if (myToken !== currentRequestToken) return;
@@ -1618,7 +1618,7 @@ ${rankingRef}
             if (myToken !== currentRequestToken) return;
             streamText = partial;
             el('loadingState').classList.add('hidden');
-            el('modalContent').innerHTML = safeMarkdown(Spartial);
+            el('modalContent').innerHTML = safeMarkdown(partial);
         });
     } catch (e) {
         el('loadingState').classList.add('hidden');
@@ -1684,7 +1684,7 @@ await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     streamText = partial;
     el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(Spartial);
+    el('modalContent').innerHTML = safeMarkdown(partial);
 });
 
 if (myToken !== currentRequestToken) return;
@@ -1861,7 +1861,7 @@ await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     streamText = partial;
     el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(Spartial);
+    el('modalContent').innerHTML = safeMarkdown(partial);
 });
 
 if (myToken !== currentRequestToken) return;
@@ -1882,7 +1882,7 @@ if (needStats) {
         appState.modifiedLegends[p2.id].stats = s2;
         syncToCloud();
         cleanText = streamText.replace(jsonMatch[0], '');
-        el('modalContent').innerHTML = safeMarkdown(ScleanText);
+        el('modalContent').innerHTML = safeMarkdown(cleanText);
     }
 }
 
@@ -1921,7 +1921,7 @@ if(s1 && s2) {
             const div = document.createElement('div');
             // Using 'user' for user, 'model' for AI to match Gemini API naming
             div.className = `chat-bubble ${role === 'user' ? 'chat-user' : 'chat-ai'}`;
-            div.innerHTML = safeMarkdown(Stext);
+            div.innerHTML = safeMarkdown(text);
             el('chatHistory').appendChild(div);
             el('chatHistory').scrollTop = el('chatHistory').scrollHeight;
         }
@@ -2053,7 +2053,7 @@ ${rankingRef}
                     if (myToken !== currentRequestToken) return;
                     streamText = partial;
                     el('loadingState').classList.add('hidden');
-                    el('modalContent').innerHTML = safeMarkdown(Spartial);
+                    el('modalContent').innerHTML = safeMarkdown(partial);
                 });
 
                 if (myToken !== currentRequestToken) return;
@@ -2418,7 +2418,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
         }
 
         function safeMarkdown(text) {
-            return DOMPurify.sanitize(safeMarkdown(Stext));
+            return DOMPurify.sanitize(marked.parse(text));
         }
         function getLegendName(id) {
             const l = legendsData.find(x => x.id === id);
@@ -2580,7 +2580,7 @@ fragment.appendChild(div.firstChild);
 const courtResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(Spartial);
+    el('modalContent').innerHTML = safeMarkdown(partial);
 }, (model) => {
     el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
 });
@@ -2622,7 +2622,7 @@ syncToCloud();
 const battleResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(Spartial);
+    el('modalContent').innerHTML = safeMarkdown(partial);
 }, (model) => {
     el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
 });
@@ -2679,7 +2679,7 @@ syncToCloud();
 const soulResult = await callGeminiStream(prompt, (partial) => {
     if (myToken !== currentRequestToken) return;
     el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(Spartial);
+    el('modalContent').innerHTML = safeMarkdown(partial);
 }, (model) => {
     el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
 });
@@ -3051,7 +3051,7 @@ ${legendRef}
         const snapshotResult = await callGeminiStream(prompt, (partial) => {
             if (myToken !== currentRequestToken) return;
             el('loadingState').classList.add('hidden');
-            el('modalContent').innerHTML = safeMarkdown(Spartial);
+            el('modalContent').innerHTML = safeMarkdown(partial);
         }, (model) => {
             el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
         });
@@ -3173,7 +3173,7 @@ async function startDebate() {
         const debateResult = await callGeminiStream(prompt, (partial) => {
             if (myToken !== currentRequestToken) return;
             el('loadingState').classList.add('hidden');
-            el('modalContent').innerHTML = safeMarkdown(Spartial);
+            el('modalContent').innerHTML = safeMarkdown(partial);
         }, (model) => {
             el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
         });
