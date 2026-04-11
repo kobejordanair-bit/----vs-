@@ -1180,6 +1180,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             appState.modifiedLegends = data.modifiedLegends || {};
             appState.chatHistories = data.chatHistories || {};
             appState.simulationHistory = data.simulationHistory || [];
+        } else if (res.status === 403) {
+            localStorage.removeItem('dynasty_token');
+            document.getElementById('passwordScreen').style.display = 'flex';
+            document.getElementById('dataLoadingScreen').style.display = 'none';
+            return;
         }
     } catch(e) {
         console.error('載入資料失敗:', e);
@@ -1692,9 +1697,13 @@ const text = streamText;
                     }
                 }
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
-                appState.modifiedLegends[id].analysis = cleanText;
-                syncToCloud();
-                setModalContent(cleanText);
+                if (needsAnalysis) {
+                    appState.modifiedLegends[id].analysis = cleanText;
+                    syncToCloud();
+                    setModalContent(cleanText);
+                } else {
+                    setModalContent(cachedAnalysis);
+                }
             } catch (e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>評鑑生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
@@ -2837,14 +2846,17 @@ if (!response.ok) {
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let fullText = '';
+    let buffer = '';
 
     while (true) {
         const { done, value } = await reader.read();
         if (done) break;
-        const lines = decoder.decode(value).split('\n');
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
         for (const line of lines) {
             if (line.startsWith('data: ')) {
-                const data = line.slice(6);
+                const data = line.slice(6).trim();
                 if (data === '[DONE]') return fullText;
                 try {
                     const parsed = JSON.parse(data);
