@@ -1507,7 +1507,7 @@ ${allNames}
     return;
 }
 if (needsStats) {
-    prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n請以JSON格式返回最後的五維數值，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}。但JSON放在最後，前面請用Markdown格式撰寫分析文章。`;
+    prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n【重要格式要求】請在回應的最開頭，第一行就輸出JSON，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}，然後換行再開始撰寫Markdown分析文章。JSON必須是第一個輸出的內容。`;
 } else {
     renderRadarChart(legend.name, cachedStats);
     el('regenStatsBtn').classList.remove('hidden');
@@ -1527,7 +1527,7 @@ const text = streamText;
                 
                 let cleanText = text;
                 if (needsStats) {
-                    const jsonMatch = text.match(/\{\s*"stats":\s*\[.*?\]\s*\}/s);
+                    const jsonMatch = text.match(/\{\s*"stats"\s*:\s*\[\s*[\d.,\s]+\]\s*\}/s);
                     if (jsonMatch) {
                         const statsData = JSON.parse(jsonMatch[0]);
                         // Cache it
