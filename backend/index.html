@@ -1516,11 +1516,11 @@ ${rankingRef}
 
                 // 解析建議定案
                 const suggestions = {};
-                const rankMatch = streamText.match(/【建議定案】[\s\S]*?評級：([^\n]+)/);
-                const titleMatch = streamText.match(/【建議定案】[\s\S]*?稱號：([^\n]+)/);
-                const tagMatch = streamText.match(/【建議定案】[\s\S]*?標籤：([^\n]+)/);
-                const descMatch = streamText.match(/【建議定案】[\s\S]*?簡評：([^\n]+)/);
-                const poemMatch = streamText.match(/【建議定案】[\s\S]*?判詞：([^\n]+)/);
+                const rankMatch = streamText.match(/評級[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const titleMatch = streamText.match(/稱號[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const tagMatch = streamText.match(/標籤[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const descMatch = streamText.match(/簡評[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const poemMatch = streamText.match(/判詞[：:]\*{0,2}\s*([^\n\r*]+)/);
 
                 const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
                 if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
@@ -2060,12 +2060,12 @@ ${rankingRef}
 
                 const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
                 const suggestions = {};
-                const rankMatch = streamText.match(/【建議定案】[\s\S]*?評級：([^\n]+)/);
-                const titleMatch = streamText.match(/【建議定案】[\s\S]*?稱號：([^\n]+)/);
-                const tagMatch = streamText.match(/【建議定案】[\s\S]*?標籤：([^\n]+)/);
-                const descMatch = streamText.match(/【建議定案】[\s\S]*?簡評：([^\n]+)/);
-                const poemMatch = streamText.match(/【建議定案】[\s\S]*?判詞：([^\n]+)/);
-                const dynastyMatch = streamText.match(/【建議定案】[\s\S]*?朝代：([^\n]+)/);
+                const rankMatch = streamText.match(/評級[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const titleMatch = streamText.match(/稱號[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const tagMatch = streamText.match(/標籤[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const descMatch = streamText.match(/簡評[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const poemMatch = streamText.match(/判詞[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const dynastyMatch = streamText.match(/朝代[：:]\*{0,2}\s*([^\n\r*]+)/);
 
                 if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
                 if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
