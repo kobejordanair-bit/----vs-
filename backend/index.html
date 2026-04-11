@@ -1544,7 +1544,7 @@ ${rankingRef}
                             <i class="fa-solid fa-check mr-2"></i>套用勾選的欄位
                         </button>
                     </div>`;
-                   el('modalContent').innerHTML += applyPanel;
+                  el('modalContent').insertAdjacentHTML('beforeend', applyPanel);
                     setTimeout(() => {
                         const btn = document.getElementById('applyDeepBtn');
                         if (btn) btn.addEventListener('click', () => applyDeepSuggestions(id, suggestions));
