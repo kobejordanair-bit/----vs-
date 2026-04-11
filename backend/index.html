@@ -1505,11 +1505,12 @@ ${rankingRef}
                 const descMatch = streamText.match(/【建議定案】[\s\S]*?簡評：([^\n]+)/);
                 const poemMatch = streamText.match(/【建議定案】[\s\S]*?判詞：([^\n]+)/);
 
-                if (rankMatch) suggestions.rank = rankMatch[1].trim();
-                if (titleMatch) suggestions.title = titleMatch[1].trim();
-                if (tagMatch) suggestions.tag = tagMatch[1].trim();
-                if (descMatch) suggestions.desc = descMatch[1].trim();
-                if (poemMatch) suggestions.poem = poemMatch[1].trim();
+                const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
+                if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
+                if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
+                if (tagMatch) suggestions.tag = cleanSuggestion(tagMatch[1]);
+                if (descMatch) suggestions.desc = cleanSuggestion(descMatch[1]);
+                if (poemMatch) suggestions.poem = cleanSuggestion(poemMatch[1]);
 
                 if (Object.keys(suggestions).length > 0) {
                     const applyPanel = `
@@ -1526,7 +1527,11 @@ ${rankingRef}
                             <i class="fa-solid fa-check mr-2"></i>套用勾選的欄位
                         </button>
                     </div>`;
-                    el('modalContent').innerHTML += applyPanel;
+                   el('modalContent').innerHTML += applyPanel;
+                    setTimeout(() => {
+                        const btn = document.getElementById('applyDeepBtn');
+                        if (btn) btn.addEventListener('click', () => applyDeepSuggestions(id, suggestions));
+                    }, 50);
                 }
 
                 // 存入史冊
