@@ -368,6 +368,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div class="relative">
                     <select id="dynastyFilter" onchange="setDynastyFilter(this.value)" class="pl-3 pr-8 py-2 rounded-lg text-[#2c2826] bg-[#f5f5f4] border border-transparent focus:border-[#d6d3c9] outline-none font-serif transition-all appearance-none cursor-pointer">
                         <option value="all">所有朝代</option>
+                        <option value="夏商周">夏商周</option>
                         <option value="春秋">春秋</option>
                         <option value="戰國">戰國</option>
                         <option value="秦朝">秦朝</option>
@@ -647,7 +648,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             <div class="col-span-1">
                                 <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">朝代</label>
                                 <select id="editDynasty" class="w-full p-2 border border-slate-300 rounded font-bold text-slate-800 bg-slate-50 focus:border-blue-500 outline-none">
-                                    <option value="春秋">春秋</option><option value="戰國">戰國</option><option value="秦朝">秦朝</option>
+                                    <option value="夏商周">夏商周</option><option value="春秋">春秋</option><option value="戰國">戰國</option><option value="秦朝">秦朝</option>
                                     <option value="楚漢相爭">楚漢相爭</option><option value="西漢">西漢</option><option value="東漢">東漢</option>
                                     <option value="三國">三國</option><option value="晉朝">晉朝</option><option value="南北朝">南北朝</option>
                                     <option value="隋朝">隋朝</option><option value="唐朝">唐朝</option><option value="五代十國">五代十國</option>
@@ -719,6 +720,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <input id="newPoem" class="w-full p-2 border border-slate-300 rounded text-sm italic font-serif" >
                         <select id="newDynasty" class="w-full p-2 border border-slate-300 rounded text-sm font-serif bg-white">
                             <option value="">選擇朝代（可選）</option>
+                            <option value="夏商周">夏商周</option>
                             <option value="春秋">春秋</option>
                             <option value="戰國">戰國</option>
                             <option value="秦朝">秦朝</option>
@@ -800,6 +802,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             if (l.dynasty && l.dynasty !== '其他') return l.dynasty; 
             
             const exactMap = {
+                "夏商周": [],
                 "春秋": ["齊桓公","晉文公","楚莊王","管仲","晏嬰","子產","隰朋","伍子胥","孫武"],
                 "戰國": ["趙武靈王","燕昭王","楚威王","秦孝公","秦昭襄王","白起","王翦","吳起","李牧","廉頗","孫臏","田單","商鞅","張儀","范雎","李悝","呂不韋","王賁","李信"],
                 "秦朝": ["秦始皇","秦二世","李斯","章邯","蒙恬"],
@@ -848,6 +851,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             if (/秦朝|大秦|秦末/.test(str)) return "秦朝";
             if (/戰國|七雄|合縱連橫|變法/.test(str)) return "戰國";
             if (/春秋|霸主|列國/.test(str)) return "春秋";
+            if (/夏朝|商朝|周朝|西周|東周|殷商|大禹|夏啟/.test(str)) return "夏商周";
 
             return "未分類";
         }
@@ -3030,6 +3034,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
         }
 // --- 世界快照 ---
 const ERA_YEAR_MAP = [
+    { dynasty: '夏商周', start: -2070, end: -770 },
     { dynasty: '春秋', start: -770, end: -475 },
     { dynasty: '戰國', start: -475, end: -221 },
     { dynasty: '秦朝', start: -221, end: -206 },
