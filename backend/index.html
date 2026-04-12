@@ -2087,7 +2087,7 @@ ${rankingRef}
 標籤：（填入，4字特質標籤）
 簡評：（填入，50字內）
 判詞：（填入，代表性詩詞或名言，20字內）
-朝代：（填入所屬朝代）
+朝代：（從以下選一個填入：春秋、戰國、秦朝、楚漢相爭、西漢、東漢、三國、晉朝、南北朝、隋朝、唐朝、五代十國、遼夏金、北宋、南宋、元朝、明朝、清朝、中華民國、中華人民共和國、未分類）
 
 繁體中文，保持學術嚴謹度。如果不認識此人，請明說並給 D 級。`;
 
@@ -3029,20 +3029,26 @@ async function callGeminiNative(contentsArray, isJson = false) {
         }
 // --- 世界快照 ---
 const ERA_YEAR_MAP = [
-    { dynasty: '春秋戰國', start: -770, end: -221 },
+    { dynasty: '春秋', start: -770, end: -475 },
+    { dynasty: '戰國', start: -475, end: -221 },
     { dynasty: '秦朝', start: -221, end: -206 },
-    { dynasty: '漢朝', start: -206, end: 220 },
+    { dynasty: '楚漢相爭', start: -206, end: -202 },
+    { dynasty: '西漢', start: -202, end: 9 },
+    { dynasty: '東漢', start: 25, end: 220 },
     { dynasty: '三國', start: 220, end: 280 },
     { dynasty: '晉朝', start: 280, end: 420 },
     { dynasty: '南北朝', start: 420, end: 589 },
     { dynasty: '隋朝', start: 589, end: 618 },
     { dynasty: '唐朝', start: 618, end: 907 },
     { dynasty: '五代十國', start: 907, end: 960 },
-    { dynasty: '宋朝', start: 960, end: 1279 },
+    { dynasty: '北宋', start: 960, end: 1127 },
+    { dynasty: '南宋', start: 1127, end: 1279 },
+    { dynasty: '遼夏金', start: 916, end: 1234 },
     { dynasty: '元朝', start: 1271, end: 1368 },
     { dynasty: '明朝', start: 1368, end: 1644 },
     { dynasty: '清朝', start: 1644, end: 1912 },
-    { dynasty: '民國與現代', start: 1912, end: 2100 },
+    { dynasty: '中華民國', start: 1912, end: 1949 },
+    { dynasty: '中華人民共和國', start: 1949, end: 2100 },
 ];
 
 function openSnapshot() {
