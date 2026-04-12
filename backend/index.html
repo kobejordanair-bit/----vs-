@@ -368,20 +368,26 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div class="relative">
                     <select id="dynastyFilter" onchange="setDynastyFilter(this.value)" class="pl-3 pr-8 py-2 rounded-lg text-[#2c2826] bg-[#f5f5f4] border border-transparent focus:border-[#d6d3c9] outline-none font-serif transition-all appearance-none cursor-pointer">
                         <option value="all">所有朝代</option>
-                        <option value="春秋戰國">春秋戰國</option>
+                        <option value="春秋">春秋</option>
+                        <option value="戰國">戰國</option>
                         <option value="秦朝">秦朝</option>
-                        <option value="漢朝">漢朝</option>
+                        <option value="楚漢相爭">楚漢相爭</option>
+                        <option value="西漢">西漢</option>
+                        <option value="東漢">東漢</option>
                         <option value="三國">三國</option>
                         <option value="晉朝">晉朝</option>
                         <option value="南北朝">南北朝</option>
                         <option value="隋朝">隋朝</option>
                         <option value="唐朝">唐朝</option>
                         <option value="五代十國">五代十國</option>
-                        <option value="宋朝">宋朝</option>
+                        <option value="遼夏金">遼夏金</option>
+                        <option value="北宋">北宋</option>
+                        <option value="南宋">南宋</option>
                         <option value="元朝">元朝</option>
                         <option value="明朝">明朝</option>
                         <option value="清朝">清朝</option>
-                        <option value="民國與現代">民國與現代</option>
+                        <option value="中華民國">中華民國</option>
+                        <option value="中華人民共和國">中華人民共和國</option>
                         <option value="未分類">未分類 / 其他</option>
                     </select>
                     <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[#a8a29e]">
@@ -709,6 +715,29 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         </div>
                         <input id="newTag" class="w-full p-2 border border-slate-300 rounded text-sm" >
                         <input id="newPoem" class="w-full p-2 border border-slate-300 rounded text-sm italic font-serif" >
+                        <select id="newDynasty" class="w-full p-2 border border-slate-300 rounded text-sm font-serif bg-white">
+                            <option value="">選擇朝代（可選）</option>
+                            <option value="春秋">春秋</option>
+                            <option value="戰國">戰國</option>
+                            <option value="秦朝">秦朝</option>
+                            <option value="楚漢相爭">楚漢相爭</option>
+                            <option value="西漢">西漢</option>
+                            <option value="東漢">東漢</option>
+                            <option value="三國">三國</option>
+                            <option value="晉朝">晉朝</option>
+                            <option value="南北朝">南北朝</option>
+                            <option value="隋朝">隋朝</option>
+                            <option value="唐朝">唐朝</option>
+                            <option value="五代十國">五代十國</option>
+                            <option value="遼夏金">遼夏金</option>
+                            <option value="北宋">北宋</option>
+                            <option value="南宋">南宋</option>
+                            <option value="元朝">元朝</option>
+                            <option value="明朝">明朝</option>
+                            <option value="清朝">清朝</option>
+                            <option value="中華民國">中華民國</option>
+                            <option value="中華人民共和國">中華人民共和國</option>
+                        </select>
                         <textarea id="newDesc" class="w-full p-2 border border-slate-300 rounded text-sm h-24 leading-relaxed" ></textarea>
                     </div>
                     <button onclick="saveNewLegend()" class="w-full bg-[#047857] hover:bg-[#059669] text-white py-3 rounded-lg font-bold font-serif shadow-md transform active:scale-95 transition-all">確認入冊</button>
@@ -769,45 +798,55 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             if (l.dynasty && l.dynasty !== '其他') return l.dynasty; 
             
             const exactMap = {
-                "春秋戰國": ["管仲","商鞅","白起","吳起","王翦","廉頗","李牧","孫武","孫臏","田單","伍子胥","齊桓公","晉文公","楚莊王","趙武靈王","燕昭王","楚威王","秦孝公","秦昭襄王","張儀","范雎","晏嬰","子產","李悝","呂不韋","隰朋","王賁","李信"],
-                "秦朝": ["秦始皇","秦二世","李斯","趙高","章邯","蒙恬","項羽"], 
-                "漢朝": ["漢武帝","漢光武帝","漢高祖","漢文帝","漢宣帝","漢明帝","漢景帝","漢元帝","漢安帝","漢桓帝","漢獻帝","漢靈帝","呂后","劉邦","韓信","蕭何","張良","陳平","霍去病","衛青","周亞夫","馬援","班超","霍光","周昌","陸賈","董卓","皇甫嵩","馮異"],
-                "三國": ["魏武帝","昭烈帝","吳大帝","魏文帝","諸葛亮","司馬懿","曹操","周瑜","陸遜","鄧艾","呂蒙","關羽","張遼","孫策","魏延","姜維","趙雲","陸抗","張郃","馬超","馬謖","諸葛亮(名臣)","荀彧","陳群","魯肅","陸遜(名臣)"],
-                "晉朝": ["晉懷帝","晉惠帝","杜預","桓溫","謝安","王導","王衍","殷浩"],
-                "南北朝": ["北魏孝文帝","宋武帝","北周文帝","神武帝","梁武帝","劉裕","宇文泰","拓跋燾","高歡","爾朱榮","拓跋珪","陳慶之","王僧辯","劉穆之"],
+                "春秋": ["齊桓公","晉文公","楚莊王","管仲","晏嬰","子產","隰朋","伍子胥","孫武"],
+                "戰國": ["趙武靈王","燕昭王","楚威王","秦孝公","秦昭襄王","白起","王翦","吳起","李牧","廉頗","孫臏","田單","商鞅","張儀","范雎","李悝","呂不韋","王賁","李信"],
+                "秦朝": ["秦始皇","秦二世","李斯","章邯","蒙恬"],
+                "楚漢相爭": ["項羽","韓信","漢高祖","劉邦"],
+                "西漢": ["漢武帝","漢文帝","漢宣帝","漢景帝","漢元帝","呂后","蕭何","張良","霍去病","衛青","周亞夫","霍光","周昌","陸賈","陳平","曹參"],
+                "東漢": ["漢光武帝","漢明帝","漢安帝","漢桓帝","漢獻帝","漢靈帝","班超","馬援","皇甫嵩","馮異"],
+                "三國": ["魏武帝","昭烈帝","吳大帝","魏文帝","諸葛亮","司馬懿","曹操","周瑜","陸遜","鄧艾","呂蒙","關羽","張遼","孫策","魏延","姜維","趙雲","陸抗","張郃","馬超","馬謖","荀彧","陳群","魯肅","諸葛亮(名臣)","陸遜(名臣)"],
+                "晉朝": ["晉懷帝","晉惠帝","杜預","桓溫","謝安","王導"],
+                "南北朝": ["北魏孝文帝","宋武帝","北周文帝","神武帝","梁武帝","劉裕","宇文泰","拓跋燾","高歡","爾朱榮","拓跋珪","陳慶之","劉穆之"],
                 "隋朝": ["隋文帝","隋煬帝","楊素","韓擒虎","高熲","楊素(名臣)"],
-                "唐朝": ["唐太宗","武則天","唐高祖","唐高宗","唐憲宗","唐玄宗","唐肅宗","唐穆宗","唐中宗","李世民","李靖","李勣","蘇定方","郭子儀","王忠嗣","李光弼","僕固懷恩","裴行儉","張巡","李克用","封常清","哥舒翰","王毛仲","秦叔寶","程知節","張仁愿","房玄齡","魏徵","杜如晦","狄仁傑","長孫無忌","姚崇","宋璟","李林甫","楊國忠"],
-                "五代十國": ["兒皇帝","韓熙載"],
-                "宋朝": ["宋太祖","宋仁宗","宋太宗","宋孝宗","宋真宗","宋高宗","宋欽宗","岳飛","孟珙","韓世忠","劉錡","种師道","狄青","虞允文","王安石","范仲淹","寇準","司馬光","包拯","呂蒙正","秦檜","賈似道","蔡京"],
+                "唐朝": ["唐太宗","武則天","唐高祖","唐高宗","唐憲宗","唐玄宗","唐肅宗","唐穆宗","唐中宗","李世民","李靖","李勣","蘇定方","郭子儀","王忠嗣","李光弼","僕固懷恩","裴行儉","張巡","封常清","哥舒翰","王毛仲","秦叔寶","程知節","張仁愿","房玄齡","魏徵","杜如晦","狄仁傑","長孫無忌","姚崇","宋璟","李林甫"],
+                "五代十國": ["兒皇帝","韓熙載","李克用"],
+                "遼夏金": [],
+                "北宋": ["宋太祖","宋太宗","宋真宗","宋仁宗","宋欽宗","狄青","王安石","范仲淹","寇準","司馬光","包拯","呂蒙正","种師道","蔡京"],
+                "南宋": ["宋高宗","宋孝宗","岳飛","孟珙","韓世忠","劉錡","虞允文","賈似道","秦檜"],
                 "元朝": ["元世祖","元文宗","元順帝","成吉思汗","速不台","伯顏","木華黎","王保保","忽必烈","哲別","耶律楚材","阿合馬","脫脫","賈魯"],
-                "明朝": ["明太祖","明成祖","明孝宗","明世宗","明英宗","崇禎帝","徐達","朱棣","于謙","常遇春","李定國","藍玉","傅友德","袁崇煥","俞大猷","孫傳庭","盧象昇","李如松","毛文龍","李成梁","左良玉","史可法","李自成","張獻忠","王守仁","張居正","于謙(名臣)","劉基","徐光啟","徐階","楊廷和","孫承宗","李賢","徐溥","高拱","海瑞","方孝孺","沈一貫","楊嗣昌","嚴嵩","溫體仁","陳演","魏藻德","魏忠賢"],
-                "清朝": ["康熙帝","乾隆帝","雍正帝","嘉慶帝","慈禧太后","同治帝","道光帝","光緒帝","努爾哈赤","多爾袞","左宗棠","施琅","李鴻章","曾國荃","吳三桂","洪承疇","年羹堯","石達開","楊秀清","鄧世昌","陳化成","曾國藩","李鴻章(名臣)","左宗棠(名臣)","張廷玉","張之洞","范文程","和珅"],
-                "民國與現代": ["毛澤東","孫文","蔣介石","洪憲帝","林彪","粟裕","彭德懷","朱德","白崇禧","孫立人","薛岳","李宗仁","張靈甫","蔣中正","劉湘","蔡鍔","馮玉祥","黃百韜","唐生智","鄧小平","周恩來","朱鎔基","陳雲","胡耀邦","宋子文","李宗仁(名臣)","李鵬","孫科"]
+                "明朝": ["明太祖","明成祖","明孝宗","明世宗","明英宗","崇禎帝","徐達","朱棣","于謙","常遇春","李定國","藍玉","傅友德","袁崇煥","俞大猷","孫傳庭","盧象昇","李如松","毛文龍","李成梁","左良玉","史可法","李自成","張獻忠","王守仁","張居正","于謙(名臣)","劉基","徐光啟","徐階","楊廷和","孫承宗","李賢","徐溥","高拱","海瑞","方孝孺","沈一貫","楊嗣昌","嚴嵩","溫體仁","魏忠賢"],
+                "清朝": ["康熙帝","乾隆帝","雍正帝","嘉慶帝","慈禧太后","同治帝","道光帝","光緒帝","努爾哈赤","多爾袞","左宗棠","施琅","李鴻章","曾國荃","吳三桂","洪承疇","年羹堯","石達開","楊秀清","鄧世昌","陳化成","曾國藩","李鴻章(名臣)","左宗棠(名臣)","張廷玉","張之洞","范文程","和珅","索尼"],
+                "中華民國": ["孫文","蔣介石","洪憲帝","白崇禧","孫立人","薛岳","李宗仁","張靈甫","蔣中正","劉湘","蔡鍔","馮玉祥","黃百韜","唐生智","宋子文","李宗仁(名臣)"],
+                "中華人民共和國": ["毛澤東","林彪","粟裕","彭德懷","朱德","鄧小平","周恩來","朱鎔基","陳雲","胡耀邦","李鵬"]
             };
 
             for (const [dynasty, names] of Object.entries(exactMap)) {
                 if (names.includes(l.name)) return dynasty;
             }
 
-            // 嚴格模式推斷 (移除容易造成誤判的單字，只抓具體政權與大事件)
             const str = (l.title || '') + (l.desc || '') + (l.tag || '') + (l.poem || '');
-            
-            if (/民國|抗戰|北洋政府|紅軍|中共|十大建設|半導體|台灣奇蹟/.test(str)) return "民國與現代";
+
+            if (/中華人民共和國|中共建國|解放軍|文化大革命|改革開放|大躍進/.test(str)) return "中華人民共和國";
+            if (/中華民國|民國|抗戰|北洋政府|國民黨|國共內戰|辛亥革命/.test(str)) return "中華民國";
             if (/大清|清朝|八旗|洋務運動|太平天國|湘軍|總理衙門/.test(str)) return "清朝";
             if (/大明|明朝|晚明|東林黨|閹黨|靖難之役|土木堡|東廠|錦衣衛/.test(str)) return "明朝";
             if (/大元|元朝|蒙古帝國|怯薛軍|四大汗國/.test(str)) return "元朝";
-            if (/北宋|南宋|大宋|靖康之恥|熙寧變法|端平入洛|理學/.test(str)) return "宋朝";
+            if (/遼國|金國|西夏|契丹|女真|党項/.test(str)) return "遼夏金";
+            if (/南宋|靖康之恥後|岳家軍|端平入洛/.test(str)) return "南宋";
+            if (/北宋|靖康之恥|熙寧變法|慶曆新政|澶淵之盟/.test(str)) return "北宋";
             if (/五代十國|後梁|後唐|後晉|後漢|後周/.test(str)) return "五代十國";
             if (/大唐|唐朝|初唐|盛唐|中唐|晚唐|安史之亂|貞觀|開元|天寶|玄武門/.test(str)) return "唐朝";
             if (/大隋|隋朝|開皇|大業|瓦崗/.test(str)) return "隋朝";
-            if (/南北朝|北魏|東魏|西魏|北齊|北周|劉宋|南齊|南梁|南陳|侯景之亂|關隴集團/.test(str)) return "南北朝";
+            if (/南北朝|北魏|東魏|西魏|北齊|北周|劉宋|南齊|南梁|南陳|侯景之亂/.test(str)) return "南北朝";
             if (/西晉|東晉|八王之亂|五胡亂華|永嘉之亂/.test(str)) return "晉朝";
-            if (/三國|東漢末|曹魏|蜀漢|東吳|黃巾之亂|三分天下/.test(str)) return "三國";
-            if (/西漢|東漢|大漢|漢朝|楚漢相爭|文景之治|昭宣中興|王莽|新朝/.test(str)) return "漢朝";
+            if (/三國|曹魏|蜀漢|東吳|黃巾之亂|三分天下/.test(str)) return "三國";
+            if (/東漢|後漢|光武中興|黨錮之禍/.test(str)) return "東漢";
+            if (/西漢|前漢|文景之治|昭宣中興|王莽|新朝/.test(str)) return "西漢";
+            if (/楚漢相爭|垓下|鴻門宴|漢中對/.test(str)) return "楚漢相爭";
             if (/秦朝|大秦|秦末/.test(str)) return "秦朝";
-            if (/春秋|戰國|齊國|楚國|燕國|韓國|趙國|魏國|秦國/.test(str)) return "春秋戰國";
-            
-            // 如果連明確的強關聯詞都沒有，一律歸入未分類，讓使用者手動改
+            if (/戰國|七雄|合縱連橫|變法/.test(str)) return "戰國";
+            if (/春秋|霸主|列國/.test(str)) return "春秋";
+
             return "未分類";
         }
 
@@ -2205,7 +2244,7 @@ const data = JSON.parse(jsonStr);
                 id: generateId(pendingNewLegendType, el('addInputName').value.trim()),
                 type: pendingNewLegendType,
                 name: el('addInputName').value.trim(),
-                dynasty: el('addStep2').dataset.dynasty,
+                dynasty: el('newDynasty').value || el('addStep2').dataset.dynasty || null,
                 rank: el('newRank').value,
                 title: el('newTitle').value,
                 tag: el('newTag').value,
