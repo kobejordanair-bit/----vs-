@@ -2157,7 +2157,7 @@ ${rankingRef}
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
             }
         }
-        function openAddModal() { el('addModal').classList.remove('hidden'); el('addStep1').classList.remove('hidden'); el('addStep2').classList.add('hidden'); el('addInputName').value = ''; }
+        function openAddModal() { el('addModal').classList.remove('hidden'); el('addStep1').classList.remove('hidden'); el('addStep2').classList.add('hidden'); el('addInputName').value = ''; el('newDynasty').value = ''; }
         function closeAddModal() { el('addModal').classList.add('hidden'); }
         
         let pendingNewLegendType = 'general';
