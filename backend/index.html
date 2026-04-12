@@ -1495,11 +1495,13 @@ ${rankingRef}
 完成論證後，輸出以下格式（必須包含，供系統解析）：
 
 【建議定案】
-評級：（填入）
+評級：（填入，僅填等級如S+/A-/B，不加說明）
 稱號：（填入）
 標籤：（填入）
 簡評：（填入，50字內）
 判詞：（填入，20字內）
+
+注意：每個欄位必須各自獨立一行，不可合併在同一行。
 
 繁體中文，保持學術嚴謹度。`;
 
@@ -1518,11 +1520,11 @@ ${rankingRef}
                 const suggestions = {};
                 const sectionMatch = streamText.match(/【建議定案】([\s\S]+)$/);
                 const section = sectionMatch ? sectionMatch[1] : streamText.slice(-400);
-                const rankMatch = section.match(/評級[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const titleMatch = section.match(/稱號[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const tagMatch = section.match(/標籤[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const descMatch = section.match(/簡評[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const poemMatch = section.match(/判詞[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const rankMatch = section.match(/評級[：:]\*{0,2}\s*(.+?)(?=\s*(?:稱號|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
+                const titleMatch = section.match(/稱號[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
+                const tagMatch = section.match(/標籤[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|簡評|判詞)[：:]|[\n\r]|$)/);
+                const descMatch = section.match(/簡評[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|判詞)[：:]|[\n\r]|$)/);
+                const poemMatch = section.match(/判詞[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|簡評)[：:]|[\n\r]|$)/);
                 const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
                 if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
                 if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
@@ -2063,12 +2065,12 @@ ${rankingRef}
                 const suggestions = {};
                 const sectionMatch2 = streamText.match(/【建議定案】([\s\S]+)$/);
                 const section2 = sectionMatch2 ? sectionMatch2[1] : streamText.slice(-400);
-                const rankMatch = section2.match(/評級[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const titleMatch = section2.match(/稱號[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const tagMatch = section2.match(/標籤[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const descMatch = section2.match(/簡評[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const poemMatch = section2.match(/判詞[：:]\*{0,2}\s*([^\n\r*]+)/);
-                const dynastyMatch = section2.match(/朝代[：:]\*{0,2}\s*([^\n\r*]+)/);
+                const rankMatch = section2.match(/評級[：:]\*{0,2}\s*(.+?)(?=\s*(?:稱號|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
+                const titleMatch = section2.match(/稱號[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
+                const tagMatch = section2.match(/標籤[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|簡評|判詞)[：:]|[\n\r]|$)/);
+                const descMatch = section2.match(/簡評[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|判詞)[：:]|[\n\r]|$)/);
+                const poemMatch = section2.match(/判詞[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|簡評)[：:]|[\n\r]|$)/);
+                const dynastyMatch = section2.match(/朝代[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
 
                 if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
                 if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
