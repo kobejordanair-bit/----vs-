@@ -2029,6 +2029,7 @@ if(s1 && s2) {
             const name = el('addInputName').value.trim();
             const typeRadio = document.querySelector('input[name="addType"]:checked');
             const type = typeRadio ? typeRadio.value : 'general';
+            pendingNewLegendType = type;
             const typeLabel = type === 'emperor' ? '帝王' : type === 'general' ? '將領' : '名臣';
 
             if (!name) return customAlert('請輸入姓名');
