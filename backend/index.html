@@ -645,6 +645,14 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                                 <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">評級</label>
                                 <select id="editRank" class="w-full p-2 border border-slate-300 rounded font-bold text-slate-800 bg-slate-50 focus:border-blue-500 outline-none"><option value="S+">S+</option><option value="S">S</option><option value="S-">S-</option><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D">D</option></select>
                             </div>
+                            <div class="col-span-1" id="editTypeDiv">
+                                <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">類別</label>
+                                <select id="editType" class="w-full p-2 border border-slate-300 rounded font-bold text-slate-800 bg-slate-50 focus:border-blue-500 outline-none">
+                                    <option value="emperor">帝王</option>
+                                    <option value="general">名將</option>
+                                    <option value="minister">名臣</option>
+                                </select>
+                            </div>
                             <div class="col-span-1">
                                 <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">朝代</label>
                                 <select id="editDynasty" class="w-full p-2 border border-slate-300 rounded font-bold text-slate-800 bg-slate-50 focus:border-blue-500 outline-none">
@@ -657,7 +665,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                                     <option value="中華民國">中華民國</option><option value="中華人民共和國">中華人民共和國</option><option value="未分類">未分類</option>
                                 </select>
                             </div>
-                            <div class="col-span-2">
+                            <div class="col-span-1">
                                 <label class="block text-xs font-bold text-slate-400 mb-1 uppercase tracking-wider">稱號</label>
                                 <input id="editTitle" class="w-full p-2 border border-slate-300 rounded text-slate-800 bg-slate-50 focus:border-blue-500 outline-none font-serif">
                             </div>
@@ -2153,6 +2161,8 @@ ${rankingRef}
                             el('newPoem').value = suggestions.poem || '';
                             el('newDesc').value = suggestions.desc || '';
                             el('addStep2').dataset.dynasty = suggestions.dynasty || '未分類';
+                            el('newDynasty').value = suggestions.dynasty || '';
+                            pendingNewLegendType = type;
                             el('addStep1').classList.add('hidden');
                             el('addStep2').classList.remove('hidden');
                             el('addModal').classList.remove('hidden');
@@ -2308,6 +2318,9 @@ showRelatedReactions(newLegend.id, '新增入冊');
             const isCustom = appState.customLegends.some(l => l.id === legend.id);
             if (isCustom) el('deleteLegendBtn').classList.remove('hidden');
             else el('deleteLegendBtn').classList.add('hidden');
+            
+            el('editType').value = legend.type || 'general';
+            el('editTypeDiv').style.display = isCustom ? '' : 'none';
         }
 
         function saveLegendEdits() {
@@ -2324,6 +2337,7 @@ showRelatedReactions(newLegend.id, '新增入冊');
 
             const customIndex = appState.customLegends.findIndex(l => l.id === currentEditingId);
             if (customIndex !== -1) {
+                updates.type = el('editType').value;
                 appState.customLegends[customIndex] = { ...appState.customLegends[customIndex], ...updates };
             } else {
                 appState.modifiedLegends[currentEditingId] = { ...appState.modifiedLegends[currentEditingId], ...updates };
