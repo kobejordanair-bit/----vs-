@@ -1204,15 +1204,15 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 minimized: false, 
                 activeSlot: null, 
                 factions: [
-                    { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } },
-                    { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } }
+                    { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } },
+                    { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } }
                 ] 
             },
             courtMode: {
                 minimized: false,
                 activeSlot: null,
                 factions: [
-                    { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, chancellor: null, general: null, personnel: null, revenue: null, rites: null } }
+                    { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, strategist: null, commander: null, finance: null, diplomat: null, censor: null, oddplan: null, admin: null } }
                 ]
             },
             soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
@@ -2376,8 +2376,8 @@ showRelatedReactions(newLegend.id, '新增入冊');
             const id = `faction_${Date.now()}`;
             
             let slots = {};
-            if(mode === 'warRoom') slots = { commander: null, strategist: null, vanguard: null, defender: null, raider: null };
-            else slots = { emperor: null, chancellor: null, general: null, personnel: null, revenue: null, rites: null };
+            if(mode === 'warRoom') slots = { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null };
+            else slots = { emperor: null, strategist: null, commander: null, finance: null, diplomat: null, censor: null, oddplan: null, admin: null };
             
             let faction = { id: id, name: `${mode==='warRoom'?'軍團':'王朝'} ${newIdx+1}`, colorIdx: colorIdx, slots: slots };
             if(mode === 'courtMode') faction.territory = '關中 (天府)';
@@ -2397,13 +2397,13 @@ showRelatedReactions(newLegend.id, '新增入冊');
                 state.activeSlot = null;
                 if(mode === 'warRoom') {
                     state.factions = [
-                        { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } },
-                        { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, strategist: null, vanguard: null, defender: null, raider: null } }
+                        { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } },
+                        { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } }
                     ];
                     updateWarRoomUI();
                 } else {
                     state.factions = [
-                        { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, chancellor: null, general: null, personnel: null, revenue: null, rites: null } }
+                        { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, strategist: null, commander: null, finance: null, diplomat: null, censor: null, oddplan: null, admin: null } }
                     ];
                     updateCourtModeUI();
                 }
@@ -2507,9 +2507,9 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             const container = el('warRoomFactionsContainer');
             container.innerHTML = '';
             
-            const roleLabels = { commander: '元帥', strategist: '軍師', vanguard: '先鋒', defender: '鐵壁', raider: '遊擊' };
-            const roleIcons = { commander: 'crown', strategist: 'brain', vanguard: 'horse-head', defender: 'shield-halved', raider: 'bolt' };
-const fragment = document.createDocumentFragment();
+            const roleLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
+            const roleIcons = { commander: 'crown', advisor: 'brain', vanguard: 'horse-head', supply: 'wheat-awn', flanker: 'shield-halved', raider: 'bolt' };
+            const fragment = document.createDocumentFragment();
             appState.warRoom.factions.forEach(f => {
                 const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
                 let slotsHtml = '';
@@ -2558,8 +2558,8 @@ container.appendChild(fragment);
             const container = el('courtFactionsContainer');
             container.innerHTML = '';
             
-            const roleLabels = { emperor: '君主', chancellor: '宰相', general: '大將軍', personnel: '吏部', revenue: '戶部', rites: '禮部' };
-            const roleIcons = { emperor: 'dragon', chancellor: 'scroll', general: 'khanda', personnel: 'users', revenue: 'coins', rites: 'place-of-worship' };
+            const roleLabels = { emperor: '君主', strategist: '謀主', commander: '統帥', finance: '財相', diplomat: '外交', censor: '監察', oddplan: '奇謀', admin: '內政' };
+            const roleIcons = { emperor: 'dragon', strategist: 'brain', commander: 'khanda', finance: 'coins', diplomat: 'handshake', censor: 'scale-balanced', oddplan: 'wand-magic-sparkles', admin: 'landmark' };
 const fragment = document.createDocumentFragment();
             appState.courtMode.factions.forEach(f => {
                 const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
@@ -2624,7 +2624,8 @@ fragment.appendChild(div.firstChild);
             // Map IDs to actual Names for AI
             const factionData = factions.map(f => {
                 const mappedRoster = {};
-                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[r] = n ? `${n}（${rk || '未評'}）` : null; }
+                const courtLabels = { emperor: '君主', strategist: '謀主', commander: '統帥', finance: '財相', diplomat: '外交', censor: '監察', oddplan: '奇謀', admin: '內政' };
+                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[courtLabels[r] || r] = n ? `${n}（${rk || '未評'}）` : null; }
                 return { name: f.name, territory: f.territory, roster: mappedRoster };
             });
             
@@ -2668,8 +2669,8 @@ syncToCloud();
             const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
             const factionData = factions.map(f => {
                 const mappedRoster = {};
-                 for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[r] = n ? `${n}（${rk || '未評'}）` : null; }
-                return { name: f.name, roster: mappedRoster };
+                 const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
+for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[warLabels[r] || r] = n ? `${n}（${rk || '未評'}）` : null; }
             });
 
             const prompt = `史詩級多方軍團混戰推演。
