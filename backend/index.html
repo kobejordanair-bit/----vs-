@@ -1497,6 +1497,7 @@ ${allNames}
 async function showDeepAnalysis(id) {
             const legend = legendsData.find(l => l.id === id);
             if (!legend) return;
+             currentAnalysisId = id;
 
             const myToken = ++currentRequestToken;
             openModal(`${legend.name} · 深度評鑑`, 'content');
