@@ -595,6 +595,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div class="flex gap-3 items-center">
                     <!-- RegExp button for Radar regeneration -->
                     <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="hidden text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
+                    <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="hidden text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
                     <button id="clearMemoryBtn" onclick="clearCurrentMemory()" class="hidden text-xs bg-[#7f1d1d] hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider">忘卻</button>
                     <button onclick="closeModal()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
                 </div>
@@ -1504,11 +1505,13 @@ async function showDeepAnalysis(id) {
             el('modalContent').innerHTML = '';
             el('radarChartContainer').classList.add('hidden');
             el('regenStatsBtn').classList.add('hidden');
+            el('regenDeepBtn').classList.add('hidden');
             // 快取檢查
             const cachedDeep = appState.modifiedLegends[id]?.deepAnalysis;
             if (cachedDeep) {
                 el('loadingState').classList.add('hidden');
                 setModalContent(cachedDeep);
+                el('regenDeepBtn').classList.remove('hidden');
                 renderApplyPanel(id, cachedDeep);
                 renderDiscussionPanel(id, cachedDeep);
                 return;
@@ -1582,6 +1585,7 @@ ${rankingRef}
 
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].deepAnalysis = streamText;
+                el('regenDeepBtn').classList.remove('hidden');
                 renderApplyPanel(id, streamText);
 
                 // 存入史冊
@@ -1775,7 +1779,7 @@ ${rankingRef}
             } else {
                 appState.modifiedLegends[id] = { ...appState.modifiedLegends[id], ...updates };
             }
-
+            if (appState.modifiedLegends[id]?.deepAnalysis) delete appState.modifiedLegends[id].deepAnalysis;
             syncToCloud();
             refreshData();
             customAlert('已套用！人物資料已更新。');
@@ -1920,7 +1924,13 @@ const text = streamText;
         function forceRegenerateStats() {
             if(currentAnalysisId) showAIAnalysis(currentAnalysisId, true);
         }
-
+        function forceRegenerateDeep() {
+            if (!currentAnalysisId) return;
+            if (appState.modifiedLegends[currentAnalysisId]?.deepAnalysis) {
+                delete appState.modifiedLegends[currentAnalysisId].deepAnalysis;
+            }
+            showDeepAnalysis(currentAnalysisId);
+        }
         function renderRadarChart(label, data, label2 = null, data2 = null) {
             el('radarChartContainer').classList.remove('hidden');
             const ctx = el('radarChart').getContext('2d');
