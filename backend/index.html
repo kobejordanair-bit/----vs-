@@ -2536,7 +2536,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 <div class="min-w-[200px] w-[200px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-hidden">
                     <div class="${styles.bg} px-3 py-2 border-b ${styles.border} flex justify-between items-center">
                         <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-flag mr-1"></i>${f.name}</span>
-                        <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/5</span>
+                        <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/6</span>
                     </div>
                     <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[60vh]">
                         ${slotsHtml}
@@ -2590,7 +2590,7 @@ const fragment = document.createDocumentFragment();
                     <div class="${styles.bg} px-3 py-2 border-b ${styles.border}">
                         <div class="flex justify-between items-center mb-1">
                             <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-landmark mr-1"></i>${f.name}</span>
-                            <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/6</span>
+                            <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/8</span>
                         </div>
                         <select onchange="updateTerritory('${f.id}', this.value)" class="w-full text-xs p-1 rounded border border-slate-300 bg-white bg-opacity-80 outline-none text-slate-700 font-serif">
                             ${terrOptions}
