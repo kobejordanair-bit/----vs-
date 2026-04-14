@@ -2670,7 +2670,8 @@ syncToCloud();
             const factionData = factions.map(f => {
                 const mappedRoster = {};
                  const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
-for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[warLabels[r] || r] = n ? `${n}（${rk || '未評'}）` : null; }
+                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[warLabels[r] || r] = n ? `${n}（${rk || '未評'}）` : null; }
+                return { name: f.name, roster: mappedRoster };
             });
 
             const prompt = `史詩級多方軍團混戰推演。
