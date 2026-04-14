@@ -1779,7 +1779,6 @@ ${rankingRef}
             } else {
                 appState.modifiedLegends[id] = { ...appState.modifiedLegends[id], ...updates };
             }
-            if (appState.modifiedLegends[id]?.deepAnalysis) delete appState.modifiedLegends[id].deepAnalysis;
             syncToCloud();
             refreshData();
             customAlert('已套用！人物資料已更新。');
