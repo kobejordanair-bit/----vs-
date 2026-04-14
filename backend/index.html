@@ -1221,6 +1221,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             customLegends: [],
             modifiedLegends: {},
             simulationHistory: [],
+            discussionHistories: {},
             debateMode: {
                 minimized: false,
                 activeSlot: null,
@@ -1243,6 +1244,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             appState.customLegends = data.customLegends || [];
             appState.modifiedLegends = data.modifiedLegends || {};
             appState.chatHistories = data.chatHistories || {};
+            appState.discussionHistories = data.discussionHistories || {};
             appState.simulationHistory = data.simulationHistory || [];
         } else if (res.status === 403) {
             localStorage.removeItem('dynasty_token');
@@ -1295,7 +1297,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 customLegends: appState.customLegends,
                 modifiedLegends: appState.modifiedLegends,
                 chatHistories: appState.chatHistories,
-                simulationHistory: appState.simulationHistory
+                simulationHistory: appState.simulationHistory,
+                discussionHistories: appState.discussionHistories
             })
         });
     } catch(e) {
@@ -1611,13 +1614,136 @@ ${rankingRef}
                 appState.simulationHistory.unshift({ type: '深度評鑑', icon: '🔬', title: `${legend.name} 深度評鑑`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
                 if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
                 syncToCloud();
-
+                renderDiscussionPanel(id, streamText);
             } catch(e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
             }
         }
+// ── 評鑑討論面板 ──────────────────────────────────────────
+        let currentDiscussionContext = '';
 
+        function renderDiscussionPanel(legendId, contextText) {
+            currentDiscussionContext = contextText;
+            const history = appState.discussionHistories[legendId]?.messages || [];
+            const count = history.length / 2 | 0; // 幾輪對話
+
+            const messagesHtml = history.map(m => {
+                const isUser = m.role === 'user';
+                return `<div class="flex ${isUser ? 'justify-end' : 'justify-start'} mb-3">
+                    <div class="max-w-[85%] px-4 py-2 rounded-xl text-sm font-serif leading-relaxed
+                        ${isUser
+                            ? 'bg-amber-100 text-amber-900 border border-amber-200'
+                            : 'bg-slate-100 text-slate-800 border border-slate-200'}">
+                        ${isUser ? '' : '<span class="text-xs text-purple-500 font-bold block mb-1">AI 回應</span>'}
+                        ${safeMarkdown(m.content)}
+                    </div>
+                </div>`;
+            }).join('');
+
+            const panelHtml = `
+            <div class="mt-8 border-t-2 border-amber-200 pt-6" id="discussionPanel_${legendId}">
+                <button onclick="toggleDiscussion('${legendId}')"
+                    class="w-full flex items-center justify-between px-4 py-3 bg-amber-50 hover:bg-amber-100 rounded-xl border border-amber-200 transition-colors font-serif text-amber-800 font-bold">
+                    <span><i class="fa-solid fa-comments text-amber-500 mr-2"></i>與 AI 討論此評鑑</span>
+                    <span class="text-xs text-amber-500 font-mono">${count > 0 ? `${count} 輪對話紀錄` : '點擊展開'}<i class="fa-solid fa-chevron-down ml-2" id="discussionChevron_${legendId}"></i></span>
+                </button>
+                <div id="discussionBody_${legendId}" class="hidden mt-4">
+                    <div id="discussionMessages_${legendId}" class="space-y-1 mb-4 max-h-96 overflow-y-auto pr-1">
+                        ${messagesHtml || '<p class="text-center text-xs text-slate-400 font-serif py-4">尚無討論紀錄，輸入你的想法開始討論</p>'}
+                    </div>
+                    <div class="flex gap-2 items-end">
+                        <textarea id="discussionInput_${legendId}" rows="3"
+                            placeholder="輸入你對此評鑑的看法、疑問或反駁……"
+                            class="flex-1 border border-amber-200 rounded-xl px-4 py-3 text-sm font-serif resize-none focus:outline-none focus:ring-2 focus:ring-amber-300 bg-amber-50"></textarea>
+                        <button onclick="sendDiscussionMessage('${legendId}')"
+                            class="px-4 py-3 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold transition-colors shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 font-serif text-right">討論紀錄將自動儲存</p>
+                </div>
+            </div>`;
+
+            el('modalContent').insertAdjacentHTML('beforeend', panelHtml);
+        }
+
+        function toggleDiscussion(legendId) {
+            const body = document.getElementById(`discussionBody_${legendId}`);
+            const chevron = document.getElementById(`discussionChevron_${legendId}`);
+            if (!body) return;
+            body.classList.toggle('hidden');
+            if (chevron) chevron.classList.toggle('fa-chevron-down');
+            if (chevron) chevron.classList.toggle('fa-chevron-up');
+        }
+
+        async function sendDiscussionMessage(legendId) {
+            const input = document.getElementById(`discussionInput_${legendId}`);
+            const messagesEl = document.getElementById(`discussionMessages_${legendId}`);
+            if (!input || !messagesEl) return;
+
+            const userText = input.value.trim();
+            if (!userText) return;
+            input.value = '';
+            input.disabled = true;
+
+            // 初始化紀錄
+            if (!appState.discussionHistories[legendId]) {
+                appState.discussionHistories[legendId] = { messages: [] };
+            }
+            const msgs = appState.discussionHistories[legendId].messages;
+
+            // 加入使用者訊息
+            msgs.push({ role: 'user', content: userText });
+            messagesEl.insertAdjacentHTML('beforeend', `
+                <div class="flex justify-end mb-3">
+                    <div class="max-w-[85%] px-4 py-2 rounded-xl text-sm font-serif leading-relaxed bg-amber-100 text-amber-900 border border-amber-200">
+                        ${escapeHtml(userText)}
+                    </div>
+                </div>`);
+
+            // AI 回應佔位
+            const replyId = `reply_${Date.now()}`;
+            messagesEl.insertAdjacentHTML('beforeend', `
+                <div class="flex justify-start mb-3" id="${replyId}">
+                    <div class="max-w-[85%] px-4 py-2 rounded-xl text-sm font-serif leading-relaxed bg-slate-100 text-slate-800 border border-slate-200">
+                        <span class="text-xs text-purple-500 font-bold block mb-1">AI 回應</span>
+                        <span class="text-slate-400">思考中……</span>
+                    </div>
+                </div>`);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+
+            // 組裝 Gemini contents：系統 context + 對話歷史
+            const legend = legendsData.find(l => l.id === legendId);
+            const systemMsg = `你是一位歷史學者，正在與使用者討論以下對「${legend ? legend.name : '此人物'}」的歷史評鑑內容。請依據評鑑內容回應使用者的看法、疑問或反駁，可以有自己的立場，允許意見分歧。\n\n【評鑑原文】\n${currentDiscussionContext}`;
+
+            const contents = [{ role: 'user', parts: [{ text: systemMsg }] }, { role: 'model', parts: [{ text: '已閱讀評鑑內容，請說說你的看法。' }] }];
+            msgs.slice(0, -1).forEach(m => {
+                contents.push({ role: m.role === 'user' ? 'user' : 'model', parts: [{ text: m.content }] });
+            });
+            contents.push({ role: 'user', parts: [{ text: userText }] });
+
+            try {
+                let replyText = '';
+                await callGeminiStream(null, (partial) => {
+                    replyText = partial;
+                    const replyEl = document.getElementById(replyId);
+                    if (replyEl) replyEl.querySelector('div').innerHTML = `<span class="text-xs text-purple-500 font-bold block mb-1">AI 回應</span>${safeMarkdown(partial)}`;
+                    messagesEl.scrollTop = messagesEl.scrollHeight;
+                }, null, contents);
+
+                msgs.push({ role: 'assistant', content: replyText });
+                if (msgs.length > 40) msgs.splice(0, 2); // 最多 20 輪
+                await syncToCloud();
+            } catch(e) {
+                const replyEl = document.getElementById(replyId);
+                if (replyEl) replyEl.querySelector('div').innerHTML = `<span class="text-xs text-red-500">回應失敗：${escapeHtml(e.message)}</span>`;
+            } finally {
+                input.disabled = false;
+                input.focus();
+            }
+        }
+        // ── 評鑑討論面板 end ──────────────────────────────────────
         function applyDeepSuggestions(id, suggestions) {
             const updates = {};
             if (document.getElementById('apply_rank')?.checked && suggestions.rank) updates.rank = suggestions.rank;
@@ -1725,6 +1851,7 @@ ${rankingRef}
     renderRadarChart(legend.name, cachedStats);
     el('regenStatsBtn').classList.remove('hidden');
     setModalContent(cachedAnalysis);
+    renderDiscussionPanel(id, cachedAnalysis);
     return;
 }
 if (needsStats) {
@@ -1768,6 +1895,7 @@ const text = streamText;
                 }
                 syncToCloud();
                 setModalContent(needsAnalysis ? cleanText : cachedAnalysis);
+                renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
             } catch (e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>評鑑生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
@@ -2169,6 +2297,10 @@ ${rankingRef}
                         });
                     }, 50);
                 }
+                // 存入史冊
+                appState.simulationHistory.unshift({ type: '深度評鑑入冊', icon: '📋', title: `${name} 深度評鑑入冊`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
+                if (appState.simulationHistory.length > 50) appState.simulationHistory.pop();
+                syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
@@ -2924,8 +3056,8 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
         }
         
         // --- 對接本地端 Python FastAPI 後端 ---
-async function callGeminiStream(promptText, onChunk, onModel = null) {
-    const contents = [{ role: "user", parts: [{ text: promptText }] }];
+async function callGeminiStream(promptText, onChunk, onModel = null, contentsOverride = null) {
+    const contents = contentsOverride || [{ role: "user", parts: [{ text: promptText }] }];
     const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
