@@ -1504,7 +1504,15 @@ async function showDeepAnalysis(id) {
             el('modalContent').innerHTML = '';
             el('radarChartContainer').classList.add('hidden');
             el('regenStatsBtn').classList.add('hidden');
-
+            // 快取檢查
+            const cachedDeep = appState.modifiedLegends[id]?.deepAnalysis;
+            if (cachedDeep) {
+                el('loadingState').classList.add('hidden');
+                setModalContent(cachedDeep);
+                renderApplyPanel(id, cachedDeep);
+                renderDiscussionPanel(id, cachedDeep);
+                return;
+            }
             const typeLabel = legend.type === 'emperor' ? '帝王' : legend.type === 'general' ? '將領' : '名臣';
 
             const allLegends = [...staticLegendsData, ...appState.customLegends].map(l => {
@@ -1572,43 +1580,9 @@ ${rankingRef}
 
                 if (myToken !== currentRequestToken) return;
 
-                // 解析建議定案
-                const suggestions = {};
-                const sectionMatch = streamText.match(/【建議定案】([\s\S]+)$/);
-                const section = sectionMatch ? sectionMatch[1] : streamText.slice(-400);
-                const rankMatch = section.match(/評級[：:]\*{0,2}\s*(.+?)(?=\s*(?:稱號|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
-                const titleMatch = section.match(/稱號[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
-                const tagMatch = section.match(/標籤[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|簡評|判詞)[：:]|[\n\r]|$)/);
-                const descMatch = section.match(/簡評[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|判詞)[：:]|[\n\r]|$)/);
-                const poemMatch = section.match(/判詞[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|簡評)[：:]|[\n\r]|$)/);
-                const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
-                if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
-                if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
-                if (tagMatch) suggestions.tag = cleanSuggestion(tagMatch[1]);
-                if (descMatch) suggestions.desc = cleanSuggestion(descMatch[1]);
-                if (poemMatch) suggestions.poem = cleanSuggestion(poemMatch[1]);
-
-                if (Object.keys(suggestions).length > 0) {
-                    const applyPanel = `
-                    <div class="mt-8 border-t-2 border-purple-200 pt-6">
-                        <h4 class="font-serif font-bold text-purple-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles text-purple-500"></i> 套用建議至人物資料</h4>
-                        <div class="bg-purple-50 rounded-xl p-4 space-y-3 border border-purple-100">
-                            ${suggestions.rank ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_rank" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">評級</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.rank)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.rank)}</span></span></label>` : ''}
-                            ${suggestions.title ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_title" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">稱號</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.title)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.title)}</span></span></label>` : ''}
-                            ${suggestions.tag ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_tag" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">標籤</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.tag)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.tag)}</span></span></label>` : ''}
-                            ${suggestions.desc ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_desc" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">簡評</span><span class="text-purple-800">→ ${escapeHtml(suggestions.desc)}</span></span></label>` : ''}
-                            ${suggestions.poem ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_poem" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">判詞</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.poem)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.poem)}</span></span></label>` : ''}
-                        </div>
-                        <button id="applyDeepBtn" class="mt-4 w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
-                            <i class="fa-solid fa-check mr-2"></i>套用勾選的欄位
-                        </button>
-                    </div>`;
-                  el('modalContent').insertAdjacentHTML('beforeend', applyPanel);
-                    setTimeout(() => {
-                        const btn = document.getElementById('applyDeepBtn');
-                        if (btn) btn.addEventListener('click', () => applyDeepSuggestions(id, suggestions));
-                    }, 50);
-                }
+                appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
+                appState.modifiedLegends[id].deepAnalysis = streamText;
+                renderApplyPanel(id, streamText);
 
                 // 存入史冊
                 appState.simulationHistory.unshift({ type: '深度評鑑', icon: '🔬', title: `${legend.name} 深度評鑑`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
@@ -1746,7 +1720,45 @@ ${rankingRef}
                 input.focus();
             }
         }
-        // ── 評鑑討論面板 end ──────────────────────────────────────
+        // ── 評鑑討論面板 end ─────────────────────────────────────
+        function renderApplyPanel(id, streamText) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+            const suggestions = {};
+            const sectionMatch = streamText.match(/【建議定案】([\s\S]+)$/);
+            const section = sectionMatch ? sectionMatch[1] : streamText.slice(-400);
+            const rankMatch = section.match(/評級[：:]\*{0,2}\s*(.+?)(?=\s*(?:稱號|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
+            const titleMatch = section.match(/稱號[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|標籤|簡評|判詞)[：:]|[\n\r]|$)/);
+            const tagMatch = section.match(/標籤[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|簡評|判詞)[：:]|[\n\r]|$)/);
+            const descMatch = section.match(/簡評[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|判詞)[：:]|[\n\r]|$)/);
+            const poemMatch = section.match(/判詞[：:]\*{0,2}\s*(.+?)(?=\s*(?:評級|稱號|標籤|簡評)[：:]|[\n\r]|$)/);
+            const cleanSuggestion = (s) => s ? s.replace(/\*\*/g, '').trim() : s;
+            if (rankMatch) suggestions.rank = cleanSuggestion(rankMatch[1]);
+            if (titleMatch) suggestions.title = cleanSuggestion(titleMatch[1]);
+            if (tagMatch) suggestions.tag = cleanSuggestion(tagMatch[1]);
+            if (descMatch) suggestions.desc = cleanSuggestion(descMatch[1]);
+            if (poemMatch) suggestions.poem = cleanSuggestion(poemMatch[1]);
+            if (Object.keys(suggestions).length === 0) return;
+            const applyPanel = `
+            <div class="mt-8 border-t-2 border-purple-200 pt-6">
+                <h4 class="font-serif font-bold text-purple-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles text-purple-500"></i> 套用建議至人物資料</h4>
+                <div class="bg-purple-50 rounded-xl p-4 space-y-3 border border-purple-100">
+                    ${suggestions.rank ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_rank" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">評級</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.rank)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.rank)}</span></span></label>` : ''}
+                    ${suggestions.title ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_title" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">稱號</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.title)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.title)}</span></span></label>` : ''}
+                    ${suggestions.tag ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_tag" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">標籤</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.tag)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.tag)}</span></span></label>` : ''}
+                    ${suggestions.desc ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_desc" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">簡評</span><span class="text-purple-800">→ ${escapeHtml(suggestions.desc)}</span></span></label>` : ''}
+                    ${suggestions.poem ? `<label class="flex items-center gap-3 cursor-pointer hover:bg-purple-100 rounded p-2 transition-colors"><input type="checkbox" id="apply_poem" class="accent-purple-600 w-4 h-4"><span class="font-serif text-sm"><span class="text-purple-500 font-bold w-12 inline-block">判詞</span><span class="text-slate-400 line-through mr-2">${escapeHtml(legend.poem)}</span><span class="text-purple-800 font-bold">→ ${escapeHtml(suggestions.poem)}</span></span></label>` : ''}
+                </div>
+                <button id="applyDeepBtn" class="mt-4 w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
+                    <i class="fa-solid fa-check mr-2"></i>套用勾選的欄位
+                </button>
+            </div>`;
+            el('modalContent').insertAdjacentHTML('beforeend', applyPanel);
+            setTimeout(() => {
+                const btn = document.getElementById('applyDeepBtn');
+                if (btn) btn.addEventListener('click', () => applyDeepSuggestions(id, suggestions));
+            }, 50);
+        }
         function applyDeepSuggestions(id, suggestions) {
             const updates = {};
             if (document.getElementById('apply_rank')?.checked && suggestions.rank) updates.rank = suggestions.rank;
