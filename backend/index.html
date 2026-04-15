@@ -1445,29 +1445,30 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
             const radarDataUrl = el('radarChart').toDataURL('image/png');
             const rankClass = `rank-${legend.rank.replace('-', '-minus').replace('+', '-plus')}`;
+            const subtitle = [legend.title, legend.tag].filter(Boolean).join(' · ');
 
             const card = document.createElement('div');
-            card.style.cssText = 'position:fixed;left:-9999px;top:0;width:680px;background:#1c1917;border:3px solid #d4af37;border-radius:16px;padding:36px;font-family:\'Noto Sans TC\',serif;color:#e5e5e5;box-sizing:border-box;';
+            card.style.cssText = 'position:fixed;left:-9999px;top:0;width:640px;background:#1c1917;border:3px solid #d4af37;border-radius:20px;padding:40px 44px 28px;font-family:\'Noto Sans TC\',serif;color:#e5e5e5;box-sizing:border-box;';
             card.innerHTML = `
-                <div style="text-align:center;border-bottom:1px solid rgba(212,175,55,0.3);padding-bottom:20px;margin-bottom:24px;">
-                    <div style="font-size:11px;letter-spacing:4px;color:#d4af37;margin-bottom:10px;">帝王將相名臣評鑑</div>
-                    <div style="font-size:40px;font-weight:900;letter-spacing:8px;color:#f5f0e8;">${escapeHtml(legend.name)}</div>
-                    <div style="font-size:15px;color:#a8a29e;margin-top:8px;letter-spacing:2px;">${escapeHtml(legend.title || '')}</div>
+                <div style="text-align:center;margin-bottom:28px;">
+                    <div style="font-size:10px;letter-spacing:6px;color:#d4af37;margin-bottom:16px;">帝 王 將 相 名 臣 評 鑑</div>
+                    <div style="font-size:54px;font-weight:900;letter-spacing:10px;color:#f5f0e8;line-height:1;">${escapeHtml(legend.name)}</div>
+                    <div style="font-size:13px;color:#78716c;margin-top:12px;letter-spacing:3px;">${escapeHtml(subtitle)}</div>
                 </div>
-                <div style="display:flex;align-items:center;gap:32px;">
-                    <img src="${radarDataUrl}" style="width:260px;height:260px;object-fit:contain;flex-shrink:0;" />
+                <div style="border-top:1px solid rgba(212,175,55,0.25);border-bottom:1px solid rgba(212,175,55,0.25);padding:24px 0;margin-bottom:24px;text-align:center;">
+                    <img src="${radarDataUrl}" style="width:340px;height:340px;object-fit:contain;" />
+                </div>
+                <div style="display:flex;align-items:center;gap:20px;min-height:80px;">
+                    <div style="flex-shrink:0;text-align:center;padding-right:20px;border-right:1px solid rgba(212,175,55,0.25);">
+                        <div style="font-size:9px;letter-spacing:3px;color:#57534e;margin-bottom:10px;">評 級</div>
+                        <span class="rank-badge ${rankClass}" style="font-size:30px;padding:5px 18px;">${escapeHtml(legend.rank)}</span>
+                    </div>
                     <div style="flex:1;">
-                        <div style="margin-bottom:24px;">
-                            <div style="font-size:10px;letter-spacing:3px;color:#78716c;margin-bottom:8px;">評級</div>
-                            <span class="rank-badge ${rankClass}" style="font-size:28px;padding:4px 16px;">${escapeHtml(legend.rank)}</span>
-                        </div>
-                        <div>
-                            <div style="font-size:10px;letter-spacing:3px;color:#78716c;margin-bottom:10px;">判詞</div>
-                            <div style="font-size:14px;color:#d4c9b5;line-height:2;font-style:italic;border-left:2px solid #d4af37;padding-left:12px;">${escapeHtml(legend.poem || '—')}</div>
-                        </div>
+                        <div style="font-size:9px;letter-spacing:3px;color:#57534e;margin-bottom:10px;">判 詞</div>
+                        <div style="font-size:15px;color:#d4c9b5;line-height:1.9;font-style:italic;">${escapeHtml(legend.poem || '—')}</div>
                     </div>
                 </div>
-                <div style="text-align:right;margin-top:20px;padding-top:14px;border-top:1px solid rgba(212,175,55,0.2);font-size:10px;color:#57534e;letter-spacing:2px;">dynasty-ydov.onrender.com</div>
+                <div style="text-align:right;margin-top:20px;font-size:9px;color:#44403c;letter-spacing:3px;">dynasty-ydov.onrender.com</div>
             `;
             document.body.appendChild(card);
 
