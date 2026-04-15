@@ -1289,26 +1289,30 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             });
         }
 
-        async function syncToCloud() {
-    try {
-        await fetch(`${BACKEND_URL}/api/userdata`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
-            body: JSON.stringify({
-                customLegends: appState.customLegends,
-                modifiedLegends: appState.modifiedLegends,
-                chatHistories: appState.chatHistories,
-                simulationHistory: appState.simulationHistory,
-                discussionHistories: appState.discussionHistories
-            })
-        });
-    } catch(e) {
-        console.error('儲存失敗:', e);
-        const t = document.getElementById('saveToast');
-    t.style.display = 'block';
-    setTimeout(() => t.style.display = 'none', 3000);
-    }
-}
+        let _syncTimer = null;
+        function syncToCloud() {
+            clearTimeout(_syncTimer);
+            _syncTimer = setTimeout(async () => {
+                try {
+                    await fetch(`${BACKEND_URL}/api/userdata`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
+                        body: JSON.stringify({
+                            customLegends: appState.customLegends,
+                            modifiedLegends: appState.modifiedLegends,
+                            chatHistories: appState.chatHistories,
+                            simulationHistory: appState.simulationHistory,
+                            discussionHistories: appState.discussionHistories
+                        })
+                    });
+                } catch(e) {
+                    console.error('儲存失敗:', e);
+                    const t = document.getElementById('saveToast');
+                    t.style.display = 'block';
+                    setTimeout(() => t.style.display = 'none', 3000);
+                }
+            }, 500);
+        }
 
         function refreshData() {
             legendsData = [...staticLegendsData, ...appState.customLegends];
