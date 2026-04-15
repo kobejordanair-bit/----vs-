@@ -343,6 +343,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <button onclick="openChronicle()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-chronicle">
                         <i class="fa-solid fa-book-open text-amber-400"></i> <span class="hidden md:inline">史冊</span>
                     </button>
+                    <button onclick="openStatsPanel()" class="bg-[#2c2826] hover:bg-[#1e3a5f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-stats">
+                        <i class="fa-solid fa-chart-bar text-sky-400"></i> <span class="hidden md:inline">統計</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -619,6 +622,50 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     </div>
                     <div id="radarChartContainer" class="chart-container hidden mx-auto max-w-md mb-8 bg-white p-4 rounded-xl border border-[#e5e0d3] shadow-sm"><canvas id="radarChart"></canvas></div>
                     <div id="modalContent" class="prose prose-slate max-w-none font-serif text-[#2c2826]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Panel Modal -->
+    <div id="statsModal" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 modal-overlay" onclick="closeStatsPanel()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] overflow-hidden flex flex-col border border-[#e5e0d3]">
+            <div class="bg-[#1c1917] text-[#e5e5e5] p-5 flex justify-between items-center shrink-0 border-b-4 border-sky-500">
+                <h3 class="text-xl font-bold font-serif tracking-wide flex items-center gap-3">
+                    <i class="fa-solid fa-chart-bar text-sky-400"></i> 人才統計面板
+                </h3>
+                <button onclick="closeStatsPanel()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
+            </div>
+            <div class="flex-1 overflow-y-auto custom-scrollbar p-8 bg-[#fffdf9]">
+                <!-- 總覽數字 -->
+                <div id="statsOverview" class="grid grid-cols-3 gap-4 mb-8"></div>
+                <!-- 圖表區 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
+                        <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">評級分佈</h4>
+                        <canvas id="statsRankChart" height="220"></canvas>
+                    </div>
+                    <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
+                        <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">類型分佈</h4>
+                        <canvas id="statsTypeChart" height="220"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
+                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">朝代人才密度</h4>
+                    <canvas id="statsDynastyChart" height="160"></canvas>
+                </div>
+                <!-- AI 分析 -->
+                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="font-bold font-serif text-[#2c2826] tracking-wide">AI 史觀分析</h4>
+                        <button onclick="runStatsAI()" id="statsAIBtn" class="text-xs bg-sky-600 hover:bg-sky-700 text-white px-4 py-1.5 rounded font-serif transition-colors">
+                            <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 生成分析
+                        </button>
+                    </div>
+                    <div id="statsAIResult" class="prose prose-slate max-w-none font-serif text-[#2c2826] text-sm min-h-[60px]">
+                        <p class="text-[#a8a29e] text-sm font-serif">點擊「生成分析」，由 AI 解讀這份人才分佈數據。</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1436,6 +1483,113 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         function closeModal() {
             el('aiModal').classList.add('hidden');
             appState.chatMode.targetId = null;
+        }
+
+        let statsChartInstances = [];
+        function openStatsPanel() {
+            el('statsModal').classList.remove('hidden');
+            renderStatsPanel();
+        }
+        function closeStatsPanel() {
+            el('statsModal').classList.add('hidden');
+            statsChartInstances.forEach(c => c.destroy());
+            statsChartInstances = [];
+        }
+
+        function renderStatsPanel() {
+            statsChartInstances.forEach(c => c.destroy());
+            statsChartInstances = [];
+
+            const all = legendsData;
+            const total = all.length;
+            const emperors = all.filter(l => l.type === 'emperor').length;
+            const generals = all.filter(l => l.type === 'general').length;
+            const ministers = all.filter(l => l.type === 'minister').length;
+
+            // 總覽
+            el('statsOverview').innerHTML = `
+                <div class="bg-[#1c1917] text-white rounded-xl p-5 text-center">
+                    <div class="text-4xl font-bold text-[#d4af37]">${total}</div>
+                    <div class="text-xs tracking-widest text-[#a8a29e] mt-2 font-serif">人物總數</div>
+                </div>
+                <div class="bg-white border border-[#e5e0d3] rounded-xl p-5 text-center">
+                    <div class="text-4xl font-bold text-[#b45309]">${all.filter(l=>['S+','S','S-'].includes(l.rank)).length}</div>
+                    <div class="text-xs tracking-widest text-[#a8a29e] mt-2 font-serif">S 級人才</div>
+                </div>
+                <div class="bg-white border border-[#e5e0d3] rounded-xl p-5 text-center">
+                    <div class="text-4xl font-bold text-[#7c3aed]">${all.filter(l=>['A+','A','A-'].includes(l.rank)).length}</div>
+                    <div class="text-xs tracking-widest text-[#a8a29e] mt-2 font-serif">A 級人才</div>
+                </div>
+            `;
+
+            // 評級分佈
+            const ranks = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
+            const rankColors = ['#7f1d1d','#dc2626','#ef4444','#4c1d95','#3b82f6','#60a5fa','#10b981','#6b7280','#78716c','#d97706','#71717a','#7f1d1d','#1f2937'];
+            const rankCounts = ranks.map(r => all.filter(l => l.rank === r).length);
+            const rankCtx = el('statsRankChart').getContext('2d');
+            statsChartInstances.push(new Chart(rankCtx, {
+                type: 'bar',
+                data: { labels: ranks, datasets: [{ data: rankCounts, backgroundColor: rankColors, borderRadius: 4 }] },
+                options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
+            }));
+
+            // 類型分佈
+            const typeCtx = el('statsTypeChart').getContext('2d');
+            statsChartInstances.push(new Chart(typeCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['帝王', '將領', '名臣'],
+                    datasets: [{ data: [emperors, generals, ministers], backgroundColor: ['#b45309','#1e40af','#065f46'], borderWidth: 0 }]
+                },
+                options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
+            }));
+
+            // 朝代分佈
+            const dynastyOrder = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
+            const dynastyCounts = dynastyOrder.map(d => all.filter(l => l.dynasty === d).length);
+            const dynCtx = el('statsDynastyChart').getContext('2d');
+            statsChartInstances.push(new Chart(dynCtx, {
+                type: 'bar',
+                data: {
+                    labels: dynastyOrder,
+                    datasets: [{ data: dynastyCounts, backgroundColor: '#d4af37', borderRadius: 4 }]
+                },
+                options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 11 } } }, y: { beginAtZero: true } } }
+            }));
+        }
+
+        async function runStatsAI() {
+            const btn = el('statsAIBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> 分析中...';
+            el('statsAIResult').innerHTML = '';
+
+            const all = legendsData;
+            const dynastyOrder = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
+            const dynastyStats = dynastyOrder.map(d => `${d}：${all.filter(l=>l.dynasty===d).length}人`).join('、');
+            const rankStats = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'].map(r=>`${r}：${all.filter(l=>l.rank===r).length}人`).join('、');
+
+            const prompt = `以下是一份包含 ${all.length} 位歷史人物的評鑑資料庫統計數據。
+
+【評級分佈】${rankStats}
+【朝代人才密度】${dynastyStats}
+【類型】帝王：${all.filter(l=>l.type==='emperor').length}人、將領：${all.filter(l=>l.type==='general').length}人、名臣：${all.filter(l=>l.type==='minister').length}人
+
+請以歷史學者角度，用繁體中文撰寫 300-400 字的深度分析，重點探討：
+1. 哪個朝代人才最鼎盛，原因為何
+2. 評級分佈呈現什麼規律
+3. 這份榜單反映了什麼歷史現象`;
+
+            try {
+                await callGeminiStream(prompt, (text) => {
+                    el('statsAIResult').innerHTML = safeMarkdown(text);
+                });
+            } catch(e) {
+                el('statsAIResult').innerHTML = `<p class="text-red-500 text-sm">分析失敗：${escapeHtml(e.message)}</p>`;
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 重新分析';
+            }
         }
 
         async function exportCard() {
