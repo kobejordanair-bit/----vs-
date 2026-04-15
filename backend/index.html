@@ -651,9 +651,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <canvas id="statsTypeChart" height="220"></canvas>
                     </div>
                 </div>
-                <!-- 朝代人才指數排行榜 Top 5 -->
+                <!-- 朝代菁英排行 -->
                 <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
-                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">朝代人才指數 Top 5 <span class="text-xs text-[#a8a29e] font-sans font-normal">（加權平均，人數≥5）</span></h4>
+                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">朝代菁英排行 <span class="text-xs text-[#a8a29e] font-sans font-normal">（S + A 級人數）</span></h4>
                     <div id="statsTalentRanking"></div>
                 </div>
                 <!-- 朝代人才密度（可點擊）-->
@@ -1514,15 +1514,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             statsChartInstances = [];
         }
 
-        const RANK_WEIGHTS = {'S+':5,'S':4,'S-':3,'A+':2.5,'A':2,'A-':1.5,'B+':1,'B':0.7,'B-':0.5,'C+':0.2,'C':0.2,'C-':0.2,'D':0.2};
         const RANK_ORDER = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
         const DYNASTY_ORDER = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
-
-        function calcDynastyIndex(people) {
-            if (people.length < 5) return null;
-            const sum = people.reduce((s, l) => s + (RANK_WEIGHTS[l.rank] || 0), 0);
-            return (sum / people.length).toFixed(2);
-        }
 
         function renderStatsPanel() {
             statsChartInstances.forEach(c => c.destroy());
@@ -1566,24 +1559,36 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
             }));
 
-            // 朝代人才指數 Top 5
-            const dynastyIndexList = DYNASTY_ORDER
-                .map(d => ({ name: d, people: all.filter(l => l.dynasty === d), index: calcDynastyIndex(all.filter(l => l.dynasty === d)) }))
-                .filter(d => d.index !== null)
-                .sort((a, b) => b.index - a.index)
-                .slice(0, 5);
-            const medals = ['🥇','🥈','🥉','4️⃣','5️⃣'];
-            el('statsTalentRanking').innerHTML = dynastyIndexList.map((d, i) => `
-                <div class="flex items-center gap-4 py-3 ${i < 4 ? 'border-b border-[#e5e0d3]' : ''}">
-                    <span class="text-2xl w-8 text-center">${medals[i]}</span>
-                    <span class="font-bold font-serif text-[#2c2826] w-24">${escapeHtml(d.name)}</span>
-                    <div class="flex-1 bg-[#f5f0e8] rounded-full h-3 overflow-hidden">
-                        <div class="h-3 rounded-full bg-gradient-to-r from-[#d4af37] to-[#b45309]" style="width:${Math.min(100, (d.index/5)*100)}%"></div>
+            // 朝代菁英排行（S+A 級人數）
+            const eliteRanks = ['S+','S','S-','A+','A','A-'];
+            const dynastyEliteList = DYNASTY_ORDER
+                .map(d => {
+                    const people = all.filter(l => l.dynasty === d);
+                    const elite = people.filter(l => eliteRanks.includes(l.rank)).length;
+                    return { name: d, elite, total: people.length };
+                })
+                .filter(d => d.total > 0)
+                .sort((a, b) => b.elite - a.elite);
+            const top5 = dynastyEliteList.slice(0, 5);
+            const bot5 = [...dynastyEliteList].reverse().slice(0, 5).reverse();
+            const maxElite = top5[0]?.elite || 1;
+            const topMedals = ['🥇','🥈','🥉','4️⃣','5️⃣'];
+            const renderRow = (d, i, isTop) => `
+                <div class="flex items-center gap-4 py-2.5 ${i < 4 ? 'border-b border-[#e5e0d3]' : ''}">
+                    <span class="text-xl w-7 text-center">${isTop ? topMedals[i] : '⚠️'}</span>
+                    <span class="font-bold font-serif text-[#2c2826] w-20 shrink-0">${escapeHtml(d.name)}</span>
+                    <div class="flex-1 bg-[#f5f0e8] rounded-full h-2.5 overflow-hidden">
+                        <div class="h-2.5 rounded-full ${isTop ? 'bg-gradient-to-r from-[#d4af37] to-[#b45309]' : 'bg-[#d1d5db]'}" style="width:${Math.max(2, Math.round((d.elite/maxElite)*100))}%"></div>
                     </div>
-                    <span class="text-lg font-bold text-[#b45309] w-12 text-right">${d.index}</span>
-                    <span class="text-xs text-[#a8a29e] w-16 text-right font-serif">${d.people.length} 人</span>
-                </div>
-            `).join('');
+                    <span class="font-bold ${isTop ? 'text-[#b45309]' : 'text-[#9ca3af]'} w-8 text-right">${d.elite}</span>
+                    <span class="text-xs text-[#a8a29e] w-14 text-right font-serif">共 ${d.total} 人</span>
+                </div>`;
+            el('statsTalentRanking').innerHTML = `
+                <div class="mb-1 text-xs font-bold text-[#57534e] tracking-widest uppercase">菁英最多</div>
+                ${top5.map((d, i) => renderRow(d, i, true)).join('')}
+                <div class="mt-5 mb-1 text-xs font-bold text-[#9ca3af] tracking-widest uppercase">菁英最少</div>
+                ${bot5.map((d, i) => renderRow(d, i, false)).join('')}
+            `;
 
             // 朝代人才密度（堆疊，可點擊）
             const tiers = [
@@ -1592,7 +1597,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 { label: 'B 級', ranks: ['B+','B','B-'], color: '#10b981' },
                 { label: 'C/D 級', ranks: ['C+','C','C-','D'], color: '#6b7280' },
             ];
-            const dynIndexMap = Object.fromEntries(DYNASTY_ORDER.map(d => [d, calcDynastyIndex(all.filter(l => l.dynasty === d))]));
             statsChartInstances.push(new Chart(el('statsDynastyChart').getContext('2d'), {
                 type: 'bar',
                 data: {
@@ -1609,8 +1613,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         legend: { position: 'top', labels: { font: { family: 'Noto Serif TC', size: 12 }, boxWidth: 14 } },
                         tooltip: { callbacks: { footer: (items) => {
                             const d = DYNASTY_ORDER[items[0].dataIndex];
-                            const idx = dynIndexMap[d];
-                            return idx ? `人才指數：${idx}` : '人才指數：樣本不足';
+                            const people = all.filter(l => l.dynasty === d);
+                            const elite = people.filter(l => eliteRanks.includes(l.rank)).length;
+                            return `S+A 菁英：${elite} 人　總計：${people.length} 人`;
                         }}}
                     },
                     scales: { x: { stacked: true, ticks: { font: { size: 11 } } }, y: { stacked: true, beginAtZero: true } },
@@ -1676,11 +1681,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         function showDynastyDetail(dynastyName) {
             const people = legendsData.filter(l => l.dynasty === dynastyName)
                 .sort((a, b) => RANK_ORDER.indexOf(a.rank) - RANK_ORDER.indexOf(b.rank));
-            const index = calcDynastyIndex(people);
+            const eliteCount = people.filter(l => ['S+','S','S-','A+','A','A-'].includes(l.rank)).length;
             const detail = el('statsDynastyDetail');
             detail.innerHTML = `
                 <div class="flex justify-between items-center mb-4">
-                    <div class="text-white font-bold font-serif text-lg">${escapeHtml(dynastyName)} <span class="text-[#a8a29e] text-sm font-normal ml-2">${people.length} 人 · 人才指數 ${index ?? '樣本不足'}</span></div>
+                    <div class="text-white font-bold font-serif text-lg">${escapeHtml(dynastyName)} <span class="text-[#a8a29e] text-sm font-normal ml-2">${people.length} 人 · S+A 菁英 ${eliteCount} 人</span></div>
                     <button onclick="el('statsDynastyDetail').classList.add('hidden')" class="text-[#a8a29e] hover:text-white transition-colors"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="flex flex-wrap gap-2">
