@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.5/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap');
         
@@ -596,6 +597,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <!-- RegExp button for Radar regeneration -->
                     <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="hidden text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
                     <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="hidden text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
+                    <button id="exportCardBtn" onclick="exportCard()" class="hidden text-xs bg-[#1e6b4a] hover:bg-[#145238] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="匯出評鑑卡片為圖片"><i class="fa-solid fa-image"></i> 匯出卡片</button>
                     <button id="clearMemoryBtn" onclick="clearCurrentMemory()" class="hidden text-xs bg-[#7f1d1d] hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider">忘卻</button>
                     <button onclick="closeModal()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
                 </div>
@@ -1420,18 +1422,78 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 el('contentContainer').classList.add('hidden');
                 el('clearMemoryBtn').classList.remove('hidden');
                 el('regenStatsBtn').classList.add('hidden');
+                el('exportCardBtn').classList.add('hidden');
             } else {
                 el('chatContainer').classList.add('hidden');
                 el('contentContainer').classList.remove('hidden');
                 el('clearMemoryBtn').classList.add('hidden');
                 el('modalContent').innerHTML = ''; // Clear previous content
                 el('regenStatsBtn').classList.add('hidden');
+                el('exportCardBtn').classList.add('hidden');
             }
         }
 
         function closeModal() {
             el('aiModal').classList.add('hidden');
             appState.chatMode.targetId = null;
+        }
+
+        async function exportCard() {
+            if (!currentAnalysisId) return;
+            const legend = legendsData.find(l => l.id === currentAnalysisId);
+            if (!legend) return;
+
+            const radarDataUrl = el('radarChart').toDataURL('image/png');
+            const rankClass = `rank-${legend.rank.replace('-', '-minus').replace('+', '-plus')}`;
+
+            const card = document.createElement('div');
+            card.style.cssText = 'position:fixed;left:-9999px;top:0;width:680px;background:#1c1917;border:3px solid #d4af37;border-radius:16px;padding:36px;font-family:\'Noto Sans TC\',serif;color:#e5e5e5;box-sizing:border-box;';
+            card.innerHTML = `
+                <div style="text-align:center;border-bottom:1px solid rgba(212,175,55,0.3);padding-bottom:20px;margin-bottom:24px;">
+                    <div style="font-size:11px;letter-spacing:4px;color:#d4af37;margin-bottom:10px;">帝王將相名臣評鑑</div>
+                    <div style="font-size:40px;font-weight:900;letter-spacing:8px;color:#f5f0e8;">${escapeHtml(legend.name)}</div>
+                    <div style="font-size:15px;color:#a8a29e;margin-top:8px;letter-spacing:2px;">${escapeHtml(legend.title || '')}</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:32px;">
+                    <img src="${radarDataUrl}" style="width:260px;height:260px;object-fit:contain;flex-shrink:0;" />
+                    <div style="flex:1;">
+                        <div style="margin-bottom:24px;">
+                            <div style="font-size:10px;letter-spacing:3px;color:#78716c;margin-bottom:8px;">評級</div>
+                            <span class="rank-badge ${rankClass}" style="font-size:28px;padding:4px 16px;">${escapeHtml(legend.rank)}</span>
+                        </div>
+                        <div>
+                            <div style="font-size:10px;letter-spacing:3px;color:#78716c;margin-bottom:10px;">判詞</div>
+                            <div style="font-size:14px;color:#d4c9b5;line-height:2;font-style:italic;border-left:2px solid #d4af37;padding-left:12px;">${escapeHtml(legend.poem || '—')}</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:right;margin-top:20px;padding-top:14px;border-top:1px solid rgba(212,175,55,0.2);font-size:10px;color:#57534e;letter-spacing:2px;">dynasty-ydov.onrender.com</div>
+            `;
+            document.body.appendChild(card);
+
+            const btn = el('exportCardBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 生成中...';
+
+            try {
+                const canvas = await html2canvas(card, {
+                    backgroundColor: '#1c1917',
+                    scale: 2,
+                    useCORS: true,
+                    logging: false
+                });
+                const link = document.createElement('a');
+                link.download = `${legend.name}_評鑑卡.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            } catch(e) {
+                console.error('匯出失敗:', e);
+                alert('匯出失敗，請稍後再試');
+            } finally {
+                document.body.removeChild(card);
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-image"></i> 匯出卡片';
+            }
         }
 
         function setModalContent(html) {
@@ -1937,6 +1999,7 @@ const text = streamText;
         }
         function renderRadarChart(label, data, label2 = null, data2 = null) {
             el('radarChartContainer').classList.remove('hidden');
+            el('exportCardBtn').classList.remove('hidden');
             const ctx = el('radarChart').getContext('2d');
             
             if (radarChartInstance) radarChartInstance.destroy();
