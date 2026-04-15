@@ -3238,8 +3238,8 @@ async function callGeminiNative(contentsArray, isJson = false) {
         
 
         // Save Download
-        function handleDownloadJSON() { 
-            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories,simulationHistory: appState.simulationHistory, version: APP_VERSION }; 
+        function handleDownloadJSON() {
+            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories, simulationHistory: appState.simulationHistory, discussionHistories: appState.discussionHistories, version: APP_VERSION };
             const blob = new Blob([JSON.stringify(data)], {type: "application/json"}); 
             const url = URL.createObjectURL(blob); 
             const a = document.createElement('a'); 
