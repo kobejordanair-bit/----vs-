@@ -40,7 +40,7 @@ app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://dynasty-ydov.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -130,6 +130,8 @@ async def call_gemini(request: Request, body: ChatRequest, x_app_token: Optional
     try:
         contents = []
         for msg in body.contents:
+            if not msg.get("parts") or not msg["parts"][0].get("text"):
+                continue
             role = "user" if msg["role"] == "user" else "model"
             text = msg["parts"][0]["text"]
             contents.append({"role": role, "parts": [{"text": text}]})
@@ -171,6 +173,8 @@ async def call_gemini_stream(request: Request, body: ChatRequest, x_app_token: O
     try:
         contents = []
         for msg in body.contents:
+            if not msg.get("parts") or not msg["parts"][0].get("text"):
+                continue
             role = "user" if msg["role"] == "user" else "model"
             text = msg["parts"][0]["text"]
             contents.append({"role": role, "parts": [{"text": text}]})
