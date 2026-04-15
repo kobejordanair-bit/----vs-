@@ -1546,15 +1546,31 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
             // 朝代分佈
             const dynastyOrder = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
-            const dynastyCounts = dynastyOrder.map(d => all.filter(l => l.dynasty === d).length);
+            const tiers = [
+                { label: 'S 級', ranks: ['S+','S','S-'], color: '#dc2626' },
+                { label: 'A 級', ranks: ['A+','A','A-'], color: '#7c3aed' },
+                { label: 'B 級', ranks: ['B+','B','B-'], color: '#10b981' },
+                { label: 'C/D 級', ranks: ['C+','C','C-','D'], color: '#6b7280' },
+            ];
             const dynCtx = el('statsDynastyChart').getContext('2d');
             statsChartInstances.push(new Chart(dynCtx, {
                 type: 'bar',
                 data: {
                     labels: dynastyOrder,
-                    datasets: [{ data: dynastyCounts, backgroundColor: '#d4af37', borderRadius: 4 }]
+                    datasets: tiers.map(t => ({
+                        label: t.label,
+                        data: dynastyOrder.map(d => all.filter(l => l.dynasty === d && t.ranks.includes(l.rank)).length),
+                        backgroundColor: t.color,
+                        borderRadius: 2,
+                    }))
                 },
-                options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 11 } } }, y: { beginAtZero: true } } }
+                options: {
+                    plugins: { legend: { position: 'top', labels: { font: { family: 'Noto Serif TC', size: 12 }, boxWidth: 14 } } },
+                    scales: {
+                        x: { stacked: true, ticks: { font: { size: 11 } } },
+                        y: { stacked: true, beginAtZero: true, ticks: { stepSize: 1 } }
+                    }
+                }
             }));
         }
 
