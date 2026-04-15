@@ -40,7 +40,7 @@ app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://dynasty-ydov.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
