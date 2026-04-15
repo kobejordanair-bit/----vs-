@@ -640,7 +640,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <div class="flex-1 overflow-y-auto custom-scrollbar p-8 bg-[#fffdf9]">
                 <!-- 總覽數字 -->
                 <div id="statsOverview" class="grid grid-cols-3 gap-4 mb-8"></div>
-                <!-- 圖表區 -->
+                <!-- 評級分佈 + 類型分佈 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
                         <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">評級分佈</h4>
@@ -651,9 +651,27 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <canvas id="statsTypeChart" height="220"></canvas>
                     </div>
                 </div>
+                <!-- 朝代人才指數排行榜 Top 5 -->
                 <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
-                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">朝代人才密度</h4>
+                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">朝代人才指數 Top 5 <span class="text-xs text-[#a8a29e] font-sans font-normal">（加權平均，人數≥5）</span></h4>
+                    <div id="statsTalentRanking"></div>
+                </div>
+                <!-- 朝代人才密度（可點擊）-->
+                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-3">
+                    <h4 class="font-bold font-serif text-[#2c2826] mb-1 tracking-wide">朝代人才密度 <span class="text-xs text-[#a8a29e] font-sans font-normal">（點擊朝代查看人物）</span></h4>
                     <canvas id="statsDynastyChart" height="160"></canvas>
+                </div>
+                <!-- 朝代詳情（點擊展開）-->
+                <div id="statsDynastyDetail" class="hidden bg-[#1c1917] rounded-xl p-5 mb-8"></div>
+                <!-- 類型 × 評級交叉分析 -->
+                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
+                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">類型 × 評級交叉分析</h4>
+                    <canvas id="statsTypeRankChart" height="180"></canvas>
+                </div>
+                <!-- S 級名人堂 -->
+                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
+                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">S 級名人堂</h4>
+                    <div id="statsHallOfFame"></div>
                 </div>
                 <!-- AI 分析 -->
                 <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
@@ -1496,9 +1514,20 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             statsChartInstances = [];
         }
 
+        const RANK_WEIGHTS = {'S+':5,'S':4,'S-':3,'A+':2.5,'A':2,'A-':1.5,'B+':1,'B':0.7,'B-':0.5,'C+':0.2,'C':0.2,'C-':0.2,'D':0.2};
+        const RANK_ORDER = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
+        const DYNASTY_ORDER = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
+
+        function calcDynastyIndex(people) {
+            if (people.length < 5) return null;
+            const sum = people.reduce((s, l) => s + (RANK_WEIGHTS[l.rank] || 0), 0);
+            return (sum / people.length).toFixed(2);
+        }
+
         function renderStatsPanel() {
             statsChartInstances.forEach(c => c.destroy());
             statsChartInstances = [];
+            el('statsDynastyDetail').classList.add('hidden');
 
             const all = legendsData;
             const total = all.length;
@@ -1523,55 +1552,149 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             `;
 
             // 評級分佈
-            const ranks = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
             const rankColors = ['#7f1d1d','#dc2626','#ef4444','#4c1d95','#3b82f6','#60a5fa','#10b981','#6b7280','#78716c','#d97706','#71717a','#7f1d1d','#1f2937'];
-            const rankCounts = ranks.map(r => all.filter(l => l.rank === r).length);
-            const rankCtx = el('statsRankChart').getContext('2d');
-            statsChartInstances.push(new Chart(rankCtx, {
+            statsChartInstances.push(new Chart(el('statsRankChart').getContext('2d'), {
                 type: 'bar',
-                data: { labels: ranks, datasets: [{ data: rankCounts, backgroundColor: rankColors, borderRadius: 4 }] },
+                data: { labels: RANK_ORDER, datasets: [{ data: RANK_ORDER.map(r => all.filter(l => l.rank === r).length), backgroundColor: rankColors, borderRadius: 4 }] },
                 options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
             }));
 
             // 類型分佈
-            const typeCtx = el('statsTypeChart').getContext('2d');
-            statsChartInstances.push(new Chart(typeCtx, {
+            statsChartInstances.push(new Chart(el('statsTypeChart').getContext('2d'), {
                 type: 'doughnut',
-                data: {
-                    labels: ['帝王', '將領', '名臣'],
-                    datasets: [{ data: [emperors, generals, ministers], backgroundColor: ['#b45309','#1e40af','#065f46'], borderWidth: 0 }]
-                },
+                data: { labels: ['帝王', '將領', '名臣'], datasets: [{ data: [emperors, generals, ministers], backgroundColor: ['#b45309','#1e40af','#065f46'], borderWidth: 0 }] },
                 options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
             }));
 
-            // 朝代分佈
-            const dynastyOrder = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
+            // 朝代人才指數 Top 5
+            const dynastyIndexList = DYNASTY_ORDER
+                .map(d => ({ name: d, people: all.filter(l => l.dynasty === d), index: calcDynastyIndex(all.filter(l => l.dynasty === d)) }))
+                .filter(d => d.index !== null)
+                .sort((a, b) => b.index - a.index)
+                .slice(0, 5);
+            const medals = ['🥇','🥈','🥉','4️⃣','5️⃣'];
+            el('statsTalentRanking').innerHTML = dynastyIndexList.map((d, i) => `
+                <div class="flex items-center gap-4 py-3 ${i < 4 ? 'border-b border-[#e5e0d3]' : ''}">
+                    <span class="text-2xl w-8 text-center">${medals[i]}</span>
+                    <span class="font-bold font-serif text-[#2c2826] w-24">${escapeHtml(d.name)}</span>
+                    <div class="flex-1 bg-[#f5f0e8] rounded-full h-3 overflow-hidden">
+                        <div class="h-3 rounded-full bg-gradient-to-r from-[#d4af37] to-[#b45309]" style="width:${Math.min(100, (d.index/5)*100)}%"></div>
+                    </div>
+                    <span class="text-lg font-bold text-[#b45309] w-12 text-right">${d.index}</span>
+                    <span class="text-xs text-[#a8a29e] w-16 text-right font-serif">${d.people.length} 人</span>
+                </div>
+            `).join('');
+
+            // 朝代人才密度（堆疊，可點擊）
             const tiers = [
                 { label: 'S 級', ranks: ['S+','S','S-'], color: '#dc2626' },
                 { label: 'A 級', ranks: ['A+','A','A-'], color: '#7c3aed' },
                 { label: 'B 級', ranks: ['B+','B','B-'], color: '#10b981' },
                 { label: 'C/D 級', ranks: ['C+','C','C-','D'], color: '#6b7280' },
             ];
-            const dynCtx = el('statsDynastyChart').getContext('2d');
-            statsChartInstances.push(new Chart(dynCtx, {
+            const dynIndexMap = Object.fromEntries(DYNASTY_ORDER.map(d => [d, calcDynastyIndex(all.filter(l => l.dynasty === d))]));
+            statsChartInstances.push(new Chart(el('statsDynastyChart').getContext('2d'), {
                 type: 'bar',
                 data: {
-                    labels: dynastyOrder,
+                    labels: DYNASTY_ORDER,
                     datasets: tiers.map(t => ({
                         label: t.label,
-                        data: dynastyOrder.map(d => all.filter(l => l.dynasty === d && t.ranks.includes(l.rank)).length),
+                        data: DYNASTY_ORDER.map(d => all.filter(l => l.dynasty === d && t.ranks.includes(l.rank)).length),
                         backgroundColor: t.color,
                         borderRadius: 2,
                     }))
                 },
                 options: {
-                    plugins: { legend: { position: 'top', labels: { font: { family: 'Noto Serif TC', size: 12 }, boxWidth: 14 } } },
-                    scales: {
-                        x: { stacked: true, ticks: { font: { size: 11 } } },
-                        y: { stacked: true, beginAtZero: true, ticks: { stepSize: 1 } }
-                    }
+                    plugins: {
+                        legend: { position: 'top', labels: { font: { family: 'Noto Serif TC', size: 12 }, boxWidth: 14 } },
+                        tooltip: { callbacks: { footer: (items) => {
+                            const d = DYNASTY_ORDER[items[0].dataIndex];
+                            const idx = dynIndexMap[d];
+                            return idx ? `人才指數：${idx}` : '人才指數：樣本不足';
+                        }}}
+                    },
+                    scales: { x: { stacked: true, ticks: { font: { size: 11 } } }, y: { stacked: true, beginAtZero: true } },
+                    onClick: (_, elements) => {
+                        if (elements.length > 0) showDynastyDetail(DYNASTY_ORDER[elements[0].index]);
+                    },
+                    onHover: (event) => { event.native.target.style.cursor = 'pointer'; }
                 }
             }));
+
+            // 類型 × 評級交叉分析
+            const typeGroups = [
+                { label: '帝王', type: 'emperor', color: '#b45309' },
+                { label: '將領', type: 'general', color: '#1e40af' },
+                { label: '名臣', type: 'minister', color: '#065f46' },
+            ];
+            const tierLabels = ['S 級', 'A 級', 'B 級', 'C/D 級'];
+            const tierRanks = [['S+','S','S-'],['A+','A','A-'],['B+','B','B-'],['C+','C','C-','D']];
+            statsChartInstances.push(new Chart(el('statsTypeRankChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: tierLabels,
+                    datasets: typeGroups.map(g => ({
+                        label: g.label,
+                        data: tierRanks.map(tr => all.filter(l => l.type === g.type && tr.includes(l.rank)).length),
+                        backgroundColor: g.color,
+                        borderRadius: 4,
+                    }))
+                },
+                options: {
+                    plugins: { legend: { position: 'top', labels: { font: { family: 'Noto Serif TC', size: 12 }, boxWidth: 14 } } },
+                    scales: { x: { ticks: { font: { size: 12 } } }, y: { beginAtZero: true } }
+                }
+            }));
+
+            // S 級名人堂
+            const sAll = all.filter(l => ['S+','S','S-'].includes(l.rank));
+            const hallGroups = [
+                { label: '⚔️ 帝王', type: 'emperor' },
+                { label: '🗡️ 將領', type: 'general' },
+                { label: '📜 名臣', type: 'minister' },
+            ];
+            el('statsHallOfFame').innerHTML = hallGroups.map(g => {
+                const people = sAll.filter(l => l.type === g.type).sort((a, b) => RANK_ORDER.indexOf(a.rank) - RANK_ORDER.indexOf(b.rank));
+                if (!people.length) return '';
+                return `
+                    <div class="mb-4">
+                        <div class="text-sm font-bold font-serif text-[#57534e] mb-2 tracking-wide">${g.label}</div>
+                        <div class="flex flex-wrap gap-2">
+                            ${people.map(l => {
+                                const rc = `rank-${l.rank.replace('+','-plus').replace('-','-minus')}`;
+                                return `<button onclick="closeStatsPanel(); showAIAnalysis('${l.id}')" class="flex items-center gap-1.5 bg-[#fafaf8] hover:bg-[#f0ece4] border border-[#e5e0d3] rounded-lg px-3 py-1.5 transition-colors text-sm font-serif">
+                                    <span class="rank-badge ${rc}" style="font-size:11px;padding:1px 6px;">${escapeHtml(l.rank)}</span>
+                                    <span class="text-[#2c2826]">${escapeHtml(l.name)}</span>
+                                </button>`;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function showDynastyDetail(dynastyName) {
+            const people = legendsData.filter(l => l.dynasty === dynastyName)
+                .sort((a, b) => RANK_ORDER.indexOf(a.rank) - RANK_ORDER.indexOf(b.rank));
+            const index = calcDynastyIndex(people);
+            const detail = el('statsDynastyDetail');
+            detail.innerHTML = `
+                <div class="flex justify-between items-center mb-4">
+                    <div class="text-white font-bold font-serif text-lg">${escapeHtml(dynastyName)} <span class="text-[#a8a29e] text-sm font-normal ml-2">${people.length} 人 · 人才指數 ${index ?? '樣本不足'}</span></div>
+                    <button onclick="el('statsDynastyDetail').classList.add('hidden')" class="text-[#a8a29e] hover:text-white transition-colors"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    ${people.map(l => {
+                        const rc = `rank-${l.rank.replace('+','-plus').replace('-','-minus')}`;
+                        return `<button onclick="closeStatsPanel(); showAIAnalysis('${l.id}')" class="flex items-center gap-1.5 bg-[#2c2826] hover:bg-[#44403c] rounded-lg px-3 py-1.5 transition-colors text-sm font-serif border border-[#44403c]">
+                            <span class="rank-badge ${rc}" style="font-size:11px;padding:1px 6px;">${escapeHtml(l.rank)}</span>
+                            <span class="text-[#e5e5e5]">${escapeHtml(l.name)}</span>
+                        </button>`;
+                    }).join('')}
+                </div>
+            `;
+            detail.classList.remove('hidden');
+            detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
         async function runStatsAI() {
