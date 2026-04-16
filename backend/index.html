@@ -438,11 +438,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <button class="filter-btn px-3 py-1 rounded text-xs text-[#52525b]" data-rank="C">C 敗國</button>
                 <button class="filter-btn px-3 py-1 rounded text-xs text-[#450a0a]" data-rank="C-">C- 毀國</button>
                 <button class="filter-btn px-3 py-1 rounded text-xs text-gray-500" data-rank="D">D 無能</button>
-                <div class="h-6 w-px bg-[#e5e0d3] mx-2"></div>
-                <button id="sortBtn" onclick="cycleSortOrder()" title="排序方式" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] text-xs font-bold hover:bg-[#ede9e0] transition-colors">
-                    <i class="fa-solid fa-arrow-up-wide-short"></i>
-                    <span id="sortLabel">評級</span>
-                </button>
             </div>
         </div>
 
@@ -1406,20 +1401,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             renderLegends();
         }
 
-        const SORT_CYCLE = [
-            { key: 'rank',      label: '評級', icon: 'fa-arrow-up-wide-short' },
-            { key: 'date-desc', label: '最新', icon: 'fa-clock-rotate-left' },
-            { key: 'date-asc',  label: '最舊', icon: 'fa-clock' },
-        ];
-        function cycleSortOrder() {
-            const idx = SORT_CYCLE.findIndex(s => s.key === appState.sortOrder);
-            const next = SORT_CYCLE[(idx + 1) % SORT_CYCLE.length];
-            appState.sortOrder = next.key;
-            el('sortLabel').textContent = next.label;
-            renderLegends();
-        }
-
-        // Optimized Render with textContent for safety
+// Optimized Render with textContent for safety
         function renderLegends() {
             const container = el('gridContainer');
             container.innerHTML = '';
