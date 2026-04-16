@@ -1415,8 +1415,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             const idx = SORT_CYCLE.findIndex(s => s.key === appState.sortOrder);
             const next = SORT_CYCLE[(idx + 1) % SORT_CYCLE.length];
             appState.sortOrder = next.key;
-            const btn = el('sortBtn');
-            btn.querySelector('i').className = `fa-solid ${next.icon}`;
             el('sortLabel').textContent = next.label;
             renderLegends();
         }
