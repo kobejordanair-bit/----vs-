@@ -162,6 +162,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <span id="debateModeStatus" class="hidden text-xs text-[#a8a29e] selecting-role-text"></span>
             <button onclick="event.stopPropagation(); clearDebateSlots()" class="text-xs text-[#a8a29e] hover:text-red-500 font-serif px-2 py-1 rounded hover:bg-red-50 transition-colors">重置</button>
             <i class="fa-solid fa-chevron-down text-[#a8a29e] text-sm"></i>
+            <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors ml-1"><i class="fa-solid fa-xmark text-lg"></i></button>
         </div>
     </div>
     <div id="debateModeContent" class="p-3 overflow-y-auto" style="height:calc(340px - 44px);">
