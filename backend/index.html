@@ -411,6 +411,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                      <div id="selectionModeTip" class="hidden flex items-center gap-2 text-[#b45309] bg-[#fffbeb] border border-[#fcd34d] px-4 py-2 rounded-lg text-sm font-bold animate-pulse shadow-sm">
                         <i class="fa-solid fa-hand-pointer"></i><span id="tipText">點擊下方人物入陣</span>
                     </div>
+                    <button id="sortBtn" onclick="cycleSortOrder()" title="排序方式" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] text-xs font-bold hover:bg-[#ede9e0] transition-colors">
+                        <i class="fa-solid fa-arrow-up-wide-short"></i>
+                        <span id="sortLabel">評級</span>
+                    </button>
                     <div class="text-[#78716c] font-serif border-l border-[#d6d3c9] pl-4">
                         <span class="text-xs uppercase tracking-widest">Total</span>
                         <span id="countDisplay" class="text-2xl font-bold text-[#2c2826] calligraphy ml-1">0</span>
@@ -1263,6 +1267,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             typeFilter: 'all',
             dynastyFilter: 'all',
             rankFilter: 'all',
+            sortOrder: 'rank',
             compareList: [], // Store IDs for comparison
             warRoom: { 
                 minimized: false, 
@@ -1400,6 +1405,21 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             renderLegends();
         }
 
+        const SORT_CYCLE = [
+            { key: 'rank',      label: '評級', icon: 'fa-arrow-up-wide-short' },
+            { key: 'date-desc', label: '最新', icon: 'fa-clock-rotate-left' },
+            { key: 'date-asc',  label: '最舊', icon: 'fa-clock' },
+        ];
+        function cycleSortOrder() {
+            const idx = SORT_CYCLE.findIndex(s => s.key === appState.sortOrder);
+            const next = SORT_CYCLE[(idx + 1) % SORT_CYCLE.length];
+            appState.sortOrder = next.key;
+            const btn = el('sortBtn');
+            btn.querySelector('i').className = `fa-solid ${next.icon}`;
+            el('sortLabel').textContent = next.label;
+            renderLegends();
+        }
+
         // Optimized Render with textContent for safety
         function renderLegends() {
             const container = el('gridContainer');
@@ -1412,7 +1432,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 const matchDynasty = appState.dynastyFilter === 'all' || g.dynasty === appState.dynastyFilter;
                 const matchSearch = g.name.includes(searchQuery) || g.title.includes(searchQuery) || g.tag.includes(searchQuery) || (g.desc && g.desc.includes(searchQuery));
                 return matchType && matchRank && matchDynasty && matchSearch;
-            }).sort((a, b) => (rankOrder[a.rank] ?? 99) - (rankOrder[b.rank] ?? 99));
+            }).sort((a, b) => {
+                if (appState.sortOrder === 'date-asc') return (a.createdAt || 0) - (b.createdAt || 0);
+                if (appState.sortOrder === 'date-desc') return (b.createdAt || 0) - (a.createdAt || 0);
+                return (rankOrder[a.rank] ?? 99) - (rankOrder[b.rank] ?? 99);
+            });
 
             el('countDisplay').innerText = filtered.length;
 
@@ -1437,10 +1461,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 if(debateIds.includes(g.id)) selectionClass = 'selected-red';
                 const isMod = g.isModified ? '<span class="mod-badge">修</span>' : '';
                 const isNew = appState.customLegends.some(cg => cg.id === g.id) ? '<span class="new-badge">新</span>' : '';
+                const hasDeep = appState.modifiedLegends[g.id]?.deepAnalysis ? '<span title="已有深度評鑑快取" class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-purple-500 shadow z-20"></span>' : '';
 
                 const cardHtml = `
                 <div class="paper-card rounded-xl p-5 relative flex flex-col h-full cursor-pointer ${selectionClass} ${typeClass} ${g.rank==='S+'?'card-s-plus':''}" onclick="handleCardClick('${g.id}')">
-                    ${isMod || isNew}
+                    ${isMod || isNew}${hasDeep}
                     <div class="flex justify-between items-start mb-3 relative z-10">
                         <div class="flex-1">
                             <h3 class="text-xl font-bold text-[#2c2826] tracking-tight flex items-center gap-2">${typeIcon} ${escapeHtml(g.name)}</h3>
@@ -1454,12 +1479,12 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     </div>
                     <div class="relative py-2 my-2 bg-[#f9f7f1] rounded px-3 border-l-2 border-[#d4af37] shadow-sm z-10"><p class="text-lg text-[#44403c] italic poem-font leading-relaxed tracking-wide text-center">"${escapeHtml(g.poem)}"</p></div>
                     <p class="text-xs text-[#57534e] leading-relaxed pt-3 border-t border-[#e5e0d3] mb-4 flex-grow font-serif z-10">${escapeHtml(g.desc)}</p>
-                    <div class="flex gap-2 mt-auto pt-1 relative z-10" onclick="event.stopPropagation()">
-                        <button onclick="startChat('${g.id}')" class="flex-1 bg-white hover:bg-[#f5f5f4] text-[#57534e] text-xs font-serif font-bold py-2 rounded border border-[#e5e0d3] transition-colors"><i class="fa-solid fa-comment-dots text-[#a8a29e] mr-1"></i>對話</button>
-                        <button onclick="showAIAnalysis('${g.id}')" class="flex-1 btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
-                        <button onclick=\"showRelations('${g.id}')\" class=\"flex-1 bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-serif font-bold py-2 rounded border border-amber-200 transition-colors\"><i class=\"fa-solid fa-diagram-project text-amber-500 mr-1\"></i>關係</button>
-                        <button onclick=\"event.stopPropagation(); showDeepAnalysis('${g.id}')\" class=\"flex-1 bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-serif font-bold py-2 rounded border border-purple-200 transition-colors\"><i class=\"fa-solid fa-magnifying-glass-chart text-purple-500 mr-1\"></i>深度</button>
-                        <button onclick="toggleCompare('${g.id}')" class="w-10 bg-teal-50 hover:bg-teal-100 text-teal-600 text-xs font-bold rounded border border-teal-200 transition-colors" title="加入比對"><i class="fa-solid fa-code-compare"></i></button>
+                    <div class="flex flex-wrap gap-1.5 mt-auto pt-1 relative z-10" onclick="event.stopPropagation()">
+                        <button onclick="startChat('${g.id}')" class="flex-1 min-w-[3.5rem] bg-white hover:bg-[#f5f5f4] text-[#57534e] text-xs font-serif font-bold py-2 rounded border border-[#e5e0d3] transition-colors"><i class="fa-solid fa-comment-dots text-[#a8a29e] mr-1"></i>對話</button>
+                        <button onclick="showAIAnalysis('${g.id}')" class="flex-1 min-w-[3.5rem] btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
+                        <button onclick=\"showRelations('${g.id}')\" class=\"flex-1 min-w-[3.5rem] bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-serif font-bold py-2 rounded border border-amber-200 transition-colors\"><i class=\"fa-solid fa-diagram-project text-amber-500 mr-1\"></i>關係</button>
+                        <button onclick=\"event.stopPropagation(); showDeepAnalysis('${g.id}')\" class=\"flex-1 min-w-[3.5rem] bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-serif font-bold py-2 rounded border border-purple-200 transition-colors\"><i class=\"fa-solid fa-magnifying-glass-chart text-purple-500 mr-1\"></i>深度</button>
+                        <button onclick="toggleCompare('${g.id}')" class="w-9 bg-teal-50 hover:bg-teal-100 text-teal-600 text-xs font-bold rounded border border-teal-200 transition-colors" title="加入比對"><i class="fa-solid fa-code-compare"></i></button>
                     </div>
                 </div>`;
                 
@@ -2756,7 +2781,8 @@ const data = JSON.parse(jsonStr);
                 title: el('newTitle').value,
                 tag: el('newTag').value,
                 poem: el('newPoem').value,
-                desc: el('newDesc').value
+                desc: el('newDesc').value,
+                createdAt: Date.now()
             };
             
             appState.customLegends.push(newLegend);
