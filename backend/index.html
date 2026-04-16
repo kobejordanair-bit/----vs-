@@ -651,11 +651,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <canvas id="statsTypeChart" height="220"></canvas>
                     </div>
                 </div>
-                <!-- 朝代菁英排行 -->
-                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
-                    <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">朝代菁英排行 <span class="text-xs text-[#a8a29e] font-sans font-normal">（S + A 級人數）</span></h4>
-                    <div id="statsTalentRanking"></div>
-                </div>
                 <!-- 朝代人才密度（可點擊）-->
                 <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-3">
                     <h4 class="font-bold font-serif text-[#2c2826] mb-1 tracking-wide">朝代人才密度 <span class="text-xs text-[#a8a29e] font-sans font-normal">（點擊朝代查看人物）</span></h4>
@@ -1559,36 +1554,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
             }));
 
-            // 朝代菁英排行（S+A 級人數）
             const eliteRanks = ['S+','S','S-','A+','A','A-'];
-            const dynastyEliteList = DYNASTY_ORDER
-                .map(d => {
-                    const people = all.filter(l => l.dynasty === d);
-                    const elite = people.filter(l => eliteRanks.includes(l.rank)).length;
-                    return { name: d, elite, total: people.length };
-                })
-                .filter(d => d.total > 0)
-                .sort((a, b) => b.elite - a.elite);
-            const top5 = dynastyEliteList.slice(0, 5);
-            const bot5 = [...dynastyEliteList].reverse().slice(0, 5).reverse();
-            const maxElite = top5[0]?.elite || 1;
-            const topMedals = ['🥇','🥈','🥉','4️⃣','5️⃣'];
-            const renderRow = (d, i, isTop) => `
-                <div class="flex items-center gap-4 py-2.5 ${i < 4 ? 'border-b border-[#e5e0d3]' : ''}">
-                    <span class="text-xl w-7 text-center">${isTop ? topMedals[i] : '⚠️'}</span>
-                    <span class="font-bold font-serif text-[#2c2826] w-20 shrink-0">${escapeHtml(d.name)}</span>
-                    <div class="flex-1 bg-[#f5f0e8] rounded-full h-2.5 overflow-hidden">
-                        <div class="h-2.5 rounded-full ${isTop ? 'bg-gradient-to-r from-[#d4af37] to-[#b45309]' : 'bg-[#d1d5db]'}" style="width:${Math.max(2, Math.round((d.elite/maxElite)*100))}%"></div>
-                    </div>
-                    <span class="font-bold ${isTop ? 'text-[#b45309]' : 'text-[#9ca3af]'} w-8 text-right">${d.elite}</span>
-                    <span class="text-xs text-[#a8a29e] w-14 text-right font-serif">共 ${d.total} 人</span>
-                </div>`;
-            el('statsTalentRanking').innerHTML = `
-                <div class="mb-1 text-xs font-bold text-[#57534e] tracking-widest uppercase">菁英最多</div>
-                ${top5.map((d, i) => renderRow(d, i, true)).join('')}
-                <div class="mt-5 mb-1 text-xs font-bold text-[#9ca3af] tracking-widest uppercase">菁英最少</div>
-                ${bot5.map((d, i) => renderRow(d, i, false)).join('')}
-            `;
 
             // 朝代人才密度（堆疊，可點擊）
             const tiers = [
