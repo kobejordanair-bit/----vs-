@@ -496,16 +496,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <div class="flex gap-4 items-stretch min-w-max" id="warRoomFactionsContainer"></div>
         </div>
         <!-- 底部操作列 -->
-        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-2 flex flex-col gap-2">
-            <div class="flex gap-2">
-                <input id="warRoomDescInput" type="text" placeholder="描述選角條件，例：明朝夢幻陣容..." class="flex-1 px-3 py-1.5 rounded-lg bg-white border border-[#d6d3c9] text-xs font-serif outline-none focus:border-[#a8a29e]">
-                <button onclick="autoSelectByDescription()" id="aiSelectBtn" class="px-3 py-1.5 bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-100 whitespace-nowrap transition-colors">AI選角</button>
-                <button onclick="randomFillFactions()" class="px-3 py-1.5 bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] text-xs font-bold rounded-lg hover:bg-[#ede9e0] whitespace-nowrap transition-colors">隨機</button>
-            </div>
-            <div class="flex items-center justify-center gap-4">
-                <div class="w-9 h-9 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-sm italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
-                <button onclick="openBattleSetup()" id="startBattleBtn" class="btn-gold px-6 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">戰前設定</button>
-            </div>
+        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
+            <div class="w-9 h-9 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-sm italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
+            <button onclick="openBattleSetup()" id="startBattleBtn" class="btn-gold px-6 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">戰前設定</button>
         </div>
     </div>
 
@@ -3089,8 +3082,13 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                         <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-flag mr-1"></i>${f.name}</span>
                         <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/6</span>
                     </div>
-                    <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[60vh]">
+                    <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[45vh]">
                         ${slotsHtml}
+                    </div>
+                    <div class="border-t border-slate-100 p-2 flex gap-1">
+                        <input id="desc_${f.id}" type="text" placeholder="AI選角描述..." onclick="event.stopPropagation()" class="flex-1 min-w-0 text-[10px] px-2 py-1 rounded border border-slate-200 bg-[#f5f5f4] outline-none">
+                        <button onclick="event.stopPropagation(); autoSelectByDescription('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-purple-50 border border-purple-200 text-purple-700 rounded hover:bg-purple-100 whitespace-nowrap">AI</button>
+                        <button onclick="event.stopPropagation(); randomFillFaction('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] rounded hover:bg-[#ede9e0] whitespace-nowrap">隨機</button>
                     </div>
                 </div>`;
                 const div = document.createElement('div');
@@ -3271,41 +3269,53 @@ syncToCloud();
             }).join('');
         }
 
-        async function autoSelectByDescription() {
-            const desc = el('warRoomDescInput').value.trim();
+        async function autoSelectByDescription(factionId) {
+            const f = appState.warRoom.factions.find(x => x.id === factionId);
+            if (!f) return;
+            const desc = (el(`desc_${factionId}`) || {}).value?.trim();
             if (!desc) return customAlert('請輸入選角描述');
-            const btn = el('aiSelectBtn');
+            const btn = event.currentTarget;
+            const origText = btn.textContent;
             btn.disabled = true;
-            btn.textContent = '選角中...';
+            btn.textContent = '...';
             try {
-                const factions = appState.warRoom.factions;
                 const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
-                const legendList = legendsData.map(l => `${l.name}（${l.rank}，${l.dynasty}，${l.type==='emperor'?'帝王':l.type==='general'?'名將':'名臣'}）`).join('；');
-                const factionsDesc = factions.map(f => `${f.id}（${f.name}）：${Object.keys(f.slots).map(r => warLabels[r]).join('、')}`).join('\n');
-                const prompt = `根據描述「${desc}」，從以下人物清單中，為各陣營各角色選擇最合適的人物。每個人物只能出現一次，只能選清單中存在的人物。\n【人物清單】：${legendList}\n【陣營與角色鍵名】：\n${factionsDesc}\n返回純JSON，格式：{"factionId":{"roleKey":"人物名稱",...},...}\nfactionId為：${factions.map(f=>f.id).join('、')}，roleKey為：${Object.keys(factions[0].slots).join('、')}`;
+                const allUsed = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
+                const available = legendsData.filter(l => !allUsed.has(l.id) || Object.values(f.slots).includes(l.id));
+                const legendList = available.map(l => `${l.name}（${l.rank}，${l.dynasty}，${l.type==='emperor'?'帝王':l.type==='general'?'名將':'名臣'}）`).join('；');
+                const roleKeys = Object.keys(f.slots).join('、');
+                const prompt = `根據描述「${desc}」，從以下人物清單中，為「${f.name}」的各角色選擇最合適的人物。每個人物只能出現一次，只能選清單中存在的人物。\n【人物清單】：${legendList}\n【需填角色鍵名】：${roleKeys}\n返回純JSON，格式：{"roleKey":"人物名稱"}\nroleKey為：${roleKeys}`;
                 const res = await callGemini(prompt, true);
                 const assignments = JSON.parse(res.result);
-                const used = new Set();
-                factions.forEach(f => { Object.values(f.slots).filter(Boolean).forEach(id => used.add(id)); });
-                factions.forEach(f => {
-                    if (!assignments[f.id]) return;
-                    Object.entries(assignments[f.id]).forEach(([role, name]) => {
-                        const legend = legendsData.find(l => l.name === name);
-                        if (legend && (role in f.slots) && !used.has(legend.id)) {
-                            f.slots[role] = legend.id;
-                            used.add(legend.id);
-                        }
-                    });
+                const used = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
+                Object.entries(assignments).forEach(([role, name]) => {
+                    const legend = legendsData.find(l => l.name === name);
+                    if (legend && (role in f.slots) && !used.has(legend.id)) {
+                        f.slots[role] = legend.id;
+                        used.add(legend.id);
+                    }
                 });
                 updateWarRoomUI();
                 renderLegends();
-                customAlert('AI 選角完成，可手動調整。');
             } catch(e) {
                 customAlert('AI 選角失敗：' + e.message);
             } finally {
                 btn.disabled = false;
-                btn.textContent = 'AI 選角';
+                btn.textContent = origText;
             }
+        }
+
+        function randomFillFaction(factionId) {
+            const f = appState.warRoom.factions.find(x => x.id === factionId);
+            if (!f) return;
+            const used = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
+            const pool = [...legendsData].sort(() => Math.random() - 0.5).filter(l => !used.has(l.id));
+            Object.keys(f.slots).forEach(role => {
+                if (f.slots[role] || pool.length === 0) return;
+                f.slots[role] = pool.shift().id;
+            });
+            updateWarRoomUI();
+            renderLegends();
         }
 
         function randomFillFactions() {
