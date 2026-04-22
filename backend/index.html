@@ -89,6 +89,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         .soul-tab { color: #c4b5fd; opacity: 0.6; }
         .soul-tab:hover { opacity: 0.85; }
         .soul-tab-active { color: #f3e8ff !important; opacity: 1 !important; border-bottom-color: #d8b4fe !important; background: rgba(255,255,255,0.08); }
+        .eval-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
+        .eval-tab:hover { color: #e5e5e5; }
+        .eval-tab-active { color: #f5f5f4 !important; border-bottom-color: #d4af37 !important; }
                 
         /* Compare Bar */
         #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
@@ -620,6 +623,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <button onclick="closeModal()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
                 </div>
             </div>
+            <div id="evalTabBar" class="hidden bg-[#252220] border-b border-[#3a3530] flex shrink-0 px-2">
+                <button onclick="setEvalTab('review')" id="eval-tab-review" class="eval-tab eval-tab-active flex items-center gap-1.5"><i class="fa-solid fa-scroll text-[#d4af37]"></i> 賞析</button>
+                <button onclick="setEvalTab('calibrate')" id="eval-tab-calibrate" class="eval-tab flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-chart text-purple-400"></i> 校準評級</button>
+            </div>
             <div id="chatContainer" class="hidden flex flex-col flex-1 min-h-0 bg-[#fcfaf5] overflow-hidden relative">
                 <div id="chatHistory" class="flex-1 overflow-y-auto p-6 flex flex-col gap-4 custom-scrollbar z-10 overscroll-contain"></div>
                 <div class="p-5 border-t border-[#e5e0d3] bg-white flex gap-3 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-20 shrink-0">
@@ -789,8 +796,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     </div>
                     <div class="flex gap-3">
                         <input type="text" id="addInputName" placeholder="例如：管仲、王安石..." class="flex-1 px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-emerald-500 font-serif">
-                        <button onclick="analyzeNewLegend()" class="bg-[#047857] hover:bg-[#059669] text-white px-6 py-3 rounded-lg font-bold font-serif shadow-sm transition-all">AI 評鑑</button>
-                        <button onclick="deepAnalyzeNewLegend()" class="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-3 rounded-lg font-bold font-serif shadow-sm transition-all">深度評鑑</button>
+                        <button onclick="deepAnalyzeNewLegend()" class="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-3 rounded-lg font-bold font-serif shadow-sm transition-all"><i class="fa-solid fa-magnifying-glass-chart mr-1"></i>深度評鑑入冊</button>
                     </div>
                 </div>
                 <div id="addLoading" class="hidden flex-col items-center justify-center py-8">
@@ -1490,9 +1496,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <p class="text-xs text-[#57534e] leading-relaxed pt-3 border-t border-[#e5e0d3] mb-4 flex-grow font-serif z-10">${escapeHtml(g.desc)}</p>
                     <div class="flex flex-wrap gap-1.5 mt-auto pt-1 relative z-10" onclick="event.stopPropagation()">
                         <button onclick="startChat('${g.id}')" class="flex-1 min-w-[3.5rem] bg-white hover:bg-[#f5f5f4] text-[#57534e] text-xs font-serif font-bold py-2 rounded border border-[#e5e0d3] transition-colors"><i class="fa-solid fa-comment-dots text-[#a8a29e] mr-1"></i>對話</button>
-                        <button onclick="showAIAnalysis('${g.id}')" class="flex-1 min-w-[3.5rem] btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
+                        <button onclick="openEvalModal('${g.id}')" class="flex-1 min-w-[3.5rem] btn-ink text-xs font-bold py-2 rounded transition-colors group"><i class="fa-solid fa-scroll text-[#d4af37] mr-1"></i>評鑑</button>
                         <button onclick=\"showRelations('${g.id}')\" class=\"flex-1 min-w-[3.5rem] bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs font-serif font-bold py-2 rounded border border-amber-200 transition-colors\"><i class=\"fa-solid fa-diagram-project text-amber-500 mr-1\"></i>關係</button>
-                        <button onclick=\"event.stopPropagation(); showDeepAnalysis('${g.id}')\" class=\"flex-1 min-w-[3.5rem] bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-serif font-bold py-2 rounded border border-purple-200 transition-colors\"><i class=\"fa-solid fa-magnifying-glass-chart text-purple-500 mr-1\"></i>深度</button>
                         <button onclick="toggleCompare('${g.id}')" class="w-9 bg-teal-50 hover:bg-teal-100 text-teal-600 text-xs font-bold rounded border border-teal-200 transition-colors" title="加入比對"><i class="fa-solid fa-code-compare"></i></button>
                     </div>
                 </div>`;
@@ -1511,6 +1516,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         // Modal & AI Logic
         function openModal(title, type = 'content') {
             el('aiModal').classList.remove('hidden');
+            el('evalTabBar').classList.add('hidden');
             el('modalTitle').innerHTML = `<i class="fa-solid fa-scroll text-[#d4af37] mr-2"></i> ${title}`;
             if (type === 'chat') {
                 el('chatContainer').classList.remove('hidden');
@@ -1530,6 +1536,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         function closeModal() {
             el('aiModal').classList.add('hidden');
+            el('evalTabBar').classList.add('hidden');
             appState.chatMode.targetId = null;
         }
 
@@ -1682,7 +1689,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <div class="flex flex-wrap gap-2">
                             ${people.map(l => {
                                 const rc = `rank-${l.rank.replace('+','-plus').replace('-','-minus')}`;
-                                return `<button onclick="closeStatsPanel(); showAIAnalysis('${l.id}')" class="flex items-center gap-1.5 bg-[#fafaf8] hover:bg-[#f0ece4] border border-[#e5e0d3] rounded-lg px-3 py-1.5 transition-colors text-sm font-serif">
+                                return `<button onclick="closeStatsPanel(); openEvalModal('${l.id}')" class="flex items-center gap-1.5 bg-[#fafaf8] hover:bg-[#f0ece4] border border-[#e5e0d3] rounded-lg px-3 py-1.5 transition-colors text-sm font-serif">
                                     <span class="rank-badge ${rc}" style="font-size:11px;padding:1px 6px;">${escapeHtml(l.rank)}</span>
                                     <span class="text-[#2c2826]">${escapeHtml(l.name)}</span>
                                 </button>`;
@@ -1706,7 +1713,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div class="flex flex-wrap gap-2">
                     ${people.map(l => {
                         const rc = `rank-${l.rank.replace('+','-plus').replace('-','-minus')}`;
-                        return `<button onclick="closeStatsPanel(); showAIAnalysis('${l.id}')" class="flex items-center gap-1.5 bg-[#2c2826] hover:bg-[#44403c] rounded-lg px-3 py-1.5 transition-colors text-sm font-serif border border-[#44403c]">
+                        return `<button onclick="closeStatsPanel(); openEvalModal('${l.id}')" class="flex items-center gap-1.5 bg-[#2c2826] hover:bg-[#44403c] rounded-lg px-3 py-1.5 transition-colors text-sm font-serif border border-[#44403c]">
                             <span class="rank-badge ${rc}" style="font-size:11px;padding:1px 6px;">${escapeHtml(l.rank)}</span>
                             <span class="text-[#e5e5e5]">${escapeHtml(l.name)}</span>
                         </button>`;
@@ -1874,20 +1881,126 @@ ${allNames}
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
     }
 }
-async function showDeepAnalysis(id) {
+        // ── 統一評鑑入口 ─────────────────────────────────────────
+        let currentEvalTab = 'review';
+
+        function openEvalModal(id, defaultTab = 'review') {
             const legend = legendsData.find(l => l.id === id);
             if (!legend) return;
-             currentAnalysisId = id;
+            currentAnalysisId = id;
+            currentEvalTab = defaultTab;
+            openModal(`${legend.name} · 評鑑`, 'content');
+            el('evalTabBar').classList.remove('hidden');
+            document.querySelectorAll('.eval-tab').forEach(b => b.classList.remove('eval-tab-active'));
+            el(`eval-tab-${defaultTab}`).classList.add('eval-tab-active');
+            if (defaultTab === 'review') _loadReviewContent(id);
+            else _loadCalibrationContent(id);
+        }
 
+        function setEvalTab(tab) {
+            if (!currentAnalysisId) return;
+            currentEvalTab = tab;
+            document.querySelectorAll('.eval-tab').forEach(b => b.classList.remove('eval-tab-active'));
+            el(`eval-tab-${tab}`).classList.add('eval-tab-active');
+            el('radarChartContainer').classList.add('hidden');
+            el('modalContent').innerHTML = '';
+            el('loadingState').classList.add('hidden');
+            el('regenStatsBtn').classList.add('hidden');
+            el('regenDeepBtn').classList.add('hidden');
+            if (tab === 'review') _loadReviewContent(currentAnalysisId);
+            else _loadCalibrationContent(currentAnalysisId);
+        }
+
+        // 賞析 tab 內容載入
+        async function _loadReviewContent(id, forceRegen = false) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
             const myToken = ++currentRequestToken;
-            openModal(`${legend.name} · 深度評鑑`, 'content');
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            el('radarChartContainer').classList.add('hidden');
+            el('regenStatsBtn').classList.add('hidden');
+
+            const cachedStats = appState.modifiedLegends[id]?.stats;
+            const cachedAnalysis = appState.modifiedLegends[id]?.analysis;
+            const needsStats = forceRegen || !cachedStats;
+            const needsAnalysis = forceRegen || !cachedAnalysis;
+
+            if (!needsStats && !needsAnalysis) {
+                el('loadingState').classList.add('hidden');
+                renderRadarChart(legend.name, cachedStats);
+                el('regenStatsBtn').classList.remove('hidden');
+                setModalContent(cachedAnalysis);
+                renderDiscussionPanel(id, cachedAnalysis);
+                return;
+            }
+            if (!needsStats) { renderRadarChart(legend.name, cachedStats); el('regenStatsBtn').classList.remove('hidden'); }
+
+            let prompt = `請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${legend.name}（${legend.title}）。
+
+【分析準則】：
+1. **拒絕刻板印象**：主動挑戰主流史觀，至少提出一個反常識的論點並說明依據。
+2. **多維度分析**：結合史料、當時局勢以及人心（心理動機），引用具體事件、年份、地名。
+3. **心理動機優先**：深入分析每個重大決策背後的真實心理動機，還原「人」的複雜性。
+4. **時代局限性**：嚴格區分哪些失敗是時代局限，哪些是個人能力問題。
+5. **角色本位**：${legend.type === 'emperor' ? '純粹根據「作為帝王」的表現（統御、決策、國運）分析' : legend.type === 'general' ? '純粹根據「作為將領」的表現（戰略、戰術、治軍）分析' : '純粹根據「作為臣子」的表現（施政、輔佐、權謀）分析'}。
+
+請依此撰寫以下章節：
+1. **【歷史局勢與定位】**：置身於當時的時空背景，他面對的是什麼局，又在歷史長河中站什麼位置。
+2. **【深度功過剖析】**：具體事例分析，探討其決策背後的深層邏輯與得失。
+3. **【人性與性格側寫】**：還原其作為「人」的真實面貌與心理特質。
+4. **【如果生在現代】**：推測他適合什麼職業，如何處世。`;
+
+            if (needsStats) {
+                prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n【重要格式要求】請在回應的最開頭，第一行就輸出JSON，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}，然後換行再開始撰寫Markdown分析文章。JSON必須是第一個輸出的內容。`;
+            }
+
+            try {
+                let streamText = '';
+                await callGeminiStream(prompt, (partial) => {
+                    if (myToken !== currentRequestToken) return;
+                    streamText = partial;
+                    el('loadingState').classList.add('hidden');
+                    el('modalContent').innerHTML = safeMarkdown(partial);
+                });
+                if (myToken !== currentRequestToken) return;
+                let cleanText = streamText;
+                if (needsStats) {
+                    const jsonMatch = streamText.match(/\{\s*"stats"\s*:\s*\[\s*[\d.,\s]+\]\s*\}/s);
+                    if (jsonMatch) {
+                        const statsData = JSON.parse(jsonMatch[0]);
+                        appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
+                        appState.modifiedLegends[id].stats = statsData.stats;
+                        refreshData();
+                        renderRadarChart(legend.name, statsData.stats);
+                        cleanText = streamText.replace(jsonMatch[0], '');
+                        el('regenStatsBtn').classList.remove('hidden');
+                    }
+                }
+                appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
+                if (needsAnalysis) appState.modifiedLegends[id].analysis = cleanText;
+                syncToCloud();
+                setModalContent(needsAnalysis ? cleanText : cachedAnalysis);
+                renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
+            } catch(e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>賞析生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
+            }
+        }
+
+        // 校準 tab 內容載入
+        async function _loadCalibrationContent(id) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+            const myToken = ++currentRequestToken;
             el('loadingState').classList.remove('hidden');
             el('loadingState').classList.add('flex');
             el('modalContent').innerHTML = '';
             el('radarChartContainer').classList.add('hidden');
             el('regenStatsBtn').classList.add('hidden');
             el('regenDeepBtn').classList.add('hidden');
-            // 快取檢查
+
             const cachedDeep = appState.modifiedLegends[id]?.deepAnalysis;
             if (cachedDeep) {
                 el('loadingState').classList.add('hidden');
@@ -1898,7 +2011,6 @@ async function showDeepAnalysis(id) {
                 return;
             }
             const typeLabel = legend.type === 'emperor' ? '帝王' : legend.type === 'general' ? '將領' : '名臣';
-
             const allLegends = [...staticLegendsData, ...appState.customLegends].map(l => {
                 const mod = appState.modifiedLegends[l.id];
                 const rank = (mod && mod.rank) ? mod.rank : l.rank;
@@ -1961,23 +2073,25 @@ ${rankingRef}
                     el('loadingState').classList.add('hidden');
                     el('modalContent').innerHTML = safeMarkdown(partial);
                 });
-
                 if (myToken !== currentRequestToken) return;
-
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].deepAnalysis = streamText;
                 el('regenDeepBtn').classList.remove('hidden');
                 renderApplyPanel(id, streamText);
-
-                // 存入史冊
-                appState.simulationHistory.unshift({ type: '深度評鑑', icon: '🔬', title: `${legend.name} 深度評鑑`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
-                
+                appState.simulationHistory.unshift({ type: '校準評級', icon: '🔬', title: `${legend.name} 校準評級`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
                 syncToCloud();
                 renderDiscussionPanel(id, streamText);
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>校準失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
             }
+        }
+
+        // backwards-compat wrappers
+        function showDeepAnalysis(id) { openEvalModal(id, 'calibrate'); }
+        function showAIAnalysis(id, forceRegen = false) {
+            if (forceRegen && currentAnalysisId === id) { _loadReviewContent(id, true); return; }
+            openEvalModal(id, 'review');
         }
 // ── 評鑑討論面板 ──────────────────────────────────────────
         let currentDiscussionContext = '';
@@ -2206,110 +2320,15 @@ ${rankingRef}
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>關係網生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
     }
 }
-        async function showAIAnalysis(id, forceRegen = false) {
-            const legend = legendsData.find(l => l.id === id);
-            if (!legend) return;
-
-            currentAnalysisId = id;
-            const myToken = ++currentRequestToken;
-            openModal(`${legend.name} · 歷史評鑑`, 'content');
-            el('loadingState').classList.remove('hidden');
-            el('loadingState').classList.add('flex');
-            el('modalContent').innerHTML = '';
-            el('radarChartContainer').classList.add('hidden');
-            el('regenStatsBtn').classList.add('hidden');
-
-            const typeMap = { 'emperor': '帝王', 'general': '名將', 'minister': '名臣' };
-            
-            // Check cache
-            const cachedStats = appState.modifiedLegends[id]?.stats;
-            const cachedAnalysis = appState.modifiedLegends[id]?.analysis;
-            const needsStats = forceRegen || !cachedStats;
-            const needsAnalysis = forceRegen || !cachedAnalysis;
-
-            let prompt = `請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${legend.name}（${legend.title}）。
-
-            【分析準則】：
-            1. **拒絕刻板印象**：不局限於史料的白紙黑字，主動挑戰主流史觀，至少提出一個反常識的論點並說明依據。
-2. **多維度分析**：結合史料、當時局勢（時勢）以及人心（心理動機）進行深入分析，引用具體事件、年份、地名，避免空泛概括。
-3. **心理動機優先**：深入分析每個重大決策背後的真實心理動機，還原「人」的複雜性，而非只描述表面行為。
-4. **時代局限性**：說明哪些「失敗」是時代局限造成的，哪些是個人能力問題，嚴格區分兩者。
-5. **角色本位**：
-   - 若是帝王，純粹根據「作為帝王」的表現（統御、決策、國運）分析。
-   - 若是名將，純粹根據「作為將領」的表現（戰略、戰術、治軍）分析。
-   - 若是名臣，純粹根據「作為臣子」的表現（施政、輔佐、權謀）分析。
-            
-            
-            請依此撰寫以下章節：
-            1. **【歷史局勢與定位】**：置身於當時的時空背景，他面對的是什麼局，又在歷史長河中站什麼位置。
-            2. **【深度功過剖析】**：具體事例分析，探討其決策背後的深層邏輯與得失。
-            3. **【人性與性格側寫】**：還原其作為「人」的真實面貌與心理特質。
-            4. **【如果生在現代】**：推測他適合什麼職業。`;
-
-            if (!needsStats && !needsAnalysis) {
-    renderRadarChart(legend.name, cachedStats);
-    el('regenStatsBtn').classList.remove('hidden');
-    setModalContent(cachedAnalysis);
-    renderDiscussionPanel(id, cachedAnalysis);
-    return;
-}
-if (needsStats) {
-    prompt += `\n\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\n\n【重要格式要求】請在回應的最開頭，第一行就輸出JSON，格式為：{"stats": [統率, 武力, 智謀, 政治, 魅力]}，然後換行再開始撰寫Markdown分析文章。JSON必須是第一個輸出的內容。`;
-} else {
-    renderRadarChart(legend.name, cachedStats);
-    el('regenStatsBtn').classList.remove('hidden');
-}
-
-            try {
-                let streamText = '';
-await callGeminiStream(prompt, (partial) => {
-    if (myToken !== currentRequestToken) return;
-    streamText = partial;
-    el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(partial);
-});
-
-if (myToken !== currentRequestToken) return;
-const text = streamText;
-                
-                let cleanText = text;
-                if (needsStats) {
-                    const jsonMatch = text.match(/\{\s*"stats"\s*:\s*\[\s*[\d.,\s]+\]\s*\}/s);
-                    if (jsonMatch) {
-                        const statsData = JSON.parse(jsonMatch[0]);
-                        // Cache it
-                        appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
-                        appState.modifiedLegends[id].stats = statsData.stats;
-                        refreshData(); // to keep legendsData in sync
-                        
-                        renderRadarChart(legend.name, statsData.stats);
-                     
-                        cleanText = text.replace(jsonMatch[0], '');
-                        el('regenStatsBtn').classList.remove('hidden');
-                    }
-                }
-                appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
-                if (needsAnalysis) {
-                    appState.modifiedLegends[id].analysis = cleanText;
-                }
-                syncToCloud();
-                setModalContent(needsAnalysis ? cleanText : cachedAnalysis);
-                renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
-            } catch (e) {
-                el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>評鑑生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
-            }
-        }
-
         function forceRegenerateStats() {
-            if(currentAnalysisId) showAIAnalysis(currentAnalysisId, true);
+            if (currentAnalysisId) _loadReviewContent(currentAnalysisId, true);
         }
         function forceRegenerateDeep() {
             if (!currentAnalysisId) return;
             if (appState.modifiedLegends[currentAnalysisId]?.deepAnalysis) {
                 delete appState.modifiedLegends[currentAnalysisId].deepAnalysis;
             }
-            showDeepAnalysis(currentAnalysisId);
+            _loadCalibrationContent(currentAnalysisId);
         }
         function renderRadarChart(label, data, label2 = null, data2 = null) {
             el('radarChartContainer').classList.remove('hidden');
@@ -2985,7 +3004,7 @@ showRelatedReactions(newLegend.id, '新增入冊');
         }
 
         function handleCardClick(id) {
-            if (appState.mode === 'browse') { showAIAnalysis(id); return; }
+            if (appState.mode === 'browse') { openEvalModal(id); return; }
             
             if (appState.mode === 'compareMode') { toggleCompare(id); return; }
             
