@@ -488,8 +488,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
             </div>
         </div>
-        <div id="hegemonyContent" class="flex-1 overflow-x-auto overflow-y-hidden p-4 bg-[#f0ede6]">
-            <div class="flex gap-4 items-start min-w-max h-full" id="hegemonyFactionsContainer"></div>
+        <div id="hegemonyContent" class="flex-1 overflow-x-auto p-4 bg-[#f0ede6]">
+            <div class="flex gap-4 items-start min-w-max" id="hegemonyFactionsContainer"></div>
         </div>
         <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
             <div class="w-9 h-9 rounded-full bg-[#7f1d1d] text-[#d4af37] flex items-center justify-center font-black text-sm shadow-lg border-2 border-[#f5f5f4] font-serif">鹿</div>
@@ -513,7 +513,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <h3 class="font-bold font-serif text-xs text-[#78716c] mb-3 uppercase tracking-widest">推演類型</h3>
                     <div class="grid grid-cols-3 gap-2" id="scenarioTypeContainer">
                         <label class="cursor-pointer">
-                            <input type="radio" name="scenarioType" value="battle" class="sr-only peer" checked>
+                            <input type="radio" name="scenarioType" value="battle" class="sr-only peer" checked onchange="onScenarioTypeChange('battle')">
                             <div class="peer-checked:border-[#b45309] peer-checked:bg-amber-50 peer-checked:text-[#92400e] border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-amber-200 text-[#78716c]">
                                 <i class="fa-solid fa-khanda text-lg mb-1 block"></i>
                                 <p class="text-xs font-bold font-serif">征伐之戰</p>
@@ -521,7 +521,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             </div>
                         </label>
                         <label class="cursor-pointer">
-                            <input type="radio" name="scenarioType" value="court" class="sr-only peer">
+                            <input type="radio" name="scenarioType" value="court" class="sr-only peer" onchange="onScenarioTypeChange('court')">
                             <div class="peer-checked:border-[#047857] peer-checked:bg-emerald-50 peer-checked:text-emerald-800 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-emerald-200 text-[#78716c]">
                                 <i class="fa-solid fa-landmark text-lg mb-1 block"></i>
                                 <p class="text-xs font-bold font-serif">朝堂角力</p>
@@ -529,7 +529,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             </div>
                         </label>
                         <label class="cursor-pointer">
-                            <input type="radio" name="scenarioType" value="full" class="sr-only peer">
+                            <input type="radio" name="scenarioType" value="full" class="sr-only peer" onchange="onScenarioTypeChange('full')">
                             <div class="peer-checked:border-[#7f1d1d] peer-checked:bg-red-50 peer-checked:text-red-900 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-red-200 text-[#78716c]">
                                 <i class="fa-solid fa-chess-king text-lg mb-1 block"></i>
                                 <p class="text-xs font-bold font-serif">亂世爭霸</p>
@@ -3092,7 +3092,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 const addTerrHtml = f.territories.length < 5 ? `<select onchange="addTerritory('${f.id}',this.value);this.value=''" class="text-[9px] px-1 py-0.5 rounded border border-dashed ${styles.border} bg-white bg-opacity-70 ${styles.text} outline-none cursor-pointer"><option value="">+領地</option>${availTerr.map(t=>`<option value="${t}">${t}</option>`).join('')}</select>` : '';
                 const powerHtml = Object.entries(power).filter(([,v])=>v>0).map(([k,v])=>`<div class="flex items-center gap-1"><span class="text-[8px] text-slate-400 w-5 shrink-0">${k}</span><div class="flex-1 h-1 bg-slate-100 rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:${v}%;background-color:${barColor}"></div></div><span class="text-[8px] text-slate-500 w-6 text-right">${v}</span></div>`).join('');
 
-                const factionCard = `<div class="min-w-[230px] w-[230px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-y-auto">
+                const factionCard = `<div class="min-w-[230px] w-[230px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col max-h-[calc(72vh-130px)] overflow-y-auto">
                     <div class="${styles.bg} px-3 py-2 border-b ${styles.border} shrink-0">
                         <div class="flex justify-between items-center mb-1"><span class="font-bold font-serif ${styles.text} flex items-center gap-1 text-sm"><i class="fa-solid fa-flag"></i><span contenteditable="true" onblur="renameFaction('${f.id}',this.innerText)" onclick="event.stopPropagation()" class="outline-none cursor-text min-w-[2rem]">${f.name}</span></span><span class="text-[9px] ${styles.text} opacity-60">${courtCount}/7·${milCount}/6</span></div>
                         <div class="flex flex-wrap gap-1 mb-1">${terrHtml}${addTerrHtml}</div>
@@ -3119,18 +3119,15 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             const bfSelect = el('battlefieldSelect');
             bfSelect.innerHTML = '<option value="">隨機選定...</option>' + BATTLEFIELDS.map(b => `<option value="${b.id}">${b.name}</option>`).join('');
             el('battlefieldDesc').textContent = '';
-            // Reset radio buttons
-            const radios = document.querySelectorAll('input[name="scenarioType"]');
-            radios.forEach(r => { r.checked = r.value === 'battle'; });
-            // Show/hide battlefield section based on scenario type
-            radios.forEach(r => r.addEventListener('change', () => {
-                const showBf = r.value !== 'court';
-                el('battlefieldSection').style.display = showBf ? '' : 'none';
-                appState.hegemony.battleSetup.scenario = document.querySelector('input[name="scenarioType"]:checked').value;
-            }));
+            document.querySelectorAll('input[name="scenarioType"]').forEach(r => { r.checked = r.value === 'battle'; });
             el('battlefieldSection').style.display = '';
             el('battleSetupModal').classList.remove('hidden');
             el('battleSetupModal').classList.add('flex');
+        }
+
+        function onScenarioTypeChange(val) {
+            appState.hegemony.battleSetup.scenario = val;
+            el('battlefieldSection').style.display = val === 'court' ? 'none' : '';
         }
 
         function closeBattleSetup() {
