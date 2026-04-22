@@ -492,13 +492,13 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             </div>
         </div>
         
-        <div id="warRoomContent" class="flex-1 overflow-x-auto overflow-y-auto p-6 bg-[#f0ede6] flex gap-6 items-stretch justify-start min-w-full pb-24">
-            <div class="flex gap-6" id="warRoomFactionsContainer"></div>
-            <!-- Action Area -->
-            <div class="flex flex-col justify-center items-center gap-3 min-w-[100px] border-l border-[#d6d3c9] pl-6 sticky right-0">
-                <div class="w-14 h-14 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-xl italic shadow-xl border-4 border-[#f5f5f4] z-10 serif">VS</div>
-                <button onclick="openBattleSetup()" id="startBattleBtn" disabled class="btn-gold px-6 py-3 rounded-lg font-bold font-serif tracking-widest text-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95 whitespace-nowrap">戰前設定</button>
-            </div>
+        <div id="warRoomContent" class="flex-1 overflow-x-auto overflow-y-auto p-4 bg-[#f0ede6]">
+            <div class="flex gap-4 items-stretch min-w-max" id="warRoomFactionsContainer"></div>
+        </div>
+        <!-- 底部操作列 -->
+        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-base italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
+            <button onclick="openBattleSetup()" id="startBattleBtn" disabled class="btn-gold px-6 py-2.5 rounded-lg font-bold font-serif tracking-widest text-base disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95">戰前設定</button>
         </div>
     </div>
 
