@@ -320,11 +320,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 
                 <!-- 模式切換 -->
                 <div class="flex w-full md:flex-1 gap-2 overflow-x-auto pb-0.5 justify-start md:justify-around">
-                    <button onclick="toggleMode('warRoom')" class="bg-[#2c2826] hover:bg-[#0f172a] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-warRoom">
-                        <i class="fa-solid fa-chess-board text-indigo-400"></i> <span class="hidden md:inline">戰情</span>
-                    </button>
-                    <button onclick="toggleMode('courtMode')" class="bg-[#2c2826] hover:bg-[#064e3b] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-courtMode">
-                        <i class="fa-solid fa-landmark text-emerald-400"></i> <span class="hidden md:inline">朝堂</span>
+                    <button onclick="toggleMode('hegemony')" class="bg-[#2c2826] hover:bg-[#7f1d1d] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-hegemony">
+                        <i class="fa-solid fa-chess-king text-amber-400"></i> <span class="hidden md:inline">逐鹿</span>
                     </button>
                     <button onclick="toggleMode('soulMode')" class="bg-[#2c2826] hover:bg-[#2e1065] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-soulMode">
                         <i class="fa-solid fa-yin-yang text-purple-400"></i> <span class="hidden md:inline">魂穿</span>
@@ -474,57 +471,80 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         </div>
     </div>
 
-    <!-- 戰情室面板 (War Room) -->
-    <div id="warRoomPanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[70vh] border-t-4 border-[#2c2826] transition-all duration-300">
-        <div class="bg-[#1c1917] text-[#e7e5e4] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('warRoom')">
+    <!-- 逐鹿中原面板 (Hegemony Mode) -->
+    <div id="hegemonyPanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[72vh] border-t-4 border-[#7f1d1d] transition-all duration-300">
+        <div class="bg-[#1c1917] text-[#e7e5e4] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('hegemony')">
             <div class="flex items-center gap-3">
-                <i class="fa-solid fa-chess text-[#d4af37] text-xl"></i>
-                <div><h3 class="font-bold text-base tracking-widest font-serif">跨代戰情室 (軍事)</h3></div>
+                <i class="fa-solid fa-chess-king text-[#d4af37] text-xl"></i>
+                <div><h3 class="font-bold text-base tracking-widest font-serif">逐鹿中原</h3></div>
             </div>
-            <div id="warRoomStatus" class="hidden flex-1 text-center px-4">
+            <div id="hegemonyStatus" class="hidden flex-1 text-center px-4">
                 <span class="text-sm text-[#d4af37] font-serif animate-pulse">點將中：<span class="selecting-role-text font-bold">...</span></span>
             </div>
             <div class="flex gap-4 text-[#a8a29e]">
-                <button onclick="event.stopPropagation(); addFaction('warRoom')" class="hover:text-white transition-colors text-sm border border-[#44403c] rounded px-2"><i class="fa-solid fa-plus mr-1"></i>勢力</button>
-                <button onclick="event.stopPropagation(); clearFactions('warRoom')" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
-                <button onclick="event.stopPropagation(); togglePanelSize('warRoom')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
+                <button onclick="event.stopPropagation(); addFaction()" class="hover:text-white transition-colors text-sm border border-[#44403c] rounded px-2"><i class="fa-solid fa-plus mr-1"></i>加勢力</button>
+                <button onclick="event.stopPropagation(); clearFactions()" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
+                <button onclick="event.stopPropagation(); togglePanelSize('hegemony')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
                 <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
             </div>
         </div>
-        
-        <div id="warRoomContent" class="flex-1 overflow-x-auto overflow-y-auto p-4 bg-[#f0ede6]">
-            <div class="flex gap-4 items-stretch min-w-max" id="warRoomFactionsContainer"></div>
+        <div id="hegemonyContent" class="flex-1 overflow-x-auto overflow-y-hidden p-4 bg-[#f0ede6]">
+            <div class="flex gap-4 items-start min-w-max h-full" id="hegemonyFactionsContainer"></div>
         </div>
-        <!-- 底部操作列 -->
         <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
-            <div class="w-9 h-9 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-sm italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
-            <button onclick="openBattleSetup()" id="startBattleBtn" class="btn-gold px-6 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">戰前設定</button>
+            <div class="w-9 h-9 rounded-full bg-[#7f1d1d] text-[#d4af37] flex items-center justify-center font-black text-sm shadow-lg border-2 border-[#f5f5f4] font-serif">鹿</div>
+            <button onclick="openBattleSetup()" id="startHegemonyBtn" class="btn-gold px-6 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">推演設定</button>
         </div>
     </div>
 
-    <!-- 戰場設定 Modal -->
+    <!-- 推演設定 Modal -->
     <div id="battleSetupModal" class="fixed inset-0 z-[80] hidden items-center justify-center">
         <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm" onclick="closeBattleSetup()"></div>
-        <div class="bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-2xl mx-4 relative z-10 border border-[#e5e0d3] max-h-[90vh] flex flex-col">
+        <div class="bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-lg mx-4 relative z-10 border border-[#e5e0d3] max-h-[90vh] flex flex-col">
             <div class="px-6 py-4 border-b border-[#e5e0d3] flex justify-between items-center shrink-0">
                 <h2 class="font-bold font-serif text-lg text-[#2c2826] flex items-center gap-2">
-                    <i class="fa-solid fa-chess text-[#d4af37]"></i> 戰前設定
+                    <i class="fa-solid fa-chess-king text-[#d4af37]"></i> 推演設定
                 </h2>
                 <button onclick="closeBattleSetup()" class="text-[#a8a29e] hover:text-[#2c2826] transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
             </div>
             <div class="overflow-y-auto flex-1 px-6 py-5 space-y-6">
-                <!-- 戰場地點 -->
+                <!-- 推演類型 -->
                 <div>
-                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-2 uppercase tracking-widest">戰場地點</h3>
+                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-3 uppercase tracking-widest">推演類型</h3>
+                    <div class="grid grid-cols-3 gap-2" id="scenarioTypeContainer">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="scenarioType" value="battle" class="sr-only peer" checked>
+                            <div class="peer-checked:border-[#b45309] peer-checked:bg-amber-50 peer-checked:text-[#92400e] border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-amber-200 text-[#78716c]">
+                                <i class="fa-solid fa-khanda text-lg mb-1 block"></i>
+                                <p class="text-xs font-bold font-serif">征伐之戰</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">軍事對決</p>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="scenarioType" value="court" class="sr-only peer">
+                            <div class="peer-checked:border-[#047857] peer-checked:bg-emerald-50 peer-checked:text-emerald-800 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-emerald-200 text-[#78716c]">
+                                <i class="fa-solid fa-landmark text-lg mb-1 block"></i>
+                                <p class="text-xs font-bold font-serif">朝堂角力</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">政治博弈</p>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="scenarioType" value="full" class="sr-only peer">
+                            <div class="peer-checked:border-[#7f1d1d] peer-checked:bg-red-50 peer-checked:text-red-900 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-red-200 text-[#78716c]">
+                                <i class="fa-solid fa-chess-king text-lg mb-1 block"></i>
+                                <p class="text-xs font-bold font-serif">亂世爭霸</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">全面推演</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- 戰場地點 (征伐/爭霸 時顯示) -->
+                <div id="battlefieldSection">
+                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-2 uppercase tracking-widest">著名戰場</h3>
                     <select id="battlefieldSelect" onchange="onBattlefieldChange()" class="w-full pl-3 pr-8 py-2 rounded-lg bg-[#f5f5f4] border border-[#e5e0d3] text-[#2c2826] font-serif text-sm outline-none appearance-none cursor-pointer">
                         <option value="">隨機選定...</option>
                     </select>
                     <p id="battlefieldDesc" class="text-xs text-[#78716c] mt-1.5 font-serif leading-relaxed min-h-[1rem]"></p>
-                </div>
-                <!-- 兵力設定 -->
-                <div>
-                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-3 uppercase tracking-widest">各勢力兵力設定</h3>
-                    <div id="troopParamsContainer" class="space-y-3"></div>
                 </div>
             </div>
             <div class="px-6 py-4 border-t border-[#e5e0d3] shrink-0">
@@ -533,33 +553,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         </div>
     </div>
 
-    <!-- 朝堂模式面板 (Court Mode) -->
-    <div id="courtModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f0fdf4] z-40 transform translate-y-full flex flex-col h-[70vh] border-t-4 border-[#064e3b] transition-all duration-300">
-        <div class="bg-[#064e3b] text-[#ecfdf5] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('courtMode')">
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-landmark text-[#34d399] text-xl"></i>
-                <div><h3 class="font-bold text-base tracking-widest font-serif">盛世朝堂 (治國)</h3></div>
-            </div>
-            <div id="courtModeStatus" class="hidden flex-1 text-center px-4">
-                <span class="text-sm text-[#34d399] font-serif animate-pulse">任命：<span class="selecting-role-text font-bold">...</span></span>
-            </div>
-            <div class="flex gap-4 text-[#a7f3d0]">
-                <button onclick="event.stopPropagation(); addFaction('courtMode')" class="hover:text-white transition-colors text-sm border border-[#065f46] rounded px-2"><i class="fa-solid fa-plus mr-1"></i>建立王朝</button>
-                <button onclick="event.stopPropagation(); clearFactions('courtMode')" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
-                <button onclick="event.stopPropagation(); togglePanelSize('courtMode')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
-                <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-white transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
-            </div>
-        </div>
-        
-        <div id="courtModeContent" class="flex-1 overflow-x-auto overflow-y-auto p-6 bg-[#f0fdf4] flex gap-6 items-stretch justify-start min-w-full pb-24">
-            <div class="flex gap-6" id="courtFactionsContainer"></div>
-            <!-- Action Area -->
-            <div class="flex flex-col justify-center items-center gap-3 min-w-[100px] border-l border-[#d1fae5] pl-6 sticky right-0">
-                <div class="w-14 h-14 rounded-full bg-[#064e3b] text-[#34d399] flex items-center justify-center font-black text-xl italic shadow-xl border-4 border-[#f0fdf4] z-10 serif"><i class="fa-solid fa-scale-balanced"></i></div>
-                <button onclick="startCourtSimulation()" id="startCourtBtn" disabled class="btn-ink px-6 py-3 rounded-lg font-bold font-serif tracking-widest text-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95 whitespace-nowrap bg-[#047857] hover:bg-[#065f46]">治世推演</button>
-            </div>
-        </div>
-    </div>
 
     <!-- 魂穿面板 (Soul Mode) -->
     <div id="soulModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[300px] border-t-4 border-[#581c87] transition-all duration-300">
@@ -1286,7 +1279,12 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             { id: 'cyan', name: '青軍', bg: 'bg-cyan-50', border: 'border-cyan-200', text: 'text-cyan-800', icon: 'text-cyan-600' }
         ];
 
-        const TERRITORIES = ["關中 (天府)", "中原 (四戰)", "江東 (天險)", "巴蜀 (險阻)", "荊州 (通衢)", "河北 (精兵)", "西涼 (鐵騎)", "遼東 (偏霸)", "嶺南 (化外)", "漠北 (苦寒)"];
+        const TERRITORIES = [
+            "關中 (天府)", "中原 (四戰)", "江東 (天險)", "巴蜀 (險阻)", "荊州 (通衢)",
+            "河北 (精兵)", "西涼 (鐵騎)", "遼東 (偏霸)", "嶺南 (化外)", "漠北 (苦寒)",
+            "山東 (齊魯)", "江淮 (水鄉)", "漢中 (咽喉)", "太行 (險要)", "幽燕 (邊塞)",
+            "河套 (牧馬)", "閩越 (海疆)", "湖湘 (魚米)", "雲貴 (偏遠)", "關東 (諸侯)"
+        ];
 
         // State
         const appState = {
@@ -1296,22 +1294,15 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             rankFilter: 'all',
             sortOrder: 'rank',
             compareList: [], // Store IDs for comparison
-            warRoom: {
+            hegemony: {
                 minimized: false,
                 activeSlot: null,
                 factions: [
-                    { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } },
-                    { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } }
+                    { id: 'red', name: '紅方', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
+                    { id: 'blue', name: '藍方', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
                 ],
-                battleSetup: { battlefield: null, troopParams: {}, aiDescription: '' },
+                battleSetup: { battlefield: null, scenario: 'battle' },
                 phases: []
-            },
-            courtMode: {
-                minimized: false,
-                activeSlot: null,
-                factions: [
-                    { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, strategist: null, commander: null, finance: null, diplomat: null, censor: null, oddplan: null, admin: null } }
-                ]
             },
             soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
             chatMode: { targetId: null, history: [] },
@@ -1356,8 +1347,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     await migrateOldData();
     refreshData();
     initScenarios();
-    updateWarRoomUI();
-    updateCourtModeUI();
+    updateHegemonyUI();
     document.getElementById('dataLoadingScreen').style.display = 'none';
 }
 
@@ -1465,9 +1455,13 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 else if(g.type==='general') { typeIcon='<i class="fa-solid fa-horse-head text-[#1e3a8a]"></i>'; typeClass='type-general'; }
                 else { typeIcon='<i class="fa-solid fa-scroll text-[#047857]"></i>'; typeClass='type-minister'; }
                 
+                const HEGEMONY_SEL = ['selected-red','selected-blue','selected-host','selected-soul','selected-compare','selected-red'];
                 let selectionClass = '';
-                appState.warRoom.factions.forEach(f => { Object.values(f.slots).forEach(id => { if(id === g.id) selectionClass = 'selected-red'; }); });
-                appState.courtMode.factions.forEach(f => { Object.values(f.slots).forEach(id => { if(id === g.id) selectionClass = 'selected-blue'; }); });
+                appState.hegemony.factions.forEach(f => {
+                    [...Object.values(f.courtSlots), ...Object.values(f.militarySlots)].forEach(id => {
+                        if(id === g.id) selectionClass = HEGEMONY_SEL[f.colorIdx % HEGEMONY_SEL.length];
+                    });
+                });
                 if(appState.soulMode.selection.host === g.id) selectionClass = 'selected-host';
                 if(appState.soulMode.selection.soul === g.id) selectionClass = 'selected-soul';
                 if(appState.compareList.includes(g.id)) selectionClass = 'selected-compare';
@@ -2899,8 +2893,10 @@ showRelatedReactions(newLegend.id, '新增入冊');
                 appState.customLegends = appState.customLegends.filter(l => l.id !== id);
                 delete appState.modifiedLegends[id];
                 // 清理所有 slot 殘留
-                appState.warRoom.factions.forEach(f => { Object.keys(f.slots).forEach(k => { if(f.slots[k] === id) f.slots[k] = null; }); });
-                appState.courtMode.factions.forEach(f => { Object.keys(f.slots).forEach(k => { if(f.slots[k] === id) f.slots[k] = null; }); });
+                appState.hegemony.factions.forEach(f => {
+                    Object.keys(f.courtSlots).forEach(k => { if(f.courtSlots[k] === id) f.courtSlots[k] = null; });
+                    Object.keys(f.militarySlots).forEach(k => { if(f.militarySlots[k] === id) f.militarySlots[k] = null; });
+                });
                 if(appState.soulMode.selection.host === id) appState.soulMode.selection.host = null;
                 if(appState.soulMode.selection.soul === id) appState.soulMode.selection.soul = null;
                 ['pro','con'].forEach(side => { Object.keys(appState.debateMode[side]).forEach(k => { if(appState.debateMode[side][k] === id) appState.debateMode[side][k] = null; }); });
@@ -2911,64 +2907,81 @@ showRelatedReactions(newLegend.id, '新增入冊');
         }
 
 
-        // --- NEW MULTI-FACTION LOGIC ---
-        function addFaction(mode) {
-            const state = mode === 'warRoom' ? appState.warRoom : appState.courtMode;
-            if(state.factions.length >= 6) { customAlert("勢力已達上限"); return; }
-            const newIdx = state.factions.length;
-            const colorIdx = newIdx % FACTION_COLORS.length;
-            const id = `faction_${Date.now()}`;
-            
-            let slots = {};
-            if(mode === 'warRoom') slots = { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null };
-            else slots = { emperor: null, strategist: null, commander: null, finance: null, diplomat: null, censor: null, oddplan: null, admin: null };
-            
-            let faction = { id: id, name: `${mode==='warRoom'?'軍團':'王朝'} ${newIdx+1}`, colorIdx: colorIdx, slots: slots };
-            if(mode === 'courtMode') faction.territory = '關中 (天府)';
-            
-            state.factions.push(faction);
-            if(mode === 'warRoom') updateWarRoomUI(); else updateCourtModeUI();
-            
+        // --- HEGEMONY FACTION LOGIC ---
+        function makeFaction(idx) {
+            const names = ['紅方','藍方','綠方','黃方','紫方','青方'];
+            const defaultTerrs = ['關中 (天府)','河北 (精兵)','江東 (天險)','巴蜀 (險阻)','荊州 (通衢)','西涼 (鐵騎)'];
+            return {
+                id: `faction_${Date.now()}_${idx}`,
+                name: names[idx % names.length],
+                colorIdx: idx % FACTION_COLORS.length,
+                territories: [defaultTerrs[idx % defaultTerrs.length]],
+                courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null },
+                militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null },
+                courtCollapsed: false,
+                militaryCollapsed: false
+            };
+        }
+
+        function addFaction() {
+            const h = appState.hegemony;
+            if(h.factions.length >= 6) { customAlert("勢力已達上限（6個）"); return; }
+            const f = makeFaction(h.factions.length);
+            h.factions.push(f);
+            updateHegemonyUI();
             setTimeout(() => {
-                const container = el(mode === 'warRoom' ? 'warRoomFactionsContainer' : 'courtFactionsContainer');
-                container.lastElementChild?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
+                el('hegemonyFactionsContainer').lastElementChild?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
             }, 100);
         }
 
-        function clearFactions(mode) {
+        function clearFactions() {
             customConfirm("確定重置所有勢力？", () => {
-                const state = mode === 'warRoom' ? appState.warRoom : appState.courtMode;
-                state.activeSlot = null;
-                if(mode === 'warRoom') {
-                    state.factions = [
-                        { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } },
-                        { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } }
-                    ];
-                    updateWarRoomUI();
-                } else {
-                    state.factions = [
-                        { id: 'dynasty1', name: '王朝壹', territory: '關中 (天府)', colorIdx: 2, slots: { emperor: null, strategist: null, commander: null, finance: null, diplomat: null, censor: null, oddplan: null, admin: null } }
-                    ];
-                    updateCourtModeUI();
-                }
-                renderLegends(); // update selected state
+                const h = appState.hegemony;
+                h.activeSlot = null;
+                h.factions = [
+                    { id: 'red', name: '紅方', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
+                    { id: 'blue', name: '藍方', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
+                ];
+                updateHegemonyUI();
+                renderLegends();
             });
         }
 
-        function selectSlot(mode, factionId, role) {
-            const state = mode === 'warRoom' ? appState.warRoom : appState.courtMode;
-            state.activeSlot = { factionId, role };
-            const f = state.factions.find(x => x.id === factionId);
-            if(f) f.slots[role] = null; // Clear slot visually to select new
-            if(mode === 'warRoom') updateWarRoomUI(); else updateCourtModeUI();
+        function selectSlot(factionId, section, role) {
+            const h = appState.hegemony;
+            h.activeSlot = { factionId, section, role };
+            const f = h.factions.find(x => x.id === factionId);
+            if(f) f[section + 'Slots'][role] = null;
+            updateHegemonyUI();
             renderLegends();
-            
-            if(!state.minimized) togglePanelSize(mode);
+            if(!h.minimized) togglePanelSize('hegemony');
         }
 
-        function updateTerritory(factionId, value) {
-            const f = appState.courtMode.factions.find(x => x.id === factionId);
-            if(f) f.territory = value;
+        function addTerritory(factionId, terrId) {
+            if(!terrId) return;
+            const f = appState.hegemony.factions.find(x => x.id === factionId);
+            if(f && !f.territories.includes(terrId) && f.territories.length < 5) {
+                f.territories.push(terrId);
+                updateHegemonyUI();
+            }
+        }
+
+        function removeTerritory(factionId, terrId) {
+            const f = appState.hegemony.factions.find(x => x.id === factionId);
+            if(f && f.territories.length > 1) {
+                f.territories = f.territories.filter(t => t !== terrId);
+                updateHegemonyUI();
+            }
+        }
+
+        function renameFaction(factionId, newName) {
+            const f = appState.hegemony.factions.find(x => x.id === factionId);
+            if(f && newName.trim()) f.name = newName.trim();
+        }
+
+        function toggleSection(factionId, section) {
+            const f = appState.hegemony.factions.find(x => x.id === factionId);
+            if(f) { f[section + 'Collapsed'] = !f[section + 'Collapsed']; updateHegemonyUI(); }
         }
 
         function handleCardClick(id) {
@@ -2976,33 +2989,20 @@ showRelatedReactions(newLegend.id, '新增入冊');
             
             if (appState.mode === 'compareMode') { toggleCompare(id); return; }
             
-            if (appState.mode === 'warRoom' && appState.warRoom.activeSlot) {
-                const {factionId, role} = appState.warRoom.activeSlot;
-                const f = appState.warRoom.factions.find(x => x.id === factionId);
+            if (appState.mode === 'hegemony' && appState.hegemony.activeSlot) {
+                const {factionId, section, role} = appState.hegemony.activeSlot;
+                const f = appState.hegemony.factions.find(x => x.id === factionId);
                 if(f) {
                     let exists = false;
-                    appState.warRoom.factions.forEach(fac => { if(Object.values(fac.slots).includes(id)) exists = true; });
+                    appState.hegemony.factions.forEach(fac => {
+                        if([...Object.values(fac.courtSlots), ...Object.values(fac.militarySlots)].includes(id)) exists = true;
+                    });
                     if(exists) { customAlert('該人物已在陣中'); return; }
-                    f.slots[role] = id;
-                    appState.warRoom.activeSlot = null;
-                    updateWarRoomUI();
+                    f[section + 'Slots'][role] = id;
+                    appState.hegemony.activeSlot = null;
+                    updateHegemonyUI();
                     renderLegends();
-                    if(appState.warRoom.minimized) togglePanelSize('warRoom');
-                }
-            }
-            
-            if (appState.mode === 'courtMode' && appState.courtMode.activeSlot) {
-                const {factionId, role} = appState.courtMode.activeSlot;
-                const f = appState.courtMode.factions.find(x => x.id === factionId);
-                if(f) {
-                    let exists = false;
-                    appState.courtMode.factions.forEach(fac => { if(Object.values(fac.slots).includes(id)) exists = true; });
-                    if(exists) { customAlert('該人物已在陣中'); return; }
-                    f.slots[role] = id;
-                    appState.courtMode.activeSlot = null;
-                    updateCourtModeUI();
-                    renderLegends();
-                    if(appState.courtMode.minimized) togglePanelSize('courtMode');
+                    if(appState.hegemony.minimized) togglePanelSize('hegemony');
                 }
             }
 if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
@@ -3046,175 +3046,89 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             return `<span class="text-[9px] font-bold px-1 py-0.5 rounded border ${color} flex-shrink-0 font-mono">${rank}</span>`;
         }
 
-        // --- WAR ROOM UI ---
-        function updateWarRoomUI() {
-            const container = el('warRoomFactionsContainer');
-            container.innerHTML = '';
-            
-            const roleLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
-            const roleIcons = { commander: 'crown', advisor: 'brain', vanguard: 'horse-head', supply: 'wheat-awn', flanker: 'shield-halved', raider: 'bolt' };
-            const fragment = document.createDocumentFragment();
-            appState.warRoom.factions.forEach(f => {
-                const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
-                let slotsHtml = '';
-                Object.keys(f.slots).forEach(role => {
-                    const id = f.slots[role];
-                    const name = getLegendName(id);
-                    const isActive = appState.warRoom.activeSlot && appState.warRoom.activeSlot.factionId === f.id && appState.warRoom.activeSlot.role === role;
-                    
-                    let slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border ${isActive ? 'active-selection' : 'border-dashed border-slate-300'} bg-white bg-opacity-80`;
-                    if(name && !isActive) slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border-solid border-slate-200 ${styles.bg}`;
-
-                    slotsHtml += `
-                    <div onclick="selectSlot('warRoom', '${f.id}', '${role}')" class="${slotClass}">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs border ${styles.border} ${styles.text}"><i class="fa-solid fa-${roleIcons[role]}"></i></div>
-                        <div class="flex-1 min-w-0 overflow-hidden">
-                            <p class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">${roleLabels[role]}</p>
-                            <p class="text-xs font-bold truncate ${name ? styles.text : 'text-slate-400'}">${isActive ? '點將...' : (name || '虛位')}</p>
-                        </div>
-                        ${!isActive ? rankBadge(getLegendRank(id)) : ''}
-                    </div>`;
-                });
-
-                const factionCard = `
-                <div class="min-w-[200px] w-[200px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-hidden">
-                    <div class="${styles.bg} px-3 py-2 border-b ${styles.border} flex justify-between items-center">
-                        <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-flag mr-1"></i>${f.name}</span>
-                        <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/6</span>
-                    </div>
-                    <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[45vh]">
-                        ${slotsHtml}
-                    </div>
-                    <div class="border-t border-slate-100 p-2 flex gap-1">
-                        <input id="desc_${f.id}" type="text" placeholder="AI選角描述..." onclick="event.stopPropagation()" class="flex-1 min-w-0 text-[10px] px-2 py-1 rounded border border-slate-200 bg-[#f5f5f4] outline-none">
-                        <button onclick="event.stopPropagation(); autoSelectByDescription('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-purple-50 border border-purple-200 text-purple-700 rounded hover:bg-purple-100 whitespace-nowrap">AI</button>
-                        <button onclick="event.stopPropagation(); randomFillFaction('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] rounded hover:bg-[#ede9e0] whitespace-nowrap">隨機</button>
-                    </div>
-                </div>`;
-                const div = document.createElement('div');
-div.innerHTML = factionCard.trim();
-fragment.appendChild(div.firstChild);
-            });
-container.appendChild(fragment);
+        // --- HEGEMONY UI ---
+        function calcFactionPower(f) {
+            const rankScore = { 'S+': 100, 'S': 90, 'S-': 85, 'A+': 80, 'A': 75, 'A-': 70, 'B+': 65, 'B': 60, 'B-': 55, 'C+': 50, 'C': 45, 'C-': 40, 'D': 30 };
+            const score = id => id ? (rankScore[getLegendRank(id)] || 0) : 0;
+            const avg = ids => { const s = ids.filter(Boolean); return s.length ? Math.round(s.reduce((a, id) => a + score(id), 0) / s.length) : 0; };
+            const cs = f.courtSlots; const ms = f.militarySlots;
+            return {
+                軍事: avg([ms.commander, ms.advisor, ms.vanguard, ms.deputy, ms.supply, ms.raider]),
+                謀略: avg([cs.strategist, cs.oddplan, ms.advisor]),
+                政治: avg([cs.emperor, cs.admin, cs.censor]),
+                經濟: avg([cs.finance, ms.supply]),
+                外交: avg([cs.diplomat, cs.strategist])
+            };
         }
 
-        // --- COURT MODE UI ---
-        function updateCourtModeUI() {
-            const container = el('courtFactionsContainer');
+        function updateHegemonyUI() {
+            const container = el('hegemonyFactionsContainer');
+            if(!container) return;
             container.innerHTML = '';
-            
-            const roleLabels = { emperor: '君主', strategist: '謀主', commander: '統帥', finance: '財相', diplomat: '外交', censor: '監察', oddplan: '奇謀', admin: '內政' };
-            const roleIcons = { emperor: 'dragon', strategist: 'brain', commander: 'khanda', finance: 'coins', diplomat: 'handshake', censor: 'scale-balanced', oddplan: 'wand-magic-sparkles', admin: 'landmark' };
-const fragment = document.createDocumentFragment();
-            appState.courtMode.factions.forEach(f => {
+            const courtLabels = { emperor: '君主', strategist: '謀主', finance: '財相', diplomat: '外交', admin: '內政', censor: '監察', oddplan: '奇謀' };
+            const courtIcons = { emperor: 'dragon', strategist: 'brain', finance: 'coins', diplomat: 'handshake', admin: 'landmark', censor: 'scale-balanced', oddplan: 'wand-magic-sparkles' };
+            const milLabels = { commander: '主將', advisor: '軍師', vanguard: '先鋒', deputy: '副將', supply: '後勤', raider: '奇兵' };
+            const milIcons = { commander: 'crown', advisor: 'brain', vanguard: 'horse-head', deputy: 'shield-halved', supply: 'wheat-awn', raider: 'bolt' };
+            const barColors = ['#ef4444','#3b82f6','#10b981','#f59e0b','#8b5cf6','#06b6d4'];
+
+            const fragment = document.createDocumentFragment();
+            appState.hegemony.factions.forEach(f => {
                 const styles = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
-                let slotsHtml = '';
-                Object.keys(f.slots).forEach(role => {
-                    const id = f.slots[role];
+                const barColor = barColors[f.colorIdx % barColors.length];
+                const power = calcFactionPower(f);
+
+                const buildSlots = (slotsObj, section, labels, icons) => Object.keys(slotsObj).map(role => {
+                    const id = slotsObj[role];
                     const name = getLegendName(id);
-                    const isActive = appState.courtMode.activeSlot && appState.courtMode.activeSlot.factionId === f.id && appState.courtMode.activeSlot.role === role;
-                    
-                    let slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border ${isActive ? 'active-selection' : 'border-dashed border-slate-300'} bg-white bg-opacity-80`;
-                    if(name && !isActive) slotClass = `role-slot rounded p-2 flex items-center gap-2 cursor-pointer border-solid border-slate-200 ${styles.bg}`;
+                    const isActive = appState.hegemony.activeSlot && appState.hegemony.activeSlot.factionId === f.id && appState.hegemony.activeSlot.section === section && appState.hegemony.activeSlot.role === role;
+                    const slotClass = isActive ? `role-slot rounded p-1.5 flex items-center gap-1.5 cursor-pointer active-selection` : (name ? `role-slot rounded p-1.5 flex items-center gap-1.5 cursor-pointer border border-slate-200 ${styles.bg}` : `role-slot rounded p-1.5 flex items-center gap-1.5 cursor-pointer border border-dashed border-slate-300 bg-white bg-opacity-80`);
+                    return `<div onclick="selectSlot('${f.id}','${section}','${role}')" class="${slotClass}"><div class="w-5 h-5 rounded-full flex items-center justify-center text-[9px] border ${styles.border} ${styles.text} shrink-0"><i class="fa-solid fa-${icons[role]}"></i></div><div class="flex-1 min-w-0"><p class="text-[8px] font-bold text-slate-400 uppercase leading-none">${labels[role]}</p><p class="text-[10px] font-bold truncate ${name?styles.text:'text-slate-400'}">${isActive?'選人中...':(name||'虛位')}</p></div>${!isActive?rankBadge(getLegendRank(id)):''}</div>`;
+                }).join('');
 
-                    slotsHtml += `
-                    <div onclick="selectSlot('courtMode', '${f.id}', '${role}')" class="${slotClass}">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs border ${styles.border} ${styles.text}"><i class="fa-solid fa-${roleIcons[role]}"></i></div>
-                        <div class="flex-1 min-w-0 overflow-hidden">
-                            <p class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">${roleLabels[role]}</p>
-                            <p class="text-xs font-bold truncate ${name ? styles.text : 'text-slate-400'}">${isActive ? '任命...' : (name || '虛位')}</p>
-                        </div>
-                        ${!isActive ? rankBadge(getLegendRank(id)) : ''}
-                    </div>`;
-                });
+                const courtCount = Object.values(f.courtSlots).filter(Boolean).length;
+                const milCount = Object.values(f.militarySlots).filter(Boolean).length;
+                const terrHtml = f.territories.map(t => `<span onclick="removeTerritory('${f.id}','${t.replace(/'/g,'\\\'')}')" class="inline-flex items-center text-[9px] font-bold ${styles.text} border ${styles.border} rounded px-1.5 py-0.5 cursor-pointer hover:opacity-60" title="點擊移除">${t.split(' ')[0]} ×</span>`).join('');
+                const availTerr = TERRITORIES.filter(t => !f.territories.includes(t));
+                const addTerrHtml = f.territories.length < 5 ? `<select onchange="addTerritory('${f.id}',this.value);this.value=''" class="text-[9px] px-1 py-0.5 rounded border border-dashed ${styles.border} bg-white bg-opacity-70 ${styles.text} outline-none cursor-pointer"><option value="">+領地</option>${availTerr.map(t=>`<option value="${t}">${t}</option>`).join('')}</select>` : '';
+                const powerHtml = Object.entries(power).filter(([,v])=>v>0).map(([k,v])=>`<div class="flex items-center gap-1"><span class="text-[8px] text-slate-400 w-5 shrink-0">${k}</span><div class="flex-1 h-1 bg-slate-100 rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:${v}%;background-color:${barColor}"></div></div><span class="text-[8px] text-slate-500 w-6 text-right">${v}</span></div>`).join('');
 
-                const terrOptions = TERRITORIES.map(t => `<option value="${t}" ${f.territory===t?'selected':''}>${t}</option>`).join('');
-
-                const factionCard = `
-                <div class="min-w-[200px] w-[200px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-hidden">
-                    <div class="${styles.bg} px-3 py-2 border-b ${styles.border}">
-                        <div class="flex justify-between items-center mb-1">
-                            <span class="font-bold font-serif ${styles.text}"><i class="fa-solid fa-landmark mr-1"></i>${f.name}</span>
-                            <span class="text-xs ${styles.text} opacity-70 font-mono">${Object.values(f.slots).filter(Boolean).length}/8</span>
-                        </div>
-                        <select onchange="updateTerritory('${f.id}', this.value)" class="w-full text-xs p-1 rounded border border-slate-300 bg-white bg-opacity-80 outline-none text-slate-700 font-serif">
-                            ${terrOptions}
-                        </select>
+                const factionCard = `<div class="min-w-[230px] w-[230px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col overflow-y-auto">
+                    <div class="${styles.bg} px-3 py-2 border-b ${styles.border} shrink-0">
+                        <div class="flex justify-between items-center mb-1"><span class="font-bold font-serif ${styles.text} flex items-center gap-1 text-sm"><i class="fa-solid fa-flag"></i><span contenteditable="true" onblur="renameFaction('${f.id}',this.innerText)" onclick="event.stopPropagation()" class="outline-none cursor-text min-w-[2rem]">${f.name}</span></span><span class="text-[9px] ${styles.text} opacity-60">${courtCount}/7·${milCount}/6</span></div>
+                        <div class="flex flex-wrap gap-1 mb-1">${terrHtml}${addTerrHtml}</div>
+                        ${powerHtml?`<div class="space-y-0.5 pt-1 border-t ${styles.border} mt-1">${powerHtml}</div>`:''}
                     </div>
-                    <div class="p-2 gap-2 flex flex-col overflow-y-auto max-h-[60vh]">
-                        ${slotsHtml}
-                    </div>
+                    <button onclick="toggleSection('${f.id}','court')" class="w-full flex justify-between items-center px-3 py-1.5 text-[10px] font-bold text-slate-500 uppercase tracking-wider hover:bg-slate-50 border-b border-slate-100 shrink-0"><span><i class="fa-solid fa-landmark mr-1"></i>朝堂 (${courtCount}/7)</span><i class="fa-solid fa-chevron-${f.courtCollapsed?'right':'down'} text-slate-300"></i></button>
+                    ${!f.courtCollapsed?`<div class="px-2 py-1.5 gap-1.5 flex flex-col border-b border-slate-100">${buildSlots(f.courtSlots,'court',courtLabels,courtIcons)}</div>`:''}
+                    <button onclick="toggleSection('${f.id}','military')" class="w-full flex justify-between items-center px-3 py-1.5 text-[10px] font-bold text-slate-500 uppercase tracking-wider hover:bg-slate-50 border-b border-slate-100 shrink-0"><span><i class="fa-solid fa-khanda mr-1"></i>兵事 (${milCount}/6)</span><i class="fa-solid fa-chevron-${f.militaryCollapsed?'right':'down'} text-slate-300"></i></button>
+                    ${!f.militaryCollapsed?`<div class="px-2 py-1.5 gap-1.5 flex flex-col border-b border-slate-100">${buildSlots(f.militarySlots,'military',milLabels,milIcons)}</div>`:''}
+                    <div class="p-2 flex gap-1 shrink-0 mt-auto"><input id="desc_${f.id}" type="text" placeholder="AI選角描述..." onclick="event.stopPropagation()" class="flex-1 min-w-0 text-[10px] px-2 py-1 rounded border border-slate-200 bg-[#f5f5f4] outline-none"><button onclick="event.stopPropagation();autoSelectByDescription('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-purple-50 border border-purple-200 text-purple-700 rounded hover:bg-purple-100 whitespace-nowrap">AI</button><button onclick="event.stopPropagation();randomFillFaction('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] rounded hover:bg-[#ede9e0] whitespace-nowrap">隨機</button></div>
                 </div>`;
                 const div = document.createElement('div');
-div.innerHTML = factionCard.trim();
-fragment.appendChild(div.firstChild);
+                div.className = 'flex-shrink-0';
+                div.innerHTML = factionCard.trim();
+                fragment.appendChild(div.firstChild);
             });
             container.appendChild(fragment);
-
-            const activeCount = appState.courtMode.factions.filter(f => Object.values(f.slots).some(n => n)).length;
-            el('startCourtBtn').disabled = activeCount < 1; 
-            if(activeCount >= 1) el('startCourtBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); 
-            else el('startCourtBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
         }
 
-        // --- AI LOGIC UPDATES ---
-        async function startCourtSimulation() {
-            openModal('盛世王朝推演', 'content');
-            el('radarChartContainer').classList.add('hidden');
-            el('loadingState').classList.remove('hidden');
-            el('loadingState').classList.add('flex');
-            el('modalContent').innerHTML = '';
-            
-            const factions = appState.courtMode.factions.filter(f => Object.values(f.slots).some(n => n));
-            // Map IDs to actual Names for AI
-            const factionData = factions.map(f => {
-                const mappedRoster = {};
-                const courtLabels = { emperor: '君主', strategist: '謀主', commander: '統帥', finance: '財相', diplomat: '外交', censor: '監察', oddplan: '奇謀', admin: '內政' };
-                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[courtLabels[r] || r] = n ? `${n}（${rk || '未評'}）` : null; }
-                return { name: f.name, territory: f.territory, roster: mappedRoster };
-            });
-            
-            const prompt = `史詩級朝堂治理與大國博弈推演 (Tang Dynasty Structure)。
-            【參與勢力】：${JSON.stringify(factionData)}
-            
-            請進行深度推演 (若只有一個王朝，則推演其盛衰興替；若有多個，則推演大國競爭)：
-            1. **【地緣戰略】(Geopolitics)**：分析各勢力據點的優劣勢。
-            2. **【君臣相性】(Internal)**：各勢力的皇帝與大臣能否共存？（例如：猜忌、輔佐、權鬥）。
-            3. **【治國實績】(Governance)**：各部會能力與整體國力發展。
-            4. **【外部博弈】(External)**：軍事衝突與勝敗。
-            5. **【歷史結局】**：國祚長短，是盛世還是亡國？
-            
-            規範：請保持歷史學者的嚴謹與文學性。繁體中文。`;
-
-            try {
-                const myToken = ++currentRequestToken;
-const courtResult = await callGeminiStream(prompt, (partial) => {
-    if (myToken !== currentRequestToken) return;
-    el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(partial);
-}, (model) => {
-    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
-});
-const dynastyNames = factions.map(f => f.name).join(' vs ');
-appState.simulationHistory.unshift({ type: '朝堂', icon: '🏛️', title: dynastyNames, result: courtResult.slice(0, 100), fullResult: courtResult, time: new Date().toLocaleString('zh-TW') });
-syncToCloud();
-            } catch(e) { 
-                el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
-            }
-        }
+        // --- HEGEMONY SIMULATION ---
 
         function openBattleSetup() {
-            const factions = appState.warRoom.factions;
-            appState.warRoom.battleSetup = { battlefield: null, troopParams: {}, aiDescription: '' };
-            factions.forEach(f => {
-                appState.warRoom.battleSetup.troopParams[f.id] = { totalTroops: 10, composition: '混合', supply: '充裕', morale: '高昂' };
-            });
+            appState.hegemony.battleSetup = { battlefield: null, scenario: 'battle' };
             const bfSelect = el('battlefieldSelect');
             bfSelect.innerHTML = '<option value="">隨機選定...</option>' + BATTLEFIELDS.map(b => `<option value="${b.id}">${b.name}</option>`).join('');
             el('battlefieldDesc').textContent = '';
-            renderBattleSetupTroopParams(factions);
-            el('battleDescInput').value = '';
+            // Reset radio buttons
+            const radios = document.querySelectorAll('input[name="scenarioType"]');
+            radios.forEach(r => { r.checked = r.value === 'battle'; });
+            // Show/hide battlefield section based on scenario type
+            radios.forEach(r => r.addEventListener('change', () => {
+                const showBf = r.value !== 'court';
+                el('battlefieldSection').style.display = showBf ? '' : 'none';
+                appState.hegemony.battleSetup.scenario = document.querySelector('input[name="scenarioType"]:checked').value;
+            }));
+            el('battlefieldSection').style.display = '';
             el('battleSetupModal').classList.remove('hidden');
             el('battleSetupModal').classList.add('flex');
         }
@@ -3228,49 +3142,11 @@ syncToCloud();
             const val = el('battlefieldSelect').value;
             const bf = BATTLEFIELDS.find(b => b.id === val);
             el('battlefieldDesc').textContent = bf ? bf.env : '';
-            appState.warRoom.battleSetup.battlefield = val || null;
-        }
-
-        function renderBattleSetupTroopParams(factions) {
-            el('troopParamsContainer').innerHTML = factions.map(f => {
-                const s = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
-                return `<div class="rounded-lg border ${s.border} bg-white p-4">
-                    <h4 class="font-bold font-serif ${s.text} mb-3 text-sm">${f.name}</h4>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div>
-                            <label class="text-xs text-[#78716c] font-bold block mb-1">兵力（萬）</label>
-                            <input type="number" id="troops_${f.id}" value="10" min="1" max="999"
-                                oninput="appState.warRoom.battleSetup.troopParams['${f.id}'].totalTroops=+this.value"
-                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
-                        </div>
-                        <div>
-                            <label class="text-xs text-[#78716c] font-bold block mb-1">兵種</label>
-                            <select onchange="appState.warRoom.battleSetup.troopParams['${f.id}'].composition=this.value"
-                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
-                                <option>混合</option><option>步兵為主</option><option>騎兵為主</option><option>水軍為主</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="text-xs text-[#78716c] font-bold block mb-1">補給</label>
-                            <select onchange="appState.warRoom.battleSetup.troopParams['${f.id}'].supply=this.value"
-                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
-                                <option>充裕</option><option>緊繃</option><option>告急</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="text-xs text-[#78716c] font-bold block mb-1">士氣</label>
-                            <select onchange="appState.warRoom.battleSetup.troopParams['${f.id}'].morale=this.value"
-                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
-                                <option>高昂</option><option>一般</option><option>低落</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>`;
-            }).join('');
+            appState.hegemony.battleSetup.battlefield = val || null;
         }
 
         async function autoSelectByDescription(factionId) {
-            const f = appState.warRoom.factions.find(x => x.id === factionId);
+            const f = appState.hegemony.factions.find(x => x.id === factionId);
             if (!f) return;
             const desc = (el(`desc_${factionId}`) || {}).value?.trim();
             if (!desc) return customAlert('請輸入選角描述');
@@ -3279,23 +3155,20 @@ syncToCloud();
             btn.disabled = true;
             btn.textContent = '...';
             try {
-                const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
-                const allUsed = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
-                const available = legendsData.filter(l => !allUsed.has(l.id) || Object.values(f.slots).includes(l.id));
+                const allUsed = new Set(appState.hegemony.factions.flatMap(fa => [...Object.values(fa.courtSlots), ...Object.values(fa.militarySlots)].filter(Boolean)));
+                const myUsed = new Set([...Object.values(f.courtSlots), ...Object.values(f.militarySlots)].filter(Boolean));
+                const available = legendsData.filter(l => !allUsed.has(l.id) || myUsed.has(l.id));
                 const legendList = available.map(l => `${l.name}（評級:${l.rank}，朝代:${l.dynasty}，類型:${l.type==='emperor'?'帝王':l.type==='general'?'名將':'名臣'}）`).join('；');
-                const roleKeys = Object.keys(f.slots).join('、');
-                const prompt = `你是一個中國古代歷史人物戰略模擬遊戲的選角系統。玩家為「${f.name}」陣營輸入了選角需求：「${desc}」。\n請根據此需求，僅從以下歷史人物清單中挑選最符合條件的人物，分配給各個角色。\n\n規則：\n1. 只能選清單中存在的人物，絕對不能捏造或使用清單以外的名字\n2. 每個人物只能出現一次\n3. 根據描述的主題（如武力、謀略、某朝代等）優先選對應評級高的人物\n\n【可選人物清單】：${legendList}\n\n【需分配的角色鍵名】：${roleKeys}\n\n只返回純JSON，格式：{"roleKey":"人物名稱"}，roleKey為上方角色鍵名之一`;
+                const courtKeys = Object.keys(f.courtSlots).join('、');
+                const milKeys = Object.keys(f.militarySlots).join('、');
+                const prompt = `你是「帝王將相名臣評鑑」戰略模擬遊戲的選角系統。遊戲中的人物均為中國古代歷史人物（帝王、名將、名臣）。玩家為「${f.name}」勢力輸入了選角需求：「${desc}」。\n請從以下清單中挑選符合主題的人物，分配給朝堂（court）和兵事（military）角色。\n\n規則：\n1. 只能選清單中的人物，不能捏造\n2. 每個人物只能出現一次\n3. 依主題優先選高評級人物\n\n【可選人物清單】：${legendList}\n\n【朝堂角色鍵名（courtSlots）】：${courtKeys}\n【兵事角色鍵名（militarySlots）】：${milKeys}\n\n只返回純JSON，格式：{"courtSlots":{"roleKey":"人物名稱"},"militarySlots":{"roleKey":"人物名稱"}}`;
                 const res = await callGemini(prompt, true);
                 const assignments = JSON.parse(res);
-                const used = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
-                Object.entries(assignments).forEach(([role, name]) => {
-                    const legend = legendsData.find(l => l.name === name);
-                    if (legend && (role in f.slots) && !used.has(legend.id)) {
-                        f.slots[role] = legend.id;
-                        used.add(legend.id);
-                    }
-                });
-                updateWarRoomUI();
+                const used = new Set(appState.hegemony.factions.flatMap(fa => [...Object.values(fa.courtSlots), ...Object.values(fa.militarySlots)].filter(Boolean)));
+                const apply = (slotsObj, map) => { Object.entries(map || {}).forEach(([role, name]) => { const legend = legendsData.find(l => l.name === name); if(legend && (role in slotsObj) && !used.has(legend.id)) { slotsObj[role] = legend.id; used.add(legend.id); } }); };
+                apply(f.courtSlots, assignments.courtSlots);
+                apply(f.militarySlots, assignments.militarySlots);
+                updateHegemonyUI();
                 renderLegends();
             } catch(e) {
                 customAlert('AI 選角失敗：' + e.message);
@@ -3306,86 +3179,125 @@ syncToCloud();
         }
 
         function randomFillFaction(factionId) {
-            const f = appState.warRoom.factions.find(x => x.id === factionId);
+            const f = appState.hegemony.factions.find(x => x.id === factionId);
             if (!f) return;
-            const used = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
+            const used = new Set(appState.hegemony.factions.flatMap(fa => [...Object.values(fa.courtSlots), ...Object.values(fa.militarySlots)].filter(Boolean)));
             const pool = [...legendsData].sort(() => Math.random() - 0.5).filter(l => !used.has(l.id));
-            Object.keys(f.slots).forEach(role => {
-                if (f.slots[role] || pool.length === 0) return;
-                f.slots[role] = pool.shift().id;
-            });
-            updateWarRoomUI();
+            const fillSlots = slotsObj => Object.keys(slotsObj).forEach(role => { if(!slotsObj[role] && pool.length) slotsObj[role] = pool.shift().id; });
+            fillSlots(f.courtSlots);
+            fillSlots(f.militarySlots);
+            updateHegemonyUI();
             renderLegends();
         }
 
         function randomFillFactions() {
-            const factions = appState.warRoom.factions;
-            const used = new Set(factions.flatMap(f => Object.values(f.slots).filter(Boolean)));
+            const factions = appState.hegemony.factions;
+            const used = new Set(factions.flatMap(f => [...Object.values(f.courtSlots), ...Object.values(f.militarySlots)].filter(Boolean)));
             const pool = [...legendsData].sort(() => Math.random() - 0.5).filter(l => !used.has(l.id));
             factions.forEach(f => {
-                Object.keys(f.slots).forEach(role => {
-                    if (f.slots[role] || pool.length === 0) return;
-                    f.slots[role] = pool.shift().id;
-                });
+                const fillSlots = slotsObj => Object.keys(slotsObj).forEach(role => { if(!slotsObj[role] && pool.length) slotsObj[role] = pool.shift().id; });
+                fillSlots(f.courtSlots);
+                fillSlots(f.militarySlots);
             });
-            updateWarRoomUI();
+            updateHegemonyUI();
             renderLegends();
         }
 
         async function startBattleFromSetup() {
-            const readyFactions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
-            if (readyFactions.length < 2) return customAlert('至少需要兩個勢力各有人物才能開始推演');
+            const scenario = document.querySelector('input[name="scenarioType"]:checked')?.value || 'battle';
+            appState.hegemony.battleSetup.scenario = scenario;
+            const readyFactions = appState.hegemony.factions.filter(f => [...Object.values(f.courtSlots),...Object.values(f.militarySlots)].some(n=>n));
+            if (readyFactions.length < 1) return customAlert('至少需要一個勢力配置人物才能開始推演');
+            if (scenario !== 'court' && readyFactions.length < 2) return customAlert('征伐/爭霸推演至少需要兩個勢力');
             closeBattleSetup();
-            appState.warRoom.phases = [];
-            openModal('跨代戰情室推演', 'content');
+            appState.hegemony.phases = [];
+            const titleMap = { battle: '征伐之戰', court: '朝堂角力', full: '亂世爭霸' };
+            openModal(`逐鹿中原・${titleMap[scenario]}`, 'content');
             el('radarChartContainer').classList.add('hidden');
-            el('modalContent').innerHTML = `
-                <div id="phaseProgressBar" class="flex items-center gap-2 mb-6 p-3 bg-[#f5f5f4] rounded-lg border border-[#e5e0d3] text-xs font-bold">
-                    <span id="pp_opening" class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800">開局</span>
-                    <div class="flex-1 h-px bg-[#e5e0d3]"></div>
-                    <span id="pp_middle" class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">展開</span>
-                    <div class="flex-1 h-px bg-[#e5e0d3]"></div>
-                    <span id="pp_ending" class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">終局</span>
-                </div>`;
-            await runBattlePhase('opening');
+            if (scenario === 'court') {
+                await runCourtPhase();
+            } else {
+                el('modalContent').innerHTML = `<div id="phaseProgressBar" class="flex items-center gap-2 mb-6 p-3 bg-[#f5f5f4] rounded-lg border border-[#e5e0d3] text-xs font-bold"><span id="pp_opening" class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800">開局</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span id="pp_middle" class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">展開</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span id="pp_ending" class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">終局</span></div>`;
+                await runBattlePhase('opening');
+            }
+        }
+
+        async function runCourtPhase() {
+            const setup = appState.hegemony.battleSetup;
+            const factions = appState.hegemony.factions.filter(f => [...Object.values(f.courtSlots),...Object.values(f.militarySlots)].some(n=>n));
+            const courtLabels = { emperor:'君主', strategist:'謀主', finance:'財相', diplomat:'外交', admin:'內政', censor:'監察', oddplan:'奇謀' };
+            const milLabels = { commander:'主將', advisor:'軍師', vanguard:'先鋒', deputy:'副將', supply:'後勤', raider:'奇兵' };
+            const factionData = factions.map(f => {
+                const power = calcFactionPower(f);
+                const court = {}; for(const [r,id] of Object.entries(f.courtSlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) court[courtLabels[r]]=`${n}（${rk||'未評'}）`; }
+                const mil = {}; for(const [r,id] of Object.entries(f.militarySlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) mil[milLabels[r]]=`${n}（${rk||'未評'}）`; }
+                return { name: f.name, 領地: f.territories.join('、'), 國力: power, 朝堂: court, 兵事: mil };
+            });
+            const prompt = `史詩級逐鹿中原・朝堂角力推演。\n【參與勢力】：\n${factionData.map(f=>`▶ ${f.name}｜領地：${f.領地}｜綜合國力：${JSON.stringify(f.國力)}\n  朝堂陣容：${Object.entries(f.朝堂).map(([r,n])=>`${r}→${n}`).join('、')}\n  兵事陣容：${Object.entries(f.兵事).map(([r,n])=>`${r}→${n}`).join('、')}`).join('\n\n')}\n\n請進行深度推演（若為多勢力則推演爭霸博弈，單勢力則推演盛衰興替）：\n1. **【地緣戰略】**：各勢力領地優劣與資源爭奪\n2. **【君臣相性】**：主君與謀臣的互動、猜忌或相輔相成\n3. **【治國實績】**：政治、經濟、外交等各方面發展\n4. **【縱橫捭闔】**：各勢力的謀略角力與外交手段\n5. **【最終格局】**：誰能一統天下或各分勝負？\n\n以歷史學者的嚴謹與文學性論述，繁體中文，約800字。`;
+            el('loadingState').classList.remove('hidden');
+            el('loadingState').classList.add('flex');
+            el('modalContent').innerHTML = '';
+            try {
+                const myToken = ++currentRequestToken;
+                const result = await callGeminiStream(prompt, (partial) => {
+                    if(myToken!==currentRequestToken) return;
+                    el('loadingState').classList.add('hidden');
+                    el('modalContent').innerHTML = safeMarkdown(partial);
+                }, () => el('modalContent').insertAdjacentHTML('afterbegin','<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>'));
+                appState.simulationHistory.unshift({ type:'逐鹿', icon:'🏯', title: factions.map(f=>f.name).join(' vs '), result: result.slice(0,100), fullResult: result, time: new Date().toLocaleString('zh-TW') });
+                syncToCloud();
+            } catch(e) {
+                el('loadingState').classList.add('hidden');
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+            }
         }
 
         async function runBattlePhase(phaseType) {
-            const setup = appState.warRoom.battleSetup || {};
-            const phases = appState.warRoom.phases;
-            const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
-            const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
+            const setup = appState.hegemony.battleSetup || {};
+            const scenario = setup.scenario || 'battle';
+            const phases = appState.hegemony.phases;
+            const factions = appState.hegemony.factions.filter(f => [...Object.values(f.courtSlots),...Object.values(f.militarySlots)].some(n=>n));
+            const courtLabels = { emperor:'君主', strategist:'謀主', finance:'財相', diplomat:'外交', admin:'內政', censor:'監察', oddplan:'奇謀' };
+            const milLabels = { commander:'主將', advisor:'軍師', vanguard:'先鋒', deputy:'副將', supply:'後勤', raider:'奇兵' };
             const factionData = factions.map(f => {
-                const roster = {};
-                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); if (n) roster[warLabels[r]] = `${n}（${rk||'未評'}）`; }
-                const p = setup.troopParams?.[f.id] || {};
-                return { name: f.name, 兵力: `${p.totalTroops||10}萬`, 兵種: p.composition||'混合', 補給: p.supply||'充裕', 士氣: p.morale||'高昂', 陣容: roster };
+                const power = calcFactionPower(f);
+                const court = {}; for(const [r,id] of Object.entries(f.courtSlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) court[courtLabels[r]]=`${n}（${rk||'未評'}）`; }
+                const mil = {}; for(const [r,id] of Object.entries(f.militarySlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) mil[milLabels[r]]=`${n}（${rk||'未評'}）`; }
+                return { name: f.name, 領地: f.territories.join('、'), 國力: power, 朝堂: court, 兵事: mil };
             });
             const bf = BATTLEFIELDS.find(b => b.id === setup.battlefield);
-            const bfInfo = bf ? `${bf.name}（${bf.env}）` : '隨機戰場';
+            const bfInfo = bf ? `${bf.name}（${bf.env}）` : '未指定（由AI隨機選定戰場）';
             const prevCtx = phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n---\n\n');
             const middleCount = phases.filter(p => p.type === 'middle').length;
+            const factionDesc = factionData.map(f => `▶ ${f.name}｜領地：${f.領地}｜國力：軍事${f.國力.軍事}/謀略${f.國力.謀略}/政治${f.國力.政治}/經濟${f.國力.經濟}/外交${f.國力.外交}\n  朝堂：${Object.entries(f.朝堂).map(([r,n])=>`${r}→${n}`).join('、')}\n  兵事：${Object.entries(f.兵事).map(([r,n])=>`${r}→${n}`).join('、')}`).join('\n\n');
 
             let phaseTitle, prompt;
             if (phaseType === 'opening') {
                 phaseTitle = '開局態勢';
-                prompt = `你是頂級戰爭推演系統，請生成一場史詩戰役推演的【開局態勢】。\n【戰場】：${bfInfo}\n【參戰勢力】：\n${factionData.map(f=>`▶ ${f.name}｜兵力：${f.兵力}｜兵種：${f.兵種}｜補給：${f.補給}｜士氣：${f.士氣}\n  陣容：${Object.entries(f.陣容).map(([r,n])=>`${r}→${n}`).join('、')}`).join('\n')}\n\n以沉浸式史詩敘述風格，分析各勢力實力、人物特質、初始部署與戰略態勢（約600字）。\n最後另起一行，只寫以下其一（不加其他文字）：\n##推演繼續## 或 ##局勢已定##`;
+                if (scenario === 'battle') {
+                    prompt = `你是頂級戰爭推演系統，請生成【征伐之戰・開局態勢】。\n【戰場】：${bfInfo}\n【參戰勢力】：\n${factionDesc}\n\n以沉浸式史詩敘述風格，分析各勢力實力、人物特質、地緣優勢與初始戰略態勢（約600字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                } else {
+                    prompt = `你是頂級亂世推演系統，請生成【亂世爭霸・開局態勢】。\n【戰場】：${bfInfo}\n【參與勢力】：\n${factionDesc}\n\n以史詩敘述風格，分析各勢力的綜合國力、人才陣容優劣、地緣形勢與爭霸初局（約700字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                }
             } else if (phaseType === 'middle') {
                 phaseTitle = `第${middleCount + 1}回合`;
-                prompt = `以下是戰役推演已發生的過程：\n${prevCtx}\n\n---\n請繼續推演下一個階段，帶入具體戰術行動、關鍵人物決策、陣地變化（約500字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                if (scenario === 'battle') {
+                    prompt = `以下是戰役推演已發生的過程：\n${prevCtx}\n\n---\n請繼續推演下一個階段，帶入具體戰術行動、關鍵人物決策、陣地變化（約500字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                } else {
+                    prompt = `以下是亂世爭霸推演已發生的過程：\n${prevCtx}\n\n---\n請繼續推演：各勢力的兵事行動、朝堂謀略、外交縱橫與局勢演變（約500字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                }
             } else {
                 phaseTitle = '終局結算';
-                prompt = `以下是戰役推演已發生的過程：\n${prevCtx}\n\n---\n請進行【終局結算】：最終勝負判定、決定性因素分析、各人物功過評定、此戰歷史意義（約400字）。`;
+                const typeLabel = scenario === 'battle' ? '征伐之戰' : '亂世爭霸';
+                prompt = `以下是${typeLabel}推演的全部過程：\n${prevCtx}\n\n---\n請進行【終局結算】：最終勝負判定、決定性因素分析、各勢力人物功過評定、此役歷史意義（約500字）。`;
             }
 
-            // Update progress bar
             const ppMap = { opening: 'pp_opening', middle: 'pp_middle', ending: 'pp_ending' };
             const activeClass = { opening: 'bg-amber-200 text-amber-900', middle: 'bg-slate-200 text-slate-800', ending: 'bg-red-100 text-red-800' };
             const ppEl = el(ppMap[phaseType]);
-            if (ppEl) ppEl.className = `px-2.5 py-1 rounded-full text-xs font-bold ${activeClass[phaseType]}`;
-
+            if(ppEl) ppEl.className = `px-2.5 py-1 rounded-full text-xs font-bold ${activeClass[phaseType]}`;
             const oldBtns = el('phaseActionBtns');
-            if (oldBtns) oldBtns.remove();
+            if(oldBtns) oldBtns.remove();
 
             const phaseId = `phase_${phases.length}`;
             const hdrColor = phaseType === 'opening' ? 'bg-amber-100 text-amber-800' : phaseType === 'ending' ? 'bg-red-100 text-red-800' : 'bg-slate-100 text-slate-700';
@@ -3400,16 +3312,14 @@ syncToCloud();
                 const myToken = ++currentRequestToken;
                 let fullText = '';
                 await callGeminiStream(prompt, (partial) => {
-                    if (myToken !== currentRequestToken) return;
+                    if(myToken!==currentRequestToken) return;
                     el('loadingState').classList.add('hidden');
                     fullText = partial;
-                    el(phaseId).innerHTML = safeMarkdown(partial.replace(/##推演繼續##|##局勢已定##/g, '').trim());
-                }, (model) => {
-                    phaseBlock.insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-2 py-0.5 mb-2 font-serif">⚡ 本段由 Flash 生成</div>');
-                });
+                    el(phaseId).innerHTML = safeMarkdown(partial.replace(/##推演繼續##|##局勢已定##/g,'').trim());
+                }, () => phaseBlock.insertAdjacentHTML('afterbegin','<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-2 py-0.5 mb-2 font-serif">⚡ 本段由 Flash 生成</div>'));
 
-                const cleanContent = fullText.replace(/##推演繼續##|##局勢已定##/g, '').trim();
-                appState.warRoom.phases.push({ title: phaseTitle, content: cleanContent, type: phaseType });
+                const cleanContent = fullText.replace(/##推演繼續##|##局勢已定##/g,'').trim();
+                appState.hegemony.phases.push({ title: phaseTitle, content: cleanContent, type: phaseType });
 
                 if (phaseType !== 'ending') {
                     const shouldContinue = fullText.includes('##推演繼續##');
@@ -3424,9 +3334,10 @@ syncToCloud();
                     }
                     el('modalContent').appendChild(btnDiv);
                 } else {
+                    const typeIcons = { battle: '⚔️', full: '👑' };
                     const factionNames = factions.map(f => f.name).join(' vs ');
-                    const fullResult = appState.warRoom.phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n');
-                    appState.simulationHistory.unshift({ type: '戰情', icon: '⚔️', title: factionNames, result: cleanContent.slice(0, 100), fullResult, time: new Date().toLocaleString('zh-TW') });
+                    const fullResult = appState.hegemony.phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n');
+                    appState.simulationHistory.unshift({ type:'逐鹿', icon: typeIcons[scenario] || '👑', title: factionNames, result: cleanContent.slice(0,100), fullResult, time: new Date().toLocaleString('zh-TW') });
                     syncToCloud();
                 }
                 phaseBlock.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -3499,7 +3410,6 @@ syncToCloud();
         // --- SHARED UI & LOGIC ---
         function toggleMode(modeName) {
             closeAllPanels();
-            // Reset Compare UI state if leaving
             el('compareBar').classList.add('translate-y-full');
             document.querySelectorAll('[id^="btn-mode-"]').forEach(btn => btn.classList.remove('ring-2', 'ring-offset-2', 'ring-gray-400'));
 
@@ -3512,24 +3422,27 @@ syncToCloud();
                     el('compareBar').classList.remove('translate-y-full');
                     document.body.style.paddingBottom = '80px';
                 } else {
-                    const panelMap = { 'warRoom': 'warRoomPanel', 'courtMode': 'courtModePanel', 'soulMode': 'soulModePanel', 'scenarioMode': 'scenarioModePanel', 'debateMode': 'debateModePanel' };                    const panel = el(panelMap[modeName]);
+                    const panelMap = { 'hegemony': 'hegemonyPanel', 'soulMode': 'soulModePanel', 'scenarioMode': 'scenarioModePanel', 'debateMode': 'debateModePanel' };
+                    const panel = el(panelMap[modeName]);
                     if(panel) panel.classList.remove('translate-y-full');
-                    
+
                     const tip = el('selectionModeTip');
                     if(modeName !== 'scenarioMode') {
                         tip.classList.remove('hidden');
-if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').innerText = '點擊下方職位，再點擊上方人物加入';
+                        if (modeName === 'hegemony') el('tipText').innerText = '點擊勢力中的職位，再點擊上方人物加入';
                         else if (modeName === 'debateMode') el('tipText').innerText = '點擊下方正方／反方槽位，再點擊上方人物加入';
-                        else el('tipText').innerText = '選擇【肉身】與【靈魂】';                    }
-                    const heightMap = { 'warRoom': '65vh', 'courtMode': '65vh', 'soulMode': '300px', 'scenarioMode': '380px', 'debateMode': '340px' };
+                        else el('tipText').innerText = '選擇【肉身】與【靈魂】';
+                    }
+                    const heightMap = { 'hegemony': '72vh', 'soulMode': '300px', 'scenarioMode': '380px', 'debateMode': '340px' };
                     document.body.style.paddingBottom = heightMap[modeName] || '0px';
-                     if (modeName === 'debateMode') updateDebateModeUI();
+                    if (modeName === 'debateMode') updateDebateModeUI();
+                    if (modeName === 'hegemony') updateHegemonyUI();
                 }
             } else {
                 appState.mode = 'browse';
                 document.body.style.paddingBottom = '0px';
             }
-            renderLegends(); // Refresh selected visual states
+            renderLegends();
         }
 
         function closeAllPanels() {
@@ -3537,54 +3450,57 @@ if (modeName.includes('Room') || modeName.includes('Court')) el('tipText').inner
             el('compareBar').classList.add('translate-y-full');
             el('selectionModeTip').classList.add('hidden');
             document.body.style.paddingBottom = '0px';
-            appState.warRoom.activeSlot = null;
-            appState.courtMode.activeSlot = null;
+            appState.hegemony.activeSlot = null;
             appState.soulMode.activeSlot = null;
             appState.debateMode.activeSlot = null;
-            updateWarRoomUI();
-            updateCourtModeUI();
+            updateHegemonyUI();
             updateSoulModeUI();
             updateDebateModeUI();
             renderLegends();
         }
 
         function togglePanelSize(mode) {
-             if (mode === 'debateMode') {
-                 appState.debateMode.minimized = !appState.debateMode.minimized;
-                 const panel = el('debateModePanel');
-                 const content = el('debateModeContent');
-                 const status = el('debateModeStatus');
-                 if (appState.debateMode.minimized) {
-                     panel.style.height = '44px';
-                     content.classList.add('hidden');
-                     status.classList.remove('hidden');
-                     document.body.style.paddingBottom = '70px';
-                 } else {
-                     panel.style.height = '340px';
-                     content.classList.remove('hidden');
-                     status.classList.add('hidden');
-                     document.body.style.paddingBottom = '340px';
-                 }
-                 return;
-             }
-             const state = mode === 'warRoom' ? appState.warRoom : (mode === 'courtMode' ? appState.courtMode : appState.soulMode);
-             state.minimized = !state.minimized;
-             const panelId = mode === 'warRoom' ? 'warRoomPanel' : (mode === 'courtMode' ? 'courtModePanel' : 'soulModePanel');
-             const contentId = mode === 'warRoom' ? 'warRoomContent' : (mode === 'courtMode' ? 'courtModeContent' : 'soulModeContent');
-             const statusId = mode === 'warRoom' ? 'warRoomStatus' : (mode === 'courtMode' ? 'courtModeStatus' : 'soulModeStatus');
-             const panel = el(panelId); const content = el(contentId); const status = el(statusId);
-             const height = mode === 'warRoom' ? '65vh' : (mode === 'courtMode' ? '65vh' : '300px');
-             if (state.minimized) { panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText(mode); }
-             else { panel.style.height = height; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = height; }
+            if (mode === 'debateMode') {
+                appState.debateMode.minimized = !appState.debateMode.minimized;
+                const panel = el('debateModePanel');
+                const content = el('debateModeContent');
+                const status = el('debateModeStatus');
+                if (appState.debateMode.minimized) {
+                    panel.style.height = '44px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px';
+                } else {
+                    panel.style.height = '340px'; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '340px';
+                }
+                return;
+            }
+            if (mode === 'hegemony') {
+                appState.hegemony.minimized = !appState.hegemony.minimized;
+                const panel = el('hegemonyPanel'); const content = el('hegemonyContent'); const status = el('hegemonyStatus');
+                if (appState.hegemony.minimized) {
+                    panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText('hegemony');
+                } else {
+                    panel.style.height = '72vh'; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '72vh';
+                }
+                return;
+            }
+            // soulMode
+            appState.soulMode.minimized = !appState.soulMode.minimized;
+            const panel = el('soulModePanel'); const content = el('soulModeContent'); const status = el('soulModeStatus');
+            if (appState.soulMode.minimized) {
+                panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px';
+            } else {
+                panel.style.height = '300px'; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '300px';
+            }
         }
 
         function updateStatusText(mode) {
-             const elements = document.querySelectorAll('.selecting-role-text');
-             let text = "暫無選擇";
-             if (mode === 'warRoom' && appState.warRoom.activeSlot) text = `選擇 ${appState.warRoom.activeSlot.role}`;
-             else if (mode === 'courtMode' && appState.courtMode.activeSlot) text = `選擇 ${appState.courtMode.activeSlot.role}`;
-             else if (mode === 'soulMode' && appState.soulMode.activeSlot) text = appState.soulMode.activeSlot;
-             elements.forEach(e => e.innerText = text);
+            const elements = document.querySelectorAll('.selecting-role-text');
+            let text = '暫無選擇';
+            if (mode === 'hegemony' && appState.hegemony.activeSlot) {
+                const { section, role } = appState.hegemony.activeSlot;
+                const sectionLabel = section === 'court' ? '朝堂' : '兵事';
+                text = `選擇 ${sectionLabel}·${role}`;
+            } else if (mode === 'soulMode' && appState.soulMode.activeSlot) text = appState.soulMode.activeSlot;
+            elements.forEach(e => e.innerText = text);
         }
 
         // Soul/Scenario logic 
