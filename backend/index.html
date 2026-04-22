@@ -86,6 +86,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         .btn-gold:disabled { background: #d6d3c9; color: #a8a29e; box-shadow: none; cursor: not-allowed; transform: none; }
         .btn-ink { background-color: #2c2826; color: #f5f5f4; transition: all 0.3s ease; }
         .btn-ink:hover { background-color: #000; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translateY(-1px); }
+        .soul-tab { color: #c4b5fd; opacity: 0.6; }
+        .soul-tab:hover { opacity: 0.85; }
+        .soul-tab-active { color: #f3e8ff !important; opacity: 1 !important; border-bottom-color: #d8b4fe !important; background: rgba(255,255,255,0.08); }
                 
         /* Compare Bar */
         #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
@@ -326,9 +329,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <button onclick="toggleMode('soulMode')" class="bg-[#2c2826] hover:bg-[#2e1065] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-soulMode">
                         <i class="fa-solid fa-yin-yang text-purple-400"></i> <span class="hidden md:inline">魂穿</span>
                     </button>
-                    <button onclick="toggleMode('scenarioMode')" class="bg-[#2c2826] hover:bg-[#450a0a] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-scenarioMode">
-                        <i class="fa-solid fa-fire-flame-curved text-red-500"></i> <span class="hidden md:inline">絕境</span>
-                    </button>
+
                     <button onclick="toggleMode('compareMode')" class="bg-[#2c2826] hover:bg-[#0f766e] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-compareMode">
                         <i class="fa-solid fa-code-compare text-teal-400"></i> <span class="hidden md:inline">比對</span>
                     </button>
@@ -554,63 +555,43 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
 
-    <!-- 魂穿面板 (Soul Mode) -->
-    <div id="soulModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[300px] border-t-4 border-[#581c87] transition-all duration-300">
-        <div class="bg-[#3b0764] text-[#f3e8ff] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('soulMode')">
+    <!-- 魂穿面板 (Soul Mode) - 5-tab unified panel -->
+    <div id="soulModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[420px] border-t-4 border-[#581c87] transition-all duration-300">
+        <!-- Header -->
+        <div class="bg-[#3b0764] text-[#f3e8ff] px-4 py-2 flex justify-between items-center shrink-0 h-12 cursor-pointer shadow-md" onclick="togglePanelSize('soulMode')">
             <div class="flex items-center gap-3">
-                <i class="fa-solid fa-yin-yang text-[#d8b4fe] text-xl"></i>
-                <h3 class="font-bold text-base tracking-widest font-serif">魂穿模擬器</h3>
+                <i class="fa-solid fa-yin-yang text-[#d8b4fe] text-lg"></i>
+                <h3 class="font-bold text-sm tracking-widest font-serif">魂穿模擬器</h3>
             </div>
             <div id="soulModeStatus" class="hidden flex-1 text-center px-4">
-                <span class="text-sm text-[#d8b4fe] font-serif animate-pulse">正在選擇：<span class="selecting-role-text font-bold">...</span></span>
+                <span class="text-xs text-[#d8b4fe] font-serif animate-pulse">正在選擇：<span class="selecting-role-text font-bold">...</span></span>
             </div>
             <div class="flex gap-4 text-[#d8b4fe]">
-                <button onclick="event.stopPropagation(); clearSoulSlots()" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
-                <button onclick="event.stopPropagation(); togglePanelSize('soulMode')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
+                <button onclick="event.stopPropagation(); clearSoulSlots()" class="hover:text-white transition-colors text-sm"><i class="fa-solid fa-rotate-left"></i></button>
+                <button onclick="event.stopPropagation(); togglePanelSize('soulMode')" class="hover:text-white transition-colors text-sm"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
                 <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-white transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
             </div>
         </div>
-        <div id="soulModeContent" class="flex-1 overflow-x-auto p-8 bg-[#f3e8ff] bg-opacity-20 flex gap-12 justify-center items-center">
-            <div onclick="selectSoulSlot('host')" id="slot-soul-host" class="role-slot w-72 h-40 rounded-xl bg-white p-5 cursor-pointer flex flex-col justify-center items-center gap-3 shadow-sm border border-slate-300 hover:border-slate-500 transition-all hover:shadow-md relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-1 h-full bg-slate-400"></div>
-                <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-2xl group-hover:bg-slate-700 group-hover:text-white transition-colors"><i class="fa-solid fa-user-injured"></i></div>
-                <div class="text-center">
-                    <p class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">HOST</p>
-                    <p class="font-bold text-slate-800 font-serif text-lg">肉身 (宿主)</p>
-                    <p id="hostNameDisplay" class="text-sm font-bold text-indigo-900 truncate w-56 slot-name mt-1 border-t border-dashed border-slate-300 pt-1">點擊選擇...</p>
-                </div>
-            </div>
-            <div class="flex flex-col justify-center items-center text-[#7e22ce] opacity-50">
-                <i class="fa-solid fa-arrow-right-long text-4xl animate-pulse"></i>
-                <span class="text-xs font-serif mt-2 tracking-widest">穿越</span>
-            </div>
-            <div onclick="selectSoulSlot('soul')" id="slot-soul-soul" class="role-slot w-72 h-40 rounded-xl bg-white p-5 cursor-pointer flex flex-col justify-center items-center gap-3 shadow-sm border border-purple-300 hover:border-purple-500 transition-all hover:shadow-md relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-1 h-full bg-purple-500"></div>
-                <div class="w-12 h-12 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-2xl group-hover:bg-purple-600 group-hover:text-white transition-colors"><i class="fa-solid fa-ghost"></i></div>
-                <div class="text-center">
-                    <p class="text-xs font-bold text-purple-400 uppercase tracking-[0.2em] mb-1">SOUL</p>
-                    <p class="font-bold text-purple-900 font-serif text-lg">靈魂 (穿越者)</p>
-                    <p class="text-sm font-bold text-purple-700 truncate w-56 slot-name mt-1 border-t border-dashed border-purple-200 pt-1">點擊選擇...</p>
-                </div>
-            </div>
-            <div class="ml-8">
-                <button onclick="handleSoulAction()" id="startSoulBtn" disabled class="btn-ink px-8 py-4 rounded-xl font-bold font-serif text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-bolt"></i> 逆天改命</span>
-                </button>
-            </div>
+        <!-- Tab Bar -->
+        <div class="bg-[#2e1065] flex shrink-0 overflow-x-auto" id="soulTabBar">
+            <button onclick="setSoulTab('free')" id="soul-tab-free" class="soul-tab soul-tab-active px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
+                <i class="fa-solid fa-ghost"></i> 自由魂穿
+            </button>
+            <button onclick="setSoulTab('crisis')" id="soul-tab-crisis" class="soul-tab px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
+                <i class="fa-solid fa-fire-flame-curved"></i> 歷史絕境
+            </button>
+            <button onclick="setSoulTab('defect')" id="soul-tab-defect" class="soul-tab px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
+                <i class="fa-solid fa-person-walking-arrow-right"></i> 換旗投主
+            </button>
+            <button onclick="setSoulTab('mentor')" id="soul-tab-mentor" class="soul-tab px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
+                <i class="fa-solid fa-scroll"></i> 師承重組
+            </button>
+            <button onclick="setSoulTab('duo')" id="soul-tab-duo" class="soul-tab px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
+                <i class="fa-solid fa-handshake-angle"></i> 雙雄同室
+            </button>
         </div>
-    </div>
-
-    <!-- 絕境挑戰 (Scenarios) -->
-    <div id="scenarioModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#fff1f2] border-t-4 border-[#be123c] shadow-[0_-10px_40px_rgba(0,0,0,0.15)] z-40 transform translate-y-full flex flex-col h-[380px]">
-        <div class="bg-[#881337] text-white px-6 py-3 flex justify-between items-center shrink-0 h-14">
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-fire-flame-curved text-[#fda4af] text-xl"></i>
-                <h3 class="font-bold text-base tracking-widest font-serif">絕境挑戰 <span class="text-xs bg-[#be123c] px-2 py-0.5 rounded ml-2 text-white font-sans font-normal opacity-80">Hell Scenarios</span></h3>
-            </div>
-            <button onclick="closeAllPanels()" class="text-[#fda4af] hover:text-white transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
-        </div>
-        <div id="scenarioContent" class="flex-1 overflow-x-auto p-8 bg-[#fff1f2] flex gap-5 items-center"></div>
+        <!-- Tab Content -->
+        <div id="soulModeContent" class="flex-1 overflow-auto bg-[#f3e8ff]/20"></div>
     </div>
 
     <!-- AI Modal -->
@@ -1271,12 +1252,13 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         // --- CONFIG ---
         const FACTION_COLORS = [
-            { id: 'red', name: '紅軍', bg: 'bg-red-50', border: 'border-red-200', text: 'text-red-800', icon: 'text-red-600' },
-            { id: 'blue', name: '藍軍', bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-800', icon: 'text-blue-600' },
-            { id: 'green', name: '綠軍', bg: 'bg-emerald-50', border: 'border-emerald-200', text: 'text-emerald-800', icon: 'text-emerald-600' },
-            { id: 'yellow', name: '黃軍', bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-800', icon: 'text-amber-600' },
-            { id: 'purple', name: '紫軍', bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-800', icon: 'text-purple-600' },
-            { id: 'cyan', name: '青軍', bg: 'bg-cyan-50', border: 'border-cyan-200', text: 'text-cyan-800', icon: 'text-cyan-600' }
+            { id: 'qinglong',  name: '青龍', bg: 'bg-emerald-50', border: 'border-emerald-300', text: 'text-emerald-900', icon: 'text-emerald-600' },
+            { id: 'baihu',     name: '白虎', bg: 'bg-slate-50',   border: 'border-slate-300',   text: 'text-slate-800',  icon: 'text-slate-500' },
+            { id: 'zhuque',    name: '朱雀', bg: 'bg-red-50',     border: 'border-red-300',     text: 'text-red-900',    icon: 'text-red-600' },
+            { id: 'xuanwu',    name: '玄武', bg: 'bg-indigo-50',  border: 'border-indigo-300',  text: 'text-indigo-900', icon: 'text-indigo-600' },
+            { id: 'huanglong', name: '黃龍', bg: 'bg-amber-50',   border: 'border-amber-300',   text: 'text-amber-900',  icon: 'text-amber-600' },
+            { id: 'qilin',     name: '麒麟', bg: 'bg-purple-50',  border: 'border-purple-300',  text: 'text-purple-900', icon: 'text-purple-600' },
+            { id: 'pixiu',     name: '貔貅', bg: 'bg-cyan-50',    border: 'border-cyan-300',    text: 'text-cyan-900',   icon: 'text-cyan-600' }
         ];
 
         const TERRITORIES = [
@@ -1298,13 +1280,13 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 minimized: false,
                 activeSlot: null,
                 factions: [
-                    { id: 'red', name: '紅方', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
-                    { id: 'blue', name: '藍方', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
+                    { id: 'qinglong', name: '青龍', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
+                    { id: 'baihu',    name: '白虎', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
                 ],
                 battleSetup: { battlefield: null, scenario: 'battle' },
                 phases: []
             },
-            soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
+            soulMode: { minimized: false, activeTab: 'free', activeSlot: null, activeScenario: null, selection: { host: null, soul: null, defector: null, newLord: null, teacher: null, student: null, figureA: null, figureB: null, duoLord: null } },
             chatMode: { targetId: null, history: [] },
             chatHistories: {},
             customLegends: [],
@@ -1462,8 +1444,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         if(id === g.id) selectionClass = HEGEMONY_SEL[f.colorIdx % HEGEMONY_SEL.length];
                     });
                 });
-                if(appState.soulMode.selection.host === g.id) selectionClass = 'selected-host';
-                if(appState.soulMode.selection.soul === g.id) selectionClass = 'selected-soul';
+                const soulSel = appState.soulMode.selection;
+                if(Object.values(soulSel).includes(g.id)) selectionClass = (soulSel.host === g.id || soulSel.defector === g.id || soulSel.teacher === g.id || soulSel.figureA === g.id) ? 'selected-host' : 'selected-soul';
                 if(appState.compareList.includes(g.id)) selectionClass = 'selected-compare';
                 const debateIds = [...Object.values(appState.debateMode.pro), ...Object.values(appState.debateMode.con)];
                 if(debateIds.includes(g.id)) selectionClass = 'selected-red';
@@ -2897,8 +2879,7 @@ showRelatedReactions(newLegend.id, '新增入冊');
                     Object.keys(f.courtSlots).forEach(k => { if(f.courtSlots[k] === id) f.courtSlots[k] = null; });
                     Object.keys(f.militarySlots).forEach(k => { if(f.militarySlots[k] === id) f.militarySlots[k] = null; });
                 });
-                if(appState.soulMode.selection.host === id) appState.soulMode.selection.host = null;
-                if(appState.soulMode.selection.soul === id) appState.soulMode.selection.soul = null;
+                Object.keys(appState.soulMode.selection).forEach(k => { if(appState.soulMode.selection[k] === id) appState.soulMode.selection[k] = null; });
                 ['pro','con'].forEach(side => { Object.keys(appState.debateMode[side]).forEach(k => { if(appState.debateMode[side][k] === id) appState.debateMode[side][k] = null; }); });
                 syncToCloud();
                 refreshData();
@@ -2909,8 +2890,8 @@ showRelatedReactions(newLegend.id, '新增入冊');
 
         // --- HEGEMONY FACTION LOGIC ---
         function makeFaction(idx) {
-            const names = ['紅方','藍方','綠方','黃方','紫方','青方'];
-            const defaultTerrs = ['關中 (天府)','河北 (精兵)','江東 (天險)','巴蜀 (險阻)','荊州 (通衢)','西涼 (鐵騎)'];
+            const names = ['青龍','白虎','朱雀','玄武','黃龍','麒麟','貔貅'];
+            const defaultTerrs = ['關中 (天府)','河北 (精兵)','江東 (天險)','巴蜀 (險阻)','荊州 (通衢)','西涼 (鐵騎)','漠北 (苦寒)'];
             return {
                 id: `faction_${Date.now()}_${idx}`,
                 name: names[idx % names.length],
@@ -2925,7 +2906,7 @@ showRelatedReactions(newLegend.id, '新增入冊');
 
         function addFaction() {
             const h = appState.hegemony;
-            if(h.factions.length >= 6) { customAlert("勢力已達上限（6個）"); return; }
+            if(h.factions.length >= 7) { customAlert("勢力已達上限（7個）"); return; }
             const f = makeFaction(h.factions.length);
             h.factions.push(f);
             updateHegemonyUI();
@@ -2939,8 +2920,8 @@ showRelatedReactions(newLegend.id, '新增入冊');
                 const h = appState.hegemony;
                 h.activeSlot = null;
                 h.factions = [
-                    { id: 'red', name: '紅方', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
-                    { id: 'blue', name: '藍方', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
+                    { id: 'qinglong', name: '青龍', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
+                    { id: 'baihu',    name: '白虎', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
                 ];
                 updateHegemonyUI();
                 renderLegends();
@@ -3016,13 +2997,11 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 if (appState.debateMode.minimized) togglePanelSize('debateMode');
             }
             if (appState.mode === 'soulMode' && appState.soulMode.activeSlot) {
-                 const slot = appState.soulMode.activeSlot;
-                 if (appState.soulMode.activeScenario && slot === 'host') { customAlert("劇本模式下無法更換宿主！"); return; }
-                 appState.soulMode.selection[slot] = id;
-                 appState.soulMode.activeSlot = null;
-                 updateSoulModeUI();
-                 renderLegends();
-                 if(appState.soulMode.minimized) togglePanelSize('soulMode');
+                appState.soulMode.selection[appState.soulMode.activeSlot] = id;
+                appState.soulMode.activeSlot = null;
+                updateSoulModeUI();
+                renderLegends();
+                if (appState.soulMode.minimized) togglePanelSize('soulMode');
             }
         }
 
@@ -3348,62 +3327,161 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
         }
         
         async function handleSoulAction() {
-            const hostId = appState.soulMode.selection.host;
-            const soulId = appState.soulMode.selection.soul;
-            const hostName = getLegendName(hostId);
-            const soulName = getLegendName(soulId);
-            const scenario = appState.soulMode.activeScenario;
-            
-            if(!hostName || !soulName) return;
-            
-            openModal('魂穿逆天改命', 'content');
+            const sm = appState.soulMode; const sel = sm.selection;
+            const tab = sm.activeTab;
+            let prompt = '', modalTitle = '', histType = '', histIcon = '', histTitle = '';
+
+            if (tab === 'free') {
+                const hostName = getLegendName(sel.host), soulName = getLegendName(sel.soul);
+                if (!hostName || !soulName) return;
+                modalTitle = `魂穿：${soulName} → ${hostName}`;
+                histType = '魂穿'; histIcon = '👻'; histTitle = `${soulName} → ${hostName}`;
+                prompt = `【自由魂穿推演】你是一位嚴肅的歷史思想實驗學者。${soulName} 的靈魂穿越到 ${hostName} 的身上，請深度分析：
+
+## 一、靈魂適配度評估
+分析兩人在能力結構（軍事/謀略/政治/性格）上的互補與排斥，指出最大的能力增益與最危險的內部矛盾。
+
+## 二、性格融合過程
+${soulName}的價值觀與行事邏輯在${hostName}的身份框架下會如何演變？哪些習慣會被環境強化或壓抑？
+
+## 三、歷史軌跡干擾
+具體指出${hostName}生命中的三個關鍵轉折點，分析穿越者的介入如何改變每個節點的走向與連鎖後果。
+
+## 四、最終命運推演
+這段融合最終走向何方？新的「${hostName}」對歷史格局的最大可能貢獻或破壞是什麼？
+
+字數800字以上，請用具體人名、事件、時間點，避免空泛描述。`;
+            } else if (tab === 'crisis') {
+                const hostName = getLegendName(sel.host), soulName = getLegendName(sel.soul);
+                const scenario = sm.activeScenario;
+                if (!hostName || !soulName || !scenario) return;
+                modalTitle = `絕境：${scenario.title} × ${soulName}`;
+                histType = '絕境'; histIcon = '🔥'; histTitle = `${scenario.title}：${soulName} → ${hostName}`;
+                prompt = `【歷史絕境推演】你是一位嚴肅的歷史危機分析師。
+
+**劇本**：${scenario.title}（${scenario.era}）
+**宿主**：${hostName}
+**危機現狀**：${scenario.crisis}
+**主要對手**：${scenario.enemy}
+**穿越靈魂**：${soulName}
+
+請以死局破解的角度深度分析：
+
+## 一、危機全貌拆解
+這個絕境的真正死因是什麼？哪些是表面困境，哪些是結構性失敗？
+
+## 二、靈魂能力適配
+${soulName}在這個局面下最有價值的具體能力是什麼？又有哪些能力在此情境下完全無用？
+
+## 三、破局路線圖
+穿越後的${hostName}最有可能採取的行動序列是什麼？每一步的成功機率與代價是什麼？
+
+## 四、與${scenario.enemy}的對決
+雙方的博弈將如何演變？${soulName}的介入能否改變這場對決的本質？
+
+## 五、歷史改寫的可能性
+如果破局成功，後續歷史走向將如何分叉？如果失敗，死法是否比原來的更有意義？
+
+字數800字以上，請具體分析每個步驟的可行性與代價。`;
+            } else if (tab === 'defect') {
+                const defectorName = getLegendName(sel.defector), lordName = getLegendName(sel.newLord);
+                if (!defectorName || !lordName) return;
+                modalTitle = `換旗投主：${defectorName} → ${lordName}`;
+                histType = '換旗'; histIcon = '🚩'; histTitle = `${defectorName} 投 ${lordName}`;
+                prompt = `【換旗投主推演】你是一位嚴肅的歷史政治分析師，專注於忠誠與利益的結構性分析。
+
+**改仕者**：${defectorName}
+**新主君**：${lordName}
+
+請深度推演這次效忠轉換：
+
+## 一、相容性評估
+從能力結構（謀略/執行/性格/價值觀）分析，${defectorName}與${lordName}的搭配在哪些維度高度契合？在哪些維度存在潛在張力？
+
+## 二、投主代價與阻力
+${defectorName}改仕後面臨的三大具體挑戰是什麼？（前主陣營的追殺、新陣營舊臣的排斥、自身心理的適應）如何一一化解？
+
+## 三、能力發揮的最佳場景
+${lordName}麾下哪些具體局面最能讓${defectorName}發揮核心價值？歷史上有無類似的成功案例？
+
+## 四、歷史走向改寫
+如果這次投主成功磨合，${lordName}陣營的戰略格局將如何演變？哪場關鍵戰役或政治事件的結果會被翻轉？
+
+字數800字以上，請用具體歷史事件和細節，不要泛泛而談。`;
+            } else if (tab === 'mentor') {
+                const teacherName = getLegendName(sel.teacher), studentName = getLegendName(sel.student);
+                if (!teacherName || !studentName) return;
+                modalTitle = `師承重組：${teacherName} × ${studentName}`;
+                histType = '師承'; histIcon = '📜'; histTitle = `${teacherName} 授 ${studentName}`;
+                prompt = `【師承重組推演】你是一位嚴肅的歷史思想傳承分析師。
+
+**師父**：${teacherName}
+**弟子**：${studentName}
+
+請深度分析這段跨越時空的師承關係：
+
+## 一、傳承的本質
+${teacherName}最核心的思想體系或技藝體系是什麼？（政治哲學/軍事思想/謀略體系/人格典範）這套體系的歷史侷限性在哪裡？
+
+## 二、弟子的演化路徑
+${studentName}接受這套傳承後，哪些部分會被吸收深化？哪些部分會因為時代差異、個性差異而產生主動性的「背叛」與超越？
+
+## 三、超越與分歧
+師徒之間最根本的分歧點在哪裡？這個分歧會在哪個歷史事件上以最戲劇化的方式呈現？
+
+## 四、歷史改寫潛力
+這段師承關係若得以實現，最可能在哪個歷史格局上留下最深刻的印記？後世如何評價這段傳承？
+
+字數800字以上，深入剖析思想傳承的具體內容與衝突。`;
+            } else if (tab === 'duo') {
+                const nameA = getLegendName(sel.figureA), nameB = getLegendName(sel.figureB);
+                const lordName = getLegendName(sel.duoLord);
+                if (!nameA || !nameB) return;
+                modalTitle = `雙雄同室：${nameA} × ${nameB}`;
+                histType = '雙雄'; histIcon = '⚔️'; histTitle = `${nameA} × ${nameB}${lordName ? ` 事 ${lordName}` : ''}`;
+                const lordContext = lordName ? `\n**共同君主**：${lordName}（分析他如何駕馭這對雙雄）` : '\n（無共同君主，分析二人的自主博弈）';
+                prompt = `【雙雄同室推演】你是一位嚴肅的歷史人物關係動力學分析師。
+
+**英雄甲**：${nameA}
+**英雄乙**：${nameB}${lordContext}
+
+請深度推演這兩位頂尖人物共處同一陣營的複雜動態：
+
+## 一、能力格局分析
+兩人在核心能力維度（謀略/武力/政治/性格/影響力）上的對比。誰在哪個維度佔優？共處時的分工格局如何自然形成？
+
+## 二、相處模式的演化
+從初遇到磨合，這段關係最可能呈現的三個階段是什麼？哪些事件或決策會成為關係裂變的引爆點？
+
+## 三、君主的兩難（若有君主）
+${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己的合流？哪些手段在歷史上已有先例？` : `兩人在沒有共主約束的情況下，最終會走向合作共贏、分道揚鑣還是你死我活？觸發點是什麼？`}
+
+## 四、歷史走向的最大可能
+如果這兩人的才能能夠完全發揮且有效協作，他們所在的陣營最多能達到怎樣的歷史成就？
+
+字數900字以上，請具體分析人物性格細節與可能的歷史事件衝突點。`;
+            } else { return; }
+
+            openModal(modalTitle, 'content');
             el('radarChartContainer').classList.add('hidden');
             el('loadingState').classList.remove('hidden');
             el('loadingState').classList.add('flex');
             el('modalContent').innerHTML = '';
-            
-            let prompt = "";
-            if (scenario) {
-                prompt = `【絕境挑戰模式】
-                劇本：${scenario.title} (${scenario.era})
-                危機：${scenario.crisis}
-                對手：${scenario.enemy}
-                
-                現在，${soulName} 的靈魂穿越到了 ${hostName} 的身上。
-                請以深度的歷史推演角度分析：
-                1. **【靈魂適配度】**：穿越者的強項與宿主原有能力的重疊/互補分析。
-                2. **【性格衝突矩陣】**：兩人性格在哪些維度會產生內部張力，這將如何影響他的外在決策？
-                3. **【歷史時空干擾指數】**：利用 ${soulName} 的能力，如何應對眼前的具體死局？破局的機率為何？
-                4. **【與宿敵交鋒】**：面對 ${scenario.enemy}，新的「${hostName}」的戰略戰術會發生何種變形？
-                5. **【最終結局】**：歷史是否被改寫？長遠來看影響了什麼？`;
-            } else {
-                prompt = `【自由魂穿模式】
-                ${soulName} 的靈魂穿越到了 ${hostName} 的身上。
-                請進行深度的歷史化學反應推演：
-                1. **【靈魂適配度】**：穿越者與宿主的能力互補與排斥。
-                2. **【性格衝突矩陣】**：兩人價值觀與行事作風的融合過程。
-                3. **【歷史軌跡干擾】**：他將如何改變原本的歷史軌跡？
-                4. **【結局預測】**。`;
-            }
 
             try {
                 const myToken = ++currentRequestToken;
-const soulResult = await callGeminiStream(prompt, (partial) => {
-    if (myToken !== currentRequestToken) return;
-    el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(partial);
-}, (model) => {
-    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
-});
-const soulType = scenario ? '絕境' : '魂穿';
-const soulIcon = scenario ? '🔥' : '👻';
-const soulTitle = `${soulName} → ${hostName}`;
-appState.simulationHistory.unshift({ type: soulType, icon: soulIcon, title: soulTitle, result: soulResult.slice(0, 100), fullResult: soulResult, time: new Date().toLocaleString('zh-TW') });
-
-syncToCloud();
+                const result = await callGeminiStream(prompt, (partial) => {
+                    if (myToken !== currentRequestToken) return;
+                    el('loadingState').classList.add('hidden');
+                    el('modalContent').innerHTML = safeMarkdown(partial);
+                }, () => {
+                    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
+                });
+                appState.simulationHistory.unshift({ type: histType, icon: histIcon, title: histTitle, result: result.slice(0, 100), fullResult: result, time: new Date().toLocaleString('zh-TW') });
+                syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
             }
         }
 
@@ -3422,21 +3500,20 @@ syncToCloud();
                     el('compareBar').classList.remove('translate-y-full');
                     document.body.style.paddingBottom = '80px';
                 } else {
-                    const panelMap = { 'hegemony': 'hegemonyPanel', 'soulMode': 'soulModePanel', 'scenarioMode': 'scenarioModePanel', 'debateMode': 'debateModePanel' };
+                    const panelMap = { 'hegemony': 'hegemonyPanel', 'soulMode': 'soulModePanel', 'debateMode': 'debateModePanel' };
                     const panel = el(panelMap[modeName]);
                     if(panel) panel.classList.remove('translate-y-full');
 
                     const tip = el('selectionModeTip');
-                    if(modeName !== 'scenarioMode') {
-                        tip.classList.remove('hidden');
-                        if (modeName === 'hegemony') el('tipText').innerText = '點擊勢力中的職位，再點擊上方人物加入';
-                        else if (modeName === 'debateMode') el('tipText').innerText = '點擊下方正方／反方槽位，再點擊上方人物加入';
-                        else el('tipText').innerText = '選擇【肉身】與【靈魂】';
-                    }
-                    const heightMap = { 'hegemony': '72vh', 'soulMode': '300px', 'scenarioMode': '380px', 'debateMode': '340px' };
+                    tip.classList.remove('hidden');
+                    if (modeName === 'hegemony') el('tipText').innerText = '點擊勢力中的職位，再點擊上方人物加入';
+                    else if (modeName === 'debateMode') el('tipText').innerText = '點擊下方正方／反方槽位，再點擊上方人物加入';
+                    else el('tipText').innerText = '選擇角色後啟動推演';
+                    const heightMap = { 'hegemony': '72vh', 'soulMode': '420px', 'debateMode': '340px' };
                     document.body.style.paddingBottom = heightMap[modeName] || '0px';
                     if (modeName === 'debateMode') updateDebateModeUI();
                     if (modeName === 'hegemony') updateHegemonyUI();
+                    if (modeName === 'soulMode') { setSoulTab(appState.soulMode.activeTab || 'free'); }
                 }
             } else {
                 appState.mode = 'browse';
@@ -3485,10 +3562,11 @@ syncToCloud();
             // soulMode
             appState.soulMode.minimized = !appState.soulMode.minimized;
             const panel = el('soulModePanel'); const content = el('soulModeContent'); const status = el('soulModeStatus');
+            const tabBar = el('soulTabBar');
             if (appState.soulMode.minimized) {
-                panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px';
+                panel.style.height = '48px'; content.classList.add('hidden'); if(tabBar) tabBar.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px';
             } else {
-                panel.style.height = '300px'; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '300px';
+                panel.style.height = '420px'; content.classList.remove('hidden'); if(tabBar) tabBar.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '420px';
             }
         }
 
@@ -3503,32 +3581,7 @@ syncToCloud();
             elements.forEach(e => e.innerText = text);
         }
 
-        // Soul/Scenario logic 
-        function selectSoulSlot(slot) {
-             if (slot === 'host' && appState.soulMode.activeScenario) { 
-                 customConfirm("退出當前絕境劇本？", () => {
-                     appState.soulMode.activeScenario = null; 
-                     el('hostNameDisplay').innerText = "點擊選擇..."; 
-                     el('hostNameDisplay').classList.remove('text-red-600');
-                     appState.soulMode.activeSlot = slot; appState.soulMode.selection[slot] = null; updateSoulModeUI(); if(!appState.soulMode.minimized) togglePanelSize('soulMode');
-                 });
-                 return;
-             }
-             appState.soulMode.activeSlot = slot; appState.soulMode.selection[slot] = null; updateSoulModeUI(); if(!appState.soulMode.minimized) togglePanelSize('soulMode');
-        }
-
-        function updateSoulModeUI() {
-             ['host', 'soul'].forEach(slot => {
-                 const elem = el(`slot-soul-${slot}`); const id = appState.soulMode.selection[slot]; const isActive = appState.soulMode.activeSlot === slot; const nameEl = elem.querySelector('.slot-name');
-                 elem.classList.remove('active-selection', 'filled');
-                 if (isActive) { elem.classList.add('active-selection'); nameEl.innerText = "請點擊上方人物..."; } else if (id) { nameEl.innerText = getLegendName(id); elem.classList.add('filled'); } else { nameEl.innerText = "點擊選擇..."; }
-             });
-             const ready = appState.soulMode.selection.host && appState.soulMode.selection.soul; el('startSoulBtn').disabled = !ready; if(ready) el('startSoulBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); else el('startSoulBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
-        }
-
-        function clearSoulSlots() { appState.soulMode.selection = { host: null, soul: null }; appState.soulMode.activeSlot = null; appState.soulMode.activeScenario = null; el('hostNameDisplay').innerText = "點擊選擇..."; el('hostNameDisplay').classList.remove('text-red-600'); updateSoulModeUI(); renderLegends(); }
-        
-        // --- SCENARIOS ---
+        // --- SOUL MODE LOGIC ---
         const scenarios = [
             { era: "戰國", title: "長平之戰", host: "趙括", crisis: "斷糧46日，四十萬趙軍被白起包圍。", enemy: "白起", id: "sc1" },
             { era: "大明", title: "煤山之變", host: "崇禎", crisis: "李自成破城，百官逃散，身邊僅一太監。", enemy: "李自成", id: "sc2" },
@@ -3552,25 +3605,124 @@ syncToCloud();
             { era: "新朝", title: "漸台之戰", host: "王莽", crisis: "綠林軍攻入長安，復古改制全面失敗。", enemy: "劉秀", id: "sc20" }
         ];
 
-        function initScenarios() {
-            const container = el('scenarioContent'); let html = '';
-            scenarios.forEach(s => { html += `<div onclick="startScenario('${s.id}')" class="min-w-[240px] bg-[#fffdf9] rounded-xl border border-[#fda4af] p-5 cursor-pointer hover:border-[#be123c] hover:shadow-lg transition-all group flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 right-0 w-16 h-16 bg-[#be123c] opacity-5 rounded-bl-full pointer-events-none"></div><div><span class="text-[10px] font-bold bg-[#ffe4e6] text-[#9f1239] px-2 py-0.5 rounded border border-[#fecdd3]">${s.era}</span><h4 class="font-bold text-[#881337] mt-2 text-lg font-serif group-hover:text-[#be123c]">${s.title}</h4><div class="text-xs text-[#57534e] mt-1 mb-2 font-serif"><i class="fa-solid fa-user-injured mr-1 text-[#fda4af]"></i>宿主: ${s.host}</div><p class="text-[11px] text-[#44403c] leading-relaxed border-t border-[#fecdd3] pt-2 font-serif italic opacity-80">"${s.crisis}"</p></div><div class="mt-3 text-xs font-bold text-[#be123c] flex items-center gap-1 group-hover:translate-x-1 transition-transform uppercase tracking-wider">挑戰 ${s.enemy} <i class="fa-solid fa-arrow-right"></i></div></div>`; });
-            container.appendChild(document.createRange().createContextualFragment(html));
+        function setSoulTab(tab) {
+            appState.soulMode.activeTab = tab;
+            appState.soulMode.activeSlot = null;
+            document.querySelectorAll('.soul-tab').forEach(b => b.classList.remove('soul-tab-active'));
+            const btn = el(`soul-tab-${tab}`); if(btn) btn.classList.add('soul-tab-active');
+            updateSoulModeUI();
         }
 
-        function startScenario(id) { 
-            const s = scenarios.find(x => x.id === id); 
-            toggleMode('soulMode'); 
-            appState.soulMode.activeScenario = s; 
-            
-            // Find host ID by name for safety
-            const h = legendsData.find(l => l.name === s.host);
-            const hostId = h ? h.id : null;
+        function selectSoulSlot(slot) {
+            appState.soulMode.activeSlot = slot;
+            appState.soulMode.selection[slot] = null;
+            updateSoulModeUI();
+            if (appState.soulMode.minimized) togglePanelSize('soulMode');
+        }
 
-            appState.soulMode.selection.host = hostId; 
-            el('hostNameDisplay').innerText = h ? h.name : s.host; 
-            el('hostNameDisplay').classList.add('text-red-600'); 
-            selectSoulSlot('soul'); 
+        function _soulSlotHTML(key, label, sublabel, iconClass, borderCls, locked) {
+            const id = appState.soulMode.selection[key];
+            const isActive = appState.soulMode.activeSlot === key;
+            const name = id ? getLegendName(id) : null;
+            const stateClass = isActive ? 'active-selection' : (id ? 'filled' : '');
+            const nameText = isActive ? '請點擊上方人物...' : (name || (locked ? '（已鎖定）' : '點擊選擇...'));
+            const clickAttr = locked ? '' : `onclick="selectSoulSlot('${key}')"`;
+            return `<div ${clickAttr} class="role-slot ${stateClass} w-52 h-32 rounded-xl bg-white p-3 ${locked ? '' : 'cursor-pointer'} flex flex-col justify-center items-center gap-1.5 shadow-sm border ${borderCls} hover:shadow-md relative overflow-hidden group transition-all">
+                <div class="w-9 h-9 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-lg group-hover:bg-slate-700 group-hover:text-white transition-colors"><i class="${iconClass}"></i></div>
+                <div class="text-center">
+                    <p class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.15em]">${sublabel}</p>
+                    <p class="font-bold text-slate-800 font-serif text-sm">${label}</p>
+                    <p class="text-xs font-bold text-indigo-900 truncate w-44 mt-0.5 border-t border-dashed border-slate-200 pt-0.5">${nameText}</p>
+                </div>
+            </div>`;
+        }
+
+        function _soulActionBtnHTML(label, ready, icon) {
+            return `<button onclick="handleSoulAction()" ${ready ? '' : 'disabled'} class="btn-ink px-5 py-3 rounded-xl font-bold font-serif shadow-lg disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2 text-sm"><i class="${icon}"></i>${label}</button>`;
+        }
+
+        function updateSoulModeUI() {
+            const sm = appState.soulMode; const sel = sm.selection; const content = el('soulModeContent');
+            if (!content) return;
+            const arrow = (label) => `<div class="flex flex-col items-center text-slate-400 opacity-60 shrink-0"><i class="fa-solid fa-arrow-right-long text-2xl animate-pulse"></i><span class="text-[9px] font-serif mt-1 tracking-widest">${label}</span></div>`;
+            if (sm.activeTab === 'free') {
+                content.innerHTML = `<div class="flex gap-8 justify-center items-center h-full px-6 overflow-x-auto">
+                    ${_soulSlotHTML('host','肉身 (宿主)','HOST','fa-solid fa-user-injured','border-slate-300',false)}
+                    ${arrow('穿越')}
+                    ${_soulSlotHTML('soul','靈魂 (穿越者)','SOUL','fa-solid fa-ghost','border-purple-300',false)}
+                    <div class="ml-4 shrink-0">${_soulActionBtnHTML('逆天改命', sel.host && sel.soul, 'fa-solid fa-bolt')}</div>
+                </div>`;
+            } else if (sm.activeTab === 'crisis') {
+                if (sm.activeScenario) {
+                    const s = sm.activeScenario;
+                    content.innerHTML = `<div class="flex gap-8 justify-center items-center h-full px-6 overflow-x-auto">
+                        <div class="text-center shrink-0">
+                            <span class="text-[9px] font-bold bg-red-100 text-red-800 px-2 py-0.5 rounded">${s.era} · ${s.title}</span>
+                            ${_soulSlotHTML('host', s.host + '（宿主鎖定）', 'HOST LOCKED', 'fa-solid fa-lock', 'border-red-300', true)}
+                            <p class="text-[10px] text-red-700 mt-1 font-serif italic max-w-[200px]">"${s.crisis}"</p>
+                        </div>
+                        ${arrow('穿越')}
+                        ${_soulSlotHTML('soul','靈魂 (穿越者)','SOUL','fa-solid fa-ghost','border-purple-300',false)}
+                        <div class="ml-4 flex flex-col gap-2 shrink-0">
+                            ${_soulActionBtnHTML('絕境推演', sel.host && sel.soul, 'fa-solid fa-fire-flame-curved')}
+                            <button onclick="appState.soulMode.activeScenario=null;appState.soulMode.selection.host=null;updateSoulModeUI();" class="text-xs text-slate-500 hover:text-red-600 font-serif text-center">← 返回劇本列表</button>
+                        </div>
+                    </div>`;
+                } else {
+                    let cards = scenarios.map(s => `<div onclick="startScenario('${s.id}')" class="min-w-[200px] bg-[#fffdf9] rounded-xl border border-[#fda4af] p-4 cursor-pointer hover:border-[#be123c] hover:shadow-lg transition-all group flex flex-col justify-between relative overflow-hidden shrink-0">
+                        <span class="text-[9px] font-bold bg-[#ffe4e6] text-[#9f1239] px-1.5 py-0.5 rounded">${s.era}</span>
+                        <h4 class="font-bold text-[#881337] mt-1 text-base font-serif group-hover:text-[#be123c]">${s.title}</h4>
+                        <p class="text-[10px] text-[#57534e] font-serif">宿主：${s.host}</p>
+                        <p class="text-[10px] text-[#44403c] leading-relaxed border-t border-[#fecdd3] pt-1.5 font-serif italic opacity-80 mt-1">"${s.crisis}"</p>
+                        <div class="mt-2 text-[10px] font-bold text-[#be123c] flex items-center gap-1">挑戰 ${s.enemy} <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>`).join('');
+                    content.innerHTML = `<div class="flex gap-4 items-center px-6 py-4 overflow-x-auto h-full">${cards}</div>`;
+                }
+            } else if (sm.activeTab === 'defect') {
+                content.innerHTML = `<div class="flex gap-8 justify-center items-center h-full px-6 overflow-x-auto">
+                    ${_soulSlotHTML('defector','改仕者','DEFECTOR','fa-solid fa-person-walking-arrow-right','border-amber-300',false)}
+                    ${arrow('投奔')}
+                    ${_soulSlotHTML('newLord','新主君','NEW LORD','fa-solid fa-crown','border-amber-500',false)}
+                    <div class="ml-4 shrink-0">${_soulActionBtnHTML('換旗推演', sel.defector && sel.newLord, 'fa-solid fa-flag')}</div>
+                </div>`;
+            } else if (sm.activeTab === 'mentor') {
+                content.innerHTML = `<div class="flex gap-8 justify-center items-center h-full px-6 overflow-x-auto">
+                    ${_soulSlotHTML('teacher','師父','TEACHER','fa-solid fa-scroll','border-teal-300',false)}
+                    ${arrow('傳承')}
+                    ${_soulSlotHTML('student','弟子','DISCIPLE','fa-solid fa-graduation-cap','border-teal-500',false)}
+                    <div class="ml-4 shrink-0">${_soulActionBtnHTML('師承推演', sel.teacher && sel.student, 'fa-solid fa-scroll')}</div>
+                </div>`;
+            } else if (sm.activeTab === 'duo') {
+                content.innerHTML = `<div class="flex gap-6 justify-center items-center h-full px-6 overflow-x-auto">
+                    ${_soulSlotHTML('figureA','英雄甲','FIGURE A','fa-solid fa-user-ninja','border-red-300',false)}
+                    ${arrow('同室')}
+                    ${_soulSlotHTML('figureB','英雄乙','FIGURE B','fa-solid fa-user-shield','border-blue-300',false)}
+                    <div class="text-slate-400 opacity-40 font-bold text-lg shrink-0">+</div>
+                    ${_soulSlotHTML('duoLord','可選：君主','OPTIONAL LORD','fa-solid fa-chess-king','border-dashed border-slate-300',false)}
+                    <div class="ml-2 shrink-0">${_soulActionBtnHTML('雙雄推演', sel.figureA && sel.figureB, 'fa-solid fa-handshake-angle')}</div>
+                </div>`;
+            }
+        }
+
+        function clearSoulSlots() {
+            appState.soulMode.selection = { host: null, soul: null, defector: null, newLord: null, teacher: null, student: null, figureA: null, figureB: null, duoLord: null };
+            appState.soulMode.activeSlot = null;
+            appState.soulMode.activeScenario = null;
+            updateSoulModeUI();
+            renderLegends();
+        }
+
+        function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
+
+        function startScenario(id) {
+            const s = scenarios.find(x => x.id === id);
+            if (!s) return;
+            const h = legendsData.find(l => l.name === s.host);
+            appState.soulMode.activeScenario = s;
+            appState.soulMode.selection.host = h ? h.id : null;
+            appState.soulMode.selection.soul = null;
+            appState.soulMode.activeSlot = 'soul';
+            updateSoulModeUI();
         }
         
         // --- 對接本地端 Python FastAPI 後端 ---
