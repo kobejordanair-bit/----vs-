@@ -512,13 +512,13 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <!-- 推演類型 -->
                 <div>
                     <h3 class="font-bold font-serif text-xs text-[#78716c] mb-3 uppercase tracking-widest">推演類型</h3>
-                    <div class="grid grid-cols-3 gap-2" id="scenarioTypeContainer">
+                    <div class="grid grid-cols-2 gap-2" id="scenarioTypeContainer">
                         <label class="cursor-pointer">
                             <input type="radio" name="scenarioType" value="battle" class="sr-only peer" checked onchange="onScenarioTypeChange('battle')">
                             <div class="peer-checked:border-[#b45309] peer-checked:bg-amber-50 peer-checked:text-[#92400e] border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-amber-200 text-[#78716c]">
                                 <i class="fa-solid fa-khanda text-lg mb-1 block"></i>
                                 <p class="text-xs font-bold font-serif">征伐之戰</p>
-                                <p class="text-[9px] mt-0.5 opacity-70">軍事對決</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">多方軍事對決</p>
                             </div>
                         </label>
                         <label class="cursor-pointer">
@@ -526,7 +526,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             <div class="peer-checked:border-[#047857] peer-checked:bg-emerald-50 peer-checked:text-emerald-800 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-emerald-200 text-[#78716c]">
                                 <i class="fa-solid fa-landmark text-lg mb-1 block"></i>
                                 <p class="text-xs font-bold font-serif">朝堂角力</p>
-                                <p class="text-[9px] mt-0.5 opacity-70">政治博弈</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">多方政治博弈</p>
                             </div>
                         </label>
                         <label class="cursor-pointer">
@@ -534,7 +534,15 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             <div class="peer-checked:border-[#7f1d1d] peer-checked:bg-red-50 peer-checked:text-red-900 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-red-200 text-[#78716c]">
                                 <i class="fa-solid fa-chess-king text-lg mb-1 block"></i>
                                 <p class="text-xs font-bold font-serif">亂世爭霸</p>
-                                <p class="text-[9px] mt-0.5 opacity-70">全面推演</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">多方全面角逐</p>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="scenarioType" value="empire" class="sr-only peer" onchange="onScenarioTypeChange('empire')">
+                            <div class="peer-checked:border-[#6d28d9] peer-checked:bg-violet-50 peer-checked:text-violet-900 border-2 border-[#e5e0d3] rounded-lg p-3 text-center transition-all hover:border-violet-200 text-[#78716c]">
+                                <i class="fa-solid fa-crown text-lg mb-1 block"></i>
+                                <p class="text-xs font-bold font-serif">帝國盛衰</p>
+                                <p class="text-[9px] mt-0.5 opacity-70">單勢力王朝興替</p>
                             </div>
                         </label>
                     </div>
@@ -3148,13 +3156,15 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             appState.hegemony.battleSetup = JSON.parse(JSON.stringify(sim.setup));
             appState.hegemony.phases = JSON.parse(JSON.stringify(sim.phases));
             const scenario = sim.setup.scenario || 'battle';
-            const titleMap = { battle: '征伐之戰', court: '朝堂角力', full: '亂世爭霸' };
+            const titleMap = { battle: '征伐之戰', court: '朝堂角力', full: '亂世爭霸', empire: '帝國盛衰' };
             openModal(`逐鹿中原・${titleMap[scenario]}（繼續）`, 'content');
             el('radarChartContainer').classList.add('hidden');
             const hdrColors = { opening: 'bg-amber-100 text-amber-800', ending: 'bg-red-100 text-red-800', middle: 'bg-slate-100 text-slate-700' };
             let content = '';
             if (scenario !== 'court') {
-                content = `<div id="phaseProgressBar" class="flex items-center gap-2 mb-6 p-3 bg-[#f5f5f4] rounded-lg border border-[#e5e0d3] text-xs font-bold"><span class="px-2.5 py-1 rounded-full bg-amber-200 text-amber-900">開局</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span class="px-2.5 py-1 rounded-full bg-slate-200 text-slate-700">展開中（第${sim.phases.filter(p=>p.type==='middle').length}回合）</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">終局</span></div>`;
+                const midCount = sim.phases.filter(p=>p.type==='middle').length;
+                const midLabel = scenario === 'empire' ? `推演中（第${midCount}紀）` : `展開中（第${midCount}回合）`;
+                content = `<div id="phaseProgressBar" class="flex items-center gap-2 mb-6 p-3 bg-[#f5f5f4] rounded-lg border border-[#e5e0d3] text-xs font-bold"><span class="px-2.5 py-1 rounded-full bg-amber-200 text-amber-900">開局</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span class="px-2.5 py-1 rounded-full bg-slate-200 text-slate-700">${midLabel}</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">終局</span></div>`;
             }
             el('modalContent').innerHTML = content;
             sim.phases.forEach(p => {
@@ -3190,7 +3200,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
 
         function onScenarioTypeChange(val) {
             appState.hegemony.battleSetup.scenario = val;
-            el('battlefieldSection').style.display = val === 'court' ? 'none' : '';
+            el('battlefieldSection').style.display = (val === 'court' || val === 'empire') ? 'none' : '';
         }
 
         function closeBattleSetup() {
@@ -3268,10 +3278,10 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             appState.hegemony.battleSetup.scenario = scenario;
             const readyFactions = appState.hegemony.factions.filter(f => [...Object.values(f.courtSlots),...Object.values(f.militarySlots)].some(n=>n));
             if (readyFactions.length < 1) return customAlert('至少需要一個勢力配置人物才能開始推演');
-            if (scenario !== 'court' && readyFactions.length < 2) return customAlert('征伐/爭霸推演至少需要兩個勢力');
+            if (scenario !== 'court' && scenario !== 'empire' && readyFactions.length < 2) return customAlert('征伐/爭霸推演至少需要兩個勢力');
             closeBattleSetup();
             appState.hegemony.phases = [];
-            const titleMap = { battle: '征伐之戰', court: '朝堂角力', full: '亂世爭霸' };
+            const titleMap = { battle: '征伐之戰', court: '朝堂角力', full: '亂世爭霸', empire: '帝國盛衰' };
             openModal(`逐鹿中原・${titleMap[scenario]}`, 'content');
             el('radarChartContainer').classList.add('hidden');
             if (scenario === 'court') {
@@ -3331,25 +3341,44 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             const middleCount = phases.filter(p => p.type === 'middle').length;
             const factionDesc = factionData.map(f => `▶ ${f.name}｜領地：${f.領地}｜國力：軍事${f.國力.軍事}/謀略${f.國力.謀略}/政治${f.國力.政治}/經濟${f.國力.經濟}/外交${f.國力.外交}\n  朝堂：${Object.entries(f.朝堂).map(([r,n])=>`${r}→${n}`).join('、')}\n  兵事：${Object.entries(f.兵事).map(([r,n])=>`${r}→${n}`).join('、')}`).join('\n\n');
 
+            const ef = factionData[0];
+            const summaryFmt = `\n\n在故事正文結束後，另起一行輸出【本章形勢速覽】（每條25字以內，用以下格式）：\n⚔ 戰局：...\n📜 謀算：...\n👤 人物：...\n⚠ 下章懸念：...`;
+            const empireSummaryFmt = `\n\n在故事正文結束後，另起一行輸出【本紀形勢速覽】（每條25字以內）：\n⚔ 軍事邊患：...\n📜 朝堂動向：...\n💰 民生國力：...\n👤 關鍵人物：誰起誰落\n⚠ 下紀隱患：...`;
+
             let phaseTitle, prompt;
             if (phaseType === 'opening') {
-                phaseTitle = '第一章：天下初動';
-                if (scenario === 'battle') {
-                    prompt = `請以架空歷史小說的開篇筆法，書寫【征伐之戰・第一章：天下初動】。\n\n【戰場環境】：${bfInfo}\n【參戰勢力】：\n${factionDesc}\n\n要求：\n- 從大局到細節：先寫時代背景與天下形勢，再聚焦至這場戰役的起因\n- 各勢力的統帥、謀士登場時要有鮮活的人物素描\n- 寫出開戰前的緊張氣氛：斥候探報、兵馬集結、主帥帳中的謀算\n- 地理環境與天氣描寫要融入敘事，而非乾燥說明\n- 以懸念收尾，引出下一章的衝突\n- 字數不少於900字\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                if (scenario === 'empire') {
+                    phaseTitle = '開國卷：天命所歸';
+                    prompt = `請以架空歷史小說的開篇筆法，書寫【${ef.name}王朝・開國卷：天命所歸】。\n\n【君臣陣容】：\n  朝堂：${Object.entries(ef.朝堂).map(([r,n])=>`${r}→${n}`).join('、')}\n  兵事：${Object.entries(ef.兵事).map(([r,n])=>`${r}→${n}`).join('、')}\n【立朝版圖】：${ef.領地}\n【建國國力】：軍事${ef.國力.軍事}/謀略${ef.國力.謀略}/政治${ef.國力.政治}/經濟${ef.國力.經濟}/外交${ef.國力.外交}\n\n要求：\n- 寫出帝國初立的氣象：開國元勳的功業、君主的雄心與潛藏隱憂\n- 朝堂格局的微妙張力：功臣與新貴、主戰與保守、忠正與野心者\n- 四境形勢：仍有未服之地，潛伏外患邊患\n- 百姓視角穿插其中：亂世之後的人心向背\n- 以某個具體時刻作為開篇（登基大典、首次朝議、邊境急報）\n- 字數不少於900字${empireSummaryFmt}\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
                 } else {
-                    prompt = `請以架空歷史小說的開篇筆法，書寫【亂世爭霸・第一章：群雄並起】。\n\n【時代舞台】：${bfInfo}\n【各方勢力】：\n${factionDesc}\n\n要求：\n- 描繪亂世的時代氛圍，讓讀者感受到山河破碎或風雲變色的氣息\n- 每個勢力的君主與核心謀臣要有立體的登場刻畫\n- 展現各方的戰略野心、領地優劣與潛在矛盾\n- 廟堂密謀、邊境烽火、民間動向三線並寫\n- 以某個具體事件觸發（如盟約破裂、使節被殺、奇謀發動）引爆序幕\n- 字數不少於900字\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    phaseTitle = '第一章：天下初動';
+                    if (scenario === 'battle') {
+                        prompt = `請以架空歷史小說的開篇筆法，書寫【征伐之戰・第一章：天下初動】。\n\n【戰場環境】：${bfInfo}\n【參戰勢力】：\n${factionDesc}\n\n要求：\n- 從大局到細節：先寫時代背景與天下形勢，再聚焦至這場戰役的起因\n- 各勢力的統帥、謀士登場時要有鮮活的人物素描\n- 寫出開戰前的緊張氣氛：斥候探報、兵馬集結、主帥帳中的謀算\n- 地理環境與天氣描寫要融入敘事，而非乾燥說明\n- 以懸念收尾，引出下一章的衝突\n- 字數不少於900字${summaryFmt}\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    } else {
+                        prompt = `請以架空歷史小說的開篇筆法，書寫【亂世爭霸・第一章：群雄並起】。\n\n【時代舞台】：${bfInfo}\n【各方勢力】：\n${factionDesc}\n\n要求：\n- 描繪亂世的時代氛圍，讓讀者感受到山河破碎或風雲變色的氣息\n- 每個勢力的君主與核心謀臣要有立體的登場刻畫\n- 展現各方的戰略野心、領地優劣與潛在矛盾\n- 廟堂密謀、邊境烽火、民間動向三線並寫\n- 以某個具體事件觸發（如盟約破裂、使節被殺、奇謀發動）引爆序幕\n- 字數不少於900字${summaryFmt}\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    }
                 }
             } else if (phaseType === 'middle') {
-                phaseTitle = `第${middleCount + 1}回合`;
-                if (scenario === 'battle') {
-                    prompt = `以下是戰役推演的完整過程：\n${prevCtx}\n\n---\n請以架空歷史小說的筆法，書寫【第${middleCount+1}回合】這一章節。\n\n要求：\n- 以小說章回體敘事，有場景描寫、人物對話、心理活動\n- 每位關鍵武將與謀士都有具體行動與鮮明個性\n- 戰場細節真實生動：旌旗、號角、地形、傷亡、天色\n- 謀略交鋒要有博弈張力，不能只是平鋪直述\n- 本章末尾留下懸念或局勢轉折，引導下一章\n- 字數不少於800字，可以更長，務求飽滿\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                if (scenario === 'empire') {
+                    phaseTitle = `第${middleCount + 1}紀`;
+                    prompt = `以下是【${ef.name}王朝】的歷史推演記錄：\n${prevCtx}\n\n---\n請以架空歷史小說的筆法，書寫【第${middleCount+1}紀】的歷史章節。\n\n要求：\n- 自行決定本紀的主題危機（繼承之爭、邊境入侵、宦官干政、藩鎮割據、農民起義、文臣黨爭、天災人禍、奇謀之臣的興衰，任選其一或組合）\n- 章回體書寫，起承轉合完整，不流水帳\n- 君主的施政抉擇、重臣的進諫與謀算、武將的征伐各有具體場景與對話\n- 展現帝國內部矛盾如何激化或化解\n- 本紀末尾留下下一危機的伏筆，或帶出一個影響深遠的決定\n- 字數不少於900字，可以更長${empireSummaryFmt}\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
                 } else {
-                    prompt = `以下是亂世爭霸推演的完整過程：\n${prevCtx}\n\n---\n請以架空歷史小說的筆法，書寫【第${middleCount+1}回合】這一章節。\n\n要求：\n- 章回體敘事，兼顧廟堂、戰場、江湖三個維度\n- 君主的决断、謀臣的運籌、武將的衝鋒各有血肉\n- 勢力間的角力要有明暗兩線：表面外交與暗中謀算\n- 民間視角、時代氛圍偶爾穿插，增加史詩厚度\n- 本章末尾要有情勢反轉或重大伏筆\n- 字數不少於800字，可以更長，務求飽滿\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    phaseTitle = `第${middleCount + 1}回合`;
+                    if (scenario === 'battle') {
+                        prompt = `以下是戰役推演的完整過程：\n${prevCtx}\n\n---\n請以架空歷史小說的筆法，書寫【第${middleCount+1}回合】這一章節。\n\n要求：\n- 以小說章回體敘事，有場景描寫、人物對話、心理活動\n- 每位關鍵武將與謀士都有具體行動與鮮明個性\n- 戰場細節真實生動：旌旗、號角、地形、傷亡、天色\n- 謀略交鋒要有博弈張力，不能只是平鋪直述\n- 本章末尾留下懸念或局勢轉折，引導下一章\n- 字數不少於800字，可以更長，務求飽滿${summaryFmt}\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    } else {
+                        prompt = `以下是亂世爭霸推演的完整過程：\n${prevCtx}\n\n---\n請以架空歷史小說的筆法，書寫【第${middleCount+1}回合】這一章節。\n\n要求：\n- 章回體敘事，兼顧廟堂、戰場、江湖三個維度\n- 君主的决断、謀臣的運籌、武將的衝鋒各有血肉\n- 勢力間的角力要有明暗兩線：表面外交與暗中謀算\n- 民間視角、時代氛圍偶爾穿插，增加史詩厚度\n- 本章末尾要有情勢反轉或重大伏筆\n- 字數不少於800字，可以更長，務求飽滿${summaryFmt}\n\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    }
                 }
             } else {
-                phaseTitle = '終章：塵埃落定';
-                const typeLabel = scenario === 'battle' ? '征伐之戰' : '亂世爭霸';
-                prompt = `以下是${typeLabel}推演的全部過程：\n${prevCtx}\n\n---\n請以架空歷史小說的終章筆法，書寫這場${typeLabel}的最終章節【塵埃落定】。\n\n要求：\n- 描寫決定性的最後一幕，勝負如何在刀光劍影或謀算縱橫中塵埃落定\n- 每位主要人物的結局：有人登頂、有人殞落、有人流亡，各有其命運\n- 以史書蓋棺的筆調，評論此役的歷史意義與各人的功過是非\n- 留下回響：勝者的隱憂、敗者的遺志、時代的走向\n- 字數不少於700字，要讓人讀完有餘韻`;
+                if (scenario === 'empire') {
+                    phaseTitle = '終卷：王朝命運';
+                    prompt = `以下是【${ef.name}王朝】的完整歷史推演：\n${prevCtx}\n\n---\n請以架空歷史小說的終章筆法，書寫這個王朝的最終命運【終卷：王朝命運】。\n\n要求：\n- 寫出王朝走向哪一種命運：盛世永繼、歷經中衰後中興、還是積重難返走向傾覆\n- 末代帝王或中興之主的最後時刻，要有戲劇性的核心場景\n- 以史官的筆調蓋棺論定：每位重要人物的功過是非與最終歸宿\n- 寫出這個王朝在歷史長河中留下的印記——是豐功偉業、是沉痛教訓，或是令人唏噓的遺憾\n- 字數不少於700字，要讓人讀完感受到歷史的厚重與蒼涼`;
+                } else {
+                    phaseTitle = '終章：塵埃落定';
+                    const typeLabel = scenario === 'battle' ? '征伐之戰' : '亂世爭霸';
+                    prompt = `以下是${typeLabel}推演的全部過程：\n${prevCtx}\n\n---\n請以架空歷史小說的終章筆法，書寫這場${typeLabel}的最終章節【塵埃落定】。\n\n要求：\n- 描寫決定性的最後一幕，勝負如何在刀光劍影或謀算縱橫中塵埃落定\n- 每位主要人物的結局：有人登頂、有人殞落、有人流亡，各有其命運\n- 以史書蓋棺的筆調，評論此役的歷史意義與各人的功過是非\n- 留下回響：勝者的隱憂、敗者的遺志、時代的走向\n- 字數不少於700字，要讓人讀完有餘韻`;
+                }
             }
 
             const ppMap = { opening: 'pp_opening', middle: 'pp_middle', ending: 'pp_ending' };
@@ -3387,15 +3416,17 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                     btnDiv.id = 'phaseActionBtns';
                     btnDiv.className = 'flex gap-2 my-4';
                     if (shouldContinue) {
-                        const roundLabel = middleCount > 0 ? `第${middleCount+1}回合` : '繼續推演';
-                        btnDiv.innerHTML = `<button onclick="runBattlePhase('middle')" class="flex-1 btn-ink text-sm font-bold py-2.5 rounded-lg">${roundLabel}</button><button onclick="runBattlePhase('ending')" class="px-4 py-2.5 bg-red-50 border border-red-200 text-red-700 text-sm font-bold rounded-lg hover:bg-red-100 whitespace-nowrap">終局結算</button><button onclick="pauseSimulation()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 text-slate-500 text-sm font-bold rounded-lg hover:bg-slate-100 whitespace-nowrap">暫停</button>`;
+                        const isEmpire = scenario === 'empire';
+                        const roundLabel = isEmpire ? `第${middleCount+1}紀` : (middleCount > 0 ? `第${middleCount+1}回合` : '繼續推演');
+                        const endLabel = isEmpire ? '王朝終卷' : '終局結算';
+                        btnDiv.innerHTML = `<button onclick="runBattlePhase('middle')" class="flex-1 btn-ink text-sm font-bold py-2.5 rounded-lg">${roundLabel}</button><button onclick="runBattlePhase('ending')" class="px-4 py-2.5 bg-red-50 border border-red-200 text-red-700 text-sm font-bold rounded-lg hover:bg-red-100 whitespace-nowrap">${endLabel}</button><button onclick="pauseSimulation()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 text-slate-500 text-sm font-bold rounded-lg hover:bg-slate-100 whitespace-nowrap">暫停</button>`;
                     } else {
                         btnDiv.innerHTML = `<button onclick="runBattlePhase('ending')" class="flex-1 bg-[#7f1d1d] hover:bg-red-900 text-white text-sm font-bold py-2.5 rounded-lg">終局結算</button><button onclick="pauseSimulation()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 text-slate-500 text-sm font-bold rounded-lg hover:bg-slate-100 whitespace-nowrap">暫停</button>`;
                     }
                     el('modalContent').appendChild(btnDiv);
                 } else {
-                    const typeIcons = { battle: '⚔️', full: '👑' };
-                    const factionNames = factions.map(f => f.name).join(' vs ');
+                    const typeIcons = { battle: '⚔️', full: '👑', empire: '🏛️' };
+                    const factionNames = scenario === 'empire' ? ef.name : factions.map(f => f.name).join(' vs ');
                     const fullResult = appState.hegemony.phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n');
                     appState.simulationHistory.unshift({ type:'逐鹿', icon: typeIcons[scenario] || '👑', title: factionNames, result: cleanContent.slice(0,100), fullResult, time: new Date().toLocaleString('zh-TW') });
                     syncToCloud();
