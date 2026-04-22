@@ -1345,6 +1345,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             appState.chatHistories = data.chatHistories || {};
             appState.discussionHistories = data.discussionHistories || {};
             appState.simulationHistory = data.simulationHistory || [];
+            if (data.hegemonySavedSim) {
+                appState.hegemony.savedSimulation = data.hegemonySavedSim;
+                localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
+            }
         } else if (res.status === 403) {
             localStorage.removeItem('dynasty_token');
             document.getElementById('passwordScreen').style.display = 'flex';
@@ -1357,8 +1361,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     await migrateOldData();
     refreshData();
     initScenarios();
-    const savedSim = safeJSONParse(localStorage.getItem('hegemony_saved_sim'), null);
-    if (savedSim) appState.hegemony.savedSimulation = savedSim;
+    if (!appState.hegemony.savedSimulation) {
+        const savedSim = safeJSONParse(localStorage.getItem('hegemony_saved_sim'), null);
+        if (savedSim) appState.hegemony.savedSimulation = savedSim;
+    }
     updateHegemonyUI();
     document.getElementById('dataLoadingScreen').style.display = 'none';
 }
@@ -1401,7 +1407,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             modifiedLegends: appState.modifiedLegends,
                             chatHistories: appState.chatHistories,
                             simulationHistory: appState.simulationHistory,
-                            discussionHistories: appState.discussionHistories
+                            discussionHistories: appState.discussionHistories,
+                            hegemonySavedSim: appState.hegemony.savedSimulation || null
                         })
                     });
                 } catch(e) {
@@ -3147,6 +3154,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             localStorage.setItem('hegemony_saved_sim', JSON.stringify(sim));
             closeModal();
             updateHegemonyUI();
+            syncToCloud();
         }
 
         function resumeSimulation() {
@@ -3411,6 +3419,16 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 appState.hegemony.phases.push({ title: phaseTitle, content: cleanContent, type: phaseType });
 
                 if (phaseType !== 'ending') {
+                    // Auto-save after every round so page refresh doesn't lose progress
+                    const autoSim = {
+                        factions: JSON.parse(JSON.stringify(appState.hegemony.factions)),
+                        setup: JSON.parse(JSON.stringify(appState.hegemony.battleSetup)),
+                        phases: JSON.parse(JSON.stringify(appState.hegemony.phases)),
+                        savedAt: new Date().toLocaleString('zh-TW')
+                    };
+                    appState.hegemony.savedSimulation = autoSim;
+                    localStorage.setItem('hegemony_saved_sim', JSON.stringify(autoSim));
+                    updateHegemonyUI();
                     const shouldContinue = fullText.includes('##推演繼續##');
                     const btnDiv = document.createElement('div');
                     btnDiv.id = 'phaseActionBtns';
@@ -3429,6 +3447,10 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                     const factionNames = scenario === 'empire' ? ef.name : factions.map(f => f.name).join(' vs ');
                     const fullResult = appState.hegemony.phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n');
                     appState.simulationHistory.unshift({ type:'逐鹿', icon: typeIcons[scenario] || '👑', title: factionNames, result: cleanContent.slice(0,100), fullResult, time: new Date().toLocaleString('zh-TW') });
+                    // Clear the in-progress save since simulation is complete
+                    appState.hegemony.savedSimulation = null;
+                    localStorage.removeItem('hegemony_saved_sim');
+                    updateHegemonyUI();
                     syncToCloud();
                 }
                 phaseBlock.scrollIntoView({ behavior: 'smooth', block: 'end' });
