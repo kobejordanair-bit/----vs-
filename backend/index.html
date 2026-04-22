@@ -497,7 +497,48 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <!-- Action Area -->
             <div class="flex flex-col justify-center items-center gap-3 min-w-[100px] border-l border-[#d6d3c9] pl-6 sticky right-0">
                 <div class="w-14 h-14 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-xl italic shadow-xl border-4 border-[#f5f5f4] z-10 serif">VS</div>
-                <button onclick="startTeamBattle()" id="startBattleBtn" disabled class="btn-gold px-6 py-3 rounded-lg font-bold font-serif tracking-widest text-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95 whitespace-nowrap">戰場推演</button>
+                <button onclick="openBattleSetup()" id="startBattleBtn" disabled class="btn-gold px-6 py-3 rounded-lg font-bold font-serif tracking-widest text-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95 whitespace-nowrap">戰前設定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 戰場設定 Modal -->
+    <div id="battleSetupModal" class="fixed inset-0 z-[80] hidden items-center justify-center">
+        <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm" onclick="closeBattleSetup()"></div>
+        <div class="bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-2xl mx-4 relative z-10 border border-[#e5e0d3] max-h-[90vh] flex flex-col">
+            <div class="px-6 py-4 border-b border-[#e5e0d3] flex justify-between items-center shrink-0">
+                <h2 class="font-bold font-serif text-lg text-[#2c2826] flex items-center gap-2">
+                    <i class="fa-solid fa-chess text-[#d4af37]"></i> 戰前設定
+                </h2>
+                <button onclick="closeBattleSetup()" class="text-[#a8a29e] hover:text-[#2c2826] transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="overflow-y-auto flex-1 px-6 py-5 space-y-6">
+                <!-- 戰場地點 -->
+                <div>
+                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-2 uppercase tracking-widest">戰場地點</h3>
+                    <select id="battlefieldSelect" onchange="onBattlefieldChange()" class="w-full pl-3 pr-8 py-2 rounded-lg bg-[#f5f5f4] border border-[#e5e0d3] text-[#2c2826] font-serif text-sm outline-none appearance-none cursor-pointer">
+                        <option value="">隨機選定...</option>
+                    </select>
+                    <p id="battlefieldDesc" class="text-xs text-[#78716c] mt-1.5 font-serif leading-relaxed min-h-[1rem]"></p>
+                </div>
+                <!-- 兵力設定 -->
+                <div>
+                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-3 uppercase tracking-widest">各勢力兵力設定</h3>
+                    <div id="troopParamsContainer" class="space-y-3"></div>
+                </div>
+                <!-- 選角 -->
+                <div>
+                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-2 uppercase tracking-widest">人物選配</h3>
+                    <div class="flex gap-2">
+                        <input id="battleDescInput" type="text" placeholder="例：武力天花板對決、明朝夢幻陣容..." class="flex-1 px-3 py-2 rounded-lg bg-[#f5f5f4] border border-[#e5e0d3] text-sm font-serif outline-none focus:border-[#d6d3c9]">
+                        <button onclick="autoSelectByDescription()" id="aiSelectBtn" class="px-3 py-2 bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-100 whitespace-nowrap transition-colors">AI 選角</button>
+                    </div>
+                    <button onclick="randomFillFactions()" class="mt-2 w-full py-2 bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] text-sm font-serif rounded-lg hover:bg-[#ede9e0] transition-colors">隨機填入空缺角色</button>
+                    <p class="text-xs text-[#a8a29e] mt-1.5">※ 已手動選配的人物不受影響，系統只補填空缺</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 border-t border-[#e5e0d3] shrink-0">
+                <button onclick="startBattleFromSetup()" class="w-full btn-gold py-3 rounded-lg font-bold font-serif tracking-widest text-base">開始推演</button>
             </div>
         </div>
     </div>
@@ -1265,13 +1306,15 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             rankFilter: 'all',
             sortOrder: 'rank',
             compareList: [], // Store IDs for comparison
-            warRoom: { 
-                minimized: false, 
-                activeSlot: null, 
+            warRoom: {
+                minimized: false,
+                activeSlot: null,
                 factions: [
                     { id: 'red', name: '紅軍', colorIdx: 0, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } },
                     { id: 'blue', name: '藍軍', colorIdx: 1, slots: { commander: null, advisor: null, vanguard: null, supply: null, flanker: null, raider: null } }
-                ] 
+                ],
+                battleSetup: { battlefield: null, troopParams: {}, aiDescription: '' },
+                phases: []
             },
             courtMode: {
                 minimized: false,
@@ -1518,6 +1561,20 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         const RANK_ORDER = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
         const DYNASTY_ORDER = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
+        const BATTLEFIELDS = [
+            { id: 'chibi',     name: '赤壁',   env: '長江中游水道，狹長江面，南方丘陵濕熱，水戰與火攻天然有利，陸路迂迴困難' },
+            { id: 'guandu',    name: '官渡',   env: '中原腹地，黃河渡口要衝，廣闊平原，騎兵機動有利，攻守平衡' },
+            { id: 'changping', name: '長平',   env: '太行山麓，丹河山谷盆地，地形險要，易形成包圍，補給線漫長' },
+            { id: 'feishui',   name: '淝水',   env: '淮河流域，丘陵水系交錯，渡河為要，攻守兩難，心理影響顯著' },
+            { id: 'julu',      name: '鉅鹿',   env: '河北平原，漳水橫貫，補給線脆弱，適合截斷後路，奇兵突擊' },
+            { id: 'gaixia',    name: '垓下',   env: '安徽平原，四面開闊，適合大軍合圍，長途追擊，消耗持久戰' },
+            { id: 'yiling',    name: '夷陵',   env: '長江三峽山地，峽谷縱深，林密道狹，火攻天然有利，大軍展開受限' },
+            { id: 'muye',      name: '牧野',   env: '殷商畿輔平原，開闊決戰地形，距首都近，心理震懾效果強' },
+            { id: 'maling',    name: '馬陵',   env: '齊魯山地丘陵，林道蜿蜒，設伏截擊有利，視野受限，通訊困難' },
+            { id: 'sarhu',     name: '薩爾滸', env: '遼東山林，寒帶叢林地形，多線分兵危險，後金主場優勢明顯' },
+            { id: 'kunyang',   name: '崑陽',   env: '南陽盆地城池，攻城要地，兵力懸殊環境，守城待援局面' },
+            { id: 'tumu',      name: '土木堡', env: '塞外草原與長城之間，斷水斷糧要地，輜重困境，後勤決定勝負' },
+        ];
 
         function renderStatsPanel() {
             statsChartInstances.forEach(c => c.destroy());
@@ -3156,46 +3213,222 @@ syncToCloud();
             }
         }
 
-        async function startTeamBattle() {
+        function openBattleSetup() {
+            const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
+            if (factions.length < 2) return customAlert('至少需要兩個勢力才能開始推演');
+            appState.warRoom.battleSetup = { battlefield: null, troopParams: {}, aiDescription: '' };
+            factions.forEach(f => {
+                appState.warRoom.battleSetup.troopParams[f.id] = { totalTroops: 10, composition: '混合', supply: '充裕', morale: '高昂' };
+            });
+            const bfSelect = el('battlefieldSelect');
+            bfSelect.innerHTML = '<option value="">隨機選定...</option>' + BATTLEFIELDS.map(b => `<option value="${b.id}">${b.name}</option>`).join('');
+            el('battlefieldDesc').textContent = '';
+            renderBattleSetupTroopParams(factions);
+            el('battleDescInput').value = '';
+            el('battleSetupModal').classList.remove('hidden');
+            el('battleSetupModal').classList.add('flex');
+        }
+
+        function closeBattleSetup() {
+            el('battleSetupModal').classList.add('hidden');
+            el('battleSetupModal').classList.remove('flex');
+        }
+
+        function onBattlefieldChange() {
+            const val = el('battlefieldSelect').value;
+            const bf = BATTLEFIELDS.find(b => b.id === val);
+            el('battlefieldDesc').textContent = bf ? bf.env : '';
+            appState.warRoom.battleSetup.battlefield = val || null;
+        }
+
+        function renderBattleSetupTroopParams(factions) {
+            el('troopParamsContainer').innerHTML = factions.map(f => {
+                const s = FACTION_COLORS[f.colorIdx % FACTION_COLORS.length];
+                return `<div class="rounded-lg border ${s.border} bg-white p-4">
+                    <h4 class="font-bold font-serif ${s.text} mb-3 text-sm">${f.name}</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="text-xs text-[#78716c] font-bold block mb-1">兵力（萬）</label>
+                            <input type="number" id="troops_${f.id}" value="10" min="1" max="999"
+                                oninput="appState.warRoom.battleSetup.troopParams['${f.id}'].totalTroops=+this.value"
+                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs text-[#78716c] font-bold block mb-1">兵種</label>
+                            <select onchange="appState.warRoom.battleSetup.troopParams['${f.id}'].composition=this.value"
+                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
+                                <option>混合</option><option>步兵為主</option><option>騎兵為主</option><option>水軍為主</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs text-[#78716c] font-bold block mb-1">補給</label>
+                            <select onchange="appState.warRoom.battleSetup.troopParams['${f.id}'].supply=this.value"
+                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
+                                <option>充裕</option><option>緊繃</option><option>告急</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs text-[#78716c] font-bold block mb-1">士氣</label>
+                            <select onchange="appState.warRoom.battleSetup.troopParams['${f.id}'].morale=this.value"
+                                class="w-full px-2 py-1.5 rounded border border-[#e5e0d3] bg-[#f5f5f4] text-sm outline-none">
+                                <option>高昂</option><option>一般</option><option>低落</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        async function autoSelectByDescription() {
+            const desc = el('battleDescInput').value.trim();
+            if (!desc) return customAlert('請輸入選角描述');
+            const btn = el('aiSelectBtn');
+            btn.disabled = true;
+            btn.textContent = '選角中...';
+            try {
+                const factions = appState.warRoom.factions;
+                const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
+                const legendList = legendsData.map(l => `${l.name}（${l.rank}，${l.dynasty}，${l.type==='emperor'?'帝王':l.type==='general'?'名將':'名臣'}）`).join('；');
+                const factionsDesc = factions.map(f => `${f.id}（${f.name}）：${Object.keys(f.slots).map(r => warLabels[r]).join('、')}`).join('\n');
+                const prompt = `根據描述「${desc}」，從以下人物清單中，為各陣營各角色選擇最合適的人物。每個人物只能出現一次，只能選清單中存在的人物。\n【人物清單】：${legendList}\n【陣營與角色鍵名】：\n${factionsDesc}\n返回純JSON，格式：{"factionId":{"roleKey":"人物名稱",...},...}\nfactionId為：${factions.map(f=>f.id).join('、')}，roleKey為：${Object.keys(factions[0].slots).join('、')}`;
+                const res = await callGemini(prompt, true);
+                const assignments = JSON.parse(res.result);
+                const used = new Set();
+                factions.forEach(f => { Object.values(f.slots).filter(Boolean).forEach(id => used.add(id)); });
+                factions.forEach(f => {
+                    if (!assignments[f.id]) return;
+                    Object.entries(assignments[f.id]).forEach(([role, name]) => {
+                        const legend = legendsData.find(l => l.name === name);
+                        if (legend && (role in f.slots) && !used.has(legend.id)) {
+                            f.slots[role] = legend.id;
+                            used.add(legend.id);
+                        }
+                    });
+                });
+                updateWarRoomUI();
+                renderLegends();
+                customAlert('AI 選角完成，可手動調整。');
+            } catch(e) {
+                customAlert('AI 選角失敗：' + e.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'AI 選角';
+            }
+        }
+
+        function randomFillFactions() {
+            const factions = appState.warRoom.factions;
+            const used = new Set(factions.flatMap(f => Object.values(f.slots).filter(Boolean)));
+            const pool = [...legendsData].sort(() => Math.random() - 0.5).filter(l => !used.has(l.id));
+            factions.forEach(f => {
+                Object.keys(f.slots).forEach(role => {
+                    if (f.slots[role] || pool.length === 0) return;
+                    f.slots[role] = pool.shift().id;
+                });
+            });
+            updateWarRoomUI();
+            renderLegends();
+        }
+
+        async function startBattleFromSetup() {
+            closeBattleSetup();
+            appState.warRoom.phases = [];
             openModal('跨代戰情室推演', 'content');
             el('radarChartContainer').classList.add('hidden');
+            el('modalContent').innerHTML = `
+                <div id="phaseProgressBar" class="flex items-center gap-2 mb-6 p-3 bg-[#f5f5f4] rounded-lg border border-[#e5e0d3] text-xs font-bold">
+                    <span id="pp_opening" class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800">開局</span>
+                    <div class="flex-1 h-px bg-[#e5e0d3]"></div>
+                    <span id="pp_middle" class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">展開</span>
+                    <div class="flex-1 h-px bg-[#e5e0d3]"></div>
+                    <span id="pp_ending" class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">終局</span>
+                </div>`;
+            await runBattlePhase('opening');
+        }
+
+        async function runBattlePhase(phaseType) {
+            const setup = appState.warRoom.battleSetup || {};
+            const phases = appState.warRoom.phases;
+            const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
+            const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
+            const factionData = factions.map(f => {
+                const roster = {};
+                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); if (n) roster[warLabels[r]] = `${n}（${rk||'未評'}）`; }
+                const p = setup.troopParams?.[f.id] || {};
+                return { name: f.name, 兵力: `${p.totalTroops||10}萬`, 兵種: p.composition||'混合', 補給: p.supply||'充裕', 士氣: p.morale||'高昂', 陣容: roster };
+            });
+            const bf = BATTLEFIELDS.find(b => b.id === setup.battlefield);
+            const bfInfo = bf ? `${bf.name}（${bf.env}）` : '隨機戰場';
+            const prevCtx = phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n---\n\n');
+            const middleCount = phases.filter(p => p.type === 'middle').length;
+
+            let phaseTitle, prompt;
+            if (phaseType === 'opening') {
+                phaseTitle = '開局態勢';
+                prompt = `你是頂級戰爭推演系統，請生成一場史詩戰役推演的【開局態勢】。\n【戰場】：${bfInfo}\n【參戰勢力】：\n${factionData.map(f=>`▶ ${f.name}｜兵力：${f.兵力}｜兵種：${f.兵種}｜補給：${f.補給}｜士氣：${f.士氣}\n  陣容：${Object.entries(f.陣容).map(([r,n])=>`${r}→${n}`).join('、')}`).join('\n')}\n\n以沉浸式史詩敘述風格，分析各勢力實力、人物特質、初始部署與戰略態勢（約600字）。\n最後另起一行，只寫以下其一（不加其他文字）：\n##推演繼續## 或 ##局勢已定##`;
+            } else if (phaseType === 'middle') {
+                phaseTitle = `第${middleCount + 1}回合`;
+                prompt = `以下是戰役推演已發生的過程：\n${prevCtx}\n\n---\n請繼續推演下一個階段，帶入具體戰術行動、關鍵人物決策、陣地變化（約500字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+            } else {
+                phaseTitle = '終局結算';
+                prompt = `以下是戰役推演已發生的過程：\n${prevCtx}\n\n---\n請進行【終局結算】：最終勝負判定、決定性因素分析、各人物功過評定、此戰歷史意義（約400字）。`;
+            }
+
+            // Update progress bar
+            const ppMap = { opening: 'pp_opening', middle: 'pp_middle', ending: 'pp_ending' };
+            const activeClass = { opening: 'bg-amber-200 text-amber-900', middle: 'bg-slate-200 text-slate-800', ending: 'bg-red-100 text-red-800' };
+            const ppEl = el(ppMap[phaseType]);
+            if (ppEl) ppEl.className = `px-2.5 py-1 rounded-full text-xs font-bold ${activeClass[phaseType]}`;
+
+            const oldBtns = el('phaseActionBtns');
+            if (oldBtns) oldBtns.remove();
+
+            const phaseId = `phase_${phases.length}`;
+            const hdrColor = phaseType === 'opening' ? 'bg-amber-100 text-amber-800' : phaseType === 'ending' ? 'bg-red-100 text-red-800' : 'bg-slate-100 text-slate-700';
+            const phaseBlock = document.createElement('div');
+            phaseBlock.className = 'mb-4';
+            phaseBlock.innerHTML = `<div class="flex items-center gap-2 mb-3"><span class="text-xs font-bold px-2.5 py-1 rounded-full ${hdrColor}">${phaseTitle}</span><div class="flex-1 h-px bg-[#e5e0d3]"></div></div><div id="${phaseId}" class="text-sm leading-relaxed text-[#2c2826]"></div>`;
+            el('modalContent').appendChild(phaseBlock);
             el('loadingState').classList.remove('hidden');
             el('loadingState').classList.add('flex');
-            el('modalContent').innerHTML = '';
-            
-            const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
-            const factionData = factions.map(f => {
-                const mappedRoster = {};
-                 const warLabels = { commander: '主將', advisor: '謀士', vanguard: '先鋒', supply: '糧草', flanker: '副將', raider: '奇兵' };
-                for (const [r, id] of Object.entries(f.slots)) { const n = getLegendName(id), rk = getLegendRank(id); mappedRoster[warLabels[r] || r] = n ? `${n}（${rk || '未評'}）` : null; }
-                return { name: f.name, roster: mappedRoster };
-            });
-
-            const prompt = `史詩級多方軍團混戰推演。
-            【參戰勢力】：${JSON.stringify(factionData)}
-            
-            戰場設定：隨機選定一個歷史戰略要衝。
-            請推演：
-            1. **戰前局勢**：${factions.length}方勢力的合縱連橫。
-            2. **戰術博弈**：各方元帥與軍師的具體指揮。
-            3. **決勝時刻**：關鍵轉折點。
-            4. **最終勝者**。`;
 
             try {
                 const myToken = ++currentRequestToken;
-const battleResult = await callGeminiStream(prompt, (partial) => {
-    if (myToken !== currentRequestToken) return;
-    el('loadingState').classList.add('hidden');
-    el('modalContent').innerHTML = safeMarkdown(partial);
-}, (model) => {
-    el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
-});
-const factionNames = factions.map(f => f.name).join(' vs ');
-appState.simulationHistory.unshift({ type: '戰情', icon: '⚔️', title: factionNames, result: battleResult.slice(0, 100), fullResult: battleResult, time: new Date().toLocaleString('zh-TW') });
-syncToCloud();
-            } catch(e) { 
+                let fullText = '';
+                await callGeminiStream(prompt, (partial) => {
+                    if (myToken !== currentRequestToken) return;
+                    el('loadingState').classList.add('hidden');
+                    fullText = partial;
+                    el(phaseId).innerHTML = safeMarkdown(partial.replace(/##推演繼續##|##局勢已定##/g, '').trim());
+                }, (model) => {
+                    phaseBlock.insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-2 py-0.5 mb-2 font-serif">⚡ 本段由 Flash 生成</div>');
+                });
+
+                const cleanContent = fullText.replace(/##推演繼續##|##局勢已定##/g, '').trim();
+                appState.warRoom.phases.push({ title: phaseTitle, content: cleanContent, type: phaseType });
+
+                if (phaseType !== 'ending') {
+                    const shouldContinue = fullText.includes('##推演繼續##');
+                    const tooMany = middleCount >= 3;
+                    const btnDiv = document.createElement('div');
+                    btnDiv.id = 'phaseActionBtns';
+                    btnDiv.className = 'flex gap-3 my-4';
+                    if (!tooMany && shouldContinue) {
+                        btnDiv.innerHTML = `<button onclick="runBattlePhase('middle')" class="flex-1 btn-ink text-sm font-bold py-2.5 rounded-lg">繼續推演</button><button onclick="runBattlePhase('ending')" class="px-4 py-2.5 bg-red-50 border border-red-200 text-red-700 text-sm font-bold rounded-lg hover:bg-red-100 whitespace-nowrap">強制終結</button>`;
+                    } else {
+                        btnDiv.innerHTML = `<button onclick="runBattlePhase('ending')" class="flex-1 bg-[#7f1d1d] hover:bg-red-900 text-white text-sm font-bold py-2.5 rounded-lg">終局結算</button>`;
+                    }
+                    el('modalContent').appendChild(btnDiv);
+                } else {
+                    const factionNames = factions.map(f => f.name).join(' vs ');
+                    const fullResult = appState.warRoom.phases.map(p => `【${p.title}】\n${p.content}`).join('\n\n');
+                    appState.simulationHistory.unshift({ type: '戰情', icon: '⚔️', title: factionNames, result: cleanContent.slice(0, 100), fullResult, time: new Date().toLocaleString('zh-TW') });
+                    syncToCloud();
+                }
+                phaseBlock.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`; 
+                el(phaseId).innerHTML = `<div class="text-red-600 text-sm py-4">推演失敗：${e.message}</div>`;
             }
         }
         
