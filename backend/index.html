@@ -498,7 +498,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         <!-- 底部操作列 -->
         <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
             <div class="w-10 h-10 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-base italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
-            <button onclick="openBattleSetup()" id="startBattleBtn" disabled class="btn-gold px-6 py-2.5 rounded-lg font-bold font-serif tracking-widest text-base disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed transition-all transform active:scale-95">戰前設定</button>
+            <button onclick="openBattleSetup()" id="startBattleBtn" class="btn-gold px-6 py-2.5 rounded-lg font-bold font-serif tracking-widest text-base transition-all transform active:scale-95">戰前設定</button>
         </div>
     </div>
 
@@ -3101,10 +3101,6 @@ div.innerHTML = factionCard.trim();
 fragment.appendChild(div.firstChild);
             });
 container.appendChild(fragment);
-            const activeCount = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n)).length;
-            el('startBattleBtn').disabled = activeCount < 2;
-            if(activeCount >= 2) el('startBattleBtn').classList.remove('opacity-50', 'grayscale', 'cursor-not-allowed'); 
-            else el('startBattleBtn').classList.add('opacity-50', 'grayscale', 'cursor-not-allowed');
         }
 
         // --- COURT MODE UI ---
@@ -3214,8 +3210,7 @@ syncToCloud();
         }
 
         function openBattleSetup() {
-            const factions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
-            if (factions.length < 2) return customAlert('至少需要兩個勢力才能開始推演');
+            const factions = appState.warRoom.factions;
             appState.warRoom.battleSetup = { battlefield: null, troopParams: {}, aiDescription: '' };
             factions.forEach(f => {
                 appState.warRoom.battleSetup.troopParams[f.id] = { totalTroops: 10, composition: '混合', supply: '充裕', morale: '高昂' };
@@ -3331,6 +3326,8 @@ syncToCloud();
         }
 
         async function startBattleFromSetup() {
+            const readyFactions = appState.warRoom.factions.filter(f => Object.values(f.slots).some(n => n));
+            if (readyFactions.length < 2) return customAlert('至少需要兩個勢力各有人物才能開始推演');
             closeBattleSetup();
             appState.warRoom.phases = [];
             openModal('跨代戰情室推演', 'content');
