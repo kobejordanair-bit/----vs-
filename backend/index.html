@@ -496,9 +496,16 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <div class="flex gap-4 items-stretch min-w-max" id="warRoomFactionsContainer"></div>
         </div>
         <!-- 底部操作列 -->
-        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-base italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
-            <button onclick="openBattleSetup()" id="startBattleBtn" class="btn-gold px-6 py-2.5 rounded-lg font-bold font-serif tracking-widest text-base transition-all transform active:scale-95">戰前設定</button>
+        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-2 flex flex-col gap-2">
+            <div class="flex gap-2">
+                <input id="warRoomDescInput" type="text" placeholder="描述選角條件，例：明朝夢幻陣容..." class="flex-1 px-3 py-1.5 rounded-lg bg-white border border-[#d6d3c9] text-xs font-serif outline-none focus:border-[#a8a29e]">
+                <button onclick="autoSelectByDescription()" id="aiSelectBtn" class="px-3 py-1.5 bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-100 whitespace-nowrap transition-colors">AI選角</button>
+                <button onclick="randomFillFactions()" class="px-3 py-1.5 bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] text-xs font-bold rounded-lg hover:bg-[#ede9e0] whitespace-nowrap transition-colors">隨機</button>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-9 h-9 rounded-full bg-[#2c2826] text-[#d4af37] flex items-center justify-center font-black text-sm italic shadow-lg border-2 border-[#f5f5f4] font-serif">VS</div>
+                <button onclick="openBattleSetup()" id="startBattleBtn" class="btn-gold px-6 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">戰前設定</button>
+            </div>
         </div>
     </div>
 
@@ -525,16 +532,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div>
                     <h3 class="font-bold font-serif text-xs text-[#78716c] mb-3 uppercase tracking-widest">各勢力兵力設定</h3>
                     <div id="troopParamsContainer" class="space-y-3"></div>
-                </div>
-                <!-- 選角 -->
-                <div>
-                    <h3 class="font-bold font-serif text-xs text-[#78716c] mb-2 uppercase tracking-widest">人物選配</h3>
-                    <div class="flex gap-2">
-                        <input id="battleDescInput" type="text" placeholder="例：武力天花板對決、明朝夢幻陣容..." class="flex-1 px-3 py-2 rounded-lg bg-[#f5f5f4] border border-[#e5e0d3] text-sm font-serif outline-none focus:border-[#d6d3c9]">
-                        <button onclick="autoSelectByDescription()" id="aiSelectBtn" class="px-3 py-2 bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-100 whitespace-nowrap transition-colors">AI 選角</button>
-                    </div>
-                    <button onclick="randomFillFactions()" class="mt-2 w-full py-2 bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] text-sm font-serif rounded-lg hover:bg-[#ede9e0] transition-colors">隨機填入空缺角色</button>
-                    <p class="text-xs text-[#a8a29e] mt-1.5">※ 已手動選配的人物不受影響，系統只補填空缺</p>
                 </div>
             </div>
             <div class="px-6 py-4 border-t border-[#e5e0d3] shrink-0">
@@ -3275,7 +3272,7 @@ syncToCloud();
         }
 
         async function autoSelectByDescription() {
-            const desc = el('battleDescInput').value.trim();
+            const desc = el('warRoomDescInput').value.trim();
             if (!desc) return customAlert('請輸入選角描述');
             const btn = el('aiSelectBtn');
             btn.disabled = true;
