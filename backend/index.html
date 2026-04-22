@@ -1464,7 +1464,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     });
                 });
                 const soulSel = appState.soulMode.selection;
-                if(Object.values(soulSel).includes(g.id)) selectionClass = (soulSel.host === g.id || soulSel.defector === g.id || soulSel.teacher === g.id || soulSel.figureA === g.id) ? 'selected-host' : 'selected-soul';
+                if(Object.values(soulSel).includes(g.id)) selectionClass = (soulSel.host === g.id || soulSel.defector === g.id || soulSel.teacher === g.id || soulSel.figureA === g.id || soulSel.duoLord === g.id) ? 'selected-host' : 'selected-soul';
                 if(appState.compareList.includes(g.id)) selectionClass = 'selected-compare';
                 const debateIds = [...Object.values(appState.debateMode.pro), ...Object.values(appState.debateMode.con)];
                 if(debateIds.includes(g.id)) selectionClass = 'selected-red';
@@ -3690,7 +3690,10 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                 const { section, role } = appState.hegemony.activeSlot;
                 const sectionLabel = section === 'court' ? '朝堂' : '兵事';
                 text = `選擇 ${sectionLabel}·${role}`;
-            } else if (mode === 'soulMode' && appState.soulMode.activeSlot) text = appState.soulMode.activeSlot;
+            } else if (mode === 'soulMode' && appState.soulMode.activeSlot) {
+                const slotLabels = { host: '宿主', soul: '穿越者', defector: '改仕者', newLord: '新主君', teacher: '師父', student: '弟子', figureA: '英雄甲', figureB: '英雄乙', duoLord: '共主' };
+                text = '選擇：' + (slotLabels[appState.soulMode.activeSlot] || appState.soulMode.activeSlot);
+            }
             elements.forEach(e => e.innerText = text);
         }
 
