@@ -491,9 +491,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         <div id="hegemonyContent" class="flex-1 overflow-x-auto p-4 bg-[#f0ede6]">
             <div class="flex gap-4 items-start min-w-max" id="hegemonyFactionsContainer"></div>
         </div>
-        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-4">
-            <div class="w-9 h-9 rounded-full bg-[#7f1d1d] text-[#d4af37] flex items-center justify-center font-black text-sm shadow-lg border-2 border-[#f5f5f4] font-serif">鹿</div>
-            <button onclick="openBattleSetup()" id="startHegemonyBtn" class="btn-gold px-6 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">推演設定</button>
+        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#7f1d1d] text-[#d4af37] flex items-center justify-center font-black text-sm shadow-lg border-2 border-[#f5f5f4] font-serif shrink-0">鹿</div>
+            <button onclick="resumeSimulation()" id="resumeSimBtn" class="hidden btn-ink px-4 py-2 rounded-lg font-bold font-serif text-xs transition-all">繼續上次推演</button>
+            <button onclick="openBattleSetup()" id="startHegemonyBtn" class="btn-gold px-5 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">推演設定</button>
         </div>
     </div>
 
@@ -1302,7 +1303,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     { id: 'blue', name: '藍方', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
                 ],
                 battleSetup: { battlefield: null, scenario: 'battle' },
-                phases: []
+                phases: [],
+                savedSimulation: null
             },
             soulMode: { minimized: false, activeSlot: null, activeScenario: null, selection: { host: null, soul: null } },
             chatMode: { targetId: null, history: [] },
@@ -1347,6 +1349,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     await migrateOldData();
     refreshData();
     initScenarios();
+    const savedSim = safeJSONParse(localStorage.getItem('hegemony_saved_sim'), null);
+    if (savedSim) appState.hegemony.savedSimulation = savedSim;
     updateHegemonyUI();
     document.getElementById('dataLoadingScreen').style.display = 'none';
 }
@@ -3110,9 +3114,68 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 fragment.appendChild(div.firstChild);
             });
             container.appendChild(fragment);
+            // Show/hide resume button
+            const resumeBtn = el('resumeSimBtn');
+            if (resumeBtn) {
+                if (appState.hegemony.savedSimulation) {
+                    resumeBtn.classList.remove('hidden');
+                    resumeBtn.title = `上次暫停：${appState.hegemony.savedSimulation.savedAt || ''}`;
+                } else {
+                    resumeBtn.classList.add('hidden');
+                }
+            }
         }
 
         // --- HEGEMONY SIMULATION ---
+        function pauseSimulation() {
+            if (!appState.hegemony.phases.length) return;
+            const sim = {
+                factions: JSON.parse(JSON.stringify(appState.hegemony.factions)),
+                setup: JSON.parse(JSON.stringify(appState.hegemony.battleSetup)),
+                phases: JSON.parse(JSON.stringify(appState.hegemony.phases)),
+                savedAt: new Date().toLocaleString('zh-TW')
+            };
+            appState.hegemony.savedSimulation = sim;
+            localStorage.setItem('hegemony_saved_sim', JSON.stringify(sim));
+            closeModal();
+            updateHegemonyUI();
+        }
+
+        function resumeSimulation() {
+            const sim = appState.hegemony.savedSimulation;
+            if (!sim || !sim.phases || !sim.phases.length) return;
+            appState.hegemony.factions = JSON.parse(JSON.stringify(sim.factions));
+            appState.hegemony.battleSetup = JSON.parse(JSON.stringify(sim.setup));
+            appState.hegemony.phases = JSON.parse(JSON.stringify(sim.phases));
+            const scenario = sim.setup.scenario || 'battle';
+            const titleMap = { battle: '征伐之戰', court: '朝堂角力', full: '亂世爭霸' };
+            openModal(`逐鹿中原・${titleMap[scenario]}（繼續）`, 'content');
+            el('radarChartContainer').classList.add('hidden');
+            const hdrColors = { opening: 'bg-amber-100 text-amber-800', ending: 'bg-red-100 text-red-800', middle: 'bg-slate-100 text-slate-700' };
+            let content = '';
+            if (scenario !== 'court') {
+                content = `<div id="phaseProgressBar" class="flex items-center gap-2 mb-6 p-3 bg-[#f5f5f4] rounded-lg border border-[#e5e0d3] text-xs font-bold"><span class="px-2.5 py-1 rounded-full bg-amber-200 text-amber-900">開局</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span class="px-2.5 py-1 rounded-full bg-slate-200 text-slate-700">展開中（第${sim.phases.filter(p=>p.type==='middle').length}回合）</span><div class="flex-1 h-px bg-[#e5e0d3]"></div><span class="px-2.5 py-1 rounded-full bg-[#f5f5f4] text-[#a8a29e] border border-[#e5e0d3]">終局</span></div>`;
+            }
+            el('modalContent').innerHTML = content;
+            sim.phases.forEach(p => {
+                const hdrColor = hdrColors[p.type] || 'bg-slate-100 text-slate-700';
+                const block = document.createElement('div');
+                block.className = 'mb-4';
+                block.innerHTML = `<div class="flex items-center gap-2 mb-3"><span class="text-xs font-bold px-2.5 py-1 rounded-full ${hdrColor}">${p.title}</span><div class="flex-1 h-px bg-[#e5e0d3]"></div></div><div class="text-sm leading-relaxed text-[#2c2826]">${safeMarkdown(p.content)}</div>`;
+                el('modalContent').appendChild(block);
+            });
+            const lastPhase = sim.phases[sim.phases.length - 1];
+            if (lastPhase && lastPhase.type !== 'ending') {
+                const btnDiv = document.createElement('div');
+                btnDiv.id = 'phaseActionBtns';
+                btnDiv.className = 'flex gap-2 my-4';
+                btnDiv.innerHTML = `<button onclick="runBattlePhase('middle')" class="flex-1 btn-ink text-sm font-bold py-2.5 rounded-lg">繼續推演</button><button onclick="runBattlePhase('ending')" class="px-4 py-2.5 bg-red-50 border border-red-200 text-red-700 text-sm font-bold rounded-lg hover:bg-red-100 whitespace-nowrap">強制終結</button><button onclick="pauseSimulation()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 text-slate-500 text-sm font-bold rounded-lg hover:bg-slate-100 whitespace-nowrap">暫停</button>`;
+                el('modalContent').appendChild(btnDiv);
+            }
+            updateHegemonyUI();
+            setTimeout(() => el('modalContent').lastElementChild?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 150);
+        }
+
 
         function openBattleSetup() {
             appState.hegemony.battleSetup = { battlefield: null, scenario: 'battle' };
@@ -3279,9 +3342,9 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             } else if (phaseType === 'middle') {
                 phaseTitle = `第${middleCount + 1}回合`;
                 if (scenario === 'battle') {
-                    prompt = `以下是戰役推演已發生的過程：\n${prevCtx}\n\n---\n請繼續推演下一個階段，帶入具體戰術行動、關鍵人物決策、陣地變化（約500字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    prompt = `以下是戰役推演的完整過程：\n${prevCtx}\n\n---\n請推演【第${middleCount+1}回合】：聚焦本回合的單一關鍵戰術行動或轉折，帶入具體人物決策、地形運用、兵力調度（約250字，精煉不冗長）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
                 } else {
-                    prompt = `以下是亂世爭霸推演已發生的過程：\n${prevCtx}\n\n---\n請繼續推演：各勢力的兵事行動、朝堂謀略、外交縱橫與局勢演變（約500字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
+                    prompt = `以下是亂世爭霸推演的完整過程：\n${prevCtx}\n\n---\n請推演【第${middleCount+1}回合】：聚焦本回合一個關鍵事件（戰場交鋒、朝堂謀略或外交博弈），帶入具體人物行動與後果（約250字）。\n最後另起一行，只寫以下其一：\n##推演繼續## 或 ##局勢已定##`;
                 }
             } else {
                 phaseTitle = '終局結算';
@@ -3320,14 +3383,14 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
 
                 if (phaseType !== 'ending') {
                     const shouldContinue = fullText.includes('##推演繼續##');
-                    const tooMany = middleCount >= 3;
                     const btnDiv = document.createElement('div');
                     btnDiv.id = 'phaseActionBtns';
-                    btnDiv.className = 'flex gap-3 my-4';
-                    if (!tooMany && shouldContinue) {
-                        btnDiv.innerHTML = `<button onclick="runBattlePhase('middle')" class="flex-1 btn-ink text-sm font-bold py-2.5 rounded-lg">繼續推演</button><button onclick="runBattlePhase('ending')" class="px-4 py-2.5 bg-red-50 border border-red-200 text-red-700 text-sm font-bold rounded-lg hover:bg-red-100 whitespace-nowrap">強制終結</button>`;
+                    btnDiv.className = 'flex gap-2 my-4';
+                    if (shouldContinue) {
+                        const roundLabel = middleCount > 0 ? `第${middleCount+1}回合` : '繼續推演';
+                        btnDiv.innerHTML = `<button onclick="runBattlePhase('middle')" class="flex-1 btn-ink text-sm font-bold py-2.5 rounded-lg">${roundLabel}</button><button onclick="runBattlePhase('ending')" class="px-4 py-2.5 bg-red-50 border border-red-200 text-red-700 text-sm font-bold rounded-lg hover:bg-red-100 whitespace-nowrap">終局結算</button><button onclick="pauseSimulation()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 text-slate-500 text-sm font-bold rounded-lg hover:bg-slate-100 whitespace-nowrap">暫停</button>`;
                     } else {
-                        btnDiv.innerHTML = `<button onclick="runBattlePhase('ending')" class="flex-1 bg-[#7f1d1d] hover:bg-red-900 text-white text-sm font-bold py-2.5 rounded-lg">終局結算</button>`;
+                        btnDiv.innerHTML = `<button onclick="runBattlePhase('ending')" class="flex-1 bg-[#7f1d1d] hover:bg-red-900 text-white text-sm font-bold py-2.5 rounded-lg">終局結算</button><button onclick="pauseSimulation()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 text-slate-500 text-sm font-bold rounded-lg hover:bg-slate-100 whitespace-nowrap">暫停</button>`;
                     }
                     el('modalContent').appendChild(btnDiv);
                 } else {
