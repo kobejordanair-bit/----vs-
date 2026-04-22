@@ -3286,7 +3286,7 @@ syncToCloud();
                 const roleKeys = Object.keys(f.slots).join('、');
                 const prompt = `根據描述「${desc}」，從以下人物清單中，為「${f.name}」的各角色選擇最合適的人物。每個人物只能出現一次，只能選清單中存在的人物。\n【人物清單】：${legendList}\n【需填角色鍵名】：${roleKeys}\n返回純JSON，格式：{"roleKey":"人物名稱"}\nroleKey為：${roleKeys}`;
                 const res = await callGemini(prompt, true);
-                const assignments = JSON.parse(res.result);
+                const assignments = JSON.parse(res);
                 const used = new Set(appState.warRoom.factions.flatMap(fa => Object.values(fa.slots).filter(Boolean)));
                 Object.entries(assignments).forEach(([role, name]) => {
                     const legend = legendsData.find(l => l.name === name);
