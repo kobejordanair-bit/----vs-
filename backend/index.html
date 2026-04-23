@@ -92,7 +92,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         .eval-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
         .eval-tab:hover { color: #e5e5e5; }
         .eval-tab-active { color: #f5f5f4 !important; border-bottom-color: #d4af37 !important; }
-                
+        .stats-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
+        .stats-tab:hover { color: #e5e5e5; }
+        .stats-tab-active { color: #f5f5f4 !important; border-bottom-color: #60a5fa !important; }
+
         /* Compare Bar */
         #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
     </style>
@@ -659,6 +662,12 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </h3>
                 <button onclick="closeStatsPanel()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
             </div>
+            <div class="bg-[#252220] border-b border-[#3a3530] flex shrink-0 px-2">
+                <button onclick="setStatsFilter('all')" id="stats-tab-all" class="stats-tab stats-tab-active">全部</button>
+                <button onclick="setStatsFilter('emperor')" id="stats-tab-emperor" class="stats-tab">帝王</button>
+                <button onclick="setStatsFilter('general')" id="stats-tab-general" class="stats-tab">將領</button>
+                <button onclick="setStatsFilter('minister')" id="stats-tab-minister" class="stats-tab">名臣</button>
+            </div>
             <div class="flex-1 overflow-y-auto custom-scrollbar p-8 bg-[#fffdf9]">
                 <!-- 總覽數字 -->
                 <div id="statsOverview" class="grid grid-cols-3 gap-4 mb-8"></div>
@@ -668,7 +677,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">評級分佈</h4>
                         <canvas id="statsRankChart" height="220"></canvas>
                     </div>
-                    <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
+                    <div id="statsTypeChartCard" class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
                         <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">類型分佈</h4>
                         <canvas id="statsTypeChart" height="220"></canvas>
                     </div>
@@ -681,7 +690,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <!-- 朝代詳情（點擊展開）-->
                 <div id="statsDynastyDetail" class="hidden bg-[#1c1917] rounded-xl p-5 mb-8"></div>
                 <!-- 類型 × 評級交叉分析 -->
-                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
+                <div id="statsTypeRankSection" class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
                     <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">類型 × 評級交叉分析</h4>
                     <canvas id="statsTypeRankChart" height="180"></canvas>
                 </div>
@@ -1542,6 +1551,14 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         }
 
         let statsChartInstances = [];
+        let currentStatsFilter = 'all';
+
+        function setStatsFilter(type) {
+            currentStatsFilter = type;
+            document.querySelectorAll('.stats-tab').forEach(b => b.classList.remove('stats-tab-active'));
+            el(`stats-tab-${type}`).classList.add('stats-tab-active');
+            renderStatsPanel();
+        }
         function openStatsPanel() {
             el('statsModal').classList.remove('hidden');
             renderStatsPanel();
@@ -1550,6 +1567,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             el('statsModal').classList.add('hidden');
             statsChartInstances.forEach(c => c.destroy());
             statsChartInstances = [];
+            currentStatsFilter = 'all';
+            document.querySelectorAll('.stats-tab').forEach(b => b.classList.remove('stats-tab-active'));
+            el('stats-tab-all').classList.add('stats-tab-active');
         }
 
         const RANK_ORDER = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
@@ -1574,7 +1594,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             statsChartInstances = [];
             el('statsDynastyDetail').classList.add('hidden');
 
-            const all = legendsData;
+            const isAll = currentStatsFilter === 'all';
+            const all = isAll ? legendsData : legendsData.filter(l => l.type === currentStatsFilter);
             const total = all.length;
             const emperors = all.filter(l => l.type === 'emperor').length;
             const generals = all.filter(l => l.type === 'general').length;
@@ -1604,12 +1625,30 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
             }));
 
-            // 類型分佈
-            statsChartInstances.push(new Chart(el('statsTypeChart').getContext('2d'), {
-                type: 'doughnut',
-                data: { labels: ['帝王', '將領', '名臣'], datasets: [{ data: [emperors, generals, ministers], backgroundColor: ['#b45309','#1e40af','#065f46'], borderWidth: 0 }] },
-                options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
-            }));
+            // 右側圖：全部→類型甜甜圈；特定類型→評級層次圓餅
+            const tierData = [
+                { label: 'S 級', ranks: ['S+','S','S-'], color: '#dc2626' },
+                { label: 'A 級', ranks: ['A+','A','A-'], color: '#7c3aed' },
+                { label: 'B 級', ranks: ['B+','B','B-'], color: '#10b981' },
+                { label: 'C/D 級', ranks: ['C+','C','C-','D'], color: '#6b7280' },
+            ];
+            el('statsTypeChartCard').innerHTML = `<h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">${isAll ? '類型分佈' : '評級層次分佈'}</h4><canvas id="statsTypeChart" height="220"></canvas>`;
+            if (isAll) {
+                statsChartInstances.push(new Chart(el('statsTypeChart').getContext('2d'), {
+                    type: 'doughnut',
+                    data: { labels: ['帝王', '將領', '名臣'], datasets: [{ data: [emperors, generals, ministers], backgroundColor: ['#b45309','#1e40af','#065f46'], borderWidth: 0 }] },
+                    options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
+                }));
+            } else {
+                statsChartInstances.push(new Chart(el('statsTypeChart').getContext('2d'), {
+                    type: 'doughnut',
+                    data: { labels: tierData.map(t => t.label), datasets: [{ data: tierData.map(t => all.filter(l => t.ranks.includes(l.rank)).length), backgroundColor: tierData.map(t => t.color), borderWidth: 0 }] },
+                    options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'Noto Serif TC' } } } } }
+                }));
+            }
+
+            // 類型 × 評級交叉分析：只在全部模式顯示
+            el('statsTypeRankSection').classList.toggle('hidden', !isAll);
 
             const eliteRanks = ['S+','S','S-','A+','A','A-'];
 
@@ -1649,7 +1688,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 }
             }));
 
-            // 類型 × 評級交叉分析
+            // 類型 × 評級交叉分析（只在全部模式渲染）
+            if (isAll) {
             const typeGroups = [
                 { label: '帝王', type: 'emperor', color: '#b45309' },
                 { label: '將領', type: 'general', color: '#1e40af' },
@@ -1673,6 +1713,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     scales: { x: { ticks: { font: { size: 12 } } }, y: { beginAtZero: true } }
                 }
             }));
+            } // end if (isAll) cross-analysis
 
             // S 級名人堂
             const sAll = all.filter(l => ['S+','S','S-'].includes(l.rank));
@@ -1702,7 +1743,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         }
 
         function showDynastyDetail(dynastyName) {
-            const people = legendsData.filter(l => l.dynasty === dynastyName)
+            const source = currentStatsFilter === 'all' ? legendsData : legendsData.filter(l => l.type === currentStatsFilter);
+            const people = source.filter(l => l.dynasty === dynastyName)
                 .sort((a, b) => RANK_ORDER.indexOf(a.rank) - RANK_ORDER.indexOf(b.rank));
             const eliteCount = people.filter(l => ['S+','S','S-','A+','A','A-'].includes(l.rank)).length;
             const detail = el('statsDynastyDetail');
