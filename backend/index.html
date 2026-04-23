@@ -1601,6 +1601,13 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             const generals = all.filter(l => l.type === 'general').length;
             const ministers = all.filter(l => l.type === 'minister').length;
 
+            // 清除上一次的 AI 分析結果與標題
+            const typeLabel = { all: '全體', emperor: '帝王', general: '將領', minister: '名臣' }[currentStatsFilter];
+            el('statsAITitle').textContent = isAll ? 'AI 史觀分析' : `AI ${typeLabel}史觀分析`;
+            el('statsAIResult').innerHTML = '<p class="text-[#a8a29e] text-sm font-serif">點擊「生成分析」，由 AI 解讀這份人才分佈數據。</p>';
+            el('statsAIBtn').innerHTML = '<i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 生成分析';
+            el('statsAIBtn').disabled = false;
+
             // 總覽
             el('statsOverview').innerHTML = `
                 <div class="bg-[#1c1917] text-white rounded-xl p-5 text-center">
@@ -1783,7 +1790,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             const isAll = currentStatsFilter === 'all';
             const all = isAll ? legendsData : legendsData.filter(l => l.type === currentStatsFilter);
             const typeLabel = { all: '全體', emperor: '帝王', general: '將領', minister: '名臣' }[currentStatsFilter];
-            el('statsAITitle').textContent = isAll ? 'AI 史觀分析' : `AI ${typeLabel}史觀分析`;
 
             const dynastyStats = DYNASTY_ORDER.map(d => `${d}：${all.filter(l=>l.dynasty===d).length}人`).filter(s=>!s.endsWith('：0人')).join('、');
             const rankStats = RANK_ORDER.map(r=>`${r}：${all.filter(l=>l.rank===r).length}人`).join('、');
@@ -2193,9 +2199,9 @@ ${rankingRef}
                         </button>
                     </div>
                     <p class="text-xs text-slate-400 mt-2 font-serif text-right">討論紀錄將自動儲存</p>
-                    <button onclick="forceRegenerateDeep()" class="mt-4 w-full py-2 bg-purple-50 hover:bg-purple-100 text-purple-700 rounded-xl border border-purple-200 font-bold font-serif text-sm transition-colors">
+                    ${currentEvalTab === 'calibrate' ? `<button onclick="forceRegenerateDeep()" class="mt-4 w-full py-2 bg-purple-50 hover:bg-purple-100 text-purple-700 rounded-xl border border-purple-200 font-bold font-serif text-sm transition-colors">
                         <i class="fa-solid fa-magnifying-glass-chart text-purple-500 mr-2"></i>根據討論重新深度評鑑
-                    </button>
+                    </button>` : ''}
                 </div>
             </div>`;
 
