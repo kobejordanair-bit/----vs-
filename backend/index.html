@@ -702,7 +702,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <!-- AI 分析 -->
                 <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm">
                     <div class="flex justify-between items-center mb-4">
-                        <h4 class="font-bold font-serif text-[#2c2826] tracking-wide">AI 史觀分析</h4>
+                        <h4 class="font-bold font-serif text-[#2c2826] tracking-wide" id="statsAITitle">AI 史觀分析</h4>
                         <button onclick="runStatsAI()" id="statsAIBtn" class="text-xs bg-sky-600 hover:bg-sky-700 text-white px-4 py-1.5 rounded font-serif transition-colors">
                             <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 生成分析
                         </button>
@@ -1780,21 +1780,28 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> 分析中...';
             el('statsAIResult').innerHTML = '';
 
-            const all = legendsData;
-            const dynastyOrder = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
-            const dynastyStats = dynastyOrder.map(d => `${d}：${all.filter(l=>l.dynasty===d).length}人`).join('、');
-            const rankStats = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'].map(r=>`${r}：${all.filter(l=>l.rank===r).length}人`).join('、');
+            const isAll = currentStatsFilter === 'all';
+            const all = isAll ? legendsData : legendsData.filter(l => l.type === currentStatsFilter);
+            const typeLabel = { all: '全體', emperor: '帝王', general: '將領', minister: '名臣' }[currentStatsFilter];
+            el('statsAITitle').textContent = isAll ? 'AI 史觀分析' : `AI ${typeLabel}史觀分析`;
 
-            const prompt = `以下是一份包含 ${all.length} 位歷史人物的評鑑資料庫統計數據。
+            const dynastyStats = DYNASTY_ORDER.map(d => `${d}：${all.filter(l=>l.dynasty===d).length}人`).filter(s=>!s.endsWith('：0人')).join('、');
+            const rankStats = RANK_ORDER.map(r=>`${r}：${all.filter(l=>l.rank===r).length}人`).join('、');
+
+            const categoryLine = isAll
+                ? `【類型】帝王：${all.filter(l=>l.type==='emperor').length}人、將領：${all.filter(l=>l.type==='general').length}人、名臣：${all.filter(l=>l.type==='minister').length}人\n`
+                : '';
+            const focusLine = isAll
+                ? `1. 哪個朝代人才最鼎盛，原因為何\n2. 評級分佈呈現什麼規律\n3. 這份榜單反映了什麼歷史現象`
+                : `1. 哪個朝代${typeLabel}最出色，原因為何\n2. 評級分佈呈現什麼規律\n3. 這批${typeLabel}的整體水準與歷史地位`;
+
+            const prompt = `以下是一份包含 ${all.length} 位歷史${typeLabel === '全體' ? '人物' : typeLabel}的評鑑資料庫統計數據。
 
 【評級分佈】${rankStats}
 【朝代人才密度】${dynastyStats}
-【類型】帝王：${all.filter(l=>l.type==='emperor').length}人、將領：${all.filter(l=>l.type==='general').length}人、名臣：${all.filter(l=>l.type==='minister').length}人
-
+${categoryLine}
 請以歷史學者角度，用繁體中文撰寫 300-400 字的深度分析，重點探討：
-1. 哪個朝代人才最鼎盛，原因為何
-2. 評級分佈呈現什麼規律
-3. 這份榜單反映了什麼歷史現象`;
+${focusLine}`;
 
             try {
                 await callGeminiStream(prompt, (text) => {
@@ -2145,10 +2152,10 @@ ${rankingRef}
             openEvalModal(id, 'review');
         }
 // ── 評鑑討論面板 ──────────────────────────────────────────
-        let currentDiscussionContext = '';
+        const evalTabContexts = { review: null, calibrate: null };
 
         function renderDiscussionPanel(legendId, contextText) {
-            currentDiscussionContext = contextText;
+            evalTabContexts[currentEvalTab] = contextText;
             const history = appState.discussionHistories[legendId]?.messages || [];
             const count = history.length / 2 | 0; // 幾輪對話
 
@@ -2242,7 +2249,7 @@ ${rankingRef}
 
             // 組裝 Gemini contents：系統 context + 對話歷史
             const legend = legendsData.find(l => l.id === legendId);
-            const systemMsg = `你是一位歷史學者，正在與使用者討論以下對「${legend ? legend.name : '此人物'}」的歷史評鑑內容。請依據評鑑內容回應使用者的看法、疑問或反駁，可以有自己的立場，允許意見分歧。\n\n【評鑑原文】\n${currentDiscussionContext}`;
+            const systemMsg = `你是一位歷史學者，正在與使用者討論以下對「${legend ? legend.name : '此人物'}」的歷史評鑑內容。請依據評鑑內容回應使用者的看法、疑問或反駁，可以有自己的立場，允許意見分歧。\n\n【評鑑原文】\n${evalTabContexts[currentEvalTab] || ''}`;
 
             const contents = [{ role: 'user', parts: [{ text: systemMsg }] }, { role: 'model', parts: [{ text: '已閱讀評鑑內容，請說說你的看法。' }] }];
             msgs.slice(0, -1).forEach(m => {
