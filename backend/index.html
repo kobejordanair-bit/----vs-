@@ -1650,8 +1650,6 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             // 類型 × 評級交叉分析：只在全部模式顯示
             el('statsTypeRankSection').classList.toggle('hidden', !isAll);
 
-            const eliteRanks = ['S+','S','S-','A+','A','A-'];
-
             // 朝代人才密度（全部→按類型堆疊；特定類型→按評級堆疊）
             const dynastyDatasets = isAll
                 ? [
@@ -1684,10 +1682,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         tooltip: { callbacks: { footer: (items) => {
                             const d = DYNASTY_ORDER[items[0].dataIndex];
                             const people = all.filter(l => l.dynasty === d);
-                            const elite = people.filter(l => eliteRanks.includes(l.rank)).length;
-                            return isAll
-                                ? `S+A 菁英：${elite} 人　總計：${people.length} 人`
-                                : `S+A 菁英：${elite} 人　總計：${people.length} 人`;
+                            const sElite = people.filter(l => ['S+','S','S-'].includes(l.rank)).length;
+                            const aClass = people.filter(l => ['A+','A','A-'].includes(l.rank)).length;
+                            return `S 級菁英：${sElite} 人　A 級一流：${aClass} 人　總計：${people.length} 人`;
                         }}}
                     },
                     scales: { x: { stacked: true, ticks: { font: { size: 11 } } }, y: { stacked: true, beginAtZero: true } },
@@ -1756,11 +1753,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             const source = currentStatsFilter === 'all' ? legendsData : legendsData.filter(l => l.type === currentStatsFilter);
             const people = source.filter(l => l.dynasty === dynastyName)
                 .sort((a, b) => RANK_ORDER.indexOf(a.rank) - RANK_ORDER.indexOf(b.rank));
-            const eliteCount = people.filter(l => ['S+','S','S-','A+','A','A-'].includes(l.rank)).length;
+            const eliteCount = people.filter(l => ['S+','S','S-'].includes(l.rank)).length;
             const detail = el('statsDynastyDetail');
             detail.innerHTML = `
                 <div class="flex justify-between items-center mb-4">
-                    <div class="text-white font-bold font-serif text-lg">${escapeHtml(dynastyName)} <span class="text-[#a8a29e] text-sm font-normal ml-2">${people.length} 人 · S+A 菁英 ${eliteCount} 人</span></div>
+                    <div class="text-white font-bold font-serif text-lg">${escapeHtml(dynastyName)} <span class="text-[#a8a29e] text-sm font-normal ml-2">${people.length} 人 · S 級菁英 ${eliteCount} 人</span></div>
                     <button onclick="el('statsDynastyDetail').classList.add('hidden')" class="text-[#a8a29e] hover:text-white transition-colors"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="flex flex-wrap gap-2">
