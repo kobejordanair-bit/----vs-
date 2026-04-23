@@ -1652,24 +1652,32 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
             const eliteRanks = ['S+','S','S-','A+','A','A-'];
 
-            // 朝代人才密度（堆疊，可點擊）
-            const tiers = [
-                { label: 'S 級', ranks: ['S+','S','S-'], color: '#dc2626' },
-                { label: 'A 級', ranks: ['A+','A','A-'], color: '#7c3aed' },
-                { label: 'B 級', ranks: ['B+','B','B-'], color: '#10b981' },
-                { label: 'C/D 級', ranks: ['C+','C','C-','D'], color: '#6b7280' },
-            ];
+            // 朝代人才密度（全部→按類型堆疊；特定類型→按評級堆疊）
+            const dynastyDatasets = isAll
+                ? [
+                    { label: '帝王', type: 'emperor', color: '#b45309' },
+                    { label: '將領', type: 'general', color: '#1e40af' },
+                    { label: '名臣', type: 'minister', color: '#065f46' },
+                  ].map(g => ({
+                    label: g.label,
+                    data: DYNASTY_ORDER.map(d => all.filter(l => l.dynasty === d && l.type === g.type).length),
+                    backgroundColor: g.color,
+                    borderRadius: 2,
+                  }))
+                : [
+                    { label: 'S 級', ranks: ['S+','S','S-'], color: '#dc2626' },
+                    { label: 'A 級', ranks: ['A+','A','A-'], color: '#7c3aed' },
+                    { label: 'B 級', ranks: ['B+','B','B-'], color: '#10b981' },
+                    { label: 'C/D 級', ranks: ['C+','C','C-','D'], color: '#6b7280' },
+                  ].map(t => ({
+                    label: t.label,
+                    data: DYNASTY_ORDER.map(d => all.filter(l => l.dynasty === d && t.ranks.includes(l.rank)).length),
+                    backgroundColor: t.color,
+                    borderRadius: 2,
+                  }));
             statsChartInstances.push(new Chart(el('statsDynastyChart').getContext('2d'), {
                 type: 'bar',
-                data: {
-                    labels: DYNASTY_ORDER,
-                    datasets: tiers.map(t => ({
-                        label: t.label,
-                        data: DYNASTY_ORDER.map(d => all.filter(l => l.dynasty === d && t.ranks.includes(l.rank)).length),
-                        backgroundColor: t.color,
-                        borderRadius: 2,
-                    }))
-                },
+                data: { labels: DYNASTY_ORDER, datasets: dynastyDatasets },
                 options: {
                     plugins: {
                         legend: { position: 'top', labels: { font: { family: 'Noto Serif TC', size: 12 }, boxWidth: 14 } },
@@ -1677,7 +1685,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             const d = DYNASTY_ORDER[items[0].dataIndex];
                             const people = all.filter(l => l.dynasty === d);
                             const elite = people.filter(l => eliteRanks.includes(l.rank)).length;
-                            return `S+A 菁英：${elite} 人　總計：${people.length} 人`;
+                            return isAll
+                                ? `S+A 菁英：${elite} 人　總計：${people.length} 人`
+                                : `S+A 菁英：${elite} 人　總計：${people.length} 人`;
                         }}}
                     },
                     scales: { x: { stacked: true, ticks: { font: { size: 11 } } }, y: { stacked: true, beginAtZero: true } },
