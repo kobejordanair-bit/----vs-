@@ -2457,7 +2457,7 @@ ${allNames}
                 el('loadingState').classList.add('hidden');
                 renderRadarChart(legend.name, cachedStats);
                 el('regenStatsBtn').classList.remove('hidden');
-                el('extractScenesBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden'); el('extractScenesBtn').disabled = false; el('extractScenesBtn').innerHTML = '<i class="fa-solid fa-fire"></i> 提取名場面';
                 setModalContent(cachedAnalysis);
                 renderDiscussionPanel(id, cachedAnalysis);
                 return;
@@ -2508,7 +2508,7 @@ ${allNames}
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 if (needsAnalysis) appState.modifiedLegends[id].analysis = cleanText;
                 syncToCloud();
-                el('extractScenesBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden'); el('extractScenesBtn').disabled = false; el('extractScenesBtn').innerHTML = '<i class="fa-solid fa-fire"></i> 提取名場面';
                 setModalContent(needsAnalysis ? cleanText : cachedAnalysis);
                 renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
             } catch(e) {
@@ -2534,7 +2534,7 @@ ${allNames}
                 el('loadingState').classList.add('hidden');
                 setModalContent(cachedDeep);
                 el('regenDeepBtn').classList.remove('hidden');
-                el('extractScenesBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden'); el('extractScenesBtn').disabled = false; el('extractScenesBtn').innerHTML = '<i class="fa-solid fa-fire"></i> 提取名場面';
                 renderApplyPanel(id, cachedDeep);
                 renderDiscussionPanel(id, cachedDeep);
                 return;
@@ -2606,7 +2606,7 @@ ${rankingRef}
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].deepAnalysis = streamText;
                 el('regenDeepBtn').classList.remove('hidden');
-                el('extractScenesBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden'); el('extractScenesBtn').disabled = false; el('extractScenesBtn').innerHTML = '<i class="fa-solid fa-fire"></i> 提取名場面';
                 renderApplyPanel(id, streamText);
                 appState.simulationHistory.unshift({ type: '校準評級', icon: '🔬', title: `${legend.name} 校準評級`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
                 syncToCloud();
