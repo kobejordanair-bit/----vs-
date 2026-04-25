@@ -95,6 +95,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         .stats-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
         .stats-tab:hover { color: #e5e5e5; }
         .stats-tab-active { color: #f5f5f4 !important; border-bottom-color: #60a5fa !important; }
+        .radar-dim-tab { color: #78716c; padding: 0.25rem 0.6rem; font-family: 'Noto Serif TC', serif; font-size: 0.72rem; letter-spacing: 0.05em; border-radius: 0.375rem; transition: all 0.15s; white-space: nowrap; }
+        .radar-dim-tab:hover { background: #f0ece4; color: #2c2826; }
+        .radar-dim-active { background: #1c1917 !important; color: #f5f5f4 !important; }
         .scene-rank-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
         .scene-rank-tab:hover { color: #e5e5e5; }
         .scene-rank-tab-active { color: #f5f5f4 !important; border-bottom-color: #f59e0b !important; }
@@ -700,6 +703,21 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div id="statsTypeRankSection" class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
                     <h4 class="font-bold font-serif text-[#2c2826] mb-4 tracking-wide">類型 × 評級交叉分析</h4>
                     <canvas id="statsTypeRankChart" height="180"></canvas>
+                </div>
+                <!-- 五維排行榜 -->
+                <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
+                    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                        <h4 class="font-bold font-serif text-[#2c2826] tracking-wide">五維排行榜</h4>
+                        <div class="flex gap-1 flex-wrap" id="statsRadarDimTabs">
+                            <button onclick="setStatsRadarDim('avg')" id="rdim-avg" class="radar-dim-tab radar-dim-active">綜合</button>
+                            <button onclick="setStatsRadarDim('0')"   id="rdim-0"   class="radar-dim-tab">統率</button>
+                            <button onclick="setStatsRadarDim('1')"   id="rdim-1"   class="radar-dim-tab">武力</button>
+                            <button onclick="setStatsRadarDim('2')"   id="rdim-2"   class="radar-dim-tab">智謀</button>
+                            <button onclick="setStatsRadarDim('3')"   id="rdim-3"   class="radar-dim-tab">政治</button>
+                            <button onclick="setStatsRadarDim('4')"   id="rdim-4"   class="radar-dim-tab">魅力</button>
+                        </div>
+                    </div>
+                    <div id="statsRadarRankList"></div>
                 </div>
                 <!-- S 級名人堂 -->
                 <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-8">
@@ -1679,8 +1697,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             statsChartInstances.forEach(c => c.destroy());
             statsChartInstances = [];
             currentStatsFilter = 'all';
+            currentRadarDim = 'avg';
             document.querySelectorAll('.stats-tab').forEach(b => b.classList.remove('stats-tab-active'));
             el('stats-tab-all').classList.add('stats-tab-active');
+            document.querySelectorAll('.radar-dim-tab').forEach(b => b.classList.remove('radar-dim-active'));
+            el('rdim-avg').classList.add('radar-dim-active');
         }
 
         const RANK_ORDER = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
@@ -1864,6 +1885,56 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         </div>
                     </div>
                 `;
+            }).join('');
+
+            renderStatsRadarRank();
+        }
+
+        let currentRadarDim = 'avg';
+        function setStatsRadarDim(dim) {
+            currentRadarDim = dim;
+            document.querySelectorAll('.radar-dim-tab').forEach(b => b.classList.remove('radar-dim-active'));
+            el(`rdim-${dim}`).classList.add('radar-dim-active');
+            renderStatsRadarRank();
+        }
+        function renderStatsRadarRank() {
+            const isAll = currentStatsFilter === 'all';
+            const base = isAll ? legendsData : legendsData.filter(l => l.type === currentStatsFilter);
+            const withStats = base.filter(l => appState.modifiedLegends[l.id]?.stats?.length === 5);
+            if (!withStats.length) {
+                el('statsRadarRankList').innerHTML = '<p class="text-center text-[#a8a29e] font-serif text-sm py-6">尚無五維數據，請先在評鑑中生成五維圖</p>';
+                return;
+            }
+            const getScore = l => {
+                const s = appState.modifiedLegends[l.id].stats;
+                return currentRadarDim === 'avg' ? Math.round(s.reduce((a,b)=>a+b,0)/s.length) : (s[+currentRadarDim] || 0);
+            };
+            const sorted = [...withStats].sort((a,b) => getScore(b) - getScore(a));
+            const dimNames = ['統率','武力','智謀','政治','魅力'];
+            el('statsRadarRankList').innerHTML = sorted.map((l, i) => {
+                const stats = appState.modifiedLegends[l.id].stats;
+                const mainScore = getScore(l);
+                const rc = `rank-${l.rank.replace('+','-plus').replace('-','-minus')}`;
+                const bars = dimNames.map((name, idx) => {
+                    const val = stats[idx];
+                    const highlight = currentRadarDim === String(idx);
+                    return `<div class="flex items-center gap-1">
+                        <span class="text-xs text-[#a8a29e] w-5 shrink-0">${name}</span>
+                        <div class="w-16 h-1.5 bg-[#e5e0d3] rounded-full overflow-hidden">
+                            <div class="h-full ${highlight ? 'bg-amber-500' : 'bg-slate-300'} rounded-full" style="width:${val}%"></div>
+                        </div>
+                        <span class="text-xs ${highlight ? 'font-bold text-amber-600' : 'text-[#78716c]'} w-5">${val}</span>
+                    </div>`;
+                }).join('');
+                return `<div class="flex items-center gap-3 py-2.5 border-b border-[#f5f2ed] last:border-0">
+                    <div class="text-base font-bold text-[#d4af37] font-serif w-7 text-center shrink-0">${i+1}</div>
+                    <button onclick="closeStatsPanel();openEvalModal('${l.id}')" class="flex items-center gap-1.5 hover:opacity-75 transition-opacity shrink-0">
+                        <span class="rank-badge ${rc}" style="font-size:10px;padding:1px 5px;">${escapeHtml(l.rank)}</span>
+                        <span class="font-serif font-bold text-[#1c1917] text-sm">${escapeHtml(l.name)}</span>
+                    </button>
+                    <div class="flex-1 grid grid-cols-5 gap-x-2 ml-1">${bars}</div>
+                    <div class="text-lg font-bold font-serif text-amber-600 w-9 text-right shrink-0">${mainScore}</div>
+                </div>`;
             }).join('');
         }
 
@@ -2111,6 +2182,13 @@ ${focusLine}`;
             }
         }
 
+        function _fuzzyMatchLegend(unknownName) {
+            for (const l of legendsData) {
+                if (unknownName.includes(l.name) || l.name.includes(unknownName)) return l;
+                if (l.title && (unknownName.includes(l.title) || l.title.includes(unknownName))) return l;
+            }
+            return null;
+        }
         function _promptAfterExtract(count, unknowns) {
             el('uiMsgTitle').innerText = `成功提取 ${count} 個名場面`;
             el('uiMsgCancelBtn').style.display = 'none';
@@ -2118,13 +2196,19 @@ ${focusLine}`;
             if (unknowns.length === 0) {
                 el('uiMsgText').innerText = '';
             } else {
-                const btns = unknowns.map(name =>
-                    `<button onclick="closeUIMsg();openAddModalWithName('${name.replace(/'/g,"\\'")}')"
-                        class="inline-flex items-center gap-1.5 bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 rounded-lg px-3 py-1.5 text-sm font-serif transition-colors">
-                        <i class="fa-solid fa-magnifying-glass-chart text-xs"></i>${escapeHtml(name)}
-                    </button>`
-                ).join('');
-                el('uiMsgText').innerHTML = `<span class="text-slate-500 text-xs block mb-3">以下人物尚未入冊，點擊可前往深度評鑑入冊：</span><div class="flex flex-wrap gap-2">${btns}</div>`;
+                const btns = unknowns.map(name => {
+                    const fuzzy = _fuzzyMatchLegend(name);
+                    const hint = fuzzy
+                        ? `<span class="text-xs text-slate-400 ml-1">（可能是「${escapeHtml(fuzzy.name)}」？）</span>`
+                        : '';
+                    return `<div class="flex items-center flex-wrap gap-1 mb-1">
+                        <button onclick="closeUIMsg();openAddModalWithName('${name.replace(/'/g,"\\'")}')"
+                            class="inline-flex items-center gap-1.5 bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 rounded-lg px-3 py-1.5 text-sm font-serif transition-colors">
+                            <i class="fa-solid fa-magnifying-glass-chart text-xs"></i>${escapeHtml(name)}
+                        </button>${hint}
+                    </div>`;
+                }).join('');
+                el('uiMsgText').innerHTML = `<span class="text-slate-500 text-xs block mb-3">以下人物尚未入冊，點擊可前往深度評鑑入冊：</span><div class="flex flex-col gap-1">${btns}</div>`;
             }
             openUIMsg();
         }
@@ -2151,6 +2235,7 @@ ${focusLine}`;
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> 提取中...';
 
             const existingNames = [...staticScenesData, ...appState.scenes].map(s => s.name);
+            const allLegendNames = legendsData.map(l => l.name).join('、');
             const prompt = `根據以下對「${legend.name}」的歷史評鑑，提取 2-3 個該人物參與的最具代表性歷史名場面。
 
 【評鑑內容】
@@ -2158,8 +2243,11 @@ ${cachedText.slice(0, 2000)}
 
 【已有場面（請勿重複）】${existingNames.join('、')}
 
+【人物庫（participantNames 必須從此清單選取確切姓名，禁止使用廟號、諡號或別稱）】
+${allLegendNames}
+
 請輸出 JSON 陣列，每個場面包含：
-name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、type（軍事決策/政治謀略/宮廷鬥爭/外交/其他）、drama（0-100）、impact（0-100）、difficulty（0-100）、desc（50字內）、participantNames（涉及人物姓名陣列）
+name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、type（軍事決策/政治謀略/宮廷鬥爭/外交/其他）、drama（0-100）、impact（0-100）、difficulty（0-100）、desc（50字內）、participantNames（只從人物庫選取）
 
 只輸出 JSON 陣列，不要其他文字。`;
             try {
