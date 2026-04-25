@@ -95,6 +95,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         .stats-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
         .stats-tab:hover { color: #e5e5e5; }
         .stats-tab-active { color: #f5f5f4 !important; border-bottom-color: #60a5fa !important; }
+        .scene-rank-tab { color: #a8a29e; padding: 0.5rem 1.25rem; font-family: 'Noto Serif TC', serif; font-size: 0.8rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
+        .scene-rank-tab:hover { color: #e5e5e5; }
+        .scene-rank-tab-active { color: #f5f5f4 !important; border-bottom-color: #f59e0b !important; }
 
         /* Compare Bar */
         #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
@@ -347,6 +350,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     </button>
                     <button onclick="openChronicle()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-chronicle">
                         <i class="fa-solid fa-book-open text-amber-400"></i> <span class="hidden md:inline">史冊</span>
+                    </button>
+                    <button onclick="openScenesPanel()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-scenes">
+                        <i class="fa-solid fa-fire text-amber-400"></i> <span class="hidden md:inline">名場面</span>
                     </button>
                     <button onclick="openStatsPanel()" class="bg-[#2c2826] hover:bg-[#1e3a5f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-stats">
                         <i class="fa-solid fa-chart-bar text-sky-400"></i> <span class="hidden md:inline">統計</span>
@@ -621,6 +627,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <!-- RegExp button for Radar regeneration -->
                     <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="hidden text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
                     <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="hidden text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
+                    <button id="extractScenesBtn" onclick="extractScenesFromCurrentTab()" class="hidden text-xs bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="從評鑑內容提取名場面"><i class="fa-solid fa-fire"></i> 提取名場面</button>
                     <button id="exportCardBtn" onclick="exportCard()" class="hidden text-xs bg-[#1e6b4a] hover:bg-[#145238] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="匯出評鑑卡片為圖片"><i class="fa-solid fa-image"></i> 匯出卡片</button>
                     <button id="clearMemoryBtn" onclick="clearCurrentMemory()" class="hidden text-xs bg-[#7f1d1d] hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider">忘卻</button>
                     <button onclick="closeModal()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
@@ -711,6 +718,38 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <p class="text-[#a8a29e] text-sm font-serif">點擊「生成分析」，由 AI 解讀這份人才分佈數據。</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scenes Panel Modal -->
+    <div id="scenesModal" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 modal-overlay" onclick="closeScenesPanel()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] overflow-hidden flex flex-col border border-[#e5e0d3]">
+            <div class="bg-[#1c1917] text-[#e5e5e5] p-5 flex justify-between items-center shrink-0 border-b-4 border-amber-500">
+                <h3 class="text-xl font-bold font-serif tracking-wide flex items-center gap-3">
+                    <i class="fa-solid fa-fire text-amber-400"></i> 名場面排行
+                </h3>
+                <button onclick="closeScenesPanel()" class="text-[#a8a29e] hover:text-white px-2 transition-colors"><i class="fa-solid fa-xmark text-2xl"></i></button>
+            </div>
+            <div class="bg-[#252220] border-b border-[#3a3530] flex shrink-0 px-2 justify-between items-center">
+                <div class="flex">
+                    <button onclick="setSceneRankTab('drama')"     id="scene-tab-drama"      class="scene-rank-tab scene-rank-tab-active"><i class="fa-solid fa-bolt text-amber-400 mr-1"></i>戲劇性</button>
+                    <button onclick="setSceneRankTab('impact')"    id="scene-tab-impact"     class="scene-rank-tab"><i class="fa-solid fa-landmark text-sky-400 mr-1"></i>歷史影響</button>
+                    <button onclick="setSceneRankTab('difficulty')" id="scene-tab-difficulty" class="scene-rank-tab"><i class="fa-solid fa-chess-knight text-purple-400 mr-1"></i>決策難度</button>
+                    <button onclick="setSceneRankTab('all')"       id="scene-tab-all"        class="scene-rank-tab">全覽</button>
+                </div>
+                <select id="sceneTypeFilter" onchange="renderScenesPanel()" class="bg-[#2c2826] text-[#a8a29e] text-xs font-serif border border-[#44403c] rounded px-2 py-1 mr-2 focus:outline-none">
+                    <option value="all">所有類型</option>
+                    <option value="軍事決策">軍事決策</option>
+                    <option value="政治謀略">政治謀略</option>
+                    <option value="宮廷鬥爭">宮廷鬥爭</option>
+                    <option value="外交">外交</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+            <div class="flex-1 overflow-y-auto custom-scrollbar p-6 bg-[#fffdf9]">
+                <div id="scenesContent"></div>
             </div>
         </div>
     </div>
@@ -1261,7 +1300,31 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             {type:"minister", name:"趙高", rank:"C-", title:"中車府令", tag:"指鹿為馬", desc:"毀滅秦朝的元兇，殺李斯、胡亥。", poem:"指鹿為馬欺二世，大秦基業一朝亡。"},
             {type:"minister", name:"董卓", rank:"C-", title:"太師", tag:"殘暴不仁", desc:"燒洛陽，亂漢室，引發天下大亂。", poem:"焚燒宮室遷西都，殘暴不仁天下誅。"}
         ];
-        
+
+        // --- 名場面靜態資料庫 ---
+        const staticScenesData = [
+            { id:'sc_hongmen',      name:'鴻門宴',       year:-206, dynasty:'楚漢相爭', participantNames:['項羽','劉邦','張良','范增'], type:'政治謀略', drama:97, impact:92, difficulty:88, desc:'項羽設宴欲殺劉邦，范增授意項莊舞劍，張良、樊噲力救，劉邦逃脫，天下格局由此而定。', source:'static' },
+            { id:'sc_pofuchenzhou', name:'破釜沉舟',     year:-207, dynasty:'楚漢相爭', participantNames:['項羽'], type:'軍事決策', drama:96, impact:90, difficulty:95, desc:'項羽命士卒砸鍋沉船斷退路，以絕死之志九戰九捷，解鉅鹿之圍，威震諸侯。', source:'static' },
+            { id:'sc_xuanwumen',    name:'玄武門之變',   year:626,  dynasty:'唐朝',    participantNames:['李世民'], type:'宮廷鬥爭', drama:98, impact:97, difficulty:90, desc:'秦王李世民玄武門伏殺太子與齊王，逼父禪位，開創貞觀之治，奠定大唐盛世基業。', source:'static' },
+            { id:'sc_feishui',      name:'淝水之戰',     year:383,  dynasty:'南北朝',  participantNames:['謝安'], type:'軍事決策', drama:94, impact:96, difficulty:85, desc:'東晉謝安以八萬兵擊潰苻堅八十萬大軍，風聲鶴唳草木皆兵，南方漢文明得以延續。', source:'static' },
+            { id:'sc_chibi',        name:'赤壁之戰',     year:208,  dynasty:'三國',    participantNames:['曹操','周瑜','諸葛亮'], type:'軍事決策', drama:95, impact:95, difficulty:88, desc:'孫劉聯軍火攻大破曹操水師，百萬雄師灰飛煙滅，三國鼎立格局從此確立。', source:'static' },
+            { id:'sc_changping',    name:'長平之戰',     year:-260, dynasty:'戰國',    participantNames:['白起','趙括'], type:'軍事決策', drama:90, impact:98, difficulty:87, desc:'白起坑殺趙降卒四十萬，趙國元氣盡喪，六國再無力單獨抗秦，統一大勢已定。', source:'static' },
+            { id:'sc_beishui',      name:'背水一戰',     year:-204, dynasty:'楚漢相爭', participantNames:['韓信'], type:'軍事決策', drama:93, impact:85, difficulty:97, desc:'韓信背水列陣置之死地，奇兵偷襲趙軍大營，以不足三萬兵全殲二十萬趙軍。', source:'static' },
+            { id:'sc_guandu',       name:'官渡之戰',     year:200,  dynasty:'三國',    participantNames:['曹操'], type:'軍事決策', drama:89, impact:93, difficulty:88, desc:'曹操奇襲烏巢燒毀袁紹糧草，以弱勝強大破袁軍，奠定統一北方格局。', source:'static' },
+            { id:'sc_muye',         name:'牧野之戰',     year:-1046,dynasty:'夏商周',  participantNames:['紂王'], type:'軍事決策', drama:88, impact:99, difficulty:72, desc:'周武王率諸侯伐紂，商軍陣前倒戈，紂王自焚，商朝覆滅，周朝八百年基業奠定。', source:'static' },
+            { id:'sc_jingkang',     name:'靖康之恥',     year:1127, dynasty:'北宋',    participantNames:['秦檜'], type:'宮廷鬥爭', drama:92, impact:96, difficulty:50, desc:'金兵攻破汴京擄走二帝，北宋滅亡，中原文明遭受浩劫，南宋偏安格局由此形成。', source:'static' },
+            { id:'sc_beijijiebing', name:'杯酒釋兵權',   year:961,  dynasty:'北宋',    participantNames:['趙匡胤'], type:'政治謀略', drama:85, impact:94, difficulty:78, desc:'趙匡胤以一頓酒宴令功臣自請解除兵權，兵不血刃解決藩鎮之患，防武將之患於未然。', source:'static' },
+            { id:'sc_tumu',         name:'土木堡之變',   year:1449, dynasty:'明朝',    participantNames:['于謙'], type:'軍事決策', drama:91, impact:93, difficulty:50, desc:'英宗聽信王振親征瓦剌兵敗被俘，明朝精銳盡喪，于謙力挽狂瀾保住大明社稷。', source:'static' },
+            { id:'sc_yuefeibeihai', name:'岳飛被害',     year:1142, dynasty:'南宋',    participantNames:['岳飛','秦檜'], type:'宮廷鬥爭', drama:95, impact:90, difficulty:65, desc:'秦檜以莫須有罪名構陷岳飛，北伐大業成泡影，精忠報國四字成千古最沉痛的諷刺。', source:'static' },
+            { id:'sc_zhangju',      name:'張居正改革',   year:1572, dynasty:'明朝',    participantNames:['張居正'], type:'政治謀略', drama:80, impact:94, difficulty:90, desc:'張居正推行一條鞭法與考成法，大明財政起死回生，然身後遭清算，人亡政息令人唏噓。', source:'static' },
+            { id:'sc_sarhu',        name:'薩爾滸之戰',   year:1619, dynasty:'明朝',    participantNames:[], type:'軍事決策', drama:88, impact:95, difficulty:75, desc:'努爾哈赤集中兵力各個擊破，四路明軍盡敗，明朝喪失遼東主動權，清朝崛起之路開啟。', source:'static' },
+            { id:'sc_yiling',       name:'夷陵之戰',     year:222,  dynasty:'三國',    participantNames:['劉備'], type:'軍事決策', drama:87, impact:88, difficulty:82, desc:'陸遜誘敵深入火燒連營七百里，劉備慘敗身死白帝城，蜀漢從此元氣大傷難以北伐。', source:'static' },
+            { id:'sc_anshi',        name:'安史之亂',     year:755,  dynasty:'唐朝',    participantNames:[], type:'宮廷鬥爭', drama:90, impact:97, difficulty:55, desc:'安祿山叛亂長安洛陽相繼失陷，盛唐由巔峰急墜，藩鎮割據格局延續百年。', source:'static' },
+            { id:'sc_崖山',         name:'崖山海戰',     year:1279, dynasty:'南宋',    participantNames:[], type:'軍事決策', drama:96, impact:97, difficulty:60, desc:'陸秀夫負帝投海，十萬軍民殉國，宋朝徹底覆滅，崖山之後無中國成千古之嘆。', source:'static' },
+            { id:'sc_shang_reform', name:'商鞅變法',     year:-356, dynasty:'戰國',    participantNames:['商鞅'], type:'政治謀略', drama:83, impact:99, difficulty:93, desc:'商鞅以嚴刑峻法推行耕戰制，秦國從積弱一躍成霸，為百年後統一天下奠定根基。', source:'static' },
+            { id:'sc_wangmang',     name:'王莽改制',     year:9,    dynasty:'西漢',    participantNames:['王莽'], type:'政治謀略', drama:82, impact:88, difficulty:80, desc:'王莽以儒家理想強行土地國有化與幣制改革，全面崩潰激起天下大亂，新朝速亡。', source:'static' },
+        ];
+
         // --- DATA INITIALIZATION & CLEANUP ---
         // 1. Ensure all static data has ID & Dynasty. Clean up text.
         staticLegendsData.forEach(l => {
@@ -1325,6 +1388,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 con: { debater1: null, debater2: null, debater3: null, debater4: null },
                 topic: ''
             },
+            scenes: [],
         };
         
         let legendsData = []; 
@@ -1342,6 +1406,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             appState.chatHistories = data.chatHistories || {};
             appState.discussionHistories = data.discussionHistories || {};
             appState.simulationHistory = data.simulationHistory || [];
+            appState.scenes = data.scenes || [];
             if (data.hegemonySavedSim) {
                 appState.hegemony.savedSimulation = data.hegemonySavedSim;
                 localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
@@ -1405,7 +1470,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             chatHistories: appState.chatHistories,
                             simulationHistory: appState.simulationHistory,
                             discussionHistories: appState.discussionHistories,
-                            hegemonySavedSim: appState.hegemony.savedSimulation || null
+                            hegemonySavedSim: appState.hegemony.savedSimulation || null,
+                            scenes: appState.scenes
                         })
                     });
                 } catch(e) {
@@ -1546,6 +1612,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         function closeModal() {
             el('aiModal').classList.add('hidden');
             el('evalTabBar').classList.add('hidden');
+            el('extractScenesBtn').classList.add('hidden');
             appState.chatMode.targetId = null;
             currentAnalysisId = null;
         }
@@ -1821,6 +1888,129 @@ ${focusLine}`;
             }
         }
 
+        // ===== 名場面 =====
+        let currentSceneRankTab = 'drama';
+
+        function openScenesPanel() {
+            el('scenesModal').classList.remove('hidden');
+            renderScenesPanel();
+        }
+        function closeScenesPanel() {
+            el('scenesModal').classList.add('hidden');
+        }
+        function setSceneRankTab(dim) {
+            currentSceneRankTab = dim;
+            document.querySelectorAll('.scene-rank-tab').forEach(b => b.classList.remove('scene-rank-tab-active'));
+            el(`scene-tab-${dim}`).classList.add('scene-rank-tab-active');
+            renderScenesPanel();
+        }
+        function renderScenesPanel() {
+            const typeFilter = el('sceneTypeFilter').value;
+            let scenes = [...staticScenesData, ...appState.scenes];
+            if (typeFilter !== 'all') scenes = scenes.filter(s => s.type === typeFilter);
+            if (currentSceneRankTab !== 'all') {
+                scenes = [...scenes].sort((a, b) => (b[currentSceneRankTab] || 0) - (a[currentSceneRankTab] || 0));
+            }
+            el('scenesContent').innerHTML = scenes.length
+                ? scenes.map((s, i) => renderSceneCard(s, i)).join('')
+                : '<p class="text-center text-[#a8a29e] font-serif py-12">目前沒有符合條件的名場面</p>';
+        }
+        function renderSceneCard(scene, rank) {
+            const dim = currentSceneRankTab;
+            const score = dim !== 'all' ? scene[dim] : null;
+            const dimLabel = { drama: '戲劇性', impact: '歷史影響', difficulty: '決策難度' }[dim] || '';
+            const dimColor = { drama: 'bg-amber-500', impact: 'bg-sky-500', difficulty: 'bg-purple-500' }[dim] || 'bg-amber-500';
+            const typeColor = { '軍事決策': 'bg-red-100 text-red-700', '政治謀略': 'bg-purple-100 text-purple-700', '宮廷鬥爭': 'bg-orange-100 text-orange-700', '外交': 'bg-blue-100 text-blue-700', '其他': 'bg-gray-100 text-gray-700' }[scene.type] || 'bg-gray-100 text-gray-700';
+            const yearStr = scene.year > 0 ? `${scene.year} AD` : `${Math.abs(scene.year)} BC`;
+            const participants = (scene.participantNames || []).map(name => legendsData.find(l => l.name === name)).filter(Boolean);
+            const participantBadges = participants.map(l => {
+                const rc = `rank-${l.rank.replace('+','-plus').replace('-','-minus')}`;
+                return `<button onclick="closeScenesPanel(); openEvalModal('${l.id}')" class="flex items-center gap-1 bg-[#f0ece4] hover:bg-[#e5e0d3] border border-[#d5cfc5] rounded px-2 py-0.5 text-xs font-serif transition-colors">
+                    <span class="rank-badge ${rc}" style="font-size:9px;padding:1px 4px;">${escapeHtml(l.rank)}</span>
+                    <span>${escapeHtml(l.name)}</span>
+                </button>`;
+            }).join('');
+            const scoreSection = score !== null
+                ? `<div class="mt-3"><div class="flex justify-between text-xs text-[#a8a29e] mb-1 font-serif"><span>${dimLabel}</span><span class="font-bold text-[#2c2826]">${score}</span></div><div class="h-2 bg-[#e5e0d3] rounded-full overflow-hidden"><div class="h-full ${dimColor} rounded-full" style="width:${score}%"></div></div></div>`
+                : `<div class="mt-3 flex gap-3">${['drama','impact','difficulty'].map(d => `<div class="flex-1"><div class="flex justify-between text-xs text-[#a8a29e] mb-1 font-serif"><span>${{drama:'戲劇',impact:'影響',difficulty:'決策'}[d]}</span><span>${scene[d]||'?'}</span></div><div class="h-1.5 bg-[#e5e0d3] rounded-full overflow-hidden"><div class="h-full bg-amber-500 rounded-full" style="width:${scene[d]||0}%"></div></div></div>`).join('')}</div>`;
+            return `
+            <div class="bg-white rounded-xl border border-[#e5e0d3] p-5 shadow-sm mb-4 flex gap-4">
+                ${dim !== 'all' ? `<div class="text-2xl font-bold text-[#d4af37] font-serif w-9 text-center shrink-0 pt-1">#${rank+1}</div>` : ''}
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-start justify-between gap-2 mb-1">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <h3 class="text-lg font-bold font-serif text-[#1c1917]">${escapeHtml(scene.name)}</h3>
+                            <span class="text-xs ${typeColor} px-2 py-0.5 rounded-full font-serif">${escapeHtml(scene.type)}</span>
+                            ${scene.source && scene.source !== 'static' ? '<span class="text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded-full font-serif">AI 提取</span>' : ''}
+                        </div>
+                        <span class="text-xs text-[#a8a29e] font-serif shrink-0">${escapeHtml(scene.dynasty)} · ${yearStr}</span>
+                    </div>
+                    <p class="text-sm text-[#57534e] font-serif leading-relaxed mb-2">${escapeHtml(scene.desc)}</p>
+                    ${participants.length ? `<div class="flex flex-wrap gap-1.5">${participantBadges}</div>` : ''}
+                    ${scoreSection}
+                </div>
+            </div>`;
+        }
+
+        function extractScenesFromCurrentTab() {
+            if (!currentAnalysisId) return;
+            extractScenes(currentAnalysisId, currentEvalTab);
+        }
+
+        async function extractScenes(legendId, sourceTab) {
+            const legend = legendsData.find(l => l.id === legendId);
+            if (!legend) return;
+            const cachedText = sourceTab === 'review'
+                ? appState.modifiedLegends[legendId]?.analysis
+                : appState.modifiedLegends[legendId]?.deepAnalysis;
+            if (!cachedText) return customAlert('尚無評鑑內容，請先完成評鑑');
+
+            const btn = el('extractScenesBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> 提取中...';
+
+            const existingNames = [...staticScenesData, ...appState.scenes].map(s => s.name);
+            const prompt = `根據以下對「${legend.name}」的歷史評鑑，提取 2-3 個該人物參與的最具代表性歷史名場面。
+
+【評鑑內容】
+${cachedText.slice(0, 2000)}
+
+【已有場面（請勿重複）】${existingNames.join('、')}
+
+請輸出 JSON 陣列，每個場面包含：
+name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、type（軍事決策/政治謀略/宮廷鬥爭/外交/其他）、drama（0-100）、impact（0-100）、difficulty（0-100）、desc（50字內）、participantNames（涉及人物姓名陣列）
+
+只輸出 JSON 陣列，不要其他文字。`;
+            try {
+                const text = await callGemini(prompt, true);
+                const jsonMatch = text.match(/\[[\s\S]*\]/);
+                if (!jsonMatch) throw new Error('格式錯誤');
+                const newScenes = JSON.parse(jsonMatch[0]);
+                newScenes.forEach(s => {
+                    if (!s.name || !s.desc) return;
+                    appState.scenes.push({
+                        id: `scene_${Date.now()}_${Math.random().toString(36).slice(2,6)}`,
+                        name: s.name, year: s.year || 0, dynasty: s.dynasty || legend.dynasty || '',
+                        type: s.type || '其他',
+                        drama: Math.min(100, Math.max(0, s.drama || 70)),
+                        impact: Math.min(100, Math.max(0, s.impact || 70)),
+                        difficulty: Math.min(100, Math.max(0, s.difficulty || 70)),
+                        desc: s.desc || '', participantNames: s.participantNames || [legend.name],
+                        source: sourceTab
+                    });
+                });
+                syncToCloud();
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> 已提取';
+                customAlert(`成功提取 ${newScenes.length} 個名場面！`);
+            } catch(e) {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-fire mr-1"></i> 提取名場面';
+                customAlert('提取失敗：' + e.message);
+            }
+        }
+        // ===== 名場面 END =====
+
         async function exportCard() {
             if (!currentAnalysisId) return;
             const legend = legendsData.find(l => l.id === currentAnalysisId);
@@ -1970,6 +2160,7 @@ ${allNames}
             el('loadingState').classList.add('hidden');
             el('regenStatsBtn').classList.add('hidden');
             el('regenDeepBtn').classList.add('hidden');
+            el('extractScenesBtn').classList.add('hidden');
             if (tab === 'review') _loadReviewContent(currentAnalysisId);
             else _loadCalibrationContent(currentAnalysisId);
         }
@@ -1995,6 +2186,7 @@ ${allNames}
                 el('loadingState').classList.add('hidden');
                 renderRadarChart(legend.name, cachedStats);
                 el('regenStatsBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden');
                 setModalContent(cachedAnalysis);
                 renderDiscussionPanel(id, cachedAnalysis);
                 return;
@@ -2045,6 +2237,7 @@ ${allNames}
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 if (needsAnalysis) appState.modifiedLegends[id].analysis = cleanText;
                 syncToCloud();
+                el('extractScenesBtn').classList.remove('hidden');
                 setModalContent(needsAnalysis ? cleanText : cachedAnalysis);
                 renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
             } catch(e) {
@@ -2070,6 +2263,7 @@ ${allNames}
                 el('loadingState').classList.add('hidden');
                 setModalContent(cachedDeep);
                 el('regenDeepBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden');
                 renderApplyPanel(id, cachedDeep);
                 renderDiscussionPanel(id, cachedDeep);
                 return;
@@ -2141,6 +2335,7 @@ ${rankingRef}
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 appState.modifiedLegends[id].deepAnalysis = streamText;
                 el('regenDeepBtn').classList.remove('hidden');
+                el('extractScenesBtn').classList.remove('hidden');
                 renderApplyPanel(id, streamText);
                 appState.simulationHistory.unshift({ type: '校準評級', icon: '🔬', title: `${legend.name} 校準評級`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
                 syncToCloud();
