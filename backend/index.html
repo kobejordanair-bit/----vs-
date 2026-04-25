@@ -2111,6 +2111,28 @@ ${focusLine}`;
             }
         }
 
+        function _promptAfterExtract(count, unknowns) {
+            el('uiMsgTitle').innerText = `成功提取 ${count} 個名場面`;
+            el('uiMsgCancelBtn').style.display = 'none';
+            el('uiMsgOkBtn').onclick = closeUIMsg;
+            if (unknowns.length === 0) {
+                el('uiMsgText').innerText = '';
+            } else {
+                const btns = unknowns.map(name =>
+                    `<button onclick="closeUIMsg();openAddModalWithName('${name.replace(/'/g,"\\'")}')"
+                        class="inline-flex items-center gap-1.5 bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 rounded-lg px-3 py-1.5 text-sm font-serif transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-chart text-xs"></i>${escapeHtml(name)}
+                    </button>`
+                ).join('');
+                el('uiMsgText').innerHTML = `<span class="text-slate-500 text-xs block mb-3">以下人物尚未入冊，點擊可前往深度評鑑入冊：</span><div class="flex flex-wrap gap-2">${btns}</div>`;
+            }
+            openUIMsg();
+        }
+        function openAddModalWithName(name) {
+            openAddModal();
+            el('addInputName').value = name;
+        }
+
         function extractScenesFromCurrentTab() {
             if (!currentAnalysisId) return;
             extractScenes(currentAnalysisId, currentEvalTab);
@@ -2161,7 +2183,9 @@ name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、
                 syncToCloud();
                 btn.disabled = false;
                 btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> 已提取';
-                customAlert(`成功提取 ${newScenes.length} 個名場面！`);
+                const knownNames = new Set(legendsData.map(l => l.name));
+                const unknowns = [...new Set(newScenes.flatMap(s => s.participantNames || []).filter(n => !knownNames.has(n)))];
+                _promptAfterExtract(newScenes.length, unknowns);
             } catch(e) {
                 btn.disabled = false;
                 btn.innerHTML = '<i class="fa-solid fa-fire mr-1"></i> 提取名場面';
