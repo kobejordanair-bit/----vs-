@@ -1677,6 +1677,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             el('extractScenesBtn').classList.add('hidden');
             appState.chatMode.targetId = null;
             currentAnalysisId = null;
+            if (pendingReactionLegendId) {
+                const rid = pendingReactionLegendId;
+                pendingReactionLegendId = null;
+                showRelatedReactions(rid, '新增入冊');
+            }
         }
 
         let statsChartInstances = [];
@@ -3228,33 +3233,35 @@ ${rankingRef}
                             ${suggestions.poem ? `<p><span class="text-purple-500 font-bold w-12 inline-block">判詞</span><span class="text-slate-700 italic">${escapeHtml(suggestions.poem)}</span></p>` : ''}
                         </div>
                         <button id="prefillNewBtn" class="w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
-                            <i class="fa-solid fa-pen-to-square mr-2"></i>預填入冊資料，進入確認步驟
+                            <i class="fa-solid fa-circle-check mr-2"></i>確認入冊，前往賞析
                         </button>
                     </div>`;
                     el('modalContent').innerHTML += previewPanel;
                     setTimeout(() => {
                         const btn = document.getElementById('prefillNewBtn');
                         if (btn) btn.addEventListener('click', () => {
-                            closeModal();
-                            el('addInputName').value = name;
-                            document.querySelector(`input[name="addType"][value="${type}"]`).checked = true;
-                            el('newRank').value = suggestions.rank || '';
-                            el('newTitle').value = suggestions.title || '';
-                            el('newTag').value = suggestions.tag || '';
-                            el('newPoem').value = suggestions.poem || '';
-                            el('newDesc').value = suggestions.desc || '';
-                            el('addStep2').dataset.dynasty = suggestions.dynasty || '未分類';
-                            el('newDynasty').value = suggestions.dynasty || '';
-                            pendingNewLegendType = type;
-                            el('addStep1').classList.add('hidden');
-                            el('addStep2').classList.remove('hidden');
-                            el('addModal').classList.remove('hidden');
+                            const newId = generateId(type, name);
+                            const newLegend = {
+                                id: newId, type, name,
+                                dynasty: suggestions.dynasty || null,
+                                rank: suggestions.rank || 'C',
+                                title: suggestions.title || '',
+                                tag: suggestions.tag || '',
+                                poem: suggestions.poem || '',
+                                desc: suggestions.desc || '',
+                                createdAt: Date.now()
+                            };
+                            appState.modifiedLegends[newId] = appState.modifiedLegends[newId] || {};
+                            appState.modifiedLegends[newId].deepAnalysis = streamText;
+                            appState.customLegends.push(newLegend);
+                            appState.simulationHistory.unshift({ type: '深度評鑑入冊', icon: '📋', title: `${name} 深度評鑑入冊`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
+                            syncToCloud();
+                            refreshData();
+                            pendingReactionLegendId = newId;
+                            openEvalModal(newId, 'calibrate');
                         });
                     }, 50);
                 }
-                // 存入史冊
-                appState.simulationHistory.unshift({ type: '深度評鑑入冊', icon: '📋', title: `${name} 深度評鑑入冊`, result: streamText.slice(0, 100), fullResult: streamText, time: new Date().toLocaleString('zh-TW') });
-                pendingDeepAnalysisText = streamText;
                 syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
@@ -3265,9 +3272,9 @@ ${rankingRef}
         function closeAddModal() { el('addModal').classList.add('hidden'); }
         
         let pendingNewLegendType = 'general';
-        let pendingDeepAnalysisText = null;
+        let pendingReactionLegendId = null;
 
-        async function saveNewLegend() {
+        function saveNewLegend() {
             const newLegend = {
                 id: generateId(pendingNewLegendType, el('addInputName').value.trim()),
                 type: pendingNewLegendType,
@@ -3280,30 +3287,11 @@ ${rankingRef}
                 desc: el('newDesc').value,
                 createdAt: Date.now()
             };
-
-            const hasDeepAnalysis = !!pendingDeepAnalysisText;
-            if (hasDeepAnalysis) {
-                appState.modifiedLegends[newLegend.id] = appState.modifiedLegends[newLegend.id] || {};
-                appState.modifiedLegends[newLegend.id].deepAnalysis = pendingDeepAnalysisText;
-                pendingDeepAnalysisText = null;
-            }
-
             appState.customLegends.push(newLegend);
             syncToCloud();
             refreshData();
             closeAddModal();
-            await showRelatedReactions(newLegend.id, '新增入冊');
-
-            if (hasDeepAnalysis) {
-                const legendId = newLegend.id;
-                el('modalContent').insertAdjacentHTML('beforeend', `
-                    <div class="mt-6 pt-4 border-t border-amber-200 flex justify-center">
-                        <button onclick="closeModal();openEvalModal('${legendId}','calibrate')"
-                            class="px-6 py-2.5 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
-                            <i class="fa-solid fa-scroll mr-2"></i>前往賞析 · 提取名場面
-                        </button>
-                    </div>`);
-            }
+            showRelatedReactions(newLegend.id, '新增入冊');
         }
 
         // Edit Hub Logic
