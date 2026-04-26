@@ -3267,52 +3267,6 @@ ${rankingRef}
         let pendingNewLegendType = 'general';
         let pendingDeepAnalysisText = null;
 
-        async function _autoExtractScenesForNewLegend(legendId, analysisText) {
-            const legend = legendsData.find(l => l.id === legendId);
-            if (!legend) return;
-            const existingNames = [...staticScenesData, ...appState.scenes].map(s => s.name);
-            const allLegendNames = legendsData.map(l => l.name).join('、');
-            const prompt = `根據以下對「${legend.name}」的歷史評鑑，提取 2-3 個該人物參與的最具代表性歷史名場面。
-
-【評鑑內容】
-${analysisText.slice(0, 2000)}
-
-【已有場面（請勿重複）】${existingNames.join('、')}
-
-【人物庫（participantNames 必須從此清單選取確切姓名，禁止使用廟號、諡號或別稱）】
-${allLegendNames}
-
-請輸出 JSON 陣列，每個場面包含：
-name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、type（軍事決策/政治謀略/宮廷鬥爭/外交/其他）、drama（0-100）、impact（0-100）、difficulty（0-100）、desc（50字內）、participantNames（只從人物庫選取）
-
-只輸出 JSON 陣列，不要其他文字。`;
-            try {
-                const text = await callGemini(prompt, true);
-                const jsonMatch = text.match(/\[[\s\S]*\]/);
-                if (!jsonMatch) return;
-                const newScenes = JSON.parse(jsonMatch[0]);
-                newScenes.forEach(s => {
-                    if (!s.name || !s.desc) return;
-                    appState.scenes.push({
-                        id: `scene_${Date.now()}_${Math.random().toString(36).slice(2,6)}`,
-                        name: s.name, year: s.year || 0, dynasty: s.dynasty || legend.dynasty || '',
-                        type: s.type || '其他',
-                        drama: Math.min(100, Math.max(0, s.drama || 70)),
-                        impact: Math.min(100, Math.max(0, s.impact || 70)),
-                        difficulty: Math.min(100, Math.max(0, s.difficulty || 70)),
-                        desc: s.desc || '', participantNames: s.participantNames || [legend.name],
-                        source: 'calibrate'
-                    });
-                });
-                syncToCloud();
-                const knownNames = new Set(legendsData.map(l => l.name));
-                const unknowns = [...new Set(newScenes.flatMap(s => s.participantNames || []).filter(n => !knownNames.has(n)))];
-                _promptAfterExtract(newScenes.length, unknowns);
-            } catch(e) {
-                console.error('自動提取名場面失敗:', e);
-            }
-        }
-
         async function saveNewLegend() {
             const newLegend = {
                 id: generateId(pendingNewLegendType, el('addInputName').value.trim()),
@@ -3327,21 +3281,28 @@ name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、
                 createdAt: Date.now()
             };
 
-            if (pendingDeepAnalysisText) {
+            const hasDeepAnalysis = !!pendingDeepAnalysisText;
+            if (hasDeepAnalysis) {
                 appState.modifiedLegends[newLegend.id] = appState.modifiedLegends[newLegend.id] || {};
                 appState.modifiedLegends[newLegend.id].deepAnalysis = pendingDeepAnalysisText;
+                pendingDeepAnalysisText = null;
             }
 
             appState.customLegends.push(newLegend);
             syncToCloud();
             refreshData();
             closeAddModal();
-            showRelatedReactions(newLegend.id, '新增入冊');
+            await showRelatedReactions(newLegend.id, '新增入冊');
 
-            if (pendingDeepAnalysisText) {
-                const analysisText = pendingDeepAnalysisText;
-                pendingDeepAnalysisText = null;
-                await _autoExtractScenesForNewLegend(newLegend.id, analysisText);
+            if (hasDeepAnalysis) {
+                const legendId = newLegend.id;
+                el('modalContent').insertAdjacentHTML('beforeend', `
+                    <div class="mt-6 pt-4 border-t border-amber-200 flex justify-center">
+                        <button onclick="closeModal();openEvalModal('${legendId}','calibrate')"
+                            class="px-6 py-2.5 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white rounded-lg font-bold font-serif tracking-wide transition-all shadow-md">
+                            <i class="fa-solid fa-scroll mr-2"></i>前往賞析 · 提取名場面
+                        </button>
+                    </div>`);
             }
         }
 
