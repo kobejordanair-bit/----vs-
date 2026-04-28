@@ -87,7 +87,10 @@ def verify_token(x_app_token: Optional[str] = Header(None)):
 
 @app.get("/")
 def serve_frontend():
-    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html"))
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html"),
+        headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
+    )
 
 @app.get("/manifest.json")
 def serve_manifest():
@@ -95,7 +98,10 @@ def serve_manifest():
 
 @app.get("/sw.js")
 def serve_sw():
-    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sw.js"))
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "sw.js"),
+        headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
+    )
 
 @app.post("/api/auth")
 @limiter.limit("5/minute")
