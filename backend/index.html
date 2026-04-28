@@ -2368,8 +2368,8 @@ name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、
     const legend = legendsData.find(l => l.id === id);
     if (!legend) return;
 
-    // 把榜單裡所有人名傳給AI，讓他從裡面挑
-    const allNames = legendsData.map(l => l.name).join('、');
+    // 把榜單裡所有人名與評級傳給AI，讓他從裡面挑
+    const allNames = legendsData.map(l => `${l.name}(${l.rank})`).join('、');
 
     openModal(`史觀辯論庭：眾人評${legend.name}`, 'content');
     el('loadingState').classList.remove('hidden');
