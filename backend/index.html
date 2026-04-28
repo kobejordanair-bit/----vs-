@@ -4411,7 +4411,7 @@ async function callGeminiNative(contentsArray, isJson = false) {
 
         // Save Download
         function handleDownloadJSON() {
-            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories, simulationHistory: appState.simulationHistory, discussionHistories: appState.discussionHistories, version: APP_VERSION };
+            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories, simulationHistory: appState.simulationHistory, discussionHistories: appState.discussionHistories, scenes: appState.scenes, sceneEdits: appState.sceneEdits, version: APP_VERSION };
             const blob = new Blob([JSON.stringify(data)], {type: "application/json"}); 
             const url = URL.createObjectURL(blob); 
             const a = document.createElement('a'); 
@@ -4451,11 +4451,15 @@ async function callGeminiNative(contentsArray, isJson = false) {
                         const found = staticLegendsData.find(l => l.name === key) || loadedCustoms.find(l => l.name === key);
                         newChats[found ? found.id : key] = oldChats[key];
                     });
-                    appState.chatHistories = newChats; 
+                    appState.chatHistories = newChats;
+                    appState.simulationHistory = data.simulationHistory || [];
+                    appState.discussionHistories = data.discussionHistories || {};
+                    appState.scenes = data.scenes || [];
+                    appState.sceneEdits = data.sceneEdits || {};
 
                     syncToCloud(); // Persist immediately
-                    refreshData(); 
-                    customAlert("讀檔成功！舊版存檔已自動升級適配。"); 
+                    refreshData();
+                    customAlert("讀檔成功！舊版存檔已自動升級適配。");
                 } catch (err) { 
                     console.error(err);
                     customAlert("讀檔失敗，檔案格式可能損壞。"); 
