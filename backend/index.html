@@ -1478,6 +1478,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             },
             scenes: [],
             sceneEdits: {},
+            soulSession: null,
         };
         
         let legendsData = []; 
@@ -1497,6 +1498,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             appState.simulationHistory = data.simulationHistory || [];
             appState.scenes = data.scenes || [];
             appState.sceneEdits = data.sceneEdits || {};
+            if (data.soulSession && data.soulSession.phase !== 'idle') {
+                soulSession = { ...data.soulSession, generating: false };
+            }
             if (data.hegemonySavedSim) {
                 appState.hegemony.savedSimulation = data.hegemonySavedSim;
                 localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
@@ -1562,7 +1566,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             discussionHistories: appState.discussionHistories,
                             hegemonySavedSim: appState.hegemony.savedSimulation || null,
                             scenes: appState.scenes,
-                            sceneEdits: appState.sceneEdits
+                            sceneEdits: appState.sceneEdits,
+                            soulSession: soulSession.phase !== 'idle' ? soulSession : null
                         })
                     });
                 } catch(e) {
@@ -4373,6 +4378,8 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         }
         function resetSoulSession() {
             soulSession = { phase:'idle', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+            appState.soulSession = null;
+            syncToCloud();
             updateSoulModeUI();
         }
 
@@ -4600,6 +4607,8 @@ ${ctx}${figCtx}請寫出${label}（700-1000字）：${firstExtra}
                 if (fullText.includes('【宿主殞落')) { soulSession.phase = 'ending'; _soulRenderChapter(chNum); await endSoulSession(true); return; }
             } catch(e) { soulSession.chapters[chNum].content = `（生成失敗：${escapeHtml(e.message)}）`; soulSession.chapters[chNum].streaming = false; }
             soulSession.generating = false;
+            appState.soulSession = soulSession;
+            syncToCloud();
             _soulRenderChapter(chNum);
         }
 
