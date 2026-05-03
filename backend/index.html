@@ -104,6 +104,76 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         /* Compare Bar */
         #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
+
+        /* ===== Night Mode ===== */
+        html.night body { background-color: #17150f !important; }
+        html.night .bg-\[\#fffdf9\] { background-color: #252220 !important; }
+        html.night .bg-\[\#f5f5f4\] { background-color: #2a2724 !important; }
+        html.night .bg-\[\#fafaf9\] { background-color: #242220 !important; }
+        html.night .bg-\[\#f5f3ef\] { background-color: #2a2724 !important; }
+        html.night .bg-\[\#f5f0e8\] { background-color: #252220 !important; }
+        html.night .bg-\[\#f0ede6\] { background-color: #1f1d1b !important; }
+        html.night .bg-white:not(.rank-badge):not([class*="rank-"]) { background-color: #2c2826 !important; }
+        html.night .bg-red-50 { background-color: #2a1818 !important; }
+        html.night .bg-blue-50 { background-color: #1a2030 !important; }
+        html.night .bg-amber-50,html.night .bg-\[\#fffbeb\] { background-color: #271f0e !important; }
+        html.night .bg-emerald-50 { background-color: #142018 !important; }
+        html.night .bg-violet-50 { background-color: #1e1530 !important; }
+
+        html.night .text-\[\#2c2826\] { color: #e5e0d3 !important; }
+        html.night .text-\[\#57534e\] { color: #a8a29e !important; }
+        html.night .text-\[\#44403c\] { color: #a8a29e !important; }
+        html.night .text-\[\#78716c\] { color: #78716c !important; }
+
+        html.night .border-\[\#e5e0d3\] { border-color: #3c3836 !important; }
+        html.night .border-\[\#d6d3c9\] { border-color: #44403c !important; }
+        html.night .border-\[\#f0ebe0\] { border-color: #3c3836 !important; }
+        html.night .border-\[\#e5e7eb\] { border-color: #3c3836 !important; }
+        html.night .border-\[\#e2e8f0\] { border-color: #3c3836 !important; }
+
+        html.night .paper-card { background-color: #252220 !important; border-color: #3c3836 !important; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3) !important; }
+        html.night .paper-card:hover { border-color: #d4af37 !important; }
+
+        html.night .filter-btn { background: #2c2826 !important; color: #d6d3c9 !important; border-color: #44403c !important; }
+        html.night .filter-btn.active { background-color: #17150f !important; color: #f5f5f4 !important; border-color: #78716c !important; }
+
+        html.night .type-btn { color: #a8a29e; }
+        html.night .type-btn.active { color: #e5e0d3 !important; }
+
+        html.night .radar-dim-tab:hover { background: #3c3836 !important; color: #e5e0d3; }
+        html.night .radar-dim-active { background: #0f0d0b !important; }
+
+        html.night .bottom-panel { background-color: #252220 !important; }
+        html.night #hegemonyPanel { background-color: #1e1c1a !important; }
+        html.night #soulModePanel { background-color: #1e1c1a !important; }
+        html.night #compareBar { background-color: #252220 !important; }
+
+        html.night .role-slot { border-color: #44403c !important; background: rgba(44,40,38,0.6) !important; }
+        html.night .role-slot.filled { background-color: #2c2826 !important; border-color: #44403c !important; }
+        html.night .role-slot.active-selection { border-color: #d4af37 !important; background-color: #271f0e !important; }
+
+        html.night .prose h3 { color: #f5c56c !important; border-left-color: #d4af37 !important; }
+        html.night .prose p { color: #c4bdb4 !important; }
+        html.night .prose strong { color: #f5c56c !important; }
+        html.night #modalContent { color: #c4bdb4; }
+
+        html.night .chart-container { background: #252220 !important; border-color: #3c3836 !important; }
+
+        html.night .chat-user { background-color: #3c3836 !important; color: #e5e0d3 !important; }
+        html.night .chat-ai { background-color: #252220 !important; color: #c4bdb4 !important; border-color: #3c3836 !important; }
+
+        html.night input[type="text"],
+        html.night input[type="password"],
+        html.night textarea { background-color: #2c2826 !important; color: #e5e0d3 !important; border-color: #44403c !important; }
+        html.night select { background-color: #2c2826 !important; color: #e5e0d3 !important; }
+        html.night input::placeholder,html.night textarea::placeholder { color: #78716c !important; }
+
+        html.night ::-webkit-scrollbar-track { background: #252220; }
+        html.night ::-webkit-scrollbar-thumb { background: #44403c; }
+        html.night ::-webkit-scrollbar-thumb:hover { background: #57534e; }
+
+        html.night #chronicleDrawer { background-color: #252220 !important; border-color: #3c3836 !important; }
+        html.night .chronicle-filter-btn { background-color: #2c2826 !important; color: #d6d3c9 !important; border-color: #44403c !important; }
     </style>
     <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#7f1d1d">
@@ -167,6 +237,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     }
 }
 </script>
+    <script>
+    (function(){if(localStorage.getItem('dynasty_nightmode')==='1'){document.documentElement.classList.add('night');}})();
+    </script>
     <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>
     <div id="flashToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#92400e;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>
 <!-- 辯論模式面板 -->
@@ -310,6 +383,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
             </div>
             <div class="flex gap-3 items-center flex-wrap justify-end w-full md:w-auto">
+                <button id="nightToggleBtn" onclick="toggleNightMode()" title="切換日夜模式" class="text-[#d6d3c9] hover:text-white bg-[#2c2826] border border-[#44403c] w-9 h-9 rounded-lg flex items-center justify-center transition-all shrink-0">
+                    <i class="fa-solid fa-moon text-slate-300"></i>
+                </button>
                 <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
                     <button onclick="handleDownloadJSON()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif">
                         <i class="fa-solid fa-floppy-disk text-[#f97316]"></i> <span class="hidden md:inline">匯出</span>
@@ -5177,6 +5253,20 @@ function clearAllChronicle() {
             clearTimeout(searchTimer);
             searchTimer = setTimeout(renderLegends, 300);
         });
+
+        function toggleNightMode() {
+            const isNight = document.documentElement.classList.toggle('night');
+            localStorage.setItem('dynasty_nightmode', isNight ? '1' : '0');
+            const btn = document.getElementById('nightToggleBtn');
+            if (btn) btn.innerHTML = isNight
+                ? '<i class="fa-solid fa-sun text-amber-300"></i>'
+                : '<i class="fa-solid fa-moon text-slate-300"></i>';
+        }
+        (function(){
+            const btn = document.getElementById('nightToggleBtn');
+            if (btn && document.documentElement.classList.contains('night'))
+                btn.innerHTML = '<i class="fa-solid fa-sun text-amber-300"></i>';
+        })();
 
         function resetApp() { appState.mode = 'browse'; closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; appState.compareList = []; updateCompareUI(); renderLegends(); }
         // Start
