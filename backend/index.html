@@ -4450,11 +4450,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4464,7 +4464,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -4679,21 +4679,53 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
             const chNum = soulSession.chapters.length;
-            const label = chNum === 0 ? '序章' : `第${chNum}章`;
-            const older = soulSession.chapters.slice(0,-2);
-            const recent = soulSession.chapters.slice(-2);
+            const isAftermath = soulSession.hostDead;
+            const aftermathNums = ['一','二','三','四','五','六','七','八','九','十'];
+            const aftermathCount = soulSession.chapters.filter(c => c.isAftermath).length;
+            const label = isAftermath
+                ? `身後記${aftermathNums[aftermathCount] || aftermathCount + 1}`
+                : (chNum === 0 ? '序章' : `第${chNum}章`);
+
+            const older = soulSession.chapters.filter(c => !c.isSummary).slice(0,-2);
+            const recent = soulSession.chapters.filter(c => !c.isSummary).slice(-2);
             let ctx = '';
             if (older.length) ctx += `【前情梗概】\n${older.map(c=>`${c.label}「${c.title}」：${c.content.slice(0,120)}…`).join('\n')}\n\n`;
             if (recent.length) ctx += recent.map(c=>`【${c.label}「${c.title}」完整內容】\n${c.content}`).join('\n\n') + '\n\n';
             const figCtx = soulSession.figureStates.length ? `【當前人物動態】\n${soulSession.figureStates.map(f=>`${f.name}(${f.rank})：${f.change}`).join('；')}\n\n` : '';
-            const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
-            const soulLine = soul
-                ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}`
-                : `穿越靈魂：無（宿主自身意識覺醒）\n覺醒特質：宿主以某種難以言喻的直覺感知到歷史的走向，但仍完全受制於其原有的性格底色、認知框架與時代局限——覺醒帶來的是選擇的可能性，而非能力的提升`;
-            const isFirst = chNum === 0;
-            const firstExtra = isFirst ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感` : `\n承接前章，選擇下一個最有張力的情節節點，充分展開衝突、對話、心理與環境細節。`;
             const yStr = (y) => y > 0 ? `西元${y}年` : `${Math.abs(y)}年前`;
-            const prompt = `你是頂尖歷史穿越小說作家兼嚴謹史學者，以史書體裁（但沉浸生動）寫作。
+
+            let prompt;
+            if (isAftermath) {
+                const deathCh = soulSession.chapters[soulSession.deathChapter];
+                prompt = `你是一位嚴肅的歷史小說作家兼史學者，以史書體裁（但沉浸生動）寫作。
+
+【背景】
+宿主${host?.name}（${host?.rank}，${host?.title||''}，${host?.dynasty||''}）已於「${deathCh?.title||'前章'}」中殞落。
+穿越時刻：${soulSession.moment?.title}（${yStr(soulSession.moment?.year||0)}）
+
+${ctx}${figCtx}請寫出${label}（2000-3000字）：
+
+本章為宿主身後的世界記錄。請從當前人物動態中，選擇一位「因宿主死亡而命運最受衝擊、或最能決定後續走向」的在世人物作為本章固定主視角，以其主觀視角展開敘述。
+
+寫作要求：
+- 固定本章一個主視角人物，不要在人物間跳躍，深入其內心與處境
+- 展現宿主生前的決定（尤其與原歷史不同之處）如何在其死後持續發酵，包括意料之外的連鎖反應
+- 【蝴蝶效應】宿主種下的因在其死後才真正收穫果——被改變的時間線不會因宿主死亡而自動回到原軌，繼續沿著已偏離的軌跡演化
+- 【歷史慣性】各方人物仍有自己的利益邏輯，宿主的死可能對某人是解脫，對另一人是噩夢的開始
+
+正文結束後換行輸出（系統解析用，勿計入正文）：
+[FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
+[CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
+            } else {
+                const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
+                const soulLine = soul
+                    ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}`
+                    : `穿越靈魂：無（宿主自身意識覺醒）\n覺醒特質：宿主以某種難以言喻的直覺感知到歷史的走向，但仍完全受制於其原有的性格底色、認知框架與時代局限——覺醒帶來的是選擇的可能性，而非能力的提升`;
+                const isFirst = chNum === 0;
+                const firstExtra = isFirst
+                    ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
+                    : `\n承接前章，選擇下一個最有張力的情節節點，充分展開衝突、對話、心理與環境細節。`;
+                prompt = `你是頂尖歷史穿越小說作家兼嚴謹史學者，以史書體裁（但沉浸生動）寫作。
 
 【魂穿設定】
 宿主：${host?.name}（${host?.rank}，${host?.title||''}，${host?.dynasty||''}）
@@ -4708,13 +4740,14 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
 - 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變。隨章節推進，歷史應逐漸偏離原有軌跡——某些原本會發生的事可能不再出現，某些從未存在的局面因此成形。請根據穿越者實際做出的選擇推演其邏輯後果，而非讓原有歷史事件按序發生
 - 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
 - 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」
-- 如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
+- 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
 
 正文結束後換行輸出（系統解析用，勿計入正文）：
 [FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
+            }
 
-            soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true });
+            soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
             soulSession.viewingChapter = chNum;
             _soulShowChapterShell(chNum);
             try {
@@ -4730,7 +4763,11 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
                 if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
                 soulSession.chapters[chNum].content = _soulCleanText(fullText);
                 soulSession.chapters[chNum].streaming = false;
-                if (fullText.includes('【宿主殞落')) { soulSession.phase = 'ending'; _soulRenderChapter(chNum); await endSoulSession(true); return; }
+                if (!isAftermath && fullText.includes('【宿主殞落')) {
+                    soulSession.hostDead = true;
+                    soulSession.deathChapter = chNum;
+                    soulSession.chapters[chNum].isDeath = true;
+                }
             } catch(e) { soulSession.chapters[chNum].content = `（生成失敗：${escapeHtml(e.message)}）`; soulSession.chapters[chNum].streaming = false; }
             soulSession.generating = false;
             appState.soulSession = soulSession;
@@ -4781,9 +4818,16 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
         function _soulUpdateChapterNav() {
             const nav = el('soulChapterNav'); if (!nav) return;
             nav.classList.remove('hidden');
-            nav.innerHTML = soulSession.chapters.map((c,i)=>
-                `<button onclick="soulNavChapter(${i})" class="text-[10px] whitespace-nowrap px-3 py-1 rounded font-serif transition-all ${i===soulSession.viewingChapter?'bg-purple-800 text-purple-100':'text-purple-600 hover:text-purple-300'}">${escapeHtml(c.label)}</button>`
-            ).join('');
+            nav.innerHTML = soulSession.chapters.map((c,i)=>{
+                const isActive = i === soulSession.viewingChapter;
+                const prefix = c.isDeath ? '† ' : '';
+                const colorCls = c.isDeath
+                    ? (isActive ? 'bg-red-900 text-red-200' : 'text-red-600 hover:text-red-300')
+                    : c.isAftermath
+                        ? (isActive ? 'bg-slate-700 text-slate-200' : 'text-slate-500 hover:text-slate-300')
+                        : (isActive ? 'bg-purple-800 text-purple-100' : 'text-purple-600 hover:text-purple-300');
+                return `<button onclick="soulNavChapter(${i})" class="text-[10px] whitespace-nowrap px-3 py-1 rounded font-serif transition-all ${colorCls}">${prefix}${escapeHtml(c.label)}</button>`;
+            }).join('');
         }
 
         function _soulUpdateActions() {
@@ -4798,32 +4842,36 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
             nextBtn.classList.remove('opacity-0','pointer-events-none');
             if (soulSession.generating) { nextBtn.disabled = true; nextBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i>生成中…'; }
             else if (viewing < total - 1) { nextBtn.disabled = false; nextBtn.innerHTML = '跳至最新章 <i class="fa-solid fa-forward-step"></i>'; nextBtn.onclick = ()=>soulNavChapter(total-1); }
+            else if (soulSession.hostDead) { nextBtn.disabled = false; nextBtn.innerHTML = '觀察身後世 <i class="fa-solid fa-ghost"></i>'; nextBtn.onclick = generateNextSoulChapter; }
             else { nextBtn.disabled = false; nextBtn.innerHTML = '繼續下一章 <i class="fa-solid fa-arrow-right"></i>'; nextBtn.onclick = generateNextSoulChapter; }
         }
 
         function soulNavChapter(idx) { if (idx < 0 || idx >= soulSession.chapters.length) return; soulSession.viewingChapter = idx; _soulRenderChapter(idx); }
         function soulPrevChapter() { soulNavChapter(soulSession.viewingChapter - 1); }
 
-        async function endSoulSession(auto=false) {
-            if (!auto && soulSession.generating) return;
+        async function endSoulSession() {
+            if (soulSession.generating) return;
             soulSession.phase = 'ended'; soulSession.generating = false;
             el('soulEndBtn')?.classList.add('hidden');
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
-            const recap = soulSession.chapters.map(c=>`【${c.label}「${c.title}」】${c.content.slice(0,200)}`).join('\n');
+            const storyChapters = soulSession.chapters.filter(c => !c.isSummary);
+            const recap = storyChapters.map(c=>`【${c.label}「${c.title}」${c.isDeath?'（殞落章）':''}${c.isAftermath?'（身後記）':''}】${c.content.slice(0,200)}`).join('\n');
+            const aftermathCount = storyChapters.filter(c => c.isAftermath).length;
             const prompt = `以下是一段歷史穿越的完整記錄。
 
 【設定】宿主：${host?.name}（${host?.rank}）　靈魂：${soul?soul.name:'宿主意識覺醒'}　時刻：${soulSession.moment?.title}
+${soulSession.hostDead ? `宿主已殞落，身後世界共記錄${aftermathCount}章。` : '宿主存活至終結。'}
 
 【各章梗概】
 ${recap}
 
-請以「太史公曰」格式，寫一段300-400字的魂穿總評：
-1. 這段穿越的核心歷史改寫是什麼
-2. 宿主與靈魂（若有）如何影響了歷史走向
-3. 周遭關鍵人物的命運如何因此改變
-4. 後世史家如何評價這個「另一條時間線」
-語氣莊重，以史書體裁收尾。`;
+請以「太史公曰」格式，寫一段400-500字的魂穿總評：
+1. 這段穿越的核心歷史改寫是什麼——與原有時間線的最大分歧在哪裡
+2. 宿主（及穿越靈魂，若有）的選擇如何影響歷史走向，其決定的長遠代價是什麼
+${soulSession.hostDead ? '3. 宿主殞落後，這條時間線走向何方——身後世界的最終面貌，以及宿主種下的因最終結出了什麼果' : '3. 周遭關鍵人物的命運如何因這段穿越而改變'}
+4. 後世史家如何評價這個「另一條時間線」——是更好、更壞，還是只是不同
+語氣莊重，以史書體裁收尾，不迴避複雜性。`;
 
             const summNum = soulSession.chapters.length;
             soulSession.chapters.push({ num:summNum, label:'史家總評', title:'魂穿總評', content:'', figures:[], streaming:true, isSummary:true });
