@@ -4450,11 +4450,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4464,7 +4464,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -4596,9 +4596,14 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                             <h4 class="text-sm font-bold font-serif text-purple-300">穿越靈魂 <span class="text-purple-600 font-normal text-xs">（可選）</span></h4>
                             ${soul ? `<button onclick="soulSession.soulId=null;renderSoulDeep()" class="text-xs text-purple-600 hover:text-red-400 font-serif transition-colors">清除</button>` : '<span class="text-xs text-purple-700 font-serif">不選則以宿主本身意識覺醒推演</span>'}
                         </div>
-                        ${soul ? `<div class="bg-purple-900/20 border border-purple-700/40 rounded-xl p-4 flex items-center gap-4">
-                            <i class="fa-solid fa-ghost text-purple-400 text-2xl"></i>
-                            <div><p class="font-bold text-purple-100 font-serif">${escapeHtml(soul.name)}</p><p class="text-xs text-purple-500">${escapeHtml(soul.rank)} · ${escapeHtml(soul.dynasty||'')}</p></div>
+                        ${soul ? `<div class="bg-purple-900/20 border border-purple-700/40 rounded-xl p-4 flex flex-col gap-3">
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-ghost text-purple-400 text-2xl"></i>
+                                <div><p class="font-bold text-purple-100 font-serif">${escapeHtml(soul.name)}</p><p class="text-xs text-purple-500">${escapeHtml(soul.rank)} · ${escapeHtml(soul.dynasty||'')}</p></div>
+                            </div>
+                            <div id="soulTraitsDisplay" class="text-[11px] text-purple-400 font-serif leading-relaxed whitespace-pre-line border-t border-purple-800/40 pt-3">
+                                ${soulSession.soulTraits ? escapeHtml(soulSession.soulTraits) : '<span class="animate-pulse text-purple-600">正在解析靈魂特質…</span>'}
+                            </div>
                         </div>` : `<input type="text" id="soulSoulSearch" placeholder="搜尋靈魂..." oninput="_soulRenderSoulGrid()"
                             class="w-full px-3 py-2 bg-[#140826] border border-purple-800/40 rounded-lg text-purple-100 placeholder-purple-700 focus:outline-none focus:border-purple-500 font-serif text-sm mb-2">
                         <div id="soulSoulGrid" class="grid grid-cols-4 sm:grid-cols-5 gap-1.5 max-h-36 overflow-y-auto custom-scrollbar"></div>`}
@@ -4616,10 +4621,39 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             const rc = {'S+':'text-yellow-300','S':'text-yellow-400','S-':'text-amber-400','A+':'text-orange-400','A':'text-orange-500'};
             const filtered = legendsData.filter(l => l.id !== soulSession.hostId && (!search || l.name.includes(search) || (l.title||'').includes(search))).slice(0,50);
             grid.innerHTML = filtered.map(l => `
-                <button onclick="soulSession.soulId='${l.id}';renderSoulDeep()" class="bg-[#140826] hover:bg-purple-900/40 border border-purple-900/30 rounded-lg p-2 text-center transition-all cursor-pointer">
+                <button onclick="_soulSelectSoul('${l.id}')" class="bg-[#140826] hover:bg-purple-900/40 border border-purple-900/30 rounded-lg p-2 text-center transition-all cursor-pointer">
                     <div class="font-bold text-xs font-serif text-purple-100 truncate">${escapeHtml(l.name)}</div>
                     <div class="${rc[l.rank]||'text-slate-500'} text-[10px]">${escapeHtml(l.rank)}</div>
                 </button>`).join('');
+        }
+
+        function _soulSelectSoul(id) {
+            soulSession.soulId = id;
+            soulSession.soulTraits = null;
+            renderSoulDeep();
+            _soulGenerateTraits(id);
+        }
+
+        async function _soulGenerateTraits(soulId) {
+            const soul = legendsData.find(l => l.id === soulId);
+            if (!soul) return;
+            const prompt = `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。
+
+請用100字以內描述這個靈魂帶入的核心特質，嚴格按此格式輸出：
+・思維底色：[決策風格與思考習慣]
+・核心傾向：[最突出的能力或行為傾向]
+・性格缺陷：[會帶來麻煩的弱點]
+・認知局限：[因所處時代而形成的思維盲點]
+
+只輸出格式內容，不要其他說明。`;
+            try {
+                const text = await callGemini(prompt, false);
+                if (soulSession.soulId === soulId) {
+                    soulSession.soulTraits = text.trim();
+                    const display = el('soulTraitsDisplay');
+                    if (display) display.textContent = soulSession.soulTraits;
+                }
+            } catch(e) { /* 生成失敗時靜默，使用無特質版本 */ }
         }
 
         async function startSoulSession() {
@@ -4652,7 +4686,10 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             if (older.length) ctx += `【前情梗概】\n${older.map(c=>`${c.label}「${c.title}」：${c.content.slice(0,120)}…`).join('\n')}\n\n`;
             if (recent.length) ctx += recent.map(c=>`【${c.label}「${c.title}」完整內容】\n${c.content}`).join('\n\n') + '\n\n';
             const figCtx = soulSession.figureStates.length ? `【當前人物動態】\n${soulSession.figureStates.map(f=>`${f.name}(${f.rank})：${f.change}`).join('；')}\n\n` : '';
-            const soulLine = soul ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}）` : '（宿主以另一個自我的意識覺醒，做出不同選擇）';
+            const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
+            const soulLine = soul
+                ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}`
+                : `穿越靈魂：無（宿主自身意識覺醒）\n覺醒特質：宿主以某種難以言喻的直覺感知到歷史的走向，但仍完全受制於其原有的性格底色、認知框架與時代局限——覺醒帶來的是選擇的可能性，而非能力的提升`;
             const isFirst = chNum === 0;
             const firstExtra = isFirst ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感` : `\n承接前章，選擇下一個最有張力的情節節點，充分展開衝突、對話、心理與環境細節。`;
             const yStr = (y) => y > 0 ? `西元${y}年` : `${Math.abs(y)}年前`;
@@ -4667,9 +4704,10 @@ ${soulLine}
 ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
 
 寫作要求：
-- 第三人稱史書體裁，沉浸感強，具體人名、事件、多人對白、環境描寫
-- 充分展開每個場景，不要略寫，要讓讀者身歷其境
-- 呈現穿越者思維與原本歷史軌跡的微妙差異
+- 第三人稱史書體裁，沉浸感強，具體人名、事件、多人對白、環境描寫，充分展開場景與人物心理
+- 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變。隨章節推進，歷史應逐漸偏離原有軌跡——某些原本會發生的事可能不再出現，某些從未存在的局面因此成形。請根據穿越者實際做出的選擇推演其邏輯後果，而非讓原有歷史事件按序發生
+- 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
+- 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」
 - 如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
 
 正文結束後換行輸出（系統解析用，勿計入正文）：
