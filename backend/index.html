@@ -4637,15 +4637,44 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         async function _soulGenerateTraits(soulId) {
             const soul = legendsData.find(l => l.id === soulId);
             if (!soul) return;
-            const prompt = `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。
 
-請用100字以內描述這個靈魂帶入的核心特質，嚴格按此格式輸出：
+            // 收集這個人物已有的評鑑資料
+            const mod = appState.modifiedLegends[soulId] || {};
+            const deepAnalysis = mod.deepAnalysis || '';
+            const analysis = mod.analysis || '';
+            const chatMsgs = (appState.chatHistories[soulId] || [])
+                .filter(m => m.role === 'model')
+                .slice(-3)
+                .map(m => m.content.slice(0, 400))
+                .join('\n\n');
+
+            // 組合評鑑素材（優先深度評鑑，其次賞析，再其次對話）
+            let sourceCtx = '';
+            if (deepAnalysis) sourceCtx += `【深度評鑑】\n${deepAnalysis.slice(0, 2500)}\n\n`;
+            else if (analysis) sourceCtx += `【賞析】\n${analysis.slice(0, 1000)}\n\n`;
+            if (chatMsgs) sourceCtx += `【賞析對話摘錄】\n${chatMsgs}\n\n`;
+
+            const hasSource = sourceCtx.trim().length > 0;
+            const prompt = hasSource
+                ? `以下是本系統對歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的深度評鑑資料：
+
+${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項30字以內）：
+・思維底色：[從評鑑中提煉的決策風格與思考習慣]
+・核心傾向：[最突出的能力或行為傾向，具體到這個人]
+・性格缺陷：[評鑑揭示的、穿越中會帶來麻煩的性格弱點]
+・認知局限：[因所處時代與個人經歷形成的思維盲點]
+
+只輸出格式內容。特質必須源自上方評鑑，不得泛泛而談。`
+                : `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。
+
+請用每項30字以內描述這個靈魂帶入的核心特質，嚴格按此格式輸出：
 ・思維底色：[決策風格與思考習慣]
 ・核心傾向：[最突出的能力或行為傾向]
 ・性格缺陷：[會帶來麻煩的弱點]
 ・認知局限：[因所處時代而形成的思維盲點]
 
 只輸出格式內容，不要其他說明。`;
+
             try {
                 const text = await callGemini(prompt, false);
                 if (soulSession.soulId === soulId) {
@@ -4654,6 +4683,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                     if (display) display.textContent = soulSession.soulTraits;
                 }
             } catch(e) { /* 生成失敗時靜默，使用無特質版本 */ }
+        }
         }
 
         async function startSoulSession() {
@@ -4721,9 +4751,19 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 const soulLine = soul
                     ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}`
                     : `穿越靈魂：無（宿主自身意識覺醒）\n覺醒特質：宿主以某種難以言喻的直覺感知到歷史的走向，但仍完全受制於其原有的性格底色、認知框架與時代局限——覺醒帶來的是選擇的可能性，而非能力的提升`;
+                // 宿主評鑑素材（序章用，讓 AI 深度理解宿主）
+                const hostMod = appState.modifiedLegends[soulSession.hostId] || {};
+                const hostDeep = hostMod.deepAnalysis ? hostMod.deepAnalysis.slice(0, 2000) : '';
+                const hostAnalysis = (!hostDeep && hostMod.analysis) ? hostMod.analysis.slice(0, 800) : '';
+                const hostChat = (appState.chatHistories[soulSession.hostId] || [])
+                    .filter(m => m.role === 'model').slice(-2).map(m => m.content.slice(0, 300)).join('\n\n');
+                let hostCtx = '';
+                if (hostDeep) hostCtx += `【宿主深度評鑑】\n${hostDeep}\n\n`;
+                else if (hostAnalysis) hostCtx += `【宿主賞析】\n${hostAnalysis}\n\n`;
+                if (hostChat) hostCtx += `【宿主賞析對話摘錄】\n${hostChat}\n\n`;
                 const isFirst = chNum === 0;
                 const firstExtra = isFirst
-                    ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
+                    ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇（請參考上方宿主評鑑資料中對其性格、能力、處境的分析）\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
                     : `\n承接前章，選擇下一個最有張力的情節節點，充分展開衝突、對話、心理與環境細節。`;
                 prompt = `你是頂尖歷史穿越小說作家兼嚴謹史學者，以史書體裁（但沉浸生動）寫作。
 
@@ -4732,6 +4772,7 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
 ${soulLine}
 穿越時刻：${soulSession.moment?.title}（${yStr(soulSession.moment?.year||0)}）
 時刻背景：${soulSession.moment?.desc}
+${hostCtx ? `\n${hostCtx}` : ''}
 
 ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
 
