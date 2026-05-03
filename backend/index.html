@@ -104,6 +104,87 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         /* Compare Bar */
         #compareBar { box-shadow: 0 -4px 15px rgba(0,0,0,0.1); border-top: 3px solid #0d9488; }
+
+        /* ===== Night Mode ===== */
+        /* 暖棕色系，減少藍光，不刺眼 */
+        html.night body { background-color: #1e1b14 !important; }
+        html.night .bg-\[\#fffdf9\] { background-color: #2c2820 !important; }
+        html.night .bg-\[\#f5f5f4\] { background-color: #30291f !important; }
+        html.night .bg-\[\#fafaf9\] { background-color: #2c2820 !important; }
+        html.night .bg-\[\#f5f3ef\] { background-color: #30291f !important; }
+        html.night .bg-\[\#f5f0e8\] { background-color: #2c2820 !important; }
+        html.night .bg-\[\#f0ede6\] { background-color: #26221a !important; }
+        html.night .bg-white:not(.rank-badge):not([class*="rank-"]) { background-color: #332d22 !important; }
+        html.night .bg-red-50 { background-color: #2e1c1a !important; }
+        html.night .bg-blue-50 { background-color: #1e2530 !important; }
+        html.night .bg-amber-50,html.night .bg-\[\#fffbeb\] { background-color: #2e2410 !important; }
+        html.night .bg-emerald-50 { background-color: #18241c !important; }
+        html.night .bg-violet-50 { background-color: #221830 !important; }
+
+        html.night .text-\[\#2c2826\] { color: #cec8be !important; }
+        html.night .text-\[\#57534e\] { color: #9a948a !important; }
+        html.night .text-\[\#44403c\] { color: #9a948a !important; }
+        html.night .text-\[\#78716c\] { color: #7a746c !important; }
+
+        html.night .border-\[\#e5e0d3\] { border-color: #3e3828 !important; }
+        html.night .border-\[\#d6d3c9\] { border-color: #46402e !important; }
+        html.night .border-\[\#f0ebe0\] { border-color: #3e3828 !important; }
+        html.night .border-\[\#e5e7eb\] { border-color: #3e3828 !important; }
+        html.night .border-\[\#e2e8f0\] { border-color: #3e3828 !important; }
+
+        html.night .paper-card { background-color: #2c2820 !important; border-color: #3e3828 !important; box-shadow: 0 4px 8px rgba(0,0,0,0.35) !important; }
+        html.night .paper-card:hover { border-color: #c8a030 !important; }
+
+        html.night .filter-btn { background: #332d22 !important; color: #c8c2b4 !important; border-color: #46402e !important; }
+        html.night .filter-btn.active { background-color: #1e1b14 !important; color: #ede8dc !important; border-color: #7a6840 !important; }
+
+        html.night .type-btn { color: #9a948a; }
+        html.night .type-btn.active { color: #cec8be !important; }
+
+        html.night .radar-dim-tab:hover { background: #3e3828 !important; color: #cec8be; }
+        html.night .radar-dim-active { background: #1e1b14 !important; }
+
+        html.night .bottom-panel { background-color: #2c2820 !important; }
+        html.night #hegemonyPanel { background-color: #262218 !important; }
+        html.night #soulModePanel { background-color: #262218 !important; }
+        html.night #compareBar { background-color: #2c2820 !important; }
+
+        html.night .role-slot { border-color: #46402e !important; background: rgba(50,44,32,0.6) !important; }
+        html.night .role-slot.filled { background-color: #332d22 !important; border-color: #46402e !important; }
+        html.night .role-slot.active-selection { border-color: #d4af37 !important; background-color: #2e2410 !important; }
+
+        html.night .prose h3 { color: #e8c86a !important; border-left-color: #c8a030 !important; }
+        html.night .prose p { color: #c0b9ae !important; }
+        html.night .prose strong { color: #e8c86a !important; }
+        html.night #modalContent { color: #c0b9ae; }
+
+        html.night .chart-container { background: #2c2820 !important; border-color: #3e3828 !important; }
+
+        html.night .chat-user { background-color: #3a342a !important; color: #cec8be !important; }
+        html.night .chat-ai { background-color: #2c2820 !important; color: #c0b9ae !important; border-color: #3e3828 !important; }
+
+        html.night input[type="text"],
+        html.night input[type="password"],
+        html.night textarea { background-color: #332d22 !important; color: #cec8be !important; border-color: #46402e !important; }
+        html.night select { background-color: #332d22 !important; color: #cec8be !important; }
+        html.night input::placeholder,html.night textarea::placeholder { color: #7a746c !important; }
+
+        html.night ::-webkit-scrollbar-track { background: #2c2820; }
+        html.night ::-webkit-scrollbar-thumb { background: #46402e; }
+        html.night ::-webkit-scrollbar-thumb:hover { background: #5a5040; }
+
+        html.night #chronicleDrawer { background-color: #2c2820 !important; border-color: #3e3828 !important; }
+        html.night .chronicle-filter-btn { background-color: #332d22 !important; color: #c8c2b4 !important; border-color: #46402e !important; }
+
+        /* Soul chapter prose: override prose-invert variables so text is always readable */
+        #soulDeepContent p,
+        #soulDeepContent li { color: #ddd4f0 !important; }
+        #soulDeepContent strong,
+        #soulDeepContent b { color: #f0e6ff !important; }
+        #soulDeepContent h1,
+        #soulDeepContent h2,
+        #soulDeepContent h3 { color: #ede0ff !important; font-family: 'Noto Serif TC', serif; border-left: 3px solid #7c3aed; padding-left: 0.75rem; }
+        #soulDeepContent blockquote { border-left-color: #7c3aed; color: #c4b8e8 !important; }
     </style>
     <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#7f1d1d">
@@ -167,6 +248,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     }
 }
 </script>
+    <script>
+    (function(){if(localStorage.getItem('dynasty_nightmode')==='1'){document.documentElement.classList.add('night');}})();
+    </script>
     <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>
     <div id="flashToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#92400e;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>
 <!-- 辯論模式面板 -->
@@ -311,6 +395,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             </div>
             <div class="flex gap-3 items-center flex-wrap justify-end w-full md:w-auto">
                 <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
+                    <button id="nightToggleBtn" onclick="toggleNightMode()" title="切換日夜模式" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-2 py-1.5 rounded transition-all text-sm">
+                        <i class="fa-solid fa-moon text-slate-300"></i>
+                    </button>
                     <button onclick="handleDownloadJSON()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif">
                         <i class="fa-solid fa-floppy-disk text-[#f97316]"></i> <span class="hidden md:inline">匯出</span>
                     </button>
@@ -599,7 +686,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         <!-- Tab Bar -->
         <div class="bg-[#2e1065] flex shrink-0 overflow-x-auto" id="soulTabBar">
             <button onclick="setSoulTab('free')" id="soul-tab-free" class="soul-tab soul-tab-active px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
-                <i class="fa-solid fa-ghost"></i> 自由魂穿
+                <i class="fa-solid fa-book-open-reader"></i> 深度魂穿
             </button>
             <button onclick="setSoulTab('crisis')" id="soul-tab-crisis" class="soul-tab px-4 py-2 text-xs font-serif tracking-wide whitespace-nowrap flex items-center gap-1.5 border-b-2 border-transparent transition-all">
                 <i class="fa-solid fa-fire-flame-curved"></i> 歷史絕境
@@ -616,6 +703,35 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         </div>
         <!-- Tab Content -->
         <div id="soulModeContent" class="flex-1 overflow-auto bg-[#f3e8ff]/20"></div>
+    </div>
+
+    <!-- Deep Soul Modal -->
+    <div id="soulDeepModal" class="fixed inset-0 z-[70] hidden">
+        <div class="absolute inset-0 bg-black/75 backdrop-blur-sm"></div>
+        <div class="absolute inset-3 md:inset-6 bg-[#0a0614] rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-purple-900/60">
+            <div class="bg-gradient-to-r from-[#160828] to-[#0d1035] px-5 py-3 flex justify-between items-center shrink-0 border-b border-purple-900/40">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-yin-yang text-purple-400 text-lg" style="animation:spin 8s linear infinite"></i>
+                    <span id="soulDeepTitle" class="font-bold font-serif tracking-wide text-[#e8d8ff] text-sm">深度魂穿</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button id="soulEndBtn" onclick="endSoulSession()" class="hidden px-4 py-1.5 bg-red-950/60 hover:bg-red-900/60 border border-red-800/60 text-red-400 hover:text-red-300 rounded-lg text-xs font-serif tracking-wide transition-all">
+                        <i class="fa-solid fa-skull-crossbones mr-1.5"></i>終結魂穿
+                    </button>
+                    <button onclick="closeSoulDeep()" class="text-purple-400 hover:text-white transition-colors ml-1"><i class="fa-solid fa-xmark text-xl"></i></button>
+                </div>
+            </div>
+            <div id="soulChapterNav" class="hidden bg-[#0d0520] border-b border-purple-900/30 px-4 py-2 flex gap-1.5 overflow-x-auto shrink-0 custom-scrollbar"></div>
+            <div class="flex-1 flex flex-col md:flex-row min-h-0 overflow-hidden">
+                <div id="soulDeepContent" class="flex-1 overflow-y-auto custom-scrollbar p-5 md:p-10 text-[#d4c4ef] min-h-0"></div>
+                <div id="soulFigureSidebar" class="hidden w-full md:w-56 shrink-0 bg-[#080415] border-t md:border-t-0 md:border-l border-purple-900/30 overflow-auto p-3 custom-scrollbar max-h-44 md:max-h-none"></div>
+            </div>
+            <div id="soulDeepActions" class="hidden bg-[#080415] border-t border-purple-900/30 px-5 py-3 flex justify-between items-center shrink-0">
+                <button onclick="soulPrevChapter()" id="soulPrevBtn" class="text-xs text-purple-500 hover:text-purple-300 font-serif transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-left"></i>上一章</button>
+                <span id="soulChapterIndicator" class="text-xs text-purple-600 font-serif"></span>
+                <button id="soulNextBtn" onclick="generateNextSoulChapter()" class="px-5 py-2 bg-purple-800 hover:bg-purple-700 text-purple-100 rounded-lg text-xs font-bold font-serif tracking-wide transition-all flex items-center gap-2">繼續下一章<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
     </div>
 
     <!-- AI Modal -->
@@ -1449,6 +1565,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             },
             scenes: [],
             sceneEdits: {},
+            soulSession: null,
         };
         
         let legendsData = []; 
@@ -1468,6 +1585,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             appState.simulationHistory = data.simulationHistory || [];
             appState.scenes = data.scenes || [];
             appState.sceneEdits = data.sceneEdits || {};
+            if (data.soulSession && data.soulSession.phase !== 'idle') {
+                soulSession = { ...data.soulSession, generating: false };
+            }
             if (data.hegemonySavedSim) {
                 appState.hegemony.savedSimulation = data.hegemonySavedSim;
                 localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
@@ -1533,7 +1653,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             discussionHistories: appState.discussionHistories,
                             hegemonySavedSim: appState.hegemony.savedSimulation || null,
                             scenes: appState.scenes,
-                            sceneEdits: appState.sceneEdits
+                            sceneEdits: appState.sceneEdits,
+                            soulSession: soulSession.phase !== 'idle' ? soulSession : null
                         })
                     });
                 } catch(e) {
@@ -4242,12 +4363,30 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             if (!content) return;
             const arrow = (label) => `<div class="flex flex-col items-center text-slate-400 opacity-60 shrink-0"><i class="fa-solid fa-arrow-right-long text-2xl animate-pulse"></i><span class="text-[9px] font-serif mt-1 tracking-widest">${label}</span></div>`;
             if (sm.activeTab === 'free') {
-                content.innerHTML = `<div class="flex gap-8 justify-center items-center h-full px-6 overflow-x-auto">
-                    ${_soulSlotHTML('host','肉身 (宿主)','HOST','fa-solid fa-user-injured','border-slate-300',false)}
-                    ${arrow('穿越')}
-                    ${_soulSlotHTML('soul','靈魂 (穿越者)','SOUL','fa-solid fa-ghost','border-purple-300',false)}
-                    <div class="ml-4 shrink-0">${_soulActionBtnHTML('逆天改命', sel.host && sel.soul, 'fa-solid fa-bolt')}</div>
-                </div>`;
+                const hasSession = soulSession.phase !== 'idle';
+                if (hasSession) {
+                    const _sh = legendsData.find(l => l.id === soulSession.hostId);
+                    const _ss = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+                    const _chCount = soulSession.chapters.length;
+                    const _isEnded = ['ended','ending'].includes(soulSession.phase);
+                    content.innerHTML = `<div class="flex flex-col items-center justify-center h-full gap-3 px-6 text-center">
+                        <p class="text-[10px] text-purple-500 font-serif tracking-widest">${_isEnded ? '魂穿已終結' : '魂穿進行中'}</p>
+                        <p class="font-bold text-purple-100 font-serif text-base">${escapeHtml(_sh?.name||'')}${_ss?' × '+escapeHtml(_ss.name):''}</p>
+                        <p class="text-xs text-purple-500 font-serif">${escapeHtml(soulSession.moment?.title||'')}${_chCount > 0 ? ' · 共'+_chCount+'章' : ''}</p>
+                        <button onclick="openSoulDeep()" class="px-6 py-2.5 bg-purple-700 hover:bg-purple-600 text-purple-100 rounded-xl font-bold font-serif text-sm transition-all flex items-center gap-2 mt-1">
+                            <i class="fa-solid fa-book-open-reader"></i>${_isEnded ? '查看記錄' : '繼續魂穿'}
+                        </button>
+                        <button onclick="resetSoulSession()" class="text-xs text-purple-700 hover:text-purple-400 font-serif transition-colors">重新開始新的魂穿</button>
+                    </div>`;
+                } else {
+                    content.innerHTML = `<div class="flex flex-col items-center justify-center h-full gap-4 px-6">
+                        <p class="text-xs text-purple-400 font-serif opacity-70">以史書體裁，逐章推演穿越傳奇</p>
+                        <button onclick="openSoulDeep()" class="px-8 py-3.5 bg-gradient-to-r from-purple-800 to-indigo-800 hover:from-purple-700 hover:to-indigo-700 text-purple-100 rounded-xl font-bold font-serif tracking-widest shadow-lg transition-all flex items-center gap-3 text-sm border border-purple-700/40">
+                            <i class="fa-solid fa-yin-yang text-purple-400 text-lg"></i>開啟深度魂穿
+                        </button>
+                        <p class="text-[10px] text-purple-600 font-serif">選擇宿主 · 選擇時刻 · 無限章節延伸</p>
+                    </div>`;
+                }
             } else if (sm.activeTab === 'crisis') {
                 if (sm.activeScenario) {
                     const s = sm.activeScenario;
@@ -4309,6 +4448,492 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         }
 
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
+
+        // ===== 深度魂穿 =====
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
+
+        function openSoulDeep() {
+            if (soulSession.phase === 'idle') {
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
+            }
+            el('soulDeepModal').classList.remove('hidden');
+            renderSoulDeep();
+        }
+        function closeSoulDeep() {
+            el('soulDeepModal').classList.add('hidden');
+            updateSoulModeUI();
+        }
+        function resetSoulSession() {
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
+            appState.soulSession = null;
+            syncToCloud();
+            updateSoulModeUI();
+        }
+
+        function renderSoulDeep() {
+            const p = soulSession.phase;
+            if (p === 'setup') _soulRenderSetup();
+            else if (p === 'moments') _soulRenderMoments();
+            else if (p === 'confirm') _soulRenderConfirm();
+            else if (['chapters','ending','ended'].includes(p) && soulSession.chapters.length > 0) _soulRenderChapter(soulSession.viewingChapter);
+        }
+
+        function _soulHideChrome() {
+            el('soulChapterNav').classList.add('hidden');
+            el('soulDeepActions').classList.add('hidden');
+            el('soulFigureSidebar').classList.add('hidden');
+            el('soulEndBtn').classList.add('hidden');
+        }
+
+        function _soulRenderSetup() {
+            _soulHideChrome();
+            el('soulDeepTitle').textContent = '深度魂穿 · 選擇宿主';
+            el('soulDeepContent').innerHTML = `
+                <div class="max-w-2xl mx-auto">
+                    <div class="text-center mb-8">
+                        <div class="text-5xl mb-4">👻</div>
+                        <h2 class="text-2xl font-bold font-serif text-purple-100 mb-2 tracking-wide">深度魂穿</h2>
+                        <p class="text-sm text-purple-500 font-serif">選擇宿主，穿越至其生命中的關鍵時刻，以史書體裁逐章推演命運</p>
+                    </div>
+                    <input type="text" id="soulHostSearch" placeholder="搜尋宿主姓名..." oninput="_soulRenderHostGrid()"
+                        class="w-full px-4 py-2.5 bg-[#140826] border border-purple-800/60 rounded-lg text-purple-100 placeholder-purple-700 focus:outline-none focus:border-purple-500 font-serif text-sm mb-4">
+                    <div id="soulHostGrid" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 max-h-80 overflow-y-auto custom-scrollbar pr-1"></div>
+                </div>`;
+            _soulRenderHostGrid();
+        }
+
+        function _soulRenderHostGrid() {
+            const search = (el('soulHostSearch')?.value||'').toLowerCase();
+            const grid = el('soulHostGrid'); if (!grid) return;
+            const rc = {'S+':'text-yellow-300','S':'text-yellow-400','S-':'text-amber-400','A+':'text-orange-400','A':'text-orange-500','A-':'text-red-400'};
+            const filtered = legendsData.filter(l => !search || l.name.includes(search) || (l.title||'').includes(search)).slice(0,80);
+            grid.innerHTML = filtered.map(l => `
+                <button onclick="selectSoulDeepHost('${l.id}')" class="bg-[#140826] hover:bg-purple-900/50 border border-purple-900/40 hover:border-purple-500 rounded-lg p-2.5 text-center transition-all group cursor-pointer">
+                    <div class="font-bold text-sm font-serif text-purple-100 group-hover:text-white truncate">${escapeHtml(l.name)}</div>
+                    <div class="${rc[l.rank]||'text-slate-500'} text-xs font-bold">${escapeHtml(l.rank)}</div>
+                    <div class="text-[10px] text-purple-600 truncate">${escapeHtml(l.dynasty||'')}</div>
+                </button>`).join('');
+        }
+
+        async function selectSoulDeepHost(id) {
+            soulSession.hostId = id; soulSession.phase = 'moments'; soulSession.moments = [];
+            renderSoulDeep();
+            const legend = legendsData.find(l => l.id === id);
+            const prompt = `歷史人物「${legend.name}」（${legend.rank}，${legend.title||''}，${legend.dynasty||''}）
+
+列出5個最適合魂穿介入的關鍵時刻——局勢剛形成但走向未定的節點，而非已成定局的結果。
+
+輸出JSON陣列：[{"title":"時刻名稱（4-8字）","year":西元年整數，BC為負數,"desc":"55字內描述當時局勢、核心危機與機遇"}]
+只輸出JSON，不要其他文字。`;
+            try {
+                const text = await callGemini(prompt, true);
+                const m = text.match(/\[[\s\S]*\]/);
+                soulSession.moments = m ? JSON.parse(m[0]) : [];
+            } catch(e) { soulSession.moments = []; }
+            renderSoulDeep();
+        }
+
+        function _soulRenderMoments() {
+            _soulHideChrome();
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            el('soulDeepTitle').textContent = `${host?.name||''} · 選擇時刻`;
+            if (!soulSession.moments.length) {
+                el('soulDeepContent').innerHTML = `<div class="flex flex-col items-center justify-center h-full gap-4">
+                    <div class="flex gap-2">${[0,0.2,0.4].map(d=>`<div class="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style="animation-delay:${d}s"></div>`).join('')}</div>
+                    <p class="text-purple-500 font-serif text-sm animate-pulse">正在翻閱${escapeHtml(host?.name||'')}的生平史冊...</p></div>`;
+                return;
+            }
+            el('soulDeepContent').innerHTML = `
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex items-center gap-4 mb-6">
+                        <button onclick="soulSession.phase='setup';renderSoulDeep()" class="text-xs text-purple-600 hover:text-purple-300 font-serif transition-colors">← 重新選擇宿主</button>
+                        <h3 class="font-bold font-serif text-purple-100 text-lg">選擇穿越時刻</h3>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        ${soulSession.moments.map((m,i)=>`
+                        <button onclick="selectSoulDeepMoment(${i})" class="bg-[#140826] hover:bg-purple-900/30 border border-purple-900/40 hover:border-purple-500 rounded-xl p-5 text-left transition-all group">
+                            <div class="flex items-start justify-between mb-2">
+                                <span class="font-bold text-purple-100 font-serif group-hover:text-white text-base">${escapeHtml(m.title)}</span>
+                                <span class="text-xs text-purple-600 shrink-0 ml-3 mt-0.5">${m.year>0?'西元'+m.year+'年':Math.abs(m.year)+'年前'}</span>
+                            </div>
+                            <p class="text-sm text-purple-400 leading-relaxed font-serif">${escapeHtml(m.desc)}</p>
+                        </button>`).join('')}
+                    </div>
+                </div>`;
+        }
+
+        function selectSoulDeepMoment(idx) {
+            soulSession.moment = soulSession.moments[idx];
+            soulSession.phase = 'confirm';
+            renderSoulDeep();
+        }
+
+        function _soulRenderConfirm() {
+            _soulHideChrome();
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            el('soulDeepTitle').textContent = `${host?.name||''} · 確認設定`;
+            el('soulDeepContent').innerHTML = `
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex items-center gap-4 mb-6">
+                        <button onclick="soulSession.phase='moments';renderSoulDeep()" class="text-xs text-purple-600 hover:text-purple-300 font-serif transition-colors">← 重新選擇時刻</button>
+                        <h3 class="font-bold font-serif text-purple-100 text-lg">確認魂穿設定</h3>
+                    </div>
+                    <div class="bg-[#140826] rounded-xl border border-purple-800/40 p-5 mb-6 grid grid-cols-2 gap-5">
+                        <div>
+                            <p class="text-[10px] text-purple-600 tracking-widest font-serif mb-1.5">宿主</p>
+                            <p class="font-bold text-purple-100 font-serif text-base">${escapeHtml(host?.name||'')}</p>
+                            <p class="text-xs text-purple-500 mt-0.5">${escapeHtml(host?.rank||'')} · ${escapeHtml(host?.dynasty||'')}</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-purple-600 tracking-widest font-serif mb-1.5">穿越時刻</p>
+                            <p class="font-bold text-purple-100 font-serif text-base">${escapeHtml(soulSession.moment?.title||'')}</p>
+                            <p class="text-xs text-purple-500 mt-0.5 leading-relaxed">${escapeHtml(soulSession.moment?.desc||'')}</p>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-sm font-bold font-serif text-purple-300">穿越靈魂 <span class="text-purple-600 font-normal text-xs">（可選）</span></h4>
+                            ${soul ? `<button onclick="soulSession.soulId=null;renderSoulDeep()" class="text-xs text-purple-600 hover:text-red-400 font-serif transition-colors">清除</button>` : '<span class="text-xs text-purple-700 font-serif">不選則以宿主本身意識覺醒推演</span>'}
+                        </div>
+                        ${soul ? `<div class="bg-purple-900/20 border border-purple-700/40 rounded-xl p-4 flex flex-col gap-3">
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-ghost text-purple-400 text-2xl"></i>
+                                <div><p class="font-bold text-purple-100 font-serif">${escapeHtml(soul.name)}</p><p class="text-xs text-purple-500">${escapeHtml(soul.rank)} · ${escapeHtml(soul.dynasty||'')}</p></div>
+                            </div>
+                            <div id="soulTraitsDisplay" class="text-[11px] text-purple-400 font-serif leading-relaxed whitespace-pre-line border-t border-purple-800/40 pt-3">
+                                ${soulSession.soulTraits ? escapeHtml(soulSession.soulTraits) : '<span class="animate-pulse text-purple-600">正在解析靈魂特質…</span>'}
+                            </div>
+                        </div>` : `<input type="text" id="soulSoulSearch" placeholder="搜尋靈魂..." oninput="_soulRenderSoulGrid()"
+                            class="w-full px-3 py-2 bg-[#140826] border border-purple-800/40 rounded-lg text-purple-100 placeholder-purple-700 focus:outline-none focus:border-purple-500 font-serif text-sm mb-2">
+                        <div id="soulSoulGrid" class="grid grid-cols-4 sm:grid-cols-5 gap-1.5 max-h-36 overflow-y-auto custom-scrollbar"></div>`}
+                    </div>
+                    <button onclick="startSoulSession()" class="w-full py-4 bg-gradient-to-r from-purple-700 to-indigo-800 hover:from-purple-600 hover:to-indigo-700 text-white rounded-xl font-bold font-serif tracking-widest shadow-xl transition-all text-sm flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-yin-yang text-lg"></i>開始魂穿
+                    </button>
+                </div>`;
+            if (!soul) _soulRenderSoulGrid();
+        }
+
+        function _soulRenderSoulGrid() {
+            const grid = el('soulSoulGrid'); if (!grid) return;
+            const search = (el('soulSoulSearch')?.value||'').toLowerCase();
+            const rc = {'S+':'text-yellow-300','S':'text-yellow-400','S-':'text-amber-400','A+':'text-orange-400','A':'text-orange-500'};
+            const filtered = legendsData.filter(l => l.id !== soulSession.hostId && (!search || l.name.includes(search) || (l.title||'').includes(search))).slice(0,50);
+            grid.innerHTML = filtered.map(l => `
+                <button onclick="_soulSelectSoul('${l.id}')" class="bg-[#140826] hover:bg-purple-900/40 border border-purple-900/30 rounded-lg p-2 text-center transition-all cursor-pointer">
+                    <div class="font-bold text-xs font-serif text-purple-100 truncate">${escapeHtml(l.name)}</div>
+                    <div class="${rc[l.rank]||'text-slate-500'} text-[10px]">${escapeHtml(l.rank)}</div>
+                </button>`).join('');
+        }
+
+        function _soulSelectSoul(id) {
+            soulSession.soulId = id;
+            soulSession.soulTraits = null;
+            renderSoulDeep();
+            _soulGenerateTraits(id);
+        }
+
+        async function _soulGenerateTraits(soulId) {
+            const soul = legendsData.find(l => l.id === soulId);
+            if (!soul) return;
+
+            // 收集這個人物已有的評鑑資料
+            const mod = appState.modifiedLegends[soulId] || {};
+            const deepAnalysis = mod.deepAnalysis || '';
+            const analysis = mod.analysis || '';
+            const chatMsgs = (appState.chatHistories[soulId] || [])
+                .filter(m => m.role === 'model')
+                .slice(-3)
+                .map(m => m.content.slice(0, 400))
+                .join('\n\n');
+
+            // 組合評鑑素材（優先深度評鑑，其次賞析，再其次對話）
+            let sourceCtx = '';
+            if (deepAnalysis) sourceCtx += `【深度評鑑】\n${deepAnalysis.slice(0, 2500)}\n\n`;
+            else if (analysis) sourceCtx += `【賞析】\n${analysis.slice(0, 1000)}\n\n`;
+            if (chatMsgs) sourceCtx += `【賞析對話摘錄】\n${chatMsgs}\n\n`;
+
+            const hasSource = sourceCtx.trim().length > 0;
+            const prompt = hasSource
+                ? `以下是本系統對歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的深度評鑑資料：
+
+${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項30字以內）：
+・思維底色：[從評鑑中提煉的決策風格與思考習慣]
+・核心傾向：[最突出的能力或行為傾向，具體到這個人]
+・性格缺陷：[評鑑揭示的、穿越中會帶來麻煩的性格弱點]
+・認知局限：[因所處時代與個人經歷形成的思維盲點]
+
+只輸出格式內容。特質必須源自上方評鑑，不得泛泛而談。`
+                : `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。
+
+請用每項30字以內描述這個靈魂帶入的核心特質，嚴格按此格式輸出：
+・思維底色：[決策風格與思考習慣]
+・核心傾向：[最突出的能力或行為傾向]
+・性格缺陷：[會帶來麻煩的弱點]
+・認知局限：[因所處時代而形成的思維盲點]
+
+只輸出格式內容，不要其他說明。`;
+
+            try {
+                const text = await callGemini(prompt, false);
+                if (soulSession.soulId === soulId) {
+                    soulSession.soulTraits = text.trim();
+                    const display = el('soulTraitsDisplay');
+                    if (display) display.textContent = soulSession.soulTraits;
+                }
+            } catch(e) { /* 生成失敗時靜默，使用無特質版本 */ }
+        }
+        }
+
+        async function startSoulSession() {
+            soulSession.phase = 'chapters'; soulSession.chapters = []; soulSession.viewingChapter = 0; soulSession.figureStates = []; soulSession.generating = true;
+            el('soulDeepActions').classList.remove('hidden');
+            el('soulFigureSidebar').classList.remove('hidden');
+            el('soulEndBtn').classList.remove('hidden');
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            el('soulDeepTitle').textContent = `${host?.name||''}${soul?' × '+soul.name:''} · ${soulSession.moment?.title||''}`;
+            await _generateSoulChapter();
+        }
+
+        async function generateNextSoulChapter() {
+            if (soulSession.generating || soulSession.phase !== 'chapters') return;
+            soulSession.generating = true;
+            soulSession.viewingChapter = soulSession.chapters.length;
+            _soulUpdateActions();
+            await _generateSoulChapter();
+        }
+
+        async function _generateSoulChapter() {
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            const chNum = soulSession.chapters.length;
+            const isAftermath = soulSession.hostDead;
+            const aftermathNums = ['一','二','三','四','五','六','七','八','九','十'];
+            const aftermathCount = soulSession.chapters.filter(c => c.isAftermath).length;
+            const label = isAftermath
+                ? `身後記${aftermathNums[aftermathCount] || aftermathCount + 1}`
+                : (chNum === 0 ? '序章' : `第${chNum}章`);
+
+            const older = soulSession.chapters.filter(c => !c.isSummary).slice(0,-2);
+            const recent = soulSession.chapters.filter(c => !c.isSummary).slice(-2);
+            let ctx = '';
+            if (older.length) ctx += `【前情梗概】\n${older.map(c=>`${c.label}「${c.title}」：${c.content.slice(0,120)}…`).join('\n')}\n\n`;
+            if (recent.length) ctx += recent.map(c=>`【${c.label}「${c.title}」完整內容】\n${c.content}`).join('\n\n') + '\n\n';
+            const figCtx = soulSession.figureStates.length ? `【當前人物動態】\n${soulSession.figureStates.map(f=>`${f.name}(${f.rank})：${f.change}`).join('；')}\n\n` : '';
+            const yStr = (y) => y > 0 ? `西元${y}年` : `${Math.abs(y)}年前`;
+
+            let prompt;
+            if (isAftermath) {
+                const deathCh = soulSession.chapters[soulSession.deathChapter];
+                prompt = `你是一位嚴肅的歷史小說作家兼史學者，以史書體裁（但沉浸生動）寫作。
+
+【背景】
+宿主${host?.name}（${host?.rank}，${host?.title||''}，${host?.dynasty||''}）已於「${deathCh?.title||'前章'}」中殞落。
+穿越時刻：${soulSession.moment?.title}（${yStr(soulSession.moment?.year||0)}）
+
+${ctx}${figCtx}請寫出${label}（2000-3000字）：
+
+本章為宿主身後的世界記錄。請從當前人物動態中，選擇一位「因宿主死亡而命運最受衝擊、或最能決定後續走向」的在世人物作為本章固定主視角，以其主觀視角展開敘述。
+
+寫作要求：
+- 固定本章一個主視角人物，不要在人物間跳躍，深入其內心與處境
+- 展現宿主生前的決定（尤其與原歷史不同之處）如何在其死後持續發酵，包括意料之外的連鎖反應
+- 【蝴蝶效應】宿主種下的因在其死後才真正收穫果——被改變的時間線不會因宿主死亡而自動回到原軌，繼續沿著已偏離的軌跡演化
+- 【歷史慣性】各方人物仍有自己的利益邏輯，宿主的死可能對某人是解脫，對另一人是噩夢的開始
+
+正文結束後換行輸出（系統解析用，勿計入正文）：
+[FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
+[CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
+            } else {
+                const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
+                const soulLine = soul
+                    ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}`
+                    : `穿越靈魂：無（宿主自身意識覺醒）\n覺醒特質：宿主以某種難以言喻的直覺感知到歷史的走向，但仍完全受制於其原有的性格底色、認知框架與時代局限——覺醒帶來的是選擇的可能性，而非能力的提升`;
+                // 宿主評鑑素材（序章用，讓 AI 深度理解宿主）
+                const hostMod = appState.modifiedLegends[soulSession.hostId] || {};
+                const hostDeep = hostMod.deepAnalysis ? hostMod.deepAnalysis.slice(0, 2000) : '';
+                const hostAnalysis = (!hostDeep && hostMod.analysis) ? hostMod.analysis.slice(0, 800) : '';
+                const hostChat = (appState.chatHistories[soulSession.hostId] || [])
+                    .filter(m => m.role === 'model').slice(-2).map(m => m.content.slice(0, 300)).join('\n\n');
+                let hostCtx = '';
+                if (hostDeep) hostCtx += `【宿主深度評鑑】\n${hostDeep}\n\n`;
+                else if (hostAnalysis) hostCtx += `【宿主賞析】\n${hostAnalysis}\n\n`;
+                if (hostChat) hostCtx += `【宿主賞析對話摘錄】\n${hostChat}\n\n`;
+                const isFirst = chNum === 0;
+                const firstExtra = isFirst
+                    ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇（請參考上方宿主評鑑資料中對其性格、能力、處境的分析）\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
+                    : `\n承接前章，選擇下一個最有張力的情節節點，充分展開衝突、對話、心理與環境細節。`;
+                prompt = `你是頂尖歷史穿越小說作家兼嚴謹史學者，以史書體裁（但沉浸生動）寫作。
+
+【魂穿設定】
+宿主：${host?.name}（${host?.rank}，${host?.title||''}，${host?.dynasty||''}）
+${soulLine}
+穿越時刻：${soulSession.moment?.title}（${yStr(soulSession.moment?.year||0)}）
+時刻背景：${soulSession.moment?.desc}
+${hostCtx ? `\n${hostCtx}` : ''}
+
+${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
+
+寫作要求：
+- 第三人稱史書體裁，沉浸感強，具體人名、事件、多人對白、環境描寫，充分展開場景與人物心理
+- 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變。隨章節推進，歷史應逐漸偏離原有軌跡——某些原本會發生的事可能不再出現，某些從未存在的局面因此成形。請根據穿越者實際做出的選擇推演其邏輯後果，而非讓原有歷史事件按序發生
+- 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
+- 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」
+- 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
+
+正文結束後換行輸出（系統解析用，勿計入正文）：
+[FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
+[CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
+            }
+
+            soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
+            soulSession.viewingChapter = chNum;
+            _soulShowChapterShell(chNum);
+            try {
+                let fullText = '';
+                await callGeminiStream(prompt, partial => {
+                    fullText = partial;
+                    soulSession.chapters[chNum].content = _soulCleanText(partial);
+                    _soulRenderChapter(chNum);
+                });
+                const figM = fullText.match(/\[FIGURES\]([\s\S]*?)\[\/FIGURES\]/);
+                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) soulSession.figureStates[i]=f; else soulSession.figureStates.push(f); }); } catch(e){} }
+                const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
+                if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
+                soulSession.chapters[chNum].content = _soulCleanText(fullText);
+                soulSession.chapters[chNum].streaming = false;
+                if (!isAftermath && fullText.includes('【宿主殞落')) {
+                    soulSession.hostDead = true;
+                    soulSession.deathChapter = chNum;
+                    soulSession.chapters[chNum].isDeath = true;
+                }
+            } catch(e) { soulSession.chapters[chNum].content = `（生成失敗：${escapeHtml(e.message)}）`; soulSession.chapters[chNum].streaming = false; }
+            soulSession.generating = false;
+            appState.soulSession = soulSession;
+            syncToCloud();
+            _soulRenderChapter(chNum);
+        }
+
+        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').trim(); }
+
+        function _soulShowChapterShell(idx) {
+            const c = soulSession.chapters[idx];
+            el('soulDeepContent').innerHTML = `<div class="flex items-center gap-3 mb-4">
+                <span class="text-xs text-purple-500 font-serif tracking-widest">${c.label}</span>
+                <span class="text-purple-600 animate-pulse text-xs font-serif">正在落筆...</span></div>
+                <div class="flex gap-2 py-20 justify-center">${[0,0.2,0.4].map(d=>`<div class="w-2 h-2 bg-purple-500 rounded-full animate-bounce" style="animation-delay:${d}s"></div>`).join('')}</div>`;
+            _soulUpdateChapterNav(); _soulUpdateActions();
+        }
+
+        function _soulRenderChapter(idx) {
+            const c = soulSession.chapters[idx]; if (!c) return;
+            el('soulDeepContent').innerHTML = `
+                <div class="flex items-baseline gap-3 mb-5">
+                    <span class="text-xs text-purple-600 font-serif tracking-widest shrink-0">${escapeHtml(c.label)}</span>
+                    <h2 class="text-xl font-bold font-serif text-purple-100 leading-tight">${escapeHtml(c.title)}${c.streaming?'<span class="text-xs text-purple-500 ml-3 animate-pulse font-normal">落筆中…</span>':''}</h2>
+                </div>
+                <div class="prose prose-invert max-w-none font-serif leading-8 text-sm" style="color:#ddd4f0">${safeMarkdown(c.content)}</div>`;
+            _soulRenderFigures(); _soulUpdateChapterNav(); _soulUpdateActions();
+        }
+
+        function _soulRenderFigures() {
+            const sb = el('soulFigureSidebar'); if (!sb) return;
+            const figs = soulSession.figureStates;
+            if (!figs.length) { sb.innerHTML = ''; return; }
+            const aC = {ally:'text-emerald-400',enemy:'text-red-400',neutral:'text-slate-400',suspicious:'text-amber-400'};
+            const aL = {ally:'盟友',enemy:'敵對',neutral:'觀望',suspicious:'警戒'};
+            sb.innerHTML = `<h4 class="text-[10px] font-bold text-purple-500 tracking-widest mb-2 font-serif uppercase shrink-0">關鍵人物動態</h4>
+                <div class="flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-x-visible pb-1 md:pb-0">${figs.map(f=>{
+                    const real = legendsData.find(l => l.name === f.name);
+                    const rank = real ? real.rank : f.rank;
+                    const rankLabel = real
+                        ? `<span class="text-[10px] font-bold text-purple-400 ml-1">${escapeHtml(rank)}</span>`
+                        : `<span class="text-[10px] text-purple-700 ml-1 italic">${escapeHtml(rank||'')}推定</span>`;
+                    return `<div class="bg-[#100420] rounded-lg p-2.5 border border-purple-900/30 min-w-[140px] md:min-w-0 shrink-0 md:shrink">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="font-bold text-xs text-purple-200 font-serif">${escapeHtml(f.name)}</span>
+                        ${rankLabel}
+                    </div>
+                    <p class="text-[11px] text-purple-400 leading-relaxed">${escapeHtml(f.change)}</p>
+                    <span class="text-[10px] font-bold ${aC[f.attitude]||'text-slate-400'} mt-1 inline-block">${aL[f.attitude]||''}</span>
+                </div>`;}).join('')}</div>`;
+        }
+
+        function _soulUpdateChapterNav() {
+            const nav = el('soulChapterNav'); if (!nav) return;
+            nav.classList.remove('hidden');
+            nav.innerHTML = soulSession.chapters.map((c,i)=>{
+                const isActive = i === soulSession.viewingChapter;
+                const prefix = c.isDeath ? '† ' : '';
+                const colorCls = c.isDeath
+                    ? (isActive ? 'bg-red-900 text-red-200' : 'text-red-600 hover:text-red-300')
+                    : c.isAftermath
+                        ? (isActive ? 'bg-slate-700 text-slate-200' : 'text-slate-500 hover:text-slate-300')
+                        : (isActive ? 'bg-purple-800 text-purple-100' : 'text-purple-600 hover:text-purple-300');
+                return `<button onclick="soulNavChapter(${i})" class="text-[10px] whitespace-nowrap px-3 py-1 rounded font-serif transition-all ${colorCls}">${prefix}${escapeHtml(c.label)}</button>`;
+            }).join('');
+        }
+
+        function _soulUpdateActions() {
+            const indicator = el('soulChapterIndicator'), nextBtn = el('soulNextBtn'), prevBtn = el('soulPrevBtn');
+            if (!indicator) return;
+            const total = soulSession.chapters.length, viewing = soulSession.viewingChapter;
+            const isEnded = ['ended','ending'].includes(soulSession.phase);
+            indicator.textContent = `第 ${viewing+1} 章 · 共 ${total} 章`;
+            if (prevBtn) prevBtn.disabled = viewing <= 0;
+            if (!nextBtn) return;
+            if (isEnded) { nextBtn.classList.add('opacity-0','pointer-events-none'); return; }
+            nextBtn.classList.remove('opacity-0','pointer-events-none');
+            if (soulSession.generating) { nextBtn.disabled = true; nextBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i>生成中…'; }
+            else if (viewing < total - 1) { nextBtn.disabled = false; nextBtn.innerHTML = '跳至最新章 <i class="fa-solid fa-forward-step"></i>'; nextBtn.onclick = ()=>soulNavChapter(total-1); }
+            else if (soulSession.hostDead) { nextBtn.disabled = false; nextBtn.innerHTML = '觀察身後世 <i class="fa-solid fa-ghost"></i>'; nextBtn.onclick = generateNextSoulChapter; }
+            else { nextBtn.disabled = false; nextBtn.innerHTML = '繼續下一章 <i class="fa-solid fa-arrow-right"></i>'; nextBtn.onclick = generateNextSoulChapter; }
+        }
+
+        function soulNavChapter(idx) { if (idx < 0 || idx >= soulSession.chapters.length) return; soulSession.viewingChapter = idx; _soulRenderChapter(idx); }
+        function soulPrevChapter() { soulNavChapter(soulSession.viewingChapter - 1); }
+
+        async function endSoulSession() {
+            if (soulSession.generating) return;
+            soulSession.phase = 'ended'; soulSession.generating = false;
+            el('soulEndBtn')?.classList.add('hidden');
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            const storyChapters = soulSession.chapters.filter(c => !c.isSummary);
+            const recap = storyChapters.map(c=>`【${c.label}「${c.title}」${c.isDeath?'（殞落章）':''}${c.isAftermath?'（身後記）':''}】${c.content.slice(0,200)}`).join('\n');
+            const aftermathCount = storyChapters.filter(c => c.isAftermath).length;
+            const prompt = `以下是一段歷史穿越的完整記錄。
+
+【設定】宿主：${host?.name}（${host?.rank}）　靈魂：${soul?soul.name:'宿主意識覺醒'}　時刻：${soulSession.moment?.title}
+${soulSession.hostDead ? `宿主已殞落，身後世界共記錄${aftermathCount}章。` : '宿主存活至終結。'}
+
+【各章梗概】
+${recap}
+
+請以「太史公曰」格式，寫一段400-500字的魂穿總評：
+1. 這段穿越的核心歷史改寫是什麼——與原有時間線的最大分歧在哪裡
+2. 宿主（及穿越靈魂，若有）的選擇如何影響歷史走向，其決定的長遠代價是什麼
+${soulSession.hostDead ? '3. 宿主殞落後，這條時間線走向何方——身後世界的最終面貌，以及宿主種下的因最終結出了什麼果' : '3. 周遭關鍵人物的命運如何因這段穿越而改變'}
+4. 後世史家如何評價這個「另一條時間線」——是更好、更壞，還是只是不同
+語氣莊重，以史書體裁收尾，不迴避複雜性。`;
+
+            const summNum = soulSession.chapters.length;
+            soulSession.chapters.push({ num:summNum, label:'史家總評', title:'魂穿總評', content:'', figures:[], streaming:true, isSummary:true });
+            soulSession.viewingChapter = summNum;
+            _soulShowChapterShell(summNum);
+            try {
+                let fullText = '';
+                await callGeminiStream(prompt, partial => { fullText = partial; soulSession.chapters[summNum].content = partial; _soulRenderChapter(summNum); });
+                soulSession.chapters[summNum].content = fullText;
+                soulSession.chapters[summNum].streaming = false;
+                appState.simulationHistory.unshift({ type:'深度魂穿', icon:'👻', title:`${host?.name}${soul?' × '+soul.name:''} · ${soulSession.moment?.title}（共${soulSession.chapters.length-1}章）`, result:fullText.slice(0,100), fullResult:soulSession.chapters.map(c=>`## ${c.label}「${c.title}」\n${c.content}`).join('\n\n---\n\n'), time:new Date().toLocaleString('zh-TW') });
+                syncToCloud();
+            } catch(e) { soulSession.chapters[summNum].content = '（總評生成失敗）'; soulSession.chapters[summNum].streaming = false; }
+            _soulRenderChapter(summNum);
+        }
+        // ===== 深度魂穿 END =====
 
         function startScenario(id) {
             const s = scenarios.find(x => x.id === id);
@@ -4772,6 +5397,20 @@ function clearAllChronicle() {
             clearTimeout(searchTimer);
             searchTimer = setTimeout(renderLegends, 300);
         });
+
+        function toggleNightMode() {
+            const isNight = document.documentElement.classList.toggle('night');
+            localStorage.setItem('dynasty_nightmode', isNight ? '1' : '0');
+            const btn = document.getElementById('nightToggleBtn');
+            if (btn) btn.innerHTML = isNight
+                ? '<i class="fa-solid fa-sun text-amber-300"></i>'
+                : '<i class="fa-solid fa-moon text-slate-300"></i>';
+        }
+        (function(){
+            const btn = document.getElementById('nightToggleBtn');
+            if (btn && document.documentElement.classList.contains('night'))
+                btn.innerHTML = '<i class="fa-solid fa-sun text-amber-300"></i>';
+        })();
 
         function resetApp() { appState.mode = 'browse'; closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; appState.compareList = []; updateCompareUI(); renderLegends(); }
         // Start

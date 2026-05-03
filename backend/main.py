@@ -36,8 +36,6 @@ app = FastAPI(title="帝王將相名臣評鑑 API", version=APP_VERSION)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://dynasty-ydov.onrender.com"],
@@ -94,7 +92,30 @@ def serve_frontend():
 
 @app.get("/manifest.json")
 def serve_manifest():
-    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json"))
+    manifest_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json")
+    with open(manifest_path, "r", encoding="utf-8") as f:
+        manifest = json.load(f)
+    for icon in manifest.get("icons", []):
+        src = icon.get("src", "")
+        if "?" not in src:
+            icon["src"] = f"{src}?v={APP_VERSION}"
+    return JSONResponse(content=manifest, headers={"Cache-Control": "no-cache, no-store, must-revalidate"})
+
+@app.get("/static/icon-192.png")
+def serve_icon_192():
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "icon-192.png"),
+        headers={"Cache-Control": "public, max-age=31536000, immutable"},
+        media_type="image/png"
+    )
+
+@app.get("/static/icon-512.png")
+def serve_icon_512():
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "icon-512.png"),
+        headers={"Cache-Control": "public, max-age=31536000, immutable"},
+        media_type="image/png"
+    )
 
 @app.get("/sw.js")
 def serve_sw():
@@ -102,6 +123,8 @@ def serve_sw():
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "sw.js"),
         headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
     )
+
+app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
 
 @app.post("/api/auth")
 @limiter.limit("5/minute")
