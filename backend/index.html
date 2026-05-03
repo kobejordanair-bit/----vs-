@@ -4271,13 +4271,30 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             if (!content) return;
             const arrow = (label) => `<div class="flex flex-col items-center text-slate-400 opacity-60 shrink-0"><i class="fa-solid fa-arrow-right-long text-2xl animate-pulse"></i><span class="text-[9px] font-serif mt-1 tracking-widest">${label}</span></div>`;
             if (sm.activeTab === 'free') {
-                content.innerHTML = `<div class="flex flex-col items-center justify-center h-full gap-4 px-6">
-                    <p class="text-xs text-purple-400 font-serif opacity-70">以史書體裁，逐章推演穿越傳奇</p>
-                    <button onclick="openSoulDeep()" class="px-8 py-3.5 bg-gradient-to-r from-purple-800 to-indigo-800 hover:from-purple-700 hover:to-indigo-700 text-purple-100 rounded-xl font-bold font-serif tracking-widest shadow-lg transition-all flex items-center gap-3 text-sm border border-purple-700/40">
-                        <i class="fa-solid fa-yin-yang text-purple-400 text-lg"></i>開啟深度魂穿
-                    </button>
-                    <p class="text-[10px] text-purple-600 font-serif">選擇宿主 · 選擇時刻 · 無限章節延伸</p>
-                </div>`;
+                const hasSession = soulSession.phase !== 'idle';
+                if (hasSession) {
+                    const _sh = legendsData.find(l => l.id === soulSession.hostId);
+                    const _ss = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+                    const _chCount = soulSession.chapters.length;
+                    const _isEnded = ['ended','ending'].includes(soulSession.phase);
+                    content.innerHTML = `<div class="flex flex-col items-center justify-center h-full gap-3 px-6 text-center">
+                        <p class="text-[10px] text-purple-500 font-serif tracking-widest">${_isEnded ? '魂穿已終結' : '魂穿進行中'}</p>
+                        <p class="font-bold text-purple-100 font-serif text-base">${escapeHtml(_sh?.name||'')}${_ss?' × '+escapeHtml(_ss.name):''}</p>
+                        <p class="text-xs text-purple-500 font-serif">${escapeHtml(soulSession.moment?.title||'')}${_chCount > 0 ? ' · 共'+_chCount+'章' : ''}</p>
+                        <button onclick="openSoulDeep()" class="px-6 py-2.5 bg-purple-700 hover:bg-purple-600 text-purple-100 rounded-xl font-bold font-serif text-sm transition-all flex items-center gap-2 mt-1">
+                            <i class="fa-solid fa-book-open-reader"></i>${_isEnded ? '查看記錄' : '繼續魂穿'}
+                        </button>
+                        <button onclick="resetSoulSession()" class="text-xs text-purple-700 hover:text-purple-400 font-serif transition-colors">重新開始新的魂穿</button>
+                    </div>`;
+                } else {
+                    content.innerHTML = `<div class="flex flex-col items-center justify-center h-full gap-4 px-6">
+                        <p class="text-xs text-purple-400 font-serif opacity-70">以史書體裁，逐章推演穿越傳奇</p>
+                        <button onclick="openSoulDeep()" class="px-8 py-3.5 bg-gradient-to-r from-purple-800 to-indigo-800 hover:from-purple-700 hover:to-indigo-700 text-purple-100 rounded-xl font-bold font-serif tracking-widest shadow-lg transition-all flex items-center gap-3 text-sm border border-purple-700/40">
+                            <i class="fa-solid fa-yin-yang text-purple-400 text-lg"></i>開啟深度魂穿
+                        </button>
+                        <p class="text-[10px] text-purple-600 font-serif">選擇宿主 · 選擇時刻 · 無限章節延伸</p>
+                    </div>`;
+                }
             } else if (sm.activeTab === 'crisis') {
                 if (sm.activeScenario) {
                     const s = sm.activeScenario;
@@ -4344,11 +4361,20 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         let soulSession = { phase:'idle', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
 
         function openSoulDeep() {
-            soulSession = { phase:'setup', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+            if (soulSession.phase === 'idle') {
+                soulSession = { phase:'setup', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+            }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
         }
-        function closeSoulDeep() { el('soulDeepModal').classList.add('hidden'); }
+        function closeSoulDeep() {
+            el('soulDeepModal').classList.add('hidden');
+            updateSoulModeUI();
+        }
+        function resetSoulSession() {
+            soulSession = { phase:'idle', hostId:null, soulId:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false };
+            updateSoulModeUI();
+        }
 
         function renderSoulDeep() {
             const p = soulSession.phase;
