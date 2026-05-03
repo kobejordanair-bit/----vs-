@@ -4450,7 +4450,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1 };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
@@ -4663,6 +4663,7 @@ ${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體�
 ・核心傾向：[最突出的能力或行為傾向，具體到這個人]
 ・性格缺陷：[評鑑揭示的、穿越中會帶來麻煩的性格弱點]
 ・認知局限：[因所處時代與個人經歷形成的思維盲點]
+・死後清明：[死亡讓這個靈魂頓悟了什麼？他生前最大的執念或盲點，死後如何看待]
 
 只輸出格式內容。特質必須源自上方評鑑，不得泛泛而談。`
                 : `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。
@@ -4672,6 +4673,7 @@ ${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體�
 ・核心傾向：[最突出的能力或行為傾向]
 ・性格缺陷：[會帶來麻煩的弱點]
 ・認知局限：[因所處時代而形成的思維盲點]
+・死後清明：[死亡讓這個靈魂頓悟了什麼？他生前最大的執念或盲點，死後如何看待]
 
 只輸出格式內容，不要其他說明。`;
 
@@ -4686,7 +4688,7 @@ ${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體�
         }
 
         async function startSoulSession() {
-            soulSession.phase = 'chapters'; soulSession.chapters = []; soulSession.viewingChapter = 0; soulSession.figureStates = []; soulSession.generating = true;
+            soulSession.phase = 'chapters'; soulSession.chapters = []; soulSession.viewingChapter = 0; soulSession.figureStates = []; soulSession.soulGrowth = []; soulSession.generating = true;
             el('soulDeepActions').classList.remove('hidden');
             el('soulFigureSidebar').classList.remove('hidden');
             el('soulEndBtn').classList.remove('hidden');
@@ -4748,7 +4750,7 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
             } else {
                 const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
                 const soulLine = soul
-                    ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}`
+                    ? `穿越靈魂：${soul.name}（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）${traitsBlock}\n死後視角：此靈魂已活過並死去一次，帶著對自身命運終局的記憶而來。死亡帶來的不是超能力，而是一種普通人沒有的清醒——他知道某些路通向哪裡，知道自己的哪個弱點最終葬送了自己，但未必能克服性格根底或時代局限。`
                     : `穿越靈魂：無（宿主自身意識覺醒）\n覺醒特質：宿主以某種難以言喻的直覺感知到歷史的走向，但仍完全受制於其原有的性格底色、認知框架與時代局限——覺醒帶來的是選擇的可能性，而非能力的提升`;
                 // 宿主評鑑素材（序章用，讓 AI 深度理解宿主）
                 const hostMod = appState.modifiedLegends[soulSession.hostId] || {};
@@ -4760,6 +4762,8 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 if (hostDeep) hostCtx += `【宿主深度評鑑】\n${hostDeep}\n\n`;
                 else if (hostAnalysis) hostCtx += `【宿主賞析】\n${hostAnalysis}\n\n`;
                 if (hostChat) hostCtx += `【宿主賞析對話摘錄】\n${hostChat}\n\n`;
+                const recentGrowth = (soulSession.soulGrowth || []).slice(-3);
+                const growthCtx = recentGrowth.length ? `【靈魂近況變化】\n${recentGrowth.map((g,i)=>`第${i+1}次：${g}`).join('\n')}\n\n` : '';
                 const isFirst = chNum === 0;
                 const firstExtra = isFirst
                     ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇（請參考上方宿主評鑑資料中對其性格、能力、處境的分析）\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
@@ -4773,18 +4777,21 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
+${ctx}${figCtx}${growthCtx}請寫出${label}（2000-3000字）：${firstExtra}
 
 寫作要求：
 - 第三人稱史書體裁，沉浸感強，具體人名、事件、多人對白、環境描寫，充分展開場景與人物心理
 - 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變。隨章節推進，歷史應逐漸偏離原有軌跡——某些原本會發生的事可能不再出現，某些從未存在的局面因此成形。請根據穿越者實際做出的選擇推演其邏輯後果，而非讓原有歷史事件按序發生
 - 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
 - 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」
+- 【死後清明】靈魂帶著死過一遍的記憶，在某些關鍵選擇上會有普通人沒有的清醒反思——他知道自己上一生的某條路通向了哪裡。這種清醒偶爾體現於內心獨白，而非讓他無所不能
+- 【靈魂成長】此靈魂並非一成不變。若本章出現真正撼動其內心的人際接觸或衝擊性事件，某個特質可能被強化、軟化或改寫。變化應體現在內心獨白中，自然而非突兀
 - 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
 
 正文結束後換行輸出（系統解析用，勿計入正文）：
 [FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
-[CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
+[CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]
+[SOULGROWTH]若本章靈魂有任何內在轉變，一句話描述；無明顯轉變則留空[/SOULGROWTH]`;
             }
 
             soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
@@ -4801,6 +4808,8 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
                 if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) soulSession.figureStates[i]=f; else soulSession.figureStates.push(f); }); } catch(e){} }
                 const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
                 if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
+                const growthM = fullText.match(/\[SOULGROWTH\]([\s\S]*?)\[\/SOULGROWTH\]/);
+                if (growthM) { const g = growthM[1].trim(); if (g) { if (!soulSession.soulGrowth) soulSession.soulGrowth = []; soulSession.soulGrowth.push(g); } }
                 soulSession.chapters[chNum].content = _soulCleanText(fullText);
                 soulSession.chapters[chNum].streaming = false;
                 if (!isAftermath && fullText.includes('【宿主殞落')) {
@@ -4815,7 +4824,7 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
             _soulRenderChapter(chNum);
         }
 
-        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').trim(); }
+        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').trim(); }
 
         function _soulShowChapterShell(idx) {
             const c = soulSession.chapters[idx];
