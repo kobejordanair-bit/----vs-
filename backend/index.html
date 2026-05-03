@@ -4799,7 +4799,7 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
                     _soulRenderChapter(chNum);
                 });
                 const figM = fullText.match(/\[FIGURES\]([\s\S]*?)\[\/FIGURES\]/);
-                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) soulSession.figureStates[i]=f; else soulSession.figureStates.push(f); }); } catch(e){} }
+                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) soulSession.figureStates[i]=f; else soulSession.figureStates.push(f); }); } catch(e){} }
                 const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
                 if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
                 soulSession.chapters[chNum].content = _soulCleanText(fullText);
@@ -4845,15 +4845,20 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：${firstExtra}
             const aC = {ally:'text-emerald-400',enemy:'text-red-400',neutral:'text-slate-400',suspicious:'text-amber-400'};
             const aL = {ally:'盟友',enemy:'敵對',neutral:'觀望',suspicious:'警戒'};
             sb.innerHTML = `<h4 class="text-[10px] font-bold text-purple-500 tracking-widest mb-2 font-serif uppercase shrink-0">關鍵人物動態</h4>
-                <div class="flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-x-visible pb-1 md:pb-0">${figs.map(f=>`
-                <div class="bg-[#100420] rounded-lg p-2.5 border border-purple-900/30 min-w-[140px] md:min-w-0 shrink-0 md:shrink">
+                <div class="flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-x-visible pb-1 md:pb-0">${figs.map(f=>{
+                    const real = legendsData.find(l => l.name === f.name);
+                    const rank = real ? real.rank : f.rank;
+                    const rankLabel = real
+                        ? `<span class="text-[10px] font-bold text-purple-400 ml-1">${escapeHtml(rank)}</span>`
+                        : `<span class="text-[10px] text-purple-700 ml-1 italic">${escapeHtml(rank||'')}推定</span>`;
+                    return `<div class="bg-[#100420] rounded-lg p-2.5 border border-purple-900/30 min-w-[140px] md:min-w-0 shrink-0 md:shrink">
                     <div class="flex justify-between items-start mb-1">
                         <span class="font-bold text-xs text-purple-200 font-serif">${escapeHtml(f.name)}</span>
-                        <span class="text-[10px] text-purple-600 ml-1">${escapeHtml(f.rank||'')}</span>
+                        ${rankLabel}
                     </div>
                     <p class="text-[11px] text-purple-400 leading-relaxed">${escapeHtml(f.change)}</p>
                     <span class="text-[10px] font-bold ${aC[f.attitude]||'text-slate-400'} mt-1 inline-block">${aL[f.attitude]||''}</span>
-                </div>`).join('')}</div>`;
+                </div>`;}).join('')}</div>`;
         }
 
         function _soulUpdateChapterNav() {
