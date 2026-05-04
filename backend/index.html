@@ -4638,21 +4638,42 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             const soul = legendsData.find(l => l.id === soulId);
             if (!soul) return;
 
+            const display = el('soulTraitsDisplay');
+
             // 收集這個人物已有的評鑑資料
-            const mod = appState.modifiedLegends[soulId] || {};
-            const deepAnalysis = mod.deepAnalysis || '';
-            const analysis = mod.analysis || '';
+            let mod = appState.modifiedLegends[soulId] || {};
+            let deepAnalysis = mod.deepAnalysis || '';
+            let analysis = mod.analysis || '';
             const chatMsgs = (appState.chatHistories[soulId] || [])
                 .filter(m => m.role === 'model')
                 .slice(-3)
                 .map(m => m.content.slice(0, 400))
                 .join('\n\n');
 
+            // 若無任何評鑑資料，先自動跑賞析
+            if (!analysis && !deepAnalysis) {
+                if (display) display.textContent = '正在補充賞析資料…';
+                try {
+                    const roleNote = soul.type === 'emperor' ? '純粹根據「作為帝王」的表現（統御、決策、國運）分析' : soul.type === 'general' ? '純粹根據「作為將領」的表現（戰略、戰術、治軍）分析' : '純粹根據「作為臣子」的表現（施政、輔佐、權謀）分析';
+                    const analysisPrompt = `請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${soul.name}（${soul.title||''}）。\n\n【分析準則】：\n1. 拒絕刻板印象：主動挑戰主流史觀，至少提出一個反常識的論點並說明依據。\n2. 多維度分析：結合史料、當時局勢以及人心（心理動機），引用具體事件、年份、地名。\n3. 心理動機優先：深入分析每個重大決策背後的真實心理動機，還原「人」的複雜性。\n4. 時代局限性：嚴格區分哪些失敗是時代局限，哪些是個人能力問題。\n5. 角色本位：${roleNote}。\n\n請依此撰寫以下章節：\n1. 【歷史局勢與定位】：置身於當時的時空背景，他面對的是什麼局，又在歷史長河中站什麼位置。\n2. 【深度功過剖析】：具體事例分析，探討其決策背後的深層邏輯與得失。\n3. 【人性與性格側寫】：還原其作為「人」的真實面貌與心理特質。\n4. 【如果生在現代】：推測他適合什麼職業，如何處世。`;
+                    const analysisText = await callGemini(analysisPrompt, false);
+                    if (analysisText && soulSession.soulId === soulId) {
+                        if (!appState.modifiedLegends[soulId]) appState.modifiedLegends[soulId] = {};
+                        appState.modifiedLegends[soulId].analysis = analysisText;
+                        mod = appState.modifiedLegends[soulId];
+                        analysis = analysisText;
+                        syncToCloud();
+                    }
+                } catch(e) { /* 賞析失敗時繼續，用無源版本生成特質 */ }
+            }
+
             // 組合評鑑素材（優先賞析，深度評鑑作為補充，再其次對話）
             let sourceCtx = '';
             if (analysis) sourceCtx += `【賞析】\n${analysis}\n\n`;
             if (deepAnalysis) sourceCtx += `【深度評鑑補充】\n${deepAnalysis.slice(0, 1500)}\n\n`;
             if (chatMsgs) sourceCtx += `【賞析對話摘錄】\n${chatMsgs}\n\n`;
+
+            if (display) display.textContent = '正在解析靈魂特質…';
 
             const hasSource = sourceCtx.trim().length > 0;
             const prompt = hasSource
@@ -4663,6 +4684,7 @@ ${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體�
 ・核心傾向：[最突出的能力或行為傾向，具體到這個人]
 ・性格缺陷：[評鑑揭示的、穿越中會帶來麻煩的性格弱點]
 ・認知局限：[因所處時代與個人經歷形成的思維盲點]
+・言行氣質：[他與人互動時外顯的風格——說話的語氣、待人的方式、給旁人留下的第一印象或慣常的行為舉止]
 ・死後清明：[死亡讓這個靈魂看清了什麼——但這份清明是沉重的自我意識，不是解脫。他知道自己的哪個缺陷最終葬送了自己，卻未必能在下一次選擇時克服它]
 
 只輸出格式內容。特質必須源自上方評鑑，不得泛泛而談。`
@@ -4673,6 +4695,7 @@ ${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體�
 ・核心傾向：[最突出的能力或行為傾向]
 ・性格缺陷：[會帶來麻煩的弱點]
 ・認知局限：[因所處時代而形成的思維盲點]
+・言行氣質：[與人互動時外顯的風格——語氣、待人方式、給旁人的第一印象]
 ・死後清明：[死亡讓這個靈魂看清了什麼——但這份清明是沉重的自我意識，不是解脫。他知道自己的哪個缺陷最終葬送了自己，卻未必能在下一次選擇時克服它]
 
 只輸出格式內容，不要其他說明。`;
@@ -4784,6 +4807,7 @@ ${ctx}${figCtx}${growthCtx}請寫出${label}（2000-3000字）：${firstExtra}
 - 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變。隨章節推進，歷史應逐漸偏離原有軌跡——某些原本會發生的事可能不再出現，某些從未存在的局面因此成形。請根據穿越者實際做出的選擇推演其邏輯後果，而非讓原有歷史事件按序發生
 - 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
 - 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」。特質標籤（如「死後清明」「性格缺陷」等）是作者的後設描述，絕對不能出現在正文中，只能透過行為與心理自然呈現
+- 【言行氣質】靈魂的外顯個性必須落實在對話語氣與日常舉止上：他說話是直接還是迂迴、強勢還是克制、熱烈還是冷淡；他面對不同身分的人時態度如何變化；他在場時周圍人會有什麼感受。這些細節應貫穿全章，而非只存在於心理描寫中
 - 【死後清明】靈魂帶著死過一遍的記憶，在關鍵選擇時有普通人沒有的自我意識——他看得見那條熟悉的錯路，卻不一定走得開。性格缺陷不因清醒而消失，只是換個形式重現；「明知故犯」才是死後視角最殘酷的地方。嚴禁讓清明直接轉化為能力，嚴禁讓靈魂因「死過一次」就輕鬆迴避所有弱點
 - 【靈魂成長】此靈魂並非一成不變，但成長從不是線性的。成長若發生，必須有具體代價或新的矛盾隨之而來——迴避了舊錯誤，可能在別處付出代價；放下了某個執念，可能同時失去某樣東西；變得更寬闊，可能同時變得更脆弱。成長可以是真實的，但不接受無摩擦的正向轉變。舊缺陷也可能只是換個形式重現，而非真正被克服
 - 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
