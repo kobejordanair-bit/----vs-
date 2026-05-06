@@ -4468,11 +4468,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1 };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[] };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[] };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4482,7 +4482,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1 };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[] };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -4747,6 +4747,23 @@ ${sourceCtx}根據以上評鑑資料，描述這個靈魂穿越到他人身體�
             await _generateSoulChapter();
         }
 
+        function _getSuggestedChapterType() {
+            const types = soulSession.lastChapterTypes || [];
+            if (types.length < 2) return null;
+            let consecutive = 0;
+            for (let i = types.length - 1; i >= 0; i--) {
+                if (types[i] === '行動章') consecutive++;
+                else break;
+            }
+            if (consecutive >= 2) {
+                const nonAction = ['靜章', '代價章', '人物章'];
+                const lastNonAction = [...types].reverse().find(t => nonAction.includes(t));
+                if (!lastNonAction) return '靜章';
+                return nonAction[(nonAction.indexOf(lastNonAction) + 1) % 3];
+            }
+            return null;
+        }
+
         async function _generateSoulChapter() {
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
@@ -4807,6 +4824,29 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 const growthCtx = recentGrowth.length ? `【靈魂近況變化】\n${recentGrowth.map((g,i)=>`第${i+1}次：${g}`).join('\n')}\n\n` : '';
                 const recentTitles = soulSession.chapters.filter(c => !c.isSummary).slice(-2).map(c => c.title).filter(t => t && t !== '…').join('、');
                 const learningCtx = soul && chNum > 0 ? `【學習進度・第${chNum+1}章】靈魂對宿主時代的認識應與在此生活的時間相符：${chNum <= 3 ? '仍有大量盲點，許多事需靠親眼觀察、詢問或閱讀文書才能理解，行動常受制於對這個時代的陌生感。' : chNum <= 10 ? '已通過具體經歷逐步建立基本認識，但較深的領域（典章制度細節、人際派系脈絡、地方實情）仍有觸及不到之處。' : '對這個時代已有相當掌握，但仍保有原生時代的思維底色，遇到真正陌生的情境仍會暴露盲點。'}每個認知突破必須有具體觸發點（一次對話、一份文書、一個親身目睹的事件），不得憑空獲得。學習速度應符合靈魂的思維底色。\n\n` : '';
+                const suggestedType = _getSuggestedChapterType();
+                const typeInstruction = suggestedType
+                    ? `【本章類型要求】必須寫「${suggestedType}」`
+                    : `【本章類型】請根據情節需要選擇最合適的章節類型`;
+                const typeDesc = `章節類型定義：
+- 行動章：有明確衝突、決策與後果，主角直接推動情節發展
+- 靜章：無大事件，主角存在於日常細節中；情緒與關係在瑣事間滲透，節奏放慢
+- 代價章：本章主角的行為或決定帶來問題、損失或新矛盾；「歪打正著」不得在本章出現；代價必須在本章結束時仍然存在，不得即時化解
+- 人物章：以某位配角的視角與處境為主體，主角居次要位置；深入挖掘該配角的內在矛盾或命運轉折`;
+
+                const hostStateCtx = soulSession.hostState
+                    ? `【宿主當前心理狀態】${soulSession.hostState}\n本章必須從這個心理狀態出發；若發生轉變，必須有具體觸發事件作為依據。\n\n`
+                    : '';
+                const tensionsCtx = (soulSession.pendingTensions || []).length > 0
+                    ? `【積累的未解決張力】本章必須至少觸及其中一條（不必解決，但必須讓讀者感受到它的存在）：\n${soulSession.pendingTensions.map((t,i)=>`${i+1}. ${t}`).join('\n')}\n\n`
+                    : '';
+                const shockedCtx = (soulSession.shockedFigures || []).length > 0
+                    ? `【已習慣主角行為的人物】${soulSession.shockedFigures.join('、')}——這些人曾對主角的意外效果感到震驚，現已習慣其行為模式。本章若有類似場景，這些人應以「習慣後的複雜態度」（警惕、無奈、依賴、厭倦等）回應，而非重新震驚。\n\n`
+                    : '';
+                const figWithTension = soulSession.figureStates.filter(f => f.tension);
+                const figTensionCtx = figWithTension.length > 0
+                    ? `【人物內在矛盾】\n${figWithTension.map(f=>`${f.name}：${f.tension}`).join('；')}\n\n`
+                    : '';
                 const isFirst = chNum === 0;
                 const firstExtra = isFirst
                     ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇（請參考上方宿主評鑑資料中對其性格、能力、處境的分析）\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
@@ -4820,7 +4860,10 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：${firstExtra}
+${ctx}${figCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${typeInstruction}
+${typeDesc}
+
+請寫出${label}（2000-3000字）：${firstExtra}
 
 寫作要求：
 - 第三人稱史書體裁，沉浸感強，具體人名、事件、多人對白、環境描寫，充分展開場景與人物心理
@@ -4835,9 +4878,13 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
 - 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
 
 正文結束後換行輸出（系統解析用，勿計入正文）：
-[FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
+[FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious","tension":"此人當前內在矛盾（選填，一句話；無則省略此欄）"},...][/FIGURES]
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]
-[SOULGROWTH]若本章靈魂有任何內在轉變，一句話描述；無明顯轉變則留空[/SOULGROWTH]`;
+[SOULGROWTH]若本章靈魂有任何內在轉變，一句話描述；無明顯轉變則留空[/SOULGROWTH]
+[CHAPTERTYPE]行動章/靜章/代價章/人物章（填寫本章實際類型）[/CHAPTERTYPE]
+[HOSTSTATE]一句話描述宿主或穿越靈魂此刻的心理狀態（10-20字）[/HOSTSTATE]
+[TENSIONS_ADD]本章新產生的未解決張力（用｜分隔，最多2條；若無則留空）[/TENSIONS_ADD]
+[SHOCKED]本章首次因主角行為感到意外效果震驚的人物（用｜分隔；若無或已在已習慣名單中則留空）[/SHOCKED]`;
             }
 
             soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
@@ -4856,6 +4903,29 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
                 if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
                 const growthM = fullText.match(/\[SOULGROWTH\]([\s\S]*?)\[\/SOULGROWTH\]/);
                 if (growthM) { const g = growthM[1].trim(); if (g) { if (!soulSession.soulGrowth) soulSession.soulGrowth = []; soulSession.soulGrowth.push(g); } }
+                const typeM = fullText.match(/\[CHAPTERTYPE\]([\s\S]*?)\[\/CHAPTERTYPE\]/);
+                if (typeM) {
+                    const t = typeM[1].trim();
+                    if (!soulSession.lastChapterTypes) soulSession.lastChapterTypes = [];
+                    soulSession.lastChapterTypes.push(t);
+                    if (soulSession.lastChapterTypes.length > 8) soulSession.lastChapterTypes.shift();
+                    soulSession.chapters[chNum].chapterType = t;
+                }
+                const hostStateM = fullText.match(/\[HOSTSTATE\]([\s\S]*?)\[\/HOSTSTATE\]/);
+                if (hostStateM) soulSession.hostState = hostStateM[1].trim();
+                const tensionsAddM = fullText.match(/\[TENSIONS_ADD\]([\s\S]*?)\[\/TENSIONS_ADD\]/);
+                if (tensionsAddM) {
+                    const newT = tensionsAddM[1].trim().split('｜').map(t=>t.trim()).filter(t=>t);
+                    if (!soulSession.pendingTensions) soulSession.pendingTensions = [];
+                    soulSession.pendingTensions.push(...newT);
+                    if (soulSession.pendingTensions.length > 10) soulSession.pendingTensions = soulSession.pendingTensions.slice(-10);
+                }
+                const shockedM = fullText.match(/\[SHOCKED\]([\s\S]*?)\[\/SHOCKED\]/);
+                if (shockedM) {
+                    const shocked = shockedM[1].trim().split('｜').map(n=>n.trim()).filter(n=>n);
+                    if (!soulSession.shockedFigures) soulSession.shockedFigures = [];
+                    shocked.forEach(n => { if (!soulSession.shockedFigures.includes(n)) soulSession.shockedFigures.push(n); });
+                }
                 soulSession.chapters[chNum].content = _soulCleanText(fullText);
                 soulSession.chapters[chNum].streaming = false;
                 if (!isAftermath && fullText.includes('【宿主殞落')) {
@@ -4870,7 +4940,7 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
             _soulRenderChapter(chNum);
         }
 
-        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').trim(); }
+        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').replace(/\[CHAPTERTYPE\][\s\S]*?\[\/CHAPTERTYPE\]/g,'').replace(/\[HOSTSTATE\][\s\S]*?\[\/HOSTSTATE\]/g,'').replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g,'').replace(/\[SHOCKED\][\s\S]*?\[\/SHOCKED\]/g,'').trim(); }
 
         function _soulShowChapterShell(idx) {
             const c = soulSession.chapters[idx];
