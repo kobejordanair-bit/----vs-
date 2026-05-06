@@ -718,6 +718,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <button id="soulSaveBtn" onclick="saveSoulStory()" class="hidden px-3 py-1.5 bg-purple-950/60 hover:bg-purple-900/60 border border-purple-700/60 text-purple-300 hover:text-purple-100 rounded-lg text-xs font-serif tracking-wide transition-all">
                         <i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔
                     </button>
+                    <button id="soulExportBtn" onclick="exportSoulStory()" class="hidden px-3 py-1.5 bg-emerald-950/60 hover:bg-emerald-900/60 border border-emerald-700/60 text-emerald-300 hover:text-emerald-100 rounded-lg text-xs font-serif tracking-wide transition-all">
+                        <i class="fa-solid fa-file-arrow-down mr-1.5"></i>匯出
+                    </button>
                     <button onclick="openSoulSaves()" class="px-3 py-1.5 bg-indigo-950/60 hover:bg-indigo-900/60 border border-indigo-700/60 text-indigo-300 hover:text-indigo-100 rounded-lg text-xs font-serif tracking-wide transition-all">
                         <i class="fa-solid fa-bookmark mr-1.5"></i>讀檔
                     </button>
@@ -758,8 +761,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </h3>
                 <div class="flex gap-3 items-center">
                     <!-- RegExp button for Radar regeneration -->
-                    <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="hidden text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
-                    <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="hidden text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
+                    <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
+                    <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
                     <button id="extractScenesBtn" onclick="extractScenesFromCurrentTab()" class="hidden text-xs bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="從評鑑內容提取名場面"><i class="fa-solid fa-fire"></i> 提取名場面</button>
                     <button id="exportCardBtn" onclick="exportCard()" class="hidden text-xs bg-[#1e6b4a] hover:bg-[#145238] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="匯出評鑑卡片為圖片"><i class="fa-solid fa-image"></i> 匯出卡片</button>
                     <button id="clearMemoryBtn" onclick="clearCurrentMemory()" class="hidden text-xs bg-[#7f1d1d] hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider">忘卻</button>
@@ -1798,13 +1801,15 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 el('contentContainer').classList.add('hidden');
                 el('clearMemoryBtn').classList.remove('hidden');
                 el('regenStatsBtn').classList.add('hidden');
+                el('regenDeepBtn').classList.add('hidden');
                 el('exportCardBtn').classList.add('hidden');
             } else {
                 el('chatContainer').classList.add('hidden');
                 el('contentContainer').classList.remove('hidden');
                 el('clearMemoryBtn').classList.add('hidden');
                 el('modalContent').innerHTML = ''; // Clear previous content
-                el('regenStatsBtn').classList.add('hidden');
+                el('regenStatsBtn').classList.remove('hidden');
+                el('regenDeepBtn').classList.remove('hidden');
                 el('exportCardBtn').classList.add('hidden');
             }
         }
@@ -2573,8 +2578,6 @@ ${allNames}
             el('radarChartContainer').classList.add('hidden');
             el('modalContent').innerHTML = '';
             el('loadingState').classList.add('hidden');
-            el('regenStatsBtn').classList.add('hidden');
-            el('regenDeepBtn').classList.add('hidden');
             el('extractScenesBtn').classList.add('hidden');
             if (tab === 'review') _loadReviewContent(currentAnalysisId);
             else _loadCalibrationContent(currentAnalysisId);
@@ -2589,8 +2592,6 @@ ${allNames}
             el('loadingState').classList.add('flex');
             el('modalContent').innerHTML = '';
             el('radarChartContainer').classList.add('hidden');
-            el('regenStatsBtn').classList.add('hidden');
-            el('regenDeepBtn').classList.add('hidden');
 
             const cachedStats = appState.modifiedLegends[id]?.stats;
             const cachedAnalysis = appState.modifiedLegends[id]?.analysis;
@@ -2670,8 +2671,6 @@ ${allNames}
             el('loadingState').classList.add('flex');
             el('modalContent').innerHTML = '';
             el('radarChartContainer').classList.add('hidden');
-            el('regenStatsBtn').classList.add('hidden');
-            el('regenDeepBtn').classList.add('hidden');
 
             const cachedDeep = appState.modifiedLegends[id]?.deepAnalysis;
             if (cachedDeep) {
@@ -3284,7 +3283,6 @@ if(s1 && s2) {
             el('loadingState').classList.add('flex');
             el('modalContent').innerHTML = '';
             el('radarChartContainer').classList.add('hidden');
-            el('regenStatsBtn').classList.add('hidden');
 
             const allLegends = [...staticLegendsData, ...appState.customLegends].map(l => {
                 const mod = appState.modifiedLegends[l.id];
@@ -4934,7 +4932,9 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
             if (!indicator) return;
             const total = soulSession.chapters.length, viewing = soulSession.viewingChapter;
             const saveBtn = el('soulSaveBtn');
-            if (saveBtn) { if (total > 0) saveBtn.classList.remove('hidden'); else saveBtn.classList.add('hidden'); }
+            const exportBtn = el('soulExportBtn');
+            if (total > 0) { saveBtn?.classList.remove('hidden'); exportBtn?.classList.remove('hidden'); }
+            else { saveBtn?.classList.add('hidden'); exportBtn?.classList.add('hidden'); }
             const isEnded = ['ended','ending'].includes(soulSession.phase);
             indicator.textContent = `第 ${viewing+1} 章 · 共 ${total} 章`;
             if (prevBtn) prevBtn.disabled = viewing <= 0;
@@ -5085,6 +5085,54 @@ ${soulSession.hostDead ? '3. 宿主殞落後，這條時間線走向何方——
             appState.soulSaves = appState.soulSaves.filter(s => s.id !== id);
             syncToCloud();
             renderSoulSaves();
+        }
+
+        function exportSoulStory() {
+            if (soulSession.phase === 'idle' || soulSession.chapters.length === 0) return;
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            const title = `${host?.name || '未知'} × ${soul?.name || '宿主覺醒'} · ${soulSession.moment?.title || ''}`;
+            const exportedAt = new Date().toLocaleString('zh-TW');
+            const chapterHtml = soulSession.chapters.map(c => {
+                const tag = c.isDeath ? '殞落章' : c.isAftermath ? '身後記' : c.isSummary ? '史家總評' : '';
+                const tagHtml = tag ? `<span class="chapter-tag">${tag}</span>` : '';
+                const contentHtml = c.content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
+                return `<div class="chapter">
+                    <div class="chapter-label">${escapeHtml(c.label)}${tagHtml}</div>
+                    <h2 class="chapter-title">${escapeHtml(c.title)}</h2>
+                    <div class="chapter-body"><p>${contentHtml}</p></div>
+                </div>`;
+            }).join('\n');
+            const html = `<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>${escapeHtml(title)}</title>
+<style>
+  body { font-family: '宋體', 'SimSun', 'Noto Serif TC', serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.9; font-size: 15px; }
+  h1 { font-size: 22px; font-weight: bold; text-align: center; margin-bottom: 6px; }
+  .meta { text-align: center; color: #666; font-size: 13px; margin-bottom: 40px; }
+  .chapter { margin-bottom: 48px; border-top: 1px solid #ccc; padding-top: 28px; }
+  .chapter-label { font-size: 12px; color: #888; letter-spacing: 0.15em; margin-bottom: 6px; }
+  .chapter-tag { display: inline-block; margin-left: 8px; background: #f0e6e6; color: #8b0000; font-size: 11px; padding: 1px 6px; border-radius: 3px; }
+  .chapter-title { font-size: 20px; font-weight: bold; margin: 0 0 20px 0; }
+  .chapter-body p { margin: 0 0 1em 0; text-indent: 2em; }
+  @media print { body { margin: 20px; } }
+</style>
+</head>
+<body>
+<h1>深度魂穿紀錄</h1>
+<div class="meta">${escapeHtml(title)}　　匯出時間：${exportedAt}</div>
+${chapterHtml}
+</body>
+</html>`;
+            const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `魂穿_${title.replace(/[\/\s·×]/g, '_')}.html`;
+            a.click();
+            URL.revokeObjectURL(url);
         }
 
         // ===== 深度魂穿 END =====
