@@ -737,7 +737,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             </div>
             <div id="soulDeepActions" class="hidden bg-[#080415] border-t border-purple-900/30 px-5 py-3 flex justify-between items-center shrink-0">
                 <button onclick="soulPrevChapter()" id="soulPrevBtn" class="text-xs text-purple-500 hover:text-purple-300 font-serif transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-left"></i>上一章</button>
-                <span id="soulChapterIndicator" class="text-xs text-purple-600 font-serif"></span>
+                <div class="flex flex-col items-center gap-1.5">
+                    <span id="soulChapterIndicator" class="text-xs text-purple-600 font-serif"></span>
+                    <button id="soulRegenChapterBtn" onclick="regenCurrentSoulChapter()" class="hidden text-[10px] text-purple-700 hover:text-purple-400 font-serif transition-colors flex items-center gap-1"><i class="fa-solid fa-rotate-right text-[9px]"></i>重生此章</button>
+                </div>
                 <button id="soulNextBtn" onclick="generateNextSoulChapter()" class="px-5 py-2 bg-purple-800 hover:bg-purple-700 text-purple-100 rounded-lg text-xs font-bold font-serif tracking-wide transition-all flex items-center gap-2">繼續下一章<i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <!-- Saves Panel Overlay -->
@@ -4938,6 +4941,11 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
             const isEnded = ['ended','ending'].includes(soulSession.phase);
             indicator.textContent = `第 ${viewing+1} 章 · 共 ${total} 章`;
             if (prevBtn) prevBtn.disabled = viewing <= 0;
+            const regenBtn = el('soulRegenChapterBtn');
+            if (regenBtn) {
+                if (!soulSession.generating && !isEnded && total > 0) regenBtn.classList.remove('hidden');
+                else regenBtn.classList.add('hidden');
+            }
             if (!nextBtn) return;
             if (isEnded) { nextBtn.classList.add('opacity-0','pointer-events-none'); return; }
             nextBtn.classList.remove('opacity-0','pointer-events-none');
@@ -4956,6 +4964,21 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
             if (lastIdx < 0) return;
             soulSession.chapters.splice(lastIdx, 1);
             soulSession.viewingChapter = Math.max(0, soulSession.chapters.length - 1);
+            soulSession.generating = true;
+            _soulUpdateActions();
+            await _generateSoulChapter();
+        }
+
+        async function regenCurrentSoulChapter() {
+            if (soulSession.generating) return;
+            const idx = soulSession.viewingChapter;
+            if (idx < 0 || idx >= soulSession.chapters.length) return;
+            const deletingAfter = soulSession.chapters.length - 1 - idx;
+            if (deletingAfter > 0) {
+                if (!confirm(`重生此章將刪除之後的 ${deletingAfter} 章，確定繼續？`)) return;
+            }
+            soulSession.chapters.splice(idx);
+            soulSession.viewingChapter = Math.max(0, idx - 1);
             soulSession.generating = true;
             _soulUpdateActions();
             await _generateSoulChapter();
