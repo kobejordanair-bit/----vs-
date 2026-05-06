@@ -715,6 +715,12 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <span id="soulDeepTitle" class="font-bold font-serif tracking-wide text-[#e8d8ff] text-sm">深度魂穿</span>
                 </div>
                 <div class="flex items-center gap-3">
+                    <button id="soulSaveBtn" onclick="saveSoulStory()" class="hidden px-3 py-1.5 bg-purple-950/60 hover:bg-purple-900/60 border border-purple-700/60 text-purple-300 hover:text-purple-100 rounded-lg text-xs font-serif tracking-wide transition-all">
+                        <i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔
+                    </button>
+                    <button onclick="openSoulSaves()" class="px-3 py-1.5 bg-indigo-950/60 hover:bg-indigo-900/60 border border-indigo-700/60 text-indigo-300 hover:text-indigo-100 rounded-lg text-xs font-serif tracking-wide transition-all">
+                        <i class="fa-solid fa-bookmark mr-1.5"></i>讀檔
+                    </button>
                     <button id="soulEndBtn" onclick="endSoulSession()" class="hidden px-4 py-1.5 bg-red-950/60 hover:bg-red-900/60 border border-red-800/60 text-red-400 hover:text-red-300 rounded-lg text-xs font-serif tracking-wide transition-all">
                         <i class="fa-solid fa-skull-crossbones mr-1.5"></i>終結魂穿
                     </button>
@@ -730,6 +736,14 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <button onclick="soulPrevChapter()" id="soulPrevBtn" class="text-xs text-purple-500 hover:text-purple-300 font-serif transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-left"></i>上一章</button>
                 <span id="soulChapterIndicator" class="text-xs text-purple-600 font-serif"></span>
                 <button id="soulNextBtn" onclick="generateNextSoulChapter()" class="px-5 py-2 bg-purple-800 hover:bg-purple-700 text-purple-100 rounded-lg text-xs font-bold font-serif tracking-wide transition-all flex items-center gap-2">繼續下一章<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <!-- Saves Panel Overlay -->
+            <div id="soulSavesPanel" class="hidden absolute inset-0 bg-[#06030f]/95 backdrop-blur-sm z-10 flex flex-col">
+                <div class="bg-gradient-to-r from-[#160828] to-[#0d1035] px-5 py-3 flex justify-between items-center shrink-0 border-b border-purple-900/40">
+                    <span class="font-bold font-serif tracking-wide text-[#e8d8ff] text-sm"><i class="fa-solid fa-bookmark mr-2 text-indigo-400"></i>魂穿存檔</span>
+                    <button onclick="closeSoulSaves()" class="text-purple-400 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
+                </div>
+                <div id="soulSavesList" class="flex-1 overflow-y-auto custom-scrollbar p-5 space-y-3"></div>
             </div>
         </div>
     </div>
@@ -1566,6 +1580,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             scenes: [],
             sceneEdits: {},
             soulSession: null,
+            soulSaves: [],
         };
         
         let legendsData = []; 
@@ -1588,6 +1603,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             if (data.soulSession && data.soulSession.phase !== 'idle') {
                 soulSession = { ...data.soulSession, generating: false };
             }
+            appState.soulSaves = data.soulSaves || [];
             if (data.hegemonySavedSim) {
                 appState.hegemony.savedSimulation = data.hegemonySavedSim;
                 localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
@@ -1654,7 +1670,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                             hegemonySavedSim: appState.hegemony.savedSimulation || null,
                             scenes: appState.scenes,
                             sceneEdits: appState.sceneEdits,
-                            soulSession: soulSession.phase !== 'idle' ? soulSession : null
+                            soulSession: soulSession.phase !== 'idle' ? soulSession : null,
+                            soulSaves: appState.soulSaves || []
                         })
                     });
                 } catch(e) {
@@ -4916,6 +4933,8 @@ ${ctx}${figCtx}${growthCtx}${learningCtx}請寫出${label}（2000-3000字）：$
             const indicator = el('soulChapterIndicator'), nextBtn = el('soulNextBtn'), prevBtn = el('soulPrevBtn');
             if (!indicator) return;
             const total = soulSession.chapters.length, viewing = soulSession.viewingChapter;
+            const saveBtn = el('soulSaveBtn');
+            if (saveBtn) { if (total > 0) saveBtn.classList.remove('hidden'); else saveBtn.classList.add('hidden'); }
             const isEnded = ['ended','ending'].includes(soulSession.phase);
             indicator.textContent = `第 ${viewing+1} 章 · 共 ${total} 章`;
             if (prevBtn) prevBtn.disabled = viewing <= 0;
@@ -4983,6 +5002,91 @@ ${soulSession.hostDead ? '3. 宿主殞落後，這條時間線走向何方——
             } catch(e) { soulSession.chapters[summNum].content = '（總評生成失敗）'; soulSession.chapters[summNum].streaming = false; }
             _soulRenderChapter(summNum);
         }
+        function saveSoulStory() {
+            if (soulSession.phase === 'idle' || soulSession.chapters.length === 0) return;
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            const storyChapters = soulSession.chapters.filter(c => !c.isSummary);
+            const name = `${host?.name || '未知'} × ${soul?.name || '宿主覺醒'} · ${soulSession.moment?.title || '未知時刻'}`;
+            const save = {
+                id: Date.now().toString(),
+                name,
+                savedAt: new Date().toLocaleString('zh-TW'),
+                chapterCount: storyChapters.length,
+                phase: soulSession.phase,
+                snapshot: JSON.parse(JSON.stringify(soulSession))
+            };
+            appState.soulSaves.unshift(save);
+            if (appState.soulSaves.length > 30) appState.soulSaves.length = 30;
+            syncToCloud();
+            const btn = el('soulSaveBtn');
+            if (btn) { btn.innerHTML = '<i class="fa-solid fa-check mr-1.5"></i>已存'; setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔'; }, 1500); }
+        }
+
+        function openSoulSaves() {
+            renderSoulSaves();
+            el('soulSavesPanel')?.classList.remove('hidden');
+        }
+
+        function closeSoulSaves() {
+            el('soulSavesPanel')?.classList.add('hidden');
+        }
+
+        function renderSoulSaves() {
+            const list = el('soulSavesList');
+            if (!list) return;
+            if (appState.soulSaves.length === 0) {
+                list.innerHTML = '<p class="text-center text-purple-600 font-serif mt-10">尚無存檔</p>';
+                return;
+            }
+            list.innerHTML = appState.soulSaves.map(s => {
+                const phaseLabel = s.phase === 'ended' ? '<span class="text-xs text-red-400 ml-1">（已終結）</span>' : '';
+                return `<div class="bg-[#0d0520] border border-purple-900/40 rounded-xl p-4 flex justify-between items-start gap-3">
+                    <div class="flex-1 min-w-0">
+                        <div class="font-serif font-bold text-[#e8d8ff] text-sm truncate">${s.name}${phaseLabel}</div>
+                        <div class="text-xs text-purple-500 mt-1">第 ${s.chapterCount} 章　${s.savedAt}</div>
+                    </div>
+                    <div class="flex gap-2 shrink-0">
+                        <button onclick="loadSoulSave('${s.id}')" class="px-3 py-1.5 bg-purple-800 hover:bg-purple-700 text-purple-100 rounded-lg text-xs font-serif transition-all">讀取</button>
+                        <button onclick="deleteSoulSave('${s.id}')" class="px-3 py-1.5 bg-red-950/60 hover:bg-red-900/60 border border-red-800/60 text-red-400 hover:text-red-300 rounded-lg text-xs font-serif transition-all">刪除</button>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function loadSoulSave(id) {
+            const save = appState.soulSaves.find(s => s.id === id);
+            if (!save) return;
+            if (soulSession.phase !== 'idle' && soulSession.chapters.length > 0) {
+                if (!confirm('目前有進行中的魂穿，讀取存檔將覆蓋現有進度，確定繼續？')) return;
+            }
+            soulSession = { ...JSON.parse(JSON.stringify(save.snapshot)), generating: false };
+            if (soulSession.viewingChapter < 0 && soulSession.chapters.length > 0) {
+                soulSession.viewingChapter = soulSession.chapters.length - 1;
+            }
+            closeSoulSaves();
+            el('soulDeepModal')?.classList.remove('hidden');
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            if (host) el('soulDeepTitle').textContent = `${host.name}${soul?' × '+soul.name:''} · ${soulSession.moment?.title||''}`;
+            el('soulDeepActions')?.classList.remove('hidden');
+            el('soulFigureSidebar')?.classList.remove('hidden');
+            if (soulSession.phase === 'chapters') {
+                el('soulEndBtn')?.classList.remove('hidden');
+            } else {
+                el('soulEndBtn')?.classList.add('hidden');
+            }
+            renderSoulDeep();
+            _soulUpdateChapterNav();
+            _soulUpdateActions();
+        }
+
+        function deleteSoulSave(id) {
+            appState.soulSaves = appState.soulSaves.filter(s => s.id !== id);
+            syncToCloud();
+            renderSoulSaves();
+        }
+
         // ===== 深度魂穿 END =====
 
         function startScenario(id) {
