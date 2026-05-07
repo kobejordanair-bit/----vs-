@@ -4468,11 +4468,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[] };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1 };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[] };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1 };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4482,7 +4482,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[] };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1 };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -4769,22 +4769,18 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             const prompt = hasSource
                 ? `以下是本系統對歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的深度評鑑資料：
 ${momentCtx}
-${sourceCtx}根據以上評鑑資料，描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項30字以內）：
-・思維底色：[從評鑑中提煉的決策風格與思考習慣]
-・核心傾向：[最突出的能力或行為傾向，具體到這個人]
-・性格缺陷：[評鑑揭示的、穿越中會帶來麻煩的性格弱點]
-・認知局限：[因所處時代與個人經歷形成的思維盲點]
-・言行氣質：[他與人互動時外顯的風格——說話的語氣、待人的方式、給旁人留下的第一印象或慣常的行為舉止]
+${sourceCtx}根據以上評鑑資料，描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項35字以內（核心弱點可至50字））：
+・核心驅動力：[從評鑑中提煉——決策與行動的根本動機，他在追求什麼、害怕失去什麼]
+・核心弱點：[評鑑揭示的性格弱點與認知盲點——描述中必須包含「核心驅動力」的某個關鍵詞，說明兩者如何互為因果，即驅動力本身如何製造弱點]
+・外顯氣質：[他與人互動時外顯的風格——說話的語氣、待人的方式、給旁人留下的第一印象或慣常的行為舉止]
 ${lastTrait}
 
 只輸出格式內容。特質必須源自上方評鑑，不得泛泛而談。特質應反映「${soulSession.soulMoment?.title||'此時刻'}」的靈魂狀態。`
                 : `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。${momentCtx}
-請用每項30字以內描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」帶入的核心特質，嚴格按此格式輸出：
-・思維底色：[決策風格與思考習慣]
-・核心傾向：[最突出的能力或行為傾向]
-・性格缺陷：[會帶來麻煩的弱點]
-・認知局限：[因所處時代而形成的思維盲點]
-・言行氣質：[與人互動時外顯的風格——語氣、待人方式、給旁人的第一印象]
+請用每項35字以內（核心弱點可至50字）描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」帶入的核心特質，嚴格按此格式輸出：
+・核心驅動力：[決策與行動的根本動機，他在追求什麼、害怕失去什麼]
+・核心弱點：[性格弱點與認知盲點——必須包含核心驅動力的某個關鍵詞，說明兩者如何互為因果]
+・外顯氣質：[與人互動時外顯的風格——語氣、待人方式、給旁人的第一印象]
 ${lastTrait}
 
 只輸出格式內容，不要其他說明。`;
@@ -4847,10 +4843,10 @@ ${lastTrait}
                 ? `身後記${aftermathNums[aftermathCount] || aftermathCount + 1}`
                 : (chNum === 0 ? '序章' : `第${chNum}章`);
 
-            const older = soulSession.chapters.filter(c => !c.isSummary).slice(0,-2);
-            const recent = soulSession.chapters.filter(c => !c.isSummary).slice(-2);
+            const older = soulSession.chapters.filter(c => !c.isSummary).slice(0,-1);
+            const recent = soulSession.chapters.filter(c => !c.isSummary).slice(-1);
             let ctx = '';
-            if (older.length) ctx += `【前情梗概】\n${older.map(c=>`${c.label}「${c.title}」：${c.content.slice(0,120)}…`).join('\n')}\n\n`;
+            if (soulSession.globalSummary) ctx += `【全局主線摘要】\n${soulSession.globalSummary}\n\n`;
             if (recent.length) ctx += recent.map(c=>`【${c.label}「${c.title}」完整內容】\n${c.content}`).join('\n\n') + '\n\n';
             const figCtx = soulSession.figureStates.length ? `【當前人物動態】\n${soulSession.figureStates.map(f=>`${f.name}(${f.rank})：${f.change}`).join('；')}\n\n` : '';
             const yStr = (y) => y > 0 ? `西元${y}年` : `${Math.abs(y)}年前`;
@@ -4903,16 +4899,6 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 const growthCtx = recentGrowth.length ? `【靈魂近況變化】\n${recentGrowth.map((g,i)=>`第${i+1}次：${g}`).join('\n')}\n\n` : '';
                 const recentTitles = soulSession.chapters.filter(c => !c.isSummary).slice(-2).map(c => c.title).filter(t => t && t !== '…').join('、');
                 const learningCtx = soul && chNum > 0 ? `【學習進度・第${chNum+1}章】靈魂對宿主時代的認識應與在此生活的時間相符：${chNum <= 3 ? '仍有大量盲點，許多事需靠親眼觀察、詢問或閱讀文書才能理解，行動常受制於對這個時代的陌生感。' : chNum <= 10 ? '已通過具體經歷逐步建立基本認識，但較深的領域（典章制度細節、人際派系脈絡、地方實情）仍有觸及不到之處。' : '對這個時代已有相當掌握，但仍保有原生時代的思維底色，遇到真正陌生的情境仍會暴露盲點。'}每個認知突破必須有具體觸發點（一次對話、一份文書、一個親身目睹的事件），不得憑空獲得。學習速度應符合靈魂的思維底色。\n\n` : '';
-                const suggestedType = _getSuggestedChapterType();
-                const typeInstruction = suggestedType
-                    ? `【本章類型要求】必須寫「${suggestedType}」`
-                    : `【本章類型】請根據情節需要選擇最合適的章節類型`;
-                const typeDesc = `章節類型定義：
-- 行動章：有明確衝突、決策與後果，主角直接推動情節發展
-- 靜章：無大事件，主角存在於日常細節中；情緒與關係在瑣事間滲透，節奏放慢
-- 代價章：本章主角的行為或決定帶來問題、損失或新矛盾；「歪打正著」不得在本章出現；代價必須在本章結束時仍然存在，不得即時化解
-- 人物章：以某位配角的視角與處境為主體，主角居次要位置；深入挖掘該配角的內在矛盾或命運轉折`;
-
                 const hostStateCtx = soulSession.hostState
                     ? `【宿主當前心理狀態】${soulSession.hostState}\n本章必須從這個心理狀態出發；若發生轉變，必須有具體觸發事件作為依據。\n\n`
                     : '';
@@ -4926,6 +4912,33 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 const figTensionCtx = figWithTension.length > 0
                     ? `【人物內在矛盾】\n${figWithTension.map(f=>`${f.name}：${f.tension}`).join('；')}\n\n`
                     : '';
+                const hostPhysiqueCtx = soulSession.hostPhysique
+                    ? `【宿主肉體慣性】\n生理限制：${soulSession.hostPhysique.physical}\n情感觸發點：${soulSession.hostPhysique.emotional}\n\n`
+                    : '';
+                const suspectedFigures = (soulSession.shockedFigures || []).filter(name => {
+                    const fs = soulSession.figureStates.find(f => f.name === name);
+                    return fs && (fs.attitude === 'suspicious' || fs.attitude === 'enemy');
+                });
+                const suspectedCtx = suspectedFigures.length > 0
+                    ? `【已起疑心的人物】${suspectedFigures.join('、')}——這些人已察覺宿主異常，正暗中戒備。本章必須在對話或側寫中體現其試探或防範意圖，而非繼續震驚。\n\n`
+                    : '';
+                const suggestedType = _getSuggestedChapterType();
+                const chapterTypeBehavior = suggestedType === '靜章'
+                    ? `【本章敘事節奏強制要求】本章為「靜章」——放緩節奏，不引入新的外部衝突；聚焦於人物關係細節、宿主內心狀態或環境氛圍的深度呈現。`
+                    : suggestedType === '代價章'
+                    ? `【本章敘事節奏強制要求】本章為「代價章」——主角的某個行為或決策必須帶來具體損失或新矛盾；「歪打正著」不得在本章出現；本章結束時問題必須仍然存在，不得被主角化解。`
+                    : suggestedType === '人物章'
+                    ? `【本章敘事節奏強制要求】本章為「人物章」——以某位配角的視角與困境為主體，主角居次要位置；深入挖掘該配角的處境、內在矛盾或命運轉折。`
+                    : `【本章敘事節奏】本章帶入明確的外部衝突與決策，推動情節向前。`;
+                const tensionForceCtx = (soulSession.tensionStaleChapters || 0) >= 5
+                    ? `【張力爆發強制要求】距上次張力解決或爆發已超過五章，本章必須明確觸發或解決 pendingTensions 中的某一條張力——可以是衝突爆發、計謀敗露、或局面發生不可逆的轉變。\n\n`
+                    : '';
+                const growthCooldownNote = chNum === 0
+                    ? `【系統限制】序章為靈魂適應期，本章嚴禁填寫 SOULGROWTH。`
+                    : (soulSession.lastGrowthChapter >= 0 && chNum - soulSession.lastGrowthChapter <= 1)
+                    ? `【系統強制限制】距離上次靈魂轉變過短，本章嚴禁產生任何靈魂層面的成長或大徹大悟，只能專注於處理當下危機。SOULGROWTH 必須留空。`
+                    : '';
+                const firstChapterTags = chNum === 0 ? `\n[HOSTPHYSIQUE]生理限制：{20字以內描述宿主身體對靈魂的生理阻力}｜情感觸發點：{30字以內描述宿主見到特定人物或情境時的本能反應}[/HOSTPHYSIQUE]` : '';
                 const isFirst = chNum === 0;
                 const firstExtra = isFirst
                     ? `\n本章為序章，請充分展開：\n1. 詳述穿越時刻的歷史背景、局勢全貌與暗流\n2. 深入描述宿主當前的處境、可用資源、潛在危機與機遇（請參考上方宿主評鑑資料中對其性格、能力、處境的分析）\n3. 引入4-6位關鍵周遭人物，各有清晰的性格與利益立場\n4. 以一個具體場景或對話開場，帶入沉浸感`
@@ -4939,8 +4952,7 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${typeInstruction}
-${typeDesc}
+${ctx}${figCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${chapterTypeBehavior}
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
@@ -4951,19 +4963,22 @@ ${typeDesc}
 - 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
 - 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」。特質標籤（如「死後清明」「性格缺陷」等）是作者的後設描述，絕對不能出現在正文中，只能透過行為與心理自然呈現
 - 【言行氣質】靈魂的外顯個性必須落實在對話語氣與日常舉止上：他說話是直接還是迂迴、強勢還是克制、熱烈還是冷淡；他面對不同身分的人時態度如何變化；他在場時周圍人會有什麼感受。這些細節應貫穿全章，而非只存在於心理描寫中
+- 【宿主肉體干擾】宿主的肉體記憶與本能偶爾會干擾靈魂的判斷——可以是一個不受控的生理反應、喉嚨哽住的瞬間、手自己做出了靈魂沒有指示的動作、或見到特定人物時湧出的情緒。這種干擾不需要每章都出現，但出現時必須是具體的身體行為而非心理描寫。
 - 【靈魂視角】${soulMomentIsPostDeath ? '靈魂的死後自我意識是極偶爾才浮現的底層感知，可以整章完全不出現。若出現，只能是身體層面的本能反應或一個下意識的動作——一個反常的停頓、一個說了一半就咽回去的字、做了選擇後才有的低沉感。絕不以任何形式讓靈魂向讀者宣告「我又在重蹈覆轍」；絕不讓清明轉化為迴避缺點的能力' : '此靈魂尚活著，帶著「在世執念」穿越，沒有死後的沉澱。他更衝動、更在乎當下利益、更容易被情緒驅動；他的判斷有更明顯的盲點，也有更強烈的求生欲或野心。不要讓他表現得像一個有後見之明的死者；他對自己命運的走向完全無知，只有那個時刻的執念在驅動他'}
 - 【知識邊界】知識來自具體的人生經歷，不來自時代，也不來自身份類別。每個人實際知道什麼，必須從其具體的生平、教育背景、真實人際圈、親身經歷過的事件去推斷——而非套用「帝王應知」「武將應懂」之類的刻板印象。靈魂與宿主各自只擁有其生命軌跡所能真實接觸的知識；「那個時代存在的知識」≠「他個人知道的知識」。不得讓角色展現任何超出其具體人生所能接觸之範圍的資訊。若靈魂帶有超前知識，必須面對當世人無法理解、甚至視為異端的現實阻力
 - 【靈魂成長】此靈魂並非一成不變，但成長從不是線性的。成長若發生，必須有具體代價或新的矛盾隨之而來——迴避了舊錯誤，可能在別處付出代價；放下了某個執念，可能同時失去某樣東西；變得更寬闊，可能同時變得更脆弱。成長可以是真實的，但不接受無摩擦的正向轉變。舊缺陷也可能只是換個形式重現，而非真正被克服
 - 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
-
+${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
 正文結束後換行輸出（系統解析用，勿計入正文）：
 [FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious","tension":"此人當前內在矛盾（選填，一句話；無則省略此欄）"},...][/FIGURES]
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]
-[SOULGROWTH]若本章靈魂有任何內在轉變，一句話描述；無明顯轉變則留空[/SOULGROWTH]
+[SOULGROWTH]若本章靈魂有任何內在轉變，一句話描述；無明顯轉變或系統限制則留空[/SOULGROWTH]
 [CHAPTERTYPE]行動章/靜章/代價章/人物章（填寫本章實際類型）[/CHAPTERTYPE]
 [HOSTSTATE]一句話描述宿主或穿越靈魂此刻的心理狀態（10-20字）[/HOSTSTATE]
 [TENSIONS_ADD]本章新產生的未解決張力（用｜分隔，最多2條；若無則留空）[/TENSIONS_ADD]
-[SHOCKED]本章首次因主角行為感到意外效果震驚的人物（用｜分隔；若無或已在已習慣名單中則留空）[/SHOCKED]`;
+[TENSIONS_OUTCOME]若本章解決或引爆了某條積累張力，填寫：resolved:張力關鍵詞 或 exploded:張力關鍵詞（引爆時必須同時在TENSIONS_ADD填入後續張力）；若無則留空[/TENSIONS_OUTCOME]
+[SHOCKED]本章首次因主角行為感到意外效果震驚的人物（用｜分隔；若無或已在已習慣名單中則留空）[/SHOCKED]
+[GLOBALSUMMARY]更新全局主線摘要（300字以內）：必須優先保留「不可逆的歷史改變」、「配角生死與陣營轉換」、「主角已暴露的底牌」、所有pendingTensions的當前狀態、以及主要figureStates的態度摘要。忽略過場細節。[/GLOBALSUMMARY]${firstChapterTags}`;
             }
 
             soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
@@ -4981,7 +4996,7 @@ ${typeDesc}
                 const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
                 if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
                 const growthM = fullText.match(/\[SOULGROWTH\]([\s\S]*?)\[\/SOULGROWTH\]/);
-                if (growthM) { const g = growthM[1].trim(); if (g) { if (!soulSession.soulGrowth) soulSession.soulGrowth = []; soulSession.soulGrowth.push(g); } }
+                if (growthM) { const g = growthM[1].trim(); if (g && chNum > 0) { if (!soulSession.soulGrowth) soulSession.soulGrowth = []; soulSession.soulGrowth.push(g); soulSession.lastGrowthChapter = chNum; } }
                 const typeM = fullText.match(/\[CHAPTERTYPE\]([\s\S]*?)\[\/CHAPTERTYPE\]/);
                 if (typeM) {
                     const t = typeM[1].trim();
@@ -4999,11 +5014,51 @@ ${typeDesc}
                     soulSession.pendingTensions.push(...newT);
                     if (soulSession.pendingTensions.length > 10) soulSession.pendingTensions = soulSession.pendingTensions.slice(-10);
                 }
+                const tensionsOutcomeM = fullText.match(/\[TENSIONS_OUTCOME\]([\s\S]*?)\[\/TENSIONS_OUTCOME\]/);
+                if (tensionsOutcomeM) {
+                    const outcome = tensionsOutcomeM[1].trim();
+                    if (outcome && (outcome.startsWith('resolved:') || outcome.startsWith('exploded:'))) {
+                        soulSession.tensionStaleChapters = 0;
+                        const keyword = outcome.replace(/^(resolved|exploded):/, '').trim();
+                        if (keyword) {
+                            soulSession.pendingTensions = (soulSession.pendingTensions || []).filter(t => !t.includes(keyword));
+                        }
+                    } else {
+                        soulSession.tensionStaleChapters = (soulSession.tensionStaleChapters || 0) + 1;
+                    }
+                } else {
+                    soulSession.tensionStaleChapters = (soulSession.tensionStaleChapters || 0) + 1;
+                }
                 const shockedM = fullText.match(/\[SHOCKED\]([\s\S]*?)\[\/SHOCKED\]/);
                 if (shockedM) {
                     const shocked = shockedM[1].trim().split('｜').map(n=>n.trim()).filter(n=>n);
                     if (!soulSession.shockedFigures) soulSession.shockedFigures = [];
-                    shocked.forEach(n => { if (!soulSession.shockedFigures.includes(n)) soulSession.shockedFigures.push(n); });
+                    if (!soulSession.pendingTensions) soulSession.pendingTensions = [];
+                    shocked.forEach(n => {
+                        const fs = soulSession.figureStates.find(f => f.name === n);
+                        if (fs && (fs.attitude === 'suspicious' || fs.attitude === 'enemy')) {
+                            const tension = `${n}已察覺宿主異常，正暗中戒備，隨時可能採取試探或防範行動`;
+                            if (!soulSession.pendingTensions.some(t => t.includes(n))) {
+                                soulSession.pendingTensions.push(tension);
+                            }
+                        } else if (!soulSession.shockedFigures.includes(n)) {
+                            soulSession.shockedFigures.push(n);
+                        }
+                    });
+                }
+                const globalSummaryM = fullText.match(/\[GLOBALSUMMARY\]([\s\S]*?)\[\/GLOBALSUMMARY\]/);
+                if (globalSummaryM) soulSession.globalSummary = globalSummaryM[1].trim();
+                if (chNum === 0) {
+                    const hostPhysiqueM = fullText.match(/\[HOSTPHYSIQUE\]([\s\S]*?)\[\/HOSTPHYSIQUE\]/);
+                    if (hostPhysiqueM) {
+                        const raw = hostPhysiqueM[1].trim();
+                        const physMatch = raw.match(/生理限制[：:]\s*(.+?)(?:｜|$)/);
+                        const emoMatch = raw.match(/情感觸發點[：:]\s*(.+?)(?:｜|$)/);
+                        soulSession.hostPhysique = {
+                            physical: physMatch ? physMatch[1].trim() : raw,
+                            emotional: emoMatch ? emoMatch[1].trim() : ''
+                        };
+                    }
                 }
                 soulSession.chapters[chNum].content = _soulCleanText(fullText);
                 soulSession.chapters[chNum].streaming = false;
@@ -5019,7 +5074,7 @@ ${typeDesc}
             _soulRenderChapter(chNum);
         }
 
-        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').replace(/\[CHAPTERTYPE\][\s\S]*?\[\/CHAPTERTYPE\]/g,'').replace(/\[HOSTSTATE\][\s\S]*?\[\/HOSTSTATE\]/g,'').replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g,'').replace(/\[SHOCKED\][\s\S]*?\[\/SHOCKED\]/g,'').trim(); }
+        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').replace(/\[CHAPTERTYPE\][\s\S]*?\[\/CHAPTERTYPE\]/g,'').replace(/\[HOSTSTATE\][\s\S]*?\[\/HOSTSTATE\]/g,'').replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g,'').replace(/\[TENSIONS_OUTCOME\][\s\S]*?\[\/TENSIONS_OUTCOME\]/g,'').replace(/\[SHOCKED\][\s\S]*?\[\/SHOCKED\]/g,'').replace(/\[GLOBALSUMMARY\][\s\S]*?\[\/GLOBALSUMMARY\]/g,'').replace(/\[HOSTPHYSIQUE\][\s\S]*?\[\/HOSTPHYSIQUE\]/g,'').trim(); }
 
         function _soulShowChapterShell(idx) {
             const c = soulSession.chapters[idx];
