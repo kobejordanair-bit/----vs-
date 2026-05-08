@@ -766,6 +766,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <!-- RegExp button for Radar regeneration -->
                     <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
                     <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
+                    <button id="regenSoulEssenceBtn" onclick="forceRegenerateSoulEssence()" class="hidden text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新生成靈魂內核"><i class="fa-solid fa-rotate-right"></i> 重生內核</button>
                     <button id="extractScenesBtn" onclick="extractScenesFromCurrentTab()" class="hidden text-xs bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="從評鑑內容提取名場面"><i class="fa-solid fa-fire"></i> 提取名場面</button>
                     <button id="exportCardBtn" onclick="exportCard()" class="hidden text-xs bg-[#1e6b4a] hover:bg-[#145238] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="匯出評鑑卡片為圖片"><i class="fa-solid fa-image"></i> 匯出卡片</button>
                     <button id="clearMemoryBtn" onclick="clearCurrentMemory()" class="hidden text-xs bg-[#7f1d1d] hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider">忘卻</button>
@@ -775,6 +776,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <div id="evalTabBar" class="hidden bg-[#252220] border-b border-[#3a3530] flex shrink-0 px-2">
                 <button onclick="setEvalTab('review')" id="eval-tab-review" class="eval-tab eval-tab-active flex items-center gap-1.5"><i class="fa-solid fa-scroll text-[#d4af37]"></i> 賞析</button>
                 <button onclick="setEvalTab('calibrate')" id="eval-tab-calibrate" class="eval-tab flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-chart text-purple-400"></i> 校準評級</button>
+                <button onclick="setEvalTab('soul-essence')" id="eval-tab-soul-essence" class="eval-tab flex items-center gap-1.5"><i class="fa-solid fa-ghost text-purple-400"></i> 靈魂內核</button>
             </div>
             <div id="chatContainer" class="hidden flex flex-col flex-1 min-h-0 bg-[#fcfaf5] overflow-hidden relative">
                 <div id="chatHistory" class="flex-1 overflow-y-auto p-6 flex flex-col gap-4 custom-scrollbar z-10 overscroll-contain"></div>
@@ -1805,6 +1807,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 el('clearMemoryBtn').classList.remove('hidden');
                 el('regenStatsBtn').classList.add('hidden');
                 el('regenDeepBtn').classList.add('hidden');
+                el('regenSoulEssenceBtn').classList.add('hidden');
                 el('exportCardBtn').classList.add('hidden');
             } else {
                 el('chatContainer').classList.add('hidden');
@@ -2582,8 +2585,105 @@ ${allNames}
             el('modalContent').innerHTML = '';
             el('loadingState').classList.add('hidden');
             el('extractScenesBtn').classList.add('hidden');
+            el('regenSoulEssenceBtn').classList.add('hidden');
             if (tab === 'review') _loadReviewContent(currentAnalysisId);
+            else if (tab === 'soul-essence') _loadSoulEssenceContent(currentAnalysisId);
             else _loadCalibrationContent(currentAnalysisId);
+        }
+
+        function forceRegenerateSoulEssence() {
+            if (!currentAnalysisId) return;
+            delete (appState.modifiedLegends[currentAnalysisId] || {}).soulEssence;
+            _loadSoulEssenceContent(currentAnalysisId);
+        }
+
+        async function _loadSoulEssenceContent(id) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+            const cached = appState.modifiedLegends[id]?.soulEssence;
+            if (cached) {
+                el('loadingState').classList.add('hidden');
+                el('regenSoulEssenceBtn').classList.remove('hidden');
+                el('modalContent').innerHTML = `
+                    <div class="mb-4">
+                        <p class="text-xs text-purple-600 font-serif mb-3">此人物的靈魂精神內核，供魂穿使用。可手動編輯後儲存。</p>
+                        <textarea id="soulEssenceTextarea" class="w-full min-h-[420px] bg-[#fafaf8] border border-[#d6d3c9] rounded-lg p-4 font-serif text-sm text-[#2c2826] focus:outline-none focus:border-purple-400 resize-y leading-relaxed">${escapeHtml(cached)}</textarea>
+                        <button onclick="_saveSoulEssence('${id}')" class="mt-3 text-sm bg-purple-700 hover:bg-purple-800 text-white px-5 py-2 rounded font-serif transition-colors"><i class="fa-solid fa-floppy-disk mr-1"></i> 儲存修改</button>
+                    </div>`;
+                return;
+            }
+            el('modalContent').innerHTML = `
+                <div class="flex flex-col items-center justify-center py-20 gap-6">
+                    <i class="fa-solid fa-ghost text-5xl text-purple-400 opacity-60"></i>
+                    <p class="text-[#57534e] font-serif text-sm">尚未生成此人物的靈魂內核</p>
+                    <button onclick="_generateSoulEssence('${id}')" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2.5 rounded-lg font-serif text-sm transition-colors"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>生成靈魂內核</button>
+                </div>`;
+        }
+
+        function _saveSoulEssence(id) {
+            const ta = el('soulEssenceTextarea');
+            if (!ta) return;
+            if (!appState.modifiedLegends[id]) appState.modifiedLegends[id] = {};
+            appState.modifiedLegends[id].soulEssence = ta.value.trim();
+            syncToCloud();
+            const btn = ta.nextElementSibling;
+            if (btn) { btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> 已儲存'; setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1"></i> 儲存修改'; }, 1500); }
+        }
+
+        async function _generateSoulEssence(id) {
+            const legend = legendsData.find(l => l.id === id);
+            if (!legend) return;
+            el('modalContent').innerHTML = `
+                <div class="flex flex-col items-center justify-center py-20 gap-4">
+                    <div class="flex gap-2">${[0,0.2,0.4].map(d=>`<div class="w-2.5 h-2.5 bg-purple-400 rounded-full animate-bounce" style="animation-delay:${d}s"></div>`).join('')}</div>
+                    <p class="text-purple-500 font-serif text-sm animate-pulse">正在解析${escapeHtml(legend.name)}的靈魂內核…</p>
+                </div>`;
+            const mod = appState.modifiedLegends[id] || {};
+            let sourceCtx = '';
+            if (mod.analysis) sourceCtx += `【賞析】\n${mod.analysis}\n\n`;
+            if (mod.deepAnalysis) sourceCtx += `【深度評鑑】\n${mod.deepAnalysis.slice(0, 2000)}\n\n`;
+            const chatMsgs = (appState.chatHistories[id] || []).filter(m => m.role === 'model').slice(-3).map(m => m.content.slice(0, 400)).join('\n\n');
+            if (chatMsgs) sourceCtx += `【對話摘錄】\n${chatMsgs}\n\n`;
+            const sourceBlock = sourceCtx.trim()
+                ? `以下是關於「${legend.name}」（${legend.title||''}，${legend.dynasty||''}）的相關評鑑資料：\n\n${sourceCtx}`
+                : `歷史人物「${legend.name}」（${legend.title||''}，${legend.dynasty||''}）。請純靠史實推斷。`;
+            const prompt = `${sourceBlock}
+你是一位精通人物心理分析的資深作家，任務是還原這位歷史人物作為「活生生的人」的內在運作方式——不是評價功過，而是描述他如何思考、說話、感受、犯錯。
+
+請依以下格式輸出，所有描述必須從具體歷史行為提煉，嚴禁使用空泛形容詞（「深謀遠慮」「性格剛直」之類一律禁止）：
+
+【說話邏輯】
+他習慣用什麼方式說服人（類比/威壓/讓步再反擊/直接亮底牌）；他話語裡習慣性的潛台詞是什麼；他沉默時通常意味著什麼。（80字以內）
+
+【壓力反應】
+遭遇危機或出乎意料的逆境時，第一反應是什麼。必須點名至少一個具體歷史事件作為依據。（80字以內）
+
+【核心驅動】
+他真正在追求的是什麼；他會為什麼事押上所有；對什麼本能地無法讓步——用具體行為而非抽象價值觀描述。（80字以內）
+
+【慣性盲點】
+他一生重複的那個心理陷阱——他最大的優點以另一種方式呈現時製造的破壞。不是道德批判，是結構性的描述。（80字以內）
+
+【情感結構】
+他如何對待真正親近的人；他是否懂得依賴；情感是熱烈外顯還是深藏不露；他最脆弱的時刻是什麼樣子。（80字以內）
+
+【參照系】
+他習慣用什麼領域作為思考的參照系（一句通則）；當遇到陌生事物時最可能把它類比成他人生經驗裡的什麼（括號內舉一個具體例子）。（80字以內）
+
+【內在裂縫】
+指出以上六項中哪兩項之間存在最根本的內在衝突，說明這個衝突在壓力下會把他推向什麼樣的具體行為或決策。
+
+只輸出以上七個欄位，不要其他說明或評論。`;
+            try {
+                const text = await callGemini(prompt, false);
+                if (!appState.modifiedLegends[id]) appState.modifiedLegends[id] = {};
+                appState.modifiedLegends[id].soulEssence = text.trim();
+                syncToCloud();
+                _loadSoulEssenceContent(id);
+                el('regenSoulEssenceBtn').classList.remove('hidden');
+            } catch(e) {
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span><br><button onclick="_generateSoulEssence('${id}')" class="mt-4 text-sm bg-purple-700 text-white px-4 py-2 rounded font-serif">重試</button></div>`;
+            }
         }
 
         // 賞析 tab 內容載入
@@ -3233,9 +3333,10 @@ if(s1 && s2) {
             el('chatHistory').scrollTop = el('chatHistory').scrollHeight;
 
             const legend = legendsData.find(l => l.id === targetId);
+            const soulEssenceForChat = appState.modifiedLegends[targetId]?.soulEssence || '';
             const systemPrompt = `你現在是${legend.name}（${legend.title}）。
             生平簡介：${legend.desc}。
-            性格標籤：${legend.tag}。
+            性格標籤：${legend.tag}。${soulEssenceForChat ? `\n\n【靈魂內核——以下是你作為「活生生的人」的內在運作方式，請用它來塑造你的說話邏輯、壓力反應與情感表達，但絕不要在對話中直接引用這些標籤文字】\n${soulEssenceForChat}` : ''}
             請完全沉浸在這個歷史人物的角色中，用符合其時代和性格的語氣（可以使用半文半白，但要讓現代人聽得懂）回答使用者的問題。
             切記：你不知道你死後很久才發生的現代科技（除非你是穿越者），保持歷史沉浸感。嚴禁使用制式化AI開場白。`;
 
@@ -4657,6 +4758,20 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         }
 
         function _soulSelectSoul(id) {
+            const essence = appState.modifiedLegends[id]?.soulEssence;
+            if (!essence) {
+                const soul = legendsData.find(l => l.id === id);
+                const name = soul?.name || '';
+                el('soulDeepContent').innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-full gap-5 text-center px-8">
+                        <i class="fa-solid fa-ghost text-5xl text-purple-600 opacity-60"></i>
+                        <p class="text-purple-300 font-serif text-base">「${escapeHtml(name)}」尚未建立靈魂內核</p>
+                        <p class="text-purple-600 font-serif text-xs leading-relaxed max-w-xs">魂穿前必須先生成靈魂內核，讓 AI 能準確呈現此人的說話邏輯、壓力反應與情感結構。</p>
+                        <button onclick="openModal('${id}');setTimeout(()=>setEvalTab('soul-essence'),300)" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2.5 rounded-lg font-serif text-sm transition-colors"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>前往生成靈魂內核</button>
+                        <button onclick="soulSession.phase='confirm';renderSoulDeep()" class="text-xs text-purple-700 hover:text-purple-400 font-serif transition-colors">← 返回</button>
+                    </div>`;
+                return;
+            }
             soulSession.soulId = id;
             soulSession.soulTraits = null;
             soulSession.soulMoment = null;
@@ -4722,41 +4837,10 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             if (!soul) return;
 
             const display = el('soulTraitsDisplay');
-
-            // 收集這個人物已有的評鑑資料
-            let mod = appState.modifiedLegends[soulId] || {};
-            let deepAnalysis = mod.deepAnalysis || '';
-            let analysis = mod.analysis || '';
-            const chatMsgs = (appState.chatHistories[soulId] || [])
-                .filter(m => m.role === 'model')
-                .slice(-3)
-                .map(m => m.content.slice(0, 400))
-                .join('\n\n');
-
-            // 若無任何評鑑資料，先自動跑賞析
-            if (!analysis && !deepAnalysis) {
-                if (display) display.textContent = '正在補充賞析資料…';
-                try {
-                    const roleNote = soul.type === 'emperor' ? '純粹根據「作為帝王」的表現（統御、決策、國運）分析' : soul.type === 'general' ? '純粹根據「作為將領」的表現（戰略、戰術、治軍）分析' : '純粹根據「作為臣子」的表現（施政、輔佐、權謀）分析';
-                    const analysisPrompt = `請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${soul.name}（${soul.title||''}）。\n\n【分析準則】：\n1. 拒絕刻板印象：主動挑戰主流史觀，至少提出一個反常識的論點並說明依據。\n2. 多維度分析：結合史料、當時局勢以及人心（心理動機），引用具體事件、年份、地名。\n3. 心理動機優先：深入分析每個重大決策背後的真實心理動機，還原「人」的複雜性。\n4. 時代局限性：嚴格區分哪些失敗是時代局限，哪些是個人能力問題。\n5. 角色本位：${roleNote}。\n\n請依此撰寫以下章節：\n1. 【歷史局勢與定位】：置身於當時的時空背景，他面對的是什麼局，又在歷史長河中站什麼位置。\n2. 【深度功過剖析】：具體事例分析，探討其決策背後的深層邏輯與得失。\n3. 【人性與性格側寫】：還原其作為「人」的真實面貌與心理特質。\n4. 【如果生在現代】：推測他適合什麼職業，如何處世。`;
-                    const analysisText = await callGemini(analysisPrompt, false);
-                    if (analysisText && soulSession.soulId === soulId) {
-                        if (!appState.modifiedLegends[soulId]) appState.modifiedLegends[soulId] = {};
-                        appState.modifiedLegends[soulId].analysis = analysisText;
-                        mod = appState.modifiedLegends[soulId];
-                        analysis = analysisText;
-                        syncToCloud();
-                    }
-                } catch(e) { /* 賞析失敗時繼續，用無源版本生成特質 */ }
-            }
-
-            // 組合評鑑素材（優先賞析，深度評鑑作為補充，再其次對話）
-            let sourceCtx = '';
-            if (analysis) sourceCtx += `【賞析】\n${analysis}\n\n`;
-            if (deepAnalysis) sourceCtx += `【深度評鑑補充】\n${deepAnalysis.slice(0, 1500)}\n\n`;
-            if (chatMsgs) sourceCtx += `【賞析對話摘錄】\n${chatMsgs}\n\n`;
-
             if (display) display.textContent = '正在解析靈魂特質…';
+
+            const mod = appState.modifiedLegends[soulId] || {};
+            const soulEssence = mod.soulEssence || '';
 
             const isPostDeath = soulSession.soulMoment?.isPostDeath ?? true;
             const momentCtx = soulSession.soulMoment
@@ -4765,17 +4849,33 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             const lastTrait = isPostDeath
                 ? `・死後清明：[死亡讓這個靈魂看清了什麼——但這份清明是沉重的自我意識，不是解脫。他知道自己的哪個缺陷最終葬送了自己，卻未必能在下一次選擇時克服它]`
                 : `・在世執念：[這個時刻他心中最強烈的念頭或未竟之事——這份執念會如何驅動他在宿主身上的選擇，以及他最不願承認的恐懼或盲點]`;
+
+            let sourceCtx = '';
+            if (soulEssence) {
+                // 優先用靈魂內核
+                sourceCtx = `【靈魂內核】\n${soulEssence}\n\n`;
+            } else {
+                // 回退到賞析資料
+                const analysis = mod.analysis || '';
+                const deepAnalysis = mod.deepAnalysis || '';
+                const chatMsgs = (appState.chatHistories[soulId] || []).filter(m => m.role === 'model').slice(-3).map(m => m.content.slice(0, 400)).join('\n\n');
+                if (analysis) sourceCtx += `【賞析】\n${analysis}\n\n`;
+                if (deepAnalysis) sourceCtx += `【深度評鑑補充】\n${deepAnalysis.slice(0, 1500)}\n\n`;
+                if (chatMsgs) sourceCtx += `【賞析對話摘錄】\n${chatMsgs}\n\n`;
+            }
+
             const hasSource = sourceCtx.trim().length > 0;
+            const sourceLabel = soulEssence ? '靈魂內核' : '評鑑資料';
             const prompt = hasSource
-                ? `以下是本系統對歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的深度評鑑資料：
+                ? `以下是歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的${sourceLabel}：
 ${momentCtx}
-${sourceCtx}根據以上評鑑資料，描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項35字以內（核心弱點可至50字））：
-・核心驅動力：[從評鑑中提煉——決策與行動的根本動機，他在追求什麼、害怕失去什麼]
-・核心弱點：[評鑑揭示的性格弱點與認知盲點——描述中必須包含「核心驅動力」的某個關鍵詞，說明兩者如何互為因果，即驅動力本身如何製造弱點]
+${sourceCtx}根據以上資料，描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項35字以內，核心弱點可至50字）：
+・核心驅動力：[從資料中提煉——決策與行動的根本動機，他在追求什麼、害怕失去什麼]
+・核心弱點：[資料揭示的性格弱點與認知盲點——描述中必須包含「核心驅動力」的某個關鍵詞，說明兩者如何互為因果，即驅動力本身如何製造弱點]
 ・外顯氣質：[他與人互動時外顯的風格——說話的語氣、待人的方式、給旁人留下的第一印象或慣常的行為舉止]
 ${lastTrait}
 
-只輸出格式內容。特質必須源自上方評鑑，不得泛泛而談。特質應反映「${soulSession.soulMoment?.title||'此時刻'}」的靈魂狀態。`
+只輸出格式內容。特質必須源自上方資料，不得泛泛而談。特質應反映「${soulSession.soulMoment?.title||'此時刻'}」的靈魂狀態。`
                 : `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。${momentCtx}
 請用每項35字以內（核心弱點可至50字）描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」帶入的核心特質，嚴格按此格式輸出：
 ・核心驅動力：[決策與行動的根本動機，他在追求什麼、害怕失去什麼]
@@ -4875,6 +4975,8 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
             } else {
                 const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
+                const soulEssenceForChapter = soul ? (appState.modifiedLegends[soulSession.soulId]?.soulEssence || '') : '';
+                const soulEssenceCtx = soulEssenceForChapter ? `【靈魂內核——作者寫作參考，絕不能讓標籤文字出現在正文中】\n${soulEssenceForChapter}\n\n` : '';
                 const soulMomentIsPostDeath = soulSession.soulMoment?.isPostDeath ?? true;
                 const soulMomentDesc = soulSession.soulMoment
                     ? `靈魂時刻：${soulSession.soulMoment.title}（${soulMomentIsPostDeath ? '死後' : '在世'}）——${soulSession.soulMoment.desc}\n`
@@ -4952,7 +5054,7 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${chapterTypeBehavior}
+${ctx}${figCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${chapterTypeBehavior}
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
