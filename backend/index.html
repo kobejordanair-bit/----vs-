@@ -4569,11 +4569,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1 };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1 };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1 };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1 };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4583,7 +4583,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1 };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1 };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -5035,6 +5035,10 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 const tensionForceCtx = (soulSession.tensionStaleChapters || 0) >= 5
                     ? `【張力爆發強制要求】距上次張力解決或爆發已超過五章，本章必須明確觸發或解決 pendingTensions 中的某一條張力——可以是衝突爆發、計謀敗露、或局面發生不可逆的轉變。\n\n`
                     : '';
+                const costStale = soulSession.lastCostChapter < 0 ? chNum : chNum - soulSession.lastCostChapter;
+                const costForceCtx = chNum > 2 && costStale >= 4
+                    ? `【強制代價要求】主角已連續${costStale}章算計成功卻無真實代價。本章必須有一個主角主動做出的決策，在達成目標的同時帶來他沒有預料到的具體損失——某人因此死亡、某個盟友永久離去、或某張底牌被迫暴露，不得以「小挫折」或「口舌之輸」代替。\n\n`
+                    : '';
                 const growthCooldownNote = chNum === 0
                     ? `【系統限制】序章為靈魂適應期，本章嚴禁填寫 SOULGROWTH。`
                     : (soulSession.lastGrowthChapter >= 0 && chNum - soulSession.lastGrowthChapter <= 1)
@@ -5054,7 +5058,7 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${chapterTypeBehavior}
+${ctx}${figCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${costForceCtx}${chapterTypeBehavior}
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
@@ -5065,7 +5069,11 @@ ${ctx}${figCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${ho
 - 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
 - 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」。特質標籤（如「死後清明」「性格缺陷」等）是作者的後設描述，絕對不能出現在正文中，只能透過行為與心理自然呈現
 - 【言行氣質】靈魂的外顯個性必須落實在對話語氣與日常舉止上：他說話是直接還是迂迴、強勢還是克制、熱烈還是冷淡；他面對不同身分的人時態度如何變化；他在場時周圍人會有什麼感受。這些細節應貫穿全章，而非只存在於心理描寫中
-- 【宿主肉體干擾】宿主的肉體記憶與本能偶爾會干擾靈魂的判斷——可以是一個不受控的生理反應、喉嚨哽住的瞬間、手自己做出了靈魂沒有指示的動作、或見到特定人物時湧出的情緒。這種干擾不需要每章都出現，但出現時必須是具體的身體行為而非心理描寫。
+- 【已識之人】上方「已登場人物」中所有人物，主角已與之有過真實互動。他們出場時，對話語氣、稱謂方式、信任或警戒程度必須體現累積關係的重量；禁止以「謹慎打量」「小心試探」等初見語氣描寫已有多次互動的人物；主角也不必重新評估這些人的基本立場，除非本章發生了改變立場的具體事件
+- 【宿主肉體雙向性】宿主的肉體記憶與本能，有時干擾靈魂的判斷（不受控的生理反應、手自己做了靈魂沒指示的動作），有時卻意外提供幫助——一個本能說對的話、一段肌肉記憶讓靈魂化解了陌生局面、對某人的直覺信任帶來意料外的盟友。這種雙向互動應隨章節演化：靈魂對宿主本能從早期的排斥，逐漸轉向某種謹慎的利用或不情願的接納。出現時必須是具體的身體行為，而非心理描寫
+- 【計謀解說禁令】任何計謀或決策的成效，禁止在事後以主角內心獨白或旁白直接說明邏輯——不得出現「他成功地讓對方相信了……」「某人突然意識到……的用意」之類的解說句。只能透過對方的行為變化、沉默、或下一個動作讓讀者自行感知計謀是否奏效
+- 【參照系節制】靈魂以原生時代框架理解眼前局勢是真實且有力的設計，但每章至多呈現一次，且絕不由主角在內心獨白中明確說出「此人如同某某」——只能體現在他對局勢的判斷邏輯與行動選擇上，讓讀者自行感知那個框架的影子。遭遇真正陌生的事物時（無法類比的技術、制度、人際結構），必須有認知震撼的瞬間，而非立刻套入舊框架
+- 【配角主動時刻】每3章內，至少有一個場景讓某位配角採取了主角完全沒有預料到的主動行動，迫使主角轉為被動回應——這個行動必須源自該配角自身的利益邏輯或情感驅動，而非為了映襯主角的聰明而存在；主角在當下可以沒有立即的應對方案
 - 【靈魂視角】${soulMomentIsPostDeath ? '靈魂的死後自我意識是極偶爾才浮現的底層感知，可以整章完全不出現。若出現，只能是身體層面的本能反應或一個下意識的動作——一個反常的停頓、一個說了一半就咽回去的字、做了選擇後才有的低沉感。絕不以任何形式讓靈魂向讀者宣告「我又在重蹈覆轍」；絕不讓清明轉化為迴避缺點的能力' : '此靈魂尚活著，帶著「在世執念」穿越，沒有死後的沉澱。他更衝動、更在乎當下利益、更容易被情緒驅動；他的判斷有更明顯的盲點，也有更強烈的求生欲或野心。不要讓他表現得像一個有後見之明的死者；他對自己命運的走向完全無知，只有那個時刻的執念在驅動他'}
 - 【知識邊界】知識來自具體的人生經歷，不來自時代，也不來自身份類別。每個人實際知道什麼，必須從其具體的生平、教育背景、真實人際圈、親身經歷過的事件去推斷——而非套用「帝王應知」「武將應懂」之類的刻板印象。靈魂與宿主各自只擁有其生命軌跡所能真實接觸的知識；「那個時代存在的知識」≠「他個人知道的知識」。不得讓角色展現任何超出其具體人生所能接觸之範圍的資訊。若靈魂帶有超前知識，必須面對當世人無法理解、甚至視為異端的現實阻力
 - 【靈魂成長】此靈魂並非一成不變，但成長從不是線性的。成長若發生，必須有具體代價或新的矛盾隨之而來——迴避了舊錯誤，可能在別處付出代價；放下了某個執念，可能同時失去某樣東西；變得更寬闊，可能同時變得更脆弱。成長可以是真實的，但不接受無摩擦的正向轉變。舊缺陷也可能只是換個形式重現，而非真正被克服
@@ -5079,6 +5087,7 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
 [HOSTSTATE]一句話描述宿主或穿越靈魂此刻的心理狀態（10-20字）[/HOSTSTATE]
 [TENSIONS_ADD]本章新產生的未解決張力（用｜分隔，最多2條；若無則留空）[/TENSIONS_ADD]
 [TENSIONS_OUTCOME]若本章解決或引爆了某條積累張力，填寫：resolved:張力關鍵詞 或 exploded:張力關鍵詞（引爆時必須同時在TENSIONS_ADD填入後續張力）；若無則留空[/TENSIONS_OUTCOME]
+[COST_PAID]若本章主角的某個決策在成功的同時帶來了真實的不可逆代價（人員死亡、盟友離去、底牌暴露），一句話描述這個代價；若無則留空[/COST_PAID]
 [SHOCKED]本章首次因主角行為感到意外效果震驚的人物（用｜分隔；若無或已在已習慣名單中則留空）[/SHOCKED]
 [GLOBALSUMMARY]更新全局主線摘要（400字以內）：專注記錄①不可逆的歷史事件與局勢轉變②主角已暴露的底牌與行動後果③配角生死與陣營轉換④所有pendingTensions的當前狀態。人際關係由FIGURES的summary欄位負責，此處不重複。忽略過場細節與日常互動。[/GLOBALSUMMARY]${firstChapterTags}`;
             }
@@ -5094,7 +5103,7 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
                     _soulRenderChapter(chNum);
                 });
                 const figM = fullText.match(/\[FIGURES\]([\s\S]*?)\[\/FIGURES\]/);
-                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) soulSession.figureStates[i]=f; else soulSession.figureStates.push(f); }); } catch(e){} }
+                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) { const old = soulSession.figureStates[i]; soulSession.figureStates[i] = { ...f, summary: f.summary || old.summary }; } else soulSession.figureStates.push(f); }); } catch(e){} }
                 const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
                 if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
                 const growthM = fullText.match(/\[SOULGROWTH\]([\s\S]*?)\[\/SOULGROWTH\]/);
@@ -5148,6 +5157,8 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
                         }
                     });
                 }
+                const costPaidM = fullText.match(/\[COST_PAID\]([\s\S]*?)\[\/COST_PAID\]/);
+                if (costPaidM && costPaidM[1].trim()) soulSession.lastCostChapter = chNum;
                 const globalSummaryM = fullText.match(/\[GLOBALSUMMARY\]([\s\S]*?)\[\/GLOBALSUMMARY\]/);
                 if (globalSummaryM) soulSession.globalSummary = globalSummaryM[1].trim();
                 if (chNum === 0) {
@@ -5176,7 +5187,7 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
             _soulRenderChapter(chNum);
         }
 
-        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').replace(/\[CHAPTERTYPE\][\s\S]*?\[\/CHAPTERTYPE\]/g,'').replace(/\[HOSTSTATE\][\s\S]*?\[\/HOSTSTATE\]/g,'').replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g,'').replace(/\[TENSIONS_OUTCOME\][\s\S]*?\[\/TENSIONS_OUTCOME\]/g,'').replace(/\[SHOCKED\][\s\S]*?\[\/SHOCKED\]/g,'').replace(/\[GLOBALSUMMARY\][\s\S]*?\[\/GLOBALSUMMARY\]/g,'').replace(/\[HOSTPHYSIQUE\][\s\S]*?\[\/HOSTPHYSIQUE\]/g,'').trim(); }
+        function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').replace(/\[CHAPTERTYPE\][\s\S]*?\[\/CHAPTERTYPE\]/g,'').replace(/\[HOSTSTATE\][\s\S]*?\[\/HOSTSTATE\]/g,'').replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g,'').replace(/\[TENSIONS_OUTCOME\][\s\S]*?\[\/TENSIONS_OUTCOME\]/g,'').replace(/\[COST_PAID\][\s\S]*?\[\/COST_PAID\]/g,'').replace(/\[SHOCKED\][\s\S]*?\[\/SHOCKED\]/g,'').replace(/\[GLOBALSUMMARY\][\s\S]*?\[\/GLOBALSUMMARY\]/g,'').replace(/\[HOSTPHYSIQUE\][\s\S]*?\[\/HOSTPHYSIQUE\]/g,'').trim(); }
 
         function _soulShowChapterShell(idx) {
             const c = soulSession.chapters[idx];
