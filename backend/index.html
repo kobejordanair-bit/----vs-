@@ -4948,7 +4948,7 @@ ${lastTrait}
             let ctx = '';
             if (soulSession.globalSummary) ctx += `【全局主線摘要】\n${soulSession.globalSummary}\n\n`;
             if (recent.length) ctx += recent.map(c=>`【${c.label}「${c.title}」完整內容】\n${c.content}`).join('\n\n') + '\n\n';
-            const figCtx = soulSession.figureStates.length ? `【當前人物動態】\n${soulSession.figureStates.map(f=>`${f.name}(${f.rank})：${f.change}`).join('；')}\n\n` : '';
+            const figCtx = soulSession.figureStates.length ? `【已登場人物（主角均已接觸過，不得重新介紹）】\n${soulSession.figureStates.map(f=>`${f.name}(${f.rank})${f.summary ? `｜累積關係：${f.summary}` : ''}｜本章動態：${f.change||'待定'}`).join('\n')}\n\n` : '';
             const yStr = (y) => y > 0 ? `西元${y}年` : `${Math.abs(y)}年前`;
 
             let prompt;
@@ -5072,7 +5072,7 @@ ${ctx}${figCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${ho
 - 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
 ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
 正文結束後換行輸出（系統解析用，勿計入正文）：
-[FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious","tension":"此人當前內在矛盾（選填，一句話；無則省略此欄）"},...][/FIGURES]
+[FIGURES][{"name":"人名","rank":"評級","summary":"與主角的累積關係摘要（首次見面至今，15字以內；若本章為初次登場則寫「本章初登場：一句話描述初次互動」）","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious","tension":"此人當前內在矛盾（選填，一句話；無則省略此欄）"},...][/FIGURES]
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]
 [SOULGROWTH]若本章靈魂有任何內在轉變，一句話描述；無明顯轉變或系統限制則留空[/SOULGROWTH]
 [CHAPTERTYPE]行動章/靜章/代價章/人物章（填寫本章實際類型）[/CHAPTERTYPE]
@@ -5080,7 +5080,7 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
 [TENSIONS_ADD]本章新產生的未解決張力（用｜分隔，最多2條；若無則留空）[/TENSIONS_ADD]
 [TENSIONS_OUTCOME]若本章解決或引爆了某條積累張力，填寫：resolved:張力關鍵詞 或 exploded:張力關鍵詞（引爆時必須同時在TENSIONS_ADD填入後續張力）；若無則留空[/TENSIONS_OUTCOME]
 [SHOCKED]本章首次因主角行為感到意外效果震驚的人物（用｜分隔；若無或已在已習慣名單中則留空）[/SHOCKED]
-[GLOBALSUMMARY]更新全局主線摘要（300字以內）：必須優先保留「不可逆的歷史改變」、「配角生死與陣營轉換」、「主角已暴露的底牌」、所有pendingTensions的當前狀態、以及主要figureStates的態度摘要。忽略過場細節。[/GLOBALSUMMARY]${firstChapterTags}`;
+[GLOBALSUMMARY]更新全局主線摘要（400字以內）：專注記錄①不可逆的歷史事件與局勢轉變②主角已暴露的底牌與行動後果③配角生死與陣營轉換④所有pendingTensions的當前狀態。人際關係由FIGURES的summary欄位負責，此處不重複。忽略過場細節與日常互動。[/GLOBALSUMMARY]${firstChapterTags}`;
             }
 
             soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
