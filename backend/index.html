@@ -4934,6 +4934,24 @@ ${lastTrait}
             return null;
         }
 
+        function _getChapterNarrativeGoal(chNum, suggestedType, pendingTensions, figureStates) {
+            if (chNum === 0) return '建立穿越初始局勢：介紹宿主處境、引入關鍵人物、讓靈魂首次面對時代衝擊的現實阻力';
+            const goals = [];
+            if (pendingTensions && pendingTensions.length > 0) {
+                goals.push(`觸及並推進：「${pendingTensions[0]}」`);
+            }
+            if (suggestedType === '代價章') {
+                goals.push('讓主角的某個決策帶來不可逆的具體代價，章末代價仍持續影響局勢，不得被主角化解');
+            } else if (suggestedType === '靜章') {
+                goals.push('深入一段人物關係或宿主內心狀態，不引入新外部衝突，讓已有的張力在靜默中積壓');
+            } else if (suggestedType === '人物章') {
+                const targetFig = figureStates.find(f => f.tension) || figureStates.find(f => f.attitude !== 'ally');
+                goals.push(`以${targetFig?.name || '某位配角'}的處境為核心，探索其面對主角影響後的選擇困境，主角居次要位置`);
+            }
+            if (goals.length === 0) goals.push('推進當前最緊迫的情節線，讓某個既有局勢發生不可逆的新進展');
+            return goals.join('；並且，');
+        }
+
         async function _generateSoulChapter() {
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
@@ -5027,13 +5045,15 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                     ? `【已起疑心的人物】${suspectedFigures.join('、')}——這些人已察覺宿主異常，正暗中戒備。本章必須在對話或側寫中體現其試探或防範意圖，而非繼續震驚。\n\n`
                     : '';
                 const suggestedType = _getSuggestedChapterType();
-                const chapterTypeBehavior = suggestedType === '靜章'
-                    ? `【本章敘事節奏強制要求】本章為「靜章」——放緩節奏，不引入新的外部衝突；聚焦於人物關係細節、宿主內心狀態或環境氛圍的深度呈現。`
+                const chapterTypeLabel = suggestedType || '行動章';
+                const chapterTypeDesc = suggestedType === '靜章'
+                    ? '放緩節奏，不引入新的外部衝突；聚焦於人物關係細節、宿主內心狀態或環境氛圍的深度呈現'
                     : suggestedType === '代價章'
-                    ? `【本章敘事節奏強制要求】本章為「代價章」——主角的某個行為或決策必須帶來具體損失或新矛盾；「歪打正著」不得在本章出現；本章結束時問題必須仍然存在，不得被主角化解。`
+                    ? '主角的某個行為或決策必須帶來具體損失或新矛盾；「歪打正著」不得在本章出現；本章結束時問題必須仍然存在，不得被主角化解'
                     : suggestedType === '人物章'
-                    ? `【本章敘事節奏強制要求】本章為「人物章」——以某位配角的視角與困境為主體，主角居次要位置；深入挖掘該配角的處境、內在矛盾或命運轉折。`
-                    : `【本章敘事節奏】本章帶入明確的外部衝突與決策，推動情節向前。`;
+                    ? '以某位配角的視角與困境為主體，主角居次要位置；深入挖掘該配角的處境、內在矛盾或命運轉折'
+                    : '帶入明確的外部衝突與決策，推動情節向前';
+                const narrativeGoal = _getChapterNarrativeGoal(chNum, suggestedType, soulSession.pendingTensions, soulSession.figureStates);
                 const tensionForceCtx = (soulSession.tensionStaleChapters || 0) >= 5
                     ? `【張力爆發強制要求】距上次張力解決或爆發已超過五章，本章必須明確觸發或解決 pendingTensions 中的某一條張力——可以是衝突爆發、計謀敗露、或局面發生不可逆的轉變。\n\n`
                     : '';
@@ -5066,28 +5086,35 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${keyEventsCtx}${currentDateCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${costForceCtx}${chapterTypeBehavior}
+${ctx}${figCtx}${keyEventsCtx}${currentDateCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${costForceCtx}
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
-寫作要求：
+【A·絕對禁令】優先級最高，任何情況不得違反：
+1. 【已識之人】上方「已登場人物」中所有人物，主角已與之有過真實互動。他們出場時，對話語氣、稱謂方式、信任或警戒程度必須體現累積關係的重量；禁止以「謹慎打量」「小心試探」等初見語氣描寫已有多次互動的人物；主角也不必重新評估這些人的基本立場，除非本章發生了改變立場的具體事件
+2. 【計謀解說禁令】任何計謀或決策的成效，禁止在事後以主角內心獨白或旁白直接說明邏輯——不得出現「他成功地讓對方相信了……」「某人突然意識到……的用意」之類的解說句。若必須揭示計謀，只能透過對方的行為變化、沉默、或結果反推讓讀者自行感知，不得由敘事者直接宣告
+3. 【知識邊界】知識來自具體的人生經歷，不來自時代，也不來自身份類別。每個人實際知道什麼，必須從其具體的生平、教育背景、真實人際圈、親身經歷過的事件去推斷——而非套用「帝王應知」「武將應懂」之類的刻板印象。「那個時代存在的知識」≠「他個人知道的知識」。若靈魂帶有超前知識，必須面對當世人無法理解、甚至視為異端的現實阻力
+4. 【特質標籤禁止入文】靈魂特質標籤（「死後清明」「性格缺陷」等後設描述）絕不能出現在正文中，只能透過行為與心理自然呈現，讓讀者自行感知
+
+【B·本章任務】
+章節類型：${chapterTypeLabel}——${chapterTypeDesc}
+本章敘事目標：${narrativeGoal}
+${growthCooldownNote}
+【C·敘事偏好】根據本章情境，自然選用2-3條體現即可，不必全部塞入：
 - 第三人稱史書體裁，沉浸感強，具體人名、事件、多人對白、環境描寫，充分展開場景與人物心理
-- 【文風時代感】人物對話須帶有所處時代的語言質感與節奏，避免現代白話語氣；心理描寫應以當時人的概念框架、意象與比喻為基礎，不得使用角色時代所沒有的詞彙或思維方式；敘事文字可讓現代讀者易讀，但不得流於輕浮的現代語氣
-- 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變。隨章節推進，歷史應逐漸偏離原有軌跡——某些原本會發生的事可能不再出現，某些從未存在的局面因此成形。請根據穿越者實際做出的選擇推演其邏輯後果，而非讓原有歷史事件按序發生
-- 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服或改變立場；政治結構、人際網絡、時代觀念都是真實阻力。穿越者的計劃可能奏效，也可能因某個沒預料到的因素而偏轉，不保證意志能改變現實
-- 【靈魂特質】穿越靈魂的思維底色必須在本章的決策、對話與內心獨白中具體體現，展現其與宿主原有性格的根本差異，而非只是「做出更好選擇的宿主」。特質標籤（如「死後清明」「性格缺陷」等）是作者的後設描述，絕對不能出現在正文中，只能透過行為與心理自然呈現
-- 【言行氣質】靈魂的外顯個性必須落實在對話語氣與日常舉止上：他說話是直接還是迂迴、強勢還是克制、熱烈還是冷淡；他面對不同身分的人時態度如何變化；他在場時周圍人會有什麼感受。這些細節應貫穿全章，而非只存在於心理描寫中
-- 【已識之人】上方「已登場人物」中所有人物，主角已與之有過真實互動。他們出場時，對話語氣、稱謂方式、信任或警戒程度必須體現累積關係的重量；禁止以「謹慎打量」「小心試探」等初見語氣描寫已有多次互動的人物；主角也不必重新評估這些人的基本立場，除非本章發生了改變立場的具體事件
-- 【宿主肉體雙向性】宿主的肉體記憶與本能，有時干擾靈魂的判斷（不受控的生理反應、手自己做了靈魂沒指示的動作），有時卻意外提供幫助——一個本能說對的話、一段肌肉記憶讓靈魂化解了陌生局面、對某人的直覺信任帶來意料外的盟友。這種雙向互動應隨章節演化：靈魂對宿主本能從早期的排斥，逐漸轉向某種謹慎的利用或不情願的接納。出現時必須是具體的身體行為，而非心理描寫
-- 【計謀解說禁令】任何計謀或決策的成效，禁止在事後以主角內心獨白或旁白直接說明邏輯——不得出現「他成功地讓對方相信了……」「某人突然意識到……的用意」之類的解說句。只能透過對方的行為變化、沉默、或下一個動作讓讀者自行感知計謀是否奏效
-- 【參照系節制】靈魂以原生時代框架理解眼前局勢是真實且有力的設計，但每章至多呈現一次，且絕不由主角在內心獨白中明確說出「此人如同某某」——只能體現在他對局勢的判斷邏輯與行動選擇上，讓讀者自行感知那個框架的影子。遭遇真正陌生的事物時（無法類比的技術、制度、人際結構），必須有認知震撼的瞬間，而非立刻套入舊框架
-- 【配角主動時刻】每3章內，至少有一個場景讓某位配角採取了主角完全沒有預料到的主動行動，迫使主角轉為被動回應——這個行動必須源自該配角自身的利益邏輯或情感驅動，而非為了映襯主角的聰明而存在；主角在當下可以沒有立即的應對方案
-- 【靈魂視角】${soulMomentIsPostDeath ? '靈魂的死後自我意識是極偶爾才浮現的底層感知，可以整章完全不出現。若出現，只能是身體層面的本能反應或一個下意識的動作——一個反常的停頓、一個說了一半就咽回去的字、做了選擇後才有的低沉感。絕不以任何形式讓靈魂向讀者宣告「我又在重蹈覆轍」；絕不讓清明轉化為迴避缺點的能力' : '此靈魂尚活著，帶著「在世執念」穿越，沒有死後的沉澱。他更衝動、更在乎當下利益、更容易被情緒驅動；他的判斷有更明顯的盲點，也有更強烈的求生欲或野心。不要讓他表現得像一個有後見之明的死者；他對自己命運的走向完全無知，只有那個時刻的執念在驅動他'}
-- 【知識邊界】知識來自具體的人生經歷，不來自時代，也不來自身份類別。每個人實際知道什麼，必須從其具體的生平、教育背景、真實人際圈、親身經歷過的事件去推斷——而非套用「帝王應知」「武將應懂」之類的刻板印象。靈魂與宿主各自只擁有其生命軌跡所能真實接觸的知識；「那個時代存在的知識」≠「他個人知道的知識」。不得讓角色展現任何超出其具體人生所能接觸之範圍的資訊。若靈魂帶有超前知識，必須面對當世人無法理解、甚至視為異端的現實阻力
-- 【靈魂成長】此靈魂並非一成不變，但成長從不是線性的。成長若發生，必須有具體代價或新的矛盾隨之而來——迴避了舊錯誤，可能在別處付出代價；放下了某個執念，可能同時失去某樣東西；變得更寬闊，可能同時變得更脆弱。成長可以是真實的，但不接受無摩擦的正向轉變。舊缺陷也可能只是換個形式重現，而非真正被克服
-- 【時間流動】本章必須讓讀者感受到時間的推進——透過至少一個具體的時間錨點自然融入敘事（某年某月某日、距上次事件的天數、黎明/入夜/第幾更天、季節細節），以及人物的疲態積累、環境的日夜交替、或事件間的等待空檔，而非直接在開頭以標題形式列出日期
-- 宿主的歷史命運並非注定——是否存活完全取決於這條時間線的選擇。若死亡，必須是當前局面的邏輯後果，而非歷史劇本的執行。如宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
-${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
+- 【文風時代感】人物對話須帶有所處時代的語言質感與節奏，避免現代白話語氣；心理描寫應以當時人的概念框架、意象與比喻為基礎
+- 【蝴蝶效應】穿越者的每個重大決定都會產生連鎖改變，請根據穿越者實際做出的選擇推演邏輯後果，而非讓原有歷史事件按序發生
+- 【歷史慣性】周遭人物有自己的利益邏輯、偏見與情感，不會輕易被說服；穿越者的計劃可能因沒預料到的因素而偏轉，不保證意志能改變現實
+- 【靈魂特質】穿越靈魂的思維底色具體體現在本章的決策、對話與內心獨白中，展現其與宿主原有性格的根本差異
+- 【言行氣質】靈魂的外顯個性落實在對話語氣與日常舉止上：直接或迂迴、強勢或克制；他面對不同身分的人時態度如何變化
+- 【宿主肉體雙向性】宿主肉體記憶有時干擾靈魂判斷，有時意外提供幫助——雙向互動應隨章節演化，從排斥逐漸轉向謹慎利用；出現時必須是具體的身體行為
+- 【參照系節制】每章至多呈現一次靈魂以原生時代框架理解眼前局勢，且絕不由主角在內心獨白中明確說出「此人如同某某」；遭遇真正陌生事物時必須有認知震撼
+- 【配角主動時刻】每3章內，至少有一個場景讓某位配角採取了主角完全沒有預料到的主動行動，迫使主角轉為被動回應
+- 【靈魂視角】${soulMomentIsPostDeath ? '靈魂的死後自我意識可以整章完全不出現；若出現，只能是身體層面的本能反應，絕不讓清明轉化為迴避缺點的能力' : '此靈魂更衝動、更在乎當下利益、更容易被情緒驅動；他對自己命運走向完全無知'}
+- 【靈魂成長】成長若發生，必須有具體代價或新的矛盾隨之而來；舊缺陷可能只是換個形式重現，不接受無摩擦的正向轉變
+- 【時間流動】透過至少一個具體的時間錨點自然融入敘事（某年某月、距上次事件的天數、季節細節），以及人物疲態積累或日夜交替，而非直接在開頭列出日期
+- 宿主的歷史命運並非注定。若宿主在本章中死亡，文末加：【宿主殞落：一句話原因】
+
 正文結束後換行輸出（系統解析用，勿計入正文）：
 [FIGURES][{"name":"人名","rank":"評級","summary":"與主角的累積關係摘要（首次見面至今，15字以內；若本章為初次登場則寫「本章初登場：一句話描述初次互動」）","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious","tension":"此人當前內在矛盾（選填，一句話；無則省略此欄）"},...][/FIGURES]
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]
@@ -5103,7 +5130,23 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
 [GLOBALSUMMARY]更新全局主線摘要（400字以內）：專注記錄①不可逆的歷史事件與局勢轉變②主角已暴露的底牌與行動後果③配角生死與陣營轉換④所有pendingTensions的當前狀態。人際關係由FIGURES的summary欄位負責，此處不重複。忽略過場細節與日常互動。[/GLOBALSUMMARY]${firstChapterTags}`;
             }
 
-            soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath });
+            // Snapshot all mutable state before this chapter runs, so regenCurrentSoulChapter can fully roll back
+            const preStateSnapshot = {
+                figureStates: JSON.parse(JSON.stringify(soulSession.figureStates || [])),
+                pendingTensions: JSON.parse(JSON.stringify(soulSession.pendingTensions || [])),
+                keyEvents: JSON.parse(JSON.stringify(soulSession.keyEvents || [])),
+                currentDate: soulSession.currentDate,
+                shockedFigures: [...(soulSession.shockedFigures || [])],
+                globalSummary: soulSession.globalSummary,
+                hostState: soulSession.hostState,
+                hostPhysique: soulSession.hostPhysique ? JSON.parse(JSON.stringify(soulSession.hostPhysique)) : null,
+                soulGrowth: JSON.parse(JSON.stringify(soulSession.soulGrowth || [])),
+                lastChapterTypes: [...(soulSession.lastChapterTypes || [])],
+                lastGrowthChapter: soulSession.lastGrowthChapter,
+                lastCostChapter: soulSession.lastCostChapter,
+                tensionStaleChapters: soulSession.tensionStaleChapters || 0
+            };
+            soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath, preStateSnapshot });
             soulSession.viewingChapter = chNum;
             _soulShowChapterShell(chNum);
             try {
@@ -5113,6 +5156,23 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
                     soulSession.chapters[chNum].content = _soulCleanText(partial);
                     _soulRenderChapter(chNum);
                 });
+                // Check for missing critical tags and repair without rewriting the story
+                const criticalTags = ['CHAPTERTITLE','FIGURES','CHAPTERTYPE','HOSTSTATE','GLOBALSUMMARY'];
+                const missingTags = criticalTags.filter(t => !fullText.match(new RegExp(`\\[${t}\\][\\s\\S]*?\\[\\/${t}\\]`)));
+                if (missingTags.length > 0) {
+                    try {
+                        const tagFormats = {
+                            CHAPTERTITLE: '[CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]',
+                            FIGURES: '[FIGURES][{"name":"人名","rank":"評級","summary":"累積關係15字內","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]',
+                            CHAPTERTYPE: '[CHAPTERTYPE]行動章/靜章/代價章/人物章（填一種）[/CHAPTERTYPE]',
+                            HOSTSTATE: '[HOSTSTATE]宿主當前心理狀態（10-20字）[/HOSTSTATE]',
+                            GLOBALSUMMARY: '[GLOBALSUMMARY]400字以內全局摘要（不可逆事件+底牌+陣營+張力狀態）[/GLOBALSUMMARY]'
+                        };
+                        const repairPrompt = `以下是一段已完成的歷史穿越小說章節正文，正文不需要修改。\n但系統解析所需的 metadata tags 缺失，請根據正文內容，只補充以下缺失的 tags，不得輸出正文本身：\n\n正文：\n${_soulCleanText(fullText)}\n\n請輸出（僅輸出缺失的 tags，不輸出任何正文）：\n${missingTags.map(t => tagFormats[t]).join('\n')}`;
+                        const repairText = await callGemini(repairPrompt);
+                        if (repairText) fullText = fullText + '\n' + repairText;
+                    } catch(repairErr) { /* repair failed silently, continue with what we have */ }
+                }
                 const figM = fullText.match(/\[FIGURES\]([\s\S]*?)\[\/FIGURES\]/);
                 if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) { const old = soulSession.figureStates[i]; soulSession.figureStates[i] = { ...f, summary: f.summary || old.summary }; } else soulSession.figureStates.push(f); }); } catch(e){} }
                 const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
@@ -5295,11 +5355,30 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
             else { nextBtn.disabled = false; nextBtn.innerHTML = '繼續下一章 <i class="fa-solid fa-arrow-right"></i>'; nextBtn.onclick = generateNextSoulChapter; }
         }
 
+        function _restorePreChapterSnapshot(snapshot) {
+            if (!snapshot) return;
+            soulSession.figureStates = JSON.parse(JSON.stringify(snapshot.figureStates));
+            soulSession.pendingTensions = JSON.parse(JSON.stringify(snapshot.pendingTensions));
+            soulSession.keyEvents = JSON.parse(JSON.stringify(snapshot.keyEvents));
+            soulSession.currentDate = snapshot.currentDate;
+            soulSession.shockedFigures = [...snapshot.shockedFigures];
+            soulSession.globalSummary = snapshot.globalSummary;
+            soulSession.hostState = snapshot.hostState;
+            soulSession.hostPhysique = snapshot.hostPhysique ? JSON.parse(JSON.stringify(snapshot.hostPhysique)) : null;
+            soulSession.soulGrowth = JSON.parse(JSON.stringify(snapshot.soulGrowth));
+            soulSession.lastChapterTypes = [...snapshot.lastChapterTypes];
+            soulSession.lastGrowthChapter = snapshot.lastGrowthChapter;
+            soulSession.lastCostChapter = snapshot.lastCostChapter;
+            soulSession.tensionStaleChapters = snapshot.tensionStaleChapters;
+        }
+
         async function retrySoulChapter() {
             if (soulSession.generating) return;
             const lastIdx = soulSession.chapters.length - 1;
             if (lastIdx < 0) return;
+            const snapshot = soulSession.chapters[lastIdx].preStateSnapshot;
             soulSession.chapters.splice(lastIdx, 1);
+            _restorePreChapterSnapshot(snapshot);
             soulSession.viewingChapter = Math.max(0, soulSession.chapters.length - 1);
             soulSession.generating = true;
             _soulUpdateActions();
@@ -5314,7 +5393,9 @@ ${growthCooldownNote ? `\n${growthCooldownNote}\n` : ''}
             if (deletingAfter > 0) {
                 if (!confirm(`重生此章將刪除之後的 ${deletingAfter} 章，確定繼續？`)) return;
             }
+            const snapshot = soulSession.chapters[idx].preStateSnapshot;
             soulSession.chapters.splice(idx);
+            _restorePreChapterSnapshot(snapshot);
             soulSession.viewingChapter = Math.max(0, idx - 1);
             soulSession.generating = true;
             _soulUpdateActions();
