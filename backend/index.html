@@ -4605,6 +4605,15 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             else if (['chapters','ending','ended'].includes(p) && soulSession.chapters.length > 0) _soulRenderChapter(soulSession.viewingChapter);
         }
 
+        function setNarrativeMode(key) {
+            soulSession.narrativeMode = key;
+            document.querySelectorAll('[data-mode]').forEach(b => {
+                b.classList.toggle('ring-2', b.dataset.mode === key);
+                b.classList.toggle('ring-purple-400', b.dataset.mode === key);
+                b.classList.toggle('bg-purple-900/40', b.dataset.mode === key);
+            });
+        }
+
         function _soulHideChrome() {
             el('soulChapterNav').classList.add('hidden');
             el('soulDeepActions').classList.add('hidden');
@@ -4711,7 +4720,13 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
 只輸出三個欄位，不要其他說明。`;
                 const profileText = await callGemini(profilePrompt, false);
                 soulSession.moment.strategicProfile = profileText.trim();
-                if (soulSession.phase === 'confirm') renderSoulDeep();
+                if (soulSession.phase === 'confirm') {
+                    const card = document.getElementById('strategicProfileCard');
+                    if (card) {
+                        card.className = 'bg-purple-950/40 border border-purple-800/30 rounded-xl p-4 mb-5 text-xs text-purple-300 font-serif leading-relaxed whitespace-pre-wrap';
+                        card.textContent = soulSession.moment.strategicProfile;
+                    }
+                }
             } catch(e) { /* 失敗時靜默，章節 prompt 退回使用 desc */ }
         }
 
@@ -4739,8 +4754,8 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                         </div>
                     </div>
                     ${soulSession.moment?.strategicProfile
-                        ? `<div class="bg-purple-950/40 border border-purple-800/30 rounded-xl p-4 mb-5 text-xs text-purple-300 font-serif leading-relaxed whitespace-pre-wrap">${escapeHtml(soulSession.moment.strategicProfile)}</div>`
-                        : `<div class="flex items-center gap-2 mb-5 text-xs text-purple-700 font-serif"><div class="w-1.5 h-1.5 bg-purple-700 rounded-full animate-pulse"></div>正在生成戰略全覽...</div>`
+                        ? `<div id="strategicProfileCard" class="bg-purple-950/40 border border-purple-800/30 rounded-xl p-4 mb-5 text-xs text-purple-300 font-serif leading-relaxed whitespace-pre-wrap">${escapeHtml(soulSession.moment.strategicProfile)}</div>`
+                        : `<div id="strategicProfileCard" class="flex items-center gap-2 mb-5 text-xs text-purple-700 font-serif"><div class="w-1.5 h-1.5 bg-purple-700 rounded-full animate-pulse"></div>正在生成戰略全覽...</div>`
                     }
                     <div class="mb-8">
                         <div class="flex items-center justify-between mb-3">
@@ -4776,7 +4791,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                                 { key:'heroic', label:'改命爽文', desc:'歷史可被突破', icon:'fa-bolt', hint:'決策有效・允許逆轉・代價可承受' },
                                 { key:'drama',  label:'權謀正劇', desc:'多方博弈慢燉', icon:'fa-chess', hint:'派系錯綜・勝利換新問題・局勢難測' },
                                 { key:'tragedy',label:'悲劇史詩', desc:'代價沉重悲壯', icon:'fa-skull', hint:'慣性極強・每勝必損・走向悲壯' }
-                            ].map(m => `<button onclick="soulSession.narrativeMode='${m.key}';document.querySelectorAll('[data-mode]').forEach(b=>b.classList.remove('ring-2','ring-purple-400','bg-purple-900/40'));document.querySelector('[data-mode=${m.key}]').classList.add('ring-2','ring-purple-400','bg-purple-900/40'))" data-mode="${m.key}" class="relative flex flex-col items-center gap-1.5 p-3 rounded-xl border border-purple-800/50 bg-[#100420] transition-all text-center ${m.key==='drama'?'ring-2 ring-purple-400 bg-purple-900/40':''}">
+                            ].map(m => `<button onclick="setNarrativeMode('${m.key}')" data-mode="${m.key}" class="relative flex flex-col items-center gap-1.5 p-3 rounded-xl border border-purple-800/50 bg-[#100420] transition-all text-center ${m.key===soulSession.narrativeMode?'ring-2 ring-purple-400 bg-purple-900/40':''}">
                                 <i class="fa-solid ${m.icon} text-purple-400 text-base"></i>
                                 <span class="font-bold font-serif text-purple-100 text-xs">${m.label}</span>
                                 <span class="text-[10px] text-purple-500 font-serif">${m.desc}</span>
