@@ -2650,7 +2650,12 @@ ${allNames}
             const prompt = `${sourceBlock}
 你是一位精通人物心理分析的資深作家與歷史學者，任務是還原這位歷史人物作為「活生生的人」的內在運作方式——不是評價功過，而是以具體史實為錨點，論證他如何思考、說話、感受、犯錯。
 
-核心要求：每一個描述都必須有具體史實支撐——引用真實事件名稱、時間點、當事人、或史書記載。禁止任何無史實依據的推斷；禁止空泛形容詞（「深謀遠慮」「性格剛直」之類）。論述必須能被反駁——如果一個描述對任何人都成立，它就是廢話。
+核心要求：每一個描述都必須有具體史實支撐——引用真實事件名稱、時間點、當事人、或史書記載。禁止空泛形容詞（「深謀遠慮」「性格剛直」之類）。論述必須能被反駁——如果一個描述對任何人都成立，它就是廢話。
+
+史實來源區分——每個關鍵論斷結尾標注以下其中一種：
+[史載] 有明確史書記載的事實（引用具體篇目或事件名稱）
+[推斷] 從多個相互印證的史實歸納出的行為模式（說明推斷依據）
+[詮釋] 在有限史料下合理但存在爭議空間的詮釋（說明不確定性來源）
 
 請依以下格式輸出：
 
@@ -4684,10 +4689,30 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                 </div>`;
         }
 
-        function selectSoulDeepMoment(idx) {
+        async function selectSoulDeepMoment(idx) {
             soulSession.moment = soulSession.moments[idx];
             soulSession.phase = 'confirm';
             renderSoulDeep();
+            // 非同步產生三合一戰略全覽，完成後刷新確認頁
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const m = soulSession.moment;
+            const yStr = (y) => y > 0 ? `西元${y}年` : `${Math.abs(y)}年前`;
+            try {
+                const profilePrompt = `歷史人物「${host?.name}」（${host?.rank}，${host?.dynasty||''}）在「${m.title}」（${yStr(m.year)}）這個關鍵節點：${m.desc}
+
+請以穿越小說作者手冊的視角，輸出三合一戰略全覽：
+
+【格局全覽】此刻的權力結構——誰掌握主導、誰在暗中蓄力、誰的立場搖擺？主要勢力的核心利益與相互制衡（4句以內）
+
+【宿主處境】宿主在此節點的具體條件：他手上有什麼牌、面臨什麼直接威脅、哪些資源可調用但尚未動用（3句以內）
+
+【暗流伏筆】表面平靜但深藏的隱患或機遇：哪個問題即將爆發、哪個可能性沒人察覺但正在醞釀（2句以內）
+
+只輸出三個欄位，不要其他說明。`;
+                const profileText = await callGemini(profilePrompt, false);
+                soulSession.moment.strategicProfile = profileText.trim();
+                if (soulSession.phase === 'confirm') renderSoulDeep();
+            } catch(e) { /* 失敗時靜默，章節 prompt 退回使用 desc */ }
         }
 
         function _soulRenderConfirm() {
@@ -4713,6 +4738,10 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                             <p class="text-xs text-purple-500 mt-0.5 leading-relaxed">${escapeHtml(soulSession.moment?.desc||'')}</p>
                         </div>
                     </div>
+                    ${soulSession.moment?.strategicProfile
+                        ? `<div class="bg-purple-950/40 border border-purple-800/30 rounded-xl p-4 mb-5 text-xs text-purple-300 font-serif leading-relaxed whitespace-pre-wrap">${escapeHtml(soulSession.moment.strategicProfile)}</div>`
+                        : `<div class="flex items-center gap-2 mb-5 text-xs text-purple-700 font-serif"><div class="w-1.5 h-1.5 bg-purple-700 rounded-full animate-pulse"></div>正在生成戰略全覽...</div>`
+                    }
                     <div class="mb-8">
                         <div class="flex items-center justify-between mb-3">
                             <h4 class="text-sm font-bold font-serif text-purple-300">穿越靈魂 <span class="text-purple-600 font-normal text-xs">（可選）</span></h4>
@@ -5137,7 +5166,7 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                     : '';
                 const traitsBlock = (soul && traitsEngine) ? `\n靈魂特質：\n${traitsEngine}` : '';
                 const soulEssenceForChapter = soul ? (appState.modifiedLegends[soulSession.soulId]?.soulEssence || '') : '';
-                const soulEssenceCtx = soulEssenceForChapter ? `【靈魂內核——作者寫作參考，絕不能讓標籤文字出現在正文中】\n${soulEssenceForChapter}\n\n` : '';
+                const soulEssenceCtx = soulEssenceForChapter ? `【靈魂內核——作者寫作參考，絕不能讓標籤文字出現在正文中】\n標注說明：[史載]為確定事實須忠實體現；[推斷]為模式可靈活演繹；[詮釋]為詮釋框架可在情節中留白或保持張力。\n${soulEssenceForChapter}\n\n` : '';
                 const compatCtx = soulSession.compatibilityReport
                     ? `【相性報告摘要——本故事的核心矛盾預設，作者寫作時的隱性框架】\n${soulSession.compatibilityReport.slice(0, 400)}\n\n`
                     : '';
@@ -5237,10 +5266,10 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
 宿主：${host?.name}（${host?.rank}，${host?.title||''}，${host?.dynasty||''}）
 ${soulLine}
 穿越時刻：${soulSession.moment?.title}（${yStr(soulSession.moment?.year||0)}）
-時刻背景：${soulSession.moment?.desc}
+時刻背景：${soulSession.moment?.desc}${soulSession.moment?.strategicProfile ? `\n\n【時刻戰略全覽】\n${soulSession.moment.strategicProfile}` : ''}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${keyEventsCtx}${currentDateCtx}${compatCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${costForceCtx}
+${ctx}${currentDateCtx}${hostStateCtx}${tensionsCtx}${figCtx}${figTensionCtx}${suspectedCtx}${shockedCtx}${keyEventsCtx}${compatCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${tensionForceCtx}${costForceCtx}
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
