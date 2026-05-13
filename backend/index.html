@@ -4926,7 +4926,7 @@ ${lastTrait}
         }
 
         async function startSoulSession() {
-            soulSession.phase = 'chapters'; soulSession.chapters = []; soulSession.viewingChapter = 0; soulSession.figureStates = []; soulSession.soulGrowth = []; soulSession.generating = true;
+            soulSession.phase = 'chapters'; soulSession.chapters = []; soulSession.viewingChapter = 0; soulSession.figureStates = []; soulSession.soulGrowth = []; soulSession.generating = true; soulSession.compatibilityReport = null;
             el('soulDeepActions').classList.remove('hidden');
             el('soulFigureSidebar').classList.remove('hidden');
             el('soulEndBtn').classList.remove('hidden');
@@ -4934,7 +4934,78 @@ ${lastTrait}
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
             const soulLabel = soul ? ` × ${soul.name}${soulSession.soulMoment ? `（${soulSession.soulMoment.title}）` : ''}` : '';
             el('soulDeepTitle').textContent = `${host?.name||''}${soulLabel} · ${soulSession.moment?.title||''}`;
-            await _generateSoulChapter();
+            // Show compatibility report card while generating
+            const compatIdx = 0;
+            soulSession.chapters.push({ num:0, label:'相性評定', title:'魂穿相性報告', content:'', figures:[], streaming:true, isCompat:true });
+            soulSession.viewingChapter = 0;
+            _soulShowChapterShell(0);
+            try {
+                const traitsEngine = soulSession.soulTraits
+                    ? (typeof soulSession.soulTraits === 'string' ? soulSession.soulTraits : (soulSession.soulTraits.engine || soulSession.soulTraits.display))
+                    : '';
+                const hostMod = appState.modifiedLegends[soulSession.hostId] || {};
+                const hostSummary = (hostMod.deepAnalysis || hostMod.analysis || '').slice(0, 600);
+                const soulEssence = soul ? (appState.modifiedLegends[soulSession.soulId]?.soulEssence || '').slice(0, 600) : '';
+                const compatPrompt = `請分析以下歷史穿越的相性，生成一份「魂穿相性報告」。
+
+【宿主】${host?.name}（${host?.rank}，${host?.title||''}，${host?.dynasty||''}）
+穿越時刻：${soulSession.moment?.title}——${soulSession.moment?.desc}
+${hostSummary ? `宿主背景：${hostSummary}` : ''}
+
+【穿越靈魂】${soul ? `${soul.name}（${soul.rank}，${soul.dynasty||''}）\n靈魂時刻：${soulSession.soulMoment?.title||''}（${soulSession.soulMoment?.isPostDeath?'死後':'在世'}）` : '宿主自身意識覺醒（無外來靈魂）'}
+${traitsEngine ? `靈魂特質：${traitsEngine}` : ''}
+${soulEssence ? `靈魂內核摘要：${soulEssence}` : ''}
+
+【敘事導演基調】${soulSession.narrativeMode === 'heroic' ? '改命爽文' : soulSession.narrativeMode === 'tragedy' ? '悲劇史詩' : '權謀正劇'}
+
+請生成結構化報告（500-600字），格式如下：
+
+【相性總評】一句話定調（含數字評分如 7.5/10）
+
+【靈魂與宿主的核心張力】
+分析穿越靈魂的思維方式與宿主身份/處境之間最根本的衝突或契合點——這個碰撞將如何成為故事的核心動力？
+
+【歷史局勢適配度】
+這個靈魂帶入的能力、視野與弱點，與「${soulSession.moment?.title}」這個歷史節點的具體挑戰是否匹配？最大的優勢是什麼？最致命的短板是什麼？
+
+【最可能的故事走向】
+根據以上分析，推測這個穿越最可能演化的敘事弧線——主角大概率會犯什麼錯、遭遇什麼困境、在哪個關鍵節點面臨最大考驗？
+
+【作者給讀者的一句話】
+用一句有衝擊感的話，預示這段穿越最值得期待、也最可能令人心碎的核心矛盾。`;
+                let compatText = '';
+                await callGeminiStream(compatPrompt, partial => {
+                    compatText = partial;
+                    soulSession.chapters[compatIdx].content = partial;
+                    _soulRenderCompatReport(compatIdx);
+                });
+                soulSession.chapters[compatIdx].content = compatText;
+                soulSession.chapters[compatIdx].streaming = false;
+                soulSession.compatibilityReport = compatText;
+                _soulRenderCompatReport(compatIdx);
+            } catch(e) {
+                soulSession.chapters[compatIdx].content = '（相性評定生成失敗，直接進入正文）';
+                soulSession.chapters[compatIdx].streaming = false;
+                soulSession.compatibilityReport = '';
+            }
+            soulSession.generating = false;
+            _soulUpdateActions();
+        }
+
+        function _soulRenderCompatReport(idx) {
+            const c = soulSession.chapters[idx]; if (!c) return;
+            el('soulDeepContent').innerHTML = `
+                <div class="flex items-baseline gap-3 mb-5">
+                    <span class="text-xs text-indigo-500 font-serif tracking-widest shrink-0">✦ 相性評定</span>
+                    <h2 class="text-xl font-bold font-serif text-purple-100 leading-tight">魂穿相性報告${c.streaming?'<span class="text-xs text-purple-500 ml-3 animate-pulse font-normal">分析中…</span>':''}</h2>
+                </div>
+                <div class="prose prose-invert max-w-none font-serif leading-8 text-sm" style="color:#ddd4f0">${safeMarkdown(c.content)}</div>
+                ${!c.streaming ? `<div class="mt-6 pt-4 border-t border-purple-800/40 flex justify-end">
+                    <button onclick="generateNextSoulChapter()" class="px-5 py-2.5 bg-purple-700 hover:bg-purple-600 text-white rounded-lg font-bold font-serif text-sm transition-all flex items-center gap-2">
+                        開始第一章 <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>` : ''}`;
+            _soulUpdateChapterNav(); _soulUpdateActions();
         }
 
         async function generateNextSoulChapter() {
@@ -4962,11 +5033,16 @@ ${lastTrait}
             return null;
         }
 
+        function _tensionTitle(t) { return typeof t === 'string' ? t : t.title; }
+        function _tensionToObj(title) {
+            return { id: `t_${Date.now().toString(36)}_${Math.random().toString(36).slice(2,6)}`, title, intensity: 1, age: 0, status: 'active' };
+        }
+
         function _getChapterNarrativeGoal(chNum, suggestedType, pendingTensions, figureStates) {
             if (chNum === 0) return '建立穿越初始局勢：介紹宿主處境、引入關鍵人物、讓靈魂首次面對時代衝擊的現實阻力';
             const goals = [];
             if (pendingTensions && pendingTensions.length > 0) {
-                goals.push(`觸及並推進：「${pendingTensions[0]}」`);
+                goals.push(`觸及並推進：「${_tensionTitle(pendingTensions[0])}」`);
             }
             if (suggestedType === '代價章') {
                 goals.push('讓主角的某個決策帶來不可逆的具體代價，章末代價仍持續影響局勢，不得被主角化解');
@@ -4983,7 +5059,7 @@ ${lastTrait}
         async function _inferChapterGoal(chNum, suggestedType, globalSummary, pendingTensions, figureStates, keyEvents) {
             if (chNum === 0) return _getChapterNarrativeGoal(0, null, [], []);
             const tensionsStr = (pendingTensions || []).length > 0
-                ? (pendingTensions || []).map((t, i) => `${i + 1}. ${t}`).join('\n')
+                ? (pendingTensions || []).map((t, i) => `${i + 1}. ${_tensionTitle(t)}`).join('\n')
                 : '（目前無積累張力）';
             const figsStr = (figureStates || []).length > 0
                 ? figureStates.map(f => `${f.name}(${f.attitude})${f.summary ? `：${f.summary}` : ''}${f.tension ? `｜矛盾：${f.tension}` : ''}`).join('\n')
@@ -5017,7 +5093,7 @@ ${recentEvts}
         async function _generateSoulChapter() {
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
-            const chNum = soulSession.chapters.length;
+            const chNum = soulSession.chapters.filter(c => !c.isCompat).length;
             const isAftermath = soulSession.hostDead;
             const aftermathNums = ['一','二','三','四','五','六','七','八','九','十'];
             const aftermathCount = soulSession.chapters.filter(c => c.isAftermath).length;
@@ -5025,8 +5101,8 @@ ${recentEvts}
                 ? `身後記${aftermathNums[aftermathCount] || aftermathCount + 1}`
                 : (chNum === 0 ? '序章' : `第${chNum}章`);
 
-            const older = soulSession.chapters.filter(c => !c.isSummary).slice(0,-1);
-            const recent = soulSession.chapters.filter(c => !c.isSummary).slice(-1);
+            const older = soulSession.chapters.filter(c => !c.isSummary && !c.isCompat).slice(0,-1);
+            const recent = soulSession.chapters.filter(c => !c.isSummary && !c.isCompat).slice(-1);
             let ctx = '';
             if (soulSession.globalSummary) ctx += `【全局主線摘要】\n${soulSession.globalSummary}\n\n`;
             if (recent.length) ctx += recent.map(c=>`【${c.label}「${c.title}」完整內容】\n${c.content}`).join('\n\n') + '\n\n';
@@ -5062,6 +5138,9 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                 const traitsBlock = (soul && traitsEngine) ? `\n靈魂特質：\n${traitsEngine}` : '';
                 const soulEssenceForChapter = soul ? (appState.modifiedLegends[soulSession.soulId]?.soulEssence || '') : '';
                 const soulEssenceCtx = soulEssenceForChapter ? `【靈魂內核——作者寫作參考，絕不能讓標籤文字出現在正文中】\n${soulEssenceForChapter}\n\n` : '';
+                const compatCtx = soulSession.compatibilityReport
+                    ? `【相性報告摘要——本故事的核心矛盾預設，作者寫作時的隱性框架】\n${soulSession.compatibilityReport.slice(0, 400)}\n\n`
+                    : '';
                 const soulMomentIsPostDeath = soulSession.soulMoment?.isPostDeath ?? true;
                 const soulMomentDesc = soulSession.soulMoment
                     ? `靈魂時刻：${soulSession.soulMoment.title}（${soulMomentIsPostDeath ? '死後' : '在世'}）——${soulSession.soulMoment.desc}\n`
@@ -5090,7 +5169,12 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                     ? `【宿主當前心理狀態】${soulSession.hostState}\n本章必須從這個心理狀態出發；若發生轉變，必須有具體觸發事件作為依據。\n\n`
                     : '';
                 const tensionsCtx = (soulSession.pendingTensions || []).length > 0
-                    ? `【積累的未解決張力】本章必須至少觸及其中一條（不必解決，但必須讓讀者感受到它的存在）：\n${soulSession.pendingTensions.map((t,i)=>`${i+1}. ${t}`).join('\n')}\n\n`
+                    ? `【積累的未解決張力】本章必須至少觸及其中一條（不必解決，但必須讓讀者感受到它的存在）：\n${soulSession.pendingTensions.map((t,i)=>{
+                        const obj = typeof t === 'string' ? {title:t, intensity:1, age:0} : t;
+                        const iLabel = obj.intensity >= 4 ? '高強度' : obj.intensity >= 2 ? '中強度' : '初現';
+                        const aLabel = obj.age > 0 ? `・已${obj.age}章未解` : '・本章新生';
+                        return `${i+1}. [${iLabel}${aLabel}] ${obj.title}`;
+                    }).join('\n')}\n\n`
                     : '';
                 const shockedCtx = (soulSession.shockedFigures || []).length > 0
                     ? `【已習慣主角行為的人物】${soulSession.shockedFigures.join('、')}——這些人曾對主角的意外效果感到震驚，現已習慣其行為模式。本章若有類似場景，這些人應以「習慣後的複雜態度」（警惕、無奈、依賴、厭倦等）回應，而非重新震驚。\n\n`
@@ -5156,7 +5240,7 @@ ${soulLine}
 時刻背景：${soulSession.moment?.desc}
 ${hostCtx ? `\n${hostCtx}` : ''}
 
-${ctx}${figCtx}${keyEventsCtx}${currentDateCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${costForceCtx}
+${ctx}${figCtx}${keyEventsCtx}${currentDateCtx}${compatCtx}${soulEssenceCtx}${hostPhysiqueCtx}${growthCtx}${learningCtx}${hostStateCtx}${tensionsCtx}${shockedCtx}${figTensionCtx}${suspectedCtx}${tensionForceCtx}${costForceCtx}
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
@@ -5261,9 +5345,9 @@ ${growthCooldownNote}
                 if (hostStateM) soulSession.hostState = hostStateM[1].trim();
                 const tensionsAddM = fullText.match(/\[TENSIONS_ADD\]([\s\S]*?)\[\/TENSIONS_ADD\]/);
                 if (tensionsAddM) {
-                    const newT = tensionsAddM[1].trim().split('｜').map(t=>t.trim()).filter(t=>t);
+                    const newTitles = tensionsAddM[1].trim().split('｜').map(t=>t.trim()).filter(t=>t);
                     if (!soulSession.pendingTensions) soulSession.pendingTensions = [];
-                    soulSession.pendingTensions.push(...newT);
+                    soulSession.pendingTensions.push(...newTitles.map(title => _tensionToObj(title)));
                     if (soulSession.pendingTensions.length > 10) soulSession.pendingTensions = soulSession.pendingTensions.slice(-10);
                 }
                 const tensionsOutcomeM = fullText.match(/\[TENSIONS_OUTCOME\]([\s\S]*?)\[\/TENSIONS_OUTCOME\]/);
@@ -5273,7 +5357,7 @@ ${growthCooldownNote}
                         soulSession.tensionStaleChapters = 0;
                         const keyword = outcome.replace(/^(resolved|exploded):/, '').trim();
                         if (keyword) {
-                            soulSession.pendingTensions = (soulSession.pendingTensions || []).filter(t => !t.includes(keyword));
+                            soulSession.pendingTensions = (soulSession.pendingTensions || []).filter(t => !_tensionTitle(t).includes(keyword));
                         }
                     } else {
                         soulSession.tensionStaleChapters = (soulSession.tensionStaleChapters || 0) + 1;
@@ -5281,6 +5365,12 @@ ${growthCooldownNote}
                 } else {
                     soulSession.tensionStaleChapters = (soulSession.tensionStaleChapters || 0) + 1;
                 }
+                // Increment age + intensity of all active tensions after this chapter
+                soulSession.pendingTensions = (soulSession.pendingTensions || []).map(t => {
+                    if (typeof t === 'string') return _tensionToObj(t);
+                    const newAge = (t.age || 0) + 1;
+                    return { ...t, age: newAge, intensity: Math.min(5, Math.floor(newAge / 2) + 1) };
+                });
                 const shockedM = fullText.match(/\[SHOCKED\]([\s\S]*?)\[\/SHOCKED\]/);
                 if (shockedM) {
                     const shocked = shockedM[1].trim().split('｜').map(n=>n.trim()).filter(n=>n);
@@ -5289,9 +5379,9 @@ ${growthCooldownNote}
                     shocked.forEach(n => {
                         const fs = soulSession.figureStates.find(f => f.name === n);
                         if (fs && (fs.attitude === 'suspicious' || fs.attitude === 'enemy')) {
-                            const tension = `${n}已察覺宿主異常，正暗中戒備，隨時可能採取試探或防範行動`;
-                            if (!soulSession.pendingTensions.some(t => t.includes(n))) {
-                                soulSession.pendingTensions.push(tension);
+                            const tensionTitle = `${n}已察覺宿主異常，正暗中戒備，隨時可能採取試探或防範行動`;
+                            if (!soulSession.pendingTensions.some(t => _tensionTitle(t).includes(n))) {
+                                soulSession.pendingTensions.push(_tensionToObj(tensionTitle));
                             }
                         } else if (!soulSession.shockedFigures.includes(n)) {
                             soulSession.shockedFigures.push(n);
@@ -5350,6 +5440,7 @@ ${growthCooldownNote}
 
         function _soulRenderChapter(idx) {
             const c = soulSession.chapters[idx]; if (!c) return;
+            if (c.isCompat) { _soulRenderCompatReport(idx); return; }
             el('soulDeepContent').innerHTML = `
                 <div class="flex items-baseline gap-3 mb-5">
                     <span class="text-xs text-purple-600 font-serif tracking-widest shrink-0">${escapeHtml(c.label)}</span>
@@ -5388,7 +5479,9 @@ ${growthCooldownNote}
             nav.innerHTML = soulSession.chapters.map((c,i)=>{
                 const isActive = i === soulSession.viewingChapter;
                 const prefix = c.isDeath ? '† ' : '';
-                const colorCls = c.isDeath
+                const colorCls = c.isCompat
+                    ? (isActive ? 'bg-indigo-900 text-indigo-200' : 'text-indigo-600 hover:text-indigo-300')
+                    : c.isDeath
                     ? (isActive ? 'bg-red-900 text-red-200' : 'text-red-600 hover:text-red-300')
                     : c.isAftermath
                         ? (isActive ? 'bg-slate-700 text-slate-200' : 'text-slate-500 hover:text-slate-300')
@@ -5481,23 +5574,35 @@ ${growthCooldownNote}
             el('soulEndBtn')?.classList.add('hidden');
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
-            const storyChapters = soulSession.chapters.filter(c => !c.isSummary);
-            const recap = storyChapters.map(c=>`【${c.label}「${c.title}」${c.isDeath?'（殞落章）':''}${c.isAftermath?'（身後記）':''}】${c.content.slice(0,200)}`).join('\n');
+            const storyChapters = soulSession.chapters.filter(c => !c.isSummary && !c.isCompat);
             const aftermathCount = storyChapters.filter(c => c.isAftermath).length;
+            const keyEventsStr = (soulSession.keyEvents || []).length > 0
+                ? `\n【已發生的不可逆事件】\n${soulSession.keyEvents.map((e,i)=>`${i+1}. ${e}`).join('\n')}`
+                : '';
+            const growthStr = (soulSession.soulGrowth || []).length > 0
+                ? `\n【靈魂成長軌跡】\n${soulSession.soulGrowth.map((g,i)=>`第${i+1}次轉變：${g}`).join('\n')}`
+                : '';
+            const figuresStr = (soulSession.figureStates || []).length > 0
+                ? `\n【關鍵人物最終狀態】\n${soulSession.figureStates.map(f=>`${f.name}(${f.attitude})${f.summary?`：${f.summary}`:''}`).join('\n')}`
+                : '';
             const prompt = `以下是一段歷史穿越的完整記錄。
 
 【設定】宿主：${host?.name}（${host?.rank}）　靈魂：${soul?soul.name:'宿主意識覺醒'}　時刻：${soulSession.moment?.title}
 ${soulSession.hostDead ? `宿主已殞落，身後世界共記錄${aftermathCount}章。` : '宿主存活至終結。'}
 
-【各章梗概】
-${recap}
+【主線事件脈絡】
+${soulSession.globalSummary || storyChapters.map(c=>`${c.label}「${c.title}」：${c.content.slice(0,150)}`).join('\n')}
+${keyEventsStr}${growthStr}${figuresStr}
 
-請以「太史公曰」格式，寫一段400-500字的魂穿總評：
-1. 這段穿越的核心歷史改寫是什麼——與原有時間線的最大分歧在哪裡
-2. 宿主（及穿越靈魂，若有）的選擇如何影響歷史走向，其決定的長遠代價是什麼
-${soulSession.hostDead ? '3. 宿主殞落後，這條時間線走向何方——身後世界的最終面貌，以及宿主種下的因最終結出了什麼果' : '3. 周遭關鍵人物的命運如何因這段穿越而改變'}
-4. 後世史家如何評價這個「另一條時間線」——是更好、更壞，還是只是不同
-語氣莊重，以史書體裁收尾，不迴避複雜性。`;
+請以「太史公曰」格式，寫一段450-550字的魂穿總評。
+
+寫作要求：
+- 不寫主角的內心活動，只寫他的行動在世界上留下了什麼印痕
+- 從旁觀者或後世史家的角度，評述這段穿越如何改變了歷史的走向
+- 必須具體引用至少兩個已發生的不可逆事件或關鍵人物的命運轉折
+- 若有靈魂成長軌跡，評述這個靈魂在異世的掙扎與蛻變最終指向何處
+- ${soulSession.hostDead ? '宿主殞落後這條時間線的走向——他種下的因最終結出什麼果，包括意料之外的連鎖效應' : '存活的宿主在這條歷史線上最終成為了什麼，以及這個結果與原本歷史線的根本差異'}
+- 語氣莊重肅穆，以史書體裁收尾，不迴避複雜性與悲劇性，不強求正面結局`;
 
             const summNum = soulSession.chapters.length;
             soulSession.chapters.push({ num:summNum, label:'史家總評', title:'魂穿總評', content:'', figures:[], streaming:true, isSummary:true });
@@ -5517,7 +5622,7 @@ ${soulSession.hostDead ? '3. 宿主殞落後，這條時間線走向何方——
             if (soulSession.phase === 'idle' || soulSession.chapters.length === 0) return;
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
-            const storyChapters = soulSession.chapters.filter(c => !c.isSummary);
+            const storyChapters = soulSession.chapters.filter(c => !c.isSummary && !c.isCompat);
             const name = `${host?.name || '未知'} × ${soul?.name || '宿主覺醒'} · ${soulSession.moment?.title || '未知時刻'}`;
             const save = {
                 id: Date.now().toString(),
