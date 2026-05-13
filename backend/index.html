@@ -5137,7 +5137,8 @@ ${recentEvts}
         async function _generateSoulChapter() {
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
-            const chNum = soulSession.chapters.filter(c => !c.isCompat).length;
+            const chNum = soulSession.chapters.filter(c => !c.isCompat && !c.isSummary).length; // 故事章號（序章=0）
+            const chapterIndex = soulSession.chapters.length; // 即將 push 的陣列位置
             const isAftermath = soulSession.hostDead;
             const aftermathNums = ['一','二','三','四','五','六','七','八','九','十'];
             const aftermathCount = soulSession.chapters.filter(c => c.isAftermath).length;
@@ -5345,18 +5346,26 @@ ${growthCooldownNote}
                 tensionStaleChapters: soulSession.tensionStaleChapters || 0
             };
             soulSession.chapters.push({ num:chNum, label, title:'…', content:'', figures:[], streaming:true, isAftermath, preStateSnapshot });
-            soulSession.viewingChapter = chNum;
-            _soulShowChapterShell(chNum);
+            soulSession.viewingChapter = chapterIndex;
+            _soulShowChapterShell(chapterIndex);
             try {
                 let fullText = '';
                 await callGeminiStream(prompt, partial => {
                     fullText = partial;
-                    soulSession.chapters[chNum].content = _soulCleanText(partial);
-                    _soulRenderChapter(chNum);
+                    soulSession.chapters[chapterIndex].content = _soulCleanText(partial);
+                    _soulRenderChapter(chapterIndex);
                 });
-                // Check for missing critical tags and repair without rewriting the story
-                const criticalTags = ['CHAPTERTITLE','FIGURES','CHAPTERTYPE','HOSTSTATE','GLOBALSUMMARY'];
-                const missingTags = criticalTags.filter(t => !fullText.match(new RegExp(`\\[${t}\\][\\s\\S]*?\\[\\/${t}\\]`)));
+                // Check for missing/invalid critical tags and repair without rewriting the story
+                const criticalTags = isAftermath
+                    ? ['CHAPTERTITLE', 'FIGURES']
+                    : ['CHAPTERTITLE', 'FIGURES', 'CHAPTERTYPE', 'HOSTSTATE', 'GLOBALSUMMARY'];
+                const missingTags = criticalTags.filter(t => {
+                    const m = fullText.match(new RegExp(`\\[${t}\\]([\\s\\S]*?)\\[\\/${t}\\]`));
+                    if (!m) return true;
+                    if (t === 'FIGURES') { try { return !Array.isArray(JSON.parse(m[1])); } catch(e) { return true; } }
+                    if (t === 'CHAPTERTITLE') return !m[1].trim();
+                    return false;
+                });
                 if (missingTags.length > 0) {
                     try {
                         const tagFormats = {
@@ -5372,9 +5381,9 @@ ${growthCooldownNote}
                     } catch(repairErr) { /* repair failed silently, continue with what we have */ }
                 }
                 const figM = fullText.match(/\[FIGURES\]([\s\S]*?)\[\/FIGURES\]/);
-                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chNum].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) { const old = soulSession.figureStates[i]; soulSession.figureStates[i] = { ...f, summary: f.summary || old.summary }; } else soulSession.figureStates.push(f); }); } catch(e){} }
+                if (figM) { try { const figs = JSON.parse(figM[1]); soulSession.chapters[chapterIndex].figures = figs; figs.forEach(f=>{ const real = legendsData.find(l => l.name === f.name); if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; } const i=soulSession.figureStates.findIndex(x=>x.name===f.name); if(i>=0) { const old = soulSession.figureStates[i]; soulSession.figureStates[i] = { ...f, summary: f.summary || old.summary }; } else soulSession.figureStates.push(f); }); } catch(e){} }
                 const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
-                if (titleM) soulSession.chapters[chNum].title = titleM[1].trim();
+                if (titleM) soulSession.chapters[chapterIndex].title = titleM[1].trim();
                 const growthM = fullText.match(/\[SOULGROWTH\]([\s\S]*?)\[\/SOULGROWTH\]/);
                 if (growthM) { const g = growthM[1].trim(); if (g && chNum > 0) { if (!soulSession.soulGrowth) soulSession.soulGrowth = []; soulSession.soulGrowth.push(g); soulSession.lastGrowthChapter = chNum; } }
                 const typeM = fullText.match(/\[CHAPTERTYPE\]([\s\S]*?)\[\/CHAPTERTYPE\]/);
@@ -5383,7 +5392,7 @@ ${growthCooldownNote}
                     if (!soulSession.lastChapterTypes) soulSession.lastChapterTypes = [];
                     soulSession.lastChapterTypes.push(t);
                     if (soulSession.lastChapterTypes.length > 8) soulSession.lastChapterTypes.shift();
-                    soulSession.chapters[chNum].chapterType = t;
+                    soulSession.chapters[chapterIndex].chapterType = t;
                 }
                 const hostStateM = fullText.match(/\[HOSTSTATE\]([\s\S]*?)\[\/HOSTSTATE\]/);
                 if (hostStateM) soulSession.hostState = hostStateM[1].trim();
@@ -5457,18 +5466,18 @@ ${growthCooldownNote}
                         };
                     }
                 }
-                soulSession.chapters[chNum].content = _soulCleanText(fullText);
-                soulSession.chapters[chNum].streaming = false;
+                soulSession.chapters[chapterIndex].content = _soulCleanText(fullText);
+                soulSession.chapters[chapterIndex].streaming = false;
                 if (!isAftermath && fullText.includes('【宿主殞落')) {
                     soulSession.hostDead = true;
-                    soulSession.deathChapter = chNum;
-                    soulSession.chapters[chNum].isDeath = true;
+                    soulSession.deathChapter = chapterIndex;
+                    soulSession.chapters[chapterIndex].isDeath = true;
                 }
-            } catch(e) { soulSession.chapters[chNum].content = `（生成失敗：${escapeHtml(e.message)}）`; soulSession.chapters[chNum].streaming = false; }
+            } catch(e) { soulSession.chapters[chapterIndex].content = `（生成失敗：${escapeHtml(e.message)}）`; soulSession.chapters[chapterIndex].streaming = false; }
             soulSession.generating = false;
             appState.soulSession = soulSession;
             syncToCloud();
-            _soulRenderChapter(chNum);
+            _soulRenderChapter(chapterIndex);
         }
 
         function _soulCleanText(t) { return t.replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g,'').replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g,'').replace(/\[SOULGROWTH\][\s\S]*?\[\/SOULGROWTH\]/g,'').replace(/\[CHAPTERTYPE\][\s\S]*?\[\/CHAPTERTYPE\]/g,'').replace(/\[HOSTSTATE\][\s\S]*?\[\/HOSTSTATE\]/g,'').replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g,'').replace(/\[TENSIONS_OUTCOME\][\s\S]*?\[\/TENSIONS_OUTCOME\]/g,'').replace(/\[COST_PAID\][\s\S]*?\[\/COST_PAID\]/g,'').replace(/\[EVENTS_ADD\][\s\S]*?\[\/EVENTS_ADD\]/g,'').replace(/\[CHAPTERDATE\][\s\S]*?\[\/CHAPTERDATE\]/g,'').replace(/\[SHOCKED\][\s\S]*?\[\/SHOCKED\]/g,'').replace(/\[GLOBALSUMMARY\][\s\S]*?\[\/GLOBALSUMMARY\]/g,'').replace(/\[HOSTPHYSIQUE\][\s\S]*?\[\/HOSTPHYSIQUE\]/g,'').trim(); }
