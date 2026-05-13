@@ -4571,11 +4571,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'' };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama' };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'' };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama' };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4585,7 +4585,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'' };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama' };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -4734,11 +4734,26 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                                 </div>` : ''}
                             </div>
                             <div id="soulTraitsDisplay" class="text-[11px] text-purple-400 font-serif leading-relaxed whitespace-pre-line border-t border-purple-800/40 pt-3">
-                                ${soulSession.soulTraits ? escapeHtml(soulSession.soulTraits) : '<span class="animate-pulse text-purple-600">正在解析靈魂特質…</span>'}
+                                ${soulSession.soulTraits ? escapeHtml(typeof soulSession.soulTraits === 'string' ? soulSession.soulTraits : soulSession.soulTraits.display) : '<span class="animate-pulse text-purple-600">正在解析靈魂特質…</span>'}
                             </div>
                         </div>` : `<input type="text" id="soulSoulSearch" placeholder="搜尋靈魂..." oninput="_soulRenderSoulGrid()"
                             class="w-full px-3 py-2 bg-[#140826] border border-purple-800/40 rounded-lg text-purple-100 placeholder-purple-700 focus:outline-none focus:border-purple-500 font-serif text-sm mb-2">
                         <div id="soulSoulGrid" class="grid grid-cols-4 sm:grid-cols-5 gap-1.5 max-h-36 overflow-y-auto custom-scrollbar"></div>`}
+                    </div>
+                    <div class="mb-5">
+                        <p class="text-[10px] text-purple-600 tracking-widest font-serif mb-2.5">敘事導演基調</p>
+                        <div class="grid grid-cols-3 gap-2" id="narrativeModeGrid">
+                            ${[
+                                { key:'heroic', label:'改命爽文', desc:'歷史可被突破', icon:'fa-bolt', hint:'決策有效・允許逆轉・代價可承受' },
+                                { key:'drama',  label:'權謀正劇', desc:'多方博弈慢燉', icon:'fa-chess', hint:'派系錯綜・勝利換新問題・局勢難測' },
+                                { key:'tragedy',label:'悲劇史詩', desc:'代價沉重悲壯', icon:'fa-skull', hint:'慣性極強・每勝必損・走向悲壯' }
+                            ].map(m => `<button onclick="soulSession.narrativeMode='${m.key}';document.querySelectorAll('[data-mode]').forEach(b=>b.classList.remove('ring-2','ring-purple-400','bg-purple-900/40'));document.querySelector('[data-mode=${m.key}]').classList.add('ring-2','ring-purple-400','bg-purple-900/40'))" data-mode="${m.key}" class="relative flex flex-col items-center gap-1.5 p-3 rounded-xl border border-purple-800/50 bg-[#100420] transition-all text-center ${m.key==='drama'?'ring-2 ring-purple-400 bg-purple-900/40':''}">
+                                <i class="fa-solid ${m.icon} text-purple-400 text-base"></i>
+                                <span class="font-bold font-serif text-purple-100 text-xs">${m.label}</span>
+                                <span class="text-[10px] text-purple-500 font-serif">${m.desc}</span>
+                                <span class="text-[9px] text-purple-700 font-serif leading-tight">${m.hint}</span>
+                            </button>`).join('')}
+                        </div>
                     </div>
                     <button onclick="startSoulSession()" class="w-full py-4 bg-gradient-to-r from-purple-700 to-indigo-800 hover:from-purple-600 hover:to-indigo-700 text-white rounded-xl font-bold font-serif tracking-widest shadow-xl transition-all text-sm flex items-center justify-center gap-3">
                         <i class="fa-solid fa-yin-yang text-lg"></i>開始魂穿
@@ -4871,28 +4886,41 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             const prompt = hasSource
                 ? `以下是歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的${sourceLabel}：
 ${momentCtx}
-${sourceCtx}根據以上資料，描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」穿越到他人身體時帶入的核心特質。嚴格按此格式輸出（每項35字以內，核心弱點可至50字）：
+${sourceCtx}根據以上資料，描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」穿越到他人身體時帶入的核心特質。請輸出兩個版本：
+
+【展示標籤】（每個標籤8字以內，用「・」連接，共3-4個標籤，直接反映此靈魂在此時刻最關鍵的特質）
+
+【引擎描述】（小說生成用，每項2-3句，可詳細展開，必須從上方資料具體提煉）
 ・核心驅動力：[從資料中提煉——決策與行動的根本動機，他在追求什麼、害怕失去什麼]
-・核心弱點：[資料揭示的性格弱點與認知盲點——描述中必須包含「核心驅動力」的某個關鍵詞，說明兩者如何互為因果，即驅動力本身如何製造弱點]
-・外顯氣質：[他與人互動時外顯的風格——說話的語氣、待人的方式、給旁人留下的第一印象或慣常的行為舉止]
+・核心弱點：[資料揭示的性格弱點——描述中必須包含「核心驅動力」的某個關鍵詞，說明兩者如何互為因果]
+・外顯氣質：[與人互動時外顯的風格——說話的語氣、待人的方式、給旁人留下的慣常印象]
 ${lastTrait}
 
-只輸出格式內容。特質必須源自上方資料，不得泛泛而談。特質應反映「${soulSession.soulMoment?.title||'此時刻'}」的靈魂狀態。`
+只輸出兩個版本的內容，不要其他說明。特質必須源自上方資料，不得泛泛而談。`
                 : `歷史人物「${soul.name}」（${soul.rank}，${soul.title||''}，${soul.dynasty||''}）的靈魂穿越到他人身體中。${momentCtx}
-請用每項35字以內（核心弱點可至50字）描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」帶入的核心特質，嚴格按此格式輸出：
+請描述這個靈魂在「${soulSession.soulMoment?.title||'穿越時刻'}」帶入的核心特質，輸出兩個版本：
+
+【展示標籤】（每個標籤8字以內，用「・」連接，共3-4個標籤）
+
+【引擎描述】（小說生成用，每項2-3句）
 ・核心驅動力：[決策與行動的根本動機，他在追求什麼、害怕失去什麼]
-・核心弱點：[性格弱點與認知盲點——必須包含核心驅動力的某個關鍵詞，說明兩者如何互為因果]
-・外顯氣質：[與人互動時外顯的風格——語氣、待人方式、給旁人的第一印象]
+・核心弱點：[性格弱點——必須包含核心驅動力的某個關鍵詞，說明兩者如何互為因果]
+・外顯氣質：[與人互動時外顯的風格——語氣、待人方式、給旁人的慣常印象]
 ${lastTrait}
 
-只輸出格式內容，不要其他說明。`;
+只輸出兩個版本的內容，不要其他說明。`;
 
             try {
                 const text = await callGemini(prompt, false);
                 if (soulSession.soulId === soulId) {
-                    soulSession.soulTraits = text.trim();
+                    const displayMatch = text.match(/【展示標籤】\s*\n?([\s\S]*?)(?=【引擎描述】|$)/);
+                    const engineMatch = text.match(/【引擎描述】\s*\n?([\s\S]*?)$/);
+                    soulSession.soulTraits = {
+                        display: displayMatch ? displayMatch[1].trim() : text.trim().split('\n')[0],
+                        engine: engineMatch ? engineMatch[1].trim() : text.trim()
+                    };
                     const display = el('soulTraitsDisplay');
-                    if (display) display.textContent = soulSession.soulTraits;
+                    if (display) display.textContent = soulSession.soulTraits.display;
                 }
             } catch(e) { /* 生成失敗時靜默，使用無特質版本 */ }
         }
@@ -4952,6 +4980,40 @@ ${lastTrait}
             return goals.join('；並且，');
         }
 
+        async function _inferChapterGoal(chNum, suggestedType, globalSummary, pendingTensions, figureStates, keyEvents) {
+            if (chNum === 0) return _getChapterNarrativeGoal(0, null, [], []);
+            const tensionsStr = (pendingTensions || []).length > 0
+                ? (pendingTensions || []).map((t, i) => `${i + 1}. ${t}`).join('\n')
+                : '（目前無積累張力）';
+            const figsStr = (figureStates || []).length > 0
+                ? figureStates.map(f => `${f.name}(${f.attitude})${f.summary ? `：${f.summary}` : ''}${f.tension ? `｜矛盾：${f.tension}` : ''}`).join('\n')
+                : '（無登場人物）';
+            const recentEvts = (keyEvents || []).slice(-5).join('\n') || '（無）';
+            const typeHint = suggestedType ? `本章章型為「${suggestedType}」。` : '';
+            const prompt = `這是一個歷史穿越小說，目前是第${chNum + 1}章。${typeHint}
+
+【全局主線摘要】
+${globalSummary || '故事剛開始。'}
+
+【積累未解決的張力】
+${tensionsStr}
+
+【關鍵人物當前狀態】
+${figsStr}
+
+【最近不可逆事件】
+${recentEvts}
+
+根據以上故事現狀，用一句話（30字以內）說出本章最應當推進的核心戲劇任務——必須具體到這個故事的人物和局勢，不要泛泛描述。只輸出這一句話，不要任何說明或前綴。`;
+            try {
+                const result = await callGemini(prompt);
+                const goal = result?.trim();
+                return goal || _getChapterNarrativeGoal(chNum, suggestedType, pendingTensions, figureStates);
+            } catch(e) {
+                return _getChapterNarrativeGoal(chNum, suggestedType, pendingTensions, figureStates);
+            }
+        }
+
         async function _generateSoulChapter() {
             const host = legendsData.find(l => l.id === soulSession.hostId);
             const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
@@ -4994,7 +5056,10 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
 [FIGURES][{"name":"人名","rank":"評級","change":"本章動態20字內","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
 [CHAPTERTITLE]4-8字章節標題[/CHAPTERTITLE]`;
             } else {
-                const traitsBlock = (soul && soulSession.soulTraits) ? `\n靈魂特質：\n${soulSession.soulTraits}` : '';
+                const traitsEngine = soulSession.soulTraits
+                    ? (typeof soulSession.soulTraits === 'string' ? soulSession.soulTraits : (soulSession.soulTraits.engine || soulSession.soulTraits.display))
+                    : '';
+                const traitsBlock = (soul && traitsEngine) ? `\n靈魂特質：\n${traitsEngine}` : '';
                 const soulEssenceForChapter = soul ? (appState.modifiedLegends[soulSession.soulId]?.soulEssence || '') : '';
                 const soulEssenceCtx = soulEssenceForChapter ? `【靈魂內核——作者寫作參考，絕不能讓標籤文字出現在正文中】\n${soulEssenceForChapter}\n\n` : '';
                 const soulMomentIsPostDeath = soulSession.soulMoment?.isPostDeath ?? true;
@@ -5053,7 +5118,12 @@ ${ctx}${figCtx}請寫出${label}（2000-3000字）：
                     : suggestedType === '人物章'
                     ? '以某位配角的視角與困境為主體，主角居次要位置；深入挖掘該配角的處境、內在矛盾或命運轉折'
                     : '帶入明確的外部衝突與決策，推動情節向前';
-                const narrativeGoal = _getChapterNarrativeGoal(chNum, suggestedType, soulSession.pendingTensions, soulSession.figureStates);
+                const narrativeGoal = await _inferChapterGoal(chNum, suggestedType, soulSession.globalSummary, soulSession.pendingTensions, soulSession.figureStates, soulSession.keyEvents);
+                const narrativeModeCtx = soulSession.narrativeMode === 'heroic'
+                    ? `【故事導演基調：改命爽文】歷史慣性存在但可以被突破——主角的決策在本故事中有較高成效，局勢演化允許逆轉，關鍵代價必須存在但整體走向允許主角較多的主動性和成就感；配角阻力真實但不至於無解。\n\n`
+                    : soulSession.narrativeMode === 'tragedy'
+                    ? `【故事導演基調：悲劇史詩】歷史慣性極強——每個勝利背後都應有沉重的不可逆代價；配角有自己獨立的悲劇弧線；即使主角再努力，結局也走向悲壯而非大團圓；局勢的結構性困境比個人意志更大。\n\n`
+                    : `【故事導演基調：權謀正劇】慢節奏布局，多方派系博弈——短期成功常換來長期新問題；局勢複雜而難以完全掌控；人心難測，聯盟脆弱；主角的勝利應伴隨新的複雜性而非純粹的成就感。\n\n`;
                 const tensionForceCtx = (soulSession.tensionStaleChapters || 0) >= 5
                     ? `【張力爆發強制要求】距上次張力解決或爆發已超過五章，本章必須明確觸發或解決 pendingTensions 中的某一條張力——可以是衝突爆發、計謀敗露、或局面發生不可逆的轉變。\n\n`
                     : '';
@@ -5090,7 +5160,7 @@ ${ctx}${figCtx}${keyEventsCtx}${currentDateCtx}${soulEssenceCtx}${hostPhysiqueCt
 
 請寫出${label}（2000-3000字）：${firstExtra}
 
-【A·絕對禁令】優先級最高，任何情況不得違反：
+${narrativeModeCtx}【A·絕對禁令】優先級最高，任何情況不得違反：
 1. 【已識之人】上方「已登場人物」中所有人物，主角已與之有過真實互動。他們出場時，對話語氣、稱謂方式、信任或警戒程度必須體現累積關係的重量；禁止以「謹慎打量」「小心試探」等初見語氣描寫已有多次互動的人物；主角也不必重新評估這些人的基本立場，除非本章發生了改變立場的具體事件
 2. 【計謀解說禁令】任何計謀或決策的成效，禁止在事後以主角內心獨白或旁白直接說明邏輯——不得出現「他成功地讓對方相信了……」「某人突然意識到……的用意」之類的解說句。若必須揭示計謀，只能透過對方的行為變化、沉默、或結果反推讓讀者自行感知，不得由敘事者直接宣告
 3. 【知識邊界】知識來自具體的人生經歷，不來自時代，也不來自身份類別。每個人實際知道什麼，必須從其具體的生平、教育背景、真實人際圈、親身經歷過的事件去推斷——而非套用「帝王應知」「武將應懂」之類的刻板印象。「那個時代存在的知識」≠「他個人知道的知識」。若靈魂帶有超前知識，必須面對當世人無法理解、甚至視為異端的現實阻力
