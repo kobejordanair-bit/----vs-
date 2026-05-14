@@ -617,9 +617,28 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div class="flex flex-col gap-3 p-3" id="hegemonyFactionsContainer"></div>
             </div>
         </div>
+        <!-- 推薦劇本選單 -->
+        <div id="scenarioMenu" class="hidden shrink-0 border-t border-[#3e3020] bg-[#1c1917] px-4 py-3">
+            <p class="text-[10px] text-[#78716c] font-serif mb-2 tracking-widest">選擇推薦劇本，自動配置勢力與領土</p>
+            <div class="flex gap-2 flex-wrap">
+                <button onclick="loadScenario('sanguo')" class="flex-1 min-w-[120px] px-3 py-2 rounded-lg border border-[#44403c] text-[#e7e5e4] hover:border-[#d4af37] hover:text-[#d4af37] transition-all text-left">
+                    <div class="font-bold font-serif text-sm">三國鼎立</div>
+                    <div class="text-[10px] text-[#78716c] mt-0.5">魏・蜀・吳 三分天下</div>
+                </button>
+                <button onclick="loadScenario('chuhan')" class="flex-1 min-w-[120px] px-3 py-2 rounded-lg border border-[#44403c] text-[#e7e5e4] hover:border-[#d4af37] hover:text-[#d4af37] transition-all text-left">
+                    <div class="font-bold font-serif text-sm">楚漢相爭</div>
+                    <div class="text-[10px] text-[#78716c] mt-0.5">劉邦・項羽 逐鹿中原</div>
+                </button>
+                <button onclick="loadScenario('nanbei')" class="flex-1 min-w-[120px] px-3 py-2 rounded-lg border border-[#44403c] text-[#e7e5e4] hover:border-[#d4af37] hover:text-[#d4af37] transition-all text-left">
+                    <div class="font-bold font-serif text-sm">南北朝對峙</div>
+                    <div class="text-[10px] text-[#78716c] mt-0.5">北朝・南朝 江淮為界</div>
+                </button>
+            </div>
+        </div>
         <div id="hegemonyFooter" class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-3">
             <div class="w-9 h-9 rounded-full bg-[#7f1d1d] text-[#d4af37] flex items-center justify-center font-black text-sm shadow-lg border-2 border-[#f5f5f4] font-serif shrink-0">鹿</div>
             <button onclick="resumeSimulation()" id="resumeSimBtn" class="hidden btn-ink px-4 py-2 rounded-lg font-bold font-serif text-xs transition-all">繼續上次推演</button>
+            <button onclick="toggleScenarioMenu()" class="btn-ink px-4 py-2 rounded-lg font-bold font-serif text-xs transition-all"><i class="fa-solid fa-scroll mr-1"></i>推薦劇本</button>
             <button onclick="openBattleSetup()" id="startHegemonyBtn" class="btn-gold px-5 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">推演設定</button>
         </div>
     </div>
@@ -3940,21 +3959,92 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             _renderHegemonyMap();
         }
 
+        let _mapHintTimer = null;
+        function _showMapHint(msg, highlight) {
+            const hint = el('hegemonyMapHint');
+            if (!hint) return;
+            hint.textContent = msg;
+            hint.style.color = highlight ? '#d4af37' : '';
+            hint.style.fontSize = highlight ? '11px' : '';
+            clearTimeout(_mapHintTimer);
+            _mapHintTimer = setTimeout(() => {
+                hint.textContent = '點擊地區分配領土';
+                hint.style.color = '';
+                hint.style.fontSize = '';
+            }, 2000);
+        }
+
         function _onMapClick(provinceName) {
             const terrId = PROVINCE_TO_REGION[provinceName] || PROVINCE_TO_REGION[provinceName.replace(/维吾尔自治区|壮族自治区|回族自治区|自治区|省|市/g, '')];
             if (!terrId) return;
             const factions = appState.hegemony.factions;
             const ownerIdx = factions.findIndex(f => f.territories.includes(terrId));
+            const regionObj = REGION_DATA.find(r => r.id === terrId);
+            const regionName = regionObj?.name || terrId;
             if (ownerIdx === -1) {
                 factions[0]?.territories.push(terrId);
+                _showMapHint(`${regionName} → 劃入 ${factions[0]?.name}`, true);
             } else if (ownerIdx < factions.length - 1) {
                 factions[ownerIdx].territories = factions[ownerIdx].territories.filter(t => t !== terrId);
                 factions[ownerIdx + 1].territories.push(terrId);
+                _showMapHint(`${regionName} → 劃入 ${factions[ownerIdx + 1].name}`, true);
             } else {
                 factions[ownerIdx].territories = factions[ownerIdx].territories.filter(t => t !== terrId);
+                _showMapHint(`${regionName} 已解除占領`, false);
             }
             _renderHegemonyMap();
             updateHegemonyUI();
+        }
+
+        const QUICK_SCENARIOS = {
+            sanguo: {
+                name: '三國鼎立',
+                factions: [
+                    { name: '魏', colorIdx: 1, territories: ['關中','河北','河東','中原','山東','遼東'] },
+                    { name: '蜀', colorIdx: 0, territories: ['巴蜀','西涼','漠北'] },
+                    { name: '吳', colorIdx: 2, territories: ['江東','荊湖','淮泗','嶺南'] }
+                ]
+            },
+            chuhan: {
+                name: '楚漢相爭',
+                factions: [
+                    { name: '漢', colorIdx: 0, territories: ['關中','巴蜀','西涼'] },
+                    { name: '楚', colorIdx: 2, territories: ['中原','江東','河北','淮泗','荊湖'] }
+                ]
+            },
+            nanbei: {
+                name: '南北朝對峙',
+                factions: [
+                    { name: '北朝', colorIdx: 1, territories: ['漠北','遼東','河北','關中','河東','中原','山東','西涼'] },
+                    { name: '南朝', colorIdx: 0, territories: ['江東','荊湖','嶺南','江西','巴蜀'] }
+                ]
+            }
+        };
+
+        function toggleScenarioMenu() {
+            const menu = el('scenarioMenu');
+            if (!menu) return;
+            menu.classList.toggle('hidden');
+        }
+
+        function loadScenario(key) {
+            const scenario = QUICK_SCENARIOS[key];
+            if (!scenario) return;
+            const h = appState.hegemony;
+            h.activeSlot = null;
+            h.factions = scenario.factions.map((s, i) => ({
+                id: `faction_${key}_${i}`,
+                name: s.name,
+                colorIdx: s.colorIdx,
+                territories: [...s.territories],
+                courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null },
+                militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null },
+                courtCollapsed: false,
+                militaryCollapsed: false
+            }));
+            el('scenarioMenu').classList.add('hidden');
+            updateHegemonyUI();
+            syncToCloud();
         }
         // ===== end ECharts =====
 
