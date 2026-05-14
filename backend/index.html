@@ -605,6 +605,11 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
             </div>
         </div>
+        <!-- 地圖區 -->
+        <div id="hegemonyMapSection" class="shrink-0 border-b border-[#3e3020] relative" style="height:210px;background:#1a1410;">
+            <div id="hegemonyMapContainer" style="height:100%;width:100%;"></div>
+            <div id="hegemonyMapHint" class="absolute bottom-1 right-2 text-[9px] text-[#78716c] font-serif pointer-events-none">點擊地區分配領土</div>
+        </div>
         <div id="hegemonyContent" class="flex-1 overflow-x-auto p-4 bg-[#f0ede6]">
             <div class="flex gap-4 items-start min-w-max" id="hegemonyFactionsContainer"></div>
         </div>
@@ -1559,12 +1564,35 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             { id: 'pixiu',     name: '貔貅', bg: 'bg-cyan-50',    border: 'border-cyan-300',    text: 'text-cyan-900',   icon: 'text-cyan-600' }
         ];
 
-        const TERRITORIES = [
-            "關中 (天府)", "中原 (四戰)", "江東 (天險)", "巴蜀 (險阻)", "荊州 (通衢)",
-            "河北 (精兵)", "西涼 (鐵騎)", "遼東 (偏霸)", "嶺南 (化外)", "漠北 (苦寒)",
-            "山東 (齊魯)", "江淮 (水鄉)", "漢中 (咽喉)", "太行 (險要)", "幽燕 (邊塞)",
-            "河套 (牧馬)", "閩越 (海疆)", "湖湘 (魚米)", "雲貴 (偏遠)", "關東 (諸侯)"
+        const REGION_DATA = [
+            { id: '漠北', name: '漠北', tag: '苦寒', desc: '草原霸主，鐵騎搖籃', provinces: ['内蒙古自治区'], bonus: { 軍事: 20 } },
+            { id: '遼東', name: '遼東', tag: '偏霸', desc: '東北邊疆，偏霸之地', provinces: ['辽宁省', '吉林省', '黑龙江省'], bonus: { 軍事: 15 } },
+            { id: '河北', name: '河北', tag: '精兵', desc: '燕趙精兵，天下之喉', provinces: ['河北省', '北京市', '天津市'], bonus: { 軍事: 15, 政治: 5 } },
+            { id: '河東', name: '河東', tag: '險要', desc: '表裡山河，一夫當關', provinces: ['山西省'], bonus: { 軍事: 10, 謀略: 5 } },
+            { id: '山東', name: '山東', tag: '齊魯', desc: '齊魯膏腴，海路要衝', provinces: ['山东省'], bonus: { 經濟: 15, 政治: 10 } },
+            { id: '關中', name: '關中', tag: '天府', desc: '天府之國，帝王之基', provinces: ['陕西省'], bonus: { 政治: 20, 軍事: 10 } },
+            { id: '西涼', name: '西涼', tag: '鐵騎', desc: '鐵騎邊塞，絲路咽喉', provinces: ['甘肃省', '宁夏回族自治区', '青海省'], bonus: { 軍事: 20, 外交: 5 } },
+            { id: '西域', name: '西域', tag: '絲路', desc: '萬里戈壁，絲路之源', provinces: ['新疆维吾尔自治区'], bonus: { 外交: 20, 經濟: 10 } },
+            { id: '吐蕃', name: '吐蕃', tag: '高原', desc: '高原屏障，化外之地', provinces: ['西藏自治区'], bonus: { 軍事: 10, 謀略: 5 } },
+            { id: '中原', name: '中原', tag: '四戰', desc: '四戰之地，問鼎之所', provinces: ['河南省'], bonus: { 政治: 15, 謀略: 10 } },
+            { id: '淮泗', name: '淮泗', tag: '樞紐', desc: '南北樞紐，兵家必爭', provinces: ['安徽省', '江苏省'], bonus: { 軍事: 10, 經濟: 10 } },
+            { id: '巴蜀', name: '巴蜀', tag: '險阻', desc: '天府之地，進可攻退可守', provinces: ['四川省', '重庆市'], bonus: { 經濟: 15, 謀略: 10 } },
+            { id: '荊湖', name: '荊湖', tag: '通衢', desc: '南北通衢，長江鎖鑰', provinces: ['湖北省', '湖南省'], bonus: { 軍事: 10, 謀略: 10 } },
+            { id: '江東', name: '江東', tag: '天險', desc: '天塹之險，魚米之鄉', provinces: ['浙江省', '上海市'], bonus: { 經濟: 20, 外交: 10 } },
+            { id: '江西', name: '江西', tag: '贛地', desc: '贛水流域，南北中轉', provinces: ['江西省'], bonus: { 經濟: 10, 謀略: 5 } },
+            { id: '嶺南', name: '嶺南', tag: '化外', desc: '化外之地，海上絲路', provinces: ['广东省', '广西壮族自治区', '福建省', '海南省'], bonus: { 外交: 15, 經濟: 15 } },
+            { id: '西南', name: '西南', tag: '偏遠', desc: '蠻荒之地，民族交融', provinces: ['云南省', '贵州省'], bonus: { 謀略: 10, 外交: 5 } },
         ];
+        // 省份名→地區 id 對照（支援完整名與簡稱）
+        const PROVINCE_TO_REGION = {};
+        REGION_DATA.forEach(r => {
+            r.provinces.forEach(p => {
+                PROVINCE_TO_REGION[p] = r.id;
+                const short = p.replace(/维吾尔自治区|壮族自治区|回族自治区|自治区|省|市/g, '');
+                PROVINCE_TO_REGION[short] = r.id;
+            });
+        });
+        const TERRITORIES = REGION_DATA.map(r => r.id);
 
         // State
         const appState = {
@@ -1578,8 +1606,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 minimized: false,
                 activeSlot: null,
                 factions: [
-                    { id: 'qinglong', name: '青龍', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
-                    { id: 'baihu',    name: '白虎', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
+                    { id: 'qinglong', name: '青龍', colorIdx: 0, territories: ['關中'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
+                    { id: 'baihu',    name: '白虎', colorIdx: 1, territories: ['河北'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
                 ],
                 battleSetup: { battlefield: null, scenario: 'battle' },
                 phases: [],
@@ -3678,7 +3706,7 @@ ${rankingRef}
         // --- HEGEMONY FACTION LOGIC ---
         function makeFaction(idx) {
             const names = ['青龍','白虎','朱雀','玄武','黃龍','麒麟','貔貅'];
-            const defaultTerrs = ['關中 (天府)','河北 (精兵)','江東 (天險)','巴蜀 (險阻)','荊州 (通衢)','西涼 (鐵騎)','漠北 (苦寒)'];
+            const defaultTerrs = ['關中','河北','江東','巴蜀','荊湖','西涼','漠北'];
             return {
                 id: `faction_${Date.now()}_${idx}`,
                 name: names[idx % names.length],
@@ -3707,8 +3735,8 @@ ${rankingRef}
                 const h = appState.hegemony;
                 h.activeSlot = null;
                 h.factions = [
-                    { id: 'qinglong', name: '青龍', colorIdx: 0, territories: ['關中 (天府)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
-                    { id: 'baihu',    name: '白虎', colorIdx: 1, territories: ['河北 (精兵)'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
+                    { id: 'qinglong', name: '青龍', colorIdx: 0, territories: ['關中'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false },
+                    { id: 'baihu',    name: '白虎', colorIdx: 1, territories: ['河北'], courtSlots: { emperor: null, strategist: null, finance: null, diplomat: null, admin: null, censor: null, oddplan: null }, militarySlots: { commander: null, advisor: null, vanguard: null, deputy: null, supply: null, raider: null }, courtCollapsed: false, militaryCollapsed: false }
                 ];
                 updateHegemonyUI();
                 renderLegends();
@@ -3813,18 +3841,136 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
         }
 
         // --- HEGEMONY UI ---
+        // ===== ECharts 霸業地圖 =====
+        let _hegemonyMapChart = null;
+        let _echartsLoaded = false;
+
+        const _MAP_COLORS = [
+            'rgba(16,185,129,0.75)',  // 青龍
+            'rgba(148,163,184,0.75)', // 白虎
+            'rgba(239,68,68,0.75)',   // 朱雀
+            'rgba(99,102,241,0.75)',  // 玄武
+            'rgba(245,158,11,0.75)', // 黃龍
+            'rgba(139,92,246,0.75)', // 麒麟
+            'rgba(6,182,212,0.75)',  // 貔貅
+        ];
+
+        async function _loadEcharts() {
+            if (_echartsLoaded) return;
+            await new Promise((resolve, reject) => {
+                const s = document.createElement('script');
+                s.src = 'https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js';
+                s.onload = resolve; s.onerror = reject;
+                document.head.appendChild(s);
+            });
+            const geoData = await fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json').then(r => r.json());
+            echarts.registerMap('china', geoData);
+            _echartsLoaded = true;
+        }
+
+        function _buildMapRegions() {
+            const regions = [];
+            appState.hegemony.factions.forEach(f => {
+                const color = _MAP_COLORS[f.colorIdx % _MAP_COLORS.length];
+                f.territories.forEach(terrId => {
+                    const region = REGION_DATA.find(r => r.id === terrId);
+                    if (!region) return;
+                    region.provinces.forEach(prov => {
+                        regions.push({ name: prov, itemStyle: { areaColor: color, borderColor: '#d4af37', borderWidth: 1.5 }, emphasis: { itemStyle: { areaColor: color, opacity: 1 } } });
+                    });
+                });
+            });
+            return regions;
+        }
+
+        function _renderHegemonyMap() {
+            if (!_hegemonyMapChart || !_echartsLoaded) return;
+            _hegemonyMapChart.setOption({
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'item', confine: true,
+                    backgroundColor: 'rgba(28,25,23,0.92)', borderColor: '#d4af37', borderWidth: 1,
+                    textStyle: { color: '#e7e5e4', fontFamily: 'Noto Serif TC, serif', fontSize: 12 },
+                    formatter: params => {
+                        const r = REGION_DATA.find(rd => rd.provinces.includes(params.name));
+                        if (!r) return params.name;
+                        const owner = appState.hegemony.factions.find(f => f.territories.includes(r.id));
+                        const styles = owner ? FACTION_COLORS[owner.colorIdx % FACTION_COLORS.length] : null;
+                        return `<b>${r.name}</b>（${r.tag}）<br/><span style="opacity:.7;font-size:10px">${r.desc}</span><br/>${owner ? `⚑ ${owner.name}` : '<span style="opacity:.5">無人占領</span>'}`;
+                    }
+                },
+                series: [{
+                    type: 'map', map: 'china', roam: false,
+                    aspectScale: 0.85, layoutCenter: ['50%', '50%'], layoutSize: '108%',
+                    itemStyle: { areaColor: '#2a2218', borderColor: '#5a4e3a', borderWidth: 0.5 },
+                    emphasis: { label: { show: false }, itemStyle: { areaColor: '#3a3020' } },
+                    select: { disabled: true },
+                    label: { show: false },
+                    regions: _buildMapRegions(),
+                }]
+            }, { notMerge: true });
+        }
+
+        async function _initHegemonyMap() {
+            const container = el('hegemonyMapContainer');
+            if (!container) return;
+            if (!_echartsLoaded) {
+                el('hegemonyMapHint').textContent = '地圖載入中…';
+                try {
+                    await _loadEcharts();
+                    el('hegemonyMapHint').textContent = '點擊地區分配領土';
+                } catch(e) {
+                    container.innerHTML = '<div class="flex items-center justify-center h-full text-slate-500 text-xs font-serif">地圖載入失敗，請檢查網路連線</div>';
+                    return;
+                }
+            }
+            if (!_hegemonyMapChart) {
+                _hegemonyMapChart = echarts.init(container, null, { renderer: 'canvas' });
+                _hegemonyMapChart.on('click', params => { if (params.componentType === 'series') _onMapClick(params.name); });
+                window.addEventListener('resize', () => _hegemonyMapChart?.resize());
+            }
+            _renderHegemonyMap();
+        }
+
+        function _onMapClick(provinceName) {
+            const terrId = PROVINCE_TO_REGION[provinceName] || PROVINCE_TO_REGION[provinceName.replace(/维吾尔自治区|壮族自治区|回族自治区|自治区|省|市/g, '')];
+            if (!terrId) return;
+            const factions = appState.hegemony.factions;
+            const ownerIdx = factions.findIndex(f => f.territories.includes(terrId));
+            if (ownerIdx === -1) {
+                factions[0]?.territories.push(terrId);
+            } else if (ownerIdx < factions.length - 1) {
+                factions[ownerIdx].territories = factions[ownerIdx].territories.filter(t => t !== terrId);
+                factions[ownerIdx + 1].territories.push(terrId);
+            } else {
+                factions[ownerIdx].territories = factions[ownerIdx].territories.filter(t => t !== terrId);
+            }
+            _renderHegemonyMap();
+            updateHegemonyUI();
+        }
+        // ===== end ECharts =====
+
         function calcFactionPower(f) {
             const rankScore = { 'S+': 100, 'S': 90, 'S-': 85, 'A+': 80, 'A': 75, 'A-': 70, 'B+': 65, 'B': 60, 'B-': 55, 'C+': 50, 'C': 45, 'C-': 40, 'D': 30 };
             const score = id => id ? (rankScore[getLegendRank(id)] || 0) : 0;
             const avg = ids => { const s = ids.filter(Boolean); return s.length ? Math.round(s.reduce((a, id) => a + score(id), 0) / s.length) : 0; };
             const cs = f.courtSlots; const ms = f.militarySlots;
-            return {
+            const base = {
                 軍事: avg([ms.commander, ms.advisor, ms.vanguard, ms.deputy, ms.supply, ms.raider]),
                 謀略: avg([cs.strategist, cs.oddplan, ms.advisor]),
                 政治: avg([cs.emperor, cs.admin, cs.censor]),
                 經濟: avg([cs.finance, ms.supply]),
                 外交: avg([cs.diplomat, cs.strategist])
             };
+            // 領地地緣加成（每項最多 +20）
+            const terrBonus = { 軍事: 0, 謀略: 0, 政治: 0, 經濟: 0, 外交: 0 };
+            f.territories.forEach(terrId => {
+                const region = REGION_DATA.find(r => r.id === terrId);
+                if (!region) return;
+                Object.entries(region.bonus).forEach(([attr, val]) => { if (terrBonus[attr] !== undefined) terrBonus[attr] += val; });
+            });
+            Object.keys(base).forEach(k => { base[k] = Math.min(100, base[k] + Math.round((terrBonus[k] || 0) * 0.25)); });
+            return base;
         }
 
         function updateHegemonyUI() {
@@ -3853,9 +3999,12 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
 
                 const courtCount = Object.values(f.courtSlots).filter(Boolean).length;
                 const milCount = Object.values(f.militarySlots).filter(Boolean).length;
-                const terrHtml = f.territories.map(t => `<span onclick="removeTerritory('${f.id}','${t.replace(/'/g,'\\\'')}')" class="inline-flex items-center text-[9px] font-bold ${styles.text} border ${styles.border} rounded px-1.5 py-0.5 cursor-pointer hover:opacity-60" title="點擊移除">${t.split(' ')[0]} ×</span>`).join('');
-                const availTerr = TERRITORIES.filter(t => !f.territories.includes(t));
-                const addTerrHtml = f.territories.length < 5 ? `<select onchange="addTerritory('${f.id}',this.value);this.value=''" class="text-[9px] px-1 py-0.5 rounded border border-dashed ${styles.border} bg-white bg-opacity-70 ${styles.text} outline-none cursor-pointer"><option value="">+領地</option>${availTerr.map(t=>`<option value="${t}">${t}</option>`).join('')}</select>` : '';
+                const terrHtml = f.territories.map(t => {
+                    const region = REGION_DATA.find(r => r.id === t);
+                    const label = region ? `${region.name}·${region.tag}` : t;
+                    return `<span onclick="removeTerritory('${f.id}','${t.replace(/'/g,'\\\'')}')" class="inline-flex items-center text-[9px] font-bold ${styles.text} border ${styles.border} rounded px-1.5 py-0.5 cursor-pointer hover:opacity-60" title="${region?.desc || ''} — 點擊移除">${label} ×</span>`;
+                }).join('');
+                const addTerrHtml = '';
                 const powerHtml = Object.entries(power).filter(([,v])=>v>0).map(([k,v])=>`<div class="flex items-center gap-1"><span class="text-[8px] text-slate-400 w-5 shrink-0">${k}</span><div class="flex-1 h-1 bg-slate-100 rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:${v}%;background-color:${barColor}"></div></div><span class="text-[8px] text-slate-500 w-6 text-right">${v}</span></div>`).join('');
 
                 const factionCard = `<div class="min-w-[230px] w-[230px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col max-h-[calc(72vh-130px)] overflow-y-auto">
@@ -3876,6 +4025,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 fragment.appendChild(div.firstChild);
             });
             container.appendChild(fragment);
+            _renderHegemonyMap();
             // Show/hide resume button
             const resumeBtn = el('resumeSimBtn');
             if (resumeBtn) {
@@ -4056,7 +4206,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 const power = calcFactionPower(f);
                 const court = {}; for(const [r,id] of Object.entries(f.courtSlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) court[courtLabels[r]]=`${n}（${rk||'未評'}）`; }
                 const mil = {}; for(const [r,id] of Object.entries(f.militarySlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) mil[milLabels[r]]=`${n}（${rk||'未評'}）`; }
-                return { name: f.name, 領地: f.territories.join('、'), 國力: power, 朝堂: court, 兵事: mil };
+                return { name: f.name, 領地: f.territories.map(t => { const r = REGION_DATA.find(rd => rd.id === t); return r ? r.name + '（' + r.tag + '）' : t; }).join('、'), 國力: power, 朝堂: court, 兵事: mil };
             });
             const prompt = `你是一位嚴肅的政治史推演師，請對這場多方朝堂角力進行深度分析與敘述。\n\n【參與勢力】：\n${factionData.map(f=>`▶ ${f.name}｜領地：${f.領地}｜國力：軍事${f.國力.軍事}/謀略${f.國力.謀略}/政治${f.國力.政治}/經濟${f.國力.經濟}/外交${f.國力.外交}\n  朝堂：${Object.entries(f.朝堂).map(([r,n])=>`${r}→${n}`).join('、')}\n  兵事：${Object.entries(f.兵事).map(([r,n])=>`${r}→${n}`).join('、')}`).join('\n\n')}\n\n必須深入呈現以下三個維度：\n\n一、各方的人物肖像與政治邏輯：\n- 每位君主的執政風格：他如何看待臣下，他的底線與忌憚在哪裡，他最怕什麼局面\n- 核心謀臣的真實地位：他被君主信任到什麼程度，他有哪些政治局限與個人盤算\n- 各方陣營內部的矛盾：純粹的忠誠是奢侈品——誰在打自己的算盤，誰的利益與主君只是暫時一致\n\n二、朝堂博弈的具體機制：\n- 政策議題：爭的是什麼具體的政治決策（財政、軍事擴張、人事任免、和戰之策），各方立場的真實利益基礎\n- 資訊戰與輿論戰：如何影響君主的判斷，如何打擊對手的公信力，誰在控制敘事\n- 人事佈局：關鍵職位的爭奪如何改變下一步的棋局，誰被明升暗降，誰被扶植\n\n三、博弈的進程與歷史代價：\n- 力量如何演進，轉折點在哪裡，為什麼在這個時刻出現\n- 勝者付出了什麼政治代價？勝利是否製造了新的問題？\n- 敗者是否留下了政治遺產？失敗是能力問題還是結構問題？\n- 這場博弈之後，格局如何重組，埋下了哪些新的衝突種子\n\n字數不少於1400字。政治的本質是利益的衝突與妥協，非善惡之爭。每個人物的選擇都要有其政治處境的合理性，不接受脫離現實的忠奸臉譜。繁體中文。`;
             el('loadingState').classList.remove('hidden');
@@ -4088,7 +4238,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 const power = calcFactionPower(f);
                 const court = {}; for(const [r,id] of Object.entries(f.courtSlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) court[courtLabels[r]]=`${n}（${rk||'未評'}）`; }
                 const mil = {}; for(const [r,id] of Object.entries(f.militarySlots)) { const n=getLegendName(id),rk=getLegendRank(id); if(n) mil[milLabels[r]]=`${n}（${rk||'未評'}）`; }
-                return { name: f.name, 領地: f.territories.join('、'), 國力: power, 朝堂: court, 兵事: mil };
+                return { name: f.name, 領地: f.territories.map(t => { const r = REGION_DATA.find(rd => rd.id === t); return r ? r.name + '（' + r.tag + '）' : t; }).join('、'), 國力: power, 朝堂: court, 兵事: mil };
             });
             const bf = BATTLEFIELDS.find(b => b.id === setup.battlefield);
             const bfInfo = bf ? `${bf.name}（${bf.env}）` : '未指定（由AI隨機選定戰場）';
@@ -4393,7 +4543,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                     const heightMap = { 'hegemony': '72vh', 'soulMode': '420px', 'debateMode': '340px' };
                     document.body.style.paddingBottom = heightMap[modeName] || '0px';
                     if (modeName === 'debateMode') updateDebateModeUI();
-                    if (modeName === 'hegemony') updateHegemonyUI();
+                    if (modeName === 'hegemony') { updateHegemonyUI(); _initHegemonyMap(); }
                     if (modeName === 'soulMode') { setSoulTab(appState.soulMode.activeTab || 'free'); }
                 }
             } else {
