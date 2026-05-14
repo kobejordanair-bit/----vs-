@@ -6570,6 +6570,21 @@ function _renderDebateProgress() {
     el('debateProgressBar').innerHTML = progressHtml;
 }
 
+function _extractDebateSummary(text) {
+    const cleaned = text.replace(/[*#`>]/g, '').trim();
+    const m = cleaned.match(/^.{15,100}?[。！？]/);
+    if (m) return m[0];
+    return cleaned.slice(0, 80) + (cleaned.length > 80 ? '…' : '');
+}
+
+function toggleDebateFullText(uid) {
+    const fullEl = document.getElementById(uid);
+    const btn = document.getElementById('dbtn-' + uid);
+    if (!fullEl || !btn) return;
+    const hidden = fullEl.classList.toggle('hidden');
+    btn.textContent = hidden ? '展開全文' : '收合';
+}
+
 async function _runDebateRound() {
     if (!_debateState) return;
     const { rounds, currentRound, topic, proDesc, conDesc, history } = _debateState;
@@ -6620,6 +6635,20 @@ ${historyCtx}
         });
         _debateState.history.push({ side: round.side, label: round.label, name: round.name, content: fullText });
         _debateState.currentRound++;
+
+        // Replace streaming content with summary + expandable full text
+        const _summary = _extractDebateSummary(fullText);
+        const _uid = `dfull-${Date.now()}`;
+        const _needsExpand = fullText.length > _summary.length + 10;
+        contentEl.innerHTML = `
+            <p class="text-sm font-serif text-[#44403c] leading-relaxed mb-1.5">
+                <span class="font-medium">${escapeHtml(_summary)}</span>${_needsExpand ? '<span class="text-[#a8a29e]">…</span>' : ''}
+            </p>
+            ${_needsExpand ? `
+            <button id="dbtn-${_uid}" onclick="toggleDebateFullText('${_uid}')" class="text-[10px] text-indigo-500 hover:text-indigo-700 font-serif underline transition-colors">展開全文</button>
+            <div id="${_uid}" class="hidden mt-2 pt-2 border-t border-indigo-100/60 text-sm font-serif text-[#44403c] leading-relaxed">${safeMarkdown(fullText)}</div>
+            ` : ''}
+        `;
 
         if (_debateState.currentRound >= rounds.length) {
             // 辯論結束
