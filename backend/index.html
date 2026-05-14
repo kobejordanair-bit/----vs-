@@ -589,7 +589,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     <!-- 逐鹿中原面板 (Hegemony Mode) -->
-    <div id="hegemonyPanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-[72vh] border-t-4 border-[#7f1d1d] transition-all duration-300">
+    <div id="hegemonyPanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#f5f5f4] z-40 transform translate-y-full flex flex-col h-screen overflow-hidden transition-all duration-300">
         <div class="bg-[#1c1917] text-[#e7e5e4] px-6 py-3 flex justify-between items-center shrink-0 h-14 cursor-pointer shadow-md" onclick="togglePanelSize('hegemony')">
             <div class="flex items-center gap-3">
                 <i class="fa-solid fa-chess-king text-[#d4af37] text-xl"></i>
@@ -605,15 +605,19 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
             </div>
         </div>
-        <!-- 地圖區 -->
-        <div id="hegemonyMapSection" class="shrink-0 border-b border-[#3e3020] relative" style="height:210px;background:#1a1410;">
-            <div id="hegemonyMapContainer" style="height:100%;width:100%;"></div>
-            <div id="hegemonyMapHint" class="absolute bottom-1 right-2 text-[9px] text-[#78716c] font-serif pointer-events-none">點擊地區分配領土</div>
+        <!-- 主體：左地圖 + 右勢力 -->
+        <div id="hegemonyBody" class="flex-1 flex min-h-0 overflow-hidden">
+            <!-- 地圖 -->
+            <div id="hegemonyMapSection" class="flex-1 relative min-w-0" style="background:#1a1410;">
+                <div id="hegemonyMapContainer" style="height:100%;width:100%;"></div>
+                <div id="hegemonyMapHint" class="absolute bottom-2 right-3 text-[10px] text-[#78716c] font-serif pointer-events-none">點擊地區分配領土</div>
+            </div>
+            <!-- 勢力列表 -->
+            <div id="hegemonyContent" class="w-72 xl:w-80 shrink-0 overflow-y-auto bg-[#f0ede6] border-l-2 border-[#3e3020]">
+                <div class="flex flex-col gap-3 p-3" id="hegemonyFactionsContainer"></div>
+            </div>
         </div>
-        <div id="hegemonyContent" class="flex-1 overflow-x-auto p-4 bg-[#f0ede6]">
-            <div class="flex gap-4 items-start min-w-max" id="hegemonyFactionsContainer"></div>
-        </div>
-        <div class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-3">
+        <div id="hegemonyFooter" class="shrink-0 border-t border-[#d6d3c9] bg-[#f0ede6] px-4 py-3 flex items-center justify-center gap-3">
             <div class="w-9 h-9 rounded-full bg-[#7f1d1d] text-[#d4af37] flex items-center justify-center font-black text-sm shadow-lg border-2 border-[#f5f5f4] font-serif shrink-0">鹿</div>
             <button onclick="resumeSimulation()" id="resumeSimBtn" class="hidden btn-ink px-4 py-2 rounded-lg font-bold font-serif text-xs transition-all">繼續上次推演</button>
             <button onclick="openBattleSetup()" id="startHegemonyBtn" class="btn-gold px-5 py-2 rounded-lg font-bold font-serif tracking-widest text-sm transition-all transform active:scale-95">推演設定</button>
@@ -3846,13 +3850,13 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
         let _echartsLoaded = false;
 
         const _MAP_COLORS = [
-            'rgba(16,185,129,0.75)',  // 青龍
-            'rgba(148,163,184,0.75)', // 白虎
-            'rgba(239,68,68,0.75)',   // 朱雀
-            'rgba(99,102,241,0.75)',  // 玄武
-            'rgba(245,158,11,0.75)', // 黃龍
-            'rgba(139,92,246,0.75)', // 麒麟
-            'rgba(6,182,212,0.75)',  // 貔貅
+            'rgba(16,185,129,0.92)',  // 青龍
+            'rgba(186,206,224,0.92)', // 白虎
+            'rgba(239,68,68,0.92)',   // 朱雀
+            'rgba(99,102,241,0.92)',  // 玄武
+            'rgba(245,158,11,0.92)', // 黃龍
+            'rgba(168,85,247,0.92)', // 麒麟
+            'rgba(6,182,212,0.92)',  // 貔貅
         ];
 
         async function _loadEcharts() {
@@ -3876,7 +3880,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                     const region = REGION_DATA.find(r => r.id === terrId);
                     if (!region) return;
                     region.provinces.forEach(prov => {
-                        regions.push({ name: prov, itemStyle: { areaColor: color, borderColor: '#d4af37', borderWidth: 1.5 }, emphasis: { itemStyle: { areaColor: color, opacity: 1 } } });
+                        regions.push({ name: prov, itemStyle: { areaColor: color, borderColor: '#d4af37', borderWidth: 2 }, emphasis: { itemStyle: { areaColor: color, borderColor: '#fff', borderWidth: 2 } } });
                     });
                 });
             });
@@ -4007,7 +4011,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 const addTerrHtml = '';
                 const powerHtml = Object.entries(power).filter(([,v])=>v>0).map(([k,v])=>`<div class="flex items-center gap-1"><span class="text-[8px] text-slate-400 w-5 shrink-0">${k}</span><div class="flex-1 h-1 bg-slate-100 rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:${v}%;background-color:${barColor}"></div></div><span class="text-[8px] text-slate-500 w-6 text-right">${v}</span></div>`).join('');
 
-                const factionCard = `<div class="min-w-[230px] w-[230px] flex-shrink-0 bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col max-h-[calc(72vh-130px)] overflow-y-auto">
+                const factionCard = `<div class="w-full bg-white rounded-lg border ${styles.border} shadow-sm flex flex-col">
                     <div class="${styles.bg} px-3 py-2 border-b ${styles.border} shrink-0">
                         <div class="flex justify-between items-center mb-1"><span class="font-bold font-serif ${styles.text} flex items-center gap-1 text-sm"><i class="fa-solid fa-flag"></i><span contenteditable="true" onblur="renameFaction('${f.id}',this.innerText)" onclick="event.stopPropagation()" class="outline-none cursor-text min-w-[2rem]">${f.name}</span></span><span class="text-[9px] ${styles.text} opacity-60">${courtCount}/7·${milCount}/6</span></div>
                         <div class="flex flex-wrap gap-1 mb-1">${terrHtml}${addTerrHtml}</div>
@@ -4020,7 +4024,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                     <div class="p-2 flex gap-1 shrink-0 mt-auto"><input id="desc_${f.id}" type="text" placeholder="AI選角描述..." onclick="event.stopPropagation()" class="flex-1 min-w-0 text-[10px] px-2 py-1 rounded border border-slate-200 bg-[#f5f5f4] outline-none"><button onclick="event.stopPropagation();autoSelectByDescription('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-purple-50 border border-purple-200 text-purple-700 rounded hover:bg-purple-100 whitespace-nowrap">AI</button><button onclick="event.stopPropagation();randomFillFaction('${f.id}')" class="px-2 py-1 text-[10px] font-bold bg-[#f5f5f4] border border-[#e5e0d3] text-[#57534e] rounded hover:bg-[#ede9e0] whitespace-nowrap">隨機</button></div>
                 </div>`;
                 const div = document.createElement('div');
-                div.className = 'flex-shrink-0';
+                div.className = 'w-full';
                 div.innerHTML = factionCard.trim();
                 fragment.appendChild(div.firstChild);
             });
@@ -4540,10 +4544,10 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                     if (modeName === 'hegemony') el('tipText').innerText = '點擊勢力中的職位，再點擊上方人物加入';
                     else if (modeName === 'debateMode') el('tipText').innerText = '點擊下方正方／反方槽位，再點擊上方人物加入';
                     else el('tipText').innerText = '選擇角色後啟動推演';
-                    const heightMap = { 'hegemony': '72vh', 'soulMode': '420px', 'debateMode': '340px' };
+                    const heightMap = { 'hegemony': '0', 'soulMode': '420px', 'debateMode': '340px' };
                     document.body.style.paddingBottom = heightMap[modeName] || '0px';
                     if (modeName === 'debateMode') updateDebateModeUI();
-                    if (modeName === 'hegemony') { updateHegemonyUI(); _initHegemonyMap(); }
+                    if (modeName === 'hegemony') { updateHegemonyUI(); _initHegemonyMap().then(() => setTimeout(() => _hegemonyMapChart?.resize(), 100)); }
                     if (modeName === 'soulMode') { setSoulTab(appState.soulMode.activeTab || 'free'); }
                 }
             } else {
@@ -4582,11 +4586,12 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             }
             if (mode === 'hegemony') {
                 appState.hegemony.minimized = !appState.hegemony.minimized;
-                const panel = el('hegemonyPanel'); const content = el('hegemonyContent'); const status = el('hegemonyStatus');
+                const panel = el('hegemonyPanel'); const body = el('hegemonyBody'); const footer = el('hegemonyFooter'); const status = el('hegemonyStatus');
                 if (appState.hegemony.minimized) {
-                    panel.style.height = '56px'; content.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText('hegemony');
+                    panel.style.height = '56px'; body.classList.add('hidden'); footer.classList.add('hidden'); status.classList.remove('hidden'); document.body.style.paddingBottom = '70px'; updateStatusText('hegemony');
                 } else {
-                    panel.style.height = '72vh'; content.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '72vh';
+                    panel.style.height = '100vh'; body.classList.remove('hidden'); footer.classList.remove('hidden'); status.classList.add('hidden'); document.body.style.paddingBottom = '0';
+                    setTimeout(() => _hegemonyMapChart?.resize(), 350);
                 }
                 return;
             }
