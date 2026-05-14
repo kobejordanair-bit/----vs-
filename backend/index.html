@@ -216,37 +216,51 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     const BACKEND_URL = window.location.origin;
     let APP_TOKEN = null;
 
-    (function() {
-    const saved = localStorage.getItem('dynasty_token');
-    if (saved) {
-        APP_TOKEN = saved;
-        document.getElementById('passwordScreen').style.display = 'none';
-        document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
+    const TOKEN_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 天
+
+    function isTokenValid(token) {
+        if (!token) return false;
+        const parts = token.split('.');
+        if (parts.length !== 2 || !/^\d+$/.test(parts[1])) return false;
+        const issuedAt = parseInt(parts[1], 10) * 1000;
+        return Date.now() - issuedAt < TOKEN_TTL_MS;
     }
-})();
+
+    (function() {
+        const saved = localStorage.getItem('dynasty_token');
+        if (saved && isTokenValid(saved)) {
+            APP_TOKEN = saved;
+            document.getElementById('passwordScreen').style.display = 'none';
+            document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
+        } else if (saved) {
+            // token 存在但已過期，清除並顯示登入畫面
+            localStorage.removeItem('dynasty_token');
+        }
+    })();
 
     async function checkPassword() {
-    const input = document.getElementById('passwordInput').value;
-    const btn = document.querySelector('#passwordScreen button');
-    btn.disabled = true;
-    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 驗證中...';
-    const res = await fetch('/api/auth', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({password: input})
-    });
-    if (res.ok) {
-        APP_TOKEN = input;
-        localStorage.setItem('dynasty_token', input);
-        document.getElementById('passwordScreen').style.display = 'none';
-        init().catch(console.error);
-    } else {
-        document.getElementById('passwordError').classList.remove('hidden');
-        document.getElementById('passwordInput').value = '';
-        btn.disabled = false;
-        btn.innerHTML = '入朝覲見';
+        const input = document.getElementById('passwordInput').value;
+        const btn = document.querySelector('#passwordScreen button');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 驗證中...';
+        const res = await fetch('/api/auth', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({password: input})
+        });
+        if (res.ok) {
+            const data = await res.json();
+            APP_TOKEN = data.token;
+            localStorage.setItem('dynasty_token', data.token);
+            document.getElementById('passwordScreen').style.display = 'none';
+            init().catch(console.error);
+        } else {
+            document.getElementById('passwordError').classList.remove('hidden');
+            document.getElementById('passwordInput').value = '';
+            btn.disabled = false;
+            btn.innerHTML = '入朝覲見';
+        }
     }
-}
 </script>
     <script>
     (function(){if(localStorage.getItem('dynasty_nightmode')==='1'){document.documentElement.classList.add('night');}})();
@@ -1616,7 +1630,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 appState.hegemony.savedSimulation = data.hegemonySavedSim;
                 localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
             }
-        } else if (res.status === 403) {
+        } else if (res.status === 403 || res.status === 401) {
             localStorage.removeItem('dynasty_token');
             document.getElementById('passwordScreen').style.display = 'flex';
             document.getElementById('dataLoadingScreen').style.display = 'none';
