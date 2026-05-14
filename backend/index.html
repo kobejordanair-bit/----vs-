@@ -760,7 +760,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <!-- Saves Panel Overlay -->
             <div id="soulSavesPanel" class="hidden absolute inset-0 bg-[#06030f]/95 backdrop-blur-sm z-10 flex flex-col">
                 <div class="bg-gradient-to-r from-[#160828] to-[#0d1035] px-5 py-3 flex justify-between items-center shrink-0 border-b border-purple-900/40">
-                    <span class="font-bold font-serif tracking-wide text-[#e8d8ff] text-sm"><i class="fa-solid fa-bookmark mr-2 text-indigo-400"></i>魂穿存檔</span>
+                    <span class="font-bold font-serif tracking-wide text-[#e8d8ff] text-sm"><i class="fa-solid fa-bookmark mr-2 text-indigo-400"></i>魂穿存檔　<span id="soulSavesCount" class="text-purple-400 font-sans text-xs font-normal"></span></span>
                     <button onclick="closeSoulSaves()" class="text-purple-400 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
                 </div>
                 <div id="soulSavesList" class="flex-1 overflow-y-auto custom-scrollbar p-5 space-y-3"></div>
@@ -5508,12 +5508,17 @@ ${growthCooldownNote}
         function _soulRenderChapter(idx) {
             const c = soulSession.chapters[idx]; if (!c) return;
             if (c.isCompat) { _soulRenderCompatReport(idx); return; }
+            const isFailed = !c.streaming && c.content && c.content.startsWith('（生成失敗');
+            const retryBtn = isFailed
+                ? `<div class="mt-6 flex justify-center"><button onclick="retrySoulChapter()" class="flex items-center gap-2 px-5 py-2.5 bg-red-900/60 hover:bg-red-800/80 border border-red-700/60 text-red-300 hover:text-white rounded-xl font-serif text-sm transition-all"><i class="fa-solid fa-rotate-right"></i>重新生成本章</button></div>`
+                : '';
             el('soulDeepContent').innerHTML = `
                 <div class="flex items-baseline gap-3 mb-5">
                     <span class="text-xs text-purple-600 font-serif tracking-widest shrink-0">${escapeHtml(c.label)}</span>
                     <h2 class="text-xl font-bold font-serif text-purple-100 leading-tight">${escapeHtml(c.title)}${c.streaming?'<span class="text-xs text-purple-500 ml-3 animate-pulse font-normal">落筆中…</span>':''}</h2>
                 </div>
-                <div class="prose prose-invert max-w-none font-serif leading-8 text-sm" style="color:#ddd4f0">${safeMarkdown(c.content)}</div>`;
+                <div class="prose prose-invert max-w-none font-serif leading-8 text-sm" style="color:#ddd4f0">${isFailed ? `<p class="text-red-400 text-sm font-serif">${escapeHtml(c.content)}</p>` : safeMarkdown(c.content)}</div>
+                ${retryBtn}`;
             _soulRenderFigures(); _soulUpdateChapterNav(); _soulUpdateActions();
         }
 
@@ -5699,8 +5704,13 @@ ${keyEventsStr}${growthStr}${figuresStr}
                 phase: soulSession.phase,
                 snapshot: JSON.parse(JSON.stringify(soulSession))
             };
+            const SOUL_SAVE_LIMIT = 50;
+            if (appState.soulSaves.length >= SOUL_SAVE_LIMIT) {
+                const oldest = appState.soulSaves[appState.soulSaves.length - 1];
+                if (!confirm(`存檔已達上限（${SOUL_SAVE_LIMIT} 筆）。\n最舊的《${oldest.name}》將被覆蓋，確定繼續？`)) return;
+                appState.soulSaves.length = SOUL_SAVE_LIMIT - 1;
+            }
             appState.soulSaves.unshift(save);
-            if (appState.soulSaves.length > 30) appState.soulSaves.length = 30;
             syncToCloud();
             const btn = el('soulSaveBtn');
             if (btn) { btn.innerHTML = '<i class="fa-solid fa-check mr-1.5"></i>已存'; setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔'; }, 1500); }
@@ -5718,6 +5728,8 @@ ${keyEventsStr}${growthStr}${figuresStr}
         function renderSoulSaves() {
             const list = el('soulSavesList');
             if (!list) return;
+            const countEl = el('soulSavesCount');
+            if (countEl) countEl.textContent = `${appState.soulSaves.length} / 50`;
             if (appState.soulSaves.length === 0) {
                 list.innerHTML = '<p class="text-center text-purple-600 font-serif mt-10">尚無存檔</p>';
                 return;
@@ -5899,7 +5911,7 @@ async function callGemini(promptText, isJson = false) {
 }
 
 async function callGeminiNative(contentsArray, isJson = false) {
-    try {
+    const _doFetch = async () => {
         const response = await fetch(`${BACKEND_URL}/api/gemini`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
@@ -5907,8 +5919,24 @@ async function callGeminiNative(contentsArray, isJson = false) {
         });
         const data = await response.json();
         if (!response.ok) throw new Error(data.detail || `HTTP ${response.status}`);
+        return data;
+    };
+    try {
+        let data;
+        try {
+            data = await _doFetch();
+        } catch (e) {
+            const t = document.getElementById('flashToast');
+            t.textContent = '⚡ 連線失敗，正在重試…';
+            t.style.display = 'block';
+            await new Promise(r => setTimeout(r, 2000));
+            data = await _doFetch();
+            t.textContent = '⚡ Pro 暫時過載，本次由 Gemini Flash 生成';
+            setTimeout(() => { t.style.display = 'none'; t.textContent = '⚡ Pro 暫時過載，本次由 Gemini Flash 生成'; }, 3000);
+        }
         if (data.model && data.model.includes('flash')) {
             const t = document.getElementById('flashToast');
+            t.textContent = '⚡ Pro 暫時過載，本次由 Gemini Flash 生成';
             t.style.display = 'block';
             setTimeout(() => t.style.display = 'none', 3000);
         }
