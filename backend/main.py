@@ -82,6 +82,10 @@ class UserDataRequest(BaseModel):
     simulationHistory: List[Dict[str, Any]] = []
     discussionHistories: Dict[str, Any] = {}
     soulSaves: List[Dict[str, Any]] = []
+    hegemonySavedSim: Optional[Dict[str, Any]] = None
+    scenes: List[Dict[str, Any]] = []
+    sceneEdits: Dict[str, Any] = {}
+    soulSession: Optional[Dict[str, Any]] = None
 
 TOKEN_TTL_SECONDS = 7 * 24 * 3600  # 7 天
 
@@ -167,7 +171,19 @@ def save_userdata(request: Request, body: UserDataRequest, x_app_token: Optional
     verify_token(x_app_token)
     userdata_col.replace_one(
         {"_id": "main"},
-        {"_id": "main", "customLegends": body.customLegends, "modifiedLegends": body.modifiedLegends, "chatHistories": body.chatHistories, "simulationHistory": body.simulationHistory, "discussionHistories": body.discussionHistories, "soulSaves": body.soulSaves},
+        {
+            "_id": "main",
+            "customLegends": body.customLegends,
+            "modifiedLegends": body.modifiedLegends,
+            "chatHistories": body.chatHistories,
+            "simulationHistory": body.simulationHistory,
+            "discussionHistories": body.discussionHistories,
+            "soulSaves": body.soulSaves,
+            "hegemonySavedSim": body.hegemonySavedSim,
+            "scenes": body.scenes,
+            "sceneEdits": body.sceneEdits,
+            "soulSession": body.soulSession,
+        },
         upsert=True
     )
     return {"status": "ok"}
