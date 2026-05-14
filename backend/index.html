@@ -852,7 +852,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <div class="flex space-x-4">
                             <div class="w-3 h-3 bg-[#d4af37] rounded-full typing-dot"></div><div class="w-3 h-3 bg-[#d4af37] rounded-full typing-dot" style="animation-delay: 0.2s"></div><div class="w-3 h-3 bg-[#d4af37] rounded-full typing-dot" style="animation-delay: 0.4s"></div>
                         </div>
-                        <p class="text-[#57534e] font-serif tracking-widest animate-pulse">正在翻閱史籍...</p>
+                        <p class="text-[#57534e] font-serif tracking-widest animate-pulse">準備材料中...</p>
                     </div>
                     <div id="radarChartContainer" class="chart-container hidden mx-auto max-w-md mb-8 bg-white p-4 rounded-xl border border-[#e5e0d3] shadow-sm"><canvas id="radarChart"></canvas></div>
                     <div id="modalContent" class="prose prose-slate max-w-none font-serif text-[#2c2826]"></div>
@@ -1900,6 +1900,14 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             return (unsafe||'').replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
         }
 
+        function _aiErrorHTML(retryFnStr, detail) {
+            const detailHtml = detail ? `<br><span class="text-xs text-gray-400 mt-1 block">${escapeHtml(detail)}</span>` : '';
+            const retryBtn = retryFnStr
+                ? `<br><button onclick="${retryFnStr}" class="mt-4 text-sm bg-red-50 border border-red-200 text-red-700 px-4 py-2 rounded font-serif hover:bg-red-100 transition-colors"><i class="fa-solid fa-rotate-right mr-1"></i>重試</button>`
+                : '';
+            return `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗，請稍後重試${detailHtml}${retryBtn}</div>`;
+        }
+
         function sanitizeInput(str) {
             if (!str || typeof str !== 'string') return '';
             return str
@@ -2892,7 +2900,7 @@ ${allNames}
                 renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>賞析生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
+                el('modalContent').innerHTML = _aiErrorHTML("_loadReviewContent(currentAnalysisId, true)", e.message);
             }
         }
 
@@ -3664,7 +3672,7 @@ ${rankingRef}
                 syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>深度評鑑失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
+                el('modalContent').innerHTML = _aiErrorHTML('', e.message);
             }
         }
         function openAddModal() { el('addModal').classList.remove('hidden'); el('addStep1').classList.remove('hidden'); el('addStep2').classList.add('hidden'); el('addInputName').value = ''; el('newDynasty').value = ''; }
@@ -4380,7 +4388,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+                el('modalContent').innerHTML = _aiErrorHTML('runCourtPhase()', e.message);
             }
         }
 
@@ -4510,7 +4518,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                 phaseBlock.scrollIntoView({ behavior: 'smooth', block: 'end' });
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el(phaseId).innerHTML = `<div class="text-red-600 text-sm py-4">推演失敗：${e.message}</div>`;
+                el(phaseId).innerHTML = `<div class="text-center text-red-600 text-sm py-4"><i class="fa-solid fa-triangle-exclamation mr-1"></i>生成失敗，請稍後重試<br><span class="text-xs text-gray-400">${escapeHtml(e.message)}</span><br><button onclick="runBattlePhase('${phaseType}')" class="mt-3 text-sm bg-red-50 border border-red-200 text-red-700 px-4 py-1.5 rounded font-serif hover:bg-red-100 transition-colors"><i class="fa-solid fa-rotate-right mr-1"></i>重試</button></div>`;
             }
         }
         
@@ -6570,6 +6578,21 @@ function _renderDebateProgress() {
     el('debateProgressBar').innerHTML = progressHtml;
 }
 
+function _extractDebateSummary(text) {
+    const cleaned = text.replace(/[*#`>]/g, '').trim();
+    const m = cleaned.match(/^.{15,100}?[。！？]/);
+    if (m) return m[0];
+    return cleaned.slice(0, 80) + (cleaned.length > 80 ? '…' : '');
+}
+
+function toggleDebateFullText(uid) {
+    const fullEl = document.getElementById(uid);
+    const btn = document.getElementById('dbtn-' + uid);
+    if (!fullEl || !btn) return;
+    const hidden = fullEl.classList.toggle('hidden');
+    btn.textContent = hidden ? '展開全文' : '收合';
+}
+
 async function _runDebateRound() {
     if (!_debateState) return;
     const { rounds, currentRound, topic, proDesc, conDesc, history } = _debateState;
@@ -6621,6 +6644,20 @@ ${historyCtx}
         _debateState.history.push({ side: round.side, label: round.label, name: round.name, content: fullText });
         _debateState.currentRound++;
 
+        // Replace streaming content with summary + expandable full text
+        const _summary = _extractDebateSummary(fullText);
+        const _uid = `dfull-${Date.now()}`;
+        const _needsExpand = fullText.length > _summary.length + 10;
+        contentEl.innerHTML = `
+            <p class="text-sm font-serif text-[#44403c] leading-relaxed mb-1.5">
+                <span class="font-medium">${escapeHtml(_summary)}</span>${_needsExpand ? '<span class="text-[#a8a29e]">…</span>' : ''}
+            </p>
+            ${_needsExpand ? `
+            <button id="dbtn-${_uid}" onclick="toggleDebateFullText('${_uid}')" class="text-[10px] text-indigo-500 hover:text-indigo-700 font-serif underline transition-colors">展開全文</button>
+            <div id="${_uid}" class="hidden mt-2 pt-2 border-t border-indigo-100/60 text-sm font-serif text-[#44403c] leading-relaxed">${safeMarkdown(fullText)}</div>
+            ` : ''}
+        `;
+
         if (_debateState.currentRound >= rounds.length) {
             // 辯論結束
             el('debateNextBtn').classList.add('hidden');
@@ -6639,7 +6676,7 @@ ${historyCtx}
             }
         }
     } catch(e) {
-        contentEl.innerHTML = `<span class="text-red-500 text-xs">生成失敗：${escapeHtml(e.message)}</span><button onclick="_runDebateRound()" class="ml-3 text-xs text-indigo-600 underline font-serif">重試</button>`;
+        contentEl.innerHTML = `<span class="text-red-500 text-xs">生成失敗，請稍後重試</span><button onclick="_runDebateRound()" class="ml-3 text-xs text-indigo-600 underline font-serif"><i class="fa-solid fa-rotate-right mr-0.5"></i>重試</button>`;
         el('debateNextBtn').classList.remove('hidden');
     }
 }
