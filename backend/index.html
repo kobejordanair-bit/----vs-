@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歷代帝王將相名臣評鑑 (v15.2 深度優化版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.5/dist/purify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap');
         
@@ -1901,6 +1900,18 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             return (unsafe||'').replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
         }
 
+        function sanitizeInput(str) {
+            if (!str || typeof str !== 'string') return '';
+            return str
+                .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '')
+                .replace(/\n\s*(system|user|assistant|human|ai)\s*:/gi, '\n')
+                .replace(/<\/?(system|instruction|prompt|role)[^>]*>/gi, '')
+                .replace(/\[(?:SYSTEM|INST|SYS|INSTRUCTION)[^\]]*\]/gi, '')
+                .replace(/<<(?:SYS|INST|SYSTEM)>>[\s\S]*?<<\/(?:SYS|INST|SYSTEM)>>/gi, '')
+                .replace(/\n{4,}/g, '\n\n\n')
+                .trim();
+        }
+
         // Modal & AI Logic
         function openModal(title, type = 'content') {
             el('aiModal').classList.remove('hidden');
@@ -2580,6 +2591,14 @@ name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 生成中...';
 
             try {
+                if (!window.html2canvas) {
+                    await new Promise((resolve, reject) => {
+                        const s = document.createElement('script');
+                        s.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
+                        s.onload = resolve; s.onerror = reject;
+                        document.head.appendChild(s);
+                    });
+                }
                 const canvas = await html2canvas(card, {
                     backgroundColor: '#1c1917',
                     scale: 2,
@@ -3046,7 +3065,7 @@ ${rankingRef}
             const messagesEl = document.getElementById(`discussionMessages_${legendId}`);
             if (!input || !messagesEl) return;
 
-            const userText = input.value.trim();
+            const userText = sanitizeInput(input.value.trim());
             if (!userText) return;
             input.value = '';
             input.disabled = true;
@@ -3452,7 +3471,7 @@ if(s1 && s2) {
 
         async function sendChatMessage() {
             const input = el('chatInput');
-            const text = input.value.trim();
+            const text = sanitizeInput(input.value.trim());
             const targetId = appState.chatMode.targetId;
             if (!text || !targetId) return;
 
@@ -4261,7 +4280,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
         async function autoSelectByDescription(factionId) {
             const f = appState.hegemony.factions.find(x => x.id === factionId);
             if (!f) return;
-            const desc = (el(`desc_${factionId}`) || {}).value?.trim();
+            const desc = sanitizeInput((el(`desc_${factionId}`) || {}).value?.trim() || '');
             if (!desc) return customAlert('請輸入選角描述');
             const btn = event.currentTarget;
             const origText = btn.textContent;
@@ -6628,7 +6647,7 @@ ${historyCtx}
 async function startDebate() {
     const pro = appState.debateMode.pro;
     const con = appState.debateMode.con;
-    const topic = appState.debateMode.topic.trim();
+    const topic = sanitizeInput(appState.debateMode.topic.trim());
     const proNames = Object.entries(pro).filter(([,v]) => v).map(([k,v]) => getLegendName(v));
     const conNames = Object.entries(con).filter(([,v]) => v).map(([k,v]) => getLegendName(v));
     if (!proNames.length || !conNames.length || !topic) return;
