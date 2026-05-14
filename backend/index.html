@@ -598,8 +598,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             <div id="hegemonyStatus" class="hidden flex-1 text-center px-4">
                 <span class="text-sm text-[#d4af37] font-serif animate-pulse">點將中：<span class="selecting-role-text font-bold">...</span></span>
             </div>
-            <div class="flex gap-4 text-[#a8a29e]">
-                <button onclick="event.stopPropagation(); addFaction()" class="hover:text-white transition-colors text-sm border border-[#44403c] rounded px-2"><i class="fa-solid fa-plus mr-1"></i>加勢力</button>
+            <div class="flex gap-3 text-[#a8a29e] shrink-0 items-center">
+                <button onclick="event.stopPropagation(); addFaction()" class="hover:text-white transition-colors text-sm border border-[#44403c] rounded px-2 py-0.5 whitespace-nowrap"><i class="fa-solid fa-plus mr-1"></i>加勢力</button>
                 <button onclick="event.stopPropagation(); clearFactions()" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-left"></i></button>
                 <button onclick="event.stopPropagation(); togglePanelSize('hegemony')" class="hover:text-white transition-colors"><i class="fa-solid fa-window-minimize relative -top-1"></i></button>
                 <button onclick="event.stopPropagation(); closeAllPanels()" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-xmark text-lg"></i></button>
@@ -613,7 +613,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div id="hegemonyMapHint" class="absolute bottom-2 right-3 text-[10px] text-[#78716c] font-serif pointer-events-none">點擊地區分配領土</div>
             </div>
             <!-- 勢力列表 -->
-            <div id="hegemonyContent" class="w-72 xl:w-80 shrink-0 overflow-y-auto bg-[#f0ede6] border-l-2 border-[#3e3020]">
+            <div id="hegemonyContent" class="w-80 shrink-0 overflow-y-auto bg-[#f0ede6] border-l-2 border-[#3e3020]">
                 <div class="flex flex-col gap-3 p-3" id="hegemonyFactionsContainer"></div>
             </div>
         </div>
@@ -3872,19 +3872,24 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
             _echartsLoaded = true;
         }
 
-        function _buildMapRegions() {
-            const regions = [];
+        function _buildMapData() {
+            const result = [];
             appState.hegemony.factions.forEach(f => {
                 const color = _MAP_COLORS[f.colorIdx % _MAP_COLORS.length];
                 f.territories.forEach(terrId => {
                     const region = REGION_DATA.find(r => r.id === terrId);
                     if (!region) return;
                     region.provinces.forEach(prov => {
-                        regions.push({ name: prov, itemStyle: { areaColor: color, borderColor: '#d4af37', borderWidth: 2 }, emphasis: { itemStyle: { areaColor: color, borderColor: '#fff', borderWidth: 2 } } });
+                        result.push({
+                            name: prov,
+                            value: f.colorIdx,
+                            itemStyle: { areaColor: color, borderColor: '#d4af37', borderWidth: 2 },
+                            emphasis: { itemStyle: { areaColor: color, borderColor: '#fff', borderWidth: 2.5 } }
+                        });
                     });
                 });
             });
-            return regions;
+            return result;
         }
 
         function _renderHegemonyMap() {
@@ -3899,7 +3904,6 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                         const r = REGION_DATA.find(rd => rd.provinces.includes(params.name));
                         if (!r) return params.name;
                         const owner = appState.hegemony.factions.find(f => f.territories.includes(r.id));
-                        const styles = owner ? FACTION_COLORS[owner.colorIdx % FACTION_COLORS.length] : null;
                         return `<b>${r.name}</b>（${r.tag}）<br/><span style="opacity:.7;font-size:10px">${r.desc}</span><br/>${owner ? `⚑ ${owner.name}` : '<span style="opacity:.5">無人占領</span>'}`;
                     }
                 },
@@ -3910,7 +3914,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                     emphasis: { label: { show: false }, itemStyle: { areaColor: '#3a3020' } },
                     select: { disabled: true },
                     label: { show: false },
-                    regions: _buildMapRegions(),
+                    data: _buildMapData(),
                 }]
             }, { notMerge: true });
         }
