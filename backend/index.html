@@ -407,7 +407,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.2 深度優化版</span>
                 </div>
             </div>
-            <div class="flex gap-3 items-center flex-wrap justify-end w-full md:w-auto">
+            <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
+                <!-- 工具列：夜間 / 匯出 / 讀檔 -->
                 <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
                     <button id="nightToggleBtn" onclick="toggleNightMode()" title="切換日夜模式" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-2 py-1.5 rounded transition-all text-sm">
                         <i class="fa-solid fa-moon text-slate-300"></i>
@@ -420,47 +421,66 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                     </button>
                     <input type="file" id="fileInput" accept=".json" class="hidden" onchange="loadDataFile(this)">
                 </div>
-                
+
                 <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
-                
-                <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
-                    <button onclick="openAddModal()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-2">
-                        <i class="fa-solid fa-plus text-[#d4af37]"></i> <span class="hidden md:inline">新增</span>
-                    </button>
-                    <button onclick="openEditHub()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-2" title="修訂史料">
-                        <i class="fa-solid fa-brush text-[#60a5fa]"></i> <span class="hidden md:inline">修訂</span>
-                    </button>
+
+                <!-- 人物群組 -->
+                <div class="flex flex-col items-center gap-0.5">
+                    <span class="text-[9px] text-[#78716c] tracking-widest font-serif select-none">人物</span>
+                    <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
+                        <button onclick="openAddModal()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5">
+                            <i class="fa-solid fa-plus text-[#d4af37]"></i><span class="hidden md:inline">新增</span>
+                        </button>
+                        <button onclick="openEditHub()" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5" title="修訂史料">
+                            <i class="fa-solid fa-brush text-[#60a5fa]"></i><span class="hidden md:inline">修訂</span>
+                        </button>
+                        <button onclick="toggleMode('compareMode')" id="btn-mode-compareMode" class="text-[#d6d3c9] hover:text-white hover:bg-[#0f766e] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5">
+                            <i class="fa-solid fa-code-compare text-teal-400"></i><span class="hidden md:inline">比對</span>
+                        </button>
+                        <button onclick="openStatsPanel()" id="btn-stats" class="text-[#d6d3c9] hover:text-white hover:bg-[#1e3a5f] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5">
+                            <i class="fa-solid fa-chart-bar text-sky-400"></i><span class="hidden md:inline">統計</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
-                
-                <!-- 模式切換 -->
-                <div class="flex w-full md:flex-1 gap-2 overflow-x-auto pb-0.5 justify-start md:justify-around">
-                    <button onclick="toggleMode('hegemony')" class="bg-[#2c2826] hover:bg-[#7f1d1d] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-hegemony">
-                        <i class="fa-solid fa-chess-king text-amber-400"></i> <span class="hidden md:inline">逐鹿</span>
-                    </button>
-                    <button onclick="toggleMode('soulMode')" class="bg-[#2c2826] hover:bg-[#2e1065] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-soulMode">
-                        <i class="fa-solid fa-yin-yang text-purple-400"></i> <span class="hidden md:inline">魂穿</span>
-                    </button>
 
-                    <button onclick="toggleMode('compareMode')" class="bg-[#2c2826] hover:bg-[#0f766e] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-compareMode">
-                        <i class="fa-solid fa-code-compare text-teal-400"></i> <span class="hidden md:inline">比對</span>
+                <!-- 沙盤群組 -->
+                <div class="flex flex-col items-center gap-0.5">
+                    <span class="text-[9px] text-[#78716c] tracking-widest font-serif select-none">沙盤</span>
+                    <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
+                        <button onclick="toggleMode('hegemony')" id="btn-mode-hegemony" class="text-[#d6d3c9] hover:text-white hover:bg-[#7f1d1d] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5">
+                            <i class="fa-solid fa-chess-king text-amber-400"></i><span class="hidden md:inline">逐鹿</span>
+                        </button>
+                        <button onclick="toggleMode('soulMode')" id="btn-mode-soulMode" class="text-[#d6d3c9] hover:text-white hover:bg-[#2e1065] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5">
+                            <i class="fa-solid fa-yin-yang text-purple-400"></i><span class="hidden md:inline">魂穿</span>
+                        </button>
+                        <button onclick="toggleMode('debateMode')" id="btn-mode-debateMode" class="text-[#d6d3c9] hover:text-white hover:bg-[#312e81] px-3 py-1.5 rounded transition-all text-sm font-serif flex items-center gap-1.5">
+                            <i class="fa-solid fa-scale-balanced text-indigo-400"></i><span class="hidden md:inline">辯論</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="h-6 w-px bg-[#44403c] mx-1 hidden lg:block"></div>
+
+                <!-- 工具下拉選單：快照 / 史冊 / 名場面 -->
+                <div class="relative">
+                    <button onclick="toggleNavToolMenu()" class="bg-[#2c2826] hover:bg-[#44403c] text-[#d6d3c9] border border-[#44403c] px-3 py-1.5 rounded-lg transition-all text-sm font-serif flex items-center gap-1.5">
+                        <i class="fa-solid fa-ellipsis text-[#a8a29e]"></i>
+                        <span class="hidden md:inline text-xs">工具</span>
+                        <i class="fa-solid fa-chevron-down text-[9px] text-[#78716c]"></i>
                     </button>
-                    <button onclick="toggleMode('debateMode')" class="bg-[#2c2826] hover:bg-[#312e81] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-mode-debateMode">
-                        <i class="fa-solid fa-scale-balanced text-indigo-400"></i> <span class="hidden md:inline">辯論</span>
-                    </button>
-                    <button onclick="openSnapshot()" class="bg-[#2c2826] hover:bg-[#14532d] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-snapshot">
-                        <i class="fa-solid fa-earth-asia text-emerald-400"></i> <span class="hidden md:inline">快照</span>
-                    </button>
-                    <button onclick="openChronicle()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-chronicle">
-                        <i class="fa-solid fa-book-open text-amber-400"></i> <span class="hidden md:inline">史冊</span>
-                    </button>
-                    <button onclick="openScenesPanel()" class="bg-[#2c2826] hover:bg-[#78350f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-scenes">
-                        <i class="fa-solid fa-fire text-amber-400"></i> <span class="hidden md:inline">名場面</span>
-                    </button>
-                    <button onclick="openStatsPanel()" class="bg-[#2c2826] hover:bg-[#1e3a5f] text-white border border-[#44403c] px-3 py-2 rounded-lg text-sm font-serif tracking-wide transition-all shadow-lg flex items-center gap-2" id="btn-stats">
-                        <i class="fa-solid fa-chart-bar text-sky-400"></i> <span class="hidden md:inline">統計</span>
-                    </button>
+                    <div id="navToolMenu" class="hidden absolute right-0 top-full mt-1.5 bg-[#2c2826] border border-[#44403c] rounded-xl shadow-2xl z-[60] py-1 min-w-[130px]">
+                        <button onclick="openSnapshot(); closeNavToolMenu()" class="w-full text-left px-4 py-2.5 text-sm text-[#d6d3c9] hover:bg-[#44403c] hover:text-white transition-colors font-serif flex items-center gap-2.5">
+                            <i class="fa-solid fa-earth-asia text-emerald-400 w-4"></i>天下快照
+                        </button>
+                        <button onclick="openChronicle(); closeNavToolMenu()" class="w-full text-left px-4 py-2.5 text-sm text-[#d6d3c9] hover:bg-[#44403c] hover:text-white transition-colors font-serif flex items-center gap-2.5">
+                            <i class="fa-solid fa-book-open text-amber-400 w-4"></i>推演史冊
+                        </button>
+                        <button onclick="openScenesPanel(); closeNavToolMenu()" class="w-full text-left px-4 py-2.5 text-sm text-[#d6d3c9] hover:bg-[#44403c] hover:text-white transition-colors font-serif flex items-center gap-2.5">
+                            <i class="fa-solid fa-fire text-orange-400 w-4"></i>名場面
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -6727,6 +6747,21 @@ function clearAllChronicle() {
         el('searchInput').addEventListener('input', () => {
             clearTimeout(searchTimer);
             searchTimer = setTimeout(renderLegends, 300);
+        });
+
+        function toggleNavToolMenu() {
+            const menu = el('navToolMenu');
+            if (!menu) return;
+            menu.classList.toggle('hidden');
+        }
+        function closeNavToolMenu() {
+            el('navToolMenu')?.classList.add('hidden');
+        }
+        document.addEventListener('click', e => {
+            const menu = el('navToolMenu');
+            if (menu && !menu.classList.contains('hidden') && !menu.parentElement.contains(e.target)) {
+                menu.classList.add('hidden');
+            }
         });
 
         function toggleNightMode() {
