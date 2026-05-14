@@ -1912,7 +1912,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             if (!str || typeof str !== 'string') return '';
             return str
                 .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '')
-                .replace(/\n\s*(system|user|assistant|human|ai)\s*:/gi, '\n')
+                .replace(/(^|\n)\s*(system|user|assistant|human|ai)\s*:/gi, '$1')
                 .replace(/<\/?(system|instruction|prompt|role)[^>]*>/gi, '')
                 .replace(/\[(?:SYSTEM|INST|SYS|INSTRUCTION)[^\]]*\]/gi, '')
                 .replace(/<<(?:SYS|INST|SYSTEM)>>[\s\S]*?<<\/(?:SYS|INST|SYSTEM)>>/gi, '')
@@ -2422,7 +2422,7 @@ ${focusLine}`;
             el('addSceneModal').classList.add('hidden');
         }
         async function generateNewScene() {
-            const name = el('addSceneName').value.trim();
+            const name = sanitizeInput(el('addSceneName').value.trim());
             if (!name) return customAlert('請輸入場面名稱');
             el('addSceneStep1').classList.add('hidden');
             el('addSceneLoading').classList.remove('hidden');
@@ -2689,7 +2689,7 @@ ${allNames}
         syncToCloud();
     } catch (e) {
         el('loadingState').classList.add('hidden');
-        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
     }
 }
         // ── 統一評鑑入口 ─────────────────────────────────────────
@@ -3232,7 +3232,7 @@ ${rankingRef}
         });
     } catch (e) {
         el('loadingState').classList.add('hidden');
-        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>關係網生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>關係網生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
     }
 }
         function forceRegenerateStats() {
@@ -3442,7 +3442,7 @@ if(s1 && s2) {
 }
             } catch (e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>比對推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>比對推演失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
             }
         }
 
@@ -4677,7 +4677,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                 syncToCloud();
             } catch(e) {
                 el('loadingState').classList.add('hidden');
-                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+                el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>推演失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
             }
         }
 
@@ -6436,7 +6436,7 @@ ${legendRef}
         syncToCloud();
     } catch(e) {
         el('loadingState').classList.add('hidden');
-        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>快照生成失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
+        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>快照生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
     }  
     }      
         // --- 辯論模式 ---
