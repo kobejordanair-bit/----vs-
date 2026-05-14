@@ -3293,6 +3293,33 @@ if (needStats) {
 }
 
 if(s1 && s2) {
+    const dims = ['統率', '武力', '智謀', '政治', '魅力'];
+    const tableHtml = `<div class="mt-6 mb-2 overflow-x-auto">
+        <table class="w-full text-sm font-serif border-collapse">
+            <thead>
+                <tr class="border-b border-[#e5e0d3]">
+                    <th class="py-2 px-3 text-left text-[#78716c] font-normal text-xs tracking-widest">維度</th>
+                    <th class="py-2 px-3 text-center text-amber-700 font-bold">${escapeHtml(p1.name)}</th>
+                    <th class="py-2 px-3 text-center text-teal-700 font-bold">${escapeHtml(p2.name)}</th>
+                    <th class="py-2 px-3 text-center text-[#78716c] font-normal text-xs">差距</th>
+                </tr>
+            </thead>
+            <tbody>${dims.map((d, i) => {
+                const v1 = s1[i] ?? 0, v2 = s2[i] ?? 0, diff = v1 - v2;
+                const diffColor = diff > 0 ? 'text-amber-600' : diff < 0 ? 'text-teal-600' : 'text-[#a8a29e]';
+                const diffText = diff > 0 ? `+${diff}` : diff === 0 ? '—' : `${diff}`;
+                const bar1 = `<div class="inline-block h-1.5 rounded-full bg-amber-400 ml-1" style="width:${v1 * 0.4}px;max-width:40px;vertical-align:middle"></div>`;
+                const bar2 = `<div class="inline-block h-1.5 rounded-full bg-teal-400 ml-1" style="width:${v2 * 0.4}px;max-width:40px;vertical-align:middle"></div>`;
+                return `<tr class="border-b border-[#f0ece4] hover:bg-[#fafaf7]">
+                    <td class="py-2 px-3 text-[#57534e] text-xs tracking-wider">${d}</td>
+                    <td class="py-2 px-3 text-center font-bold text-amber-700">${v1}${bar1}</td>
+                    <td class="py-2 px-3 text-center font-bold text-teal-700">${v2}${bar2}</td>
+                    <td class="py-2 px-3 text-center text-xs font-bold ${diffColor}">${diffText}</td>
+                </tr>`;
+            }).join('')}</tbody>
+        </table>
+    </div>`;
+    el('modalContent').innerHTML += tableHtml;
     renderRadarChart(p1.name, s1, p2.name, s2);
 }
             } catch (e) {
@@ -6172,52 +6199,174 @@ async function recommendDebateTopic() {
     }
 }
 
+// 辯論輪次狀態
+let _debateState = null;
+
+function _buildDebateRounds(pro, con) {
+    const proSlots = Object.entries(pro).filter(([,v]) => v);
+    const conSlots = Object.entries(con).filter(([,v]) => v);
+    const proCount = proSlots.length;
+    const conCount = conSlots.length;
+    const roleSeq = [
+        { side: 'pro', pos: 0, label: '一辯立論', type: '立論' },
+        { side: 'con', pos: 0, label: '一辯立論', type: '立論' },
+        { side: 'pro', pos: 1, label: '二辯質詢', type: '質詢' },
+        { side: 'con', pos: 1, label: '二辯質詢', type: '質詢' },
+        { side: 'pro', pos: 2, label: '三辯回應', type: '回應' },
+        { side: 'con', pos: 2, label: '三辯回應', type: '回應' },
+        { side: 'pro', pos: 3, label: '四辯總結', type: '總結' },
+        { side: 'con', pos: 3, label: '四辯總結', type: '總結' },
+    ];
+    // 若某方辯手不足，由一辯代打
+    return roleSeq.map(r => {
+        const slots = r.side === 'pro' ? proSlots : conSlots;
+        const count = r.side === 'pro' ? proCount : conCount;
+        const slotIdx = Math.min(r.pos, count - 1);
+        const [posKey, id] = slots[slotIdx];
+        return {
+            side: r.side,
+            label: r.label,
+            type: r.type,
+            name: getLegendName(id),
+            rank: getLegendRank(id) || '未評',
+            id
+        };
+    }).concat([{ side: 'judge', label: '裁判總評', type: '總評', name: '裁判', id: null }]);
+}
+
+function _debateRoundLabel(r) {
+    const sideTag = r.side === 'pro'
+        ? `<span class="text-red-600 font-bold">正方</span>`
+        : r.side === 'con'
+        ? `<span class="text-blue-600 font-bold">反方</span>`
+        : `<span class="text-amber-700 font-bold">裁判</span>`;
+    return `${sideTag} ${r.label}${r.name !== '裁判' ? `・<span class="font-bold">${escapeHtml(r.name)}</span>` : ''}`;
+}
+
+function _renderDebateProgress() {
+    if (!_debateState) return;
+    const { rounds, currentRound, topic } = _debateState;
+    const progressHtml = `<div class="flex flex-wrap gap-1.5 mb-4 pb-3 border-b border-[#e5e0d3]">
+        ${rounds.map((r, i) => {
+            const done = i < currentRound;
+            const active = i === currentRound;
+            const base = 'text-[10px] px-2 py-1 rounded font-serif transition-all';
+            const cls = done
+                ? `${base} bg-[#e5e0d3] text-[#78716c] line-through`
+                : active
+                ? `${base} ${r.side === 'pro' ? 'bg-red-100 text-red-700 ring-1 ring-red-400' : r.side === 'con' ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-400' : 'bg-amber-100 text-amber-700 ring-1 ring-amber-400'} font-bold`
+                : `${base} bg-[#f5f3ef] text-[#a8a29e]`;
+            return `<span class="${cls}">${r.side === 'pro' ? '正' : r.side === 'con' ? '反' : '裁'}・${r.label}</span>`;
+        }).join('')}
+    </div>`;
+    el('debateProgressBar').innerHTML = progressHtml;
+}
+
+async function _runDebateRound() {
+    if (!_debateState) return;
+    const { rounds, currentRound, topic, proDesc, conDesc, history } = _debateState;
+    if (currentRound >= rounds.length) return;
+
+    const round = rounds[currentRound];
+    const isJudge = round.side === 'judge';
+
+    el('debateNextBtn').classList.add('hidden');
+    el('debateAutoBtn').classList.add('hidden');
+    _renderDebateProgress();
+
+    // 建立本輪 prompt
+    const historyCtx = history.length
+        ? `\n\n【已進行的發言記錄】\n${history.map(h => `${h.side === 'pro' ? '正方' : h.side === 'con' ? '反方' : '裁判'}・${h.label}・${h.name}：${h.content}`).join('\n\n')}`
+        : '';
+
+    let prompt;
+    if (isJudge) {
+        prompt = `你是一位公正的歷史辯論裁判。以下是一場關於「${topic}」的辯論全程：\n${historyCtx}\n\n請以裁判身份，針對雙方的論點品質、歷史依據、邏輯嚴密度做出總評，宣布勝方並說明理由。約150字，繁體中文。`;
+    } else {
+        const sideLabel = round.side === 'pro' ? '正方' : '反方';
+        const oppLabel = round.side === 'pro' ? '反方' : '正方';
+        prompt = `你正在扮演歷史辯論賽中的【${sideLabel}${round.label}】辯手：${round.name}（${round.rank}）。
+
+【辯題】${topic}
+【${sideLabel}立場】${round.side === 'pro' ? proDesc : conDesc}
+${historyCtx}
+
+請以${round.name}的歷史身份、性格、思想與事蹟為基礎，進行「${round.type}」發言（約150-200字）。語氣符合其時代背景，論點有歷史依據，避免空洞套話。直接輸出發言內容，不要加任何前綴說明。繁體中文。`;
+    }
+
+    // 新增發言區塊
+    const roundEl = document.createElement('div');
+    const borderCls = round.side === 'pro' ? 'border-red-200 bg-red-50/50' : round.side === 'con' ? 'border-blue-200 bg-blue-50/50' : 'border-amber-200 bg-amber-50/50';
+    roundEl.className = `border rounded-lg p-4 mb-3 ${borderCls}`;
+    roundEl.innerHTML = `<div class="text-xs font-serif mb-2">${_debateRoundLabel(round)}</div><div class="text-sm font-serif text-[#44403c] leading-relaxed debate-round-content"></div>`;
+    el('debateRoundsContainer').appendChild(roundEl);
+    roundEl.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+    const contentEl = roundEl.querySelector('.debate-round-content');
+    let fullText = '';
+    try {
+        await callGeminiStream(prompt, (partial) => {
+            fullText = partial;
+            contentEl.innerHTML = safeMarkdown(partial);
+            roundEl.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        });
+        _debateState.history.push({ side: round.side, label: round.label, name: round.name, content: fullText });
+        _debateState.currentRound++;
+
+        if (_debateState.currentRound >= rounds.length) {
+            // 辯論結束
+            el('debateNextBtn').classList.add('hidden');
+            el('debateAutoBtn').classList.add('hidden');
+            const fullResult = _debateState.history.map(h => `【${h.side === 'pro' ? '正方' : h.side === 'con' ? '反方' : '裁判'}・${h.label}・${h.name}】\n${h.content}`).join('\n\n');
+            appState.simulationHistory.unshift({ type: '辯論', icon: '⚖️', title: topic, result: fullResult.slice(0, 100), fullResult, time: new Date().toLocaleString('zh-TW') });
+            syncToCloud();
+            _debateState = null;
+        } else {
+            _renderDebateProgress();
+            if (_debateState?.autoRun) {
+                setTimeout(_runDebateRound, 300);
+            } else {
+                el('debateNextBtn').classList.remove('hidden');
+                el('debateAutoBtn').classList.remove('hidden');
+            }
+        }
+    } catch(e) {
+        contentEl.innerHTML = `<span class="text-red-500 text-xs">生成失敗：${escapeHtml(e.message)}</span><button onclick="_runDebateRound()" class="ml-3 text-xs text-indigo-600 underline font-serif">重試</button>`;
+        el('debateNextBtn').classList.remove('hidden');
+    }
+}
+
 async function startDebate() {
     const pro = appState.debateMode.pro;
     const con = appState.debateMode.con;
     const topic = appState.debateMode.topic.trim();
-    const proNames = Object.entries(pro).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}（${getLegendRank(v) || '未評'}）`);
-    const conNames = Object.entries(con).filter(([,v]) => v).map(([k,v]) => `${DEBATE_ROLES[k]}${getLegendName(v)}（${getLegendRank(v) || '未評'}）`);
+    const proNames = Object.entries(pro).filter(([,v]) => v).map(([k,v]) => getLegendName(v));
+    const conNames = Object.entries(con).filter(([,v]) => v).map(([k,v]) => getLegendName(v));
     if (!proNames.length || !conNames.length || !topic) return;
 
-    openModal('歷史辯論場', 'content');
+    const rounds = _buildDebateRounds(pro, con);
+    _debateState = {
+        rounds,
+        currentRound: 0,
+        topic,
+        proDesc: `支持「${topic}」的正方，由 ${proNames.join('、')} 組成`,
+        conDesc: `反對「${topic}」的反方，由 ${conNames.join('、')} 組成`,
+        history: [],
+        autoRun: false
+    };
+
+    openModal(`辯論場：${topic}`, 'content');
     el('radarChartContainer').classList.add('hidden');
-    el('loadingState').classList.remove('hidden');
-    el('loadingState').classList.add('flex');
-    el('modalContent').innerHTML = '';
-
-    const prompt = `你是一位頂級歷史辯論賽主持人兼撰稿人。請模擬以下歷史人物進行一場正式辯論賽。
-
-【辯題】${topic}
-
-【正方】${proNames.join('、')}
-【反方】${conNames.join('、')}
-
-辯論規則：
-- 每位辯手根據其歷史身份、性格、思想、事蹟發言，語氣符合其時代背景
-- 按照 一辯立論 → 反方一辯立論 → 二辯質詢 → 反方二辯質詢 → 三辯回應 → 反方三辯回應 → 四辯總結 → 反方四辯總結 的順序（若某方只有一辯則由一辯包辦所有環節）
-- 每段發言約150-200字，有血有肉，避免空洞套話
-- 最後由【裁判總評】宣布勝方，並說明理由（約100字）
-
-請直接開始辯論，用 **【正方X辯・人名】** 和 **【反方X辯・人名】** 格式標示每段發言。繁體中文。`;
-
-    try {
-        const myToken = ++currentRequestToken;
-        const debateResult = await callGeminiStream(prompt, (partial) => {
-            if (myToken !== currentRequestToken) return;
-            el('loadingState').classList.add('hidden');
-            el('modalContent').innerHTML = safeMarkdown(partial);
-        }, (model) => {
-            el('modalContent').insertAdjacentHTML('afterbegin', '<div class="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded px-3 py-1 mb-3 font-serif">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>');
-        });
-        const title = `${Object.values(pro).filter(Boolean).map(id=>getLegendName(id)).join('+')} vs ${Object.values(con).filter(Boolean).map(id=>getLegendName(id)).join('+')}`;
-        appState.simulationHistory.unshift({ type: '辯論', icon: '⚖️', title: topic, result: debateResult.slice(0, 100), fullResult: debateResult, time: new Date().toLocaleString('zh-TW') });
-        
-        syncToCloud();
-    } catch(e) {
-        el('loadingState').classList.add('hidden');
-        el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>辯論失敗<br><span class="text-xs text-gray-500">${e.message}</span></div>`;
-    }
+    el('loadingState').classList.add('hidden');
+    el('modalContent').innerHTML = `
+        <div id="debateProgressBar" class="mb-2"></div>
+        <div id="debateRoundsContainer" class="space-y-1"></div>
+        <div class="flex gap-2 mt-4 justify-center">
+            <button id="debateNextBtn" onclick="_runDebateRound()" class="hidden px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-sm font-serif transition-all">下一輪 <i class="fa-solid fa-chevron-right ml-1"></i></button>
+            <button id="debateAutoBtn" onclick="_debateState.autoRun=true;this.classList.add('hidden');el('debateNextBtn').classList.add('hidden');_runDebateRound()" class="hidden px-5 py-2 bg-[#2c2826] hover:bg-black text-white rounded-lg text-sm font-serif transition-all">自動進行全場 <i class="fa-solid fa-forward ml-1"></i></button>
+        </div>`;
+    _renderDebateProgress();
+    _runDebateRound();
 }
         // --- 推演史冊 ---
 function openChronicle() {
