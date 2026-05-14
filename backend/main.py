@@ -1,5 +1,6 @@
 import os
 import json
+import time
 from fastapi import FastAPI, HTTPException, Request, Header
 from fastapi.responses import StreamingResponse, FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -36,9 +37,11 @@ app = FastAPI(title="帝王將相名臣評鑑 API", version=APP_VERSION)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "https://dynasty-ydov.onrender.com").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://dynasty-ydov.onrender.com"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -80,9 +83,25 @@ class UserDataRequest(BaseModel):
     discussionHistories: Dict[str, Any] = {}
     soulSaves: List[Dict[str, Any]] = []
 
+TOKEN_TTL_SECONDS = 7 * 24 * 3600  # 7 天
+
+def create_token() -> str:
+    return f"{APP_SECRET}.{int(time.time())}"
+
 def verify_token(x_app_token: Optional[str] = Header(None)):
-    if x_app_token != APP_SECRET:
+    if not x_app_token:
         raise HTTPException(status_code=403, detail="無效的存取金鑰")
+    parts = x_app_token.split(".")
+    # 新格式：secret.timestamp
+    if len(parts) == 2 and parts[1].isdigit():
+        if parts[0] != APP_SECRET:
+            raise HTTPException(status_code=403, detail="無效的存取金鑰")
+        issued_at = int(parts[1])
+        if time.time() - issued_at > TOKEN_TTL_SECONDS:
+            raise HTTPException(status_code=401, detail="登入已過期，請重新登入")
+    else:
+        # 舊格式或直接密碼：拒絕，強制重新登入
+        raise HTTPException(status_code=401, detail="登入已過期，請重新登入")
 
 @app.get("/")
 def serve_frontend():
@@ -133,7 +152,7 @@ async def auth(request: Request):
     body = await request.json()
     password = body.get("password", "")
     if password == APP_SECRET:
-        return {"token": APP_SECRET}
+        return {"token": create_token()}
     raise HTTPException(status_code=401, detail="密碼錯誤")
 @app.get("/api/userdata")
 def get_userdata(x_app_token: Optional[str] = Header(None)):
