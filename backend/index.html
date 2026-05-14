@@ -1155,9 +1155,19 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     <script src="/static/data/regions.js?v=15.2"></script>
     <script src="/static/data/battlefields.js?v=15.2"></script>
     <script src="/static/data/eras.js?v=15.2"></script>
+    <!-- ↑ 更新 APP_VERSION 時，同步更新以上所有 ?v= 版本號 -->
     <script>
         // --- CONSTANTS & UTILS ---
         const APP_VERSION = "15.2";
+
+        // 資料載入防呆：確認所有外部 static/data/*.js 已正確載入
+        if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
+            typeof FACTION_COLORS === 'undefined' || typeof REGION_DATA === 'undefined' ||
+            typeof BATTLEFIELDS === 'undefined' || typeof ERA_YEAR_MAP === 'undefined' ||
+            typeof DYNASTY_ORDER === 'undefined') {
+            throw new Error('[data] 外部資料檔未載入，請確認 /static/data/*.js 路徑及版本號正確');
+        }
+
         function el(id) { return document.getElementById(id); }
         function safeJSONParse(str, fallback) {
             try { return JSON.parse(str) || fallback; } 
@@ -1631,7 +1641,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         }
 
         const RANK_ORDER = ['S+','S','S-','A+','A','A-','B+','B','B-','C+','C','C-','D'];
-        const DYNASTY_ORDER = ['夏商周','春秋','戰國','秦朝','楚漢相爭','西漢','東漢','三國','晉朝','南北朝','隋朝','唐朝','五代十國','遼夏金','北宋','南宋','元朝','明朝','清朝','中華民國','中華人民共和國'];
+        // DYNASTY_ORDER is defined in /static/data/eras.js
 
         function renderStatsPanel() {
             statsChartInstances.forEach(c => c.destroy());
