@@ -5467,8 +5467,9 @@ ${keyEventsStr}${growthStr}${figuresStr}
             const storyChapters = soulSession.chapters.filter(c => !c.isSummary && !c.isCompat);
             const name = `${host?.name || '未知'} × ${soul?.name || '宿主覺醒'} · ${soulSession.moment?.title || '未知時刻'}`;
             const save = {
-                id: Date.now().toString(),
+                id: `save_${Date.now().toString(36)}_${Math.random().toString(36).slice(2,6)}`,
                 name,
+                title: name,
                 savedAt: new Date().toLocaleString('zh-TW'),
                 chapterCount: storyChapters.length,
                 phase: soulSession.phase,
@@ -5506,13 +5507,15 @@ ${keyEventsStr}${growthStr}${figuresStr}
             }
             list.innerHTML = appState.soulSaves.map(s => {
                 const phaseLabel = s.phase === 'ended' ? '<span class="text-xs text-red-400 ml-1">（已終結）</span>' : '';
+                const displayTitle = escapeHtml(s.title || s.name);
                 return `<div class="bg-[#0d0520] border border-purple-900/40 rounded-xl p-4 flex justify-between items-start gap-3">
                     <div class="flex-1 min-w-0">
-                        <div class="font-serif font-bold text-[#e8d8ff] text-sm truncate">${s.name}${phaseLabel}</div>
+                        <div class="font-serif font-bold text-[#e8d8ff] text-sm truncate" id="soulSaveTitle_${s.id}">${displayTitle}${phaseLabel}</div>
                         <div class="text-xs text-purple-500 mt-1">第 ${s.chapterCount} 章　${s.savedAt}</div>
                     </div>
                     <div class="flex gap-2 shrink-0">
                         <button onclick="loadSoulSave('${s.id}')" class="px-3 py-1.5 bg-purple-800 hover:bg-purple-700 text-purple-100 rounded-lg text-xs font-serif transition-all">讀取</button>
+                        <button onclick="startRenameSoulSave('${s.id}')" class="px-3 py-1.5 bg-purple-950/60 hover:bg-purple-900/60 border border-purple-700/60 text-purple-400 hover:text-purple-200 rounded-lg text-xs font-serif transition-all">改名</button>
                         <button onclick="deleteSoulSave('${s.id}')" class="px-3 py-1.5 bg-red-950/60 hover:bg-red-900/60 border border-red-800/60 text-red-400 hover:text-red-300 rounded-lg text-xs font-serif transition-all">刪除</button>
                     </div>
                 </div>`;
@@ -5522,34 +5525,78 @@ ${keyEventsStr}${growthStr}${figuresStr}
         function loadSoulSave(id) {
             const save = appState.soulSaves.find(s => s.id === id);
             if (!save) return;
+            const doLoad = () => {
+                soulSession = { ...JSON.parse(JSON.stringify(save.snapshot)), generating: false };
+                if (soulSession.viewingChapter < 0 && soulSession.chapters.length > 0) {
+                    soulSession.viewingChapter = soulSession.chapters.length - 1;
+                }
+                closeSoulSaves();
+                el('soulDeepModal')?.classList.remove('hidden');
+                const host = legendsData.find(l => l.id === soulSession.hostId);
+                const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+                if (host) el('soulDeepTitle').textContent = `${host.name}${soul?' × '+soul.name:''} · ${soulSession.moment?.title||''}`;
+                el('soulDeepActions')?.classList.remove('hidden');
+                el('soulFigureSidebar')?.classList.remove('hidden');
+                if (soulSession.phase === 'chapters') {
+                    el('soulEndBtn')?.classList.remove('hidden');
+                } else {
+                    el('soulEndBtn')?.classList.add('hidden');
+                }
+                renderSoulDeep();
+                _soulUpdateChapterNav();
+                _soulUpdateActions();
+            };
             if (soulSession.phase !== 'idle' && soulSession.chapters.length > 0) {
-                if (!confirm('目前有進行中的魂穿，讀取存檔將覆蓋現有進度，確定繼續？')) return;
-            }
-            soulSession = { ...JSON.parse(JSON.stringify(save.snapshot)), generating: false };
-            if (soulSession.viewingChapter < 0 && soulSession.chapters.length > 0) {
-                soulSession.viewingChapter = soulSession.chapters.length - 1;
-            }
-            closeSoulSaves();
-            el('soulDeepModal')?.classList.remove('hidden');
-            const host = legendsData.find(l => l.id === soulSession.hostId);
-            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
-            if (host) el('soulDeepTitle').textContent = `${host.name}${soul?' × '+soul.name:''} · ${soulSession.moment?.title||''}`;
-            el('soulDeepActions')?.classList.remove('hidden');
-            el('soulFigureSidebar')?.classList.remove('hidden');
-            if (soulSession.phase === 'chapters') {
-                el('soulEndBtn')?.classList.remove('hidden');
+                customConfirm('目前有進行中的魂穿，讀取存檔將覆蓋現有進度，確定繼續？', doLoad);
             } else {
-                el('soulEndBtn')?.classList.add('hidden');
+                doLoad();
             }
-            renderSoulDeep();
-            _soulUpdateChapterNav();
-            _soulUpdateActions();
+        }
+
+        function startRenameSoulSave(id) {
+            const save = appState.soulSaves.find(s => s.id === id);
+            if (!save) return;
+            const titleEl = document.getElementById('soulSaveTitle_' + id);
+            if (!titleEl) return;
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.value = save.title || save.name;
+            input.maxLength = 40;
+            input.className = 'bg-purple-950/80 border border-purple-600 rounded px-2 py-0.5 text-sm font-serif text-[#e8d8ff] w-full focus:outline-none';
+            let done = false;
+            const finalize = () => {
+                if (done) return;
+                done = true;
+                const newTitle = input.value.trim().slice(0, 40);
+                if (newTitle) renameSoulSave(id, newTitle);
+                else renderSoulSaves();
+            };
+            input.addEventListener('keydown', e => {
+                if (e.key === 'Enter') { e.preventDefault(); finalize(); }
+                if (e.key === 'Escape') { done = true; renderSoulSaves(); }
+            });
+            input.addEventListener('blur', finalize);
+            titleEl.replaceWith(input);
+            input.focus();
+            input.select();
+        }
+
+        function renameSoulSave(id, newTitle) {
+            const save = appState.soulSaves.find(s => s.id === id);
+            if (!save) return;
+            save.title = newTitle;
+            syncToCloud();
+            renderSoulSaves();
         }
 
         function deleteSoulSave(id) {
-            appState.soulSaves = appState.soulSaves.filter(s => s.id !== id);
-            syncToCloud();
-            renderSoulSaves();
+            const save = appState.soulSaves.find(s => s.id === id);
+            if (!save) return;
+            customConfirm(`確定刪除「${escapeHtml(save.title || save.name)}」？此操作無法復原。`, () => {
+                appState.soulSaves = appState.soulSaves.filter(s => s.id !== id);
+                syncToCloud();
+                renderSoulSaves();
+            });
         }
 
         function exportSoulStory() {
