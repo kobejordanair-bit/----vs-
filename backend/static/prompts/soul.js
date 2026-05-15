@@ -245,4 +245,43 @@ ${growthCooldownNote}
 [GLOBALSUMMARY]更新全局主線摘要（400字以內）：專注記錄①不可逆的歷史事件與局勢轉變②主角已暴露的底牌與行動後果③配角生死與陣營轉換④所有pendingTensions的當前狀態。人際關係由FIGURES的summary欄位負責，此處不重複。忽略過場細節與日常互動。[/GLOBALSUMMARY]${firstChapterTags}`;
         }
     };
+
+    window.buildSoulSummaryCompressPrompt = function({ globalSummary, recentChapters, figureStates, keyEvents, pendingTensions, currentDate }) {
+        const recentStr = (recentChapters || []).length > 0
+            ? recentChapters.map(c => `・${c.label}「${c.title}」`).join('\n')
+            : '（無）';
+        const figsStr = (figureStates || []).length > 0
+            ? figureStates.map(f => `${f.name}(${f.attitude})${f.summary ? `：${f.summary}` : ''}`).join('\n')
+            : '（無）';
+        const tensionsStr = (pendingTensions || []).length > 0
+            ? pendingTensions.map((t, i) => `${i+1}. ${soulTensionTitle(t)}`).join('\n')
+            : '（無）';
+        const eventsStr = (keyEvents || []).slice(-10).join('\n') || '（無）';
+        return `以下是一部歷史穿越小說的全局主線摘要，請將其精煉壓縮成一份更清晰的新版摘要（300-400字以內）。
+
+要求：
+- 保留所有不可逆的重要事件、主角已暴露的底牌、陣營轉換與死亡
+- 保留所有尚未解決的張力和懸念
+- 刪除已解決的細節、過場互動和重複內容
+- 語言簡練，以條列式或短段落呈現
+- 只輸出新版摘要，不要任何說明前綴
+
+【原始摘要】
+${globalSummary}
+
+【近期章節】
+${recentStr}
+
+【當前人物陣營】
+${figsStr}
+
+【積累張力】
+${tensionsStr}
+
+【不可逆事件】
+${eventsStr}
+${currentDate ? `\n【當前時間】${currentDate}` : ''}
+
+請輸出精煉後的全局主線摘要：`;
+    };
 })();
