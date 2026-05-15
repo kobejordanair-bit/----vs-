@@ -1149,24 +1149,27 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.2"></script>
-    <script src="/static/data/scenes.js?v=15.2"></script>
-    <script src="/static/data/factions.js?v=15.2"></script>
-    <script src="/static/data/regions.js?v=15.2"></script>
-    <script src="/static/data/battlefields.js?v=15.2"></script>
-    <script src="/static/data/eras.js?v=15.2"></script>
-    <script src="/static/prompts/soul.js?v=15.2"></script>
+    <script src="/static/data/legends.js?v=15.3"></script>
+    <script src="/static/data/scenes.js?v=15.3"></script>
+    <script src="/static/data/factions.js?v=15.3"></script>
+    <script src="/static/data/regions.js?v=15.3"></script>
+    <script src="/static/data/battlefields.js?v=15.3"></script>
+    <script src="/static/data/eras.js?v=15.3"></script>
+    <script src="/static/prompts/soul.js?v=15.3"></script>
     <!-- ↑ 更新 APP_VERSION 時，同步更新以上所有 ?v= 版本號 -->
     <script>
         // --- CONSTANTS & UTILS ---
         const APP_VERSION = "15.2";
 
-        // 資料載入防呆：確認所有外部 static/data/*.js 已正確載入
+        // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
             typeof FACTION_COLORS === 'undefined' || typeof REGION_DATA === 'undefined' ||
             typeof BATTLEFIELDS === 'undefined' || typeof ERA_YEAR_MAP === 'undefined' ||
-            typeof DYNASTY_ORDER === 'undefined' || typeof buildSoulChapterPrompt === 'undefined') {
-            throw new Error('[data] 外部資料檔未載入，請確認 /static/data/*.js 路徑及版本號正確');
+            typeof DYNASTY_ORDER === 'undefined' ||
+            typeof buildSoulChapterPrompt === 'undefined' ||
+            typeof buildSoulCompatibilityPrompt === 'undefined' ||
+            typeof buildSoulGoalPrompt === 'undefined') {
+            throw new Error('[data] 外部資料或 prompt builder 未載入，請確認 /static/data/*.js 與 /static/prompts/*.js 路徑及版本號正確');
         }
 
         function el(id) { return document.getElementById(id); }
@@ -4986,9 +4989,6 @@ ${lastTrait}
             soulSession.viewingChapter = 0;
             _soulShowChapterShell(0);
             try {
-                const traitsEngine = soulSession.soulTraits
-                    ? (typeof soulSession.soulTraits === 'string' ? soulSession.soulTraits : (soulSession.soulTraits.engine || soulSession.soulTraits.display))
-                    : '';
                 const hostMod = appState.modifiedLegends[soulSession.hostId] || {};
                 const soulMod = soulSession.soulId ? (appState.modifiedLegends[soulSession.soulId] || {}) : {};
                 const compatPrompt = buildSoulCompatibilityPrompt({ host, soul, soulSession, hostMod, soulMod });
