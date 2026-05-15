@@ -1357,7 +1357,19 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             if (data.soulSession && data.soulSession.phase !== 'idle') {
                 soulSession = { ...data.soulSession, generating: false };
             }
-            appState.soulSaves = data.soulSaves || [];
+            let _soulSavesNeedSync = false;
+            appState.soulSaves = (data.soulSaves || []).map((s, i) => {
+                const needsPatch = !s.id || !s.title || s.chapterCount == null || !s.savedAt;
+                if (needsPatch) _soulSavesNeedSync = true;
+                return {
+                    ...s,
+                    id: s.id || `save_legacy_${i}_${Date.now().toString(36)}`,
+                    title: s.title || s.name || `魂穿存檔 ${i + 1}`,
+                    chapterCount: s.chapterCount ?? (s.snapshot?.chapters || []).filter(c => !c.isSummary && !c.isCompat).length,
+                    savedAt: s.savedAt || '舊存檔'
+                };
+            });
+            if (_soulSavesNeedSync) syncToCloud();
             if (data.hegemonySavedSim) {
                 appState.hegemony.savedSimulation = data.hegemonySavedSim;
                 localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
@@ -5478,8 +5490,14 @@ ${keyEventsStr}${growthStr}${figuresStr}
             const SOUL_SAVE_LIMIT = 50;
             if (appState.soulSaves.length >= SOUL_SAVE_LIMIT) {
                 const oldest = appState.soulSaves[appState.soulSaves.length - 1];
-                if (!confirm(`存檔已達上限（${SOUL_SAVE_LIMIT} 筆）。\n最舊的《${oldest.name}》將被覆蓋，確定繼續？`)) return;
-                appState.soulSaves.length = SOUL_SAVE_LIMIT - 1;
+                customConfirm(`存檔已達上限（${SOUL_SAVE_LIMIT} 筆）。最舊的《${oldest.title || oldest.name}》將被覆蓋，確定繼續？`, () => {
+                    appState.soulSaves.length = SOUL_SAVE_LIMIT - 1;
+                    appState.soulSaves.unshift(save);
+                    syncToCloud();
+                    const btn = el('soulSaveBtn');
+                    if (btn) { btn.innerHTML = '<i class="fa-solid fa-check mr-1.5"></i>已存'; setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔'; }, 1500); }
+                });
+                return;
             }
             appState.soulSaves.unshift(save);
             syncToCloud();
@@ -5592,7 +5610,7 @@ ${keyEventsStr}${growthStr}${figuresStr}
         function deleteSoulSave(id) {
             const save = appState.soulSaves.find(s => s.id === id);
             if (!save) return;
-            customConfirm(`確定刪除「${escapeHtml(save.title || save.name)}」？此操作無法復原。`, () => {
+            customConfirm(`確定刪除「${save.title || save.name}」？此操作無法復原。`, () => {
                 appState.soulSaves = appState.soulSaves.filter(s => s.id !== id);
                 syncToCloud();
                 renderSoulSaves();
