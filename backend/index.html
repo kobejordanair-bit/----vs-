@@ -801,6 +801,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <div class="flex flex-col items-center gap-1.5">
                     <span id="soulChapterIndicator" class="text-xs text-purple-600 font-serif"></span>
                     <button id="soulRegenChapterBtn" onclick="regenCurrentSoulChapter()" class="hidden text-[10px] text-purple-700 hover:text-purple-400 font-serif transition-colors flex items-center gap-1"><i class="fa-solid fa-rotate-right text-[9px]"></i>重生此章</button>
+                    <button id="soulCompressSummaryBtn" onclick="_compressGlobalSummary()" class="hidden text-[10px] text-indigo-700 hover:text-indigo-400 font-serif transition-colors flex items-center gap-1"><i class="fa-solid fa-compress text-[9px]"></i>整理摘要</button>
                 </div>
                 <button id="soulNextBtn" onclick="generateNextSoulChapter()" class="px-5 py-2 bg-purple-800 hover:bg-purple-700 text-purple-100 rounded-lg text-xs font-bold font-serif tracking-wide transition-all flex items-center gap-2">繼續下一章<i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -1168,7 +1169,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             typeof DYNASTY_ORDER === 'undefined' ||
             typeof buildSoulChapterPrompt === 'undefined' ||
             typeof buildSoulCompatibilityPrompt === 'undefined' ||
-            typeof buildSoulGoalPrompt === 'undefined') {
+            typeof buildSoulGoalPrompt === 'undefined' ||
+            typeof buildSoulSummaryCompressPrompt === 'undefined') {
             throw new Error('[data] 外部資料或 prompt builder 未載入，請確認 /static/data/*.js 與 /static/prompts/*.js 路徑及版本號正確');
         }
 
@@ -5360,6 +5362,12 @@ ${lastTrait}
                 if (!soulSession.generating && !isEnded && total > 0) regenBtn.classList.remove('hidden');
                 else regenBtn.classList.add('hidden');
             }
+            const compressBtn = el('soulCompressSummaryBtn');
+            if (compressBtn) {
+                const storyChNum = soulSession.chapters.filter(c => !c.isCompat && !c.isSummary).length;
+                if (!soulSession.generating && !isEnded && storyChNum >= 5 && soulSession.globalSummary) compressBtn.classList.remove('hidden');
+                else compressBtn.classList.add('hidden');
+            }
             if (!nextBtn) return;
             if (isEnded) { nextBtn.classList.add('opacity-0','pointer-events-none'); return; }
             nextBtn.classList.remove('opacity-0','pointer-events-none');
@@ -5370,6 +5378,43 @@ ${lastTrait}
             else if (viewing < total - 1) { nextBtn.disabled = false; nextBtn.innerHTML = '跳至最新章 <i class="fa-solid fa-forward-step"></i>'; nextBtn.onclick = ()=>soulNavChapter(total-1); }
             else if (soulSession.hostDead) { nextBtn.disabled = false; nextBtn.innerHTML = '觀察身後世 <i class="fa-solid fa-ghost"></i>'; nextBtn.onclick = generateNextSoulChapter; }
             else { nextBtn.disabled = false; nextBtn.innerHTML = '繼續下一章 <i class="fa-solid fa-arrow-right"></i>'; nextBtn.onclick = generateNextSoulChapter; }
+        }
+
+        async function _compressGlobalSummary() {
+            const btn = el('soulCompressSummaryBtn');
+            if (!btn || btn.disabled) return;
+            if (!soulSession.globalSummary) return;
+            btn.disabled = true;
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-[9px]"></i>整理中…';
+            soulSession.lastGlobalSummaryBeforeCompress = soulSession.globalSummary;
+            try {
+                const recentChapters = soulSession.chapters
+                    .filter(c => !c.isSummary && !c.isCompat)
+                    .slice(-10)
+                    .map(c => ({ label: c.label, title: c.title }));
+                const prompt = buildSoulSummaryCompressPrompt({
+                    globalSummary: soulSession.globalSummary,
+                    recentChapters,
+                    figureStates: soulSession.figureStates,
+                    keyEvents: soulSession.keyEvents,
+                    pendingTensions: soulSession.pendingTensions,
+                    currentDate: soulSession.currentDate
+                });
+                const result = await callGemini(prompt);
+                if (result && result.trim().length >= 100) {
+                    soulSession.globalSummary = result.trim();
+                    syncToCloud();
+                    btn.innerHTML = '<i class="fa-solid fa-check text-[9px]"></i>已整理';
+                    setTimeout(() => { btn.innerHTML = originalHtml; btn.disabled = false; }, 2000);
+                } else {
+                    btn.innerHTML = originalHtml;
+                    btn.disabled = false;
+                }
+            } catch(e) {
+                btn.innerHTML = originalHtml;
+                btn.disabled = false;
+            }
         }
 
         function _restorePreChapterSnapshot(snapshot) {
