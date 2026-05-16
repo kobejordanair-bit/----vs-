@@ -19,7 +19,7 @@ import queue as stdlib_queue
 
 load_dotenv()
 
-APP_VERSION = "15.4"
+APP_VERSION = "15.5"
 APP_SECRET = os.getenv("APP_SECRET")
 if not APP_SECRET:
     raise ValueError("環境變數 APP_SECRET 尚未設定！")

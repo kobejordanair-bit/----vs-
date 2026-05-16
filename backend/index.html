@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歷代帝王將相名臣評鑑 (v15.4 深度優化版)</title>
+    <title>歷代帝王將相名臣評鑑 (v15.5 深度優化版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -403,7 +403,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
-                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.4 深度優化版</span>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.5 深度優化版</span>
                 </div>
             </div>
             <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
@@ -1150,17 +1150,17 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.4"></script>
-    <script src="/static/data/scenes.js?v=15.4"></script>
-    <script src="/static/data/factions.js?v=15.4"></script>
-    <script src="/static/data/regions.js?v=15.4"></script>
-    <script src="/static/data/battlefields.js?v=15.4"></script>
-    <script src="/static/data/eras.js?v=15.4"></script>
-    <script src="/static/prompts/soul.js?v=15.4"></script>
+    <script src="/static/data/legends.js?v=15.5"></script>
+    <script src="/static/data/scenes.js?v=15.5"></script>
+    <script src="/static/data/factions.js?v=15.5"></script>
+    <script src="/static/data/regions.js?v=15.5"></script>
+    <script src="/static/data/battlefields.js?v=15.5"></script>
+    <script src="/static/data/eras.js?v=15.5"></script>
+    <script src="/static/prompts/soul.js?v=15.5"></script>
     <!-- ↑ 更新 APP_VERSION 或修改 static/data/*.js、static/prompts/*.js 時，請同步更新以上所有 ?v= 版本號，避免 PWA/瀏覽器快取舊檔 -->
     <script>
         // --- CONSTANTS & UTILS ---
-        const APP_VERSION = "15.4";
+        const APP_VERSION = "15.5";
 
         // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
@@ -1170,7 +1170,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             typeof buildSoulChapterPrompt === 'undefined' ||
             typeof buildSoulCompatibilityPrompt === 'undefined' ||
             typeof buildSoulGoalPrompt === 'undefined' ||
-            typeof buildSoulSummaryCompressPrompt === 'undefined') {
+            typeof buildSoulSummaryCompressPrompt === 'undefined' ||
+            typeof buildSoulChronicleChapterPrompt === 'undefined') {
             throw new Error('[data] 外部資料或 prompt builder 未載入，請確認 /static/data/*.js 與 /static/prompts/*.js 路徑及版本號正確');
         }
 
@@ -4595,11 +4596,11 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
         function initScenarios() { /* no-op: scenarios now rendered in updateSoulModeUI */ }
 
         // ===== 深度魂穿 =====
-        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama' };
+        let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama', chronicleScale:'standard', factionStates:[], totalMonthsElapsed:0 };
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
-                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama' };
+                soulSession = { phase:'setup', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama', chronicleScale:'standard', factionStates:[], totalMonthsElapsed:0 };
             }
             el('soulDeepModal').classList.remove('hidden');
             renderSoulDeep();
@@ -4609,7 +4610,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
             updateSoulModeUI();
         }
         function resetSoulSession() {
-            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama' };
+            soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama', chronicleScale:'standard', factionStates:[], totalMonthsElapsed:0 };
             appState.soulSession = null;
             syncToCloud();
             updateSoulModeUI();
@@ -4626,10 +4627,15 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
 
         function setNarrativeMode(key) {
             soulSession.narrativeMode = key;
-            document.querySelectorAll('[data-mode]').forEach(b => {
-                b.classList.toggle('ring-2', b.dataset.mode === key);
-                b.classList.toggle('ring-purple-400', b.dataset.mode === key);
-                b.classList.toggle('bg-purple-900/40', b.dataset.mode === key);
+            _soulRenderConfirm(); // re-render to show/hide chronicleScale picker
+        }
+
+        function setChronicleScale(key) {
+            soulSession.chronicleScale = key;
+            document.querySelectorAll('[data-scale]').forEach(b => {
+                b.classList.toggle('ring-2', b.dataset.scale === key);
+                b.classList.toggle('ring-indigo-400', b.dataset.scale === key);
+                b.classList.toggle('bg-indigo-900/30', b.dataset.scale === key);
             });
         }
 
@@ -4807,9 +4813,10 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                         <p class="text-[10px] text-purple-600 tracking-widest font-serif mb-2.5">敘事導演基調</p>
                         <div class="grid grid-cols-3 gap-2" id="narrativeModeGrid">
                             ${[
-                                { key:'heroic', label:'改命爽文', desc:'歷史可被突破', icon:'fa-bolt', hint:'決策有效・允許逆轉・代價可承受' },
-                                { key:'drama',  label:'權謀正劇', desc:'多方博弈慢燉', icon:'fa-chess', hint:'派系錯綜・勝利換新問題・局勢難測' },
-                                { key:'tragedy',label:'悲劇史詩', desc:'代價沉重悲壯', icon:'fa-skull', hint:'慣性極強・每勝必損・走向悲壯' }
+                                { key:'heroic',    label:'改命爽文', desc:'歷史可被突破', icon:'fa-bolt',       hint:'決策有效・允許逆轉・代價可承受' },
+                                { key:'drama',     label:'權謀正劇', desc:'多方博弈慢燉', icon:'fa-chess',      hint:'派系錯綜・勝利換新問題・局勢難測' },
+                                { key:'tragedy',   label:'悲劇史詩', desc:'代價沉重悲壯', icon:'fa-skull',      hint:'慣性極強・每勝必損・走向悲壯' },
+                                { key:'chronicle', label:'史書編年', desc:'跨年宏觀推演', icon:'fa-scroll',     hint:'遠景鏡頭・勢力消長・看幾十年歷史' }
                             ].map(m => `<button onclick="setNarrativeMode('${m.key}')" data-mode="${m.key}" class="relative flex flex-col items-center gap-1.5 p-3 rounded-xl border border-purple-800/50 bg-[#100420] transition-all text-center ${m.key===soulSession.narrativeMode?'ring-2 ring-purple-400 bg-purple-900/40':''}">
                                 <i class="fa-solid ${m.icon} text-purple-400 text-base"></i>
                                 <span class="font-bold font-serif text-purple-100 text-xs">${m.label}</span>
@@ -4817,6 +4824,20 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
                                 <span class="text-[9px] text-purple-700 font-serif leading-tight">${m.hint}</span>
                             </button>`).join('')}
                         </div>
+                        ${soulSession.narrativeMode === 'chronicle' ? `
+                        <div class="mt-3 p-3 bg-[#0a0218] border border-purple-900/40 rounded-xl">
+                            <div class="text-[10px] text-purple-500 font-serif mb-2">每章時間跨度</div>
+                            <div class="grid grid-cols-3 gap-2">
+                                ${[
+                                    { key:'fine',     label:'細推', desc:'1-3 個月' },
+                                    { key:'standard', label:'標準', desc:'6-12 個月' },
+                                    { key:'epic',     label:'大歷史', desc:'2-5 年' }
+                                ].map(s => `<button onclick="setChronicleScale('${s.key}')" data-scale="${s.key}" class="flex flex-col items-center gap-1 p-2 rounded-lg border border-purple-800/40 bg-[#100420] transition-all text-center ${s.key===soulSession.chronicleScale?'ring-2 ring-indigo-400 bg-indigo-900/30':''}">
+                                    <span class="font-bold font-serif text-purple-100 text-xs">${s.label}</span>
+                                    <span class="text-[9px] text-purple-600 font-serif">${s.desc}</span>
+                                </button>`).join('')}
+                            </div>
+                        </div>` : ''}
                     </div>
                     <button onclick="startSoulSession()" class="w-full py-4 bg-gradient-to-r from-purple-700 to-indigo-800 hover:from-purple-600 hover:to-indigo-700 text-white rounded-xl font-bold font-serif tracking-widest shadow-xl transition-all text-sm flex items-center justify-center gap-3">
                         <i class="fa-solid fa-yin-yang text-lg"></i>開始魂穿
@@ -5046,7 +5067,172 @@ ${lastTrait}
             soulSession.generating = true;
             soulSession.viewingChapter = soulSession.chapters.length;
             _soulUpdateActions();
-            await _generateSoulChapter();
+            if (soulSession.narrativeMode === 'chronicle') {
+                await _generateSoulChronicleChapter();
+            } else {
+                await _generateSoulChapter();
+            }
+        }
+
+        async function _generateSoulChronicleChapter() {
+            const host = legendsData.find(l => l.id === soulSession.hostId);
+            const soul = soulSession.soulId ? legendsData.find(l => l.id === soulSession.soulId) : null;
+            const chNum = soulSession.chapters.filter(c => !c.isCompat && !c.isSummary).length;
+            const chapterIndex = soulSession.chapters.length;
+            const label = chNum === 0 ? '序章' : `第${chNum}章`;
+
+            const hostMod = appState.modifiedLegends[soulSession.hostId] || {};
+            const soulMod = soulSession.soulId ? (appState.modifiedLegends[soulSession.soulId] || {}) : {};
+
+            const prompt = buildSoulChronicleChapterPrompt({
+                soulSession,
+                chNum,
+                label,
+                host,
+                soul,
+                hostMod,
+                soulMod,
+                factionStates: soulSession.factionStates || [],
+                figureStates: soulSession.figureStates || [],
+                globalSummary: soulSession.globalSummary,
+                pendingTensions: soulSession.pendingTensions || [],
+                keyEvents: soulSession.keyEvents || [],
+                totalMonthsElapsed: soulSession.totalMonthsElapsed || 0,
+                chronicleScale: soulSession.chronicleScale || 'standard'
+            });
+
+            const preStateSnapshot = {
+                figureStates: JSON.parse(JSON.stringify(soulSession.figureStates || [])),
+                factionStates: JSON.parse(JSON.stringify(soulSession.factionStates || [])),
+                pendingTensions: JSON.parse(JSON.stringify(soulSession.pendingTensions || [])),
+                keyEvents: JSON.parse(JSON.stringify(soulSession.keyEvents || [])),
+                currentDate: soulSession.currentDate,
+                globalSummary: soulSession.globalSummary,
+                totalMonthsElapsed: soulSession.totalMonthsElapsed || 0
+            };
+            soulSession.chapters.push({ num: chNum, label, title: '…', content: '', figures: [], streaming: true, preStateSnapshot });
+            soulSession.viewingChapter = chapterIndex;
+            _soulShowChapterShell(chapterIndex);
+
+            try {
+                let fullText = '';
+                await callGeminiStream(prompt, partial => {
+                    fullText = partial;
+                    soulSession.chapters[chapterIndex].content = _soulCleanChronicleText(partial);
+                    _soulRenderChapter(chapterIndex);
+                });
+
+                const titleM = fullText.match(/\[CHAPTERTITLE\]([\s\S]*?)\[\/CHAPTERTITLE\]/);
+                if (titleM) soulSession.chapters[chapterIndex].title = titleM[1].trim();
+
+                // TIMEADVANCE with scale fallback
+                const timeM = fullText.match(/\[TIMEADVANCE\]([\s\S]*?)\[\/TIMEADVANCE\]/);
+                const scaleFallback = { fine: 3, standard: 12, epic: 36 };
+                let monthsAdv = scaleFallback[soulSession.chronicleScale] || 12;
+                if (timeM) {
+                    const parsed = parseInt((timeM[1].match(/\d+/) || [])[0], 10);
+                    if (!isNaN(parsed) && parsed > 0) monthsAdv = parsed;
+                }
+                soulSession.totalMonthsElapsed = (soulSession.totalMonthsElapsed || 0) + monthsAdv;
+                soulSession.chapters[chapterIndex].monthsAdvanced = monthsAdv;
+
+                const dateM = fullText.match(/\[CHAPTERDATE\]([\s\S]*?)\[\/CHAPTERDATE\]/);
+                if (dateM && dateM[1].trim()) soulSession.currentDate = dateM[1].trim();
+
+                const factionsM = fullText.match(/\[FACTIONS\]([\s\S]*?)\[\/FACTIONS\]/);
+                if (factionsM) {
+                    try {
+                        const facs = JSON.parse(factionsM[1]);
+                        if (Array.isArray(facs)) {
+                            if (!soulSession.factionStates) soulSession.factionStates = [];
+                            facs.forEach(f => {
+                                const i = soulSession.factionStates.findIndex(x => x.name === f.name);
+                                if (i >= 0) soulSession.factionStates[i] = { ...soulSession.factionStates[i], ...f };
+                                else soulSession.factionStates.push(f);
+                            });
+                            soulSession.chapters[chapterIndex].factions = facs;
+                        }
+                    } catch(e) {}
+                }
+
+                const figM = fullText.match(/\[FIGURES\]([\s\S]*?)\[\/FIGURES\]/);
+                if (figM) {
+                    try {
+                        const figs = JSON.parse(figM[1]);
+                        if (Array.isArray(figs)) {
+                            soulSession.chapters[chapterIndex].figures = figs;
+                            figs.forEach(f => {
+                                const real = legendsData.find(l => l.name === f.name);
+                                if (real) { f.rank = real.rank; f.inRoster = true; } else { f.inRoster = false; }
+                                const i = (soulSession.figureStates || []).findIndex(x => x.name === f.name);
+                                if (i >= 0) { const old = soulSession.figureStates[i]; soulSession.figureStates[i] = { ...f, summary: f.summary || old.summary }; }
+                                else { if (!soulSession.figureStates) soulSession.figureStates = []; soulSession.figureStates.push(f); }
+                            });
+                        }
+                    } catch(e) {}
+                }
+
+                const soulInfluenceM = fullText.match(/\[SOUL_INFLUENCE\]([\s\S]*?)\[\/SOUL_INFLUENCE\]/);
+                if (soulInfluenceM) soulSession.chapters[chapterIndex].soulInfluence = soulInfluenceM[1].trim();
+
+                const eventsAddM = fullText.match(/\[EVENTS_ADD\]([\s\S]*?)\[\/EVENTS_ADD\]/);
+                if (eventsAddM) {
+                    const newEvts = eventsAddM[1].trim().split(/\n|｜/).map(e => e.trim()).filter(e => e);
+                    if (!soulSession.keyEvents) soulSession.keyEvents = [];
+                    soulSession.keyEvents.push(...newEvts);
+                    if (soulSession.keyEvents.length > 20) soulSession.keyEvents = soulSession.keyEvents.slice(-20);
+                }
+
+                const tensionsAddM = fullText.match(/\[TENSIONS_ADD\]([\s\S]*?)\[\/TENSIONS_ADD\]/);
+                if (tensionsAddM && tensionsAddM[1].trim()) {
+                    const newTitles = tensionsAddM[1].trim().split('｜').map(t => t.trim()).filter(t => t);
+                    if (!soulSession.pendingTensions) soulSession.pendingTensions = [];
+                    soulSession.pendingTensions.push(...newTitles.map(title => _tensionToObj(title)));
+                    if (soulSession.pendingTensions.length > 10) soulSession.pendingTensions = soulSession.pendingTensions.slice(-10);
+                }
+
+                const tensionsOutcomeM = fullText.match(/\[TENSIONS_OUTCOME\]([\s\S]*?)\[\/TENSIONS_OUTCOME\]/);
+                if (tensionsOutcomeM) {
+                    const outcome = tensionsOutcomeM[1].trim();
+                    if (outcome && outcome !== 'none' && (outcome.startsWith('resolved:') || outcome.startsWith('exploded:'))) {
+                        const keyword = outcome.replace(/^(resolved|exploded):/, '').trim();
+                        if (keyword) soulSession.pendingTensions = (soulSession.pendingTensions || []).filter(t => !_tensionTitle(t).includes(keyword));
+                    }
+                }
+                soulSession.pendingTensions = (soulSession.pendingTensions || []).map(t => {
+                    if (typeof t === 'string') return _tensionToObj(t);
+                    const newAge = (t.age || 0) + 1;
+                    return { ...t, age: newAge, intensity: Math.min(5, Math.floor(newAge / 2) + 1) };
+                });
+
+                const globalSummaryM = fullText.match(/\[GLOBALSUMMARY\]([\s\S]*?)\[\/GLOBALSUMMARY\]/);
+                if (globalSummaryM) soulSession.globalSummary = globalSummaryM[1].trim();
+
+                soulSession.chapters[chapterIndex].content = _soulCleanChronicleText(fullText);
+                soulSession.chapters[chapterIndex].streaming = false;
+            } catch(e) {
+                soulSession.chapters[chapterIndex].content = `（生成失敗：${escapeHtml(e.message)}）`;
+                soulSession.chapters[chapterIndex].streaming = false;
+            }
+            soulSession.generating = false;
+            appState.soulSession = soulSession;
+            syncToCloud();
+            _soulRenderChapter(chapterIndex);
+        }
+
+        function _soulCleanChronicleText(t) {
+            return t
+                .replace(/\[CHAPTERTITLE\][\s\S]*?\[\/CHAPTERTITLE\]/g, '')
+                .replace(/\[TIMEADVANCE\][\s\S]*?\[\/TIMEADVANCE\]/g, '')
+                .replace(/\[CHAPTERDATE\][\s\S]*?\[\/CHAPTERDATE\]/g, '')
+                .replace(/\[FACTIONS\][\s\S]*?\[\/FACTIONS\]/g, '')
+                .replace(/\[FIGURES\][\s\S]*?\[\/FIGURES\]/g, '')
+                .replace(/\[SOUL_INFLUENCE\][\s\S]*?\[\/SOUL_INFLUENCE\]/g, '')
+                .replace(/\[EVENTS_ADD\][\s\S]*?\[\/EVENTS_ADD\]/g, '')
+                .replace(/\[TENSIONS_ADD\][\s\S]*?\[\/TENSIONS_ADD\]/g, '')
+                .replace(/\[TENSIONS_OUTCOME\][\s\S]*?\[\/TENSIONS_OUTCOME\]/g, '')
+                .replace(/\[GLOBALSUMMARY\][\s\S]*?\[\/GLOBALSUMMARY\]/g, '')
+                .trim();
         }
 
         function _getSuggestedChapterType() {
