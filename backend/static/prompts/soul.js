@@ -284,4 +284,108 @@ ${currentDate ? `\n【當前時間】${currentDate}` : ''}
 
 請輸出精煉後的全局主線摘要：`;
     };
+
+    window.buildSoulChronicleChapterPrompt = function({ soulSession, chNum, label, host, soul, hostMod, soulMod, factionStates, figureStates, globalSummary, pendingTensions, keyEvents, totalMonthsElapsed, chronicleScale }) {
+        const scaleName = { fine: '細推（1-3個月）', standard: '標準（6-12個月）', epic: '大歷史（2-5年）' }[chronicleScale] || '標準（6-12個月）';
+        const scaleMonths = { fine: '1至3', standard: '6至12', epic: '24至60' }[chronicleScale] || '6至12';
+
+        const hostName = host ? host.name : '宿主';
+        const hostDynasty = host ? (host.dynasty || '') : '';
+        const soulName = soul ? soul.name : '自身意識';
+        const soulDynasty = soul ? (soul.dynasty || '') : '';
+
+        const hostEssence = (hostMod.deepAnalysis || hostMod.analysis || '').slice(0, 400);
+        const soulEssence = soul ? (soulMod.soulEssence || '').slice(0, 400) : '';
+        const traitsEngine = soulSession.soulTraits
+            ? (typeof soulSession.soulTraits === 'string' ? soulSession.soulTraits : (soulSession.soulTraits.engine || soulSession.soulTraits.display || ''))
+            : '';
+
+        const figsStr = (figureStates || []).length > 0
+            ? figureStates.map(f => `${f.name}(${f.attitude}${f.role ? `·${f.role}` : ''})：${f.summary || ''}`).join('\n')
+            : '（無登場人物）';
+
+        const factionsStr = (factionStates || []).length > 0
+            ? factionStates.map(f => `【${f.name}】${f.trend}・${f.status}${f.desc ? `——${f.desc}` : ''}`).join('\n')
+            : '（尚無勢力記錄，請根據時代背景自行設定主要勢力）';
+
+        const tensionsStr = (pendingTensions || []).length > 0
+            ? pendingTensions.map((t, i) => `${i + 1}. ${soulTensionTitle(t)}`).join('\n')
+            : '（無）';
+
+        const chronicleEventsStr = (keyEvents || []).slice(-8).join('\n') || '（無）';
+
+        let timeInfo = '';
+        if (totalMonthsElapsed > 0) {
+            const yrs = Math.floor(totalMonthsElapsed / 12);
+            const mos = totalMonthsElapsed % 12;
+            timeInfo = yrs > 0 ? `（距故事開始已過約${yrs}年${mos ? mos + '個月' : ''}）` : `（距故事開始已過${totalMonthsElapsed}個月）`;
+        }
+        const currentDateStr = soulSession.currentDate
+            ? `當前時間：${soulSession.currentDate}${timeInfo}`
+            : timeInfo ? `時間進度：${timeInfo}` : '';
+
+        return `你是一位歷史編年史家，正在記錄一段以「${hostName}」（${hostDynasty}）為主角的穿越史書。靈魂觀察者：「${soulName}」${soulDynasty ? `（${soulDynasty}）` : ''}。
+${traitsEngine ? `\n靈魂特質：${traitsEngine}` : ''}${hostEssence ? `\n宿主背景：${hostEssence}` : ''}${soulEssence ? `\n靈魂內核：${soulEssence}` : ''}
+
+本章標號：${label}（第${chNum + 1}章）　時間跨度：本章推進${scaleMonths}個月（規模：${scaleName}）
+${currentDateStr}
+
+【全局主線摘要】
+${globalSummary || '故事剛開始，尚無摘要。'}
+
+【當前勢力版圖】
+${factionsStr}
+
+【關鍵人物當前狀態】
+${figsStr}
+
+【積累未解決的張力】
+${tensionsStr}
+
+【不可逆大事記】
+${chronicleEventsStr}
+
+═══════════════════════════════════════
+【寫作要求】
+
+本章採「史書編年」模式。請以宏觀史家視角記錄這段歷史演變。
+
+請按以下四段結構輸出正文：
+
+**一、時代走筆**（300-500字）
+以編年史筆法記錄本時期整體局勢：政治格局、軍事動向、民心向背、關鍵轉捩。保持史家的冷靜全景視角，提煉時代面貌而非逐日流水帳。
+
+**二、關鍵一幕**（200-300字）
+從這段時間中選取一個具代表性的時刻，以場景還原方式呈現。可以是重要對話、決策瞬間或象徵性事件。人物語言須符合時代感。
+
+**三、沙盤報告**
+逐條列出本時期各主要勢力消長：
+格式：【勢力名稱】趨勢（↑/↓/→）　當前狀態　代表性轉折或事件
+
+**四、靈魂旁白**（100字以內）
+以穿越靈魂的視角，簡短評述這段歷史——靈魂帶來了什麼影響，或感受到什麼無力。
+
+═══════════════════════════════════════
+【Metadata Tags】（正文之後輸出）
+
+[CHAPTERTITLE]4-8字章節標題，概括本時期歷史主題[/CHAPTERTITLE]
+
+[TIMEADVANCE]本章推進的月數（純數字，範圍${scaleMonths}個月）[/TIMEADVANCE]
+
+[CHAPTERDATE]本章結束時的時間點（如「元朔三年秋」）[/CHAPTERDATE]
+
+[FACTIONS][{"name":"勢力名","trend":"rising/stable/declining/collapsed","status":"當前狀態10字","desc":"代表事件15字"},...][/FACTIONS]
+
+[FIGURES][{"name":"人名","role":"君主/謀臣/武將/方士/商賈/其他","summary":"累積關係與地位15字","change":"本章動態20字","attitude":"ally/enemy/neutral/suspicious"},...][/FIGURES]
+
+[SOUL_INFLUENCE]靈魂在本時期對歷史的影響（20字以內，若無影響填「旁觀」）[/SOUL_INFLUENCE]
+
+[EVENTS_ADD]本時期新增的不可逆大事（每條20字以內，換行分隔，最多3條；若無則留空）[/EVENTS_ADD]
+
+[TENSIONS_ADD]本時期新增的未解張力（用｜分隔，最多2條；若無則留空）[/TENSIONS_ADD]
+
+[TENSIONS_OUTCOME]若本章解決了某個積累張力，輸出 resolved:張力關鍵字 或 exploded:張力關鍵字；否則輸出 none[/TENSIONS_OUTCOME]
+
+[GLOBALSUMMARY]更新後的全局主線摘要（400字以內）：涵蓋主要勢力現況、宿主處境、重要人物動向、尚未解決的張力[/GLOBALSUMMARY]`;
+    };
 })();
