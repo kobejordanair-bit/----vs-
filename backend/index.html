@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歷代帝王將相名臣評鑑 (v15.8 深度優化版)</title>
+    <title>歷代帝王將相名臣評鑑 (v15.9 深度優化版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -403,7 +403,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
-                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.8 深度優化版</span>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.9 深度優化版</span>
                 </div>
             </div>
             <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
@@ -1150,17 +1150,17 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.8"></script>
-    <script src="/static/data/scenes.js?v=15.8"></script>
-    <script src="/static/data/factions.js?v=15.8"></script>
-    <script src="/static/data/regions.js?v=15.8"></script>
-    <script src="/static/data/battlefields.js?v=15.8"></script>
-    <script src="/static/data/eras.js?v=15.8"></script>
-    <script src="/static/prompts/soul.js?v=15.8"></script>
+    <script src="/static/data/legends.js?v=15.9"></script>
+    <script src="/static/data/scenes.js?v=15.9"></script>
+    <script src="/static/data/factions.js?v=15.9"></script>
+    <script src="/static/data/regions.js?v=15.9"></script>
+    <script src="/static/data/battlefields.js?v=15.9"></script>
+    <script src="/static/data/eras.js?v=15.9"></script>
+    <script src="/static/prompts/soul.js?v=15.9"></script>
     <!-- ↑ 更新 APP_VERSION 或修改 static/data/*.js、static/prompts/*.js 時，請同步更新以上所有 ?v= 版本號，避免 PWA/瀏覽器快取舊檔 -->
     <script>
         // --- CONSTANTS & UTILS ---
-        const APP_VERSION = "15.8";
+        const APP_VERSION = "15.9";
 
         // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
@@ -5116,7 +5116,7 @@ ${lastTrait}
                 globalSummary: soulSession.globalSummary,
                 totalMonthsElapsed: soulSession.totalMonthsElapsed || 0
             };
-            soulSession.chapters.push({ num: chNum, label, title: '…', content: '', figures: [], streaming: true, preStateSnapshot });
+            soulSession.chapters.push({ num: chNum, label, title: '…', content: '', figures: [], streaming: true, isChronicle: true, preStateSnapshot });
             soulSession.viewingChapter = chapterIndex;
             _soulShowChapterShell(chapterIndex);
 
@@ -5216,6 +5216,13 @@ ${lastTrait}
 
                 soulSession.chapters[chapterIndex].content = _soulCleanChronicleText(fullText);
                 soulSession.chapters[chapterIndex].streaming = false;
+                // 禁詞掃描：命中時顯示提醒，不自動重寫
+                const _BANNED = ['降維打擊','極限微操','微操','控場','碾壓','開掛','爽點','道德高地','道德綁架','系統性崩潰','系統性癱瘓','新手村','血包','打工人'];
+                const _hits = _BANNED.filter(w => fullText.includes(w));
+                if (_hits.length > 0) {
+                    console.warn('[史書編年] 禁詞命中：', _hits.join('、'));
+                    soulSession.chapters[chapterIndex].bannedWordHits = _hits;
+                }
             } catch(e) {
                 soulSession.chapters[chapterIndex].content = `（生成失敗：${escapeHtml(e.message)}）`;
                 soulSession.chapters[chapterIndex].streaming = false;
@@ -5488,13 +5495,16 @@ ${lastTrait}
             const retryBtn = isFailed
                 ? `<div class="mt-6 flex justify-center"><button onclick="retrySoulChapter()" class="flex items-center gap-2 px-5 py-2.5 bg-red-900/60 hover:bg-red-800/80 border border-red-700/60 text-red-300 hover:text-white rounded-xl font-serif text-sm transition-all"><i class="fa-solid fa-rotate-right"></i>重新生成本章</button></div>`
                 : '';
+            const bannedBadge = (!c.streaming && c.bannedWordHits && c.bannedWordHits.length > 0)
+                ? `<div class="mt-4 px-3 py-2 rounded-lg bg-amber-900/30 border border-amber-700/40 text-amber-400 text-[11px] font-serif">⚠ 禁詞偵測：${c.bannedWordHits.map(escapeHtml).join('、')}</div>`
+                : '';
             el('soulDeepContent').innerHTML = `
                 <div class="flex items-baseline gap-3 mb-5">
                     <span class="text-xs text-purple-600 font-serif tracking-widest shrink-0">${escapeHtml(c.label)}</span>
                     <h2 class="text-xl font-bold font-serif text-purple-100 leading-tight">${escapeHtml(c.title)}${c.streaming?'<span class="text-xs text-purple-500 ml-3 animate-pulse font-normal">落筆中…</span>':''}</h2>
                 </div>
                 <div class="prose prose-invert max-w-none font-serif leading-8 text-sm" style="color:#ddd4f0">${isFailed ? `<p class="text-red-400 text-sm font-serif">${escapeHtml(c.content)}</p>` : safeMarkdown(c.content)}</div>
-                ${retryBtn}`;
+                ${bannedBadge}${retryBtn}`;
             _soulRenderFigures(); _soulUpdateChapterNav(); _soulUpdateActions();
         }
 
