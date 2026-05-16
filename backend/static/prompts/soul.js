@@ -46,7 +46,7 @@ ${hostSummary ? `宿主背景：${hostSummary}` : ''}
 ${traitsEngine ? `靈魂特質：${traitsEngine}` : ''}
 ${soulEssence ? `靈魂內核摘要：${soulEssence}` : ''}
 
-【敘事導演基調】${soulSession.narrativeMode === 'heroic' ? '改命爽文' : soulSession.narrativeMode === 'tragedy' ? '悲劇史詩' : '權謀正劇'}
+【敘事導演基調】${soulSession.narrativeMode === 'heroic' ? '改命爽文' : soulSession.narrativeMode === 'tragedy' ? '悲劇史詩' : soulSession.narrativeMode === 'chronicle' ? '史書編年' : '權謀正劇'}
 
 請生成結構化報告（500-600字），格式如下：
 
