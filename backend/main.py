@@ -47,28 +47,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-import tempfile
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+if not GOOGLE_API_KEY:
+    raise ValueError("環境變數 GOOGLE_API_KEY 尚未設定！")
 
-GCP_PROJECT_ID = os.getenv("GCP_PROJECT_ID")
-GCP_KEY_JSON = os.getenv("GCP_KEY_JSON")
+client = genai.Client(api_key=GOOGLE_API_KEY)
 
-if not GCP_PROJECT_ID or not GCP_KEY_JSON:
-    raise ValueError("環境變數 GCP_PROJECT_ID 或 GCP_KEY_JSON 尚未設定！")
-
-# 把 JSON 寫入暫存檔，讓 google SDK 讀取
-_key_file = tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False)
-_key_file.write(GCP_KEY_JSON)
-_key_file.close()
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = _key_file.name
-
-client = genai.Client(
-    vertexai=True,
-    project=GCP_PROJECT_ID,
-    location="global"
-)
-
-PRIMARY_MODEL = "gemini-3.1-pro-preview"
-FALLBACK_MODEL = "gemini-3.1-flash-lite-preview"
+PRIMARY_MODEL = "gemini-2.5-pro"
+FALLBACK_MODEL = "gemini-2.5-flash"
 
 
 class ChatRequest(BaseModel):
