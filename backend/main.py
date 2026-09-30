@@ -13,13 +13,14 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from pymongo import MongoClient
+from userdata_schema import UserDataRequest, load_userdata, save_userdata_patch
 import asyncio
 import threading
 import queue as stdlib_queue
 
 load_dotenv()
 
-APP_VERSION = "15.9"
+APP_VERSION = "15.10"
 APP_SECRET = os.getenv("APP_SECRET")
 if not APP_SECRET:
     raise ValueError("環境變數 APP_SECRET 尚未設定！")
@@ -60,18 +61,6 @@ FALLBACK_MODEL = "gemini-3-flash-preview"
 class ChatRequest(BaseModel):
     contents: List[Dict[str, Any]]
     is_json: bool = False
-
-class UserDataRequest(BaseModel):
-    customLegends: List[Dict[str, Any]] = []
-    modifiedLegends: Dict[str, Any] = {}
-    chatHistories: Dict[str, Any] = {}
-    simulationHistory: List[Dict[str, Any]] = []
-    discussionHistories: Dict[str, Any] = {}
-    soulSaves: List[Dict[str, Any]] = []
-    hegemonySavedSim: Optional[Dict[str, Any]] = None
-    scenes: List[Dict[str, Any]] = []
-    sceneEdits: Dict[str, Any] = {}
-    soulSession: Optional[Dict[str, Any]] = None
 
 TOKEN_TTL_SECONDS = 7 * 24 * 3600  # 7 天
 
@@ -147,32 +136,12 @@ async def auth(request: Request):
 @app.get("/api/userdata")
 def get_userdata(x_app_token: Optional[str] = Header(None)):
     verify_token(x_app_token)
-    doc = userdata_col.find_one({"_id": "main"}, {"_id": 0})
-    if not doc:
-        return {"customLegends": [], "modifiedLegends": {}, "chatHistories": {}}
-    return doc
+    return load_userdata(userdata_col)
 
 @app.post("/api/userdata")
 def save_userdata(request: Request, body: UserDataRequest, x_app_token: Optional[str] = Header(None)):
     verify_token(x_app_token)
-    userdata_col.replace_one(
-        {"_id": "main"},
-        {
-            "_id": "main",
-            "customLegends": body.customLegends,
-            "modifiedLegends": body.modifiedLegends,
-            "chatHistories": body.chatHistories,
-            "simulationHistory": body.simulationHistory,
-            "discussionHistories": body.discussionHistories,
-            "soulSaves": body.soulSaves,
-            "hegemonySavedSim": body.hegemonySavedSim,
-            "scenes": body.scenes,
-            "sceneEdits": body.sceneEdits,
-            "soulSession": body.soulSession,
-        },
-        upsert=True
-    )
-    return {"status": "ok"}
+    return save_userdata_patch(userdata_col, body)
 
 @app.post("/api/gemini")
 @limiter.limit("20/minute")

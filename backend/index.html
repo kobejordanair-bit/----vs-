@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歷代帝王將相名臣評鑑 (v15.9 深度優化版)</title>
+    <title>歷代帝王將相名臣評鑑 (v15.10 資料保全版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -265,6 +265,19 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     (function(){if(localStorage.getItem('dynasty_nightmode')==='1'){document.documentElement.classList.add('night');}})();
     </script>
     <div id="saveToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7f1d1d;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚠️ 儲存失敗，請檢查網路</div>
+    <div id="cloudStatus" role="status" aria-live="polite" style="position:fixed;bottom:8px;right:8px;max-width:90vw;background:#292524;color:white;padding:8px 12px;border-radius:8px;z-index:997;font-size:12px;">
+        <span id="cloudStatusText">資料尚未載入</span>
+        <button id="retrySaveBtn" hidden onclick="cloudStore.save({immediate:true})" style="text-decoration:underline;margin-left:8px">重試儲存</button>
+        <button id="reloadCloudBtn" hidden onclick="reloadCloudSafely()" style="text-decoration:underline;margin-left:8px">備份後重新載入</button>
+    </div>
+    <dialog id="restoreDialog" style="width:min(92vw,640px);max-height:85vh;overflow:auto;padding:24px;border-radius:12px;background:#fffdf9;color:#292524;border:1px solid #d6d3c9;" oncancel="if(restoreSnapshot){event.preventDefault()}else{cancelRestore()}">
+        <h2 class="font-serif text-xl font-bold">完整備份還原預覽</h2>
+        <p id="restoreDetails" style="white-space:pre-wrap;margin:20px 0;line-height:1.6"></p>
+        <div style="display:flex;gap:12px;justify-content:flex-end">
+            <button id="cancelRestoreBtn" onclick="cancelRestore()" class="px-4 py-2 rounded border">取消</button>
+            <button id="confirmRestoreBtn" onclick="confirmRestore()" disabled class="btn-ink px-4 py-2 rounded disabled:opacity-40">備份現況並還原</button>
+        </div>
+    </dialog>
     <div id="flashToast" style="display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#92400e;color:white;padding:10px 20px;border-radius:8px;z-index:9999;font-size:14px;">⚡ Pro 暫時過載，本次由 Gemini Flash 生成</div>
 <!-- 辯論模式面板 -->
 <div id="debateModePanel" class="bottom-panel fixed bottom-0 left-0 right-0 bg-[#fffdf9] z-40 translate-y-full" style="height:340px;">
@@ -403,7 +416,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
-                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.9 深度優化版</span>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.10 資料保全版</span>
                 </div>
             </div>
             <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
@@ -580,7 +593,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         <div class="w-12 h-12 bg-gradient-to-br from-[#d4af37] to-[#8b6914] rounded flex items-center justify-center shadow-lg">
             <i class="fa-solid fa-dragon text-xl text-[#2c0b0e]"></i>
         </div>
-        <p class="text-[#57534e] font-serif tracking-widest animate-pulse">正在翻閱史籍...</p>
+        <p id="dataLoadMessage" class="text-[#57534e] font-serif text-center px-6">正在翻閱史籍…</p>
+        <button id="retryLoadBtn" hidden onclick="init()" class="btn-ink px-4 py-2 rounded">重新載入</button>
     </div>
 </div>
         <div id="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-32"></div>
@@ -1150,17 +1164,20 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.9"></script>
-    <script src="/static/data/scenes.js?v=15.9"></script>
-    <script src="/static/data/factions.js?v=15.9"></script>
-    <script src="/static/data/regions.js?v=15.9"></script>
-    <script src="/static/data/battlefields.js?v=15.9"></script>
-    <script src="/static/data/eras.js?v=15.9"></script>
-    <script src="/static/prompts/soul.js?v=15.9"></script>
+    <script src="/static/data/legends.js?v=15.10"></script>
+    <script src="/static/data/scenes.js?v=15.10"></script>
+    <script src="/static/data/factions.js?v=15.10"></script>
+    <script src="/static/data/regions.js?v=15.10"></script>
+    <script src="/static/data/battlefields.js?v=15.10"></script>
+    <script src="/static/data/eras.js?v=15.10"></script>
+    <script src="/static/prompts/soul.js?v=15.10"></script>
+    <script src="/static/js/backup.js?v=15.10"></script>
+    <script src="/static/js/storage.js?v=15.10"></script>
+    <script src="/static/js/persistence.js?v=15.10"></script>
     <!-- ↑ 更新 APP_VERSION 或修改 static/data/*.js、static/prompts/*.js 時，請同步更新以上所有 ?v= 版本號，避免 PWA/瀏覽器快取舊檔 -->
     <script>
         // --- CONSTANTS & UTILS ---
-        const APP_VERSION = "15.9";
+        const APP_VERSION = "15.10";
 
         // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
@@ -1340,123 +1357,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             soulSaves: [],
         };
         
+        const GAMEPLAY_DEFAULTS = cloneState({ hegemony: appState.hegemony, debateMode: appState.debateMode, soulMode: appState.soulMode });
         let legendsData = []; 
         const rankOrder = { "S+": 1, "S": 2, "S-": 3, "A+": 4, "A": 5, "A-": 6, "B+": 7, "B": 8, "B-": 8.5, "C+": 9, "C": 10, "C-": 11, "D": 12 };
-
-        async function init() {
-    try {
-        const res = await fetch(`${BACKEND_URL}/api/userdata`, {
-            headers: { 'x-app-token': APP_TOKEN }
-        });
-        if (res.ok) {
-            const data = await res.json();
-            appState.customLegends = data.customLegends || [];
-            appState.modifiedLegends = data.modifiedLegends || {};
-            appState.chatHistories = data.chatHistories || {};
-            appState.discussionHistories = data.discussionHistories || {};
-            appState.simulationHistory = data.simulationHistory || [];
-            appState.scenes = data.scenes || [];
-            appState.sceneEdits = data.sceneEdits || {};
-            if (data.soulSession && data.soulSession.phase !== 'idle') {
-                soulSession = {
-                    ...data.soulSession,
-                    generating: false,
-                    chronicleScale: data.soulSession.chronicleScale || 'standard',
-                    factionStates: data.soulSession.factionStates || [],
-                    totalMonthsElapsed: data.soulSession.totalMonthsElapsed || 0
-                };
-            }
-            let _soulSavesNeedSync = false;
-            appState.soulSaves = (data.soulSaves || []).map((s, i) => {
-                const needsPatch = !s.id || !s.title || s.chapterCount == null || !s.savedAt;
-                if (needsPatch) _soulSavesNeedSync = true;
-                return {
-                    ...s,
-                    id: s.id || `save_legacy_${i}_${Date.now().toString(36)}`,
-                    title: s.title || s.name || `魂穿存檔 ${i + 1}`,
-                    chapterCount: s.chapterCount ?? (s.snapshot?.chapters || []).filter(c => !c.isSummary && !c.isCompat).length,
-                    savedAt: s.savedAt || '舊存檔'
-                };
-            });
-            if (_soulSavesNeedSync) syncToCloud();
-            if (data.hegemonySavedSim) {
-                appState.hegemony.savedSimulation = data.hegemonySavedSim;
-                localStorage.setItem('hegemony_saved_sim', JSON.stringify(data.hegemonySavedSim));
-            }
-        } else if (res.status === 403 || res.status === 401) {
-            localStorage.removeItem('dynasty_token');
-            document.getElementById('passwordScreen').style.display = 'flex';
-            document.getElementById('dataLoadingScreen').style.display = 'none';
-            return;
-        }
-    } catch(e) {
-        console.error('載入資料失敗:', e);
-    }
-    await migrateOldData();
-    refreshData();
-    initScenarios();
-    if (!appState.hegemony.savedSimulation) {
-        const savedSim = safeJSONParse(localStorage.getItem('hegemony_saved_sim'), null);
-        if (savedSim) appState.hegemony.savedSimulation = savedSim;
-    }
-    updateHegemonyUI();
-    document.getElementById('dataLoadingScreen').style.display = 'none';
-}
-
-        // Migrate from 13.9 name-based keys to 15.0 id-based keys if needed
-         async function migrateOldData() {
-            const oldMods = safeJSONParse(localStorage.getItem('modifiedLegends_v13_9'), null);
-            if (oldMods && Object.keys(appState.modifiedLegends).length === 0) {
-                Object.keys(oldMods).forEach(oldName => {
-                    const found = staticLegendsData.find(l => l.name === oldName);
-                    if(found) { appState.modifiedLegends[found.id] = oldMods[oldName]; }
-                });
-                await syncToCloud();
-            }
-            const oldChats = safeJSONParse(localStorage.getItem('legendChatHistories_v13_9'), null);
-            if (oldChats && Object.keys(appState.chatHistories).length === 0) {
-                Object.keys(oldChats).forEach(oldName => {
-                    const found = staticLegendsData.find(l => l.name === oldName);
-                    if(found) { appState.chatHistories[found.id] = oldChats[oldName]; }
-                });
-                await syncToCloud();
-            }
-            // Ensure customs have ID & Dynasty
-            appState.customLegends.forEach(l => {
-                if(!l.id) l.id = generateId(l.type, l.name);
-                if(!l.dynasty) l.dynasty = guessDynasty(l);
-            });
-        }
-
-        let _syncTimer = null;
-        function syncToCloud() {
-            clearTimeout(_syncTimer);
-            _syncTimer = setTimeout(async () => {
-                try {
-                    await fetch(`${BACKEND_URL}/api/userdata`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
-                        body: JSON.stringify({
-                            customLegends: appState.customLegends,
-                            modifiedLegends: appState.modifiedLegends,
-                            chatHistories: appState.chatHistories,
-                            simulationHistory: appState.simulationHistory,
-                            discussionHistories: appState.discussionHistories,
-                            hegemonySavedSim: appState.hegemony.savedSimulation || null,
-                            scenes: appState.scenes,
-                            sceneEdits: appState.sceneEdits,
-                            soulSession: soulSession.phase !== 'idle' ? soulSession : null,
-                            soulSaves: appState.soulSaves || []
-                        })
-                    });
-                } catch(e) {
-                    console.error('儲存失敗:', e);
-                    const t = document.getElementById('saveToast');
-                    t.style.display = 'block';
-                    setTimeout(() => t.style.display = 'none', 3000);
-                }
-            }, 500);
-        }
 
         function refreshData() {
             legendsData = [...staticLegendsData, ...appState.customLegends];
@@ -4159,6 +4062,7 @@ if (appState.mode === 'debateMode' && appState.debateMode.activeSlot) {
                     };
                     appState.hegemony.savedSimulation = autoSim;
                     localStorage.setItem('hegemony_saved_sim', JSON.stringify(autoSim));
+                    syncToCloud();
                     updateHegemonyUI();
                     const shouldContinue = fullText.includes('##推演繼續##');
                     const btnDiv = document.createElement('div');
@@ -4603,6 +4507,7 @@ ${lordName ? `${lordName}如何既利用兩人又防止他們形成威脅自己�
 
         // ===== 深度魂穿 =====
         let soulSession = { phase:'idle', hostId:null, soulId:null, soulTraits:null, moment:null, moments:[], soulMoment:null, soulMoments:[], chapters:[], viewingChapter:-1, figureStates:[], soulGrowth:[], generating:false, hostDead:false, deathChapter:-1, hostState:'', pendingTensions:[], shockedFigures:[], lastChapterTypes:[], globalSummary:'', hostPhysique:null, tensionStaleChapters:0, lastGrowthChapter:-1, lastCostChapter:-1, keyEvents:[], currentDate:'', narrativeMode:'drama', chronicleScale:'standard', factionStates:[], totalMonthsElapsed:0 };
+        const SOUL_SESSION_DEFAULTS = cloneState(soulSession);
 
         function openSoulDeep() {
             if (soulSession.phase === 'idle') {
@@ -5752,16 +5657,22 @@ ${keyEventsStr}${growthStr}${figuresStr}
                 customConfirm(`存檔已達上限（${SOUL_SAVE_LIMIT} 筆）。最舊的《${oldest.title || oldest.name}》將被覆蓋，確定繼續？`, () => {
                     appState.soulSaves.length = SOUL_SAVE_LIMIT - 1;
                     appState.soulSaves.unshift(save);
-                    syncToCloud();
-                    const btn = el('soulSaveBtn');
-                    if (btn) { btn.innerHTML = '<i class="fa-solid fa-check mr-1.5"></i>已存'; setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔'; }, 1500); }
+                    confirmSoulSaved();
                 });
                 return;
             }
             appState.soulSaves.unshift(save);
-            syncToCloud();
+            confirmSoulSaved();
+        }
+
+        async function confirmSoulSaved() {
             const btn = el('soulSaveBtn');
-            if (btn) { btn.innerHTML = '<i class="fa-solid fa-check mr-1.5"></i>已存'; setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔'; }, 1500); }
+            if (btn) btn.textContent = '儲存中…';
+            const ok = await syncToCloud();
+            if (btn) {
+                btn.textContent = ok ? '已存至雲端' : '尚未存至雲端';
+                setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-floppy-disk mr-1.5"></i>存檔'; }, 2000);
+            }
         }
 
         function openSoulSaves() {
@@ -5803,7 +5714,9 @@ ${keyEventsStr}${growthStr}${figuresStr}
             const save = appState.soulSaves.find(s => s.id === id);
             if (!save) return;
             const doLoad = () => {
-                soulSession = { ...JSON.parse(JSON.stringify(save.snapshot)), generating: false };
+                soulSession = normalizeSoulSession(save.snapshot);
+                appState.soulSession = soulSession;
+                syncToCloud();
                 if (soulSession.viewingChapter < 0 && soulSession.chapters.length > 0) {
                     soulSession.viewingChapter = soulSession.chapters.length - 1;
                 }
@@ -5938,7 +5851,7 @@ ${chapterHtml}
         }
         
         // --- 對接本地端 Python FastAPI 後端 ---
-async function callGeminiStream(promptText, onChunk, onModel = null, contentsOverride = null) {
+async function _callGeminiStream(promptText, onChunk, onModel = null, contentsOverride = null) {
     const contents = contentsOverride || [{ role: "user", parts: [{ text: promptText }] }];
     const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
         method: 'POST',
@@ -6004,7 +5917,7 @@ async function callGemini(promptText, isJson = false) {
     return callGeminiNative(contents, isJson);
 }
 
-async function callGeminiNative(contentsArray, isJson = false) {
+async function _callGeminiNative(contentsArray, isJson = false) {
     const _doFetch = async () => {
         const response = await fetch(`${BACKEND_URL}/api/gemini`, {
             method: 'POST',
@@ -6041,66 +5954,6 @@ async function callGeminiNative(contentsArray, isJson = false) {
     }
 }
         
-
-        // Save Download
-        function handleDownloadJSON() {
-            const data = { customLegends: appState.customLegends, modifiedLegends: appState.modifiedLegends, chatHistories: appState.chatHistories, simulationHistory: appState.simulationHistory, discussionHistories: appState.discussionHistories, scenes: appState.scenes, sceneEdits: appState.sceneEdits, version: APP_VERSION };
-            const blob = new Blob([JSON.stringify(data)], {type: "application/json"}); 
-            const url = URL.createObjectURL(blob); 
-            const a = document.createElement('a'); 
-            a.href = url; 
-            a.download = `legends_v${APP_VERSION.replace('.','_')}.json`; 
-            a.click(); 
-        }
-
-        function loadDataFile(input) { 
-            const file = input.files[0]; 
-            if (!file) return; 
-            const reader = new FileReader(); 
-            reader.onload = function(e) { 
-                try { 
-                    const data = JSON.parse(e.target.result); 
-                    
-                    // 1. 處理自訂人物：幫舊存檔補齊 id 與 dynasty
-                    let loadedCustoms = data.customLegends || [];
-                    loadedCustoms.forEach(l => {
-                        if (!l.id) l.id = generateId(l.type, l.name);
-                        if (!l.dynasty) l.dynasty = guessDynasty(l);
-                    });
-                    appState.customLegends = loadedCustoms; 
-                    
-                    // 2. 舊版升級：將 modifiedLegends 與 chatHistories 的 key 從 name 轉為 id
-                    let oldMods = data.modifiedLegends || {};
-                    let newMods = {};
-                    Object.keys(oldMods).forEach(key => {
-                        const found = staticLegendsData.find(l => l.name === key) || loadedCustoms.find(l => l.name === key);
-                        newMods[found ? found.id : key] = oldMods[key];
-                    });
-                    appState.modifiedLegends = newMods; 
-                    
-                    let oldChats = data.chatHistories || {};
-                    let newChats = {};
-                    Object.keys(oldChats).forEach(key => {
-                        const found = staticLegendsData.find(l => l.name === key) || loadedCustoms.find(l => l.name === key);
-                        newChats[found ? found.id : key] = oldChats[key];
-                    });
-                    appState.chatHistories = newChats;
-                    appState.simulationHistory = data.simulationHistory || [];
-                    appState.discussionHistories = data.discussionHistories || {};
-                    appState.scenes = data.scenes || [];
-                    appState.sceneEdits = data.sceneEdits || {};
-
-                    syncToCloud(); // Persist immediately
-                    refreshData();
-                    customAlert("讀檔成功！舊版存檔已自動升級適配。");
-                } catch (err) { 
-                    console.error(err);
-                    customAlert("讀檔失敗，檔案格式可能損壞。"); 
-                } 
-            }; 
-            reader.readAsText(file); 
-            input.value = ''; // clear
-        }
 
 function openSnapshot() {
     el('snapshotModal').classList.remove('hidden');
