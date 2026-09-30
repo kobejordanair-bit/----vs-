@@ -7,7 +7,8 @@
     'use strict';
     const SAVE_TYPES = Object.freeze({
         'court-grain-v1': { version: 1, key: 'dynasty_court_grain_v1', engine: 'DynastyCourt', label: '初版朝會' },
-        'court-grain-v2': { version: 2, key: 'dynasty_court_grain_v2', engine: 'DynastyCouncil', label: '多方議政' }
+        'court-grain-v2': { version: 2, key: 'dynasty_court_grain_v2', engine: 'DynastyCouncil', label: '多方議政' },
+        'court-grain-v3': { version: 3, key: 'dynasty_court_grain_v3', engine: 'DynastyCampaign', label: '邊境六旬' }
     });
     const FORMAT = 'dynasty-court-save';
     const LABELS = { grain: '糧食', treasury: '國庫', people: '民心', defense: '邊防' };
@@ -15,7 +16,8 @@
     let host, engine, options = {}, state = null, presentOutcome = false, saved = null;
     let opened = false, storageIssue = '', corruptRaw = '', modal = null, returnFocus = null;
     let bodyOverflow = '', bodyHadClass = false, blocked = [], readGeneration = 0, importGeneration = 0;
-    let activeScenario = 'court-grain-v2', savedByScenario = {}, corruptByScenario = {}, issuesByScenario = {}, draft = null;
+    const DEFAULT_SCENARIO = 'court-grain-v3';
+    let activeScenario = DEFAULT_SCENARIO, savedByScenario = {}, corruptByScenario = {}, issuesByScenario = {}, draft = null;
 
     function parseSave(value, game) {
         const type = value && Object.hasOwn(SAVE_TYPES, value.scenario) ? SAVE_TYPES[value.scenario] : null;
@@ -32,7 +34,9 @@
     }
 
     function envelope() { return { format: FORMAT, version: SAVE_TYPES[activeScenario].version, scenario: activeScenario, state, presentOutcome }; }
-    function isCouncil() { return activeScenario === 'court-grain-v2'; }
+    function isCouncil() { return activeScenario === 'court-grain-v2' || isCampaign(); }
+    function isCampaign() { return activeScenario === 'court-grain-v3'; }
+    function roundLimit(scenario = activeScenario) { return scenario === 'court-grain-v3' ? 6 : 3; }
     function selectScenario(scenario) {
         activeScenario = scenario; engine = root[SAVE_TYPES[scenario].engine];
         if (!engine) throw new Error('此版本的朝堂劇本尚未載入，請重新整理後再試。');
@@ -65,7 +69,7 @@
                 catch (_) { corruptByScenario[scenario] = raw; issuesByScenario[scenario] = type.label + '的本機存檔無法驗證。原檔仍保留，可先下載保留。'; }
             } catch (_) { issuesByScenario[scenario] = '此瀏覽器無法讀取本機存檔。你仍可遊玩，離開前請下載存檔。'; }
         }
-        selectScenario('court-grain-v2');
+        selectScenario(DEFAULT_SCENARIO);
     }
     function save() {
         saved = envelope(); savedByScenario[activeScenario] = saved;
@@ -100,20 +104,27 @@
     }
     function footer(parent) {
         const footerNode = el('footer', 'court-footer');
-        add(footerNode, el('span', '', '本局保存在此瀏覽器；換裝置前請下載朝堂存檔。'), el('span', '', '朝堂存檔使用本畫面的下載／匯入；兩版進度分開保留。'));
+        add(footerNode, el('span', '', '本局保存在此瀏覽器；換裝置前請下載朝堂存檔。'), el('span', '', '朝堂存檔使用本畫面的下載／匯入；三版進度分開保留。'));
         parent.appendChild(footerNode);
     }
     function title(text, level = 'h1') {
         const node = el(level, 'court-title', text); node.setAttribute('data-court-focus', ''); return node;
     }
-    function advisorsStrip(parent, compact = false, briefings = []) {
-        const grid = el('div', compact ? 'court-advisors court-advisors-compact' : 'court-advisors');
+    function advisorsStrip(parent, compact = false, briefings = [], folded = false) {
+        const grid = el('div', (compact ? 'court-advisors court-advisors-compact' : 'court-advisors') + (folded ? ' court-advisors-folded' : ''));
         for (const advisor of engine.ADVISORS) {
-            const card = el('article', 'court-advisor');
+            const card = el(folded ? 'details' : 'article', 'court-advisor' + (folded ? ' court-advisor-folded' : ''));
+            card.dataset.advisor = advisor.id;
             const image = el('img', 'court-portrait'); image.src = advisor.portrait; image.alt = advisor.name + '角色插畫';
-            image.loading = compact ? 'eager' : 'lazy';
+            image.loading = folded || !compact ? 'lazy' : 'eager';
             const text = el('div', 'court-advisor-copy');
-            add(text, el('span', 'court-overline', advisor.role), el('h3', '', advisor.name), el('p', 'court-advisor-stance', advisor.stance));
+            if (folded) {
+                const summary = el('summary', 'court-advisor-summary');
+                add(summary, image, add(el('div'), el('span', 'court-overline', advisor.role), el('h3', '', advisor.name)), el('span', 'court-advisor-toggle', '議'));
+                card.appendChild(summary);
+                card.open = !!(state && draft && [draft.executor, draft.commander].includes(advisor.id));
+            } else add(text, el('span', 'court-overline', advisor.role), el('h3', '', advisor.name));
+            add(text, el('p', 'court-advisor-stance', advisor.stance));
             const briefing = briefings.find(item => (item.advisor || item.id) === advisor.id);
             if (briefing) add(text, el('p', 'court-advisor-briefing', briefing.text));
             if (state) {
@@ -133,7 +144,7 @@
                 text.appendChild(profile);
             }
             add(text, button('讀人物分析 ↗', 'court-analysis-button', () => showAnalysis(advisor)));
-            add(card, image, text); grid.appendChild(card);
+            add(card, folded ? null : image, text); grid.appendChild(card);
         }
         parent.appendChild(grid);
     }
@@ -141,47 +152,48 @@
         const main = shell(); messageStrip(main);
         const hero = el('section', 'court-hero');
         const copy = el('div', 'court-hero-copy');
-        add(copy, el('p', 'court-overline', '多方議政 · 三道詔令，層層因果'), title('缺糧朝會'),
-            el('p', 'court-lead', '糧倉將空，邊軍催餉。三位臣子帶來不同情報，五方利益正在拉扯。'),
-            el('p', 'court-hero-note', '選主措施，加配套，任命執行者。你可以採納建議，也可以讓反對者奉命執行。'));
+        add(copy, el('p', 'court-overline', '六回合戰役 · 八人朝議 · 兩方來敵'), title('邊境六旬'),
+            el('p', 'court-lead', '糧道、關隘、河運，三處要地同時承受壓力。敵方正在觀察你的部署。'),
+            el('p', 'court-hero-note', '任命一人主持政令，再派另一人外勤。籌糧、護送、偵察、交涉，必須一同考慮。'));
         const actions = el('div', 'court-hero-actions');
         if (saved) {
             const completed = !!engine.getEnding(saved.state);
-            add(actions, button(completed ? '查看上局結局 →' : '續上次朝會 →', 'court-button-primary', () => resume('court-grain-v2')), button('另開新局', 'court-button-outline', requestNew));
-            add(copy, el('p', 'court-save-summary', '上次進度：' + (completed ? '已完成三回合' : saved.state.turn === 0 ? '待下第一道詔令' : '已下詔 ' + saved.state.log.length + ' 次')));
+            add(actions, button(completed ? '查看上局結局 →' : '續上次戰役 →', 'court-button-primary', () => resume(DEFAULT_SCENARIO)), button('另開新局', 'court-button-outline', requestNew));
+            add(copy, el('p', 'court-save-summary', '上次進度：' + (completed ? '已完成六回合' : '已完成 ' + saved.state.log.length + ' / 6 回合')));
         } else add(actions, button('入殿議政 →', 'court-button-primary', corruptRaw ? requestNew : start), button('匯入存檔', 'court-button-outline', pickImport));
         add(copy, actions);
         const placard = el('aside', 'court-hero-placard');
-        add(placard, el('span', 'court-overline', '你要守住什麼？'), el('p', '', '國有四柱'), el('div', 'court-four-pillars', '糧食 ／ 國庫\n民心 ／ 邊防'), el('span', 'court-placard-note', '每項決策都有代價\n後果可能延至下一回合'));
+        add(placard, el('span', 'court-overline', '一旬，十日'), el('p', '', '六旬守境'), el('div', 'court-four-pillars', '先穩後方\n再解敵勢'), el('span', 'court-placard-note', '敵方也會部署\n每回合都會推進戰況'));
         add(hero, copy, placard); main.appendChild(hero);
         const overview = el('section', 'court-intro-resources');
         add(overview, el('div', 'court-section-heading', saved ? saved.state.turn === 0 ? '本局國勢 · 待下第一道詔令' : '上局國勢 · 續局時將從此處開始' : '入殿之前 · 國勢四柱'));
         resources(overview, saved ? saved.state : engine.createGame()); main.appendChild(overview);
-        const intro = el('section', 'court-intro-section');
-        add(intro, el('div', 'court-section-heading', '三位臣子 · 能力、執念與彼此的關係'));
-        advisorsStrip(intro, true); main.appendChild(intro);
+        renderCampaignTheatre(main, saved ? saved.state : engine.createGame(), true);
+        const intro = el('section', 'court-intro-section court-campaign-roster');
+        add(intro, el('div', 'court-section-heading', '八位人物 · 點開情報、長處與盲點'));
+        advisorsStrip(intro, true, [], true); main.appendChild(intro);
         const tools = el('div', 'court-intro-tools');
-        add(tools, el('p', '', '架空朝會 · 跨朝代人物改編。資訊、承諾與執行結果由固定規則計算，遊玩不需呼叫 AI。'));
+        add(tools, el('p', '', '跨朝代人物與敵方勢力均為架空遊戲改編。政令、外勤與敵方行動由規則結算，遊玩不呼叫 AI，也不消耗 token。'));
         if (saved) add(tools, button('下載上次存檔', 'court-button-small', () => download(saved)), button('匯入存檔', 'court-button-small', pickImport));
         add(main, tools);
-        const legacy = savedByScenario['court-grain-v1'];
-        const legacyRaw = corruptByScenario['court-grain-v1'];
-        if (legacy || legacyRaw) {
+        for (const scenario of ['court-grain-v2', 'court-grain-v1']) {
+            const type = SAVE_TYPES[scenario], legacy = savedByScenario[scenario], legacyRaw = corruptByScenario[scenario];
+            if (!legacy && !legacyRaw) continue;
             const archive = el('section', 'court-legacy-save');
-            add(archive, el('h2', 'court-section-heading', '初版朝會 · 原進度仍保留'), el('p', '', '初版沿用三選一規則；新版另存一份進度，兩者可以各自續玩與下載。'));
-            if (legacy) add(archive, button('查看／續玩初版', 'court-button-small', () => resume('court-grain-v1')), button('下載初版存檔', 'court-button-small', () => download(legacy, '朝堂初版存檔')));
-            if (legacyRaw) add(archive, el('p', 'court-legacy-warning', issuesByScenario['court-grain-v1']), button('下載初版原檔', 'court-button-small', () => download(legacyRaw, '朝堂初版原檔')));
+            add(archive, el('h2', 'court-section-heading', type.label + ' · 原進度仍保留'), el('p', '', scenario === 'court-grain-v1' ? '初版沿用三選一、三回合規則。可以各自續玩與下載。' : '保留三位人物的三回合議政規則。可以各自續玩與下載。'));
+            if (legacy) add(archive, button('查看／續玩' + type.label, 'court-button-small', () => resume(scenario)), button('下載' + type.label + '存檔', 'court-button-small', () => download(legacy, type.label + '存檔')));
+            if (legacyRaw) add(archive, el('p', 'court-legacy-warning', issuesByScenario[scenario]), button('下載' + type.label + '原檔', 'court-button-small', () => download(legacyRaw, type.label + '原檔')));
             main.appendChild(archive);
         }
         footer(main); focusHeading();
     }
-    function start() { selectScenario('court-grain-v2'); state = engine.createGame(); presentOutcome = false; corruptRaw = ''; save(); renderGame(); }
-    function resume(scenario = 'court-grain-v2') { selectScenario(scenario); state = JSON.parse(JSON.stringify(saved.state)); presentOutcome = saved.presentOutcome; renderGame(); }
+    function start() { selectScenario(DEFAULT_SCENARIO); state = engine.createGame(); presentOutcome = false; corruptRaw = ''; save(); renderGame(); }
+    function resume(scenario = DEFAULT_SCENARIO) { selectScenario(scenario); state = JSON.parse(JSON.stringify(saved.state)); presentOutcome = saved.presentOutcome; renderGame(); }
     function requestNew() {
-        const target = savedByScenario['court-grain-v2'];
-        const raw = corruptByScenario['court-grain-v2'];
-        const text = target || raw ? '新局會取代此瀏覽器的「多方議政」進度。可先下載保留；初版進度仍另存。' : '即將開始「多方議政」新局，人物與配套將共同影響政令。初版進度仍另存。';
-        confirm('另開一次多方朝會？', text, '開始新局', start,
+        const target = savedByScenario[DEFAULT_SCENARIO];
+        const raw = corruptByScenario[DEFAULT_SCENARIO];
+        const text = target || raw ? '新局會取代此瀏覽器的「邊境六旬」進度。可先下載保留；前兩版進度仍另存。' : '即將開始六回合戰役。內政與外勤共同影響三處戰線，前兩版進度仍另存。';
+        confirm('另開一場邊境戰役？', text, '開始新局', start,
             target || raw ? () => download(raw || target, '朝堂新版舊局') : null);
     }
     function resources(parent, currentState = state) {
@@ -196,15 +208,70 @@
         }
         parent.appendChild(grid);
     }
+    function smallMeter(label, value, cls = '') {
+        const metric = el('div', 'court-theatre-metric ' + cls);
+        add(metric, el('span', '', label), el('strong', '', value + ' / 100'));
+        const meter = el('div', 'court-theatre-meter');
+        meter.setAttribute('role', 'meter'); meter.setAttribute('aria-label', label);
+        meter.setAttribute('aria-valuemin', '0'); meter.setAttribute('aria-valuemax', '100'); meter.setAttribute('aria-valuenow', value);
+        const fill = el('span'); fill.style.width = Math.max(0, Math.min(100, value)) + '%'; meter.appendChild(fill); metric.appendChild(meter);
+        return metric;
+    }
+    function renderCampaignTheatre(parent, currentState = state, introduction = false) {
+        if (!isCampaign() || !engine.getFronts || !engine.getEnemies) return;
+        const theatre = el('section', 'court-campaign-theatre'); theatre.setAttribute('aria-label', '邊境戰況');
+        const heading = el('div', 'court-theatre-heading');
+        add(heading, add(el('div'), el('p', 'court-overline', '戰役態勢'), el('h2', 'court-section-heading', introduction ? '三處要地 · 兩方壓力' : '邊境戰況 · 已結算 ' + currentState.turn + ' / 6 回合')),
+            el('p', 'court-theatre-caption', '架空戰區示意 · 連線表示補給關係'));
+        theatre.appendChild(heading);
+        if (!introduction) {
+            const progress = el('ol', 'court-campaign-progress'); progress.setAttribute('aria-label', '六回合戰役進度');
+            ['一', '二', '三', '四', '五', '六'].forEach((label, index) => {
+                const item = el('li', index < currentState.turn ? 'court-turn-done' : index === currentState.turn ? 'court-turn-current' : '', label + '旬');
+                if (index === currentState.turn) item.setAttribute('aria-current', 'step');
+                add(item, el('span', '', index < currentState.turn ? '已結算' : index === currentState.turn ? '待決策' : '未至')); progress.appendChild(item);
+            });
+            theatre.appendChild(progress);
+        }
+        const fronts = el('div', 'court-campaign-fronts');
+        const glyphs = { granary: '倉', pass: '關', river: '河' };
+        for (const front of engine.getFronts(currentState)) {
+            const card = el('article', 'court-front ' + (front.security < 40 || front.supply < 35 ? 'court-front-threatened' : ''));
+            card.dataset.front = front.id;
+            add(card, add(el('header'), el('span', 'court-front-glyph', glyphs[front.id] || '域'), el('h3', '', front.name)),
+                el('p', 'court-front-description', front.description),
+                add(el('p', 'court-front-intelligence'), el('strong', '', '情報 · '), el('span', '', front.intelligence || '敵情未明')),
+                smallMeter('安全', front.security, front.security < 40 ? 'court-metric-low' : ''),
+                smallMeter('供給', front.supply, front.supply < 35 ? 'court-metric-low' : ''));
+            fronts.appendChild(card);
+        }
+        theatre.appendChild(fronts);
+        const enemies = el('div', 'court-enemies');
+        const actionLabels = { truce: '守約休戰', withdraw: '撤圍重整', forage: '掠取補給', flank: '轉向弱路', probe: '試探守備', blockade: '封鎖河運', assault: '試攻關隘' };
+        for (const enemy of engine.getEnemies(currentState)) {
+            const card = el('article', 'court-enemy'); card.dataset.enemy = enemy.id;
+            const activeTruce = enemy.truceUntil >= currentState.turn + 1 && currentState.turn < roundLimit();
+            const truceText = currentState.turn >= roundLimit() && enemy.truceUntil > 0 ? '本段戰役已結算；協議期限至第 ' + enemy.truceUntil + ' 回合' : activeTruce ? '停戰有效至第 ' + enemy.truceUntil + ' 回合' : enemy.truceUntil > 0 ? '第 ' + enemy.truceUntil + ' 回合停戰已屆期' : '尚無停戰協議';
+            add(card, add(el('header'), el('span', 'court-enemy-mark', '敵'), el('h3', '', enemy.name)),
+                el('p', 'court-enemy-description', enemy.description),
+                add(el('p', 'court-enemy-intent'), el('strong', '', '目前動向 · '), el('span', '', enemy.intent)),
+                add(el('div', 'court-enemy-status'), el('span', 'court-enemy-truce' + (activeTruce ? ' court-truce-active' : ''), truceText), el('span', '', '最近行動 · ' + (actionLabels[enemy.lastAction] || enemy.lastAction || '尚未接戰'))),
+                add(el('div', 'court-enemy-metrics'), smallMeter('兵力', enemy.strength), smallMeter('補給', enemy.supply), smallMeter('凝聚', enemy.cohesion)));
+            enemies.appendChild(card);
+        }
+        add(theatre, enemies, el('p', 'court-theatre-caption', '敵勢與要地的狀態會跨回合保留；選擇政令與外勤後，可在預覽中查看本回合敵方的應對。'));
+        parent.appendChild(theatre);
+    }
     function toolbar(main) {
         const tools = el('div', 'court-game-tools');
         add(tools, button('因果紀錄', 'court-button-small', showJournal), button('下載存檔', 'court-button-small', () => download(envelope())), button('匯入', 'court-button-small', pickImport), button('重開', 'court-button-small', requestNew));
-        if (!isCouncil()) add(tools, button('新版朝會首頁', 'court-button-small', () => { state = null; presentOutcome = false; selectScenario('court-grain-v2'); renderIntro(); }));
+        if (!isCampaign()) add(tools, button('邊境戰役首頁', 'court-button-small', () => { state = null; presentOutcome = false; selectScenario(DEFAULT_SCENARIO); renderIntro(); }));
         main.appendChild(tools);
     }
     function renderGame() {
         const main = shell(); messageStrip(main); resources(main);
-        if (!isCouncil()) add(main, el('p', 'court-version-note', '你正在續玩初版（三選一）。「重開」會另開新版，初版進度仍保留。'));
+        renderCampaignTheatre(main);
+        if (!isCampaign()) add(main, el('p', 'court-version-note', '你正在續玩' + SAVE_TYPES[activeScenario].label + '（三回合）。「重開」會另開邊境戰役，此版本進度仍保留。'));
         if (presentOutcome) renderOutcome(main);
         else if (engine.getEnding(state)) renderEnding(main);
         else if (isCouncil()) renderCouncilScene(main);
@@ -238,7 +305,7 @@
     }
     function renderCouncilScene(main) {
         const scene = engine.getScene(state), catalog = engine.getCatalog(state);
-        const layout = el('div', 'court-play-layout court-council-layout');
+        const layout = el('div', 'court-play-layout court-council-layout' + (isCampaign() ? ' court-campaign-layout' : ''));
         const paper = el('section', 'court-paper court-council-paper');
         add(paper, el('p', 'court-overline', scene.eyebrow || '第 ' + (state.turn + 1) + ' 回合'), title(scene.title, 'h2'), el('p', 'court-narrative', scene.description));
         const news = el('div', 'court-news');
@@ -263,21 +330,36 @@
         const recommendations = catalog.recommendations || [];
         draft = draft || JSON.parse(JSON.stringify(recommendations[0] ? recommendations[0].order : {
             primary: catalog.primaries[0].id, supplement: catalog.supplements[0].id,
-            executor: catalog.executors[0].id, authority: catalog.authorities[0].id
+            executor: catalog.executors[0].id, authority: catalog.authorities[0].id,
+            ...(isCampaign() ? { mission: 'none', commander: 'none', front: 'none' } : {})
         }));
-        add(paper, el('h3', 'court-section-heading', '先擬一份政令'), el('p', 'court-decision-note', '點草案只會填入預覽。可修改配套與授權，確認後才正式頒布。'));
+        add(paper, el('h3', 'court-section-heading', isCampaign() ? '內政與外勤 · 擬定本旬部署' : '先擬一份政令'), el('p', 'court-decision-note', isCampaign() ? '點草案只會填入預覽。兩個職責由不同人物執行，確認後才推進十日；也可以只下政令。' : '點草案只會填入預覽。可修改配套與授權，確認後才正式頒布。'));
         const drafts = el('div', 'court-recommendations');
         const selectors = {}, descriptions = {}, preview = el('section', 'court-order-preview');
         preview.setAttribute('aria-label', '政令預覽');
         const composer = el('details', 'court-composer');
+        composer.open = isCampaign();
+        const catalogFields = { primary: catalog.primaries, supplement: catalog.supplements, executor: catalog.executors, authority: catalog.authorities,
+            mission: catalog.missions, commander: catalog.commanders, front: catalog.fronts };
         const update = () => {
-            for (const [key, node] of Object.entries(selectors)) node.value = draft[key];
+            for (const [key, node] of Object.entries(selectors)) {
+                node.value = draft[key];
+                node.disabled = isCampaign() && draft.mission === 'none' && ['commander', 'front'].includes(key);
+            }
             for (const [key, node] of Object.entries(descriptions)) {
-                const list = key === 'primary' ? catalog.primaries : key === 'supplement' ? catalog.supplements : key === 'executor' ? catalog.executors : catalog.authorities;
+                const list = catalogFields[key] || [];
                 const selected = list.find(item => item.id === draft[key]);
-                node.textContent = selected ? selected.description || '' : '';
+                node.textContent = selected ? (isCampaign() && key === 'authority' ? '此設定同時適用於政令與外勤。' : '') + (selected.description || '') : '';
             }
             for (const card of drafts.children) card.setAttribute('aria-pressed', String(card.dataset.order === JSON.stringify(draft)));
+            if (isCampaign()) {
+                for (const card of host.querySelectorAll('.court-front')) card.classList.toggle('court-front-assigned', card.dataset.front === draft.front);
+                for (const card of advisors.querySelectorAll('[data-advisor]')) {
+                    const duty = card.dataset.advisor === draft.executor ? '政令' : card.dataset.advisor === draft.commander ? '外勤' : '議';
+                    card.classList.toggle('court-advisor-assigned', duty !== '議');
+                    card.querySelector('.court-advisor-toggle').textContent = duty;
+                }
+            }
             renderOrderPreview(preview);
         };
         for (const item of recommendations) {
@@ -286,12 +368,13 @@
             add(card, el('strong', '', item.title), el('span', '', item.description)); drafts.appendChild(card);
         }
         if (drafts.childElementCount) paper.appendChild(drafts);
-        add(composer, el('summary', '', '修改政令 · 主措施、配套、執行者與授權'));
+        add(composer, el('summary', '', isCampaign() ? '部署詳情 · 一份政令、一項外勤' : '修改政令 · 主措施、配套、執行者與授權'));
         const fields = el('div', 'court-order-fields');
-        for (const [key, label, list] of [
-            ['primary', '主措施', catalog.primaries], ['supplement', '配套', catalog.supplements],
-            ['executor', '執行者', catalog.executors], ['authority', '授權方式', catalog.authorities]
-        ]) {
+        const missionFields = isCampaign() ? el('div', 'court-order-fields court-mission-fields') : null;
+        const fieldDefinitions = [['primary', '主措施'], ['supplement', '配套'], ['executor', isCampaign() ? '主持政令' : '執行者'], ['authority', isCampaign() ? '本旬授權（政令與外勤共用）' : '授權方式']];
+        if (isCampaign()) fieldDefinitions.push(['mission', '外勤任務'], ['commander', '外勤負責人'], ['front', '前往要地']);
+        for (const [key, label] of fieldDefinitions) {
+            const list = catalogFields[key] || [];
             const field = el('div', 'court-order-field'), labelNode = el('label', '', label), select = el('select');
             select.id = 'court-order-' + key; select.name = key; select.dataset.orderField = key; labelNode.htmlFor = select.id;
             for (const item of list) {
@@ -299,13 +382,27 @@
                 select.appendChild(option);
             }
             selectors[key] = select; descriptions[key] = el('p', 'court-field-description');
-            select.addEventListener('change', () => { draft[key] = select.value; update(); });
-            add(field, labelNode, select, descriptions[key]); fields.appendChild(field);
+            select.addEventListener('change', () => {
+                draft[key] = select.value;
+                if (isCampaign() && key === 'mission') {
+                    if (draft.mission === 'none') { draft.commander = 'none'; draft.front = 'none'; }
+                    else {
+                        if (draft.commander === 'none') draft.commander = (catalog.commanders.find(person => person.id !== 'none' && person.id !== draft.executor) || {}).id || 'none';
+                        if (draft.front === 'none') draft.front = (catalog.fronts.find(front => front.id === 'pass') || catalog.fronts.find(front => front.id !== 'none') || {}).id || 'none';
+                    }
+                }
+                update();
+            });
+            add(field, labelNode, select, descriptions[key]);
+            (isCampaign() && ['mission', 'commander', 'front'].includes(key) ? missionFields : fields).appendChild(field);
         }
-        add(composer, fields); add(paper, composer, preview);
-        const advisors = el('aside', 'court-advisor-rail court-council-advisors');
-        add(advisors, el('div', 'court-section-heading', '先聽情報 · 再決定誰執行'));
-        advisorsStrip(advisors, false, scene.briefings || []);
+        if (isCampaign()) add(composer, el('h4', 'court-assignment-heading', '朝堂政令'));
+        add(composer, fields);
+        if (isCampaign()) add(composer, el('h4', 'court-assignment-heading', '外勤部署'), el('p', 'court-mission-note', '外勤另派一人，與主持政令的人選分開。選「不派外勤」時，不占用人物與要地。'), missionFields);
+        add(paper, composer, preview);
+        const advisors = el('aside', 'court-advisor-rail court-council-advisors' + (isCampaign() ? ' court-campaign-advisors' : ''));
+        add(advisors, el('div', 'court-section-heading', isCampaign() ? '八人情報 · 點開聽取意見' : '先聽情報 · 再決定誰執行'));
+        advisorsStrip(advisors, false, scene.briefings || [], isCampaign());
         add(advisors, el('p', 'court-fiction-caption', '人物言行為史料線索與既有分析的遊戲改編。原文與史料可由人物分析查看。'));
         add(layout, paper, advisors); main.appendChild(layout); update();
     }
@@ -313,7 +410,7 @@
         parent.replaceChildren();
         let evaluation;
         try { evaluation = engine.evaluateOrder(state, draft); }
-        catch (error) { add(parent, el('p', 'court-order-invalid', error.message || '請完成這份政令的四項設定。')); return; }
+        catch (error) { add(parent, el('p', 'court-order-invalid', error.message || '請完成政令與部署的設定。')); return; }
         add(parent, el('p', 'court-overline', '待頒草案'), el('h3', 'court-order-title', evaluation.title), el('p', 'court-order-description', evaluation.description));
         const cost = el('div', 'court-order-cost');
         add(cost, el('strong', '', '本回合需支出'), el('span', '', resourceText(evaluation.cost) || '無額外資源支出'));
@@ -321,22 +418,25 @@
         parent.appendChild(cost);
         const effects = el('div', 'court-effects court-order-effects');
         for (const [key, delta] of Object.entries(evaluation.effects || {})) if (LABELS[key] && delta) effects.appendChild(el('span', delta > 0 ? 'court-delta-positive' : 'court-delta-negative', LABELS[key] + ' ' + signed(delta)));
-        add(parent, el('p', 'court-decision-note', '政令與到期承諾變化（已含上方支出；在途回報與回合耗用另列）'), effects);
+        add(parent, el('p', 'court-decision-note', isCampaign() ? '政令、外勤與到期承諾變化（已含上方支出；敵方與回合耗用另列）' : '政令與到期承諾變化（已含上方支出；在途回報與回合耗用另列）'), effects);
         if (evaluation.resolutionEffects) {
             const resolution = el('div', 'court-effects court-order-effects');
             for (const [key, delta] of Object.entries(evaluation.resolutionEffects)) if (LABELS[key]) resolution.appendChild(el('span', delta > 0 ? 'court-delta-positive' : delta < 0 ? 'court-delta-negative' : '', LABELS[key] + ' ' + signed(delta)));
-            add(parent, el('p', 'court-decision-note', '本回合結算預估（包含到貨、承諾與危局耗用）'), resolution);
+            add(parent, el('p', 'court-decision-note', isCampaign() ? '本旬結算預估（包含到貨、承諾、外勤、敵方行動與耗用）' : '本回合結算預估（包含到貨、承諾與危局耗用）'), resolution);
         }
         const responses = el('div', 'court-order-responses');
-        add(responses, el('h4', '', '三位臣子對這份政令的意見'));
+        add(responses, el('h4', '', isCampaign() ? '受命人物的判斷' : '三位臣子對這份政令的意見'));
         const positionLabels = { support: '支持', conditional: '附條件', oppose: '反對' };
+        const otherResponses = isCampaign() ? el('details', 'court-other-responses') : null;
+        if (otherResponses) add(otherResponses, el('summary', '', '其餘群臣 · 查看支持與反對的理由'));
         for (const item of evaluation.responses || []) {
             const advisor = engine.ADVISORS.find(person => person.id === item.id);
             const reaction = el('article', 'court-position-' + item.position);
             add(reaction, el('strong', '', advisor ? advisor.name : item.id), el('span', 'court-position', positionLabels[item.position] || '意見'), el('p', '', item.reason));
             if (item.condition) add(reaction, el('p', 'court-response-condition', '條件 · ' + item.condition));
-            responses.appendChild(reaction);
+            (isCampaign() && ![draft.executor, draft.commander].includes(item.id) ? otherResponses : responses).appendChild(reaction);
         }
+        if (otherResponses && otherResponses.childElementCount > 1) responses.appendChild(otherResponses);
         parent.appendChild(responses);
         const stakeholderSection = el('details', 'court-interest-responses');
         add(stakeholderSection, el('summary', '', '五方利益 · 誰受惠、誰承擔'));
@@ -354,6 +454,8 @@
         appendLines(parent, '如何執行', evaluation.executionNotes);
         appendLines(parent, '承諾與期限', evaluation.commitmentPreview, 'court-promise-preview');
         appendLines(parent, '後續將至', evaluation.pendingPreview);
+        appendLines(parent, '要地將如何變動', evaluation.frontPreview, 'court-front-preview');
+        appendLines(parent, '敵方將如何應對', evaluation.enemyPreview, 'court-enemy-preview');
         appendLines(parent, '危局仍在推進', evaluation.worldPreview);
         const invalid = evaluation.disabledReasons || [];
         if (invalid.length) {
@@ -364,7 +466,7 @@
         }
         const publish = button('頒布這份政令 →', 'court-button-primary court-publish', () => enact(JSON.parse(JSON.stringify(draft))));
         publish.disabled = invalid.length > 0;
-        add(parent, el('p', 'court-decision-note', '有人反對也能下詔；必須滿足資源、行政負荷與到期承諾的規則。'), publish);
+        add(parent, el('p', 'court-decision-note', isCampaign() ? '頒布後，政令、外勤與兩方敵軍一起結算。人物反對不會禁止執行；仍須滿足資源、分工與到期承諾。' : '有人反對也能下詔；必須滿足資源、行政負荷與到期承諾的規則。'), publish);
     }
     function renderScene(main) {
         const scene = engine.getScene(state);
@@ -410,8 +512,32 @@
     function orderResponsibility(record) {
         if (!record.order || !isCouncil()) return null;
         const advisor = engine.ADVISORS.find(person => person.id === record.order.executor);
-        const authority = engine.getCatalog(engine.createGame()).authorities.find(item => item.id === record.order.authority);
-        return el('p', 'court-order-assignment', '執行者 · ' + (advisor ? advisor.name : record.order.executor) + ' ／ 授權 · ' + (authority ? authority.title : record.order.authority));
+        const catalog = engine.getCatalog(engine.createGame());
+        const authority = catalog.authorities.find(item => item.id === record.order.authority);
+        let text = '執行者 · ' + (advisor ? advisor.name : record.order.executor) + (isCampaign() ? ' ／ 本旬共同授權 · ' : ' ／ 授權 · ') + (authority ? authority.title : record.order.authority);
+        if (isCampaign()) {
+            const commander = engine.ADVISORS.find(person => person.id === record.order.commander);
+            const mission = catalog.missions.find(item => item.id === record.order.mission);
+            const front = catalog.fronts.find(item => item.id === record.order.front);
+            text += record.order.mission === 'none' ? '\n外勤 · 本旬未派遣' : '\n外勤 · ' + (commander ? commander.name : record.order.commander) + ' ／ ' + (mission ? mission.title : record.order.mission) + ' ／ ' + (front ? front.name || front.title : record.order.front);
+        }
+        return el('p', 'court-order-assignment', text);
+    }
+    function enemyActionResults(parent, record) {
+        if (!isCampaign()) return;
+        const section = el('section', 'court-enemy-results');
+        add(section, el('h3', '', '敵方也採取了行動'));
+        for (const action of record.enemyActions || []) {
+            const card = el('article', 'court-enemy-action'); card.dataset.enemyAction = action.action;
+            const front = engine.getFronts(state).find(item => item.id === action.front);
+            add(card, add(el('header'), el('strong', '', action.name), front ? el('span', '', front.name) : null), el('p', '', action.text));
+            const effects = Object.entries(action.effects || {}).filter(([key, value]) => LABELS[key] && value).map(([key, value]) => LABELS[key] + ' ' + signed(value)).join(' ／ ');
+            if (effects) add(card, el('p', 'court-enemy-action-effects', effects));
+            section.appendChild(card);
+        }
+        if (section.childElementCount > 1) parent.appendChild(section);
+        if (record.missionSummary) appendLines(parent, '外勤回報', [record.missionSummary], 'court-mission-results');
+        appendLines(parent, '戰線變化', record.frontConsequences, 'court-front-results');
     }
     function renderOutcome(main) {
         const record = state.log[state.log.length - 1];
@@ -421,17 +547,22 @@
         const changes = el('div', 'court-result-changes');
         for (const [key, delta] of Object.entries(record.changes)) add(changes, add(el('div'), el('span', '', LABELS[key]), el('strong', delta >= 0 ? 'court-delta-positive' : 'court-delta-negative', signed(delta))));
         paper.appendChild(changes);
-        add(paper, el('p', 'court-result-tally', '本回合合計，包含到期的延後事件。'));
+        add(paper, el('p', 'court-result-tally', isCampaign() ? '本旬合計，包含政令、外勤、到期事件、敵方行動與常規耗用。' : '本回合合計，包含到期的延後事件。'));
+        enemyActionResults(paper, record);
         const consequence = el('div', 'court-consequences');
         add(consequence, el('h3', '', '此刻的回響'));
         for (const item of record.consequences) add(consequence, el('p', '', item));
         if (!record.consequences.length) add(consequence, el('p', '', '命令已開始執行，後續變化仍在路上。'));
         paper.appendChild(consequence);
-        const reactions = el('div', 'court-reactions');
+        const reactions = el('div', 'court-reactions' + (isCampaign() ? ' court-campaign-reactions' : ''));
+        const otherReactions = isCampaign() ? el('details', 'court-other-reactions') : null;
+        if (otherReactions) add(otherReactions, el('summary', '', '其餘群臣的回應'));
         for (const reaction of record.reactions) {
             const advisor = engine.ADVISORS.find(item => item.id === reaction.id);
-            add(reactions, add(el('article'), el('strong', '', advisor ? advisor.name : reaction.id), el('p', '', reaction.text), el('span', 'court-trust', '目前信任 ' + state.trust[reaction.id] + ' / 100')));
+            add(isCampaign() && ![record.order.executor, record.order.commander].includes(reaction.id) ? otherReactions : reactions,
+                add(el('article'), el('strong', '', advisor ? advisor.name : reaction.id), el('p', '', reaction.text), el('span', 'court-trust', '目前信任 ' + state.trust[reaction.id] + ' / 100')));
         }
+        if (otherReactions && otherReactions.childElementCount > 1) reactions.appendChild(otherReactions);
         paper.appendChild(reactions);
         appendLines(paper, '執行現場', record.executionNotes);
         appendLines(paper, '承諾的兌現與失約', record.commitmentEvents, 'court-promise-results');
@@ -457,7 +588,7 @@
     function renderEnding(main) {
         const ending = engine.getEnding(state);
         const paper = el('section', 'court-paper court-ending');
-        add(paper, el('span', 'court-ending-seal', '終局'), el('p', 'court-overline', '三道詔令 · 一局國勢'), title(ending.title, 'h2'), el('p', 'court-narrative', ending.summary));
+        add(paper, el('span', 'court-ending-seal', '終局'), el('p', 'court-overline', isCampaign() ? '六旬已過 · 守境的代價' : '三道詔令 · 一局國勢'), title(ending.title, 'h2'), el('p', 'court-narrative', ending.summary));
         const lessons = el('div', 'court-ending-lessons');
         add(lessons, el('h3', '', '從這局帶走的判斷'));
         for (const lesson of ending.lessons) add(lessons, el('p', '', lesson));
@@ -466,7 +597,7 @@
         add(actions, button('回看每一步因果', 'court-button-primary', showJournal), button('再議一局', 'court-button-outline', requestNew));
         add(paper, actions); main.appendChild(paper);
         commitmentList(paper);
-        advisorsStrip(main, true);
+        advisorsStrip(main, true, [], isCampaign());
     }
     function makeModal(heading, wide = false) {
         if (modal) dismissModal();
@@ -570,6 +701,7 @@
             add(item, orderResponsibility(record));
             const changes = Object.entries(record.changes).map(([key, delta]) => LABELS[key] + ' ' + signed(delta)).join(' ／ ');
             add(item, el('p', 'court-journal-changes', changes));
+            enemyActionResults(item, record);
             for (const line of record.consequences) add(item, el('p', '', line));
             for (const reaction of record.reactions) {
                 const advisor = engine.ADVISORS.find(person => person.id === reaction.id);
@@ -596,7 +728,7 @@
                 if (!opened || importingSession !== importGeneration) return;
                 const progress = imported.state.log.length;
                 const scenario = imported.scenario, target = savedByScenario[scenario], raw = corruptByScenario[scenario];
-                confirm('匯入' + SAVE_TYPES[scenario].label + '？', '已驗證決策紀錄，完成 ' + progress + ' / 3 回合。匯入會取代此版本的本機進度，另一版進度仍保留。', '匯入並續局', () => {
+                confirm('匯入' + SAVE_TYPES[scenario].label + '？', '已驗證決策紀錄，完成 ' + progress + ' / ' + roundLimit(scenario) + ' 回合。匯入會取代此版本的本機進度，其他版本進度仍保留。', '匯入並續局', () => {
                     selectScenario(scenario); state = imported.state; presentOutcome = imported.presentOutcome; corruptRaw = ''; save(); renderGame();
                 }, target || raw ? () => download(raw || target, '朝堂匯入前舊局') : null);
             } catch (error) { if (opened && importingSession === importGeneration) showNotice('存檔未匯入', error.message || '無法讀取此檔案，目前進度仍保留。'); }
@@ -617,7 +749,7 @@
     }
     function open(config = {}) {
         if (opened) return;
-        engine = root.DynastyCouncil;
+        engine = root.DynastyCampaign;
         if (!engine) throw new Error('朝堂劇本尚未載入，請重新整理後再試。');
         host = document.getElementById('courtGameRoot');
         if (!host) throw new Error('找不到朝堂劇場容器。');
@@ -626,7 +758,7 @@
         for (const item of blocked) { item.node.inert = true; item.node.setAttribute('aria-hidden', 'true'); }
         document.body.classList.add('court-open');
         document.body.style.overflow = 'hidden';
-        host.hidden = false; host.className = 'court-game'; host.setAttribute('role', 'dialog'); host.setAttribute('aria-modal', 'true'); host.setAttribute('aria-label', '朝堂危局：缺糧朝會'); host.tabIndex = -1;
+        host.hidden = false; host.className = 'court-game'; host.setAttribute('role', 'dialog'); host.setAttribute('aria-modal', 'true'); host.setAttribute('aria-label', '朝堂危局：邊境六旬'); host.tabIndex = -1;
         opened = true; state = null; presentOutcome = false;
         document.addEventListener('keydown', keyHandler, true); loadSaved(); renderIntro();
     }

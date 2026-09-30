@@ -344,3 +344,130 @@
     .court-council-advisors .court-profile { font-size: 10px; }
     .court-legacy-save { padding: 15px; }
 }
+
+/* Six-turn campaign: supply links, persistent fronts and two reacting opponents. */
+.court-campaign-theatre { padding: 21px 23px; margin: 0 0 27px; border: 1px solid #b09a6961; background: radial-gradient(ellipse at 30% 0, #59684c20, transparent 65%), #202b25; }
+.court-intro-resources+.court-campaign-theatre { margin-top: 24px; }
+.court-theatre-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 15px; margin-bottom: 17px; }
+.court-theatre-heading .court-section-heading { margin-top: 4px; color: #ece2c8; font-size: 20px; }
+.court-theatre-caption { color: #aebaa7; font-size: 10px; line-height: 1.7; }
+.court-campaign-theatre>.court-theatre-caption { margin-top: 14px; }
+.court-campaign-progress { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); list-style: none; padding: 0; margin: 0 0 22px; border: 1px solid #c9ad773b; background: #101b1361; }
+.court-campaign-progress li { padding: 8px 13px; font-family: 'Noto Serif TC', serif; font-size: 15px; color: #8e9d8d; border-right: 1px solid #c9ad7720; }
+.court-campaign-progress li:last-child { border-right: 0; }
+.court-campaign-progress span { display: block; font-family: 'Noto Sans TC', system-ui, sans-serif; font-size: 9px; margin-top: 1px; letter-spacing: .05em; }
+.court-campaign-progress .court-turn-done { color: #c4ceb7; background: #73836714; }
+.court-campaign-progress .court-turn-current { color: #f0d7a1; background: #ab895332; box-shadow: inset 0 -2px #bda46d; }
+.court-campaign-fronts { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; }
+.court-campaign-fronts::before { content: ''; position: absolute; left: 15%; right: 15%; top: 34px; border-top: 1px dashed #c9ad7782; pointer-events: none; }
+.court-front { min-width: 0; position: relative; padding: 15px 17px 16px; border: 1px solid #86977761; background: #28352b; }
+.court-front>header, .court-enemy>header { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; }
+.court-front>header h3 { color: #e7e2c9; font-size: 19px; font-weight: 600; letter-spacing: .06em; }
+.court-front-glyph { display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 34px; font: 20px 'Noto Serif TC', serif; color: #d4c195; border: 1px solid #c9ad7766; background: #18241e; }
+.court-front-description { min-height: 38px; color: #b9c3ae; font-size: 11px; margin-bottom: 12px !important; }
+.court-front-intelligence { color: #c8b994; font-size: 10px; padding: 4px 0 3px; border-top: 1px solid #c9ad7730; }
+.court-front-intelligence strong { font: inherit; color: #aebca4; }
+.court-front-threatened { border-color: #bf866257; }
+.court-front-threatened .court-front-glyph { color: #e9b696; border-color: #bc825966; }
+.court-front-assigned { border-color: #ceaf69; box-shadow: inset 0 0 0 1px #ceaf6940; }
+.court-front-assigned::after { content: '外勤目標'; position: absolute; top: 0; right: 0; padding: 1px 7px; font-size: 9px; color: #19281e; background: #cfb374; }
+.court-theatre-metric { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 7px; font-size: 10px; color: #b2bfa9; margin-top: 8px; }
+.court-theatre-metric strong { font-family: 'Noto Sans TC', system-ui, sans-serif; font-size: 11px; font-weight: 500; color: #dddcc5; font-variant-numeric: tabular-nums; }
+.court-theatre-meter { flex-basis: 100%; height: 3px; background: #101b1370; }
+.court-theatre-meter>span { display: block; height: 100%; background: #9aaa87; }
+.court-metric-low strong { color: #e5b48b; }
+.court-metric-low .court-theatre-meter>span { background: #b7865e; }
+.court-enemies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+.court-enemy { min-width: 0; padding: 15px 17px; border: 1px solid #a86b514a; background: linear-gradient(130deg, #63392a26, transparent 80%), #262b24; }
+.court-enemy>header h3 { color: #e3c6ac; font-size: 19px; font-weight: 600; }
+.court-enemy-mark { display: grid; place-items: center; width: 28px; height: 28px; color: #d8a68a; border: 1px solid #b575586b; font-family: 'Noto Serif TC', serif; }
+.court-enemy-description { color: #bfb6a2; font-size: 11px; }
+.court-enemy-intent { padding: 8px 10px; margin: 10px 0 4px !important; border-left: 2px solid #b88257; font-size: 12px; color: #e5c9a6; background: #b57d4712; }
+.court-enemy-intent strong { font-family: inherit; font-size: 10px; color: #c5aa87; }
+.court-enemy-status { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3px 12px; font-size: 10px; color: #baa58c; padding: 4px 0 1px; }
+.court-enemy-truce { color: #b6b89e; }
+.court-enemy-truce.court-truce-active { color: #d4d5a4; }
+.court-enemy-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; }
+.court-enemy-metrics .court-theatre-meter>span { background: #b6865b; }
+.court-campaign-roster .court-advisors-compact { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.court-advisor-folded { display: block; }
+.court-advisor-summary { display: flex; align-items: center; list-style: none; cursor: pointer; min-height: 81px; }
+.court-advisor-summary::-webkit-details-marker { display: none; }
+.court-advisor-summary>.court-portrait { width: 64px; height: 81px; min-height: 0; object-position: center 22%; align-self: stretch; }
+.court-advisor-summary>div { min-width: 0; flex: 1; padding: 9px 11px; }
+.court-advisor-summary .court-overline { font-size: 9px; letter-spacing: .05em; line-height: 1.7; }
+.court-advisor-summary h3 { font-size: 22px; letter-spacing: .1em; }
+.court-advisor-toggle { font-size: 9px; line-height: 1.5; border: 1px solid #bcb68a4a; color: #cfc498; padding: 3px 5px; margin-right: 12px; max-width: 30px; }
+.court-advisor-folded[open]>.court-advisor-summary { border-bottom: 1px solid #b8bca332; }
+.court-advisor-folded .court-advisor-copy { padding: 13px 16px 15px; }
+.court-advisor-folded .court-advisor-briefing { margin-top: 8px !important; padding-top: 8px; }
+.court-advisor-assigned { border-color: #b6a16b8f; }
+.court-advisor-assigned .court-advisor-toggle { border-color: #c7a55e73; color: #edd4a0; }
+.court-campaign-advisors .court-advisors { gap: 9px; }
+.court-campaign-advisors .court-advisor-summary .court-portrait { width: 66px; height: 84px; min-height: 0; }
+.court-campaign-advisors .court-advisor-summary h3 { font-size: 23px; }
+.court-assignment-heading { padding: 0 15px; font-size: 13px; color: #5b674f; margin: 0 0 10px !important; }
+.court-mission-note { padding: 0 15px; margin: -3px 0 12px !important; color: #77735d; font-size: 11px; }
+.court-mission-fields { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.court-order-field select:disabled { background: #e7e5d98c; color: #888777; border-color: #c2bca5; }
+.court-order-assignment { white-space: pre-line; }
+.court-other-responses, .court-other-reactions { min-width: 0; padding: 11px 13px; border: 1px solid #aca78c59; background: #e4e5d44a; font-size: 12px; }
+.court-other-responses summary, .court-other-reactions summary { color: #746344; cursor: pointer; font-weight: 600; }
+.court-other-responses article { margin-top: 10px; }
+.court-other-responses article strong { font-size: 16px; }
+.court-enemy-preview { border-left-color: #a85a3d; padding: 12px 15px; background: #b6794220; }
+.court-enemy-preview h4 { color: #865338; }
+.court-enemy-preview p { color: #72563b; }
+.court-front-preview, .court-front-results { border-left-color: #688774; }
+.court-enemy-results { margin: 24px 0; padding: 16px 18px; border: 1px solid #b3845d6e; background: #d5bb9140; }
+.court-enemy-results>h3 { color: #7c4c31; font-size: 18px; margin-bottom: 13px; }
+.court-enemy-action { padding: 12px 0; border-top: 1px solid #b69b763b; }
+.court-enemy-action>header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 5px 12px; }
+.court-enemy-action header strong { font-size: 15px; color: #75472f; }
+.court-enemy-action header span { color: #846e4b; font-size: 10px; }
+.court-enemy-action p { font-size: 13px; color: #655f48; margin-top: 6px; }
+.court-enemy-action .court-enemy-action-effects { color: #8b4c34; font-size: 11px; }
+.court-campaign-reactions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.court-other-reactions { grid-column: 1 / -1; }
+.court-other-reactions article { margin-top: 14px; }
+@media (max-width: 1120px) {
+    .court-campaign-roster .court-advisors-compact { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .court-campaign-fronts { gap: 18px; }
+    .court-mission-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 850px) {
+    .court-campaign-layout .court-campaign-advisors { grid-row: auto; }
+    .court-campaign-advisors .court-advisors { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .court-campaign-advisors .court-advisor { display: block; }
+    .court-theatre-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
+    .court-campaign-fronts { gap: 11px; }
+    .court-front { padding: 12px 13px; }
+    .court-front-description { min-height: 55px; }
+}
+@media (max-width: 540px) {
+    .court-campaign-theatre { padding: 15px 12px; margin-bottom: 20px; }
+    .court-theatre-heading .court-section-heading { font-size: 18px; }
+    .court-campaign-progress li { padding: 8px 7px; font-size: 13px; }
+    .court-campaign-progress span { font-size: 8px; }
+    .court-campaign-fronts { gap: 8px; }
+    .court-campaign-fronts::before { top: 26px; }
+    .court-front { padding: 10px 8px 12px; }
+    .court-front>header { gap: 5px; flex-direction: column; align-items: flex-start; }
+    .court-front>header h3 { font-size: 15px; letter-spacing: 0; }
+    .court-front-glyph { width: 25px; height: 28px; font-size: 18px; }
+    .court-front-description { display: none; }
+    .court-front-intelligence { font-size: 9px; line-height: 1.6; padding-top: 6px; }
+    .court-theatre-metric { font-size: 9px; gap: 2px 4px; }
+    .court-theatre-metric strong { font-size: 9px; }
+    .court-front-assigned::after { padding: 1px 4px; font-size: 8px; }
+    .court-enemies { grid-template-columns: 1fr; gap: 10px; margin-top: 15px; }
+    .court-enemy { padding: 13px; }
+    .court-enemy-intent { font-size: 11px; }
+    .court-campaign-roster .court-advisors-compact, .court-campaign-advisors .court-advisors { grid-template-columns: 1fr; }
+    .court-advisor-summary .court-portrait, .court-campaign-advisors .court-advisor-summary .court-portrait { width: 64px; height: 81px; min-height: 0; }
+    .court-advisor-summary h3 { font-size: 23px; }
+    .court-mission-fields { grid-template-columns: 1fr; }
+    .court-campaign-reactions { grid-template-columns: 1fr; }
+    .court-enemy-results { padding: 13px; }
+    .court-assignment-heading, .court-mission-note { padding-left: 13px; padding-right: 13px; }
+}

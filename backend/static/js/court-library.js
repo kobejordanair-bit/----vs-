@@ -6,13 +6,14 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
     'use strict';
 
-    const TYPES = Object.freeze({ hanXin: 'general', xiaoHe: 'minister', weiZheng: 'minister' });
+    const TYPES = Object.freeze({ hanXin: 'general', xiaoHe: 'minister', weiZheng: 'minister',
+        zhangLiang: 'minister', chenPing: 'minister', sunWu: 'general', shangYang: 'minister', suQin: 'minister' });
 
     // Read the live library on every visit. Never copy game trust or events into a legend.
     function createReader({ getLegends, getModifications }) {
         return function getLegend(advisor) {
             const records = getLegends();
-            const matches = Array.isArray(records)
+            const matches = Object.hasOwn(TYPES, advisor.id) && Array.isArray(records)
                 ? records.filter(record => record && record.name === advisor.name && record.type === TYPES[advisor.id])
                 : [];
             if (matches.length !== 1) {

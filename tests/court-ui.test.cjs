@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const engine = require('../backend/static/js/court-engine.js');
 const ui = require('../backend/static/js/court-ui.js');
 const council = require('../backend/static/js/court-council.js');
+const campaign = require('../backend/static/js/court-campaign.js');
 
 function save(state = engine.createGame(), presentOutcome = false) {
     return { format: 'dynasty-court-save', version: 1, scenario: 'court-grain-v1', state, presentOutcome };
@@ -112,4 +113,43 @@ test('v2 import rejects mixed markers, unknown fields, forged memory and orders'
     assert.throws(() => ui.parseSave(orderEdit, council));
     assert.throws(() => ui.parseSave(councilSave(council.createGame(), true), council));
     assert.ok(council.validateState(original.state));
+});
+
+function campaignSave(state = campaign.createGame(), presentOutcome = false) {
+    return { format: 'dynasty-court-save', version: 3, scenario: 'court-grain-v3', state, presentOutcome };
+}
+function campaignDecision(state = campaign.createGame()) {
+    const proposal = campaign.getCatalog(state).recommendations.find(item => !campaign.evaluateOrder(state, item.order).disabledReasons.length);
+    assert.ok(proposal, 'the campaign must offer at least one legal draft');
+    return campaign.choose(state, proposal.order);
+}
+test('v3 envelope restores both assignments, enemy actions and all six rounds', () => {
+    let state = campaign.createGame();
+    while (!campaign.getEnding(state)) state = campaignDecision(state);
+    const restored = ui.parseSave(JSON.parse(JSON.stringify(campaignSave(state, true))), campaign);
+    assert.equal(restored.state.log.length, 6);
+    assert.equal(Object.keys(restored.state.log[0].order).length, 7);
+    assert.deepEqual(restored.state, state);
+    assert.deepEqual(campaign.getEnding(restored.state), campaign.getEnding(state));
+});
+test('v3 imports reject changed enemies, fronts, assignments and mixed versions', t => {
+    const original = campaignSave(campaignDecision(), true);
+    const prior = global.DynastyCampaign; global.DynastyCampaign = campaign;
+    t.after(() => { if (prior === undefined) delete global.DynastyCampaign; else global.DynastyCampaign = prior; });
+    assert.deepEqual(ui.parseSave(original).state, original.state);
+    for (const value of [{ ...original, version: 2 }, { ...original, scenario: 'court-grain-v2' },
+        { ...original, state: { ...original.state, version: 2 } }, { ...original, aiToken: 'unrelated' }]) {
+        assert.throws(() => ui.parseSave(value, campaign));
+    }
+    const enemyEdit = JSON.parse(JSON.stringify(original));
+    enemyEdit.state.enemies[Object.keys(enemyEdit.state.enemies)[0]].strength += 1;
+    assert.throws(() => ui.parseSave(enemyEdit, campaign));
+    const frontEdit = JSON.parse(JSON.stringify(original));
+    frontEdit.state.fronts[Object.keys(frontEdit.state.fronts)[0]].security += 1;
+    assert.throws(() => ui.parseSave(frontEdit, campaign));
+    const orderEdit = JSON.parse(JSON.stringify(original)); orderEdit.state.log[0].order.commander = 'unknown';
+    assert.throws(() => ui.parseSave(orderEdit, campaign));
+    assert.throws(() => ui.parseSave(original, council));
+    assert.throws(() => ui.parseSave(councilSave(), campaign));
+    assert.throws(() => ui.parseSave(campaignSave(campaign.createGame(), true), campaign));
 });

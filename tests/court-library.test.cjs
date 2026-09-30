@@ -4,6 +4,21 @@ const assert = require('node:assert/strict');
 const { createReader } = require('../backend/static/js/court-library.js');
 
 const advisor = { id: 'hanXin', name: '韓信' };
+test('expanded council reads each exact category without inventing articles or resolving unknown actors', () => {
+    const roster = [['zhangLiang', '張良', 'minister'], ['chenPing', '陳平', 'minister'],
+        ['sunWu', '孫武', 'general'], ['shangYang', '商鞅', 'minister'], ['suQin', '蘇秦', 'minister']];
+    const legends = roster.flatMap(([id, name, type]) => [
+        { id, name, type, deepAnalysis: id === 'sunWu' ? '孫武已存全文' : '' },
+        { id: id + '-wrong', name, type: 'emperor', deepAnalysis: '別類同名' }
+    ]);
+    const read = createReader({ getLegends: () => legends, getModifications: () => ({}) });
+    for (const [id, name] of roster) {
+        const result = read({ id, name });
+        assert.equal(result.id, id);
+        assert.equal(result.analysis, id === 'sunWu' ? '孫武已存全文' : '');
+    }
+    assert.equal(read({ id: 'unknown', name: '不存在' }).analysis, '');
+});
 test('reads the exact original ID and article without changing original or saved content', () => {
     const legends = [{ id: 'original-han-id', name: '韓信', type: 'general', deepAnalysis: '原內文' }];
     const modifications = { 'original-han-id': { deepAnalysis: '# 原文\n完整分析與矛盾。', stats: { leadership: 99 } } };

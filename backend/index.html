@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王侯將相 · 朝堂危局 (v15.12)</title>
-    <link rel="stylesheet" href="/static/css/court.css?v=15.12">
+    <title>王侯將相 · 朝堂危局 (v15.13)</title>
+    <link rel="stylesheet" href="/static/css/court.css?v=15.13">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -417,7 +417,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
-                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.12 朝堂危局</span>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.13 朝堂危局</span>
                 </div>
             </div>
             <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
@@ -1170,24 +1170,25 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.12"></script>
-    <script src="/static/data/scenes.js?v=15.12"></script>
-    <script src="/static/data/factions.js?v=15.12"></script>
-    <script src="/static/data/regions.js?v=15.12"></script>
-    <script src="/static/data/battlefields.js?v=15.12"></script>
-    <script src="/static/data/eras.js?v=15.12"></script>
-    <script src="/static/prompts/soul.js?v=15.12"></script>
-    <script src="/static/js/backup.js?v=15.12"></script>
-    <script src="/static/js/storage.js?v=15.12"></script>
-    <script src="/static/js/persistence.js?v=15.12"></script>
-    <script src="/static/js/court-engine.js?v=15.12"></script>
-    <script src="/static/js/court-council.js?v=15.12"></script>
-    <script src="/static/js/court-library.js?v=15.12"></script>
-    <script src="/static/js/court-ui.js?v=15.12"></script>
+    <script src="/static/data/legends.js?v=15.13"></script>
+    <script src="/static/data/scenes.js?v=15.13"></script>
+    <script src="/static/data/factions.js?v=15.13"></script>
+    <script src="/static/data/regions.js?v=15.13"></script>
+    <script src="/static/data/battlefields.js?v=15.13"></script>
+    <script src="/static/data/eras.js?v=15.13"></script>
+    <script src="/static/prompts/soul.js?v=15.13"></script>
+    <script src="/static/js/backup.js?v=15.13"></script>
+    <script src="/static/js/storage.js?v=15.13"></script>
+    <script src="/static/js/persistence.js?v=15.13"></script>
+    <script src="/static/js/court-engine.js?v=15.13"></script>
+    <script src="/static/js/court-council.js?v=15.13"></script>
+    <script src="/static/js/court-campaign.js?v=15.13"></script>
+    <script src="/static/js/court-library.js?v=15.13"></script>
+    <script src="/static/js/court-ui.js?v=15.13"></script>
     <!-- ↑ 更新 APP_VERSION 或修改 static/data/*.js、static/prompts/*.js 時，請同步更新以上所有 ?v= 版本號，避免 PWA/瀏覽器快取舊檔 -->
     <script>
         // --- CONSTANTS & UTILS ---
-        const APP_VERSION = "15.12";
+        const APP_VERSION = "15.13";
 
         // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
@@ -1497,8 +1498,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 
                 const div = document.createElement('div');
                 div.innerHTML = cardHtml.trim();
-                const courtTypes = { hanXin: 'general', xiaoHe: 'minister', weiZheng: 'minister' };
-                const courtAdvisor = window.DynastyCourt?.ADVISORS.find(advisor => advisor.name === g.name && courtTypes[advisor.id] === g.type);
+                const courtTypes = { hanXin: 'general', xiaoHe: 'minister', weiZheng: 'minister', zhangLiang: 'minister', chenPing: 'minister', sunWu: 'general', shangYang: 'minister', suQin: 'minister' };
+                const courtAdvisor = window.DynastyCampaign?.ADVISORS.find(advisor => advisor.name === g.name && courtTypes[advisor.id] === g.type);
                 if (courtAdvisor) {
                     const courtButton = document.createElement('button');
                     courtButton.type = 'button';

@@ -135,9 +135,9 @@ test('future schema, future app version, unknown format and recovery archives ar
     const current = fixture(), before = JSON.stringify(current);
     const cases = [
         { ...backup.createBackup(current), schemaVersion: 2 },
-        { ...backup.createBackup(current), appVersion: '15.13' },
+        { ...backup.createBackup(current), appVersion: '15.14' },
         { ...backup.createBackup(current), appVersion: '16.0' },
-        { ...backup.createBackup(current), appVersion: '15.12.1' },
+        { ...backup.createBackup(current), appVersion: '15.13.1' },
         { version: '16.0', customLegends: [] },
         { ...backup.createBackup(current), format: 'unknown' },
         { format: 'dynasty-recovery-bundle', exportedState: current, characters: [] },
