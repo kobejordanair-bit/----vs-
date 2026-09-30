@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>史料與人物 · 王侯將相玩法比較</title>
+  <link rel="stylesheet" href="/static/css/history-lab.css">
+  <script src="/static/data/legends.js" defer></script>
+  <script src="/static/js/history-data.js" defer></script>
+  <script src="/static/js/history-lab.js" defer></script>
+</head>
+<body>
+  <div class="lab-page" id="labPage">
+    <header class="lab-header">
+      <a class="lab-brand" href="/" aria-label="返回王侯將相人物館"><span class="lab-seal" aria-hidden="true">史</span><span><small>王侯將相 · 資料共用層</small><strong>史料與人物</strong></span></a>
+      <a class="lab-back" href="/">回人物館 ↗</a>
+    </header>
+    <main>
+      <section class="lab-intro">
+        <div><p class="lab-overline">三個入口 · 同一份楚漢資料</p><h1>先看資料能讓我們做什麼</h1><p class="lab-lead">沿著事件探索，對照有分歧的說法，再試著安排人物。每個判斷都能回到原文。</p></div>
+        <aside class="lab-intro-note"><strong>玩法樣本</strong><p>用來比較操作方式，尚非完整遊戲。首包是選定事件切片，並未涵蓋整場楚漢戰爭。</p><span>本頁不呼叫 AI</span></aside>
+      </section>
+      <div id="labStatus" class="lab-status" role="status" aria-live="polite">正在載入並驗證歷史資料…</div>
+      <section id="labPackageSummary" class="lab-package-summary" aria-label="本包資料範圍"></section>
+      <section class="lab-library-bar" aria-labelledby="labLibraryHeading">
+        <div><h2 id="labLibraryHeading">連接你的人物原文</h2><p id="labLibraryStatus" role="status" aria-live="polite">正在準備內建人物庫…</p></div>
+        <div class="lab-library-actions"><label for="labLibraryFile">讀取本機人物 JSON<input id="labLibraryFile" type="file" accept="application/json,.json"></label><button id="labDownload" class="lab-button lab-button-quiet" disabled>下載比較記錄</button></div>
+        <p class="lab-library-caption">支援原人物匯出與完整人物陣列。檔案只在本頁記憶體讀取；不上傳、不寫入人物館或瀏覽器存檔。</p>
+      </section>
+      <nav id="labTabs" class="lab-tabs" role="tablist" aria-label="玩法比較" hidden>
+        <button id="lab-tab-explore" role="tab" aria-selected="true" aria-controls="labModePanel" data-mode="explore"><span>壹</span><strong>時空探索</strong><small>尋找事件與線索</small></button>
+        <button id="lab-tab-investigate" role="tab" aria-selected="false" aria-controls="labModePanel" tabindex="-1" data-mode="investigate"><span>貳</span><strong>史論調查</strong><small>挑材料，保留異說</small></button>
+        <button id="lab-tab-cast" role="tab" aria-selected="false" aria-controls="labModePanel" tabindex="-1" data-mode="cast"><span>參</span><strong>人物編排</strong><small>核對角色與參與</small></button>
+      </nav>
+      <section id="labModePanel" class="lab-mode-panel" role="tabpanel" aria-labelledby="lab-tab-explore" aria-busy="true"></section>
+      <noscript><p class="lab-status lab-status-error">需要啟用 JavaScript，才能載入資料和比較這三個樣本。</p></noscript>
+    </main>
+    <footer class="lab-footer"><p>年帶表示可能涉及的區間；同一事件有行動記述，並不等於人物同處一室。</p><p>人物庫的作者分析與史籍記載分開呈現。</p></footer>
+  </div>
+  <div id="labDialog" class="lab-dialog-veil" hidden></div>
+</body>
+</html>

@@ -1,0 +1,1357 @@
+{
+  "schemaVersion": "early-events-research-1",
+  "compiledOn": "2026-10-01",
+  "scope": {
+    "label": "秦亡至楚漢分封、入漢中",
+    "eventCount": 11,
+    "targetTraditionalYears": "207–206 BCE",
+    "calendarBoundary": "鉅鹿條目的古曆冬月可能落到208–207年邊界，故以寬界保存；不是宣稱整場208年發生。",
+    "outsideScope": [
+      "完整秦末起事年表",
+      "十八王全名單、疆域與實控",
+      "精確古今座標與路線長度",
+      "兵數、傷亡、戶口、糧產與財政量化",
+      "207年以前的所有人物履歷",
+      "漢王東還之後事件"
+    ]
+  },
+  "reviewRules": {
+    "date": "原紀年優先；所有BCE標定暫定，古月不得直接套公曆月。",
+    "evidence": "source-statement只證明原典有此敘事；存在傳抄、修辭、史家判斷，不等同獨立確證。",
+    "identity": "libraryIds只是對既有角色條目的reference。未找到對應者留空，不推演完整人格。",
+    "maps": "place IDs為古名連接點，不宣告已核實位置。"
+  },
+  "sources": [
+    {
+      "id": "source:shiji-007",
+      "work": "史記",
+      "chapter": "007",
+      "title": "項羽本紀",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷007",
+      "openedOn": "2026-10-01",
+      "access": "web.run 已成功開啟全文",
+      "sourceClass": "古代敘事原典的公開轉錄",
+      "transcriptionNote": "繁體呈現與現代標點；未核對底本版本。"
+    },
+    {
+      "id": "source:shiji-008",
+      "work": "史記",
+      "chapter": "008",
+      "title": "高祖本紀",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷008",
+      "openedOn": "2026-10-01",
+      "access": "web.run 已成功開啟全文",
+      "sourceClass": "古代敘事原典的公開轉錄",
+      "transcriptionNote": "繁體呈現與現代標點；未核對底本版本。"
+    },
+    {
+      "id": "source:shiji-016",
+      "work": "史記",
+      "chapter": "016",
+      "title": "秦楚之際月表",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷016",
+      "openedOn": "2026-10-01",
+      "access": "web.run 已成功開啟全文",
+      "sourceClass": "古代敘事原典的公開轉錄",
+      "transcriptionNote": "繁體呈現與現代標點；未核對底本版本。公元前年欄與Wikipedia年連結為現代網頁增補，僅採原表月序與事件文字。"
+    },
+    {
+      "id": "source:shiji-055",
+      "work": "史記",
+      "chapter": "055",
+      "title": "留侯世家",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷055",
+      "openedOn": "2026-10-01",
+      "access": "web.run 已成功開啟全文",
+      "sourceClass": "古代敘事原典的公開轉錄",
+      "transcriptionNote": "繁體呈現與現代標點；未核對底本版本。"
+    }
+  ],
+  "sourceAccessCautions": [
+    {
+      "url": "https://www.zgbk.com/ecph/words?ID=386157&SiteID=1",
+      "redirectedTo": "https://www.zgbk.com/ecph/words?ID=3AvpiK&SiteID=1",
+      "status": "原路徑失效；循連結到鴻門宴條目。全文字型呈現亂碼，搜尋摘要可讀前206年，未列為已讀可核實證據。"
+    },
+    {
+      "url": "https://www11.ihp.sinica.edu.tw/storage/w2_file/3104mavMmUd.pdf",
+      "status": "web.open Internal Error；搜尋摘要為漢初百年朔閏研究，未讀全文，未引用其干支表換算日期。"
+    }
+  ],
+  "personLinks": [
+    {
+      "id": "person:liu-bang",
+      "historicalName": "劉邦",
+      "libraryIds": [
+        "general_劉邦_306143732",
+        "emperor_漢高祖_279096455"
+      ],
+      "note": "同一歷史人物的兩種庫中角色條目；事件角色依當時職位，不按條目type認定。"
+    },
+    {
+      "id": "person:xiang-yu",
+      "historicalName": "項羽",
+      "libraryIds": [
+        "general_項羽_306690831"
+      ]
+    },
+    {
+      "id": "person:zhang-han",
+      "historicalName": "章邯",
+      "libraryIds": [
+        "general_章邯_306463878"
+      ]
+    },
+    {
+      "id": "person:zhang-liang",
+      "historicalName": "張良",
+      "libraryIds": [
+        "minister_張良_2003953844"
+      ],
+      "note": "此切片可同時具有韓申徒身份與隨沛公行動關係，不能一律以漢臣倒投。"
+    },
+    {
+      "id": "person:fan-zeng",
+      "historicalName": "范增",
+      "libraryIds": [
+        "general_范增_306514098"
+      ]
+    },
+    {
+      "id": "person:xiang-bo",
+      "historicalName": "項伯",
+      "libraryIds": [
+        "general_項伯_306678401"
+      ]
+    },
+    {
+      "id": "person:ying-bu",
+      "historicalName": "英布",
+      "libraryIds": [
+        "general_英布_306514921"
+      ],
+      "aliases": [
+        "黥布",
+        "當陽君"
+      ]
+    },
+    {
+      "id": "person:zi-ying",
+      "historicalName": "子嬰",
+      "libraryIds": [
+        "general_子嬰_306199703"
+      ],
+      "note": "庫中分類general；降秦事件的原典角色是秦王。"
+    },
+    {
+      "id": "person:wang-li",
+      "historicalName": "王離",
+      "libraryIds": [
+        "general_王離_306407278"
+      ]
+    },
+    {
+      "id": "person:fan-kuai",
+      "historicalName": "樊噲",
+      "libraryIds": [],
+      "note": "在962人物快照的name欄未找到對應；不自動新建或錯接樊於期。"
+    },
+    {
+      "id": "person:sima-xin",
+      "historicalName": "司馬欣",
+      "libraryIds": []
+    },
+    {
+      "id": "person:dong-yi",
+      "historicalName": "董翳",
+      "libraryIds": []
+    },
+    {
+      "id": "person:chu-huai-wang-xin",
+      "historicalName": "楚懷王心",
+      "libraryIds": [],
+      "aliases": [
+        "義帝"
+      ],
+      "note": "不要混同較早的楚懷王；此為項梁所立的楚懷王孫心。"
+    }
+  ],
+  "additionalFactionProposals": [
+    {
+      "id": "faction:han-state",
+      "label": "韓王成之韓",
+      "note": "必須與劉邦之漢faction:han分開。"
+    },
+    {
+      "id": "faction:yong",
+      "label": "雍",
+      "note": "分封後章邯之國。"
+    },
+    {
+      "id": "faction:sai",
+      "label": "塞",
+      "note": "分封後司馬欣之國。"
+    },
+    {
+      "id": "faction:di",
+      "label": "翟",
+      "note": "分封後董翳之國。"
+    }
+  ],
+  "events": [
+    {
+      "id": "event:julu-chu-breaks-qin",
+      "title": "鉅鹿：項羽破秦軍、諸侯將歸屬",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 208
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "precision": "range",
+        "original": "秦二世三年十二月；王離被俘另見月表端月",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "冬月跨歲首，採208–207年寬界；網頁現代公元前年欄未用作公曆換算證據。",
+          "不要把擊破與王離被俘壓成一個確定日。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:xiang-yu",
+          "role": "楚上將軍；事件後諸侯上將軍",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:wang-li",
+          "role": "秦圍趙將領",
+          "factionIds": [
+            "faction:qin"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:ying-bu",
+          "role": "當陽君，項羽所派救趙將領",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:julu"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "項羽：殺宋義後、引兵渡河救鉅鹿段",
+          "quote": "絕其甬道",
+          "supports": "項羽進擊王離軍並截其甬道，諸侯將在戰後歸屬項羽。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以前：秦三年十二月及端月，項欄、趙欄",
+          "quote": "",
+          "supports": "十二月破秦軍，端月另列虜王離。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "項羽攻破鉅鹿下的秦軍補給通道並擊敗王離軍。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        },
+        {
+          "kind": "source-statement",
+          "statement": "諸侯軍將的隸屬關係在戰後轉向項羽。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "原文的士氣描寫與以一當十不轉為遊戲能力值；不填兵數、死傷或糧道座標。"
+      ],
+      "conflicts": [
+        {
+          "topic": "事件範圍",
+          "readings": [
+            {
+              "sourceId": "source:shiji-007",
+              "reading": "本紀以連續戰鬥敘事描寫破軍與俘王離。"
+            },
+            {
+              "sourceId": "source:shiji-016",
+              "reading": "月表分十二月破軍、端月俘王離。"
+            }
+          ],
+          "resolution": "保留為有子階段的事件；不宣告整場戰役只發生於單一月份。"
+        }
+      ]
+    },
+    {
+      "id": "event:zhang-han-surrenders",
+      "title": "章邯與項羽盟降於殷虛",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "precision": "year",
+        "original": "秦二世三年七月（月表）；本紀未在本段明標月份",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "year為通行秦二世三年年號標定；七月未換算公曆。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:zhang-han",
+          "role": "秦將，與楚議盟後被立為雍王並置楚軍中",
+          "factionIds": [
+            "faction:qin",
+            "faction:chu"
+          ],
+          "note": "這是依附與稱王變化，不等於此時已實際控制後來分封的全部雍地。"
+        },
+        {
+          "personId": "person:xiang-yu",
+          "role": "楚與諸侯軍統率者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:sima-xin",
+          "role": "秦長史；盟降後率秦降軍為前行",
+          "factionIds": [
+            "faction:qin",
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:yin-xu",
+        "place:huan-shui"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "章邯欲約、期洹水南殷虛、盟降段",
+          "quote": "已盟",
+          "supports": "項羽與章邯在洹水南殷虛相盟，改變章邯及司馬欣的指揮與歸屬。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "秦三年七月項欄",
+          "quote": "",
+          "supports": "月表把章邯盟降列於七月。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:julu-chu-breaks-qin"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "盟降地點被記為洹水南的殷虛。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        },
+        {
+          "kind": "source-statement",
+          "statement": "項羽在此段先立章邯為雍王，秦降軍改由長史欣率領前行。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "源文另明述項羽軍糧少而欲受約；可作供給條件陳述，不可推算糧量或投降概率。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "event:liu-bang-takes-wuguan",
+      "title": "劉邦採張良計，攻破武關",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "precision": "year",
+        "original": "秦二世三年八月（月表）；高祖本紀置趙高殺二世之後",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "不填公曆月、日。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:liu-bang",
+          "role": "沛公、楚懷王所派西進部將",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zhang-liang",
+          "role": "韓申徒，隨沛公西進",
+          "factionIds": [
+            "faction:han-state",
+            "faction:chu"
+          ],
+          "note": "韓王成的韓與後來劉邦的漢必須使用不同faction ID。"
+        }
+      ],
+      "placeIds": [
+        "place:wuguan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢元年之前：趙高使人約分關中、沛公用張良計段",
+          "quote": "攻武關",
+          "supports": "劉邦用張良計、結合說服秦將與進攻，突破武關。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "秦三年八月漢欄",
+          "quote": "",
+          "supports": "月表列八月攻武關。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-055",
+          "locator": "韓王成立、張良為韓申徒及隨沛公攻宛武關段",
+          "quote": "為韓申徒",
+          "supports": "張良具有韓申徒身份，與沛公軍協同行動。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:zhang-han-surrenders"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "劉邦向武關西進，張良參與策劃。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "史記稱嶢關秦將可被利益引誘，但人物動機只作來源觀點，不建立所有秦將的共同人格。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "event:liu-bang-lantian-advance",
+      "title": "劉邦在藍田與秦軍交戰，向咸陽推進",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "precision": "year",
+        "original": "秦二世三年九月（月表）；高祖本紀本段未明標月份",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "八、九月先後取自月表，未轉換公曆。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:liu-bang",
+          "role": "沛公、西進軍主事者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zhang-liang",
+          "role": "隨沛公策劃攻秦的韓申徒",
+          "factionIds": [
+            "faction:han-state",
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:lantian",
+        "place:yao-guan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "破武關後，藍田南與北兩次交戰段",
+          "quote": "藍田南",
+          "supports": "本紀記劉邦在藍田南與北交戰、利用疑兵與軍紀使秦軍動搖。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "秦三年九月漢欄",
+          "quote": "",
+          "supports": "月表將嶢及藍田並列，且稱以留侯策不戰皆降。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-055",
+          "locator": "攻宛、西入武關、秦嶢下軍及北至藍田段",
+          "quote": "",
+          "supports": "張良世家也記嶢下用計與藍田再戰。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:liu-bang-takes-wuguan"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "本紀與張良世家均有藍田交戰記述。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "不要把嶢關與武關合成同一地點；不以疑兵旗幟推出實際兵數。"
+      ],
+      "conflicts": [
+        {
+          "topic": "是否不戰而降",
+          "readings": [
+            {
+              "sourceId": "source:shiji-008",
+              "reading": "明述藍田南、北交戰。"
+            },
+            {
+              "sourceId": "source:shiji-055",
+              "reading": "記藍田再戰。"
+            },
+            {
+              "sourceId": "source:shiji-016",
+              "reading": "嶢及藍田合記為以留侯策不戰皆降。"
+            }
+          ],
+          "resolution": "保留記述差異；不提供唯一的戰鬥回合數。"
+        }
+      ]
+    },
+    {
+      "id": "event:zi-ying-surrenders",
+      "title": "子嬰在軹道旁向沛公降，劉邦入咸陽",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十月",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "秦漢以十月起歲；僅保留207–206年換算寬界，不能將十月直接標成206年10月。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:zi-ying",
+          "role": "秦王、降者",
+          "factionIds": [
+            "faction:qin"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:liu-bang",
+          "role": "沛公、接受秦王投降者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:zhi-dao",
+        "place:xianyang",
+        "place:ba-shang"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢元年十月，沛公先至霸上、秦王子嬰降段",
+          "quote": "降軹道旁",
+          "supports": "子嬰以秦王身份出降，沛公拒絕立即殺降並入咸陽。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "漢元年十月漢欄",
+          "quote": "",
+          "supports": "月表列子嬰降、入咸陽、還軍霸上。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:liu-bang-lantian-advance"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "秦王出降後，沛公入咸陽並封存府庫、退軍霸上。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "王朝終止是研究者對政治後果的概括；此條不把受降直接變成劉邦即位皇帝。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "event:liu-bang-three-laws",
+      "title": "劉邦向關中父老宣布三章法",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "高祖本紀繫漢元年十月受降段；月表繫十一月",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "精度是古月區間，保留十月與十一月兩個記述。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:liu-bang",
+          "role": "沛公、關中暫時軍政主事者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:guan-zhong",
+        "place:ba-shang"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "受降後還軍霸上、召父老豪桀約法段",
+          "quote": "法三章",
+          "supports": "劉邦宣布三項刑事原則並遣人與秦吏告諭縣鄉。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "漢元年十一月漢欄",
+          "quote": "",
+          "supports": "月表把出令三章列十一月。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:zi-ying-surrenders"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "原典記劉邦提出殺人、傷人、盜竊的三項刑事原則。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        },
+        {
+          "kind": "source-statement",
+          "statement": "秦吏參與向縣鄉告諭，不能理解為即時全部撤換舊官僚。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "秦人大悅是本紀敘述，沒有民意比例；不推成民心100或財政收益。"
+      ],
+      "conflicts": [
+        {
+          "topic": "宣告月份",
+          "readings": [
+            {
+              "sourceId": "source:shiji-008",
+              "reading": "接在漢元年十月受降、退軍段內，沒有另起十一月。"
+            },
+            {
+              "sourceId": "source:shiji-016",
+              "reading": "明列十一月出令三章。"
+            }
+          ],
+          "resolution": "記十月至十一月；不以作者選擇強制一個月。"
+        }
+      ]
+    },
+    {
+      "id": "event:xinan-killing-surrendered-qin",
+      "title": "新安：楚軍殺秦降卒",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十一月（月表）；項羽本紀只記行軍至新安",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "古月跨歲首；不填公曆日。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:xiang-yu",
+          "role": "楚與諸侯軍統率者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:ying-bu",
+          "role": "當陽君，與項羽議處秦降卒",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zhang-han",
+          "role": "在楚軍中的秦降將",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:xin-an"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "殷虛盟降之後、到新安、秦降卒生疑段",
+          "quote": "夜擊阬秦卒",
+          "supports": "本紀記項羽在懷疑秦降卒可能反抗後，與當陽君等議而殺降。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "漢元年十一月項欄",
+          "quote": "",
+          "supports": "月表把新安殺降列十一月。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:zhang-han-surrenders"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "原典有楚軍在新安城南殺秦降卒的記述。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "故意不填二十餘萬作確定傷亡；數字與殺害方式、動機需另做來源與量級審核。",
+        "原文說章邯、司馬欣、董翳被留下，不把他們記為此事件死者。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "event:hongmen-meeting",
+      "title": "鴻門會見與劉邦脫身",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十二月中，項羽至戲後",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "以兩本紀順序與高祖本紀月標記為主；通行前206年只作暫定顯示，不強填公曆日期。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:xiang-yu",
+          "role": "項羽軍主事者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:liu-bang",
+          "role": "沛公，向項羽解釋關中部署",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zhang-liang",
+          "role": "隨沛公的韓申徒",
+          "factionIds": [
+            "faction:han-state",
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:fan-zeng",
+          "role": "亞父、項羽謀士",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:xiang-bo",
+          "role": "楚左尹、項羽季父",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:fan-kuai",
+          "role": "沛公參乘",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:hongmen",
+        "place:ba-shang",
+        "place:xi"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "項伯夜見張良、沛公旦日至鴻門、劍舞與脫身段",
+          "quote": "與飲",
+          "supports": "本紀記項伯、張良與樊噲各自介入，劉邦會見項羽後返回軍營。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "十一月破函谷關、十二月中至戲及鴻門段",
+          "quote": "",
+          "supports": "高祖本紀將至戲、鴻門會見置十二月。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-055",
+          "locator": "漢元年正月之前的鴻門段",
+          "quote": "",
+          "supports": "張良自述仍為韓王送沛公，與項伯有舊交。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:zi-ying-surrenders",
+          "event:xinan-killing-surrendered-qin"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "項羽軍攻破函谷關後到達戲，劉邦赴鴻門會見。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        },
+        {
+          "kind": "source-statement",
+          "statement": "張良、項伯與樊噲的協作在來源中各有具體行動。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "預設場面鴻門宴的既存簡介不作來源；不把范增策劃等同項羽已明確下令席上殺人。",
+        "本紀對范增、項莊等人的話語與心理應標為來源敘事，不是錄音或可直接量化的關係。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "event:xiang-yu-destroys-qin-court",
+      "title": "項羽入咸陽，殺子嬰並焚秦宮",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "項羽本紀：鴻門之後居數日；月表繫漢元年十二月",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "只有相對數日；不填起火日或連續火災的公曆終止日。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:xiang-yu",
+          "role": "楚與諸侯軍主事者",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zi-ying",
+          "role": "秦降王",
+          "factionIds": [
+            "faction:qin"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:xianyang"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "鴻門後居數日，西屠咸陽段",
+          "quote": "殺秦降王子嬰",
+          "supports": "本紀記項羽在鴻門後殺子嬰、焚秦宮。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "鴻門會見後的咸陽處置段",
+          "quote": "",
+          "supports": "高祖本紀也記秦宮焚毀。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "漢元年十二月項欄",
+          "quote": "",
+          "supports": "月表列誅子嬰與屠燒咸陽。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:hongmen-meeting"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "子嬰的來源記述死亡時點在鴻門之後，不是劉邦受降時。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "源文說秦宮室，不宣告已證實焚阿房宮；現代遺址辨識與範圍需考古來源。",
+        "不得由火三月不滅算出被毀面積、人口或國庫百分比。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "event:xiang-yu-distributes-kingdoms",
+      "title": "項羽分封：漢、三秦及西楚",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "year",
+        "original": "高祖本紀、留侯世家：漢元年正月；月表：十二月分天下、二月諸王始",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "採漢元年春的通行年號對應，仍未核換成公曆正月。",
+          "分配方案、稱王成立與赴都可能是不同階段，不能全壓成同一天。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:xiang-yu",
+          "role": "分封主事者、自立西楚霸王",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:liu-bang",
+          "role": "由沛公轉為漢王",
+          "factionIds": [
+            "faction:han"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zhang-han",
+          "role": "雍王",
+          "factionIds": [
+            "faction:yong"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:sima-xin",
+          "role": "塞王",
+          "factionIds": [
+            "faction:sai"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:dong-yi",
+          "role": "翟王",
+          "factionIds": [
+            "faction:di"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:chu-huai-wang-xin",
+          "role": "被尊為義帝",
+          "factionIds": [
+            "faction:chu"
+          ],
+          "note": ""
+        }
+      ],
+      "placeIds": [
+        "place:guan-zhong",
+        "place:hanzhong",
+        "place:nanzheng",
+        "place:pengcheng",
+        "place:feiqiu",
+        "place:yueyang",
+        "place:gaonu"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢元年正月，項羽西楚霸王、沛公漢王、三秦段",
+          "quote": "更立沛公為漢王",
+          "supports": "分封使沛公稱漢王，關中分雍、塞、翟，項羽稱西楚霸王。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "懷王如約、分天下立諸將侯王段",
+          "quote": "",
+          "supports": "項羽本紀記各王分地與都城，漢王分巴、蜀、漢中而都南鄭。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以後：十二月、正月、二月、三月各欄",
+          "quote": "漢王始",
+          "supports": "月表把方案與王始、都南鄭分月表述。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-055",
+          "locator": "漢元年正月，沛公為漢王、求漢中地段",
+          "quote": "",
+          "supports": "留侯世家另述張良與項伯交涉取得漢中。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:xiang-yu-destroys-qin-court"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "本切片只列漢、西楚、三秦的建制變化，並非十八王完整領土表。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        },
+        {
+          "kind": "source-statement",
+          "statement": "漢王的都城名義為南鄭；雍、塞、翟的都城分別廢丘、櫟陽、高奴。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "王地文字不是可直接填滿現代行政區的多邊形；分封不等於即時軍事實控。",
+        "楚義帝的名義尊號與西楚霸王實際軍令需要不同身份關係，不能只剩同一楚國君主欄位。"
+      ],
+      "conflicts": [
+        {
+          "topic": "分封何時成立",
+          "readings": [
+            {
+              "sourceId": "source:shiji-008",
+              "reading": "正月立漢王及西楚霸王。"
+            },
+            {
+              "sourceId": "source:shiji-055",
+              "reading": "正月沛公為漢王，另述漢中交涉。"
+            },
+            {
+              "sourceId": "source:shiji-016",
+              "reading": "十二月分天下，正月分關中，二月漢王始，三月都南鄭。"
+            }
+          ],
+          "resolution": "保留為方案、立王與赴都的階段性異文；未判定是矛盾、敘事簡化或制度階段差異。"
+        }
+      ]
+    },
+    {
+      "id": "event:liu-bang-enters-hanzhong",
+      "title": "四月罷兵：漢王入漢中、至南鄭並燒棧道",
+      "date": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "year",
+        "original": "漢元年四月（高祖、項羽本紀）；月表三月都南鄭、四月罷兵",
+        "normalization": "traditional-year-alignment",
+        "review": "provisional",
+        "calendar": "秦漢月序；未轉換為公曆月份或日期",
+        "notes": [
+          "四月為原曆月，不是公曆四月；赴都過程不是確定單日。"
+        ]
+      },
+      "participants": [
+        {
+          "personId": "person:liu-bang",
+          "role": "漢王",
+          "factionIds": [
+            "faction:han"
+          ],
+          "note": ""
+        },
+        {
+          "personId": "person:zhang-liang",
+          "role": "送漢王到襃中後歸韓的韓申徒",
+          "factionIds": [
+            "faction:han-state",
+            "faction:han"
+          ],
+          "note": "協同行動不代表永久改屬漢；身份截止與歸韓採世家敘事。"
+        }
+      ],
+      "placeIds": [
+        "place:xi",
+        "place:hanzhong",
+        "place:nanzheng",
+        "place:bao-zhong",
+        "place:shi-zhong",
+        "place:du-nan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢元年四月、杜南入蝕中、燒棧道、至南鄭段",
+          "quote": "至南鄭",
+          "supports": "高祖本紀記四月就國、途中燒棧道與抵達南鄭。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢之元年四月諸侯罷戲下各就國段",
+          "quote": "",
+          "supports": "項羽本紀四月罷兵就國與高祖本紀相合。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-055",
+          "locator": "漢王之國，良送至襃中、歸韓、燒棧道段",
+          "quote": "燒絕棧道",
+          "supports": "留侯世家把燒棧道與張良建議、歸韓連接。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        },
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "漢元年三月漢欄及四月楚欄",
+          "quote": "都南鄭",
+          "supports": "月表先列三月都南鄭，四月諸侯罷兵各之國。",
+          "quoteUse": "原文短片段；supports為研究者忠實摘要，不是逐字引用"
+        }
+      ],
+      "ordering": {
+        "after": [
+          "event:xiang-yu-distributes-kingdoms"
+        ],
+        "before": [],
+        "type": "partial-order",
+        "note": "清單位置不表示同月事件具有確定的先後；只採列出的源文先後關係。"
+      },
+      "claims": [
+        {
+          "kind": "source-statement",
+          "statement": "漢王入國途中燒棧道的來源明述防襲與示無東意兩種目的。",
+          "review": "原典中有此記述；不是宣告敘事細節均經獨立史實證明"
+        }
+      ],
+      "interpretations": [],
+      "limitations": [
+        "蝕中、杜南、襃中等路線地名需要專門地理查證，先只保存古名，不填精確座標或可通行道路。",
+        "不把月表名義都城成立直接等同本紀實際抵達日。"
+      ],
+      "conflicts": [
+        {
+          "topic": "南鄭都城與抵達月份",
+          "readings": [
+            {
+              "sourceId": "source:shiji-016",
+              "reading": "三月都南鄭、四月罷兵各就國。"
+            },
+            {
+              "sourceId": "source:shiji-008",
+              "reading": "四月漢王之國、至南鄭。"
+            }
+          ],
+          "resolution": "將名義都城與實際赴國分開；具體抵達日期仍待考。"
+        }
+      ]
+    }
+  ],
+  "readyForIntegration": [
+    "事件有原典章節、已開啟URL、短證據與相對順序。",
+    "沛公/漢王、章邯秦將/盟降受封、子嬰秦王、張良韓申徒等身份有原典依據。",
+    "古地名與名義都城可供root連接地理研究層。"
+  ],
+  "pendingReview": [
+    "日期換算尤其秦漢十月歲首與鉅鹿冬月的跨年邊界。",
+    "月表與本紀的宣法、分封與南鄭記述月份差異。",
+    "讀者可核實底本、原表版面與標點；未在兩個網站同一轉錄上偽算獨立交叉印證。",
+    "古今地名定位、古路線、控制邊界與經濟數量。"
+  ]
+}

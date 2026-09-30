@@ -1,0 +1,3 @@
+# Generated history files must keep LF for deterministic rebuilds on Windows.
+/backend/static/data/history/*.json text eol=lf
+/schemas/history-package.schema.json text eol=lf

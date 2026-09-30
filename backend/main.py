@@ -89,6 +89,17 @@ def serve_frontend():
         headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
     )
 
+@app.get("/history-lab")
+def serve_history_lab():
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "history-lab.html"),
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            "X-Content-Type-Options": "nosniff",
+        },
+    )
+
 @app.get("/manifest.json")
 def serve_manifest():
     manifest_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json")
