@@ -24,7 +24,12 @@
             const saved = modifications && Object.hasOwn(modifications, record.id) ? modifications[record.id] : null;
             const analysis = saved && typeof saved.deepAnalysis === 'string' ? saved.deepAnalysis
                 : typeof record.deepAnalysis === 'string' ? record.deepAnalysis : '';
-            return { id: record.id, name: record.name, analysis, sourceLabel: analysis.trim()
+            const sections = [['analysis', '人物剖析'], ['soulEssence', '人格與行為解讀']].flatMap(([field, title]) => {
+                const text = saved && typeof saved[field] === 'string' ? saved[field]
+                    : typeof record[field] === 'string' ? record[field] : '';
+                return text.trim() ? [{ title, text }] : [];
+            });
+            return { id: record.id, name: record.name, analysis, sections, sourceLabel: analysis.trim()
                 ? '人物館已儲存的深度分析全文 · 原文保留'
                 : '此人物尚未儲存深度分析；可稍後到人物館閱讀或製作。' };
         };

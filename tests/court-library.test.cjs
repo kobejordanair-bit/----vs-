@@ -45,3 +45,20 @@ test('missing or invalid cached article stays absent; never generates content', 
     assert.equal(read(advisor).analysis, '');
     assert.match(read(advisor).sourceLabel, /尚未儲存/);
 });
+
+test('preserves separately labelled character and personality readings without inventing missing sections', () => {
+    const record = { id: 'han', name: '韓信', type: 'general', deepAnalysis: '評級原文', analysis: '人物剖析原文', soulEssence: '人格解讀原文' };
+    const modifications = { han: { soulEssence: '更新後的人格解讀' } };
+    const before = JSON.stringify({ record, modifications });
+    const read = createReader({ getLegends: () => [record], getModifications: () => modifications });
+    assert.equal(read(advisor).analysis, '評級原文');
+    assert.deepEqual(read(advisor).sections, [
+        { title: '人物剖析', text: '人物剖析原文' },
+        { title: '人格與行為解讀', text: '更新後的人格解讀' }
+    ]);
+    assert.equal(JSON.stringify({ record, modifications }), before);
+    delete record.analysis;
+    delete record.soulEssence;
+    delete modifications.han.soulEssence;
+    assert.deepEqual(read(advisor).sections, []);
+});
