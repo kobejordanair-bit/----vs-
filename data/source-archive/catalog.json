@@ -1,0 +1,1291 @@
+{
+  "format": "dynasty-source-catalog",
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "scope": "來源入口與授權註記；不是全部卷全文取得、逐段查證或人物全生平審核的證明。",
+  "sources": [
+    {
+      "id": "source:shiji",
+      "title": "史記",
+      "url": "https://zh.wikisource.org/wiki/史記",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "上古傳說",
+        "夏商周",
+        "春秋",
+        "戰國",
+        "秦",
+        "楚漢",
+        "西漢"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "同一書內含多代記憶、傳說與作者評語；篇章年代與成書年代必須分開。"
+    },
+    {
+      "id": "source:hanshu",
+      "title": "漢書",
+      "url": "https://zh.wikisource.org/wiki/漢書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "西漢",
+        "新莽"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "本紀、志與人物傳記可以互讀；注引文須另記作者。"
+    },
+    {
+      "id": "source:houhanshu",
+      "title": "後漢書",
+      "url": "https://zh.wikisource.org/wiki/後漢書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "東漢"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "范曄紀傳、司馬彪志與唐代注分層記錄。"
+    },
+    {
+      "id": "source:sanguozhi",
+      "title": "三國志",
+      "url": "https://zh.wikisource.org/wiki/三國志",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "漢末",
+        "三國"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "陳壽正文與裴松之注引用的不同著作須分層，小說情節另列。"
+    },
+    {
+      "id": "source:jinshu",
+      "title": "晉書",
+      "url": "https://zh.wikisource.org/wiki/晉書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "西晉",
+        "東晉",
+        "十六國"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "載記中的政權不能因書名而全標為晉朝臣民。"
+    },
+    {
+      "id": "source:songshu",
+      "title": "宋書",
+      "url": "https://zh.wikisource.org/wiki/宋書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "南朝劉宋"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "此宋為南朝劉宋，與宋史的趙宋分開。"
+    },
+    {
+      "id": "source:nanqishu",
+      "title": "南齊書",
+      "url": "https://zh.wikisource.org/wiki/南齊書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "南朝齊"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "南齊與北齊為不同政權。"
+    },
+    {
+      "id": "source:liangshu",
+      "title": "梁書",
+      "url": "https://zh.wikisource.org/wiki/梁書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "南朝梁"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "官方史書傳抄文本，必要時對校影印本。"
+    },
+    {
+      "id": "source:chenshu",
+      "title": "陳書",
+      "url": "https://zh.wikisource.org/wiki/陳書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "南朝陳"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "官方史書傳抄文本。"
+    },
+    {
+      "id": "source:weishu",
+      "title": "魏書",
+      "url": "https://zh.wikisource.org/wiki/魏書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "北魏",
+        "東魏"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "敘事立場與補卷情形需記錄；不等同三國魏書。"
+    },
+    {
+      "id": "source:beiqishu",
+      "title": "北齊書",
+      "url": "https://zh.wikisource.org/wiki/北齊書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "東魏",
+        "北齊"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "部分卷為後補；核讀需保留補紀標記。"
+    },
+    {
+      "id": "source:zhoushu",
+      "title": "周書",
+      "url": "https://zh.wikisource.org/wiki/周書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "西魏",
+        "北周"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "宇文泰的追尊帝號不得倒填生前在位資料。"
+    },
+    {
+      "id": "source:suishu",
+      "title": "隋書",
+      "url": "https://zh.wikisource.org/wiki/隋書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "隋",
+        "南北朝制度"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "紀傳與志的時間涵蓋不同。"
+    },
+    {
+      "id": "source:nanshi",
+      "title": "南史",
+      "url": "https://zh.wikisource.org/wiki/南史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "南朝劉宋",
+        "南齊",
+        "梁",
+        "陳"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "與各朝正史有材料依存關係，不能計成完全獨立目擊。"
+    },
+    {
+      "id": "source:beishi",
+      "title": "北史",
+      "url": "https://zh.wikisource.org/wiki/北史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "北魏",
+        "東魏",
+        "西魏",
+        "北齊",
+        "北周",
+        "隋"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "與各朝正史有材料依存關係。"
+    },
+    {
+      "id": "source:jiutangshu",
+      "title": "舊唐書",
+      "url": "https://zh.wikisource.org/wiki/舊唐書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "唐"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "與新唐書互證時記錄共同材料來源。"
+    },
+    {
+      "id": "source:xintangshu",
+      "title": "新唐書",
+      "url": "https://zh.wikisource.org/wiki/新唐書",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "唐"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "後修史書，敘事與官職需對照舊唐書及其他材料。"
+    },
+    {
+      "id": "source:jiuwudaishi",
+      "title": "舊五代史",
+      "url": "https://zh.wikisource.org/wiki/舊五代史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "後梁",
+        "後唐",
+        "後晉",
+        "後漢",
+        "後周",
+        "十國"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "現行本含清代輯佚成果，不能假作完整原初版本。"
+    },
+    {
+      "id": "source:xinwudaishi",
+      "title": "新五代史",
+      "url": "https://zh.wikisource.org/wiki/新五代史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "五代",
+        "十國"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "歐陽修的評議與事件記錄分開。"
+    },
+    {
+      "id": "source:songshi",
+      "title": "宋史",
+      "url": "https://zh.wikisource.org/wiki/宋史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "北宋",
+        "南宋",
+        "西夏"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "編修迅速且紀傳可能互異；族屬、生理和人格評語不能直接當現代診斷。"
+    },
+    {
+      "id": "source:liaoshi",
+      "title": "遼史",
+      "url": "https://zh.wikisource.org/wiki/遼史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "契丹",
+        "遼"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "漢名、小字、契丹名需保留原文字與不同版本。"
+    },
+    {
+      "id": "source:jinshi",
+      "title": "金史",
+      "url": "https://zh.wikisource.org/wiki/金史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "女真",
+        "金"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "金與晉為不同政權。"
+    },
+    {
+      "id": "source:yuanshi",
+      "title": "元史",
+      "url": "https://zh.wikisource.org/wiki/元史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "蒙古帝國",
+        "元"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "人名漢譯與音譯差異需人工辨認。"
+    },
+    {
+      "id": "source:mingshi",
+      "title": "明史",
+      "url": "https://zh.wikisource.org/wiki/明史",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "明",
+        "南明相關"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "傳記和本紀可互讀，不能把褒貶當客觀能力分數。"
+    },
+    {
+      "id": "source:qingshigao",
+      "title": "清史稿",
+      "url": "https://zh.wikisource.org/wiki/清史稿",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "後金",
+        "清",
+        "清末"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "edition-dependent",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "民國編成的未定稿，並非清朝自撰完備定本；正文與現代整理、標點及註釋權利分開。"
+    },
+    {
+      "id": "source:zizhitongjian",
+      "title": "資治通鑑",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "戰國",
+        "秦漢",
+        "魏晉南北朝",
+        "隋唐",
+        "五代"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "編年與紀傳互參，需分清正文、胡注及史評。"
+    },
+    {
+      "id": "source:zuozhuan",
+      "title": "左傳",
+      "url": "https://zh.wikisource.org/wiki/左傳",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "春秋"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "索引重定向春秋左氏傳；經、傳、後世注疏需分層。"
+    },
+    {
+      "id": "source:guoyu",
+      "title": "國語",
+      "url": "https://zh.wikisource.org/wiki/國語",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "西周",
+        "春秋"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "記言史料與後世編纂層次需保留。"
+    },
+    {
+      "id": "source:zhanguoce",
+      "title": "戰國策",
+      "url": "https://zh.wikisource.org/wiki/戰國策",
+      "provider": "維基文庫（社群校錄）",
+      "type": "primary-text-index",
+      "coverage": [
+        "戰國"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次實際開啟書目入口。這個狀態只證明入口可讀；各卷下載、全文範圍與逐段核讀另記。"
+      },
+      "reuse": {
+        "status": "public-domain-original-with-platform-terms",
+        "notes": "古代原著與社群校錄、標點、註解、圖像的權利分開；保留原頁網址、版本及修訂資訊。不得把頁面連結或可閱讀視同所有現代整理均可任意重製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "入口為版本選擇頁；辯士說辭不能當逐字實錄。"
+    },
+    {
+      "id": "source:cbdb",
+      "title": "中國歷代人物傳記資料庫（CBDB）API 說明",
+      "url": "https://input.cbdb.fas.harvard.edu/cbdbapi/index.html",
+      "provider": "Harvard / Academia Sinica / Peking University",
+      "type": "authority-database",
+      "coverage": [
+        "人物異名",
+        "任官",
+        "親屬與社會關係"
+      ],
+      "access": {
+        "mode": "open-metadata-restricted-data",
+        "notes": "文件已實讀。姓名JSON查詢只回第一個符合項，不能據此自動認人。大量工作應依官方建議使用合規單機版。"
+      },
+      "reuse": {
+        "status": "restricted-versioned",
+        "notes": "官方文件載明2026-08-20條款：當前單機版日期之前且資料量範圍內沿用CC BY-NC-SA 4.0；較新或超範圍資料適用非商用、不得演繹、不得再散布或供公開網站/App/API第三方存取的自訂條款。本包只留入口，不複製CBDB資料。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "資料查證工具，不能作為未授權的公開遊戲資料供應後端。"
+    },
+    {
+      "id": "source:chgis",
+      "title": "China Historical Geographic Information System",
+      "url": "https://chgis.fas.harvard.edu/",
+      "provider": "Harvard / Fudan University",
+      "type": "historical-gazetteer",
+      "coverage": [
+        "歷史地名",
+        "行政單位",
+        "時空資料"
+      ],
+      "access": {
+        "mode": "open-portal",
+        "notes": "首頁已開；個別下載資料集與坐標尚未取用。"
+      },
+      "reuse": {
+        "status": "not-cleared-for-redistribution",
+        "notes": "本次僅核對官方網站範圍；資料集的逐版本授權尚未核對，不分發座標或邊界資料。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "古地名對應需要時間範圍，不能拿現代城市中心代替古地點。"
+    },
+    {
+      "id": "source:scripta",
+      "title": "漢籍電子文獻資料庫（Scripta Sinica）",
+      "url": "https://hanji.sinica.edu.tw/",
+      "provider": "中央研究院歷史語言研究所",
+      "type": "institutional-text-database",
+      "coverage": [
+        "二十五史",
+        "經史子集",
+        "臺灣文獻"
+      ],
+      "access": {
+        "mode": "portal-and-subscription",
+        "notes": "入口為舊式框架，機器只讀到介面腳本；另已開官方工作室說明 https://www1.ihp.sinica.edu.tw/Research/Groups/scriptaSinica 。"
+      },
+      "reuse": {
+        "status": "not-cleared-for-redistribution",
+        "notes": "未取得批次重製授權；只提供原站入口及查詢指引。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "不把入口抓取成功標成文獻全文取得。"
+    },
+    {
+      "id": "source:ihp-authority",
+      "title": "人名權威－人物傳記資料庫操作說明",
+      "url": "https://newarchive.ihp.sinica.edu.tw/sncacweb/sncacFtp/help.html",
+      "provider": "中央研究院歷史語言研究所",
+      "type": "authority-database",
+      "coverage": [
+        "明清人物",
+        "其他朝代人名",
+        "官職履歷",
+        "異名"
+      ],
+      "access": {
+        "mode": "open-portal",
+        "notes": "實讀操作說明：支援傳主、朝代、籍貫、履歷、來源引文與單筆分享連結。未下載全庫。"
+      },
+      "reuse": {
+        "status": "not-cleared-for-redistribution",
+        "notes": "只留入口及查證方法，個別資料輸出需遵守原站條款。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "適合消歧與尋找出處，姓名符合不等同原人物卡身份一致。"
+    },
+    {
+      "id": "source:ctext",
+      "title": "中國哲學書電子化計劃",
+      "url": "https://ctext.org/faq/zh",
+      "provider": "Chinese Text Project",
+      "type": "institutional-text-database",
+      "coverage": [
+        "先秦兩漢",
+        "後世古籍",
+        "字詞索引"
+      ],
+      "access": {
+        "mode": "manual-or-authorized-api",
+        "notes": "Exa開頁遭安全檢查，回應要求機構訂閱API，未取得FAQ正文或任何古籍。"
+      },
+      "reuse": {
+        "status": "restricted-access",
+        "notes": "本次不下載、不繞過限制。原著公版與平台資料存取條款分開，授權API依平台規則使用。"
+      },
+      "retrievalStatus": "unavailable",
+      "accessedOn": "2026-10-02",
+      "notes": "列入後續人工對校來源，不能標成已取得全文。"
+    },
+    {
+      "id": "source:npm",
+      "title": "故宮典藏資料檢索",
+      "url": "https://digitalarchive.npm.gov.tw/",
+      "provider": "國立故宮博物院",
+      "type": "museum-archive",
+      "coverage": [
+        "清代檔案",
+        "古籍輿圖",
+        "文物"
+      ],
+      "access": {
+        "mode": "open-portal",
+        "notes": "首頁已開，提供典藏檢索、開放圖檔、清代檔案與古籍輿圖入口。"
+      },
+      "reuse": {
+        "status": "item-specific",
+        "notes": "圖像是否開放須看個別項目及下載授權；本次未鏡像典藏。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "典藏文物可為物質文化與圖像證據；不要以肖像造型倒推可靠外貌。"
+    },
+    {
+      "id": "source:drnh",
+      "title": "國史館",
+      "url": "https://www.drnh.gov.tw/",
+      "provider": "國史館 Academia Historica",
+      "type": "institutional-archive",
+      "coverage": [
+        "中華民國",
+        "總統副總統檔案",
+        "近現代政治史",
+        "汪兆銘（汪精衛）史料全宗"
+      ],
+      "access": {
+        "mode": "open-portal",
+        "notes": "國史館首頁已開；檔案檢索 https://ahonline.drnh.gov.tw/ 本次抓取失敗，未下載館藏全文。"
+      },
+      "reuse": {
+        "status": "item-specific",
+        "notes": "閱覽開放、檔案公開與再利用權限需逐件確認；本包只編目與連結。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "適用原始文電、日記、文物；不能因官方典藏而免除史料立場與檔案缺漏檢查。 本輪實讀docs/zong/118.pdf印刷頁447起的小傳與全宗說明；不代表59卷文件與30卷照片已逐件取得。"
+    },
+    {
+      "id": "source:ncl-rare",
+      "title": "古籍與特藏文獻資源",
+      "url": "https://rbook.ncl.edu.tw/NCLSearch/home/info",
+      "provider": "國家圖書館（臺灣）",
+      "type": "library-catalog",
+      "coverage": [
+        "善本",
+        "古籍影像",
+        "金石拓片",
+        "族譜",
+        "臺灣文獻"
+      ],
+      "access": {
+        "mode": "open-portal",
+        "notes": "已讀官方資料庫介紹；可用來核對版本與圖像。"
+      },
+      "reuse": {
+        "status": "item-specific",
+        "notes": "個別影像的使用與引用依原館規範；未批次複製。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "版本校勘與全文檢索各有用途，目錄不是事件證據。"
+    },
+    {
+      "id": "source:nlc-pcab",
+      "title": "中國古籍保護網",
+      "url": "https://www.nlc.cn/pcab/",
+      "provider": "中國國家圖書館／國家古籍保護中心",
+      "type": "library-catalog",
+      "coverage": [
+        "古籍版本",
+        "保護名錄",
+        "數位資源入口"
+      ],
+      "access": {
+        "mode": "open-portal",
+        "notes": "官方首頁已開；尚未取得中華古籍資源庫的逐件影像。"
+      },
+      "reuse": {
+        "status": "item-specific",
+        "notes": "只提供入口；影像與資料再利用需逐項確認。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "不把古籍保護新聞或目錄當成歷史人物生平證據。"
+    },
+    {
+      "id": "source:president-biographies",
+      "title": "行憲後歷任總統與副總統",
+      "url": "https://www.president.gov.tw/Page/83",
+      "provider": "中華民國總統府",
+      "type": "institutional-biography",
+      "coverage": [
+        "中華民國",
+        "蔣中正",
+        "蔣經國",
+        "李宗仁",
+        "陳誠"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "已開蔣中正頁，核對姓名、字與總統職稱。"
+      },
+      "reuse": {
+        "status": "link-and-paraphrase-only",
+        "notes": "本包保留網址與自行撰寫的最小身份摘要，不複製現代全文或肖像。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "官方自述有機構立場，本次只用於姓名職稱核對。 本輪另核第6–7任蔣經國頁，紀念評语與任職分開。"
+    },
+    {
+      "id": "source:prc-officeholders",
+      "title": "歷屆中華人民共和國主席",
+      "url": "https://www.gov.cn/test/2007-11/12/content_802099.htm",
+      "provider": "中國政府網（來源：新華社）",
+      "type": "institutional-biography",
+      "coverage": [
+        "中華人民共和國",
+        "國家領導人職稱",
+        "劉少奇",
+        "江澤民",
+        "胡錦濤"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "已開歷任主席表；核對毛澤東擔任主席的制度名稱。"
+      },
+      "reuse": {
+        "status": "link-and-paraphrase-only",
+        "notes": "本包只保留網址及簡短自行摘要，不複製現代文章。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "機構的政治評價不作人格或能力分數證據。 只採明列已結束任期，舊頁『今』不能解讀為當前完整名單。"
+    },
+    {
+      "id": "source:ncl-authority",
+      "title": "臺灣書目整合查詢系統：閻錫山權威檔",
+      "url": "https://metadata.ncl.edu.tw/blstkmc/blst2ndtp?PAGE=authorDetail&authCode=AC000000043",
+      "provider": "國家圖書館（臺灣）",
+      "type": "authority-database",
+      "coverage": [
+        "近現代人物",
+        "姓名權威",
+        "書目出處"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "已實讀閻錫山基本資料與所列出處；未取得所列出版品全文。"
+      },
+      "reuse": {
+        "status": "link-and-paraphrase-only",
+        "notes": "僅連結與自行撰寫最小身份摘要，不複製現代全文、肖像或所列其他文獻。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "權威檔提供姓名生卒與來源，不能替代每項生平事件的原件核對。"
+    },
+    {
+      "id": "source:nlpi-modern",
+      "title": "國立公共資訊圖書館：民國近代史人物資料",
+      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0002599",
+      "provider": "國立公共資訊圖書館",
+      "type": "institutional-biography",
+      "coverage": [
+        "中華民國",
+        "人物生平",
+        "期刊書目",
+        "孫文",
+        "孫立人",
+        "薛岳",
+        "張靈甫",
+        "劉湘",
+        "馮玉祥",
+        "黃百韜",
+        "宋子文",
+        "王耀武",
+        "杜聿明",
+        "胡宗南",
+        "張作霖",
+        "吳佩孚",
+        "曹錕",
+        "黃興",
+        "湯恩伯",
+        "劉峙",
+        "張自忠",
+        "孫連仲",
+        "宋教仁",
+        "陳炯明"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "已實讀人物介紹及其所列雜誌線索；未全文下載雜誌。"
+      },
+      "reuse": {
+        "status": "link-and-paraphrase-only",
+        "notes": "僅連結與自行撰寫最小身份摘要，不複製現代全文、肖像或所列其他文獻。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已逐頁核新增20名人物及既有陳炯明。部分頁只有資料表與書目，明列證據層次。劉湘、劉峙的卒日欄與正文歧異，未採用日期。相關事件及期刊題名是索引，不等於內容已核實。"
+    },
+    {
+      "id": "source:people-party",
+      "title": "人民網中國共產黨新聞與黨史人物資料",
+      "url": "http://cpc.people.com.cn/daohang/n/2013/0226/c357214-20604689.html",
+      "provider": "人民網中國共產黨新聞",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "傅作義",
+        "李德（奧托·布勞恩）",
+        "第九屆中央委員名單"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "已實讀單篇生平。原網址為HTTP，頁面存取成功。"
+      },
+      "reuse": {
+        "status": "link-and-paraphrase-only",
+        "notes": "僅連結與自行撰寫最小身份摘要，不複製現代全文、肖像或所列其他文獻。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已讀傅作義傳、李德中文名對應及九屆中央委員具名名單。黨史具機構立場，只核列出的身分，不採其政治路線、人格或戰爭責任評價。"
+    },
+    {
+      "id": "source:hunan-marshal-record",
+      "title": "1955年元帥授銜具名記錄",
+      "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+      "provider": "湖南省應急管理廳（轉載芒果雲）",
+      "type": "institutional-event-register",
+      "coverage": [
+        "近現代",
+        "朱德",
+        "彭德懷",
+        "林彪",
+        "劉伯承",
+        "賀龍",
+        "陳毅",
+        "羅榮桓",
+        "徐向前",
+        "聶榮臻",
+        "葉劍英"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "十位元帥共用同一篇具名授銜事件記述，不能當成十篇獨立傳記。"
+    },
+    {
+      "id": "source:roc-defense-register",
+      "title": "中華民國國防部歷任部長",
+      "url": "https://www.mnd.gov.tw/About/FormerMinisters",
+      "provider": "中華民國國防部",
+      "type": "institutional-office-register",
+      "coverage": [
+        "近現代",
+        "白崇禧"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已核第一任白崇禧姓名及任期，未推斷文字抽取缺失的其他部長項目。"
+    },
+    {
+      "id": "source:dongan-history",
+      "title": "東安人物：唐生智",
+      "url": "http://www.da.gov.cn/da/darw/201605/721e85f37bc3424eb1edc46269d27d58.shtml",
+      "provider": "湖南省東安縣人民政府",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "唐生智"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "只核姓名與具體任職，不採地方傳記的褒貶判斷。"
+    },
+    {
+      "id": "source:pla-history",
+      "title": "中國軍網歷史人物資料",
+      "url": "https://photo.81.cn/tsjs/2013-10/11/content_5582595.htm",
+      "provider": "中國軍網（粟裕頁來源人民網）",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "粟裕"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "只核粟裕具名職務與授銜，不匯入照片。"
+    },
+    {
+      "id": "source:cppcc-biographies",
+      "title": "中國政協網歷屆人物與歷史簡歷",
+      "url": "http://www.cppcc.gov.cn/2011/09/20/ARTI1316516229916360.shtml",
+      "provider": "中國人民政治協商會議全國委員會辦公廳",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "鄧小平",
+        "周恩來",
+        "康生",
+        "周永康"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已分別開讀周恩來、鄧小平、康生及周永康具名頁；舊簡歷的『現在』不是當前職務。"
+    },
+    {
+      "id": "source:hunan-archives",
+      "title": "湖南省檔案局：潇湘人物",
+      "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977920.html",
+      "provider": "湖南省檔案局",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "朱鎔基",
+        "胡耀邦"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已開胡耀邦、朱镕基的2008年人物介紹，只採過去职務，不據此聲稱當前生存或任職狀態。"
+    },
+    {
+      "id": "source:prc-official-historical-texts",
+      "title": "中國政府網歷史人物與會議資料",
+      "url": "https://www.gov.cn/ldhd/2005-06/14/content_6183.htm",
+      "provider": "中國政府網（各頁標示新華社或中央政府門戶網站）",
+      "type": "official-historical-publication",
+      "coverage": [
+        "近現代",
+        "陳雲",
+        "姚文元",
+        "王洪文"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已讀陳雲紀念講話、姚文元人物條目及十屆中央全會史料；只採任職與選舉。王洪文、張春橋舊gjjg单人頁取得失敗，未用作核讀證據。"
+    },
+    {
+      "id": "source:prc-defense-biographies",
+      "title": "中華人民共和國國防部人物生平",
+      "url": "http://www.mod.gov.cn/gfbw/sy/rt/4846837_2.html",
+      "provider": "中華人民共和國國防部（來源解放軍報）",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "李鵬"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "只核李鵬歷任職位，不採紀念文字的人格及政策成效評價。"
+    },
+    {
+      "id": "source:ey-history",
+      "title": "行政院歷任院長、珍貴史料與國情資料",
+      "url": "https://www.ey.gov.tw/Page/4ED2F231892187F9/73e92b3d-a0ef-4061-a6cf-17e42ff54601",
+      "provider": "中華民國行政院（部分國情內容由國史館供稿）",
+      "type": "institutional-biography",
+      "coverage": [
+        "近現代",
+        "孫科",
+        "孫運璿",
+        "洪憲帝"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已讀孫科、孫運璿及中華民國之肇建。孫科頁有著作權聲明，只保存書目與自行摘要。"
+    },
+    {
+      "id": "source:yatsen-annals",
+      "title": "中山學術資料庫：國父年譜",
+      "url": "https://sunology.yatsen.gov.tw/detail/4e301bdbcc580f6c9b1299ba98f3d951/",
+      "provider": "國立國父紀念館",
+      "type": "institutional-edited-annals",
+      "coverage": [
+        "近現代",
+        "蔡鍔"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "已讀1915年12月25日條及註釋；後出年譜所引著作尚未逐本開讀，註釋不算額外核讀來源。"
+    },
+    {
+      "id": "source:roc-archives-teaching",
+      "title": "檔案支援教學網：西安事變",
+      "url": "https://art.archives.gov.tw/tw/art/1899.html",
+      "provider": "國家發展委員會檔案管理局",
+      "type": "institutional-archive-exhibit",
+      "coverage": [
+        "近現代",
+        "張學良"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "展文具機構政治立場且有局部年分誤植，只核明列張學良職務，未宣稱所有附檔逐件調閱。"
+    },
+    {
+      "id": "source:people-court-record",
+      "title": "薄熙來案二審裁定書（人民網刊載）",
+      "url": "http://politics.people.com.cn/n/2013/1025/c1001-23326738.html",
+      "provider": "人民網（刊載山東省高級人民法院裁定書）",
+      "type": "institutional-document-republication",
+      "coverage": [
+        "近現代",
+        "薄熙來"
+      ],
+      "access": {
+        "mode": "open",
+        "notes": "本次已開啟核讀頁面；只保存出處、定位及自行撰寫摘要。"
+      },
+      "reuse": {
+        "status": "metadata-and-original-summary-only",
+        "notes": "未取得全文、照片與第三方內容的批次重製權；公開可讀不表示可鏡像或商用整個資料庫。"
+      },
+      "retrievalStatus": "opened",
+      "accessedOn": "2026-10-02",
+      "notes": "僅核裁定書當事人身分段的歷任職位；不存住址或裁判全文，不作遊戲人格判定。"
+    }
+  ]
+}

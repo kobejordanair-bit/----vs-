@@ -1,0 +1,2886 @@
+{
+  "format": "dynasty-source-editorial-reviews",
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "scope": "逐頁核讀的身份與最小命題覆蓋層；不修改原文，不代表原卡全部歷史、評分或因果分析已查證。",
+  "identityReviews": [
+    {
+      "id": "identity-review:liu-bang",
+      "recordIds": [
+        "emperor_漢高祖_279096455",
+        "general_劉邦_306143732"
+      ],
+      "recordNames": [
+        "漢高祖",
+        "劉邦"
+      ],
+      "status": "identity-supported",
+      "issue": "帝王卡與將領卡名稱不同，可能被誤拆成兩位人物。",
+      "decision": "核對高祖本紀後，兩張卡可指向同一歷史人物劉邦；保留兩篇原分析。",
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷008",
+          "locator": "高祖本紀篇首及劉季起兵段",
+          "supportedFact": "本紀稱高祖姓劉、字季，記沛豐邑背景與劉季被立為沛公。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "劉邦",
+      "aliases": [
+        "漢高祖",
+        "劉季"
+      ]
+    },
+    {
+      "id": "identity-review:liu-xiu",
+      "recordIds": [
+        "emperor_漢光武帝_80238619",
+        "general_劉秀_306137870"
+      ],
+      "recordNames": [
+        "漢光武帝",
+        "劉秀"
+      ],
+      "status": "identity-supported",
+      "issue": "帝號與姓名分成不同角色卡。",
+      "decision": "可連接同一人物劉秀，角色文章保持分開。",
+      "evidence": [
+        {
+          "sourceId": "source:houhanshu",
+          "url": "https://zh.wikisource.org/wiki/後漢書/卷1上",
+          "locator": "光武帝紀第一上篇首",
+          "supportedFact": "世祖光武皇帝諱秀，字文叔，南陽蔡陽人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "劉秀",
+      "aliases": [
+        "漢光武帝"
+      ]
+    },
+    {
+      "id": "identity-review:cao-cao",
+      "recordIds": [
+        "emperor_魏武帝_268612001",
+        "general_曹操_306294699"
+      ],
+      "recordNames": [
+        "魏武帝",
+        "曹操"
+      ],
+      "status": "identity-supported",
+      "issue": "追尊帝號可能被當成生前在位稱號。",
+      "decision": "兩卡可連接曹操；帝號需保留追尊與時點問題，不從卡片type推算統治年月。",
+      "evidence": [
+        {
+          "sourceId": "source:sanguozhi",
+          "url": "https://zh.wikisource.org/wiki/三國志/卷01",
+          "locator": "魏書武帝紀篇首",
+          "supportedFact": "太祖武皇帝姓曹、諱操、字孟德，沛國譙人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "曹操",
+      "aliases": [
+        "魏武帝",
+        "曹孟德"
+      ]
+    },
+    {
+      "id": "identity-review:liu-yu",
+      "recordIds": [
+        "emperor_宋武帝_284299365",
+        "general_劉裕_306141731"
+      ],
+      "recordNames": [
+        "宋武帝",
+        "劉裕"
+      ],
+      "status": "identity-supported",
+      "issue": "宋武帝可能與趙宋諸帝混淆。",
+      "decision": "連接南朝劉宋劉裕，時代標籤不可用北宋或南宋。",
+      "evidence": [
+        {
+          "sourceId": "source:songshu",
+          "url": "https://zh.wikisource.org/wiki/宋書/卷1",
+          "locator": "武帝上篇首",
+          "supportedFact": "高祖武皇帝諱裕、字德輿、小名寄奴，彭城人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "劉裕",
+      "aliases": [
+        "宋武帝"
+      ],
+      "suggestedPolity": "南朝劉宋"
+    },
+    {
+      "id": "identity-review:yuwen-tai",
+      "recordIds": [
+        "emperor_北周文帝_293386962",
+        "general_宇文泰_902419001"
+      ],
+      "recordNames": [
+        "北周文帝",
+        "宇文泰"
+      ],
+      "status": "identity-supported",
+      "issue": "追尊帝號與將領卡分開。",
+      "decision": "可連至宇文泰；官職、追尊與政權成立的年月須另建時態資料。",
+      "evidence": [
+        {
+          "sourceId": "source:zhoushu",
+          "url": "https://zh.wikisource.org/wiki/周書/卷01",
+          "locator": "文帝上篇首",
+          "supportedFact": "太祖文皇帝姓宇文、諱泰、字黑獺，代武川人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "宇文泰",
+      "aliases": [
+        "北周文帝"
+      ]
+    },
+    {
+      "id": "identity-review:gao-huan",
+      "recordIds": [
+        "emperor_神武帝_276962130",
+        "general_高歡_306708032"
+      ],
+      "recordNames": [
+        "神武帝",
+        "高歡"
+      ],
+      "status": "identity-supported",
+      "issue": "神武帝稱號未附政權而較難搜尋。",
+      "decision": "連接高歡，顯示北齊神武帝的識別說明；不把追尊等同生前稱帝。",
+      "evidence": [
+        {
+          "sourceId": "source:beiqishu",
+          "url": "https://zh.wikisource.org/wiki/北齊書/卷1",
+          "locator": "補帝紀第一神武上篇首",
+          "supportedFact": "齊高祖神武皇帝姓高、名歡、字賀六渾。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "高歡",
+      "aliases": [
+        "神武帝",
+        "北齊神武帝"
+      ]
+    },
+    {
+      "id": "identity-review:kublai",
+      "recordIds": [
+        "emperor_元世祖_287054372",
+        "general_忽必烈_903471753"
+      ],
+      "recordNames": [
+        "元世祖",
+        "忽必烈"
+      ],
+      "status": "identity-supported",
+      "issue": "帝號卡與軍事卡可能重複建人。",
+      "decision": "可連同一人物忽必烈。",
+      "evidence": [
+        {
+          "sourceId": "source:yuanshi",
+          "url": "https://zh.wikisource.org/wiki/元史/卷004",
+          "locator": "世祖一本紀篇首",
+          "supportedFact": "世祖皇帝諱忽必烈，記為睿宗第四子。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "忽必烈",
+      "aliases": [
+        "元世祖"
+      ]
+    },
+    {
+      "id": "identity-review:zhu-di",
+      "recordIds": [
+        "emperor_明成祖_281780435",
+        "general_朱棣_306297481"
+      ],
+      "recordNames": [
+        "明成祖",
+        "朱棣"
+      ],
+      "status": "identity-supported",
+      "issue": "姓名與廟號兩卡。",
+      "decision": "可連朱棣；廟號本身仍有沿革，不能在各時點無差別套用。",
+      "evidence": [
+        {
+          "sourceId": "source:mingshi",
+          "url": "https://zh.wikisource.org/wiki/明史/卷5",
+          "locator": "成祖一本紀篇首",
+          "supportedFact": "成祖皇帝諱棣，太祖第四子，洪武三年封燕王。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "朱棣",
+      "aliases": [
+        "明成祖",
+        "燕王"
+      ]
+    },
+    {
+      "id": "identity-review:yuan-ke",
+      "recordIds": [
+        "emperor_元恪",
+        "emperor_魏宣武帝_259214450"
+      ],
+      "recordNames": [
+        "元恪",
+        "魏宣武帝"
+      ],
+      "status": "identity-supported",
+      "issue": "同人姓名與帝號各有一張帝王卡。",
+      "decision": "可連北魏元恪，仍保留兩張卡原文。",
+      "evidence": [
+        {
+          "sourceId": "source:weishu",
+          "url": "https://zh.wikisource.org/wiki/魏書/卷8",
+          "locator": "世宗紀第八篇首",
+          "supportedFact": "世宗宣武皇帝諱恪，孝文帝第二子。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "元恪",
+      "aliases": [
+        "魏宣武帝"
+      ],
+      "suggestedPolity": "北魏"
+    },
+    {
+      "id": "identity-review:liu-yilong",
+      "recordIds": [
+        "emperor_劉義隆_286340193",
+        "emperor_宋文帝_284345958"
+      ],
+      "recordNames": [
+        "劉義隆",
+        "宋文帝"
+      ],
+      "status": "identity-supported",
+      "issue": "同人帝號與姓名兩張卡。",
+      "decision": "可連南朝劉宋文帝劉義隆。",
+      "evidence": [
+        {
+          "sourceId": "source:songshu",
+          "url": "https://zh.wikisource.org/wiki/宋書/卷5",
+          "locator": "文帝本紀篇首",
+          "supportedFact": "太祖文皇帝諱義隆，武帝第三子。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "劉義隆",
+      "aliases": [
+        "宋文帝"
+      ],
+      "suggestedPolity": "南朝劉宋"
+    },
+    {
+      "id": "identity-review:song-duzong",
+      "recordIds": [
+        "emperor_宋度宗（趙禥）",
+        "emperor_宋度宗_284401195"
+      ],
+      "recordNames": [
+        "宋度宗",
+        "宋度宗（趙禥）"
+      ],
+      "status": "identity-supported",
+      "issue": "兩張卡為相同帝號；原簡介含先天認知缺陷、孕期用藥等醫療斷言。",
+      "decision": "連接趙禥；這次核讀支持姓名、立嗣與帝號，沒有完成原簡介醫療診斷的查證，該段保留為未查證原評論。",
+      "evidence": [
+        {
+          "sourceId": "source:songshi",
+          "url": "https://zh.wikisource.org/wiki/宋史/卷046",
+          "locator": "度宗本紀篇首至立皇子、立皇太子段",
+          "supportedFact": "度宗諱禥，原賜名孟啟、又名孜，後立為皇子並改今名；本紀有七歲始言與資識內慧的描述。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "醫療因果不能僅靠古代異常出生敘事推定；此欄不是疾病排除診斷。",
+      "canonicalName": "趙禥",
+      "aliases": [
+        "宋度宗",
+        "趙孟啟",
+        "趙孜"
+      ],
+      "unsupportedOriginalClaims": [
+        "由母親孕期服藥造成智力障礙",
+        "以現代醫學判定先天認知缺陷"
+      ]
+    },
+    {
+      "id": "identity-review:fu-jian",
+      "recordIds": [
+        "emperor_符堅"
+      ],
+      "recordNames": [
+        "符堅"
+      ],
+      "status": "correction-proposed",
+      "issue": "人物名用符而非苻；資料朝代被籠統放於南北朝。",
+      "decision": "依傳主及淝水脈絡，建議名稱苻堅，政權前秦；原id不變。",
+      "evidence": [
+        {
+          "sourceId": "source:jinshu",
+          "url": "https://zh.wikisource.org/wiki/晉書/卷113",
+          "locator": "苻堅載記上篇首",
+          "supportedFact": "傳名為苻堅，字永固、一名文玉，為苻雄之子。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "苻堅",
+      "aliases": [
+        "符堅"
+      ],
+      "suggestedPolity": "前秦"
+    },
+    {
+      "id": "identity-review:zhang-cong",
+      "recordIds": [
+        "minister_張聰"
+      ],
+      "recordNames": [
+        "張聰"
+      ],
+      "status": "correction-proposed",
+      "issue": "大禮議人物的名疑誤寫為張聰。",
+      "decision": "以原卡大禮議、嘉靖背景對應張璁；建議顯示張璁並保存原名標記，不能任意把其他同名張聰併入。",
+      "evidence": [
+        {
+          "sourceId": "source:mingshi",
+          "url": "https://zh.wikisource.org/wiki/明史/卷196",
+          "locator": "張璁傳篇首與大禮議上疏段",
+          "supportedFact": "張璁字秉用、永嘉人，正德十六年進士，在世宗即位後參與追崇興獻王的議論。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "張璁",
+      "aliases": [
+        "張聰"
+      ],
+      "suggestedPolity": "明"
+    },
+    {
+      "id": "identity-review:xiao-yanyan",
+      "recordIds": [
+        "emperor_蕭燕燕"
+      ],
+      "recordNames": [
+        "蕭燕燕"
+      ],
+      "status": "correction-proposed",
+      "issue": "原朝代宋朝會讓勢力圖把遼的攝政者歸到宋。",
+      "decision": "以蕭綽為標準姓名、燕燕為小字，政權遼；人物type保留遊戲分類但不作正式帝王職稱。",
+      "evidence": [
+        {
+          "sourceId": "source:liaoshi",
+          "url": "https://zh.wikisource.org/wiki/遼史/卷71",
+          "locator": "景宗睿知皇后蕭氏傳",
+          "supportedFact": "景宗皇后蕭氏諱綽、小字燕燕；景宗死後尊皇太后並攝國政。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "蕭綽",
+      "aliases": [
+        "蕭燕燕"
+      ],
+      "suggestedPolity": "遼",
+      "suggestedHistoricalRole": "皇后、皇太后、攝政"
+    },
+    {
+      "id": "identity-review:li-deming",
+      "recordIds": [
+        "emperor_李德明"
+      ],
+      "recordNames": [
+        "李德明"
+      ],
+      "status": "correction-proposed",
+      "issue": "原朝代宋朝混淆同時代與政權隸屬。",
+      "decision": "政權標為夏州李氏／西夏建國前；保留受宋、遼冊命的不同關係，不從所受官號直接歸為宋朝統治者。",
+      "evidence": [
+        {
+          "sourceId": "source:songshi",
+          "url": "https://zh.wikisource.org/wiki/宋史/卷485",
+          "locator": "夏國上德明段，大中祥符及天禧年間",
+          "supportedFact": "本卷夏國敘事記李德明受宋朝官號，也受遼冊為大夏國王。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "李德明",
+      "suggestedPolity": "夏州李氏（西夏建國前）",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:liao-shengzong",
+      "recordIds": [
+        "emperor_耶律文殊奴"
+      ],
+      "recordNames": [
+        "耶律文殊奴"
+      ],
+      "status": "identity-supported",
+      "issue": "原卡以小字作人物主名，搜尋正式名字可能漏失。",
+      "decision": "標準檢索名耶律隆緒，保留文殊奴小字與遼聖宗。",
+      "evidence": [
+        {
+          "sourceId": "source:liaoshi",
+          "url": "https://zh.wikisource.org/wiki/遼史/卷10",
+          "locator": "聖宗一本紀篇首",
+          "supportedFact": "聖宗諱隆緒、小字文殊奴，景宗長子。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "耶律隆緒",
+      "aliases": [
+        "耶律文殊奴",
+        "遼聖宗"
+      ]
+    },
+    {
+      "id": "identity-review:chai-rong",
+      "recordIds": [
+        "general_郭榮_306628888"
+      ],
+      "recordNames": [
+        "郭榮"
+      ],
+      "status": "identity-supported",
+      "issue": "id以general開頭但目前type為emperor；郭、柴二姓可能被當兩人。",
+      "decision": "原卡保留郭榮，檢索加入柴榮、周世宗；不利用id前綴覆蓋type。",
+      "evidence": [
+        {
+          "sourceId": "source:jiuwudaishi",
+          "url": "https://zh.wikisource.org/wiki/舊五代史/卷114",
+          "locator": "世宗本紀篇首",
+          "supportedFact": "世宗諱榮，太祖養子，本姓柴，為聖穆皇后之侄。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "柴榮",
+      "aliases": [
+        "郭榮",
+        "周世宗"
+      ],
+      "suggestedPolity": "後周"
+    },
+    {
+      "id": "identity-review:chiang",
+      "recordIds": [
+        "emperor_蔣介石_274287036",
+        "general_蔣中正_912469858"
+      ],
+      "recordNames": [
+        "蔣介石",
+        "蔣中正"
+      ],
+      "status": "identity-supported",
+      "issue": "同人姓名、字與不同遊戲角色卡；emperor非實際官稱。",
+      "decision": "兩張卡連接蔣中正，介石為字；歷史官稱用總統、國民政府主席等具時段的職務。",
+      "evidence": [
+        {
+          "sourceId": "source:president-biographies",
+          "url": "https://www.president.gov.tw/Page/83",
+          "locator": "蔣總統中正先生生平首段及行憲總統段",
+          "supportedFact": "官方頁標明中正字介石，曾任國民政府主席、行憲後總統。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "蔣中正",
+      "aliases": [
+        "蔣介石"
+      ],
+      "suggestedHistoricalRole": "中華民國總統等（依時段）"
+    },
+    {
+      "id": "identity-review:mao",
+      "recordIds": [
+        "emperor_毛澤東_280250175",
+        "general_毛澤東_906514833"
+      ],
+      "recordNames": [
+        "毛澤東"
+      ],
+      "status": "identity-supported",
+      "issue": "同名兩卡；emperor分類會誤作實際官稱。",
+      "decision": "兩卡連接同人；政治角色需用中共中央主席、中央人民政府主席或國家主席等各自時段，現有資料的能力評分仍為評論。",
+      "evidence": [
+        {
+          "sourceId": "source:prc-officeholders",
+          "url": "https://www.gov.cn/test/2007-11/12/content_802099.htm",
+          "locator": "1949至1954及1954至1959任期欄",
+          "supportedFact": "表中將毛澤東列為中央人民政府主席以及中華人民共和國主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "毛澤東",
+      "suggestedHistoricalRole": "主席（區分制度與時段）",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:wang-shouren",
+      "recordIds": [
+        "minister_王守仁_1997741418",
+        "general_王守仁_908240173"
+      ],
+      "recordNames": [
+        "王守仁"
+      ],
+      "status": "identity-supported",
+      "issue": "同名臣、將兩卡。",
+      "decision": "兩卡可連接王守仁，保留不同分析視角。",
+      "evidence": [
+        {
+          "sourceId": "source:mingshi",
+          "url": "https://zh.wikisource.org/wiki/明史/卷195",
+          "locator": "王守仁傳篇首",
+          "supportedFact": "王守仁字伯安，餘姚人；本傳敘述科舉及官職經歷。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "王守仁",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:fan-zhongyan",
+      "recordIds": [
+        "minister_范仲淹_2001455088",
+        "general_范仲淹_911953843"
+      ],
+      "recordNames": [
+        "范仲淹"
+      ],
+      "status": "identity-supported",
+      "issue": "同名臣、將兩卡。",
+      "decision": "連接同一人物；原卡軍事評價與人格評語仍需逐段另查。",
+      "evidence": [
+        {
+          "sourceId": "source:songshi",
+          "url": "https://zh.wikisource.org/wiki/宋史/卷314",
+          "locator": "范仲淹傳篇首",
+          "supportedFact": "范仲淹字希文，敘其少時從朱姓、名說及後來還姓更名。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "范仲淹",
+      "aliases": [
+        "朱說"
+      ]
+    },
+    {
+      "id": "identity-review:yelu-abaoji",
+      "recordIds": [
+        "emperor_耶律阿保機",
+        "general_耶律阿保機_310698923"
+      ],
+      "recordNames": [
+        "耶律阿保機"
+      ],
+      "status": "identity-supported",
+      "issue": "同名帝、將兩卡，漢名與契丹名字易漏配。",
+      "decision": "可連同人；維持原姓名並加耶律億、遼太祖供檢索。",
+      "evidence": [
+        {
+          "sourceId": "source:liaoshi",
+          "url": "https://zh.wikisource.org/wiki/遼史/卷1",
+          "locator": "太祖上篇首",
+          "supportedFact": "太祖姓耶律、諱億，字阿保機、小字啜里只，契丹迭剌部人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "耶律阿保機",
+      "aliases": [
+        "耶律億",
+        "遼太祖"
+      ]
+    },
+    {
+      "id": "identity-review:aobai",
+      "recordIds": [
+        "minister_鰲拜_2004429764",
+        "general_鰲拜_306716577"
+      ],
+      "recordNames": [
+        "鰲拜"
+      ],
+      "status": "identity-supported",
+      "issue": "同名臣、將兩卡及鰲／鼇異體。",
+      "decision": "兩卡可連同人；將鼇拜列為文本異體以提高搜尋。",
+      "evidence": [
+        {
+          "sourceId": "source:qingshigao",
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷249",
+          "locator": "鼇拜傳篇首及受顧命段",
+          "supportedFact": "鼇拜為瓜爾佳氏、滿洲鑲黃旗人，後受顧命輔政。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "鰲拜",
+      "aliases": [
+        "鼇拜"
+      ]
+    },
+    {
+      "id": "identity-review:agui",
+      "recordIds": [
+        "minister_阿桂_2004383933",
+        "general_阿桂_306670746"
+      ],
+      "recordNames": [
+        "阿桂"
+      ],
+      "status": "identity-supported",
+      "issue": "同名臣、將兩卡。",
+      "decision": "可連阿桂，軍政事蹟分時段核查。",
+      "evidence": [
+        {
+          "sourceId": "source:qingshigao",
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷318",
+          "locator": "阿桂傳篇首",
+          "supportedFact": "阿桂字廣庭，章佳氏，原滿洲正藍旗，後改隸正白旗。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "阿桂",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:shi-le",
+      "recordIds": [
+        "general_石勒_306424822",
+        "emperor_石勒_1671520570"
+      ],
+      "recordNames": [
+        "石勒"
+      ],
+      "status": "identity-supported",
+      "issue": "同名帝、將兩卡，晉朝時代標籤不等同為晉效力。",
+      "decision": "可連同人，政治勢力需另列後趙及早年隸屬，不能把所有時期固定為晉朝。",
+      "evidence": [
+        {
+          "sourceId": "source:jinshu",
+          "url": "https://zh.wikisource.org/wiki/晉書/卷104",
+          "locator": "石勒載記上篇首",
+          "supportedFact": "石勒字世龍，上黨武鄉人，載記敘其早年與起兵經過。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "石勒",
+      "suggestedPolity": "後趙（另記早年隸屬）",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:yuwen-hu",
+      "recordIds": [
+        "minister_宇文護_1991928061",
+        "general_宇文護_902426816"
+      ],
+      "recordNames": [
+        "宇文護"
+      ],
+      "status": "identity-supported",
+      "issue": "同名臣、將兩卡。",
+      "decision": "可連宇文護，保留權臣與軍事評論文章。",
+      "evidence": [
+        {
+          "sourceId": "source:zhoushu",
+          "url": "https://zh.wikisource.org/wiki/周書/卷11",
+          "locator": "晉蕩公護傳篇首",
+          "supportedFact": "護字薩保，太祖兄邵惠公顥之子。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "宇文護",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:song-jiang",
+      "recordIds": [
+        "general_宋江_306205931"
+      ],
+      "recordNames": [
+        "宋江"
+      ],
+      "status": "layer-separation",
+      "issue": "歷史人物與小說人物同名，容易把水滸情節匯入生平。",
+      "decision": "先建立史傳宋江條目。小說相關材料另標literary，不把一百零八將、梁山制度等直接灌入此史料層。",
+      "evidence": [
+        {
+          "sourceId": "source:songshi",
+          "url": "https://zh.wikisource.org/wiki/宋史/卷353",
+          "locator": "張叔夜傳宋江段",
+          "supportedFact": "本傳記宋江轉略十郡、趨海濱，張叔夜設伏焚舟，擒其副手後宋江投降。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "宋江（史傳）",
+      "aliases": [
+        "宋江"
+      ],
+      "unsupportedOriginalClaims": [
+        "由這一段便斷定其全部兵力規模、沒有任何根據地或軍事能力上下限"
+      ]
+    },
+    {
+      "id": "identity-review:jiang-ziya",
+      "recordIds": [
+        "minister_姜子牙_1991430219"
+      ],
+      "recordNames": [
+        "姜子牙"
+      ],
+      "status": "layer-separation",
+      "issue": "傳說、小說與早期文獻混合。",
+      "decision": "檢索以呂尚、太公望、姜尚並列；封神演義中的神術與身世另立文學層，不回填歷史事件。",
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷032",
+          "locator": "齊太公世家篇首",
+          "supportedFact": "史記稱太公望呂尚本姓姜氏；對其如何歸周並列不同說法，且明說敘事有異。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "傳本支持存在這些敘述，不代表所有年代、壽命與神異都已驗真。",
+      "canonicalName": "呂尚",
+      "aliases": [
+        "姜子牙",
+        "姜尚",
+        "太公望"
+      ]
+    },
+    {
+      "id": "identity-review:nangong",
+      "recordIds": [
+        "general_南宮适_900335572"
+      ],
+      "recordNames": [
+        "南宮适"
+      ],
+      "status": "unresolved-identity",
+      "issue": "西周南宮括與春秋孔門南宮适等近名容易混合，原卡用字未附出處。",
+      "decision": "本次只記史記周本紀寫南宮括。原卡稱南宮适是否為異名以及文王四友、救主、先鋒的所有細節仍待別證；不自動合併孔門同名人物。",
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷004",
+          "locator": "周武王克殷後命南宮括散財、展九鼎段",
+          "supportedFact": "周本紀記武王命南宮括散鹿臺財、發鉅橋粟，並與史佚展九鼎保玉。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": null,
+      "candidateNames": [
+        "南宮括（西周）"
+      ],
+      "unsupportedOriginalClaims": [
+        "西周南宮括與孔門南宮适為同一人",
+        "原卡全部軍事職掌已得到本段證明"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "identity-review:wang-xun",
+      "recordIds": [
+        "general_王尋_306392215"
+      ],
+      "recordNames": [
+        "王尋"
+      ],
+      "status": "correction-proposed",
+      "issue": "原朝代未分類。",
+      "decision": "建議勢力新莽、職務大司徒；兵力四十二萬只記為史書所載數字，不能當現代統計確值。",
+      "evidence": [
+        {
+          "sourceId": "source:houhanshu",
+          "url": "https://zh.wikisource.org/wiki/後漢書/卷1上",
+          "locator": "光武帝紀昆陽戰前王莽遣軍段",
+          "supportedFact": "文本記王莽遣大司徒王尋、大司空王邑出兵，與嚴尤、陳茂會合。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "王尋",
+      "suggestedPolity": "新莽",
+      "suggestedHistoricalRole": "大司徒",
+      "aliases": []
+    },
+    {
+      "id": "identity-review:shi-jingtang",
+      "recordIds": [
+        "emperor_兒皇帝_286725983"
+      ],
+      "recordNames": [
+        "兒皇帝"
+      ],
+      "status": "identity-supported",
+      "issue": "主名為帶評價性的綽號，不利身份搜尋。",
+      "decision": "依原卡幽雲背景對應後晉石敬瑭；以姓名作標準檢索，兒皇帝保留為原卡名稱。",
+      "evidence": [
+        {
+          "sourceId": "source:jiuwudaishi",
+          "url": "https://zh.wikisource.org/wiki/舊五代史/卷75",
+          "locator": "晉高祖本紀篇首",
+          "supportedFact": "高祖皇帝姓石、諱敬瑭，太原人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "石敬瑭",
+      "aliases": [
+        "兒皇帝",
+        "晉高祖"
+      ],
+      "suggestedPolity": "後晉"
+    },
+    {
+      "id": "identity-review:chen-cheng",
+      "recordIds": [
+        "general_陳誠_306681156",
+        "minister_陳誠_2004394343"
+      ],
+      "recordNames": [
+        "陳誠"
+      ],
+      "status": "identity-supported",
+      "issue": "同名將、臣兩卡，需確認均指近代人物而非同名古人。",
+      "decision": "依兩卡民國、臺灣治理背景與官方職歷可連陳誠；保留兩篇分析。",
+      "evidence": [
+        {
+          "sourceId": "source:president-biographies",
+          "url": "https://www.president.gov.tw/NEWS/9261",
+          "locator": "陳副總統辭修先生文物捐贈致詞之生平段",
+          "supportedFact": "官方文物捐贈介紹敘述辭修先生的軍事職務、臺灣省政府主席與副總統身份。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "保留每張原卡及原文；身份關聯與名稱建議存於檔案館覆蓋層。",
+      "canonicalName": "陳誠",
+      "aliases": [
+        "陳辭修"
+      ]
+    },
+    {
+      "id": "identity-review:yan-xishan",
+      "recordIds": [
+        "general_閻錫山_917095882",
+        "minister_閻錫山_2006597127"
+      ],
+      "recordNames": [
+        "閻錫山"
+      ],
+      "status": "identity-supported",
+      "issue": "原庫同名將領與名臣卡，需要核對歷史身份。",
+      "decision": "依兩卡近現代背景及來源姓名、官職可連同一人物；保留各卡原文，官職按時段分開。",
+      "canonicalName": "閻錫山",
+      "aliases": [
+        "閻百川",
+        "閻伯川"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:ncl-authority",
+          "url": "https://metadata.ncl.edu.tw/blstkmc/blst2ndtp?PAGE=authorDetail&authCode=AC000000043",
+          "locator": "主要名稱、其他名稱、生卒及學經歷表",
+          "supportedFact": "權威檔以閻錫山為主要名，別名有百川、伯川，生卒1883至1960，列山西軍政與國民政府職務。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀身份最小命題，未驗證原卡全文、能力評分或完整生平。"
+        }
+      ],
+      "notes": "保留原始卡片及原文；來源敘事立場不轉為能力或道德分數。"
+    },
+    {
+      "id": "identity-review:chen-jiongming",
+      "recordIds": [
+        "minister_陳炯明_2006502744",
+        "general_陳炯明_917001499"
+      ],
+      "recordNames": [
+        "陳炯明"
+      ],
+      "status": "identity-supported",
+      "issue": "原庫同名將領與名臣卡，需要核對歷史身份。",
+      "decision": "依兩卡近現代背景及來源姓名、官職可連同一人物；保留各卡原文，官職按時段分開。",
+      "canonicalName": "陳炯明",
+      "aliases": [
+        "陳競存"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0002599",
+          "locator": "人物基本資料及首段",
+          "supportedFact": "頁面將陳炯明列為廣東海豐人、民國軍政人物，曾任粵軍總司令與廣東省長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀身份最小命題，未驗證原卡全文、能力評分或完整生平。"
+        }
+      ],
+      "notes": "保留原始卡片及原文；來源敘事立場不轉為能力或道德分數。"
+    },
+    {
+      "id": "identity-review:fu-zuoyi",
+      "recordIds": [
+        "general_傅作義_899539771",
+        "minister_傅作義_1989041016"
+      ],
+      "recordNames": [
+        "傅作義"
+      ],
+      "status": "identity-supported",
+      "issue": "原庫同名將領與名臣卡，需要核對歷史身份。",
+      "decision": "依兩卡近現代背景及來源姓名、官職可連同一人物；保留各卡原文，官職按時段分開。",
+      "canonicalName": "傅作義",
+      "aliases": [
+        "傅宜生"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:people-party",
+          "url": "http://cpc.people.com.cn/daohang/n/2013/0226/c357214-20604689.html",
+          "locator": "生平首段及1949年後官職段",
+          "supportedFact": "頁面稱傅作義字宜生，先後任民國軍職、綏遠省政府主席，以及中華人民共和國水利部長等。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀身份最小命題，未驗證原卡全文、能力評分或完整生平。"
+        }
+      ],
+      "notes": "保留原始卡片及原文；來源敘事立場不轉為能力或道德分數。"
+    },
+    {
+      "id": "identity-review:modern-emperor_洪憲帝_280041298",
+      "recordIds": [
+        "emperor_洪憲帝_280041298"
+      ],
+      "recordNames": [
+        "洪憲帝"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:ey-history",
+          "url": "https://www.ey.gov.tw/state/62879155A536D543/bf75db05-30af-4c3a-bdda-3fe32e3f8e5a",
+          "locator": "國情簡介／中華民國之肇建；北洋時期段（資料來源國史館）",
+          "supportedFact": "此國史館供稿記袁世凱籌備洪憲帝制，支持原卡『洪憲帝』應連向袁世凱。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "identity-supported",
+      "issue": "原卡以年號帝稱命名，需連向可檢索的姓名。",
+      "decision": "保留原卡名稱並增加袁世凱為標準姓名；不把洪憲帝另建為第二人。",
+      "canonicalName": "袁世凱",
+      "aliases": [
+        "洪憲帝"
+      ]
+    },
+    {
+      "id": "identity-review:modern-minister_汪精衛_1996265901",
+      "recordIds": [
+        "minister_汪精衛_1996265901"
+      ],
+      "recordNames": [
+        "汪精衛"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:drnh",
+          "url": "https://ahonline.drnh.gov.tw/docs/zong/118.pdf",
+          "locator": "《國史館現藏重要檔案文物史料概述》汪兆銘史料，印刷頁447，壹、小傳",
+          "supportedFact": "國史館小傳明列汪兆銘字季新、筆名精衛，通稱汪精衛。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "identity-supported",
+      "issue": "資料庫通稱與檔案全宗標準姓名不同。",
+      "decision": "以汪兆銘為檔案對接標準姓名，保留汪精衛作通稱與原卡名稱。",
+      "canonicalName": "汪兆銘",
+      "aliases": [
+        "汪精衛",
+        "季新"
+      ]
+    },
+    {
+      "id": "identity-review:modern-general_李德（奧托·布勞恩）_5238041",
+      "recordIds": [
+        "general_李德（奧托·布勞恩）_5238041"
+      ],
+      "recordNames": [
+        "李德（奧托·布勞恩）"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:people-party",
+          "url": "http://dangshi.people.com.cn/n1/2016/1230/c85037-28988238.html",
+          "locator": "〈一名德國革命者的中國長征〉首段",
+          "supportedFact": "文章將奧托·布勞恩與中文名李德明確相連，並記其為德國人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "此黨史文章對軍事責任有鮮明判斷，本條不採用該評價，也未核其唯一外國參與者等排他性命題。",
+      "status": "identity-supported",
+      "issue": "中文短名李德容易與其他時代同名人物混淆。",
+      "decision": "標準姓名李德必須與德國、奧托·布勞恩及20世紀活動時間合用，不只以兩字姓名自動合併。",
+      "canonicalName": "李德",
+      "aliases": [
+        "奧托·布勞恩"
+      ]
+    }
+  ],
+  "readingReviews": [
+    {
+      "id": "reading-review:qin-shihuang",
+      "recordIds": [
+        "emperor_秦始皇_276964901"
+      ],
+      "recordNames": [
+        "秦始皇"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "本紀記秦始皇名政，十三歲代立為秦王。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷006",
+          "locator": "秦始皇本紀篇首",
+          "supportedFact": "本紀記秦始皇名政，十三歲代立為秦王。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:liu-bei",
+      "recordIds": [
+        "emperor_昭烈帝_281640805"
+      ],
+      "recordNames": [
+        "昭烈帝"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "先主名劉備、字玄德；末段記諡曰昭烈皇帝。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:sanguozhi",
+          "url": "https://zh.wikisource.org/wiki/三國志/卷32",
+          "locator": "先主傳篇首與篇末卒葬段",
+          "supportedFact": "先主名劉備、字玄德；末段記諡曰昭烈皇帝。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:sun-quan",
+      "recordIds": [
+        "emperor_吳大帝_286250846"
+      ],
+      "recordNames": [
+        "吳大帝"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "吳主傳以孫權、字仲謀為傳主，敘其承接孫策事業。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:sanguozhi",
+          "url": "https://zh.wikisource.org/wiki/三國志/卷47",
+          "locator": "吳主傳篇首",
+          "supportedFact": "吳主傳以孫權、字仲謀為傳主，敘其承接孫策事業。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:su-shi",
+      "recordIds": [
+        "minister_蘇軾"
+      ],
+      "recordNames": [
+        "蘇軾"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "蘇軾字子瞻，眉州眉山人。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:songshi",
+          "url": "https://zh.wikisource.org/wiki/宋史/卷338",
+          "locator": "蘇軾傳篇首",
+          "supportedFact": "蘇軾字子瞻，眉州眉山人。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:kongzi",
+      "recordIds": [
+        "minister_孔子_2003913046"
+      ],
+      "recordNames": [
+        "孔子"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "本傳記孔子名丘、字仲尼，出生地作魯昌平鄉陬邑。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷047",
+          "locator": "孔子世家篇首",
+          "supportedFact": "本傳記孔子名丘、字仲尼，出生地作魯昌平鄉陬邑。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:sun-wu",
+      "recordIds": [
+        "general_孫武_306204690"
+      ],
+      "recordNames": [
+        "孫武"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "本傳稱孫武為齊人，以兵法見吳王闔廬。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷065",
+          "locator": "孫子吳起列傳孫武段篇首",
+          "supportedFact": "本傳稱孫武為齊人，以兵法見吳王闔廬。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "這是史記傳記的記載；其生平與兵書作者問題仍需學術文獻討論，不以單一傳本排除爭議。"
+    },
+    {
+      "id": "reading-review:li-jing",
+      "recordIds": [
+        "general_李靖_306310271"
+      ],
+      "recordNames": [
+        "李靖"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "本傳記李靖本名藥師，雍州三原人，早年曾仕隋。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:jiutangshu",
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷67",
+          "locator": "李靖傳篇首",
+          "supportedFact": "本傳記李靖本名藥師，雍州三原人，早年曾仕隋。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:yue-fei",
+      "recordIds": [
+        "general_岳飛_306226495"
+      ],
+      "recordNames": [
+        "岳飛"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "岳飛字鵬舉，相州湯陰人，文中記其早期應募。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:songshi",
+          "url": "https://zh.wikisource.org/wiki/宋史/卷365",
+          "locator": "岳飛傳篇首",
+          "supportedFact": "岳飛字鵬舉，相州湯陰人，文中記其早期應募。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:zhang-liang",
+      "recordIds": [
+        "minister_張良_2003953844"
+      ],
+      "recordNames": [
+        "張良"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "傳中稱張良先世為韓人，父祖曾任韓相；秦滅韓後張良尋客刺秦王。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:shiji",
+          "url": "https://zh.wikisource.org/wiki/史記/卷055",
+          "locator": "留侯世家篇首",
+          "supportedFact": "傳中稱張良先世為韓人，父祖曾任韓相；秦滅韓後張良尋客刺秦王。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:li-zongren",
+      "recordIds": [
+        "general_李宗仁_905229825",
+        "minister_李宗仁(名臣)_157633929"
+      ],
+      "recordNames": [
+        "李宗仁",
+        "李宗仁(名臣)"
+      ],
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "總統府歷任副總統頁列李宗仁為第一任副總統，並記其於1949年1月21日代行總統職權。"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:president-biographies",
+          "url": "https://www.president.gov.tw/Page/82",
+          "locator": "第1任李副總統宗仁先生欄",
+          "supportedFact": "總統府歷任副總統頁列李宗仁為第一任副總統，並記其於1949年1月21日代行總統職權。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文核讀",
+          "reviewScope": "僅核讀這一條最小命題，未驗證原人物卡全文、評分或所有敘事。"
+        }
+      ],
+      "notes": "僅核讀列示身份資訊；原人物分析的解釋、數值、因果與完整年表未逐條審定。"
+    },
+    {
+      "id": "reading-review:modern-emperor_孫文_1671742205",
+      "recordIds": [
+        "emperor_孫文_1671742205"
+      ],
+      "recordNames": [
+        "孫文"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000025",
+          "locator": "生平開頭及臨時大總統段",
+          "supportedFact": "孫文與通稱孫中山指向同一人物；此頁記其曾任中華民國臨時大總統。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "孫文與通稱孫中山指向同一人物；此頁記其曾任中華民國臨時大總統。"
+      ],
+      "canonicalName": "孫文",
+      "aliases": [
+        "孫中山",
+        "孫逸仙"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_孫立人_902553123",
+      "recordIds": [
+        "general_孫立人_902553123"
+      ],
+      "recordNames": [
+        "孫立人"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000026",
+          "locator": "生平首段",
+          "supportedFact": "孫立人是中華民國陸軍將領，曾任陸軍總司令。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "孫立人是中華民國陸軍將領，曾任陸軍總司令。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_薛岳_306535727",
+      "recordIds": [
+        "general_薛岳_306535727"
+      ],
+      "recordNames": [
+        "薛岳"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000342",
+          "locator": "生平首段",
+          "supportedFact": "薛岳字伯陵，原名仰岳，是中華民國陸軍將領。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "薛岳字伯陵，原名仰岳，是中華民國陸軍將領。"
+      ],
+      "aliases": [
+        "仰岳",
+        "伯陵"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_張靈甫_903721217",
+      "recordIds": [
+        "general_張靈甫_903721217"
+      ],
+      "recordNames": [
+        "張靈甫"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000194",
+          "locator": "生平開頭與1946年任職段",
+          "supportedFact": "張靈甫名鍾麟，曾任整編第七十四師師長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "張靈甫名鍾麟，曾任整編第七十四師師長。"
+      ],
+      "aliases": [
+        "張鍾麟"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_劉湘_306134950",
+      "recordIds": [
+        "general_劉湘_306134950"
+      ],
+      "recordNames": [
+        "劉湘"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000294",
+          "locator": "生平首段",
+          "supportedFact": "劉湘字甫澄，為川軍人物，曾任四川省主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本頁資料表卒日為1938年1月20日，正文卻為1月23日；本次不採用卒日，留待原始文書核對。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "劉湘字甫澄，為川軍人物，曾任四川省主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_馮玉祥_917823827",
+      "recordIds": [
+        "general_馮玉祥_917823827"
+      ],
+      "recordNames": [
+        "馮玉祥"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000035",
+          "locator": "生平首段",
+          "supportedFact": "馮玉祥字煥章、譜名基善，與民國時期的國民軍有直接組織關係。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "馮玉祥字煥章、譜名基善，與民國時期的國民軍有直接組織關係。"
+      ],
+      "aliases": [
+        "馮基善"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_黃百韜_919105354",
+      "recordIds": [
+        "general_黃百韜_919105354"
+      ],
+      "recordNames": [
+        "黃百韜"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000242",
+          "locator": "生平首段",
+          "supportedFact": "黃百韜是民國軍事人物，原名新，字煥然；頁面另錄佰韜、伯韜寫法。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "黃百韜是民國軍事人物，原名新，字煥然；頁面另錄佰韜、伯韜寫法。"
+      ],
+      "aliases": [
+        "黃佰韜",
+        "黃伯韜"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_宋子文_1991841128",
+      "recordIds": [
+        "minister_宋子文_1991841128"
+      ],
+      "recordNames": [
+        "宋子文"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000095",
+          "locator": "生平首段",
+          "supportedFact": "宋子文曾任國民政府財政部長、中央銀行總裁與行政院長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "宋子文曾任國民政府財政部長、中央銀行總裁與行政院長。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_王耀武_908536922",
+      "recordIds": [
+        "general_王耀武_908536922"
+      ],
+      "recordNames": [
+        "王耀武"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000064",
+          "locator": "生平首段",
+          "supportedFact": "王耀武字佐民，為國軍將領，曾任山東省主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "王耀武字佐民，為國軍將領，曾任山東省主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_杜聿明_905542132",
+      "recordIds": [
+        "general_杜聿明_905542132"
+      ],
+      "recordNames": [
+        "杜聿明"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000084",
+          "locator": "生平首段",
+          "supportedFact": "杜聿明字光亭，是陝西米脂籍的國民革命軍將領。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "杜聿明字光亭，是陝西米脂籍的國民革命軍將領。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_胡宗南_911522666",
+      "recordIds": [
+        "general_胡宗南_911522666"
+      ],
+      "recordNames": [
+        "胡宗南"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000125",
+          "locator": "生平首段",
+          "supportedFact": "胡宗南字壽山，曾任中華民國陸軍將領與浙江省主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "胡宗南字壽山，曾任中華民國陸軍將領與浙江省主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_張作霖_903159128",
+      "recordIds": [
+        "general_張作霖_903159128"
+      ],
+      "recordNames": [
+        "張作霖"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000030",
+          "locator": "人物資料表：姓氏、名字、組織、籍貫",
+          "supportedFact": "國資圖以張作霖為人物主體，列其所屬組織為奉系、籍貫為海城。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "機構人物資料表核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "institutional-person-metadata",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "國資圖以張作霖為人物主體，列其所屬組織為奉系、籍貫為海城。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_吳佩孚_900436141",
+      "recordIds": [
+        "general_吳佩孚_900436141"
+      ],
+      "recordNames": [
+        "吳佩孚"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000013",
+          "locator": "人物資料表：姓名、籍貫、組織",
+          "supportedFact": "國資圖以吳佩孚為人物主體，列其籍貫為山東蓬萊，組織為直系（洛陽派）。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "機構人物資料表核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "institutional-person-metadata",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "國資圖以吳佩孚為人物主體，列其籍貫為山東蓬萊，組織為直系（洛陽派）。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_曹錕_2004019734",
+      "recordIds": [
+        "minister_曹錕_2004019734"
+      ],
+      "recordNames": [
+        "曹錕"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000172",
+          "locator": "人物資料表：姓名、籍貫、組織",
+          "supportedFact": "國資圖以曹錕為人物主體，列其籍貫為直隸天津，組織為直系（保定派）。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "機構人物資料表核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "institutional-person-metadata",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "國資圖以曹錕為人物主體，列其籍貫為直隸天津，組織為直系（保定派）。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_黃興_306744924",
+      "recordIds": [
+        "general_黃興_306744924"
+      ],
+      "recordNames": [
+        "黃興"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000248",
+          "locator": "人物資料表：姓名、組織、學歷",
+          "supportedFact": "國資圖黃興人物資料表列其組織關係包含華興會與中國同盟會。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "機構人物資料表核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "institutional-person-metadata",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "國資圖黃興人物資料表列其組織關係包含華興會與中國同盟會。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_湯恩伯_907022014",
+      "recordIds": [
+        "general_湯恩伯_907022014"
+      ],
+      "recordNames": [
+        "湯恩伯"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000231",
+          "locator": "生平首段",
+          "supportedFact": "湯恩伯原名克勤，浙江武義人，是中華民國陸軍將領。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "湯恩伯原名克勤，浙江武義人，是中華民國陸軍將領。"
+      ],
+      "aliases": [
+        "湯克勤"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_劉峙_306130471",
+      "recordIds": [
+        "general_劉峙_306130471"
+      ],
+      "recordNames": [
+        "劉峙"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000291",
+          "locator": "生平首段",
+          "supportedFact": "劉峙字經扶，江西廬陵人，是中華民國陸軍將領。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本頁資料表卒日為1971年1月5日，正文為1月15日；本次不採用卒日。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "劉峙字經扶，江西廬陵人，是中華民國陸軍將領。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_張自忠_903546196",
+      "recordIds": [
+        "general_張自忠_903546196"
+      ],
+      "recordNames": [
+        "張自忠"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000181",
+          "locator": "生平首段",
+          "supportedFact": "張自忠字藎臣（又作藎忱），山東臨清人，是西北軍系將領。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "張自忠字藎臣（又作藎忱），山東臨清人，是西北軍系將領。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_孫連仲_902722563",
+      "recordIds": [
+        "general_孫連仲_902722563"
+      ],
+      "recordNames": [
+        "孫連仲"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000714",
+          "locator": "生平首段",
+          "supportedFact": "孫連仲字仿魯（又作倣魯），曾任青海、甘肅及河北省主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "孫連仲字仿魯（又作倣魯），曾任青海、甘肅及河北省主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_宋教仁_1991914937",
+      "recordIds": [
+        "minister_宋教仁_1991914937"
+      ],
+      "recordNames": [
+        "宋教仁"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000014",
+          "locator": "生平首段",
+          "supportedFact": "宋教仁是同盟會及民初國民黨人物，字遯初（又作鈍初）。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "宋教仁是同盟會及民初國民黨人物，字遯初（又作鈍初）。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_朱德_306295133",
+      "recordIds": [
+        "general_朱德_306295133"
+      ],
+      "recordNames": [
+        "朱德"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載朱德於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載朱德於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_彭德懷_903329142",
+      "recordIds": [
+        "general_彭德懷_903329142"
+      ],
+      "recordNames": [
+        "彭德懷"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載彭德懷於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載彭德懷於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_林彪_306298218",
+      "recordIds": [
+        "general_林彪_306298218"
+      ],
+      "recordNames": [
+        "林彪"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載林彪於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載林彪於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_劉伯承_900026786",
+      "recordIds": [
+        "general_劉伯承_900026786"
+      ],
+      "recordNames": [
+        "劉伯承"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載劉伯承於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載劉伯承於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_賀龍_306609540",
+      "recordIds": [
+        "general_賀龍_306609540"
+      ],
+      "recordNames": [
+        "賀龍"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載賀龍於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載賀龍於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_陳毅_306673257",
+      "recordIds": [
+        "general_陳毅_306673257"
+      ],
+      "recordNames": [
+        "陳毅"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載陳毅於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載陳毅於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_羅榮桓_911305427",
+      "recordIds": [
+        "general_羅榮桓_911305427"
+      ],
+      "recordNames": [
+        "羅榮桓"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載羅榮桓於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載羅榮桓於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_徐向前_903266325",
+      "recordIds": [
+        "general_徐向前_903266325"
+      ],
+      "recordNames": [
+        "徐向前"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載徐向前於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載徐向前於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_聶榮臻_911543596",
+      "recordIds": [
+        "general_聶榮臻_911543596"
+      ],
+      "recordNames": [
+        "聶榮臻"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載聶榮臻於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載聶榮臻於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_葉劍英_912301110",
+      "recordIds": [
+        "general_葉劍英_912301110"
+      ],
+      "recordNames": [
+        "葉劍英"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載葉劍英於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載葉劍英於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_白崇禧_908987622",
+      "recordIds": [
+        "general_白崇禧_908987622"
+      ],
+      "recordNames": [
+        "白崇禧"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:roc-defense-register",
+          "url": "https://www.mnd.gov.tw/About/FormerMinisters",
+          "locator": "歷任部長／第一任部長",
+          "supportedFact": "白崇禧列為國防部第一任部長，任期為民國35年5月31日至37年5月31日。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "白崇禧列為國防部第一任部長，任期為民國35年5月31日至37年5月31日。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_唐生智_900950644",
+      "recordIds": [
+        "general_唐生智_900950644"
+      ],
+      "recordNames": [
+        "唐生智"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:dongan-history",
+          "url": "http://www.da.gov.cn/da/darw/201605/721e85f37bc3424eb1edc46269d27d58.shtml",
+          "locator": "東安人物／唐生智；民國15年段",
+          "supportedFact": "唐生智字孟瀟；此頁記其於1926年任國民革命軍第八軍軍長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "唐生智字孟瀟；此頁記其於1926年任國民革命軍第八軍軍長。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_粟裕_306475725",
+      "recordIds": [
+        "general_粟裕_306475725"
+      ],
+      "recordNames": [
+        "粟裕"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:pla-history",
+          "url": "https://photo.81.cn/tsjs/2013-10/11/content_5582595.htm",
+          "locator": "人物生平末段：建國後任職及授銜",
+          "supportedFact": "粟裕曾任解放軍總參謀長，1955年獲授大將軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "粟裕曾任解放軍總參謀長，1955年獲授大將軍銜。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_鄧小平_2005034001",
+      "recordIds": [
+        "minister_鄧小平_2005034001"
+      ],
+      "recordNames": [
+        "鄧小平"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:cppcc-biographies",
+          "url": "http://www.cppcc.gov.cn/2011/09/20/ARTI1316516229916360.shtml",
+          "locator": "歷屆主席／生平1978年段",
+          "supportedFact": "鄧小平於1978年3月當選第五屆全國政協主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "鄧小平於1978年3月當選第五屆全國政協主席。"
+      ],
+      "aliases": [
+        "鄧希賢",
+        "鄧先聖"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_周恩來_1990120203",
+      "recordIds": [
+        "minister_周恩來_1990120203"
+      ],
+      "recordNames": [
+        "周恩來"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:cppcc-biographies",
+          "url": "http://www.cppcc.gov.cn/2011/09/20/ARTI1316515847871354.shtml",
+          "locator": "歷屆主席／建國後歷任職務段",
+          "supportedFact": "周恩來曾任政府總理與全國政協第二、三、四屆主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "周恩來曾任政府總理與全國政協第二、三、四屆主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_康生_2003946530",
+      "recordIds": [
+        "minister_康生_2003946530"
+      ],
+      "recordNames": [
+        "康生"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:cppcc-biographies",
+          "url": "http://www.cppcc.gov.cn/2011/09/28/ARTI1317197404875325.shtml",
+          "locator": "往屆副主席／開頭及1959年至1964年任職段",
+          "supportedFact": "康生列為第三屆全國政協副主席，原名張叔平。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "康生列為第三屆全國政協副主席，原名張叔平。"
+      ],
+      "aliases": [
+        "張叔平",
+        "張紹卿"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_周永康_1990217805",
+      "recordIds": [
+        "minister_周永康_1990217805"
+      ],
+      "recordNames": [
+        "周永康"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:cppcc-biographies",
+          "url": "http://www.cppcc.gov.cn/olddata/zxb/20030320/101zt/hyyw/hyyw53002.htm",
+          "locator": "2003年3月18日簡歷／1998年至2002年段",
+          "supportedFact": "這份2003年簡歷列周永康曾任國土資源部部長、四川省委書記。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "僅描述2003年頁面中的歷史職位，不以該頁『現在』一詞推斷當前任職狀態。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "這份2003年簡歷列周永康曾任國土資源部部長、四川省委書記。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_朱鎔基_1995149885",
+      "recordIds": [
+        "minister_朱鎔基_1995149885"
+      ],
+      "recordNames": [
+        "朱鎔基"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-archives",
+          "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977920.html",
+          "locator": "潇湘人物／朱镕基；1998年任職段",
+          "supportedFact": "湖南省檔案局朱鎔基條目記其1998年起任國務院總理。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "湖南省檔案局朱鎔基條目記其1998年起任國務院總理。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_胡耀邦_2001328557",
+      "recordIds": [
+        "minister_胡耀邦_2001328557"
+      ],
+      "recordNames": [
+        "胡耀邦"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-archives",
+          "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977919.html",
+          "locator": "潇湘人物／胡耀邦；開頭職稱",
+          "supportedFact": "湖南省檔案局胡耀邦條目記其曾任中共中央委員會總書記。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "湖南省檔案局胡耀邦條目記其曾任中共中央委員會總書記。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_陳雲_2004397497",
+      "recordIds": [
+        "minister_陳雲_2004397497"
+      ],
+      "recordNames": [
+        "陳雲"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-official-historical-texts",
+          "url": "https://www.gov.cn/ldhd/2005-06/14/content_6183.htm",
+          "locator": "胡錦濤2005年6月13日紀念講話／新中國成立後任職段",
+          "supportedFact": "該官方紀念講話記陳雲曾任政務院副總理兼財政經濟委員會主任。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "紀念講話是政治機構自述。本條只採姓名與職務，不採對功績、路線及人格的評價。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "該官方紀念講話記陳雲曾任政務院副總理兼財政經濟委員會主任。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_李鵬_2004025016",
+      "recordIds": [
+        "minister_李鵬_2004025016"
+      ],
+      "recordNames": [
+        "李鵬"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-defense-biographies",
+          "url": "http://www.mod.gov.cn/gfbw/sy/rt/4846837_2.html",
+          "locator": "李鵬同志生平／開頭及1988年任命段",
+          "supportedFact": "李鵬曾任國務院總理與第九屆全國人大常委會委員長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "李鵬曾任國務院總理與第九屆全國人大常委會委員長。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_孫科_2003921568",
+      "recordIds": [
+        "minister_孫科_2003921568"
+      ],
+      "recordNames": [
+        "孫科"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:ey-history",
+          "url": "https://www.ey.gov.tw/Page/4ED2F231892187F9/73e92b3d-a0ef-4061-a6cf-17e42ff54601",
+          "locator": "歷任院長／孫科先生／經歷",
+          "supportedFact": "行政院歷任院長頁列孫科曾任行政院、立法院與考試院院長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "該頁另有廣州任期『民國11年-5年』疑似排字錯誤，本條不採用此日期。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "行政院歷任院長頁列孫科曾任行政院、立法院與考試院院長。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_孫運璿",
+      "recordIds": [
+        "minister_孫運璿"
+      ],
+      "recordNames": [
+        "孫運璿"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:ey-history",
+          "url": "https://history.ey.gov.tw/author/sun-yun-suan/",
+          "locator": "人物頁開頭／任期19780601–19840601",
+          "supportedFact": "孫運璿曾任台灣電力公司總經理、交通部長、經濟部長及行政院長。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "孫運璿曾任台灣電力公司總經理、交通部長、經濟部長及行政院長。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-emperor_蔣經國",
+      "recordIds": [
+        "emperor_蔣經國"
+      ],
+      "recordNames": [
+        "蔣經國"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:president-biographies",
+          "url": "https://www.president.gov.tw/Page/85",
+          "locator": "第6–7任總統／任期起迄",
+          "supportedFact": "蔣經國列為中華民國第六、七任總統，任期1978年5月20日至1988年1月13日。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "蔣經國列為中華民國第六、七任總統，任期1978年5月20日至1988年1月13日。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_蔡鍔_306545930",
+      "recordIds": [
+        "general_蔡鍔_306545930"
+      ],
+      "recordNames": [
+        "蔡鍔"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:yatsen-annals",
+          "url": "https://sunology.yatsen.gov.tw/detail/4e301bdbcc580f6c9b1299ba98f3d951/",
+          "locator": "國父年譜1915年12月25日條；護國軍編制段、註161",
+          "supportedFact": "年譜記蔡鍔擔任護國軍第一軍總司令，率軍入四川。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "頁面是後出的年譜整理，所引李劍農等書目尚未另行逐本核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "年譜記蔡鍔擔任護國軍第一軍總司令，率軍入四川。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-general_張學良_903249941",
+      "recordIds": [
+        "general_張學良_903249941"
+      ],
+      "recordNames": [
+        "張學良"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:roc-archives-teaching",
+          "url": "https://art.archives.gov.tw/tw/art/1899.html",
+          "locator": "西安事變／民國24年成立西北剿匪總司令部段",
+          "supportedFact": "此檔案教學頁記張學良指揮東北軍，並於1935年任西北剿匪總司令部副司令。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此檔案教學頁記張學良指揮東北軍，並於1935年任西北剿匪總司令部副司令。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_劉少奇_1989627909",
+      "recordIds": [
+        "minister_劉少奇_1989627909"
+      ],
+      "recordNames": [
+        "劉少奇"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-officeholders",
+          "url": "https://www.gov.cn/test/2007-11/12/content_802099.htm",
+          "locator": "歷屆中華人民共和國主席／1959年4月至1965年1月欄",
+          "supportedFact": "劉少奇列為1959年4月至1965年1月期間的中華人民共和國主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-office-register",
+      "notes": "只採指定已結束任期，不把舊頁『今』當作當前任期狀態。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "劉少奇列為1959年4月至1965年1月期間的中華人民共和國主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_江澤民_1996144114",
+      "recordIds": [
+        "minister_江澤民_1996144114"
+      ],
+      "recordNames": [
+        "江澤民"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-officeholders",
+          "url": "https://www.gov.cn/test/2007-11/12/content_802099.htm",
+          "locator": "歷屆中華人民共和國主席／1993年3月至1998年3月欄",
+          "supportedFact": "江澤民列為1993年3月至1998年3月期間的中華人民共和國主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-office-register",
+      "notes": "只採指定已結束任期，不把舊頁『今』當作當前任期狀態。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "江澤民列為1993年3月至1998年3月期間的中華人民共和國主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_胡錦濤_2001472133",
+      "recordIds": [
+        "minister_胡錦濤_2001472133"
+      ],
+      "recordNames": [
+        "胡錦濤"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-officeholders",
+          "url": "https://www.gov.cn/test/2007-11/12/content_802099.htm",
+          "locator": "歷屆中華人民共和國主席／2003年3月至2008年3月欄",
+          "supportedFact": "胡錦濤列為2003年3月至2008年3月期間的中華人民共和國主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-office-register",
+      "notes": "只採指定已結束任期，不把舊頁『今』當作當前任期狀態。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "胡錦濤列為2003年3月至2008年3月期間的中華人民共和國主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_江青_2004063661",
+      "recordIds": [
+        "minister_江青_2004063661"
+      ],
+      "recordNames": [
+        "江青"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:people-party",
+          "url": "https://cpc.people.com.cn/GB/64162/64168/64561/4429448.html",
+          "locator": "中共第九屆中央委員會委員和候補委員名單／中央委員170人",
+          "supportedFact": "此歷屆大會資料庫的第九屆中央委員名單列有江青。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "只核指定屆次名單中的姓名。三條共用同一原名單，不主張其完整生涯或政治評價已核定。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此歷屆大會資料庫的第九屆中央委員名單列有江青。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_張春橋_1992829729",
+      "recordIds": [
+        "minister_張春橋_1992829729"
+      ],
+      "recordNames": [
+        "張春橋"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:people-party",
+          "url": "https://cpc.people.com.cn/GB/64162/64168/64561/4429448.html",
+          "locator": "中共第九屆中央委員會委員和候補委員名單／中央委員170人",
+          "supportedFact": "此歷屆大會資料庫的第九屆中央委員名單列有張春橋。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "只核指定屆次名單中的姓名。三條共用同一原名單，不主張其完整生涯或政治評價已核定。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此歷屆大會資料庫的第九屆中央委員名單列有張春橋。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_陳伯達_2006247710",
+      "recordIds": [
+        "minister_陳伯達_2006247710"
+      ],
+      "recordNames": [
+        "陳伯達"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:people-party",
+          "url": "https://cpc.people.com.cn/GB/64162/64168/64561/4429448.html",
+          "locator": "中共第九屆中央委員會委員和候補委員名單／中央委員170人",
+          "supportedFact": "此歷屆大會資料庫的第九屆中央委員名單列有陳伯達。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "只核指定屆次名單中的姓名。三條共用同一原名單，不主張其完整生涯或政治評價已核定。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此歷屆大會資料庫的第九屆中央委員名單列有陳伯達。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_姚文元_1991500892",
+      "recordIds": [
+        "minister_姚文元_1991500892"
+      ],
+      "recordNames": [
+        "姚文元"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-official-historical-texts",
+          "url": "https://www.gov.cn/gjjg/2008-10/16/content_1122738.htm",
+          "locator": "國家機構／姚文元；1973年段",
+          "supportedFact": "此官方人物條目記姚文元於1973年中共十大後任中央政治局委員。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此官方人物條目記姚文元於1973年中共十大後任中央政治局委員。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_王洪文_1997887182",
+      "recordIds": [
+        "minister_王洪文_1997887182"
+      ],
+      "recordNames": [
+        "王洪文"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-official-historical-texts",
+          "url": "https://www.gov.cn/test/2007-08/28/content_729620.htm",
+          "locator": "中共十屆一中全會／1973年8月30日選舉段",
+          "supportedFact": "此官方會議史料記1973年十屆一中全會選舉王洪文為中央委員會副主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此官方會議史料記1973年十屆一中全會選舉王洪文為中央委員會副主席。"
+      ]
+    },
+    {
+      "id": "reading-review:modern-minister_薄熙來_2002338295",
+      "recordIds": [
+        "minister_薄熙來_2002338295"
+      ],
+      "recordNames": [
+        "薄熙來"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:people-court-record",
+          "url": "http://politics.people.com.cn/n/2013/1025/c1001-23326738.html",
+          "locator": "山東省高級人民法院（2013）魯刑二終字第110號／當事人身分段",
+          "supportedFact": "人民網刊載的法院裁定書身分段列薄熙來曾任遼寧省長、商務部長與重慶市委書記。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "僅使用身分段的歷任職位；不保存住址等無關個資，不將判決細節換算為遊戲性格或立場分數。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "人民網刊載的法院裁定書身分段列薄熙來曾任遼寧省長、商務部長與重慶市委書記。"
+      ]
+    }
+  ],
+  "pendingIdentityGroups": [],
+  "reviewMethod": {
+    "agent": "Codex 輔助編輯核讀",
+    "humanExpertReview": false,
+    "policy": "逐頁讀出具體定位及最小命題；未獲人類史學者複核，不使用專家審定標籤。"
+  },
+  "modernCoverage": {
+    "recordCount": 72,
+    "coveredRecordCount": 72,
+    "distinctHistoricalPeople": 65,
+    "additionalReviewsThisPass": 58,
+    "additionalIdentityReviews": 3,
+    "additionalLimitedClaimReviews": 55,
+    "scope": "72張近現代卡均有至少一項具體來源核讀；不是72篇分析全文或全部生平的完整查證。",
+    "sharedEvidence": "十位元帥共用授銜記錄；江青、張春橋、陳伯達共用九屆中央委員名單。重用同一頁不是獨立交叉證據。",
+    "institutionalMetadataOnlyNames": [
+      "張作霖",
+      "吳佩孚",
+      "曹錕",
+      "黃興"
+    ],
+    "unresolvedSourceDiscrepancies": [
+      {
+        "name": "劉湘",
+        "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000294",
+        "issue": "卒日欄1月20日與正文1月23日不一致；未採日期。"
+      },
+      {
+        "name": "劉峙",
+        "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000291",
+        "issue": "卒日欄1月5日與正文1月15日不一致；未採日期。"
+      }
+    ]
+  }
+}

@@ -2,3 +2,5 @@
 /backend/static/data/history/*.json text eol=lf
 /schemas/history-package.schema.json text eol=lf
 /schemas/history-casebook.schema.json text eol=lf
+/backend/static/data/history/archive-books/*.json text eol=lf
+/data/source-archive/*.json text eol=lf

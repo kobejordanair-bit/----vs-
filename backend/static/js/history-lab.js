@@ -402,6 +402,9 @@
     matches.forEach((match, recordIndex) => {
       const card = el('article', 'lab-original-record'); card.dataset.originalId = match.link.recordId;
       add(card, el('h3', '', match.link.name + ' · ' + TYPE_NAMES[match.link.type]), note('原始 ID：' + match.link.recordId), note(match.link.note));
+      const archiveLink = el('a', 'lab-button lab-button-quiet', '查閱此人物的來源檔案 ↗');
+      archiveLink.href = '/source-archive#tab=people&person=' + encodeURIComponent(match.link.recordId);
+      archiveLink.target = '_blank'; archiveLink.rel = 'noopener'; add(card, archiveLink);
       if (match.status !== 'matched') {
         add(card, note(match.status === 'ambiguous' ? '原庫 ID／姓名／分類出現多筆相符，尚未選定記錄。' : '目前載入的資料未含這個 ID、姓名與分類完全相符的記錄。可讀取完整人物 JSON 補上；本頁不捏造原文。', true));
       } else {

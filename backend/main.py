@@ -100,6 +100,17 @@ def serve_history_lab():
         },
     )
 
+@app.get("/source-archive")
+def serve_source_archive():
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "source-archive.html"),
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            "X-Content-Type-Options": "nosniff",
+        },
+    )
+
 @app.get("/manifest.json")
 def serve_manifest():
     manifest_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json")

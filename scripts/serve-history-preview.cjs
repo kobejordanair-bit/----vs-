@@ -12,7 +12,8 @@ const ASSETS = new Set([
   '/static/js/history-lab.js', '/static/css/history-lab.css', '/static/data/legends.js',
   '/static/data/history/chuhan-foundation.v1.json', '/static/data/history/schema.v1.json',
   '/static/data/history/chuhan-cases.v1.json', '/static/art/history/archive-hall-v1.png',
-  '/static/art/history/asset-provenance.json'
+  '/static/art/history/asset-provenance.json', '/source-archive.html',
+  '/static/js/source-archive.js', '/static/css/source-archive.css', '/static/data/history/source-archive.v1.json'
 ]);
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png' };
 
@@ -51,6 +52,7 @@ function createPreviewServer(options = {}) {
     if (pathname === '/' || pathname === '/history-lab') {
       response.writeHead(302, { Location: '/history-lab.html' + (library ? '?local=1' : '') }); response.end(); return;
     }
+    if (pathname === '/source-archive') { response.writeHead(302, { Location: '/source-archive.html' }); response.end(); return; }
     if (pathname === '/favicon.ico') { response.writeHead(204); response.end(); return; }
     let raw, type;
     if (pathname === '/private-library.json' && library) {
@@ -58,7 +60,7 @@ function createPreviewServer(options = {}) {
       if (snapshotDate) response.setHeader('X-Library-Snapshot-Date', snapshotDate);
     } else if (pathname === '/preview-audit') {
       raw = Buffer.from(JSON.stringify({ productionWrites: 0, modelCalls: 0, libraryRecords: library?.count || 0, snapshotDate, requests })); type = MIME['.json'];
-    } else if (ASSETS.has(pathname)) {
+    } else if (ASSETS.has(pathname) || /^\/static\/data\/history\/archive-books\/[a-z]+\.json$/.test(pathname)) {
       const filename = path.resolve(root, '.' + pathname);
       if (!filename.startsWith(root + path.sep)) { response.writeHead(403); response.end(); return; }
       try { raw = fs.readFileSync(filename); type = MIME[path.extname(filename)]; }
@@ -85,7 +87,10 @@ if (require.main === module) {
   try {
     const options = parseOptions(process.argv.slice(2)), server = createPreviewServer(options);
     server.on('error', error => { console.error('預覽服務未啟動：' + error.message); process.exitCode = 1; });
-    server.listen(options.port, '127.0.0.1', () => console.log('史論案卷： http://127.0.0.1:' + options.port + '/history-lab.html' + (options.libraryPath ? '?local=1' : '')));
+    server.listen(options.port, '127.0.0.1', () => {
+      console.log('來源檔案館： http://127.0.0.1:' + options.port + '/source-archive');
+      console.log('史論案卷： http://127.0.0.1:' + options.port + '/history-lab.html' + (options.libraryPath ? '?local=1' : ''));
+    });
   } catch (error) { console.error(error.message); process.exitCode = 1; }
 }
 module.exports = { createPreviewServer, readPrivateLibrary, parseOptions };
