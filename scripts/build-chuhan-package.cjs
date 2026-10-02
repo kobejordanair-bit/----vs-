@@ -1,5 +1,5 @@
 'use strict';
-// Rebuild from the four checked-in, source-referenced research inputs. This
+// Rebuild from checked-in, source-referenced research inputs. This
 // builder never reads private articles and never generates historical values.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -108,10 +108,10 @@ function normalizedSource(source) {
 }
 function buildPackage(inputs) {
   Object.values(inputs).forEach(input => rejectPrivateFields(input));
-  const { early, later, geo, supply } = inputs;
+  const { early, later, geo, supply, investigation } = inputs;
   const pkg = {
-    format: 'dynasty-history-package', schemaVersion: 1, packageId: 'history:chuhan-foundation', packageVersion: '1.0.0',
-    title: '楚漢共用歷史資料層：秦亡至垓下的選定事件', locale: 'zh-Hant', createdOn: '2026-10-01',
+    format: 'dynasty-history-package', schemaVersion: 1, packageId: 'history:chuhan-foundation', packageVersion: '1.1.0',
+    title: '楚漢共用歷史資料層：秦亡至垓下的選定事件', locale: 'zh-Hant', createdOn: '2026-10-02',
     coverage: { target: '核心207–202 BCE；以秦亡、分封、楚漢關鍵合作與供給問題作選定事件切片。',
       window: { start: { era: 'BCE', year: 208 }, end: { era: 'BCE', year: 202 } }, completeness: 'curated-slice',
       selection: ['22件來源可回查的關鍵事件', '人物身份、事件角色、原紀年及相對先後', '古地名提及與事件內關係', '有出處的移動方向與定性行政／供給機制'],
@@ -276,12 +276,44 @@ function buildPackage(inputs) {
   pkg.persons = [...persons.values()].filter(x => x.claimIds.length);
   pkg.places = [...places.values()]; pkg.factions = [...factions.values()]; pkg.events = [...events.values()];
   pkg.claims = [...claims.values()];
+  integrateInvestigation(pkg, investigation);
   for (const table of ['sources', 'persons', 'places', 'factions', 'claims', 'relations', 'routes', 'economy', 'disputes']) pkg[table].sort((a, b) => a.id.localeCompare(b.id));
   for (const table of ['persons', 'places', 'factions']) for (const item of pkg[table]) item.claimIds = unique(item.claimIds);
   traditionalPresentation(pkg);
   const validation = history.validatePackage(pkg, SCHEMA);
   if (!validation.valid) throw new Error('Package validation failed:\n' + validation.errors.join('\n'));
   return pkg;
+}
+function integrateInvestigation(pkg, supplement) {
+  if (!supplement || supplement.version !== pkg.packageVersion || !Array.isArray(supplement.claims) || !Array.isArray(supplement.attachments) || !Array.isArray(supplement.sourceNotes)) throw new Error('Invalid investigation supplement');
+  const sourceMap = new Map(pkg.sources.map(source => [source.id, source]));
+  for (const review of supplement.sourceNotes) {
+    const source = sourceMap.get(review.sourceId);
+    if (!source || review.url !== source.url || !/^\d{4}-\d{2}-\d{2}$/.test(review.checkedOn) || !review.locator || !review.note) throw new Error('Missing or mismatched supplement source check: ' + review.sourceId);
+    if (review.checkedOn > source.accessedOn) source.accessedOn = review.checkedOn;
+  }
+  const known = new Set(pkg.claims.map(claim => claim.id));
+  const normalizeLocator = value => String(value).normalize('NFKC').replace(/\s+/g, '').trim();
+  const checkedPassages = new Set(supplement.sourceNotes.flatMap(review =>
+    review.locator.split(/[；;]/).filter(value => value.trim()).map(locator => review.sourceId + '|' + normalizeLocator(locator))));
+  for (const claim of supplement.claims) {
+    if (known.has(claim.id)) throw new Error('Duplicate supplement claim: ' + claim.id);
+    if (!Array.isArray(claim.evidence) || claim.evidence.some(proof => !checkedPassages.has(proof.sourceId + '|' + normalizeLocator(proof.locator)))) throw new Error('Supplement evidence passage was not reviewed: ' + claim.id);
+    known.add(claim.id); pkg.claims.push(clone(claim));
+  }
+  const entities = new Map(['persons', 'places', 'factions', 'events', 'relations', 'routes', 'economy'].flatMap(table => pkg[table]).map(entity => [entity.id, entity]));
+  const attached = new Set(), supplementIds = new Set(supplement.claims.map(claim => claim.id));
+  for (const attachment of supplement.attachments) {
+    const entity = entities.get(attachment.entityId);
+    if (!entity || !Array.isArray(attachment.claimIds) || !attachment.claimIds.length) throw new Error('Invalid supplement attachment: ' + attachment.entityId);
+    for (const id of attachment.claimIds) {
+      if (!supplementIds.has(id)) throw new Error('Attachment must reference a new supplement claim: ' + id);
+      attached.add(id);
+    }
+    entity.claimIds = unique([...entity.claimIds, ...attachment.claimIds]);
+  }
+  if (attached.size !== supplement.claims.length) throw new Error('Every supplement claim must be attached to a canonical entity');
+  pkg.coverage.selection.push('另附20項細讀主張，供鴻門、受任、合作、井陘、濰水及後勤調查使用');
 }
 function integrateGeography(geo, pkg, api) {
   for (const item of geo.claims) {
@@ -399,7 +431,7 @@ function traditionalPresentation(value, key = '') {
   return value;
 }
 function readInputs() {
-  return Object.fromEntries([['early', 'early-events'], ['later', 'later-events'], ['geo', 'places-factions'], ['supply', 'supply-records']].map(([key, name]) => [key, JSON.parse(fs.readFileSync(path.join(INPUT, name + '.json'), 'utf8'))]));
+  return Object.fromEntries([['early', 'early-events'], ['later', 'later-events'], ['geo', 'places-factions'], ['supply', 'supply-records'], ['investigation', 'investigation-supplement']].map(([key, name]) => [key, JSON.parse(fs.readFileSync(path.join(INPUT, name + '.json'), 'utf8'))]));
 }
 function verifyLibrary(filename) {
   const input = JSON.parse(fs.readFileSync(filename, 'utf8'));

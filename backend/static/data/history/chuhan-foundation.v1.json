@@ -2,10 +2,10 @@
   "format": "dynasty-history-package",
   "schemaVersion": 1,
   "packageId": "history:chuhan-foundation",
-  "packageVersion": "1.0.0",
+  "packageVersion": "1.1.0",
   "title": "楚漢共用歷史資料層：秦亡至垓下的選定事件",
   "locale": "zh-Hant",
-  "createdOn": "2026-10-01",
+  "createdOn": "2026-10-02",
   "coverage": {
     "target": "核心207–202 BCE；以秦亡、分封、楚漢關鍵合作與供給問題作選定事件切片。",
     "window": {
@@ -23,7 +23,8 @@
       "22件來源可回查的關鍵事件",
       "人物身份、事件角色、原紀年及相對先後",
       "古地名提及與事件內關係",
-      "有出處的移動方向與定性行政／供給機制"
+      "有出處的移動方向與定性行政／供給機制",
+      "另附20項細讀主張，供鴻門、受任、合作、井陘、濰水及後勤調查使用"
     ],
     "excluded": [
       "十八王全表與完整戰爭年表",
@@ -128,7 +129,7 @@
       "kind": "primary-text",
       "url": "https://zh.wikisource.org/zh-hant/史記/卷007",
       "versionUrl": "https://zh.wikisource.org/w/index.php?title=史記/卷007&oldid=5978360",
-      "accessedOn": "2026-10-01",
+      "accessedOn": "2026-10-02",
       "verification": "opened-and-read",
       "editionNote": "繁體呈現與現代標點；未核對底本版本。",
       "reuseNote": "保留司馬遷、《史記》卷名與查閱網址；古代原典與現代網頁編輯內容分開。本包僅採短節錄及自行整理。維基文庫版權頁列 CC BY-SA 4.0／GFDL，不移用現代註釋或整頁。",
@@ -170,7 +171,7 @@
       "kind": "primary-text",
       "url": "https://zh.wikisource.org/wiki/史記/卷053",
       "versionUrl": "https://zh.wikisource.org/w/index.php?title=史記/卷053&oldid=2087971",
-      "accessedOn": "2026-10-01",
+      "accessedOn": "2026-10-02",
       "verification": "opened-and-read",
       "editionNote": "實際開啟並閱讀維基文庫轉錄正文；本次未與紙本校勘。",
       "reuseNote": "只採自行整理的主張與少量原典短節錄，保留作者、卷名與查閱載體。古代原典與網頁編輯內容分開；不複製現代註釋或整頁。",
@@ -212,7 +213,7 @@
       "kind": "primary-text",
       "url": "https://zh.wikisource.org/zh-hant/史記/卷090",
       "versionUrl": null,
-      "accessedOn": "2026-10-01",
+      "accessedOn": "2026-10-02",
       "verification": "opened-and-read",
       "editionNote": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。 未固定電子修訂版本，回查須留意後續網頁更動。",
       "reuseNote": "保留司馬遷、《史記》卷名與查閱網址；古代原典與現代網頁編輯內容分開。本包僅採短節錄及自行整理。維基文庫版權頁列 CC BY-SA 4.0／GFDL，不移用現代註釋或整頁。",
@@ -240,7 +241,7 @@
       "kind": "primary-text",
       "url": "https://zh.wikisource.org/zh-hant/史記/卷092",
       "versionUrl": null,
-      "accessedOn": "2026-10-01",
+      "accessedOn": "2026-10-02",
       "verification": "opened-and-read",
       "editionNote": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。 未固定電子修訂版本，回查須留意後續網頁更動。",
       "reuseNote": "保留司馬遷、《史記》卷名與查閱網址；古代原典與現代網頁編輯內容分開。本包僅採短節錄及自行整理。維基文庫版權頁列 CC BY-SA 4.0／GFDL，不移用現代註釋或整頁。",
@@ -3020,7 +3021,12 @@
         "claim:hongmen-meeting-role-xiang-bo",
         "claim:hongmen-meeting-role-fan-kuai",
         "claim:hongmen-meeting-xiang-bo-zhang-liang",
-        "claim:hongmen-meeting"
+        "claim:hongmen-meeting",
+        "claim:case-hongmen-accusation",
+        "claim:case-hongmen-night-message",
+        "claim:case-hongmen-return-message",
+        "claim:case-hongmen-divided-actions",
+        "claim:case-hongmen-departure"
       ],
       "orderAfter": [
         "event:zi-ying-surrenders",
@@ -3331,7 +3337,11 @@
         "claim:chuhan-han-xin-appointed-role-han-xin",
         "claim:chuhan-han-xin-appointed-role-xiao-he",
         "claim:chuhan-han-xin-appointed-role-liu-bang",
-        "claim:chuhan-han-xin-appointed-xiao-he-han-xin"
+        "claim:chuhan-han-xin-appointed-xiao-he-han-xin",
+        "claim:case-appointment-flight",
+        "claim:case-appointment-purpose",
+        "claim:case-appointment-ritual",
+        "claim:case-appointment-strategic-speech"
       ],
       "orderAfter": [
         "event:liu-bang-enters-hanzhong"
@@ -3673,7 +3683,11 @@
         "claim:chuhan-jingxing-role-han-xin",
         "claim:chuhan-jingxing-role-zhang-er",
         "claim:chuhan-jingxing-role-chen-yu",
-        "claim:chuhan-jingxing-role-zhao-xie"
+        "claim:chuhan-jingxing-role-zhao-xie",
+        "claim:case-jingxing-supply-proposal",
+        "claim:case-jingxing-refusal",
+        "claim:case-jingxing-scout-report",
+        "claim:case-jingxing-consults-captive"
       ],
       "orderAfter": [],
       "orderingNote": "只保存來源敘事明示的先後；未列出的兩件事不自動排成全序。 外部前界：破魏、破代後九月（未另建事件）。",
@@ -3831,7 +3845,10 @@
         "claim:chuhan-wei-river-place-chengyang",
         "claim:chuhan-wei-river-role-han-xin",
         "claim:chuhan-wei-river-role-long-ju",
-        "claim:chuhan-wei-river-role-guan-ying"
+        "claim:chuhan-wei-river-role-guan-ying",
+        "claim:case-wei-river-alternative",
+        "claim:case-wei-river-longju-reply",
+        "claim:case-wei-river-sequence"
       ],
       "orderAfter": [
         "event:chuhan-attack-qi"
@@ -4089,7 +4106,8 @@
         "claim:chuhan-guling-role-peng-yue",
         "claim:chuhan-guling-role-xiang-yu",
         "claim:chuhan-guling-source-variants",
-        "claim:chuhan-guling-zhang-liang-liu-bang"
+        "claim:chuhan-guling-zhang-liang-liu-bang",
+        "claim:case-guling-pengyue-reply"
       ],
       "orderAfter": [
         "event:chuhan-honggou",
@@ -4327,6 +4345,762 @@
       ],
       "review": "source-checked",
       "caveat": "只表示此來源有此記述，並非獨立確證；時間與角色不外推到事件之外。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-appointment-flight",
+      "subjectId": "event:chuhan-han-xin-appointed",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:han-xin",
+        "person:xiao-he",
+        "person:liu-bang"
+      ],
+      "statement": "卷092記韓信多次與蕭何交談，蕭何看重他；韓信判斷自己仍不被漢王任用而離去，蕭何未及奏報便追趕，旁人卻向漢王報稱蕭何逃亡。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "year",
+        "original": "漢元年；漢王至南鄭後、八月東出陳倉前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；拜將本段沒有月日；前後事件限定206年中，不能加上『月下』作時間。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "信數與蕭何語至臣追亡者段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "韓信的判斷由列傳敘述者記出；蕭何逃亡是篇中他人誤報，不能與追韓信的行動混為一談。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-appointment-purpose",
+      "subjectId": "event:chuhan-han-xin-appointed",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:xiao-he",
+        "person:liu-bang",
+        "person:han-xin"
+      ],
+      "statement": "卷092記蕭何把韓信是否必要，連到漢王是長居漢中還是東向爭天下的目標；漢王表明欲東，蕭何再主張任用韓信以使其留下。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "year",
+        "original": "漢元年；漢王至南鄭後、八月東出陳倉前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；拜將本段沒有月日；前後事件限定206年中，不能加上『月下』作時間。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "至如信者國士無雙至信終亡耳段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "這是蕭何在該次對話的推薦與條件判斷，並非後世已驗證的不可替代性定律。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-appointment-ritual",
+      "subjectId": "event:chuhan-han-xin-appointed",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:xiao-he",
+        "person:liu-bang",
+        "person:han-xin"
+      ],
+      "statement": "卷092記漢王先提議拜韓信為將，蕭何說仍不足留人，漢王遂許大將；蕭何又請擇日齋戒、設壇具禮，反對像呼喚小兒一般召拜。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "year",
+        "original": "漢元年；漢王至南鄭後、八月東出陳倉前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；拜將本段沒有月日；前後事件限定206年中，不能加上『月下』作時間。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "吾為公以為將至一軍皆驚段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "職任、禮遇和推薦是不同步驟；史籍所記禮儀不自動證明受任者往後的忠誠或能力。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-appointment-strategic-speech",
+      "subjectId": "event:chuhan-han-xin-appointed",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:han-xin",
+        "person:liu-bang",
+        "person:xiang-yu"
+      ],
+      "statement": "卷092記韓信受拜後，向漢王評論項羽用人與封賞的問題，建議任用武勇之士、以城邑封功臣並趁勢東向；漢王聽其計，部署諸將。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "year",
+        "original": "漢元年；漢王至南鄭後、八月東出陳倉前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；拜將本段沒有月日；前後事件限定206年中，不能加上『月下』作時間。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "信拜禮畢至部署諸將所擊段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "對項羽的負面評語出自列傳所引韓信說辭，具有遊說目的；不能直接改寫為已測量的人格數值。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-guling-pengyue-reply",
+      "subjectId": "event:chuhan-guling",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:peng-yue",
+        "person:liu-bang"
+      ],
+      "statement": "卷090記漢王遣使召彭越合兵，彭越以魏地初定、仍畏楚軍為由表示尚不能離開；後文才記張良提出封地條件與彭越合軍。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 203
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "range",
+        "original": "卷007：漢五年；卷055：漢四年後文作其秋；卷090：漢五年秋段後",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；固陵本段未明月日；卷055其秋與卷007五年須保留差異，不能默改成精確202年某日。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-090",
+          "locator": "漢王敗使使召彭越至使者至彭越乃悉引兵段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "保留彭越的自陳理由與張良的後續分析，不能只據後來受封推定彭越當時唯一內心動機。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-hongmen-accusation",
+      "subjectId": "event:hongmen-meeting",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:liu-bang",
+        "person:xiang-yu",
+        "person:zi-ying"
+      ],
+      "statement": "卷007記曹無傷向項羽告稱沛公欲王關中、以子嬰為相並占有珍寶，接著記項羽下令準備攻擊沛公。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十二月中，項羽至戲後",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "秦漢月序；未轉換為公曆月份或日期；以兩本紀順序與高祖本紀月標記為主；通行前206年只作暫定顯示，不強填公曆日期。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "行略定秦地、曹無傷使人言於項羽段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "這是史籍引述的告發內容；記有此告發不等於告發事項已獲證實。曹無傷尚未建立本包人物節點。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-hongmen-departure",
+      "subjectId": "event:hongmen-meeting",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:liu-bang",
+        "person:zhang-liang",
+        "person:fan-kuai"
+      ],
+      "statement": "卷007記沛公藉離席與樊噲商量離去，張良留後致謝；沛公估計抵軍後，張良才向項羽送禮說明。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十二月中，項羽至戲後",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "秦漢月序；未轉換為公曆月份或日期；以兩本紀順序與高祖本紀月標記為主；通行前206年只作暫定顯示，不強填公曆日期。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "沛公已出至張良入謝段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "保留分段行動與先後；不據原文里數計算現代路程或精確分鐘。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-hongmen-divided-actions",
+      "subjectId": "event:hongmen-meeting",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:fan-zeng",
+        "person:xiang-yu",
+        "person:xiang-bo",
+        "person:zhang-liang",
+        "person:fan-kuai"
+      ],
+      "statement": "卷007記范增示意項羽未獲回應，另召項莊藉劍舞擊沛公；項伯起舞遮護沛公，張良出告樊噲，樊噲入帳並陳述沛公功勞。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十二月中，項羽至戲後",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "秦漢月序；未轉換為公曆月份或日期；以兩本紀順序與高祖本紀月標記為主；通行前206年只作暫定顯示，不強填公曆日期。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "范增數目項王至樊噲從良坐段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "范增、項伯和項羽在同方的行動並不一致；項莊未建立本包人物節點。原文對內心與對話的記述不能當成逐字現場錄音。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-hongmen-night-message",
+      "subjectId": "event:hongmen-meeting",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:xiang-bo",
+        "person:zhang-liang",
+        "person:liu-bang"
+      ],
+      "statement": "卷007記項伯夜入沛公軍，先私見張良並欲帶他離開；張良拒絕獨去，把消息轉告沛公，隨後促成項伯與沛公相見。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十二月中，項羽至戲後",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "秦漢月序；未轉換為公曆月份或日期；以兩本紀順序與高祖本紀月標記為主；通行前206年只作暫定顯示，不強填公曆日期。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "楚左尹項伯者至張良出要項伯段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "行動順序是原篇敘事；不能由項伯原本欲救張良推成其一開始就決意投漢。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-hongmen-return-message",
+      "subjectId": "event:hongmen-meeting",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:xiang-bo",
+        "person:liu-bang",
+        "person:xiang-yu"
+      ],
+      "statement": "卷007記沛公向項伯解釋守關是防其他盜賊、表示不敢背項羽；項伯當夜回報，並主張善待有入關之功的沛公，項羽許諾。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 207
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "range",
+        "original": "漢元年十二月中，項羽至戲後",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "秦漢月序；未轉換為公曆月份或日期；以兩本紀順序與高祖本紀月標記為主；通行前206年只作暫定顯示，不強填公曆日期。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "沛公奉巵酒為壽至項王許諾段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "沛公對守關理由的說明屬當事人辯解；項羽許諾的文本記述不能外推成宴會全程無風險。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-jingxing-consults-captive",
+      "subjectId": "event:chuhan-jingxing",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:han-xin",
+        "person:zhang-er"
+      ],
+      "statement": "卷092記韓信戰後令生擒李左車並解其縛、以師禮相待；問及燕齊進兵時，李左車主張休兵撫趙、以威勢遣使，韓信從計遣使燕，並請立張耳為趙王。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 205
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "precision": "range",
+        "original": "卷008：漢三年；卷016：漢三年十月",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；保留漢三年名義對照204及十月歲首跨年範圍；未完成公曆換算。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "信乃令軍中毋殺廣武君至乃立張耳為趙王段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "戰後問策與井陘當場作戰有先後，不能把後來的趙王稱號提前；李左車建議的整體預期也不等於燕齊兩地都如計無戰而下。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-jingxing-refusal",
+      "subjectId": "event:chuhan-jingxing",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:chen-yu",
+        "person:han-xin"
+      ],
+      "statement": "卷092記陳餘拒絕李左車之策，援引以多擊少的兵法，判斷漢軍遠來疲憊，並擔心避戰會使諸侯輕視趙方而來攻。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 205
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "precision": "range",
+        "original": "卷008：漢三年；卷016：漢三年十月",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；保留漢三年名義對照204及十月歲首跨年範圍；未完成公曆換算。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "成安君儒者也至廣武君策不用段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "此處同時含敘述者對陳餘的刻畫及篇中引述的理由；不能因此把所有儒者或陳餘一生歸成固定性格。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-jingxing-scout-report",
+      "subjectId": "event:chuhan-jingxing",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:han-xin",
+        "person:chen-yu"
+      ],
+      "statement": "卷092記韓信派人暗中察看，得知趙方不用李左車之策後，才敢引兵下井陘；接著部署奇兵易幟與背水作戰。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 205
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "precision": "range",
+        "original": "卷008：漢三年；卷016：漢三年十月",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；保留漢三年名義對照204及十月歲首跨年範圍；未完成公曆換算。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "韓信使人閒視至夜半傳發段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "先有偵察回報，後作部署，是篇中敘事順序；不表示偵察完全排除風險或保證戰果。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-jingxing-supply-proposal",
+      "subjectId": "event:chuhan-jingxing",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:han-xin",
+        "person:chen-yu",
+        "person:zhang-er"
+      ],
+      "statement": "卷092記李左車向陳餘提出：韓信、張耳遠道進攻，井陘道路狹窄且輜重在後，可派兵從間道截斷供應，主力堅守不戰，使漢軍進退困難。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 205
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "precision": "range",
+        "original": "卷008：漢三年；卷016：漢三年十月",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；保留漢三年名義對照204及十月歲首跨年範圍；未完成公曆換算。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "廣武君李左車說成安君段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "這是篇中尚未執行的作戰提議及其預期，不能記成趙軍已截斷漢軍供應。李左車尚未建立本包人物節點。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-logistics-delegated-action",
+      "subjectId": "economy:guanzhong-logistics",
+      "predicate": "reported-economic-mechanism",
+      "objectIds": [
+        "person:xiao-he",
+        "person:liu-bang",
+        "place:guanzhong"
+      ],
+      "statement": "卷053記蕭何守關中時處理法令與行政建置，通常先奏請允許；來不及奏報時，得依情況先行，待漢王回來再報告。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 206
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "range",
+        "original": "漢二年以後楚漢相距期間；含漢五年功臣議論回顧",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "跨期機制摘要；起止月未定，區間不表示每天有同樣產出。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-053",
+          "locator": "漢二年何守關中至上來以聞段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "顯示篇中有授權、先行與回報機制；不能外推成不受約束的永久獨立統治。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-logistics-ejun-appraisal",
+      "subjectId": "economy:guanzhong-logistics",
+      "predicate": "reported-economic-mechanism",
+      "objectIds": [
+        "person:xiao-he",
+        "person:liu-bang",
+        "place:guanzhong",
+        "place:xingyang"
+      ],
+      "statement": "卷053記鄂君論功時強調蕭何在漢軍多次失利後補兵、由關中轉漕並維持關中，據此主張蕭何的功績應居前。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 203
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "range",
+        "original": "卷053：漢五年既殺項羽、定天下後論功行封；後續位次議論",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "以漢五年保守年帶保存戰後論功敘事；未定公曆月日，亦未獨立校核後續位次議論的日期。本主張是論功當下的回顧，不表示整個年帶持續進行論功。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-053",
+          "locator": "關內侯鄂君進曰至蕭何第一曹參次之段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "鄂君是論功辯論的發言者，所述持續供給不能抹去別篇記載的局部斷糧，也不是可獨立驗證的庫存數據。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-logistics-merit-debate",
+      "subjectId": "economy:guanzhong-logistics",
+      "predicate": "reported-economic-mechanism",
+      "objectIds": [
+        "person:xiao-he",
+        "person:liu-bang"
+      ],
+      "statement": "卷053記定天下後群臣以親歷戰鬥與攻城之功質疑蕭何受封較多；高祖以發蹤指示與前線追擊的比喻回應，後續位次仍有爭論。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 203
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "range",
+        "original": "卷053：漢五年既殺項羽、定天下後論功行封；後續位次議論",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "以漢五年保守年帶保存戰後論功敘事；未定公曆月日，亦未獨立校核後續位次議論的日期。本主張是論功當下的回顧，不表示整個年帶持續進行論功。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-053",
+          "locator": "漢五年既殺項羽至列侯畢已受封段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "這是功臣分封時的論功話語，不是軍功統計表。戰鬥與組織貢獻可以被不同標準衡量。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-wei-river-alternative",
+      "subjectId": "event:chuhan-wei-river",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:long-ju",
+        "person:han-xin",
+        "person:tian-guang"
+      ],
+      "statement": "卷092記一位未具名說者勸龍且堅壁不戰，讓齊王招回失城，利用漢軍遠道客居與糧食問題迫其降服。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 203
+        },
+        "precision": "range",
+        "original": "卷016：漢四年十一月；卷092：襲齊後、平齊封王前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；原十一月未換公曆；年窗口跨204–203，不能把古十一月當公曆11月。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "人或說龍且曰至可無戰而降也段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "說者在此段未具姓名；提案與預期尚未實施，不能虛配給范增、蒯通或其他有名人物。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-wei-river-longju-reply",
+      "subjectId": "event:chuhan-wei-river",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:long-ju",
+        "person:han-xin"
+      ],
+      "statement": "卷092記龍且自稱了解韓信而認為易對付，又說若不戰使敵降，自己難有戰功；戰勝則可能取得齊地之半，因而選擇交戰。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 203
+        },
+        "precision": "range",
+        "original": "卷016：漢四年十一月；卷092：襲齊後、平齊封王前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；原十一月未換公曆；年窗口跨204–203，不能把古十一月當公曆11月。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "龍且曰吾平生知韓信為人至何為止段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "這是列傳所引龍且的自陳。對敵判斷、求功與分地預期是文本中的理由，不能推成可驗證的內心全貌。",
+      "alternatives": []
+    },
+    {
+      "id": "claim:case-wei-river-sequence",
+      "subjectId": "event:chuhan-wei-river",
+      "predicate": "event-action",
+      "objectIds": [
+        "person:han-xin",
+        "person:long-ju"
+      ],
+      "statement": "卷092依次敘述韓信夜以沙囊壅上流、引軍半渡攻擊後佯退、龍且追渡、韓信命人決囊，楚軍多數未能渡過，隨後龍且被殺。",
+      "time": {
+        "earliest": {
+          "era": "BCE",
+          "year": 204
+        },
+        "latest": {
+          "era": "BCE",
+          "year": 203
+        },
+        "precision": "range",
+        "original": "卷016：漢四年十一月；卷092：襲齊後、平齊封王前",
+        "normalization": "regnal-year-band",
+        "review": "provisional",
+        "note": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算；原十一月未換公曆；年窗口跨204–203，不能把古十一月當公曆11月。"
+      },
+      "epistemic": "source-report",
+      "evidence": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "遂戰與信夾濰水陳至殺龍且段",
+          "excerpt": null,
+          "use": "direct-statement"
+        }
+      ],
+      "review": "source-checked",
+      "caveat": "此為原篇所載戰術過程；本包沒有古河床、水量或沙囊工程資料，不能據此計算淹水面積或複製成物理模擬。",
       "alternatives": []
     },
     {
@@ -15196,7 +15970,10 @@
       "mechanism": "原章記蕭何守關中，計戶口、轉漕給軍並補充兵員；後來的功臣議論將滎陽供給列為其功。",
       "quantities": [],
       "claimIds": [
-        "claim:guanzhong-logistics"
+        "claim:guanzhong-logistics",
+        "claim:case-logistics-delegated-action",
+        "claim:case-logistics-merit-debate",
+        "claim:case-logistics-ejun-appraisal"
       ],
       "note": "正文與議論均出同一篇，不算兩個獨立經濟統計來源。"
     },
