@@ -23,13 +23,13 @@ function request(base, route, headers = {}, method = 'GET') {
 async function verify(base) {
   const expected = JSON.parse(fs.readFileSync(path.join(backend, 'static/data/history/web/manifest.json'))), checks = [];
   function check(name, fn) { fn(); checks.push(name); }
-  for (const [route, file] of [['/', 'index.html'], ['/source-archive', 'source-archive.html'], ['/history-lab', 'history-lab.html']]) {
+  for (const [route, file] of [['/', 'index.html'], ['/play', 'index.html'], ['/source-archive', 'source-archive.html'], ['/history-lab', 'history-lab.html']]) {
     const response = await request(base, route);
     check(route + ' matches shipped HTML', () => { assert.equal(response.status, 200); assert.equal(response.body.toString().replace(/\r\n/g, '\n'), fs.readFileSync(path.join(backend, file), 'utf8').replace(/\r\n/g, '\n')); });
-    if (route !== '/') check(route + ' permits same-origin workers only', () => assert.match(response.headers['content-security-policy'], /worker-src 'self'/));
+    if (!['/', '/play'].includes(route)) check(route + ' permits same-origin workers only', () => assert.match(response.headers['content-security-policy'], /worker-src 'self'/));
   }
   const openapi = await request(base, '/openapi.json');
-  check('API release version', () => { assert.equal(openapi.status, 200); assert.equal(JSON.parse(openapi.body).info.version, '15.14'); });
+  check('API release version', () => { assert.equal(openapi.status, 200); assert.equal(JSON.parse(openapi.body).info.version, '16.0'); });
   const manifestPath = '/static/data/history/web/manifest.json';
   const response = await request(base, manifestPath, { 'Accept-Encoding': 'gzip' });
   let manifest;
@@ -41,7 +41,7 @@ async function verify(base) {
   });
   const unchanged = await request(base, manifestPath, { 'Accept-Encoding': 'gzip', 'If-None-Match': response.headers.etag });
   check('manifest ETag revalidation', () => assert.equal(unchanged.status, 304));
-  const routes = ['/static/js/source-archive.js', '/static/js/source-search-engine.js', '/static/js/source-search-worker.js', '/static/js/source-links.js', '/static/css/source-archive.css', '/static/js/history-lab.js'];
+  const routes = ['/static/js/source-archive.js', '/static/js/source-search-engine.js', '/static/js/source-search-worker.js', '/static/js/source-links.js', '/static/css/source-archive.css', '/static/js/history-lab.js', '/static/js/world-engine.js', '/static/js/world-ui.js', '/static/js/world-storage.js', '/static/js/workspace-vault.js', '/static/js/play-context.js', '/static/css/world.css'];
   for (const route of routes) {
     const asset = await request(base, route, { 'Accept-Encoding': 'gzip' });
     check(route + ' matches release', () => { assert.equal(asset.status, 200); assert.equal(asset.body.toString().replace(/\r\n/g, '\n'), fs.readFileSync(path.join(backend, route), 'utf8').replace(/\r\n/g, '\n')); });
@@ -65,7 +65,9 @@ async function verify(base) {
   check('private local snapshot unavailable publicly', () => assert.equal(privateRoute.status, 404));
   const userdata = await request(base, '/api/userdata');
   check('cloud data remains authenticated', () => assert.equal(userdata.status, 403));
-  return { verifiedAt: new Date().toISOString(), base, appVersion: '15.14', release: manifest.version, passed: checks.length, checks, manifestWireBytes: response.wire.length, search: { query: '韓信', documentHits: search.results.length, totalMatches: search.totalMatches, requests, wireBytes: requests.reduce((sum, item) => sum + item.wireBytes, 0) }, limitation: 'Read-only HTTP and search-engine validation; not a rendered browser visual check.' };
+  const world = await request(base, '/api/world-workspace');
+  check('world workspace remains authenticated', () => assert.equal(world.status, 403));
+  return { verifiedAt: new Date().toISOString(), base, appVersion: '16.0', release: manifest.version, passed: checks.length, checks, manifestWireBytes: response.wire.length, search: { query: '韓信', documentHits: search.results.length, totalMatches: search.totalMatches, requests, wireBytes: requests.reduce((sum, item) => sum + item.wireBytes, 0) }, limitation: 'Read-only HTTP and search-engine validation; not a rendered browser visual check.' };
 }
 if (require.main === module) {
   const base = process.argv[2] || 'https://dynasty-ydov.onrender.com', output = process.argv[3];

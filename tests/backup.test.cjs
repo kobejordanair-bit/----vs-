@@ -135,10 +135,10 @@ test('future schema, future app version, unknown format and recovery archives ar
     const current = fixture(), before = JSON.stringify(current);
     const cases = [
         { ...backup.createBackup(current), schemaVersion: 2 },
-        { ...backup.createBackup(current), appVersion: '15.14' },
-        { ...backup.createBackup(current), appVersion: '16.0' },
-        { ...backup.createBackup(current), appVersion: '15.13.1' },
-        { version: '16.0', customLegends: [] },
+        { ...backup.createBackup(current), appVersion: '16.1' },
+        { ...backup.createBackup(current), appVersion: '17.0' },
+        { ...backup.createBackup(current), appVersion: '16.0.1' },
+        { version: '17.0', customLegends: [] },
         { ...backup.createBackup(current), format: 'unknown' },
         { format: 'dynasty-recovery-bundle', exportedState: current, characters: [] },
         { exportedState: current, characters: [] },
@@ -146,6 +146,14 @@ test('future schema, future app version, unknown format and recovery archives ar
     ];
     for (const value of cases) assert.throws(() => backup.parseBackup(value, current));
     assert.equal(JSON.stringify(current), before);
+});
+
+test('v16 accepts the full 15.14 archive release and current backups without changing data fields', () => {
+    const current = fixture();
+    for (const appVersion of ['15.14', '16.0']) {
+        const created = backup.createBackup(current, { appVersion });
+        assert.deepEqual(backup.parseBackup(created).data, current);
+    }
 });
 
 test('complete v1 backup must contain all ten fields and reject unknown data', () => {

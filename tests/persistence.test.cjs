@@ -491,3 +491,14 @@ test('legacy local migration preserves ambiguous names and never replaces a curr
     assert.deepEqual(existing.state().data.modifiedLegends, fixture().modifiedLegends);
     assert.equal(existing.postRequests().length, 0);
 });
+
+test('optional world UI initialization failure cannot close a successful userdata load gate', async () => {
+    const h = harness();
+    h.evaluate('globalThis.readyWorldWorkspace = async () => { throw new Error("synthetic world UI failure"); };');
+    await h.init();
+    await turn();
+    assert.equal(h.store().ready, true);
+    assert.equal(h.postRequests().length, 0);
+    assert.deepEqual(h.state().data.customLegends, fixture().customLegends);
+    assert(h.alerts.some(message => message.includes('世界書桌載入失敗')));
+});
