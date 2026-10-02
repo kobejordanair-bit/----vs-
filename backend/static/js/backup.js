@@ -8,7 +8,7 @@
 
     const FORMAT = 'dynasty-backup';
     const SCHEMA_VERSION = 1;
-    const APP_VERSION = '15.10';
+    const APP_VERSION = '15.13';
     const PERSISTED_FIELDS = Object.freeze([
         'customLegends', 'modifiedLegends', 'chatHistories', 'simulationHistory',
         'discussionHistories', 'soulSaves', 'hegemonySavedSim', 'scenes',

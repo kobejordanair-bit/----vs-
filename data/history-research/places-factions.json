@@ -1,0 +1,3004 @@
+{
+  "researchVersion": "places-factions-research-1",
+  "compiledOn": "2026-10-01",
+  "authoringStatus": "唯讀來源研究與schema反方審查；供最終builder轉換，不是app公用schema或部署資料包",
+  "scope": {
+    "label": "楚漢207–202 BCE首包的地點與核心政體",
+    "primaryPlaceCount": 12,
+    "coreFactionCount": 5,
+    "minimalIdentityDisambiguationCount": 5,
+    "geographyMode": "來源支持的事件拓撲；無現代座標、無編造地理連線",
+    "chronologyMode": "原紀年優先；BCE標定為有不確定性／傳統年標籤的候選，不是古曆公曆精算",
+    "claimsReadMode": "所有source_report僅表示所引史料確有該敘述；其餘類型依claimKind區別"
+  },
+  "sourceReview": {
+    "searchWorkstreams": 3,
+    "searchResultsRequested": 25,
+    "acceptedOpenedSourceUrls": 12,
+    "acceptedSourceBreakdown": {
+      "ancientPrimaryTranscriptions": 7,
+      "institutionalPages": 5
+    },
+    "excludedCategories": [
+      "旅遊聚合與自媒體",
+      "AI式偽原文網頁",
+      "百科、論壇與未核紙本鏡像"
+    ],
+    "process": "Exa 搜尋後實際fetch原文URL；所有古典 evidenceText 已逐來源正文檢索，沒有從摘要冒充正文。"
+  },
+  "datePolicy": {
+    "noYearZero": true,
+    "rangeOrder": "earliest/latest為時間先後；BCE年數較大的較早",
+    "unknownValue": null,
+    "approximateYearLabels": "未經calendar conversion不得視為精確月日",
+    "scopeBoundaryNotEntityBoundary": true
+  },
+  "sources": [
+    {
+      "id": "source:shiji-007",
+      "title": "《史記》卷七〈項羽本紀〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷007",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "originalDate": "西漢；非網頁建立日期",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:shiji-008",
+      "title": "《史記》卷八〈高祖本紀〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷008",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "originalDate": "西漢；非網頁建立日期",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:shiji-016",
+      "title": "《史記》卷十六〈秦楚之際月表〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷016",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "editorialCaveat": "網頁表格含「公元前」對照欄；這是後世編者增補，不屬司馬遷原文。只能按原紀年／月／國別欄定位，不把增補欄當原文證據。",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:shiji-055",
+      "title": "《史記》卷五十五〈留侯世家〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷055",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:shiji-089",
+      "title": "《史記》卷八十九〈張耳陳餘列傳〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷089",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "integrationNote": "需新增來源 ID；卷 090 不是張耳陳餘列傳。",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:shiji-090",
+      "title": "《史記》卷九十〈魏豹彭越列傳〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷090",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:shiji-092",
+      "title": "《史記》卷九十二〈淮陰侯列傳〉",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷092",
+      "sourceKind": "ancient_primary_text_transcription",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "author": "司馬遷",
+      "rights": {
+        "originalText": "古代原文屬公有領域",
+        "transcriptionAndAnnotations": "網頁版次及轉錄／注釋授權仍需個別檢核；此稿只保留短原文定位與來源連結",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:ncha-qin-xianyang-2022",
+      "title": "國家文物局：陝西秦咸陽城遺址",
+      "url": "http://www.ncha.gov.cn/art/2022/3/18/art_2590_39.html",
+      "sourceKind": "institutional_archaeology_summary",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "publisher": "國家文物局",
+      "publishedAt": "2022-03-18",
+      "pageAuthor": "劉易寒",
+      "rights": {
+        "originalText": "現代文字有著作權；授權未確認",
+        "reuse": "自寫摘要、引用來源網址，不打包全文／照片／地圖",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:kaogu-qin-han-cities-2020",
+      "title": "中國社會科學院考古研究所：徐龍國秦漢城邑講座回顧",
+      "url": "http://kaogu.cssn.cn/xwzx/kgdt/202012/t20201229_5945843.shtml",
+      "sourceKind": "institutional_hosted_lecture_report",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "publisher": "中國社會科學院考古研究所",
+      "originalPublisher": "山大考古",
+      "pageAuthor": "楊慶華",
+      "publishedAt": "2020-12-29",
+      "caveat": "講座報導，不是完整田野發掘報告；2020 年的未發現／不清楚不能自動當作 2026 年最新結論。",
+      "rights": {
+        "originalText": "現代文字有著作權；授權未確認",
+        "reuse": "自寫摘要、引用來源網址，不打包全文／照片／地圖",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:guzhen-gaixia-2026",
+      "title": "固鎮縣人民政府：垓下遺址",
+      "url": "https://www.guzhen.gov.cn/zjgz/gzgk/gjjs/gxyz/index.html",
+      "sourceKind": "institutional_heritage_description",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "publisher": "固鎮縣人民政府縣政府辦公室",
+      "publishedAt": "2026-03-17",
+      "caveat": "可引用為該機構對濠城遺址的定位主張；文中通俗敘事不可全當《史記》明載。",
+      "rights": {
+        "originalText": "現代文字有著作權；授權未確認",
+        "reuse": "自寫摘要、引用來源網址，不打包全文／照片／地圖",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:counsellor-gaixia-2010",
+      "title": "國務院參事室刊載：〈「垓下遺址」以誤傳誤何時了〉",
+      "url": "http://old.counsellor.gov.cn/wsxc/2010-07-08/16316.shtml",
+      "sourceKind": "institutional_hosted_authored_opinion",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "publisher": "國務院參事室",
+      "pageAuthor": "孫淮濱",
+      "publishedAt": "2010-07-08",
+      "caveat": "有署名的地望論辯文章；機構刊載不等於考古界一致結論或官方裁定。",
+      "rights": {
+        "originalText": "現代文字有著作權；授權未確認",
+        "reuse": "自寫摘要、引用來源網址，不打包全文／照片／地圖",
+        "retrievedPageNotRedistributed": true
+      }
+    },
+    {
+      "id": "source:cctv-gaixia-2002",
+      "title": "CCTV／人民日報：垓下尋跡",
+      "url": "https://www.cctv.com/geography/news/20020530/22.html",
+      "sourceKind": "institutional_media_report",
+      "accessedAt": "2026-10-01",
+      "accessMethod": "Exa web_fetch_exa：實際擷取並讀取正文",
+      "accessVerified": true,
+      "publisher": "CCTV 國家地理",
+      "originalPublisher": "人民日報",
+      "pageAuthor": "劉選武",
+      "publishedAt": "2002-05-30",
+      "caveat": "只作地望爭議曾存在的報導證據；不採其中軍隊人數、旅遊敘事與傳說為已證實史實。",
+      "rights": {
+        "originalText": "現代文字有著作權；授權未確認",
+        "reuse": "自寫摘要、引用來源網址，不打包全文／照片／地圖",
+        "retrievedPageNotRedistributed": true
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:place-guanzhong-region",
+      "subjectIds": [
+        "place:guanzhong"
+      ],
+      "statement": "《項羽本紀》把關中作為可建都、可分封的廣域；應建模為區域，而非單座城。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "項羽屠咸陽後勸都、分封漢王與三秦兩段",
+          "evidenceText": "而三分關中"
+        }
+      ],
+      "caveat": "「巴、蜀亦關中地也」是分封理由中的發言，不能直接當成自然地理包含關係。"
+    },
+    {
+      "id": "claim:place-xianyang-city",
+      "subjectIds": [
+        "place:xianyang"
+      ],
+      "statement": "原文明載入咸陽、秦宮室及財物府庫；此處咸陽是秦都城邑，不等同今天同名行政市。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢元年十月，沛公入秦後",
+          "evidenceText": "遂西入咸陽"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-xianyang-archaeology",
+      "subjectIds": [
+        "place:xianyang"
+      ],
+      "statement": "國家文物局介紹的廣義秦咸陽城遺址由城區、陵墓區與園囿等構成，涉及渭河南北；城市遺址不能壓成單一現代點座標。",
+      "claimKind": "modern_archaeological_summary",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:ncha-qin-xianyang-2022",
+          "locator": "正文首段：廣義秦咸陽城包含範圍"
+        }
+      ],
+      "caveat": "此处「渭河」不是本包的「濰水」；不建立兩者同一 identity。"
+    },
+    {
+      "id": "claim:place-xianyang-layout-caution",
+      "subjectIds": [
+        "place:xianyang"
+      ],
+      "statement": "2020 年秦漢城邑講座報導仍指出秦咸陽城的城牆與布局存在待解問題；模型應容納布局未確定。",
+      "claimKind": "dated_research_status",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:kaogu-qin-han-cities-2020",
+          "locator": "第一部分，都城方面秦咸陽城介紹"
+        }
+      ],
+      "caveat": "僅表示 2020 年報導的研究狀態，不能覆蓋較新研究。"
+    },
+    {
+      "id": "claim:place-hongmen-site",
+      "subjectIds": [
+        "place:hongmen"
+      ],
+      "statement": "原文將項羽軍置於「新豐鴻門」，在此相見；鴻門宜作營地／會見地點，不先認定城邑或獨立會戰戰場。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "沛公軍霸上，曹無傷告密及鴻門相見段",
+          "evidenceText": "在新豐鴻門"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-hanzhong-domain",
+      "subjectIds": [
+        "place:hanzhong"
+      ],
+      "statement": "漢中是漢王受封統治範圍中的一個區域，不能與南鄭或現代漢中市合併。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "分封漢王段",
+          "evidenceText": "王巴、蜀、漢中，都南鄭"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-nanzheng-seat",
+      "subjectIds": [
+        "place:nanzheng"
+      ],
+      "statement": "南鄭明載為漢王都城，與廣域漢中分別建實體。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "正月分封漢王、四月就國至南鄭段",
+          "evidenceText": "都南鄭"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-pengcheng-seat",
+      "subjectIds": [
+        "place:pengcheng",
+        "faction:chu"
+      ],
+      "statement": "彭城明載為項羽西楚都城。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "十八王分封段末",
+          "evidenceText": "項王自立為西楚霸王，王九郡，都彭城"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-xingyang-city",
+      "subjectIds": [
+        "place:xingyang"
+      ],
+      "statement": "原文記滎陽圍城、城門與攻下滎陽城；主類是城邑，相關戰役另建事件。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢三年滎陽圍城及周苛守城段",
+          "evidenceText": "楚下滎陽城"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-chenggao-city",
+      "subjectIds": [
+        "place:chenggao"
+      ],
+      "statement": "原文記成皋被圍與北門；主類是城邑，可附戰略通道標籤，不能直接與虎牢關同一化。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢四年成皋被圍與漢王逃出段",
+          "evidenceText": "出成皋北門"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-jingxing-pass",
+      "subjectIds": [
+        "place:jingxing"
+      ],
+      "statement": "井陘在此為軍隊通行的狹窄道路／隘口，存在路線範圍，不能把通道與井陘之戰全部壓成同一點。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "李左車勸陳餘截韓信輜重段",
+          "evidenceText": "今井陘之道，車不得方軌，騎不得成列"
+        }
+      ]
+    },
+    {
+      "id": "claim:place-wei-river",
+      "subjectIds": [
+        "place:wei-river"
+      ],
+      "statement": "龍且與韓信夾「濰水」列陣；此 river 指濰水／潍水，與關中「渭水／渭河」是不同河流。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "龍且援齊，與韓信隔水對陣段",
+          "evidenceText": "遂戰，與信夾濰水陳"
+        }
+      ],
+      "forbiddenAliasMerge": [
+        "渭水",
+        "渭河"
+      ]
+    },
+    {
+      "id": "claim:place-guling-locality",
+      "subjectIds": [
+        "place:guling"
+      ],
+      "statement": "固陵是漢軍追楚、敗後入壁自守的地點；原文不充分證明它是一座已知邊界的城邑。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢五年追楚、韓信彭越不會段",
+          "evidenceText": "至固陵，而信、越之兵不會"
+        }
+      ],
+      "exactModernLocation": "未在本次來源核查中確立"
+    },
+    {
+      "id": "claim:place-gaixia-field",
+      "subjectIds": [
+        "place:gaixia"
+      ],
+      "statement": "垓下明載項羽築壁、兵少食盡及被圍；此包記為戰場／營壘區域，古城址與整個戰場需分開。",
+      "claimKind": "classification_from_source_usage",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢軍諸侯會垓下、項王軍壁段",
+          "evidenceText": "項王軍壁垓下，兵少食盡"
+        }
+      ]
+    },
+    {
+      "id": "claim:gaixia-haocheng-candidate",
+      "subjectIds": [
+        "place:gaixia"
+      ],
+      "statement": "固鎮政府的遺址介紹採濠城、沱河南岸的定位，並介紹該遺址的考古文化層與城址；這是現代機構的地望主張。",
+      "claimKind": "modern_location_identification",
+      "certainty": "source_claim_disputed",
+      "citations": [
+        {
+          "sourceId": "source:guzhen-gaixia-2026",
+          "locator": "正文首段及考古介紹段"
+        }
+      ],
+      "candidateId": "candidate:gaixia-haocheng-south-bank",
+      "notEquivalentToBattlefieldExtent": true
+    },
+    {
+      "id": "claim:gaixia-lingbi-candidate",
+      "subjectIds": [
+        "place:gaixia"
+      ],
+      "statement": "孫淮濱的論辯文章主張靈璧東南、沱河北岸，反對濠城南岸說；保留署名立場，不採其「定論」措辭為共識。",
+      "claimKind": "modern_location_identification",
+      "certainty": "source_claim_disputed",
+      "citations": [
+        {
+          "sourceId": "source:counsellor-gaixia-2010",
+          "locator": "文章討論《辭海》2009 修訂與南北岸位置段"
+        }
+      ],
+      "candidateId": "candidate:gaixia-lingbi-north-bank"
+    },
+    {
+      "id": "claim:gaixia-disagreement",
+      "subjectIds": [
+        "place:gaixia"
+      ],
+      "statement": "2002 年報導已列出河南鹿邑、安徽靈璧北岸與固鎮濠城南岸等不同地望說法；此研究保留爭議，不用單一精確座標裁決。",
+      "claimKind": "reported_location_disagreement",
+      "certainty": "different_modern_claims_exist",
+      "citations": [
+        {
+          "sourceId": "source:cctv-gaixia-2002",
+          "locator": "「垓下古戰場到底在哪裡」及後續論證會兩段"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qin-collapse",
+      "subjectIds": [
+        "faction:qin",
+        "place:xianyang"
+      ],
+      "statement": "《高祖本紀》漢元年十月記秦王子嬰投降、沛公入咸陽；秦朝廷的統治終止應與後續子嬰被殺分開事件。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢元年十月，至霸上、子嬰降軹道旁段",
+          "evidenceText": "秦王子嬰素車白馬"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qin-king-killed",
+      "subjectIds": [
+        "faction:qin",
+        "place:xianyang"
+      ],
+      "statement": "《項羽本紀》另記項羽在鴻門相見數日後屠咸陽、殺秦降王子嬰；不是同一天的投降事件。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "鴻門後居數日段",
+          "evidenceText": "居數日，項羽引兵西屠咸陽"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-han-investiture",
+      "subjectIds": [
+        "faction:han",
+        "place:hanzhong",
+        "place:nanzheng"
+      ],
+      "statement": "劉邦受封漢王，王巴、蜀、漢中，都南鄭；受封前的沛公軍与汉王政体必须分阶段。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "正月項羽分封、四月漢王就國段",
+          "evidenceText": "立沛公為漢王"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-chu-investiture",
+      "subjectIds": [
+        "faction:chu",
+        "place:pengcheng"
+      ],
+      "statement": "項羽自立西楚霸王；不應把受封前的楚軍與西楚王國階段視為完全同一稱號。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "分封末，項王自立段",
+          "evidenceText": "項王自立為西楚霸王，王九郡，都彭城"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-chu-defeat",
+      "subjectIds": [
+        "faction:chu",
+        "place:gaixia"
+      ],
+      "statement": "漢五年原文記垓下楚軍被破，項羽敗走及追殺；西楚項羽政權的結束不能推出所有以楚命名的王國從此不存在。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "五年，高祖與諸侯兵共擊楚軍段",
+          "evidenceText": "五年，高祖與諸侯兵共擊楚軍"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-zhao-displacement-restoration",
+      "subjectIds": [
+        "faction:zhao"
+      ],
+      "statement": "項羽先徙趙王歇為代王、立張耳為常山王；陳餘借齊兵擊常山，迎歇復趙。趙系身份下存在競爭政體，不是五年不變的一國。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "分封趙與田榮、陳餘反楚兩段",
+          "evidenceText": "陳餘迎故趙王歇於代，反之趙"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-zhao-jingxing",
+      "subjectIds": [
+        "faction:zhao",
+        "place:jingxing"
+      ],
+      "statement": "井陘之戰中韓信軍斬陳餘、擒趙王歇，之後又有汉方赵王阶段。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "背水陣後趙軍潰敗及李左車計段",
+          "evidenceText": "禽趙王歇"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-zhao-zhang-er-dating-008",
+      "subjectIds": [
+        "faction:zhao"
+      ],
+      "statement": "《高祖本紀》把張耳為趙王寫在井陘戰後「其明年」；此為一個原文紀年主張。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "三年，張耳韓信東下井陘擊趙後",
+          "evidenceText": "其明年，立張耳為趙王"
+        }
+      ],
+      "conflictGroup": "conflict:zhang-er-investiture-year"
+    },
+    {
+      "id": "claim:faction-zhao-zhang-er-dating-089",
+      "subjectIds": [
+        "faction:zhao"
+      ],
+      "statement": "《張耳陳餘列傳》把立張耳趙王連在漢三年戰趙記述後；文字銜接與卷八、月表需要對讀。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-089",
+          "locator": "漢三年韓信已定魏地、井陘戰及立張耳段",
+          "evidenceText": "漢立張耳為趙王"
+        }
+      ],
+      "conflictGroup": "conflict:zhang-er-investiture-year",
+      "caveat": "段落銜接可能是敘事概述，不能只憑此武斷宣稱真正年代互相矛盾。"
+    },
+    {
+      "id": "claim:faction-zhao-zhang-er-dating-016",
+      "subjectIds": [
+        "faction:zhao"
+      ],
+      "statement": "《秦楚之際月表》的趙欄把趙王張耳始、漢立之列在漢四年十一月對應行；可為詳細日期候選，仍保留原曆。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以後表：漢欄四年十一月行／趙欄",
+          "evidenceText": "趙王張耳始，漢立之"
+        }
+      ],
+      "conflictGroup": "conflict:zhang-er-investiture-year"
+    },
+    {
+      "id": "claim:faction-zhao-succession",
+      "subjectIds": [
+        "faction:zhao"
+      ],
+      "statement": "《張耳陳餘列傳》記漢五年張耳薨、子張敖嗣立；不能把 faction:zhao 的歷史終點設為井陘之戰。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-089",
+          "locator": "漢五年，張耳薨及子敖嗣立段",
+          "evidenceText": "漢五年，張耳薨，謚為景王。子敖嗣立為趙王"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qi-partition-reunification",
+      "subjectIds": [
+        "faction:qi"
+      ],
+      "statement": "項羽分原齊為齊、膠東、濟北；田榮擊殺田市、田安，逐田都後並三齊。三齊不能都隱藏為永久同一齊勢力。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "分齊三王、田榮反楚段",
+          "evidenceText": "田榮怒，追擊殺之即墨"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qi-tian-guang",
+      "subjectIds": [
+        "faction:qi"
+      ],
+      "statement": "項羽攻齊、田榮死後，田橫收齊並立田榮子廣為齊王；是田氏內部領導階段的變化。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "彭城之戰後，項王之救彭城段",
+          "evidenceText": "立田榮子廣為齊王"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qi-han-conquest",
+      "subjectIds": [
+        "faction:qi",
+        "place:wei-river"
+      ],
+      "statement": "《淮陰侯列傳》記濰水戰後漢四年平齊、韓信求假王而受真齊王印；田氏齊與韓信齊王阶段不应混作同一永久阵营。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "濰水破龍且後、漢四年請王段",
+          "evidenceText": "漢四年，遂皆降平齊"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qi-han-xin-transfer",
+      "subjectIds": [
+        "faction:qi"
+      ],
+      "statement": "《淮陰侯列傳》記漢五年正月韓信徙楚王；齊王韓信階段的終止不是齊地或所有齊身份的消失。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-092",
+          "locator": "垓下後漢五年正月段",
+          "evidenceText": "徙齊王信為楚王"
+        }
+      ]
+    },
+    {
+      "id": "claim:scope-eighteen-kings",
+      "subjectIds": [
+        "faction:chu",
+        "faction:han",
+        "faction:zhao",
+        "faction:qi"
+      ],
+      "statement": "《秦楚之際月表》明列項籍為天下主命、主十八王，各王又分欄；五個核心 faction IDs 只是首包索引，不能聲稱完整分封政治地圖。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以後表：西楚項欄開頭",
+          "evidenceText": "主十八王"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qin-title-sequence",
+      "subjectIds": [
+        "faction:qin"
+      ],
+      "statement": "原表先記二世三年八月趙高殺二世，九月子嬰為王；是皇帝、秦王稱號先後。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以前表：秦欄二世三年八月、九月兩行",
+          "evidenceText": "九月子嬰為王"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-han-emperor",
+      "subjectIds": [
+        "faction:han"
+      ],
+      "statement": "原表漢五年二月記甲午、漢王更號為皇帝；古月保留，不直接填公曆二月。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以後表：漢欄五年二月行",
+          "evidenceText": "甲午，王更號，即皇帝位於定陶"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-qi-four-commandaries",
+      "subjectIds": [
+        "faction:qi"
+      ],
+      "statement": "月表記韓信徙楚王後齊屬漢為四郡；王的改封、地區統治與同名身份各需分開。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以後表：漢五年正月對應的齊欄",
+          "evidenceText": "屬漢，為四郡"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-chu-coalition-command",
+      "subjectIds": [
+        "faction:chu-coalition"
+      ],
+      "statement": "《高祖本紀》記楚懷王以宋義為上將軍、項羽為次將、范增為末將救趙，另令沛公西略地入關；這個名義朝廷与后来的项羽西楚应分ID。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "秦二世三年，楚懷王徙彭城及北救趙段",
+          "evidenceText": "懷王乃以宋義為上將軍"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-han-state-zhang-liang",
+      "subjectIds": [
+        "faction:han-state"
+      ],
+      "statement": "項梁使張良求韓成，立韓王，以張良為韓申徒；鴻門時張良還自稱為韓王送沛公。此韓與劉邦漢有別。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-055",
+          "locator": "項梁立楚懷王後、張良求韓成及鴻門相見兩段",
+          "evidenceText": "項梁使良求韓成，立以為韓王"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-han-state-cheng-killed",
+      "subjectIds": [
+        "faction:han-state"
+      ],
+      "statement": "分封後項羽不使韓成就國，帶至彭城，廢侯而殺；後來鄭昌、韓王信任王是別的角色階段。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢元年四月諸侯就國後韓王成段",
+          "evidenceText": "韓王成無軍功，項王不使之國"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-yong-title-offer",
+      "subjectIds": [
+        "faction:yong"
+      ],
+      "statement": "章邯與項羽盟降時已被立為雍王、置楚軍中；這是王號與留置情境，不證明當場取得咸陽以西全境。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "章邯盟於洹水南殷虛上段",
+          "evidenceText": "項羽乃立章邯為雍王，置楚軍中"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-three-qin-grants",
+      "subjectIds": [
+        "faction:yong",
+        "faction:sai",
+        "faction:di",
+        "place:guanzhong",
+        "place:xianyang"
+      ],
+      "statement": "分封三秦：章邯雍王（咸陽以西）、司馬欣塞王（咸陽以東至河）、董翳翟王（上郡）；只是原文封域敘述，不等於逐縣實控。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "分封漢王後三分關中段",
+          "evidenceText": "王咸陽以西"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-sai-di-surrender",
+      "subjectIds": [
+        "faction:sai",
+        "faction:di"
+      ],
+      "statement": "《高祖本紀》漢二年記塞王欣、翟王翳降漢；個人後來反漢入楚不能當成封國疆域自動恢復。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "二年，漢王東略地段",
+          "evidenceText": "塞王欣、翟王翳、河南王申陽皆降"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-yong-fall",
+      "subjectIds": [
+        "faction:yong"
+      ],
+      "statement": "《高祖本紀》漢二年彭城敗後、六月記廢丘降與章邯自殺。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "漢二年，六月立太子後灌廢丘段",
+          "evidenceText": "廢丘降，章邯自殺"
+        }
+      ]
+    },
+    {
+      "id": "claim:route-hongmen-xianyang",
+      "subjectIds": [
+        "place:hongmen",
+        "place:xianyang"
+      ],
+      "statement": "鴻門會見後數日，項羽引兵西至咸陽；这是特定人物、事件的移动，不是永久直达路线。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "鴻門會見結束，居數日段",
+          "evidenceText": "居數日，項羽引兵西屠咸陽"
+        }
+      ]
+    },
+    {
+      "id": "claim:route-pengcheng-xingyang",
+      "subjectIds": [
+        "place:pengcheng",
+        "place:xingyang"
+      ],
+      "statement": "彭城之戰後楚軍追漢至滎陽；有事件序列，沒有本包可用的精確里程或通行時間。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "彭城戰後諸敗軍會滎陽段",
+          "evidenceText": "楚起於彭城，常乘勝逐北"
+        }
+      ]
+    },
+    {
+      "id": "claim:route-xingyang-chenggao",
+      "subjectIds": [
+        "place:xingyang",
+        "place:chenggao"
+      ],
+      "statement": "滎陽圍城時漢王由西門逃出走成皋；是原文的撤退移动。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-007",
+          "locator": "漢三年，紀信誑楚與漢王出滎陽段",
+          "evidenceText": "漢王亦與數十騎從城西門出，走成皋"
+        }
+      ]
+    },
+    {
+      "id": "claim:sequence-guling-gaixia",
+      "subjectIds": [
+        "place:guling",
+        "place:gaixia"
+      ],
+      "statement": "固陵失約戰敗後，漢王依張良計約韓信彭越，諸軍後會垓下；只確立事件先後，不宣稱兩地地理相鄰或單一直接道路。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-008",
+          "locator": "至固陵不會、用張良計及皆大會垓下段",
+          "evidenceText": "齊梁諸侯皆大會垓下"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-han-state-foundation-date",
+      "subjectIds": [
+        "faction:han-state"
+      ],
+      "statement": "月表二世二年六月行韓欄記韓王成始；以原曆保存。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以前表：二世二年六月／韓欄",
+          "evidenceText": "韓王成始"
+        }
+      ]
+    },
+    {
+      "id": "claim:faction-chu-coalition-foundation-date",
+      "subjectIds": [
+        "faction:chu-coalition"
+      ],
+      "statement": "月表二世二年六月行楚欄記楚懷王始，項欄記項梁立懷王；不以建網頁年月取代原紀年。",
+      "claimKind": "source_report",
+      "certainty": "attested_in_source",
+      "citations": [
+        {
+          "sourceId": "source:shiji-016",
+          "locator": "滅秦以前表：二世二年六月／楚、項欄",
+          "evidenceText": "楚懷王始，都盱台"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "place:guanzhong",
+      "label": "關中",
+      "aliases": [
+        "关中"
+      ],
+      "kind": "region",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "廣域關中；範圍隨政治語境變動，不給單一城點。",
+      "claimIds": [
+        "claim:place-guanzhong-region"
+      ],
+      "sourceContext": "秦故地、分封三秦的史料語境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "region_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "「巴蜀亦關中」不能當作地理包含的無條件事實。"
+      ]
+    },
+    {
+      "id": "place:xianyang",
+      "label": "咸陽",
+      "aliases": [
+        "咸阳",
+        "秦咸陽"
+      ],
+      "kind": "city",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "秦都城邑／遺址集合；與现代咸阳市別開。",
+      "claimIds": [
+        "claim:place-xianyang-city",
+        "claim:place-xianyang-archaeology",
+        "claim:place-xianyang-layout-caution"
+      ],
+      "sourceContext": "《史記》入秦、封秦府庫與燒宮室的都城语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "settlement_area_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "古城範圍不是現代行政市界。",
+        "遺址跨渭河南北；渭河不得與本包的濰水合併。"
+      ]
+    },
+    {
+      "id": "place:hongmen",
+      "label": "鴻門",
+      "aliases": [
+        "鸿门",
+        "新豐鴻門"
+      ],
+      "kind": "site",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "營地與相見宴會地點；不是自動成立的城或會戰。",
+      "claimIds": [
+        "claim:place-hongmen-site"
+      ],
+      "sourceContext": "古新豐語境；不新增未建模的新豐實體",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "site_area_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "需 site／encampment 類型；不能因五種既有 enum 限制而造出戰場。"
+      ]
+    },
+    {
+      "id": "place:hanzhong",
+      "label": "漢中",
+      "aliases": [
+        "汉中"
+      ],
+      "kind": "region",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "漢王受封領域中的漢中區域。",
+      "claimIds": [
+        "claim:place-hanzhong-domain"
+      ],
+      "sourceContext": "與巴、蜀並列的漢王受封區域",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "region_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "與南鄭分離；不直接套现代漢中市范围。"
+      ]
+    },
+    {
+      "id": "place:nanzheng",
+      "label": "南鄭",
+      "aliases": [
+        "南郑"
+      ],
+      "kind": "city",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "漢王受封後的都城。",
+      "claimIds": [
+        "claim:place-nanzheng-seat"
+      ],
+      "sourceContext": "漢王就國及韓信受用的南鄭语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "settlement_area_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "都城與其統治區域漢中不是同一ID。"
+      ]
+    },
+    {
+      "id": "place:pengcheng",
+      "label": "彭城",
+      "aliases": [],
+      "kind": "city",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "項羽西楚都城、彭城之戰相關城邑。",
+      "claimIds": [
+        "claim:place-pengcheng-seat"
+      ],
+      "sourceContext": "西楚都彭城與漢二年戰役语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "settlement_area_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "城邑與彭城之戰事件別開；不把现代徐州市界当古城范围。"
+      ]
+    },
+    {
+      "id": "place:xingyang",
+      "label": "滎陽",
+      "aliases": [
+        "荥阳"
+      ],
+      "kind": "city",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "圍城與敖倉輸糧走廊相關城邑。",
+      "claimIds": [
+        "claim:place-xingyang-city"
+      ],
+      "sourceContext": "漢二至四年楚漢相距的城邑语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "settlement_area_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "東門／西門與甬道可為劇情證據；未核界址，無座標。"
+      ]
+    },
+    {
+      "id": "place:chenggao",
+      "label": "成皋",
+      "aliases": [],
+      "kind": "city",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "被圍、具城門的城邑；兼有通道戰略角色。",
+      "claimIds": [
+        "claim:place-chenggao-city"
+      ],
+      "sourceContext": "漢王守／失／出成皋的史料语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "settlement_area_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "不可與虎牢關無條件合併；城邑和關隘是不同空間層。"
+      ]
+    },
+    {
+      "id": "place:jingxing",
+      "label": "井陘",
+      "aliases": [
+        "井陉",
+        "井陘口"
+      ],
+      "kind": "pass",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "狹窄軍行道路／隘口走廊。",
+      "claimIds": [
+        "claim:place-jingxing-pass"
+      ],
+      "sourceContext": "韓信張耳東下擊趙、李左車論輜重的语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "corridor_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "井陘口、道路、戰役範圍應分層；不是井陘現代縣城點。"
+      ]
+    },
+    {
+      "id": "place:wei-river",
+      "label": "濰水",
+      "aliases": [
+        "潍水"
+      ],
+      "kind": "river",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "龍且與韓信夾陣的濰水。",
+      "claimIds": [
+        "claim:place-wei-river"
+      ],
+      "sourceContext": "齊、楚、韓信交戰的濰水语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "river_course_unspecified",
+        "resolutionStatus": "textual_coarse_only"
+      },
+      "cautions": [
+        "英文slug沒有辨識力；明確排除渭水、渭河。",
+        "原文戰術屬史料敘述，不保證精確河道或堵水工程已經考古確認。"
+      ]
+    },
+    {
+      "id": "place:guling",
+      "label": "固陵",
+      "aliases": [],
+      "kind": "battlefield",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "漢軍戰敗後築壁自守的戰場／營壘地點。",
+      "claimIds": [
+        "claim:place-guling-locality"
+      ],
+      "sourceContext": "漢五年約韓信彭越不會、漢王入壁自守的语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "battlefield_area_unspecified",
+        "resolutionStatus": "unknown_modern_identification"
+      },
+      "cautions": [
+        "本次沒有確立現代對應城址；不能硬設成某县某经纬度。"
+      ]
+    },
+    {
+      "id": "place:gaixia",
+      "label": "垓下",
+      "aliases": [],
+      "kind": "battlefield",
+      "kindStatus": "分類推讀原文用法；非全部經考古定位",
+      "description": "楚軍營壘與被圍的戰場區域。",
+      "claimIds": [
+        "claim:place-gaixia-field",
+        "claim:gaixia-haocheng-candidate",
+        "claim:gaixia-lingbi-candidate",
+        "claim:gaixia-disagreement"
+      ],
+      "sourceContext": "楚漢最後會戰的史料语境",
+      "location": {
+        "coordinates": null,
+        "coordinateReferenceSystem": null,
+        "bounds": null,
+        "representation": "battlefield_area_disputed",
+        "resolutionStatus": "disputed"
+      },
+      "cautions": [
+        "現代垓下遺址／古城的面積不等于整场战役范围。",
+        "濠城南岸與靈璧北岸的主張並列，不選精確點。"
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "id": "faction:qin",
+      "label": "秦廷／秦軍",
+      "identityDefinition": "首包採秦帝國末期中央朝廷與軍事體系身份；章邯降後的分封三秦不是仍然同一秦廷。",
+      "entityType": "political_identity_with_dated_regimes",
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 207
+        },
+        "end": {
+          "era": "BCE",
+          "year": 206
+        },
+        "precision": "approximate_years"
+      },
+      "existenceStart": {
+        "originalDate": null,
+        "precision": "unknown",
+        "status": "already_existed_before_207_BCE_package_start",
+        "normalizedRange": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢元年十月，秦王子嬰降",
+        "originalCalendar": "秦漢原曆／原文年號",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 207
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "coarse_regnal_window",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-qin-collapse",
+        "claim:faction-qin-king-killed"
+      ],
+      "phases": [
+        {
+          "id": "phase:qin-imperial-collapse",
+          "label": "二世末期秦廷",
+          "start": {
+            "originalDate": null,
+            "precision": "unknown",
+            "status": "already_existed_before_207_BCE_package_start",
+            "normalizedRange": null
+          },
+          "end": {
+            "originalDate": "二世三年八月，趙高殺二世",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 208
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 207
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qin-collapse",
+            "claim:faction-qin-title-sequence"
+          ],
+          "namedAgents": [
+            {
+              "name": "秦二世",
+              "role": "皇帝"
+            },
+            {
+              "name": "章邯",
+              "role": "秦將；其降楚另記事件"
+            }
+          ],
+          "caveats": [
+            "年內稱号变更需按事件锚点；不得为整个207–206 BCE都套皇帝子婴。"
+          ]
+        },
+        {
+          "id": "phase:qin-ziying-kingship",
+          "label": "子嬰秦王階段",
+          "start": {
+            "originalDate": "二世三年九月，子嬰為王",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 207
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢元年十月，子嬰降",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 207
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qin-collapse",
+            "claim:faction-qin-title-sequence"
+          ],
+          "namedAgents": [
+            {
+              "name": "子嬰",
+              "role": "秦王"
+            }
+          ],
+          "caveats": [
+            "起點原文可見卷016的秦欄；BCE月份未換算。",
+            "投降後子嬰被殺是個人命運，不是另一次秦廷成立。"
+          ]
+        }
+      ],
+      "outsideScope": [
+        "秦國早期興起與公元前221年統一制度",
+        "章邯等投降後雍／塞／翟的獨立分封政體"
+      ]
+    },
+    {
+      "id": "faction:chu",
+      "label": "項羽楚軍／西楚",
+      "identityDefinition": "此 ID 限定自立西楚霸王之後的項羽西楚政權；受封前楚懷王名義下的楚軍另為 faction:chu-coalition。也不代表所有楚地或後來韓信楚王。",
+      "entityType": "political_identity_with_dated_regimes",
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 206
+        },
+        "end": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "package_years"
+      },
+      "existenceStart": {
+        "originalDate": "漢元年正月，自立西楚霸王",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢五年，垓下敗走、項羽死",
+        "originalCalendar": "秦漢原曆／原文年號",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 203
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 202
+          }
+        },
+        "normalizationStatus": "coarse_regnal_window",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-chu-investiture",
+        "claim:faction-chu-defeat"
+      ],
+      "phases": [
+        {
+          "id": "phase:chu-western-chu",
+          "label": "西楚霸王政權",
+          "start": {
+            "originalDate": "漢元年正月，項羽自立西楚霸王",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢五年，垓下敗走、項羽死",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 203
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-chu-investiture",
+            "claim:faction-chu-defeat",
+            "claim:place-pengcheng-seat"
+          ],
+          "namedAgents": [
+            {
+              "name": "項羽",
+              "role": "西楚霸王"
+            }
+          ],
+          "caveats": [
+            "并非对十八王拥有每回合无条件指挥权。"
+          ]
+        }
+      ],
+      "outsideScope": [
+        "義帝／楚懷王朝廷独立的合法性与臣属网",
+        "九江、衡山、臨江独立王国",
+        "韩信受封楚王后的新政体"
+      ]
+    },
+    {
+      "id": "faction:han",
+      "label": "劉邦軍／漢",
+      "identityDefinition": "此 ID 自劉邦受封漢王起；受封前沛公是楚懷王名義下獨立指揮的軍隊，不倒推為已存在的漢王國。稱帝另為階段，人物指揮連續性由 person ID 與事件角色連接。",
+      "entityType": "political_identity_with_dated_regimes",
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 206
+        },
+        "end": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "package_years"
+      },
+      "existenceStart": {
+        "originalDate": "漢元年正月，立沛公為漢王",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": null,
+        "precision": "unknown",
+        "status": "continues_after_package_end",
+        "normalizedRange": null
+      },
+      "claimIds": [
+        "claim:faction-han-investiture",
+        "claim:faction-qin-collapse",
+        "claim:faction-han-emperor"
+      ],
+      "phases": [
+        {
+          "id": "phase:han-kingship",
+          "label": "漢王政權",
+          "start": {
+            "originalDate": "漢元年正月，立沛公為漢王",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢五年，諸侯請尊漢王為皇帝",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 202
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-han-investiture"
+          ],
+          "namedAgents": [
+            {
+              "name": "劉邦",
+              "role": "漢王"
+            }
+          ],
+          "caveats": [
+            "初封地巴蜀漢中与后来占领关中不是同一时间切片。"
+          ]
+        },
+        {
+          "id": "phase:han-imperial-transition",
+          "label": "漢帝國建立與戰後改封",
+          "start": {
+            "originalDate": "漢五年，諸侯請尊漢王為皇帝",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 202
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": null,
+            "precision": "unknown",
+            "status": "continues_after_package_end",
+            "normalizedRange": null
+          },
+          "claimIds": [
+            "claim:faction-chu-defeat",
+            "claim:faction-qi-han-xin-transfer",
+            "claim:faction-han-emperor"
+          ],
+          "namedAgents": [
+            {
+              "name": "劉邦",
+              "role": "皇帝"
+            }
+          ],
+          "caveats": [
+            "202 BCE是数据包终点，不是汉朝实体终点。"
+          ]
+        }
+      ],
+      "outsideScope": [
+        "整個西漢帝國後續史",
+        "所有漢方附屬諸侯、將領私人部曲与地方势力的独立完整数据"
+      ]
+    },
+    {
+      "id": "faction:zhao",
+      "label": "趙系政體",
+      "identityDefinition": "趙地王號及競爭／改立政體的索引身份；phase不可當作同一個不變國家、控制範圍或盟友。",
+      "entityType": "political_identity_group_not_single_continuous_regime",
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 207
+        },
+        "end": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "package_years"
+      },
+      "existenceStart": {
+        "originalDate": null,
+        "precision": "unknown",
+        "status": "already_existed_before_207_BCE_package_start",
+        "normalizedRange": null
+      },
+      "existenceEnd": {
+        "originalDate": null,
+        "precision": "unknown",
+        "status": "continues_after_package_end",
+        "normalizedRange": null
+      },
+      "claimIds": [
+        "claim:faction-zhao-displacement-restoration",
+        "claim:faction-zhao-jingxing",
+        "claim:faction-zhao-succession"
+      ],
+      "phases": [
+        {
+          "id": "phase:zhao-xie-prepartition",
+          "label": "趙王歇、張耳陳餘合作階段",
+          "start": {
+            "originalDate": null,
+            "precision": "unknown",
+            "status": "already_existed_before_207_BCE_package_start",
+            "normalizedRange": null
+          },
+          "end": {
+            "originalDate": "漢元年，徙趙王歇為代王，張耳為常山王",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-zhao-displacement-restoration"
+          ],
+          "namedAgents": [
+            {
+              "name": "趙歇",
+              "role": "趙王"
+            },
+            {
+              "name": "張耳",
+              "role": "趙相"
+            },
+            {
+              "name": "陳餘",
+              "role": "成安君"
+            }
+          ],
+          "caveats": [
+            "合作关系已因钜鹿救援争执改变。"
+          ]
+        },
+        {
+          "id": "phase:zhao-partition-displacement",
+          "label": "常山／代競爭與趙歇失位",
+          "start": {
+            "originalDate": "漢元年分封",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "田榮與陳餘反楚，歇復王趙",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 205
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-zhao-displacement-restoration"
+          ],
+          "namedAgents": [
+            {
+              "name": "張耳",
+              "role": "常山王"
+            },
+            {
+              "name": "趙歇",
+              "role": "代王"
+            },
+            {
+              "name": "陳餘",
+              "role": "反常山、迎趙歇"
+            }
+          ],
+          "caveats": [
+            "这是並行競爭的政體上下文，常山与代的独立疆域实体本包省略。"
+          ]
+        },
+        {
+          "id": "phase:zhao-xie-restored",
+          "label": "趙歇復趙、陳餘主兵",
+          "start": {
+            "originalDate": "漢元年秋後，歇復王趙",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 205
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢三年井陘敗趙",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 205
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 204
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-zhao-displacement-restoration",
+            "claim:faction-zhao-jingxing"
+          ],
+          "namedAgents": [
+            {
+              "name": "趙歇",
+              "role": "趙王"
+            },
+            {
+              "name": "陳餘",
+              "role": "代王；留輔趙王"
+            }
+          ],
+          "caveats": [
+            "汉二年曾派兵助汉，彭城后反汉；不可永久标 ally/neutral/enemy。"
+          ]
+        },
+        {
+          "id": "phase:zhao-zhang-er-han-client",
+          "label": "漢方張耳趙王",
+          "start": {
+            "originalDate": "卷089漢三年敘事／卷008其明年／卷016四年十一月",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 205
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 203
+              }
+            },
+            "normalizationStatus": "source_dating_requires_comparison",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢五年，張耳薨",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 203
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-zhao-zhang-er-dating-008",
+            "claim:faction-zhao-zhang-er-dating-089",
+            "claim:faction-zhao-zhang-er-dating-016",
+            "claim:faction-zhao-succession"
+          ],
+          "namedAgents": [
+            {
+              "name": "張耳",
+              "role": "趙王"
+            }
+          ],
+          "caveats": [
+            "起點保留三個文本候選；不冒充確定月日。"
+          ]
+        },
+        {
+          "id": "phase:zhao-zhang-ao-han-client",
+          "label": "漢方張敖嗣位",
+          "start": {
+            "originalDate": "漢五年，子敖嗣立",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 203
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": null,
+            "precision": "unknown",
+            "status": "continues_after_package_end",
+            "normalizedRange": null
+          },
+          "claimIds": [
+            "claim:faction-zhao-succession"
+          ],
+          "namedAgents": [
+            {
+              "name": "張敖",
+              "role": "趙王"
+            }
+          ],
+          "caveats": [
+            "截至202 BCE仍有趙王制度；不因井陘就删除整个趙identity。"
+          ]
+        }
+      ],
+      "outsideScope": [
+        "武臣趙王與更早趙國史",
+        "常山、代作独立地缘实体的全套疆域",
+        "張敖在漢七至九年的後續命運"
+      ]
+    },
+    {
+      "id": "faction:qi",
+      "label": "齊系政體",
+      "identityDefinition": "齊地競爭王號與政體的索引身份；田氏齊与韓信齊王有不同统治者、利益与臣属。",
+      "entityType": "political_identity_group_not_single_continuous_regime",
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 207
+        },
+        "end": {
+          "era": "BCE",
+          "year": 202
+        },
+        "precision": "package_years"
+      },
+      "existenceStart": {
+        "originalDate": null,
+        "precision": "unknown",
+        "status": "already_existed_before_207_BCE_package_start",
+        "normalizedRange": null
+      },
+      "existenceEnd": {
+        "originalDate": null,
+        "precision": "unknown",
+        "status": "continues_after_package_end",
+        "normalizedRange": null
+      },
+      "claimIds": [
+        "claim:faction-qi-partition-reunification",
+        "claim:faction-qi-tian-guang",
+        "claim:faction-qi-han-conquest",
+        "claim:faction-qi-han-xin-transfer"
+      ],
+      "phases": [
+        {
+          "id": "phase:qi-tian-before-partition",
+          "label": "田市、田榮主導的齊",
+          "start": {
+            "originalDate": null,
+            "precision": "unknown",
+            "status": "already_existed_before_207_BCE_package_start",
+            "normalizedRange": null
+          },
+          "end": {
+            "originalDate": "漢元年分齊為三",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qi-partition-reunification"
+          ],
+          "namedAgents": [
+            {
+              "name": "田市",
+              "role": "齊王"
+            },
+            {
+              "name": "田榮",
+              "role": "掌軍政的田氏人物"
+            }
+          ],
+          "caveats": [
+            "同姓田氏不同人，不能靠姓或名字相似合并identity。"
+          ]
+        },
+        {
+          "id": "phase:qi-three-kingdoms",
+          "label": "齊／膠東／濟北分封競爭",
+          "start": {
+            "originalDate": "漢元年分封",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢元年，田榮并三齊",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qi-partition-reunification"
+          ],
+          "namedAgents": [
+            {
+              "name": "田都",
+              "role": "齊王"
+            },
+            {
+              "name": "田市",
+              "role": "膠東王"
+            },
+            {
+              "name": "田安",
+              "role": "濟北王"
+            },
+            {
+              "name": "田榮",
+              "role": "反分封並三齊"
+            }
+          ],
+          "caveats": [
+            "此phase仅列事件上下文；三個同時存在的王國不能偽裝成单一同步领袖。"
+          ]
+        },
+        {
+          "id": "phase:qi-tian-rong",
+          "label": "田榮并三齊",
+          "start": {
+            "originalDate": "漢元年秋，田榮畔項王",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 206
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢二年冬，田榮敗死",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 206
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 205
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qi-partition-reunification",
+            "claim:faction-qi-tian-guang"
+          ],
+          "namedAgents": [
+            {
+              "name": "田榮",
+              "role": "齊王"
+            }
+          ],
+          "caveats": [
+            "冬跨曆年风险保留范围，不填现代日期。"
+          ]
+        },
+        {
+          "id": "phase:qi-tian-guang",
+          "label": "田橫復齊、田廣齊王",
+          "start": {
+            "originalDate": "漢二年，項羽救彭城後田橫立廣",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 205
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 205
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢四年冬，韓信破齊、龍且死",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 204
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 203
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qi-tian-guang",
+            "claim:faction-qi-han-conquest"
+          ],
+          "namedAgents": [
+            {
+              "name": "田廣",
+              "role": "齊王"
+            },
+            {
+              "name": "田橫",
+              "role": "軍政主導者"
+            }
+          ],
+          "caveats": [
+            "齐与楚在濰水战联合，是事件关系；不是前后五年永久盟友。"
+          ]
+        },
+        {
+          "id": "phase:qi-han-xin-kingship",
+          "label": "漢方韓信齊王",
+          "start": {
+            "originalDate": "漢四年，張良授齊王信印",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 204
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 203
+              }
+            },
+            "normalizationStatus": "coarse_regnal_window",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": "漢五年正月，韓信徙楚王",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 202
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "claimIds": [
+            "claim:faction-qi-han-conquest",
+            "claim:faction-qi-han-xin-transfer"
+          ],
+          "namedAgents": [
+            {
+              "name": "韓信",
+              "role": "齊王"
+            }
+          ],
+          "caveats": [
+            "魏豹／彭越、田橫海島餘部等不能自動归并为受他完全指挥。"
+          ]
+        },
+        {
+          "id": "phase:qi-after-transfer",
+          "label": "韓信徙楚王後的齊地處置",
+          "start": {
+            "originalDate": "漢五年正月，齊屬漢為四郡",
+            "originalCalendar": "秦漢原曆／原文年號",
+            "precision": "year_or_regnal_month",
+            "normalizedRange": {
+              "earliest": {
+                "era": "BCE",
+                "year": 202
+              },
+              "latest": {
+                "era": "BCE",
+                "year": 202
+              }
+            },
+            "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+            "exactCivilDate": null
+          },
+          "end": {
+            "originalDate": null,
+            "precision": "unknown",
+            "status": "continues_after_package_end",
+            "normalizedRange": null
+          },
+          "claimIds": [
+            "claim:faction-qi-han-xin-transfer",
+            "claim:faction-qi-four-commandaries"
+          ],
+          "namedAgents": [],
+          "caveats": [
+            "齊地的統治處置与齐王身份终止是不同层；更後來齊王復置不在此包。"
+          ]
+        }
+      ],
+      "outsideScope": [
+        "田假短暫齊王与其他田氏残部的完整人物实体",
+        "田橫海島後續；需另加卷094來源",
+        "膠東與濟北独立同時疆域",
+        "更後來漢朝齊王國复置"
+      ]
+    }
+  ],
+  "additionalFactions": [
+    {
+      "id": "faction:chu-coalition",
+      "label": "楚懷王名義下的楚系反秦軍",
+      "entityType": "nominal_court_and_separate_commands",
+      "minimalIdentityOnly": true,
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 207
+        },
+        "end": {
+          "era": "BCE",
+          "year": 206
+        }
+      },
+      "existenceStart": {
+        "originalDate": "二世二年六月，項梁立楚懷王",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 208
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 208
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢元年分封；懷王另尊義帝",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "split_identity_not_all_members_disappear",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-chu-coalition-command",
+        "claim:faction-chu-coalition-foundation-date"
+      ],
+      "namedAgents": [
+        {
+          "name": "楚懷王心",
+          "role": "名義楚王"
+        },
+        {
+          "name": "宋義",
+          "role": "上將軍；被殺日期以事件锚定"
+        },
+        {
+          "name": "項羽",
+          "role": "次將後代上將軍"
+        },
+        {
+          "name": "劉邦",
+          "role": "沛公／武安侯，另一路軍指揮"
+        }
+      ],
+      "cautions": [
+        "不是秦末所有反秦諸侯的同一個國家。",
+        "鉅鹿後諸侯軍屬項羽是軍事從屬事件，不能推成所有趙齊臣民都屬楚國。",
+        "西楚成立後義帝廷仍是不同法統身份，本包省略其完整独立entity。"
+      ]
+    },
+    {
+      "id": "faction:han-state",
+      "label": "韓（韓王成之韓）",
+      "entityType": "restored_kingdom",
+      "minimalIdentityOnly": true,
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 207
+        },
+        "end": {
+          "era": "BCE",
+          "year": 206
+        }
+      },
+      "existenceStart": {
+        "originalDate": "二世二年六月，韓王成始",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 208
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 208
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢元年，項羽廢殺韓成",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-han-state-zhang-liang",
+        "claim:faction-han-state-cheng-killed",
+        "claim:faction-han-state-foundation-date"
+      ],
+      "namedAgents": [
+        {
+          "name": "韓成",
+          "role": "韓王"
+        },
+        {
+          "name": "張良",
+          "role": "韓申徒"
+        }
+      ],
+      "cautions": [
+        "韓（Han state）與漢（Liu Bang Han）不能同英文音譯合併。",
+        "韓成死不是所有後續韓王都不存在；鄭昌與韓王信的政體階段需另按事件補證。"
+      ]
+    },
+    {
+      "id": "faction:yong",
+      "label": "雍（章邯）",
+      "entityType": "partition_kingdom",
+      "minimalIdentityOnly": true,
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 206
+        },
+        "end": {
+          "era": "BCE",
+          "year": 205
+        }
+      },
+      "existenceStart": {
+        "originalDate": "漢元年正月，三分關中授雍封域",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢二年六月，廢丘降、章邯死",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 205
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 205
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-yong-title-offer",
+        "claim:faction-three-qin-grants",
+        "claim:faction-yong-fall"
+      ],
+      "namedAgents": [
+        {
+          "name": "章邯",
+          "role": "雍王"
+        }
+      ],
+      "titlePrehistory": {
+        "originalDate": "二世三年七月，盟降時立為雍王",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 207
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 207
+          }
+        },
+        "claimId": "claim:faction-yong-title-offer"
+      },
+      "cautions": [
+        "207 年王號授予不等於 206 年封域已實控。",
+        "雍王不等於秦廷；不將秦降卒留置狀態寫成固定楚member。"
+      ]
+    },
+    {
+      "id": "faction:sai",
+      "label": "塞（司馬欣）",
+      "entityType": "partition_kingdom",
+      "minimalIdentityOnly": true,
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 206
+        },
+        "end": {
+          "era": "BCE",
+          "year": 205
+        }
+      },
+      "existenceStart": {
+        "originalDate": "漢元年正月，立司馬欣為塞王",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢二年，塞王欣降漢",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 205
+          }
+        },
+        "normalizationStatus": "coarse_regnal_window",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-three-qin-grants",
+        "claim:faction-sai-di-surrender"
+      ],
+      "namedAgents": [
+        {
+          "name": "司馬欣",
+          "role": "塞王"
+        }
+      ],
+      "cautions": [
+        "降漢後司馬欣再投楚是個人陣營變動，不推斷完整塞國復國。",
+        "封域「咸陽以東至河」不是本包精確疆界。"
+      ]
+    },
+    {
+      "id": "faction:di",
+      "label": "翟（董翳）",
+      "entityType": "partition_kingdom",
+      "minimalIdentityOnly": true,
+      "coverage": {
+        "start": {
+          "era": "BCE",
+          "year": 206
+        },
+        "end": {
+          "era": "BCE",
+          "year": 205
+        }
+      },
+      "existenceStart": {
+        "originalDate": "漢元年正月，立董翳為翟王",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 206
+          }
+        },
+        "normalizationStatus": "conventional_year_label_not_calendar_conversion",
+        "exactCivilDate": null
+      },
+      "existenceEnd": {
+        "originalDate": "漢二年，翟王翳降漢",
+        "precision": "year_or_regnal_month",
+        "normalizedRange": {
+          "earliest": {
+            "era": "BCE",
+            "year": 206
+          },
+          "latest": {
+            "era": "BCE",
+            "year": 205
+          }
+        },
+        "normalizationStatus": "coarse_regnal_window",
+        "exactCivilDate": null
+      },
+      "claimIds": [
+        "claim:faction-three-qin-grants",
+        "claim:faction-sai-di-surrender"
+      ],
+      "namedAgents": [
+        {
+          "name": "董翳",
+          "role": "翟王"
+        }
+      ],
+      "cautions": [
+        "上郡封域與实控的每个城是不同证据层。",
+        "董翳后投楚不得自动复活翟国疆域。"
+      ]
+    }
+  ],
+  "eventRelations": [
+    {
+      "id": "relation:hongmen-xianyang-movement",
+      "from": "place:hongmen",
+      "to": "place:xianyang",
+      "kind": "event_movement",
+      "namedActor": "項羽軍",
+      "originalDate": "鴻門相見後數日",
+      "claimIds": [
+        "claim:route-hongmen-xianyang"
+      ],
+      "permanentAdjacency": false,
+      "distance": null,
+      "travelDays": null
+    },
+    {
+      "id": "relation:pengcheng-xingyang-pursuit",
+      "from": "place:pengcheng",
+      "to": "place:xingyang",
+      "kind": "event_movement",
+      "namedActor": "楚軍追漢",
+      "originalDate": "漢二年，彭城敗漢後",
+      "claimIds": [
+        "claim:route-pengcheng-xingyang"
+      ],
+      "permanentAdjacency": false,
+      "distance": null,
+      "travelDays": null
+    },
+    {
+      "id": "relation:xingyang-chenggao-retreat",
+      "from": "place:xingyang",
+      "to": "place:chenggao",
+      "kind": "event_movement",
+      "namedActor": "漢王與數十騎",
+      "originalDate": "漢三年，紀信誑楚後",
+      "claimIds": [
+        "claim:route-xingyang-chenggao"
+      ],
+      "permanentAdjacency": false,
+      "distance": null,
+      "travelDays": null
+    },
+    {
+      "id": "relation:guling-before-gaixia",
+      "from": "place:guling",
+      "to": "place:gaixia",
+      "kind": "event_sequence_only",
+      "namedActor": "漢王、韓信、彭越等分別行動",
+      "originalDate": "漢五年末戰局",
+      "claimIds": [
+        "claim:sequence-guling-gaixia"
+      ],
+      "permanentAdjacency": false,
+      "notEvidenceOfDirectRoad": true,
+      "distance": null,
+      "travelDays": null
+    },
+    {
+      "id": "relation:han-capital-nanzheng",
+      "from": "faction:han",
+      "to": "place:nanzheng",
+      "kind": "capital_of_kingdom",
+      "originalDate": "漢元年正月受封、四月就國階段",
+      "claimIds": [
+        "claim:place-nanzheng-seat",
+        "claim:faction-han-investiture"
+      ],
+      "permanentForAllYears": false
+    },
+    {
+      "id": "relation:chu-capital-pengcheng",
+      "from": "faction:chu",
+      "to": "place:pengcheng",
+      "kind": "capital_of_kingdom",
+      "originalDate": "西楚霸王政權階段",
+      "claimIds": [
+        "claim:place-pengcheng-seat"
+      ],
+      "permanentForAllYears": false
+    }
+  ],
+  "unassertedGeography": {
+    "exactCoordinates": false,
+    "inferredContainments": [],
+    "permanentAdjacency": [],
+    "travelTimes": [],
+    "note": "不為了全圖連通補無據邊；也不從政治說辭「巴蜀亦關中」造自然地理contains。"
+  },
+  "locationDisputes": [
+    {
+      "id": "dispute:gaixia-identification",
+      "placeId": "place:gaixia",
+      "status": "unresolved_in_package",
+      "candidateClaimIds": [
+        "claim:gaixia-haocheng-candidate",
+        "claim:gaixia-lingbi-candidate"
+      ],
+      "contextClaimIds": [
+        "claim:gaixia-disagreement"
+      ],
+      "selectedCoordinate": null,
+      "rule": "古代战场、现代遗址、当地行政区、不同城址候选各自独立；本包不裁决。"
+    },
+    {
+      "id": "dispute:guling-identification",
+      "placeId": "place:guling",
+      "status": "modern_location_not_established_by_reviewed_sources",
+      "candidateClaimIds": [],
+      "selectedCoordinate": null,
+      "rule": "没有本次已核考古定位来源，保留古名与事件语境。"
+    }
+  ],
+  "datingComparisons": [
+    {
+      "id": "conflict:zhang-er-investiture-year",
+      "subjectId": "faction:zhao",
+      "claimIds": [
+        "claim:faction-zhao-zhang-er-dating-008",
+        "claim:faction-zhao-zhang-er-dating-089",
+        "claim:faction-zhao-zhang-er-dating-016"
+      ],
+      "status": "needs_textual_comparison_not_proven_genuine_contradiction",
+      "preferredExactDate": null,
+      "note": "卷089叙述连接汉三年，卷008说其明年，月表四年十一月；可按月表做有标示的重构，不删除其余原文主张。"
+    }
+  ],
+  "outsideScope": {
+    "notACompleteEighteenKingdomsModel": true,
+    "namedPartitionPolitiesNotProvidedAsIndependentFullEntities": [
+      {
+        "name": "西魏",
+        "king": "魏豹"
+      },
+      {
+        "name": "河南",
+        "king": "申陽"
+      },
+      {
+        "name": "殷",
+        "king": "司馬卬"
+      },
+      {
+        "name": "代",
+        "king": "趙歇；後陳餘"
+      },
+      {
+        "name": "常山",
+        "king": "張耳"
+      },
+      {
+        "name": "九江",
+        "king": "黥布"
+      },
+      {
+        "name": "衡山",
+        "king": "吳芮"
+      },
+      {
+        "name": "臨江",
+        "king": "共敖"
+      },
+      {
+        "name": "遼東",
+        "king": "韓廣"
+      },
+      {
+        "name": "燕",
+        "king": "臧荼"
+      },
+      {
+        "name": "膠東",
+        "king": "田市"
+      },
+      {
+        "name": "濟北",
+        "king": "田安"
+      }
+    ],
+    "partitionListSource": {
+      "sourceId": "source:shiji-007",
+      "locator": "分封諸侯段：自立漢王至齊三王／西楚霸王"
+    },
+    "otherOmissions": [
+      "義帝廷的完整臣屬制度與地域",
+      "彭越獨立軍、各方地方支持者與部曲完整勢力網",
+      "韓王信後續之韓、鄭昌短暫之韓的全階段",
+      "田假短暫齊王與田橫海島餘部",
+      "秦末所有起事者與分封十八王完整領地",
+      "兵数、伤亡、人口、粮产、财政等量化",
+      "现代精确城址／河道／战场坐标和疆界"
+    ],
+    "minimumEntitiesNotCompleteData": "雍／塞／翟／韓王成之韓只为身份防混淆补最小entity；没有宣称诸县疆域、逐月实控或所有后续 regime 已完成。"
+  },
+  "schemaAudit": [
+    {
+      "id": "audit:time-no-year-zero",
+      "priority": "P1",
+      "requirement": "公開歷史日期必須 era=BCE/CE、year 為正整數且 >=1；不得 BCE 0、CE 0。",
+      "invalidExample": "BCE year=0（應拒絕；此處僅為說明字串）",
+      "implementationHint": "若排序需要天文年，另計 astronomicalYear：BCE y → 1-y；不可拿它覆蓋顯示用歷史年。"
+    },
+    {
+      "id": "audit:time-calendar-and-uncertainty",
+      "priority": "P1",
+      "requirement": "原紀年／月／曆法／原文 locator 與現代標定分開。年精度不填1月1日，古十月不是公曆10月。未換算保留 range 與 status。",
+      "concreteCase": "漢元年十月、漢四年冬等可能跨公曆年；卷016增補「公元前」欄不是原文。",
+      "implementationHint": "日期區間以曆法已正規化的值比較；無法確定只能 overlap/unknown，不可假定精確 before/after。範圍 earliest BCE年>=latest BCE年。"
+    },
+    {
+      "id": "audit:coverage-is-not-existence",
+      "priority": "P1",
+      "requirement": "資料包207–202 BCE的coverage不得當成每個人的生卒、每個國家的成立滅亡；漢在202包尾不等於滅亡。",
+      "implementationHint": "unknown、before_scope、after_scope、bounded、disputed 要可區分；null不是0，也不是不存在。"
+    },
+    {
+      "id": "audit:timed-roles-and-polities",
+      "priority": "P1",
+      "requirement": "person-faction角色要綁事件或有效日期、持王號與留置／指揮／封域／實控分欄；陣營與盟約不得永久定死。",
+      "concreteCase": "章邯在207盟降受雍王號、206取得分封封域；張良在鴻門自称为韓王送沛公。",
+      "implementationHint": "楚懷王楚系軍另ID，西楚另ID；韓王成之韓與劉邦之漢另ID；補回所有引用所需的最小entity，未建立者null+理由。"
+    },
+    {
+      "id": "audit:place-kinds-and-homonyms",
+      "priority": "P1",
+      "requirement": "region/city/pass/site/battlefield/river 不得通通當map point；place與發生於其上的event分開。",
+      "concreteCase": "濰水／潍水 ≠ 渭水／渭河；漢中 ≠ 南鄭；鴻門為site；成皋為city。",
+      "implementationHint": "coords/bounds皆可null；不得0,0占位；現代行政邊界、城址候選、整個戰場均需不同層或candidate。"
+    },
+    {
+      "id": "audit:topology-is-contextual",
+      "priority": "P2",
+      "requirement": "事件中的移动不等於永久邻接、可通行线路、道路长度与回合耗时。",
+      "concreteCase": "楚軍彭城追漢至滎陽只证明行动端点；未核中间路线。",
+      "implementationHint": "每条relation有source claim、actor/time/context、semantics；未被核实的containment/adjacency/travelTime不补。孤立节点允许存在。"
+    },
+    {
+      "id": "audit:source-report-vs-reconstruction",
+      "priority": "P1",
+      "requirement": "source_report（史家記載）、classification_from_source_usage（分類推讀）、modern_identification（現代地望）、interpretation（原人物長文解讀）、game_rule、fictional_simulation分層。",
+      "concreteCase": "1034史冊為架空推演，不能進史實claim；原人物心理長文是作者解讀，不是經查证心理诊断。",
+      "implementationHint": "描述「史記記載X」不直接升格「X已獨立確證」；遊戲政治態度、五維評分、經濟數值不可反向写回史实。"
+    },
+    {
+      "id": "audit:identity-bridge",
+      "priority": "P1",
+      "requirement": "962庫的原始ID保留，canonical person:slug另存bridge。不得只憑同名、姓氏、拼音或title自動合併。",
+      "concreteCase": "韓信與韓王信必须人工核对；田市／田都／田榮／田廣／田橫是不同人物。",
+      "implementationHint": "bridge={libraryId,canonicalId,status,evidence,reviewedAt}；允许 ambiguous/unmapped/orphan、多候选，必要时建立独立人物。禁止为补全身份生成不存在的原人物剖析。"
+    },
+    {
+      "id": "audit:reference-integrity-and-locators",
+      "priority": "P1",
+      "requirement": "所有entity ID、sourceId、claimId、eventId引用必须存在；来源标题、作者、章节、原文起止必须真正相配。",
+      "concreteCase": "卷089才是張耳陳餘，卷090是魏豹彭越；网页发布2006不是史記成书年份。",
+      "implementationHint": "unique IDs、无悬空引用、source URL已打开验证、quotation在所引source正文中可检索；事件参与角色各有claim，不以总事件来源代替每项角色证据。"
+    },
+    {
+      "id": "audit:conflict-and-negative-evidence",
+      "priority": "P2",
+      "requirement": "不同定位、不同纪年并存，unknown != disproved；不能按最新网页覆盖旧来源结论。",
+      "concreteCase": "垓下北岸／南岸主张并存；张耳立王年叙事与月表需对读。",
+      "implementationHint": "冲突组与candidate status独立；机构hosted opinion不是institutional consensus；旧研究状态不冒充现时最新。"
+    },
+    {
+      "id": "audit:copyright-provenance",
+      "priority": "P1",
+      "requirement": "每个source分别记录原作与转录／注释／译文／图片／地图的权利；古原文公有领域不代表整网页和现代译注可任意打包。",
+      "implementationHint": "保存自写摘要、短必要引文、URL/章卷/访问日期；转载别机构或媒体须保留originalPublisher；未知license保留unknown，不编授权。"
+    },
+    {
+      "id": "audit:scope-honesty",
+      "priority": "P1",
+      "requirement": "五核心索引与五身份消歧小实体都不等于完整十八诸侯；未覆盖国家、人物、时段与现代定位明列outsideScope。",
+      "implementationHint": "玩法可做限定视角剧场；UI必须显示覆盖范围，不能因模型没有entity就断言史上没有该方。"
+    }
+  ]
+}

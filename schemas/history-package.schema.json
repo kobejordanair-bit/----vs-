@@ -1,0 +1,1366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dynasty.local/schemas/history-package-v1.json",
+  "title": "王侯將相共用歷史資料包 v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaVersion",
+    "packageId",
+    "packageVersion",
+    "title",
+    "locale",
+    "createdOn",
+    "coverage",
+    "librarySnapshot",
+    "sources",
+    "persons",
+    "places",
+    "factions",
+    "events",
+    "claims",
+    "relations",
+    "routes",
+    "economy",
+    "disputes"
+  ],
+  "properties": {
+    "format": {
+      "type": "string",
+      "enum": [
+        "dynasty-history-package"
+      ]
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "packageId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+      "maxLength": 160
+    },
+    "packageVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "locale": {
+      "type": "string",
+      "enum": [
+        "zh-Hant"
+      ]
+    },
+    "createdOn": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "coverage": {
+      "$ref": "#/$defs/Coverage"
+    },
+    "librarySnapshot": {
+      "$ref": "#/$defs/Snapshot"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "maxItems": 20000,
+      "minItems": 1
+    },
+    "persons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Person"
+      },
+      "maxItems": 20000,
+      "minItems": 1
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Place"
+      },
+      "maxItems": 20000,
+      "minItems": 1
+    },
+    "factions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Faction"
+      },
+      "maxItems": 20000,
+      "minItems": 1
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Event"
+      },
+      "maxItems": 20000,
+      "minItems": 1
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "maxItems": 20000,
+      "minItems": 1
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Relation"
+      },
+      "maxItems": 20000
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Route"
+      },
+      "maxItems": 20000
+    },
+    "economy": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Economy"
+      },
+      "maxItems": 20000
+    },
+    "disputes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Dispute"
+      },
+      "maxItems": 20000
+    }
+  },
+  "$defs": {
+    "Year": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "era",
+        "year"
+      ],
+      "properties": {
+        "era": {
+          "type": "string",
+          "enum": [
+            "BCE",
+            "CE"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9999
+        }
+      }
+    },
+    "Time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "earliest",
+        "latest",
+        "precision",
+        "original",
+        "normalization",
+        "review",
+        "note"
+      ],
+      "properties": {
+        "earliest": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Year"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "latest": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Year"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "precision": {
+          "type": "string",
+          "enum": [
+            "year",
+            "range",
+            "unknown"
+          ]
+        },
+        "original": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "normalization": {
+          "type": "string",
+          "enum": [
+            "modern-year",
+            "regnal-year-band",
+            "not-normalized"
+          ]
+        },
+        "review": {
+          "type": "string",
+          "enum": [
+            "source-checked",
+            "provisional",
+            "disputed"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "work",
+        "section",
+        "author",
+        "kind",
+        "url",
+        "versionUrl",
+        "accessedOn",
+        "verification",
+        "editionNote",
+        "reuseNote",
+        "limitations"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "work": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "primary-text",
+            "research",
+            "institutional-reference"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://",
+          "maxLength": 2000
+        },
+        "versionUrl": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 6000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessedOn": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "verification": {
+          "type": "string",
+          "enum": [
+            "opened-and-read"
+          ]
+        },
+        "editionNote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "reuseNote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "locator",
+        "excerpt",
+        "use"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "excerpt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 6000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "use": {
+          "type": "string",
+          "enum": [
+            "direct-statement",
+            "cross-check",
+            "chronology-context"
+          ]
+        }
+      }
+    },
+    "Claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "subjectId",
+        "predicate",
+        "objectIds",
+        "statement",
+        "time",
+        "epistemic",
+        "evidence",
+        "review",
+        "caveat",
+        "alternatives"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "subjectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "predicate": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "maxLength": 80
+        },
+        "objectIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "time": {
+          "$ref": "#/$defs/Time"
+        },
+        "epistemic": {
+          "type": "string",
+          "enum": [
+            "source-report",
+            "editorial-synthesis",
+            "modern-identification"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "review": {
+          "type": "string",
+          "enum": [
+            "source-checked",
+            "cross-checked",
+            "disputed",
+            "provisional"
+          ]
+        },
+        "caveat": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        }
+      }
+    },
+    "LibraryRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recordId",
+        "name",
+        "type",
+        "match",
+        "note"
+      ],
+      "properties": {
+        "recordId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "emperor",
+            "general",
+            "minister"
+          ]
+        },
+        "match": {
+          "type": "string",
+          "enum": [
+            "manual-identity-match"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "aliases",
+        "libraryRefs",
+        "life",
+        "coverage",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        },
+        "libraryRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/LibraryRef"
+          },
+          "maxItems": 20000
+        },
+        "life": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "birth",
+            "death"
+          ],
+          "properties": {
+            "birth": {
+              "$ref": "#/$defs/Time"
+            },
+            "death": {
+              "$ref": "#/$defs/Time"
+            }
+          }
+        },
+        "coverage": {
+          "type": "string",
+          "enum": [
+            "linked-library",
+            "context-only"
+          ]
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Coordinates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "longitude",
+        "latitude"
+      ],
+      "properties": {
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        }
+      }
+    },
+    "Place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "aliases",
+        "kind",
+        "coordinates",
+        "locationPrecision",
+        "modernIdentification",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "region",
+            "city",
+            "pass",
+            "site",
+            "battle-area",
+            "river",
+            "route-area"
+          ]
+        },
+        "coordinates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Coordinates"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "locationPrecision": {
+          "type": "string",
+          "enum": [
+            "unlocated",
+            "regional",
+            "approximate",
+            "documented-point"
+          ]
+        },
+        "modernIdentification": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 6000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Faction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "aliases",
+        "kind",
+        "time",
+        "leaderIds",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "kingdom",
+            "coalition",
+            "imperial-government",
+            "regional-regime"
+          ]
+        },
+        "time": {
+          "$ref": "#/$defs/Time"
+        },
+        "leaderIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "personId",
+        "factionId",
+        "role",
+        "participation",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "personId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "factionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "participation": {
+          "type": "string",
+          "enum": [
+            "present",
+            "reported-action",
+            "mentioned",
+            "unknown"
+          ]
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "summary",
+        "time",
+        "placeIds",
+        "contexts",
+        "claimIds",
+        "orderAfter",
+        "orderingNote",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "time": {
+          "$ref": "#/$defs/Time"
+        },
+        "placeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "contexts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Context"
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "orderAfter": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000
+        },
+        "orderingNote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "fromId",
+        "toId",
+        "type",
+        "scope",
+        "eventId",
+        "time",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "fromId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "toId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "serves",
+            "cooperates",
+            "opposes",
+            "controls",
+            "advises",
+            "recommends",
+            "kinship",
+            "negotiates"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "event",
+            "interval"
+          ]
+        },
+        "eventId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time": {
+          "$ref": "#/$defs/Time"
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "fromPlaceId",
+        "toPlaceId",
+        "kind",
+        "eventId",
+        "time",
+        "distanceKm",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "fromPlaceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "toPlaceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "reported-movement",
+            "reported-supply"
+          ]
+        },
+        "eventId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time": {
+          "$ref": "#/$defs/Time"
+        },
+        "distanceKm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Quantity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit",
+        "status",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "source-reported",
+            "research-estimate"
+          ]
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Economy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "placeIds",
+        "personIds",
+        "time",
+        "mechanism",
+        "quantities",
+        "claimIds",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "supply",
+            "administration",
+            "transport",
+            "distribution"
+          ]
+        },
+        "placeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "personIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000
+        },
+        "time": {
+          "$ref": "#/$defs/Time"
+        },
+        "mechanism": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "quantities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Quantity"
+          },
+          "maxItems": 20000
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Dispute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "claimIds",
+        "treatment",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 160
+          },
+          "maxItems": 20000,
+          "minItems": 1
+        },
+        "treatment": {
+          "type": "string",
+          "enum": [
+            "retain-alternatives",
+            "range-only",
+            "not-normalized",
+            "outside-scope"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target",
+        "window",
+        "completeness",
+        "selection",
+        "excluded",
+        "missing",
+        "datePolicy",
+        "geographyPolicy",
+        "economyPolicy"
+      ],
+      "properties": {
+        "target": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "start",
+            "end"
+          ],
+          "properties": {
+            "start": {
+              "$ref": "#/$defs/Year"
+            },
+            "end": {
+              "$ref": "#/$defs/Year"
+            }
+          }
+        },
+        "completeness": {
+          "type": "string",
+          "enum": [
+            "curated-slice"
+          ]
+        },
+        "selection": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        },
+        "excluded": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        },
+        "missing": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "maxItems": 20000
+        },
+        "datePolicy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "geographyPolicy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "economyPolicy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    },
+    "Snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "totalRecords",
+        "roleIdentityPolicy",
+        "privateTextPolicy"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "totalRecords": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "roleIdentityPolicy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "privateTextPolicy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      }
+    }
+  }
+}

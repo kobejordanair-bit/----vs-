@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歷代帝王將相名臣評鑑 (v15.10 資料保全版)</title>
+    <title>王侯將相 · 朝堂危局 (v15.14)</title>
+    <link rel="stylesheet" href="/static/css/court.css?v=15.14">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -416,10 +417,17 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
-                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.10 資料保全版</span>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.14 朝堂危局</span>
                 </div>
             </div>
             <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
+                <a href="/history-lab" target="_blank" rel="noopener" class="bg-[#345a49] hover:bg-[#426e59] border border-[#bdab79] text-[#fbecd4] px-4 py-2 rounded font-serif text-sm tracking-wider transition-colors" title="在新分頁開啟史論館，閱讀人物原文與楚漢案卷">
+                    <i class="fa-solid fa-book-open mr-1" aria-hidden="true"></i>史論館
+                </a>
+                <a href="/source-archive" target="_blank" rel="noopener" class="bg-[#345a49] hover:bg-[#426e59] border border-[#bdab79] text-[#fbecd4] px-4 py-2 rounded font-serif text-sm tracking-wider transition-colors">來源檔案館</a>
+                <button id="courtGameButton" onclick="openCourtGame()" class="bg-[#862f2b] hover:bg-[#a53d35] border border-[#c59c6f] text-[#fbecd4] px-4 py-2 rounded font-serif text-sm tracking-wider transition-colors">
+                    <i class="fa-solid fa-stamp mr-1" aria-hidden="true"></i>朝堂危局
+                </button>
                 <!-- 工具列：夜間 / 匯出 / 讀檔 -->
                 <div class="flex bg-[#2c2826] rounded-lg p-1 gap-1 border border-[#44403c]">
                     <button id="nightToggleBtn" onclick="toggleNightMode()" title="切換日夜模式" class="text-[#d6d3c9] hover:text-white hover:bg-[#44403c] px-2 py-1.5 rounded transition-all text-sm">
@@ -497,6 +505,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             </div>
         </div>
     </header>
+
+    <div id="courtGameRoot"></div>
 
     <!-- Main Content -->
     <div class="max-w-[1400px] mx-auto px-4 py-8">
@@ -854,6 +864,10 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <button onclick="setEvalTab('calibrate')" id="eval-tab-calibrate" class="eval-tab flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-chart text-purple-400"></i> 校準評級</button>
                 <button onclick="setEvalTab('soul-essence')" id="eval-tab-soul-essence" class="eval-tab flex items-center gap-1.5"><i class="fa-solid fa-ghost text-purple-400"></i> 靈魂內核</button>
             </div>
+            <div id="personSourceBar" class="hidden flex flex-wrap items-center gap-3 shrink-0 px-4 py-2 bg-[#f0ece4] border-b border-[#e5e0d3]">
+                <a id="personSourceLink" target="_blank" rel="noopener noreferrer" class="text-xs bg-[#345a49] hover:bg-[#426e59] text-white px-3 py-1.5 rounded transition-colors font-serif">查看史料 ↗</a>
+                <span class="text-xs text-[#57534e] font-serif">回查出處、原文與核對紀錄</span>
+            </div>
             <div id="chatContainer" class="hidden flex flex-col flex-1 min-h-0 bg-[#fcfaf5] overflow-hidden relative">
                 <div id="chatHistory" class="flex-1 overflow-y-auto p-6 flex flex-col gap-4 custom-scrollbar z-10 overscroll-contain"></div>
                 <div class="p-5 border-t border-[#e5e0d3] bg-white flex gap-3 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-20 shrink-0">
@@ -1164,20 +1178,26 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.10"></script>
-    <script src="/static/data/scenes.js?v=15.10"></script>
-    <script src="/static/data/factions.js?v=15.10"></script>
-    <script src="/static/data/regions.js?v=15.10"></script>
-    <script src="/static/data/battlefields.js?v=15.10"></script>
-    <script src="/static/data/eras.js?v=15.10"></script>
-    <script src="/static/prompts/soul.js?v=15.10"></script>
-    <script src="/static/js/backup.js?v=15.10"></script>
-    <script src="/static/js/storage.js?v=15.10"></script>
-    <script src="/static/js/persistence.js?v=15.10"></script>
+    <script src="/static/data/legends.js?v=15.14"></script>
+    <script src="/static/data/scenes.js?v=15.14"></script>
+    <script src="/static/data/factions.js?v=15.14"></script>
+    <script src="/static/data/regions.js?v=15.14"></script>
+    <script src="/static/data/battlefields.js?v=15.14"></script>
+    <script src="/static/data/eras.js?v=15.14"></script>
+    <script src="/static/prompts/soul.js?v=15.14"></script>
+    <script src="/static/js/backup.js?v=15.14"></script>
+    <script src="/static/js/storage.js?v=15.14"></script>
+    <script src="/static/js/persistence.js?v=15.14"></script>
+    <script src="/static/js/court-engine.js?v=15.14"></script>
+    <script src="/static/js/court-council.js?v=15.14"></script>
+    <script src="/static/js/court-campaign.js?v=15.14"></script>
+    <script src="/static/js/court-library.js?v=15.14"></script>
+    <script src="/static/js/court-ui.js?v=15.14"></script>
+    <script src="/static/js/source-links.js?v=15.14"></script>
     <!-- ↑ 更新 APP_VERSION 或修改 static/data/*.js、static/prompts/*.js 時，請同步更新以上所有 ?v= 版本號，避免 PWA/瀏覽器快取舊檔 -->
     <script>
         // --- CONSTANTS & UTILS ---
-        const APP_VERSION = "15.10";
+        const APP_VERSION = "15.14";
 
         // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
@@ -1359,6 +1379,16 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         
         const GAMEPLAY_DEFAULTS = cloneState({ hegemony: appState.hegemony, debateMode: appState.debateMode, soulMode: appState.soulMode });
         let legendsData = []; 
+        function openCourtGame() {
+            if (!window.DynastyCourt || !window.DynastyCourtUI || !window.DynastyCourtLibrary) {
+                customAlert('朝堂劇本尚未載入，請重新整理後再試。');
+                return;
+            }
+            DynastyCourtUI.open({ getLegend: DynastyCourtLibrary.createReader({
+                getLegends: () => legendsData,
+                getModifications: () => appState.modifiedLegends
+            }) });
+        }
         const rankOrder = { "S+": 1, "S": 2, "S-": 3, "A+": 4, "A": 5, "A-": 6, "B+": 7, "B": 8, "B-": 8.5, "C+": 9, "C": 10, "C-": 11, "D": 12 };
 
         function refreshData() {
@@ -1477,6 +1507,16 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 
                 const div = document.createElement('div');
                 div.innerHTML = cardHtml.trim();
+                const courtTypes = { hanXin: 'general', xiaoHe: 'minister', weiZheng: 'minister', zhangLiang: 'minister', chenPing: 'minister', sunWu: 'general', shangYang: 'minister', suQin: 'minister' };
+                const courtAdvisor = window.DynastyCampaign?.ADVISORS.find(advisor => advisor.name === g.name && courtTypes[advisor.id] === g.type);
+                if (courtAdvisor) {
+                    const courtButton = document.createElement('button');
+                    courtButton.type = 'button';
+                    courtButton.className = 'mt-3 w-full border-t border-[#e5e0d3] pt-3 text-xs font-serif text-[#862f2b] hover:text-[#a53d35] relative z-10';
+                    courtButton.textContent = '進入缺糧朝會 · 與他議政';
+                    courtButton.addEventListener('click', event => { event.stopPropagation(); openCourtGame(); });
+                    div.firstChild.appendChild(courtButton);
+                }
                 fragment.appendChild(div.firstChild);
             });
             container.appendChild(fragment);
@@ -1508,6 +1548,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         // Modal & AI Logic
         function openModal(title, type = 'content') {
+            window.DynastySourceLinks?.clear();
             el('aiModal').classList.remove('hidden');
             el('evalTabBar').classList.add('hidden');
             el('modalTitle').innerHTML = `<i class="fa-solid fa-scroll text-[#d4af37] mr-2"></i> ${title}`;
@@ -1531,6 +1572,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
         }
 
         function closeModal() {
+            window.DynastySourceLinks?.clear();
             el('aiModal').classList.add('hidden');
             el('evalTabBar').classList.add('hidden');
             el('extractScenesBtn').classList.add('hidden');
@@ -2273,6 +2315,7 @@ ${allNames}
             currentAnalysisId = id;
             currentEvalTab = defaultTab;
             openModal(`${legend.name} · 評鑑`, 'content');
+            window.DynastySourceLinks?.setPerson(legend);
             el('evalTabBar').classList.remove('hidden');
             document.querySelectorAll('.eval-tab').forEach(b => b.classList.remove('eval-tab-active'));
             el(`eval-tab-${defaultTab}`).classList.add('eval-tab-active');

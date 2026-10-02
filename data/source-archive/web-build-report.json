@@ -1,0 +1,664 @@
+{
+  "format": "dynasty-source-web-build-report",
+  "schemaVersion": 1,
+  "builtAt": "2026-10-02T12:15:38.206Z",
+  "version": "b66c5a60a41e2334",
+  "buildVersion": "1.0.0",
+  "engineVersion": "1.0.0",
+  "sourceArchiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "inputBooks": [
+    {
+      "bookId": "book:shiji",
+      "sha256": "4af047e4cacc69f78345681ca9e59b9a70cf10db0fa4821ef994ee6d224f6452",
+      "bytes": 4836800
+    },
+    {
+      "bookId": "book:hanshu",
+      "sha256": "8d43efcc4be8dce3bfba5349b9b5a37ff4da9f7804e21aebae7264794236ced4",
+      "bytes": 7103776
+    },
+    {
+      "bookId": "book:houhanshu",
+      "sha256": "7a5c9fed64244a1a721c8a214193c9f85c2317a36a228ced7af012ce7916e2c4",
+      "bytes": 8455055
+    },
+    {
+      "bookId": "book:sanguozhi",
+      "sha256": "50da65033e09561fc65e92d7518bec41a05f10eca1ae21a716fb756e99e466d9",
+      "bytes": 5325282
+    },
+    {
+      "bookId": "book:songshu",
+      "sha256": "97078b7ef2855d84cc16426ff1f490044e7b847a9bf710a77f89484e6eebfa69",
+      "bytes": 7092540
+    },
+    {
+      "bookId": "book:jinshu",
+      "sha256": "cc976d45ebd0237aabb350c9ff9b1a467cc5fee76cedcc68dfa260ff537052c2",
+      "bytes": 9126367
+    },
+    {
+      "bookId": "book:nanqishu",
+      "sha256": "41b32691b92eb40eb84301214f975d2bf48d91430e9ff21a0b505f6b6a83cd65",
+      "bytes": 2534339
+    },
+    {
+      "bookId": "book:liangshu",
+      "sha256": "42f602cd7aef498fc0adb5dce707592627d1e9b1354d68554033f1d3c01f02cd",
+      "bytes": 2314632
+    },
+    {
+      "bookId": "book:chenshu",
+      "sha256": "2113c0513d2c41fa144c9bd7091e58bf828016a6e6492dd5de755f3ce0986899",
+      "bytes": 1444864
+    },
+    {
+      "bookId": "book:beiqishu",
+      "sha256": "ef911335b70ce09c229f719fdbf2e4f65f06b76cb0a5a1f9fba1437e792e9530",
+      "bytes": 1676602
+    },
+    {
+      "bookId": "book:zhoushu",
+      "sha256": "69038d78865eef39985a4a6876eb41957a3223228139b753990ceca21de554fb",
+      "bytes": 2736558
+    },
+    {
+      "bookId": "book:weishu",
+      "sha256": "39246101d4cba8bc35966b9e673c386505bcf8f90cb6cfb932c9dbba520dd1fd",
+      "bytes": 8723575
+    },
+    {
+      "bookId": "book:suishu",
+      "sha256": "52abb9557416f8f3eba6aa0c6ef2cd1b441005dfb4046e24124cc1c7d17adecf",
+      "bytes": 5489289
+    },
+    {
+      "bookId": "book:nanshi",
+      "sha256": "18eed9cc575629e16c1c429142d0f61fab33466d1754b7459b840332fee21624",
+      "bytes": 5216633
+    },
+    {
+      "bookId": "book:beishi",
+      "sha256": "cd86b96af096a98af1582d462717cc1385bb77378c35f12407aeabfe5955f542",
+      "bytes": 8369260
+    },
+    {
+      "bookId": "book:jiutangshu",
+      "sha256": "b6935231b6c306c0c8f4e6064b540994d29c296ec988479333ec567b2123a2d7",
+      "bytes": 15033361
+    },
+    {
+      "bookId": "book:xintangshu",
+      "sha256": "8a172f14cfbef11953c4ca67799a0079a96518e2e891b26080e7822db704ce27",
+      "bytes": 15704476
+    },
+    {
+      "bookId": "book:xinwudaishi",
+      "sha256": "b91fbd1a377d0fd526c576809276ac38e9ddbbb4a8505216e8439d41c5868893",
+      "bytes": 2435500
+    },
+    {
+      "bookId": "book:jiuwudaishi",
+      "sha256": "685aebde3ba5e7f81057d6f1d91b07089f436bba5a0639ab9874fbb2d8a64fa6",
+      "bytes": 5289972
+    },
+    {
+      "bookId": "book:liaoshi",
+      "sha256": "45edabd1353cd1b18be580e68320ce19008041ea71180fb2bc741fb3fbae7f63",
+      "bytes": 2588537
+    },
+    {
+      "bookId": "book:jinshi",
+      "sha256": "14d7c7291186cda601fee5c49013332f6ccba3181ac29cfa72c0bab3cfb973d9",
+      "bytes": 7319919
+    },
+    {
+      "bookId": "book:yuanshi",
+      "sha256": "9ea348ec9eaa9171d1877d7370a641ffb616affb037a8564a7f6fe77c71ea6df",
+      "bytes": 13591538
+    },
+    {
+      "bookId": "book:songshi",
+      "sha256": "c0d4561781c032d6b69f05da8a52995966d09e80634dc307e3f3802a465271b6",
+      "bytes": 33982382
+    },
+    {
+      "bookId": "book:mingshi",
+      "sha256": "02281c9228b342e647ef213576ffba1dcd1b436de29c9f66efacc0bedb21affc",
+      "bytes": 22307636
+    },
+    {
+      "bookId": "book:qingshigao",
+      "sha256": "e492ad05d98b13bc248d4e7f02a6d35cb51049cd6eb9aece98127ed5c045b601",
+      "bytes": 36468754
+    },
+    {
+      "bookId": "book:zuozhuan",
+      "sha256": "48e0fad3100c83a336654637d2d2a2f8268727e4caa3509cccd31a233e6e9097",
+      "bytes": 1556261
+    },
+    {
+      "bookId": "book:zizhitongjian",
+      "sha256": "9daada8aaf2598e5294e8e84aa99425b702ba596b41b5e957896f02b9800777d",
+      "bytes": 19860491
+    },
+    {
+      "bookId": "book:guoyu",
+      "sha256": "b5b01db27165d49f9f26e77f250d31bd2555b7c0f86282770d0dbb3dbc7f7107",
+      "bytes": 1360918
+    },
+    {
+      "bookId": "book:zhanguoce",
+      "sha256": "e39ef15c0561a8db58fcf0f1bcafa6080e9a96cdd93a25063a4ef216f5035765",
+      "bytes": 5424584
+    }
+  ],
+  "records": 962,
+  "documents": 4254,
+  "characters": 42600292,
+  "positionRecords": 42596038,
+  "unigramRecords": 5177855,
+  "manifestBytes": 760104,
+  "manifestGzipBytes": 101864,
+  "searchJSONBytes": 215406779,
+  "searchGzipBytes": 138602876,
+  "largestShardBytes": 1442827,
+  "files": 19644,
+  "jsonBytes": 592249981,
+  "gzipBytes": 287744393,
+  "largestFileBytes": 7064160,
+  "peakRssBytes": 449445888,
+  "temporaryNumericBytes": 423613984,
+  "phases": {
+    "documentsAndBucketsMs": 24801,
+    "indexSortEncodeGzipMs": 16262,
+    "dossierAndMetadataMs": 3119
+  },
+  "elapsedMs": 44934,
+  "manifestPath": "/static/data/history/web/manifest.json",
+  "releasePath": "/static/data/history/web/releases/b66c5a60a41e2334",
+  "semantics": "UTF-16 String.indexOf literal search; non-overlapping count and first offset; no text normalization or model calls",
+  "verification": {
+    "checkedAt": "2026-10-02T12:19:20.994Z",
+    "runtime": "v24.19.0",
+    "environment": "Node on local disk, JSON parse + index search; transfer sizes use generated gzip sidecars, not measured network latency",
+    "queriesChecked": 38,
+    "fullCorpusIndexOfComparisons": 38,
+    "documentsCompared": 4254,
+    "incompleteDocumentsMatched": 11,
+    "allExact": true,
+    "startup": {
+      "milliseconds": 5.12,
+      "jsonBytes": 428265,
+      "gzipBytes": 88857,
+      "requests": 1
+    },
+    "queries": [
+      {
+        "query": "劉邦",
+        "bookIds": [],
+        "documentMatches": 11,
+        "totalMatches": 15,
+        "coldMs": 20.48,
+        "warmMs": 16.23,
+        "requests": 1,
+        "jsonBytes": 760666,
+        "gzipBytes": 496366,
+        "partialMessages": 0
+      },
+      {
+        "query": "秦始皇",
+        "bookIds": [],
+        "documentMatches": 155,
+        "totalMatches": 211,
+        "coldMs": 62.77,
+        "warmMs": 28.36,
+        "requests": 2,
+        "jsonBytes": 1369460,
+        "gzipBytes": 875921,
+        "partialMessages": 1
+      },
+      {
+        "query": "諸葛亮",
+        "bookIds": [],
+        "documentMatches": 184,
+        "totalMatches": 399,
+        "coldMs": 43.07,
+        "warmMs": 32.11,
+        "requests": 2,
+        "jsonBytes": 1487725,
+        "gzipBytes": 967594,
+        "partialMessages": 1
+      },
+      {
+        "query": "郭太",
+        "bookIds": [],
+        "documentMatches": 25,
+        "totalMatches": 37,
+        "coldMs": 15.27,
+        "warmMs": 8.26,
+        "requests": 1,
+        "jsonBytes": 746968,
+        "gzipBytes": 485542,
+        "partialMessages": 1
+      },
+      {
+        "query": "林則徐",
+        "bookIds": [],
+        "documentMatches": 50,
+        "totalMatches": 153,
+        "coldMs": 32.22,
+        "warmMs": 17.2,
+        "requests": 2,
+        "jsonBytes": 1466900,
+        "gzipBytes": 950781,
+        "partialMessages": 1
+      },
+      {
+        "query": "王安石",
+        "bookIds": [],
+        "documentMatches": 159,
+        "totalMatches": 435,
+        "coldMs": 31.67,
+        "warmMs": 22.91,
+        "requests": 2,
+        "jsonBytes": 1457785,
+        "gzipBytes": 945592,
+        "partialMessages": 1
+      },
+      {
+        "query": "曹操",
+        "bookIds": [],
+        "documentMatches": 116,
+        "totalMatches": 475,
+        "coldMs": 15.39,
+        "warmMs": 9.55,
+        "requests": 1,
+        "jsonBytes": 690298,
+        "gzipBytes": 443761,
+        "partialMessages": 1
+      },
+      {
+        "query": "韓信",
+        "bookIds": [],
+        "documentMatches": 175,
+        "totalMatches": 440,
+        "coldMs": 13.31,
+        "warmMs": 11.34,
+        "requests": 1,
+        "jsonBytes": 751744,
+        "gzipBytes": 486575,
+        "partialMessages": 1
+      },
+      {
+        "query": "長安",
+        "bookIds": [],
+        "documentMatches": 1554,
+        "totalMatches": 5034,
+        "coldMs": 37.47,
+        "warmMs": 15.37,
+        "requests": 1,
+        "jsonBytes": 1067189,
+        "gzipBytes": 716968,
+        "partialMessages": 1
+      },
+      {
+        "query": "太史公曰",
+        "bookIds": [],
+        "documentMatches": 134,
+        "totalMatches": 184,
+        "coldMs": 40.72,
+        "warmMs": 26.32,
+        "requests": 2,
+        "jsonBytes": 1574417,
+        "gzipBytes": 1024751,
+        "partialMessages": 1
+      },
+      {
+        "query": "黃帝者，少典之子",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 125.29,
+        "warmMs": 58.33,
+        "requests": 4,
+        "jsonBytes": 2849546,
+        "gzipBytes": 1839174,
+        "partialMessages": 0
+      },
+      {
+        "query": "𣶯",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 59.29,
+        "warmMs": 5.47,
+        "requests": 1,
+        "jsonBytes": 722936,
+        "gzipBytes": 467937,
+        "partialMessages": 0
+      },
+      {
+        "query": "𠀀",
+        "bookIds": [],
+        "documentMatches": 0,
+        "totalMatches": 0,
+        "coldMs": 30.97,
+        "warmMs": 16.3,
+        "requests": 1,
+        "jsonBytes": 668201,
+        "gzipBytes": 430249,
+        "partialMessages": 0
+      },
+      {
+        "query": "之",
+        "bookIds": [],
+        "documentMatches": 4209,
+        "totalMatches": 610194,
+        "coldMs": 21.46,
+        "warmMs": 7.79,
+        "requests": 1,
+        "jsonBytes": 479005,
+        "gzipBytes": 300479,
+        "partialMessages": 1
+      },
+      {
+        "query": "人",
+        "bookIds": [],
+        "documentMatches": 4138,
+        "totalMatches": 231013,
+        "coldMs": 13.12,
+        "warmMs": 7.08,
+        "requests": 1,
+        "jsonBytes": 533066,
+        "gzipBytes": 333743,
+        "partialMessages": 1
+      },
+      {
+        "query": "\n",
+        "bookIds": [],
+        "documentMatches": 4251,
+        "totalMatches": 870429,
+        "coldMs": 13.01,
+        "warmMs": 8.92,
+        "requests": 1,
+        "jsonBytes": 406411,
+        "gzipBytes": 256709,
+        "partialMessages": 1
+      },
+      {
+        "query": "\n\n",
+        "bookIds": [],
+        "documentMatches": 4251,
+        "totalMatches": 393496,
+        "coldMs": 131.73,
+        "warmMs": 68.06,
+        "requests": 1,
+        "jsonBytes": 1442827,
+        "gzipBytes": 947284,
+        "partialMessages": 1
+      },
+      {
+        "query": "表略",
+        "bookIds": [],
+        "documentMatches": 15,
+        "totalMatches": 19,
+        "coldMs": 23.51,
+        "warmMs": 8.16,
+        "requests": 1,
+        "jsonBytes": 699597,
+        "gzipBytes": 451463,
+        "partialMessages": 0
+      },
+      {
+        "query": "{{SKchar",
+        "bookIds": [],
+        "documentMatches": 50,
+        "totalMatches": 795,
+        "coldMs": 144.65,
+        "warmMs": 60.3,
+        "requests": 4,
+        "jsonBytes": 2739954,
+        "gzipBytes": 1759309,
+        "partialMessages": 1
+      },
+      {
+        "query": "絕不存在的歷史字串🦄🦄",
+        "bookIds": [],
+        "documentMatches": 0,
+        "totalMatches": 0,
+        "coldMs": 168.03,
+        "warmMs": 72.94,
+        "requests": 5,
+        "jsonBytes": 3478774,
+        "gzipBytes": 2236784,
+        "partialMessages": 0
+      },
+      {
+        "query": "，察",
+        "bookIds": [],
+        "documentMatches": 616,
+        "totalMatches": 913,
+        "coldMs": 45.04,
+        "warmMs": 12.75,
+        "requests": 1,
+        "jsonBytes": 736869,
+        "gzipBytes": 478232,
+        "partialMessages": 1
+      },
+      {
+        "query": "而不許",
+        "bookIds": [],
+        "documentMatches": 73,
+        "totalMatches": 74,
+        "coldMs": 80.96,
+        "warmMs": 33.23,
+        "requests": 2,
+        "jsonBytes": 1571334,
+        "gzipBytes": 1030003,
+        "partialMessages": 1
+      },
+      {
+        "query": "　「拔」",
+        "bookIds": [],
+        "documentMatches": 2,
+        "totalMatches": 2,
+        "coldMs": 73.4,
+        "warmMs": 23.93,
+        "requests": 2,
+        "jsonBytes": 1323145,
+        "gzipBytes": 845063,
+        "partialMessages": 0
+      },
+      {
+        "query": "行參軍，尚",
+        "bookIds": [],
+        "documentMatches": 4,
+        "totalMatches": 4,
+        "coldMs": 95.47,
+        "warmMs": 21.43,
+        "requests": 3,
+        "jsonBytes": 2326221,
+        "gzipBytes": 1515815,
+        "partialMessages": 0
+      },
+      {
+        "query": "眾甚危懼。劉",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 155.19,
+        "warmMs": 37.71,
+        "requests": 3,
+        "jsonBytes": 2174371,
+        "gzipBytes": 1409859,
+        "partialMessages": 0
+      },
+      {
+        "query": "聽曰：「此何物",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 90.62,
+        "warmMs": 68.44,
+        "requests": 4,
+        "jsonBytes": 3196822,
+        "gzipBytes": 2090678,
+        "partialMessages": 0
+      },
+      {
+        "query": "攝監察御史。時屬",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 217.82,
+        "warmMs": 53.68,
+        "requests": 4,
+        "jsonBytes": 2958859,
+        "gzipBytes": 1918988,
+        "partialMessages": 0
+      },
+      {
+        "query": "七十二人，分四列，",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 170.04,
+        "warmMs": 72.1,
+        "requests": 5,
+        "jsonBytes": 3708217,
+        "gzipBytes": 2405904,
+        "partialMessages": 0
+      },
+      {
+        "query": "請改國舅乙室小功帳敞",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 264.66,
+        "warmMs": 77.14,
+        "requests": 5,
+        "jsonBytes": 3372382,
+        "gzipBytes": 2156809,
+        "partialMessages": 0
+      },
+      {
+        "query": "毋進鶻。戊戌，〔戊戌　",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 222.75,
+        "warmMs": 66.77,
+        "requests": 5,
+        "jsonBytes": 3557099,
+        "gzipBytes": 2288945,
+        "partialMessages": 0
+      },
+      {
+        "query": "五年正月壬寅，夜漏未上，",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 235.96,
+        "warmMs": 85.57,
+        "requests": 6,
+        "jsonBytes": 4241205,
+        "gzipBytes": 2731442,
+        "partialMessages": 0
+      },
+      {
+        "query": "成都，鬥戰連月，殺數萬人。",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 261.41,
+        "warmMs": 100.58,
+        "requests": 7,
+        "jsonBytes": 5589125,
+        "gzipBytes": 3661052,
+        "partialMessages": 0
+      },
+      {
+        "query": "至家，憑殯哭，四日而成服。若",
+        "bookIds": [],
+        "documentMatches": 1,
+        "totalMatches": 1,
+        "coldMs": 256.9,
+        "warmMs": 99.71,
+        "requests": 7,
+        "jsonBytes": 5233222,
+        "gzipBytes": 3401544,
+        "partialMessages": 0
+      },
+      {
+        "query": "州楊",
+        "bookIds": [],
+        "documentMatches": 74,
+        "totalMatches": 80,
+        "coldMs": 59.9,
+        "warmMs": 13.45,
+        "requests": 1,
+        "jsonBytes": 764250,
+        "gzipBytes": 498532,
+        "partialMessages": 1
+      },
+      {
+        "query": "，改姓",
+        "bookIds": [],
+        "documentMatches": 40,
+        "totalMatches": 45,
+        "coldMs": 92.05,
+        "warmMs": 31.14,
+        "requests": 2,
+        "jsonBytes": 1317879,
+        "gzipBytes": 842492,
+        "partialMessages": 1
+      },
+      {
+        "query": "，而可喜",
+        "bookIds": [],
+        "documentMatches": 2,
+        "totalMatches": 2,
+        "coldMs": 62.96,
+        "warmMs": 29.87,
+        "requests": 2,
+        "jsonBytes": 1494915,
+        "gzipBytes": 969839,
+        "partialMessages": 0
+      },
+      {
+        "query": "秦始皇",
+        "bookIds": [
+          "book:shiji"
+        ],
+        "documentMatches": 12,
+        "totalMatches": 23,
+        "coldMs": 62.56,
+        "warmMs": 30.35,
+        "requests": 2,
+        "jsonBytes": 1369460,
+        "gzipBytes": 875921,
+        "partialMessages": 0
+      },
+      {
+        "query": "表略",
+        "bookIds": [
+          "book:qingshigao"
+        ],
+        "documentMatches": 7,
+        "totalMatches": 8,
+        "coldMs": 62.71,
+        "warmMs": 15.91,
+        "requests": 1,
+        "jsonBytes": 699597,
+        "gzipBytes": 451463,
+        "partialMessages": 0
+      }
+    ],
+    "maxColdMs": 264.66,
+    "maxWarmMs": 100.58,
+    "maxQueryGzipBytes": 3661052,
+    "requestsNeverLoadedBodyFiles": true,
+    "cacheLimitBytes": 25165824
+  }
+}

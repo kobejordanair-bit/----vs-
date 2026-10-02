@@ -3,7 +3,7 @@ import json
 import time
 from fastapi import FastAPI, HTTPException, Request, Header
 from fastapi.responses import StreamingResponse, FileResponse, JSONResponse
-from fastapi.staticfiles import StaticFiles
+from archive_static import SourceArchiveStaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
@@ -20,7 +20,7 @@ import queue as stdlib_queue
 
 load_dotenv()
 
-APP_VERSION = "15.10"
+APP_VERSION = "15.14"
 APP_SECRET = os.getenv("APP_SECRET")
 if not APP_SECRET:
     raise ValueError("環境變數 APP_SECRET 尚未設定！")
@@ -89,6 +89,28 @@ def serve_frontend():
         headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
     )
 
+@app.get("/history-lab")
+def serve_history_lab():
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "history-lab.html"),
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            "X-Content-Type-Options": "nosniff",
+        },
+    )
+
+@app.get("/source-archive")
+def serve_source_archive():
+    return FileResponse(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "source-archive.html"),
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            "X-Content-Type-Options": "nosniff",
+        },
+    )
+
 @app.get("/manifest.json")
 def serve_manifest():
     manifest_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json")
@@ -123,7 +145,7 @@ def serve_sw():
         headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
     )
 
-app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
+app.mount("/static", SourceArchiveStaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
 
 @app.post("/api/auth")
 @limiter.limit("5/minute")

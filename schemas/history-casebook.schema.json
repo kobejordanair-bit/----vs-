@@ -1,0 +1,610 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dynasty.local/schemas/history-casebook-v1.json",
+  "title": "王侯將相史論案卷契約 v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaVersion",
+    "id",
+    "version",
+    "title",
+    "introduction",
+    "packageId",
+    "packageVersion",
+    "cases"
+  ],
+  "properties": {
+    "format": {
+      "const": "dynasty-history-casebook",
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1,
+      "type": "integer"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^casebook:[a-z0-9][a-z0-9-]*$",
+      "maxLength": 200
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "introduction": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "packageId": {
+      "type": "string",
+      "pattern": "^history:[a-z0-9][a-z0-9-]*$",
+      "maxLength": 200
+    },
+    "packageVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Case"
+      },
+      "minItems": 1,
+      "maxItems": 50
+    }
+  },
+  "$defs": {
+    "Choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "feedback",
+        "claimIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "maxLength": 80
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 1,
+          "maxItems": 500
+        }
+      }
+    },
+    "Task": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "chapterId",
+            "prompt",
+            "choices",
+            "explanation",
+            "claimIds",
+            "hint",
+            "type",
+            "expectedChoiceIds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^task:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 200
+            },
+            "chapterId": {
+              "type": "string",
+              "pattern": "^chapter:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 200
+            },
+            "prompt": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "choices": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Choice"
+              },
+              "minItems": 2,
+              "maxItems": 20
+            },
+            "explanation": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "claimIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+                "maxLength": 200
+              },
+              "minItems": 1,
+              "maxItems": 500
+            },
+            "hint": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "type": {
+              "const": "single-choice",
+              "type": "string"
+            },
+            "expectedChoiceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9-]*$",
+                "maxLength": 80
+              },
+              "minItems": 1,
+              "maxItems": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "chapterId",
+            "prompt",
+            "choices",
+            "explanation",
+            "claimIds",
+            "hint",
+            "type",
+            "expectedChoiceIds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^task:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 200
+            },
+            "chapterId": {
+              "type": "string",
+              "pattern": "^chapter:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 200
+            },
+            "prompt": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "choices": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Choice"
+              },
+              "minItems": 2,
+              "maxItems": 20
+            },
+            "explanation": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "claimIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+                "maxLength": 200
+              },
+              "minItems": 1,
+              "maxItems": 500
+            },
+            "hint": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "type": {
+              "const": "multi-choice",
+              "type": "string"
+            },
+            "expectedChoiceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9-]*$",
+                "maxLength": 80
+              },
+              "minItems": 1,
+              "maxItems": 20
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "chapterId",
+            "prompt",
+            "choices",
+            "explanation",
+            "claimIds",
+            "hint",
+            "type",
+            "acceptableOrders"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^task:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 200
+            },
+            "chapterId": {
+              "type": "string",
+              "pattern": "^chapter:[a-z0-9][a-z0-9-]*$",
+              "maxLength": 200
+            },
+            "prompt": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "choices": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Choice"
+              },
+              "minItems": 2,
+              "maxItems": 20
+            },
+            "explanation": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "claimIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+                "maxLength": 200
+              },
+              "minItems": 1,
+              "maxItems": 500
+            },
+            "hint": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "type": {
+              "const": "sequence",
+              "type": "string"
+            },
+            "acceptableOrders": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9-]*$",
+                  "maxLength": 80
+                },
+                "minItems": 2,
+                "maxItems": 20
+              },
+              "minItems": 1,
+              "maxItems": 30
+            }
+          }
+        }
+      ]
+    },
+    "Chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "intro",
+        "claimIds",
+        "taskIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^chapter:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 200
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "intro": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 0,
+          "maxItems": 500
+        },
+        "taskIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^task:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 1,
+          "maxItems": 50
+        }
+      }
+    },
+    "Perspective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "personId",
+        "framing",
+        "claimIds",
+        "analysisPrompt"
+      ],
+      "properties": {
+        "personId": {
+          "type": "string",
+          "pattern": "^person:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 200
+        },
+        "framing": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 1,
+          "maxItems": 500
+        },
+        "analysisPrompt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        }
+      }
+    },
+    "Finale": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt",
+        "reflectionPrompts",
+        "closingNote",
+        "minimumClaimMaterials",
+        "minimumOriginalMaterials",
+        "minimumThesisLength",
+        "minimumCounterargumentLength",
+        "minimumUncertaintyLength"
+      ],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "reflectionPrompts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "minItems": 0,
+          "maxItems": 20
+        },
+        "closingNote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "minimumClaimMaterials": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "minimumOriginalMaterials": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "minimumThesisLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "minimumCounterargumentLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "minimumUncertaintyLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        }
+      }
+    },
+    "Case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "order",
+        "title",
+        "subtitle",
+        "theme",
+        "difficulty",
+        "estimatedMinutes",
+        "premise",
+        "inquiry",
+        "eventIds",
+        "personIds",
+        "claimIds",
+        "chapters",
+        "tasks",
+        "perspectives",
+        "finale"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^case:[a-z0-9][a-z0-9-]*$",
+          "maxLength": 200
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "theme": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": [
+            "入門",
+            "進階"
+          ]
+        },
+        "estimatedMinutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 240
+        },
+        "premise": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "inquiry": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "eventIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^event:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 1,
+          "maxItems": 500
+        },
+        "personIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^person:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 1,
+          "maxItems": 500
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^claim:[a-z0-9][a-z0-9-]*$",
+            "maxLength": 200
+          },
+          "minItems": 1,
+          "maxItems": 500
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Chapter"
+          },
+          "minItems": 1,
+          "maxItems": 20
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Task"
+          },
+          "minItems": 1,
+          "maxItems": 50
+        },
+        "perspectives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Perspective"
+          },
+          "minItems": 0,
+          "maxItems": 30
+        },
+        "finale": {
+          "$ref": "#/$defs/Finale"
+        }
+      }
+    }
+  }
+}

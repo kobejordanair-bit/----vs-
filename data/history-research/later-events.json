@@ -1,0 +1,1854 @@
+{
+  "format": "dynasty-history-research",
+  "version": 1,
+  "researchScope": "206–202 BCE楚漢戰爭後段，供root轉入共用schema；非完整年表或所有諸侯",
+  "preparedAt": "2026-10-01",
+  "dataLayerPolicy": {
+    "sourceStatement": "只述所讀古史記載，逐claim附章節與URL來源ID",
+    "editorInterpretation": "BCE對照、異名合併、跨段事件窗口屬編輯整理，暫不寫確定現代日期",
+    "gameRules": "本研究不填遊戲效果、兵數、人口、座標或固定心理"
+  },
+  "librarySnapshot": "資料備份_2026-09-30/962人物完整資料.json",
+  "sources": [
+    {
+      "id": "source:shiji-008",
+      "title": "《史記》卷八·高祖本紀",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷008",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。"
+    },
+    {
+      "id": "source:shiji-092",
+      "title": "《史記》卷九十二·淮陰侯列傳",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷092",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。"
+    },
+    {
+      "id": "source:shiji-055",
+      "title": "《史記》卷五十五·留侯世家",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷055",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。"
+    },
+    {
+      "id": "source:shiji-091",
+      "title": "《史記》卷九十一·黥布列傳",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷091",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。"
+    },
+    {
+      "id": "source:shiji-090",
+      "title": "《史記》卷九十·魏豹彭越列傳",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷090",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。"
+    },
+    {
+      "id": "source:shiji-016",
+      "title": "《史記》卷十六·秦楚之際月表",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷016",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。",
+      "editorialCaution": "網頁「公元前」欄是現代編輯增補，與原漢紀年/月欄分開，不當作司馬遷原文。"
+    },
+    {
+      "id": "source:shiji-007",
+      "title": "《史記》卷七·項羽本紀",
+      "url": "https://zh.wikisource.org/zh-hant/史記/卷007",
+      "sourceType": "ancient-primary-text-transcription",
+      "accessedAt": "2026-10-01",
+      "webOpened": true,
+      "editionCaution": "以維基文庫網頁轉錄為本；未校對紙本異文。原史籍記載不等同無爭議現代定論。"
+    }
+  ],
+  "libraryBindings": [
+    {
+      "personId": "person:liu-bang",
+      "name": "劉邦",
+      "libraryIds": [
+        "emperor_漢高祖_279096455",
+        "general_劉邦_306143732"
+      ],
+      "aliases": [
+        "漢高祖",
+        "劉邦"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "同一歷史人物的兩個原人物庫分類條目；並存，未合併原文。"
+    },
+    {
+      "personId": "person:xiang-yu",
+      "name": "項羽",
+      "libraryIds": [
+        "general_項羽_306690831"
+      ],
+      "aliases": [
+        "項羽",
+        "項籍",
+        "項王"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:han-xin",
+      "name": "韓信",
+      "libraryIds": [
+        "general_韓信_306677029"
+      ],
+      "aliases": [
+        "韓信",
+        "淮陰侯"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "本條是淮陰侯韓信，不是韓王信；淮陰侯不可當206–202戰爭期通用現任職稱。"
+    },
+    {
+      "personId": "person:zhang-liang",
+      "name": "張良",
+      "libraryIds": [
+        "minister_張良_2003953844"
+      ],
+      "aliases": [
+        "張良",
+        "子房",
+        "留侯"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "留侯為後來封號；戰爭中需依事件記載用當時職任。"
+    },
+    {
+      "personId": "person:ying-bu",
+      "name": "英布",
+      "libraryIds": [
+        "general_英布_306514921"
+      ],
+      "aliases": [
+        "英布",
+        "黥布",
+        "九江王",
+        "淮南王"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "卷091同篇使用英布、黥布；九江王與淮南王有不同任職時間。"
+    },
+    {
+      "personId": "person:peng-yue",
+      "name": "彭越",
+      "libraryIds": [
+        "general_彭越_306245236"
+      ],
+      "aliases": [
+        "彭越",
+        "彭相國",
+        "建成侯"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "戰爭中的魏相國與漢五年後的梁王不能混用。"
+    },
+    {
+      "personId": "person:xiao-he",
+      "name": "蕭何",
+      "libraryIds": [
+        "minister_蕭何_2004244066"
+      ],
+      "aliases": [
+        "蕭何"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:chen-ping",
+      "name": "陳平",
+      "libraryIds": [
+        "minister_陳平_2004383034"
+      ],
+      "aliases": [
+        "陳平"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:long-ju",
+      "name": "龍且",
+      "libraryIds": [
+        "general_龍且_306737886"
+      ],
+      "aliases": [
+        "龍且"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:zhang-er",
+      "name": "張耳",
+      "libraryIds": [
+        "general_張耳_306240085"
+      ],
+      "aliases": [
+        "張耳"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "井陘戰時不直接套用後來趙王職稱。"
+    },
+    {
+      "personId": "person:chen-yu",
+      "name": "陳餘",
+      "libraryIds": [
+        "general_陳餘_306684860"
+      ],
+      "aliases": [
+        "陳餘",
+        "成安君"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:guan-ying",
+      "name": "灌嬰",
+      "libraryIds": [
+        "general_灌嬰_306366235"
+      ],
+      "aliases": [
+        "灌嬰"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:li-shiqi",
+      "name": "酈食其",
+      "libraryIds": [
+        "minister_酈食其_2005544997"
+      ],
+      "aliases": [
+        "酈食其",
+        "酈生"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:zhang-han",
+      "name": "章邯",
+      "libraryIds": [
+        "general_章邯_306463878"
+      ],
+      "aliases": [
+        "章邯",
+        "雍王"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": ""
+    },
+    {
+      "personId": "person:kuai-tong",
+      "name": "蒯通",
+      "libraryIds": [
+        "general_蒯通_306541570"
+      ],
+      "aliases": [
+        "蒯通"
+      ],
+      "bindingBasis": "962人物完整資料.json姓名/ID逐條讀取；歷史別名另按史記事件上下文匹配",
+      "bindingStatus": "matched",
+      "note": "原ID前綴為general，但原條目type是minister；保留原ID，不以ID前綴覆寫分類。"
+    }
+  ],
+  "unboundNames": [
+    "隨何",
+    "田廣",
+    "趙歇",
+    "周殷",
+    "劉賈"
+  ],
+  "events": [
+    {
+      "id": "event:chuhan-han-xin-appointed",
+      "title": "蕭何薦韓信，漢王拜為大將",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "漢元年；漢王至南鄭後、八月東出陳倉前"
+        ],
+        "regnalYear": 1,
+        "originalMonth": null,
+        "precision": "relative-within-year",
+        "bceMapping": {
+          "nominalYearBCE": 206,
+          "earliestYearBCE": 206,
+          "latestYearBCE": 206,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-092",
+            "locator": "韓信至南鄭、蕭何追亡及拜將段"
+          },
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "漢元年四月之國與八月還師段"
+          }
+        ],
+        "uncertainty": "拜將本段沒有月日；前後事件限定206年中，不能加上『月下』作時間。"
+      },
+      "places": [
+        {
+          "placeId": "place:hanzhong",
+          "ancientName": "南鄭／漢中",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "先任治粟都尉，於此拜大將",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "為治粟都尉至拜大將段"
+            }
+          ]
+        },
+        {
+          "personId": "person:xiao-he",
+          "roleAtEvent": "丞相，薦舉韓信",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "蕭何追亡與薦將段"
+            }
+          ]
+        },
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "王許之、設壇拜將段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "appointment",
+          "layer": "sourceStatement",
+          "text": "卷092記漢王採納蕭何薦舉，設壇拜韓信為大將。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "至拜大將段",
+              "quote": "乃韓信也"
+            }
+          ]
+        },
+        {
+          "id": "location",
+          "layer": "sourceStatement",
+          "text": "薦舉敘事置於韓信至南鄭之後。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "至南鄭、信亡、何追之段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "afterExternal": "漢元年四月漢王之國",
+        "before": [
+          "event:chuhan-return-sanqin"
+        ]
+      },
+      "uncertainties": [
+        "『月下追韓信』的月下場景不見本次所讀原文；只保留追亡記載。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-return-sanqin",
+      "title": "漢軍東出陳倉，進攻三秦",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "漢元年八月"
+        ],
+        "regnalYear": 1,
+        "originalMonth": 8,
+        "precision": "original-month",
+        "bceMapping": {
+          "nominalYearBCE": 206,
+          "earliestYearBCE": 206,
+          "latestYearBCE": 206,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "八月漢王用韓信之計段"
+          },
+          {
+            "sourceId": "source:shiji-092",
+            "locator": "八月舉兵東出陳倉段"
+          }
+        ],
+        "uncertainty": "原八月為古曆月，未換算公曆月日。"
+      },
+      "places": [
+        {
+          "placeId": "place:hanzhong",
+          "ancientName": "漢中",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": "place:guanzhong",
+          "ancientName": "三秦／關中",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "故道",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "陳倉",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "好畤",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "廢丘",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，率漢軍返攻",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "八月段"
+            }
+          ]
+        },
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "漢軍大將，所獻計策被採用",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "八月用韓信之計段"
+            }
+          ]
+        },
+        {
+          "personId": "person:zhang-han",
+          "roleAtEvent": "雍王，迎戰於陳倉",
+          "factionId": null,
+          "unmodeledFactionName": "雍",
+          "relationshipToChu": "項羽分封的諸侯，非直接等同西楚直轄軍",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "章邯迎擊段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "return",
+          "layer": "sourceStatement",
+          "text": "卷008記漢王用韓信之計，從故道還師，章邯在陳倉迎擊後退至廢丘。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "八月段",
+              "quote": "從故道還"
+            }
+          ]
+        },
+        {
+          "id": "unfinished",
+          "layer": "sourceStatement",
+          "text": "該段記廢丘被圍；不能把『定三秦』簡寫成八月所有據點已投降。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "圍雍王廢丘段；二年六月灌廢丘段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-han-xin-appointed"
+        ],
+        "before": [
+          "event:chuhan-xiayi-plan"
+        ]
+      },
+      "uncertainties": [
+        "章邯是項羽分封的雍王，非楚王直轄軍；勢力欄暫空並記雍，待共用schema另建雍勢力。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-xiayi-plan",
+      "title": "彭城敗後，張良在下邑建議聯合三人",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "漢二年彭城敗後；卷055未另載月日"
+        ],
+        "regnalYear": 2,
+        "originalMonth": null,
+        "precision": "relative-within-year",
+        "bceMapping": {
+          "nominalYearBCE": 205,
+          "earliestYearBCE": 205,
+          "latestYearBCE": 205,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-055",
+            "locator": "至下邑踞鞍問策段"
+          },
+          {
+            "sourceId": "source:shiji-092",
+            "locator": "漢二年四月彭城敗段"
+          }
+        ],
+        "uncertainty": "用彭城漢二年四月作前界；下邑問策本身不填精確月日。"
+      },
+      "places": [
+        {
+          "placeId": null,
+          "ancientName": "下邑",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": "place:pengcheng",
+          "ancientName": "彭城",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，彭城敗後收兵",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "漢敗而還、至下邑段"
+            }
+          ]
+        },
+        {
+          "personId": "person:zhang-liang",
+          "roleAtEvent": "漢方謀臣；卷055在前段載成信侯",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "復以良為成信侯至下邑段"
+            }
+          ]
+        },
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "漢王之將，受推薦主持一面",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "漢王之將獨韓信段"
+            }
+          ]
+        },
+        {
+          "personId": "person:ying-bu",
+          "roleAtEvent": "九江王，張良建議爭取的楚方諸侯",
+          "factionId": "faction:chu",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "九江王黥布段"
+            }
+          ]
+        },
+        {
+          "personId": "person:peng-yue",
+          "roleAtEvent": "反楚於梁地的獨立軍事力量，張良建議聯絡",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "彭越與齊王田榮反梁地段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "plan",
+          "layer": "sourceStatement",
+          "text": "卷055記張良建議把東方利益分給英布、彭越、韓信，漢王派隨何說英布並聯絡彭越。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "下邑問策段",
+              "quote": "捐之此三人"
+            }
+          ]
+        },
+        {
+          "id": "not-direct-control",
+          "layer": "sourceStatement",
+          "text": "被爭取者有自有軍隊或諸侯身分，不宜把三人視為一開始便受同一朝廷直接指揮。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-055",
+              "locator": "下邑問策段"
+            },
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "二年春彭越歸漢及魏相國擅將其兵段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "afterExternal": "漢二年四月彭城之敗",
+        "before": [
+          "event:chuhan-ying-bu-joins"
+        ]
+      },
+      "uncertainties": [
+        "彭越的faction:han表示合作側，並不抹除其自有部眾與政治地位。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-ying-bu-joins",
+      "title": "英布背楚，敗後與隨何歸漢",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷008置於漢二年彭城敗後",
+          "卷091作漢三年",
+          "卷016載漢三年十二月布身降漢"
+        ],
+        "regnalYear": 3,
+        "originalMonth": 12,
+        "precision": "original-month-with-discrepancy",
+        "bceMapping": {
+          "nominalYearBCE": 204,
+          "earliestYearBCE": 205,
+          "latestYearBCE": 204,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "下邑至使隨何、九江王敗歸段"
+          },
+          {
+            "sourceId": "source:shiji-091",
+            "locator": "漢三年隨何使淮南至歸漢段"
+          },
+          {
+            "sourceId": "source:shiji-016",
+            "locator": "漢三年十二月九江欄"
+          }
+        ],
+        "uncertainty": "勸說、公開叛楚、戰敗與到漢是相連但非同日事件；來源紀年／敘事位置不一，保留205–204年窗口。"
+      },
+      "places": [
+        {
+          "placeId": null,
+          "ancientName": "九江",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "淮南",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "六",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:ying-bu",
+          "roleAtEvent": "原九江王；背楚後其地被楚收回，尚未到淮南王新封期",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-091",
+              "locator": "殺楚使、龍且破布、間行歸漢段"
+            },
+            {
+              "sourceId": "source:shiji-016",
+              "locator": "三年十二月布身降漢地屬項籍欄"
+            }
+          ]
+        },
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，派隨何",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "遣隨何段"
+            }
+          ]
+        },
+        {
+          "personId": "person:long-ju",
+          "roleAtEvent": "楚將，奉命進攻英布",
+          "factionId": "faction:chu",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-091",
+              "locator": "項聲龍且攻淮南段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "defection",
+          "layer": "sourceStatement",
+          "text": "卷091記隨何促成英布公開反楚；楚軍擊敗布軍，英布與隨何間行歸漢。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-091",
+              "locator": "隨何說布至歸漢段",
+              "quote": "閒行與何俱歸漢"
+            }
+          ]
+        },
+        {
+          "id": "arrives",
+          "layer": "sourceStatement",
+          "text": "月表把『布身降漢，地屬項籍』列在漢三年十二月。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-016",
+              "locator": "漢三年十二月九江欄"
+            }
+          ]
+        },
+        {
+          "id": "new-title",
+          "layer": "sourceStatement",
+          "text": "卷091與月表皆載漢四年七月立布為淮南王；不能把此封號提前用於初次歸漢。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-091",
+              "locator": "四年七月立布為淮南王段"
+            },
+            {
+              "sourceId": "source:shiji-016",
+              "locator": "漢四年七月漢／淮南欄"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-xiayi-plan"
+        ],
+        "before": [
+          "event:chuhan-gaixia"
+        ],
+        "notOrderedAgainst": [
+          "event:chuhan-jingxing"
+        ]
+      },
+      "uncertainties": [
+        "缺隨何原人物庫條目，不造ID。",
+        "漢三年十二月為到漢時點；私許背楚可更早。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-jingxing",
+      "title": "韓信、張耳於井陘破趙",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷008：漢三年",
+          "卷016：漢三年十月"
+        ],
+        "regnalYear": 3,
+        "originalMonth": 10,
+        "precision": "original-month",
+        "bceMapping": {
+          "nominalYearBCE": 204,
+          "earliestYearBCE": 205,
+          "latestYearBCE": 204,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "三年韓信张耳東下井陘段"
+          },
+          {
+            "sourceId": "source:shiji-016",
+            "locator": "漢三年十月趙／代欄"
+          }
+        ],
+        "uncertainty": "保留漢三年名義對照204及十月歲首跨年範圍；未完成公曆換算。"
+      },
+      "places": [
+        {
+          "placeId": "place:jingxing",
+          "ancientName": "井陘口",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "泜水",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "漢軍將領",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "信與張耳東下井陘段"
+            }
+          ]
+        },
+        {
+          "personId": "person:zhang-er",
+          "roleAtEvent": "與韓信共同攻趙；此事件不套用後來趙王封號",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "信與張耳攻趙段"
+            }
+          ]
+        },
+        {
+          "personId": "person:chen-yu",
+          "roleAtEvent": "成安君，趙方指揮者",
+          "factionId": "faction:zhao",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "成安君不聽李左車策至戰敗段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "battle",
+          "layer": "sourceStatement",
+          "text": "卷092記韓信設背水陣並以奇兵易幟，與張耳擊敗趙軍，陳餘死、趙王歇被擒。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "井陘戰段",
+              "quote": "背水陳"
+            }
+          ]
+        },
+        {
+          "id": "dating",
+          "layer": "sourceStatement",
+          "text": "卷016列韓信斬陳餘、漢滅歇於漢三年十月。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-016",
+              "locator": "漢三年十月代／趙欄",
+              "quote": "三年十月"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "afterExternal": "破魏、破代後九月",
+        "before": [
+          "event:chuhan-attack-qi"
+        ]
+      },
+      "uncertainties": [
+        "趙歇缺原人物庫ID，保留未綁定。",
+        "不把趙軍『號稱』數量設為確定兵數。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-attack-qi",
+      "title": "酈食其說齊後，韓信仍進兵襲齊",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷092：修武奪軍後、漢四年平齊前",
+          "卷008置於三年末至四年前的敘事段"
+        ],
+        "regnalYear": null,
+        "originalMonth": null,
+        "precision": "relative-window",
+        "bceMapping": {
+          "nominalYearBCE": 204,
+          "earliestYearBCE": 204,
+          "latestYearBCE": 203,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-092",
+            "locator": "六月修武奪軍至韓信襲齊段"
+          },
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "淮陰受命東、酈生說齊、襲齊段"
+          }
+        ],
+        "uncertainty": "此段沒有獨立月日；不能把後文『漢四年平齊』硬作襲擊發生日。"
+      },
+      "places": [
+        {
+          "placeId": null,
+          "ancientName": "平原",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "歷下",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "臨菑",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "高密",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "奉漢命攻齊的將領；此时尚未由漢冊立齊王",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "拜相國擊齊至襲齊段"
+            }
+          ]
+        },
+        {
+          "personId": "person:li-shiqi",
+          "roleAtEvent": "漢方使者，先說齊",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "酈食其說下齊段"
+            }
+          ]
+        },
+        {
+          "personId": "person:kuai-tong",
+          "roleAtEvent": "勸韓信繼續進軍的辯士",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "范陽辯士蒯通說信段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "conflict",
+          "layer": "sourceStatement",
+          "text": "卷092記韓信聞酈食其說下齊本欲停兵，後採納蒯通進言，襲歷下軍至臨菑。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "酈食其說齊與蒯通進言段",
+              "quote": "襲齊歷下軍"
+            }
+          ]
+        },
+        {
+          "id": "consequence",
+          "layer": "sourceStatement",
+          "text": "同篇記田廣認為酈食其出賣自己而殺之，逃往高密求楚援。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "齊王亨酈生、走高密段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-jingxing"
+        ],
+        "before": [
+          "event:chuhan-wei-river"
+        ]
+      },
+      "uncertainties": [
+        "保留史籍所載動作，不由蒯通言辭推定韓信固定嫉妒人格。",
+        "未替未核實田廣原ID造綁定。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-wei-river",
+      "title": "濰水之戰，楚將龍且敗死",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷016：漢四年十一月",
+          "卷092：襲齊後、平齊封王前"
+        ],
+        "regnalYear": 4,
+        "originalMonth": 11,
+        "precision": "original-month",
+        "bceMapping": {
+          "nominalYearBCE": 203,
+          "earliestYearBCE": 204,
+          "latestYearBCE": 203,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-016",
+            "locator": "漢四年十一月楚欄"
+          },
+          {
+            "sourceId": "source:shiji-092",
+            "locator": "龍且救齊、夾濰水陳段"
+          }
+        ],
+        "uncertainty": "原十一月未換公曆；年窗口跨204–203，不能把古十一月當公曆11月。"
+      },
+      "places": [
+        {
+          "placeId": "place:wei-river",
+          "ancientName": "濰水",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "高密西",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "城陽",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "漢軍將領，與齊楚軍交戰",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "濰水戰段"
+            }
+          ]
+        },
+        {
+          "personId": "person:long-ju",
+          "roleAtEvent": "奉項王命救齊的楚將",
+          "factionId": "faction:chu",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "楚使龍且救齊段"
+            }
+          ]
+        },
+        {
+          "personId": "person:guan-ying",
+          "roleAtEvent": "騎將；本紀並記其擊楚軍",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "韓信與戰、灌嬰擊楚段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "battle",
+          "layer": "sourceStatement",
+          "text": "卷092記沙囊壅水與渡河作戰，龍且追擊後敗死；卷008亦記灌嬰參與擊楚軍。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "濰水戰段",
+              "quote": "殺龍且"
+            },
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "楚救齊與龍且軍敗段"
+            }
+          ]
+        },
+        {
+          "id": "dating",
+          "layer": "sourceStatement",
+          "text": "月表把破殺龍且列於漢四年十一月。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-016",
+              "locator": "漢四年十一月楚欄"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-attack-qi"
+        ],
+        "before": [
+          "event:chuhan-han-xin-qi-king"
+        ]
+      },
+      "uncertainties": [
+        "此處濰水不可誤配關中渭水；place:wei-river需名稱欄強制區分。",
+        "原文沙囊數量與兵數未作現代驗證，不進確定數值欄。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-han-xin-qi-king",
+      "title": "漢方冊立韓信為齊王",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷092、055：漢四年",
+          "卷016：漢四年二月"
+        ],
+        "regnalYear": 4,
+        "originalMonth": 2,
+        "precision": "original-month",
+        "bceMapping": {
+          "nominalYearBCE": 203,
+          "earliestYearBCE": 203,
+          "latestYearBCE": 203,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-092",
+            "locator": "漢四年韓信請假王段"
+          },
+          {
+            "sourceId": "source:shiji-055",
+            "locator": "漢四年授齊王印段"
+          },
+          {
+            "sourceId": "source:shiji-016",
+            "locator": "漢四年二月漢／齊欄"
+          }
+        ],
+        "uncertainty": "月份採月表，未換算公曆日。"
+      },
+      "places": [
+        {
+          "placeId": null,
+          "ancientName": "齊",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": "place:xingyang",
+          "ancientName": "滎陽",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "於本事件由漢方立為齊王",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "遣張良往立信為齊王段"
+            }
+          ]
+        },
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，許立齊王並徵其兵",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "韓信請假王至立真王段"
+            }
+          ]
+        },
+        {
+          "personId": "person:zhang-liang",
+          "roleAtEvent": "勸漢王並持印綬往立韓信",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "張良陳平躡足至使良立王段"
+            }
+          ]
+        },
+        {
+          "personId": "person:chen-ping",
+          "roleAtEvent": "與張良共同進諫",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "張良陳平附耳語段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "appointment",
+          "layer": "sourceStatement",
+          "text": "卷092記韓信請為假王，張良與陳平勸漢王因而冊立，漢王遣張良立韓信為齊王並徵兵擊楚。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "漢四年請假王與授印段",
+              "quote": "立信為齊王"
+            }
+          ]
+        },
+        {
+          "id": "dating",
+          "layer": "sourceStatement",
+          "text": "月表將立韓信王齊列在漢四年二月。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-016",
+              "locator": "漢四年二月漢／齊欄"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-wei-river"
+        ],
+        "before": [
+          "event:chuhan-guling"
+        ]
+      },
+      "uncertainties": [
+        "滎陽為漢王受請時敘事所在，冊立印綬送達齊的精確地點未載。",
+        "齊王是漢聯盟內政治身分，不直接等同全齊土地即時穩定控制。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-honggou",
+      "title": "楚漢約以鴻溝分界，楚歸還漢王家屬",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷008、007：四年廣武相持後",
+          "卷016：漢四年九月太公呂后歸自楚"
+        ],
+        "regnalYear": 4,
+        "originalMonth": 9,
+        "precision": "original-month-for-linked-action",
+        "bceMapping": {
+          "nominalYearBCE": 203,
+          "earliestYearBCE": 203,
+          "latestYearBCE": 203,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "中分天下與歸漢王父母妻子段"
+          },
+          {
+            "sourceId": "source:shiji-007",
+            "locator": "侯公說項王、鴻溝約段"
+          },
+          {
+            "sourceId": "source:shiji-016",
+            "locator": "漢四年九月漢欄"
+          }
+        ],
+        "uncertainty": "九月明載的是家屬歸還；協議簽定日未載，不能將兩者強置同日。"
+      },
+      "places": [
+        {
+          "placeId": null,
+          "ancientName": "廣武",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "鴻溝",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，與楚方議界",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "鴻溝約段"
+            }
+          ]
+        },
+        {
+          "personId": "person:xiang-yu",
+          "roleAtEvent": "項王，議界並歸還漢王家屬",
+          "factionId": "faction:chu",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "與漢約、中分天下段"
+            }
+          ]
+        },
+        {
+          "personId": "person:peng-yue",
+          "roleAtEvent": "梁地攻楚、干擾楚軍供給的合作力量",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "三年游兵絕後糧段"
+            },
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "彭越絕糧至約鴻溝段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "agreement",
+          "layer": "sourceStatement",
+          "text": "卷007、008記以鴻溝分楚漢，西屬漢、東屬楚，並歸還漢王父母妻子。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "鴻溝約段",
+              "quote": "割鴻溝"
+            },
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "鴻溝約段"
+            }
+          ]
+        },
+        {
+          "id": "supply-context",
+          "layer": "sourceStatement",
+          "text": "卷090記彭越在梁地切斷楚軍後糧；卷007在議和前對照漢食多、楚食絕。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "漢三年游兵段",
+              "quote": "絕其後糧"
+            },
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "侯公議和前段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-han-xin-qi-king"
+        ],
+        "before": [
+          "event:chuhan-guling"
+        ]
+      },
+      "uncertainties": [
+        "原文記載的供給優劣不支援精確糧食噸數、每旬產量或國家財政總表。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-guling",
+      "title": "固陵未會兵，張良以分地條件促成合軍",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷007：漢五年",
+          "卷055：漢四年後文作其秋",
+          "卷090：漢五年秋段後"
+        ],
+        "regnalYear": 5,
+        "originalMonth": null,
+        "precision": "regnal-year-with-discrepancy",
+        "bceMapping": {
+          "nominalYearBCE": 202,
+          "earliestYearBCE": 203,
+          "latestYearBCE": 202,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-007",
+            "locator": "漢五年追項王至固陵段"
+          },
+          {
+            "sourceId": "source:shiji-055",
+            "locator": "其秋漢王追楚至陽夏南段"
+          },
+          {
+            "sourceId": "source:shiji-090",
+            "locator": "漢五年秋與留侯促會段"
+          }
+        ],
+        "uncertainty": "固陵本段未明月日；卷055其秋與卷007五年須保留差異，不能默改成精確202年某日。"
+      },
+      "places": [
+        {
+          "placeId": "place:guling",
+          "ancientName": "固陵",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "碧陵（卷090用字）",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "陽夏南",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "陳",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "睢陽",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "穀城",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，追楚失利後求合軍",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "固陵敗後問張良段"
+            }
+          ]
+        },
+        {
+          "personId": "person:zhang-liang",
+          "roleAtEvent": "建議許分地以促諸侯合軍",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "張子房分地建議段"
+            }
+          ]
+        },
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "齊王，原定會兵未到，後應約進兵",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "信越不會至報請進兵段"
+            }
+          ]
+        },
+        {
+          "personId": "person:peng-yue",
+          "roleAtEvent": "建成侯／魏相國，自有部眾，後應約合軍",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "建成侯彭越期會段"
+            },
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "留侯分地促彭越段"
+            }
+          ]
+        },
+        {
+          "personId": "person:xiang-yu",
+          "roleAtEvent": "項王，擊敗追擊漢軍",
+          "factionId": "faction:chu",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "楚擊漢軍大破之段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "absence",
+          "layer": "sourceStatement",
+          "text": "卷007記韓信、彭越未如期會兵，漢軍在固陵被楚擊敗。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "漢五年固陵段",
+              "quote": "信、越之兵不會"
+            }
+          ]
+        },
+        {
+          "id": "agreement",
+          "layer": "sourceStatement",
+          "text": "卷007、090記張良建議許以特定地域；漢王遣使後，韓信、彭越答應進兵。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "自陳以東傅海至許地合軍段"
+            },
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "留侯策與彭越合兵段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-honggou"
+        ],
+        "before": [
+          "event:chuhan-gaixia"
+        ]
+      },
+      "uncertainties": [
+        "卷090作碧陵，卷007、055作固陵；僅列異名待校，不先斷定現代精確位置。",
+        "原文所載許地不等於承諾當下即完成土地交割。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    },
+    {
+      "id": "event:chuhan-gaixia",
+      "title": "諸侯合軍垓下，楚軍敗、項羽突圍",
+      "dating": {
+        "originalEra": "漢",
+        "rawLabels": [
+          "卷008：漢五年",
+          "卷007接漢五年固陵之後",
+          "卷016：漢五年十二月楚欄誅籍、正月漢欄殺項籍"
+        ],
+        "regnalYear": 5,
+        "originalMonth": null,
+        "precision": "original-month-window-with-discrepancy",
+        "bceMapping": {
+          "nominalYearBCE": 202,
+          "earliestYearBCE": 203,
+          "latestYearBCE": 202,
+          "status": "provisional",
+          "convertedGregorianDate": null,
+          "method": "常用漢紀年名義年對照；保留十月歲首跨公曆年範圍，不作月日換算"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "source:shiji-008",
+            "locator": "五年決勝垓下段"
+          },
+          {
+            "sourceId": "source:shiji-007",
+            "locator": "項王軍壁垓下至潰圍段"
+          },
+          {
+            "sourceId": "source:shiji-016",
+            "locator": "漢五年十二月楚欄及正月漢欄"
+          }
+        ],
+        "uncertainty": "垓下圍戰、突圍、項羽死與天下平是不同事件；月表十二月／正月欄不能拼成同一精確日期。"
+      },
+      "places": [
+        {
+          "placeId": "place:gaixia",
+          "ancientName": "垓下",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "城父",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "九江",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "東城",
+          "modernCoordinates": null
+        },
+        {
+          "placeId": null,
+          "ancientName": "烏江",
+          "modernCoordinates": null
+        }
+      ],
+      "actors": [
+        {
+          "personId": "person:liu-bang",
+          "roleAtEvent": "漢王，聯合諸侯軍",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "五年高祖與諸侯兵段"
+            }
+          ]
+        },
+        {
+          "personId": "person:han-xin",
+          "roleAtEvent": "此時齊王；本紀回顧用淮陰侯稱呼其指揮",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "淮陰先合至再乘之段"
+            },
+            {
+              "sourceId": "source:shiji-092",
+              "locator": "齊王信至漢五年徙楚王段"
+            }
+          ]
+        },
+        {
+          "personId": "person:peng-yue",
+          "roleAtEvent": "帶自有軍隊會垓下",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "悉引兵會垓下段",
+              "quote": "悉引兵會垓下"
+            }
+          ]
+        },
+        {
+          "personId": "person:ying-bu",
+          "roleAtEvent": "已受漢封淮南王，九江軍事合作相關",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "周殷舉九江兵迎武王布至大會垓下段"
+            },
+            {
+              "sourceId": "source:shiji-091",
+              "locator": "四年七月封淮南王段"
+            }
+          ]
+        },
+        {
+          "personId": "person:xiang-yu",
+          "roleAtEvent": "項王，垓下被圍後突圍",
+          "factionId": "faction:chu",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "軍壁垓下、夜潰圍南出段"
+            }
+          ]
+        },
+        {
+          "personId": "person:guan-ying",
+          "roleAtEvent": "騎將，受命追楚",
+          "factionId": "faction:han",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "漢令灌嬰追之段"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "battle",
+          "layer": "sourceStatement",
+          "text": "卷008記聯軍於垓下與楚決戰、韓信參與主力指揮；卷007記楚军被圍、糧盡，項羽夜間突圍。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "五年垓下戰段"
+            },
+            {
+              "sourceId": "source:shiji-007",
+              "locator": "垓下被圍段",
+              "quote": "兵少食盡"
+            }
+          ]
+        },
+        {
+          "id": "alliance",
+          "layer": "sourceStatement",
+          "text": "卷090記彭越合兵到垓下；卷008記九江兵及齊梁諸侯共同會合。",
+          "sourceRefs": [
+            {
+              "sourceId": "source:shiji-090",
+              "locator": "彭越會垓下段"
+            },
+            {
+              "sourceId": "source:shiji-008",
+              "locator": "周殷九江兵與大會垓下段"
+            }
+          ]
+        }
+      ],
+      "relativeChronology": {
+        "after": [
+          "event:chuhan-guling"
+        ],
+        "beforeExternal": "漢五年諸侯請尊漢王為皇帝"
+      },
+      "uncertainties": [
+        "卷091將英布、劉賈誘周殷及垓下寫在六年，與卷007、008、090五年不合；保留衝突，不據此改成201BCE。",
+        "垓下戰與東城／烏江死亡敘事分開，不把垓下設定為項羽直接死亡點。",
+        "引用四面楚歌敘事不等於可確定史實心理狀態；人物內心仍屬解讀層。"
+      ],
+      "editorInterpretations": [],
+      "gameRules": []
+    }
+  ],
+  "reviewWarnings": [
+    "source:shiji-016與source:shiji-007需加入root來源表。",
+    "BCE使用正數年與earliest/latest明確標示；時間序排序優先用原漢紀年、十月歲首月序及relativeChronology，禁止按名義年＋古月直接當公曆。",
+    "秦楚月表不同諸侯欄的『一月、二』常為各國任位月數；本檔僅採漢欄原月定位，不把各國月數當公曆月份。",
+    "現代BC欄未視作古文本原字；漢三年十月等跨年仍待獨立曆法換算。",
+    "各朝代稱號不能整批覆蓋人物永久title；本檔保留當時角色。",
+    "原人物庫長文未抄入公共app或repo。"
+  ]
+}

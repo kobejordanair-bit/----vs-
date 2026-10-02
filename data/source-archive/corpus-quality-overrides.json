@@ -1,0 +1,288 @@
+{
+  "format": "dynasty-corpus-quality-overrides",
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "scope": "固定修訂的實際缺文/缺表審閱；不是所有篇章逐字校勘結果。",
+  "notes": [
+    "覆蓋項須同時符合requestedTitle與revisionId；來源修訂變更後應重新檢查。",
+    "Wikisource Textquality 25%表示正在編輯、尚未校對/格式化或可能不全，不等於只完成25%；50%也不保證其省略的表格已具備。",
+    "四庫本可作異版補充，不自動證明與另一版本相同，也不自動證明表格已校勘完整。"
+  ],
+  "qualityMarkerDefinition": {
+    "url": "https://zh.wikisource.org/w/index.php?title=Template:Textquality/doc&oldid=2393938",
+    "checkedOn": "2026-10-02",
+    "interpretation": "模板為轉錄品質/校對狀態分類，不是篇幅完成率。只有實際讀到短截、省略或無數值表格者列incomplete。"
+  },
+  "inspectionSnapshot": {
+    "bookFiles": 29,
+    "documents": 4243,
+    "qualityMarkerCounts": {
+      "25": 1053,
+      "50": 1561,
+      "75": 30,
+      "100": 1
+    },
+    "explicitIncompleteOriginals": 18
+  },
+  "scanReferences": [
+    {
+      "title": "清史稿2 卷25–58",
+      "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+      "descriptionRevisionURL": "https://commons.wikimedia.org/w/index.php?title=File:SSID-12983925_清史稿_2_卷25-58.pdf&oldid=1122659659",
+      "pages": 715,
+      "scope": "可查卷30–35、53所在的分冊；未定位各卷影像頁碼。",
+      "license": "頁面標PD-scan/PD-old及Public Domain Mark，另顯示美國PD標籤待補提示；本次僅收來源入口、不鏡像PDF。",
+      "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "checkedOn": "2026-10-02"
+    }
+  ],
+  "entries": [
+    {
+      "requestedTitle": "金史/卷22",
+      "revisionId": 2432697,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表略」、「以下表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=2432697",
+      "supplementTitle": "金史 (四庫全書本)/卷022",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "晉書/卷018",
+      "revisionId": 2667268,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=2667268",
+      "supplementTitle": "晉書 (四庫全書本)/卷018",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷25",
+      "revisionId": 2594641,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=2594641",
+      "supplementTitle": "明史 (四庫全書本)/卷025",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷32",
+      "revisionId": 1473288,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1473288",
+      "supplementTitle": "明史 (四庫全書本)/卷032",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷33",
+      "revisionId": 1473287,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1473287",
+      "supplementTitle": "明史 (四庫全書本)/卷033",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷34",
+      "revisionId": 2594648,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表格略」、「以下表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=2594648",
+      "supplementTitle": "明史 (四庫全書本)/卷034",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷35",
+      "revisionId": 2594649,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表格略」、「以下表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=2594649",
+      "supplementTitle": "明史 (四庫全書本)/卷035",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷36",
+      "revisionId": 2594650,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「以下表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=2594650",
+      "supplementTitle": "明史 (四庫全書本)/卷036",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史/卷39",
+      "revisionId": 1473281,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表格略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1473281",
+      "supplementTitle": "明史 (四庫全書本)/卷039",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "清史稿/卷30",
+      "revisionId": 1326237,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「（表略）」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326237",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "清史稿/卷31",
+      "revisionId": 1326238,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「（表略）」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326238",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "清史稿/卷32",
+      "revisionId": 1326239,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「（表略）」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326239",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "清史稿/卷33",
+      "revisionId": 1326240,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「（表略）」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326240",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "清史稿/卷34",
+      "revisionId": 1326241,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「（表略）」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326241",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "清史稿/卷35",
+      "revisionId": 1326242,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「（表略）」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326242",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "清史稿/卷53",
+      "revisionId": 1326255,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1326255",
+      "links": [
+        {
+          "title": "清史稿卷25–58掃描本（Commons著錄為公有領域）",
+          "url": "https://commons.wikimedia.org/wiki/File:SSID-12983925_清史稿_2_卷25-58.pdf",
+          "type": "scan-catalogue",
+          "coverage": "卷30–35及53在所標卷次範圍；尚未逐頁定位或OCR。"
+        }
+      ],
+      "notes": "原頁缺表保留incomplete。掃描只提供有授權標示的入口，不把未校對OCR當數據。"
+    },
+    {
+      "requestedTitle": "宋史/卷083",
+      "revisionId": 845888,
+      "status": "incomplete",
+      "reason": "此固定修訂明示「表略」，原書表格並未在此轉錄中提供；下載成功不代表章內資料齊全。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=845888",
+      "supplementTitle": "宋史 (四庫全書本)/卷083",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "宋史/卷084",
+      "revisionId": 1476658,
+      "status": "incomplete",
+      "reason": "此固定修訂正文僅保留演紀積年一小段，與可讀四庫本同卷的步氣朔、步發斂、步晷漏及五星段落比較，明顯缺少後續內容。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=1476658",
+      "supplementTitle": "宋史 (四庫全書本)/卷084",
+      "notes": "異版只供補充及比對，不覆寫原頁；表格、圖字及空缺尚未逐格校勘。"
+    },
+    {
+      "requestedTitle": "明史 (四庫全書本)/卷034",
+      "revisionId": 614866,
+      "status": "incomplete",
+      "reason": "逐頁讀取原始維基文字：立成表位置僅保留大量空行與「<史部,正史類,明史,卷…>」標記，未含應有表格數值；此異版仍無法補齊缺表。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=614866",
+      "notes": "保留可取得的章節說明，表格須連原書掃描核讀。"
+    },
+    {
+      "requestedTitle": "明史 (四庫全書本)/卷039",
+      "revisionId": 614888,
+      "status": "incomplete",
+      "reason": "逐頁讀取原始維基文字：立成表位置僅保留大量空行與「<史部,正史類,明史,卷…>」標記，未含應有表格數值；此異版仍無法補齊缺表。",
+      "checkedOn": "2026-10-02",
+      "evidenceURL": "https://zh.wikisource.org/w/index.php?oldid=614888",
+      "notes": "保留可取得的章節說明，表格須連原書掃描核讀。"
+    }
+  ]
+}

@@ -1,0 +1,2329 @@
+{
+  "format": "dynasty-history-casebook",
+  "schemaVersion": 1,
+  "id": "casebook:chuhan",
+  "version": "1.0.0",
+  "title": "楚漢史論卷一：人物如何做出選擇",
+  "introduction": "以原人物庫與可回查史籍展開六份調查。每卷先讀情境，再辨認行動、資訊與解釋；原人物長文可以成為你支持、質疑或修正的對象。最後留下自己的評議、反證與未解問題。所有卷宗可直接開啟，沒有固定人物道德答案，也不需要AI生成才能推進。",
+  "packageId": "history:chuhan-foundation",
+  "packageVersion": "1.1.0",
+  "cases": [
+    {
+      "id": "case:hongmen",
+      "order": 1,
+      "title": "鴻門：一場宴會，幾套計畫",
+      "subtitle": "從夜間傳訊到離席，找出各人實際做了什麼",
+      "theme": "資訊、關係與共同決策",
+      "difficulty": "入門",
+      "estimatedMinutes": 25,
+      "premise": "你要替鴻門事件寫一張人物評議卡。眼前的材料常被濃縮成「項羽放走劉邦」，但原篇還有告發、私交、回報、劍舞、遮護與留後致謝。先沿消息與行動追查，再決定如何評價人物。",
+      "inquiry": "沛公得以脫身，是哪些人的行動接續造成的？這些記述足以支持怎樣的人物評價，又有哪些內心判斷仍無法確定？",
+      "eventIds": [
+        "event:hongmen-meeting"
+      ],
+      "personIds": [
+        "person:liu-bang",
+        "person:xiang-yu",
+        "person:zhang-liang",
+        "person:xiang-bo",
+        "person:fan-zeng",
+        "person:fan-kuai"
+      ],
+      "chapters": [
+        {
+          "id": "chapter:hongmen-night",
+          "title": "第一章｜消息先於會見",
+          "intro": "同一個消息，到不同的人手中，會變成不同的決策。先追查告發與夜間傳訊，不急著替任何人定性。",
+          "claimIds": [
+            "claim:case-hongmen-accusation",
+            "claim:case-hongmen-night-message",
+            "claim:case-hongmen-return-message"
+          ],
+          "taskIds": [
+            "task:hongmen-attribution",
+            "task:hongmen-transmission"
+          ]
+        },
+        {
+          "id": "chapter:hongmen-table",
+          "title": "第二章｜同席不等於同意",
+          "intro": "會場中的人物沒有共用一個意志。把事件當時的身份和具體動作放回來，檢查「楚方」這個總稱遮住了什麼。",
+          "claimIds": [
+            "claim:case-hongmen-divided-actions",
+            "claim:hongmen-meeting-role-zhang-liang"
+          ],
+          "taskIds": [
+            "task:hongmen-actions",
+            "task:hongmen-identity"
+          ]
+        },
+        {
+          "id": "chapter:hongmen-departure",
+          "title": "第三章｜如何寫下評價",
+          "intro": "劉邦離席，張良留後。你將把原人物分析中最有意思的一段，與多人協作的材料一起帶入結案。",
+          "claimIds": [
+            "claim:case-hongmen-departure",
+            "claim:case-hongmen-divided-actions",
+            "claim:hongmen-meeting-chronology"
+          ],
+          "taskIds": [
+            "task:hongmen-analysis-boundary"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task:hongmen-attribution",
+          "chapterId": "chapter:hongmen-night",
+          "type": "single-choice",
+          "prompt": "曹無傷的告發，在本案中可以怎樣使用？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "直接認定劉邦已任命子嬰為相",
+              "feedback": "材料保存的是曹無傷的告發，並未因此證實告發內容已經發生。把引述改成客觀事實會跨過來源所能支持的範圍。",
+              "claimIds": [
+                "claim:case-hongmen-accusation"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "證明項羽在聽告發前已決定攻擊",
+              "feedback": "本段把告發接到項羽發怒與下令。它沒有為「此前已決定」提供相同證據。",
+              "claimIds": [
+                "claim:case-hongmen-accusation"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "記錄告發內容，以及項羽隨後的反應",
+              "feedback": "可以據此追查資訊如何進入決策；同時保留「誰向誰聲稱什麼」，不替告發內容作真偽保證。",
+              "claimIds": [
+                "claim:case-hongmen-accusation"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "因為可能有偏見，所以整段沒有用途",
+              "feedback": "有立場的話語仍能幫助理解事件，只要明示發言者、傳遞對象和可證範圍。",
+              "claimIds": [
+                "claim:case-hongmen-accusation"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "c"
+          ],
+          "explanation": "這一關核對的是資訊層次：史籍記有告發、當事人說了什麼、所說的事是否為真，是三個不同問題。",
+          "claimIds": [
+            "claim:case-hongmen-accusation"
+          ],
+          "hint": "注意「曹無傷使人言」與「項羽大怒」是誰的行動。"
+        },
+        {
+          "id": "task:hongmen-transmission",
+          "chapterId": "chapter:hongmen-night",
+          "type": "sequence",
+          "prompt": "依《項羽本紀》的敘事，把這條夜間消息鏈排好。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "項伯返回項羽軍中，回報沛公說法",
+              "feedback": "這是消息回到項羽一方的段落；項伯另以沛公入關有功為由勸善待之。",
+              "claimIds": [
+                "claim:case-hongmen-return-message"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "張良把警訊告知沛公",
+              "feedback": "張良沒有隨項伯獨去，而是把消息轉告沛公。",
+              "claimIds": [
+                "claim:case-hongmen-night-message"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "項伯先私見張良，勸他離開",
+              "feedback": "項伯起初接觸的是舊識張良；不能略過這層關係直接寫成官方使節。",
+              "claimIds": [
+                "claim:case-hongmen-night-message"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "沛公與項伯相見，解釋守關理由",
+              "feedback": "這是在張良促成見面之後，項伯回營之前。辯解本身仍是當事人說法。",
+              "claimIds": [
+                "claim:case-hongmen-night-message",
+                "claim:case-hongmen-return-message"
+              ]
+            }
+          ],
+          "acceptableOrders": [
+            [
+              "c",
+              "b",
+              "d",
+              "a"
+            ]
+          ],
+          "explanation": "原篇呈現私交促成的多段傳訊。這份順序不提供每段的精確時刻，也不使每位人物自動成為同一陣營。",
+          "claimIds": [
+            "claim:case-hongmen-night-message",
+            "claim:case-hongmen-return-message"
+          ],
+          "hint": "從「項伯先要救誰」開始，最後看消息回到誰那裡。"
+        },
+        {
+          "id": "task:hongmen-actions",
+          "chapterId": "chapter:hongmen-table",
+          "type": "multi-choice",
+          "prompt": "哪些整理保留了會場中不同人物的行動？選出所有受到本案材料支持的說法。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "范增示意未獲回應後，另召項莊",
+              "feedback": "原篇將范增示意、項羽不應、另召項莊分成不同動作，適合分開呈現。",
+              "claimIds": [
+                "claim:case-hongmen-divided-actions"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "項伯遮護沛公，與范增的安排方向不同",
+              "feedback": "材料能支持行動上的分歧；至於各人全部動機，仍需要另行論證。",
+              "claimIds": [
+                "claim:case-hongmen-divided-actions"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "楚方已一致決定殺沛公，每個人照同一命令行動",
+              "feedback": "這個總結抹去了項羽不應、項伯遮護等差異，超過並且扭曲現有記述。",
+              "claimIds": [
+                "claim:case-hongmen-divided-actions"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "張良把危急情況告知樊噲，樊噲入帳",
+              "feedback": "這條聯絡與入帳的連續行動，在卷007中有記述；不能只留下抽象的「忠勇」標籤。",
+              "claimIds": [
+                "claim:case-hongmen-divided-actions"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "人物的具體差異可以由動作呈現。同方的人物可以採取相反行動；這比一個共同的陣營分數更接近本案材料。",
+          "claimIds": [
+            "claim:case-hongmen-divided-actions"
+          ],
+          "hint": "逐項核對主詞：誰示意、誰沒有回應、誰遮護、誰通報。"
+        },
+        {
+          "id": "task:hongmen-identity",
+          "chapterId": "chapter:hongmen-table",
+          "type": "single-choice",
+          "prompt": "編寫鴻門時張良的角色說明，哪一項最合適？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "漢帝國開國留侯，奉皇帝之命主持宴會",
+              "feedback": "把後來的封號與帝國身份提前，還增加了材料沒有的主持任務。",
+              "claimIds": [
+                "claim:hongmen-meeting-role-zhang-liang"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "隨沛公行動的韓申徒，保留韓王成脈絡",
+              "feedback": "事件角色與原人物庫的「謀臣」分類可並存；資料包保留其當時的韓國職任。",
+              "claimIds": [
+                "claim:hongmen-meeting-role-zhang-liang"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "項羽帳下的固定謀臣",
+              "feedback": "本案中與項伯有舊交，不等於張良任職於項羽帳下。",
+              "claimIds": [
+                "claim:hongmen-meeting-role-zhang-liang",
+                "claim:case-hongmen-night-message"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "只要原庫分類是謀臣，就不用補當時身份",
+              "feedback": "分類適合人物館瀏覽，無法代替事件當時的政治身份和行動關係。",
+              "claimIds": [
+                "claim:hongmen-meeting-role-zhang-liang"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "b"
+          ],
+          "explanation": "同一歷史人物在不同時段有不同職任。原庫身份、後世稱號與事件角色需要能並列而不互相覆蓋。",
+          "claimIds": [
+            "claim:hongmen-meeting-role-zhang-liang"
+          ],
+          "hint": "留意張良在鴻門敘事中提到的韓王。"
+        },
+        {
+          "id": "task:hongmen-analysis-boundary",
+          "chapterId": "chapter:hongmen-departure",
+          "type": "single-choice",
+          "prompt": "如果原人物分析把脫身主要歸功於張良，你要怎樣把這段分析放進評議？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "把分析升格為史實，省略其他人的動作",
+              "feedback": "原分析是作者或AI的解讀，不能替代逐項史料，更不能刪除不利於該解讀的材料。",
+              "claimIds": [
+                "claim:case-hongmen-divided-actions",
+                "claim:case-hongmen-departure"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "只要材料提到多人，就禁止評價張良的貢獻",
+              "feedback": "多人參與不妨礙討論貢獻；重點是解釋你採用什麼標準與材料。",
+              "claimIds": [
+                "claim:case-hongmen-night-message",
+                "claim:case-hongmen-divided-actions",
+                "claim:case-hongmen-departure"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "要求選出唯一救命恩人，否則不能結案",
+              "feedback": "本案的行動互相接續，資料並未提供一個可計算的唯一功勞排名。",
+              "claimIds": [
+                "claim:case-hongmen-divided-actions",
+                "claim:case-hongmen-departure"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "保留分析的作者身份，並用傳訊、入帳、留後等行動檢驗它",
+              "feedback": "可以支持、修正或質疑原分析；把項伯與樊噲的行動當作需要處理的材料，會讓評議更完整。",
+              "claimIds": [
+                "claim:case-hongmen-night-message",
+                "claim:case-hongmen-divided-actions",
+                "claim:case-hongmen-departure"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "d"
+          ],
+          "explanation": "你可以偏重張良、項伯、樊噲或沛公本人的判斷。這一關只要求正確使用資料，結案不替你指定人物評價。",
+          "claimIds": [
+            "claim:case-hongmen-night-message",
+            "claim:case-hongmen-divided-actions",
+            "claim:case-hongmen-departure"
+          ],
+          "hint": "把原分析當作一項值得檢驗的解釋。"
+        }
+      ],
+      "perspectives": [
+        {
+          "personId": "person:zhang-liang",
+          "framing": "追查張良如何把舊交、傳訊與留後安排接起來。",
+          "claimIds": [
+            "claim:case-hongmen-night-message",
+            "claim:case-hongmen-divided-actions",
+            "claim:case-hongmen-departure"
+          ],
+          "analysisPrompt": "讀張良原庫深度分析，找一段有關謀略或分寸的解讀。它能解釋哪個具體行動？哪個行動需要別人的貢獻才能成立？"
+        },
+        {
+          "personId": "person:xiang-yu",
+          "framing": "從項羽接收告發、答應善待，到宴中不回應，觀察不同時點。",
+          "claimIds": [
+            "claim:case-hongmen-accusation",
+            "claim:case-hongmen-return-message",
+            "claim:case-hongmen-divided-actions"
+          ],
+          "analysisPrompt": "若原分析給項羽一個固定性格標籤，試著列出支持它與使它變複雜的各一項材料。"
+        },
+        {
+          "personId": "person:liu-bang",
+          "framing": "同一人物可能對應原庫劉邦與漢高祖兩個條目。當時仍是沛公。",
+          "claimIds": [
+            "claim:case-hongmen-return-message",
+            "claim:case-hongmen-departure"
+          ],
+          "analysisPrompt": "可讀漢高祖條目的長文，檢查後來成功的視角是否讓早期的風險與他人協助被省略。"
+        },
+        {
+          "personId": "person:xiang-bo",
+          "framing": "項伯有楚左尹與項氏親族身份，也有與張良的私交。",
+          "claimIds": [
+            "claim:case-hongmen-night-message",
+            "claim:case-hongmen-return-message",
+            "claim:case-hongmen-divided-actions"
+          ],
+          "analysisPrompt": "若此人的長文缺失，可用原簡介與本案記述作評議；不要為補足人物而創造內心獨白。"
+        }
+      ],
+      "finale": {
+        "prompt": "為鴻門寫一張「人物與行動」評議卡：說明你認為最關鍵的連接，以及為何。再處理一項反證或替代解釋，留下仍無法確定的問題。",
+        "reflectionPrompts": [
+          "若只說「項羽優柔寡斷」，哪些具體行動會被省略？",
+          "若只說「張良神機妙算」，哪位人物的自主選擇會消失？",
+          "原庫的一段解讀，讓你更確信原看法，還是促使你修正？"
+        ],
+        "closingNote": "鴻門卷宗可以由多種有根據的解釋結案。你留下的是自己的評議、引用與疑問；它不會被轉成任何人的永久性格判決。",
+        "minimumClaimMaterials": 2,
+        "minimumOriginalMaterials": 0,
+        "minimumThesisLength": 12,
+        "minimumCounterargumentLength": 8,
+        "minimumUncertaintyLength": 6
+      },
+      "claimIds": [
+        "claim:case-hongmen-accusation",
+        "claim:case-hongmen-night-message",
+        "claim:case-hongmen-return-message",
+        "claim:case-hongmen-divided-actions",
+        "claim:hongmen-meeting-role-zhang-liang",
+        "claim:case-hongmen-departure",
+        "claim:hongmen-meeting-chronology"
+      ]
+    },
+    {
+      "id": "case:appointment",
+      "order": 2,
+      "title": "南鄭：一位逃亡者如何受任",
+      "subtitle": "蕭何的推薦，怎樣變成漢王的決定",
+      "theme": "識人、目標與授權",
+      "difficulty": "入門",
+      "estimatedMinutes": 22,
+      "premise": "韓信後來的名聲很容易讓受任看起來理所當然。這份卷宗把視線退回南鄭：一則誤報、一場追趕、一段有條件的推薦，以及一次被特別安排的任命。你要區分後見之明與當時的理由。",
+      "inquiry": "材料呈現的是蕭何識得一位天才，還是一連串讓推薦取得信任的行動？哪些解釋可以並存？",
+      "eventIds": [
+        "event:chuhan-han-xin-appointed",
+        "event:chuhan-return-sanqin"
+      ],
+      "personIds": [
+        "person:han-xin",
+        "person:xiao-he",
+        "person:liu-bang",
+        "person:xiang-yu"
+      ],
+      "chapters": [
+        {
+          "id": "chapter:appointment-flight",
+          "title": "第一章｜兩種逃亡說法",
+          "intro": "先釐清誰離去、誰追趕、誰被誤報逃亡。這些差別決定我們會怎樣理解蕭何的行動。",
+          "claimIds": [
+            "claim:case-appointment-flight",
+            "claim:chuhan-han-xin-appointed-location"
+          ],
+          "taskIds": [
+            "task:appointment-report",
+            "task:appointment-goal"
+          ]
+        },
+        {
+          "id": "chapter:appointment-office",
+          "title": "第二章｜推薦怎樣落地",
+          "intro": "把目的、職位與禮遇拆開觀察。它們都出現在記述中，但各自回答不同問題。",
+          "claimIds": [
+            "claim:case-appointment-purpose",
+            "claim:case-appointment-ritual",
+            "claim:chuhan-han-xin-appointed-appointment"
+          ],
+          "taskIds": [
+            "task:appointment-steps",
+            "task:appointment-speech"
+          ]
+        },
+        {
+          "id": "chapter:appointment-reading",
+          "title": "第三章｜評傳回到現場",
+          "intro": "比較韓信、漢高祖的原分析與蕭何薦舉的來源。今天對成敗的了解，不等於當時每個人掌握的信息。",
+          "claimIds": [
+            "claim:case-appointment-strategic-speech",
+            "claim:chuhan-han-xin-appointed-chronology",
+            "claim:chuhan-han-xin-appointed-appointment"
+          ],
+          "taskIds": [
+            "task:appointment-sources"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task:appointment-report",
+          "chapterId": "chapter:appointment-flight",
+          "type": "single-choice",
+          "prompt": "材料中「蕭何逃亡」這項消息應如何標示？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "旁人向漢王的報告，後續敘事說明蕭何是在追韓信",
+              "feedback": "同段記載可以呈現報告與行動之間的落差。別把誤報直接覆寫為人物行為。",
+              "claimIds": [
+                "claim:case-appointment-flight"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "蕭何已決定與韓信另建政權",
+              "feedback": "此段沒有這項計畫，不能用兩人一同出現於逃亡敘事補造政治聯盟。",
+              "claimIds": [
+                "claim:case-appointment-flight"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "韓信向漢王故意散布的謠言",
+              "feedback": "原段未把報信人指為韓信，也未證實蓄意造謠。",
+              "claimIds": [
+                "claim:case-appointment-flight"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "漢王已知道實情，因此沒有反應",
+              "feedback": "本段記漢王怒，後見蕭何又怒又喜；知道實情的時間不能提前。",
+              "claimIds": [
+                "claim:case-appointment-flight"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a"
+          ],
+          "explanation": "把「消息稱誰做了什麼」與「後續記述如何解釋」放在同一卷宗，才能看到信任與資訊的問題。",
+          "claimIds": [
+            "claim:case-appointment-flight"
+          ],
+          "hint": "確認報信者是否被具名，以及蕭何回來後如何解釋。"
+        },
+        {
+          "id": "task:appointment-goal",
+          "chapterId": "chapter:appointment-flight",
+          "type": "multi-choice",
+          "prompt": "蕭何的推薦在篇中連到哪些條件？選出所有有文本支持的說法。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "漢王是否打算長居漢中",
+              "feedback": "蕭何以此作為不同用人需求的分界，推薦不是抽離目標的固定能力排行。",
+              "claimIds": [
+                "claim:case-appointment-purpose"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "韓信日後必定成為齊王，故現在無須討論",
+              "feedback": "後來的職任不是蕭何這段推薦已知的結果，拿它解釋受任會混入後見之明。",
+              "claimIds": [
+                "claim:case-appointment-purpose"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "漢王若要東向爭天下，如何任用韓信",
+              "feedback": "原篇把東向的政治軍事目標與任用韓信連接。你仍可討論這是怎樣的遊說。",
+              "claimIds": [
+                "claim:case-appointment-purpose"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "能否給出讓韓信願意留下的任用方式",
+              "feedback": "篇中推薦與留人相接，隨後才展開職位與禮遇的協商。",
+              "claimIds": [
+                "claim:case-appointment-purpose",
+                "claim:case-appointment-ritual"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "c",
+            "d"
+          ],
+          "explanation": "目標、留任與職位不是同一個問題，但在這段對話中相互影響。",
+          "claimIds": [
+            "claim:case-appointment-purpose",
+            "claim:case-appointment-ritual"
+          ],
+          "hint": "找出蕭何所說的兩種漢王目標。"
+        },
+        {
+          "id": "task:appointment-steps",
+          "chapterId": "chapter:appointment-office",
+          "type": "sequence",
+          "prompt": "依受任段落，排列從職位提議到論策的過程。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "設壇具禮後，韓信受拜",
+              "feedback": "這在職位決定與禮儀建議之後。",
+              "claimIds": [
+                "claim:case-appointment-ritual",
+                "claim:chuhan-han-xin-appointed-appointment"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "漢王提議為將，蕭何主張仍不足留人",
+              "feedback": "這是大將職位確定前的協商。",
+              "claimIds": [
+                "claim:case-appointment-ritual"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "受拜禮畢，韓信向漢王論東向之策",
+              "feedback": "計策對話位於受拜之後，不能以後來的完整對話代替前面的薦舉過程。",
+              "claimIds": [
+                "claim:case-appointment-strategic-speech"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "漢王許大將，蕭何請特別安排任命禮儀",
+              "feedback": "本段把許職與如何任命分成先後步驟。",
+              "claimIds": [
+                "claim:case-appointment-ritual"
+              ]
+            }
+          ],
+          "acceptableOrders": [
+            [
+              "b",
+              "d",
+              "a",
+              "c"
+            ]
+          ],
+          "explanation": "這裡能重建的是史籍的敘事順序。設壇並非能力測驗；受任也並不等於此後每次計策都被採納。",
+          "claimIds": [
+            "claim:case-appointment-ritual",
+            "claim:chuhan-han-xin-appointed-appointment",
+            "claim:case-appointment-strategic-speech"
+          ],
+          "hint": "先決定任什麼職，再安排如何任命，最後才是受拜後論策。"
+        },
+        {
+          "id": "task:appointment-speech",
+          "chapterId": "chapter:appointment-office",
+          "type": "single-choice",
+          "prompt": "韓信受拜後對項羽用人與封賞的批評，最合適的材料標籤是？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "現代心理學對項羽的實測結論",
+              "feedback": "古代說辭沒有現代人格測量方法，也沒有相應測量資料。",
+              "claimIds": [
+                "claim:case-appointment-strategic-speech"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "所有楚漢人物都同意的中立描述",
+              "feedback": "材料只提供列傳所引韓信的說辭，未呈現所有人的同意。",
+              "claimIds": [
+                "claim:case-appointment-strategic-speech"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "史籍所引韓信的戰略遊說，能分析但須保留發言者",
+              "feedback": "它能幫助理解韓信如何向漢王提出方案，也可以與項羽其他行動相比較。",
+              "claimIds": [
+                "claim:case-appointment-strategic-speech"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "只要帶有遊說目的，就應從卷宗刪掉",
+              "feedback": "目的與立場本身正是有價值的分析對象；明示它們比抹除更有用。",
+              "claimIds": [
+                "claim:case-appointment-strategic-speech"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "c"
+          ],
+          "explanation": "有力的說辭與已證實的心理全貌並不等同。原分析可以引用這段，但應處理說服對象與場景。",
+          "claimIds": [
+            "claim:case-appointment-strategic-speech"
+          ],
+          "hint": "問自己：這段话在篇中是誰向誰說的？"
+        },
+        {
+          "id": "task:appointment-sources",
+          "chapterId": "chapter:appointment-reading",
+          "type": "single-choice",
+          "prompt": "受任段落與《高祖本紀》的之國、還師記述可以互相參照，這個核對能做到什麼？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "自動算成兩位互不相關的現場證人",
+              "feedback": "兩篇同屬《史記》，篇章數不能直接當作彼此獨立的現場證人數。",
+              "claimIds": [
+                "claim:chuhan-han-xin-appointed-appointment",
+                "claim:chuhan-han-xin-appointed-chronology"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "相合代表任命的精確公曆日期已確定",
+              "feedback": "前後事件有助於限定年帶，但本包未核定拜將的公曆月日。",
+              "claimIds": [
+                "claim:chuhan-han-xin-appointed-appointment",
+                "claim:chuhan-han-xin-appointed-chronology"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "兩篇屬於同一本書，所以都毫無用處",
+              "feedback": "同一作品的不同篇章仍可核對敘事位置與差異；只需謹慎說明來源關係。",
+              "claimIds": [
+                "claim:chuhan-han-xin-appointed-appointment",
+                "claim:chuhan-han-xin-appointed-chronology"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "可核對同一作品的記述，仍需保留來源關係和日期精度",
+              "feedback": "可以增進對文本內容的把握；對歷史獨立確證與精確年代則另列問題。",
+              "claimIds": [
+                "claim:chuhan-han-xin-appointed-appointment",
+                "claim:chuhan-han-xin-appointed-chronology"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "d"
+          ],
+          "explanation": "本關不按引用篇數加權人物能力。先了解來源怎樣形成、如何互相指涉，再決定它能支持什麼。",
+          "claimIds": [
+            "claim:chuhan-han-xin-appointed-appointment",
+            "claim:chuhan-han-xin-appointed-chronology"
+          ],
+          "hint": "把「同書多篇相互核對」與「獨立目擊證據」分開。"
+        }
+      ],
+      "perspectives": [
+        {
+          "personId": "person:han-xin",
+          "framing": "從被忽略、離去、受任到論策，觀察身份如何改變。",
+          "claimIds": [
+            "claim:case-appointment-flight",
+            "claim:case-appointment-ritual",
+            "claim:case-appointment-strategic-speech"
+          ],
+          "analysisPrompt": "讀韓信原分析中關於自我評價、才能或知遇的一段。哪些內容能由南鄭材料檢驗，哪些是跨生涯的解讀？"
+        },
+        {
+          "personId": "person:xiao-he",
+          "framing": "薦舉含有交談、追趕、說明目標與安排任命。",
+          "claimIds": [
+            "claim:case-appointment-flight",
+            "claim:case-appointment-purpose",
+            "claim:case-appointment-ritual"
+          ],
+          "analysisPrompt": "蕭何的原長文若缺失，仍可用原簡介與行動材料寫評議。把「識人」展開成可指出的步驟。"
+        },
+        {
+          "personId": "person:liu-bang",
+          "framing": "漢王需要作出用人的決定，也會收到錯誤消息。",
+          "claimIds": [
+            "claim:case-appointment-flight",
+            "claim:case-appointment-purpose",
+            "claim:case-appointment-ritual"
+          ],
+          "analysisPrompt": "漢高祖原分析若談納諫或用人，哪些段落在此受支持？有沒有被省略的怒意、猶疑或他人推動？"
+        }
+      ],
+      "finale": {
+        "prompt": "替南鄭受任寫一張「識人如何成為決策」評議卡。你可聚焦蕭何、韓信或漢王，也可主張三者的互動更值得解釋。",
+        "reflectionPrompts": [
+          "推薦說辭、任命禮遇和事後戰功，分別能證明什麼？",
+          "若拿掉韓信後來的名聲，你還會怎樣評價當時的決定？",
+          "哪一段原人物分析需要加上事件或時期的限定？"
+        ],
+        "closingNote": "本案結束時，你留下的是對一場任命的有據評議。它可以改變，無須把任何人封成永遠不變的識人者或懷才不遇者。",
+        "minimumClaimMaterials": 2,
+        "minimumOriginalMaterials": 0,
+        "minimumThesisLength": 12,
+        "minimumCounterargumentLength": 8,
+        "minimumUncertaintyLength": 6
+      },
+      "claimIds": [
+        "claim:case-appointment-flight",
+        "claim:chuhan-han-xin-appointed-location",
+        "claim:case-appointment-purpose",
+        "claim:case-appointment-ritual",
+        "claim:chuhan-han-xin-appointed-appointment",
+        "claim:case-appointment-strategic-speech",
+        "claim:chuhan-han-xin-appointed-chronology"
+      ]
+    },
+    {
+      "id": "case:coalition",
+      "order": 3,
+      "title": "下邑至固陵：承諾如何變成合軍",
+      "subtitle": "被推薦的人、未到的兵，與重新談定的條件",
+      "theme": "合作、利益與承諾",
+      "difficulty": "進階",
+      "estimatedMinutes": 30,
+      "premise": "你的卷宗跨過幾個階段：彭城敗後，張良在下邑建議爭取三人；追楚至固陵時，韓信、彭越沒有如期會兵；許地之後，合軍才在記述中接續出現。你要解釋合作如何形成，也要避免把所有人壓成「忠誠」或「貪利」兩種角色。",
+      "inquiry": "共同敵人、政治身份、實際困難與未定承諾，分別怎樣影響合作？材料容許我們把原因說到多確定？",
+      "eventIds": [
+        "event:chuhan-xiayi-plan",
+        "event:chuhan-han-xin-qi-king",
+        "event:chuhan-guling",
+        "event:chuhan-gaixia"
+      ],
+      "personIds": [
+        "person:zhang-liang",
+        "person:liu-bang",
+        "person:han-xin",
+        "person:peng-yue",
+        "person:ying-bu",
+        "person:xiang-yu"
+      ],
+      "chapters": [
+        {
+          "id": "chapter:coalition-xiayi",
+          "title": "第一章｜被說到，不等於坐在場",
+          "intro": "下邑問策列出三位可爭取的人物。先把推薦對象和對話中的行動者分開，再檢查三人的身份是否相同。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-plan",
+            "claim:chuhan-xiayi-plan-role-han-xin",
+            "claim:chuhan-xiayi-plan-role-ying-bu",
+            "claim:chuhan-xiayi-plan-role-peng-yue",
+            "claim:chuhan-xiayi-plan-not-direct-control"
+          ],
+          "taskIds": [
+            "task:coalition-presence",
+            "task:coalition-status"
+          ]
+        },
+        {
+          "id": "chapter:coalition-guling",
+          "title": "第二章｜一個未赴約，多種解釋",
+          "intro": "讀固陵失利、彭越自陳理由與張良的許地方案。人物自己的說法和他人對其動機的推斷，可以並列。",
+          "claimIds": [
+            "claim:chuhan-guling-absence",
+            "claim:case-guling-pengyue-reply",
+            "claim:chuhan-guling-agreement",
+            "claim:chuhan-han-xin-qi-king-appointment"
+          ],
+          "taskIds": [
+            "task:coalition-reasons",
+            "task:coalition-agreement"
+          ]
+        },
+        {
+          "id": "chapter:coalition-chronology",
+          "title": "第三章｜不把接續寫成必然",
+          "intro": "篇章在時間與地名上保留差異。你仍可比較合作的不同階段，並明示哪些先後有依據、哪些細節尚待校核。",
+          "claimIds": [
+            "claim:chuhan-guling-source-variants",
+            "claim:chuhan-xiayi-plan-plan",
+            "claim:chuhan-guling-agreement"
+          ],
+          "taskIds": [
+            "task:coalition-variant"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task:coalition-presence",
+          "chapterId": "chapter:coalition-xiayi",
+          "type": "single-choice",
+          "prompt": "要把下邑問策畫成場景，哪一種安排符合目前資料包？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "把韓信、英布、彭越都畫成正在與張良同桌議事",
+              "feedback": "三人是問策中被提及的對象。資料未記他們都在現場，不能把名單直接轉成座位表。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-role-han-xin",
+                "claim:chuhan-xiayi-plan-role-ying-bu",
+                "claim:chuhan-xiayi-plan-role-peng-yue"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "呈現劉邦問策、張良建議，另以材料卡標出三位被提及者",
+              "feedback": "這保留了行動記述與提及的差別。如果另作同桌會議的創作，需要清楚標示改編。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-plan",
+                "claim:chuhan-xiayi-plan-role-han-xin",
+                "claim:chuhan-xiayi-plan-role-ying-bu",
+                "claim:chuhan-xiayi-plan-role-peng-yue"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "既未記三人在場，就判定他們絕不可能到過下邑",
+              "feedback": "未記載不是不可能的證明。本包只約束可以有據呈現的場景。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-role-han-xin",
+                "claim:chuhan-xiayi-plan-role-ying-bu",
+                "claim:chuhan-xiayi-plan-role-peng-yue"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "把三人都刪掉，因為被提及者與事件無關",
+              "feedback": "推薦對象對理解方案至關重要，即使不在現場，也應保留其身份與作用。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-plan"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "b"
+          ],
+          "explanation": "一件事件能連接不在同一地點的人。提及是有意義的資料關係，但不等於現場參與。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-plan",
+            "claim:chuhan-xiayi-plan-role-han-xin",
+            "claim:chuhan-xiayi-plan-role-ying-bu",
+            "claim:chuhan-xiayi-plan-role-peng-yue"
+          ],
+          "hint": "檢查每個角色的 參與標示，而不只看姓名是否出現。"
+        },
+        {
+          "id": "task:coalition-status",
+          "chapterId": "chapter:coalition-xiayi",
+          "type": "multi-choice",
+          "prompt": "下邑問策時，哪些身份整理受到材料支持？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "韓信是漢王之將，被推薦可獨當一面",
+              "feedback": "本事件角色如此記述；不能提前使用後來的齊王封號。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-role-han-xin"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "英布已是漢方淮南王，與韓信身份相同",
+              "feedback": "下邑時資料保留九江王及待爭取的楚方諸侯脈絡；歸漢與新封是後續階段。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-role-ying-bu"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "彭越有自有部眾，是需要聯絡的力量",
+              "feedback": "本包保留梁地反楚與獨立軍事力量的脈絡；「合作」不能直接改寫為已被完全統一指揮。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-role-peng-yue",
+                "claim:chuhan-xiayi-plan-not-direct-control"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "英布是九江王，張良建議主動爭取",
+              "feedback": "具體身份讓推薦的政治條件可以被討論；不必把所有人放入同一種漢臣模板。",
+              "claimIds": [
+                "claim:chuhan-xiayi-plan-role-ying-bu"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "c",
+            "d"
+          ],
+          "explanation": "三位人物在計畫中有相似用途，並不表示政治身份、兵力來源或與漢王的關係完全一樣。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-role-han-xin",
+            "claim:chuhan-xiayi-plan-role-ying-bu",
+            "claim:chuhan-xiayi-plan-role-peng-yue",
+            "claim:chuhan-xiayi-plan-not-direct-control"
+          ],
+          "hint": "把下邑時身份與後來的歸漢、封王分開。"
+        },
+        {
+          "id": "task:coalition-reasons",
+          "chapterId": "chapter:coalition-guling",
+          "type": "single-choice",
+          "prompt": "彭越未立即合兵，哪一種整理最忠於這份材料？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "他說魏地初定且畏楚；張良又分析許地未明的問題，兩種話語都保留",
+              "feedback": "這讓自陳理由和他人的解釋互相對照。它們可能並存，現有材料不足以量出各因素權重。",
+              "claimIds": [
+                "claim:case-guling-pengyue-reply",
+                "claim:chuhan-guling-agreement"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "他唯利是圖，所以所有軍事困難都只是謊言",
+              "feedback": "「唯利是圖」是整體人格判斷，且直接否定了未經證偽的自陳理由，證據跨度過大。",
+              "claimIds": [
+                "claim:case-guling-pengyue-reply"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "既自陳魏地未定，許地條件就一定毫無作用",
+              "feedback": "後續許地與進兵的記述仍需處理，不能因保留一個理由而刪除另一段材料。",
+              "claimIds": [
+                "claim:case-guling-pengyue-reply",
+                "claim:chuhan-guling-agreement"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "張良說能促成合軍，就證明所有人的內心已被完全掌握",
+              "feedback": "說辭和其後行動可以形成解釋，卻不是對他人全部動機的直接測量。",
+              "claimIds": [
+                "claim:chuhan-guling-agreement"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a"
+          ],
+          "explanation": "本案容許你偏重利益談判、軍事風險或信任問題，但需要說明為何，並處理其他解釋。",
+          "claimIds": [
+            "claim:case-guling-pengyue-reply",
+            "claim:chuhan-guling-agreement"
+          ],
+          "hint": "區分彭越自己向使者所說，與張良向漢王所說。"
+        },
+        {
+          "id": "task:coalition-agreement",
+          "chapterId": "chapter:coalition-guling",
+          "type": "sequence",
+          "prompt": "依《項羽本紀》固陵段落，排列本案的談判與行動。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "漢王遣使傳達分地條件",
+              "feedback": "使者攜條件而往是在張良提案獲採納後。",
+              "claimIds": [
+                "claim:chuhan-guling-agreement"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "韓信、彭越未如期會兵，漢軍失利",
+              "feedback": "這是漢王再次求策的局面，不是許地之後被再次失約的記述。",
+              "claimIds": [
+                "claim:chuhan-guling-absence"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "韓信、彭越答覆願進兵，合軍接續發生",
+              "feedback": "答覆與軍事行動需要各自保留；不能把承諾當下寫成土地已交割。",
+              "claimIds": [
+                "claim:chuhan-guling-agreement"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "張良建議把特定地域作為合作條件",
+              "feedback": "這是促合軍的方案，並非已完成的行政接管。",
+              "claimIds": [
+                "claim:chuhan-guling-agreement"
+              ]
+            }
+          ],
+          "acceptableOrders": [
+            [
+              "b",
+              "d",
+              "a",
+              "c"
+            ]
+          ],
+          "explanation": "敘事順序支持討論承諾與合作的關係；它不能單獨證明某一因素是全部戰局改變的唯一原因。",
+          "claimIds": [
+            "claim:chuhan-guling-absence",
+            "claim:chuhan-guling-agreement"
+          ],
+          "hint": "失利促使重新求策；提案之後還需要使者與答覆。"
+        },
+        {
+          "id": "task:coalition-variant",
+          "chapterId": "chapter:coalition-chronology",
+          "type": "single-choice",
+          "prompt": "固陵相關篇章有紀年與固陵／碧陵名稱差異，該怎樣處理？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "選一個聽起來順的精確公曆日，其他記述刪掉",
+              "feedback": "本包未完成精確日期校核，任填日期會讓編輯選擇冒充史料精度。",
+              "claimIds": [
+                "claim:chuhan-guling-source-variants"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "既然多篇使用漢五年，直接把卷055的「其秋」改正",
+              "feedback": "不同篇章可能涉及紀年、敘事接續或事件階段，未完成校勘前，不能以多數表決默改原文。",
+              "claimIds": [
+                "claim:chuhan-guling-source-variants"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "因有差異，所以未赴約與許地都不能再研究",
+              "feedback": "日期或名稱待校不會自動使全部行動記述失去用途，應逐項分辨。",
+              "claimIds": [
+                "claim:chuhan-guling-absence",
+                "claim:chuhan-guling-agreement",
+                "claim:chuhan-guling-source-variants"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "保留各篇說法與年帶，依可靠的相對先後研究合作",
+              "feedback": "這讓時間的不確定性可見，也維持事件內先後與人物行動可用。",
+              "claimIds": [
+                "claim:chuhan-guling-source-variants",
+                "claim:chuhan-guling-absence",
+                "claim:chuhan-guling-agreement"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "d"
+          ],
+          "explanation": "歷史調查可以在部分問題未解時繼續。關鍵是讓不確定性停留在相關主張，不任意擴散或被隱藏。",
+          "claimIds": [
+            "claim:chuhan-guling-source-variants"
+          ],
+          "hint": "差異究竟在日期、名稱、事件階段，還是某項具體行動？"
+        }
+      ],
+      "perspectives": [
+        {
+          "personId": "person:zhang-liang",
+          "framing": "從下邑推薦三人，到固陵建議明定條件，比較兩次促成合作的方法。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-plan",
+            "claim:chuhan-guling-agreement"
+          ],
+          "analysisPrompt": "張良原深度分析若談謀略，試著追問它如何處理他人的力量與利益，而不只描述計策巧妙。"
+        },
+        {
+          "personId": "person:peng-yue",
+          "framing": "同時保留自有部眾、魏地未定的答覆與後來合軍。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-role-peng-yue",
+            "claim:case-guling-pengyue-reply",
+            "claim:chuhan-guling-agreement"
+          ],
+          "analysisPrompt": "若原長文缺失，用原簡介與這些主張仍能形成評議。你會如何避免從一次未赴約定義其一生？"
+        },
+        {
+          "personId": "person:han-xin",
+          "framing": "從下邑的漢將，追到齊王與固陵合軍，身份和談判位置均有變化。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-role-han-xin",
+            "claim:chuhan-han-xin-qi-king-appointment",
+            "claim:chuhan-guling-agreement"
+          ],
+          "analysisPrompt": "讀韓信原分析中的知遇、功業或政治處境段落。哪些概念需要限定到不同時段？"
+        },
+        {
+          "personId": "person:liu-bang",
+          "framing": "需要盟友的漢王，也必須回應對方條件與行動。",
+          "claimIds": [
+            "claim:chuhan-xiayi-plan-plan",
+            "claim:chuhan-guling-absence",
+            "claim:chuhan-guling-agreement"
+          ],
+          "analysisPrompt": "比較漢高祖原分析中的用人論與固陵的失利。一次成功許諾是否足以概括整段合作？"
+        }
+      ],
+      "finale": {
+        "prompt": "寫下你對「合作為何延遲、又如何形成」的暫定解釋。請具體指出至少兩個階段，並把另一種可能的解釋放進反證欄。",
+        "reflectionPrompts": [
+          "下邑與固陵可否使用同一套人物動機？哪裡需要修正？",
+          "如果把許地視為關鍵，如何處理彭越關於魏地未定的說法？",
+          "原分析中的人格判斷，有沒有把身份變化與談判條件省略？"
+        ],
+        "closingNote": "你的結案可以認為承諾最關鍵，也可以強調軍事處境或關係變動。材料要求的是交代推論，而不是選出誰最忠誠。",
+        "minimumClaimMaterials": 2,
+        "minimumOriginalMaterials": 0,
+        "minimumThesisLength": 12,
+        "minimumCounterargumentLength": 8,
+        "minimumUncertaintyLength": 6
+      },
+      "claimIds": [
+        "claim:chuhan-xiayi-plan-plan",
+        "claim:chuhan-xiayi-plan-role-han-xin",
+        "claim:chuhan-xiayi-plan-role-ying-bu",
+        "claim:chuhan-xiayi-plan-role-peng-yue",
+        "claim:chuhan-xiayi-plan-not-direct-control",
+        "claim:chuhan-guling-absence",
+        "claim:case-guling-pengyue-reply",
+        "claim:chuhan-guling-agreement",
+        "claim:chuhan-han-xin-qi-king-appointment",
+        "claim:chuhan-guling-source-variants"
+      ]
+    },
+    {
+      "id": "case:jingxing",
+      "order": 4,
+      "title": "井陘：一條沒有採用的計策",
+      "subtitle": "先讀失敗一方的選擇，再解釋勝利",
+      "theme": "偵察、拒諫與因果",
+      "difficulty": "進階",
+      "estimatedMinutes": 26,
+      "premise": "井陘常被縮成一個背水陣的故事。這次從趙方提出而未採用的方案讀起：李左車注意道路與補給，陳餘選擇迎擊，韓信先偵知對方的決定，戰後又向俘虜問策。你要讓勝利的解釋容得下敵方行動、情報與多個戰術環節。",
+      "inquiry": "韓信的勝利在本篇中依賴哪些條件？拒絕一個方案、掌握一條消息與使用一種陣法，各自扮演什麼角色？",
+      "eventIds": [
+        "event:chuhan-jingxing"
+      ],
+      "personIds": [
+        "person:han-xin",
+        "person:zhang-er",
+        "person:chen-yu",
+        "person:zhao-xie"
+      ],
+      "chapters": [
+        {
+          "id": "chapter:jingxing-proposal",
+          "title": "第一章｜未執行的方案",
+          "intro": "敵方也提出過可辨識的方案。讀取時先標清「提議」「拒絕」和「已發生」，避免把計畫寫成戰果。",
+          "claimIds": [
+            "claim:case-jingxing-supply-proposal",
+            "claim:case-jingxing-refusal"
+          ],
+          "taskIds": [
+            "task:jingxing-unexecuted",
+            "task:jingxing-refusal"
+          ]
+        },
+        {
+          "id": "chapter:jingxing-intelligence",
+          "title": "第二章｜情報進入行動",
+          "intro": "韓信不是在缺乏情報中布陣。追查偵察回報，再把背水作戰和奇兵易幟放回同一敘事。",
+          "claimIds": [
+            "claim:case-jingxing-scout-report",
+            "claim:chuhan-jingxing-battle"
+          ],
+          "taskIds": [
+            "task:jingxing-order",
+            "task:jingxing-battle"
+          ]
+        },
+        {
+          "id": "chapter:jingxing-after",
+          "title": "第三章｜俘虜還能教什麼",
+          "intro": "勝負確定後，問策仍繼續。李左車的建議與張耳的後續職任，讓勝敗雙方的角色不會停在一張固定卡片。",
+          "claimIds": [
+            "claim:case-jingxing-consults-captive",
+            "claim:chuhan-jingxing-dating"
+          ],
+          "taskIds": [
+            "task:jingxing-aftermath"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task:jingxing-unexecuted",
+          "chapterId": "chapter:jingxing-proposal",
+          "type": "single-choice",
+          "prompt": "李左車截斷輜重、趙軍堅守的內容，在卷宗中應標成什麼？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "趙軍已執行且成功的行動",
+              "feedback": "原篇接著記陳餘不採用。若標成已執行，會顛倒最重要的決策差異。",
+              "claimIds": [
+                "claim:case-jingxing-supply-proposal",
+                "claim:case-jingxing-refusal"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "韓信自導自演的假情報",
+              "feedback": "材料沒有記載李左車的方案來自韓信，不能補造這層計謀。",
+              "claimIds": [
+                "claim:case-jingxing-supply-proposal"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "李左車向陳餘提出、但未被採用的方案及預期",
+              "feedback": "可以研究提案者的判斷和決策者的拒絕；它不能直接當作另一條歷史已發生的結果。",
+              "claimIds": [
+                "claim:case-jingxing-supply-proposal",
+                "claim:case-jingxing-refusal"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "只要未採用，就完全不屬於歷史材料",
+              "feedback": "未採用的方案有助於看見當時選擇與限制，前提是不把可能結果寫成事實。",
+              "claimIds": [
+                "claim:case-jingxing-supply-proposal"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "c"
+          ],
+          "explanation": "資料可以保存沒有實施的選項。這讓互動有多方觀點，同時不捏造另一條已確定的歷史。",
+          "claimIds": [
+            "claim:case-jingxing-supply-proposal",
+            "claim:case-jingxing-refusal"
+          ],
+          "hint": "找到方案後面的「不聽」或「不用」。"
+        },
+        {
+          "id": "task:jingxing-refusal",
+          "chapterId": "chapter:jingxing-proposal",
+          "type": "multi-choice",
+          "prompt": "陳餘的拒絕，在本篇引述中包含哪些理由？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "認為己方較多、漢軍遠來疲憊，可以迎擊",
+              "feedback": "這是篇中陳餘的兵力與疲勞判斷，是否正確仍要與後續行動分開評議。",
+              "claimIds": [
+                "claim:case-jingxing-refusal"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "擔心避戰被諸侯視為怯弱，招來攻擊",
+              "feedback": "名聲及其可能後果是原篇所引理由之一，不宜只用「不懂兵法」概括。",
+              "claimIds": [
+                "claim:case-jingxing-refusal"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "已掌握漢軍糧道，所以無須再派間道部隊",
+              "feedback": "這把李左車建議去做的事情，改成陳餘已完成的條件。拒絕段沒有記這項現成控制。",
+              "claimIds": [
+                "claim:case-jingxing-refusal"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "引用以多圍少、兵力較多則戰的兵法原則",
+              "feedback": "篇中引述了這種用兵原則；本案可以討論其適用條件，不必把拒諫解釋成完全沒有理由。",
+              "claimIds": [
+                "claim:case-jingxing-refusal"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "理解一個後來失敗的決定，不等於為它辯護。先重建當時提出的理由，才有條件評議其錯判。",
+          "claimIds": [
+            "claim:case-jingxing-refusal"
+          ],
+          "hint": "把陳餘的話拆成軍力判斷、兵法援引和諸侯觀感。"
+        },
+        {
+          "id": "task:jingxing-order",
+          "chapterId": "chapter:jingxing-intelligence",
+          "type": "sequence",
+          "prompt": "依本篇敘事，排列趙方決定與韓信行動的先後。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "韓信得到回報，才敢引兵下井陘",
+              "feedback": "這在偵察回報之後，戰術部署之前。",
+              "claimIds": [
+                "claim:case-jingxing-scout-report"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "李左車提出截輜重、堅守方案",
+              "feedback": "本案敘事由這個未被採用的提案開始。",
+              "claimIds": [
+                "claim:case-jingxing-supply-proposal"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "韓信部署奇兵與背水作戰",
+              "feedback": "部署是取得對方不用計的信息後接續的行動。",
+              "claimIds": [
+                "claim:case-jingxing-scout-report",
+                "claim:chuhan-jingxing-battle"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "陳餘不用其策，韓信派人偵知此事",
+              "feedback": "趙方選擇進入韓信的資訊範圍；材料沒有說他一開始全知。",
+              "claimIds": [
+                "claim:case-jingxing-refusal",
+                "claim:case-jingxing-scout-report"
+              ]
+            }
+          ],
+          "acceptableOrders": [
+            [
+              "b",
+              "d",
+              "a",
+              "c"
+            ]
+          ],
+          "explanation": "這個順序讓「知己知彼」可以被討論成一項具體活動，而非永遠正確的角色天賦。",
+          "claimIds": [
+            "claim:case-jingxing-supply-proposal",
+            "claim:case-jingxing-refusal",
+            "claim:case-jingxing-scout-report",
+            "claim:chuhan-jingxing-battle"
+          ],
+          "hint": "留意原篇「知其不用」「乃敢」的接續。"
+        },
+        {
+          "id": "task:jingxing-battle",
+          "chapterId": "chapter:jingxing-intelligence",
+          "type": "multi-choice",
+          "prompt": "若要解釋本篇所載戰果，哪些環節不應被「背水一戰」四字省略？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "趙方未採截斷供應的方案，以及韓信偵知此事",
+              "feedback": "這是原篇交代戰前條件的一部分，不等於已證明單一必要條件。",
+              "claimIds": [
+                "claim:case-jingxing-supply-proposal",
+                "claim:case-jingxing-refusal",
+                "claim:case-jingxing-scout-report"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "奇兵趁趙營空虛入營易幟",
+              "feedback": "戰果摘要明示這個環節；不能把勝利只歸給陣前心理。",
+              "claimIds": [
+                "claim:chuhan-jingxing-battle"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "韓信與張耳共同作戰的記述",
+              "feedback": "本案材料保留張耳，英雄式單人敘事可能把他刪去。",
+              "claimIds": [
+                "claim:chuhan-jingxing-battle"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "一項永久有效、換任何地形都必勝的背水加成",
+              "feedback": "原篇是特定事件的敘事，沒有提供這種普遍規則或可運算加成。",
+              "claimIds": [
+                "claim:chuhan-jingxing-battle"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "b",
+            "c"
+          ],
+          "explanation": "歷史勝利可以包含多個互相配合的環節。要說哪個最關鍵，需要額外論證，不能把文句自動變成遊戲必勝公式。",
+          "claimIds": [
+            "claim:case-jingxing-scout-report",
+            "claim:chuhan-jingxing-battle"
+          ],
+          "hint": "把材料中的動詞列出來：偵知、引兵、佯退、入營、易幟、夾擊。"
+        },
+        {
+          "id": "task:jingxing-aftermath",
+          "chapterId": "chapter:jingxing-after",
+          "type": "single-choice",
+          "prompt": "戰後問策如何影響人物呈現？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "李左車被俘，所以他在此後不可能提出有效意見",
+              "feedback": "原篇恰恰記韓信以師禮相待並聽其策；勝敗不是固定智力排序。",
+              "claimIds": [
+                "claim:case-jingxing-consults-captive"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "保留被俘後受問策的轉變，並把張耳封趙王放在後續階段",
+              "feedback": "這既尊重行動順序，也讓人物關係隨事件改變，而不是固定為敵我標籤。",
+              "claimIds": [
+                "claim:case-jingxing-consults-captive"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "李左車能進言，證明他原本一直是漢軍內應",
+              "feedback": "原篇沒有這項暗中身份。戰後合作不能倒推為戰前隸屬。",
+              "claimIds": [
+                "claim:case-jingxing-consults-captive"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "韓信聽了北攻燕東伐齊之計，證明燕齊同時無戰而降",
+              "feedback": "本段記遣使燕與燕從，不能把對燕齊的整體建議全部寫成已完成結果。",
+              "claimIds": [
+                "claim:case-jingxing-consults-captive"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "b"
+          ],
+          "explanation": "人物可以在敵對、被俘、受問策的過程中轉換關係。對後續結果的描述仍必須逐項核對。",
+          "claimIds": [
+            "claim:case-jingxing-consults-captive"
+          ],
+          "hint": "區分建議的範圍與這一段實際記載的執行結果。"
+        }
+      ],
+      "perspectives": [
+        {
+          "personId": "person:han-xin",
+          "framing": "把韓信的判斷拆成取得情報、布置作戰與戰後求教。",
+          "claimIds": [
+            "claim:case-jingxing-scout-report",
+            "claim:chuhan-jingxing-battle",
+            "claim:case-jingxing-consults-captive"
+          ],
+          "analysisPrompt": "韓信原分析若談自信、謀略或用人，哪一段在這三種活動中最有解釋力？有沒有不相容之處？"
+        },
+        {
+          "personId": "person:chen-yu",
+          "framing": "陳餘在篇中提出迎擊理由，也拒絕了另一個方案。",
+          "claimIds": [
+            "claim:case-jingxing-refusal",
+            "claim:case-jingxing-supply-proposal"
+          ],
+          "analysisPrompt": "原長文若缺失，可從本案話語開始。怎樣批評一項決定，才不會把一生壓縮成「愚蠢」？"
+        },
+        {
+          "personId": "person:zhang-er",
+          "framing": "與韓信共同作戰，戰後另有被立趙王的階段。",
+          "claimIds": [
+            "claim:chuhan-jingxing-battle",
+            "claim:case-jingxing-consults-captive"
+          ],
+          "analysisPrompt": "人物庫分類無法代替當時角色；你的評議可以追問張耳的參與為何容易在單人英雄敘事中消失。"
+        }
+      ],
+      "finale": {
+        "prompt": "為井陘寫一份「勝利的條件」評議。提出你認為最有解釋力的因素，並說明另一個因素如何補充或挑戰它。",
+        "reflectionPrompts": [
+          "在不改寫史實的前提下，李左車未採用的計策能幫助你問什麼問題？",
+          "若原分析把韓信描寫成天才，這個概念還需要哪些具體行動來支撐？",
+          "我們是否知道各項戰術的精確因果權重？若不知道，該怎樣表達？"
+        ],
+        "closingNote": "你完成的是一個可被追問的解釋，而不是把敵人降成愚蠢角色的勝利故事。李左車尚未有本包人物節點，卷宗已明示這項資料缺口。",
+        "minimumClaimMaterials": 2,
+        "minimumOriginalMaterials": 0,
+        "minimumThesisLength": 12,
+        "minimumCounterargumentLength": 8,
+        "minimumUncertaintyLength": 6
+      },
+      "claimIds": [
+        "claim:case-jingxing-supply-proposal",
+        "claim:case-jingxing-refusal",
+        "claim:case-jingxing-scout-report",
+        "claim:chuhan-jingxing-battle",
+        "claim:case-jingxing-consults-captive",
+        "claim:chuhan-jingxing-dating"
+      ]
+    },
+    {
+      "id": "case:wei-river",
+      "order": 5,
+      "title": "濰水：追擊之前，還有另一種提案",
+      "subtitle": "從救齊、求功到渡河，追查判斷如何相接",
+      "theme": "對敵判斷、時機與競爭",
+      "difficulty": "進階",
+      "estimatedMinutes": 25,
+      "premise": "韓信進兵齊地後，田廣求楚援，龍且到來。戰前有人提出持守、招回失城、切斷漢軍生計的方案，龍且卻選擇交戰。這份卷宗不只讀沙囊與河水，也讀他如何估量敵手與自己的功業。",
+      "inquiry": "一個判斷敵人容易對付的人，會怎樣解讀對方的撤退？史籍對龍且的描寫，能支持多廣的人物評價？",
+      "eventIds": [
+        "event:chuhan-attack-qi",
+        "event:chuhan-wei-river"
+      ],
+      "personIds": [
+        "person:han-xin",
+        "person:long-ju",
+        "person:tian-guang",
+        "person:li-shiqi",
+        "person:kuai-tong",
+        "person:guan-ying"
+      ],
+      "chapters": [
+        {
+          "id": "chapter:wei-context",
+          "title": "第一章｜救援為何出現",
+          "intro": "酈食其說齊、韓信進兵與田廣求救，在材料中接續。外交與軍事的參與者可能掌握不同資訊、追求不同結果。",
+          "claimIds": [
+            "claim:chuhan-attack-qi-conflict",
+            "claim:chuhan-attack-qi-consequence"
+          ],
+          "taskIds": [
+            "task:wei-context"
+          ]
+        },
+        {
+          "id": "chapter:wei-choice",
+          "title": "第二章｜沒有被採用的等待",
+          "intro": "讀匿名說者的提案，再讀龍且對韓信與功勞的說法。無名人物的話仍能改變我們理解選擇的方式。",
+          "claimIds": [
+            "claim:case-wei-river-alternative",
+            "claim:case-wei-river-longju-reply"
+          ],
+          "taskIds": [
+            "task:wei-speaker",
+            "task:wei-decision"
+          ]
+        },
+        {
+          "id": "chapter:wei-crossing",
+          "title": "第三章｜把退卻看成什麼",
+          "intro": "沿記述重建壅水、攻擊、佯退、追渡與決囊。最後把動作次序與人物解讀分開寫入你的評議。",
+          "claimIds": [
+            "claim:case-wei-river-sequence",
+            "claim:chuhan-wei-river-battle",
+            "claim:chuhan-wei-river-dating",
+            "claim:chuhan-wei-river-place-wei-river"
+          ],
+          "taskIds": [
+            "task:wei-order",
+            "task:wei-precision"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task:wei-context",
+          "chapterId": "chapter:wei-context",
+          "type": "single-choice",
+          "prompt": "哪些前因可以由本案材料連接到田廣求楚救援？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "齊既已聽酈食其遊說，後來求援便與韓信進兵無關",
+              "feedback": "材料接著記韓信進兵、田廣認為遭出賣及求楚援；先前的外交成果不能抹去其後行動。",
+              "claimIds": [
+                "claim:chuhan-attack-qi-conflict",
+                "claim:chuhan-attack-qi-consequence"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "酈食其與韓信按同一進度表協調，齊始終保持原防備",
+              "feedback": "本案記韓信聞已說下齊原欲止，後從蒯通進言續進，不能寫成完全協調的計畫。",
+              "claimIds": [
+                "claim:chuhan-attack-qi-conflict"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "龍且先破韓信，田廣才殺酈食其並求援",
+              "feedback": "這把求援與後續交戰的先後顛倒。",
+              "claimIds": [
+                "claim:chuhan-attack-qi-consequence",
+                "claim:chuhan-wei-river-battle"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "韓信聞說齊消息後仍進兵；田廣認為被出賣，殺酈食其並求楚援",
+              "feedback": "材料支持這條敘事鏈。田廣認為被出賣仍須標成其判斷，而非自動證實酈食其蓄意設局。",
+              "claimIds": [
+                "claim:chuhan-attack-qi-conflict",
+                "claim:chuhan-attack-qi-consequence"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "d"
+          ],
+          "explanation": "同一政治陣營的外交與軍事行動，未必在記述中顯得一致。誰知道什麼、如何理解，是本案的問題。",
+          "claimIds": [
+            "claim:chuhan-attack-qi-conflict",
+            "claim:chuhan-attack-qi-consequence"
+          ],
+          "hint": "找出「韓信本欲止」與「田廣以為」之間發生的行動。"
+        },
+        {
+          "id": "task:wei-speaker",
+          "chapterId": "chapter:wei-choice",
+          "type": "single-choice",
+          "prompt": "戰前持守、招回齊地失城的提案，要署誰的名字？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "李左車，因為他也談過截糧",
+              "feedback": "相似的軍事思路不足以認定同一作者。這一段沒有指名李左車。",
+              "claimIds": [
+                "claim:case-wei-river-alternative"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "標示原篇未具名說者，並保存建議內容",
+              "feedback": "沒有名字仍可以保留觀點；這比把有趣台詞配給熟知角色更符合來源。",
+              "claimIds": [
+                "claim:case-wei-river-alternative"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "范增，因為他是楚方著名謀士",
+              "feedback": "知名度不是身份證據；本段未給范增這項角色。",
+              "claimIds": [
+                "claim:case-wei-river-alternative"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "蒯通，因為他剛在前段出現",
+              "feedback": "前後相鄰不等於說話者相同；「人或說」需要保留其未具名狀態。",
+              "claimIds": [
+                "claim:case-wei-river-alternative"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "b"
+          ],
+          "explanation": "無名者也屬於歷史材料中的多方觀點。本包不會為方便人物卡呈現而補造名字。",
+          "claimIds": [
+            "claim:case-wei-river-alternative"
+          ],
+          "hint": "讀來源如何介紹說者，而不是猜誰最像會說這句話。"
+        },
+        {
+          "id": "task:wei-decision",
+          "chapterId": "chapter:wei-choice",
+          "type": "multi-choice",
+          "prompt": "哪些內容出現在列傳所引龍且的交戰理由中？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "自稱了解韓信，認為容易對付",
+              "feedback": "這是篇中對敵手的判斷，後續戰果會挑戰它；仍不等於我們能讀出全部內心。",
+              "claimIds": [
+                "claim:case-wei-river-longju-reply"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "認為不戰使敵降，自己難有戰功",
+              "feedback": "功勞如何被認定，是這段話的重要部分，不能只留下抽象的輕敵標籤。",
+              "claimIds": [
+                "claim:case-wei-river-longju-reply"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "已掌握韓信上游沙囊的精確位置與放水時刻",
+              "feedback": "這段沒有這項偵察情報，不能替龍且填補後見之明。",
+              "claimIds": [
+                "claim:case-wei-river-longju-reply",
+                "claim:case-wei-river-sequence"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "預期戰勝後可能得到齊地的一部分",
+              "feedback": "原篇引述分地預期；這是當事人說法，不代表已有確定且完成的分封。",
+              "claimIds": [
+                "claim:case-wei-river-longju-reply"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "對敵判斷、求功與利益預期可以同時出現。你可以用它們修正人物分析，無須選一個詞概括所有動機。",
+          "claimIds": [
+            "claim:case-wei-river-longju-reply"
+          ],
+          "hint": "先問理由在原篇中有沒有出現，再討論它是否合理。"
+        },
+        {
+          "id": "task:wei-order",
+          "chapterId": "chapter:wei-crossing",
+          "type": "sequence",
+          "prompt": "依《淮陰侯列傳》排列濰水作戰過程。",
+          "choices": [
+            {
+              "id": "a",
+              "label": "龍且追擊並渡水",
+              "feedback": "追擊是在韓信佯退後，決囊之前。",
+              "claimIds": [
+                "claim:case-wei-river-sequence"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "韓信命人決開上游沙囊",
+              "feedback": "這使原篇中的渡河過程受阻，不能提前到初次交戰以前。",
+              "claimIds": [
+                "claim:case-wei-river-sequence"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "韓信夜間以沙囊壅住上流",
+              "feedback": "這是原篇敘事中的事前準備。",
+              "claimIds": [
+                "claim:case-wei-river-sequence"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "楚軍多數未能渡過，韓信急擊，龍且被殺",
+              "feedback": "這是該段記載的結果；詳細水文與現代戰損模型仍不在本包。",
+              "claimIds": [
+                "claim:case-wei-river-sequence"
+              ]
+            },
+            {
+              "id": "e",
+              "label": "韓信引軍半渡攻擊，隨後佯退",
+              "feedback": "龍且把這次退卻讀作怯弱並追擊，是後續事件的接點。",
+              "claimIds": [
+                "claim:case-wei-river-sequence",
+                "claim:case-wei-river-longju-reply"
+              ]
+            }
+          ],
+          "acceptableOrders": [
+            [
+              "c",
+              "e",
+              "a",
+              "b",
+              "d"
+            ]
+          ],
+          "explanation": "戰術是一串行動與對方反應。若只保留「水攻」技能名，人物如何判斷與誤判的部分就會消失。",
+          "claimIds": [
+            "claim:case-wei-river-sequence",
+            "claim:case-wei-river-longju-reply"
+          ],
+          "hint": "找出準備、誘發反應與利用反應這三個階段。"
+        },
+        {
+          "id": "task:wei-precision",
+          "chapterId": "chapter:wei-crossing",
+          "type": "multi-choice",
+          "prompt": "要把本案做成有根據的互動圖，哪些做法合適？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "用相對箭頭呈現原篇動作次序",
+              "feedback": "方向與先後可以在明示為示意圖時使用；不需假裝擁有精確古河道。",
+              "claimIds": [
+                "claim:case-wei-river-sequence"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "直接把濰水定位成關中的渭水",
+              "feedback": "兩個不同的古地名不可因讀音相近而合併；資料包為濰水另建節點。",
+              "claimIds": [
+                "claim:chuhan-wei-river-place-wei-river"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "保留漢四年十一月原紀年，標示現代年帶仍待核",
+              "feedback": "古月序不是現代公曆月份。日期精度應隨來源與換算核對進度呈現。",
+              "claimIds": [
+                "claim:chuhan-wei-river-dating"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "保留戰術記述，將水量、堤高、淹水範圍明示為未知",
+              "feedback": "本包沒有這些計算所需資料；可以用動作示意支援理解，不能補造精確物理條件。",
+              "claimIds": [
+                "claim:case-wei-river-sequence"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "c",
+            "d"
+          ],
+          "explanation": "可互動不代表必須填滿所有數值。這個案卷能比較提案、選擇和次序；工程重建需要另一批證據。",
+          "claimIds": [
+            "claim:chuhan-wei-river-place-wei-river",
+            "claim:chuhan-wei-river-dating",
+            "claim:case-wei-river-sequence"
+          ],
+          "hint": "分清古地名、原紀年、戰術敘事和現代模型。"
+        }
+      ],
+      "perspectives": [
+        {
+          "personId": "person:long-ju",
+          "framing": "龍且在篇中有對敵判斷，也有戰功與分地的預期。",
+          "claimIds": [
+            "claim:case-wei-river-longju-reply",
+            "claim:case-wei-river-sequence"
+          ],
+          "analysisPrompt": "原長文若缺失，仍可用原簡介作起點。試著將「輕敵」展開為他如何解讀訊號、為何想要交戰。"
+        },
+        {
+          "personId": "person:han-xin",
+          "framing": "韓信在襲齊與濰水的行動中，面對外交消息與敵方反應。",
+          "claimIds": [
+            "claim:chuhan-attack-qi-conflict",
+            "claim:case-wei-river-sequence"
+          ],
+          "analysisPrompt": "選原分析中談策略或政治後果的一段；它能同時解釋戰術成功與襲齊引發的後果嗎？"
+        },
+        {
+          "personId": "person:li-shiqi",
+          "framing": "酈食其的遊說在軍事行動前發生，後遭田廣殺害。",
+          "claimIds": [
+            "claim:chuhan-attack-qi-conflict",
+            "claim:chuhan-attack-qi-consequence"
+          ],
+          "analysisPrompt": "討論他的處境時，把本人任務、他人判斷與後來的結果分開，避免直接替所有人物分配知情程度。"
+        },
+        {
+          "personId": "person:guan-ying",
+          "framing": "本紀亦記灌嬰參與擊楚軍，提醒我們檢查英雄敘事省略的人。",
+          "claimIds": [
+            "claim:chuhan-wei-river-battle"
+          ],
+          "analysisPrompt": "資料並未提供他在沙囊過程中的每個動作；可保留參戰記述，不補造具體台詞或職責。"
+        }
+      ],
+      "finale": {
+        "prompt": "為濰水寫一張「判斷與反應」評議卡。你可以聚焦龍且、韓信，也可以把未具名的持守方案作為分析中心。",
+        "reflectionPrompts": [
+          "龍且對韓信的既有評價，可能如何影響他解讀退卻？請標出這一步是你的推論。",
+          "原分析中的「善戰」能否涵蓋外交後果與他人風險？",
+          "若要比較另一種持守方案的可能結果，還缺哪些資料？"
+        ],
+        "closingNote": "你可以提出一種反事實疑問，但本案不會假裝知道未採用方案必定成功。結案保留的是有來源的記述與你署名的推論。",
+        "minimumClaimMaterials": 2,
+        "minimumOriginalMaterials": 0,
+        "minimumThesisLength": 12,
+        "minimumCounterargumentLength": 8,
+        "minimumUncertaintyLength": 6
+      },
+      "claimIds": [
+        "claim:chuhan-attack-qi-conflict",
+        "claim:chuhan-attack-qi-consequence",
+        "claim:case-wei-river-alternative",
+        "claim:case-wei-river-longju-reply",
+        "claim:case-wei-river-sequence",
+        "claim:chuhan-wei-river-battle",
+        "claim:chuhan-wei-river-dating",
+        "claim:chuhan-wei-river-place-wei-river"
+      ]
+    },
+    {
+      "id": "case:logistics",
+      "order": 6,
+      "title": "蕭何：沒有在前線的功勞",
+      "subtitle": "圖書、授權、補兵與斷糧，怎樣放進同一份評議",
+      "theme": "行政、供給與功績標準",
+      "difficulty": "進階",
+      "estimatedMinutes": 28,
+      "premise": "蕭何的材料看起來沒有一場華麗的決戰，卻連到秦的圖書、關中的行政、前線的補兵與論功時的爭議。你要為他建立一份能被檢驗的評議：說明他做了什麼、這些工作如何支援戰爭，也保留漢軍曾局部斷糧的記述。",
+      "inquiry": "怎樣呈現持續性的組織工作，才不會把它變成一句「後勤很強」？誰用什麼標準衡量功勞，這些標準是否彼此衝突？",
+      "eventIds": [
+        "event:zi-ying-surrenders",
+        "event:chuhan-return-sanqin",
+        "event:chuhan-honggou"
+      ],
+      "personIds": [
+        "person:xiao-he",
+        "person:liu-bang",
+        "person:xiang-yu"
+      ],
+      "chapters": [
+        {
+          "id": "chapter:logistics-information",
+          "title": "第一章｜圖書能做什麼",
+          "intro": "先辨認收集行政資料的行動與作者對其用途的解釋。資料類型與實際保存下來的數量，是不同問題。",
+          "claimIds": [
+            "claim:qin-archives",
+            "claim:case-logistics-delegated-action"
+          ],
+          "taskIds": [
+            "task:logistics-archives",
+            "task:logistics-authority"
+          ]
+        },
+        {
+          "id": "chapter:logistics-flow",
+          "title": "第二章｜有供給，仍可能斷糧",
+          "intro": "巴蜀與關中的供給機制，和滎陽甬道受奪的事件，需要同時成立於你的卷宗。把產出、運輸與前線可得性分開。",
+          "claimIds": [
+            "claim:bashu-provisioning",
+            "claim:guanzhong-logistics",
+            "claim:xingyang-grain-corridor"
+          ],
+          "taskIds": [
+            "task:logistics-mechanism",
+            "task:logistics-shortage"
+          ]
+        },
+        {
+          "id": "chapter:logistics-credit",
+          "title": "第三章｜誰定義功勞",
+          "intro": "戰後的論功不是透明儀表板。讀群臣、高祖與鄂君的不同評價標準，再決定你自己的衡量方式。",
+          "claimIds": [
+            "claim:case-logistics-merit-debate",
+            "claim:case-logistics-ejun-appraisal",
+            "claim:guanzhong-logistics"
+          ],
+          "taskIds": [
+            "task:logistics-appraisal"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task:logistics-archives",
+          "chapterId": "chapter:logistics-information",
+          "type": "single-choice",
+          "prompt": "收秦律令圖書這項材料，目前可以支持什麼？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "本包已保存秦全國逐戶戶籍與精確人口表",
+              "feedback": "材料記蕭何收圖書及作者認為的用途，但沒有把原始戶籍表交到本包。",
+              "claimIds": [
+                "claim:qin-archives"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "秦圖書所載天下形勢，可直接視為楚漢戰時的現況",
+              "feedback": "行政資料有形成時間、覆蓋與更新問題；本包未補查這些細節，不能直接當作每個戰時時點的現況。",
+              "claimIds": [
+                "claim:qin-archives"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "《史記》記蕭何收行政圖書，並把漢方了解形勢與民情歸因於此",
+              "feedback": "這保留收集行動與作者的因果解釋；可討論其作用，不能直接生成缺失數字。",
+              "claimIds": [
+                "claim:qin-archives"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "只要沒有數量，這種工作就無法在互動中呈現",
+              "feedback": "可以讓玩家比較資訊類型、使用方式與限制；有意義的互動不必以數字加成呈現。",
+              "claimIds": [
+                "claim:qin-archives"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "c"
+          ],
+          "explanation": "本案把「有哪種材料」與「材料含有多少、準不準」分開。這樣才能進一步提問資料如何變成決策能力。",
+          "claimIds": [
+            "claim:qin-archives"
+          ],
+          "hint": "注意摘要的兩個主詞：蕭何做了什麼，作者如何解釋。"
+        },
+        {
+          "id": "task:logistics-authority",
+          "chapterId": "chapter:logistics-information",
+          "type": "single-choice",
+          "prompt": "篇中蕭何處理關中行政的授權方式，哪一項整理適當？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "事事等漢王逐件回覆，沒有例外",
+              "feedback": "原篇記不及奏報時可便宜施行，這個例外對理解遠距行政很重要。",
+              "claimIds": [
+                "claim:case-logistics-delegated-action"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "一般奏請；來不及時可先行，之後再回報",
+              "feedback": "這保留了授權與回報兩部分，可討論如何維持反應速度與控制。",
+              "claimIds": [
+                "claim:case-logistics-delegated-action"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "掌握關中軍政，就可視為從此不受漢王節制",
+              "feedback": "行政裁量不等於永久免除節制；本段仍記先奏、允許與事後回報。",
+              "claimIds": [
+                "claim:case-logistics-delegated-action"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "依舊有秦法運作即可，漢方不需要另行授權",
+              "feedback": "材料明記法令和行政建置的奏請及允許，不能從收秦圖書推出沒有新的授權關係。",
+              "claimIds": [
+                "claim:case-logistics-delegated-action"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "b"
+          ],
+          "explanation": "行政安排本身可以形成互動問題：哪些事需要授權，什麼情況允許先行，誰承擔回報與責任。",
+          "claimIds": [
+            "claim:case-logistics-delegated-action"
+          ],
+          "hint": "把「輒奏上」與「即不及奏上」兩種情況都讀完。"
+        },
+        {
+          "id": "task:logistics-mechanism",
+          "chapterId": "chapter:logistics-flow",
+          "type": "multi-choice",
+          "prompt": "若把這些資料連成一張供給機制示意，哪些連接有依據？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "漢王東定三秦時，蕭何留收巴蜀而給軍食",
+              "feedback": "本包有此定性供給記述；尚不提供每日產出或消耗。",
+              "claimIds": [
+                "claim:bashu-provisioning"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "關中計戶口、轉漕與補兵，支援前線",
+              "feedback": "這是原篇提供的一組行政和軍事機制，不等於其中每一步都有精確數量。",
+              "claimIds": [
+                "claim:guanzhong-logistics"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "敖倉存在，所以所有前線始終可以無損取得糧食",
+              "feedback": "有倉與前線可取得供給不同；甬道被侵奪的材料直接提醒運輸風險。",
+              "claimIds": [
+                "claim:xingyang-grain-corridor"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "滎陽甬道遭楚侵奪，漢軍出現乏食",
+              "feedback": "這是特定局面中的干擾與後果，可與長期供給機制並列。",
+              "claimIds": [
+                "claim:xingyang-grain-corridor"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "供給至少涉及資源、組織與運輸可達性。把它們合成單一固定「糧草值」會省略本包最有意義的部分。",
+          "claimIds": [
+            "claim:bashu-provisioning",
+            "claim:guanzhong-logistics",
+            "claim:xingyang-grain-corridor"
+          ],
+          "hint": "有資源，不等於在需要的時候和地點都拿得到。"
+        },
+        {
+          "id": "task:logistics-shortage",
+          "chapterId": "chapter:logistics-flow",
+          "type": "single-choice",
+          "prompt": "一段論功說蕭何轉漕給食不乏，另一篇記滎陽甬道受奪而乏食。如何處理較妥當？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "刪掉斷糧記述，維持蕭何完美後勤的形象",
+              "feedback": "這是為人物形象選擇性刪證；評議應處理不合解讀的材料。",
+              "claimIds": [
+                "claim:case-logistics-ejun-appraisal",
+                "claim:xingyang-grain-corridor"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "只要有一次乏食，就證明全部供給記述都是假的",
+              "feedback": "一次局部危機不能自動否定整段長期機制；需要檢查時間、地點與話語場景。",
+              "claimIds": [
+                "claim:guanzhong-logistics",
+                "claim:xingyang-grain-corridor"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "將一段順利、一段斷糧合併，直接評為中等穩定",
+              "feedback": "尚未限定時段、地點與衡量方式，就用兩段話壓成單一穩定評級，會掩蓋尺度與話語場景的差異。",
+              "claimIds": [
+                "claim:case-logistics-ejun-appraisal",
+                "claim:xingyang-grain-corridor"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "保留論功場景與局部危機，核對它們各自所指的範圍",
+              "feedback": "兩段可能在時間、尺度和修辭目的上不同；保留差異才有條件進一步解釋。",
+              "claimIds": [
+                "claim:case-logistics-ejun-appraisal",
+                "claim:xingyang-grain-corridor"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "d"
+          ],
+          "explanation": "史料中的讚譽與特定危機需要共同檢視。這一關不是裁定誰說謊，而是避免把一段話外推到所有時空。",
+          "claimIds": [
+            "claim:case-logistics-ejun-appraisal",
+            "claim:xingyang-grain-corridor",
+            "claim:guanzhong-logistics"
+          ],
+          "hint": "比較發言場合、時間範圍，以及「前線」是否指同一情境。"
+        },
+        {
+          "id": "task:logistics-appraisal",
+          "chapterId": "chapter:logistics-credit",
+          "type": "multi-choice",
+          "prompt": "寫論功段落的材料說明，哪些做法可取？",
+          "choices": [
+            {
+              "id": "a",
+              "label": "標出群臣偏重親歷戰鬥、攻城的理由",
+              "feedback": "保留另一套功績尺度，才能看見爭議，而非把持異議者全寫成嫉妒者。",
+              "claimIds": [
+                "claim:case-logistics-merit-debate"
+              ]
+            },
+            {
+              "id": "b",
+              "label": "標出鄂君強調補兵、轉漕、保全關中的理由",
+              "feedback": "這是一套持續支援與復原的衡量方式；它是論功中的主張，仍可分析其修辭。",
+              "claimIds": [
+                "claim:case-logistics-ejun-appraisal"
+              ]
+            },
+            {
+              "id": "c",
+              "label": "把高祖接受的排序換成每位人物永久戰力分數",
+              "feedback": "論功排序服務當時政治分配，不等同所有情境下的能力測量。",
+              "claimIds": [
+                "claim:case-logistics-merit-debate",
+                "claim:case-logistics-ejun-appraisal"
+              ]
+            },
+            {
+              "id": "d",
+              "label": "允許玩家提出自己的功績標準，並要求交代材料與限制",
+              "feedback": "本案的開放評議由玩家署名；資料核對只約束證據使用，不指定誰應永遠第一。",
+              "claimIds": [
+                "claim:case-logistics-merit-debate",
+                "claim:case-logistics-ejun-appraisal"
+              ]
+            }
+          ],
+          "expectedChoiceIds": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "你可以認為行政、前線戰鬥或兩者協作更值得重視。好的評議讓讀者知道你用什麼尺度，而不是把尺度藏在分數裡。",
+          "claimIds": [
+            "claim:case-logistics-merit-debate",
+            "claim:case-logistics-ejun-appraisal"
+          ],
+          "hint": "「誰功最大」之前，先問每位發言者在算哪一種功。"
+        }
+      ],
+      "perspectives": [
+        {
+          "personId": "person:xiao-he",
+          "framing": "從收圖書、行政裁量、供給補兵到被評功，追查不同種類的工作。",
+          "claimIds": [
+            "claim:qin-archives",
+            "claim:case-logistics-delegated-action",
+            "claim:guanzhong-logistics",
+            "claim:case-logistics-merit-debate"
+          ],
+          "analysisPrompt": "此快照可能只有蕭何基本條目。你可用原簡介與來源形成評議；不要為完成任務杜撰不存在的深度分析。"
+        },
+        {
+          "personId": "person:liu-bang",
+          "framing": "漢王既授權、接收供給，也在戰後參與功勞分配。",
+          "claimIds": [
+            "claim:case-logistics-delegated-action",
+            "claim:case-logistics-merit-debate",
+            "claim:case-logistics-ejun-appraisal"
+          ],
+          "analysisPrompt": "讀漢高祖原分析中的用人或制度段落。它是強調個人判斷，還是也讓行政組織和部屬有位置？"
+        },
+        {
+          "personId": "person:xiang-yu",
+          "framing": "楚軍侵奪甬道，讓漢方供給機制遭遇具體壓力。",
+          "claimIds": [
+            "claim:xingyang-grain-corridor"
+          ],
+          "analysisPrompt": "讀項羽原分析時，可以用這段檢查他是否被只寫成正面戰場的猛將。這項行動能修正哪些簡化？"
+        }
+      ],
+      "finale": {
+        "prompt": "替蕭何寫一張有自己衡量標準的功績評議卡。說清楚他做了哪些工作、你重視什麼，再用斷糧或不同論功立場檢查自己的結論。",
+        "reflectionPrompts": [
+          "一個能在失利後恢復的組織，與一場決戰的勝利，該怎樣比較？",
+          "原人物分析是否把集體工作全部歸給主君？你會如何調整？",
+          "若要下一步補查真正的經濟資料，哪一項缺口最會改變你的評議？"
+        ],
+        "closingNote": "本案把組織工作帶進人物世界，但沒有虛構人口、稅收或庫存。你的評議可以肯定貢獻，也必須讓讀者看見其材料範圍。",
+        "minimumClaimMaterials": 2,
+        "minimumOriginalMaterials": 0,
+        "minimumThesisLength": 12,
+        "minimumCounterargumentLength": 8,
+        "minimumUncertaintyLength": 6
+      },
+      "claimIds": [
+        "claim:qin-archives",
+        "claim:case-logistics-delegated-action",
+        "claim:bashu-provisioning",
+        "claim:guanzhong-logistics",
+        "claim:xingyang-grain-corridor",
+        "claim:case-logistics-merit-debate",
+        "claim:case-logistics-ejun-appraisal"
+      ]
+    }
+  ]
+}

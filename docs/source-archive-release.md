@@ -1,0 +1,95 @@
+# 人物來源檔案館
+
+這是王侯將相原人物庫的來源工作台。962 筆原始記錄各有一份來源檔案，同人不同身份卡仍然分開。它連接原人物文章、百科書目線索、機構核讀紀錄與可在本機閱讀的古籍版本。
+
+網站整合版 v15.14 已改為人物與篇章按需讀取、Worker 索引搜尋與版本快取。實際載入量、部署與維護見 [網站整合說明](source-archive-web-release.md)。下方231項測試／22項DOM數字是原始資料包交付紀錄，不是新版驗收總數。
+
+## 開啟
+
+已有預覽服務時，開啟 `http://127.0.0.1:8877/source-archive`。主 app 與史論館都有「來源檔案館」入口；史論館的人物閱讀視窗也能跳到同一原始 ID 的來源檔案。
+
+獨立交付包需 Node.js 18 或更新版本。解壓縮後執行 `啟動檔案館.cmd`，或在交付包目錄執行：
+
+```powershell
+node scripts/serve-history-preview.cjs --port 8877
+```
+
+保留終端機開啟。若 8877 已被占用，可改成 8878，再開啟相應網址。HTML 使用本機 JSON，不能直接雙擊 HTML 取代預覽服務。伺服器只監聽本機，不需要登入、模型 API 或資料庫。
+
+## 四個工作區
+
+1. **人物檔案**：依姓名、核讀別稱、原庫朝代與狀態搜尋；查看來源候選、限定命題核讀、古籍姓名字串、尚待查明的問題；可下載單人的引用清單。
+2. **來源書目**：查找史籍、圖書館、檔案館等來源，查看實際取得狀態、使用條件與限制。
+3. **古籍閱覽**：按書、篇章閱讀；切換整理文字與原始維基文字；單書或跨書全文搜尋；核對固定修訂版本和 SHA-256。全文搜尋於本機執行，範圍越大所需時間越長。
+4. **覆蓋報告**：把候選線索、已取得轉錄、姓名命中與限定核讀分開計數，並匯出完整公開索引 JSON。
+
+## 2026-10-02 交付版本
+
+| 項目 | 實際收錄 |
+|---|---:|
+| 原人物記錄／不同姓名 | 962／950 |
+| 有百科候選的原卡 | 962 |
+| 候選頁／書目線索條目 | 1,109／22,619 |
+| 典籍／篇章版本快照 | 29／4,254 |
+| 可搜尋整理文字 | 42,600,292 字元 |
+| 有古籍姓名字串的原卡 | 837 |
+| 有限定核讀或現有主張連接的原卡 | 145 |
+| 編輯核讀組／來源目錄項目 | 103／69 |
+| 近現代卡機構來源核讀覆蓋 | 72／72 |
+
+篇章含11份另列的異版補篇；《戰國策》分三種底本保存。445篇標記缺文、表格、圖像或字形待核，仍可搜尋其現有文字。其餘篇章沒有被這輪規則標記這類缺口，也不等於已逐字校勘。九份跨頁轉引另保存版本與原文。原人物庫的長篇分析及能力值保持原樣。
+
+驗證：231項 Node 自動測試及22項 DOM操作檢查通過；所有保存篇章的原文與整理文字雜湊、全部姓名命中位置均核對。未進行真實瀏覽器視覺驗收。
+
+## 這份成果中的「完整」
+
+- **人物檔案覆蓋**：對原始快照的每個 ID 建檔，不以去重後姓名數冒充原始卡片數。
+- **古籍取得覆蓋**：按維基文庫指定目錄可發現的篇章取得版本。網頁篇章數不等於原書卷數；分卷、附頁、異版與缺文須分別判讀。
+- **來源候選覆蓋**：百科候選與其書目用來找證據，不代表核實所有外鏈或確認人物身份。
+- **編輯核讀覆蓋**：只支持核讀紀錄列出的身份／最小命題；由 Codex 輔助讀取與整理，沒有冒稱人類史學專家審定。
+- **原文章查證**：既有性格分析、能力分數與長篇解讀仍需逐句查核。此包不宣稱已取得世界上所有史料，也不把「沒有搜尋到」當作「歷史不存在」。
+
+實際數量見隨附的 `SOURCE_ARCHIVE_REPORT.json` 與館內覆蓋報告；兩者從交付版本產生，不以預設目標數填入。
+
+## 原人物資料與來源的連接
+
+`recordId` 是原卡 ID。`canonicalName` 與 `aliases` 只採核讀紀錄支持的名稱建議；原始 `name/type/dynasty/title` 不被改写。同一個人可能有多張原卡，同一姓名也可能代表不同人。
+
+`identityStatus` 僅有 `reviewed / candidate / ambiguous / unresolved`。`reviewIds` 連到指定範圍的核讀，`claimIds` 連到現有楚漢共用資料包中的主張。近現代機構核讀有些僅支持曾在名單出現或任职，不能當作完整傳記證明。
+
+`matches` 是姓名或已支持別稱的字串命中，含篇章 ID、查詢字串、次數、首個位置和短上下文。`matchCount` 是不同篇章數，同一篇可能因多個別稱出現多列。**命中本身不建立人物、地點、勢力、年代或因果關係。**
+
+下一步把來源接入玩法時，應先將具體段落整理成帶來源定位的 claim，經現有查證規則處理衝突、不確定時間與地理後，再加入事件。不要直接把字串命中或百科候選轉成遊戲事實。
+
+## 檔案結構與重建
+
+| 檔案 | 用途 |
+|---|---|
+| `data/source-archive/catalog.json` | 機構與史籍來源目錄、存取與使用條件 |
+| `data/source-archive/editorial-reviews.json` | 具體核讀命題、定位、日期、名稱建議與未解問題 |
+| `data/source-archive/harvest-person-sources.json` | 全人物百科版本與書目候選；不含百科全文 |
+| `data/source-archive/corpus-manifest.json` | 書籍目錄版本及篇章取得清單 |
+| `backend/static/data/history/archive-books/*.json` | 原始維基文字、整理文字、版本、授權與雜湊 |
+| `backend/static/data/history/source-archive.v1.json` | 完整公開索引，供重建與明確匯出 |
+| `backend/static/data/history/web/manifest.json` | 網站首屏摘要與目前版本指標 |
+| `backend/static/data/history/web/releases/<hash16>/` | 逐人、逐篇資料與搜尋索引 |
+
+更新來源需網路；索引重建與使用現有交付包不需網路。外部 API 有速率限制，擷取工具會分批、重試及保存進度。再次擷取前請確認平台當前條款；不要繞過存取限制。
+
+```powershell
+node scripts/harvest-person-sources.cjs --input="完整人物快照.json" --rescue
+node scripts/harvest-historical-corpus.cjs
+node scripts/harvest-corpus-supplements.cjs
+node scripts/normalize-historical-corpus.cjs --fetch-transclusions
+node scripts/build-source-archive.cjs --library "完整人物快照.json"
+node scripts/build-source-web.cjs
+node --test tests/source-archive.test.cjs tests/source-harvest.test.cjs tests/wikisource-text.test.cjs tests/corpus-normalization.test.cjs
+```
+
+私有人物快照不放進公開交付包。重建人物索引時自行提供原快照，工具檢查其 SHA-256，並只輸出人物 ID、姓名、分類、朝代與稱號等連接資料；不複製原分析文章、詩詞或能力數值。
+
+## 使用條件
+
+請讀 `source-archive-attribution.md`。古代原著、現代轉錄、機構頁面及程式碼分別適用其權利條件。CBDB 等限制來源僅列入口與自寫查核紀錄，沒有取得其受限資料集；CText 自動存取受限的狀態保留在目錄中。
+
+自動化功能與 HTTP 測試可驗證資料、搜尋和互動流程；此次沒有取得真實瀏覽器視覺驗收結果。

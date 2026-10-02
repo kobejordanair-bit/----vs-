@@ -1,0 +1,51 @@
+{
+  "format": "dynasty-source-harvest-validation",
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "valid": true,
+  "failures": [],
+  "sourceSnapshotSHA256": "d5300e05f49ccdb33cd8c5524697d2027618ef1b9e3b7cb965c6c6c8f7c1342b",
+  "checks": [
+    "all 962 original IDs retained exactly once",
+    "all records have retrieved candidate metadata",
+    "every candidate has page/revision/retrieval provenance",
+    "identityVerified remains false",
+    "no original analysis or article fulltext fields",
+    "bibliography URLs HTTP(S) only",
+    "source snapshot SHA256 unchanged"
+  ],
+  "summary": {
+    "totalRecords": 962,
+    "uniqueOriginalNames": 950,
+    "uniqueQueryNames": 942,
+    "candidate": 918,
+    "ambiguous": 44,
+    "uniqueCandidatePages": 1109,
+    "concreteCandidatePages": 1058,
+    "bibliographyEntries": 22619,
+    "wikisourceLinks": 1208,
+    "distinctWikisourceUrls": 935
+  },
+  "remainingBibliographyGaps": [
+    {
+      "recordId": "general_种師道_909817406",
+      "name": "种師道",
+      "reason": "百科正文未提供可抽取的明確參考書目／文庫鏈；保留候選頁，不表示人物無其他史料。"
+    },
+    {
+      "recordId": "minister_仲虺_2003825826",
+      "name": "仲虺",
+      "reason": "百科正文未提供可抽取的明確參考書目／文庫鏈；保留候選頁，不表示人物無其他史料。"
+    },
+    {
+      "recordId": "general_葛榮_306529130",
+      "name": "葛榮",
+      "reason": "百科正文未提供可抽取的明確參考書目／文庫鏈；保留候選頁，不表示人物無其他史料。"
+    },
+    {
+      "recordId": "minister_張柬之_1992836666",
+      "name": "張柬之",
+      "reason": "百科正文未提供可抽取的明確參考書目／文庫鏈；保留候選頁，不表示人物無其他史料。"
+    }
+  ]
+}

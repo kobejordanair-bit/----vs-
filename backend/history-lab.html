@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#243e37">
+  <meta name="description" content="沿著史料追問人物，在楚漢案卷中閱讀、對照與形成自己的歷史判斷。">
+  <title>王侯將相 · 史論館</title>
+  <link rel="stylesheet" href="/static/css/history-lab.css">
+  <script src="/static/data/legends.js" defer></script>
+  <script src="/static/js/history-data.js" defer></script>
+  <script src="/static/js/history-investigation.js" defer></script>
+  <script src="/static/js/history-lab.js" defer></script>
+</head>
+<body>
+  <a class="lab-skip" href="#labModePanel">跳至主要內容</a>
+  <div class="lab-page" id="labPage">
+    <header class="lab-header">
+      <a class="lab-brand" href="/history-lab" aria-label="王侯將相史論館首頁"><span class="lab-seal" aria-hidden="true">史</span><span><small>DYNASTY · HISTORICAL ARCHIVE</small><strong>王侯將相<span class="lab-brand-divider">／</span>史論館</strong></span></a>
+      <div class="lab-header-actions"><span id="labSaveStatus" class="lab-save-status" role="status" aria-live="polite">正在準備書桌</span><a class="lab-button lab-button-quiet" href="/source-archive" target="_blank" rel="noopener">來源檔案館 ↗</a><button id="labHelp" class="lab-button lab-button-quiet" type="button">入館指南</button><a class="lab-back" href="/">人物館 ↗</a></div>
+    </header>
+    <main>
+      <section class="lab-intro">
+        <div><p class="lab-overline">閱人物 · 辨史料 · 成一家之言</p><h1>走進歷史的分歧處</h1><p class="lab-lead">一個人物，可能有不止一種解釋。打開案卷，讀他做了什麼，也讀人們如何理解他，然後留下你的判斷。</p></div>
+        <aside class="lab-intro-note"><span class="lab-volume">卷 一</span><strong>楚漢之際</strong><p>人物的選擇、聯盟的代價，與史書未說盡的部分。</p><span>所有互動在本機完成 · 無 AI 呼叫</span></aside>
+      </section>
+      <div id="labStatus" class="lab-status" role="status" aria-live="polite">正在載入並驗證歷史資料…</div>
+      <div id="labDraftStatus" class="lab-status lab-status-error" role="alert" hidden></div>
+      <section id="labPackageSummary" class="lab-package-summary" aria-label="本包資料範圍"></section>
+      <details class="lab-library-bar"><summary><span>我的人物庫與書桌</span><span id="labLibraryStatus" role="status" aria-live="polite">正在準備內建人物庫…</span></summary><div class="lab-library-settings">
+        <div><h2 id="labLibraryHeading">連接人物原文，帶走調查記錄</h2><p>人物文章只在這個頁面讀取。書桌記錄保存引用位置與你的筆記。</p></div>
+        <div class="lab-library-actions"><label for="labLibraryFile">讀取人物 JSON<input id="labLibraryFile" type="file" accept="application/json,.json"></label><label for="labSessionFile">匯入書桌備份<input id="labSessionFile" type="file" accept="application/json,.json"></label><button id="labDownload" class="lab-button lab-button-quiet" disabled>匯出書桌備份</button><button id="labClearSession" class="lab-button lab-button-quiet" disabled>管理本機存檔</button></div>
+        <p class="lab-library-caption">支援原人物匯出與完整人物陣列。檔案在本頁記憶體讀取，不上傳。</p>
+      </div></details>
+      <nav id="labTabs" class="lab-tabs" role="tablist" aria-label="玩法比較" hidden>
+        <button id="lab-tab-cases" role="tab" aria-selected="true" aria-controls="labModePanel" data-mode="cases"><span>壹</span><strong>案卷館</strong><small>從一個疑問出發</small></button>
+        <button id="lab-tab-explore" role="tab" aria-selected="false" aria-controls="labModePanel" tabindex="-1" data-mode="explore"><span>貳</span><strong>時空探索</strong><small>尋找事件與線索</small></button>
+        <button id="lab-tab-library" role="tab" aria-selected="false" aria-controls="labModePanel" tabindex="-1" data-mode="library"><span>參</span><strong>人物原典</strong><small>閱讀、選段與對讀</small></button>
+        <button id="lab-tab-investigate" role="tab" aria-selected="false" aria-controls="labModePanel" tabindex="-1" data-mode="investigate"><span>肆</span><strong>自由調查</strong><small>挑材料，保留異說</small></button>
+        <button id="lab-tab-cast" role="tab" aria-selected="false" aria-controls="labModePanel" tabindex="-1" data-mode="cast"><span>伍</span><strong>創作工坊</strong><small>核對角色與參與</small></button>
+      </nav>
+      <section id="labModePanel" class="lab-mode-panel" role="tabpanel" aria-labelledby="lab-tab-cases" aria-busy="true" tabindex="-1"></section>
+      <noscript><p class="lab-status lab-status-error">需要啟用 JavaScript，才能開啟案卷館、時空探索、人物原典、自由調查與創作工坊。</p></noscript>
+    </main>
+    <footer class="lab-footer"><p>王侯將相 · 史論館　<span>本包為楚漢選定切片，保留未定年代與資料缺口。</span></p><p>史籍記述、原庫解讀與你的創作，各自保留出處。</p></footer>
+  </div>
+  <div id="labToast" class="lab-toast" role="status" aria-live="polite" hidden></div>
+  <div id="labDialog" class="lab-dialog-veil" hidden></div>
+</body>
+</html>

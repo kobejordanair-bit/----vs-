@@ -1,0 +1,13 @@
+{
+  "format": "dynasty-source-harvest-query-aliases",
+  "schemaVersion": 1,
+  "notice": "以下只擴充百科來源的檢索詞。候選頁面存在不代表身份已核對；不修改原人物卡。",
+  "queries": [
+    { "recordId": "emperor_海陵王完顏亮", "titles": ["完顏亮"], "reason": "分開稱號與姓名的檢索候選。" },
+    { "recordId": "emperor_完顔吳乞買", "titles": ["完顏吳乞買", "金太宗"], "reason": "顔／顏異體及帝號檢索候選。" },
+    { "recordId": "minister_宰嚭_2003914711", "titles": ["伯嚭", "太宰嚭"], "reason": "官稱與姓名的檢索候選，尚未核對原卡全文身份。" },
+    { "recordId": "minister_公子昂_1989351300", "titles": ["公子卬", "魏卬"], "reason": "昂／卬近形字的候選，尚未確認原卡所指。" },
+    { "recordId": "minister_劉太后_1989603539", "titles": ["章獻明肅皇后", "劉娥"], "reason": "北宋朝代標籤對應的檢索候選，仍須核對具體人物。" },
+    { "recordId": "emperor_溥儀帝_279809573", "titles": ["溥儀"], "reason": "移除稱號後的姓名檢索候選。" }
+  ]
+}

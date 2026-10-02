@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#243e37">
+  <meta name="description" content="王侯將相人物來源檔案館：連接人物、史籍、可閱讀全文與已核對主張，明示每筆資料的來源及限制。">
+  <title>王侯將相 · 來源檔案館</title>
+  <link rel="stylesheet" href="/static/css/source-archive.css">
+  <script src="/static/js/source-archive.js" defer></script>
+</head>
+<body>
+  <a class="ar-skip" href="#archivePanel">跳至檔案內容</a>
+  <div class="ar-page" id="archivePage">
+    <header class="ar-header">
+      <a class="ar-brand" href="/source-archive" aria-label="王侯將相來源檔案館首頁"><span class="ar-seal" aria-hidden="true">藏</span><span><small>DYNASTY · SOURCE ARCHIVE</small><strong>王侯將相<span>／</span>來源檔案館</strong></span></a>
+      <div class="ar-actions"><a id="archiveLabLink" href="/history-lab">回史論館 ↗</a><button id="archiveHelp" class="ar-button ar-button-quiet" type="button">查閱指南</button></div>
+    </header>
+    <main>
+      <section class="ar-intro" aria-labelledby="archiveTitle">
+        <div><p class="ar-overline">從人物出發 · 沿出處尋證</p><h1 id="archiveTitle">把歷史的來路<br>一卷一卷打開。</h1><p>找到人物的記載、翻閱史籍、對照已核材料。每個連結都保留取得方式與查證進度，讓下一次判斷有據可循。</p></div>
+        <aside class="ar-intro-note"><span>檔案館閱讀原則</span><strong>有出處，也要有層次。</strong><p>史籍中的名字、百科的身份線索、已核對的具體主張，各有不同用途。從檔案狀態開始，讀到原文再作判斷。</p></aside>
+      </section>
+      <div id="archiveStatus" class="ar-status" role="status" aria-live="polite">正在開啟來源目錄…</div>
+      <section id="archiveMetrics" class="ar-metrics" aria-label="此份檔案館的資料涵蓋"></section>
+      <nav id="archiveTabs" class="ar-tabs" role="tablist" aria-label="檔案館閱覽室" hidden>
+        <button id="archive-tab-people" role="tab" aria-selected="true" aria-controls="archivePanel" data-tab="people"><span>壹</span><strong>人物檔案</strong><small>由人尋書</small></button>
+        <button id="archive-tab-sources" role="tab" aria-selected="false" aria-controls="archivePanel" tabindex="-1" data-tab="sources"><span>貳</span><strong>來源書目</strong><small>版本與出處</small></button>
+        <button id="archive-tab-texts" role="tab" aria-selected="false" aria-controls="archivePanel" tabindex="-1" data-tab="texts"><span>參</span><strong>原文閱覽</strong><small>沿文字追索</small></button>
+        <button id="archive-tab-coverage" role="tab" aria-selected="false" aria-controls="archivePanel" tabindex="-1" data-tab="coverage"><span>肆</span><strong>涵蓋報告</strong><small>看見進度與缺口</small></button>
+      </nav>
+      <section id="archivePanel" class="ar-panel" role="tabpanel" aria-labelledby="archive-tab-people" aria-busy="true" tabindex="-1"></section>
+      <noscript><p class="ar-status ar-error">啟用 JavaScript 後，可以搜尋人物、書目和可閱讀原文。資料保存在本站的公開 JSON 檔案中。</p></noscript>
+    </main>
+    <footer class="ar-footer"><p>王侯將相 · 來源檔案館<span>日常閱覽按需讀取；完整來源索引為另行下載的大檔。</span></p><div class="ar-actions"><button id="archiveExport" class="ar-button ar-button-quiet" type="button" disabled>下載完整來源索引（大檔）</button><button id="archivePrint" class="ar-button ar-button-quiet" type="button">列印目前頁面</button></div></footer>
+  </div>
+  <div id="archiveDialog" class="ar-dialog-veil" hidden></div>
+  <div id="archiveToast" class="ar-toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

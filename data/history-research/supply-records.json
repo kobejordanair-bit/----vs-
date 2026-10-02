@@ -1,0 +1,81 @@
+{
+  "preparedOn": "2026-10-01",
+  "sources": [
+    {
+      "id": "source:shiji-053",
+      "work": "史記",
+      "section": "卷五十三·蕭相國世家",
+      "author": "司馬遷",
+      "kind": "primary-text",
+      "url": "https://zh.wikisource.org/wiki/史記/卷053",
+      "versionUrl": "https://zh.wikisource.org/w/index.php?title=史記/卷053&oldid=2087971",
+      "accessedOn": "2026-10-01",
+      "verification": "opened-and-read",
+      "editionNote": "實際開啟並閱讀維基文庫轉錄正文；本次未與紙本校勘。",
+      "reuseNote": "只採自行整理的主張與少量原典短節錄，保留作者、卷名與查閱載體。古代原典與網頁編輯內容分開；不複製現代註釋或整頁。",
+      "limitations": "此章記述及功臣議論不是獨立經濟統計；不得由機制描述反推人口、糧產或稅率。"
+    }
+  ],
+  "additionalPlaces": [
+    { "id": "place:bashu", "name": "巴蜀", "kind": "region", "sourceId": "source:shiji-053", "locator": "漢王東定三秦、蕭何留收巴蜀段", "note": "歷史區域名稱；本包不繪疆界、不等同現代省份。" },
+    { "id": "place:ao-granary", "name": "敖倉", "kind": "site", "sourceId": "source:shiji-008", "locator": "漢三年、漢王軍滎陽南築甬道段", "note": "以史籍所述倉儲據點建節點；尚未核定現代位置與容量。" }
+  ],
+  "records": [
+    {
+      "id": "economy:qin-archives",
+      "title": "秦律令圖書與行政資訊",
+      "kind": "administration",
+      "placeIds": ["place:xianyang"],
+      "personIds": ["person:xiao-he", "person:liu-bang"],
+      "time": { "earliest": { "era": "BCE", "year": 207 }, "latest": { "era": "BCE", "year": 206 }, "precision": "range", "original": "沛公至咸陽；漢元年入秦階段", "normalization": "regnal-year-band", "review": "provisional", "note": "原章未給此行動月日；以相關事件的保守年帶表示，未轉公曆月份。" },
+      "mechanism": "卷053記蕭何收秦律令圖書，並以此說明漢王得知險要、戶口及民情的行政資訊來源。",
+      "statement": "卷053記沛公入咸陽時蕭何收秦丞相御史律令圖書；作者將漢方對地形、戶口及民情的了解歸因於此。",
+      "sourceRefs": [{ "sourceId": "source:shiji-053", "locator": "沛公至咸陽、何獨先入收圖書段", "excerpt": "收秦丞相御史律令圖書" }],
+      "quantities": [],
+      "note": "主張是原章記述及其因果解釋；沒有保存實際戶口表，不產生人口數字。"
+    },
+    {
+      "id": "economy:bashu-provisioning",
+      "title": "巴蜀軍食供給",
+      "kind": "supply",
+      "placeIds": ["place:bashu"],
+      "personIds": ["person:xiao-he", "person:liu-bang"],
+      "time": { "earliest": { "era": "BCE", "year": 206 }, "latest": { "era": "BCE", "year": 206 }, "precision": "year", "original": "漢王引兵東定三秦時", "normalization": "regnal-year-band", "review": "provisional", "note": "按前後事件限定名義206年；本章未給供給起止月日。" },
+      "mechanism": "漢王東定三秦期間，蕭何留收巴蜀、安撫治理並給軍食。",
+      "statement": "卷053記漢王東定三秦時，蕭何以丞相留收巴蜀，使給軍食。",
+      "sourceRefs": [{ "sourceId": "source:shiji-053", "locator": "漢王引兵東定三秦、何以丞相留收巴蜀段", "excerpt": "使給軍食" }],
+      "quantities": [],
+      "note": "只保存定性供給机制；沒有糧產、倉容、稅率或運送量。"
+    },
+    {
+      "id": "economy:guanzhong-logistics",
+      "title": "關中戶口、轉漕與補兵",
+      "kind": "supply",
+      "placeIds": ["place:guanzhong", "place:xingyang"],
+      "personIds": ["person:xiao-he", "person:liu-bang"],
+      "time": { "earliest": { "era": "BCE", "year": 206 }, "latest": { "era": "BCE", "year": 202 }, "precision": "range", "original": "漢二年以後楚漢相距期間；含漢五年功臣議論回顧", "normalization": "regnal-year-band", "review": "provisional", "note": "跨期機制摘要；起止月未定，區間不表示每天有同樣產出。" },
+      "mechanism": "原章記蕭何守關中，計戶口、轉漕給軍並補充兵員；後來的功臣議論將滎陽供給列為其功。",
+      "statement": "卷053記關中計戶口轉漕給軍及補兵；漢五年功臣議論又回顧蕭何由關中供給滎陽。",
+      "sourceRefs": [{ "sourceId": "source:shiji-053", "locator": "漢二年何守關中段；漢五年鄂君論功段", "excerpt": "計戶口轉漕給軍" }],
+      "quantities": [],
+      "note": "正文與議論均出同一篇，不算兩個獨立經濟統計來源。"
+    },
+    {
+      "id": "economy:xingyang-grain-corridor",
+      "title": "滎陽甬道與敖倉供給風險",
+      "kind": "transport",
+      "placeIds": ["place:xingyang", "place:ao-granary"],
+      "personIds": ["person:liu-bang", "person:xiang-yu"],
+      "time": { "earliest": { "era": "BCE", "year": 205 }, "latest": { "era": "BCE", "year": 204 }, "precision": "range", "original": "卷008漢三年敘事；楚漢相距歲餘", "normalization": "regnal-year-band", "review": "provisional", "note": "原文的持續時間與紀年不轉成固定月份；保守年帶。" },
+      "mechanism": "漢方築甬道接取敖倉糧食，楚方反覆侵奪甬道，敘事以此連到漢軍乏食。",
+      "statement": "卷008記漢王軍滎陽南築甬道取敖倉；項羽侵奪甬道後漢軍乏食。",
+      "sourceRefs": [{ "sourceId": "source:shiji-008", "locator": "漢三年、漢王軍滎陽南築甬道屬之河段", "excerpt": "以取敖倉" }],
+      "quantities": [],
+      "note": "本次實際核讀zh-hant正文；不把敘事推成路線長度、通行時間或糧食點數。"
+    }
+  ],
+  "routes": [
+    { "id": "route:guanzhong-xingyang-supply", "fromPlaceId": "place:guanzhong", "toPlaceId": "place:xingyang", "kind": "reported-supply", "economyId": "economy:guanzhong-logistics", "sourceId": "source:shiji-053", "locator": "漢五年鄂君論功、蕭何轉漕關中給食滎陽段", "note": "原章回顧的供給方向；不是已測定的道路、最短路或雙向通行資料。距離未核。" }
+  ],
+  "excluded": ["人口、糧產、庫容、稅率、物價、貨幣換算、運輸時間及遊戲平衡數值均未補造。"]
+}
