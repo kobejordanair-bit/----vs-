@@ -76,7 +76,7 @@ test('the source link uses DOM attributes and clears a prior person on invalid i
 });
 
 test('the shipped evaluation modal opens exact-ID sources and keeps existing content flows', () => {
-    assert.match(html, /<script src="\/static\/js\/source-links\.js\?v=15\.14"><\/script>/);
+    assert.match(html, /<script src="\/static\/js\/source-links\.js\?v=16\.0"><\/script>/);
     const document = createDocument();
     const calls = [];
     const legends = [{ id: 'base-one', name: '同名人物' }, { id: 'cloud-other', name: '同名人物', deepAnalysis: 'private text' }];

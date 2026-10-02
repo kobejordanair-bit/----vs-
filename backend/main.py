@@ -14,13 +14,14 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from pymongo import MongoClient
 from userdata_schema import UserDataRequest, load_userdata, save_userdata_patch
+from world_workspace import create_router as create_world_router
 import asyncio
 import threading
 import queue as stdlib_queue
 
 load_dotenv()
 
-APP_VERSION = "15.14"
+APP_VERSION = "16.0"
 APP_SECRET = os.getenv("APP_SECRET")
 if not APP_SECRET:
     raise ValueError("環境變數 APP_SECRET 尚未設定！")
@@ -82,6 +83,9 @@ def verify_token(x_app_token: Optional[str] = Header(None)):
         # 舊格式或直接密碼：拒絕，強制重新登入
         raise HTTPException(status_code=401, detail="登入已過期，請重新登入")
 
+app.include_router(create_world_router(db["worldworkspaces"], verify_token))
+
+@app.get("/play")
 @app.get("/")
 def serve_frontend():
     return FileResponse(

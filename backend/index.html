@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王侯將相 · 朝堂危局 (v15.14)</title>
-    <link rel="stylesheet" href="/static/css/court.css?v=15.14">
+    <title>王侯將相 · 世界書桌與全功能整合 (v16.0)</title>
+    <link rel="stylesheet" href="/static/css/court.css?v=16.0">
+    <link rel="stylesheet" href="/static/css/world.css?v=16.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -417,10 +418,12 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-2xl tracking-widest calligraphy text-[#e5e5e5]">帝王將相名臣評鑑</h1>
-                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v15.14 朝堂危局</span>
+                    <span class="text-[10px] text-[#a8a29e] tracking-[0.2em] font-serif uppercase" id="appVersionText">v16.0 世界書桌與全功能整合</span>
                 </div>
             </div>
             <div class="flex gap-2 items-center flex-wrap justify-end w-full md:w-auto">
+                <button id="worldWorkspaceButton" onclick="openWorldWorkspace()" class="bg-[#9a3d2c] hover:bg-[#b9543d] border border-[#d4af37] text-[#fff4dc] px-4 py-2 rounded font-serif text-sm tracking-wider">世界書桌</button>
+                <button id="worldBackupButton" onclick="openWorldWorkspace('backup')" class="bg-[#2c2826] hover:bg-[#44403c] border border-[#bdab79] text-[#fbecd4] px-4 py-2 rounded font-serif text-sm">全功能備份</button>
                 <a href="/history-lab" target="_blank" rel="noopener" class="bg-[#345a49] hover:bg-[#426e59] border border-[#bdab79] text-[#fbecd4] px-4 py-2 rounded font-serif text-sm tracking-wider transition-colors" title="在新分頁開啟史論館，閱讀人物原文與楚漢案卷">
                     <i class="fa-solid fa-book-open mr-1" aria-hidden="true"></i>史論館
                 </a>
@@ -507,6 +510,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </header>
 
     <div id="courtGameRoot"></div>
+    <div id="worldRoot"></div>
 
     <!-- Main Content -->
     <div class="max-w-[1400px] mx-auto px-4 py-8">
@@ -1178,26 +1182,31 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     </div>
 
     
-    <script src="/static/data/legends.js?v=15.14"></script>
-    <script src="/static/data/scenes.js?v=15.14"></script>
-    <script src="/static/data/factions.js?v=15.14"></script>
-    <script src="/static/data/regions.js?v=15.14"></script>
-    <script src="/static/data/battlefields.js?v=15.14"></script>
-    <script src="/static/data/eras.js?v=15.14"></script>
-    <script src="/static/prompts/soul.js?v=15.14"></script>
-    <script src="/static/js/backup.js?v=15.14"></script>
-    <script src="/static/js/storage.js?v=15.14"></script>
-    <script src="/static/js/persistence.js?v=15.14"></script>
-    <script src="/static/js/court-engine.js?v=15.14"></script>
-    <script src="/static/js/court-council.js?v=15.14"></script>
-    <script src="/static/js/court-campaign.js?v=15.14"></script>
-    <script src="/static/js/court-library.js?v=15.14"></script>
-    <script src="/static/js/court-ui.js?v=15.14"></script>
-    <script src="/static/js/source-links.js?v=15.14"></script>
+    <script src="/static/data/legends.js?v=16.0"></script>
+    <script src="/static/data/scenes.js?v=16.0"></script>
+    <script src="/static/data/factions.js?v=16.0"></script>
+    <script src="/static/data/regions.js?v=16.0"></script>
+    <script src="/static/data/battlefields.js?v=16.0"></script>
+    <script src="/static/data/eras.js?v=16.0"></script>
+    <script src="/static/prompts/soul.js?v=16.0"></script>
+    <script src="/static/js/backup.js?v=16.0"></script>
+    <script src="/static/js/storage.js?v=16.0"></script>
+    <script src="/static/js/persistence.js?v=16.0"></script>
+    <script src="/static/js/court-engine.js?v=16.0"></script>
+    <script src="/static/js/court-council.js?v=16.0"></script>
+    <script src="/static/js/court-campaign.js?v=16.0"></script>
+    <script src="/static/js/court-library.js?v=16.0"></script>
+    <script src="/static/js/court-ui.js?v=16.0"></script>
+    <script src="/static/js/source-links.js?v=16.0"></script>
+    <script src="/static/js/play-context.js?v=16.0"></script>
+    <script src="/static/js/world-engine.js?v=16.0"></script>
+    <script src="/static/js/workspace-vault.js?v=16.0"></script>
+    <script src="/static/js/world-storage.js?v=16.0"></script>
+    <script src="/static/js/world-ui.js?v=16.0"></script>
     <!-- ↑ 更新 APP_VERSION 或修改 static/data/*.js、static/prompts/*.js 時，請同步更新以上所有 ?v= 版本號，避免 PWA/瀏覽器快取舊檔 -->
     <script>
         // --- CONSTANTS & UTILS ---
-        const APP_VERSION = "15.14";
+        const APP_VERSION = "16.0";
 
         // 資料載入防呆：確認所有外部 static/data/*.js 與 static/prompts/*.js 已正確載入
         if (typeof staticLegendsData === 'undefined' || typeof staticScenesData === 'undefined' ||
@@ -1397,7 +1406,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     const mod = appState.modifiedLegends[g.id];
     if (!mod) return g;
     const hasRealMod = Object.keys(mod).some(k => !['stats','analysis'].includes(k));
-    return { ...g, ...mod, isModified: hasRealMod };
+    return { ...g, ...mod, id: g.id, isModified: hasRealMod };
 });
             renderLegends();
         }
@@ -5894,8 +5903,16 @@ ${chapterHtml}
         }
         
         // --- 對接本地端 Python FastAPI 後端 ---
-async function _callGeminiStream(promptText, onChunk, onModel = null, contentsOverride = null) {
-    const contents = contentsOverride || [{ role: "user", parts: [{ text: promptText }] }];
+async function prepareWorldRequestContents(contents) {
+    const copied = cloneState(contents);
+    if (!globalThis.DynastyWorldUI?.prepareContents) return copied;
+    const prepared = await DynastyWorldUI.prepareContents(copied);
+    if (!Array.isArray(prepared)) throw new Error('共用人物背景格式錯誤，請重新開啟世界書桌。');
+    return prepared;
+}
+async function _callGeminiStream(promptText, onChunk, onModel = null, contentsOverride = null, options = {}) {
+    const originalContents = contentsOverride || [{ role: "user", parts: [{ text: promptText }] }];
+    const contents = options.context === 'frozen' ? cloneState(originalContents) : await prepareWorldRequestContents(originalContents);
     const response = await fetch(`${BACKEND_URL}/api/gemini/stream`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
@@ -5961,11 +5978,12 @@ async function callGemini(promptText, isJson = false) {
 }
 
 async function _callGeminiNative(contentsArray, isJson = false) {
+    const preparedContents = await prepareWorldRequestContents(contentsArray);
     const _doFetch = async () => {
         const response = await fetch(`${BACKEND_URL}/api/gemini`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'x-app-token': APP_TOKEN },
-            body: JSON.stringify({ contents: contentsArray, is_json: isJson })
+            body: JSON.stringify({ contents: preparedContents, is_json: isJson })
         });
         const data = await response.json();
         if (!response.ok) throw new Error(data.detail || `HTTP ${response.status}`);
@@ -6458,6 +6476,109 @@ function clearAllChronicle() {
         })();
 
         function resetApp() { appState.mode = 'browse'; closeAllPanels(); setTypeFilter('all'); setDynastyFilter('all'); el('dynastyFilter').value = 'all'; el('searchInput').value=''; appState.compareList = []; updateCompareUI(); renderLegends(); }
+        // Shared entry points preserve the existing feature implementations and saves.
+        let worldRouteOpened = false;
+        function worldDataReady() {
+            const status = cloudStore.getState();
+            return status.ready && !status.blocked && !restoreLock;
+        }
+        function worldBackupReady() { return cloudStore.getState().ready && !restoreLock && !activeAiRequests; }
+        async function openWorldWorkspace(tab) {
+            if (!globalThis.DynastyWorldUI) return customAlert('世界書桌尚未載入，請重新整理後再試。');
+            if (!worldDataReady() && !(tab === 'backup' && worldBackupReady())) return customAlert('請先登入並成功載入雲端資料，再開啟世界書桌。');
+            try { return await DynastyWorldUI.open(tab); }
+            catch (error) { customAlert('世界書桌無法開啟：' + error.message); }
+        }
+        async function readyWorldWorkspace() {
+            if (!globalThis.DynastyWorldUI) return;
+            await DynastyWorldUI.ready();
+            if (!worldRouteOpened && location.pathname.replace(/\/$/, '') === '/play') {
+                worldRouteOpened = true;
+                await openWorldWorkspace();
+            }
+        }
+        function launchLegacyFromWorld(action, recordIds = []) {
+            if (!worldDataReady()) throw new Error('請先成功載入雲端資料。');
+            if (!Array.isArray(recordIds) || recordIds.some(id => typeof id !== 'string')) throw new Error('選角 ID 清單格式錯誤。');
+            const selectedIds = [...new Set(recordIds)];
+            const aliases = { person: 'analysis', review: 'analysis', freeSoul: 'soul', soulMode: 'soul', soulDeep: 'soul-deep', deepSoul: 'soul-deep', debateMode: 'debate', compareMode: 'compare', courtGame: 'court', soulSaves: 'saves', import: 'restore', download: 'backup' };
+            action = aliases[action] || action;
+            const needsPerson = ['analysis', 'chat', 'source', 'history'];
+            if ([...needsPerson, 'compare', 'hegemony', 'soul', 'debate'].includes(action)) {
+                const missingIds = selectedIds.filter(id => !legendsData.some(record => record.id === id));
+                if (missingIds.length) throw new Error('所選人物不在目前人物庫：' + missingIds.join('、') + '。請還原人物資料或重新選角。');
+            }
+            if (needsPerson.includes(action) && !selectedIds.length) throw new Error('請先選擇一位人物。');
+            const supported = ['browse', 'analysis', 'chat', 'compare', 'hegemony', 'soul', 'soul-deep', 'debate', 'court', 'scenes', 'snapshot', 'chronicle', 'stats', 'add', 'edit', 'restore', 'backup', 'source', 'history', 'saves'];
+            if (!supported.includes(action)) throw new Error('尚未支援的功能入口。');
+            globalThis.DynastyWorldUI?.close();
+            const showMode = mode => { if (appState.mode !== mode) toggleMode(mode); };
+            if (action === 'browse') return resetApp();
+            if (action === 'analysis') return openEvalModal(selectedIds[0]);
+            if (action === 'chat') return startChat(selectedIds[0]);
+            if (action === 'compare') {
+                showMode('compareMode');
+                if (selectedIds.length) appState.compareList = selectedIds.slice(0, 2);
+                updateCompareUI(); renderLegends(); return;
+            }
+            if (action === 'hegemony') {
+                // Fill only vacant roles; opening the feature never replaces an existing cast.
+                const used = new Set(appState.hegemony.factions.flatMap(faction => [...Object.values(faction.courtSlots), ...Object.values(faction.militarySlots)]).filter(Boolean));
+                const firstFaction = appState.hegemony.factions[0];
+                const roleOrder = firstFaction ? [['courtSlots', 'emperor'], ['militarySlots', 'commander'],
+                    ...Object.keys(firstFaction.courtSlots).filter(key => key !== 'emperor').map(key => ['courtSlots', key]),
+                    ...Object.keys(firstFaction.militarySlots).filter(key => key !== 'commander').map(key => ['militarySlots', key])] : [];
+                const targets = roleOrder.flatMap(([section, role]) => appState.hegemony.factions.filter(faction => Object.hasOwn(faction[section], role)).map(faction => [faction[section], role]));
+                for (const id of selectedIds) {
+                    if (used.has(id)) continue;
+                    const vacant = targets.find(([slots, role]) => !slots[role]);
+                    if (!vacant) break;
+                    vacant[0][vacant[1]] = id; used.add(id);
+                }
+                showMode('hegemony'); updateHegemonyUI(); renderLegends(); return;
+            }
+            if (action === 'soul') {
+                showMode('soulMode'); setSoulTab('free');
+                if (selectedIds[0]) appState.soulMode.selection.host = selectedIds[0];
+                if (selectedIds[1]) appState.soulMode.selection.soul = selectedIds[1];
+                updateSoulModeUI(); renderLegends(); return;
+            }
+            if (action === 'soul-deep') return openSoulDeep();
+            if (action === 'saves') return openSoulSaves();
+            if (action === 'debate') {
+                showMode('debateMode');
+                const targets = ['debater1', 'debater2', 'debater3', 'debater4'].flatMap(key => [[appState.debateMode.pro, key], [appState.debateMode.con, key]]);
+                const used = new Set([...Object.values(appState.debateMode.pro), ...Object.values(appState.debateMode.con)].filter(Boolean));
+                for (const id of selectedIds) {
+                    if (used.has(id)) continue;
+                    const vacant = targets.find(([slots, key]) => !slots[key]);
+                    if (!vacant) break;
+                    vacant[0][vacant[1]] = id; used.add(id);
+                }
+                updateDebateModeUI(); renderLegends(); return;
+            }
+            const actions = { court: openCourtGame, scenes: openScenesPanel, snapshot: openSnapshot, chronicle: openChronicle, stats: openStatsPanel, add: openAddModal, edit: openEditHub, restore: () => el('fileInput').click(), backup: handleDownloadJSON, source: () => window.open('/source-archive#tab=people&person=' + encodeURIComponent(selectedIds[0]), '_blank', 'noopener,noreferrer'), history: () => window.open('/history-lab?record=' + encodeURIComponent(selectedIds[0]), '_blank', 'noopener,noreferrer') };
+            return actions[action]();
+        }
+        if (globalThis.DynastyWorldUI?.configure) DynastyWorldUI.configure({
+            getRecords: () => legendsData,
+            getModifications: () => appState.modifiedLegends,
+            getMainBackup: () => {
+                if (!worldBackupReady()) throw new Error('請等待內容生成／儲存狀態就緒，再製作完整備份。');
+                return backupObject();
+            },
+            getCurrentData: () => captureUserData(),
+            getToken: () => APP_TOKEN,
+            isReady: worldDataReady,
+            canBackup: worldBackupReady,
+            launchLegacy: launchLegacyFromWorld,
+            restoreMain: async backup => {
+                if (!worldDataReady() || activeAiRequests) throw new Error('請等待目前內容生成或還原完成。');
+                await loadDataFile({ files: [{ text: async () => JSON.stringify(backup) }], value: 'world-main-backup.json' });
+                return { pending: Boolean(pendingRestore), confirmation: '主資料已進入既有還原預覽；須按「備份現況並還原」後才會寫入雲端。' };
+            },
+            narrate: (prompt, onChunk) => callGeminiStream(prompt, onChunk, null, null, { context: 'frozen' })
+        });
         // Start
     </script>
 </body>

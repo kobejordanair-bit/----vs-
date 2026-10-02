@@ -123,6 +123,13 @@ async function init() {
         await migrateOldData();
         refreshData(); initScenarios(); updateHegemonyUI(); updateSoulModeUI();
         screen.style.display = 'none';
+        // Optional workspace UI failures must never invalidate the loaded cloud data.
+        if (typeof readyWorldWorkspace === 'function') {
+            Promise.resolve().then(() => readyWorldWorkspace()).catch(error => {
+                console.warn('世界書桌尚未開啟，原功能仍可使用。', error);
+                customAlert('世界書桌載入失敗：' + error.message + '。可稍後從導覽列重試。');
+            });
+        }
     } catch (error) {
         cloudStore.invalidate();
         el('dataLoadMessage').textContent = `${error.message}。資料未載入，請重試。`;
