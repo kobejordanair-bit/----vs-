@@ -13,6 +13,7 @@
   const state = {
     index: null, pkg: null, mode: 'cases', library: [], libraryOrigin: '內建人物庫',
     loadSequence: 0, librarySequence: 0, libraryBusy: false, libraryError: '',
+    packageReady: false, linkedRecordOpened: false, linkedRecordError: '',
     selectedEventId: '', filter: null, questions: [], questionId: '', investigations: new Map(),
     materialSearch: '', includeAllMaterials: false, castEventId: '', cast: new Set(), castSearch: '', castNotes: '',
     dialogPersonId: '', dialogQuestionId: '', dialogReturnFocus: null, dialogPreviousHidden: null, dialogPreviousInert: false,
@@ -21,6 +22,7 @@
     importPreview: null, persistTimer: null, toastTimer: null, archiveView: '', caseError: '', pendingDrafts: new Map()
   };
   let H, I;
+  const requestedRecordId = new URLSearchParams(location.search).get('record') || '';
   const baseRecords = typeof staticLegendsData !== 'undefined' && Array.isArray(staticLegendsData) ? staticLegendsData : [];
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -121,8 +123,21 @@
     if (state.index) state.pkg.persons.forEach(person => { const matches = state.index.originalRecords(person.id, state.library); expected += matches.length; linked += matches.filter(m => m.status === 'matched').length; });
     $('labLibraryStatus').textContent = state.libraryBusy ? '正在本頁讀取人物資料…' : state.libraryOrigin + '：' + state.library.length + '筆，' + articleCount + '筆含分析文字' + (state.index ? '；本包原庫身份連結 ' + linked + '／' + expected + ' 已對上。' : '。');
     const caption = document.querySelector('.lab-library-caption');
-    caption.classList.toggle('lab-inline-error', Boolean(state.libraryError));
-    caption.textContent = state.libraryError || '人物全文只在本頁記憶體讀取，不上傳。書桌自動存於本機瀏覽器，保存進度、筆記與原文引用位置；不保存人物全文。';
+    caption.classList.toggle('lab-inline-error', Boolean(state.libraryError || state.linkedRecordError));
+    caption.textContent = [state.libraryError, state.linkedRecordError].filter(Boolean).join(' ') || '人物全文只在本頁記憶體讀取，不上傳。書桌自動存於本機瀏覽器，保存進度、筆記與原文引用位置；不保存人物全文。';
+  }
+  function openLinkedRecord() {
+    if (!requestedRecordId || state.linkedRecordOpened || !state.packageReady || state.libraryBusy) return;
+    const record = state.library.find(item => item.id === requestedRecordId);
+    state.mode = 'library';
+    if (record) {
+      state.linkedRecordOpened = true; state.linkedRecordError = '';
+      updateLibraryStatus(); render(); openPerson('record:' + record.id);
+    } else {
+      state.linkedRecordError = '連結指定的人物 ID 尚未載入。請用「讀取人物 JSON」載入你的完整人物檔，系統會依原始 ID 開啟對應原文；同名條目不會自動代替。';
+      document.querySelector('.lab-library-bar').open = true;
+      updateLibraryStatus(); render();
+    }
   }
   function renderEvidence(claimIds, open) {
     const container = el('div');
@@ -789,7 +804,7 @@
     return response.json();
   }
   async function loadPackage() {
-    const sequence = ++state.loadSequence; $('labStatus').className = 'lab-status'; $('labStatus').textContent = '正在載入並驗證歷史資料…';
+    const sequence = ++state.loadSequence; state.packageReady = false; $('labStatus').className = 'lab-status'; $('labStatus').textContent = '正在載入並驗證歷史資料…';
     try {
       if (!globalThis.DynastyHistory) throw new Error('共用資料程式未能載入。'); H = globalThis.DynastyHistory;
       const [pkg, schema] = await Promise.all([readJSON('/static/data/history/chuhan-foundation.v1.json'), readJSON('/static/data/history/schema.v1.json')]);
@@ -801,6 +816,7 @@
       state.cast = new Set(pkg.events[0] ? pkg.events[0].contexts.slice(0, 2).map(context => context.personId) : []);
       $('labStatus').textContent = '楚漢史料已就緒。展開材料可追溯原紀年、原文與出處；未定之處保留異說。';
       $('labTabs').hidden = false; $('labDownload').disabled = false; renderCoverage(); updateLibraryStatus(); render(); await loadCases();
+      if (sequence === state.loadSequence) { state.packageReady = true; openLinkedRecord(); }
     } catch (error) {
       if (sequence !== state.loadSequence) return;
       state.index = null; state.pkg = null; $('labTabs').hidden = true; $('labDownload').disabled = true;
@@ -823,7 +839,7 @@
       if (sequence !== state.librarySequence) return;
       state.libraryError = error.message + ' 已保留內建資料；可自行讀取完整人物 JSON。';
     } finally {
-      if (sequence === state.librarySequence) { state.libraryBusy = false; updateLibraryStatus(); if (state.index) render(); }
+      if (sequence === state.librarySequence) { state.libraryBusy = false; updateLibraryStatus(); if (state.index) render(); openLinkedRecord(); }
     }
   }
   async function importLibrary(file) {
@@ -839,7 +855,7 @@
       const errors = { INVALID_LIBRARY_JSON: 'JSON 格式不完整', UNSUPPORTED_LIBRARY_FORMAT: '不支援此人物檔格式', INVALID_LIBRARY_RECORD: '人物記錄缺少有效 ID、姓名或分類', DUPLICATE_LIBRARY_ID: '人物 ID 重複', INVALID_LIBRARY_SIZE: '人物資料超過讀取限制' };
       state.libraryError = '未載入：' + (errors[error.message] || error.message) + '。已保留先前人物資料與調查筆記。';
     } finally {
-      if (sequence === state.librarySequence) { state.libraryBusy = false; $('labLibraryFile').value = ''; updateLibraryStatus(); if (state.index) render(); }
+      if (sequence === state.librarySequence) { state.libraryBusy = false; $('labLibraryFile').value = ''; updateLibraryStatus(); if (state.index) render(); openLinkedRecord(); }
     }
   }
   $('labTabs').addEventListener('click', event => { const tab = event.target.closest('[data-mode]'); if (tab && state.index) { state.mode = tab.dataset.mode; persistWorkspace(); render(); } });

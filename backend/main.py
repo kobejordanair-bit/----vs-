@@ -3,7 +3,7 @@ import json
 import time
 from fastapi import FastAPI, HTTPException, Request, Header
 from fastapi.responses import StreamingResponse, FileResponse, JSONResponse
-from fastapi.staticfiles import StaticFiles
+from archive_static import SourceArchiveStaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
@@ -20,7 +20,7 @@ import queue as stdlib_queue
 
 load_dotenv()
 
-APP_VERSION = "15.13"
+APP_VERSION = "15.14"
 APP_SECRET = os.getenv("APP_SECRET")
 if not APP_SECRET:
     raise ValueError("環境變數 APP_SECRET 尚未設定！")
@@ -95,7 +95,7 @@ def serve_history_lab():
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "history-lab.html"),
         headers={
             "Cache-Control": "no-cache, no-store, must-revalidate",
-            "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
             "X-Content-Type-Options": "nosniff",
         },
     )
@@ -106,7 +106,7 @@ def serve_source_archive():
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "source-archive.html"),
         headers={
             "Cache-Control": "no-cache, no-store, must-revalidate",
-            "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
             "X-Content-Type-Options": "nosniff",
         },
     )
@@ -145,7 +145,7 @@ def serve_sw():
         headers={"Cache-Control": "no-cache, no-store, must-revalidate"}
     )
 
-app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
+app.mount("/static", SourceArchiveStaticFiles(directory=os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")), name="static")
 
 @app.post("/api/auth")
 @limiter.limit("5/minute")

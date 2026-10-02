@@ -6,16 +6,26 @@ const path = require('node:path');
 const vm = require('node:vm');
 const { parseLibrary } = require('../backend/static/js/history-data.js');
 const ROOT = path.resolve(__dirname, '../backend');
-const CSP = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'";
+const CSP = "default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'";
 const ASSETS = new Set([
   '/history-lab.html', '/static/js/history-data.js', '/static/js/history-investigation.js',
   '/static/js/history-lab.js', '/static/css/history-lab.css', '/static/data/legends.js',
   '/static/data/history/chuhan-foundation.v1.json', '/static/data/history/schema.v1.json',
   '/static/data/history/chuhan-cases.v1.json', '/static/art/history/archive-hall-v1.png',
   '/static/art/history/asset-provenance.json', '/source-archive.html',
-  '/static/js/source-archive.js', '/static/css/source-archive.css', '/static/data/history/source-archive.v1.json'
+  '/static/js/source-archive.js', '/static/js/source-search-engine.js', '/static/js/source-search-worker.js',
+  '/static/js/source-links.js', '/static/css/source-archive.css', '/static/data/history/source-archive.v1.json',
+  '/static/data/history/web/manifest.json'
 ]);
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png' };
+const RELEASE = /^\/static\/data\/history\/web\/releases\/[a-f0-9]{16}\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_.-]+\.json$/;
+function acceptsGzip(header = '') {
+  const values = new Map(String(header).toLowerCase().split(',').map(part => {
+    const [name, ...params] = part.trim().split(';'); const weight = params.map(p => p.trim()).find(p => p.startsWith('q='));
+    const q = weight ? Number(weight.slice(2)) : 1; return [name.trim(), Number.isFinite(q) && q >= 0 && q <= 1 ? q : 0];
+  }));
+  return (values.has('gzip') ? values.get('gzip') : values.get('*') || 0) > 0;
+}
 
 function readPrivateLibrary(filename, root = ROOT) {
   if (fs.statSync(filename).size > 30_000_000) throw new Error('人物檔超過30MB。');
@@ -35,8 +45,8 @@ function createPreviewServer(options = {}) {
     const address = server.address();
     const allowedHosts = new Set(['127.0.0.1:' + address.port, 'localhost:' + address.port]);
     if (!allowedHosts.has(request.headers.host)) { response.writeHead(403); response.end('Loopback host required'); return; }
-    let pathname;
-    try { pathname = decodeURIComponent(new URL(request.url, 'http://127.0.0.1').pathname); }
+    let pathname, url;
+    try { url = new URL(request.url, 'http://127.0.0.1'); pathname = decodeURIComponent(url.pathname); }
     catch { response.writeHead(400); response.end('Invalid URL'); return; }
     requests.push({ method: request.method, path: pathname });
     if (requests.length > 300) requests.shift();
@@ -50,9 +60,10 @@ function createPreviewServer(options = {}) {
     }
     if (!['GET', 'HEAD'].includes(request.method)) { response.writeHead(405, { Allow: 'GET, HEAD' }); response.end(); return; }
     if (pathname === '/' || pathname === '/history-lab') {
-      response.writeHead(302, { Location: '/history-lab.html' + (library ? '?local=1' : '') }); response.end(); return;
+      const query = new URLSearchParams(); if (library) query.set('local', '1'); if (url.searchParams.has('record')) query.set('record', url.searchParams.get('record'));
+      response.writeHead(302, { Location: '/history-lab.html' + (query.size ? '?' + query : '') }); response.end(); return;
     }
-    if (pathname === '/source-archive') { response.writeHead(302, { Location: '/source-archive.html' }); response.end(); return; }
+    if (pathname === '/source-archive') { response.writeHead(302, { Location: '/source-archive.html' + url.search }); response.end(); return; }
     if (pathname === '/favicon.ico') { response.writeHead(204); response.end(); return; }
     let raw, type;
     if (pathname === '/private-library.json' && library) {
@@ -60,11 +71,30 @@ function createPreviewServer(options = {}) {
       if (snapshotDate) response.setHeader('X-Library-Snapshot-Date', snapshotDate);
     } else if (pathname === '/preview-audit') {
       raw = Buffer.from(JSON.stringify({ productionWrites: 0, modelCalls: 0, libraryRecords: library?.count || 0, snapshotDate, requests })); type = MIME['.json'];
-    } else if (ASSETS.has(pathname) || /^\/static\/data\/history\/archive-books\/[a-z]+\.json$/.test(pathname)) {
+    } else if (ASSETS.has(pathname) || RELEASE.test(pathname) || /^\/static\/data\/history\/archive-books\/[a-z]+\.json$/.test(pathname)) {
       const filename = path.resolve(root, '.' + pathname);
       if (!filename.startsWith(root + path.sep)) { response.writeHead(403); response.end(); return; }
-      try { raw = fs.readFileSync(filename); type = MIME[path.extname(filename)]; }
-      catch { response.writeHead(404); response.end('Preview asset unavailable'); return; }
+      try {
+        let selected = filename;
+        const managed = pathname.startsWith('/static/data/history/web/') || /\/static\/(?:js\/source-|css\/source-)/.test(pathname);
+        if (managed) {
+          response.setHeader('Cache-Control', RELEASE.test(pathname) ? 'public, max-age=31536000, immutable' : 'no-cache');
+          response.setHeader('Vary', 'Accept-Encoding');
+          const compressed = acceptsGzip(request.headers['accept-encoding']) ? fs.statSync(filename + '.gz', { throwIfNoEntry: false }) : null;
+          if (compressed?.isFile()) { selected += '.gz'; response.setHeader('Content-Encoding', 'gzip'); }
+          const stat = fs.statSync(selected);
+          if (!stat.isFile()) throw new Error('Preview asset is not a file');
+          const etag = '"' + stat.size.toString(16) + '-' + stat.mtimeMs.toString(16) + '"';
+          response.setHeader('ETag', etag);
+          if (String(request.headers['if-none-match'] || '').split(',').some(tag => tag.trim().replace(/^W\//, '') === etag || tag.trim() === '*')) { response.writeHead(304); response.end(); return; }
+        }
+        raw = fs.readFileSync(selected); type = MIME[path.extname(filename)];
+      }
+      catch {
+        response.setHeader('Cache-Control', 'no-store');
+        response.removeHeader('Content-Encoding'); response.removeHeader('ETag');
+        response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }); response.end('Preview asset unavailable'); return;
+      }
     } else { response.writeHead(404); response.end(); return; }
     response.writeHead(200, { 'Content-Type': type, 'Content-Length': raw.length });
     response.end(request.method === 'HEAD' ? undefined : raw);
@@ -93,4 +123,4 @@ if (require.main === module) {
     });
   } catch (error) { console.error(error.message); process.exitCode = 1; }
 }
-module.exports = { createPreviewServer, readPrivateLibrary, parseOptions };
+module.exports = { createPreviewServer, readPrivateLibrary, parseOptions, acceptsGzip };

@@ -2,6 +2,8 @@
 
 這是王侯將相原人物庫的來源工作台。962 筆原始記錄各有一份來源檔案，同人不同身份卡仍然分開。它連接原人物文章、百科書目線索、機構核讀紀錄與可在本機閱讀的古籍版本。
 
+網站整合版 v15.14 已改為人物與篇章按需讀取、Worker 索引搜尋與版本快取。實際載入量、部署與維護見 [網站整合說明](source-archive-web-release.md)。下方231項測試／22項DOM數字是原始資料包交付紀錄，不是新版驗收總數。
+
 ## 開啟
 
 已有預覽服務時，開啟 `http://127.0.0.1:8877/source-archive`。主 app 與史論館都有「來源檔案館」入口；史論館的人物閱讀視窗也能跳到同一原始 ID 的來源檔案。
@@ -68,7 +70,9 @@ node scripts/serve-history-preview.cjs --port 8877
 | `data/source-archive/harvest-person-sources.json` | 全人物百科版本與書目候選；不含百科全文 |
 | `data/source-archive/corpus-manifest.json` | 書籍目錄版本及篇章取得清單 |
 | `backend/static/data/history/archive-books/*.json` | 原始維基文字、整理文字、版本、授權與雜湊 |
-| `backend/static/data/history/source-archive.v1.json` | UI 與其他功能共用的公開索引 |
+| `backend/static/data/history/source-archive.v1.json` | 完整公開索引，供重建與明確匯出 |
+| `backend/static/data/history/web/manifest.json` | 網站首屏摘要與目前版本指標 |
+| `backend/static/data/history/web/releases/<hash16>/` | 逐人、逐篇資料與搜尋索引 |
 
 更新來源需網路；索引重建與使用現有交付包不需網路。外部 API 有速率限制，擷取工具會分批、重試及保存進度。再次擷取前請確認平台當前條款；不要繞過存取限制。
 
@@ -78,6 +82,7 @@ node scripts/harvest-historical-corpus.cjs
 node scripts/harvest-corpus-supplements.cjs
 node scripts/normalize-historical-corpus.cjs --fetch-transclusions
 node scripts/build-source-archive.cjs --library "完整人物快照.json"
+node scripts/build-source-web.cjs
 node --test tests/source-archive.test.cjs tests/source-harvest.test.cjs tests/wikisource-text.test.cjs tests/corpus-normalization.test.cjs
 ```
 
