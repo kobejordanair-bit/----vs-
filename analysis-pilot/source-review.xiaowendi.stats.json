@@ -1,0 +1,130 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "reviewer": "Codex source-review subagent",
+  "reviewedAt": "2026-10-09T15:05:11.820Z",
+  "field": "stats",
+  "passed": true,
+  "materialIssues": [],
+  "recordId": "emperor_北魏孝文帝_33257620",
+  "manuscriptFile": "analysis-pilot/drafts/xiaowendi.stats.md",
+  "sourcePackageFile": "analysis-pilot/sources/xiaowendi.md",
+  "manuscriptSha256": "627df67a417106eb6a719cb2d9c51c43656a2f36995ce48800794443cdd6c730",
+  "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+  "stats": [
+    88,
+    79,
+    95,
+    96,
+    84
+  ],
+  "checks": [
+    {
+      "id": "stats-structure-and-values",
+      "passed": true,
+      "detail": "第一行唯一 stats 鍵；實際 ChatGPT 值 [88,79,95,96,84]；五段依統率、武力、智謀、政治、魅力排序且數值逐段吻合，完整標記綁本人物；未改寫分數或理由。"
+    },
+    {
+      "id": "military-command-chronology",
+      "passed": true,
+      "detail": "魏7下太和21至23年：497夜襲宛城郛、圍新野，498拔新野及宛北城／鄧城擊崔惠景蕭衍，499病中詔廣陽王嘉斷均口邀陳顯達歸路；稿區分帝之部署與元英王肅等將領執行，未把南北統一列為完成。"
+    },
+    {
+      "id": "individual-martial-ability",
+      "passed": true,
+      "detail": "魏7下傳末明載少善射、有膂力、指彈碎羊髆骨及15歲止射獵；稿據以解讀個人武艺，也已區分傳記頌揚、缺乏成年搏殺記錄與親征能力。"
+    },
+    {
+      "id": "reform-credit-and-order",
+      "passed": true,
+      "detail": "491始聽政、493職員令21卷及遷洛決定、494考績與北鎮救恤、495朝廷禁北語／河南葬、496元姓皆與魏7下相符；484–486改革貢獻歸文明太后集團與李沖，不誤全歸孝文。493南伐／遷洛抉擇可核通鑑138。"
+    },
+    {
+      "id": "modern-study-scope",
+      "passed": true,
+      "detail": "長部2020第9篇的官方公開摘要明列494年12月至495年8月平城／洛陽尚書省並立，足以支持稿概括；Pearce兩章只以已核官方摘要支援遷洛轉向與北方軍事集團認同裂縫，未冒稱核讀章全文。"
+    },
+    {
+      "id": "reference-calibration",
+      "passed": true,
+      "detail": "公開參照庫秦始皇武力65、唐太宗武力95與魅力97、漢高祖統率95全部與稿對照數一致；A+保持原件，五維不以平均改總評。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "魏書／卷7下〈高祖紀第七下〉",
+      "url": "https://zh.wikisource.org/wiki/魏書/卷7下",
+      "locator": "固定來源包之魏7下原典 oldid2460667；全文檔500b271b6acedd44d165.json。UTF16 char7850–8420（494北鎮救恤／考績）、12593–14300（497–499南征）、15130–15690（少年射藝傳末）；亦核491始聽政、493職員令、495朝令及496元姓。"
+    },
+    {
+      "title": "資治通鑑／卷138",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑/卷138",
+      "locator": "固定版本 oldid1553998，b19b6fa77e6ba089dbdf.json；493五月與九月南伐、遷洛選擇及營都段，先前實讀公開頁行137–138、172–175。"
+    },
+    {
+      "title": "魏書／卷53〈李沖傳〉",
+      "url": "https://zh.wikisource.org/wiki/魏書/卷53",
+      "locator": "實讀李沖提出三長、文明太后廷議與太后崩後孝文訪決李沖禮律段（公開頁行180–184）；支持改革貢獻分層。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter16: To Luoyang (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960388",
+      "locator": "已核官方公開 Abstract：490馮太后死後493遷洛、對代人習俗與新政治中心轉向；僅摘要，未取得章全文。"
+    },
+    {
+      "title": "長部悦弘〈北魏孝文帝代の尚書省と洛陽遷都（９）〉，地理歴史人類学論集9（2020）：1–18",
+      "url": "https://cir.nii.ac.jp/crid/1050292726806399488",
+      "locator": "本次實讀該官方URL搜尋索引返回的書誌與完整 Description（公開摘要）：494/12–495/8兩尚書省並立。亦核琉球大學record2012212及no9p001.pdf官方索引所見印刷頁4的人事配置段；直開遭429／驗證頁，未聲稱通讀PDF全文。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter17: Downfall of a Theatre State (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960853",
+      "locator": "已核官方公開 Abstract：朝廷與留北軍事力量分離、523軍鎮危機；仅官方摘要，未取得章全文。"
+    }
+  ],
+  "caveats": [
+    "能力分數與人格凝聚力屬 ChatGPT 的遊戲詮釋，QA確認所舉史事與參照數值，不宣稱史籍存在量化分數。",
+    "魏7下帝王傳記之膂力記載已被稿限定；魏書／北史並非兩套完全獨立證詞。",
+    "Pearce僅核摘要；長部本次核官方摘要及原刊索引指定段，不將未讀全文充作全文驗證。"
+  ],
+  "statsReferenceSha256": "5bd46e7b6d3119fabb2d083e4113faaefe8f591cdf536b9104bb9e71d6e64a81",
+  "checkedStatsReference": [
+    {
+      "id": "emperor_秦始皇_276964901",
+      "name": "秦始皇",
+      "stats": [
+        98,
+        65,
+        95,
+        100,
+        70
+      ]
+    },
+    {
+      "id": "emperor_唐太宗_286039018",
+      "name": "唐太宗",
+      "stats": [
+        100,
+        95,
+        98,
+        96,
+        97
+      ]
+    },
+    {
+      "id": "emperor_漢高祖_279096455",
+      "name": "漢高祖",
+      "stats": [
+        95,
+        60,
+        90,
+        98,
+        100
+      ]
+    }
+  ],
+  "metrics": {
+    "characters": 2226,
+    "chineseCharacters": 1196
+  }
+}

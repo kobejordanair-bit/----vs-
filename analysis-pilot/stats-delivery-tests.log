@@ -1,0 +1,20 @@
+✔ a complete delivery requires two exact observed panels and an explicit fresh SDK document read (4.726ms)
+✔ pending login and verification progress remain pending, even when persisted document read already passed (6.9814ms)
+✔ empty, missing, duplicate or unrelated observations cannot declare completion (3.7226ms)
+✔ request, apply and audit are pinned to this exact 3 to 4 import and two people/four fields (4.101ms)
+✔ batch, written fields, article input and deployment hashes must all match (2.7387ms)
+✔ all 962 identities, nine articles, ten userdata fields, Wang stats and raw CAS preservation are mandatory (6.6441ms)
+✔ browser version, displayed scores, radar and all five ordered matching reasons are required (6.3892ms)
+✔ cached-read proof cannot come from static tests or include AI calls/userdata POSTs (3.8582ms)
+✔ fresh SDK proof must match saved scores/document and cannot claim browser reload (4.3522ms)
+✔ failed gate does not create the output directory or write package files (12.3768ms)
+✔ pending package and manifest explicitly preserve pending state and distinguish SDK read from browser reload (90.3314ms)
+✔ helper import has no main side effects and CLI accepts only a fresh public output flag (92.4318ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 371.0195

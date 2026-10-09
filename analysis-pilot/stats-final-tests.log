@@ -1,0 +1,794 @@
+{
+  "at": "2026-10-09T14:57:11.521Z",
+  "groups": [
+    {
+      "name": "legacy-integration-without-helpers",
+      "command": "node --test --test-reporter=tap cloudflare/scripts/build-assets.test.mjs cloudflare/tests/analysis-pilot-delivery.test.mjs cloudflare/tests/analysis-pilot-import.test.mjs cloudflare/tests/analysis-pilot-layers-import.test.mjs cloudflare/tests/analysis-review-cache.test.mjs cloudflare/tests/complete-pilot-verification.test.mjs",
+      "historicalNote": "The earlier 66-test run contained 56 tests here plus 10 helper tests; helpers now have 13 tests and are run once in their own group.",
+      "exitCode": 0,
+      "tests": 56,
+      "pass": 56,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "public-prompt-helpers",
+      "command": "node --test --test-reporter=tap cloudflare/tests/analysis-pilot-helpers.test.mjs",
+      "exitCode": 0,
+      "tests": 13,
+      "pass": 13,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "stats-ui-audit-binding-importer",
+      "command": "node --test --test-reporter=tap cloudflare/tests/analysis-stats-only.test.mjs cloudflare/tests/audit-counts.test.mjs cloudflare/tests/analysis-pilot-original-binding.test.mjs cloudflare/tests/analysis-pilot-stats-import.test.mjs",
+      "exitCode": 0,
+      "tests": 36,
+      "pass": 36,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    }
+  ],
+  "totalTests": 105,
+  "totalPass": 105,
+  "totalFail": 0,
+  "passed": true,
+  "inlineScriptsSyntaxValid": 4,
+  "frontendRawSha256": "ae1957da53587e4a2d2a4db4818d5fa96d416b6790941d296b273d41594a9717",
+  "browserRun": false,
+  "productionWrite": false,
+  "privateInputsRead": false
+}
+
+GROUP legacy-integration-without-helpers
+COMMAND node --test --test-reporter=tap cloudflare/scripts/build-assets.test.mjs cloudflare/tests/analysis-pilot-delivery.test.mjs cloudflare/tests/analysis-pilot-import.test.mjs cloudflare/tests/analysis-pilot-layers-import.test.mjs cloudflare/tests/analysis-review-cache.test.mjs cloudflare/tests/complete-pilot-verification.test.mjs
+TAP version 13
+# Subtest: preserves public files, PWA paths, archive gzip pairs, and excludes backend secrets
+ok 1 - preserves public files, PWA paths, archive gzip pairs, and excludes backend secrets
+  ---
+  duration_ms: 148.8039
+  type: 'test'
+  ...
+# Subtest: retains oversized JSON content through a verified gzip canonical URL and download
+ok 2 - retains oversized JSON content through a verified gzip canonical URL and download
+  ---
+  duration_ms: 127.1895
+  type: 'test'
+  ...
+# Subtest: fails on mismatched archive gzip rather than deploying damaged source content
+ok 3 - fails on mismatched archive gzip rather than deploying damaged source content
+  ---
+  duration_ms: 116.2824
+  type: 'test'
+  ...
+# Subtest: rejects a private file accidentally placed in the public static directory
+ok 4 - rejects a private file accidentally placed in the public static directory
+  ---
+  duration_ms: 46.3224
+  type: 'test'
+  ...
+# Subtest: fails early when HTML references a missing script
+ok 5 - fails early when HTML references a missing script
+  ---
+  duration_ms: 67.429
+  type: 'test'
+  ...
+# Subtest: enforces free asset count and per-file maximum without deleting the last good build
+ok 6 - enforces free asset count and per-file maximum without deleting the last good build
+  ---
+  duration_ms: 177.5017
+  type: 'test'
+  ...
+# Subtest: refuses a new oversized canonical URL until Worker gzip routing is registered
+ok 7 - refuses a new oversized canonical URL until Worker gzip routing is registered
+  ---
+  duration_ms: 67.5942
+  type: 'test'
+  ...
+# Subtest: checks archive manifest paths against published files
+ok 8 - checks archive manifest paths against published files
+  ---
+  duration_ms: 67.9479
+  type: 'test'
+  ...
+# Subtest: delivery gate requires a genuine completed audit and exact eight verified batch hashes
+ok 9 - delivery gate requires a genuine completed audit and exact eight verified batch hashes
+  ---
+  duration_ms: 5.2652
+  type: 'test'
+  ...
+# Subtest: delivery rejects changed batch, missing preserved field, wrong counts and altered manuscript hash
+ok 10 - delivery rejects changed batch, missing preserved field, wrong counts and altered manuscript hash
+  ---
+  duration_ms: 4.9689
+  type: 'test'
+  ...
+# Subtest: article renderer displays original text safely without executing HTML
+ok 11 - article renderer displays original text safely without executing HTML
+  ---
+  duration_ms: 1.2373
+  type: 'test'
+  ...
+# Subtest: delivery arguments keep output in the workspace and prohibit private artifact paths
+ok 12 - delivery arguments keep output in the workspace and prohibit private artifact paths
+  ---
+  duration_ms: 1.8794
+  type: 'test'
+  ...
+# Subtest: dry-run reads without POST, does not print private prose and preserves all untouched fields
+ok 13 - dry-run reads without POST, does not print private prose and preserves all untouched fields
+  ---
+  duration_ms: 8.4161
+  type: 'test'
+  ...
+# Subtest: apply writes exactly three deepAnalysis fields and proves complete unaffected document equality
+ok 14 - apply writes exactly three deepAnalysis fields and proves complete unaffected document equality
+  ---
+  duration_ms: 5.1629
+  type: 'test'
+  ...
+# Subtest: CAS conflict re-reads, re-merges the full modified map and preserves concurrent unrelated progress
+ok 15 - CAS conflict re-reads, re-merges the full modified map and preserves concurrent unrelated progress
+  ---
+  duration_ms: 4.2802
+  type: 'test'
+  ...
+# Subtest: a concurrent new analysis stops a conflicting retry without overwriting it
+ok 16 - a concurrent new analysis stops a conflicting retry without overwriting it
+  ---
+  duration_ms: 4.9488
+  type: 'test'
+  ...
+# Subtest: a concurrent target biography change stops the retry even if its analysis is still blank
+ok 17 - a concurrent target biography change stops the retry even if its analysis is still blank
+  ---
+  duration_ms: 3.0781
+  type: 'test'
+  ...
+# Subtest: existing source analysis, incorrect input hashes and duplicate or unknown targets fail before requests
+ok 18 - existing source analysis, incorrect input hashes and duplicate or unknown targets fail before requests
+  ---
+  duration_ms: 1.588
+  type: 'test'
+  ...
+# Subtest: approval is bound to source, base and exact generated batch including local provenance
+ok 19 - approval is bound to source, base and exact generated batch including local provenance
+  ---
+  duration_ms: 5.8387
+  type: 'test'
+  ...
+# Subtest: pre-write backup failure prevents POST; post-write backup failure reports the completed write
+ok 20 - pre-write backup failure prevents POST; post-write backup failure reports the completed write
+  ---
+  duration_ms: 5.8354
+  type: 'test'
+  ...
+# Subtest: unknown POST outcome never automatically retries or reports a certain failure
+ok 21 - unknown POST outcome never automatically retries or reports a certain failure
+  ---
+  duration_ms: 3.2436
+  type: 'test'
+  ...
+# Subtest: post-write concurrent progress is detected without trying to undo player data
+ok 22 - post-write concurrent progress is detected without trying to undo player data
+  ---
+  duration_ms: 3.014
+  type: 'test'
+  ...
+# Subtest: complete readback comparison detects changes to any field or unknown nested data
+ok 23 - complete readback comparison detects changes to any field or unknown nested data
+  ---
+  duration_ms: 2.2234
+  type: 'test'
+  ...
+# Subtest: 32 MiB full-document and request limits are checked before a write
+ok 24 - 32 MiB full-document and request limits are checked before a write
+  ---
+  duration_ms: 148.3287
+  type: 'test'
+  ...
+# Subtest: incomplete prose, fewer than three results, unsafe IDs and ungrounded provenance are rejected
+ok 25 - incomplete prose, fewer than three results, unsafe IDs and ungrounded provenance are rejected
+  ---
+  duration_ms: 2.0612
+  type: 'test'
+  ...
+# Subtest: CLI requires explicit apply, approval, unique backup directory and exactly one file-based credential
+ok 26 - CLI requires explicit apply, approval, unique backup directory and exactly one file-based credential
+  ---
+  duration_ms: 0.5957
+  type: 'test'
+  ...
+# Subtest: an old revision1 baseline permits newer live progress while applying against the live revision
+ok 27 - an old revision1 baseline permits newer live progress while applying against the live revision
+  ---
+  duration_ms: 2.4033
+  type: 'test'
+  ...
+# Subtest: apply requires an explicit backup implementation even when called without the CLI
+ok 28 - apply requires an explicit backup implementation even when called without the CLI
+  ---
+  duration_ms: 1.4309
+  type: 'test'
+  ...
+# Subtest: a blank final-section value cannot consume the next line as its missing content
+ok 29 - a blank final-section value cannot consume the next line as its missing content
+  ---
+  duration_ms: 0.3247
+  type: 'test'
+  ...
+# Subtest: 503 and invalid acknowledgements preserve unknown write outcome without automatic retry
+ok 30 - 503 and invalid acknowledgements preserve unknown write outcome without automatic retry
+  ---
+  duration_ms: 4.0359
+  type: 'test'
+  ...
+# Subtest: bounded conflict retries stop after four CAS attempts and confirm that the rejected writes did not succeed
+ok 31 - bounded conflict retries stop after four CAS attempts and confirm that the rejected writes did not succeed
+  ---
+  duration_ms: 4.1979
+  type: 'test'
+  ...
+# Subtest: secret-file credentials authenticate once; only the returned token is sent to userdata requests
+ok 32 - secret-file credentials authenticate once; only the returned token is sent to userdata requests
+  ---
+  duration_ms: 23.3381
+  type: 'test'
+  ...
+# Subtest: token-file credentials skip auth and access only userdata without extra credential requests
+ok 33 - token-file credentials skip auth and access only userdata without extra credential requests
+  ---
+  duration_ms: 0.4187
+  type: 'test'
+  ...
+# Subtest: invalid credential inputs and untrusted origins fail without sending any request
+ok 34 - invalid credential inputs and untrusted origins fail without sending any request
+  ---
+  duration_ms: 0.3668
+  type: 'test'
+  ...
+# Subtest: authentication errors retain a fixed error code and do not expose provider responses or credentials
+ok 35 - authentication errors retain a fixed error code and do not expose provider responses or credentials
+  ---
+  duration_ms: 0.8952
+  type: 'test'
+  ...
+# Subtest: layer dry-run allows exactly five missing fields and preserves all existing deep analysis and Wang Jian analysis
+ok 36 - layer dry-run allows exactly five missing fields and preserves all existing deep analysis and Wang Jian analysis
+  ---
+  duration_ms: 7.9752
+  type: 'test'
+  ...
+# Subtest: successful layer apply saves complete before/after snapshots and verifies every untouched document field
+ok 37 - successful layer apply saves complete before/after snapshots and verifies every untouched document field
+  ---
+  duration_ms: 5.5295
+  type: 'test'
+  ...
+# Subtest: CAS retry uses latest whole map, revision and unrelated player progress
+ok 38 - CAS retry uses latest whole map, revision and unrelated player progress
+  ---
+  duration_ms: 5.5964
+  type: 'test'
+  ...
+# Subtest: any changed current deep analysis stops a retry before another write
+ok 39 - any changed current deep analysis stops a retry before another write
+  ---
+  duration_ms: 3.5295
+  type: 'test'
+  ...
+# Subtest: a newly filled target layer stops the retry instead of overwriting it
+ok 40 - a newly filled target layer stops the retry instead of overwriting it
+  ---
+  duration_ms: 3.2866
+  type: 'test'
+  ...
+# Subtest: rank, stats, deepAnalysis, Wang Jian normal analysis and other IDs are never allowed targets
+ok 41 - rank, stats, deepAnalysis, Wang Jian normal analysis and other IDs are never allowed targets
+  ---
+  duration_ms: 1.8424
+  type: 'test'
+  ...
+# Subtest: phase2 requires existing deep analysis and full input hash including every prior layer
+ok 42 - phase2 requires existing deep analysis and full input hash including every prior layer
+  ---
+  duration_ms: 0.6688
+  type: 'test'
+  ...
+# Subtest: baseline existing content is preserved and batches must exactly match its remaining missing layers
+ok 43 - baseline existing content is preserved and batches must exactly match its remaining missing layers
+  ---
+  duration_ms: 1.8155
+  type: 'test'
+  ...
+# Subtest: new layer dry-run approval is bound to batch/source and refuses the deep phase report
+ok 44 - new layer dry-run approval is bound to batch/source and refuses the deep phase report
+  ---
+  duration_ms: 4.425
+  type: 'test'
+  ...
+# Subtest: mandatory backup succeeds before writes, or any backup failure prevents the CAS
+ok 45 - mandatory backup succeeds before writes, or any backup failure prevents the CAS
+  ---
+  duration_ms: 5.3943
+  type: 'test'
+  ...
+# Subtest: network and 503 unknown write outcomes are not automatically retried and do not leak raw errors
+ok 46 - network and 503 unknown write outcomes are not automatically retried and do not leak raw errors
+  ---
+  duration_ms: 5.5674
+  type: 'test'
+  ...
+# Subtest: post-write concurrent progress and accidental deep/stat changes are detected without rollback
+ok 47 - post-write concurrent progress and accidental deep/stat changes are detected without rollback
+  ---
+  duration_ms: 4.434
+  type: 'test'
+  ...
+# Subtest: size cap, incomplete prose, missing provenance and duplicate targets fail locally
+ok 48 - size cap, incomplete prose, missing provenance and duplicate targets fail locally
+  ---
+  duration_ms: 152.7333
+  type: 'test'
+  ...
+# Subtest: imported賞析 opens without AI, invented scores or a data write when stats are absent
+ok 49 - imported賞析 opens without AI, invented scores or a data write when stats are absent
+  ---
+  duration_ms: 4.7469
+  type: 'test'
+  ...
+# Subtest: cached賞析 with existing stats keeps the radar and normal controls
+ok 50 - cached賞析 with existing stats keeps the radar and normal controls
+  ---
+  duration_ms: 2.2302
+  type: 'test'
+  ...
+# Subtest: legacy article retry replaces any stale independent reasons when it writes new stats
+ok 51 - legacy article retry replaces any stale independent reasons when it writes new stats
+  ---
+  duration_ms: 2.8035
+  type: 'test'
+  ...
+# Subtest: combined verification accepts exactly eight additions, preserves all 10 fields and emits only safe metadata
+ok 52 - combined verification accepts exactly eight additions, preserves all 10 fields and emits only safe metadata
+  ---
+  duration_ms: 19.0045
+  type: 'test'
+  ...
+# Subtest: same-count changes to ratings, existing Wang Jian article, saved chapter, chat or unknown metadata are rejected
+ok 53 - same-count changes to ratings, existing Wang Jian article, saved chapter, chat or unknown metadata are rejected
+  ---
+  duration_ms: 26.0951
+  type: 'test'
+  ...
+# Subtest: wrong revisions and altered added prose fail exact final-state verification
+ok 54 - wrong revisions and altered added prose fail exact final-state verification
+  ---
+  duration_ms: 9.2607
+  type: 'test'
+  ...
+# Subtest: worldworkspaces is compared only when supplied in both snapshots
+ok 55 - worldworkspaces is compared only when supplied in both snapshots
+  ---
+  duration_ms: 18.6638
+  type: 'test'
+  ...
+# Subtest: CLI requires all five input/output arguments and refuses ambiguous options
+ok 56 - CLI requires all five input/output arguments and refuses ambiguous options
+  ---
+  duration_ms: 1.0412
+  type: 'test'
+  ...
+1..56
+# tests 56
+# suites 0
+# pass 56
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 957.4791
+
+
+GROUP public-prompt-helpers
+COMMAND node --test --test-reporter=tap cloudflare/tests/analysis-pilot-helpers.test.mjs
+TAP version 13
+# Subtest: original website source accepts LF and CRLF checkouts without changing rendered literal bytes
+ok 1 - original website source accepts LF and CRLF checkouts without changing rendered literal bytes
+  ---
+  duration_ms: 1.6908
+  type: 'test'
+  ...
+# Subtest: website binding rejects source content changes and transformations beyond CRLF to LF
+ok 2 - website binding rejects source content changes and transformations beyond CRLF to LF
+  ---
+  duration_ms: 0.4704
+  type: 'test'
+  ...
+# Subtest: website binding must exist and remain bound to the original raw source package
+ok 3 - website binding must exist and remain bound to the original raw source package
+  ---
+  duration_ms: 0.3699
+  type: 'test'
+  ...
+# Subtest: original template rendering preserves literal text and safely handles the original role conditional
+ok 4 - original template rendering preserves literal text and safely handles the original role conditional
+  ---
+  duration_ms: 0.5474
+  type: 'test'
+  ...
+# Subtest: phase2 staging includes only selected figure/deep/source material and exact five missing layers
+ok 5 - phase2 staging includes only selected figure/deep/source material and exact five missing layers
+  ---
+  duration_ms: 2.9441
+  type: 'test'
+  ...
+# Subtest: default layer prompts faithfully start with original templates, include style and actual web-search requests
+ok 6 - default layer prompts faithfully start with original templates, include style and actual web-search requests
+  ---
+  duration_ms: 1.2198
+  type: 'test'
+  ...
+# Subtest: deep style request keeps safe input bindings and renders original prompt with the full ranking reference
+ok 7 - deep style request keeps safe input bindings and renders original prompt with the full ranking reference
+  ---
+  duration_ms: 3.9775
+  type: 'test'
+  ...
+# Subtest: unsealed prompts, absent deep analysis or a changed missing-field set cannot produce a ready request
+ok 8 - unsealed prompts, absent deep analysis or a changed missing-field set cannot produce a ready request
+  ---
+  duration_ms: 3.0814
+  type: 'test'
+  ...
+# Subtest: assembly gates all five field captures and QA hashes, strips only completion markers and retains per-field provenance
+ok 9 - assembly gates all five field captures and QA hashes, strips only completion markers and retains per-field provenance
+  ---
+  duration_ms: 13.5107
+  type: 'test'
+  ...
+# Subtest: any changed capture, prompt, manuscript review, source package, marker or background draft stops assembly
+ok 10 - any changed capture, prompt, manuscript review, source package, marker or background draft stops assembly
+  ---
+  duration_ms: 7.1242
+  type: 'test'
+  ...
+# Subtest: assembly rejects unsigned stage requests and unsafe paths before reading files
+ok 11 - assembly rejects unsigned stage requests and unsafe paths before reading files
+  ---
+  duration_ms: 1.132
+  type: 'test'
+  ...
+# Subtest: every field requires a literal true web-search verification flag and keeps bounded local evidence
+ok 12 - every field requires a literal true web-search verification flag and keeps bounded local evidence
+  ---
+  duration_ms: 5.6756
+  type: 'test'
+  ...
+# Subtest: QA external sources are deduplicated by URL across layers and original source references
+ok 13 - QA external sources are deduplicated by URL across layers and original source references
+  ---
+  duration_ms: 3.9285
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 189.0711
+
+
+GROUP stats-ui-audit-binding-importer
+COMMAND node --test --test-reporter=tap cloudflare/tests/analysis-stats-only.test.mjs cloudflare/tests/audit-counts.test.mjs cloudflare/tests/analysis-pilot-original-binding.test.mjs cloudflare/tests/analysis-pilot-stats-import.test.mjs
+TAP version 13
+# Subtest: UI changes retain original literals while actual prompt changes fail
+ok 1 - UI changes retain original literals while actual prompt changes fail
+  ---
+  duration_ms: 2.4607
+  type: 'test'
+  ...
+# Subtest: sealed historical source and all six original templates remain reproducible
+ok 2 - sealed historical source and all six original templates remain reproducible
+  ---
+  duration_ms: 54.4783
+  type: 'test'
+  ...
+# Subtest: dry-run adds exactly four allowed fields and preserves Wang Jian and every completed article
+ok 3 - dry-run adds exactly four allowed fields and preserves Wang Jian and every completed article
+  ---
+  duration_ms: 10.1151
+  type: 'test'
+  ...
+# Subtest: apply saves complete snapshots and verifies all unaffected content hashes
+ok 4 - apply saves complete snapshots and verifies all unaffected content hashes
+  ---
+  duration_ms: 5.458
+  type: 'test'
+  ...
+# Subtest: Cloudflare save/load and user backup preserve the new reasons without discarding unknown fields
+ok 5 - Cloudflare save/load and user backup preserve the new reasons without discarding unknown fields
+  ---
+  duration_ms: 7.5618
+  type: 'test'
+  ...
+# Subtest: non-integer, out-of-range, short and malformed score arrays are rejected before any access
+ok 6 - non-integer, out-of-range, short and malformed score arrays are rejected before any access
+  ---
+  duration_ms: 3.0582
+  type: 'test'
+  ...
+# Subtest: other targets, rating/article edits, incomplete fields and duplicate records fail locally
+ok 7 - other targets, rating/article edits, incomplete fields and duplicate records fail locally
+  ---
+  duration_ms: 2.1099
+  type: 'test'
+  ...
+# Subtest: existing source scores, malformed legacy scores or existing reasons are never overwritten
+ok 8 - existing source scores, malformed legacy scores or existing reasons are never overwritten
+  ---
+  duration_ms: 4.433
+  type: 'test'
+  ...
+# Subtest: whole-figure hashes bind completed articles and stop a changed live target before another write
+ok 9 - whole-figure hashes bind completed articles and stop a changed live target before another write
+  ---
+  duration_ms: 6.24
+  type: 'test'
+  ...
+# Subtest: CAS retry merges the latest full map and preserves concurrent unrelated progress
+ok 10 - CAS retry merges the latest full map and preserves concurrent unrelated progress
+  ---
+  duration_ms: 6.6959
+  type: 'test'
+  ...
+# Subtest: approval is bound to stats phase, source, batch and base before any network access
+ok 11 - approval is bound to stats phase, source, batch and base before any network access
+  ---
+  duration_ms: 5.9354
+  type: 'test'
+  ...
+# Subtest: a mandatory backup failure prevents every write
+ok 12 - a mandatory backup failure prevents every write
+  ---
+  duration_ms: 4.2628
+  type: 'test'
+  ...
+# Subtest: ambiguous writes are never retried or reported as a definite non-write
+ok 13 - ambiguous writes are never retried or reported as a definite non-write
+  ---
+  duration_ms: 8.4237
+  type: 'test'
+  ...
+# Subtest: verification detects target mismatches and changes to any article, Wang score or document extra
+ok 14 - verification detects target mismatches and changes to any article, Wang score or document extra
+  ---
+  duration_ms: 5.2172
+  type: 'test'
+  ...
+# Subtest: 32 MiB limit, missing dimension reasons and unverified web provenance fail locally
+ok 15 - 32 MiB limit, missing dimension reasons and unverified web provenance fail locally
+  ---
+  duration_ms: 101.7147
+  type: 'test'
+  ...
+# Subtest: reason headings accept numbered, unnumbered, Markdown and bold decorations while preserving scores and reasons
+ok 16 - reason headings accept numbered, unnumbered, Markdown and bold decorations while preserving scores and reasons
+  ---
+  duration_ms: 0.6096
+  type: 'test'
+  ...
+# Subtest: reason heading duplicates, wrong order, wrong ordinal, mismatched scores and malformed titles are rejected
+ok 17 - reason heading duplicates, wrong order, wrong ordinal, mismatched scores and malformed titles are rejected
+  ---
+  duration_ms: 0.387
+  type: 'test'
+  ...
+# Subtest: explicit five-dimensional generation updates only scores and independent reasons, keeping article and discussion context intact
+ok 18 - explicit five-dimensional generation updates only scores and independent reasons, keeping article and discussion context intact
+  ---
+  duration_ms: 6.7608
+  type: 'test'
+  ...
+# Subtest: cached scores and independent reasons render visibly without AI or POST, while discussion sees only the article
+ok 19 - cached scores and independent reasons render visibly without AI or POST, while discussion sees only the article
+  ---
+  duration_ms: 1.2767
+  type: 'test'
+  ...
+# Subtest: strict parser rejects invalid scores, missing or reordered dimensions, truncated reasons and extra output fields
+ok 20 - strict parser rejects invalid scores, missing or reordered dimensions, truncated reasons and extra output fields
+  ---
+  duration_ms: 2.9896
+  type: 'test'
+  ...
+# Subtest: validation failure after a complete response leaves existing scores, reasons and all prose untouched
+ok 21 - validation failure after a complete response leaves existing scores, reasons and all prose untouched
+  ---
+  duration_ms: 1.9777
+  type: 'test'
+  ...
+# Subtest: duplicate JSON keys, including escaped aliases and nested reason keys, reject before any data write
+ok 22 - duplicate JSON keys, including escaped aliases and nested reason keys, reject before any data write
+  ---
+  duration_ms: 9.3437
+  type: 'test'
+  ...
+# Subtest: API failure after a partial reply preserves article, prior scores and reasons without any data write
+ok 23 - API failure after a partial reply preserves article, prior scores and reasons without any data write
+  ---
+  duration_ms: 3.0644
+  type: 'test'
+  ...
+# Subtest: switching people during stats generation discards both late success and late failure without affecting the newly opened article
+ok 24 - switching people during stats generation discards both late success and late failure without affecting the newly opened article
+  ---
+  duration_ms: 3.2693
+  type: 'test'
+  ...
+# Subtest: switching tabs during generation invalidates the request, including returning to the same review tab before completion
+ok 25 - switching tabs during generation invalidates the request, including returning to the same review tab before completion
+  ---
+  duration_ms: 5.9447
+  type: 'test'
+  ...
+# Subtest: closing the modal cancels pending stats results; double-clicking a pending button starts only one request
+ok 26 - closing the modal cancels pending stats results; double-clicking a pending button starts only one request
+  ---
+  duration_ms: 1.3259
+  type: 'test'
+  ...
+# Subtest: a stale person id cannot generate stats from a calibration tab or a different modal
+ok 27 - a stale person id cannot generate stats from a calibration tab or a different modal
+  ---
+  duration_ms: 1.2294
+  type: 'test'
+  ...
+# Subtest: compare fills only the missing person, clearing stale independent reasons and preserving the other existing scores and reasons
+ok 28 - compare fills only the missing person, clearing stale independent reasons and preserving the other existing scores and reasons
+  ---
+  duration_ms: 2.4914
+  type: 'test'
+  ...
+# Subtest: refreshData does not mark scores, analysis or statsAnalysis alone as a character edit
+ok 29 - refreshData does not mark scores, analysis or statsAnalysis alone as a character edit
+  ---
+  duration_ms: 1.8381
+  type: 'test'
+  ...
+# Subtest: public base inventory reproduces the actual 296 built-in identities
+ok 30 - public base inventory reproduces the actual 296 built-in identities
+  ---
+  duration_ms: 22.4201
+  type: 'test'
+  ...
+# Subtest: 296 built-in plus 666 unique custom figures produces 962, without adding modification-map length
+ok 31 - 296 built-in plus 666 unique custom figures produces 962, without adding modification-map length
+  ---
+  duration_ms: 25.0133
+  type: 'test'
+  ...
+# Subtest: duplicate identities and orphaned legacy references are counted without merging away original records
+ok 32 - duplicate identities and orphaned legacy references are counted without merging away original records
+  ---
+  duration_ms: 1.2426
+  type: 'test'
+  ...
+# Subtest: full-field hashes detect changes in unknown future data even when all visible counts are equal
+ok 33 - full-field hashes detect changes in unknown future data even when all visible counts are equal
+  ---
+  duration_ms: 1.5494
+  type: 'test'
+  ...
+# Subtest: all ten fields, current soul, hegemony, worlds, and missing documents have count/hash coverage
+ok 34 - all ten fields, current soul, hegemony, worlds, and missing documents have count/hash coverage
+  ---
+  duration_ms: 0.5488
+  type: 'test'
+  ...
+# Subtest: unsafe shapes are rejected without printing private values
+ok 35 - unsafe shapes are rejected without printing private values
+  ---
+  duration_ms: 0.5866
+  type: 'test'
+  ...
+# Subtest: preliminary inventories never become formal cutover evidence, including a matching comparison
+ok 36 - preliminary inventories never become formal cutover evidence, including a matching comparison
+  ---
+  duration_ms: 1.6929
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 376.4456
+
+Additional command: node --test --test-reporter=tap analysis-pilot/assemble-stats-results.test.mjs
+TAP version 13
+# Subtest: actual-export packaging copies exactly two arrays and reasons without changing prose
+ok 1 - actual-export packaging copies exactly two arrays and reasons without changing prose
+  ---
+  duration_ms: 7.8795
+  type: 'test'
+  ...
+# Subtest: first line must have the sole stats key and exactly five integer values in range
+ok 2 - first line must have the sole stats key and exactly five integer values in range
+  ---
+  duration_ms: 3.1762
+  type: 'test'
+  ...
+# Subtest: headings must match five scores and order, with no missing or duplicate dimension
+ok 3 - headings must match five scores and order, with no missing or duplicate dimension
+  ---
+  duration_ms: 1.6124
+  type: 'test'
+  ...
+# Subtest: completion must be unique, last, and bound to the exact person
+ok 4 - completion must be unique, last, and bound to the exact person
+  ---
+  duration_ms: 0.8124
+  type: 'test'
+  ...
+# Subtest: scope and published input bindings reject unrelated or duplicate figures
+ok 5 - scope and published input bindings reject unrelated or duplicate figures
+  ---
+  duration_ms: 4.087
+  type: 'test'
+  ...
+# Subtest: each original article, source package, prompt and input binding must match capture
+ok 6 - each original article, source package, prompt and input binding must match capture
+  ---
+  duration_ms: 2.0917
+  type: 'test'
+  ...
+# Subtest: passed and current factual QA is required, including no outstanding material issues
+ok 7 - passed and current factual QA is required, including no outstanding material issues
+  ---
+  duration_ms: 3.0468
+  type: 'test'
+  ...
+# Subtest: reference version and public context metadata are bound without accepting private keys
+ok 8 - reference version and public context metadata are bound without accepting private keys
+  ---
+  duration_ms: 4.0268
+  type: 'test'
+  ...
+# Subtest: actual browser search evidence and raw export hashes cannot be fabricated from flags alone
+ok 9 - actual browser search evidence and raw export hashes cannot be fabricated from flags alone
+  ---
+  duration_ms: 3.3256
+  type: 'test'
+  ...
+# Subtest: all manuscript links must be checked, and external-source receipts need HTTPS title and locator
+ok 10 - all manuscript links must be checked, and external-source receipts need HTTPS title and locator
+  ---
+  duration_ms: 4.5785
+  type: 'test'
+  ...
+# Subtest: invalid ChatGPT conversation metadata and fabricated search UI are rejected at capture
+ok 11 - invalid ChatGPT conversation metadata and fabricated search UI are rejected at capture
+  ---
+  duration_ms: 3.418
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 165.7086

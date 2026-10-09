@@ -1,0 +1,17 @@
+{
+  "format": "dynasty-stats-ui-deployment",
+  "schemaVersion": 1,
+  "deployedAt": "2026-10-09T15:02:05.448Z",
+  "versionId": "4be36bf6-dff7-4799-9a4a-528a33407a95",
+  "origin": "https://dynasty.piamamba.com/play",
+  "httpStatus": 200,
+  "sourceRawSha256": "ae1957da53587e4a2d2a4db4818d5fa96d416b6790941d296b273d41594a9717",
+  "sourceLfSha256": "552e12e142374dbfd88d6c0859f81005692c8760e9aa69641c9fd46f9ed368be",
+  "publishedSha256": "ae1957da53587e4a2d2a4db4818d5fa96d416b6790941d296b273d41594a9717",
+  "publishedMatchesLfSource": false,
+  "publishedHasStatsDetails": true,
+  "existingProvider": "Gemini",
+  "pilotProvider": "ChatGPT web",
+  "publishedMatchesRawSource": true,
+  "passed": true
+}

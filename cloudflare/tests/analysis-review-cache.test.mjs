@@ -8,6 +8,9 @@ const start = html.indexOf('async function _loadReviewContent(');
 const end = html.indexOf('// 校準 tab 內容載入', start);
 assert.ok(start >= 0 && end > start, 'review loader is present');
 const source = html.slice(start, end);
+const statsStart = html.indexOf('// ── 獨立五維：');
+const statsEnd = html.indexOf('function forceRegenerateDeep(', statsStart);
+assert.ok(statsStart >= 0 && statsEnd > statsStart, 'independent stats helpers are present');
 
 function setup(modified) {
   const elements = new Map();
@@ -16,6 +19,7 @@ function setup(modified) {
     legendsData: [{ id: 'pilot-person', name: '試跑人物', title: '稱號', type: 'emperor' }],
     appState: { modifiedLegends: { 'pilot-person': structuredClone(modified) } },
     currentRequestToken: 0,
+    currentStatsRequestToken: 0,
     el(id) {
       if (!elements.has(id)) {
         const classes = new Set(['hidden']);
@@ -41,10 +45,12 @@ function setup(modified) {
       onPartial('{"stats": [81, 52, 93, 96, 80]}\n重新生成的賞析');
     },
     safeMarkdown: text => text,
+    escapeHtml: text => text,
     refreshData() {},
     syncToCloud: () => { calls.sync += 1; },
     _aiErrorHTML: (action, message) => `Error: ${message}`,
   });
+  vm.runInContext(html.slice(statsStart, statsEnd), context);
   vm.runInContext(source, context);
   return { context, calls, run: force => context._loadReviewContent('pilot-person', force) };
 }
@@ -64,14 +70,14 @@ test('imported賞析 opens without AI, invented scores or a data write when stat
   assert.equal(fixture.context.el('radarChartContainer').classList.contains('hidden'), true);
   assert.equal(fixture.context.el('regenStatsBtn').classList.contains('hidden'), false);
   assert.match(fixture.context.el('regenStatsBtn').innerHTML, /生成五維（AI）/);
-  assert.match(fixture.context.el('regenStatsBtn').title, /重新生成賞析/);
+  assert.match(fixture.context.el('regenStatsBtn').title, /只補上五維數值與理由，保留賞析原文/);
   assert.equal(fixture.context.el('extractScenesBtn').disabled, false);
   assert.deepEqual(fixture.calls.discussions, [{ id: 'pilot-person', text: modified.analysis }]);
   assert.deepEqual(fixture.context.appState.modifiedLegends['pilot-person'], modified);
 });
 
 test('cached賞析 with existing stats keeps the radar and normal controls', async () => {
-  const modified = { analysis: '原有賞析', stats: [72, 66, 91, 88, 77] };
+  const modified = { analysis: '原有賞析', stats: [72, 66, 91, 88, 77], statsAnalysis: '獨立五維理由' };
   const fixture = setup(modified);
   await fixture.run(false);
 
@@ -81,10 +87,13 @@ test('cached賞析 with existing stats keeps the radar and normal controls', asy
   assert.equal(fixture.context.el('radarChartContainer').classList.contains('hidden'), false);
   assert.match(fixture.context.el('regenStatsBtn').innerHTML, /重算五維/);
   assert.equal(fixture.context.el('modalContent').innerHTML, modified.analysis);
+  assert.match(fixture.context.el('statsValues').innerHTML, /72/);
+  assert.match(fixture.context.el('statsAnalysisContent').innerHTML, /獨立五維理由/);
+  assert.deepEqual(fixture.calls.discussions, [{ id: 'pilot-person', text: modified.analysis }]);
 });
 
-test('explicit force regeneration still requests AI and updates stats and賞析', async () => {
-  const fixture = setup({ analysis: '匯入的賞析', deepAnalysis: '保留校準', soulEssence: '保留內核' });
+test('legacy article retry replaces any stale independent reasons when it writes new stats', async () => {
+  const fixture = setup({ analysis: '匯入的賞析', deepAnalysis: '保留校準', soulEssence: '保留內核', statsAnalysis: '舊五維理由' });
   await fixture.run(true);
 
   assert.equal(fixture.calls.ai, 1);
@@ -94,5 +103,6 @@ test('explicit force regeneration still requests AI and updates stats and賞析'
   assert.equal(result.analysis.trim(), '重新生成的賞析');
   assert.equal(result.deepAnalysis, '保留校準');
   assert.equal(result.soulEssence, '保留內核');
+  assert.equal(Object.hasOwn(result, 'statsAnalysis'), false);
   assert.match(fixture.context.el('regenStatsBtn').innerHTML, /重算五維/);
 });

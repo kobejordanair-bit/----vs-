@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-stats-completion-request",
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-09T14:24:44.422Z",
+  "baselineRevision": 3,
+  "statsOrder": [
+    "統率",
+    "武力",
+    "智謀",
+    "政治",
+    "魅力"
+  ],
+  "allowedIds": [
+    "emperor_北魏孝文帝_33257620",
+    "minister_姚崇_2003901767"
+  ],
+  "policy": {
+    "preserveAllExistingArticles": true,
+    "preserveWangJianStats": true,
+    "actualChatGPTWebAndWebSearchRequired": true,
+    "privateStateExcluded": true
+  },
+  "records": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "slug": "xiaowendi",
+      "context": {
+        "id": "emperor_北魏孝文帝_33257620",
+        "name": "北魏孝文帝",
+        "type": "emperor",
+        "dynasty": "南北朝",
+        "rank": "A+",
+        "title": "元宏",
+        "tag": "漢化改革",
+        "desc": "遷都洛陽，全面漢化，促進民族大融合。",
+        "poem": "遷都洛陽更衣冠，漢化融合開新篇。"
+      },
+      "promptPath": "analysis-pilot/prompts/xiaowendi.stats.prompt.md",
+      "promptSha256": "214c1e2939edb8a2e6f5558ddcbaedfc7530aae60ece6b59051a33949d4a93f0",
+      "originalStatsAppendSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "analysisSha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff",
+      "deepAnalysisSha256": "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad",
+      "soulEssenceSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b",
+      "sourcePath": "analysis-pilot/sources/xiaowendi.md",
+      "outputPath": "analysis-pilot/drafts/xiaowendi.stats.md",
+      "marker": "<!-- STATS_COMPLETE emperor_北魏孝文帝_33257620 -->"
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "slug": "yaochong",
+      "context": {
+        "id": "minister_姚崇_2003901767",
+        "name": "姚崇",
+        "type": "minister",
+        "dynasty": "唐朝",
+        "rank": "S-",
+        "title": "救時宰相",
+        "tag": "開元奠基",
+        "desc": "十事要說，奠定開元盛世的基礎。",
+        "poem": "十事要說定天下，救時宰相開元風。"
+      },
+      "promptPath": "analysis-pilot/prompts/yaochong.stats.prompt.md",
+      "promptSha256": "1ba1ebf1bdc7647a6a2a69b0b674a124773a5a4738d6642e859dbf1beb74d095",
+      "originalStatsAppendSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "analysisSha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8",
+      "deepAnalysisSha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661",
+      "soulEssenceSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc",
+      "sourcePath": "analysis-pilot/sources/yaochong.md",
+      "outputPath": "analysis-pilot/drafts/yaochong.stats.md",
+      "marker": "<!-- STATS_COMPLETE minister_姚崇_2003901767 -->"
+    }
+  ]
+}

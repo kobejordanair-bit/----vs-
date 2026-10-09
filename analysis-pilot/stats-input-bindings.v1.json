@@ -1,0 +1,21 @@
+{
+  "format": "dynasty-stats-input-bindings",
+  "schemaVersion": 1,
+  "baselineRevision": 3,
+  "records": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "slug": "xiaowendi",
+      "inputSha256": "d49edfb913e3a6d80be7570efe03b89ec09ea625a1f2512d30734edadc8aa585",
+      "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8"
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "slug": "yaochong",
+      "inputSha256": "1aee76938b18463c9e774ca40bc181243b60b17ea4ddd2dbd16d5e42ecce01d6",
+      "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8"
+    }
+  ],
+  "referencePath": "analysis-pilot/stats-reference.v1.json",
+  "referenceSha256": "5bd46e7b6d3119fabb2d083e4113faaefe8f591cdf536b9104bb9e71d6e64a81"
+}

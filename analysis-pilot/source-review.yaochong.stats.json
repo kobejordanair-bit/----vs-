@@ -1,0 +1,120 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "reviewer": "Codex source-review subagent",
+  "reviewedAt": "2026-10-09T15:05:11.820Z",
+  "field": "stats",
+  "passed": true,
+  "materialIssues": [],
+  "recordId": "minister_姚崇_2003901767",
+  "manuscriptFile": "analysis-pilot/drafts/yaochong.stats.md",
+  "sourcePackageFile": "analysis-pilot/sources/yaochong.md",
+  "manuscriptSha256": "28acd6395ac78ee3ba669344e2fdf1516fce09c85fe6940a5e5bb780b8c36999",
+  "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+  "stats": [
+    78,
+    68,
+    97,
+    96,
+    88
+  ],
+  "checks": [
+    {
+      "id": "stats-structure-and-values",
+      "passed": true,
+      "detail": "第一行唯一 stats 鍵；實際 ChatGPT 值 [78,68,97,96,88]；固定五段依序且數值逐段吻合，完整標記綁本人物；未改寫分數或理由。"
+    },
+    {
+      "id": "military-administration-and-hunting",
+      "passed": true,
+      "detail": "舊96／新124均載契丹入寇時兵機文書剖析若流及靈武道大總管（705政變前，稿作704年前後）；新124傳末載常兼兵部、屯戍斥候士馬儲械。713新豐／渭濱召見、20歲廣成澤呼鷹逐獸、與帝俱馳逐緩速如旨可直接核新124；稿未把騎獵誤寫成斬將戰績。"
+    },
+    {
+      "id": "political-craft-and-departure",
+      "passed": true,
+      "detail": "新124載十事先設以堅帝意、張說往岐王府／損足之計、魏知古請託與二子饋遺；舊96及通鑑211載716捕蝗反駁倪若水、趙誨受賕／崇營救／帝不悅及薦宋避位。評權術與排他性屬依史事的作者判斷。"
+    },
+    {
+      "id": "administrative-acts-and-patronage",
+      "passed": true,
+      "detail": "713復相後整頓冗職與官僚；714王仙童侵暴百姓／姚崇盧懷慎請不縱捨、冒濫僧籍及716御史督捕蝗有通鑑211支持。玄宗病中使源乾曜問政、四方館照護，新124尊禮、舊96揚州人吏立碑紀德有直接依據。"
+    },
+    {
+      "id": "modern-study-scope",
+      "passed": true,
+      "detail": "清華學報2024官方刊頁metadata及摘要可直接讀；其研究主題是明代蝗災，摘要所述捕蝗成效涉及制度、人力、物力與協調可支持稿的概括。先前核原刊PDF頁759–760另述姚崇捕蝗背景，稿不將明代資料誤作姚崇時代直接量測。"
+    },
+    {
+      "id": "reference-calibration",
+      "passed": true,
+      "detail": "核公開參照庫必須使用諸葛亮(名臣) [88,35,92,100,95]，稿之統率88／魅力95均正確；管仲 [88,45,98,100,92] 之統率88／智謀98正確。未混入將領版諸葛亮 [92,25,99,100,96]；維持S-。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "舊唐書／卷96〈姚崇宋璟列傳〉",
+      "url": "https://zh.wikisource.org/wiki/舊唐書/卷96",
+      "locator": "固定版本oldid2598602，a29c08025798b3c4e3ef.json；姚崇段完整，兵機填委／靈武大總管、揚州立碑、716捕蝗反駁及玄宗病中問政。"
+    },
+    {
+      "title": "新唐書／卷124〈姚崇列傳〉",
+      "url": "https://zh.wikisource.org/wiki/新唐書/卷124",
+      "locator": "固定版本oldid2615648，d0e382dafaef7d103126.json；完整姚崇段。UTF16 char951起新豐渭濱騎獵及十事；char3149前後兵部知識，char3422前後張說損足／岐王及魏知古二子請託。"
+    },
+    {
+      "title": "資治通鑑／卷211",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑/卷211",
+      "locator": "固定版本oldid2082155，347ea83bcf738d175474.json；714卷首僧籍及王仙童（char693附近）；716倪若水／捕蝗、char9957附近趙誨受賕與病中問政／辭相薦宋。"
+    },
+    {
+      "title": "張繼瑩〈生態與治理─以明王朝(1368–1644)蝗災為例〉，清華學報54.4（2024）：747–787",
+      "url": "https://thjcs.site.nthu.edu.tw/p/406-1452-279593,r11075.php?Lang=zh-tw",
+      "locator": "本次直接實讀官方刊頁行19–31：作者、2024/12、頁次、DOI10.6503/THJCS.202412_54(4).0003及完整中文摘要。先前已核原刊PDF印刷頁759–760（PDF13–14）唐代姚崇捕蝗例；此稿僅用資源／制度協調的跨時代概括。"
+    }
+  ],
+  "caveats": [
+    "能力分數與權術／魅力評價屬 ChatGPT 遊戲詮釋；查核不自行換分，也不把評分視為原典數值。",
+    "靈武大總管以傳記704年前後且705返軍參與政變的寬紀年表達；不存在姚崇親自決定性會戰的虛構。",
+    "現代捕蝗論文研究明代；稿只以其公開摘要的治理資源概括參照，未冒充唐代精確效果統計。"
+  ],
+  "statsReferenceSha256": "5bd46e7b6d3119fabb2d083e4113faaefe8f591cdf536b9104bb9e71d6e64a81",
+  "checkedStatsReference": [
+    {
+      "id": "minister_諸葛亮(名臣)_866483420",
+      "name": "諸葛亮(名臣)",
+      "stats": [
+        88,
+        35,
+        92,
+        100,
+        95
+      ]
+    },
+    {
+      "id": "minister_管仲_2004166219",
+      "name": "管仲",
+      "stats": [
+        88,
+        45,
+        98,
+        100,
+        92
+      ]
+    },
+    {
+      "id": "minister_商鞅_2003880409",
+      "name": "商鞅",
+      "stats": [
+        88,
+        45,
+        96,
+        100,
+        25
+      ]
+    }
+  ],
+  "metrics": {
+    "characters": 2258,
+    "chineseCharacters": 1220
+  }
+}

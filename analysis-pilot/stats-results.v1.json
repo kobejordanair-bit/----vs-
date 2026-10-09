@@ -1,0 +1,204 @@
+{
+  "format": "dynasty-analysis-pilot-stats-results",
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "inputSha256": "d49edfb913e3a6d80be7570efe03b89ec09ea625a1f2512d30734edadc8aa585",
+      "promptSha256": "214c1e2939edb8a2e6f5558ddcbaedfc7530aae60ece6b59051a33949d4a93f0",
+      "fields": {
+        "stats": [
+          88,
+          79,
+          95,
+          96,
+          84
+        ],
+        "statsAnalysis": "## 5.【五維能力數值】\n\n### 統率：88\n\n孝文帝絕非只懂制度改革的文治皇帝。太和二十一年（497年）親征南齊，他部署多路進軍，夜襲宛城外郭，並指揮圍攻新野；498年取得新野、南陽等戰果，於鄧城擊敗南齊軍。499年病中出征，仍命廣陽王元嘉截斷陳顯達歸路，促成魏軍反擊。\n\n**他的優勢在於能將大軍調度、戰役部署與地緣目標結合，而非僅憑個人勇猛。**但具體勝利仰賴元英、王肅等將領，南北統一亦未完成。故給88分，屬強勢的戰略統帥，尚非百戰定天下的軍事極致。\n\n史料：[《魏書》卷七下，太和二十一至二十三年](https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8/%E5%8D%B77%E4%B8%8B)。\n\n### 武力：79\n\n《魏書》〈高祖紀〉記載，孝文帝少年善射，膂力過人，十餘歲能以手指擊碎羊肩胛骨，射獵亦頗為精準；十五歲後則停止射獵殺生。\n\n這些記載顯示他具有鮮明的個人武藝基礎，並非只以皇帝身份指揮軍隊的純粹文士。因此給予高於一般文治型君主的79分。\n\n但上述力量表現帶有帝王傳記的頌揚色彩，缺乏可獨立核實的成年單挑、陣前搏殺或武藝紀錄。親征次數不能直接轉換成個人武力，故不給予接近頂級猛將的分數。\n\n史料：[《魏書》卷七下，傳末性格與武藝記述](https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8/%E5%8D%B77%E4%B8%8B)。\n\n### 智謀：95\n\n493年，孝文帝以南伐推動軍隊南下。群臣不願繼續進軍，他則藉由停止南伐與遷都洛陽的選擇，成功突破舊都貴族的政治阻力。\n\n這不是普通的權術，而是把對手最不願承擔的代價，變成推進國家戰略轉向的槓桿。\n\n他的智謀還體現在改革次序：先確立洛陽政治中心，再逐步調整官僚制度、禮服、語言及姓氏，使新秩序不再只是紙面命令。\n\n但他擅長突破阻力，未必同樣擅長消化阻力。平城舊臣反對與元恂奔代事件，都暴露其對利益及身份認同衝突的低估。因此給95分，而非近乎無缺的98至100分。\n\n參考：[《資治通鑑》卷一三八](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7138)、[Scott Pearce, To Luoyang（2023）](https://academic.oup.com/book/46157/chapter-abstract/404960388)。\n\n### 政治：96\n\n孝文帝真正的政治成就，是改變整個北魏國家權力的運作中心。\n\n491年正式親政；493年制定《職員令》二十一卷並決定遷洛；494年推動官員考績；495年限制朝廷使用北俗語言，要求遷洛者葬於河南；496年將皇室姓氏改為元氏。\n\n他將行政規則、政治身份與首都地理位置同步改造，具有帝國級的組織重構能力。\n\n但484年俸祿、485年均田、486年三長改革主要由文明太后攝政集團及李沖等官員推動，不能全部歸功於孝文帝。改革亦伴隨穆泰等舊臣反抗、儲位危機及北方軍政整合不足。\n\n琉球大學相關研究指出，遷都過程曾形成平城、洛陽兩套尚書省並立的過渡局面，足見改革涉及實際權力轉移。故政治96分：制度改造極強，但長期整合未臻完備。\n\n參考：[《魏書》卷五十三〈李沖傳〉](https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8/%E5%8D%B753)、[長部悅弘〈北魏孝文帝代的尚書省與洛陽遷都〉（2020）](https://cir.nii.ac.jp/crid/1050292726806399488)。\n\n### 魅力：84\n\n孝文帝能吸納李沖、穆亮、王肅等不同背景的政治人才，建立洛陽改革集團。《魏書》亦記載他重視人才、親自關懷軍士與老弱。494年巡視北鎮並頒布救恤措施，反映他懂得以具體行動維繫統治者形象。\n\n然而，能使人服從，不等於能使人真心認同。\n\n493年群臣接受遷都，部分源於南伐壓力；後續文化與身份改革則引發舊貴族反彈，連皇太子元恂也抗拒洛陽生活。他能凝聚改革支持者，卻未能讓新舊軍事政治集團形成同樣穩固的共同認同。\n\n因此給84分：個人號召力強，但強制改革削弱了廣泛凝聚力。\n\n參考：[Scott Pearce, To Luoyang](https://academic.oup.com/book/46157/chapter-abstract/404960388)、[ Downfall of a Theatre State](https://academic.oup.com/book/46157/chapter-abstract/404960853)。\n\n尺度校準： 參照既有帝王數值，孝文帝的武力高於以制度建設為主、缺乏突出個人武藝記載的秦始皇（65），但低於唐太宗（95）；統率低於完成更大規模統一戰爭的漢高祖（95）。智謀與政治則接近既有頂級帝王區間，反映其高度原創性的遷洛改革。魅力低於唐太宗（97），主要扣分在改革所造成的內部認同裂縫。五維並非評級的算術平均；維持A+不變。"
+      },
+      "provenance": {
+        "provider": "ChatGPT web",
+        "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+        "generatedAt": "2026-10-09T14:58:40.778Z",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "魏書卷七上・高祖紀上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2460668",
+            "locator": "analysis-pilot/sources/xiaowendi.md；原典節錄、卷次定位及版本雜湊見該來源包"
+          },
+          {
+            "title": "魏書卷七下・高祖紀下",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2460667",
+            "locator": "analysis-pilot/sources/xiaowendi.md；原典節錄、卷次定位及版本雜湊見該來源包"
+          },
+          {
+            "title": "北史卷三・魏本紀第三",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=1569849",
+            "locator": "analysis-pilot/sources/xiaowendi.md；原典節錄、卷次定位及版本雜湊見該來源包"
+          },
+          {
+            "title": "魏書／卷7下〈高祖紀第七下〉",
+            "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8/%E5%8D%B77%E4%B8%8B",
+            "locator": "固定來源包之魏7下原典 oldid2460667；全文檔500b271b6acedd44d165.json。UTF16 char7850–8420（494北鎮救恤／考績）、12593–14300（497–499南征）、15130–15690（少年射藝傳末）；亦核491始聽政、493職員令、495朝令及496元姓。"
+          },
+          {
+            "title": "資治通鑑／卷138",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7138",
+            "locator": "固定版本 oldid1553998，b19b6fa77e6ba089dbdf.json；493五月與九月南伐、遷洛選擇及營都段，先前實讀公開頁行137–138、172–175。"
+          },
+          {
+            "title": "魏書／卷53〈李沖傳〉",
+            "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8/%E5%8D%B753",
+            "locator": "實讀李沖提出三長、文明太后廷議與太后崩後孝文訪決李沖禮律段（公開頁行180–184）；支持改革貢獻分層。"
+          },
+          {
+            "title": "Scott Pearce, Northern Wei (386–534), Chapter16: To Luoyang (2023)",
+            "url": "https://academic.oup.com/book/46157/chapter-abstract/404960388",
+            "locator": "已核官方公開 Abstract：490馮太后死後493遷洛、對代人習俗與新政治中心轉向；僅摘要，未取得章全文。"
+          },
+          {
+            "title": "長部悦弘〈北魏孝文帝代の尚書省と洛陽遷都（９）〉，地理歴史人類学論集9（2020）：1–18",
+            "url": "https://cir.nii.ac.jp/crid/1050292726806399488",
+            "locator": "本次實讀該官方URL搜尋索引返回的書誌與完整 Description（公開摘要）：494/12–495/8兩尚書省並立。亦核琉球大學record2012212及no9p001.pdf官方索引所見印刷頁4的人事配置段；直開遭429／驗證頁，未聲稱通讀PDF全文。"
+          },
+          {
+            "title": "Scott Pearce, Northern Wei (386–534), Chapter17: Downfall of a Theatre State (2023)",
+            "url": "https://academic.oup.com/book/46157/chapter-abstract/404960853",
+            "locator": "已核官方公開 Abstract：朝廷與留北軍事力量分離、523軍鎮危機；仅官方摘要，未取得章全文。"
+          }
+        ],
+        "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+        "contextFiles": [
+          {
+            "field": "analysis",
+            "path": "analysis-pilot/drafts/xiaowendi.analysis.md",
+            "sha256": "bd64904b4d83d174dfa19835e7ef6c59dfea29103600cc8bdeb971b711dac18c",
+            "articleSha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff"
+          },
+          {
+            "field": "deepAnalysis",
+            "path": "analysis-pilot/drafts/xiaowendi.style.v2.md",
+            "sha256": "e20a7335a557ac5f236563b45b49ff897dd49b7f8daa75df59e58ac16fa8df32",
+            "articleSha256": "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad"
+          },
+          {
+            "field": "soulEssence",
+            "path": "analysis-pilot/drafts/xiaowendi.soulEssence.md",
+            "sha256": "1960f79fdb243e9c541f2e20642c4b7c1b7f7f90b6728236ea22491a85092dee",
+            "articleSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b"
+          }
+        ],
+        "requestSha256": "c64c3aaed86cd93f87ed255740a19c760348c9ec81a0f0f59fcbbcc9bdd061fb",
+        "inputBindingsSha256": "d4173e93d18db9e95f5eb157ba387da0b40224370ee7b3acc6a30d7f214c766b",
+        "rawResponseSha256": "627df67a417106eb6a719cb2d9c51c43656a2f36995ce48800794443cdd6c730",
+        "referencePath": "analysis-pilot/stats-reference.v1.json",
+        "referenceSha256": "5bd46e7b6d3119fabb2d083e4113faaefe8f591cdf536b9104bb9e71d6e64a81",
+        "captureSha256": "d486908602016495e50163041ceeb7f0fe5aeef609c8c7d94196f5af84c1dcbb",
+        "captureFile": "analysis-pilot/drafts/xiaowendi.stats.capture.json",
+        "sourceReviewFile": "analysis-pilot/source-review.xiaowendi.stats.json",
+        "sourceReviewSha256": "40dd516ecca818fa2c1c05d1bb54260fe9947dae36e7bb8c72be7610741fed48",
+        "webSearchEvidence": {
+          "file": "analysis-pilot/drafts/xiaowendi.stats.search-evidence.txt",
+          "sha256": "5e2d9d8bc78b5474e25762d400d07ee678faf6723b62ffa032586132161ec691",
+          "visibleSearchCount": 8,
+          "label": "ChatGPT 思考摘要：已搜尋 8 個網站"
+        }
+      }
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "inputSha256": "1aee76938b18463c9e774ca40bc181243b60b17ea4ddd2dbd16d5e42ecce01d6",
+      "promptSha256": "1ba1ebf1bdc7647a6a2a69b0b674a124773a5a4738d6642e859dbf1beb74d095",
+      "fields": {
+        "stats": [
+          78,
+          68,
+          97,
+          96,
+          88
+        ],
+        "statsAnalysis": "## 5.【五維能力數值】\n\n### 統率：78\n\n姚崇不是單純的文職宰相。武周時期，契丹侵擾河北，他處理大量軍事文書，分析軍情迅速而有條理，因此受到武則天賞識。704年前後，又曾出任靈武道大總管，具備邊防指揮經歷。\n\n《新唐書》更記載他歷任宰相，常兼兵部，對邊防哨探、兵員馬匹及軍械儲備相當熟悉。\n\n**其強項是軍事行政、情報整合與資源調度，而非親自創造決定性會戰。**沒有足夠戰績支持他達到諸葛亮（名臣身份，統率88）的水準，因此評78分。\n\n史料：[《舊唐書》卷九十六](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B796)、[《新唐書》卷一二四](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7124)。\n\n### 武力：68\n\n姚崇的個人武藝有一段常被忽略的記載。\n\n713年，唐玄宗在新豐附近講武、於渭濱狩獵，召見姚崇。姚崇表示自己二十歲時曾在廣成澤以放鷹逐獸為樂，年輕時熟習狩獵，年老仍未忘記。玄宗遂與他一同馳逐，姚崇進退合宜，使皇帝十分高興。\n\n這說明姚崇具有實際騎乘、追獵經驗，體能與身體協調能力並不低。\n\n但騎獵不等於戰場格鬥，史料未保存其親身斬將、搏殺或武術決鬥的事蹟。因此評68分，肯定個人騎獵能力，而不以兵部職務或政治勇氣灌高武力。\n\n史料：[《新唐書》卷一二四，先天二年新豐召見](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7124)。\n\n### 智謀：97\n\n姚崇最可怕的智謀，是能把人性的恐懼、利益與責任，轉化成有利於政策推進的條件。\n\n713年，他沒有立即接受玄宗拜相，而是先提出十項施政要求，爭取皇帝支持。與張說發生政治衝突時，他又利用岐王府往來之事，巧妙引起玄宗警覺，使張說離開中央。\n\n716年捕蝗，他援引經典反駁倪若水的消極態度，把「是否敬畏天災」轉化成「地方官是否願意承擔饑荒責任」。\n\n這是極高水準的政治博弈與問題重構能力。\n\n但他過度依賴權術，且在趙誨受賕事件中未能挽回玄宗信任。故評97分，接近管仲（98），而非毫無失誤的滿分。\n\n史料：[《新唐書》卷一二四](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7124)、[《資治通鑑》卷二一一](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7211)。\n\n### 政治：96\n\n姚崇的政治才能，在於能將皇帝的授權變成整個國家行政體系的執行力。\n\n713年重新拜相後，他推動整頓冗官、限制權貴請託、清查冒濫僧籍。714年，薛王李業的舅父王仙童侵害百姓，姚崇等人堅持依法處置，維護司法與官僚紀律。\n\n716年蝗災，他派遣御史督促地方捕蝗，在官員反對之下仍推動政策。現代研究也指出，傳統蝗災治理的實際成效與國家人力、物力及制度協調密切相關，凸顯姚崇行政動員的價值。\n\n但其子接受饋贈、親信趙誨受賕，以及改革對個人能力的高度依賴，都構成扣分理由。十事要說亦不能等同十項皆已落實。\n\n因此評96分，屬頂級行政宰相，惟長期制度建構不及管仲、商鞅等典型人物。\n\n參考：[《資治通鑑》卷二一一](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7211)、[張繼瑩〈生態與治理〉，《清華學報》（2024）](https://thjcs.site.nthu.edu.tw/p/406-1452-279593,r11075.php?Lang=zh-tw)。\n\n### 魅力：88\n\n姚崇具有一種不同於道德聖人的領導魅力：讓君主相信，只要將政務交給他，問題便能得到處理。\n\n武則天賞識其軍政才能；713年，玄宗與他騎獵談政後決定拜相。其後玄宗極為倚重姚崇，甚至在他病中派人徵詢政務，並特別關懷起居。姚崇外任揚州時，亦因施政簡肅而獲地方官民立碑紀德。\n\n不過，他擅長取得最高權威信任，卻不一定擅長團結平等同僚。張說、魏知古等政治衝突，以及趙誨事件後的辭相，顯示其凝聚力存在界線。\n\n故評88分：領導信用極高，但橫向政治整合不及諸葛亮（名臣身份，魅力95）。\n\n史料：[《新唐書》卷一二四，玄宗禮遇姚崇及張說、魏知古事件](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7124)。\n\n尺度校準： 姚崇的統率78低於實際領軍建制的管仲（88）與諸葛亮（88）；武力68則反映他有明確騎獵經歷。智謀97、政治96代表其卓越的危機治理與權力協調能力，但長期制度成果不及頂級開創者。魅力88肯定玄宗的高度信任，同時扣除政治排他性。\n\n五維是對個別能力的詮釋評分，不是歷史總評的算術平均。姚崇原有S-評級維持不變，原三篇文章亦不作修改。"
+      },
+      "provenance": {
+        "provider": "ChatGPT web",
+        "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+        "generatedAt": "2026-10-09T15:02:14.257Z",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書卷九十六・姚崇傳",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2598602",
+            "locator": "analysis-pilot/sources/yaochong.md；原典節錄、卷次定位及版本雜湊見該來源包"
+          },
+          {
+            "title": "新唐書卷一百二十四・姚崇傳",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2615648",
+            "locator": "analysis-pilot/sources/yaochong.md；原典節錄、卷次定位及版本雜湊見該來源包"
+          },
+          {
+            "title": "資治通鑑卷二百一十一・唐紀二十七",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2082155",
+            "locator": "analysis-pilot/sources/yaochong.md；原典節錄、卷次定位及版本雜湊見該來源包"
+          },
+          {
+            "title": "舊唐書／卷96〈姚崇宋璟列傳〉",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B796",
+            "locator": "固定版本oldid2598602，a29c08025798b3c4e3ef.json；姚崇段完整，兵機填委／靈武大總管、揚州立碑、716捕蝗反駁及玄宗病中問政。"
+          },
+          {
+            "title": "新唐書／卷124〈姚崇列傳〉",
+            "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7124",
+            "locator": "固定版本oldid2615648，d0e382dafaef7d103126.json；完整姚崇段。UTF16 char951起新豐渭濱騎獵及十事；char3149前後兵部知識，char3422前後張說損足／岐王及魏知古二子請託。"
+          },
+          {
+            "title": "資治通鑑／卷211",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7211",
+            "locator": "固定版本oldid2082155，347ea83bcf738d175474.json；714卷首僧籍及王仙童（char693附近）；716倪若水／捕蝗、char9957附近趙誨受賕與病中問政／辭相薦宋。"
+          },
+          {
+            "title": "張繼瑩〈生態與治理─以明王朝(1368–1644)蝗災為例〉，清華學報54.4（2024）：747–787",
+            "url": "https://thjcs.site.nthu.edu.tw/p/406-1452-279593,r11075.php?Lang=zh-tw",
+            "locator": "本次直接實讀官方刊頁行19–31：作者、2024/12、頁次、DOI10.6503/THJCS.202412_54(4).0003及完整中文摘要。先前已核原刊PDF印刷頁759–760（PDF13–14）唐代姚崇捕蝗例；此稿僅用資源／制度協調的跨時代概括。"
+          }
+        ],
+        "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+        "contextFiles": [
+          {
+            "field": "analysis",
+            "path": "analysis-pilot/drafts/yaochong.analysis.md",
+            "sha256": "f8ab7701c8c62062d176f2a5cf0627e5874a378922a1084d1a3554e2066bb8c4",
+            "articleSha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8"
+          },
+          {
+            "field": "deepAnalysis",
+            "path": "analysis-pilot/drafts/yaochong.style.v2.md",
+            "sha256": "3580268fcc4f7fca1e204cb33d8ac718e5339b9a752d2ed8ff144c3ddb659c05",
+            "articleSha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661"
+          },
+          {
+            "field": "soulEssence",
+            "path": "analysis-pilot/drafts/yaochong.soulEssence.md",
+            "sha256": "c4f5c6a72737ac06996b5b03b3bdcea55c29346cde92521cf3f8822409a12205",
+            "articleSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc"
+          }
+        ],
+        "requestSha256": "c64c3aaed86cd93f87ed255740a19c760348c9ec81a0f0f59fcbbcc9bdd061fb",
+        "inputBindingsSha256": "d4173e93d18db9e95f5eb157ba387da0b40224370ee7b3acc6a30d7f214c766b",
+        "rawResponseSha256": "28acd6395ac78ee3ba669344e2fdf1516fce09c85fe6940a5e5bb780b8c36999",
+        "referencePath": "analysis-pilot/stats-reference.v1.json",
+        "referenceSha256": "5bd46e7b6d3119fabb2d083e4113faaefe8f591cdf536b9104bb9e71d6e64a81",
+        "captureSha256": "a55c354aa0eb156a40d7fd3a7b21e8a1f552cc1d8116e41eef51ca6b6d03c162",
+        "captureFile": "analysis-pilot/drafts/yaochong.stats.capture.json",
+        "sourceReviewFile": "analysis-pilot/source-review.yaochong.stats.json",
+        "sourceReviewSha256": "37708997cb609695de03395a8f5e5e8cbc1866b76f6adc3a0167e4143f9bdf78",
+        "webSearchEvidence": {
+          "file": "analysis-pilot/drafts/yaochong.stats.search-evidence.txt",
+          "sha256": "e9e7d0cf3eec832714a6844cc2f11e8a18ed083b4817b9c239a8df060035fd02",
+          "visibleSearchCount": 10,
+          "label": "ChatGPT 思考摘要：已搜尋 10 個網站"
+        }
+      }
+    }
+  ]
+}

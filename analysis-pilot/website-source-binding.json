@@ -7,6 +7,11 @@
     "rawSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
     "lfNormalizedSha256": "50e703544dddfe8eb25b6bdbcfebf40a12912a5707812560a4c34760c9e7178c"
   },
+  "archive": {
+    "path": "analysis-pilot/original-website-source.html",
+    "rawSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
+    "method": "Exact copy of the verified historical source before the independent five-dimension UI change. Current source is checked against all six original template literals."
+  },
   "provenance": {
     "originalPromptPackage": "analysis-pilot/original-prompts.v1.json",
     "originalSourceSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",

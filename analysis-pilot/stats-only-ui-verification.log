@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-09T14:52:48.785Z",
+  "command": "node --test cloudflare/tests/analysis-review-cache.test.mjs cloudflare/tests/analysis-stats-only.test.mjs cloudflare/tests/audit-counts.test.mjs",
+  "exitCode": 0,
+  "inlineScriptsSyntaxValid": 4,
+  "frontendRawSha256": "a13a7b88d3e77ce00c4f99fb27778ecd0d42a3a08fae2a2ceb1c7162ee8fa63d",
+  "browserRun": false,
+  "productionWrite": false,
+  "privateInputsRead": false
+}
+
+✔ imported賞析 opens without AI, invented scores or a data write when stats are absent (3.8817ms)
+✔ cached賞析 with existing stats keeps the radar and normal controls (1.4889ms)
+✔ legacy article retry replaces any stale independent reasons when it writes new stats (1.1958ms)
+✔ explicit five-dimensional generation updates only scores and independent reasons, keeping article and discussion context intact (5.2685ms)
+✔ cached scores and independent reasons render visibly without AI or POST, while discussion sees only the article (1.3349ms)
+✔ strict parser rejects invalid scores, missing or reordered dimensions, truncated reasons and extra output fields (2.316ms)
+✔ validation failure after a complete response leaves existing scores, reasons and all prose untouched (1.3501ms)
+✔ API failure after a partial reply preserves article, prior scores and reasons without any data write (1.5087ms)
+✔ switching people during stats generation discards both late success and late failure without affecting the newly opened article (2.7928ms)
+✔ switching tabs during generation invalidates the request, including returning to the same review tab before completion (3.5339ms)
+✔ closing the modal cancels pending stats results; double-clicking a pending button starts only one request (1.1319ms)
+✔ a stale person id cannot generate stats from a calibration tab or a different modal (0.9398ms)
+✔ compare fills only the missing person, clearing stale independent reasons and preserving the other existing scores and reasons (1.4892ms)
+✔ refreshData does not mark scores, analysis or statsAnalysis alone as a character edit (1.0845ms)
+✔ public base inventory reproduces the actual 296 built-in identities (15.6887ms)
+✔ 296 built-in plus 666 unique custom figures produces 962, without adding modification-map length (19.6081ms)
+✔ duplicate identities and orphaned legacy references are counted without merging away original records (1.6331ms)
+✔ full-field hashes detect changes in unknown future data even when all visible counts are equal (2.0508ms)
+✔ all ten fields, current soul, hegemony, worlds, and missing documents have count/hash coverage (0.5679ms)
+✔ unsafe shapes are rejected without printing private values (0.521ms)
+✔ preliminary inventories never become formal cutover evidence, including a matching comparison (1.4447ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 174.1399

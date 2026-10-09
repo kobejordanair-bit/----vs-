@@ -1,0 +1,140 @@
+{
+  "format": "dynasty-stats-completion-audit",
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-09T15:07:07.803Z",
+  "batchSha256": "29fa5b9627e45ccc0bb35307935508f0edbce31fd5354b165a7c84612608b2b7",
+  "beforeRevision": 3,
+  "afterRevision": 4,
+  "addedFields": 4,
+  "targetCount": 2,
+  "statsCountBefore": 64,
+  "statsCountAfter": 66,
+  "figureCount": 962,
+  "figureIdsPreserved": true,
+  "userdataFields": {
+    "customLegends": {
+      "beforeSha256": "6a975ed48024315bcd9319890e6609aa6ca33c4e1f012bb304ec50ae6830c967",
+      "afterRemovingAdditionsSha256": "6a975ed48024315bcd9319890e6609aa6ca33c4e1f012bb304ec50ae6830c967",
+      "preserved": true
+    },
+    "modifiedLegends": {
+      "beforeSha256": "e5e204b7f4ddc2cc0e7505b29a4446acbcf5400f8e59912543b7bae69c03a8d9",
+      "afterRemovingAdditionsSha256": "e5e204b7f4ddc2cc0e7505b29a4446acbcf5400f8e59912543b7bae69c03a8d9",
+      "preserved": true
+    },
+    "chatHistories": {
+      "beforeSha256": "db7ed136fe51551d4a101e21d3f2d85dedd61c0853233b650e1d2f4c2435510e",
+      "afterRemovingAdditionsSha256": "db7ed136fe51551d4a101e21d3f2d85dedd61c0853233b650e1d2f4c2435510e",
+      "preserved": true
+    },
+    "simulationHistory": {
+      "beforeSha256": "191c9227cd49eea34b9d868a1846cf3b581cb1b607694bf92c6f831eb6c0d595",
+      "afterRemovingAdditionsSha256": "191c9227cd49eea34b9d868a1846cf3b581cb1b607694bf92c6f831eb6c0d595",
+      "preserved": true
+    },
+    "discussionHistories": {
+      "beforeSha256": "f5f15eb4d50ebc8a97ab381e187bd55b0fb91492a5529ff3b0dec904295b7bba",
+      "afterRemovingAdditionsSha256": "f5f15eb4d50ebc8a97ab381e187bd55b0fb91492a5529ff3b0dec904295b7bba",
+      "preserved": true
+    },
+    "soulSaves": {
+      "beforeSha256": "65f0fca582bd69b9702b7eacf3b09d3547534280e9f6a6e475a61bf54374ec7d",
+      "afterRemovingAdditionsSha256": "65f0fca582bd69b9702b7eacf3b09d3547534280e9f6a6e475a61bf54374ec7d",
+      "preserved": true
+    },
+    "hegemonySavedSim": {
+      "beforeSha256": "508ec2218d1bdc978d40dec0826b8118f4e353af66939e92060d05974ff8a991",
+      "afterRemovingAdditionsSha256": "508ec2218d1bdc978d40dec0826b8118f4e353af66939e92060d05974ff8a991",
+      "preserved": true
+    },
+    "scenes": {
+      "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "afterRemovingAdditionsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preserved": true
+    },
+    "sceneEdits": {
+      "beforeSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "afterRemovingAdditionsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "preserved": true
+    },
+    "soulSession": {
+      "beforeSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "afterRemovingAdditionsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "preserved": true
+    }
+  },
+  "articles": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "field": "analysis",
+      "beforeSha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff",
+      "afterSha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff",
+      "preserved": true
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "field": "deepAnalysis",
+      "beforeSha256": "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad",
+      "afterSha256": "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad",
+      "preserved": true
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "field": "soulEssence",
+      "beforeSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b",
+      "afterSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b",
+      "preserved": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "field": "analysis",
+      "beforeSha256": "aadd7b4bf9dcf190431fe0700959559df15c49bb540d6f6ccd9f8189cc1a238d",
+      "afterSha256": "aadd7b4bf9dcf190431fe0700959559df15c49bb540d6f6ccd9f8189cc1a238d",
+      "preserved": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "field": "deepAnalysis",
+      "beforeSha256": "ce325ef271e164dff937ffb6ecb3f373d9c991f7f3c2056405fb43b3c220253e",
+      "afterSha256": "ce325ef271e164dff937ffb6ecb3f373d9c991f7f3c2056405fb43b3c220253e",
+      "preserved": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "field": "soulEssence",
+      "beforeSha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116",
+      "afterSha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116",
+      "preserved": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "field": "analysis",
+      "beforeSha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8",
+      "afterSha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8",
+      "preserved": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "field": "deepAnalysis",
+      "beforeSha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661",
+      "afterSha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661",
+      "preserved": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "field": "soulEssence",
+      "beforeSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc",
+      "afterSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc",
+      "preserved": true
+    }
+  ],
+  "wangJianStatsPreserved": true,
+  "unaffectedBeforeSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "unaffectedAfterSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "rawExtrasPreserved": true,
+  "rawStoredDocumentMatchesExpected": true,
+  "rawCasSucceeded": true,
+  "worldworkspacesChecked": false,
+  "passed": true,
+  "status": "complete_verified"
+}

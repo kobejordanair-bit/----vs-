@@ -1,0 +1,12 @@
+Browser tab: 1, Title: "確認工作區與目標ID", URL: "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 336-338, 412, 414
++							414 container
++								415 button (expanded) 處理時間為 3m 53s, Secondary Actions: Collapse
++								416 text 處理時間為 3m 53s
++								417 text 整理文章內容
++								418 text 評估北魏孝文帝能力值並整理軍事體能史料
++								419 text 校準評分 完善歷史能力五維評分與文章呈現 format
++								420 text 已搜尋 8 個網站
++							421 button 捲動至底部
+The focused UI element is 415 button (expanded) 處理時間為 3m 53s, Secondary Actions: Collapse

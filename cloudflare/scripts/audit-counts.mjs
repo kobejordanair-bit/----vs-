@@ -67,7 +67,7 @@ export function auditSnapshot(snapshot, base, comparison = null, expectedTotal =
   const merged = [...base, ...custom].map(figure => {
     const modification = modifications[figure.id];
     if (!modification) return figure;
-    return { ...figure, ...modification, id: figure.id, isModified: Object.keys(modification).some(key => !['stats', 'analysis'].includes(key)) };
+    return { ...figure, ...modification, id: figure.id, isModified: Object.keys(modification).some(key => !['stats', 'analysis', 'statsAnalysis'].includes(key)) };
   });
   const validId = figure => typeof figure.id === 'string' && figure.id.length > 0;
   const baseIds = new Set(base.filter(validId).map(figure => figure.id));

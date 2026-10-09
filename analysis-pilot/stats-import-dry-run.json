@@ -1,0 +1,42 @@
+{
+  "format": "dynasty-analysis-pilot-stats-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "targetCount": 2,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "batchSha256": "29fa5b9627e45ccc0bb35307935508f0edbce31fd5354b165a7c84612608b2b7",
+  "sourceSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "plannedAfterSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "beforeRevision": 3,
+  "plannedAfterRevision": 4,
+  "patchBytes": 2628239,
+  "plannedDocumentBytes": 9547058,
+  "inputHashes": [
+    "d49edfb913e3a6d80be7570efe03b89ec09ea625a1f2512d30734edadc8aa585",
+    "1aee76938b18463c9e774ca40bc181243b60b17ea4ddd2dbd16d5e42ecce01d6"
+  ],
+  "writtenFieldHashes": [
+    {
+      "field": "stats",
+      "sha256": "9e41ccac9a5f6487d0ce81ddb1a11a13e06945dc21ab109976532b737293f341"
+    },
+    {
+      "field": "statsAnalysis",
+      "sha256": "77c17a9d1e540963ff54452e77858e14e25083dde33a6e26117cdf82f5371a55"
+    },
+    {
+      "field": "stats",
+      "sha256": "e3a21b182090eac064f2cfcefcdd19bbbe2b5e5b2f76a05945d3b82decaa77ee"
+    },
+    {
+      "field": "statsAnalysis",
+      "sha256": "b2744bd7a4f750f50f9f4f2f851451a9bad58c3f9aece3f1c696b50b08a44409"
+    }
+  ],
+  "adapter": "Wrangler getPlatformProxy remote D1 binding; original saveUserdata + D1DocumentStore"
+}
