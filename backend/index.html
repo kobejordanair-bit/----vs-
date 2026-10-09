@@ -5926,8 +5926,26 @@ if (!response.ok) {
     const decoder = new TextDecoder();
     let fullText = '';
     let buffer = '';
+    let completed = false;
+    const consumeLine = (line) => {
+        if (!line.startsWith('data:')) return;
+        const data = line.slice(5).trim();
+        if (!data) return;
+        if (data === '[DONE]') { completed = true; return; }
+        let parsed;
+        try { parsed = JSON.parse(data); }
+        catch { throw new Error('AI 回覆格式損壞，請重試；目前文字仍保留。'); }
+        if (parsed.error) throw new Error(String(parsed.error));
+        if (parsed.model) {
+            if (parsed.model.includes('flash') && onModel) onModel(parsed.model);
+        }
+        if (typeof parsed.text === 'string') {
+            fullText += parsed.text;
+            onChunk(fullText);
+        }
+    };
 
-    while (true) {
+    try { while (true) {
         const { done, value } = await reader.read();
         if (done) {
             buffer += decoder.decode();
@@ -5937,40 +5955,14 @@ if (!response.ok) {
         const lines = buffer.split('\n');
         buffer = lines.pop();
         for (const line of lines) {
-            if (line.startsWith('data: ')) {
-                const data = line.slice(6).trim();
-                if (data === '[DONE]') return fullText;
-                try {
-                    const parsed = JSON.parse(data);
-                    if (parsed.model) {
-                        if (parsed.model.includes('flash') && onModel) {
-                        onModel(parsed.model);
-                    }
-                        continue;
-                    }
-                    fullText += parsed.text;
-                    onChunk(fullText);
-                } catch(e) { console.error('串流 JSON 解析失敗:', e, '原始資料:', data); }
-            }
+            consumeLine(line);
+            if (completed) return fullText;
         }
     }
-    // 處理串流結束後殘留在 buffer 的最後一行
-    if (buffer.trim()) {
-        const line = buffer.trim();
-        if (line.startsWith('data: ')) {
-            const data = line.slice(6).trim();
-            if (data !== '[DONE]') {
-                try {
-                    const parsed = JSON.parse(data);
-                    if (parsed.text) {
-                        fullText += parsed.text;
-                        onChunk(fullText);
-                    }
-                } catch(e) { console.error('串流結尾 JSON 解析失敗:', e, '原始資料:', data); }
-            }
-        }
-    }
+    if (buffer.trim()) consumeLine(buffer.trim());
+    if (!completed) throw new Error('AI 連線中斷，回覆尚未完成；目前文字仍保留，請重試。');
     return fullText;
+    } finally { await reader.cancel().catch(() => {}); }
 }
 async function callGemini(promptText, isJson = false) {
     const contents = [{ role: "user", parts: [{ text: promptText }] }];
@@ -6011,7 +6003,7 @@ async function _callGeminiNative(contentsArray, isJson = false) {
         return data.result;
     } catch (e) {
         console.error("後端連線錯誤:", e);
-        throw new Error("伺服器連線失敗，請確認 FastAPI 後端已啟動。(" + e.message + ")");
+        throw new Error("AI 服務連線失敗，請稍後重試。(" + e.message + ")");
     }
 }
         
