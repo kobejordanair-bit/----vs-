@@ -1,0 +1,21 @@
+{
+  "format": "dynasty-stats-public-package-audit",
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-09T15:43:41.307424Z",
+  "passed": true,
+  "verifiedManifestFiles": 39,
+  "newBrowserVerified": false,
+  "status": "pending_user_login",
+  "archive": "王侯將相_三人全功能含五維.zip",
+  "archiveBytes": 1679500,
+  "archiveSha256": "e5506f637e30883ed81fd7687b7089e5d78bc4cfbdb19c724e166087ceab25d4",
+  "includedRoots": [
+    "最終交付",
+    "五維補評交付",
+    "交付說明.txt"
+  ],
+  "privateFilesIncluded": false,
+  "verifiedArchiveFiles": 180,
+  "verifiedLocalLinks": 8,
+  "archiveManifestHashesMatched": true
+}

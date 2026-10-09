@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-10-09T14:50:21.573Z",
   "origin": "https://dynasty.piamamba.com/play",
-  "status": "verification_in_progress",
+  "status": "original_nine_articles_verified",
   "expectedPageCount": 9,
   "openedArticleCount": 9,
   "completeNinePageVerification": true,
@@ -295,8 +295,15 @@
     }
   ],
   "pending": [],
-  "constraint": "Browser inventory still lists the correct website tab, but DOM and screenshot operations are unavailable. Page was preserved without reload; user has been asked to foreground it and close developer tools if open.",
   "productionWriteActionsDuringBrowserVerification": [],
   "privateStateExported": false,
-  "priorImportAudit": "complete-delivery-audit.json"
+  "priorImportAudit": "complete-delivery-audit.json",
+  "frontendVersionObserved": "d6cd4718-ef9a-4c92-aff5-48c8ebd6f8ad",
+  "networkObserved": {
+    "scope": "Wang Jian cached three tabs on previous frontend",
+    "requests": [],
+    "hasMore": false,
+    "truncated": false
+  },
+  "priorBrowserInterruption": "Browser inventory still lists the correct website tab, but DOM and screenshot operations are unavailable. Page was preserved without reload; user has been asked to foreground it and close developer tools if open."
 }

@@ -1,0 +1,32 @@
+{
+  "method": "fresh_sdk_document_read",
+  "readAt": "2026-10-09T15:26:57.368Z",
+  "passed": true,
+  "browserReloadPerformed": false,
+  "revision": 4,
+  "documentSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "records": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "stats": [
+        88,
+        79,
+        95,
+        96,
+        84
+      ],
+      "statsAnalysisSha256": "77c17a9d1e540963ff54452e77858e14e25083dde33a6e26117cdf82f5371a55"
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "stats": [
+        78,
+        68,
+        97,
+        96,
+        88
+      ],
+      "statsAnalysisSha256": "b2744bd7a4f750f50f9f4f2f851451a9bad58c3f9aece3f1c696b50b08a44409"
+    }
+  ]
+}
