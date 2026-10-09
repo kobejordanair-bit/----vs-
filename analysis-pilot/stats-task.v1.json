@@ -1,0 +1,18 @@
+{
+  "goal": "Complete the omitted original five-dimensional ratings for Xiao Wendi and Yao Chong through ChatGPT web, and separate stats generation from review regeneration.",
+  "reason": "User noticed the reviewed article lacked five-dimensional scores. Prior article-only pipeline intentionally excluded them, leaving the review incomplete as a combined feature.",
+  "scope": [
+    "Generate only the two missing stats arrays and separately displayed statsAnalysis reasons using original stats PROMPT, exact order and actual web searches.",
+    "Preserve all existing review, calibration and soul manuscripts and Wang Jian stats.",
+    "Provide a stats-only UI action with validation and cached reason/radar rendering. No automatic AI on reading.",
+    "Safe production import with fresh read, CAS, backups and full preservation audit.",
+    "Finish real browser checks for the nine original reading tabs plus the two completed stat displays."
+  ],
+  "materials": ["analysis-pilot/stats-request.v1.json", "analysis-pilot/stats-reference.v1.json", "analysis-pilot/original-prompts.v1.json"],
+  "reviewPoints": [
+    "Current forceRegenerateStats triggers full review regeneration; split it into a dedicated stats-only function.",
+    "Original prompt renderer currently binds entire backend source bytes; preserve its historical reproducibility when editing unrelated UI code.",
+    "Only the two authorized figures may gain stats and statsAnalysis; provenance stays in the public result receipt unless necessary for display.",
+    "Do not read private snapshots, secrets or unrelated user data through the connector."
+  ]
+}

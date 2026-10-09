@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-stats-d1-adapter-design",
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-09T14:53:43.263Z",
+  "implementation": {
+    "path": "cloudflare/private/stats-d1-adapter.mjs",
+    "sha256": "8df7e7db5386ac1a53c6d33aad9cfb1d3f2262ad3826e343e61da4c70754b239",
+    "gitIgnored": true,
+    "exports": [
+      "createStatsD1Adapter({backupDir}) -> {request, dispose}"
+    ]
+  },
+  "scope": {
+    "accountId": "ff91ec1f7586b95a8c9d97823219f37f",
+    "databaseId": "53b88a89-c3bd-43ea-8b1f-33d8fb164f71",
+    "binding": "DYNASTY_DB",
+    "collection": "userdata",
+    "permanentEndpoint": false,
+    "databaseName": "dynasty-data"
+  },
+  "authority": {
+    "method": "Wrangler getPlatformProxy remote D1 binding using the existing authorized Wrangler profile",
+    "credentialFilesReadByThisAgent": false,
+    "tokenOutput": false,
+    "productionExecuted": false
+  },
+  "proxy": {
+    "remoteBindings": true,
+    "persist": false,
+    "envFiles": [],
+    "bindingRemote": true,
+    "previewDatabaseId": false,
+    "configDirectory": "Fresh independent OS temporary directory without .env or .dev.vars",
+    "disposeRequired": true
+  },
+  "storage": {
+    "get": "loadUserdata: fresh raw read to API-visible userSnapshot",
+    "post": "saveUserdata: fresh raw read and revision check, merge into full raw document",
+    "atomicWrite": "Existing D1DocumentStore metadata version CAS, guarded chunks and cleanup in one D1Database.batch transaction",
+    "writerCache": false,
+    "rawExtrasPreserved": true,
+    "maxDocumentBytes": 33554432,
+    "chunkBytes": 1048576
+  },
+  "backups": {
+    "directory": "Caller supplies an absolute subdirectory within cloudflare/private; realpath containment checked",
+    "before": "Exact observed raw document and metadata version, private JSON, timestamp plus UUID, flag wx before batch",
+    "after": "Fresh raw observed document/version and expected/actual hashes, casSucceeded true/false/null; ambiguous write never retried",
+    "publicReportContainsManuscript": false
+  },
+  "offlineVerification": {
+    "syntaxCheckPassed": true,
+    "syntheticVmChecks": 8,
+    "passed": true,
+    "remoteCalls": 0,
+    "credentialReads": 0,
+    "testFilesWritten": 0,
+    "checks": [
+      "private backup location required",
+      "minimal exact account/database remote config",
+      "GET hides _id but preserves extras",
+      "POST keeps raw _id and unknown extras",
+      "before/after raw receipts retain metadata version and matching extras hashes",
+      "fresh stale-revision returns 409 without a second CAS",
+      "backup failure prevents CAS",
+      "safe setup errors and idempotent disposal"
+    ]
+  },
+  "references": [
+    {
+      "title": "Wrangler getPlatformProxy",
+      "url": "https://developers.cloudflare.com/workers/wrangler/api/#getplatformproxy"
+    },
+    {
+      "title": "Supported remote bindings",
+      "url": "https://developers.cloudflare.com/workers/local-development/bindings-per-env/"
+    },
+    {
+      "title": "D1 atomic batch",
+      "url": "https://developers.cloudflare.com/d1/worker-api/d1-database/#batch"
+    }
+  ]
+}

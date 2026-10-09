@@ -1,0 +1,49 @@
+{
+  "provider": "ChatGPT web",
+  "recordId": "minister_姚崇_2003901767",
+  "field": "stats",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T15:02:14.257Z",
+  "promptSha256": "1ba1ebf1bdc7647a6a2a69b0b674a124773a5a4738d6642e859dbf1beb74d095",
+  "inputSha256": "1aee76938b18463c9e774ca40bc181243b60b17ea4ddd2dbd16d5e42ecce01d6",
+  "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+  "referencePath": "analysis-pilot/stats-reference.v1.json",
+  "referenceSha256": "5bd46e7b6d3119fabb2d083e4113faaefe8f591cdf536b9104bb9e71d6e64a81",
+  "responseSha256": "28acd6395ac78ee3ba669344e2fdf1516fce09c85fe6940a5e5bb780b8c36999",
+  "fragments": [
+    {
+      "file": "yaochong.stats.raw.md",
+      "sha256": "acddd7dcf0ed19ffe9ae089d4c7d5eaf24b5df14b1342affc9e078b0e07327d1"
+    }
+  ],
+  "contextFiles": [
+    {
+      "field": "analysis",
+      "path": "analysis-pilot/drafts/yaochong.analysis.md",
+      "sha256": "f8ab7701c8c62062d176f2a5cf0627e5874a378922a1084d1a3554e2066bb8c4",
+      "articleSha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8"
+    },
+    {
+      "field": "deepAnalysis",
+      "path": "analysis-pilot/drafts/yaochong.style.v2.md",
+      "sha256": "3580268fcc4f7fca1e204cb33d8ac718e5339b9a752d2ed8ff144c3ddb659c05",
+      "articleSha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661"
+    },
+    {
+      "field": "soulEssence",
+      "path": "analysis-pilot/drafts/yaochong.soulEssence.md",
+      "sha256": "c4f5c6a72737ac06996b5b03b3bdcea55c29346cde92521cf3f8822409a12205",
+      "articleSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc"
+    }
+  ],
+  "webSearchPerformed": true,
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 10 個網站",
+    "visibleSearchCount": 10,
+    "file": "analysis-pilot/drafts/yaochong.stats.search-evidence.txt",
+    "sha256": "e9e7d0cf3eec832714a6844cc2f11e8a18ed083b4817b9c239a8df060035fd02"
+  },
+  "composition": "Complete actual ChatGPT web response; only known source-card UI lines, escaped emphasis, completion-marker backticks and outer whitespace normalized. Raw clipboard retained. Scores and prose are not generated or rewritten.",
+  "removedCardLines": 13
+}

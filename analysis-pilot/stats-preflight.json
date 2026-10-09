@@ -1,0 +1,25 @@
+{
+  "format": "dynasty-stats-live-preflight",
+  "readAt": "2026-10-09T14:35:16.062Z",
+  "revision": 3,
+  "visibleSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "storedSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "chunkCount": 10,
+  "targets": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "statsAbsent": true,
+      "analysisPreserved": true,
+      "deepPreserved": true,
+      "soulPreserved": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "statsAbsent": true,
+      "analysisPreserved": true,
+      "deepPreserved": true,
+      "soulPreserved": true
+    }
+  ],
+  "passed": true
+}

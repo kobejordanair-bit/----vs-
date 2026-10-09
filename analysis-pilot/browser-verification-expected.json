@@ -1,0 +1,705 @@
+{
+  "format": "dynasty-browser-verification-expected",
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-09T14:04:15.793Z",
+  "origin": "https://dynasty.piamamba.com/play",
+  "scope": "Public final result batches and preserved Wang Jian article only; no private userdata or browser access.",
+  "sourceHashes": {
+    "deepBatch": "38219e1449ee2c565f3d73e0c49d1c91c7a7614d3a92db88a8893b2c6f0dba67",
+    "layerBatch": "3e9a76dae1960d797cd946c6a6f32e4622ce5e9e4fb41888ccc375f8f0206f3a",
+    "existingWangJianAnalysis": "aadd7b4bf9dcf190431fe0700959559df15c49bb540d6f6ccd9f8189cc1a238d",
+    "localBackendIndexRawSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
+    "localBackendIndexNormalizedLfSha256": "50e703544dddfe8eb25b6bdbcfebf40a12912a5707812560a4c34760c9e7178c"
+  },
+  "selectors": {
+    "modal": "#aiModal",
+    "modalTitle": "#modalTitle",
+    "tabBar": "#evalTabBar",
+    "activeTab": "#evalTabBar .eval-tab-active",
+    "article": "#modalContent",
+    "soulValue": "#soulEssenceTextarea",
+    "loader": "#loadingState",
+    "radar": "#radarChartContainer",
+    "articleAppendagesToExclude": [
+      "[id^=\"discussionPanel_\"]",
+      "the top-level #modalContent child containing #applyDeepBtn"
+    ],
+    "visibleProseChildRule": "Read innerText only from direct #modalContent element children that do not have an id starting discussionPanel_ and do not contain #applyDeepBtn; join these child texts in order. Do not read hidden discussion messages."
+  },
+  "readOnlyCachedRoutes": {
+    "entry": {
+      "function": "openEvalModal",
+      "line": 2321,
+      "behavior": "Sets current person/tab and modal DOM, calls cached review or calibration; DynastySourceLinks.setPerson only changes DOM link attributes. To inspect soul use the actual soul tab button after opening."
+    },
+    "analysis": {
+      "function": "_loadReviewContent",
+      "line": 2453,
+      "cachedCondition": "analysis present and forceRegen=false",
+      "behavior": "Renders saved article, optional existing radar and discussion controls, then returns before callGeminiStream and syncToCloud. Missing stats does not trigger AI."
+    },
+    "deepAnalysis": {
+      "function": "_loadCalibrationContent",
+      "line": 2541,
+      "cachedCondition": "deepAnalysis present",
+      "behavior": "Renders saved article, suggestion and discussion controls, then returns before callGeminiStream, simulationHistory mutation and syncToCloud."
+    },
+    "soulEssence": {
+      "function": "_loadSoulEssenceContent",
+      "line": 2356,
+      "cachedCondition": "soulEssence present",
+      "behavior": "Creates escaped textarea with cached text and save control, then returns; no callGemini and no syncToCloud. Read textarea.value without editing/saving."
+    }
+  },
+  "generationSignals": {
+    "waitingLoader": "#loadingState not hidden; shows 準備材料中... and .typing-dot",
+    "soulGenerating": "#modalContent text begins 正在解析<name>的靈魂內核… and contains animated bouncing dots",
+    "missingSoul": "#modalContent shows 尚未生成此人物的靈魂內核 / 生成靈魂內核 instead of textarea",
+    "errorTexts": [
+      "生成失敗",
+      "校準失敗",
+      "回覆尚未完成"
+    ],
+    "important": "Stream callbacks hide #loadingState upon the first chunk; loader hidden alone does not prove AI is idle. A stable matching head+tail plus all expected sections and textarea hash where applicable verifies the cached artifact; use the actual existing UI/loading observations as separate evidence."
+  },
+  "explicitMutatingOrAiControls": [
+    {
+      "selector": "#regenStatsBtn",
+      "action": "forceRegenerateStats -> review(forceRegen=true): AI + stats/article write"
+    },
+    {
+      "selector": "#regenDeepBtn",
+      "action": "Deletes cached deep then calibration AI and data write"
+    },
+    {
+      "selector": "#regenSoulEssenceBtn",
+      "action": "Deletes cached soul, displays empty generator state"
+    },
+    {
+      "selector": "#extractScenesBtn",
+      "action": "Starts AI scene extraction"
+    },
+    {
+      "selector": "#applyDeepBtn",
+      "action": "Applies checked rank/title/tag/desc/poem and syncs"
+    },
+    {
+      "selector": "#modalContent button[onclick^=\"_saveSoulEssence\"]",
+      "action": "Saves edited textarea and syncs"
+    },
+    {
+      "selector": "button[onclick^=\"_generateSoulEssence\"]",
+      "action": "Calls AI and writes soulEssence"
+    },
+    {
+      "selector": "button[onclick^=\"sendDiscussionMessage\"]",
+      "action": "Calls AI and writes discussion history"
+    }
+  ],
+  "closeModalException": "closeModal normally only clears modal UI; if pendingReactionLegendId was set by an earlier add/edit flow, closing may invoke showRelatedReactions and AI. Reading these cached pages does not set that flag.",
+  "normalization": {
+    "compactPhrase": "Replace all whitespace with empty string; compare punctuation and characters as-is.",
+    "textareaHash": "SHA-256 of exact textarea.value after CRLF/CR -> LF; do not trim or rewrite."
+  },
+  "records": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "field": "deepAnalysis",
+      "tab": "calibrate",
+      "tabLabel": "校準評級",
+      "buttonSelector": "#eval-tab-calibrate",
+      "expectedModalTitle": "北魏孝文帝 · 評鑑",
+      "contentSelector": "#modalContent",
+      "readProperty": "innerText of article children only",
+      "rawSha256": "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad",
+      "rawCharacters": 5143,
+      "rawUtf16CodeUnits": 5143,
+      "headUniqueShortPhrase": "評估對象：北魏孝文帝拓跋宏／元宏（467—499年） 現行評級：A+｜建議維持A+，列入S-晉級候選",
+      "tailUniqueShortPhrase": "判詞：遷鼎洛陽開帝制，功深未竟定中原。",
+      "headCompact": "評估對象：北魏孝文帝拓跋宏／元宏（467—499年）現行評級：A+｜建議維持A+，列入S-晉級候選",
+      "tailCompact": "判詞：遷鼎洛陽開帝制，功深未竟定中原。",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "榜單錨定",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "獨立史學剖析",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "縱向標定與雙向防線",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "全榜邏輯一致性校準",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "建議定案",
+          "present": true,
+          "occurrences": 1
+        }
+      ],
+      "canonicalSectionsPresent": 5,
+      "markdownHeadingCount": 12,
+      "markdownHeadingTexts": [
+        "【歷史名錄總評官】北魏孝文帝（帝王）深度評級核準報告",
+        "第一步【榜單錨定】：與同量級帝王的實體戰績對比",
+        "第二步【獨立史學剖析】：一場改變北魏命運的權力重構",
+        "（一）改革的真正起點：文明太后奠基，孝文帝完成方向轉換",
+        "（二）493年遷都：以南伐壓力推動國家戰略轉向",
+        "（三）制度與身份重構：孝文帝究竟想建立什麼帝國？",
+        "（四）南征與北鎮：政治中心南移後的戰略困局",
+        "（五）政治手腕與文明代價：決斷強悍，整合不足",
+        "第三步【縱向標定與雙向防線】：A+的上限與S-的門檻",
+        "第四步【全榜邏輯一致性校準】：制度天才與戰略侷限並存",
+        "史料爭議與評價界線",
+        "【建議定案】"
+      ],
+      "renderedVisibleTextHashExact": false,
+      "visibleTextHashNote": "The live website uses an unpinned CDN marked parser plus DOMPurify. No identical renderer is installed locally; use the unique phrases and actual section headings, not a guessed plaintext hash."
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "field": "analysis",
+      "tab": "review",
+      "tabLabel": "賞析",
+      "buttonSelector": "#eval-tab-review",
+      "expectedModalTitle": "北魏孝文帝 · 評鑑",
+      "contentSelector": "#modalContent",
+      "readProperty": "innerText of article children only",
+      "rawSha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff",
+      "rawCharacters": 6143,
+      "rawUtf16CodeUnits": 6143,
+      "headUniqueShortPhrase": "理解北魏孝文帝（467—499年），最關鍵的問題從來不只是他為何推行「漢化」，而是：一個依靠北方軍事貴族建立的王朝，為何會出現一位皇帝，決心改變整個統治",
+      "tailUniqueShortPhrase": "能力、強烈戰略意志，卻未能充分處理改革所引發之政治整合代價的帝王。他親手將北魏帶進新的時代，也讓這個王朝承受了舊秩序崩解與新秩序尚未穩固之間的巨大張力。",
+      "headCompact": "理解北魏孝文帝（467—499年），最關鍵的問題從來不只是他為何推行「漢化」，而是：一個依靠北方軍事貴族建立的王朝，為何會出現一位皇帝，決心改變整個統治",
+      "tailCompact": "能力、強烈戰略意志，卻未能充分處理改革所引發之政治整合代價的帝王。他親手將北魏帶進新的時代，也讓這個王朝承受了舊秩序崩解與新秩序尚未穩固之間的巨大張力。",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "歷史局勢與定位",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "深度功過剖析",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "人性與性格側寫",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "如果生在現代",
+          "present": true,
+          "occurrences": 1
+        }
+      ],
+      "canonicalSectionsPresent": 4,
+      "markdownHeadingCount": 12,
+      "markdownHeadingTexts": [
+        "北魏孝文帝元宏｜一個試圖重造帝國，卻與自己根基決裂的改革者",
+        "1.【歷史局勢與定位】：一個已經征服北方、卻尚未完成帝國整合的王朝",
+        "2.【深度功過剖析】：改革的本質，是重新分配帝國權力",
+        "【反常識論點】孝文帝的「漢化」，首先是一場政治權力重組",
+        "（一）493年遷都：以皇權決斷突破統治集團阻力",
+        "（二）改革語言與姓氏：建立新帝國的政治身份",
+        "（三）南征：制度轉型之後，國家戰略必須有所兌現",
+        "（四）北方軍鎮：改革成功背後未解決的結構矛盾",
+        "（五）元恂之死：改革者無法容忍的反對，來自自己的兒子",
+        "3.【人性與性格側寫】：高度自律、強烈意志與政治不安全感",
+        "4.【如果生在現代】：極具改革能力，卻需要制衡的政治領導者",
+        "史料與詮釋界線"
+      ],
+      "renderedVisibleTextHashExact": false,
+      "visibleTextHashNote": "The live website uses an unpinned CDN marked parser plus DOMPurify. No identical renderer is installed locally; use the unique phrases and actual section headings, not a guessed plaintext hash."
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "field": "soulEssence",
+      "tab": "soul-essence",
+      "tabLabel": "靈魂內核",
+      "buttonSelector": "#eval-tab-soul-essence",
+      "expectedModalTitle": "北魏孝文帝 · 評鑑",
+      "contentSelector": "#soulEssenceTextarea",
+      "readProperty": "value",
+      "rawSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b",
+      "rawCharacters": 4618,
+      "rawUtf16CodeUnits": 4618,
+      "headUniqueShortPhrase": "孝文帝的說服方式，最鮮明的特徵是先掌握議題的定義權，再迫使對方在他設定的政治框架內作出選擇。他善於援引經典建立正當性，也懂得在關鍵時刻使用皇權威壓。他的",
+      "tailUniqueShortPhrase": "這是其制度天才最難克服的界線，也是他人格中最深刻、最具悲劇性的內在裂縫。[詮釋]",
+      "headCompact": "孝文帝的說服方式，最鮮明的特徵是先掌握議題的定義權，再迫使對方在他設定的政治框架內作出選擇。他善於援引經典建立正當性，也懂得在關鍵時刻使用皇權威壓。他的",
+      "tailCompact": "這是其制度天才最難克服的界線，也是他人格中最深刻、最具悲劇性的內在裂縫。[詮釋]",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "說話邏輯",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "壓力反應",
+          "present": true,
+          "occurrences": 2
+        },
+        {
+          "label": "核心驅動",
+          "present": true,
+          "occurrences": 2
+        },
+        {
+          "label": "慣性盲點",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "情感結構",
+          "present": true,
+          "occurrences": 2
+        },
+        {
+          "label": "參照系",
+          "present": true,
+          "occurrences": 3
+        },
+        {
+          "label": "內在裂縫",
+          "present": true,
+          "occurrences": 2
+        }
+      ],
+      "canonicalSectionsPresent": 7,
+      "markdownHeadingCount": 0,
+      "markdownHeadingTexts": [],
+      "textareaValueNormalizedLfSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b",
+      "textareaValueNormalizedLfUtf16CodeUnits": 4618,
+      "textareaHashExact": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "field": "deepAnalysis",
+      "tab": "calibrate",
+      "tabLabel": "校準評級",
+      "buttonSelector": "#eval-tab-calibrate",
+      "expectedModalTitle": "王翦 · 評鑑",
+      "contentSelector": "#modalContent",
+      "readProperty": "innerText of article children only",
+      "rawSha256": "ce325ef271e164dff937ffb6ecb3f373d9c991f7f3c2056405fb43b3c220253e",
+      "rawCharacters": 5349,
+      "rawUtf16CodeUnits": 5349,
+      "headUniqueShortPhrase": "核心論斷：王翦的軍事天才，在於他能將秦國龐大的國家動員能力，轉化為確定性極高的戰略勝利。他不以奇襲與冒險決勝，而是透過兵力判斷、戰場節奏控制及君臣信任管",
+      "tailUniqueShortPhrase": "判詞：六十萬甲藏鋒銳，定楚功成避主疑。",
+      "headCompact": "核心論斷：王翦的軍事天才，在於他能將秦國龐大的國家動員能力，轉化為確定性極高的戰略勝利。他不以奇襲與冒險決勝，而是透過兵力判斷、戰場節奏控制及君臣信任管",
+      "tailCompact": "判詞：六十萬甲藏鋒銳，定楚功成避主疑。",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "榜單錨定",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "獨立史學剖析",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "縱向標定與雙向防線",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "全榜邏輯一致性校準",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "建議定案",
+          "present": true,
+          "occurrences": 1
+        }
+      ],
+      "canonicalSectionsPresent": 5,
+      "markdownHeadingCount": 13,
+      "markdownHeadingTexts": [
+        "【歷史名錄總評官】王翦（將領）深度評級核準報告",
+        "第一步【榜單錨定】：同儕量級與核心戰績對比",
+        "第二步【獨立史學剖析】：滅國戰爭中的資源、戰場與皇權",
+        "秦國國力：理解王翦軍事成就的真正起點",
+        "滅趙破燕：國家級軍事成果與戰功歸屬",
+        "六十萬伐楚：頂級統帥對戰爭條件的判斷",
+        "堅壁養士：從戰場耐性轉化為決定性勝利",
+        "求田問舍：軍權集中時的政治生存智慧",
+        "滅楚成果與戰爭代價：完成任務，不等於創造整個帝國",
+        "第三步【縱向標定與雙向防線】：S與S+的真正差距",
+        "第四步【全榜邏輯一致性校準】：完成統一戰爭的頂級執行者",
+        "史料爭議與查證界線",
+        "【建議定案】"
+      ],
+      "renderedVisibleTextHashExact": false,
+      "visibleTextHashNote": "The live website uses an unpinned CDN marked parser plus DOMPurify. No identical renderer is installed locally; use the unique phrases and actual section headings, not a guessed plaintext hash."
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "field": "analysis",
+      "tab": "review",
+      "tabLabel": "賞析",
+      "buttonSelector": "#eval-tab-review",
+      "expectedModalTitle": "王翦 · 評鑑",
+      "contentSelector": "#modalContent",
+      "readProperty": "innerText of article children only",
+      "rawSha256": "aadd7b4bf9dcf190431fe0700959559df15c49bb540d6f6ccd9f8189cc1a238d",
+      "rawCharacters": 2694,
+      "rawUtf16CodeUnits": 2694,
+      "headUniqueShortPhrase": "歷史的弔詭在於，後世往往偏愛那些充滿悲劇色彩、以少勝多、甚至功高震主的孤膽英雄（如項羽、韓信、白起），卻對真正將戰爭變成一門精確科學的「系統操作者」缺乏",
+      "tailUniqueShortPhrase": "理戰；政治98，在多疑嗜殺的秦始皇手下功高震主卻能全身而退，政治段位極高；魅力70，為人過於現實、冷酷且缺乏浪漫的英雄氣質，難以引發狂熱的個人崇拜。)",
+      "headCompact": "歷史的弔詭在於，後世往往偏愛那些充滿悲劇色彩、以少勝多、甚至功高震主的孤膽英雄（如項羽、韓信、白起），卻對真正將戰爭變成一門精確科學的「系統操作者」缺乏",
+      "tailCompact": "理戰；政治98，在多疑嗜殺的秦始皇手下功高震主卻能全身而退，政治段位極高；魅力70，為人過於現實、冷酷且缺乏浪漫的英雄氣質，難以引發狂熱的個人崇拜。)",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "歷史局勢與定位",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "深度功過剖析",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "人性與性格側寫",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "如果生在現代",
+          "present": true,
+          "occurrences": 1
+        }
+      ],
+      "canonicalSectionsPresent": 4,
+      "markdownHeadingCount": 6,
+      "markdownHeadingTexts": [
+        "【歷史局勢與定位】：從「冷兵器競技」到「總體戰」的終極絞肉機",
+        "【深度功過剖析】：反英雄的「降維打擊」與權力心理學",
+        "反常識論點：王翦的「請田求乞」，絕非單純的「明哲保身」，而是一場高明的「向上情緒管理」與「政治人質交換」。",
+        "戰略層面：極致的「不對稱作戰」與拒絕悲壯",
+        "【人性與性格側寫】：一個披著將軍外衣的「精算師」",
+        "【如果生在現代】：跨國供應鏈巨頭的CEO / 頂級避險基金經理"
+      ],
+      "renderedVisibleTextHashExact": false,
+      "visibleTextHashNote": "The live website uses an unpinned CDN marked parser plus DOMPurify. No identical renderer is installed locally; use the unique phrases and actual section headings, not a guessed plaintext hash."
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "field": "soulEssence",
+      "tab": "soul-essence",
+      "tabLabel": "靈魂內核",
+      "buttonSelector": "#eval-tab-soul-essence",
+      "expectedModalTitle": "王翦 · 評鑑",
+      "contentSelector": "#soulEssenceTextarea",
+      "readProperty": "value",
+      "rawSha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116",
+      "rawCharacters": 4493,
+      "rawUtf16CodeUnits": 4493,
+      "headUniqueShortPhrase": "王翦的說話方式，可以概括為「先亮出不可退讓的條件，再用退讓姿態解除對方的敵意」。他不以慷慨激昂的誓言爭取信任，而是把戰爭問題壓縮成具體、可供決策的條件。",
+      "tailUniqueShortPhrase": "這份不對稱，才是王翦最鮮明、也最難被其他名將取代的內在裂縫。[詮釋]",
+      "headCompact": "王翦的說話方式，可以概括為「先亮出不可退讓的條件，再用退讓姿態解除對方的敵意」。他不以慷慨激昂的誓言爭取信任，而是把戰爭問題壓縮成具體、可供決策的條件。",
+      "tailCompact": "這份不對稱，才是王翦最鮮明、也最難被其他名將取代的內在裂縫。[詮釋]",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "說話邏輯",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "壓力反應",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "核心驅動",
+          "present": true,
+          "occurrences": 4
+        },
+        {
+          "label": "慣性盲點",
+          "present": true,
+          "occurrences": 3
+        },
+        {
+          "label": "情感結構",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "參照系",
+          "present": true,
+          "occurrences": 3
+        },
+        {
+          "label": "內在裂縫",
+          "present": true,
+          "occurrences": 2
+        }
+      ],
+      "canonicalSectionsPresent": 7,
+      "markdownHeadingCount": 0,
+      "markdownHeadingTexts": [],
+      "textareaValueNormalizedLfSha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116",
+      "textareaValueNormalizedLfUtf16CodeUnits": 4493,
+      "textareaHashExact": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "field": "deepAnalysis",
+      "tab": "calibrate",
+      "tabLabel": "校準評級",
+      "buttonSelector": "#eval-tab-calibrate",
+      "expectedModalTitle": "姚崇 · 評鑑",
+      "contentSelector": "#modalContent",
+      "readProperty": "innerText of article children only",
+      "rawSha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661",
+      "rawCharacters": 5173,
+      "rawUtf16CodeUnits": 5173,
+      "headUniqueShortPhrase": "核心論斷：姚崇是中國古代最出色的「危機型行政宰相」之一。他真正的天才，不在於提出了多少冠冕堂皇的治國原則，而在於能迅速辨識國家機器失靈的原因，利用皇帝授",
+      "tailUniqueShortPhrase": "判詞：十事匡朝開治道，救時善斷奠開元。",
+      "headCompact": "核心論斷：姚崇是中國古代最出色的「危機型行政宰相」之一。他真正的天才，不在於提出了多少冠冕堂皇的治國原則，而在於能迅速辨識國家機器失靈的原因，利用皇帝授",
+      "tailCompact": "判詞：十事匡朝開治道，救時善斷奠開元。",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "榜單錨定",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "獨立史學剖析",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "縱向標定與雙向防線",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "全榜邏輯一致性校準",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "建議定案",
+          "present": true,
+          "occurrences": 1
+        }
+      ],
+      "canonicalSectionsPresent": 5,
+      "markdownHeadingCount": 13,
+      "markdownHeadingTexts": [
+        "【歷史名錄總評官】姚崇（名臣）深度評級核準報告",
+        "第一步【榜單錨定】：同儕量級與核心政績對比",
+        "第二步【獨立史學剖析】：從權力失序到開元治世的行政重建",
+        "武周酷吏政治：他首先看穿的是制度誘因",
+        "十事要說：重建皇權與官僚體系的政治契約",
+        "官僚整頓：把君主授權轉化為實際行政能力",
+        "開元捕蝗：危機治理能力的最高證明",
+        "政治權術與親族問題：卓越能吏的內在矛盾",
+        "救時之相：他的最大成就也是評級上限",
+        "第三步【縱向標定與雙向防線】：S-的高度與S的門檻",
+        "第四步【全榜邏輯一致性校準】：救時之功與制度邊界",
+        "史料爭議與查證界線",
+        "【建議定案】"
+      ],
+      "renderedVisibleTextHashExact": false,
+      "visibleTextHashNote": "The live website uses an unpinned CDN marked parser plus DOMPurify. No identical renderer is installed locally; use the unique phrases and actual section headings, not a guessed plaintext hash."
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "field": "analysis",
+      "tab": "review",
+      "tabLabel": "賞析",
+      "buttonSelector": "#eval-tab-review",
+      "expectedModalTitle": "姚崇 · 評鑑",
+      "contentSelector": "#modalContent",
+      "readProperty": "innerText of article children only",
+      "rawSha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8",
+      "rawCharacters": 6683,
+      "rawUtf16CodeUnits": 6683,
+      "headUniqueShortPhrase": "後世談論姚崇，總喜歡把他塑造成開元盛世的奠基者：向玄宗提出「十事要說」，整頓吏治，捕蝗救民，與宋璟共同開創唐朝的黃金時代。",
+      "tailUniqueShortPhrase": "他的高效率高度依賴個人權威與政治手腕，未能完全克服親族利益與權力自保的矛盾。正因如此，「救時之相」既是他最光榮的稱號，也精準揭示了他治理能力的歷史邊界。",
+      "headCompact": "後世談論姚崇，總喜歡把他塑造成開元盛世的奠基者：向玄宗提出「十事要說」，整頓吏治，捕蝗救民，與宋璟共同開創唐朝的黃金時代。",
+      "tailCompact": "他的高效率高度依賴個人權威與政治手腕，未能完全克服親族利益與權力自保的矛盾。正因如此，「救時之相」既是他最光榮的稱號，也精準揭示了他治理能力的歷史邊界。",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "歷史局勢與定位",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "深度功過剖析",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "人性與性格側寫",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "如果生在現代",
+          "present": true,
+          "occurrences": 1
+        }
+      ],
+      "canonicalSectionsPresent": 4,
+      "markdownHeadingCount": 12,
+      "markdownHeadingTexts": [
+        "姚崇｜救時宰相：一個比清官更危險、比權臣更清醒的政治實幹家",
+        "1.【歷史局勢與定位】：一個被宮廷政治反覆折騰的帝國，需要什麼樣的宰相？",
+        "2.【深度功過剖析】：他真正精通的，是如何讓國家重新開始行動",
+        "（一）反常識論點：姚崇的十事要說，是一場精心安排的政治授權談判",
+        "（二）武周冤獄：他看穿政治恐怖如何讓整個制度共同說謊",
+        "（三）捕蝗救災：他最卓越的地方，是敢在不確定中承擔決策責任",
+        "（四）佛教整頓：他反對的究竟是信仰，還是國家資源流失？",
+        "（五）政治權術：他能約束權貴，卻無法完全約束自己的人際關係",
+        "（六）他的務實，有時也會滑向迎合皇帝",
+        "3.【人性與性格側寫】：極度自信、善於權變，卻始終警惕權力反噬",
+        "4.【如果生在現代】：高度能幹，卻需要制度制衡的行政改革者",
+        "史料與詮釋界線"
+      ],
+      "renderedVisibleTextHashExact": false,
+      "visibleTextHashNote": "The live website uses an unpinned CDN marked parser plus DOMPurify. No identical renderer is installed locally; use the unique phrases and actual section headings, not a guessed plaintext hash."
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "field": "soulEssence",
+      "tab": "soul-essence",
+      "tabLabel": "靈魂內核",
+      "buttonSelector": "#eval-tab-soul-essence",
+      "expectedModalTitle": "姚崇 · 評鑑",
+      "contentSelector": "#soulEssenceTextarea",
+      "readProperty": "value",
+      "rawSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc",
+      "rawCharacters": 4692,
+      "rawUtf16CodeUnits": 4692,
+      "headUniqueShortPhrase": "姚崇最具辨識度的說話方式，是「先進入對方相信的道理，再把對方逼回必須承擔的現實責任」。他很少單純訴諸道德優越感，而是精準尋找對方論點中無法自圓其說之處，",
+      "tailUniqueShortPhrase": "這便是「救時宰相」最深刻的內在裂縫：他能救一時之政，卻無法讓自己完全成為不受人情束縛的制度之人。[詮釋]",
+      "headCompact": "姚崇最具辨識度的說話方式，是「先進入對方相信的道理，再把對方逼回必須承擔的現實責任」。他很少單純訴諸道德優越感，而是精準尋找對方論點中無法自圓其說之處，",
+      "tailCompact": "這便是「救時宰相」最深刻的內在裂縫：他能救一時之政，卻無法讓自己完全成為不受人情束縛的制度之人。[詮釋]",
+      "headPhraseMatchingPageCount": 1,
+      "tailPhraseMatchingPageCount": 1,
+      "canonicalSectionChecks": [
+        {
+          "label": "說話邏輯",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "壓力反應",
+          "present": true,
+          "occurrences": 1
+        },
+        {
+          "label": "核心驅動",
+          "present": true,
+          "occurrences": 3
+        },
+        {
+          "label": "慣性盲點",
+          "present": true,
+          "occurrences": 2
+        },
+        {
+          "label": "情感結構",
+          "present": true,
+          "occurrences": 3
+        },
+        {
+          "label": "參照系",
+          "present": true,
+          "occurrences": 3
+        },
+        {
+          "label": "內在裂縫",
+          "present": true,
+          "occurrences": 2
+        }
+      ],
+      "canonicalSectionsPresent": 7,
+      "markdownHeadingCount": 0,
+      "markdownHeadingTexts": [],
+      "textareaValueNormalizedLfSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc",
+      "textareaValueNormalizedLfUtf16CodeUnits": 4692,
+      "textareaHashExact": true
+    }
+  ],
+  "frontendSourceHashScope": {
+    "path": "backend/index.html",
+    "checkedAt": "2026-10-09T14:09:04.814Z",
+    "kind": "local checked-in source file, not a fetched deployment asset",
+    "rawSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
+    "normalizedLfSha256": "50e703544dddfe8eb25b6bdbcfebf40a12912a5707812560a4c34760c9e7178c",
+    "originalPromptBindingSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
+    "originalPromptBindingMatchesCurrentLocalRawFile": true,
+    "productionAssetHashVerified": false,
+    "note": "The former sourceHashes.frontend value was computed from the local backend/index.html when this expectation file was prepared. It currently equals both that local raw-file hash and the original-PROMPT raw source binding. It is not proof of the exact bytes deployed on Cloudflare."
+  },
+  "visiblePhraseCalibration": {
+    "preparedAt": "2026-10-09T14:31:07.141Z",
+    "reason": "The preserved Wang Jian article has a Markdown italic closing * at the source paragraph boundary. marked removes this delimiter when rendering; retaining it in the expected visible tail caused a false negative. Only boundary formatting delimiters are removed from expected snippets, never from original manuscripts.",
+    "boundaryPattern": "^[*_`]+|[*_`]+$",
+    "corrections": [
+      {
+        "id": "general_王翦_306401394",
+        "field": "analysis",
+        "rawSha256Unchanged": "aadd7b4bf9dcf190431fe0700959559df15c49bb540d6f6ccd9f8189cc1a238d",
+        "before": {
+          "head": "歷史的弔詭在於，後世往往偏愛那些充滿悲劇色彩、以少勝多、甚至功高震主的孤膽英雄（如項羽、韓信、白起），卻對真正將戰爭變成一門精確科學的「系統操作者」缺乏",
+          "tail": "理戰；政治98，在多疑嗜殺的秦始皇手下功高震主卻能全身而退，政治段位極高；魅力70，為人過於現實、冷酷且缺乏浪漫的英雄氣質，難以引發狂熱的個人崇拜。)*"
+        },
+        "after": {
+          "head": "歷史的弔詭在於，後世往往偏愛那些充滿悲劇色彩、以少勝多、甚至功高震主的孤膽英雄（如項羽、韓信、白起），卻對真正將戰爭變成一門精確科學的「系統操作者」缺乏",
+          "tail": "理戰；政治98，在多疑嗜殺的秦始皇手下功高震主卻能全身而退，政治段位極高；魅力70，為人過於現實、冷酷且缺乏浪漫的英雄氣質，難以引發狂熱的個人崇拜。)"
+        },
+        "headUniquePages": 1,
+        "tailUniquePages": 1
+      }
+    ],
+    "manuscriptsChanged": false,
+    "rawHashesChanged": false,
+    "allNineHeadPhrasesUnique": true,
+    "allNineTailPhrasesUnique": true,
+    "actualBrowserRetestPerformed": false,
+    "note": "This calibrates expected fixtures after an observed rendered-text mismatch. The prior false observation remains valid as its original receipt; the root agent will re-read and retest the actual page."
+  }
+}

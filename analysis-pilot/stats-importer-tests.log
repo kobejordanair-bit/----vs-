@@ -1,0 +1,21 @@
+✔ dry-run adds exactly four allowed fields and preserves Wang Jian and every completed article (6.8871ms)
+✔ apply saves complete snapshots and verifies all unaffected content hashes (4.8374ms)
+✔ Cloudflare save/load and user backup preserve the new reasons without discarding unknown fields (6.0923ms)
+✔ non-integer, out-of-range, short and malformed score arrays are rejected before any access (2.661ms)
+✔ other targets, rating/article edits, incomplete fields and duplicate records fail locally (1.2287ms)
+✔ existing source scores, malformed legacy scores or existing reasons are never overwritten (1.7965ms)
+✔ whole-figure hashes bind completed articles and stop a changed live target before another write (5.0518ms)
+✔ CAS retry merges the latest full map and preserves concurrent unrelated progress (5.6992ms)
+✔ approval is bound to stats phase, source, batch and base before any network access (5.851ms)
+✔ a mandatory backup failure prevents every write (3.8658ms)
+✔ ambiguous writes are never retried or reported as a definite non-write (4.834ms)
+✔ verification detects target mismatches and changes to any article, Wang score or document extra (5.2682ms)
+✔ 32 MiB limit, missing dimension reasons and unverified web provenance fail locally (130.8837ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 338.9428

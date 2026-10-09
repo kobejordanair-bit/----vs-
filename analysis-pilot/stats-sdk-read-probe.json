@@ -1,0 +1,10 @@
+{
+  "format": "dynasty-stats-sdk-read-probe",
+  "schemaVersion": 1,
+  "readAt": "2026-10-09T14:54:54.719Z",
+  "status": 200,
+  "revision": 3,
+  "visibleSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "sameAsPreflight": true,
+  "writeAttempted": false
+}

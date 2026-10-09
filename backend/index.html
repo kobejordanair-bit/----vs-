@@ -854,7 +854,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 </h3>
                 <div class="flex gap-3 items-center">
                     <!-- RegExp button for Radar regeneration -->
-                    <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新呼叫 AI 計算數值"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
+                    <button id="regenStatsBtn" onclick="forceRegenerateStats()" class="text-xs bg-[#d4af37] hover:bg-[#b45309] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="只重新計算五維數值與理由，保留賞析原文"><i class="fa-solid fa-rotate-right"></i> 重算五維</button>
                     <button id="regenDeepBtn" onclick="forceRegenerateDeep()" class="text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="清除快取，重新深度評鑑"><i class="fa-solid fa-rotate-right"></i> 重跑深度</button>
                     <button id="regenSoulEssenceBtn" onclick="forceRegenerateSoulEssence()" class="hidden text-xs bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="重新生成靈魂內核"><i class="fa-solid fa-rotate-right"></i> 重生內核</button>
                     <button id="extractScenesBtn" onclick="extractScenesFromCurrentTab()" class="hidden text-xs bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded transition-colors shadow-sm font-serif tracking-wider" title="從評鑑內容提取名場面"><i class="fa-solid fa-fire"></i> 提取名場面</button>
@@ -888,6 +888,12 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                         <p class="text-[#57534e] font-serif tracking-widest animate-pulse">準備材料中...</p>
                     </div>
                     <div id="radarChartContainer" class="chart-container hidden mx-auto max-w-md mb-8 bg-white p-4 rounded-xl border border-[#e5e0d3] shadow-sm"><canvas id="radarChart"></canvas></div>
+                    <section id="statsDetailsContainer" class="hidden mb-8 rounded-xl border border-[#e5e0d3] bg-[#faf7ef] p-5 font-serif" aria-label="五維能力數值與理由">
+                        <h4 class="font-bold text-[#57534e] mb-3">五維能力</h4>
+                        <div id="statsValues" class="grid grid-cols-5 gap-2 text-center mb-4"></div>
+                        <div id="statsAnalysisContent" class="prose prose-sm max-w-none text-[#57534e]"></div>
+                        <p id="statsGenerationStatus" class="text-sm mt-3" role="status" aria-live="polite"></p>
+                    </section>
                     <div id="modalContent" class="prose prose-slate max-w-none font-serif text-[#2c2826]"></div>
                 </div>
             </div>
@@ -1405,7 +1411,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             legendsData = legendsData.map(g => {
     const mod = appState.modifiedLegends[g.id];
     if (!mod) return g;
-    const hasRealMod = Object.keys(mod).some(k => !['stats','analysis'].includes(k));
+    const hasRealMod = Object.keys(mod).some(k => !['stats','analysis','statsAnalysis'].includes(k));
     return { ...g, ...mod, id: g.id, isModified: hasRealMod };
 });
             renderLegends();
@@ -1557,6 +1563,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
 
         // Modal & AI Logic
         function openModal(title, type = 'content') {
+            _resetStatsView();
             window.DynastySourceLinks?.clear();
             el('aiModal').classList.remove('hidden');
             el('evalTabBar').classList.add('hidden');
@@ -1574,13 +1581,14 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 el('contentContainer').classList.remove('hidden');
                 el('clearMemoryBtn').classList.add('hidden');
                 el('modalContent').innerHTML = ''; // Clear previous content
-                el('regenStatsBtn').classList.remove('hidden');
+                el('regenStatsBtn').classList.add('hidden');
                 el('regenDeepBtn').classList.remove('hidden');
                 el('exportCardBtn').classList.add('hidden');
             }
         }
 
         function closeModal() {
+            _resetStatsView();
             window.DynastySourceLinks?.clear();
             el('aiModal').classList.add('hidden');
             el('evalTabBar').classList.add('hidden');
@@ -2268,6 +2276,7 @@ name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、
         // AI Analysis & Stats Caching Logic
         let currentAnalysisId = null;
         let currentRequestToken = 0;
+        let currentStatsRequestToken = 0;
         async function showRelatedReactions(id, actionType) {
     const legend = legendsData.find(l => l.id === id);
     if (!legend) return;
@@ -2335,6 +2344,8 @@ ${allNames}
         function setEvalTab(tab) {
             if (!currentAnalysisId) return;
             currentEvalTab = tab;
+            _resetStatsView();
+            el('regenStatsBtn').classList.toggle('hidden', tab !== 'review');
             document.querySelectorAll('.eval-tab').forEach(b => b.classList.remove('eval-tab-active'));
             el(`eval-tab-${tab}`).classList.add('eval-tab-active');
             el('radarChartContainer').classList.add('hidden');
@@ -2451,6 +2462,7 @@ ${allNames}
 
         // 賞析 tab 內容載入
         async function _loadReviewContent(id, forceRegen = false) {
+            _resetStatsView();
             const legend = legendsData.find(l => l.id === id);
             if (!legend) return;
             const myToken = ++currentRequestToken;
@@ -2468,8 +2480,10 @@ ${allNames}
                 ? '<i class="fa-solid fa-rotate-right"></i> 重算五維'
                 : '<i class="fa-solid fa-wand-magic-sparkles"></i> 生成五維（AI）';
             statsButton.title = cachedStats
-                ? '重新呼叫 AI 計算數值'
-                : '呼叫 AI 生成五維數值，並重新生成賞析';
+                ? '只重新計算五維數值與理由，保留賞析原文'
+                : '只補上五維數值與理由，保留賞析原文';
+            statsButton.disabled = needsAnalysis;
+            _renderStatsDetails(legend);
 
             if (!needsAnalysis) {
                 el('loadingState').classList.add('hidden');
@@ -2516,22 +2530,27 @@ ${allNames}
                     if (jsonMatch) {
                         const statsData = JSON.parse(jsonMatch[0]);
                         appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
-                        appState.modifiedLegends[id].stats = statsData.stats;
+                        appState.modifiedLegends[id].stats = _validateStatsValues(statsData.stats);
+                        delete appState.modifiedLegends[id].statsAnalysis;
                         refreshData();
                         renderRadarChart(legend.name, statsData.stats);
                         cleanText = streamText.replace(jsonMatch[0], '');
                         el('regenStatsBtn').classList.remove('hidden');
                         statsButton.innerHTML = '<i class="fa-solid fa-rotate-right"></i> 重算五維';
-                        statsButton.title = '重新呼叫 AI 計算數值';
+                        statsButton.title = '只重新計算五維數值與理由，保留賞析原文';
                     }
                 }
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};
                 if (needsAnalysis) appState.modifiedLegends[id].analysis = cleanText;
                 syncToCloud();
+                statsButton.disabled = false;
+                _renderStatsDetails(legend);
                 el('extractScenesBtn').classList.remove('hidden'); el('extractScenesBtn').disabled = false; el('extractScenesBtn').innerHTML = '<i class="fa-solid fa-fire"></i> 提取名場面';
                 setModalContent(needsAnalysis ? cleanText : cachedAnalysis);
                 renderDiscussionPanel(id, needsAnalysis ? cleanText : cachedAnalysis);
             } catch(e) {
+                if (myToken !== currentRequestToken) return;
+                statsButton.disabled = false;
                 el('loadingState').classList.add('hidden');
                 el('modalContent').innerHTML = _aiErrorHTML("_loadReviewContent(currentAnalysisId, true)", e.message);
             }
@@ -2868,8 +2887,160 @@ ${rankingRef}
         el('modalContent').innerHTML = `<div class="text-center py-10 text-red-600"><i class="fa-solid fa-triangle-exclamation text-4xl mb-4"></i><br>關係網生成失敗<br><span class="text-xs text-gray-500">${escapeHtml(e.message)}</span></div>`;
     }
 }
+        // ── 獨立五維：不重寫任何人物文章 ──────────────────────
+        const STATS_DIMENSIONS = ['統率', '武力', '智謀', '政治', '魅力'];
+
+        function _resetStatsView() {
+            ++currentStatsRequestToken;
+            el('statsDetailsContainer').classList.add('hidden');
+            el('statsValues').innerHTML = '';
+            el('statsAnalysisContent').innerHTML = '';
+            el('statsGenerationStatus').textContent = '';
+            el('regenStatsBtn').disabled = false;
+        }
+
+        function _validateStatsValues(stats) {
+            if (!Array.isArray(stats) || stats.length !== 5 || stats.some(value => !Number.isInteger(value) || value < 0 || value > 100)) {
+                throw new Error('五維必須是依統率、武力、智謀、政治、魅力排列的五個 0–100 整數。');
+            }
+            return [...stats];
+        }
+
+        function _parseStatsJson(text) {
+            if (typeof text !== 'string') throw new Error('JSON text required');
+            const parsed = JSON.parse(text); // Validate the complete document before scanning its keys.
+            let position = 0;
+            const whitespace = () => { while (/[\t\n\r ]/.test(text[position] || '\u0000')) position++; };
+            function quoted() {
+                const start = position++;
+                while (position < text.length) {
+                    const character = text[position++];
+                    if (character === '\\') position++;
+                    else if (character === '"') return JSON.parse(text.slice(start, position));
+                }
+                throw new Error('Incomplete JSON string');
+            }
+            function visit(depth = 0) {
+                if (depth > 100) throw new Error('JSON nesting too deep');
+                whitespace();
+                const opening = text[position];
+                if (opening === '"') { quoted(); return; }
+                if (opening === '{' || opening === '[') {
+                    const isObject = opening === '{', closing = isObject ? '}' : ']';
+                    const keys = new Set();
+                    position++; whitespace();
+                    if (text[position] === closing) { position++; return; }
+                    for (;;) {
+                        if (isObject) {
+                            whitespace();
+                            const key = quoted(); // Decode escapes so "stats" and "\u0073tats" are the same key.
+                            if (keys.has(key)) {
+                                const error = new Error('Duplicate JSON key');
+                                error.code = 'duplicate_stats_json_key';
+                                throw error;
+                            }
+                            keys.add(key);
+                            whitespace(); position++; // Colon; syntax was already validated by JSON.parse.
+                        }
+                        visit(depth + 1);
+                        whitespace();
+                        if (text[position++] === closing) return;
+                    }
+                }
+                while (position < text.length && !/[,\]}\t\n\r ]/.test(text[position])) position++;
+            }
+            visit();
+            return parsed;
+        }
+
+        function _parseStatsOnlyResponse(text) {
+            let payload;
+            try { payload = _parseStatsJson(text); }
+            catch (error) {
+                throw new Error(error.code === 'duplicate_stats_json_key'
+                    ? '五維回覆含重複 JSON 欄位，未更新數值。'
+                    : '五維回覆不是完整 JSON，未更新數值。');
+            }
+            if (!payload || typeof payload !== 'object' || Array.isArray(payload) || Object.keys(payload).sort().join(',') !== 'reasons,stats') {
+                throw new Error('五維回覆格式不符，未更新數值。');
+            }
+            const stats = _validateStatsValues(payload.stats);
+            if (!Array.isArray(payload.reasons) || payload.reasons.length !== 5 || payload.reasons.some((item, index) =>
+                !item || typeof item !== 'object' || Array.isArray(item) || Object.keys(item).sort().join(',') !== 'dimension,reason' ||
+                item.dimension !== STATS_DIMENSIONS[index] || typeof item.reason !== 'string' ||
+                item.reason.replace(/\s/g, '').length < 30 || /待補|待續|TODO|TBD|\.\.\.|…/i.test(item.reason)
+            ) || payload.reasons.reduce((sum, item) => sum + item.reason.replace(/\s/g, '').length, 0) < 150) {
+                throw new Error('五項理由必須完整並依固定順序提供，未更新數值。');
+            }
+            const statsAnalysis = payload.reasons.map((item, index) => '### ' + item.dimension + '：' + stats[index] + '\n' + item.reason.trim()).join('\n\n');
+            return { stats, statsAnalysis };
+        }
+
+        function _renderStatsDetails(legend, status = '', isError = false) {
+            const stored = appState.modifiedLegends[legend.id] || {};
+            el('statsDetailsContainer').classList.remove('hidden');
+            const hasStats = Array.isArray(stored.stats) && stored.stats.length === 5;
+            el('statsValues').innerHTML = hasStats ? STATS_DIMENSIONS.map((label, index) =>
+                '<div class="rounded-lg bg-white border border-[#e5e0d3] py-2"><span class="block text-xs text-[#78716c]">' + label + '</span><strong class="text-lg text-[#57534e]">' + escapeHtml(String(stored.stats[index])) + '</strong></div>'
+            ).join('') : '<p class="col-span-5 text-sm text-[#78716c]">尚未建立五維數值，可按「生成五維（AI）」補上。</p>';
+            el('statsAnalysisContent').innerHTML = stored.statsAnalysis && hasStats
+                ? '<h5>五維評分理由</h5>' + safeMarkdown(stored.statsAnalysis)
+                : (hasStats ? '<p class="text-xs text-[#78716c]">尚未另存五維理由。重算五維可產生數值與理由。</p>' : '');
+            el('statsGenerationStatus').textContent = status;
+            el('statsGenerationStatus').className = 'text-sm mt-3 ' + (isError ? 'text-red-700' : 'text-[#78716c]');
+        }
+
+        async function _generateStatsOnly(id) {
+            if (currentAnalysisId !== id || currentEvalTab !== 'review' || el('evalTabBar').classList.contains('hidden') || el('regenStatsBtn').disabled) return;
+            const legend = legendsData.find(item => item.id === id);
+            if (!legend) return;
+            const myToken = ++currentStatsRequestToken;
+            const isCurrent = () => myToken === currentStatsRequestToken && currentAnalysisId === id && currentEvalTab === 'review';
+            const button = el('regenStatsBtn');
+            const stored = appState.modifiedLegends[id] || {};
+            button.disabled = true;
+            button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 計算五維中';
+            _renderStatsDetails(legend, '正在計算五維數值與理由…');
+            const prompt = `請評估${legend.name}（${legend.title}）的五維能力。只產生五維數值與各項理由，不重寫賞析、校準評級、靈魂內核、評級、標籤或人物簡介。
+採用角色本位：${legend.type === 'emperor' ? '根據作為帝王的統御、決策與國運' : legend.type === 'general' ? '根據作為將領的戰略、戰術與治軍' : '根據作為臣子的施政、輔佐與權謀'}。依具體史事說明依據，嚴格區分能力、時代局限與推測；不能因缺少武力史料就把軍事統率當成個人武力。
+
+【輸出格式】第一個字元為 {，最後一個字元為 }。只輸出一個完整 JSON 物件，不加 Markdown、程式碼框或其他前後文字，且只含以下兩個欄位：
+1. "stats"：剛好五個 0–100 的整數，固定順序為 [統率, 武力, 智謀, 政治, 魅力]。
+2. "reasons"：剛好五個物件，固定依統率、武力、智謀、政治、魅力排列；每個物件只含 "dimension" 與 "reason"。dimension 必須逐項使用上述完整名稱。每項 reason 至少 30 字，說明分數與具體史事的關係；五項理由合計至少 150 字，不得留待補或省略。
+
+【人物簡介】
+${legend.desc || ''}
+
+【既有賞析；僅供評分參考】
+${stored.analysis || ''}
+
+【既有校準評級；僅供評分參考】
+${stored.deepAnalysis || ''}`;
+            try {
+                let responseText = '';
+                await callGeminiStream(prompt, partial => { if (isCurrent()) responseText = partial; });
+                if (!isCurrent()) return;
+                const result = _parseStatsOnlyResponse(responseText);
+                appState.modifiedLegends[id] = { ...(appState.modifiedLegends[id] || {}), stats: result.stats, statsAnalysis: result.statsAnalysis };
+                refreshData();
+                syncToCloud();
+                if (!isCurrent()) return;
+                renderRadarChart(legend.name, result.stats);
+                _renderStatsDetails(legend, '五維數值與理由已更新。');
+            } catch (error) {
+                if (isCurrent()) _renderStatsDetails(legend, '五維生成失敗：' + error.message, true);
+            } finally {
+                if (isCurrent()) {
+                    button.disabled = false;
+                    const hasStats = !!appState.modifiedLegends[id]?.stats;
+                    button.innerHTML = hasStats ? '<i class="fa-solid fa-rotate-right"></i> 重算五維' : '<i class="fa-solid fa-wand-magic-sparkles"></i> 生成五維（AI）';
+                    button.title = hasStats ? '只重新計算五維數值與理由，保留賞析原文' : '只補上五維數值與理由，保留賞析原文';
+                }
+            }
+        }
+
         function forceRegenerateStats() {
-            if (currentAnalysisId) _loadReviewContent(currentAnalysisId, true);
+            if (currentAnalysisId) return _generateStatsOnly(currentAnalysisId);
         }
         function forceRegenerateDeep() {
             if (!currentAnalysisId) return;
@@ -3031,12 +3202,21 @@ if (needStats) {
     const jsonMatch = streamText.match(/\{"stats1":\s*\[.*?\],\s*"stats2":\s*\[.*?\]\}/);
     if (jsonMatch) {
         const statsData = JSON.parse(jsonMatch[0]);
-        s1 = statsData.stats1;
-        s2 = statsData.stats2;
-        appState.modifiedLegends[p1.id] = appState.modifiedLegends[p1.id] || {};
-        appState.modifiedLegends[p2.id] = appState.modifiedLegends[p2.id] || {};
-        appState.modifiedLegends[p1.id].stats = s1;
-        appState.modifiedLegends[p2.id].stats = s2;
+        const generatedS1 = _validateStatsValues(statsData.stats1);
+        const generatedS2 = _validateStatsValues(statsData.stats2);
+        s1 = p1Stats || generatedS1;
+        s2 = p2Stats || generatedS2;
+        if (!p1Stats) {
+            appState.modifiedLegends[p1.id] = appState.modifiedLegends[p1.id] || {};
+            appState.modifiedLegends[p1.id].stats = s1;
+            delete appState.modifiedLegends[p1.id].statsAnalysis;
+        }
+        if (!p2Stats) {
+            appState.modifiedLegends[p2.id] = appState.modifiedLegends[p2.id] || {};
+            appState.modifiedLegends[p2.id].stats = s2;
+            delete appState.modifiedLegends[p2.id].statsAnalysis;
+        }
+        refreshData();
         syncToCloud();
         cleanText = streamText.replace(jsonMatch[0], '');
         el('modalContent').innerHTML = safeMarkdown(cleanText);

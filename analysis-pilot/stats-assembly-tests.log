@@ -1,0 +1,76 @@
+TAP version 13
+# Subtest: actual-export packaging copies exactly two arrays and reasons without changing prose
+ok 1 - actual-export packaging copies exactly two arrays and reasons without changing prose
+  ---
+  duration_ms: 7.8795
+  type: 'test'
+  ...
+# Subtest: first line must have the sole stats key and exactly five integer values in range
+ok 2 - first line must have the sole stats key and exactly five integer values in range
+  ---
+  duration_ms: 3.1762
+  type: 'test'
+  ...
+# Subtest: headings must match five scores and order, with no missing or duplicate dimension
+ok 3 - headings must match five scores and order, with no missing or duplicate dimension
+  ---
+  duration_ms: 1.6124
+  type: 'test'
+  ...
+# Subtest: completion must be unique, last, and bound to the exact person
+ok 4 - completion must be unique, last, and bound to the exact person
+  ---
+  duration_ms: 0.8124
+  type: 'test'
+  ...
+# Subtest: scope and published input bindings reject unrelated or duplicate figures
+ok 5 - scope and published input bindings reject unrelated or duplicate figures
+  ---
+  duration_ms: 4.087
+  type: 'test'
+  ...
+# Subtest: each original article, source package, prompt and input binding must match capture
+ok 6 - each original article, source package, prompt and input binding must match capture
+  ---
+  duration_ms: 2.0917
+  type: 'test'
+  ...
+# Subtest: passed and current factual QA is required, including no outstanding material issues
+ok 7 - passed and current factual QA is required, including no outstanding material issues
+  ---
+  duration_ms: 3.0468
+  type: 'test'
+  ...
+# Subtest: reference version and public context metadata are bound without accepting private keys
+ok 8 - reference version and public context metadata are bound without accepting private keys
+  ---
+  duration_ms: 4.0268
+  type: 'test'
+  ...
+# Subtest: actual browser search evidence and raw export hashes cannot be fabricated from flags alone
+ok 9 - actual browser search evidence and raw export hashes cannot be fabricated from flags alone
+  ---
+  duration_ms: 3.3256
+  type: 'test'
+  ...
+# Subtest: all manuscript links must be checked, and external-source receipts need HTTPS title and locator
+ok 10 - all manuscript links must be checked, and external-source receipts need HTTPS title and locator
+  ---
+  duration_ms: 4.5785
+  type: 'test'
+  ...
+# Subtest: invalid ChatGPT conversation metadata and fabricated search UI are rejected at capture
+ok 11 - invalid ChatGPT conversation metadata and fabricated search UI are rejected at capture
+  ---
+  duration_ms: 3.418
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 165.7086

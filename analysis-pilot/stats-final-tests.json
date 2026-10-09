@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "totalTests": 116,
+  "totalPass": 116,
+  "totalFail": 0,
+  "groups": [
+    {
+      "name": "legacy-integration-without-helpers",
+      "command": "node --test --test-reporter=tap cloudflare/scripts/build-assets.test.mjs cloudflare/tests/analysis-pilot-delivery.test.mjs cloudflare/tests/analysis-pilot-import.test.mjs cloudflare/tests/analysis-pilot-layers-import.test.mjs cloudflare/tests/analysis-review-cache.test.mjs cloudflare/tests/complete-pilot-verification.test.mjs",
+      "historicalNote": "The earlier 66-test run contained 56 tests here plus 10 helper tests; helpers now have 13 tests and are run once in their own group.",
+      "exitCode": 0,
+      "tests": 56,
+      "pass": 56,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "public-prompt-helpers",
+      "command": "node --test --test-reporter=tap cloudflare/tests/analysis-pilot-helpers.test.mjs",
+      "exitCode": 0,
+      "tests": 13,
+      "pass": 13,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "stats-ui-audit-binding-importer",
+      "command": "node --test --test-reporter=tap cloudflare/tests/analysis-stats-only.test.mjs cloudflare/tests/audit-counts.test.mjs cloudflare/tests/analysis-pilot-original-binding.test.mjs cloudflare/tests/analysis-pilot-stats-import.test.mjs",
+      "exitCode": 0,
+      "tests": 36,
+      "pass": 36,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "stats-capture-assembly",
+      "tests": 11,
+      "pass": 11,
+      "fail": 0
+    }
+  ],
+  "inlineScriptsSyntaxValid": 4
+}

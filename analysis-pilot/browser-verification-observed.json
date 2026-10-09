@@ -1,0 +1,302 @@
+{
+  "format": "dynasty-browser-verification-observed",
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-09T14:50:21.573Z",
+  "origin": "https://dynasty.piamamba.com/play",
+  "status": "verification_in_progress",
+  "expectedPageCount": 9,
+  "openedArticleCount": 9,
+  "completeNinePageVerification": true,
+  "observations": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "field": "analysis",
+      "observedAt": "2026-10-09T14:27:49.635Z",
+      "bodyCharacters": 5217,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionCount": 4,
+      "headingCount": 12,
+      "passed": true
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "field": "deepAnalysis",
+      "observedAt": "2026-10-09T14:28:00.913Z",
+      "bodyCharacters": 4454,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionCount": 5,
+      "headingCount": 12,
+      "passed": true
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "field": "soulEssence",
+      "observedAt": "2026-10-09T14:28:18.034Z",
+      "bodyCharacters": 4618,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionCount": 7,
+      "soulExactLfSha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b",
+      "soulHashMatch": true,
+      "passed": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "field": "deepAnalysis",
+      "observedAt": "2026-10-09T14:47:35.651Z",
+      "modalTitle": "王翦 · 評鑑",
+      "activeTab": "eval-tab-calibrate",
+      "bodyCharacters": 4572,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionChecks": [
+        {
+          "label": "榜單錨定",
+          "present": true
+        },
+        {
+          "label": "獨立史學剖析",
+          "present": true
+        },
+        {
+          "label": "縱向標定與雙向防線",
+          "present": true
+        },
+        {
+          "label": "全榜邏輯一致性校準",
+          "present": true
+        },
+        {
+          "label": "建議定案",
+          "present": true
+        }
+      ],
+      "headingCount": 13,
+      "expectedHeadingCount": 13,
+      "radarVisible": false,
+      "loadingVisible": false,
+      "sourceHref": "https://dynasty.piamamba.com/source-archive#tab=people&person=general_%E7%8E%8B%E7%BF%A6_306401394",
+      "passed": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "field": "analysis",
+      "observedAt": "2026-10-09T14:47:47.016Z",
+      "modalTitle": "王翦 · 評鑑",
+      "activeTab": "eval-tab-review",
+      "bodyCharacters": 2532,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionChecks": [
+        {
+          "label": "歷史局勢與定位",
+          "present": true
+        },
+        {
+          "label": "深度功過剖析",
+          "present": true
+        },
+        {
+          "label": "人性與性格側寫",
+          "present": true
+        },
+        {
+          "label": "如果生在現代",
+          "present": true
+        }
+      ],
+      "headingCount": 6,
+      "expectedHeadingCount": 6,
+      "radarVisible": true,
+      "loadingVisible": false,
+      "sourceHref": "https://dynasty.piamamba.com/source-archive#tab=people&person=general_%E7%8E%8B%E7%BF%A6_306401394",
+      "passed": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "field": "analysis",
+      "observedAt": "2026-10-09T14:48:53.865Z",
+      "modalTitle": "姚崇 · 評鑑",
+      "activeTab": "eval-tab-review",
+      "bodyCharacters": 5840,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionChecks": [
+        {
+          "label": "歷史局勢與定位",
+          "present": true
+        },
+        {
+          "label": "深度功過剖析",
+          "present": true
+        },
+        {
+          "label": "人性與性格側寫",
+          "present": true
+        },
+        {
+          "label": "如果生在現代",
+          "present": true
+        }
+      ],
+      "headingCount": 12,
+      "expectedHeadingCount": 12,
+      "radarVisible": false,
+      "loadingVisible": false,
+      "sourceHref": "https://dynasty.piamamba.com/source-archive#tab=people&person=minister_%E5%A7%9A%E5%B4%87_2003901767",
+      "passed": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "field": "deepAnalysis",
+      "observedAt": "2026-10-09T14:48:56.137Z",
+      "modalTitle": "姚崇 · 評鑑",
+      "activeTab": "eval-tab-calibrate",
+      "bodyCharacters": 4660,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionChecks": [
+        {
+          "label": "榜單錨定",
+          "present": true
+        },
+        {
+          "label": "獨立史學剖析",
+          "present": true
+        },
+        {
+          "label": "縱向標定與雙向防線",
+          "present": true
+        },
+        {
+          "label": "全榜邏輯一致性校準",
+          "present": true
+        },
+        {
+          "label": "建議定案",
+          "present": true
+        }
+      ],
+      "headingCount": 13,
+      "expectedHeadingCount": 13,
+      "radarVisible": false,
+      "loadingVisible": false,
+      "sourceHref": "https://dynasty.piamamba.com/source-archive#tab=people&person=minister_%E5%A7%9A%E5%B4%87_2003901767",
+      "passed": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "field": "soulEssence",
+      "observedAt": "2026-10-09T14:49:19.839Z",
+      "modalTitle": "姚崇 · 評鑑",
+      "activeTab": "eval-tab-soul-essence",
+      "bodyCharacters": 4692,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionChecks": [
+        {
+          "label": "說話邏輯",
+          "present": true
+        },
+        {
+          "label": "壓力反應",
+          "present": true
+        },
+        {
+          "label": "核心驅動",
+          "present": true
+        },
+        {
+          "label": "慣性盲點",
+          "present": true
+        },
+        {
+          "label": "情感結構",
+          "present": true
+        },
+        {
+          "label": "參照系",
+          "present": true
+        },
+        {
+          "label": "內在裂縫",
+          "present": true
+        }
+      ],
+      "headingCount": 0,
+      "expectedHeadingCount": 0,
+      "radarVisible": false,
+      "loadingVisible": false,
+      "sourceHref": "https://dynasty.piamamba.com/source-archive#tab=people&person=minister_%E5%A7%9A%E5%B4%87_2003901767",
+      "soulExactLfSha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc",
+      "soulHashMatch": true,
+      "passed": true,
+      "phraseNormalization": "Ignore bold Markdown delimiters for phrase checks only; exact full raw LF SHA remains required."
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "field": "soulEssence",
+      "observedAt": "2026-10-09T14:50:21.573Z",
+      "modalTitle": "王翦 · 評鑑",
+      "activeTab": "eval-tab-soul-essence",
+      "bodyCharacters": 4493,
+      "headMatch": true,
+      "tailMatch": true,
+      "sectionChecks": [
+        {
+          "label": "說話邏輯",
+          "present": true
+        },
+        {
+          "label": "壓力反應",
+          "present": true
+        },
+        {
+          "label": "核心驅動",
+          "present": true
+        },
+        {
+          "label": "慣性盲點",
+          "present": true
+        },
+        {
+          "label": "情感結構",
+          "present": true
+        },
+        {
+          "label": "參照系",
+          "present": true
+        },
+        {
+          "label": "內在裂縫",
+          "present": true
+        }
+      ],
+      "headingCount": 0,
+      "expectedHeadingCount": 0,
+      "radarVisible": false,
+      "loadingVisible": false,
+      "sourceHref": "https://dynasty.piamamba.com/source-archive#tab=people&person=general_%E7%8E%8B%E7%BF%A6_306401394",
+      "soulExactLfSha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116",
+      "soulHashMatch": true,
+      "passed": true,
+      "phraseNormalization": "Ignore bold Markdown delimiters for phrase checks only; exact full raw LF SHA remains required."
+    }
+  ],
+  "pending": [],
+  "constraint": "Browser inventory still lists the correct website tab, but DOM and screenshot operations are unavailable. Page was preserved without reload; user has been asked to foreground it and close developer tools if open.",
+  "productionWriteActionsDuringBrowserVerification": [],
+  "privateStateExported": false,
+  "priorImportAudit": "complete-delivery-audit.json"
+}

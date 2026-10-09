@@ -49,6 +49,14 @@ export function renderOriginalTemplate(template, { legend, rankingRef = '', sour
   }
   return output;
 }
+export function verifyOriginalTemplateLiterals(source, templates) {
+  if (typeof source !== 'string' || !Array.isArray(templates) || !templates.length) bad('original_template_source_mismatch');
+  const normalized = source.replace(/\r\n/g, '\n');
+  if (templates.some(template => typeof template?.rawTemplateLiteral !== 'string'
+    || sha256(template.rawTemplateLiteral) !== template.templateSha256
+    || !normalized.includes(template.rawTemplateLiteral.replace(/\r\n/g, '\n')))) bad('original_template_source_mismatch');
+  return true;
+}
 export async function loadOriginalPromptMaterials() {
   const original = JSON.parse(await readFile(resolve(here, 'original-prompts.v1.json'), 'utf8'));
   if (original.format !== 'dynasty-original-analysis-prompts' || original.schemaVersion !== 1 || original.verification?.userdataRead !== false) bad('invalid_original_prompt_package');
@@ -56,9 +64,14 @@ export async function loadOriginalPromptMaterials() {
   let binding;
   try { binding = JSON.parse(await readFile(resolve(here, 'website-source-binding.json'), 'utf8')); }
   catch (error) { if (error.code === 'ENOENT') bad('missing_website_source_binding'); throw error; }
-  const normalizedSource = verifyWebsiteSourceBinding(websiteSource, original.source, binding);
-  const templates = [original.templates?.deepCalibration, original.templates?.analysis, original.templates?.soulEssence, original.templates?.soulEssence?.sourceBlockTemplates?.withContext, original.templates?.soulEssence?.sourceBlockTemplates?.withoutContext];
-  if (templates.some(template => typeof template?.rawTemplateLiteral !== 'string' || sha256(template.rawTemplateLiteral) !== template.templateSha256 || !normalizedSource.includes(template.rawTemplateLiteral.replace(/\r\n/g, '\n')))) bad('original_template_source_mismatch');
+  if (binding.archive?.path !== 'analysis-pilot/original-website-source.html'
+    || binding.archive.rawSha256 !== original.source.sha256) bad('invalid_website_source_binding');
+  const archiveSource = await readFile(resolve(here, 'original-website-source.html'), 'utf8');
+  const normalizedSource = verifyWebsiteSourceBinding(archiveSource, original.source, binding);
+  const templates = [original.templates?.deepCalibration, original.templates?.analysis, original.templates?.analysis?.conditionalStatsAppend, original.templates?.soulEssence, original.templates?.soulEssence?.sourceBlockTemplates?.withContext, original.templates?.soulEssence?.sourceBlockTemplates?.withoutContext];
+  verifyOriginalTemplateLiterals(normalizedSource, templates);
+  // UI fixes may evolve. The original literal prompts must still be byte-equivalent.
+  verifyOriginalTemplateLiterals(websiteSource, templates);
   const index = JSON.parse(await readFile(resolve(here, 'style-samples.v1.json'), 'utf8'));
   if (index.format !== 'dynasty-existing-style-samples' || index.schemaVersion !== 1 || index.privateFieldsIncluded !== false || !Array.isArray(index.samples)) bad('invalid_style_index');
   const styles = {};

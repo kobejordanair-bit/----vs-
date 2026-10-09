@@ -1,0 +1,14 @@
+Browser tab: 1, Title: "確認工作區與目標ID", URL: "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 446-448, 519, 521-522
++							521 container
++								522 button (expanded) 處理時間為 2m 39s, Secondary Actions: Collapse
++								523 text 處理時間為 2m 39s
++								524 text 評估人物能力
++								525 text 整理並評估姚崇史料與軍政能力評分
++								526 text 整理史料來源 調整並定稿能力評分框架 完成整體評估
++								527 text 已搜尋 10 個網站
+~							507 button 複製
++								528 image
++							529 button 捲動至底部
+The focused UI element is 522 button (expanded) 處理時間為 2m 39s, Secondary Actions: Collapse
