@@ -25,7 +25,13 @@
     "GEMINI_PRIMARY_MODEL": "gemini-2.5-pro",
     "GEMINI_FALLBACK_MODEL": "gemini-3-flash-preview"
   },
-  "d1_databases": [],
+  "d1_databases": [
+    {
+      "binding": "DYNASTY_DB",
+      "database_name": "dynasty-data",
+      "database_id": "53b88a89-c3bd-43ea-8b1f-33d8fb164f71"
+    }
+  ],
   "durable_objects": {
     "bindings": [{ "name": "DYNASTY_API", "class_name": "DynastyApi" }]
   },

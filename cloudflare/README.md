@@ -59,6 +59,32 @@ Python 依賴見 `../requirements-dev.txt`。本機合成測試不使用真實 G
 世界資料維持原 8MiB 上限；userdata 分塊總額上限 32MiB。所有 D1 row 小於 2MB，不能把大型文件放單列。
 SSE 維持 model/text/[DONE] 格式；錯誤或不完整回覆保留已顯示文字，禁止宣稱完成。
 
+## 正式 API 驗證
+
+先完成部署、完整 D1 原件比對並設定 `DATA_READY=true`，再執行驗證。切換 DNS 前將 `--origin` 換成已部署的 workers.dev 預覽網址；切換後使用正式網址。密鑰 JSON 只從私人檔案取得 `APP_SECRET`，不把密碼放進命令列；`--source` 指向完整 `dynasty-migration-snapshot` 快照。以下私人路徑是示例，請換成實際備份路徑，每次使用新的報告檔名。
+
+預設只讀資料；登入檢查不修改人物或世界文件：
+
+```sh
+node scripts/verify-live-api.mjs --origin https://dynasty.piamamba.com --secret-file ./private/secrets.json --source ./private/mongo-snapshot/snapshot.json --output ./private/live-read-only-report.json
+```
+
+確認需要正式同值寫入測試時才加 `--check-writes`；這會將 userdata 一個原有欄位完整原值再存一次，revision 增加 1，再驗證舊 revision 返回 409、內容保持。若原本存在世界文件，也以完整原 workspace 同值保存、revision 增加 1。**原世界文件不存在時只驗證 GET 的 null／revision 0，不建立新空世界文件、不發 world POST。** 世界寫入與並行 CAS 已由本機真實 workerd 測試驗證。
+
+```sh
+node scripts/verify-live-api.mjs --origin https://dynasty.piamamba.com --secret-file ./private/secrets.json --source ./private/mongo-snapshot/snapshot.json --output ./private/live-write-report.json --check-writes
+```
+
+只有已授權實際 AI 費用時才加 `--check-ai`；這會發出三次很短的請求，分別驗證一般文字、JSON 與 SSE 完整 `[DONE]`。可與 `--check-writes` 合用；預設不呼叫 AI。
+
+若一次驗全部項目，可在同一條命令加上 `--check-writes --check-ai`。正式同值寫入完成後，舊來源快照的 revision 已過期；後續再次比對請使用新匯出的目的庫完整快照，避免將正常 revision 增加誤判為資料不一致。
+
+```sh
+node scripts/verify-live-api.mjs --origin https://dynasty.piamamba.com --secret-file ./private/secrets.json --source ./private/mongo-snapshot/snapshot.json --output ./private/live-ai-report.json --check-ai
+```
+
+API 原件比對包含 userdata 全欄位、未知欄位、revision，以及 world 的 revision／完整 workspace。原 Python API 不暴露世界頂層其他 envelope 欄位，報告只列其數量；這些欄位須以完整 D1 快照比對，不能用 API 結果代替。來源內容不一致時跳過正式寫入及 AI 請求。報告與錯誤不包含密鑰、token、原文或私人人物 ID；只記錄固定狀態、雜湊、數量、模型與 revision 變動。已存在的報告檔案會在任何網路請求前拒絕覆寫。
+
 ## 回復
 
 切換前可取消搬家、解除原站唯讀，目的庫保留作查核。**切換後不可直接把 DNS 指回原 Mongo，否則會遺失新站存檔。**先暫停新寫入、匯出 D1 原件及新進度，核對雙邊差異，再還原到原站或修復 Cloudflare。舊 token 不含 HMAC 支援的原 Python 端不接受新登入 token，回復需重新登入。
