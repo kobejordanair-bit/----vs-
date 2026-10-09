@@ -5,3 +5,8 @@ legends_v15_0.json
 gcp_key.json
 .pytest_cache/
 /data/source-archive/harvest-cache.json
+/cloudflare/build/
+/cloudflare/.wrangler/
+/cloudflare/node_modules/
+/cloudflare/.dev.vars*
+/cloudflare/private/

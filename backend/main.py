@@ -18,6 +18,9 @@ from world_workspace import create_router as create_world_router
 import asyncio
 import threading
 import queue as stdlib_queue
+import re
+from urllib.parse import urlsplit, urlunsplit
+from fastapi.responses import RedirectResponse
 
 load_dotenv()
 
@@ -48,6 +51,71 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def migration_origin(value: str) -> str:
+    """Accept a deployment origin, never credentials or a redirect URL."""
+    if not value:
+        return ""
+    invalid = "MIGRATION_TARGET_ORIGIN 必須是沒有路徑、帳密或查詢參數的 HTTPS 網域"
+    if any(character.isspace() for character in value) or "\\" in value:
+        raise ValueError(invalid)
+    try:
+        parsed = urlsplit(value)
+        hostname = parsed.hostname or ""
+        port = parsed.port
+    except ValueError:
+        raise ValueError(invalid) from None
+    labels = hostname.split(".")
+    if (
+        parsed.scheme != "https"
+        or parsed.username is not None
+        or parsed.password is not None
+        or parsed.path not in {"", "/"}
+        or parsed.query
+        or parsed.fragment
+        or port not in {None, 443}
+        or len(hostname) > 253
+        or len(labels) < 2
+        or not all(re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?", label) for label in labels)
+        or parsed.netloc.lower() not in {hostname, hostname + ":443"}
+    ):
+        raise ValueError(invalid)
+    return "https://" + hostname
+
+
+MIGRATION_READ_ONLY = os.getenv("MIGRATION_READ_ONLY", "false").lower().strip()
+if MIGRATION_READ_ONLY not in {"true", "false", "1", "0", "yes", "no", "on", "off"}:
+    raise ValueError("MIGRATION_READ_ONLY 必須是 true 或 false")
+MIGRATION_READ_ONLY = MIGRATION_READ_ONLY in {"true", "1", "yes", "on"}
+MIGRATION_TARGET_ORIGIN = migration_origin(os.getenv("MIGRATION_TARGET_ORIGIN", ""))
+MIGRATION_PAGE_PATHS = {
+    "/": "/",
+    "/play": "/play",
+    "/index.html": "/play",
+    "/history-lab": "/history-lab",
+    "/history-lab.html": "/history-lab.html",
+    "/source-archive": "/source-archive",
+    "/source-archive.html": "/source-archive.html",
+}
+
+
+@app.middleware("http")
+async def migration_gate(request: Request, call_next):
+    # Old tabs retain their local progress while both cloud collections are frozen.
+    path = request.url.path.rstrip("/") or "/"
+    if MIGRATION_READ_ONLY and request.method == "POST" and path in {"/api/userdata", "/api/world-workspace"}:
+        return JSONResponse(
+            status_code=503,
+            content={"detail": "網站搬遷中，雲端暫停儲存；本機進度仍保留，請先匯出完整備份，待新站開放後再同步。"},
+            headers={"Cache-Control": "no-store", "Retry-After": "300", "X-Dynasty-Migration": "read-only"},
+        )
+    if MIGRATION_TARGET_ORIGIN and request.method in {"GET", "HEAD"} and path in MIGRATION_PAGE_PATHS:
+        # urlunsplit prevents a user-supplied path or query from changing the host.
+        target = urlsplit(MIGRATION_TARGET_ORIGIN)
+        location = urlunsplit((target.scheme, target.netloc, MIGRATION_PAGE_PATHS[path], request.url.query, ""))
+        return RedirectResponse(location, status_code=307, headers={"Cache-Control": "no-store"})
+    return await call_next(request)
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
