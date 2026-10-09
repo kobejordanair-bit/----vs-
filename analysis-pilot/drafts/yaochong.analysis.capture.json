@@ -1,0 +1,34 @@
+{
+  "provider": "ChatGPT web",
+  "recordId": "minister_姚崇_2003901767",
+  "field": "analysis",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T11:34:39.128Z",
+  "promptSha256": "3d0102f1b441682b58eefe18ea010df18a9a4dc4dd8c159317d1a648648093e1",
+  "responseSha256": "f8ab7701c8c62062d176f2a5cf0627e5874a378922a1084d1a3554e2066bb8c4",
+  "fragments": [
+    {
+      "file": "yaochong.analysis.raw.md",
+      "sha256": "9506f0f1b9d4a07b33110f94cfdd11443381480c1b6888358b191c3e3139391b"
+    }
+  ],
+  "contextFiles": [],
+  "webSearchPerformed": true,
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 19 個網站",
+    "visibleSearchCount": 19,
+    "file": "analysis-pilot/drafts/yaochong.analysis.search-evidence.txt",
+    "sha256": "6125ed18a06534d4e37606ff5854292189dfd90af8d083ee18a6296379d67142"
+  },
+  "composition": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained. One source URL was replaced with the verified official journal full text; historical prose unchanged.",
+  "removedCardLines": 8,
+  "editorialCorrections": [
+    {
+      "kind": "citation_url_only",
+      "originalUrl": "https://www.airitilibrary.com/Article/Detail/P20160922002-198810-201610170023-201610170023-209-230",
+      "verifiedOfficialUrl": "https://www.chibs.edu.tw/ch_html/chbj/02/chbj0207.htm",
+      "reason": "Verified same article in official journal archive; no historical prose altered."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_姚崇_2003901767",
+  "reviewedAt": "2026-10-09T10:42:17.825Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/yaochong.md",
+  "sourcePackageFile": "analysis-pilot/sources/yaochong.md",
+  "manuscriptSha256": "ce06bdacc1a5ebb5cd32bd9a0206f5f3b2a3f5360314f8db0833f60b2bf68fc7",
+  "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+  "passed": true,
+  "materialIssues": [],
+  "resolvedIssues": [
+    {
+      "id": "saving-the-times-attribution",
+      "originalManuscriptLine": 107,
+      "issue": "原稿將救時概括歸為後代評論，原所列兩唐書段落亦未包含該稱語。",
+      "resolution": "已補經查證的通鑑211齊澣／姚崇問答至來源包；實際 ChatGPT 修訂稿精確區分當時人物評語、後代編纂、非臣光曰與非逐字實錄，並補固定版本來源。",
+      "correctionCaptureFile": "analysis-pilot/drafts/yaochong-fix.raw.md",
+      "resolvedInManuscriptSha256": "ce06bdacc1a5ebb5cd32bd9a0206f5f3b2a3f5360314f8db0833f60b2bf68fc7"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-and-completion",
+      "passed": true,
+      "detail": "姚崇名臣／宰相身份正確，沒有混入姚氏子孫或宋璟個人功績；五個建議欄位與精確人物 ID 完成標記齊備。"
+    },
+    {
+      "id": "ten-proposals-attribution",
+      "passed": true,
+      "detail": "十事明確歸《新唐書》124，不誤引為《舊唐書》96逐項記錄；十項概述與來源相符，713年復相紀年一致，未推定所有條款徹底實現。"
+    },
+    {
+      "id": "administration-and-clerical-registration",
+      "passed": true,
+      "detail": "裁撤冗職、修制度、擇才、避免數移吏，以及1.2萬餘偽濫僧籍還俗，有兩唐書對應段落；數字不換算成已證新增財政額。"
+    },
+    {
+      "id": "locust-control",
+      "passed": true,
+      "detail": "716年捕蝗、倪若水、盧懷慎、14萬石與後來蝗害止息均有原典；限制现代重量換算與單一政策因果，沒有將姚崇塑造成完全脫離當時宗教世界觀的現代科學家。"
+    },
+    {
+      "id": "political-conflicts-and-family",
+      "passed": true,
+      "detail": "張說與岐王、魏知古及其子受饋、趙誨受賕／營救／去相，有明確出處；權術與親族失察作為評價因素，不冒稱確知其內心。"
+    },
+    {
+      "id": "saving-the-times-quote",
+      "passed": true,
+      "detail": "新第107行及固定版本補記與實際 ChatGPT 修訂原稿一致；通鑑211 text[4723:4910]可核對齊澣語與姚崇應答，沒有當成司馬光直接史論。"
+    },
+    {
+      "id": "anchors-and-role-boundaries",
+      "passed": true,
+      "detail": "蕭何S、張居正S、王安石S-、于謙S-、狄仁傑A+五錨點與任務一致，完成上、同、下檔比較；S-及遊戲行動傾向是評價／推論。"
+    },
+    {
+      "id": "source-and-causality-limits",
+      "passed": true,
+      "detail": "保留两唐書承襲、問答非實錄、特殊字形未解、未對勘與長期制度效益限制；沒有把開元盛世全歸姚崇。"
+    }
+  ],
+  "caveats": [
+    "本次是限定古籍轉錄包的來源審核，未完成印本逐字對勘、捕蝗實際效果統計或長期財政評估；稿已列相應限制。",
+    "古籍中山東為當時山以東地域稱謂，包含所論河南、河北等範圍，不能直接對應現代山東省。稿未宣稱現代省界，地理層使用時仍須註明。",
+    "五個比較錨點的詳細事功未在此來源包逐人核讀，其等級與能力高下是本榜評價，不是史料證據。",
+    "passed 只准此精確 SHA 進入只補 deepAnalysis 流程，不自動套用評級、稱號、標籤、簡評、判詞，也不變更其他既有資料。"
+  ],
+  "metrics": {
+    "characters": 4830,
+    "chineseCharacters": 3390,
+    "anchors": 5
+  }
+}

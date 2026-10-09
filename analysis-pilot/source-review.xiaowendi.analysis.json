@@ -1,0 +1,102 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_北魏孝文帝_33257620",
+  "field": "analysis",
+  "reviewedAt": "2026-10-09T11:36:19.290Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/xiaowendi.analysis.md",
+  "sourcePackageFile": "analysis-pilot/sources/xiaowendi.md",
+  "manuscriptSha256": "bd64904b4d83d174dfa19835e7ef6c59dfea29103600cc8bdeb971b711dac18c",
+  "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-structure-completion",
+      "passed": true,
+      "detail": "467–499、元宏身份及四章賞析正文完整；標記對應 analysis 與人物 ID；未夾入 stats／五維 JSON。"
+    },
+    {
+      "id": "reform-credit-chronology",
+      "passed": true,
+      "detail": "439北涼主政權覆滅、471虛歲5即位、476太后再臨朝、484俸祿／485均田／486三長、490崩／491始聽政與原典相符；李沖提議、馮太后支持與孝文親政的貢獻有區分。"
+    },
+    {
+      "id": "migration-institutions",
+      "passed": true,
+      "detail": "493南伐與遷都抉擇、營建洛京（魏書董爵異文）、職員令21卷、494考績、495六宮百官遷洛及朝廷禁北語／河南葬、496元氏均有原典支持；未把朝廷禁語擴大到所有民眾。"
+    },
+    {
+      "id": "military-north-garrisons",
+      "passed": true,
+      "detail": "497–498新野南陽、499陳顯達及4月死年虛歲33；494八月北巡懷朔／武川／撫冥／柔玄與救恤均可核魏7下；523六鎮明置後世多因背景。"
+    },
+    {
+      "id": "yuanxun-new-source",
+      "passed": true,
+      "detail": "第137–139行與魏22廢太子段相符；496廢立與其後賜死順序正確，李彪告謀逆未寫作已確證事實，太和22年申辯書隱匿未究有傳文依據。"
+    },
+    {
+      "id": "childhood-biography-and-personality",
+      "passed": true,
+      "detail": "太后疑廢、好經史、文章、史官直書、救恤／農田補償／寬近侍均可核魏7下傳末及北史3；政治不安全感、改革權力重組與現代職務定位是依史事提出的分析，非臆造原典引語。"
+    },
+    {
+      "id": "external-citation-scope",
+      "passed": true,
+      "detail": "六項原有正文外部引用及新增魏22均可讀且論點不超出已核內容；Oxford與康樂只核公開摘要，未冒稱全文；MDPI城市記憶未歸胡太后永寧寺為孝文親建。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "魏書／卷53〈李沖傳〉",
+      "url": "https://zh.wikisource.org/zh/魏書/卷53",
+      "locator": "李沖段：舊無三長…沖創三長…文明太后議行；及文明太后崩後、高祖議禮儀律令訪決李沖段（網頁行180–184）。"
+    },
+    {
+      "title": "資治通鑑／卷138",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=1553998",
+      "locator": "493年五月平城／南伐／任城王澄廷議；九月洛陽群臣請止南伐、南伐與遷都抉擇、十月營都段（網頁行137–138、172–175）。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter16: To Luoyang (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960388",
+      "locator": "官方公開 Abstract（另以chapter/404960388官方轉向頁讀到）：文明太后留平城意向、490去世、493遷洛、對代人改制及內部接受程度不一；未取得章全文。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter17: Downfall of a Theatre State (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960853",
+      "locator": "官方公開 Abstract（由Oxford官方搜尋索引讀到）：朝廷與留北軍事力量分離、胡太后、523軍鎮危機；未取得章全文。"
+    },
+    {
+      "title": "Chao Ling, Imperial Identity and Religious Reformation: The Buddhist Urban Landscape in Northern Wei Luoyang (2024)",
+      "url": "https://www.mdpi.com/2077-1444/15/5/551",
+      "locator": "MDPI官方索引可讀 Abstract、§2.1 Cultural Memory of Pre-Luoyang Northern Wei、§2.2 Imperial Identity and Architectural Elements、§4 Conclusions；文化記憶與正統整合。"
+    },
+    {
+      "title": "康樂〈代人與鎮人〉，史語所集刊61.4：895–916",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/973/Article/455",
+      "locator": "官方公開摘要及書誌（亦讀jp/Publications/Bulletin/141/Article/455，行663–681）；摘要研究問題為北鎮設置、鎮人與代人關係及鎮人集團出現。PDF抓取失敗，未核讀全文。"
+    },
+    {
+      "title": "魏書／卷22〈孝文五王列傳第十・廢太子恂〉",
+      "url": "https://zh.wikisource.org/zh/魏書/卷22",
+      "locator": "完整核讀廢太子段，網頁行133–139：學業、暑熱、謀返代、殺高道悅、元禧杖刑、廢河陽、李彪告謀逆、詔賜死年15、太和22年申辯書隱匿告發而未究。"
+    },
+    {
+      "title": "魏書／卷4上〈世祖紀第四上〉",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2318474",
+      "locator": "太延五年（439）六月至十二月，網頁行491–514：親征沮渠牧犍、姑臧受降、收城戶、徙涼州民與留鎮；支持北涼主政權覆滅背景，正文未稱439掃清所有北方殘餘勢力。"
+    }
+  ],
+  "caveats": [
+    "《魏書》《北史》相近傳記不是兩套完全獨立證詞；政治心理及現代定位保留作作者詮釋。",
+    "六鎮之亂與後世改革影響是結構評價，非單因果證明；稿已明列後繼朝政等多重因素。",
+    "Oxford兩章及康樂論文僅核官方公開摘要；MDPI核讀官方索引可見摘要及指定正文段落。"
+  ],
+  "metrics": {
+    "characters": 6201,
+    "chineseCharacters": 4371
+  }
+}

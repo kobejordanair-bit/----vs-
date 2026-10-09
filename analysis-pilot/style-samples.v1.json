@@ -1,0 +1,97 @@
+{
+  "format": "dynasty-existing-style-samples",
+  "schemaVersion": 1,
+  "privateFieldsIncluded": false,
+  "samples": [
+    {
+      "id": "emperor_唐太宗_286039018",
+      "name": "唐太宗",
+      "type": "emperor",
+      "field": "deepAnalysis",
+      "path": "analysis-pilot/style-samples/emperor.deepAnalysis.md",
+      "characters": 1683,
+      "sha256": "5fa6333916b4dde3ec93d9d973de0d102879a328812a508a87c184d7adc63cf0",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "general_韓信_306677029",
+      "name": "韓信",
+      "type": "general",
+      "field": "deepAnalysis",
+      "path": "analysis-pilot/style-samples/general.deepAnalysis.md",
+      "characters": 1717,
+      "sha256": "8d7f83aef5dca2a0de4d725761d56ffcd2b006263025705476e30ba57d4fa288",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "minister_王守仁_1997741418",
+      "name": "王守仁",
+      "type": "minister",
+      "field": "deepAnalysis",
+      "path": "analysis-pilot/style-samples/minister.deepAnalysis.md",
+      "characters": 1830,
+      "sha256": "ea249a4357a5727fe05ec125beb6e9f5a26771dc70ddc109b2177edc5c529377",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "emperor_唐太宗_286039018",
+      "name": "唐太宗",
+      "type": "emperor",
+      "field": "analysis",
+      "path": "analysis-pilot/style-samples/emperor.analysis.md",
+      "characters": 4304,
+      "sha256": "14a99b8d4b42f99cb30ab73257ecbef628bd75ced8e8a6b77688a05c496c8134",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "general_韓信_306677029",
+      "name": "韓信",
+      "type": "general",
+      "field": "analysis",
+      "path": "analysis-pilot/style-samples/general.analysis.md",
+      "characters": 4177,
+      "sha256": "8f6bdfb7aedf70b1884d4a518bcf6b12f0c0f414e60d303b48fb30ac937cdf83",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "minister_管仲_2004166219",
+      "name": "管仲",
+      "type": "minister",
+      "field": "analysis",
+      "path": "analysis-pilot/style-samples/minister.analysis.md",
+      "characters": 3278,
+      "sha256": "6b9cebfb151d441b4797eb457cfab84754a44188c974cdd6aaa73807175dface",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "emperor_唐太宗_286039018",
+      "name": "唐太宗",
+      "type": "emperor",
+      "field": "soulEssence",
+      "path": "analysis-pilot/style-samples/emperor.soulEssence.md",
+      "characters": 2234,
+      "sha256": "d036ed2a2fc56189de1aabc844a106612e838b52624029b5f34d6eea96412a86",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "general_韓信_306677029",
+      "name": "韓信",
+      "type": "general",
+      "field": "soulEssence",
+      "path": "analysis-pilot/style-samples/general.soulEssence.md",
+      "characters": 2467,
+      "sha256": "b589d2818f410f63e74ac7778fef45dc4a6983fc3c6ee9fe06f0c5a050643378",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    },
+    {
+      "id": "minister_王守仁_1997741418",
+      "name": "王守仁",
+      "type": "minister",
+      "field": "soulEssence",
+      "path": "analysis-pilot/style-samples/minister.soulEssence.md",
+      "characters": 2909,
+      "sha256": "92e90ceeaf7cb3f5a5b6b0304d7991d9c2e506a3bbfbfbaf646c3261016a8eca",
+      "usage": "Original completed website prose: style reference only; factual content requires independent checking."
+    }
+  ]
+}

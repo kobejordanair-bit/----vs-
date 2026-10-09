@@ -1,0 +1,87 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_王翦_306401394",
+  "field": "soulEssence",
+  "reviewedAt": "2026-10-09T11:50:03.952Z",
+  "reviewer": "Codex source-review subagent with primary-source verification by pilot_analysis_import",
+  "manuscriptFile": "analysis-pilot/drafts/wangjian.soulEssence.md",
+  "sourcePackageFile": "analysis-pilot/sources/wangjian.md",
+  "manuscriptSha256": "0f5174e58839dce84fb7f663084f1b50dd23a3ec9103fd5ed45f5591415e9e07",
+  "sourcePackageSha256": "0d41d737d4188eff74a1a07f01f393ee5066e6769452392b3a41c42b65df16d1",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "seven-fields-completion",
+      "passed": true,
+      "detail": "七欄靈魂內核皆完整，soulEssence標記與人物ID相符；無stats／五維JSON。"
+    },
+    {
+      "id": "preserved-analysis-context",
+      "passed": true,
+      "detail": "任務綁既有歷史賞析analysis-pilot/drafts/wangjian.existing.analysis.md SHA aadd7b4bf9dcf190431fe0700959559df15c49bb540d6f6ccd9f8189cc1a238d 作魂背景，保存action為preserve_exactly；本稿不提出覆寫原賞析。"
+    },
+    {
+      "id": "speech-and-military-conditions",
+      "passed": true,
+      "detail": "非六十萬人不可、李信20萬、秦王年老何怯之評、謝病歸頻陽、秦王復請與堅持條件均核史73；唯一直接核心引語有原文，不臆造王翦自述。"
+    },
+    {
+      "id": "zhao-counter-intelligence",
+      "passed": true,
+      "detail": "戰國策21以王翦為郭開反間主體，史81以秦作主體；稿明列文本差異。229為攻趙／反間段，俘王遷最後至228，稿未聲稱同年俘王。"
+    },
+    {
+      "id": "chu-and-soldiers",
+      "passed": true,
+      "detail": "楚出挑戰秦不出、王翦堅壁休士洗沐／同食、楚引東秦追擊可核史73；未添加久攻不克。前224前後作近似戰事時間，不虛構精確逐日年表。"
+    },
+    {
+      "id": "property-and-family-credit",
+      "passed": true,
+      "detail": "出征時請田宅／關後五輩使者／子孫業及解除秦王疑心均有史73依據；王賁魏、燕、齊功績可核史6，沒有挪歸其父或孫王離。"
+    },
+    {
+      "id": "modern-logistics-scope",
+      "passed": true,
+      "detail": "正文2026 Early China研究為國家物流背景，里耶／嶽麓跨郡縣委輸與財政行政支持；未聲稱王翦創立體制，也未把222/221里耶個案當224楚軍精確糧耗。"
+    },
+    {
+      "id": "taishigong-and-psychology",
+      "passed": true,
+      "detail": "不能輔秦建德固其根本明歸司馬遷政治評價；風險控制／保全家族／軍事政治界線及內在裂縫是原prompt角色解讀，未歸王翦為秦亡直接單因。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "唐俊峰／Chun Fung Tong, The Emergence of Logistics Networks and Financial Administration During the Qin Conquest (230–221 BCE)",
+      "url": "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528",
+      "locator": "協同來源QA核可讀全文HTML Introduction及“Assigned Transfer” and Qin’s Extended Logistics Networks（HTML537–546、555–615）：虎溪山簡542與注31、里耶7-1前222申糧及9-1114前221將糧盡，里耶／嶽麓跨郡物流及新民動員；metadata430/468/491。online2026-01-12，Early China48標September2025，133–162頁，DOI10.1017/eac.2025.10032。未直接核2020考古報告。"
+    },
+    {
+      "title": "戰國策／卷21〈趙策四·秦使王翦攻趙〉",
+      "url": "https://zh.wikisource.org/wiki/戰國策/卷21",
+      "locator": "實際轉向士禮居叢書本／趙／四，整章秦使王翦攻趙及鮑／吳／黃校注HTML242–246；主體明作王翦收買郭開等、造反間，趙王遣代將／斬李牧／廢司馬尚，三月後王翦急擊俘王遷。"
+    },
+    {
+      "title": "史記／卷081〈廉頗藺相如列傳・附李牧〉",
+      "url": "https://zh.wikisource.org/wiki/史記/卷081",
+      "locator": "實際核完整李牧段HTML182–189，末趙王遷七年：秦攻趙、王翦等、反間以秦作主語，李牧拒交兵權而捕殺，司馬尚免，後三月王翦破趙俘王遷。"
+    },
+    {
+      "title": "資治通鑑／卷006",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑/卷006",
+      "locator": "QA對時核始皇18年前229郭開／李牧段，19年前228克邯鄲俘王遷，HTML529–538；讀兩年及前後年段。稿的229是戰事開端，最終俘王跨至228，未錯稱同年全事結束。"
+    }
+  ],
+  "caveats": [
+    "20萬／60萬為古籍敘事兵額，不能直接當現代統計；本稿沒有計算出實證精確軍事耗費。",
+    "戰國策與史記對反間主體敘述有差異，稿已明列；前229攻趙與前228俘王跨年。",
+    "王翦求田兼具自保敘事；情感、平凡生活願望與軍事政治心理是詮釋，不冒稱私人日記。"
+  ],
+  "metrics": {
+    "characters": 4552,
+    "chineseCharacters": 3345
+  }
+}

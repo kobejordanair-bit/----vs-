@@ -1,0 +1,5777 @@
+{
+  "total": 962,
+  "figures": [
+    {
+      "id": "emperor_秦始皇_276964901",
+      "name": "秦始皇",
+      "type": "emperor",
+      "rank": "S+"
+    },
+    {
+      "id": "emperor_漢武帝_279479950",
+      "name": "漢武帝",
+      "type": "emperor",
+      "rank": "S+"
+    },
+    {
+      "id": "emperor_唐太宗_286039018",
+      "name": "唐太宗",
+      "type": "emperor",
+      "rank": "S+"
+    },
+    {
+      "id": "emperor_隋文帝_269831014",
+      "name": "隋文帝",
+      "type": "emperor",
+      "rank": "S"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "name": "漢光武帝",
+      "type": "emperor",
+      "rank": "S"
+    },
+    {
+      "id": "emperor_秦孝公_276961938",
+      "name": "秦孝公",
+      "type": "emperor",
+      "rank": "S"
+    },
+    {
+      "id": "emperor_漢高祖_279096455",
+      "name": "漢高祖",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "name": "宋太祖",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "name": "康熙帝",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_明太祖_281851053",
+      "name": "明太祖",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "name": "明成祖",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "name": "唐高宗",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "name": "秦昭襄王",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_毛澤東_280250175",
+      "name": "毛澤東",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "name": "乾隆帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "name": "北魏孝文帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_漢文帝_279526543",
+      "name": "漢文帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_漢宣帝_279605035",
+      "name": "漢宣帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_宋武帝_284299365",
+      "name": "宋武帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_元世祖_287054372",
+      "name": "元世祖",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_雍正帝_269721088",
+      "name": "雍正帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_北周文帝_293386962",
+      "name": "北周文帝",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "name": "宋仁宗",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_武則天_280599295",
+      "name": "武則天",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_魏武帝_268612001",
+      "name": "魏武帝",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_宋太宗_284444719",
+      "name": "宋太宗",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_明孝宗_281841215",
+      "name": "明孝宗",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_唐高祖_285510169",
+      "name": "唐高祖",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_神武帝_276962130",
+      "name": "神武帝",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_齊桓公_267660388",
+      "name": "齊桓公",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_晉文公_281706457",
+      "name": "晉文公",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_楚莊王_280705164",
+      "name": "楚莊王",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_趙武靈王_158879415",
+      "name": "趙武靈王",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_漢明帝_279522358",
+      "name": "漢明帝",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_宋孝宗_284427266",
+      "name": "宋孝宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_孫文_1671742205",
+      "name": "孫文",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_唐憲宗_285971314",
+      "name": "唐憲宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_明世宗_281946584",
+      "name": "明世宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_燕昭王_278851860",
+      "name": "燕昭王",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_楚威王_281034787",
+      "name": "楚威王",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_唐玄宗_285829892",
+      "name": "唐玄宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_蔣介石_274287036",
+      "name": "蔣介石",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_宋真宗_284206980",
+      "name": "宋真宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_吳大帝_286250846",
+      "name": "吳大帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_呂后_1671803501",
+      "name": "呂后",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_魏文帝_268658594",
+      "name": "魏文帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_漢景帝_279519351",
+      "name": "漢景帝",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_唐肅宗_285726693",
+      "name": "唐肅宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_嘉慶帝_285733239",
+      "name": "嘉慶帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_昭烈帝_281640805",
+      "name": "昭烈帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_洪憲帝_280041298",
+      "name": "洪憲帝",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_慈禧太后_176093814",
+      "name": "慈禧太后",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_梁武帝_281110767",
+      "name": "梁武帝",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_漢元帝_279687371",
+      "name": "漢元帝",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_唐穆宗_285776262",
+      "name": "唐穆宗",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_同治帝_286132953",
+      "name": "同治帝",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_宋高宗_283923485",
+      "name": "宋高宗",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_道光帝_271521568",
+      "name": "道光帝",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_漢安帝_279605841",
+      "name": "漢安帝",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_元文宗_286875956",
+      "name": "元文宗",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_明英宗_281527123",
+      "name": "明英宗",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_光緒帝_286676755",
+      "name": "光緒帝",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_秦二世_277064503",
+      "name": "秦二世",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_漢桓帝_279504347",
+      "name": "漢桓帝",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_晉懷帝_281731480",
+      "name": "晉懷帝",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_崇禎帝_283821841",
+      "name": "崇禎帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_兒皇帝_286725983",
+      "name": "兒皇帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_漢獻帝_279415811",
+      "name": "漢獻帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_唐中宗_286126221",
+      "name": "唐中宗",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_隋煬帝_269736619",
+      "name": "隋煬帝",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_宋欽宗_284301282",
+      "name": "宋欽宗",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_漢靈帝_279131696",
+      "name": "漢靈帝",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_元順帝_286474573",
+      "name": "元順帝",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_晉惠帝_281740129",
+      "name": "晉惠帝",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "general_成吉思汗_2044319094",
+      "name": "成吉思汗",
+      "type": "general",
+      "rank": "S+"
+    },
+    {
+      "id": "general_速不台_915165195",
+      "name": "速不台",
+      "type": "general",
+      "rank": "S+"
+    },
+    {
+      "id": "general_韓信_306677029",
+      "name": "韓信",
+      "type": "general",
+      "rank": "S+"
+    },
+    {
+      "id": "general_白起_306428241",
+      "name": "白起",
+      "type": "general",
+      "rank": "S+"
+    },
+    {
+      "id": "general_李世民_905130162",
+      "name": "李世民",
+      "type": "general",
+      "rank": "S+"
+    },
+    {
+      "id": "general_劉邦_306143732",
+      "name": "劉邦",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_李靖_306310271",
+      "name": "李靖",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_霍去病_916923744",
+      "name": "霍去病",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_衛青_306572558",
+      "name": "衛青",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_王翦_306401394",
+      "name": "王翦",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_劉裕_306141731",
+      "name": "劉裕",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_吳起_306156123",
+      "name": "吳起",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_宇文泰_902419001",
+      "name": "宇文泰",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_徐達_306247035",
+      "name": "徐達",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_林彪_306298218",
+      "name": "林彪",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_項羽_306690831",
+      "name": "項羽",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_拓跋燾_904534991",
+      "name": "拓跋燾",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_高歡_306708032",
+      "name": "高歡",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_努爾哈赤_2140562023",
+      "name": "努爾哈赤",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_伯顏_306119095",
+      "name": "伯顏",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_多爾袞_901930211",
+      "name": "多爾袞",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_諸葛亮_914327252",
+      "name": "諸葛亮",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_司馬懿_900970484",
+      "name": "司馬懿",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_爾朱榮_908019588",
+      "name": "爾朱榮",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_曹操_306294699",
+      "name": "曹操",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_朱棣_306297481",
+      "name": "朱棣",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_李勣_306292748",
+      "name": "李勣",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_蘇定方_912794063",
+      "name": "蘇定方",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_岳飛_306226495",
+      "name": "岳飛",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_粟裕_306475725",
+      "name": "粟裕",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_郭子儀_915467654",
+      "name": "郭子儀",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_彭德懷_903329142",
+      "name": "彭德懷",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_王忠嗣_908276471",
+      "name": "王忠嗣",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_孫武_306204690",
+      "name": "孫武",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_毛澤東_906514833",
+      "name": "毛澤東",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_朱德_306295133",
+      "name": "朱德",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_李牧_306300816",
+      "name": "李牧",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_周瑜_306151339",
+      "name": "周瑜",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_陸遜_306682779",
+      "name": "陸遜",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_孟珙_306206481",
+      "name": "孟珙",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_于謙_306110722",
+      "name": "于謙",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_李光弼_905152266",
+      "name": "李光弼",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_拓跋珪_904535483",
+      "name": "拓跋珪",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_孫臏_306210427",
+      "name": "孫臏",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "name": "伍子胥",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_白崇禧_908987622",
+      "name": "白崇禧",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_左宗棠_902922424",
+      "name": "左宗棠",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_戚繼光_904227344",
+      "name": "戚繼光",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_班超_306407919",
+      "name": "班超",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_木華黎_905533968",
+      "name": "木華黎",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_僕固懷恩_2119975374",
+      "name": "僕固懷恩",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_陳慶之_916874609",
+      "name": "陳慶之",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_鄧艾_306637038",
+      "name": "鄧艾",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_常遇春_903418655",
+      "name": "常遇春",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_李定國_905232040",
+      "name": "李定國",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_呂蒙_306154318",
+      "name": "呂蒙",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_王賁_306404685",
+      "name": "王賁",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_馬援_306696831",
+      "name": "馬援",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_楊素_306319309",
+      "name": "楊素",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_藍玉_306543123",
+      "name": "藍玉",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_傅友德_899566778",
+      "name": "傅友德",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_孫立人_902553123",
+      "name": "孫立人",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_王保保_908147860",
+      "name": "王保保",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_薛岳_306535727",
+      "name": "薛岳",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_袁崇煥_913417640",
+      "name": "袁崇煥",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_裴行儉_913863258",
+      "name": "裴行儉",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_杜預_306310891",
+      "name": "杜預",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_忽必烈_903471753",
+      "name": "忽必烈",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_施琅_306288799",
+      "name": "施琅",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_李鴻章_905762044",
+      "name": "李鴻章",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_張巡_306231299",
+      "name": "張巡",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_狄青_306401221",
+      "name": "狄青",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_虞允文_912795501",
+      "name": "虞允文",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_哲別_306146858",
+      "name": "哲別",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_桓溫_306307951",
+      "name": "桓溫",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_關羽_306673688",
+      "name": "關羽",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_田單_306403637",
+      "name": "田單",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_俞大猷_899453815",
+      "name": "俞大猷",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_孫傳庭_902223150",
+      "name": "孫傳庭",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_盧象昇_909460246",
+      "name": "盧象昇",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_吳三桂_900428533",
+      "name": "吳三桂",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_李如松_905219635",
+      "name": "李如松",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張遼_306244254",
+      "name": "張遼",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_孫策_306208770",
+      "name": "孫策",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_廉頗_306242853",
+      "name": "廉頗",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_周亞夫_900480222",
+      "name": "周亞夫",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_蒙恬_306528682",
+      "name": "蒙恬",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_韓世忠_917063622",
+      "name": "韓世忠",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_李宗仁_905229825",
+      "name": "李宗仁",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_魏延_306708542",
+      "name": "魏延",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張靈甫_903721217",
+      "name": "張靈甫",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_韓擒虎_917253880",
+      "name": "韓擒虎",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_李克用_905157940",
+      "name": "李克用",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_封常清_902478519",
+      "name": "封常清",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_劉錡_306144367",
+      "name": "劉錡",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_章邯_306463878",
+      "name": "章邯",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_姜維_306197000",
+      "name": "姜維",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_趙雲_306614064",
+      "name": "趙雲",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_皇甫嵩_909181582",
+      "name": "皇甫嵩",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_陸抗_306671062",
+      "name": "陸抗",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_張郃_306244325",
+      "name": "張郃",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_馬超_306707472",
+      "name": "馬超",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李成梁_905287784",
+      "name": "李成梁",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_洪承疇_906736059",
+      "name": "洪承疇",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_年羹堯_903341363",
+      "name": "年羹堯",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_蔣中正_912469858",
+      "name": "蔣中正",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_劉湘_306134950",
+      "name": "劉湘",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_蔡鍔_306545930",
+      "name": "蔡鍔",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_左良玉_903233417",
+      "name": "左良玉",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_史可法_900414049",
+      "name": "史可法",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_毛文龍_906448938",
+      "name": "毛文龍",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_哥舒翰_901018604",
+      "name": "哥舒翰",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_王毛仲_908369771",
+      "name": "王毛仲",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_秦叔寶_909745969",
+      "name": "秦叔寶",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_程知節_910075887",
+      "name": "程知節",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_張仁愿_903140540",
+      "name": "張仁愿",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_馮玉祥_917823827",
+      "name": "馮玉祥",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_黃百韜_919105354",
+      "name": "黃百韜",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_种師道_909817406",
+      "name": "种師道",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_李自成_905538909",
+      "name": "李自成",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_張獻忠_903431651",
+      "name": "張獻忠",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_石達開_909761299",
+      "name": "石達開",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_楊秀清_905965368",
+      "name": "楊秀清",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_唐生智_900950644",
+      "name": "唐生智",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_李信_306291978",
+      "name": "李信",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "general_馬謖_306706849",
+      "name": "馬謖",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_馮異_306701369",
+      "name": "馮異",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_鄧世昌_915423814",
+      "name": "鄧世昌",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_陳化成_916765590",
+      "name": "陳化成",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_管仲_2004166219",
+      "name": "管仲",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "minister_商鞅_2003880409",
+      "name": "商鞅",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "minister_王守仁_1997741418",
+      "name": "王守仁",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "minister_曾國藩_1994632226",
+      "name": "曾國藩",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "minister_鄧小平_2005034001",
+      "name": "鄧小平",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "minister_蕭何_2004244066",
+      "name": "蕭何",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "name": "周恩來",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_諸葛亮(名臣)_866483420",
+      "name": "諸葛亮(名臣)",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_張居正_1992751641",
+      "name": "張居正",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_王安石_1997751995",
+      "name": "王安石",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_房玄齡_1993697090",
+      "name": "房玄齡",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_魏徵_2004421920",
+      "name": "魏徵",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_李鴻章(名臣)_2046785284",
+      "name": "李鴻章(名臣)",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_荀彧_2004230913",
+      "name": "荀彧",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_張良_2003953844",
+      "name": "張良",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_李斯_2004010747",
+      "name": "李斯",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "name": "于謙(名臣)",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "name": "謝安",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_范仲淹_2001455088",
+      "name": "范仲淹",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_杜如晦_1994734054",
+      "name": "杜如晦",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_耶律楚材_1898278501",
+      "name": "耶律楚材",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_張儀_2003941189",
+      "name": "張儀",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_左宗棠(名臣)_471866176",
+      "name": "左宗棠(名臣)",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "name": "朱鎔基",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_劉基_2003842411",
+      "name": "劉基",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_張廷玉_1992775117",
+      "name": "張廷玉",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_霍光_2004384438",
+      "name": "霍光",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_高熲_2004422836",
+      "name": "高熲",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "name": "姚崇",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_張之洞_1992641166",
+      "name": "張之洞",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_范文程_2001637389",
+      "name": "范文程",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_子產_2003919532",
+      "name": "子產",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_李悝_2004009449",
+      "name": "李悝",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_陳雲_2004397497",
+      "name": "陳雲",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "name": "徐光啟",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_狄仁傑_1997449242",
+      "name": "狄仁傑",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_長孫無忌_2059416313",
+      "name": "長孫無忌",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_呂不韋_1989956486",
+      "name": "呂不韋",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_陳平_2004383034",
+      "name": "陳平",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_寇準_2003921545",
+      "name": "寇準",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_司馬光_1990467451",
+      "name": "司馬光",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_徐階_2003961816",
+      "name": "徐階",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_楊廷和_1995247525",
+      "name": "楊廷和",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_王導_2004105405",
+      "name": "王導",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_晏嬰_2004000155",
+      "name": "晏嬰",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_范雎_2004243205",
+      "name": "范雎",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_陳群_2004391531",
+      "name": "陳群",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_索尼_2004181556",
+      "name": "索尼",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_孫承宗_1991864841",
+      "name": "孫承宗",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_楊素(名臣)_285282875",
+      "name": "楊素(名臣)",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_魯肅_2004431312",
+      "name": "魯肅",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_陸遜(名臣)_950011657",
+      "name": "陸遜(名臣)",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_曹參_2004003524",
+      "name": "曹參",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_宋璟_2003921230",
+      "name": "宋璟",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_包拯_2003849060",
+      "name": "包拯",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_呂蒙正_1990378002",
+      "name": "呂蒙正",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_李賢_2004020782",
+      "name": "李賢",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_徐溥_2003951599",
+      "name": "徐溥",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_高拱_2004419059",
+      "name": "高拱",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_胡耀邦_2001328557",
+      "name": "胡耀邦",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_宋子文_1991841128",
+      "name": "宋子文",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_賈魯_2004321921",
+      "name": "賈魯",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_劉穆之_1989864820",
+      "name": "劉穆之",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_海瑞_2004063393",
+      "name": "海瑞",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_方孝孺_1994343324",
+      "name": "方孝孺",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_周昌_2003860862",
+      "name": "周昌",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_陸賈_2004395050",
+      "name": "陸賈",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_隰朋_2004387125",
+      "name": "隰朋",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_曾國荃_1994631548",
+      "name": "曾國荃",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_李宗仁(名臣)_157633929",
+      "name": "李宗仁(名臣)",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_阿合馬_2006238601",
+      "name": "阿合馬",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_脫脫_2004223034",
+      "name": "脫脫",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_沈一貫_1995924889",
+      "name": "沈一貫",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_李林甫_1994836136",
+      "name": "李林甫",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_和珅_2003865491",
+      "name": "和珅",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_楊嗣昌_1995179961",
+      "name": "楊嗣昌",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_李鵬_2004025016",
+      "name": "李鵬",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_孫科_2003921568",
+      "name": "孫科",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "minister_王僧辯_1997673689",
+      "name": "王僧辯",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_韓熙載_2006858761",
+      "name": "韓熙載",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "minister_嚴嵩_2003876879",
+      "name": "嚴嵩",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "minister_楊國忠_1995187557",
+      "name": "楊國忠",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_溫體仁_1997044414",
+      "name": "溫體仁",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_王衍_2004116732",
+      "name": "王衍",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_殷浩_2004047724",
+      "name": "殷浩",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_秦檜_2004159568",
+      "name": "秦檜",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_賈似道_2003869637",
+      "name": "賈似道",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_蔡京_2004241541",
+      "name": "蔡京",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_陳演_2004387291",
+      "name": "陳演",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_魏藻德_2007865617",
+      "name": "魏藻德",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_魏忠賢_2007574775",
+      "name": "魏忠賢",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_趙高_2004328249",
+      "name": "趙高",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_董卓_2004236842",
+      "name": "董卓",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "general_安祿山",
+      "name": "安祿山",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_史思明",
+      "name": "史思明",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李嗣業",
+      "name": "李嗣業",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_李泌",
+      "name": "李泌",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_唐代宗",
+      "name": "唐代宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "general_楊忠",
+      "name": "楊忠",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_韋孝寬",
+      "name": "韋孝寬",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_段韶",
+      "name": "段韶",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_斛律光",
+      "name": "斛律光",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_高長恭",
+      "name": "高長恭",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_獨孤信",
+      "name": "獨孤信",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李虎",
+      "name": "李虎",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_侯景",
+      "name": "侯景",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_陳霸先",
+      "name": "陳霸先",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_宇文邕",
+      "name": "宇文邕",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_明熹宗",
+      "name": "明熹宗",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "minister_孫運璿",
+      "name": "孫運璿",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_蔣經國",
+      "name": "蔣經國",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_順治帝（福臨)",
+      "name": "順治帝（福臨)",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_漢昭帝",
+      "name": "漢昭帝",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_漢成帝",
+      "name": "漢成帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_漢哀帝",
+      "name": "漢哀帝",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_王莽",
+      "name": "王莽",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_漢章帝",
+      "name": "漢章帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_漢和帝",
+      "name": "漢和帝",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_漢順帝",
+      "name": "漢順帝",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_梁冀",
+      "name": "梁冀",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_魏明帝",
+      "name": "魏明帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_曹爽",
+      "name": "曹爽",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_曹芳",
+      "name": "曹芳",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_曹髦",
+      "name": "曹髦",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_賈充",
+      "name": "賈充",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_劉禪",
+      "name": "劉禪",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_符堅",
+      "name": "符堅",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_王猛",
+      "name": "王猛",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "general_慕容垂",
+      "name": "慕容垂",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_王世充",
+      "name": "王世充",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_竇建德",
+      "name": "竇建德",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_劉黑闥",
+      "name": "劉黑闥",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_李建成",
+      "name": "李建成",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_羅士信",
+      "name": "羅士信",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李神通",
+      "name": "李神通",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_尉遲恭",
+      "name": "尉遲恭",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_單雄信",
+      "name": "單雄信",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_李密",
+      "name": "李密",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_薛舉",
+      "name": "薛舉",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李孝恭",
+      "name": "李孝恭",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_蕭銑",
+      "name": "蕭銑",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_劉文靜",
+      "name": "劉文靜",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_蕭道成",
+      "name": "蕭道成",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_蕭賾",
+      "name": "蕭賾",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_丁謂",
+      "name": "丁謂",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_蕭詧",
+      "name": "蕭詧",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "minister_蕭統",
+      "name": "蕭統",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_陳蒨",
+      "name": "陳蒨",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_陳頊",
+      "name": "陳頊",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_陳叔寶",
+      "name": "陳叔寶",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_馮太后",
+      "name": "馮太后",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_元恪",
+      "name": "元恪",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_韋叡",
+      "name": "韋叡",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_高洋",
+      "name": "高洋",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_高澄",
+      "name": "高澄",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_司馬師",
+      "name": "司馬師",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_司馬昭",
+      "name": "司馬昭",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_鍾會",
+      "name": "鍾會",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_司馬炎",
+      "name": "司馬炎",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_司馬遹",
+      "name": "司馬遹",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_賈南風",
+      "name": "賈南風",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_宇文贇",
+      "name": "宇文贇",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "general_宇文憲",
+      "name": "宇文憲",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_唐睿宗",
+      "name": "唐睿宗",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_太平公主",
+      "name": "太平公主",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_張九齡",
+      "name": "張九齡",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_耶律阿保機",
+      "name": "耶律阿保機",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_耶律德光",
+      "name": "耶律德光",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_宋英宗",
+      "name": "宋英宗",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_宋哲宗",
+      "name": "宋哲宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_高太后",
+      "name": "高太后",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_宋徽宗（趙佶）",
+      "name": "宋徽宗（趙佶）",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_宋光宗（趙惇)",
+      "name": "宋光宗（趙惇)",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_宋寧宗",
+      "name": "宋寧宗",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_韓侂冑",
+      "name": "韓侂冑",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_史彌遠",
+      "name": "史彌遠",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_宋理宗",
+      "name": "宋理宗",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_宋度宗（趙禥）",
+      "name": "宋度宗（趙禥）",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "minister_文天祥",
+      "name": "文天祥",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_李繼遷",
+      "name": "李繼遷",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_耶律文殊奴",
+      "name": "耶律文殊奴",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_蕭燕燕",
+      "name": "蕭燕燕",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_遼興宗(耶律宗真)",
+      "name": "遼興宗(耶律宗真)",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_遼道宗(耶律弘基）",
+      "name": "遼道宗(耶律弘基）",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_天祚帝(耶律延禧)",
+      "name": "天祚帝(耶律延禧)",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_李德明",
+      "name": "李德明",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_李元昊",
+      "name": "李元昊",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_李乾順",
+      "name": "李乾順",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_李仁孝",
+      "name": "李仁孝",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_完顏雍",
+      "name": "完顏雍",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_海陵王完顏亮",
+      "name": "海陵王完顏亮",
+      "type": "emperor",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_完顏阿骨打",
+      "name": "完顏阿骨打",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_完顔吳乞買",
+      "name": "完顔吳乞買",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "general_完顏宗弼",
+      "name": "完顏宗弼",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_完顏亶",
+      "name": "完顏亶",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_完顏璟",
+      "name": "完顏璟",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_高士廉",
+      "name": "高士廉",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_薛萬徹",
+      "name": "薛萬徹",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李道宗",
+      "name": "李道宗",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_陳友諒",
+      "name": "陳友諒",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_張士誠",
+      "name": "張士誠",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_孫可望",
+      "name": "孫可望",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_鄭成功",
+      "name": "鄭成功",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_福康安",
+      "name": "福康安",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_張飛",
+      "name": "張飛",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_元成宗",
+      "name": "元成宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_蘇軾",
+      "name": "蘇軾",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_蘇轍",
+      "name": "蘇轍",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_韓愈",
+      "name": "韓愈",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_李東陽",
+      "name": "李東陽",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_楊一清",
+      "name": "楊一清",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_張聰",
+      "name": "張聰",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_夏言",
+      "name": "夏言",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_楊繼盛",
+      "name": "楊繼盛",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_姚廣孝",
+      "name": "姚廣孝",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_明代宗",
+      "name": "明代宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_胡宗憲",
+      "name": "胡宗憲",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_趙充國",
+      "name": "趙充國",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_劉晏",
+      "name": "劉晏",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "general_李道玄",
+      "name": "李道玄",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_高仙芝",
+      "name": "高仙芝",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_王玄策",
+      "name": "王玄策",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_陳湯",
+      "name": "陳湯",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_徐晃",
+      "name": "徐晃",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_曹仁_1774215752260",
+      "name": "曹仁",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_趙括_306600746",
+      "name": "趙括",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_王耀武_908536922",
+      "name": "王耀武",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_杜聿明_905542132",
+      "name": "杜聿明",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_陳誠_306681156",
+      "name": "陳誠",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_陳誠_2004394343",
+      "name": "陳誠",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_胡宗南_911522666",
+      "name": "胡宗南",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_張學良_903249941",
+      "name": "張學良",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_傅作義_899539771",
+      "name": "傅作義",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_傅作義_1989041016",
+      "name": "傅作義",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張作霖_903159128",
+      "name": "張作霖",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_閻錫山_917095882",
+      "name": "閻錫山",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_閻錫山_2006597127",
+      "name": "閻錫山",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_吳佩孚_900436141",
+      "name": "吳佩孚",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_陳炯明_2006502744",
+      "name": "陳炯明",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "general_陳炯明_917001499",
+      "name": "陳炯明",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_彭越_306245236",
+      "name": "彭越",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_英布_306514921",
+      "name": "英布",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_龍且_306737886",
+      "name": "龍且",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_張耳_306240085",
+      "name": "張耳",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "general_范增_306514098",
+      "name": "范增",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_項伯_306678401",
+      "name": "項伯",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_漢惠帝_907201544",
+      "name": "漢惠帝",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_呂澤_306148953",
+      "name": "呂澤",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_呂釋之_900974027",
+      "name": "呂釋之",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "general_蒯通_306541570",
+      "name": "蒯通",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "general_子嬰_306199703",
+      "name": "子嬰",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_灌嬰_306366235",
+      "name": "灌嬰",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_呂產_306150359",
+      "name": "呂產",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_范蠡_306526261",
+      "name": "范蠡",
+      "type": "minister",
+      "rank": "S"
+    },
+    {
+      "id": "emperor_吳王闔閭_276868648",
+      "name": "吳王闔閭",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_越王勾踐_159901082",
+      "name": "越王勾踐",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "minister_鮑叔牙_2007535804",
+      "name": "鮑叔牙",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_秦穆公_276716635",
+      "name": "秦穆公",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_孔子_2003913046",
+      "name": "孔子",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_宋襄公_284065588",
+      "name": "宋襄公",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "minister_老子_2004204105",
+      "name": "老子",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_屈原_2003918641",
+      "name": "屈原",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_韓非_2004408517",
+      "name": "韓非",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_吳王夫差_277364318",
+      "name": "吳王夫差",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_鄭莊公_270916504",
+      "name": "鄭莊公",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_秦惠文王_5659621",
+      "name": "秦惠文王",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_魏文侯_268662288",
+      "name": "魏文侯",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_齊威王_267765299",
+      "name": "齊威王",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_楚悼王_280981374",
+      "name": "楚悼王",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "general_李廣_306295820",
+      "name": "李廣",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_孟嘗君_1991752937",
+      "name": "孟嘗君",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_平原君_1992490613",
+      "name": "平原君",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_信陵君_1989436493",
+      "name": "信陵君",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_春申君_1994650259",
+      "name": "春申君",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "general_趙奢_306598304",
+      "name": "趙奢",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_蒙驁_306543487",
+      "name": "蒙驁",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_蒙武_306531492",
+      "name": "蒙武",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_項燕_306687271",
+      "name": "項燕",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_項梁_306684883",
+      "name": "項梁",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_樂毅_306320570",
+      "name": "樂毅",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_百里奚_1998900338",
+      "name": "百里奚",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_魏冉_2004418292",
+      "name": "魏冉",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_藺相如_2002496874",
+      "name": "藺相如",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_墨子_2003891842",
+      "name": "墨子",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_文種_2004001889",
+      "name": "文種",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_蘇秦_2004259737",
+      "name": "蘇秦",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_公孫衍_1989360916",
+      "name": "公孫衍",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_姜子牙_1991430219",
+      "name": "姜子牙",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "emperor_帝辛_1671710043",
+      "name": "帝辛",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_周公旦_1990006984",
+      "name": "周公旦",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "general_婦好_306192014",
+      "name": "婦好",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_周幽王_286152081",
+      "name": "周幽王",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_周武王_286049626",
+      "name": "周武王",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_周文王_286096219",
+      "name": "周文王",
+      "type": "emperor",
+      "rank": "S"
+    },
+    {
+      "id": "emperor_周成王_286123716",
+      "name": "周成王",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_商湯_1671788688",
+      "name": "商湯",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_伊尹_2003815753",
+      "name": "伊尹",
+      "type": "minister",
+      "rank": "S+"
+    },
+    {
+      "id": "minister_仲虺_2003825826",
+      "name": "仲虺",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_比干_2004044792",
+      "name": "比干",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "emperor_太甲_1671756081",
+      "name": "太甲",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_南宮适_900335572",
+      "name": "南宮适",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_伯夷_2003816130",
+      "name": "伯夷",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "general_鍾離眜_916581537",
+      "name": "鍾離眜",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_酈食其_2005544997",
+      "name": "酈食其",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_劉少奇_1989627909",
+      "name": "劉少奇",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_江青_2004063661",
+      "name": "江青",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "general_劉伯承_900026786",
+      "name": "劉伯承",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_曹錕_2004019734",
+      "name": "曹錕",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_汪精衛_1996265901",
+      "name": "汪精衛",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "general_黃興_306744924",
+      "name": "黃興",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_晁錯_2004014056",
+      "name": "晁錯",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_劉墉_2003842554",
+      "name": "劉墉",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_劉統勳_1989891153",
+      "name": "劉統勳",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_恭親王奕訢_116003617",
+      "name": "恭親王奕訢",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_呂文德_900627195",
+      "name": "呂文德",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_宋江_306205931",
+      "name": "宋江",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_方臘_306292214",
+      "name": "方臘",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "minister_朱標_2004010978",
+      "name": "朱標",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_李元吉_1994650458",
+      "name": "李元吉",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "general_周勃_306142738",
+      "name": "周勃",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_劉瑾_2003849711",
+      "name": "劉瑾",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "general_司馬攸_900971309",
+      "name": "司馬攸",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_黃巢_306735670",
+      "name": "黃巢",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_朱溫_306298961",
+      "name": "朱溫",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李嗣源_905192708",
+      "name": "李嗣源",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "general_郭威_306624875",
+      "name": "郭威",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "general_郭榮_306628888",
+      "name": "郭榮",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "general_楊行密_906076141",
+      "name": "楊行密",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李煜_306300549",
+      "name": "李煜",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "general_林仁肇_905210854",
+      "name": "林仁肇",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李存勗_905228918",
+      "name": "李存勗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_兆惠_306121489",
+      "name": "兆惠",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_晉獻公_281595725",
+      "name": "晉獻公",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_宰嚭_2003914711",
+      "name": "宰嚭",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_郭開_2004353304",
+      "name": "郭開",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_靳尚_2004390369",
+      "name": "靳尚",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_公子昂_1989351300",
+      "name": "公子昂",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_奉陽君_1991750829",
+      "name": "奉陽君",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_后勝_2003853161",
+      "name": "后勝",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_龐蔥_2004465263",
+      "name": "龐蔥",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "general_龐煖_306747005",
+      "name": "龐煖",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_晉鄙_306300583",
+      "name": "晉鄙",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "minister_魏齊_2004438197",
+      "name": "魏齊",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_趙王遷_271907586",
+      "name": "趙王遷",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "minister_蒙毅_2004244774",
+      "name": "蒙毅",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "general_屠睢_306215353",
+      "name": "屠睢",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_任囂_306100702",
+      "name": "任囂",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_劉據_2003845707",
+      "name": "劉據",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_李廣利_905256861",
+      "name": "李廣利",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_王綰_2004114015",
+      "name": "王綰",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_馮去疾_2007071735",
+      "name": "馮去疾",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_鄭國_2004339288",
+      "name": "鄭國",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_竇太后_1999503761",
+      "name": "竇太后",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_劉濞_2003848527",
+      "name": "劉濞",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_司馬遷_1990483625",
+      "name": "司馬遷",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_李陵_306310046",
+      "name": "李陵",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_東方朔_1994851346",
+      "name": "東方朔",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_桑弘羊_1995020265",
+      "name": "桑弘羊",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_張釋之_1993168955",
+      "name": "張釋之",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_賈誼_2004317646",
+      "name": "賈誼",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_公孫弘_1989350367",
+      "name": "公孫弘",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_金日磾_2005282224",
+      "name": "金日磾",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_王政君_1997819885",
+      "name": "王政君",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "general_鄧禹_306634793",
+      "name": "鄧禹",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_張讓_2003956184",
+      "name": "張讓",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "general_何進_306118196",
+      "name": "何進",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "minister_班昭_2004111034",
+      "name": "班昭",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_盧植_306422205",
+      "name": "盧植",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_士燮_2003899709",
+      "name": "士燮",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_竇憲_306451074",
+      "name": "竇憲",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_陳蕃_2004392970",
+      "name": "陳蕃",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_竇武_2004166745",
+      "name": "竇武",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_李膺_2004017926",
+      "name": "李膺",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "general_耿恭_306494149",
+      "name": "耿恭",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_王允_2004102640",
+      "name": "王允",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "general_吳襄_306155048",
+      "name": "吳襄",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_祖大壽_909649077",
+      "name": "祖大壽",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_法正_2004056072",
+      "name": "法正",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_廖化_306225591",
+      "name": "廖化",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "general_郭淮_306629976",
+      "name": "郭淮",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_甘寧_306404486",
+      "name": "甘寧",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_楊駿_2004039887",
+      "name": "楊駿",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_衛瓘_2004276919",
+      "name": "衛瓘",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_司馬瑋_1990476413",
+      "name": "司馬瑋",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_張華_2003954228",
+      "name": "張華",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_司馬倫_1990467165",
+      "name": "司馬倫",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_司馬越_1990482876",
+      "name": "司馬越",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_司馬穎_1990477952",
+      "name": "司馬穎",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_司馬顒_1990485636",
+      "name": "司馬顒",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_司馬冏_1990467521",
+      "name": "司馬冏",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_劉淵_1671810541",
+      "name": "劉淵",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_石勒_306424822",
+      "name": "石勒",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_石勒_1671520570",
+      "name": "石勒",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_劉聰_1671805810",
+      "name": "劉聰",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_張賓_2003956504",
+      "name": "張賓",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_王彌_306393048",
+      "name": "王彌",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_慕容廆_903765611",
+      "name": "慕容廆",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "minister_張軌_2003957009",
+      "name": "張軌",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_劉琨_306136438",
+      "name": "劉琨",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_祖逖_306451511",
+      "name": "祖逖",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_苟晞_306516502",
+      "name": "苟晞",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_王濬_306397304",
+      "name": "王濬",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_陶侃_306666116",
+      "name": "陶侃",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_元天穆_899798761",
+      "name": "元天穆",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_元子攸_286954556",
+      "name": "元子攸",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "general_王敦_306394610",
+      "name": "王敦",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_周顗_2003873737",
+      "name": "周顗",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_王戎_2004106941",
+      "name": "王戎",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_劉義隆_286340193",
+      "name": "劉義隆",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_檀道濟_906442901",
+      "name": "檀道濟",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_賀拔岳_914502984",
+      "name": "賀拔岳",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_李安世_1994730465",
+      "name": "李安世",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_康生_2003946530",
+      "name": "康生",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_張春橋_1992829729",
+      "name": "張春橋",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_姚文元_1991500892",
+      "name": "姚文元",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_王洪文_1997887182",
+      "name": "王洪文",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "general_李德（奧托·布勞恩）_5238041",
+      "name": "李德（奧托·布勞恩）",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "minister_江澤民_1996144114",
+      "name": "江澤民",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_陳伯達_2006247710",
+      "name": "陳伯達",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_胡錦濤_2001472133",
+      "name": "胡錦濤",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_薄熙來_2002338295",
+      "name": "薄熙來",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_周永康_1990217805",
+      "name": "周永康",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_盧杞_2004134961",
+      "name": "盧杞",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_李輔國_1995141803",
+      "name": "李輔國",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_來俊臣_1988799941",
+      "name": "來俊臣",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "general_王離_306407278",
+      "name": "王離",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_窩闊台_276310232",
+      "name": "窩闊台",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "general_朮赤_306306733",
+      "name": "朮赤",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_拔都_306273120",
+      "name": "拔都",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_蒙哥_1671419661",
+      "name": "蒙哥",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "general_察合台_902358320",
+      "name": "察合台",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_也速該_899527931",
+      "name": "也速該",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "general_王汗_306396387",
+      "name": "王汗",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_札木合_905291254",
+      "name": "札木合",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_失吉忽圖忽_2008197294",
+      "name": "失吉忽圖忽",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_博爾忽_900505218",
+      "name": "博爾忽",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_拖雷_306274712",
+      "name": "拖雷",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_旭烈兀_905059406",
+      "name": "旭烈兀",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_也先_306094464",
+      "name": "也先",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_李安全_281534938",
+      "name": "李安全",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_李遵頊_281096868",
+      "name": "李遵頊",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_李德旺_281496502",
+      "name": "李德旺",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "general_獨吉思忠_1912050245",
+      "name": "獨吉思忠",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_完顏承裕_2077187920",
+      "name": "完顏承裕",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_趙葵_306609331",
+      "name": "趙葵",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "general_撒里台_904988639",
+      "name": "撒里台",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_貴由_1671347068",
+      "name": "貴由",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_脫列哥那_57338737",
+      "name": "脫列哥那",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "general_兀良哈台_2133746318",
+      "name": "兀良哈台",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_郭侃_306622189",
+      "name": "郭侃",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_劉秉忠_1989865446",
+      "name": "劉秉忠",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "general_張世傑_903130969",
+      "name": "張世傑",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "minister_陸秀夫_2006576201",
+      "name": "陸秀夫",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張弘範_903277002",
+      "name": "張弘範",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_唆都_306163566",
+      "name": "唆都",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_趙普_2004314831",
+      "name": "趙普",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_呂端_2003865031",
+      "name": "呂端",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_王繼恩_1998023326",
+      "name": "王繼恩",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_王欽若_1997879417",
+      "name": "王欽若",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_王旦_2004107925",
+      "name": "王旦",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_劉太后_1989603539",
+      "name": "劉太后",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_韓琦_2004399501",
+      "name": "韓琦",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_鄭俠_2004337453",
+      "name": "鄭俠",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_呂惠卿_1990088391",
+      "name": "呂惠卿",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_李綱_2004016893",
+      "name": "李綱",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "minister_張邦昌_1993165953",
+      "name": "張邦昌",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "general_趙弘殷_914685729",
+      "name": "趙弘殷",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_蘇洵_2004256488",
+      "name": "蘇洵",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "general_劉光世_900038239",
+      "name": "劉光世",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_張俊_306227692",
+      "name": "張俊",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_李顯忠_905717064",
+      "name": "李顯忠",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_邵宏淵_915423204",
+      "name": "邵宏淵",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_魏勝_306705445",
+      "name": "魏勝",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_吳玠_306149508",
+      "name": "吳玠",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_張浚_2003948447",
+      "name": "張浚",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "general_王堅_306391185",
+      "name": "王堅",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_吳璘_306149756",
+      "name": "吳璘",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_呂文煥_900631721",
+      "name": "呂文煥",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_阿朮_306670470",
+      "name": "阿朮",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_范文虎_912139283",
+      "name": "范文虎",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "minister_史天澤_1989957491",
+      "name": "史天澤",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "general_馮勝_306692518",
+      "name": "馮勝",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_徐輝祖_903744914",
+      "name": "徐輝祖",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_常茂_306232961",
+      "name": "常茂",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_鄧愈_306628472",
+      "name": "鄧愈",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_湯和_306349748",
+      "name": "湯和",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_朱權_306298032",
+      "name": "朱權",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_李善長_1994700967",
+      "name": "李善長",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_胡惟庸_2001068736",
+      "name": "胡惟庸",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "general_唐勝宗_900675987",
+      "name": "唐勝宗",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_陸仲亨_916732567",
+      "name": "陸仲亨",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_周德興_900626370",
+      "name": "周德興",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_耿炳文_911539164",
+      "name": "耿炳文",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_鐵鉉_306665323",
+      "name": "鐵鉉",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_盛庸_306419188",
+      "name": "盛庸",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_平安_306224685",
+      "name": "平安",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張玉_306236843",
+      "name": "張玉",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_朱能_306303651",
+      "name": "朱能",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張輔_306243894",
+      "name": "張輔",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_鄭和_306625462",
+      "name": "鄭和",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_齊泰_2004456896",
+      "name": "齊泰",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_黃子澄_2008380573",
+      "name": "黃子澄",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "general_朱高煦_905712808",
+      "name": "朱高煦",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_楊士奇_1995200748",
+      "name": "楊士奇",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_王振_2004107230",
+      "name": "王振",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_楊榮_2004027518",
+      "name": "楊榮",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "emperor_明惠帝_281796828",
+      "name": "明惠帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_明仁宗_281941283",
+      "name": "明仁宗",
+      "type": "emperor",
+      "rank": "A"
+    },
+    {
+      "id": "emperor_明宣宗_281839045",
+      "name": "明宣宗",
+      "type": "emperor",
+      "rank": "A+"
+    },
+    {
+      "id": "emperor_明神宗_281603104",
+      "name": "明神宗",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_明憲宗_281790964",
+      "name": "明憲宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_汪直_2004055716",
+      "name": "汪直",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_明武宗_281713960",
+      "name": "明武宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "general_江彬_306336164",
+      "name": "江彬",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_明穆宗_281595912",
+      "name": "明穆宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_明光宗_281921195",
+      "name": "明光宗",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_宋度宗_284401195",
+      "name": "宋度宗",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_趙昺_1671343800",
+      "name": "趙昺",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_宋神宗_284189155",
+      "name": "宋神宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_溥儀帝_279809573",
+      "name": "溥儀帝",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_咸豐帝_285717026",
+      "name": "咸豐帝",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_皇太極_277802581",
+      "name": "皇太極",
+      "type": "emperor",
+      "rank": "S-"
+    },
+    {
+      "id": "general_楊鎬_306325081",
+      "name": "楊鎬",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_杜松_306298457",
+      "name": "杜松",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_劉鋌_306144282",
+      "name": "劉鋌",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_阿濟格_916945637",
+      "name": "阿濟格",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_孔有德_902378571",
+      "name": "孔有德",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_尼堪_306206245",
+      "name": "尼堪",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_永琪_2004053452",
+      "name": "永琪",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_福隆安_1999692792",
+      "name": "福隆安",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "general_傅恆_306115352",
+      "name": "傅恆",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_劉坤一_1989587915",
+      "name": "劉坤一",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_丁汝昌_899144505",
+      "name": "丁汝昌",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_程不識_909747807",
+      "name": "程不識",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_毌丘儉_906228454",
+      "name": "毌丘儉",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_諸葛恪_2003833037",
+      "name": "諸葛恪",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_諸葛誕_914342587",
+      "name": "諸葛誕",
+      "type": "general",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_司馬孚_1990470028",
+      "name": "司馬孚",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_司馬朗_1990473033",
+      "name": "司馬朗",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_司馬亮_1990466784",
+      "name": "司馬亮",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_司馬防_1990485092",
+      "name": "司馬防",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_司馬望_900971792",
+      "name": "司馬望",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_羊祜_306494921",
+      "name": "羊祜",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_王凌_306389592",
+      "name": "王凌",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_王陵_2004120356",
+      "name": "王陵",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_張蒼_2003954433",
+      "name": "張蒼",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_王景_2004108062",
+      "name": "王景",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_汪廣洋_1996021976",
+      "name": "汪廣洋",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_石苞_306437122",
+      "name": "石苞",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_斛律金_904860330",
+      "name": "斛律金",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_高演_1671236413",
+      "name": "高演",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_高殷_1671237274",
+      "name": "高殷",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_高湛_1671236598",
+      "name": "高湛",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "general_高延宗_917939298",
+      "name": "高延宗",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_楊愔_2004025316",
+      "name": "楊愔",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_齊後主_267730862",
+      "name": "齊後主",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "minister_高湝_2004421983",
+      "name": "高湝",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "general_安慶緒_902392974",
+      "name": "安慶緒",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_元善見_286991261",
+      "name": "元善見",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_元脩_1671815731",
+      "name": "元脩",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_魏宣武帝_259214450",
+      "name": "魏宣武帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_靈太后_2006516178",
+      "name": "靈太后",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_魏孝明帝_259104772",
+      "name": "魏孝明帝",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_元寶炬_286946478",
+      "name": "元寶炬",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "general_頡利可汗_1632539801",
+      "name": "頡利可汗",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_陳餘_306684860",
+      "name": "陳餘",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_袁紹_306567055",
+      "name": "袁紹",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_范仲淹_911953843",
+      "name": "范仲淹",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_种世衡_909687745",
+      "name": "种世衡",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_野利旺榮_1680628922",
+      "name": "野利旺榮",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_公孫瓚_899854692",
+      "name": "公孫瓚",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_孫堅_306199729",
+      "name": "孫堅",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_劉表_306141622",
+      "name": "劉表",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_呂布_306144440",
+      "name": "呂布",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_賈詡_2004317555",
+      "name": "賈詡",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_張繡_306239619",
+      "name": "張繡",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_曹昂_2004008195",
+      "name": "曹昂",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "general_典韋_306137098",
+      "name": "典韋",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_李傕_306292158",
+      "name": "李傕",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_馬騰_306710715",
+      "name": "馬騰",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_郭汜_306629574",
+      "name": "郭汜",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_郭嘉_2004337046",
+      "name": "郭嘉",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_韓遂_306693510",
+      "name": "韓遂",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_孫皓_1671737841",
+      "name": "孫皓",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_石虎_1671507390",
+      "name": "石虎",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_唐懿宗_285968927",
+      "name": "唐懿宗",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_唐僖宗_286105110",
+      "name": "唐僖宗",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "minister_載灃_2004328756",
+      "name": "載灃",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "general_郭待封_915503858",
+      "name": "郭待封",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_郭孝恪_915472003",
+      "name": "郭孝恪",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_薛仁貴_912598295",
+      "name": "薛仁貴",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_薛訥_306547361",
+      "name": "薛訥",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_薛嵩_306535909",
+      "name": "薛嵩",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_樊於期_905989270",
+      "name": "樊於期",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_夏侯楙_901637378",
+      "name": "夏侯楙",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_黃祖_306742698",
+      "name": "黃祖",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_奕山_306184307",
+      "name": "奕山",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_湯恩伯_907022014",
+      "name": "湯恩伯",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_劉峙_306130471",
+      "name": "劉峙",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "minister_黃皓_2004455178",
+      "name": "黃皓",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_萬俟卨_2001741051",
+      "name": "萬俟卨",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_留夢炎_1998175019",
+      "name": "留夢炎",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_馬士英_2007114360",
+      "name": "馬士英",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_阮大鋮_2006261179",
+      "name": "阮大鋮",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_翁同龢_2000706813",
+      "name": "翁同龢",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_葉名琛_2001810461",
+      "name": "葉名琛",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_解縉_2004291424",
+      "name": "解縉",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_宋濂_2003919985",
+      "name": "宋濂",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_唐德宗_285987031",
+      "name": "唐德宗",
+      "type": "emperor",
+      "rank": "B"
+    },
+    {
+      "id": "emperor_唐文宗_285940903",
+      "name": "唐文宗",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_宋端宗_284176724",
+      "name": "宋端宗",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_遼穆宗_271157530",
+      "name": "遼穆宗",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_元仁宗_287056686",
+      "name": "元仁宗",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_鐵木迭兒_2052952114",
+      "name": "鐵木迭兒",
+      "type": "minister",
+      "rank": "C-"
+    },
+    {
+      "id": "emperor_孫休_1671747955",
+      "name": "孫休",
+      "type": "emperor",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_齊廢帝_267732066",
+      "name": "齊廢帝",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_齊武帝_267632742",
+      "name": "齊武帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_宋文帝_284345958",
+      "name": "宋文帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_北周明帝_293382777",
+      "name": "北周明帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_宇文護_1991928061",
+      "name": "宇文護",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_宇文護_902426816",
+      "name": "宇文護",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_侯莫陳崇_2122627271",
+      "name": "侯莫陳崇",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_楊侑_1671637746",
+      "name": "楊侑",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_陳廢帝_269906809",
+      "name": "陳廢帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "emperor_唐武宗_285894310",
+      "name": "唐武宗",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_漢平帝_279582715",
+      "name": "漢平帝",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "general_夏侯惇_901635184",
+      "name": "夏侯惇",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_曹真_306299389",
+      "name": "曹真",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_高駢_306719937",
+      "name": "高駢",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_宗澤_306207140",
+      "name": "宗澤",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_賀人龍_914360572",
+      "name": "賀人龍",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_李秀成_905474119",
+      "name": "李秀成",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "emperor_洪秀全_279853653",
+      "name": "洪秀全",
+      "type": "emperor",
+      "rank": "D"
+    },
+    {
+      "id": "general_陳玉成_917023107",
+      "name": "陳玉成",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_李續賓_905523134",
+      "name": "李續賓",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_曹休_306289135",
+      "name": "曹休",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "emperor_前燕景昭帝_466885840",
+      "name": "前燕景昭帝",
+      "type": "emperor",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_諸葛瑾_2003838177",
+      "name": "諸葛瑾",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_富弼_2003917770",
+      "name": "富弼",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_曾布_2004006303",
+      "name": "曾布",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_史浩_2003859089",
+      "name": "史浩",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_申時行_1998248739",
+      "name": "申時行",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_索額圖_2000585073",
+      "name": "索額圖",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_鰲拜_2004429764",
+      "name": "鰲拜",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_鰲拜_306716577",
+      "name": "鰲拜",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_明珠_2004004460",
+      "name": "明珠",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_紀昀_2004183002",
+      "name": "紀昀",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_何晏_2003820660",
+      "name": "何晏",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "minister_庾亮_2003936906",
+      "name": "庾亮",
+      "type": "minister",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_褚遂良_2003476845",
+      "name": "褚遂良",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_蘇綽_2004260720",
+      "name": "蘇綽",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "general_劉縯_306139005",
+      "name": "劉縯",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_王尋_306392215",
+      "name": "王尋",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_漢更始帝_75047669",
+      "name": "漢更始帝",
+      "type": "emperor",
+      "rank": "C"
+    },
+    {
+      "id": "general_吳漢_306148358",
+      "name": "吳漢",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_賈復_306593432",
+      "name": "賈復",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_耿弇_306493791",
+      "name": "耿弇",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_寇恂_306204690",
+      "name": "寇恂",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_曹彬_306293322",
+      "name": "曹彬",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_蘇武_2004256025",
+      "name": "蘇武",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_侯君集_899377699",
+      "name": "侯君集",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "minister_薛居正_2002198271",
+      "name": "薛居正",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_石熙載_1999017001",
+      "name": "石熙載",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_蕭瑀_2004253517",
+      "name": "蕭瑀",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_段志玄_906356011",
+      "name": "段志玄",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_屈突通_902779946",
+      "name": "屈突通",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_劉弘基_900150356",
+      "name": "劉弘基",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_長孫順德_1650042564",
+      "name": "長孫順德",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_徐敬業_903409978",
+      "name": "徐敬業",
+      "type": "general",
+      "rank": "C-"
+    },
+    {
+      "id": "general_李孝逸_905244786",
+      "name": "李孝逸",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_楊諒_306322815",
+      "name": "楊諒",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_薛仁杲_912588757",
+      "name": "薛仁杲",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "minister_許遠_2004298537",
+      "name": "許遠",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_岳雲_306226006",
+      "name": "岳雲",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_王貴_306404672",
+      "name": "王貴",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_張憲_306232276",
+      "name": "張憲",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_察罕帖木兒_83478893",
+      "name": "察罕帖木兒",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "minister_嚴世蕃_1990553607",
+      "name": "嚴世蕃",
+      "type": "minister",
+      "rank": "C"
+    },
+    {
+      "id": "general_王守仁_908240173",
+      "name": "王守仁",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_司馬錯_900983076",
+      "name": "司馬錯",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_龐涓_306746042",
+      "name": "龐涓",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "emperor_秦惠公_276918197",
+      "name": "秦惠公",
+      "type": "emperor",
+      "rank": "C-"
+    },
+    {
+      "id": "minister_陳永華_2006474960",
+      "name": "陳永華",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_鄭經_306635965",
+      "name": "鄭經",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "general_馮錫範_918075472",
+      "name": "馮錫範",
+      "type": "general",
+      "rank": "D"
+    },
+    {
+      "id": "general_劉國軒_900100505",
+      "name": "劉國軒",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_鄭克𡒉_2004985517",
+      "name": "鄭克𡒉",
+      "type": "minister",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_沈葆楨_1996346576",
+      "name": "沈葆楨",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_阿桂_2004383933",
+      "name": "阿桂",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "general_阿桂_306670746",
+      "name": "阿桂",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_靳輔_2004403419",
+      "name": "靳輔",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_譚綸_306589781",
+      "name": "譚綸",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_完顏婁室_2077264899",
+      "name": "完顏婁室",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_完顏宗翰_2077245005",
+      "name": "完顏宗翰",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_完顏宗望_2077251362",
+      "name": "完顏宗望",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_李若水_1995050531",
+      "name": "李若水",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_完顏杲_902825400",
+      "name": "完顏杲",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_耶律休哥_1811702336",
+      "name": "耶律休哥",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_耶律斜軫_1811508581",
+      "name": "耶律斜軫",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_楊業_306314266",
+      "name": "楊業",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_潘美_306367981",
+      "name": "潘美",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_王侁_2004102192",
+      "name": "王侁",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "general_楊延昭_905750762",
+      "name": "楊延昭",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_楊文廣_905801007",
+      "name": "楊文廣",
+      "type": "general",
+      "rank": "B"
+    },
+    {
+      "id": "minister_章惇_2004164801",
+      "name": "章惇",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_張齊賢_1993292083",
+      "name": "張齊賢",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_李沆_2004012498",
+      "name": "李沆",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "general_郭崇韜_915499403",
+      "name": "郭崇韜",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_符存審_910113120",
+      "name": "符存審",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_符彥卿_910143113",
+      "name": "符彥卿",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_韋皋_306686679",
+      "name": "韋皋",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_李晟_306297736",
+      "name": "李晟",
+      "type": "general",
+      "rank": "S-"
+    },
+    {
+      "id": "general_朱泚_306298496",
+      "name": "朱泚",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_渾瑊_306356355",
+      "name": "渾瑊",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "minister_蘇威_2004251572",
+      "name": "蘇威",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_裴松之_2003103463",
+      "name": "裴松之",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_高允_2004414531",
+      "name": "高允",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_李沖_2004012514",
+      "name": "李沖",
+      "type": "minister",
+      "rank": "S-"
+    },
+    {
+      "id": "minister_苻融_2004239052",
+      "name": "苻融",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_慕容皝_903771714",
+      "name": "慕容皝",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_步騭_306343455",
+      "name": "步騭",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_張既_2003946535",
+      "name": "張既",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "general_滿寵_306356109",
+      "name": "滿寵",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_田豫_306417650",
+      "name": "田豫",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_段熲_306335572",
+      "name": "段熲",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "minister_虞詡_2004266653",
+      "name": "虞詡",
+      "type": "minister",
+      "rank": "A"
+    },
+    {
+      "id": "minister_第五倫_1999515817",
+      "name": "第五倫",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_魏相_2004427875",
+      "name": "魏相",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_丙吉_2003806186",
+      "name": "丙吉",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_子貢_2003925548",
+      "name": "子貢",
+      "type": "minister",
+      "rank": "A+"
+    },
+    {
+      "id": "minister_冉求_2003839667",
+      "name": "冉求",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_淳于長_1996280386",
+      "name": "淳于長",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_房遺愛_1993910982",
+      "name": "房遺愛",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_丁大全_1988488008",
+      "name": "丁大全",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_董賢_2004251577",
+      "name": "董賢",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_武三思_1995635072",
+      "name": "武三思",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "emperor_楚宣王_281021829",
+      "name": "楚宣王",
+      "type": "emperor",
+      "rank": "A-"
+    },
+    {
+      "id": "general_劉封_306130255",
+      "name": "劉封",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_孟達_306213772",
+      "name": "孟達",
+      "type": "general",
+      "rank": "C"
+    },
+    {
+      "id": "general_葉劍英_912301110",
+      "name": "葉劍英",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_賀龍_306609540",
+      "name": "賀龍",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_陳毅_306673257",
+      "name": "陳毅",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_徐向前_903266325",
+      "name": "徐向前",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_羅榮桓_911305427",
+      "name": "羅榮桓",
+      "type": "general",
+      "rank": "A"
+    },
+    {
+      "id": "general_聶榮臻_911543596",
+      "name": "聶榮臻",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_張自忠_903546196",
+      "name": "張自忠",
+      "type": "general",
+      "rank": "A-"
+    },
+    {
+      "id": "general_孫連仲_902722563",
+      "name": "孫連仲",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "general_劉秀_306137870",
+      "name": "劉秀",
+      "type": "general",
+      "rank": "S"
+    },
+    {
+      "id": "general_耶律阿保機_310698923",
+      "name": "耶律阿保機",
+      "type": "general",
+      "rank": "A+"
+    },
+    {
+      "id": "general_爾朱兆_908013340",
+      "name": "爾朱兆",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "general_葛榮_306529130",
+      "name": "葛榮",
+      "type": "general",
+      "rank": "C+"
+    },
+    {
+      "id": "minister_嵇紹_2003937196",
+      "name": "嵇紹",
+      "type": "minister",
+      "rank": "B-"
+    },
+    {
+      "id": "minister_張柬之_1992836666",
+      "name": "張柬之",
+      "type": "minister",
+      "rank": "A-"
+    },
+    {
+      "id": "minister_張易之_1992822003",
+      "name": "張易之",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_劉林_2003846408",
+      "name": "劉林",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "minister_糜芳_2004189233",
+      "name": "糜芳",
+      "type": "minister",
+      "rank": "D"
+    },
+    {
+      "id": "general_太史慈_901695081",
+      "name": "太史慈",
+      "type": "general",
+      "rank": "B+"
+    },
+    {
+      "id": "minister_宋教仁_1991914937",
+      "name": "宋教仁",
+      "type": "minister",
+      "rank": "B"
+    },
+    {
+      "id": "general_朱文正_905288150",
+      "name": "朱文正",
+      "type": "general",
+      "rank": "A+"
+    }
+  ]
+}

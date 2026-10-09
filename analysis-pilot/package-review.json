@@ -1,0 +1,106 @@
+{
+  "format": "dynasty-public-pilot-package-review",
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-09T12:22:35.898Z",
+  "reviewer": "Independent Codex delivery review subagent",
+  "scope": "Read-only public delivery package, manifest, HTML pages and corresponding public app artifacts. No cloudflare/private snapshots, production or browser access.",
+  "passed": true,
+  "status": "package_verified",
+  "checks": [
+    {
+      "id": "audit_matches_final_public_source",
+      "passed": true
+    },
+    {
+      "id": "status_binds_audit_and_manifest",
+      "passed": true
+    },
+    {
+      "id": "revision_and_library_verified",
+      "passed": true
+    },
+    {
+      "id": "eight_new_manuscripts_declared",
+      "passed": true
+    },
+    {
+      "id": "nine_function_pages_declared",
+      "passed": true
+    },
+    {
+      "id": "all_manifest_file_hashes_match",
+      "passed": true,
+      "files": 133,
+      "matching": 133
+    },
+    {
+      "id": "package_has_no_unlisted_payload",
+      "passed": true,
+      "files": 135
+    },
+    {
+      "id": "no_sensitive_paths_or_backups",
+      "passed": true
+    },
+    {
+      "id": "wangjian_existing_article_label_and_hash",
+      "passed": true
+    },
+    {
+      "id": "all_nine_pages_match_original_manuscripts",
+      "passed": true,
+      "matching": 9
+    },
+    {
+      "id": "exactly_nine_article_pages",
+      "passed": true,
+      "pages": 9
+    },
+    {
+      "id": "overview_counts_match_audit",
+      "passed": true
+    },
+    {
+      "id": "all_local_html_links_exist",
+      "passed": true,
+      "links": 70,
+      "broken": 0
+    },
+    {
+      "id": "public_json_has_no_private_state_or_credential_values",
+      "passed": true,
+      "textFilesScanned": 134,
+      "jsonFilesScanned": 40,
+      "binaryFilesNotTextScanned": 1
+    }
+  ],
+  "findings": [],
+  "figures": {
+    "total": 962,
+    "deepAnalysis": 388,
+    "analysis": 66,
+    "soulEssence": 21
+  },
+  "manuscripts": {
+    "newlyAdded": 8,
+    "preservedExisting": 1,
+    "htmlPages": 9
+  },
+  "files": {
+    "actual": 135,
+    "manifest": 133,
+    "manifestHashesMatching": 133,
+    "copiedSourcesMatching": 123,
+    "textFilesScanned": 134,
+    "jsonFilesScanned": 40
+  },
+  "integrity": {
+    "publicAuditSha256": "daa17dbccee0448442047c92e68ab750ed1b25eb2070511fc704036d5a3d4875",
+    "publicManifestSha256": "7d0daa215df0f739e4cd2a98cee6f0edf334c19cafbe43840554dd6e4aa68642",
+    "unaffectedBeforeSha256": "a8bec570eea2dd50330e3ec63ce2799a4c04f7cccf881920289e97e27dcfbcf4",
+    "unaffectedAfterSha256": "a8bec570eea2dd50330e3ec63ce2799a4c04f7cccf881920289e97e27dcfbcf4"
+  },
+  "limitations": [
+    "Credential-pattern and structured JSON scans do not prove the absence of every possible arbitrary secret string. No original private userdata was opened; preservation conclusions refer to the matching final public audit."
+  ]
+}

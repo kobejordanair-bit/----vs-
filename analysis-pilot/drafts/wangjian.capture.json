@@ -1,0 +1,17 @@
+{
+  "provider": "ChatGPT web",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T10:34:06.022Z",
+  "responseSha256": "1f65dd9696eb825f0bbc05de6682c9f67b3be34f93124daded8b19dbeda8009d",
+  "fragments": [
+    {
+      "file": "wangjian.raw.md",
+      "sha256": "75d4cdef237edf6b1c8dddc1d589c3251d69a6b9c42d0ea5e1147ba84e0af44e"
+    },
+    {
+      "file": "wangjian-fix.raw.md",
+      "sha256": "b12f9b29e18b50584e5b727c7f1f84c3a86cd0ebf1ba6a7a4f4f5d0c3fd9774b"
+    }
+  ],
+  "composition": "Single complete ChatGPT manuscript with its line49 replaced by the precise source correction authored by ChatGPT in a later response; completion-marker backticks and final newline normalized."
+}

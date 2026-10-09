@@ -1,0 +1,96 @@
+{
+  "format": "dynasty-original-analysis-prompts",
+  "schemaVersion": 1,
+  "extractedAt": "2026-10-09T10:44:44.361Z",
+  "source": {
+    "path": "backend/index.html",
+    "sha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7"
+  },
+  "extraction": "逐字擷取原 JavaScript template literal（保留反引號、插值表達式、換行及跳脫字元）；未執行模板、未填入任何資料、未改写文風。",
+  "templates": {
+    "deepCalibration": {
+      "function": "_loadCalibrationContent",
+      "sourceLineStart": 2568,
+      "sourceLineEnd": 2613,
+      "rawTemplateLiteral": "`你是一位極具學術嚴謹度的「歷史名錄總評官」。你已載入一份包含逾四百位歷史人物的《歷史人物評級總表》，榜單評級系統橫跨 S+ 至 D 共十三檔，涵蓋帝王、將領、名臣三大類型。\r\n\r\n${rankingRef}\r\n\r\n【當前評估對象】\r\n姓名：${legend.name}\r\n類型：${typeLabel}\r\n現有評級：${legend.rank}\r\n稱號：${legend.title}\r\n標籤：${legend.tag}\r\n簡評：${legend.desc}\r\n判詞：${legend.poem}\r\n\r\n【核心史觀】\r\n評估時奉行「實體建制為主，文明底線為輔」的大歷史觀。道德氣節是加分項但不能掩蓋戰略災難；實體政績與戰略破局是評級核心權重。\r\n\r\n【三大維度評分邏輯】\r\n帝王：考核國家機器實體掌控力、地緣戰略版圖拓展、底層經濟稅收體系重塑、極端危機政治手腕。\r\n將領：考核大兵團會戰殲滅能力、極端逆境戰術破局、地緣戰略目標實體兌現、政治絞肉機中保全軍事實力的生存智慧。\r\n名臣：考核實體行政效能與國家戰略紅利（最高權重）、危機處理與制度建構、治國理財水準。\r\n\r\n【多重身份隔離法則】\r\n評估時嚴格鎖定當前類型維度，禁止跨界混算。\r\n\r\n請依以下四步驟完成評估：\r\n\r\n第一步【榜單錨定】：從參照表中找出與本次評估對象同類型且評級相近的現有人物，明列並實質比較。\r\n\r\n第二步【獨立史學剖析】：綜合史書、制度背景、時代環境，針對功過、時代難度、權力結構、後世影響進行深度剖析。\r\n\r\n第三步【縱向標定與雙向防線】：向上對標高一檔人物說明為何無法觸及，向下對標低一檔人物說明底線為何不至滑落。\r\n\r\n第四步【全榜邏輯一致性校準】：確保評級完全吻合整份總表給分哲學。\r\n\r\n完成論證後，輸出以下格式（必須包含，供系統解析）：\r\n\r\n【建議定案】\r\n評級：（填入，僅填等級如S+/A-/B，不加說明）\r\n稱號：（填入）\r\n標籤：（填入）\r\n簡評：（填入，50字內）\r\n判詞：（填入，20字內）\r\n\r\n注意：每個欄位必須各自獨立一行，不可合併在同一行。\r\n\r\n繁體中文，保持學術嚴謹度。`",
+      "templateSha256": "d99bc779df14b826fad50520f2ac42d411337d6306f733e14457faea6dd4b798",
+      "outputField": "deepAnalysis",
+      "interpolations": {
+        "rankingRef": "原網站的【現有人物評級參考表】；staticLegendsData 與 customLegends 合併，以 modifiedLegends.rank 優先，格式為「姓名(評級)」並以頓號串接。此檔只保存模板，不填入人物資料。",
+        "typeLabel": "legend.type === 'emperor' ? '帝王' : legend.type === 'general' ? '將領' : '名臣'",
+        "legend.name": "當前人物姓名",
+        "legend.rank": "當前人物現有評級",
+        "legend.title": "當前人物稱號",
+        "legend.tag": "當前人物標籤",
+        "legend.desc": "當前人物簡評",
+        "legend.poem": "當前人物判詞"
+      }
+    },
+    "analysis": {
+      "function": "_loadReviewContent",
+      "sourceLineStart": 2485,
+      "sourceLineEnd": 2498,
+      "rawTemplateLiteral": "`請以一位極具洞察力、不落俗套的資深歷史學者的角度，深度剖析${legend.name}（${legend.title}）。\r\n\r\n【分析準則】：\r\n1. **拒絕刻板印象**：主動挑戰主流史觀，至少提出一個反常識的論點並說明依據。\r\n2. **多維度分析**：結合史料、當時局勢以及人心（心理動機），引用具體事件、年份、地名。\r\n3. **心理動機優先**：深入分析每個重大決策背後的真實心理動機，還原「人」的複雜性。\r\n4. **時代局限性**：嚴格區分哪些失敗是時代局限，哪些是個人能力問題。\r\n5. **角色本位**：${legend.type === 'emperor' ? '純粹根據「作為帝王」的表現（統御、決策、國運）分析' : legend.type === 'general' ? '純粹根據「作為將領」的表現（戰略、戰術、治軍）分析' : '純粹根據「作為臣子」的表現（施政、輔佐、權謀）分析'}。\r\n\r\n請依此撰寫以下章節：\r\n1. **【歷史局勢與定位】**：置身於當時的時空背景，他面對的是什麼局，又在歷史長河中站什麼位置。\r\n2. **【深度功過剖析】**：具體事例分析，探討其決策背後的深層邏輯與得失。\r\n3. **【人性與性格側寫】**：還原其作為「人」的真實面貌與心理特質。\r\n4. **【如果生在現代】**：推測他適合什麼職業，如何處世。`",
+      "templateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "outputField": "analysis",
+      "interpolations": {
+        "legend.name": "當前人物姓名",
+        "legend.title": "當前人物稱號",
+        "legend.type": "角色本位條件式完整保留在原模板中：emperor 對應帝王，general 對應將領，其餘對應臣子。"
+      },
+      "conditionalStatsAppend": {
+        "function": "_loadReviewContent",
+        "sourceLineStart": 2501,
+        "sourceLineEnd": 2501,
+        "rawTemplateLiteral": "`\\n\\n5. **【五維能力數值】**：請給出 0-100 的數值（統率、武力、智謀、政治、魅力），並簡述理由。\\n\\n【重要格式要求】請在回應的最開頭，第一行就輸出JSON，格式為：{\"stats\": [統率, 武力, 智謀, 政治, 魅力]}，然後換行再開始撰寫Markdown分析文章。JSON必須是第一個輸出的內容。`",
+        "templateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+        "condition": "needsStats = forceRegen || !cachedStats；僅在此條件成立時把以下原模板附加到賞析模板。",
+        "outputField": "stats（五維 JSON 由網站原函式擷取，並從 analysis 文章移除）"
+      }
+    },
+    "soulEssence": {
+      "function": "_generateSoulEssence",
+      "sourceLineStart": 2406,
+      "sourceLineEnd": 2439,
+      "rawTemplateLiteral": "`${sourceBlock}\r\n你是一位精通人物心理分析的資深作家與歷史學者，任務是還原這位歷史人物作為「活生生的人」的內在運作方式——不是評價功過，而是以具體史實為錨點，論證他如何思考、說話、感受、犯錯。\r\n\r\n核心要求：每一個描述都必須有具體史實支撐——引用真實事件名稱、時間點、當事人、或史書記載。禁止空泛形容詞（「深謀遠慮」「性格剛直」之類）。論述必須能被反駁——如果一個描述對任何人都成立，它就是廢話。\r\n\r\n史實來源區分——每個關鍵論斷結尾標注以下其中一種：\r\n[史載] 有明確史書記載的事實（引用具體篇目或事件名稱）\r\n[推斷] 從多個相互印證的史實歸納出的行為模式（說明推斷依據）\r\n[詮釋] 在有限史料下合理但存在爭議空間的詮釋（說明不確定性來源）\r\n\r\n請依以下格式輸出：\r\n\r\n【說話邏輯】\r\n他習慣用什麼方式說服人（類比/威壓/讓步再反擊/直接亮底牌）；他話語裡習慣性的潛台詞是什麼；他沉默時通常意味著什麼。必須以至少一個具體的歷史對話場景或記載為例證。\r\n\r\n【壓力反應】\r\n遭遇危機或出乎意料的逆境時，他的第一反應模式是什麼。必須引用至少兩個不同時期的具體歷史事件對照——兩個例子才能說明這是模式而非偶然。分析這兩個事件中反應的共同結構。\r\n\r\n【核心驅動】\r\n他真正在追求的是什麼；他會為什麼事押上所有；對什麼本能地無法讓步。必須從具體的歷史決策（而非身份或頭銜）中提煉——他在哪個時刻選擇了代價極高的選項，那個選擇揭示了什麼。\r\n\r\n【慣性盲點】\r\n他一生重複的那個心理陷阱——他最大的優點以另一種方式呈現時製造的破壞。必須指出至少兩個不同時期重複出現同一結構的歷史事件，說明這個模式如何在不同處境下以不同形式重現。\r\n\r\n【情感結構】\r\n他如何對待真正親近的人；他是否懂得依賴；情感是熱烈外顯還是深藏不露；他最脆弱的時刻是什麼樣子。必須以具體的人際事件或史書記載為依據，而非從其政治行為推斷。\r\n\r\n【參照系】\r\n他習慣用什麼領域作為思考的參照系（一句通則，說明這個參照系從何而來）；舉兩個具體例子說明他在面對陌生情境時如何把它類比成他熟悉的框架，以及這個類比在哪些地方準確、在哪些地方製造了認知盲區。\r\n\r\n【內在裂縫】\r\n指出以上六項中哪兩項之間存在最根本的內在衝突。以完整論述段落說明：這個衝突的結構是什麼、它在他一生中在哪幾個關鍵時刻以最激烈的形式爆發、在壓力下這個衝突會把他推向什麼具體的行為或決策、以及他自己是否意識到這個衝突的存在。\r\n\r\n只輸出以上七個欄位，不要其他說明或評論。`",
+      "templateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "outputField": "soulEssence",
+      "interpolations": {
+        "sourceBlock": "原函式先組成的人物背景區塊；以下保留有背景、無背景的原模板。此檔不填入任何人物文章、聊天內容或私有資料。"
+      },
+      "sourceBlockTemplates": {
+        "withContext": {
+          "function": "_generateSoulEssence",
+          "sourceLineStart": 2404,
+          "sourceLineEnd": 2404,
+          "rawTemplateLiteral": "`以下是關於「${legend.name}」（${legend.title||''}，${legend.dynasty||''}）的相關評鑑資料：\\n\\n${sourceCtx}`",
+          "templateSha256": "8b597953cfe941fa0f343788ba7d15f963f090f5569acb706b4e9edd63482546",
+          "interpolations": {
+            "legend.name": "當前人物姓名",
+            "legend.title||''": "當前人物稱號，空值轉空字串",
+            "legend.dynasty||''": "當前人物朝代，空值轉空字串",
+            "sourceCtx": "執行時傳入的背景文字；本檔不含其值。"
+          }
+        },
+        "withoutContext": {
+          "function": "_generateSoulEssence",
+          "sourceLineStart": 2405,
+          "sourceLineEnd": 2405,
+          "rawTemplateLiteral": "`歷史人物「${legend.name}」（${legend.title||''}，${legend.dynasty||''}）。請純靠史實推斷。`",
+          "templateSha256": "1ba5f90b260203f0e9d66ba462d5a02fbea79963e4ba53ae945383c996804d67",
+          "interpolations": {
+            "legend.name": "當前人物姓名",
+            "legend.title||''": "當前人物稱號，空值轉空字串",
+            "legend.dynasty||''": "當前人物朝代，空值轉空字串"
+          }
+        }
+      }
+    }
+  },
+  "verification": {
+    "originalTemplateSyntaxValid": true,
+    "requiredOriginalSectionsPresent": true,
+    "userdataRead": false,
+    "websiteSourceModified": false
+  }
+}

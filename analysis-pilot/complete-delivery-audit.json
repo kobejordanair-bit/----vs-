@@ -1,0 +1,289 @@
+{
+  "format": "dynasty-complete-pilot-delivery-audit",
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-09T12:17:21.199Z",
+  "status": "complete_verified",
+  "passed": true,
+  "scope": "Local API-visible userdata: all 10 persisted fields and all other visible top-level fields; only the three authorized figures and eight missing prose fields may change.",
+  "revision": {
+    "before": 1,
+    "after": 3,
+    "expectedIncrease": 2,
+    "passed": true
+  },
+  "authorization": {
+    "targetCount": 3,
+    "deepAnalysisAdditions": 3,
+    "additionalLayerAdditions": 5,
+    "totalAddedFields": 8,
+    "existingWangJianAnalysisPreserved": true,
+    "ratingsAndStatsPreserved": true,
+    "unrelatedFiguresPreserved": true
+  },
+  "userdataFields": {
+    "customLegends": {
+      "preserved": true,
+      "beforeSha256": "6a975ed48024315bcd9319890e6609aa6ca33c4e1f012bb304ec50ae6830c967",
+      "afterRemovingAllowedAdditionsSha256": "6a975ed48024315bcd9319890e6609aa6ca33c4e1f012bb304ec50ae6830c967",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "modifiedLegends": {
+      "preserved": true,
+      "beforeSha256": "4576caceaf9d3551d5f10ec6fecbeaf6b4dd6a1adb3eae76dac02608be819606",
+      "afterRemovingAllowedAdditionsSha256": "4576caceaf9d3551d5f10ec6fecbeaf6b4dd6a1adb3eae76dac02608be819606",
+      "directlyEqualBeforeAndAfter": false
+    },
+    "chatHistories": {
+      "preserved": true,
+      "beforeSha256": "db7ed136fe51551d4a101e21d3f2d85dedd61c0853233b650e1d2f4c2435510e",
+      "afterRemovingAllowedAdditionsSha256": "db7ed136fe51551d4a101e21d3f2d85dedd61c0853233b650e1d2f4c2435510e",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "simulationHistory": {
+      "preserved": true,
+      "beforeSha256": "191c9227cd49eea34b9d868a1846cf3b581cb1b607694bf92c6f831eb6c0d595",
+      "afterRemovingAllowedAdditionsSha256": "191c9227cd49eea34b9d868a1846cf3b581cb1b607694bf92c6f831eb6c0d595",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "discussionHistories": {
+      "preserved": true,
+      "beforeSha256": "f5f15eb4d50ebc8a97ab381e187bd55b0fb91492a5529ff3b0dec904295b7bba",
+      "afterRemovingAllowedAdditionsSha256": "f5f15eb4d50ebc8a97ab381e187bd55b0fb91492a5529ff3b0dec904295b7bba",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "soulSaves": {
+      "preserved": true,
+      "beforeSha256": "65f0fca582bd69b9702b7eacf3b09d3547534280e9f6a6e475a61bf54374ec7d",
+      "afterRemovingAllowedAdditionsSha256": "65f0fca582bd69b9702b7eacf3b09d3547534280e9f6a6e475a61bf54374ec7d",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "hegemonySavedSim": {
+      "preserved": true,
+      "beforeSha256": "508ec2218d1bdc978d40dec0826b8118f4e353af66939e92060d05974ff8a991",
+      "afterRemovingAllowedAdditionsSha256": "508ec2218d1bdc978d40dec0826b8118f4e353af66939e92060d05974ff8a991",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "scenes": {
+      "preserved": true,
+      "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "afterRemovingAllowedAdditionsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "sceneEdits": {
+      "preserved": true,
+      "beforeSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "afterRemovingAllowedAdditionsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "directlyEqualBeforeAndAfter": true
+    },
+    "soulSession": {
+      "preserved": true,
+      "beforeSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "afterRemovingAllowedAdditionsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "directlyEqualBeforeAndAfter": true
+    }
+  },
+  "userdataHashes": {
+    "beforeSha256": "0f8dcee5d3d3194d0b89722a49921b655abe4f021742ca582230482257cd1c6e",
+    "afterSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+    "unaffectedBeforeSha256": "a8bec570eea2dd50330e3ec63ce2799a4c04f7cccf881920289e97e27dcfbcf4",
+    "unaffectedAfterSha256": "a8bec570eea2dd50330e3ec63ce2799a4c04f7cccf881920289e97e27dcfbcf4"
+  },
+  "batchHashes": {
+    "deepBatchSha256": "2e5885ce958c7acde6248d497899fbf1b65a06192481bea10faf6bed07aa122a",
+    "layersBatchSha256": "c901db3a1903844893b4072e3cb5f1df37d48d587f10c8c0058b359fce0b5546",
+    "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30"
+  },
+  "figures": {
+    "before": {
+      "builtIn": 296,
+      "custom": 666,
+      "modifications": 453,
+      "visibleEntries": 962,
+      "uniqueIds": 962,
+      "invalidIds": 0,
+      "duplicateMergedIds": 0,
+      "duplicateCustomIds": 0,
+      "customCollisionsWithBuiltIn": 0,
+      "invalidModificationRecords": 0,
+      "orphanModificationRecords": 25,
+      "emperor": 216,
+      "general": 416,
+      "minister": 330,
+      "withAnyAnalysis": 403,
+      "mergedLibrarySha256": "d8b83dc123c27a15cc755fc1f2f185d5133483f2055acd6d8768401190f87273",
+      "deepAnalysis": {
+        "uniqueFigures": 385,
+        "storedModificationRecords": 385,
+        "textCharacters": 614963,
+        "nonTextValues": 0
+      },
+      "analysis": {
+        "uniqueFigures": 64,
+        "storedModificationRecords": 68,
+        "textCharacters": 197868,
+        "nonTextValues": 0
+      },
+      "soulEssence": {
+        "uniqueFigures": 18,
+        "storedModificationRecords": 18,
+        "textCharacters": 44183,
+        "nonTextValues": 0
+      }
+    },
+    "after": {
+      "builtIn": 296,
+      "custom": 666,
+      "modifications": 455,
+      "visibleEntries": 962,
+      "uniqueIds": 962,
+      "invalidIds": 0,
+      "duplicateMergedIds": 0,
+      "duplicateCustomIds": 0,
+      "customCollisionsWithBuiltIn": 0,
+      "invalidModificationRecords": 0,
+      "orphanModificationRecords": 25,
+      "emperor": 216,
+      "general": 416,
+      "minister": 330,
+      "withAnyAnalysis": 405,
+      "mergedLibrarySha256": "944ff79791b3f08cb37e424223e7a4686051628bc5f88b9487e3ec22260a3575",
+      "deepAnalysis": {
+        "uniqueFigures": 388,
+        "storedModificationRecords": 388,
+        "textCharacters": 630628,
+        "nonTextValues": 0
+      },
+      "analysis": {
+        "uniqueFigures": 66,
+        "storedModificationRecords": 70,
+        "textCharacters": 210694,
+        "nonTextValues": 0
+      },
+      "soulEssence": {
+        "uniqueFigures": 21,
+        "storedModificationRecords": 21,
+        "textCharacters": 57986,
+        "nonTextValues": 0
+      }
+    }
+  },
+  "histories": {
+    "before": {
+      "chatGroups": 2,
+      "chatMessages": 3,
+      "orphanChatGroups": 1,
+      "invalidChatGroups": 0,
+      "discussionGroups": 9,
+      "discussionMessages": 22,
+      "orphanDiscussionGroups": 0,
+      "invalidDiscussionGroups": 0,
+      "simulations": 1034,
+      "soulSavedGames": 14,
+      "soulSavedChapters": 139,
+      "activeSoulSessionPresent": 0,
+      "activeSoulChapters": 0,
+      "hegemonyPresent": 1,
+      "hegemonyFactions": 4,
+      "hegemonyPhases": 2,
+      "scenes": 0,
+      "sceneEdits": 0
+    },
+    "after": {
+      "chatGroups": 2,
+      "chatMessages": 3,
+      "orphanChatGroups": 1,
+      "invalidChatGroups": 0,
+      "discussionGroups": 9,
+      "discussionMessages": 22,
+      "orphanDiscussionGroups": 0,
+      "invalidDiscussionGroups": 0,
+      "simulations": 1034,
+      "soulSavedGames": 14,
+      "soulSavedChapters": 139,
+      "activeSoulSessionPresent": 0,
+      "activeSoulChapters": 0,
+      "hegemonyPresent": 1,
+      "hegemonyFactions": 4,
+      "hegemonyPhases": 2,
+      "scenes": 0,
+      "sceneEdits": 0
+    },
+    "preserved": true
+  },
+  "layers": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "additions": [
+        {
+          "field": "deepAnalysis",
+          "characters": 5143,
+          "utf16CodeUnits": 5143,
+          "sha256": "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad"
+        },
+        {
+          "field": "analysis",
+          "characters": 6143,
+          "utf16CodeUnits": 6143,
+          "sha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff"
+        },
+        {
+          "field": "soulEssence",
+          "characters": 4618,
+          "utf16CodeUnits": 4618,
+          "sha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b"
+        }
+      ]
+    },
+    {
+      "id": "general_王翦_306401394",
+      "additions": [
+        {
+          "field": "deepAnalysis",
+          "characters": 5349,
+          "utf16CodeUnits": 5349,
+          "sha256": "ce325ef271e164dff937ffb6ecb3f373d9c991f7f3c2056405fb43b3c220253e"
+        },
+        {
+          "field": "soulEssence",
+          "characters": 4493,
+          "utf16CodeUnits": 4493,
+          "sha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116"
+        }
+      ]
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "additions": [
+        {
+          "field": "deepAnalysis",
+          "characters": 5173,
+          "utf16CodeUnits": 5173,
+          "sha256": "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661"
+        },
+        {
+          "field": "analysis",
+          "characters": 6683,
+          "utf16CodeUnits": 6683,
+          "sha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8"
+        },
+        {
+          "field": "soulEssence",
+          "characters": 4692,
+          "utf16CodeUnits": 4692,
+          "sha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc"
+        }
+      ]
+    }
+  ],
+  "worldworkspaces": {
+    "checked": false,
+    "providedBefore": false,
+    "providedAfter": false,
+    "passed": null,
+    "scope": "Both worldworkspaces snapshots were not supplied; no world verification claimed."
+  },
+  "publicLibrarySourceHashes": {
+    "baseSourceSha256": "dbe2d9701ad1ab41dbaa5e740e3a039696e1e9089c6c839ce9c729dbbdf613e6",
+    "initializationSourceSha256": "83fdbc257c3e83ea61f00f904281dc58deec48ec578a984e5cb048a78b54e2c3"
+  }
+}

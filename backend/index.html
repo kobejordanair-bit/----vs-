@@ -2463,11 +2463,18 @@ ${allNames}
             const cachedAnalysis = appState.modifiedLegends[id]?.analysis;
             const needsStats = forceRegen || !cachedStats;
             const needsAnalysis = forceRegen || !cachedAnalysis;
+            const statsButton = el('regenStatsBtn');
+            statsButton.innerHTML = cachedStats
+                ? '<i class="fa-solid fa-rotate-right"></i> 重算五維'
+                : '<i class="fa-solid fa-wand-magic-sparkles"></i> 生成五維（AI）';
+            statsButton.title = cachedStats
+                ? '重新呼叫 AI 計算數值'
+                : '呼叫 AI 生成五維數值，並重新生成賞析';
 
-            if (!needsStats && !needsAnalysis) {
+            if (!needsAnalysis) {
                 el('loadingState').classList.add('hidden');
-                renderRadarChart(legend.name, cachedStats);
-                el('regenStatsBtn').classList.remove('hidden');
+                if (cachedStats) renderRadarChart(legend.name, cachedStats);
+                statsButton.classList.remove('hidden');
                 el('extractScenesBtn').classList.remove('hidden'); el('extractScenesBtn').disabled = false; el('extractScenesBtn').innerHTML = '<i class="fa-solid fa-fire"></i> 提取名場面';
                 setModalContent(cachedAnalysis);
                 renderDiscussionPanel(id, cachedAnalysis);
@@ -2514,6 +2521,8 @@ ${allNames}
                         renderRadarChart(legend.name, statsData.stats);
                         cleanText = streamText.replace(jsonMatch[0], '');
                         el('regenStatsBtn').classList.remove('hidden');
+                        statsButton.innerHTML = '<i class="fa-solid fa-rotate-right"></i> 重算五維';
+                        statsButton.title = '重新呼叫 AI 計算數值';
                     }
                 }
                 appState.modifiedLegends[id] = appState.modifiedLegends[id] || {};

@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_姚崇_2003901767",
+  "reviewedAt": "2026-10-09T11:18:18.238Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/yaochong.style.v2.md",
+  "sourcePackageFile": "analysis-pilot/sources/yaochong.md",
+  "manuscriptSha256": "3580268fcc4f7fca1e204cb33d8ac718e5339b9a752d2ed8ff144c3ddb659c05",
+  "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-and-completion",
+      "passed": true,
+      "detail": "姚崇名臣身份與精確完成marker對應，五個建議欄位齊全，無截斷。"
+    },
+    {
+      "id": "career-and-judicial-policy",
+      "passed": true,
+      "detail": "契丹軍務文書受重用、武后詢周興來俊臣冤濫、告密和覆問誘因、以一門百口擔保、705參政變及上陽宫流涕外放均可核兩唐書姚傳。"
+    },
+    {
+      "id": "ten-policies-and-implementation",
+      "passed": true,
+      "detail": "713復相及十事要說內容有新唐124原文；不把十事全當已完成政績。714王仙童覆按、親貴干預授官限制、僧偽濫還俗一萬二千餘、姚崇反對契丹用兵但玄宗仍發兵可核通鑑211開元二年條。"
+    },
+    {
+      "id": "locust-response-and-source-texts",
+      "passed": true,
+      "detail": "716遣御史分道捕蝗、倪若水反對、火坑焚瘞、十四萬石、河北河南少儲積及願削官爵可核舊唐96。全唐文206請遣捕蝗疏／答捕蝗奏真實存在，支持所述施政論述，且末註說明後代輯錄。"
+    },
+    {
+      "id": "locust-history-scholarship",
+      "passed": true,
+      "detail": "清華學報張繼瑩2024文章印本759頁正文和註64明談姚崇延伸詩經詮釋與後世驅撲焚瘞法；稿件概括未把明代事例誤寫為唐代事績，也未稱其現代科學家。"
+    },
+    {
+      "id": "relatives-and-political-conflicts",
+      "passed": true,
+      "detail": "張說密詣岐王、魏知古揭姚子請托受饋與玄宗對話有新唐124段；姚彝姚異受饋、趙誨受胡人賂、姚營救不悅與薦宋璟自代有舊唐96／通鑑211開元四年條。未誤把宋璟後任事功歸姚。"
+    },
+    {
+      "id": "qihuan-attribution",
+      "passed": true,
+      "detail": "子喪請假與齊澣救時之相對答可核來源包通鑑211 text[4723:4910]，評語明歸齊澣，不冒稱臣光曰。制度延續力的分析是作者評價，未偽作逐字史家定論。"
+    },
+    {
+      "id": "rank-and-anchors",
+      "passed": true,
+      "detail": "蕭何S、張居正S、王安石S-、狄仁傑A+符合任務錨點；宋璟A另直接核ranking-reference.v1.json minister_宋璟_2003921230。評級S-與制度持續性比較屬本榜判斷。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "全唐文／卷0206〈請遣捕蝗疏〉、〈答捕蝗奏〉",
+      "url": "https://zh.wikisource.org/zh-hant/全唐文/卷0206",
+      "locator": "已讀兩篇全文：答捕蝗奏（網頁行168–170）山東蝗、河北河南少儲積、除不得削官爵；請遣捕蝗疏（行175–177）引詩、漢光武及夜火坑焚瘞；亦核報倪若水捕蝗牒。此為後代輯録，網頁有自動生成待複查提示，相關句並與舊唐96核對。"
+    },
+    {
+      "title": "張繼瑩〈生態與治理──以明王朝(1368–1644)蝗災為例〉，清華學報54(4)，2024",
+      "url": "https://thjcs.site.nthu.edu.tw/var/file/452/1452/img/5286/611748169.pdf",
+      "locator": "可讀PDF：首頁書誌與摘要、印本759–760頁／PDF第13–14頁，三(一)捕蝗法的推行及註64–70，姚崇延伸詩經解釋、人力捕蝗與驅撲焚瘞；未聲稱全42頁均逐字核讀。"
+    },
+    {
+      "title": "資治通鑑／卷211，開元二年及四年條",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2082155",
+      "locator": "本地公開全文固定版document:zizhitongjian-5b0c8795d2bc64e2：text[0:1100] 714授官干預、僧籍、反契丹、王仙童；text[4723:4910] 齊澣；text[9707:10507] 716姚病、二子受饋、趙誨、薦宋璟及後任治理分工。"
+    }
+  ],
+  "caveats": [
+    "唐代「山東」是古地理稱謂，不宜讀為只有現代山東省；稿中所述河南河北可直接對應舊唐傳中相關語句，並非現代省界災情統計。",
+    "十四萬石、兩唐書人物對話和全唐文輯文均按文本記載核對，未完成實際蝗蟲重量、救災因果效應或所有刊本逐字對勘。",
+    "個人效率、制度脆弱性及與其他宰相的比較屬有史事支持的史學評價；齊澣「隨復更之」不等於後人提供完整長期制度評估。",
+    "passed只認可本精確SHA稿件及來源範圍，不授權自動套用建議評級／稱號／標籤／簡評／判詞或改其他字段。"
+  ],
+  "metrics": {
+    "characters": 5222,
+    "chineseCharacters": 4043,
+    "anchors": 5
+  }
+}

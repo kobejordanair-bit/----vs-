@@ -1,0 +1,11 @@
+✔ imported賞析 opens without AI, invented scores or a data write when stats are absent (1.8993ms)
+✔ cached賞析 with existing stats keeps the radar and normal controls (1.5805ms)
+✔ explicit force regeneration still requests AI and updates stats and賞析 (0.7971ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.8034

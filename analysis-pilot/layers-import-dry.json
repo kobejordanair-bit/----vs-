@@ -1,0 +1,46 @@
+{
+  "format": "dynasty-analysis-pilot-layer-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "targetCount": 3,
+  "changedFields": 5,
+  "provenanceFieldsWritten": 0,
+  "batchSha256": "c901db3a1903844893b4072e3cb5f1df37d48d587f10c8c0058b359fce0b5546",
+  "sourceSha256": "a8b587b4f2d7b2fba1f44ad04691320985e0645c5e6d2070dc59dab5dd565671",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "a8b587b4f2d7b2fba1f44ad04691320985e0645c5e6d2070dc59dab5dd565671",
+  "plannedAfterSha256": "dc72a2fd2152207a4ab9174e43b5053a99530b5bd59d45244d2afb3e9c8a399b",
+  "beforeRevision": 2,
+  "plannedAfterRevision": 3,
+  "patchBytes": 2618185,
+  "plannedDocumentBytes": 9537004,
+  "inputHashes": [
+    "451280098e8d98f23ea9bf558a3dfb8f2e18fe271c7008ef13b8ae54ae966dc1",
+    "369437f436b1f999a77bca7a0e90126b7f399d920719ffe0db037e15a7ea1959",
+    "927acb55d3b9c157a391239611870700b7314c95bd7c7eafbc673ec46a919802"
+  ],
+  "writtenLayerHashes": [
+    {
+      "field": "analysis",
+      "sha256": "c8600714f011854f10db42dab100482953f6c864db869085c002d4e8dc95e7ff"
+    },
+    {
+      "field": "soulEssence",
+      "sha256": "1981158be260a6d8cf9520f7321daea87dd497e01c18b259745bebb40109599b"
+    },
+    {
+      "field": "soulEssence",
+      "sha256": "714c5b07d1340c88fe6a2f161a848bc59bde187f81802d84b85055c5d938b116"
+    },
+    {
+      "field": "analysis",
+      "sha256": "55977207491979d3e420156eb237e2ebcd8cdaa285699340c6f357b1cc0ff7c8"
+    },
+    {
+      "field": "soulEssence",
+      "sha256": "d0d5a7ccb39714f1fa83a184530d8fef9516b41d644980e3ad8bfad28a88f1bc"
+    }
+  ]
+}

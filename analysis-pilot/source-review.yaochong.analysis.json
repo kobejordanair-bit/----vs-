@@ -1,0 +1,91 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_姚崇_2003901767",
+  "field": "analysis",
+  "reviewedAt": "2026-10-09T11:39:09.052Z",
+  "reviewer": "Codex source-review subagent with public-source verification by pilot_analysis_import",
+  "manuscriptFile": "analysis-pilot/drafts/yaochong.analysis.md",
+  "sourcePackageFile": "analysis-pilot/sources/yaochong.md",
+  "manuscriptSha256": "f8ab7701c8c62062d176f2a5cf0627e5874a378922a1084d1a3554e2066bb8c4",
+  "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-structure-completion",
+      "passed": true,
+      "detail": "姚崇、721卒、四章賞析與結尾完整；analysis完成標記精確；無五維／stats JSON。"
+    },
+    {
+      "id": "court-career-and-ten-demands",
+      "passed": true,
+      "detail": "契丹軍事文書、705政變與辭武后流涕、睿宗建議公主及諸王出都而貶、713新豐召見與十事見舊96／新124；十事並非不能被皇帝違反的正式法條，714反契丹戰事不被採納有通鑑依據。"
+    },
+    {
+      "id": "political-trials",
+      "passed": true,
+      "detail": "武周告密者獲功、畏刑認罪、覆查者懼酷吏及姚家族承擔的說法可核舊96；制度誘因分析屬對史事的評價。"
+    },
+    {
+      "id": "locust-campaign",
+      "passed": true,
+      "detail": "716山東蝗、倪若水拒命、御史分道、夜火坑焚瘞、全唐文答捕蝗奏、除不得削官爵及盧懷慎対答可核；14萬石明歸古籍數字，未換算為精確現代統計。"
+    },
+    {
+      "id": "buddhist-policy",
+      "passed": true,
+      "detail": "富戶強丁經營避役、冒濫1.2萬餘還俗、正法在心／行事利益可核舊96／新124；陳祚龍研究所述免稅免役、政治經濟與教理教制有刊方原刊摘要及正文支持。"
+    },
+    {
+      "id": "political-network-and-favoritism",
+      "passed": true,
+      "detail": "張說與岐王、新124魏知古段的二子通賓客饋遺／請托／帝問與姚應對有明文；趙誨受賂營救、玄宗不悅及薦宋璟見舊96／通鑑211，不將玄宗相信姚無私當作子無過。"
+    },
+    {
+      "id": "717-temple-and-714-omens",
+      "passed": true,
+      "detail": "通鑑211開元5正月太廟四室壞、宋璟蘇頲停行議、姚朽材／關中不稔／東都供擬、褚無量反駁、辛亥東行及2月至東都支持稿159–171；714祝賀祥瑞有日食未驗與豫州鼎銘、臣光批評，現稿未寫成夜光事件。"
+    },
+    {
+      "id": "rescue-the-time-attribution",
+      "passed": true,
+      "detail": "救時之相為齊澣評語，姚自比管晏後接受，並非臣光曰；子喪後裁決政務與臨終定分／薄葬可核原典。"
+    },
+    {
+      "id": "interpretation-and-modern-role",
+      "passed": true,
+      "detail": "自信、權變、自保、政治實用主義及現代行政院長／危機治理定位，是原prompt所要求的歷史評論；没有捏造心理自述或原典引用。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "全唐文／卷0206〈答捕蝗奏〉、〈請遣捕蝗疏〉、〈報倪若水捕蝗牒〉",
+      "url": "https://zh.wikisource.org/zh-hant/全唐文/卷0206",
+      "locator": "已核讀相關全文：網頁行168–170、175–177、186–188；除不盡勝養災、官爵責任、引詩與漢光武、夜火焚瘞、責倪若水。後代輯録，關鍵句與舊96對讀。"
+    },
+    {
+      "title": "資治通鑑／卷211，開元二至五年",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2082155",
+      "locator": "固定公開全文：text[0:1100]714制度／僧籍／反契丹；[4723:4910]齊澣救時；[9707:10507]716趙誨與推薦宋璟。並核公開頁開元2二月庚寅朔、8月乙酉與臣光曰（HTML147、199–200），開元5正月癸卯／己酉／辛亥及2月甲戌（HTML350–358）：太廟、褚無量與東都。"
+    },
+    {
+      "title": "陳祚龍〈李唐名相姚崇與佛教〉，中華佛學學報2（1988）241–265",
+      "url": "https://www.chibs.edu.tw/ch_html/chbj/02/chbj0207.htm",
+      "locator": "刊方原刊完整HTML可讀；實核 metadata、中文提要（HTML0–15）、English abstract（290–293），pp248–249（100–116）及刊方 previous-issues Issue2 October1988 第7項作者題名；支持政治經濟、免稅免役、教理與教制區分，未聲稱逐頁通讀全篇。"
+    }
+  ],
+  "caveats": [
+    "原始ChatGPT稿的Airiti目標工具不可讀；已由root僅將連結更正為已核同作者同題的刊方官方原刊，歷史prose未改。此QA所綁final SHA包含已校正官方來源URL。",
+    "山東為古籍區域稱謂，不直接等同今山東省；十四萬石為原典報數。",
+    "十事與人物對話經後世編纂；人格與現代角色評價不當作可直接還原的內心事實。"
+  ],
+  "metrics": {
+    "characters": 6741,
+    "chineseCharacters": 5120
+  },
+  "uiOrCitationCleanupVerified": true,
+  "checkedEditorialCorrections": [
+    "唯一Airiti citation URL更正為https://www.chibs.edu.tw/ch_html/chbj/02/chbj0207.htm，正文語意未改"
+  ]
+}

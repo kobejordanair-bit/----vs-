@@ -1,0 +1,31 @@
+{
+  "provider": "ChatGPT web",
+  "recordId": "minister_姚崇_2003901767",
+  "field": "soulEssence",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T11:54:00.381Z",
+  "promptSha256": "8a6f93f5dfb781f423ac6898ac8faa3184b9708e71b3c306beb69401c2f74eff",
+  "responseSha256": "c4f5c6a72737ac06996b5b03b3bdcea55c29346cde92521cf3f8822409a12205",
+  "fragments": [
+    {
+      "file": "yaochong.soulEssence.raw.md",
+      "sha256": "a1cd2f0ae330b5cabab97c62fc5145c4f235798845314e66536e0228ec154900"
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "analysis-pilot/drafts/yaochong.analysis.md",
+      "sha256": "f8ab7701c8c62062d176f2a5cf0627e5874a378922a1084d1a3554e2066bb8c4"
+    }
+  ],
+  "webSearchPerformed": true,
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 15 個網站",
+    "visibleSearchCount": 15,
+    "file": "analysis-pilot/drafts/yaochong.soulEssence.search-evidence.txt",
+    "sha256": "ae07debe99f63f217ac5292a852f1ff70e2009d601fc46926b3ef756347f182b"
+  },
+  "composition": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.",
+  "removedCardLines": 12
+}

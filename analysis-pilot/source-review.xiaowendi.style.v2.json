@@ -1,0 +1,109 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_北魏孝文帝_33257620",
+  "reviewedAt": "2026-10-09T11:11:06.431Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/xiaowendi.style.v2.md",
+  "sourcePackageFile": "analysis-pilot/sources/xiaowendi.md",
+  "manuscriptSha256": "e20a7335a557ac5f236563b45b49ff897dd49b7f8daa75df59e58ac16fa8df32",
+  "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-and-completion",
+      "passed": true,
+      "detail": "拓跋宏／元宏、467—499年與帝王身份正確；完成標記精確對應人物 ID，五個建議欄位俱全，無內容截斷。"
+    },
+    {
+      "id": "chronology-and-reform-credit",
+      "passed": true,
+      "detail": "476再次臨朝、484俸祿、485均田、486三長、490太后崩及491正月始聽政與來源相符，明確區分李沖、文明太后與孝文帝個人施政。"
+    },
+    {
+      "id": "migration-and-institutions",
+      "passed": true,
+      "detail": "493南伐施壓與遷洛抉擇、493職員令二十一卷、494考績、495六宮文武遷洛及朝廷禁北語／歸葬限制、496改元氏均有可核原典；未將朝廷禁語擴大為全體民間禁語。"
+    },
+    {
+      "id": "north-garrisons-and-military",
+      "passed": true,
+      "detail": "494北巡懷朔／武川／撫冥／柔玄及救恤可核魏書7下太和十八年八月，497—498新野南陽、499陳顯達戰事及四月病逝可核同紀；未將523六鎮危機說成改革的單一必然結果。"
+    },
+    {
+      "id": "court-crises",
+      "passed": true,
+      "detail": "496廢元恂與穆泰事件、499詔賜皇后馮氏死均有本紀依據；對人格、利益重組及統治整合的結論屬有史事支持的作者評價。"
+    },
+    {
+      "id": "external-citations-and-scope",
+      "passed": true,
+      "detail": "正文所引七個外部來源均有真實書文可讀，所用論點未超出已讀正文／摘要；AJPS明歸現代研究，Oxford僅核公開摘要，康樂僅核摘要所列研究範圍，MDPI未將胡太后時期永寧寺誤記為孝文親建。"
+    },
+    {
+      "id": "anchors-and-rating",
+      "passed": true,
+      "detail": "漢高祖S-、宋太祖S-、明太祖S-、漢宣帝A+、武則天A等級對應任務錨點名錄；A+／S-門檻是榜單評價，不作史料中的客觀等級。"
+    },
+    {
+      "id": "mutai-cross-year-chronology",
+      "passed": true,
+      "detail": "原典魏書7下text[11517:11589]將廢元恂與穆泰等在州謀反同列太和二十年十二月；稿件同年謀反有本紀依據，未寫同年已伏誅。魏書105之二校勘記11（oldid=467988）明辨二十一年二月至平城為定罪時點；通鑑140胡注正文條22（oldid=2080216）記密謀、發覺與遣澄擒捕，不能將整個事件一律改497。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "魏書／卷53〈李沖傳〉",
+      "url": "https://zh.wikisource.org/zh/魏書/卷53",
+      "locator": "李沖段：舊無三長…沖創三長…文明太后議行；及文明太后崩後、高祖議禮儀律令訪決李沖段（網頁行180–184）。"
+    },
+    {
+      "title": "資治通鑑／卷138",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=1553998",
+      "locator": "493年五月平城／南伐／任城王澄廷議；九月洛陽群臣請止南伐、南伐與遷都抉擇、十月營都段（網頁行137–138、172–175）。"
+    },
+    {
+      "title": "Chen, Wang and Zhang, From powerholders to stakeholders: State-building with elite compensation in early medieval China",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12888",
+      "locator": "可讀全文中 Abstract、Historical background: Northern Wei, local autonomy, and the Reform、Main results: Reform and recruitment（網頁行158–161、239–252、299–321）；先刊2024，期刊69(2)2025。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter16: To Luoyang (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960388",
+      "locator": "官方公開 Abstract（另以chapter/404960388官方轉向頁讀到）：文明太后留平城意向、490去世、493遷洛、對代人改制及內部接受程度不一；未取得章全文。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter17: Downfall of a Theatre State (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960853",
+      "locator": "官方公開 Abstract（由Oxford官方搜尋索引讀到）：朝廷與留北軍事力量分離、胡太后、523軍鎮危機；未取得章全文。"
+    },
+    {
+      "title": "Chao Ling, Imperial Identity and Religious Reformation: The Buddhist Urban Landscape in Northern Wei Luoyang (2024)",
+      "url": "https://www.mdpi.com/2077-1444/15/5/551",
+      "locator": "MDPI官方索引可讀 Abstract、§2.1 Cultural Memory of Pre-Luoyang Northern Wei、§2.2 Imperial Identity and Architectural Elements、§4 Conclusions；文化記憶與正統整合。"
+    },
+    {
+      "title": "康樂〈代人與鎮人〉，史語所集刊61.4：895–916",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/973/Article/455",
+      "locator": "官方公開摘要及書誌（亦讀jp/Publications/Bulletin/141/Article/455，行663–681）；摘要研究問題為北鎮設置、鎮人與代人關係及鎮人集團出現。PDF抓取失敗，未核讀全文。"
+    }
+  ],
+  "caveats": [
+    "引用現代研究的概括性論點按已讀範圍核查；未進行其原始數據複算、全部參考文獻逐篇對勘或Oxford付費全文閱讀。",
+    "北鎮長期整合、轉型代價、人格傾向與評級高低仍屬作者史學評價，並非已證明的唯一因果。",
+    "魏書作董爵，通鑑作董爾；正文的董爵與其明列紀年主據魏書版本相符，未冒称兩版本完全一致。",
+    "passed只認可本精確SHA稿件的事實與來源範圍，不授權自動套用評級／稱號／標籤／簡評／判詞或改其他字段。",
+    "穆泰事件按魏書7下太和二十年十二月記密謀、遣澄案治；不表示同年已完成親審伏誅。魏書105之二校勘記11／通鑑140–141應區分太和二十一年二月親審定罪（497年）。"
+  ],
+  "metrics": {
+    "characters": 5192,
+    "chineseCharacters": 3526,
+    "anchors": 5
+  },
+  "formatCleanupVerified": {
+    "faviconAndSiteLabelsRemoved": true,
+    "escapedBoldNormalized": true,
+    "prosePreserved": true
+  }
+}
