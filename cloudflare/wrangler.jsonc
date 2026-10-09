@@ -6,6 +6,13 @@
   "compatibility_date": "2026-10-09",
   "workers_dev": true,
   "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "dynasty.piamamba.com",
+      "zone_name": "piamamba.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./build/assets",
     "binding": "ASSETS",
@@ -20,7 +27,7 @@
     ]
   },
   "vars": {
-    "DATA_READY": "false",
+    "DATA_READY": "true",
     "ALLOWED_ORIGINS": "https://dynasty.piamamba.com",
     "GEMINI_PRIMARY_MODEL": "gemini-2.5-pro",
     "GEMINI_FALLBACK_MODEL": "gemini-3-flash-preview"
