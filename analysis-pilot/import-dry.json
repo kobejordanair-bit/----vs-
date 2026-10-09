@@ -1,0 +1,29 @@
+{
+  "format": "dynasty-analysis-pilot-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "targetCount": 3,
+  "batchSha256": "2e5885ce958c7acde6248d497899fbf1b65a06192481bea10faf6bed07aa122a",
+  "sourceSha256": "0f8dcee5d3d3194d0b89722a49921b655abe4f021742ca582230482257cd1c6e",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "0f8dcee5d3d3194d0b89722a49921b655abe4f021742ca582230482257cd1c6e",
+  "plannedAfterSha256": "a8b587b4f2d7b2fba1f44ad04691320985e0645c5e6d2070dc59dab5dd565671",
+  "beforeRevision": 1,
+  "plannedAfterRevision": 2,
+  "patchBytes": 2547061,
+  "plannedDocumentBytes": 9465880,
+  "changedFields": 3,
+  "provenanceFieldsWritten": 0,
+  "targetInputHashes": [
+    "3fa349415b449c799e57909bd7e0fbe1a63c872794a125bee0b332310cdc38d4",
+    "3201052028a71b0ce87d41ffcb0543a132b964cf554a3111fd7764ae4e0ca6bb",
+    "eb2950edd39d5204e0adf07d20c6bc98e8d13996672ef77fb0e972d58e26f9e1"
+  ],
+  "analysisHashes": [
+    "50b69b64a5fb5933a6db06978bbb30d3aa8006d4cf481334763c2502b768d2ad",
+    "ce325ef271e164dff937ffb6ecb3f373d9c991f7f3c2056405fb43b3c220253e",
+    "2b56e50b9c9f4e33ba7819d830bab9db01f81619efd89c9d2eec75c260132661"
+  ]
+}

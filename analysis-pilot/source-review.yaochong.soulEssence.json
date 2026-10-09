@@ -1,0 +1,101 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_姚崇_2003901767",
+  "field": "soulEssence",
+  "reviewedAt": "2026-10-09T11:56:50.109Z",
+  "reviewer": "Codex source-review subagent with official academic source verification by pilot_analysis_import",
+  "manuscriptFile": "analysis-pilot/drafts/yaochong.soulEssence.md",
+  "sourcePackageFile": "analysis-pilot/sources/yaochong.md",
+  "manuscriptSha256": "c4f5c6a72737ac06996b5b03b3bdcea55c29346cde92521cf3f8822409a12205",
+  "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "seven-fields-completion",
+      "passed": true,
+      "detail": "七欄完整、soulEssence結尾標記精確，原copy UI站名已作純格式移除；無stats JSON或截斷。"
+    },
+    {
+      "id": "verified-analysis-context",
+      "passed": true,
+      "detail": "人物心理與治理模式基於完整已核姚賞析 SHA f8ab7701c8c62062d176f2a5cf0627e5874a378922a1084d1a3554e2066bb8c4 及固定原典，未覆寫其他欄位。"
+    },
+    {
+      "id": "ten-demands-and-silence",
+      "passed": true,
+      "detail": "713新豐陽不謝而十事、郎吏稟奏帝不答／高力士轉述任政使姚安心皆見新124；沉默心理比較為分析，非新增史料話語。"
+    },
+    {
+      "id": "trials-and-locust-responsibility",
+      "passed": true,
+      "detail": "聖曆初對過去酷吏冤案與一門百口擔保見舊96；716倪若水／盧懷慎反對、御史督捕、削官爵責任可核舊96／全唐文206。"
+    },
+    {
+      "id": "715-qi-huan",
+      "passed": true,
+      "detail": "通鑑211開元3年子喪請假10餘日／政務委積／姚歸裁決／自比管晏／齊澣救時之相確有敘事；稿明辨非臣光曰。"
+    },
+    {
+      "id": "zhang-shuo-feigned-foot-injury",
+      "passed": true,
+      "detail": "新124崇曳踵為有疾狀與臣損足／臣心有憂痛不在足支持故作腳傷引發詢問；張說岐王往來與外放相州有原典，排除政敵之心理評價明屬分析。"
+    },
+    {
+      "id": "wei-zhigu-and-zhao-hui",
+      "passed": true,
+      "detail": "新124有二子通賓客饋遺／憑舊請托及魏知古告發，通鑑211有揣帝意／承認二子不謹／請勿因子逐告發者／知古終罷工部；716趙誨受賂營救／玄宗不悅／薦宋璟退場均可核。"
+    },
+    {
+      "id": "mother-and-final-testament",
+      "passed": true,
+      "detail": "704母老侍養與705武后離別流涕見舊96；舊96／全唐文206遺令支持預先定分、避子孫爭產、薄葬及不破衣食家資，不能將這些具體安排當內心毫無爭議實證，但稿已有詮釋語氣。"
+    },
+    {
+      "id": "717-temple",
+      "passed": true,
+      "detail": "717太廟四室壞、宋璟蘇頲示警／姚朽材供擬說／褚無量駁史據並評迎合有通鑑211開元5正月記載。"
+    },
+    {
+      "id": "modern-religious-study-scope",
+      "passed": true,
+      "detail": "王永平官方中英摘要支持母主持開窟造像活動、孝子／政治家／家長角色及臨終反耗財儀式；稿明歸現代研究。此核只到公開摘要，不聲稱全文或補出母造像年份。"
+    },
+    {
+      "id": "historical-personality-interpretation",
+      "passed": true,
+      "detail": "說話、核心驅動、慣性盲點、情感及內在裂縫依具體史事提模型，保留原七欄史載／推斷／詮釋文風；無捏造內心自述。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "全唐文／卷0206〈對問冤獄疏〉、〈答捕蝗奏〉、〈報倪若水捕蝗牒〉、〈遺令誡子孫文〉",
+      "url": "https://zh.wikisource.org/zh-hant/全唐文/卷0206",
+      "locator": "實核HTML170–177、186–198相關全文：一門百口、削官爵／火坑、德政修德責任；遺令196–198定分止爭、薄葬勿損家資／限制追福耗財；與舊96對讀。頁有自動生成待複查標誌，不以後代輯録作另一套當代獨立證據。"
+    },
+    {
+      "title": "資治通鑑／卷211，開元二至五年",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2082155",
+      "locator": "固定公開全文text[4723:4910]715齊澣救時；text[9707:10507]716姚病／二子受饋／趙誨／宋璟。並核714魏知古完整段及717正月太廟／褚無量／東行（公開頁HTML350–358）；非臣光曰救時。"
+    },
+    {
+      "title": "王永平〈徘徊于信教与限教之间：唐代名相姚崇对佛教的复杂心态〉",
+      "url": "https://www.xuebao.snnu.edu.cn/info/1072/6160.htm",
+      "locator": "官方精確URL搜尋索引實讀題名／王永平作者／首都師範大學歷史學院、中英文完整Abstract，孝子參母主持開窟造像、政治家限制僧寺、家長臨終禁耗財佛道儀式；收稿2016-10-11、文章編號1672-4283(2017)02-0054-09。直開兩次timeout，未取得PDF／正文。"
+    }
+  ],
+  "caveats": [
+    "王永平研究只核刊方公開摘要及metadata，沒有讀到論文全文；摘要未標母造像具體年，現稿也未擅補。",
+    "魏知古饋遺細節見新唐書，通鑑該次稱招權請托；本文對同一事件的概括與兩書對讀一致。",
+    "人物心理與政策動機屬歷史詮釋；後代原典中的對話与遺令不等於現代逐字談話紀錄。"
+  ],
+  "uiOrCitationCleanupVerified": true,
+  "checkedEditorialCorrections": [
+    "純格式移除唯一copy UI站名 xuebao.snnu.edu.cn，歷史prose未改。"
+  ],
+  "metrics": {
+    "characters": 4753,
+    "chineseCharacters": 3561
+  }
+}

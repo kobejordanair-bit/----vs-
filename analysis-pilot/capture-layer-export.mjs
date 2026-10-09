@@ -1,0 +1,23 @@
+// Bind an actual browser clipboard export to its staged original prompt.
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { normalizeExport } from './normalize-chatgpt-export.mjs';
+const [slug, field] = process.argv.slice(2);
+const allowed = {xiaowendi:['analysis','soulEssence'],wangjian:['soulEssence'],yaochong:['analysis','soulEssence']};
+if (!allowed[slug]?.includes(field)) throw new Error('unsupported_capture');
+const hash = value => createHash('sha256').update(value).digest('hex');
+const request = JSON.parse(await readFile(new URL('./layer-request.v1.json',import.meta.url),'utf8'));
+const record = request.records.find(item=>item.slug===slug), task = record.layers[field];
+const rawPath = new URL(`./drafts/${slug}.${field}.raw.md`,import.meta.url);
+const evidencePath = new URL(`./drafts/${slug}.${field}.search-evidence.txt`,import.meta.url);
+const raw = await readFile(rawPath,'utf8'), evidence = await readFile(evidencePath,'utf8');
+const count = evidence.match(/已搜尋\s+(\d+)\s+個網站/);
+if (!count || Number(count[1])<1) throw new Error('actual_search_evidence_required');
+const clean = normalizeExport(raw);
+if (!clean.text.trimEnd().endsWith(task.marker)) throw new Error('incomplete_export');
+const contextFiles = [];
+for (const context of task.contextPaths) contextFiles.push({path:context.path,sha256:hash(await readFile(new URL('../'+context.path,import.meta.url),'utf8'))});
+const capture = {provider:'ChatGPT web',recordId:record.id,field,conversationUrl:'https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437',generatedAt:new Date().toISOString(),promptSha256:task.promptSha256,responseSha256:hash(clean.text),fragments:[{file:`${slug}.${field}.raw.md`,sha256:hash(raw)}],contextFiles,webSearchPerformed:true,webSearchVerified:true,webSearchEvidence:{uiLabel:`ChatGPT 思考摘要：已搜尋 ${count[1]} 個網站`,visibleSearchCount:Number(count[1]),file:`analysis-pilot/drafts/${slug}.${field}.search-evidence.txt`,sha256:hash(evidence)},composition:'Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.',removedCardLines:clean.removedCardLines};
+await writeFile(new URL('../'+task.draftPath,import.meta.url),clean.text,{flag:'wx'});
+await writeFile(new URL('../'+task.capturePath,import.meta.url),JSON.stringify(capture,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({slug,field,characters:clean.text.length,sha256:capture.responseSha256,actualSearchCount:Number(count[1])}));

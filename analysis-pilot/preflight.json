@@ -1,0 +1,19 @@
+{
+  "readAt": "2026-10-09T10:14:35.406Z",
+  "revision": 1,
+  "sha256": "0f8dcee5d3d3194d0b89722a49921b655abe4f021742ca582230482257cd1c6e",
+  "targetInputsMatch": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "matches": true
+    },
+    {
+      "id": "general_王翦_306401394",
+      "matches": true
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "matches": true
+    }
+  ]
+}

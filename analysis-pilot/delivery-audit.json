@@ -1,0 +1,337 @@
+{
+  "format": "dynasty-analysis-pilot-delivery",
+  "schemaVersion": 1,
+  "completedAt": "2026-10-09T11:24:18.284Z",
+  "origin": "https://dynasty.piamamba.com",
+  "provider": "ChatGPT web",
+  "passed": true,
+  "figures": {
+    "before": {
+      "builtIn": 296,
+      "custom": 666,
+      "modifications": 453,
+      "visibleEntries": 962,
+      "uniqueIds": 962,
+      "invalidIds": 0,
+      "duplicateMergedIds": 0,
+      "duplicateCustomIds": 0,
+      "customCollisionsWithBuiltIn": 0,
+      "invalidModificationRecords": 0,
+      "orphanModificationRecords": 25,
+      "emperor": 216,
+      "general": 416,
+      "minister": 330,
+      "withAnyAnalysis": 403,
+      "mergedLibrarySha256": "d8b83dc123c27a15cc755fc1f2f185d5133483f2055acd6d8768401190f87273",
+      "deepAnalysis": {
+        "uniqueFigures": 385,
+        "storedModificationRecords": 385,
+        "textCharacters": 614963,
+        "nonTextValues": 0
+      },
+      "analysis": {
+        "uniqueFigures": 64,
+        "storedModificationRecords": 68,
+        "textCharacters": 197868,
+        "nonTextValues": 0
+      },
+      "soulEssence": {
+        "uniqueFigures": 18,
+        "storedModificationRecords": 18,
+        "textCharacters": 44183,
+        "nonTextValues": 0
+      }
+    },
+    "after": {
+      "builtIn": 296,
+      "custom": 666,
+      "modifications": 455,
+      "visibleEntries": 962,
+      "uniqueIds": 962,
+      "invalidIds": 0,
+      "duplicateMergedIds": 0,
+      "duplicateCustomIds": 0,
+      "customCollisionsWithBuiltIn": 0,
+      "invalidModificationRecords": 0,
+      "orphanModificationRecords": 25,
+      "emperor": 216,
+      "general": 416,
+      "minister": 330,
+      "withAnyAnalysis": 405,
+      "mergedLibrarySha256": "2d682fbdb53a6490bf9c49702c64c50f05f2e115093698f8a2e4187015bef6c4",
+      "deepAnalysis": {
+        "uniqueFigures": 388,
+        "storedModificationRecords": 388,
+        "textCharacters": 630628,
+        "nonTextValues": 0
+      },
+      "analysis": {
+        "uniqueFigures": 64,
+        "storedModificationRecords": 68,
+        "textCharacters": 197868,
+        "nonTextValues": 0
+      },
+      "soulEssence": {
+        "uniqueFigures": 18,
+        "storedModificationRecords": 18,
+        "textCharacters": 44183,
+        "nonTextValues": 0
+      }
+    }
+  },
+  "histories": {
+    "before": {
+      "chatGroups": 2,
+      "chatMessages": 3,
+      "orphanChatGroups": 1,
+      "invalidChatGroups": 0,
+      "discussionGroups": 9,
+      "discussionMessages": 22,
+      "orphanDiscussionGroups": 0,
+      "invalidDiscussionGroups": 0,
+      "simulations": 1034,
+      "soulSavedGames": 14,
+      "soulSavedChapters": 139,
+      "activeSoulSessionPresent": 0,
+      "activeSoulChapters": 0,
+      "hegemonyPresent": 1,
+      "hegemonyFactions": 4,
+      "hegemonyPhases": 2,
+      "scenes": 0,
+      "sceneEdits": 0
+    },
+    "after": {
+      "chatGroups": 2,
+      "chatMessages": 3,
+      "orphanChatGroups": 1,
+      "invalidChatGroups": 0,
+      "discussionGroups": 9,
+      "discussionMessages": 22,
+      "orphanDiscussionGroups": 0,
+      "invalidDiscussionGroups": 0,
+      "simulations": 1034,
+      "soulSavedGames": 14,
+      "soulSavedChapters": 139,
+      "activeSoulSessionPresent": 0,
+      "activeSoulChapters": 0,
+      "hegemonyPresent": 1,
+      "hegemonyFactions": 4,
+      "hegemonyPhases": 2,
+      "scenes": 0,
+      "sceneEdits": 0
+    }
+  },
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 2,
+    "afterSha256": "a8b587b4f2d7b2fba1f44ad04691320985e0645c5e6d2070dc59dab5dd565671",
+    "unaffectedBeforeSha256": "a8bec570eea2dd50330e3ec63ce2799a4c04f7cccf881920289e97e27dcfbcf4",
+    "unaffectedAfterSha256": "a8bec570eea2dd50330e3ec63ce2799a4c04f7cccf881920289e97e27dcfbcf4"
+  },
+  "preservedFields": [
+    {
+      "field": "customLegends",
+      "unchanged": true
+    },
+    {
+      "field": "chatHistories",
+      "unchanged": true
+    },
+    {
+      "field": "simulationHistory",
+      "unchanged": true
+    },
+    {
+      "field": "discussionHistories",
+      "unchanged": true
+    },
+    {
+      "field": "soulSaves",
+      "unchanged": true
+    },
+    {
+      "field": "hegemonySavedSim",
+      "unchanged": true
+    },
+    {
+      "field": "scenes",
+      "unchanged": true
+    },
+    {
+      "field": "sceneEdits",
+      "unchanged": true
+    },
+    {
+      "field": "soulSession",
+      "unchanged": true
+    }
+  ],
+  "targets": [
+    {
+      "id": "emperor_北魏孝文帝_33257620",
+      "onlyDeepAnalysisChanged": true,
+      "characters": 5143,
+      "existingNormalAnalysisPreserved": true,
+      "provenance": {
+        "provider": "ChatGPT web",
+        "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+        "generatedAt": "2026-10-09T10:59:17.996Z",
+        "checkedSources": [
+          {
+            "title": "魏書卷七上・高祖紀上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2460668",
+            "locator": "analysis-pilot/sources/xiaowendi.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "魏書卷七下・高祖紀下",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2460667",
+            "locator": "analysis-pilot/sources/xiaowendi.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "北史卷三・魏本紀第三",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=1569849",
+            "locator": "analysis-pilot/sources/xiaowendi.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "魏書／卷53〈李沖傳〉",
+            "url": "https://zh.wikisource.org/zh/魏書/卷53",
+            "locator": "李沖段：舊無三長…沖創三長…文明太后議行；及文明太后崩後、高祖議禮儀律令訪決李沖段（網頁行180–184）。"
+          },
+          {
+            "title": "資治通鑑／卷138",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=1553998",
+            "locator": "493年五月平城／南伐／任城王澄廷議；九月洛陽群臣請止南伐、南伐與遷都抉擇、十月營都段（網頁行137–138、172–175）。"
+          },
+          {
+            "title": "Chen, Wang and Zhang, From powerholders to stakeholders: State-building with elite compensation in early medieval China",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12888",
+            "locator": "可讀全文中 Abstract、Historical background: Northern Wei, local autonomy, and the Reform、Main results: Reform and recruitment（網頁行158–161、239–252、299–321）；先刊2024，期刊69(2)2025。"
+          },
+          {
+            "title": "Scott Pearce, Northern Wei (386–534), Chapter16: To Luoyang (2023)",
+            "url": "https://academic.oup.com/book/46157/chapter-abstract/404960388",
+            "locator": "官方公開 Abstract（另以chapter/404960388官方轉向頁讀到）：文明太后留平城意向、490去世、493遷洛、對代人改制及內部接受程度不一；未取得章全文。"
+          },
+          {
+            "title": "Scott Pearce, Northern Wei (386–534), Chapter17: Downfall of a Theatre State (2023)",
+            "url": "https://academic.oup.com/book/46157/chapter-abstract/404960853",
+            "locator": "官方公開 Abstract（由Oxford官方搜尋索引讀到）：朝廷與留北軍事力量分離、胡太后、523軍鎮危機；未取得章全文。"
+          },
+          {
+            "title": "Chao Ling, Imperial Identity and Religious Reformation: The Buddhist Urban Landscape in Northern Wei Luoyang (2024)",
+            "url": "https://www.mdpi.com/2077-1444/15/5/551",
+            "locator": "MDPI官方索引可讀 Abstract、§2.1 Cultural Memory of Pre-Luoyang Northern Wei、§2.2 Imperial Identity and Architectural Elements、§4 Conclusions；文化記憶與正統整合。"
+          },
+          {
+            "title": "康樂〈代人與鎮人〉，史語所集刊61.4：895–916",
+            "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/973/Article/455",
+            "locator": "官方公開摘要及書誌（亦讀jp/Publications/Bulletin/141/Article/455，行663–681）；摘要研究問題為北鎮設置、鎮人與代人關係及鎮人集團出現。PDF抓取失敗，未核讀全文。"
+          }
+        ],
+        "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+        "captureFile": "analysis-pilot/drafts/xiaowendi.style.v2.capture.json",
+        "responseAssembly": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.",
+        "rawResponseSha256": "e20a7335a557ac5f236563b45b49ff897dd49b7f8daa75df59e58ac16fa8df32",
+        "sourceReviewSha256": "90859b05ec54e60d9761cc0b6effde2ac2cf119e287cafae73fc0a86253860af",
+        "originalWebsitePromptPreserved": true,
+        "existingWritingStyleUsed": true,
+        "webSearchVerified": true
+      }
+    },
+    {
+      "id": "general_王翦_306401394",
+      "onlyDeepAnalysisChanged": true,
+      "characters": 5349,
+      "existingNormalAnalysisPreserved": true,
+      "provenance": {
+        "provider": "ChatGPT web",
+        "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+        "generatedAt": "2026-10-09T11:09:05.565Z",
+        "checkedSources": [
+          {
+            "title": "史記卷七十三・白起王翦列傳",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=7909285",
+            "locator": "analysis-pilot/sources/wangjian.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "史記卷六・秦始皇本紀",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=7907969",
+            "locator": "analysis-pilot/sources/wangjian.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "資治通鑑／卷007",
+            "url": "https://zh.wikisource.org/zh-hant/資治通鑑/卷007",
+            "locator": "已讀秦始皇20–25年條（網頁行147–199）：20易水、21拔薊與伐楚兵議、22魏與李信敗、23王翦追楚蘄南項燕、24負芻、25遼東與代；並見蒙武／蒙恬校文。"
+          },
+          {
+            "title": "辛德勇〈雲夢睡虎地秦人簡牘與李信、王翦南滅荆楚的地理進程〉，《出土文獻》第五輯，2014",
+            "url": "https://www.ctwx.tsinghua.edu.cn/__local/D/78/76/04587E604BFB45EB0C5E467C51C_AB1DD685_39397C.pdf",
+            "locator": "協同來源QA可解析69頁PDF，實際核第1頁278/223與55年、第5–6頁蒙武校勘王翦征楚、第8–11頁學說比較、第53–59頁路線考證、第69頁作者及2014-06-30定稿；非逐頁通讀。"
+          },
+          {
+            "title": "唐俊峰／Chun Fung Tong, The Emergence of Logistics Networks and Financial Administration During the Qin Conquest (230–221 BCE)",
+            "url": "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528",
+            "locator": "協同來源QA核可讀全文HTML Introduction及“Assigned Transfer” and Qin’s Extended Logistics Networks（HTML537–546、555–615）：虎溪山簡542與注31、里耶7-1前222申糧及9-1114前221將糧盡，里耶／嶽麓跨郡物流及新民動員；metadata430/468/491。online2026-01-12，Early China48標September2025，133–162頁，DOI10.1017/eac.2025.10032。未直接核2020考古報告。"
+          }
+        ],
+        "sourcePackageSha256": "0d41d737d4188eff74a1a07f01f393ee5066e6769452392b3a41c42b65df16d1",
+        "captureFile": "analysis-pilot/drafts/wangjian.style.v2.capture.json",
+        "responseAssembly": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.",
+        "rawResponseSha256": "fcbbdcd0cb9c73d954338a312167e299954a86753bbabe33b96505c77d507f2e",
+        "sourceReviewSha256": "ee9c65198d8edb73854b9b4d7d8f07a707708b4052d2e8f6bfdd9c432546db4b",
+        "originalWebsitePromptPreserved": true,
+        "existingWritingStyleUsed": true,
+        "webSearchVerified": true
+      }
+    },
+    {
+      "id": "minister_姚崇_2003901767",
+      "onlyDeepAnalysisChanged": true,
+      "characters": 5173,
+      "existingNormalAnalysisPreserved": true,
+      "provenance": {
+        "provider": "ChatGPT web",
+        "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+        "generatedAt": "2026-10-09T11:14:13.106Z",
+        "checkedSources": [
+          {
+            "title": "舊唐書卷九十六・姚崇傳",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2598602",
+            "locator": "analysis-pilot/sources/yaochong.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "新唐書卷一百二十四・姚崇傳",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2615648",
+            "locator": "analysis-pilot/sources/yaochong.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "資治通鑑卷二百一十一・唐紀二十七",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2082155",
+            "locator": "analysis-pilot/sources/yaochong.md；原典節錄與定位、版本雜湊見該史料包"
+          },
+          {
+            "title": "全唐文／卷0206〈請遣捕蝗疏〉、〈答捕蝗奏〉",
+            "url": "https://zh.wikisource.org/zh-hant/全唐文/卷0206",
+            "locator": "已讀兩篇全文：答捕蝗奏（網頁行168–170）山東蝗、河北河南少儲積、除不得削官爵；請遣捕蝗疏（行175–177）引詩、漢光武及夜火坑焚瘞；亦核報倪若水捕蝗牒。此為後代輯録，網頁有自動生成待複查提示，相關句並與舊唐96核對。"
+          },
+          {
+            "title": "張繼瑩〈生態與治理──以明王朝(1368–1644)蝗災為例〉，清華學報54(4)，2024",
+            "url": "https://thjcs.site.nthu.edu.tw/var/file/452/1452/img/5286/611748169.pdf",
+            "locator": "可讀PDF：首頁書誌與摘要、印本759–760頁／PDF第13–14頁，三(一)捕蝗法的推行及註64–70，姚崇延伸詩經解釋、人力捕蝗與驅撲焚瘞；未聲稱全42頁均逐字核讀。"
+          }
+        ],
+        "sourcePackageSha256": "6e436a41ab0d7e1fd1fc6d41351fea75163888721992491937189a9d8ecb53e8",
+        "captureFile": "analysis-pilot/drafts/yaochong.style.v2.capture.json",
+        "responseAssembly": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.",
+        "rawResponseSha256": "3580268fcc4f7fca1e204cb33d8ac718e5339b9a752d2ed8ff144c3ddb659c05",
+        "sourceReviewSha256": "f67f2fa5869424f24efb6218619d1421be146480837114780a51602397a1e513",
+        "originalWebsitePromptPreserved": true,
+        "existingWritingStyleUsed": true,
+        "webSearchVerified": true
+      }
+    }
+  ]
+}

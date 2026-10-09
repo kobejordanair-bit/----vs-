@@ -1,0 +1,21 @@
+✔ original website source accepts LF and CRLF checkouts without changing rendered literal bytes (1.1392ms)
+✔ website binding rejects source content changes and transformations beyond CRLF to LF (0.3539ms)
+✔ website binding must exist and remain bound to the original raw source package (0.274ms)
+✔ original template rendering preserves literal text and safely handles the original role conditional (0.7076ms)
+✔ phase2 staging includes only selected figure/deep/source material and exact five missing layers (1.9069ms)
+✔ default layer prompts faithfully start with original templates, include style and actual web-search requests (0.6309ms)
+✔ deep style request keeps safe input bindings and renders original prompt with the full ranking reference (2.3259ms)
+✔ unsealed prompts, absent deep analysis or a changed missing-field set cannot produce a ready request (1.4051ms)
+✔ assembly gates all five field captures and QA hashes, strips only completion markers and retains per-field provenance (10.3537ms)
+✔ any changed capture, prompt, manuscript review, source package, marker or background draft stops assembly (4.8338ms)
+✔ assembly rejects unsigned stage requests and unsafe paths before reading files (0.8118ms)
+✔ every field requires a literal true web-search verification flag and keeps bounded local evidence (3.5697ms)
+✔ QA external sources are deduplicated by URL across layers and original source references (3.6427ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 128.1343

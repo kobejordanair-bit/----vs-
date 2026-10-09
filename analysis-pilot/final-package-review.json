@@ -1,0 +1,107 @@
+{
+  "format": "dynasty-final-public-package-review",
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-09T12:32:17.979Z",
+  "reviewer": "Independent Codex delivery review subagent",
+  "package": "最終交付",
+  "status": "final_package_verified",
+  "passed": true,
+  "scope": "Concrete artifact differences after Git line-ending/source-binding fix: manifest and copied public files, local links, exact historical manuscript HTML/hashes, public final audit identity and credential/private-data scans. No original private userdata, production or browser access.",
+  "checks": [
+    {
+      "id": "audit_matches_final_public_source",
+      "passed": true
+    },
+    {
+      "id": "status_binds_new_manifest_and_audit",
+      "passed": true
+    },
+    {
+      "id": "new_batches_match_public_originals",
+      "passed": true
+    },
+    {
+      "id": "eight_new_and_nine_pages_declared",
+      "passed": true
+    },
+    {
+      "id": "all_manifest_hashes_match",
+      "passed": true,
+      "files": 137,
+      "matching": 137
+    },
+    {
+      "id": "no_unlisted_payload",
+      "passed": true,
+      "files": 139
+    },
+    {
+      "id": "no_private_backup_or_credential_paths",
+      "passed": true
+    },
+    {
+      "id": "existing_wangjian_article_preserved",
+      "passed": true
+    },
+    {
+      "id": "all_nine_historical_pages_match",
+      "passed": true,
+      "matching": 9,
+      "pages": 9
+    },
+    {
+      "id": "all_local_html_links_resolve",
+      "passed": true,
+      "links": 70,
+      "broken": 0
+    },
+    {
+      "id": "overview_counts_match_actual_audit",
+      "passed": true
+    },
+    {
+      "id": "public_structured_data_and_credentials_scan_clear",
+      "passed": true,
+      "textFilesScanned": 138,
+      "jsonFilesScanned": 42,
+      "binaryFilesNotTextScanned": 1
+    },
+    {
+      "id": "new_source_binding_helper_tests_13_pass",
+      "passed": true
+    },
+    {
+      "id": "historical_audit_unchanged_from_previous_package_review",
+      "passed": true
+    }
+  ],
+  "findings": [],
+  "figures": {
+    "total": 962,
+    "deepAnalysis": 388,
+    "analysis": 66,
+    "soulEssence": 21
+  },
+  "manuscripts": {
+    "newlyAdded": 8,
+    "preservedExisting": 1,
+    "pages": 9
+  },
+  "files": {
+    "actual": 139,
+    "manifest": 137,
+    "manifestHashMatches": 137,
+    "copiedPublicSourcesMatching": 127,
+    "textFilesScanned": 138,
+    "jsonFilesScanned": 42
+  },
+  "integrity": {
+    "auditSha256": "daa17dbccee0448442047c92e68ab750ed1b25eb2070511fc704036d5a3d4875",
+    "manifestSha256": "120d2fcde0f5be6d95051cbf0117008b4520191771049e2588dce6e694bceb28",
+    "deepBatchSha256": "2e5885ce958c7acde6248d497899fbf1b65a06192481bea10faf6bed07aa122a",
+    "layerBatchSha256": "c901db3a1903844893b4072e3cb5f1df37d48d587f10c8c0058b359fce0b5546"
+  },
+  "limitations": [
+    "Pattern and structured JSON scans do not prove the absence of every possible arbitrary secret string. This review did not reopen private userdata or repeat the full preservation verification; the final public audit is unchanged and matches the package."
+  ]
+}

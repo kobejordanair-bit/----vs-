@@ -1,0 +1,21 @@
+✔ layer dry-run allows exactly five missing fields and preserves all existing deep analysis and Wang Jian analysis (4.3493ms)
+✔ successful layer apply saves complete before/after snapshots and verifies every untouched document field (2.5305ms)
+✔ CAS retry uses latest whole map, revision and unrelated player progress (2.1208ms)
+✔ any changed current deep analysis stops a retry before another write (1.601ms)
+✔ a newly filled target layer stops the retry instead of overwriting it (1.7165ms)
+✔ rank, stats, deepAnalysis, Wang Jian normal analysis and other IDs are never allowed targets (0.641ms)
+✔ phase2 requires existing deep analysis and full input hash including every prior layer (0.3313ms)
+✔ baseline existing content is preserved and batches must exactly match its remaining missing layers (0.651ms)
+✔ new layer dry-run approval is bound to batch/source and refuses the deep phase report (1.8379ms)
+✔ mandatory backup succeeds before writes, or any backup failure prevents the CAS (2.7957ms)
+✔ network and 503 unknown write outcomes are not automatically retried and do not leak raw errors (3.1267ms)
+✔ post-write concurrent progress and accidental deep/stat changes are detected without rollback (2.5634ms)
+✔ size cap, incomplete prose, missing provenance and duplicate targets fail locally (67.2524ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 180.8518

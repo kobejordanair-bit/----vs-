@@ -1,0 +1,31 @@
+✔ dry-run reads without POST, does not print private prose and preserves all untouched fields (4.4822ms)
+✔ apply writes exactly three deepAnalysis fields and proves complete unaffected document equality (2.5796ms)
+✔ CAS conflict re-reads, re-merges the full modified map and preserves concurrent unrelated progress (1.8663ms)
+✔ a concurrent new analysis stops a conflicting retry without overwriting it (2.0012ms)
+✔ a concurrent target biography change stops the retry even if its analysis is still blank (1.1493ms)
+✔ existing source analysis, incorrect input hashes and duplicate or unknown targets fail before requests (0.7436ms)
+✔ approval is bound to source, base and exact generated batch including local provenance (2.9676ms)
+✔ pre-write backup failure prevents POST; post-write backup failure reports the completed write (3.3729ms)
+✔ unknown POST outcome never automatically retries or reports a certain failure (1.665ms)
+✔ post-write concurrent progress is detected without trying to undo player data (1.4357ms)
+✔ complete readback comparison detects changes to any field or unknown nested data (0.8069ms)
+✔ 32 MiB full-document and request limits are checked before a write (74.8951ms)
+✔ incomplete prose, fewer than three results, unsafe IDs and ungrounded provenance are rejected (0.7366ms)
+✔ CLI requires explicit apply, approval, unique backup directory and exactly one file-based credential (0.3313ms)
+✔ an old revision1 baseline permits newer live progress while applying against the live revision (1.5361ms)
+✔ apply requires an explicit backup implementation even when called without the CLI (1.3037ms)
+✔ a blank final-section value cannot consume the next line as its missing content (0.2035ms)
+✔ 503 and invalid acknowledgements preserve unknown write outcome without automatic retry (2.2303ms)
+✔ bounded conflict retries stop after four CAS attempts and confirm that the rejected writes did not succeed (2.0117ms)
+✔ secret-file credentials authenticate once; only the returned token is sent to userdata requests (17.9706ms)
+✔ token-file credentials skip auth and access only userdata without extra credential requests (0.3032ms)
+✔ invalid credential inputs and untrusted origins fail without sending any request (0.2379ms)
+✔ authentication errors retain a fixed error code and do not expose provider responses or credentials (0.4624ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 239.4006

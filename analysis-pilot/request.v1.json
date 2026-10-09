@@ -1,0 +1,326 @@
+{
+  "format": "dynasty-analysis-pilot-request",
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-09T09:54:53.632Z",
+  "baselineRevision": 1,
+  "libraryCount": 962,
+  "onlyFill": "deepAnalysis",
+  "targetCount": 3,
+  "records": [
+    {
+      "order": 1,
+      "id": "emperor_北魏孝文帝_33257620",
+      "inputSha256": "3fa349415b449c799e57909bd7e0fbe1a63c872794a125bee0b332310cdc38d4",
+      "promptSha256": "eb3f475bfff1b4c3b23ec58faca5a98dded703551d4628fb868ba8dfe3804f8d",
+      "context": {
+        "id": "emperor_北魏孝文帝_33257620",
+        "name": "北魏孝文帝",
+        "type": "emperor",
+        "dynasty": "南北朝",
+        "rank": "A+",
+        "title": "元宏",
+        "tag": "漢化改革",
+        "desc": "遷都洛陽，全面漢化，促進民族大融合。",
+        "poem": "遷都洛陽更衣冠，漢化融合開新篇。"
+      },
+      "anchors": [
+        {
+          "id": "emperor_漢高祖_279096455",
+          "name": "漢高祖",
+          "type": "emperor",
+          "dynasty": "西漢",
+          "rank": "S-"
+        },
+        {
+          "id": "emperor_宋太祖_284437104",
+          "name": "宋太祖",
+          "type": "emperor",
+          "dynasty": "北宋",
+          "rank": "S-"
+        },
+        {
+          "id": "emperor_康熙帝_283469836",
+          "name": "康熙帝",
+          "type": "emperor",
+          "dynasty": "清朝",
+          "rank": "S-"
+        },
+        {
+          "id": "emperor_明太祖_281851053",
+          "name": "明太祖",
+          "type": "emperor",
+          "dynasty": "明朝",
+          "rank": "S-"
+        },
+        {
+          "id": "emperor_毛澤東_280250175",
+          "name": "毛澤東",
+          "type": "emperor",
+          "dynasty": "中華人民共和國",
+          "rank": "A+"
+        },
+        {
+          "id": "emperor_乾隆帝_287167826",
+          "name": "乾隆帝",
+          "type": "emperor",
+          "dynasty": "清朝",
+          "rank": "A+"
+        },
+        {
+          "id": "emperor_漢文帝_279526543",
+          "name": "漢文帝",
+          "type": "emperor",
+          "dynasty": "西漢",
+          "rank": "A+"
+        },
+        {
+          "id": "emperor_漢宣帝_279605035",
+          "name": "漢宣帝",
+          "type": "emperor",
+          "dynasty": "西漢",
+          "rank": "A+"
+        },
+        {
+          "id": "emperor_宋仁宗_284527334",
+          "name": "宋仁宗",
+          "type": "emperor",
+          "dynasty": "北宋",
+          "rank": "A"
+        },
+        {
+          "id": "emperor_武則天_280599295",
+          "name": "武則天",
+          "type": "emperor",
+          "dynasty": "唐朝",
+          "rank": "A"
+        },
+        {
+          "id": "emperor_魏武帝_268612001",
+          "name": "魏武帝",
+          "type": "emperor",
+          "dynasty": "三國",
+          "rank": "A"
+        },
+        {
+          "id": "emperor_宋太宗_284444719",
+          "name": "宋太宗",
+          "type": "emperor",
+          "dynasty": "北宋",
+          "rank": "A"
+        }
+      ],
+      "sourceFile": "analysis-pilot/sources/xiaowendi.md",
+      "prompt": "你是歷史人物名錄總評官。請只對本任務指定身份撰寫繁體中文完整深度分析。現庫962位；參照現有同身份錨點，但榜單評級不是史實，須獨立論證。不得將他人或同名人物經歷混入。\n閱讀本任務context/anchors及sources/xiaowendi.md。用來源包的原典段落作主要證據；引用標書名、卷與章/段落，附包內原始可核讀網址，不捏造引文或頁碼。區分「史載」「推論」「評價」，對傳記故事可靠度與制度/族群背景作限制說明。\n沿用原核心史觀：實體建制/戰略成果為主，文明底線為輔；帝王考察國家控制、地緣與制度經濟、危機政治；將領考察會戰、逆境、戰略成果與軍政生存；名臣考察行政/制度/財政/危機成果。嚴格隔離身份，避免道德口號取代成果分析。\n以約2500至4500繁體中文字寫四大步驟：一、榜單錨定：至少3同類型錨點實質比較。二、獨立史學剖析：具體事件/制度、時代難度、因果、能力邊界、負面代價、後世影響。三、縱向標定與雙向防線：以上下相鄰等級比較，有理由維持/修改現評級。四、全榜邏輯一致性校準：明示評級理由與爭議、不確定性。再列「人格與行動傾向」：根據事件的可支持推論，包含能力/代價/觸發條件，供遊戲使用，不冒稱確定內心。列「史料與查證範圍」，避免現代族群本質化或後見之明。\n最後必須各欄獨立一行：\n【建議定案】\n評級：僅S+/S/S-/A+/A/A-/B+/B/B-/C+/C/C-/D之一\n稱號：\n標籤：\n簡評：50字內\n判詞：20字內\n不得自動套用建議或修改原數值。回覆僅本人物Markdown全文，不省略、不以「略」替代。末行加<!-- PILOT_COMPLETE emperor_北魏孝文帝_33257620 -->作全文完成標記。"
+    },
+    {
+      "order": 2,
+      "id": "general_王翦_306401394",
+      "inputSha256": "3201052028a71b0ce87d41ffcb0543a132b964cf554a3111fd7764ae4e0ca6bb",
+      "promptSha256": "20615ebbd165cd7755943aaae9b5740f47e7574dd3b0ae3b730ac3160cd191d8",
+      "context": {
+        "id": "general_王翦_306401394",
+        "name": "王翦",
+        "type": "general",
+        "dynasty": "戰國",
+        "rank": "S",
+        "title": "滅三國",
+        "tag": "戰國計算機",
+        "desc": "統一天下的執行者，求田問舍展現頂級政治智慧。",
+        "poem": "請田問舍安秦帝，六十萬甲吞楚疆。"
+      },
+      "anchors": [
+        {
+          "id": "general_成吉思汗_2044319094",
+          "name": "成吉思汗",
+          "type": "general",
+          "dynasty": "元朝",
+          "rank": "S+"
+        },
+        {
+          "id": "general_速不台_915165195",
+          "name": "速不台",
+          "type": "general",
+          "dynasty": "元朝",
+          "rank": "S+"
+        },
+        {
+          "id": "general_韓信_306677029",
+          "name": "韓信",
+          "type": "general",
+          "dynasty": "楚漢相爭",
+          "rank": "S+"
+        },
+        {
+          "id": "general_白起_306428241",
+          "name": "白起",
+          "type": "general",
+          "dynasty": "戰國",
+          "rank": "S+"
+        },
+        {
+          "id": "general_李靖_306310271",
+          "name": "李靖",
+          "type": "general",
+          "dynasty": "唐朝",
+          "rank": "S"
+        },
+        {
+          "id": "general_霍去病_916923744",
+          "name": "霍去病",
+          "type": "general",
+          "dynasty": "西漢",
+          "rank": "S"
+        },
+        {
+          "id": "general_衛青_306572558",
+          "name": "衛青",
+          "type": "general",
+          "dynasty": "西漢",
+          "rank": "S"
+        },
+        {
+          "id": "general_劉裕_306141731",
+          "name": "劉裕",
+          "type": "general",
+          "dynasty": "南北朝",
+          "rank": "S"
+        },
+        {
+          "id": "general_劉邦_306143732",
+          "name": "劉邦",
+          "type": "general",
+          "dynasty": "漢朝",
+          "rank": "S-"
+        },
+        {
+          "id": "general_項羽_306690831",
+          "name": "項羽",
+          "type": "general",
+          "dynasty": "楚漢相爭",
+          "rank": "S-"
+        },
+        {
+          "id": "general_拓跋燾_904534991",
+          "name": "拓跋燾",
+          "type": "general",
+          "dynasty": "南北朝",
+          "rank": "S-"
+        },
+        {
+          "id": "general_高歡_306708032",
+          "name": "高歡",
+          "type": "general",
+          "dynasty": "南北朝",
+          "rank": "S-"
+        }
+      ],
+      "sourceFile": "analysis-pilot/sources/wangjian.md",
+      "prompt": "你是歷史人物名錄總評官。請只對本任務指定身份撰寫繁體中文完整深度分析。現庫962位；參照現有同身份錨點，但榜單評級不是史實，須獨立論證。不得將他人或同名人物經歷混入。\n閱讀本任務context/anchors及sources/wangjian.md。用來源包的原典段落作主要證據；引用標書名、卷與章/段落，附包內原始可核讀網址，不捏造引文或頁碼。區分「史載」「推論」「評價」，對傳記故事可靠度與制度/族群背景作限制說明。\n沿用原核心史觀：實體建制/戰略成果為主，文明底線為輔；帝王考察國家控制、地緣與制度經濟、危機政治；將領考察會戰、逆境、戰略成果與軍政生存；名臣考察行政/制度/財政/危機成果。嚴格隔離身份，避免道德口號取代成果分析。\n以約2500至4500繁體中文字寫四大步驟：一、榜單錨定：至少3同類型錨點實質比較。二、獨立史學剖析：具體事件/制度、時代難度、因果、能力邊界、負面代價、後世影響。三、縱向標定與雙向防線：以上下相鄰等級比較，有理由維持/修改現評級。四、全榜邏輯一致性校準：明示評級理由與爭議、不確定性。再列「人格與行動傾向」：根據事件的可支持推論，包含能力/代價/觸發條件，供遊戲使用，不冒稱確定內心。列「史料與查證範圍」，避免現代族群本質化或後見之明。\n最後必須各欄獨立一行：\n【建議定案】\n評級：僅S+/S/S-/A+/A/A-/B+/B/B-/C+/C/C-/D之一\n稱號：\n標籤：\n簡評：50字內\n判詞：20字內\n不得自動套用建議或修改原數值。回覆僅本人物Markdown全文，不省略、不以「略」替代。末行加<!-- PILOT_COMPLETE general_王翦_306401394 -->作全文完成標記。"
+    },
+    {
+      "order": 3,
+      "id": "minister_姚崇_2003901767",
+      "inputSha256": "eb2950edd39d5204e0adf07d20c6bc98e8d13996672ef77fb0e972d58e26f9e1",
+      "promptSha256": "00f44c9972a8d1e60f657b4aad6bf4d36efd8ce2b203a7f44181d4ba721a7286",
+      "context": {
+        "id": "minister_姚崇_2003901767",
+        "name": "姚崇",
+        "type": "minister",
+        "dynasty": "唐朝",
+        "rank": "S-",
+        "title": "救時宰相",
+        "tag": "開元奠基",
+        "desc": "十事要說，奠定開元盛世的基礎。",
+        "poem": "十事要說定天下，救時宰相開元風。"
+      },
+      "anchors": [
+        {
+          "id": "minister_蕭何_2004244066",
+          "name": "蕭何",
+          "type": "minister",
+          "dynasty": "西漢",
+          "rank": "S"
+        },
+        {
+          "id": "minister_周恩來_1990120203",
+          "name": "周恩來",
+          "type": "minister",
+          "dynasty": "中華人民共和國",
+          "rank": "S"
+        },
+        {
+          "id": "minister_諸葛亮(名臣)_866483420",
+          "name": "諸葛亮(名臣)",
+          "type": "minister",
+          "dynasty": "三國",
+          "rank": "S"
+        },
+        {
+          "id": "minister_張居正_1992751641",
+          "name": "張居正",
+          "type": "minister",
+          "dynasty": "明朝",
+          "rank": "S"
+        },
+        {
+          "id": "minister_王安石_1997751995",
+          "name": "王安石",
+          "type": "minister",
+          "dynasty": "北宋",
+          "rank": "S-"
+        },
+        {
+          "id": "minister_李鴻章(名臣)_2046785284",
+          "name": "李鴻章(名臣)",
+          "type": "minister",
+          "dynasty": "清朝",
+          "rank": "S-"
+        },
+        {
+          "id": "minister_于謙(名臣)_924336368",
+          "name": "于謙(名臣)",
+          "type": "minister",
+          "dynasty": "明朝",
+          "rank": "S-"
+        },
+        {
+          "id": "minister_謝安_2004292326",
+          "name": "謝安",
+          "type": "minister",
+          "dynasty": "晉朝",
+          "rank": "S-"
+        },
+        {
+          "id": "minister_徐光啟_1992746284",
+          "name": "徐光啟",
+          "type": "minister",
+          "dynasty": "明朝",
+          "rank": "A+"
+        },
+        {
+          "id": "minister_狄仁傑_1997449242",
+          "name": "狄仁傑",
+          "type": "minister",
+          "dynasty": "唐朝",
+          "rank": "A+"
+        },
+        {
+          "id": "minister_長孫無忌_2059416313",
+          "name": "長孫無忌",
+          "type": "minister",
+          "dynasty": "唐朝",
+          "rank": "A+"
+        },
+        {
+          "id": "minister_呂不韋_1989956486",
+          "name": "呂不韋",
+          "type": "minister",
+          "dynasty": "戰國",
+          "rank": "A+"
+        }
+      ],
+      "sourceFile": "analysis-pilot/sources/yaochong.md",
+      "prompt": "你是歷史人物名錄總評官。請只對本任務指定身份撰寫繁體中文完整深度分析。現庫962位；參照現有同身份錨點，但榜單評級不是史實，須獨立論證。不得將他人或同名人物經歷混入。\n閱讀本任務context/anchors及sources/yaochong.md。用來源包的原典段落作主要證據；引用標書名、卷與章/段落，附包內原始可核讀網址，不捏造引文或頁碼。區分「史載」「推論」「評價」，對傳記故事可靠度與制度/族群背景作限制說明。\n沿用原核心史觀：實體建制/戰略成果為主，文明底線為輔；帝王考察國家控制、地緣與制度經濟、危機政治；將領考察會戰、逆境、戰略成果與軍政生存；名臣考察行政/制度/財政/危機成果。嚴格隔離身份，避免道德口號取代成果分析。\n以約2500至4500繁體中文字寫四大步驟：一、榜單錨定：至少3同類型錨點實質比較。二、獨立史學剖析：具體事件/制度、時代難度、因果、能力邊界、負面代價、後世影響。三、縱向標定與雙向防線：以上下相鄰等級比較，有理由維持/修改現評級。四、全榜邏輯一致性校準：明示評級理由與爭議、不確定性。再列「人格與行動傾向」：根據事件的可支持推論，包含能力/代價/觸發條件，供遊戲使用，不冒稱確定內心。列「史料與查證範圍」，避免現代族群本質化或後見之明。\n最後必須各欄獨立一行：\n【建議定案】\n評級：僅S+/S/S-/A+/A/A-/B+/B/B-/C+/C/C-/D之一\n稱號：\n標籤：\n簡評：50字內\n判詞：20字內\n不得自動套用建議或修改原數值。回覆僅本人物Markdown全文，不省略、不以「略」替代。末行加<!-- PILOT_COMPLETE minister_姚崇_2003901767 -->作全文完成標記。"
+    }
+  ]
+}

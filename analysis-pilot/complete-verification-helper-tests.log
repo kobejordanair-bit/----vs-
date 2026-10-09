@@ -1,0 +1,13 @@
+✔ combined verification accepts exactly eight additions, preserves all 10 fields and emits only safe metadata (9.0854ms)
+✔ same-count changes to ratings, existing Wang Jian article, saved chapter, chat or unknown metadata are rejected (12.1883ms)
+✔ wrong revisions and altered added prose fail exact final-state verification (3.8222ms)
+✔ worldworkspaces is compared only when supplied in both snapshots (7.4282ms)
+✔ CLI requires all five input/output arguments and refuses ambiguous options (0.3868ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 115.2272

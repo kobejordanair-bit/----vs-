@@ -1,0 +1,61 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_北魏孝文帝_33257620",
+  "reviewedAt": "2026-10-09T10:26:12.121Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/xiaowendi.md",
+  "sourcePackageFile": "analysis-pilot/sources/xiaowendi.md",
+  "manuscriptSha256": "d922617e62f0496fd03ac335e1143a46d82987550ed50d87670001a45ab1736d",
+  "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-and-completion",
+      "passed": true,
+      "detail": "元宏的帝王身份正确；末行完成標記吻合精確人物 ID；五個建議欄位各自獨立，沒有截斷。"
+    },
+    {
+      "id": "chronology-and-feng-attribution",
+      "passed": true,
+      "detail": "476再次臨朝、484俸祿、485均田、486三長、490太后崩、491始聽政均與公開原典一致，並明確區別太后攝政與孝文帝個人施政。490／491補記有卷、紀年、月及原文網址。"
+    },
+    {
+      "id": "migration-and-identity-policies",
+      "passed": true,
+      "detail": "493遷都决策與職員令、495六宮文武遷洛與朝廷禁語／葬地規定、496改元氏有本紀對應；沒有將朝廷禁語誇大成所有民間語言消失。"
+    },
+    {
+      "id": "military-and-court-events",
+      "passed": true,
+      "detail": "497—498新野南陽戰果、498敕勒反叛、499陳顯達戰事及病逝、496廢元恂及穆泰事件，均可對所附《魏書》7下段落。"
+    },
+    {
+      "id": "quotes-and-citations",
+      "passed": true,
+      "detail": "三個實質史料引文「北俗之語」「太皇太后馮氏崩」「帝始聽政於皇信東室」均存在來源包；「民族融合」是概念標示而非冒充古籍逐字引文。所有所附古籍链接卷號與所述事件範圍相符，未造頁碼。"
+    },
+    {
+      "id": "anchors-and-rating-boundaries",
+      "passed": true,
+      "detail": "漢高祖S-、宋太祖S-、漢宣帝A+、武則天A四個錨點對應任務名錄；有同類、上級及下級實質比較，並說明榜單只是評價座標。A+及遊戲人格傾向均屬作者評價／推論，不冒稱史實數值。"
+    },
+    {
+      "id": "causality-and-source-limits",
+      "passed": true,
+      "detail": "明示《魏書》《北史》承襲、未逐字獨立對勘、未核證軍事統計及均田覆蓋，沒有把523後六鎮危機歸為改革單一必然後果。"
+    }
+  ],
+  "caveats": [
+    "本次為限定來源審核，未逐字對勘印本、未完整核讀食貨志或南朝軍事記錄；其相應限制已在稿中明示。",
+    "四個比較錨點的綜合事功屬廣義歷史比較，未在此史料包逐人補齊獨立原典；錨點等級來自本庫，不能當作客觀歷史結論。",
+    "對改革整合程度、南向戰略效果及人格觸發条件的論斷屬有標示的推論／評價，不代表全部因果已完成查證。",
+    "passed 只表示此精確 SHA 的稿件可進入只補 deepAnalysis 的流程；不授權自動套用建議評級、稱號、標籤、簡評、判詞或改動其他既有字段。"
+  ],
+  "metrics": {
+    "characters": 5558,
+    "chineseCharacters": 3953,
+    "anchors": 4
+  }
+}

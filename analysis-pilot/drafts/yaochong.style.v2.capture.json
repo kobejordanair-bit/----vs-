@@ -1,0 +1,22 @@
+{
+  "provider": "ChatGPT web",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T11:14:13.106Z",
+  "promptSha256": "07b5b7fc1b1c8490a124845b0ce305eb8be4a3765ca812c34cdb547f17c88da2",
+  "responseSha256": "3580268fcc4f7fca1e204cb33d8ac718e5339b9a752d2ed8ff144c3ddb659c05",
+  "fragments": [
+    {
+      "file": "yaochong.style.v2.raw.md",
+      "sha256": "3c1cbccf63906b9a82eafcf501b1cbfda774a630c033bf2ab238b4b34c4a9d94"
+    }
+  ],
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "visibleSearchCount": 21,
+    "file": "analysis-pilot/drafts/yaochong.style.v2.search-evidence.txt",
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 21 個網站",
+    "sha256": "8ab5819b03e4b3b97d97081047bd479c433955c55a0930b4142bb3fd19cc7637"
+  },
+  "composition": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.",
+  "removedCardLines": 11
+}

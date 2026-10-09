@@ -1,0 +1,102 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_北魏孝文帝_33257620",
+  "field": "soulEssence",
+  "reviewedAt": "2026-10-09T11:43:44.093Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/xiaowendi.soulEssence.md",
+  "sourcePackageFile": "analysis-pilot/sources/xiaowendi.md",
+  "manuscriptSha256": "1960f79fdb243e9c541f2e20642c4b7c1b7f7f90b6728236ea22491a85092dee",
+  "sourcePackageSha256": "5a2dbcab4d8a90684b0d76d74caea86483c64c7ccea09a74a4ab918ff9476de8",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "seven-fields-and-completion",
+      "passed": true,
+      "detail": "說話邏輯、壓力反應、核心驅動、慣性盲點、情感結構、參照系、內在裂縫七欄均完整；soulEssence完成標記正確；沒有stats JSON。"
+    },
+    {
+      "id": "analysis-context-consistency",
+      "passed": true,
+      "detail": "與已核賞析 SHA bd64904b4d83d174dfa19835e7ef6c59dfea29103600cc8bdeb971b711dac18c 的遷都／元恂／改革整合人物判斷一致，未反向覆寫其史實。"
+    },
+    {
+      "id": "exact-quotes-and-speech",
+      "passed": true,
+      "detail": "苟不南伐當遷都於此逐字見通鑑138九月；卿所謝者私也我所議者國也見魏22議廢。幼年默受杖責不申明可核魏7下傳末。"
+    },
+    {
+      "id": "yuanxun-education-and-crisis",
+      "passed": true,
+      "detail": "魏22及四庫版支持冠禮訓誡、派太子返代展哀／拜母墓、休息私生活廷議、496殺高道悅／杖刑／廢、497告謀逆賜死與498告申辯書被藏未究。恒朔政治風險有孝文原話支持；並未把告發當確證。"
+    },
+    {
+      "id": "chronology-and-administration",
+      "passed": true,
+      "detail": "493職員令／遷都、495朝廷禁北語與河南葬、496元氏、494北鎮救恤、499元勰徵太子與六輔政有魏7下依据；523軍鎮多因背景未歸孝文單因。"
+    },
+    {
+      "id": "feng-family-and-final-succession",
+      "passed": true,
+      "detail": "魏13支持文明太后養育／服喪、幽后病歸仍念／召回寵厚、宮廷指控、病重遺命帝死後賜死與后禮安葬。正文保持指控政治背景與心理評價區分，沒有錯置賜死在帝死之前。"
+    },
+    {
+      "id": "academic-citation-scope",
+      "passed": true,
+      "detail": "Pearce15養育與孝道、16遷洛方向、17朝廷與邊軍分離皆在官方公開摘要可核範圍；未假稱讀到paywall全文。"
+    },
+    {
+      "id": "psychological-model",
+      "passed": true,
+      "detail": "核心驅動／壓力模式／情感／內在裂縫是史事支持的歷史詮釋；史載、推斷、詮釋與研究標籤足以區分，不要求逐句心理免責。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "資治通鑑／卷138",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=1553998",
+      "locator": "493年五月平城／南伐／任城王澄廷議；九月洛陽群臣請止南伐、南伐與遷都抉擇、十月營都段（網頁行137–138、172–175）。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter16: To Luoyang (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960388",
+      "locator": "官方公開 Abstract（另以chapter/404960388官方轉向頁讀到）：文明太后留平城意向、490去世、493遷洛、對代人改制及內部接受程度不一；未取得章全文。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei (386–534), Chapter17: Downfall of a Theatre State (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960853",
+      "locator": "官方公開 Abstract（由Oxford官方搜尋索引讀到）：朝廷與留北軍事力量分離、胡太后、523軍鎮危機；未取得章全文。"
+    },
+    {
+      "title": "魏書／卷22〈廢太子恂〉",
+      "url": "https://zh.wikisource.org/wiki/魏書/卷22",
+      "locator": "實核全廢太子段HTML133–139：冠禮、返代展哀舅氏／拜母墓、學業與休息之議、殺高道悅、杖刑／廢、卿所謝者私也我所議者國也、恒朔及永嘉憂慮、椒酒賜死、太和22申辯書未究。該卷校勘記指出原卷亡佚、以北史補本，不作原稿魏收的獨立完本。"
+    },
+    {
+      "title": "魏書（四庫全書本）／卷022",
+      "url": "https://zh.wikisource.org/wiki/魏書_(四庫全書本)/卷022",
+      "locator": "oldid=786719，全文HTML119廢太子庶人恂段實核；與通行本為同一傳文不同版本，不作兩條獨立證據。"
+    },
+    {
+      "title": "魏書／卷13〈文明皇后〉、〈幽皇后〉",
+      "url": "https://zh.wikisource.org/zh-hant/魏書/卷13",
+      "locator": "實核HTML258–267文明太后撫養／臨朝／490喪禮，HTML302–307幽后病歸後復迎洛、宮廷私亂／巫禱指控、病重詔死後賜自盡並葬以後禮。"
+    },
+    {
+      "title": "Scott Pearce, Northern Wei, Chapter15: The Two Buddhas (2023)",
+      "url": "https://academic.oup.com/book/46157/chapter-abstract/404960148",
+      "locator": "官方公開Abstract由Oxford搜尋索引實讀：文明太后養育並灌輸孝道，孝文服從太后，兩人行政改革；metadata2023-05-18、pp255–262、DOI10.1093/oso/9780197600399.003.0015。未取得章全文。"
+    }
+  ],
+  "caveats": [
+    "魏22原卷亡佚後補本，四庫版與通行本、北史有傳承關係，不能以不同網頁計作獨立互證。",
+    "Oxford15／16／17僅核官方公開摘要（含官方索引所見摘要），不聲稱章全文閱讀。",
+    "人物內在動機是史事詮釋；元恂謀逆與幽后宮廷指控依史籍敘事呈現，未作新增司法證明。"
+  ],
+  "metrics": {
+    "characters": 4679,
+    "chineseCharacters": 3282
+  }
+}

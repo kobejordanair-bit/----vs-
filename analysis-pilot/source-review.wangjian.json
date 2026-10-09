@@ -1,0 +1,80 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_王翦_306401394",
+  "reviewedAt": "2026-10-09T10:38:43.446Z",
+  "reviewer": "Codex source-review subagent",
+  "manuscriptFile": "analysis-pilot/drafts/wangjian.md",
+  "sourcePackageFile": "analysis-pilot/sources/wangjian.md",
+  "manuscriptSha256": "1f65dd9696eb825f0bbc05de6682c9f67b3be34f93124daded8b19dbeda8009d",
+  "sourcePackageSha256": "0d41d737d4188eff74a1a07f01f393ee5066e6769452392b3a41c42b65df16d1",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-and-completion",
+      "passed": true,
+      "detail": "王翦將領身份正確，完成標記及五個建議欄位完整。原普通 analysis 不在此稿匯入範圍。"
+    },
+    {
+      "id": "battle-credit-and-chronology",
+      "passed": true,
+      "detail": "滅趙破燕及伐楚主要紀年與功勞分配可對原典，區分內史騰、王賁、王離及其他參戰將領。"
+    },
+    {
+      "id": "contradictory-sources",
+      "passed": true,
+      "detail": "明列本紀／列傳項燕死因及楚王被俘先後差異，未抹平或將同書兩篇当独立見證。"
+    },
+    {
+      "id": "political-story-and-historian-assessment",
+      "passed": true,
+      "detail": "請田園解疑記載與太史公政治批評均有来源，對話非實錄、史家評語非軍事無能的區分合理。"
+    },
+    {
+      "id": "anchors-and-role-boundaries",
+      "passed": true,
+      "detail": "白起S+、韓信S+、李靖S、項羽S-與任務一致；比較有上下等級與同級，未按帝王／名臣角色直接改將領評分。"
+    },
+    {
+      "id": "causality-and-numeric-limits",
+      "passed": true,
+      "detail": "六十萬非現代統計、不是唯一合理兵額；後勤與動機為推論，不造糧秣戰損；三代敗亡寓言不當作客觀定律。"
+    },
+    {
+      "id": "corrected-battle-action",
+      "passed": true,
+      "detail": "第49行現在吻合原典挑戰／不出／引東／追擊，無未據來源新增的久攻不成。"
+    }
+  ],
+  "caveats": [
+    "本次是限定公開原典包的源文審核，未對勘印本或核實出土秦簡；史記君臣對話及兵力數字保留來源限制。",
+    "韓信、李靖、項羽的綜合比較未在此史料包逐人核讀獨立原典；其等級及能力高下仍為本榜評價。",
+    "審核不授權覆寫原普通賞析 analysis，也不自動套用建議評級或其他人物字段。"
+  ],
+  "metrics": {
+    "characters": 4366,
+    "chineseCharacters": 3271,
+    "anchors": 4
+  },
+  "resolvedIssues": [
+    {
+      "id": "unsupported-prolonged-assault",
+      "severity": "medium",
+      "manuscriptLine": 49,
+      "manuscriptText": "楚軍久攻不成而向東撤退",
+      "issue": "句子位於史載段落，但來源只記楚軍數次挑戰而秦軍不出，然後楚軍引兵向東；未記楚軍長期攻堅失敗。把挑戰寫成久攻會增添來源沒有確證的戰場行動。",
+      "source": {
+        "title": "史記/卷073",
+        "revisionId": 7909285,
+        "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=7909285",
+        "textSha256": "c660a092154217817f4acd10724f0261df7c7e2a14f1fd0eb162bb8dbb6653fe",
+        "relevantText": "荊兵數出挑戰，終不出。……荊數挑戰而秦不出，乃引而東。"
+      },
+      "correctionRequest": "請由 ChatGPT 修訂此句，把史載楚軍行動限定為數次挑戰、秦軍不出戰而引兵向東；保留全文其他部分，重新來源審核後才能匯入。",
+      "resolution": "實際 ChatGPT 修訂原始回覆已保存，只替換目標句；新版將楚軍行動精準限定為挑戰、秦軍不出戰、楚軍引東與秦軍追擊。",
+      "resolvedInManuscriptSha256": "1f65dd9696eb825f0bbc05de6682c9f67b3be34f93124daded8b19dbeda8009d",
+      "correctionCaptureFile": "analysis-pilot/drafts/wangjian-fix.raw.md"
+    }
+  ]
+}

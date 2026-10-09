@@ -1,0 +1,17 @@
+{
+  "format": "dynasty-website-source-binding",
+  "schemaVersion": 1,
+  "normalization": "CRLF-to-LF",
+  "source": {
+    "path": "backend/index.html",
+    "rawSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
+    "lfNormalizedSha256": "50e703544dddfe8eb25b6bdbcfebf40a12912a5707812560a4c34760c9e7178c"
+  },
+  "provenance": {
+    "originalPromptPackage": "analysis-pilot/original-prompts.v1.json",
+    "originalSourceSha256": "06c5d57ea06083f3cc99a6a12487a22d8580cbb0bb5e6026ea17e15bfa3ad8c7",
+    "originalPromptPackageSha256": "116cec450735ac5ed2a4a147d0b1c274215146b0bfc91b4a72c14293aa8aaa79",
+    "verifiedAt": "2026-10-09T12:26:14.518Z",
+    "method": "Verified exact current source against original.source.sha256 before computing CRLF-to-LF digest. Original extracted template literals remain unchanged."
+  }
+}

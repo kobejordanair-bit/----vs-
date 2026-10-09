@@ -1,0 +1,12 @@
+{
+  "purpose": "Saved analysis opens without automatic AI generation when stats are absent",
+  "origin": "https://dynasty.piamamba.com",
+  "worker": "dynasty",
+  "versionId": "d6cd4718-ef9a-4c92-aff5-48c8ebd6f8ad",
+  "changedPublicAssets": ["/index.html"],
+  "uploadedAssets": 1,
+  "unchangedAssets": 19732,
+  "focusedReviewTestsPassed": 3,
+  "assetBuilderTestsPassed": 8,
+  "websiteDataWritePerformedByDeployment": false
+}

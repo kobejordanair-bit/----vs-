@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-analysis-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_王翦_306401394",
+  "reviewedAt": "2026-10-09T11:19:31.180Z",
+  "reviewer": "Codex source-review subagent; external primary-source verification assisted by pilot_analysis_import",
+  "manuscriptFile": "analysis-pilot/drafts/wangjian.style.v2.md",
+  "sourcePackageFile": "analysis-pilot/sources/wangjian.md",
+  "manuscriptSha256": "fcbbdcd0cb9c73d954338a312167e299954a86753bbabe33b96505c77d507f2e",
+  "sourcePackageSha256": "0d41d737d4188eff74a1a07f01f393ee5066e6769452392b3a41c42b65df16d1",
+  "passed": true,
+  "materialIssues": [],
+  "checks": [
+    {
+      "id": "identity-and-completion",
+      "passed": true,
+      "detail": "王翦將領身份、精確人物完成marker及五個建議欄位完整，未截斷。"
+    },
+    {
+      "id": "campaign-chronology-and-credit",
+      "passed": true,
+      "detail": "秦王政11年前236王翦桓齮楊端和攻趙九城、18–19年分路滅趙、20–21年前227–226破燕與薊城、23–24年楚主要決戰及25年江南控制均有史記6／73依据；明辨內史騰滅韓與王賁滅魏、遼東燕及齊，未移接功勞。"
+    },
+    {
+      "id": "li-xin-and-army-size",
+      "passed": true,
+      "detail": "李信與蒙恬之名按史記73所載敘述，末註亦交代蒙武異文與出土簡；二十萬六十萬、平輿寢鄢郢、楚追三日三夜、入兩壁殺七都尉均對應列傳，不將兵額當現代統計或唯一勝因。"
+    },
+    {
+      "id": "battle-sequence-and-political-safety",
+      "passed": true,
+      "detail": "堅壁不出、休洗飲食撫循、投石超距、楚軍引而東及追擊均對得上史記73，未重犯先前楚軍長期圍攻失敗的擴寫。請田宅君主猜疑按史記敘事概述，人格與政治功能歸作者解讀。"
+    },
+    {
+      "id": "chu-source-disagreements",
+      "passed": true,
+      "detail": "史記73蘄南殺項燕而歲餘虜負芻，史記6先23年虜楚王、24年昌平君死項燕自殺，稿正確保留先後及死因差異；通鑑7另有編年整合，未假稱三篇完全一致。"
+    },
+    {
+      "id": "modern-source-claims",
+      "passed": true,
+      "detail": "辛德勇公開PDF支持前278江漢與55年後東楚最後征服、路線考證；唐俊峰Cambridge可讀正文支持里耶嶽麓物流、新民動員、供粮困境。稿只作秦國體制背景，未稱王翦創設委輸或核算六十萬軍糧耗。"
+    },
+    {
+      "id": "huxishan-and-author-date",
+      "passed": true,
+      "detail": "虎溪山簡542李信、新民將蒙武東擊楚由唐俊峰本文正文及注31引2020考古報告支持，不錯歸辛德勇睡虎地論文。官方中文署名唐俊峰，英文Chun Fung Tong，online為2026-01-12；標2026研究可以成立。"
+    },
+    {
+      "id": "rating-and-historical-comment",
+      "passed": true,
+      "detail": "白起S+、韓信S+、李靖S、項羽S-對應任務錨點；S級與軍事創造力排序是本榜評價。太史公輔秦建德／偷合取容的政治倫理批評準確，未當作否定軍事成績的事實證據。"
+    }
+  ],
+  "checkedExternalSources": [
+    {
+      "title": "資治通鑑／卷007",
+      "url": "https://zh.wikisource.org/zh-hant/資治通鑑/卷007",
+      "locator": "已讀秦始皇20–25年條（網頁行147–199）：20易水、21拔薊與伐楚兵議、22魏與李信敗、23王翦追楚蘄南項燕、24負芻、25遼東與代；並見蒙武／蒙恬校文。"
+    },
+    {
+      "title": "辛德勇〈雲夢睡虎地秦人簡牘與李信、王翦南滅荆楚的地理進程〉，《出土文獻》第五輯，2014",
+      "url": "https://www.ctwx.tsinghua.edu.cn/__local/D/78/76/04587E604BFB45EB0C5E467C51C_AB1DD685_39397C.pdf",
+      "locator": "協同來源QA可解析69頁PDF，實際核第1頁278/223與55年、第5–6頁蒙武校勘王翦征楚、第8–11頁學說比較、第53–59頁路線考證、第69頁作者及2014-06-30定稿；非逐頁通讀。"
+    },
+    {
+      "title": "唐俊峰／Chun Fung Tong, The Emergence of Logistics Networks and Financial Administration During the Qin Conquest (230–221 BCE)",
+      "url": "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528",
+      "locator": "協同來源QA核可讀全文HTML Introduction及“Assigned Transfer” and Qin’s Extended Logistics Networks（HTML537–546、555–615）：虎溪山簡542與注31、里耶7-1前222申糧及9-1114前221將糧盡，里耶／嶽麓跨郡物流及新民動員；metadata430/468/491。online2026-01-12，Early China48標September2025，133–162頁，DOI10.1017/eac.2025.10032。未直接核2020考古報告。"
+    }
+  ],
+  "caveats": [
+    "辛德勇的具體地理路線復原及唐俊峰的官文書物流歷程重構屬學者考證／推論，未直接對全部簡牘照片、2020考古報告或軍資數據重做核驗。",
+    "唐文7-1申糧至少六個月為作者重構，9-1114將糧盡為文書記載；這些前222／221年例證不能拿來直接證王翦前224／223軍隊糧耗，現稿僅用于秦征服體制背景。",
+    "史記本紀、列傳及通鑑承襲和編排有異；軍事創造力、政治生存及S級排序是史學評價，不代表可測客觀等級。",
+    "passed只認可本精確SHA稿件及來源範圍；既有王翦賞析須保留，不授權套用評級等建議或修改其他字段。"
+  ],
+  "metrics": {
+    "characters": 5396,
+    "chineseCharacters": 3924,
+    "anchors": 4
+  }
+}

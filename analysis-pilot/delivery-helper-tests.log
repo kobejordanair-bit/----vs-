@@ -1,0 +1,12 @@
+✔ delivery gate requires a genuine completed audit and exact eight verified batch hashes (3.2399ms)
+✔ delivery rejects changed batch, missing preserved field, wrong counts and altered manuscript hash (2.0859ms)
+✔ article renderer displays original text safely without executing HTML (0.5602ms)
+✔ delivery arguments keep output in the workspace and prohibit private artifact paths (0.7749ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 96.436

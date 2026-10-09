@@ -1,0 +1,17 @@
+{
+  "provider": "ChatGPT web",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T10:41:02.685Z",
+  "responseSha256": "ce06bdacc1a5ebb5cd32bd9a0206f5f3b2a3f5360314f8db0833f60b2bf68fc7",
+  "fragments": [
+    {
+      "file": "yaochong.raw.md",
+      "sha256": "68bc8cb9edcff10448a5556c3dab26bc3e97b1802a49574f5b85df402a080d0c"
+    },
+    {
+      "file": "yaochong-fix.raw.md",
+      "sha256": "512094738cf842bf6dbff2f2bd9b3f735be01aec2c2941500da994333ad317ad"
+    }
+  ],
+  "composition": "Original complete ChatGPT response; exact line107 paragraph replaced with a later actual ChatGPT correction and its source supplement. Completion-marker backticks and final newline normalized. Raw responses preserved."
+}

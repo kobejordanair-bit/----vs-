@@ -11,3 +11,5 @@
 # These source bytes contribute to the release hash; preserve them exactly.
 /scripts/build-source-web.cjs -text
 /backend/static/js/source-search-engine.js -text
+# Pilot manifests hash exact source, prompt, capture, and audit bytes.
+/analysis-pilot/** -text

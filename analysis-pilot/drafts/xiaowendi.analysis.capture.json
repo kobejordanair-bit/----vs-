@@ -1,0 +1,26 @@
+{
+  "provider": "ChatGPT web",
+  "recordId": "emperor_北魏孝文帝_33257620",
+  "field": "analysis",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T11:29:53.037Z",
+  "promptSha256": "246a377f07d492df4fec174570c45dcac8d31053738245b03954e5aae335d29d",
+  "responseSha256": "bd64904b4d83d174dfa19835e7ef6c59dfea29103600cc8bdeb971b711dac18c",
+  "fragments": [
+    {
+      "file": "xiaowendi.analysis.raw.md",
+      "sha256": "a9eb33ef5570fbc4810b935340a34b82ed331f514b003c6ccdfcddcd7828aed6"
+    }
+  ],
+  "contextFiles": [],
+  "webSearchPerformed": true,
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 12 個網站",
+    "visibleSearchCount": 12,
+    "file": "analysis-pilot/drafts/xiaowendi.analysis.search-evidence.txt",
+    "sha256": "e5805a8557d92bda60cbfb0ba3391a9337f855081281c124e81001f3e1861ea0"
+  },
+  "composition": "Complete actual ChatGPT web response; only favicon/source-card UI lines, escaped emphasis, completion-marker backticks and whitespace normalized. Raw clipboard export retained.",
+  "removedCardLines": 13
+}
