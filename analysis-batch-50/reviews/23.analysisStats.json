@@ -1,0 +1,86 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_王忠嗣_908276471",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:08:17.510Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4e2342b5d1eaca69efe03d31381040c38e29deb33854e9e019c9ca2b27819638",
+  "rawResponseSha256": "4e2342b5d1eaca69efe03d31381040c38e29deb33854e9e019c9ca2b27819638",
+  "sourcePackageSha256": "1ce51b0106e3885a5710811e2ce8c329bdba47cc5d5c6c1ce5c37c05138ca390",
+  "searchLogSha256": "56e5acf7a0696808d42450aaa7180dd6371b0dcb15d9d0999a95f325bcc00389",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103",
+      "title": "舊唐書·卷一百〇三\n列傳第五十三　郭虔瓘　張嵩　郭知運　王君㚟　張守珪　牛仙客　王忠嗣",
+      "locator": "本機固定修訂 oldid=2515342 全文比對（textSha256 已驗）：忠嗣初名訓，年九歲，以父死王事、賜名忠嗣，養於禁中累年。肅宗在忠邸，與之遊處、雄毅寡言，嚴重有武略、應對縱橫，皆出意表、爾後必為良將、忠嗣佩四將印，控制萬里，勁兵重鎮，皆歸掌握，自國初已來，未之有也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215",
+      "title": "資治通鑑·卷二百十五 唐紀三十一",
+      "locator": "本機固定修訂 oldid=1554155 全文比對（textSha256 已驗）：忠嗣不得已奉詔，而不盡副延光所欲、大夫以愛士卒之故，不欲成延光之功，雖迫於制書，實奪其謀也、彼無功，必歸罪於大夫。大夫軍府充牣，何愛數萬段帛不以杜其讒口乎、忠嗣先期而往，不見祿山而還，數上言祿山必反；林甫益惡之",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7216",
+      "title": "資治通鑑·巻二百十六 唐紀三十二",
+      "locator": "本機固定修訂 oldid=1958791 全文比對（textSha256 已驗）：凡六萬三千，攻吐蕃石堡城、吐蕃但以數百人守之、獲吐蕃鐵刃悉諾羅等四百人，唐士卒死者數萬，果如王忠嗣之言",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://search.napstic.cn/literature/periodical/010zxxk202201004",
+      "title": "李學東（北京師範大學）石堡城經略研究，《藏學學刊》2022年",
+      "locator": "WebSearch 結果摘要：皇甫惟明、王忠嗣、哥舒翰先後經略石堡城，前兩人因李林甫與太子之爭受牽連，哥舒翰為蕃將未涉朝爭；正文只引此論點",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "王忠嗣（初名訓），唐玄宗朝四鎮節度使；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "system",
+      "passed": true,
+      "detail": "訓練、奇兵、兵器登記、馬政四項依舊唐書本傳原文。"
+    },
+    {
+      "id": "shibao",
+      "passed": true,
+      "detail": "忠嗣奏議與「豈以數萬人之命易一官」依本傳；李光弼之勸依通鑑卷215；749年六萬三千人、數百人守、俘四百、死者數萬依通鑑卷216。"
+    },
+    {
+      "id": "politics",
+      "passed": true,
+      "detail": "被誣、哥舒翰贖罪、年四十五暴卒依本傳；祿山必反依通鑑卷215；朝爭脈絡依李學東論文摘要。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[95,88,94,55,92] 對照李牧[98,82,97,35,92]、袁崇煥[88,65,82,45,78]、李勣[97,80,95,88,90]、蘇定方[97,90,92,55,82]、李靖[100,75,100,85,92]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    95,
+    88,
+    94,
+    55,
+    92
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "general_王忠嗣_908276471",
+      "inputSha256": "1953bdc5815e1cbd6491d4feb900200abc79819b801536f7bf5c45345dcbd50c",
+      "promptSha256": "a4f14f1849e0316b73ba59d220b7de8110c76c914cf1e3d04dcac719762e1796",
+      "fields": {
+        "analysis": "王忠嗣通常被記住的只有兩件事：他曾「佩四將印，控制萬里」，以及他拒絕用數萬條人命去換一座石堡城。後者讓他成為「戰略清醒」的典範，彷彿他是盛唐唯一看穿窮兵黷武的人。這個形象需要修正，但不是往貶低的方向。我要提出的看法是：**王忠嗣真正罕見的地方，不是他反戰，而是他把「不打沒價值的仗」做成了一套可執行的邊防體系**——以馬政削弱對手、以登記兵器的制度維持戰備、以間諜與奇兵取代大規模攻堅。他的悲劇在於，這套體系的價值只能在「沒有發生的戰爭」中證明，而玄宗與李林甫只看得見發生了的戰功。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n王忠嗣「初名訓，年九歲，以父死王事」，被玄宗「賜名忠嗣，養於禁中累年」；他與當時還是忠王的肅宗「與之遊處」，長大後「雄毅寡言，嚴重有武略」，玄宗與他論兵，「應對縱橫，皆出意表」，斷言「爾後必為良將」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。\n\n他面對的局有三層：\n\n1.  **盛唐的擴張慣性**：開元、天寶年間，唐朝在西北與吐蕃、在北方與突厥及契丹長期對峙，玄宗渴望持續的軍功。\n2.  **節度使體制的成形**：邊防軍權逐漸集中到少數節度使手中，一人兼領數鎮開始出現，這既是效率，也是風險。\n3.  **中樞的權力鬥爭**：宰相李林甫與太子李亨之間的緊張關係，讓與太子關係密切的邊將處於危險之中。\n\n他在歷史上的位置非常特殊：他是盛唐第一位兼領四鎮的節度使。天寶五載（746年）前後，他任河西、隴右節度使，同月又「權知朔方、河東節度使事」，「佩四將印，控制萬里，勁兵重鎮，皆歸掌握，自國初已來，未之有也」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。諷刺的是，這個「一人掌四鎮」的先例，不久後被安祿山繼承並用來反叛。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：王忠嗣的「不打」，是一套有制度支撐的邊防戰略，而不只是道德上的反戰。**\n\n他說過一句很能代表他的話：「國家昇平之時，為將者在撫其眾而已。吾不欲疲中國之力，以僥功名耳。」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）但他不是消極防守。《舊唐書》記載他的做法：\n\n*   **以訓練代替冒進**：「但訓練士馬，缺則補之」；他有一張「漆弓百五十斤，嘗貯之袋中，示無所用」，結果「軍中皆日夜思戰」。他壓抑的是主帥的求功欲，而不是軍隊的戰鬥力。\n*   **以奇兵代替攻堅**：他「多縱間諜以伺虜之隙，時以奇兵襲之，故士樂為用，師出必勝」。\n*   **以制度維持戰備**：每次出兵，「各召本將付其兵器，令給士卒，雖一弓一箭，必書其名姓於上以記之，軍罷卻納。若遺失，即驗其名罪之。故人人自勸，甲仗充牣矣」（同上）。\n*   **以馬政削弱對手**：他在朔方時，每逢互市就「高估馬價以誘之，諸蕃聞之，競來求市，來輒買之。故蕃馬益少，而漢軍益壯」；到了河隴，又奏請從朔方、河東調戰馬九千匹，「迄於天寶末，戰馬蕃息」（同上）。\n\n這四點合起來，是一套完整的「低成本、高戰備」邊防體系：讓敵人的戰馬變少、讓自己的兵器有人負責、讓士兵渴望戰鬥卻只在有利時出擊。這是**個人能力**的頂峰。\n\n**【石堡城：一筆算得清的帳】**\n\n玄宗想攻打吐蕃的石堡城，王忠嗣上奏：「石堡險固，吐蕃舉國而守之。若頓兵堅城之下，必死者數萬，然後事可圖也。臣恐所得不如所失，請休兵秣馬，觀釁而取之，計之上者。」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）\n\n天寶六載（747年），將軍董延光請求攻打石堡城，玄宗命王忠嗣分兵協助。他雖奉詔，卻「不盡副延光所欲」。部將李光弼看出危險，勸他：「大夫以愛士卒之故，不欲成延光之功，雖迫於制書，實奪其謀也……彼無功，必歸罪於大夫。」並建議他拿出數萬段帛重賞士卒，杜絕讒言（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）。王忠嗣的回答是：「今爭一城，得之未制於敵，不得之未害於國，忠嗣豈以數萬人之命易一官哉？假如明主見責，豈失一金吾羽林將軍，歸朝宿衛乎！其次，豈失一黔中上佐乎？此所甘心也。」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）\n\n兩年後的天寶八載（749年），哥舒翰率六萬三千人攻打石堡城。據《資治通鑑》，這座城「吐蕃但以數百人守之」，唐軍攻了數日不下，最後雖然攻克，只俘獲「吐蕃鐵刃悉諾羅等四百人，唐士卒死者數萬，果如王忠嗣之言」（[《資治通鑑》卷二百一十六](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7216)）。他算的帳，在他死後被證明是對的。\n\n但也要補上一個重要的脈絡。北京師範大學李學東的研究指出，唐廷自天寶四載起先後派皇甫惟明、王忠嗣、哥舒翰經略石堡城，前兩人都因朝堂上李林甫與太子之爭而受牽連，哥舒翰則因出身蕃將、未捲入朝爭而得以專心戰事（[李學東，《藏學學刊》2022年論文](https://search.napstic.cn/literature/periodical/010zxxk202201004)）。換言之，王忠嗣的「拒戰」不只是戰略判斷，也發生在一個他因政治身分而動輒得咎的環境裡。\n\n**【過與時代局限：被誣與早逝】**\n\n李林甫「尤忌忠嗣，日求其過」，後來指使人告他「早與忠王同養宮中，我欲尊奉太子」，玄宗大怒，「令三司推訊之，幾陷極刑」。幸好接替他的哥舒翰「奏忠嗣之枉，詞甚懇切，請以己官爵贖罪」，玄宗才稍解怒氣，把他貶為漢陽太守；次年他「暴卒，年四十五」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。他早年與太子同養的經歷，曾是他得到玄宗信任的原因，最後卻成了他的罪名，這是**時代政治結構的局限**。\n\n他也看得見更大的危險。安祿山在范陽築雄武城、大貯兵器，請他協助並想留下他的兵；王忠嗣提前抵達、不見安祿山就回去，「數上言祿山必反；林甫益惡之」（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）。他預見了安史之亂，卻沒有機會阻止它。\n\n### **3. 【人性與性格側寫】**\n\n*   **少言而重**：「雄毅寡言，嚴重有武略」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。他不是能言善辯的將軍，而是一個用制度與行動說話的人。\n*   **自我克制**：一張一百五十斤的強弓收在袋裡，「示無所用」。他有能力展現個人武勇，卻刻意不用。\n*   **把士卒的命看得比自己的官位重**：「豈以數萬人之命易一官哉」，並且清楚算出最壞結果是被貶官。\n*   **被兒時情誼所害**：與太子同養宮中，是他一生恩寵的起點，也是他最後的罪名。\n\n### **4. 【如果生在現代】**\n\n王忠嗣最適合的現代角色是：**一家大型企業的風險管理長兼供應鏈總監，負責多個區域的營運。**\n\n*   **重視基本功**：他會建立嚴格的資產登記制度，每一台設備都登記到負責人名下，遺失就追究，使公司的設備妥善率長期維持高檔。\n*   **從供應鏈打擊對手**：他會用高於市場的價格收購關鍵原料，讓競爭對手斷貨，而不是砸錢打價格戰。\n*   **拒絕虛榮專案**：當執行長要求他花巨資拿下一個象徵意義大於實質效益的市場時，他會寫報告說「得之無益，失之無害」，寧可被降職也不執行。\n*   **職場悲劇**：他與董事長之子關係密切，在一場接班鬥爭中被指控「站錯邊」，被調離所有職位；幾年後，他當年警告過的那位區域主管果然捲款叛變。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「把代價算清楚，並把自己能承擔的最壞結果直接說出來」。面對攻打石堡城的命令，他奏稱「若頓兵堅城之下，必死者數萬……臣恐所得不如所失」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）[史載]。李光弼勸他重賞士卒以杜讒言，他回答：「今爭一城，得之未制於敵，不得之未害於國，忠嗣豈以數萬人之命易一官哉？假如明主見責，豈失一金吾羽林將軍，歸朝宿衛乎！其次，豈失一黔中上佐乎？此所甘心也。」（同上）[史載]。潛台詞是：「我已經算過自己會失去什麼，我願意付這個代價。」他「雄毅寡言」（同上）[史載]，平時的沉默代表他不需要用言辭爭取，而是用結果說話[推斷：依據其寡言性格與以制度治軍的記載]。\n\n【壓力反應】\n面對上級要他冒險求功的壓力，他的第一反應是「表面服從，實際保留兵力，接受最壞結果」。\n天寶六載（747年），董延光請攻石堡城，他「不得已奉詔，而不盡副延光所欲」（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）[史載]。面對安祿山築雄武城、請他協助並想留下他的兵，他「先期而往，不見祿山而還」（同上）[史載]。兩件事的對象不同，一是皇帝的命令，一是權臣的拉攏；前者他以「不盡副」消極抵制，後者他以「不見而還」明確拒絕。共同結構是：他不正面對抗，但絕不把自己的兵力交給他判斷不值得的目標[推斷]。\n\n【核心驅動】\n他真正追求的是「保住士卒的性命與國家的元氣」。\n他說「吾不欲疲中國之力，以僥功名耳」，平時「但訓練士馬，缺則補之」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）[史載]。石堡城之爭中，他寧可被貶為「黔中上佐」，也不願「以數萬人之命易一官」（同上）[史載]。這個選擇代價極高：他因此被李林甫抓住把柄，最終被貶並早逝。這揭示了他心中士卒性命的重量高於個人仕途[詮釋：此為從其言行歸納的動機]。\n\n【慣性盲點】\n他最大的優點「只算軍事帳」，讓他忽略了政治帳。\n天寶六載，李光弼提醒他「彼無功，必歸罪於大夫。大夫軍府充牣，何愛數萬段帛不以杜其讒口乎」（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）[史載]，他沒有採納。同一時期，他「數上言祿山必反；林甫益惡之」（同上）[史載]。兩件事的共同結構是：他只按照軍事與國家利益行事，卻沒有意識到每一次正確的判斷都在增加政敵對他的敵意[推斷]。\n\n【情感結構】\n他的情感深沉而少外露，最深的連結來自童年與宮廷。\n他九歲喪父，被玄宗「賜名忠嗣，養於禁中累年」，與忠王（肅宗）「與之遊處」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）[史載]。這段同養的情誼，是他一生的依靠，也是他最後的罪名。他被誣時，哥舒翰「請以己官爵贖罪」（同上）[史載]，說明他與同袍之間有真誠的信任；部將李光弼也曾冒險為他的安危進言（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）[史載]。他在被誣之前已主動「固讓朔方、河東節度」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）[史載]，似乎察覺到權勢過盛的危險。他最脆弱的時刻，可能是三司推訊、「幾陷極刑」的那段日子，但史書沒有留下他的任何自白[詮釋：其貶謫後心境與次年「暴卒」的原因，史料皆未詳述]。\n\n【參照系】\n他習慣以「兵力與國力的成本收益」作為思考的參照系。這源自他作為將門之子、九歲喪父於戰場的經歷，以及長期主持邊防的實務（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）[史載]。\n類比準確之處：他把邊防看成一場長期的資源競賽，以高價購馬削弱諸蕃，使「蕃馬益少，而漢軍益壯」（同上）[史載]。\n類比失準之處：他把宮廷政治也看成可以用「得失」計算的問題，以為只要判斷正確、甘於貶官就能全身而退，卻低估了李林甫對他的敵意[詮釋：他被誣的直接原因是李林甫與太子的權力鬥爭，非單純判斷失誤]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（保住士卒性命與國家元氣）與【慣性盲點】（只算軍事帳、不算政治帳）之間。\n這個衝突的結構是：他越是堅持正確的軍事判斷，就越是違逆玄宗求功的心意，也越是給李林甫攻擊他的理由；但若要保全自己，他就必須拿士卒的性命去換。\n第一次激烈爆發是天寶六載的石堡城之爭：他選擇保住士卒，拒絕李光弼「杜其讒口」的建議（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）[史載]。\n第二次是隨後的被誣：李林甫指他「欲尊奉太子」，他「幾陷極刑」，最終被貶，次年「暴卒，年四十五」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）[史載]。\n他是否意識到這個衝突？從他對李光弼說「此所甘心也」來看，他清楚知道會被貶官，並且接受了；但他或許沒有預料到，代價不只是官位，而是性命[詮釋]。",
+        "stats": [
+          95,
+          88,
+          94,
+          55,
+          92
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：95\n\n他「佩四將印，控制萬里，勁兵重鎮，皆歸掌握」，是唐代首位兼領河西、隴右、朔方、河東四鎮的節度使，任內「頻戰青海、積石，皆大克捷」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。他以間諜與奇兵取代大規模攻堅，「師出必勝」，並以登記兵器的制度維持戰備。扣分在於他缺乏一場可與李靖、蘇定方比擬的滅國級決戰紀錄。評95，低於李牧（98）與李勣（97），高於袁崇煥（88）。\n\n### 武力：88\n\n他「雄毅寡言，嚴重有武略」，擁有一張「漆弓百五十斤」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)），顯示其個人膂力過人。但他刻意將弓「貯之袋中，示無所用」，史書對他的記載重在統御而非陣前搏殺；他寧可讓軍隊「日夜思戰」，也不以個人勇武邀功。評88，高於李勣（80）與李靖（75），低於蘇定方（90）與霍去病（92）。\n\n### 智謀：94\n\n他對石堡城「所得不如所失」的判斷，在哥舒翰「唐士卒死者數萬」後得到驗證（[《資治通鑑》卷二百一十六](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7216)）；以高價購馬削弱諸蕃戰力、使「蕃馬益少，而漢軍益壯」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）；又「數上言祿山必反」（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）。扣分在於他未能預判自己的政治處境。評94，低於李牧（97）與李勣（95），高於蘇定方（92）。\n\n### 政治：55\n\n他與太子同養宮中，起初因此得到玄宗信任，最後卻因「早與忠王同養宮中，我欲尊奉太子」的誣告「幾陷極刑」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。他拒絕李光弼「何愛數萬段帛不以杜其讒口」的建議（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)），在政治上缺乏自保手段。評55，與蘇定方（55）持平，高於李牧（35），低於李勣（88）。\n\n### 魅力：92\n\n他治軍「士樂為用」，部將李光弼主動為他的安危進言（[《資治通鑑》卷二百一十五](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215)）；他被誣時，接任者哥舒翰「奏忠嗣之枉，詞甚懇切，請以己官爵贖罪」（[《舊唐書·王忠嗣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103)）。一位將領能讓繼任者以官爵為他贖罪，足見其人格感召力。評92，與李牧（92）、李靖（92）持平，高於李勣（90）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T06:08:17.465Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書·卷一百〇三\n列傳第五十三　郭虔瓘　張嵩　郭知運　王君㚟　張守珪　牛仙客　王忠嗣",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103",
+            "locator": "本機固定修訂 oldid=2515342 全文比對（textSha256 已驗）：忠嗣初名訓，年九歲，以父死王事、賜名忠嗣，養於禁中累年。肅宗在忠邸，與之遊處、雄毅寡言，嚴重有武略、應對縱橫，皆出意表、爾後必為良將、忠嗣佩四將印，控制萬里，勁兵重鎮，皆歸掌握，自國初已來，未之有也…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "資治通鑑·卷二百十五 唐紀三十一",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215",
+            "locator": "本機固定修訂 oldid=1554155 全文比對（textSha256 已驗）：忠嗣不得已奉詔，而不盡副延光所欲、大夫以愛士卒之故，不欲成延光之功，雖迫於制書，實奪其謀也、彼無功，必歸罪於大夫。大夫軍府充牣，何愛數萬段帛不以杜其讒口乎、忠嗣先期而往，不見祿山而還，數上言祿山必反；林甫益惡之",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "資治通鑑·巻二百十六 唐紀三十二",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7216",
+            "locator": "本機固定修訂 oldid=1958791 全文比對（textSha256 已驗）：凡六萬三千，攻吐蕃石堡城、吐蕃但以數百人守之、獲吐蕃鐵刃悉諾羅等四百人，唐士卒死者數萬，果如王忠嗣之言",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "李學東（北京師範大學）石堡城經略研究，《藏學學刊》2022年",
+            "url": "https://search.napstic.cn/literature/periodical/010zxxk202201004",
+            "locator": "WebSearch 結果摘要：皇甫惟明、王忠嗣、哥舒翰先後經略石堡城，前兩人因李林甫與太子之爭受牽連，哥舒翰為蕃將未涉朝爭；正文只引此論點",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "c5a59e2bb600f0b88a45d167fc3f0ba1803cd6153b9a92b596a5d091ec2b3841",
+        "sourcePackageSha256": "1ce51b0106e3885a5710811e2ce8c329bdba47cc5d5c6c1ce5c37c05138ca390",
+        "preservedDeepSha256": "cd8539a0d3e44cc3dee339e40bfb29c621c6a558875120011f113e5ce8c6b905",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "f7cabdd478625fea09613745838f8e6fad3754d759cdf7bed2354fbb1c57d654",
+            "requestSha256": "c5a59e2bb600f0b88a45d167fc3f0ba1803cd6153b9a92b596a5d091ec2b3841",
+            "inputSha256": "1953bdc5815e1cbd6491d4feb900200abc79819b801536f7bf5c45345dcbd50c",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "17a66ebf7096fe9422ced462fc88cf488daed02e9e0eda4650fe627b3c1bbc55",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "1ce51b0106e3885a5710811e2ce8c329bdba47cc5d5c6c1ce5c37c05138ca390",
+            "preservedDeepSha256": "cd8539a0d3e44cc3dee339e40bfb29c621c6a558875120011f113e5ce8c6b905",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:08:17.465Z",
+            "rawResponseFile": "analysis-batch-50/drafts/23.analysisStats.raw.md",
+            "rawResponseSha256": "4e2342b5d1eaca69efe03d31381040c38e29deb33854e9e019c9ca2b27819638",
+            "responseFile": "analysis-batch-50/drafts/23.analysisStats.response.md",
+            "responseSha256": "4e2342b5d1eaca69efe03d31381040c38e29deb33854e9e019c9ca2b27819638",
+            "fieldsHashes": {
+              "analysis": "9e7f7b8339421570057ce0046f22f564de378a0aaaca795acb4391df3a98d8e5",
+              "stats": "328c6f864e994f5ac92bbc314d54ad067e15b1098f10517bf0c101a8c9699371",
+              "statsAnalysis": "88096393fdef366a56d0e2da48919a70a1767dd277450f15f7013b1677c18a65"
+            },
+            "captureFile": "analysis-batch-50/drafts/23.analysisStats.capture.json",
+            "captureSha256": "d2356b5dc6fc10ea5133983c4496c6adec9602ddfd5f24245bd363df4d510d7f",
+            "sourceReviewFile": "analysis-batch-50/reviews/23.analysisStats.json",
+            "sourceReviewSha256": "1235ec7c6d457a3312cc8ebf68c48512430d954b2092f8f358195b087f6dcdac",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/23.combined.search-log.json",
+              "sha256": "56e5acf7a0696808d42450aaa7180dd6371b0dcb15d9d0999a95f325bcc00389",
+              "webSearchCount": 1,
+              "archiveCheckCount": 28
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·卷一百〇三\n列傳第五十三　郭虔瓘　張嵩　郭知運　王君㚟　張守珪　牛仙客　王忠嗣",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103",
+                "locator": "本機固定修訂 oldid=2515342 全文比對（textSha256 已驗）：忠嗣初名訓，年九歲，以父死王事、賜名忠嗣，養於禁中累年。肅宗在忠邸，與之遊處、雄毅寡言，嚴重有武略、應對縱橫，皆出意表、爾後必為良將、忠嗣佩四將印，控制萬里，勁兵重鎮，皆歸掌握，自國初已來，未之有也…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "資治通鑑·卷二百十五 唐紀三十一",
+                "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215",
+                "locator": "本機固定修訂 oldid=1554155 全文比對（textSha256 已驗）：忠嗣不得已奉詔，而不盡副延光所欲、大夫以愛士卒之故，不欲成延光之功，雖迫於制書，實奪其謀也、彼無功，必歸罪於大夫。大夫軍府充牣，何愛數萬段帛不以杜其讒口乎、忠嗣先期而往，不見祿山而還，數上言祿山必反；林甫益惡之",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "資治通鑑·巻二百十六 唐紀三十二",
+                "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7216",
+                "locator": "本機固定修訂 oldid=1958791 全文比對（textSha256 已驗）：凡六萬三千，攻吐蕃石堡城、吐蕃但以數百人守之、獲吐蕃鐵刃悉諾羅等四百人，唐士卒死者數萬，果如王忠嗣之言",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "李學東（北京師範大學）石堡城經略研究，《藏學學刊》2022年",
+                "url": "https://search.napstic.cn/literature/periodical/010zxxk202201004",
+                "locator": "WebSearch 結果摘要：皇甫惟明、王忠嗣、哥舒翰先後經略石堡城，前兩人因李林甫與太子之爭受牽連，哥舒翰為蕃將未涉朝爭；正文只引此論點",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "8a0da5e5f1deed6b989f854c9a4ca4cf5853a0ca30072f62281b91b721b46e74",
+            "requestSha256": "c5a59e2bb600f0b88a45d167fc3f0ba1803cd6153b9a92b596a5d091ec2b3841",
+            "inputSha256": "1953bdc5815e1cbd6491d4feb900200abc79819b801536f7bf5c45345dcbd50c",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "bf98211fa3bae476d8c577f8fefb0fdfe3b724c769615dc5b4039bc7edcc39b5",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "1ce51b0106e3885a5710811e2ce8c329bdba47cc5d5c6c1ce5c37c05138ca390",
+            "preservedDeepSha256": "cd8539a0d3e44cc3dee339e40bfb29c621c6a558875120011f113e5ce8c6b905",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:08:17.465Z",
+            "rawResponseFile": "analysis-batch-50/drafts/23.soulEssence.raw.md",
+            "rawResponseSha256": "30ce5be5c6e7f62d95b6fe59bbae3e01b26639a6618a4b6e863d53f06e4fa53d",
+            "responseFile": "analysis-batch-50/drafts/23.soulEssence.response.md",
+            "responseSha256": "30ce5be5c6e7f62d95b6fe59bbae3e01b26639a6618a4b6e863d53f06e4fa53d",
+            "fieldsHashes": {
+              "soulEssence": "2d604e22fa12a47e9c06fc45fd391db3ebf75464159423c8feb659dd3d2f58d7"
+            },
+            "captureFile": "analysis-batch-50/drafts/23.soulEssence.capture.json",
+            "captureSha256": "e29a80333567e5bb94ca9e715776c0df98fcacf46d66235f831773477db45f10",
+            "sourceReviewFile": "analysis-batch-50/reviews/23.soulEssence.json",
+            "sourceReviewSha256": "31875b2e3bea55ba5af8d7c3a4ed08ad5951fb0c6895f0e9db1d24d7c2546e89",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/23.combined.search-log.json",
+              "sha256": "56e5acf7a0696808d42450aaa7180dd6371b0dcb15d9d0999a95f325bcc00389",
+              "webSearchCount": 1,
+              "archiveCheckCount": 28
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·卷一百〇三\n列傳第五十三　郭虔瓘　張嵩　郭知運　王君㚟　張守珪　牛仙客　王忠嗣",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7103",
+                "locator": "本機固定修訂 oldid=2515342 全文比對（textSha256 已驗）：忠嗣初名訓，年九歲，以父死王事、賜名忠嗣，養於禁中累年。肅宗在忠邸，與之遊處、雄毅寡言，嚴重有武略、應對縱橫，皆出意表、爾後必為良將、忠嗣佩四將印，控制萬里，勁兵重鎮，皆歸掌握，自國初已來，未之有也…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "資治通鑑·卷二百十五 唐紀三十一",
+                "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7215",
+                "locator": "本機固定修訂 oldid=1554155 全文比對（textSha256 已驗）：忠嗣不得已奉詔，而不盡副延光所欲、大夫以愛士卒之故，不欲成延光之功，雖迫於制書，實奪其謀也、彼無功，必歸罪於大夫。大夫軍府充牣，何愛數萬段帛不以杜其讒口乎、忠嗣先期而往，不見祿山而還，數上言祿山必反；林甫益惡之",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/23.analysis.md",
+            "analysisContextSha256": "3f66b5799f0c9c5af191657a6546cd642b8cd2d5463a4cb5d74e0f14aa482153"
+          }
+        }
+      }
+    }
+  ]
+}
