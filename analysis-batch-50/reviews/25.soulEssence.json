@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_朱德_306295133",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:13:00.858Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "09a364e189cc5d1099243ada4185664a8a486b8a1c9ec087f7fb406f1cf3f991",
+  "rawResponseSha256": "09a364e189cc5d1099243ada4185664a8a486b8a1c9ec087f7fb406f1cf3f991",
+  "sourcePackageSha256": "b341524eb4835cc1eba5bd93cb21c2cc69c7090dfea4ae691def3df63461805d",
+  "searchLogSha256": "06d7acf2ceca67d91b91af3e743c137d9867912f2de6ff7cdf8a1eca10346e29",
+  "checkedSources": [
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0621/c423733-31173725.html",
+      "title": "〈《朱德年譜》新編本與朱德研究新成果〉（新編年譜主編撰，中共中央黨史和文獻研究院，原刊《黨的文獻》2006年第6期）",
+      "locator": "來源包已記錄先前核讀：第三、五、六部分，新編範圍、1937年陳雲信、1938年朱彭與中央往來電報及日期訂正；未讀年譜全書；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n/2014/1208/c244523-26167537.html",
+      "title": "〈紅軍時期的朱德和毛澤東〉（家屬回憶，中共中央黨史和文獻研究院）",
+      "locator": "來源包已記錄先前核讀：作者1953年後生活身份說明與第三段；紅軍故事為事後轉述；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "年譜所記協商電報；沉默標[史載：家屬回憶]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "1937陳雲信與1938電報，標明可核材料有限。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "起義後轉戰標[推斷]；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "體制分工標[推斷]。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "家屬回憶，政治風暴心境不採。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "團結參照系；立場細節標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "協商與不居功。"
+    }
+  ],
+  "materialIssues": []
+}

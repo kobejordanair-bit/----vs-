@@ -1,0 +1,26 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_朱德_306295133",
+  "packetSha256": "e7bd305917003e996f175df9bfaa1cfaf9ff4004adc93825389c923242c4dad7",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "朱德 南昌起義 1927 湘南起義 井岡山會師 1928 八路軍總司令 解放軍總司令 1955元帥 生平 人民網 中國軍網",
+      "returnedUrls": [
+        "https://www.zdic.net/hant/井冈山会师",
+        "https://www.aisixiang.com/data/50904.html",
+        "https://kotobank.jp/word/%E6%9C%B1%E5%BE%B3-77982",
+        "https://paper.people.com.cn/rmzk/pc/content/202603/10/content_30145027.html"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Two dswxyjy pages relied on only for propositions recorded by the handoff package.",
+    "南昌起義、井岡山會師、歷任總司令、1955年元帥、晚年任人大常委會委員長與1976年去世屬通行史實，正文未附連結；WebSearch 摘要僅作佐證未引用。"
+  ]
+}

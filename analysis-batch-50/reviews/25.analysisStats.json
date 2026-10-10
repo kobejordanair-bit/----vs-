@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_朱德_306295133",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:13:00.857Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "6f75b5926f6df97c7f632d446dcc5ad2e4f09d9ca4daace6db10808e25c859b5",
+  "rawResponseSha256": "6f75b5926f6df97c7f632d446dcc5ad2e4f09d9ca4daace6db10808e25c859b5",
+  "sourcePackageSha256": "b341524eb4835cc1eba5bd93cb21c2cc69c7090dfea4ae691def3df63461805d",
+  "searchLogSha256": "06d7acf2ceca67d91b91af3e743c137d9867912f2de6ff7cdf8a1eca10346e29",
+  "checkedSources": [
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0621/c423733-31173725.html",
+      "title": "〈《朱德年譜》新編本與朱德研究新成果〉（新編年譜主編撰，中共中央黨史和文獻研究院，原刊《黨的文獻》2006年第6期）",
+      "locator": "來源包已記錄先前核讀：第三、五、六部分，新編範圍、1937年陳雲信、1938年朱彭與中央往來電報及日期訂正；未讀年譜全書；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n/2014/1208/c244523-26167537.html",
+      "title": "〈紅軍時期的朱德和毛澤東〉（家屬回憶，中共中央黨史和文獻研究院）",
+      "locator": "來源包已記錄先前核讀：作者1953年後生活身份說明與第三段；紅軍故事為事後轉述；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "朱德，解放軍元帥；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "role-separation",
+      "passed": true,
+      "detail": "制度統率、直接戰役指揮與下級實施三層分開陳述，依來源包所記年譜主編文章。"
+    },
+    {
+      "id": "family-recollection",
+      "passed": true,
+      "detail": "家屬回憶標明為事後轉述。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[94,70,90,88,98] 對照毛澤東將領版[98,40,100,95,99]、郭子儀[98,85,92,95,100]、林彪[99,50,97,45,70]、彭德懷[97,65,90,40,94]、孫武[88,55,100,70,82]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    94,
+    70,
+    90,
+    88,
+    98
+  ]
+}
