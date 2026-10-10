@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_劉基_2003842411",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:01:29.391Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "ab8d8f0f0fadbbf1fef8894dd668718d8da00c325086f47e2a4dabb185ed4790",
+  "rawResponseSha256": "ab8d8f0f0fadbbf1fef8894dd668718d8da00c325086f47e2a4dabb185ed4790",
+  "sourcePackageSha256": "339d2a7da1fea1a94fc0e2aaf2e76b9f1f68479d3bc6ba4e0239a9956c91dc50",
+  "searchLogSha256": "d4c5fa7188bff220d936761cc63b5c17010bdb3ec746e8c9258d841d84818944",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128",
+      "title": "明史·卷一百二十八 列傳第十六",
+      "locator": "本機固定修訂 oldid=2594748 全文比對（textSha256 已驗）：多陰陽風角之說，非其至也、責基擅威福，羈管紹興、棄官還青田，著《郁離子》以見志、陳時務十八策、士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之。陳氏滅，張氏勢孤，一舉可定。然後北向中原，王業可成也、其後太祖取士誠，北伐中原，遂成帝業，略如基謀…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "群雄分析與宰相評語；可斬也。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "張目不言、更舟；懼入謝。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "郁離子與不世遇；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "斬李彬、不先白中書省、疾惡太甚。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "青田毋加、天文書、使吾言不驗；恐懼標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "天命天象；王氣反噬標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "洪武初與談洋。"
+    }
+  ],
+  "materialIssues": []
+}

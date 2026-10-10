@@ -1,0 +1,151 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "minister_劉基_2003842411",
+      "inputSha256": "cdf752af33b5b2b4681bdab6d19195b53702a3c5f70c4fd3d369c7bce7359c7d",
+      "promptSha256": "350297c1b48ebc0bc8342ee558f523467c77b759b715abf4abfe1df4bc0f030f",
+      "fields": {
+        "analysis": "劉基在民間是「劉伯溫」——能掐會算、留下《燒餅歌》的神機軍師。但《明史》本傳在結尾特別澄清：世人所傳的神奇事蹟，「多陰陽風角之說，非其至也」。我要提出的看法是：**劉基是明朝的「張良」，朱元璋自己就說「吾子房也」；但他只學到了張良的「謀」與「退」，卻沒有學到張良的「不爭」。**他能精準判斷陳友諒與張士誠的先後、看穿楊憲與胡惟庸都不適合當宰相，卻在退隱之後仍因為一份繞過中書省的奏報，被胡惟庸抓住把柄，最後在憂憤中死去。他的悲劇在於：他太清楚誰是危險人物，卻無法讓自己遠離危險。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n劉基是浙江青田人，元朝至順年間進士。他在元朝任官時「有廉直聲」，卻屢遭排擠：他主張誅殺方國珍兄弟，方國珍賄賂朝中當權者，結果劉基反被「責基擅威福，羈管紹興」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。他最後「棄官還青田，著《郁離子》以見志」。\n\n他面對的局是：\n\n1.  **元末群雄並起**：朱元璋夾在西邊的陳友諒與東邊的張士誠之間，必須決定先打誰。\n2.  **名義問題**：朱元璋當時仍遙奉小明王韓林兒，政權的正統性需要釐清。\n3.  **開國後的權力結構**：明朝建立後，以李善長為首的淮西集團掌握中樞，劉基作為浙東文臣，處境微妙。\n\n他的歷史定位是：**朱元璋最重要的戰略謀士之一，以及明初開國功臣政治中「謀臣難以善終」的典型**。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：劉基最準確的預言，不是天象，而是對人的判斷；而他最大的失誤，恰恰是對自己處境的判斷。**\n\n**先陳後張：開國的大戰略**\n\n劉基被朱元璋聘至應天後，「陳時務十八策」。朱元璋問攻取之計，他說：「士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之。陳氏滅，張氏勢孤，一舉可定。然後北向中原，王業可成也。」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）《明史》在後文總結：「其後太祖取士誠，北伐中原，遂成帝業，略如基謀。」\n\n他也處理了名義問題。中書省在歲首設小明王御座行禮，劉基「獨不拜」，說：「牧豎耳，奉之何為！」，接著向朱元璋「陳天命所在」。\n\n**關鍵時刻的判斷**\n\n陳友諒攻陷太平、準備東下時，諸將有人主降、有人主張退守鐘山，劉基說：「主降及奔者，可斬也。」他建議「待其深入，伏兵邀取之」，朱元璋用其策大破陳友諒（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。攻安慶久攻不下，他建議直搗江州，陳友諒「出不意」而奔武昌。\n\n他也有被拒絕的建議。朱元璋要親援安豐時，劉基說：「漢、吳伺隙，未可動也。」朱元璋不聽，陳友諒果然趁機圍洪都，朱元璋事後說：「不聽君言，幾失計。」鄱陽湖大戰中，劉基「忽躍起大呼，趣太祖更舟」，朱元璋剛換船，原來的座船就被炮擊碎（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。這個情節帶有很強的戲劇性，但它所反映的「臨機判斷」，與他整體的謀士形象一致。\n\n**被忽略的建制工作**\n\n劉基不只是戰略謀士。吳元年他任太史令，「上《戊申大統曆》」；朱元璋即位後，他「奏立軍衛法」，並在大旱時「請決滯獄」、「請立法定制，以止濫殺」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。這些工作顯示，他在開國初期也參與了曆法、軍制與刑獄等制度建設，而不只是帷幄中的奇謀。\n\n**開國後：嚴法與樹敵**\n\n明朝建立後，劉基任御史中丞。他認為「宋、元寬縱失天下，今宜肅紀綱」，讓御史「糾劾無所避」。中書省都事李彬貪縱，李善長請緩其獄，劉基不聽，在祈雨時將李彬處斬，「由是與善長忤」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。這是他開國後最重要的一次樹敵。\n\n但他也有非常清醒的政治判斷。朱元璋想撤換李善長時，劉基反而替李善長說話：「善長勳舊，能調和諸將。」朱元璋問他楊憲、汪廣洋、胡惟庸誰可為相，他分別評價楊憲「有相才無相器」、汪廣洋「褊淺殆甚於憲」，胡惟庸則「譬之駕，懼其僨轅也」。朱元璋說「吾之相，誠無逾先生」，他推辭說：「臣疾惡太甚，又不耐繁劇，為之且孤上恩。」《明史》說：「後憲、廣洋、惟庸皆敗。」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）\n\n**致命的一步：談洋**\n\n劉基退隱青田後「惟飲酒弈棋，口不言功」，連縣令微服來訪都不見。然而他曾建議在談洋設巡檢司，後來茗洋逃軍作亂，地方官隱匿不報，劉基讓長子劉璉直接上奏，「不先白中書省」。當時掌中書省的胡惟庸「挾前憾，使吏訐基，謂談洋地有王氣，基圖為墓」。朱元璋雖未治罪，卻「頗為所動，遂奪基祿」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。\n\n劉基被迫留京，不久胡惟庸拜相，他感嘆：「使吾言不驗，蒼生福也。」隨即「憂憤疾作」。他臨終前對次子劉璟說，想寫遺表，但「惟庸在，無益也」。《明史》還記載，劉基在京生病時「惟庸以醫來，飲其藥，有物積腹中如拳石」，後來塗節告發胡惟庸逆謀時，也說胡惟庸曾毒害劉基（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。這個說法出自胡惟庸案的告發，政治色彩濃厚，應謹慎看待。日本學者對劉基長子劉璉的死因也有專門考證，討論了病死、被脅迫墮井與被胡惟庸黨人毒殺等不同說法（[〈劉基長子劉璉の死因試探〉，弘前大學《人文社會科學論叢》](https://hirosaki.repo.nii.ac.jp/record/5415/files/JinbunShakaikagakuRonso5_139.pdf)）。\n\n這是**時代與體制的局限**：明初功臣政治極其兇險，中書省與皇帝之間的權力鬥爭，讓任何與中樞有隙的人都可能成為犧牲品。但**他個人的選擇**也有影響：他早已看穿胡惟庸「懼其僨轅」，卻仍讓兒子繞過中書省奏事，給了對方攻擊的機會。\n\n### **3. 【人性與性格側寫】**\n\n*   **剛直嫉惡**：《明史》說他「性剛嫉惡，與物多忤」，他自己也承認「臣疾惡太甚」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。\n*   **廉潔**：方國珍「厚賂基。基不受」，結果他反被羈管。\n*   **知人**：他對楊憲、汪廣洋、胡惟庸的評價後來全部應驗。\n*   **慷慨大節**：他「虯髯，貌修偉，慷慨有大節，論天下安危，義形於色」；朱元璋「常呼為老先生而不名」。\n*   **韜晦**：退隱後「惟飲酒弈棋，口不言功」，縣令微服來訪，他得知身分後「驚起稱民，謝去，終不復見」。\n\n### **4. 【如果生在現代】**\n\n劉基最適合的現代角色是：**一位被創辦人禮聘的首席策略顧問，後來被捲入公司內部權力鬥爭。**\n\n*   **一份戰略報告奠定格局**：他加入時就交出一份競爭策略報告，指出應先打垮最具威脅的對手，再收拾較保守的那一家，公司後來的發展幾乎完全照這份報告進行。\n*   **在人事上看得太準**：董事長問他幾位接班人選，他一一點評，說其中一位「會翻車」，後來果然應驗。\n*   **得罪了營運長**：他堅持依規處分一位營運長的愛將，從此與營運長結怨。\n*   **退休後仍被清算**：他退休回鄉，卻因為一封繞過總部行政系統直送董事長的報告，被新任營運長指控「私心自用」，被取消退休金，最後在憂憤中離世。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「先斷定對手的本質，再推出必然的結論」。他分析群雄時說「士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]；評論宰相人選時，則說楊憲「有相才無相器」、胡惟庸「譬之駕，懼其僨轅也」[史載]。他話語中的潛台詞是：「我已經看穿這個人，他的結局早已註定。」這種判斷極少出錯，但他說得太直接，也讓被評價的人成了他的敵人[推斷]。危急時他甚至以「主降及奔者，可斬也」壓制異議[史載]，語言之決斷與于謙如出一轍[推斷]。\n\n【壓力反應】\n面對危機，他的第一反應是「張目不言，等到關鍵時刻才一語定局」。\n陳友諒攻陷太平、諸將爭議時，他「張目不言」，直到朱元璋召他入內，才奮然說出「主降及奔者，可斬也」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]；鄱陽湖大戰時，他「侍側」，在炮火來臨前「忽躍起大呼，趣太祖更舟」[史載]。共同結構是：他在公開場合保持沉默，觀察局勢，然後在決定性時刻給出最簡潔的判斷[推斷]。但到了晚年面對胡惟庸的攻訐，他的反應卻是「懼入謝，乃留京，不敢歸」[史載]，顯示他在政治迫害面前同樣無能為力[推斷]。\n\n【核心驅動】\n他真正追求的是「遇明主而盡其所學」。\n他在元朝屢遭排擠，「棄官還青田，著《郁離子》以見志」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]；歸明後，「基亦自謂不世遇，知無不言」[史載]。朱元璋說他「數以孔子之言導予」，並「恭己以聽」[史載]。這些記載指向一位在亂世中長期懷才不遇、終於找到能實現抱負的君主的士人[詮釋：此為從其出處與言行歸納的動機]。\n\n【慣性盲點】\n他最大的優點「疾惡如仇」，讓他在需要妥協時無法退讓。\n開國後他堅持處斬李善長所庇護的李彬，「由是與善長忤」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]；退隱後他讓兒子奏報談洋之事，「不先白中書省」，結果被胡惟庸抓住把柄[史載]。他自己也坦承「臣疾惡太甚，又不耐繁劇」[史載]。共同結構是：他清楚知道自己的性格不適合宰相之位，因此拒絕了相位；但他始終沒有改變那種直接越過程序、不顧人情的做事方式[推斷]。他替李善長說話、拒絕楊憲等人，說明他並非只看私交，而是以「持心如水，以義理為權衡」的標準看人[史載]；但這套標準本身就容易讓人覺得被冒犯[推斷]。\n\n【情感結構】\n他的情感深處，是對故鄉與家族的眷戀，以及對朱元璋的知遇之情。\n朱元璋定處州稅糧時特別下令「惟青田命毋加」，說「令伯溫鄉里世世為美談也」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]。他退隱後在山中「惟飲酒弈棋」[史載]，顯示對田園生活的嚮往。臨終前，他把《天文書》交給長子，說「亟上之，毋令後人習也」，又叮囑次子將治國之策在胡惟庸敗後密奏[史載]。他最脆弱的時刻，是得知胡惟庸拜相後說出「使吾言不驗，蒼生福也」，隨即「憂憤疾作」[史載]——他最怕的不是自己的死，而是自己的預言成真[詮釋]。\n\n【參照系】\n他習慣以「天命與天象」作為包裝政治判斷的參照系。他向朱元璋「陳天命所在」，在太平之戰時說「天道後舉者勝」，任太史令時則以「熒惑守心」請朱元璋下詔罪己（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]。\n類比準確之處：在一個相信天命的時代，以天象包裝政治建議，能讓朱元璋更容易接受寬刑、平反等主張；他也確實以「大旱，請決滯獄」促成平反[史載]。\n類比失準之處：天象也可以被敵人利用；胡惟庸正是以「談洋地有王氣」攻擊他，讓朱元璋「頗為所動」[史載]。他用來說服君主的語言，最後成了別人陷害他的工具[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（遇明主而盡其所學）與【慣性盲點】（疾惡如仇而無法退讓）之間。\n這個衝突的結構是：他越是想報答朱元璋的知遇之恩，就越要對朝中的不法之事直言不諱；而他越直言，就越在淮西集團與中書省之間樹敵，最終連退隱都無法保全自己。\n第一次體現在洪武初年：他處斬李彬，與李善長結怨，「諸怨基者亦交譖之」，不久便請告歸鄉（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）[史載]。\n第二次體現在談洋事件：他讓兒子直接上奏，被胡惟庸以「王氣」之說攻訐，「遂奪基祿」，最後憂憤而死[史載]。\n兩次事件的共同點在於：他對國事的忠誠，透過不顧程序與人情的方式表達出來，反而成為政敵攻擊他的理由[推斷]。他是否意識到這個衝突？他臨終說「惟庸在，無益也」，說明他清楚自己已無力改變局面，只能把希望寄託在胡惟庸倒台之後[詮釋]。",
+        "stats": [
+          80,
+          35,
+          96,
+          85,
+          85
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：80\n\n他在元朝曾「議築慶元諸城以逼賊」，又與石抹宜孫守處州；歸明後在苗軍反叛時為守將「諭安諸屬邑」，並與邵榮等「謀復處州，亂遂定」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。但他在朱元璋陣營中主要扮演謀士角色，並未獨立統兵作戰，前線指揮皆由徐達、常遇春等武將負責。評80，與周恩來（80）持平，低於謝安（85）與范仲淹（86），高於張良（72）。\n\n### 武力：35\n\n他是元朝進士出身的文臣，「博通經史，於書無不窺，尤精象緯之學」；鄱陽湖大戰時他「侍側」朱元璋，在炮火中及時呼喊換船（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)），顯示他敢於身處前線，但沒有親身作戰的記載，其價值全在謀略與天文曆算。評35，與諸葛亮（名臣，35）持平，高於荀彧（30）與張良（20），低於范仲淹（40）。\n\n### 智謀：96\n\n他提出「先圖友諒」再取士誠、北向中原的大戰略，「略如基謀」而成帝業；太平之戰主張伏兵、安慶之戰改攻江州、預言親援安豐會被趁虛而入，並準確預言楊憲、汪廣洋、胡惟庸「皆敗」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。扣分在於他未能防範胡惟庸對自己的報復。評96，與商鞅（96）持平，低於張良（100）與荀彧（97），高於周恩來（95）。\n\n### 政治：85\n\n他任御史中丞時「肅紀綱」，奏立軍衛法，並對宰相人選作出精準評價；但他「性剛嫉惡，與物多忤」，與李善長結怨，又因談洋奏事「不先白中書省」被胡惟庸攻訐，「遂奪基祿」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。他的政治判斷遠勝其政治生存能力，最後連退隱都無法自保。評85，低於于謙（88）與范仲淹（88），也低於張良（90）。\n\n### 魅力：85\n\n朱元璋「常呼為老先生而不名」，稱他「吾子房也」，每次召見都「屏人密語移時」；他避居青田時，「避方氏者爭依基」（[《明史·劉基傳》](https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128)）。但他「與物多忤」，在朝中樹敵甚多，死後兒子劉璉也為胡惟庸黨所脅迫。評85，低於朱鎔基（86）、張良（92）與謝安（95），高於李斯（70）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T07:01:29.337Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "明史·卷一百二十八 列傳第十六",
+            "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128",
+            "locator": "本機固定修訂 oldid=2594748 全文比對（textSha256 已驗）：多陰陽風角之說，非其至也、責基擅威福，羈管紹興、棄官還青田，著《郁離子》以見志、陳時務十八策、士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之。陳氏滅，張氏勢孤，一舉可定。然後北向中原，王業可成也、其後太祖取士誠，北伐中原，遂成帝業，略如基謀…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "〈劉基長子劉璉の死因試探〉（弘前大學《人文社會科學論叢》第5號）",
+            "url": "https://hirosaki.repo.nii.ac.jp/record/5415/files/JinbunShakaikagakuRonso5_139.pdf",
+            "locator": "WebSearch 結果摘要：整理劉璉病死、被脅迫墮井、被胡惟庸黨藥殺三說，作者認為第三說應視為事實；論文對象為劉璉而非劉基",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "9b10568ee74790d65255b91204aa8a4b95a04ef56735d0a0bed6942b8093ab14",
+        "sourcePackageSha256": "339d2a7da1fea1a94fc0e2aaf2e76b9f1f68479d3bc6ba4e0239a9956c91dc50",
+        "preservedDeepSha256": "c7944ac4151af97abc9678ea01e3ef0b2bf2f19dfe1569b2431200f426640062",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "f16ea0f11cbd443f0f03ca85b4289c9cf2dd22c0ac83dadade5ca49a06b02e8b",
+            "requestSha256": "9b10568ee74790d65255b91204aa8a4b95a04ef56735d0a0bed6942b8093ab14",
+            "inputSha256": "cdf752af33b5b2b4681bdab6d19195b53702a3c5f70c4fd3d369c7bce7359c7d",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "e368ac9738454a0b4b9ff5191b173adf14db042ddf52b021b4a429fb4522d3ba",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "339d2a7da1fea1a94fc0e2aaf2e76b9f1f68479d3bc6ba4e0239a9956c91dc50",
+            "preservedDeepSha256": "c7944ac4151af97abc9678ea01e3ef0b2bf2f19dfe1569b2431200f426640062",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:01:29.337Z",
+            "rawResponseFile": "analysis-batch-50/drafts/44.analysisStats.raw.md",
+            "rawResponseSha256": "70fb02e7320b8e0cdef860d0347618495e52a336aa6d6547ca5e97ca645ed9b4",
+            "responseFile": "analysis-batch-50/drafts/44.analysisStats.response.md",
+            "responseSha256": "70fb02e7320b8e0cdef860d0347618495e52a336aa6d6547ca5e97ca645ed9b4",
+            "fieldsHashes": {
+              "analysis": "b6c4e1eb18c539b65a00e067b7311b5f22eb26f1b2ecd7895569b2957435b551",
+              "stats": "0e74bdcf9c51800e33c307bb6880a14c7bdbc14aa1d9f069cac4c924684e4f8a",
+              "statsAnalysis": "10f5e88b0f1f3cf981802f5bd48ac72574891ce0492f3aa80a5414d1c2b1fdd5"
+            },
+            "captureFile": "analysis-batch-50/drafts/44.analysisStats.capture.json",
+            "captureSha256": "e2d0055089046f99a1488c0a961e48b1187b369c79eb5b7d4309363d71c42c33",
+            "sourceReviewFile": "analysis-batch-50/reviews/44.analysisStats.json",
+            "sourceReviewSha256": "3eb1170c94705433a8f92724ac8932ccf7b3157d94c05813cf414f4e11e0a8b4",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/44.combined.search-log.json",
+              "sha256": "d4c5fa7188bff220d936761cc63b5c17010bdb3ec746e8c9258d841d84818944",
+              "webSearchCount": 1,
+              "archiveCheckCount": 59
+            },
+            "checkedSources": [
+              {
+                "title": "明史·卷一百二十八 列傳第十六",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128",
+                "locator": "本機固定修訂 oldid=2594748 全文比對（textSha256 已驗）：多陰陽風角之說，非其至也、責基擅威福，羈管紹興、棄官還青田，著《郁離子》以見志、陳時務十八策、士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之。陳氏滅，張氏勢孤，一舉可定。然後北向中原，王業可成也、其後太祖取士誠，北伐中原，遂成帝業，略如基謀…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "〈劉基長子劉璉の死因試探〉（弘前大學《人文社會科學論叢》第5號）",
+                "url": "https://hirosaki.repo.nii.ac.jp/record/5415/files/JinbunShakaikagakuRonso5_139.pdf",
+                "locator": "WebSearch 結果摘要：整理劉璉病死、被脅迫墮井、被胡惟庸黨藥殺三說，作者認為第三說應視為事實；論文對象為劉璉而非劉基",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "da3704c300e6450c6b22694a4631914eda6a7e1148fe5a798d12727303a8fbea",
+            "requestSha256": "9b10568ee74790d65255b91204aa8a4b95a04ef56735d0a0bed6942b8093ab14",
+            "inputSha256": "cdf752af33b5b2b4681bdab6d19195b53702a3c5f70c4fd3d369c7bce7359c7d",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "f2eaf494dfe67d4a69cee8b9a6efbfa40b1bf9c99675a4924776b29953745859",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "339d2a7da1fea1a94fc0e2aaf2e76b9f1f68479d3bc6ba4e0239a9956c91dc50",
+            "preservedDeepSha256": "c7944ac4151af97abc9678ea01e3ef0b2bf2f19dfe1569b2431200f426640062",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:01:29.337Z",
+            "rawResponseFile": "analysis-batch-50/drafts/44.soulEssence.raw.md",
+            "rawResponseSha256": "ab8d8f0f0fadbbf1fef8894dd668718d8da00c325086f47e2a4dabb185ed4790",
+            "responseFile": "analysis-batch-50/drafts/44.soulEssence.response.md",
+            "responseSha256": "ab8d8f0f0fadbbf1fef8894dd668718d8da00c325086f47e2a4dabb185ed4790",
+            "fieldsHashes": {
+              "soulEssence": "9066c8f8f5832e63611fa69d09b2f517524241cb7cc6bcd8e52e811f1be48800"
+            },
+            "captureFile": "analysis-batch-50/drafts/44.soulEssence.capture.json",
+            "captureSha256": "98931e9a0aa989cbd448e3f80c253c82a809cad3af80c419af11575e04a048b4",
+            "sourceReviewFile": "analysis-batch-50/reviews/44.soulEssence.json",
+            "sourceReviewSha256": "34db9851212626c4571f1b5faf24c968cadffb00331fabdbb988e7e71f848847",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/44.combined.search-log.json",
+              "sha256": "d4c5fa7188bff220d936761cc63b5c17010bdb3ec746e8c9258d841d84818944",
+              "webSearchCount": 1,
+              "archiveCheckCount": 59
+            },
+            "checkedSources": [
+              {
+                "title": "明史·卷一百二十八 列傳第十六",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128",
+                "locator": "本機固定修訂 oldid=2594748 全文比對（textSha256 已驗）：多陰陽風角之說，非其至也、責基擅威福，羈管紹興、棄官還青田，著《郁離子》以見志、陳時務十八策、士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之。陳氏滅，張氏勢孤，一舉可定。然後北向中原，王業可成也、其後太祖取士誠，北伐中原，遂成帝業，略如基謀…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/44.analysis.md",
+            "analysisContextSha256": "b97154d5444aa777f1085ff4d3ebcd52740d6d14e47ec774a5e629e073ebcdc3"
+          }
+        }
+      }
+    }
+  ]
+}

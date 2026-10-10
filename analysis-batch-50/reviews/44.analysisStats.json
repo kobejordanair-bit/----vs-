@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_劉基_2003842411",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:01:29.390Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "70fb02e7320b8e0cdef860d0347618495e52a336aa6d6547ca5e97ca645ed9b4",
+  "rawResponseSha256": "70fb02e7320b8e0cdef860d0347618495e52a336aa6d6547ca5e97ca645ed9b4",
+  "sourcePackageSha256": "339d2a7da1fea1a94fc0e2aaf2e76b9f1f68479d3bc6ba4e0239a9956c91dc50",
+  "searchLogSha256": "d4c5fa7188bff220d936761cc63b5c17010bdb3ec746e8c9258d841d84818944",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128",
+      "title": "明史·卷一百二十八 列傳第十六",
+      "locator": "本機固定修訂 oldid=2594748 全文比對（textSha256 已驗）：多陰陽風角之說，非其至也、責基擅威福，羈管紹興、棄官還青田，著《郁離子》以見志、陳時務十八策、士誠自守虜，不足慮。友諒劫主脅下，名號不正，地據上流，其心無日忘我，宜先圖之。陳氏滅，張氏勢孤，一舉可定。然後北向中原，王業可成也、其後太祖取士誠，北伐中原，遂成帝業，略如基謀…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://hirosaki.repo.nii.ac.jp/record/5415/files/JinbunShakaikagakuRonso5_139.pdf",
+      "title": "〈劉基長子劉璉の死因試探〉（弘前大學《人文社會科學論叢》第5號）",
+      "locator": "WebSearch 結果摘要：整理劉璉病死、被脅迫墮井、被胡惟庸黨藥殺三說，作者認為第三說應視為事實；論文對象為劉璉而非劉基",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "劉基，名臣；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "strategy",
+      "passed": true,
+      "detail": "十八策、先圖友諒、不拜小明王、太平伏兵、江州、安豐之諫，原文核對。"
+    },
+    {
+      "id": "institutions",
+      "passed": true,
+      "detail": "大統曆、軍衛法、決滯獄，原文核對。"
+    },
+    {
+      "id": "court",
+      "passed": true,
+      "detail": "斬李彬與李善長忤、宰相人選評語、皆敗，原文核對。"
+    },
+    {
+      "id": "death",
+      "passed": true,
+      "detail": "談洋奏事、奪祿、使吾言不驗、惟庸以醫、塗節告發，原文核對；劉璉死因依論文摘要並註明對象差異。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[80,35,96,85,85] 對照張良[72,20,100,90,92]、荀彧[85,30,97,97,95]、商鞅智謀96、于謙[90,40,90,88,90]、周恩來[80,40,95,98,98]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    80,
+    35,
+    96,
+    85,
+    85
+  ]
+}
