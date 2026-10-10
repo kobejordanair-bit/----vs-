@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_孫傳庭_902223150",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:01:19.978Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "1071681753107aad1b40e9b67accff1ec04a6ec66ce5077aa5e0e239b5fed3e9",
+  "rawResponseSha256": "1071681753107aad1b40e9b67accff1ec04a6ec66ce5077aa5e0e239b5fed3e9",
+  "sourcePackageSha256": "7dbd484c6af7d810d8e4d7820f504b8c7dac15b6de0cc8d48d636f15abfaac8d",
+  "searchLogSha256": "750e0fd5001f660ff5e66aedd2dd7ff574252ba1e00a1407c63bac526a029e46",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7262",
+      "title": "明史·卷二百六十二\n列傳第一百五十　傅宗龍 汪喬年 楊文岳 孫傳庭",
+      "locator": "本機固定修訂 oldid=2594889 全文比對（textSha256 已驗）：我軍新集，不利速戰、秦督玩寇矣、秦督不出關，收者至矣、奈何乎！吾固知往而不返也。然大丈夫豈能再對獄吏乎、自父以上，四世舉於鄉、儀表頎碩，沈毅多籌略…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "代州振武衛人、萬曆四十七年進士、崇禎九年撫秦、擒高迎祥、清屯、十一年平關中、入衛與耳聾下獄三年、十五年起復斬賀人龍、柿園之役、十六年潼關戰死年五十一，皆依明史卷262 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：黑水峪、三水淳化伏擊、郟縣三覆；武力：陷陣與躍馬歿陣；智謀：荒山邃谷、識破偽降、秦兵不可留；政治：清屯與獄三年；魅力：張夫人與孫枝秀。對照王忠嗣、戚繼光、袁崇煥、李光弼、岳飛。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "清屯自養→不用部議→嗣昌銜之→抑功；秦兵被留→爭之不得→耳聾→誣托疾→下獄；帝催戰→兵新募出關→秦兵趨利、雨糧不至→柿園敗；收者至矣之脅→再出關→雨七日糧不前→後軍嘩→火車營潰→潼關死。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    90,
+    68,
+    88,
+    58,
+    78
+  ]
+}

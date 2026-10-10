@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_孫傳庭_902223150",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:01:19.980Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "8afb7ba9499e698c1b31e4d094cab2367ae85da2b631e7ae0120ffbe2b1d0f6b",
+  "rawResponseSha256": "8afb7ba9499e698c1b31e4d094cab2367ae85da2b631e7ae0120ffbe2b1d0f6b",
+  "sourcePackageSha256": "7dbd484c6af7d810d8e4d7820f504b8c7dac15b6de0cc8d48d636f15abfaac8d",
+  "searchLogSha256": "750e0fd5001f660ff5e66aedd2dd7ff574252ba1e00a1407c63bac526a029e46",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7262",
+      "title": "明史·卷二百六十二\n列傳第一百五十　傅宗龍 汪喬年 楊文岳 孫傳庭",
+      "locator": "本機固定修訂 oldid=2594889 全文比對（textSha256 已驗）：我軍新集，不利速戰、秦督玩寇矣、秦督不出關，收者至矣、奈何乎！吾固知往而不返也。然大丈夫豈能再對獄吏乎、自父以上，四世舉於鄉、儀表頎碩，沈毅多籌略…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最懂不該速戰卻兩度被迫速戰，以戰死代替再對獄吏；場景為秦督玩寇、頓足之嘆、耳聾下獄、張夫人投井。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以實效證明方法、正確不足以說服朝廷、以死證明不玩寇等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以責任邊界之語與文華殿、耳聾與躍馬歿陣與斬慎鼎、百日平賊之爭、累數千言與士大夫嘩、張夫人投井、屯田伏擊與火車、兩度出關與不予贈蔭為事件。"
+    }
+  ],
+  "materialIssues": []
+}
