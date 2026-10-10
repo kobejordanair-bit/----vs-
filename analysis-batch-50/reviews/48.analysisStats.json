@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_子產_2003919532",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:11:24.934Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "03596edb674cb1c19f906e0e100d836a4ea9657b9c35b540cca49d1ada00c5f1",
+  "rawResponseSha256": "03596edb674cb1c19f906e0e100d836a4ea9657b9c35b540cca49d1ada00c5f1",
+  "sourcePackageSha256": "bc784cfc3d0cc0aaeb30e97d9a5ac8ff1652913116cdd8b3508db9d385e0705d",
+  "searchLogSha256": "c8044a83685713af8558bc2a831ac28e9e605420248fef301ad2c3774b51a75c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E8%A5%84%E5%85%AC",
+      "title": "春秋左氏傳·襄公",
+      "locator": "本機固定修訂 oldid=9172568 全文比對（textSha256 已驗）：莫能相下也、使都鄙有章．上下有服．田有封洫．廬井有伍、取我衣冠而褚之．取我田疇而伍之．孰殺子產．吾其與之、我有子弟．子產誨之．我有田疇．子產殖之．子產而死．誰其嗣之、使盡壞其館之垣．而納車馬焉、其所善者．吾則行之．其所惡者．吾則改之．是吾師也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC",
+      "title": "春秋左氏傳/昭公",
+      "locator": "本機固定修訂 oldid=10445713 全文比對（textSha256 已驗）：古之遺愛也、其父死於路．己為蠆尾、苟利社稷．死生以之、民不可逞．度不可改、鄭人鑄刑書、議事以制．不為刑辟…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/76127/cks_065_106.pdf",
+      "title": "渡邊葉月〈子產研究筆記〉（大阪大學《中國研究集刊》第65號，2019）",
+      "locator": "WebSearch 結果摘要：大阪大學論文庫收錄之子產研究入門文獻；另有塩出雅、中村未來之相關研究",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "子產，名臣；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "domestic",
+      "passed": true,
+      "detail": "都鄙有章、豐卷之事、兩首輿人誦、作丘賦，原文核對。"
+    },
+    {
+      "id": "xingshu",
+      "passed": true,
+      "detail": "鑄刑書與叔向書、吾以救世、晉鑄刑鼎與晉其亡乎，原文核對。"
+    },
+    {
+      "id": "diplomacy",
+      "passed": true,
+      "detail": "壞館垣、趙文子是吾罪也、平丘爭承、晉政多門、足以為國基，原文核對。"
+    },
+    {
+      "id": "fire",
+      "passed": true,
+      "detail": "天道遠人道邇、救火部署、禳火，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[75,30,94,96,90] 對照張廷玉[78,25,90,96,80]、姚崇[78,68,97,96,88]、李斯[65,30,95,93,70]、謝安[85,30,92,94,95]、于謙[90,40,90,88,90]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    75,
+    30,
+    94,
+    96,
+    90
+  ]
+}
