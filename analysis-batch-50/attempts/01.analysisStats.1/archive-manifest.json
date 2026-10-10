@@ -1,0 +1,47 @@
+{
+  "format": "dynasty-batch50-rejected-attempt",
+  "createdAt": "2026-10-09T19:20:09.239Z",
+  "reason": "Deng Feng rebelled in 26 CE; execution was in 27 CE. Source QA failed; waiting for actual ChatGPT correction.",
+  "entries": [
+    {
+      "originalPath": "analysis-batch-50/drafts/01.analysisStats.raw.md",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.analysisStats.raw.md",
+      "sha256": "529e0249bcd372a848f1a8f3cc259f7cdced0e15db9d3751768e1cb0dbc2ed25"
+    },
+    {
+      "originalPath": "analysis-batch-50/drafts/01.analysisStats.search-evidence.txt",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.analysisStats.search-evidence.txt",
+      "sha256": "011a5b89d71cfaad8c190fe245271353d32d4f5ba653ef8ac5f02aa4cacdff4b"
+    },
+    {
+      "originalPath": "analysis-batch-50/drafts/01.analysisStats.response.md",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.analysisStats.response.md",
+      "sha256": "9771fc045f8821a44a4359555b5744e5337dd353bceb937f1a4f2e27facd1c3c"
+    },
+    {
+      "originalPath": "analysis-batch-50/drafts/01.analysisStats.capture.json",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.analysisStats.capture.json",
+      "sha256": "35861bccf6a63355de2d9efcbde78a207fe33942f964c36e68492aa6643ac906"
+    },
+    {
+      "originalPath": "analysis-batch-50/drafts/01.analysis.md",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.analysis.md",
+      "sha256": "21cd197612260db0ebc02f2a856c83236b82316f9ca251eaf42042eec75d0c49"
+    },
+    {
+      "originalPath": "analysis-batch-50/drafts/01.statsAnalysis.md",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.statsAnalysis.md",
+      "sha256": "ef27d3693e941b8bbf8d1613f8dcb3a5db2fb0e0988daba42fb43a018f2d33ee"
+    },
+    {
+      "originalPath": "analysis-batch-50/drafts/01.stats.json",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.stats.json",
+      "sha256": "1cf0443723a9cbee9c6a43ab2b191a31b8e416200e8ded1d9de5a2eb678d0c49"
+    },
+    {
+      "originalPath": "analysis-batch-50/reviews/01.analysisStats.json",
+      "archivePath": "analysis-batch-50/attempts/01.analysisStats.1/01.analysisStats.json",
+      "sha256": "94ce3331a7a8ff41bc71c75e3321a34188dd7c49ac26b441887f2835b3075b84"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_乾隆帝_287167826",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-09T22:32:43.412Z",
+  "manuscriptSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b",
+  "rawResponseSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b",
+  "sourcePackageSha256": "43bb377f0311ea432716e624461a1b626ae783739e03d90ecbeba47b59d68d59",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B710",
+      "title": "清史稿卷十·高宗本紀一",
+      "locator": "雍正十三年即位、幼年學射與火器、初政恩免",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/court/lineage/226263.html",
+      "title": "乾隆皇帝",
+      "locator": "即位、文治武功、四庫、十全、訓政段",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://www.qinghistory.cn/c/432/432316.shtml",
+      "title": "全球視野下清朝國家的形成及性質問題——以地緣戰略和財政構造為中心",
+      "locator": "第三節財政周期，1765–1777庫存及1771–1776金川軍費",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/qing-extermination-of-the-zunghars/6D038CADD0F808459451175C1CAD6DC5",
+      "title": "David Brophy, The Qing Extermination of the Zünghars",
+      "locator": "公開Summary：屠殺命令、饑荒疫病與倖存者；未宣稱已取得付費全文",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "url": "https://iqh.ruc.edu.cn/old/qdbjmzyj/bj_wxkb/c660d9172d4c45f4b718b2d91759ec82.htm",
+      "title": "白京蘭：略論清政府轄制新疆的法律——《欽定回疆則例》",
+      "locator": "第一節(四)：1759年新疆政治經濟立法為後來則例的基礎",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U",
+      "title": "御筆十全記玉冊",
+      "locator": "1792藏品說明；官方頁搜尋索引器身御製詩文全文與篇末自警",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715",
+      "title": "清史稿卷十五·高宗本紀六",
+      "locator": "五十一年曹錫寶與和珅、五十五年萬壽、五十六年尹壯圖",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/court/lineage/226238.html?hl=%E7%9A%87%E5%AE%AB",
+      "title": "嘉慶皇帝",
+      "locator": "同一官方頁帶高亮參數；實際公開HTTP200與內禪、訓政、親政段",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%A5%89%E5%A4%A9%E6%89%BF%E9%81%8B%E7%9A%87%E5%B8%9D%E6%95%95%E8%AB%AD%E8%8B%B1%E5%92%AD%E5%88%A9%E5%9C%8B%E7%8E%8B",
+      "title": "乾隆皇帝頒給英吉利國王勅書",
+      "locator": "乾隆五十八年八月十九日，嘉許來使後以體制拒絕留京",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "url": "https://iqh.ruc.edu.cn/old/qdzwgxyj/zwgx_yjqy/my/a722ba632c27438083302e3b65084d8b.htm",
+      "title": "王宏斌：乾隆皇帝從未下令關閉江、浙、閩三海關",
+      "locator": "正文導論及三海關繼續運作論證；作品將此呈現為學术爭論",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/collection/paint/233335.html",
+      "title": "郎世寧等乾隆皇帝射獵圖軸",
+      "locator": "1755年南苑行圍、御製詩射中八兔",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/collection/paint/233703.html",
+      "title": "孝賢純皇后朝服像軸",
+      "locator": "1748德州、服素12日及述悲賦；不採用頁中與人物頁矛盾的精確農曆日",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/court/figure/103992.html",
+      "title": "清高宗納喇皇后",
+      "locator": "1765南巡剪髮與1766喪儀降格",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B713",
+      "title": "清史稿卷十三·高宗本紀四",
+      "locator": "乾隆三十二年，換明瑞及四月因瘴暫停進兵",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/collection/paint/233342.html",
+      "title": "乾隆皇帝一箭雙鹿圖",
+      "locator": "1788題詩、晚年射鹿、1789仍行圍之記錄",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "url": "https://www.dpm.org.cn/court/lineage/226238.html",
+      "title": "嘉慶皇帝",
+      "locator": "1796即位、前三年由乾隆控制、1799親政及誅和珅",
+      "type": "official_institution",
+      "checked": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "1735即位、1736乾隆元年；保留A+原評級，不重新校準。"
+    },
+    {
+      "id": "ten-campaigns",
+      "passed": true,
+      "detail": "1792《十全記》、十項戰役及篇末知進知退、自警之意，對照故宮藏品介紹及同一官方頁搜尋索引釋文。"
+    },
+    {
+      "id": "xinjiang",
+      "passed": true,
+      "detail": "1755–1759征服與1759伯克等立法；《回疆則例》後來編成，文章僅說乾隆立法是基礎，沒有錯稱1759完成則例。"
+    },
+    {
+      "id": "war-cost",
+      "passed": true,
+      "detail": "1771–1776第二次金川、約七千萬兩及乾隆中期庫存，對照中華文史網原學術文章財政周期章。"
+    },
+    {
+      "id": "burma",
+      "passed": true,
+      "detail": "1767前後換將、瘴盛暫停進兵，卷13乾隆三十二年四月可定位；未把緬甸算作征服。"
+    },
+    {
+      "id": "officials",
+      "passed": true,
+      "detail": "卷15乾隆五十一年七月曹錫寶革職留任、閏七月和珅升任；1791尹壯圖查辦及二月寬免可定位。"
+    },
+    {
+      "id": "corruption",
+      "passed": true,
+      "detail": "甘肅冒賑、王亶望1781受查及處斬，用本地已封存卷14四十六年六月與七月核對。"
+    },
+    {
+      "id": "diplomacy",
+      "passed": true,
+      "detail": "1793致英王敕書實際支持常駐代表及禮制拒絕；RUC王宏斌原文支持三海關未全面關閉的爭論。"
+    },
+    {
+      "id": "archery",
+      "passed": true,
+      "detail": "1755南苑八兔、晚年一箭雙鹿與行圍有故宮藏品記錄；理由明確區分宮廷圖像與戰場格鬥。"
+    },
+    {
+      "id": "family",
+      "passed": true,
+      "detail": "1748德州孝賢之死與述悲；1765繼后剪髮、1766降格喪儀；1777生母去世，各有對應官方人物或藏品頁。"
+    },
+    {
+      "id": "handover",
+      "passed": true,
+      "detail": "1796內禪、訓政至1799與嘉慶處置和珅，核對官方嘉慶頁。"
+    },
+    {
+      "id": "benchmark",
+      "passed": true,
+      "detail": "五維[94,82,92,93,89]與五段理由一致；文中八位既有帝王的所有參照分數與封存66人JSON一致。"
+    },
+    {
+      "id": "style",
+      "passed": true,
+      "detail": "四章賞析、五段理由、七欄內核齊全；收藏分類、十全戰事與兩段婚姻使人物具體；各內核欄有史载/推断/诠释標記，心理詮釋與事實可區別。"
+    }
+  ],
+  "materialIssues": [],
+  "reviewer": "Codex single concentrated review; no delegated agents",
+  "combinedActualResponseFile": "analysis-batch-50/drafts/07.combined.raw.md",
+  "combinedActualResponseSha256": "15a2f6dc466b32f62f516ed34fabae249a647762030197afc5640b08614db53e",
+  "notes": [
+    "Both tasks share one actual response and one search session;23 is not added twice.",
+    "One source label names a topic subsection;the checked catalog records the actual RUC article title.",
+    "Minor copied source-card labels remain;historical prose and scores were not rewritten."
+  ],
+  "stats": [
+    94,
+    82,
+    92,
+    93,
+    89
+  ]
+}

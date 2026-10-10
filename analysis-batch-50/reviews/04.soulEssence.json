@@ -1,0 +1,105 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_明成祖_281780435",
+  "task": "soulEssence",
+  "passed": true,
+  "manuscriptSha256": "31edc35cf6cbd864adec8ab9f31171b1c899a963b88afc0671f6efd5d0ef8d9c",
+  "rawResponseSha256": "d71b2922df22e09809c878f1b5842b9bf19cd0825ca1c3fa63b2839de5f8fed1",
+  "sourcePackageSha256": "ddc405f5309883137baf906dcaa1b030ef601734c8c5e98a97afbca486f1f1c8",
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "明史卷145",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7145",
+      "locator": "姚廣孝：民心向彼、東昌後休整與直趨京師、1418兩次探病釋放溥洽；張玉東昌戰死及痛哭段",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷141",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7141",
+      "locator": "方孝孺：1402周公成王對話、姚廣孝請勿殺、拒草詔與宗族親友牽連段",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷7",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B77",
+      "locator": "永樂十二年忽蘭忽失溫；十三年官糧案件五覆奏、清江浦；十八至十九年遷都；十九年夏原吉下獄及二十二年班師卒",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷5",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B75",
+      "locator": "1399六月逮王府官屬、七月誘殺謝貴張昺奪九門；1400東昌；1402渡江入南京",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷6",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B76",
+      "locator": "永樂元年北平改北京；五年征服安南置交趾布政司；會通河及大典相關條目",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷304",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7304",
+      "locator": "鄭和傳：永樂三年命使西洋、耀兵異域、後續航次",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷149",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7149",
+      "locator": "夏原吉傳：永樂十九年軍馬儲蓄耗損、請遣將、下獄；還至榆木川夏原吉愛我",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "明史卷113",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7113",
+      "locator": "仁孝文皇后徐氏：北平拒守、勸休兵民與求賢；永樂五年七月崩、悲慟薦齋、不復立后",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "故宮博物院・論朱棣營建北京宮殿、遷都的主要動機及後果",
+      "url": "https://www.dpm.org.cn/building/talk/224150.html",
+      "locator": "實際讀取HTML後所鏈官方PDF T00054至T00058（頁54–58）：輸糧、北防、遷都動機與財政人力成本；以pypdf抽取正文",
+      "type": "official_institution",
+      "checked": true
+    },
+    {
+      "title": "明史卷321・安南",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7321",
+      "locator": "黎利反、宣德二年王通議和撤軍段；補核1407設三司、後續反抗及1427退出",
+      "type": "primary_text",
+      "checked": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "full_manuscript_all_urls",
+      "passed": true,
+      "detail": "完整核讀4695字正文及全部9個唯一MarkdownHTTPS網址；八卷明史相關段與故宮原網頁及所鏈PDF實讀，額外以安南傳核對撤軍。"
+    },
+    {
+      "id": "concrete_dates_actors",
+      "passed": true,
+      "detail": "1399起兵、1400東昌張玉死、1402方孝孺對話、1403北京、1407徐后及交趾、1414瓦剌、1415五覆奏、1418姚廣孝溥洽、1421遷都與夏下獄、1424卒、1427撤軍無實質錯誤。"
+    },
+    {
+      "id": "seven_fields_tags",
+      "passed": true,
+      "detail": "七欄齊全；具體事件及原文對話有史载支持；主要行為歸納標推斷、心理及現代治理讀法標詮釋。文中史載段所附因果解讀屬有前後標記的合理分析，未見新造事件或內心引語。"
+    },
+    {
+      "id": "preserve_interpretation",
+      "passed": true,
+      "detail": "保留合法性焦慮、危機決戰與情感權威衝突之強烈詮釋；未改寫正文。未把十族傳說寫成確證。"
+    }
+  ]
+}

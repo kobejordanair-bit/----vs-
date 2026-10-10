@@ -1,0 +1,142 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:50:24.102Z",
+  "recordId": "general_林彪_306298218",
+  "slug": "16",
+  "name": "林彪",
+  "type": "general",
+  "dynasty": "中華人民共和國",
+  "identity": "林彪；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "實際查閱 1948 年 10 月 3 日林彪電與 10 月 4 日軍委復電，區分戰略目標形成與戰役執行的個人貢獻。",
+    "核讀續頁與敵我双方文電，評估林彪的判斷如何受對手部署、補給和兵力限制，而不是把勝利只歸因於單人天才。",
+    "實際打開決議後續文革與 1971 年事件各頁，另查可公開的原始政治文獻，區分官方定性、事件可證實部分與未解細節。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-general_林彪_306298218",
+      "recordIds": [
+        "general_林彪_306298218"
+      ],
+      "recordNames": [
+        "林彪"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載林彪於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載林彪於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "遼沈戰役",
+      "url": "https://www.dswxyjy.org.cn/BIG5/n/2015/0415/c244520-26848188.html",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "official_history_with_document_citations",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀正文中 1948 年攻錦州決策、10 月 3–4 日往來電報與戰役部署段；未調閱被引用文集的原頁。",
+      "minimalSupportedClaim": "官方戰史記述林彪的攻錦、攻長選擇及與軍委的分歧，並指出錦州攻城與遼西圍殲的部署。",
+      "citationLocator": "網頁正文第 3–7 段；所引《中共中央文件選集》第 17 冊，1991 年版，頁 373–374。",
+      "gptSearchQuestion": "實際查閱 1948 年 10 月 3 日林彪電與 10 月 4 日軍委復電，區分戰略目標形成與戰役執行的個人貢獻。"
+    },
+    {
+      "title": "也论一九四八年卫立煌与中共的关系",
+      "url": "https://www.dswxyjy.org.cn/n/2015/0902/c219021-27542253.html",
+      "author": "李寶明",
+      "institution": "中共中央黨史和文獻研究院；原刊《中共黨史研究》",
+      "sourceType": "original_scholarly_research",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀摘要及第一節中林彪围城打援、長春作戰顧慮、衛立煌應對的史料引用；網頁有續頁，未宣稱全文已核讀。",
+      "minimalSupportedClaim": "作者依作戰資料反駁衛立煌故意幫助中共的簡化說法，提供林彪面對有實際應對能力對手的分析。",
+      "citationLocator": "第一節；引《遼沈戰役》1993 年版頁 53、72–74，及《毛澤東軍事文集》第 4 冊。",
+      "gptSearchQuestion": "核讀續頁與敵我双方文電，評估林彪的判斷如何受對手部署、補給和兵力限制，而不是把勝利只歸因於單人天才。"
+    },
+    {
+      "title": "中国共产党中央委员会关于建国以来党的若干历史问题的决议（官方電子書第 18 頁）",
+      "url": "https://ebook.dswxyjy.org.cn/storage/files/20220804/2c4c659ad7ba96af1727150ee496e02772340/files/basic-html/page18.html",
+      "institution": "中共中央黨史和文獻研究院電子書",
+      "sourceType": "primary_official_resolution_republication",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "僅核讀電子書第 18 頁；OCR 有數字與字形錯誤，未核原圖，未核後續九一三段。",
+      "minimalSupportedClaim": "1981 年官方決議在回顧文革起因時，明列林彪助長相關政治錯誤的角色。這是 1981 年官方評價本身的證據。",
+      "citationLocator": "第 18 頁，文革十年標題前的一段。",
+      "gptSearchQuestion": "實際打開決議後續文革與 1971 年事件各頁，另查可公開的原始政治文獻，區分官方定性、事件可證實部分與未解細節。"
+    }
+  ],
+  "candidateTexts": [],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "亲临林彪坠机现场",
+      "url": "https://epaper.gmw.cn/sz/html/2011-05/01/nw.D110000sz_20110501_2-05.htm",
+      "type": "citation-template",
+      "template": "cite news",
+      "author": "",
+      "publisher": "",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94470827",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "揭秘：林彪夫妇在北戴河96号楼的最后时刻",
+      "url": "http://history.people.com.cn/GB/205396/14455924.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "人民网",
+      "date": "2011-04-22",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94470827",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "战功卓著的军事家、开国功臣；林彪元帅",
+      "url": "http://military.china.com/zh_cn/history2/06/11027560/20050623/12427067.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "中华网-中国军事",
+      "date": "2005-06-23",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94470827",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "解放战争时期我军歼敌总数究竟是多少",
+      "url": "http://cpc.people.com.cn/GB/68742/77130/77131/7267512.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "中国共产党新闻网",
+      "date": "2006年",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94470827",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

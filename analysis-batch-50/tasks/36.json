@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_周恩來_1990120203",
+  "slug": "36",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "62e760854fcf40d113e912fc20b509888e4abd0933fe3415c6905948b71268b5",
+  "sourceSha256": "46ebfac5b5d762b09734760c7fcc5d697b63c5fa93506d50c7a873ec6ca6807e",
+  "preservedDeepSha256": "9b4e8ccfbf57c5b5a795c8511a23713c2fb8e80f029e3ab1f50d8d3a444e5622",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/36.analysisStats.prompt.md",
+      "promptSha256": "905fd0be5f2c56ddc4c556d37affab3b6565c19cd70735a34377316a8bbf0224",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "2a99df1992080042b4beb4dd6e99bd4516ae2fb4b39f759bcec4d89f12bb2f0e",
+      "marker": "<!-- BATCH50_COMPLETE minister_周恩來_1990120203 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_周恩來_1990120203 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/36.soulEssence.prompt.md",
+      "promptSha256": "b5ec317d2800c15d5af2218a439ed77f05b9d621d79786b752a1c8ef79b72bfa",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "a5da14f75323b1ef2e8af2024c66916c90a4549000f957dc3dffe83c5d36b623",
+      "marker": "<!-- BATCH50_COMPLETE minister_周恩來_1990120203 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/36.analysis.md"
+    }
+  }
+}

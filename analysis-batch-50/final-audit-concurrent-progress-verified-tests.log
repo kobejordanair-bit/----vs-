@@ -1,0 +1,14 @@
+✔ fifty completed stage flags never constitute completion without a final public document/library audit (5.0995ms)
+✔ a claimed complete audit cannot hide missing fields, altered hashes, stale document or a changed 962-person identity (85.3071ms)
+✔ individual stage flags must agree with both actual task states and all four field hashes (8.7318ms)
+✔ legitimate progress between chunks and after the last chunk is preserved and explicitly differs from baseline (65.1262ms)
+✔ external old-article, rank, unknown extra and identity changes are rejected rather than labelled player progress (70.1359ms)
+✔ raw extras require an actual final receipt bound to the same visible snapshot and reject changed envelopes (0.8999ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 279.5354

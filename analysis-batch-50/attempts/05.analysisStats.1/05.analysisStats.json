@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐高宗_285517784",
+  "task": "analysisStats",
+  "passed": false,
+  "reviewedOn": "2026-10-10",
+  "manuscriptSha256": "5f9b731a6a4d9def03b7f4413b4f3a83daeac684cbae52b8dc12904b0792ed85",
+  "rawResponseSha256": "4f0713ec2dcdde7466138a18d054dbd739f1adb0af880ac48831bc0e8eb2bf27",
+  "sourcePackageSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+  "stats": [94, 25, 95, 94, 86],
+  "materialIssues": [
+    {
+      "id": "li-ji-appointment-year",
+      "section": "五維能力數值／統率：94／第一段",
+      "claim": "668年又任命李勣統率遼東諸軍，最終攻克高句麗。",
+      "problem": "李勣受命為遼東道大總管是在乾封元年（666），不是總章元年（668）。668年是攻克平壤、俘高藏與設安東都護府之年。",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B75",
+      "sourceLocator": "乾封元年冬十月：命司空英國公勣為遼東道行軍大總管；總章元年九月：拔平壤、擒高藏。新唐書卷三把任命置於乾封元年十二月，兩書月份有異但同為666年。",
+      "requiredCorrection": "由實際ChatGPT把任命年與攻克年分開，維持原五維分數與其他已核內容；引用可補卷五。"
+    }
+  ],
+  "checkedSources": [
+    {"title":"舊唐書卷四・高宗本紀上","url":"https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B74","locator":"開篇及貞觀二十三年；永徽二年閏月、四年十一月、六年九月至十一月；顯慶二年正月及八月、三年二月及十一月、四年四月、五年三月及八月至十一月；麟德元年十二月。","type":"primary_text","checked":true},
+    {"title":"舊唐書卷五・高宗本紀下","url":"https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B75","locator":"乾封元年冬十月；總章元年正月及九月；咸亨元年四月至七月；上元元年八月、二年三月至六月；儀鳳元年二月；永隆元年八月；弘道元年十一月至十二月。任命666與平壤668須分開。","type":"primary_text","checked":true},
+    {"title":"舊唐書卷六十五・長孫無忌傳","url":"https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B765","locator":"長孫無忌傳末段：永徽六年拒助立武；顯慶四年許敬宗誣構、黔州安置與袁公瑜逼令自縊。","type":"primary_text","checked":true},
+    {"title":"舊唐書卷八十三・蘇定方傳及薛仁貴傳","url":"https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B783","locator":"蘇定方傳：步騎對賀魯、任雅相及回紇婆潤、蕭嗣業追擒、百濟水陸攻取及乾封二年追贈；薛仁貴傳：遼東戰役與高宗軍事任用。","type":"primary_text","checked":true},
+    {"title":"舊唐書卷八十四・劉仁軌傳","url":"https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B784","locator":"百濟復國與援軍段：孫仁師、劉仁願及金法敏陸軍，劉仁軌水軍白江口四捷及焚舟；乾封三年副李勣討平高麗。","type":"primary_text","checked":true},
+    {"title":"舊唐書卷五十・刑法志","url":"https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B750","locator":"高宗即位至永徽六年段：敕撰律令格式；永徽三年召解律人、三十卷律疏於四年奏頒；斷獄引疏；永徽五年與長孫無忌論刑法寬平。","type":"primary_text","checked":true},
+    {"title":"新唐書卷三・高宗本紀","url":"https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7003","locator":"開篇遊觀習射非所好及侍父；顯慶二年出軍及十二月擒賀魯、三年獻俘；龍朔三年白江；乾封元年十二月李勣任命。","type":"primary_text","checked":true},
+    {"title":"西安市地方志辦公室・修撰《唐律疏議》的那些人","url":"https://xadfz.xa.gov.cn/xadq/yxxa/2064527733514407937.html","locator":"2026-06-10官方頁面搜尋索引返回的標題、日期及開篇修律兩階段全文段落：651永徽律、652召解律人、653頒三十卷律疏。直接HTTPS頁面逾時，核讀的是同一官方URL的索引正文。","type":"official_institution","checked":true},
+    {"title":"杜文玉・唐朝如何經略西域","url":"https://www.rmlt.com.cn/2019/0129/538545.shtml","locator":"2019-01-29作者原文，西域行政安排段：正州、羈縻及遙領關係；658安西移治龜茲、702北庭設置。頁末署名陝西師範大學歷史文化學院教授。","type":"scholarly_primary","checked":true},
+    {"title":"新唐書卷一百五・上官儀傳","url":"https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7105","locator":"上官儀傳麟德元年段：高宗召議、儀勸廢后、命草詔、武后申訴及許敬宗構獄。補核正文664年廢后嘗試。","type":"primary_text","checked":true},
+    {"title":"資治通鑒胡三省音注卷二百一・唐紀十七","url":"https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92_(%E8%83%A1%E4%B8%89%E7%9C%81%E9%9F%B3%E6%B3%A8)/%E5%8D%B7201","locator":"麟德元年上官儀廢后議及十二月構獄；二聖敘述與考異區分武后實際参政、帝后對坐朝謁說。","type":"primary_text","checked":true},
+    {"title":"舊唐書卷六・則天皇后本紀","url":"https://zh.wikisource.org/zh-hant/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B76","locator":"開篇顯慶後帝病、表奏詳決及二聖；天授元年九月革唐命、改國號周。補核疾病参政與690年後續。","type":"primary_text","checked":true},
+    {"title":"唐會要四庫全書本卷三・皇后","url":"https://zh.wikisource.org/zh-hant/%E5%94%90%E6%9C%83%E8%A6%81_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7003","locator":"天后武氏段：顯慶五年十月後風眩、表奏時令皇后詳決；補核660年前後逐漸参政的時點。","type":"primary_text","checked":true}
+  ],
+  "checks": [
+    {"id":"identity-and-accession","passed":true,"detail":"李治身份、643立儲與649即位符合本紀；二十二歲沿用原典虛歲口徑。侍父、觀政、親吮癰有原典依據。"},
+    {"id":"palace-political-chronology","passed":true,"detail":"655廢王立武、657貶韓瑗來濟、659長孫無忌誣案與自縊時序成立；稿文未把誣案說成可靠謀反，也未把舊臣失勢等同關隴貴族全面消失。"},
+    {"id":"western-campaign-and-attribution","passed":true,"detail":"657出軍敗賀魯與658獻俘、二都護府及安西重置可交叉核對；蘇定方戰術、蕭嗣業追擒、回紇等協力與君主任用區分清楚。"},
+    {"id":"baekje-and-baekgang","passed":true,"detail":"660百濟、663白江口與復國背景成立；列傳區分唐羅陸軍及劉仁軌水軍，正文以聯合戰役表述，未宣稱高宗本人海戰或倭國已有征服全東亞計畫。"},
+    {"id":"goguryeo-success-and-limits","passed":true,"detail":"正文668攻平壤與諸將參與成立；670年代唐羅衝突及676安東移遼東支持控制範圍收縮，稿文未寫永久統治朝鮮全境。"},
+    {"id":"li-ji-appointment-year","passed":false,"detail":"統率理由將李勣任命置668，原典是乾封元年666。此一句必須由ChatGPT修正後重新capture，當前稿不通過。"},
+    {"id":"law-compilation","passed":true,"detail":"651永徽律、652律疏編修、653三十卷奏頒與斷獄引疏符合刑法志及官方索引正文；制度標準化分析未誤稱現代法律平等。"},
+    {"id":"empress-and-illness","passed":true,"detail":"660前後風眩與武后参政、664上官儀事件、674天皇天后及675郝處俊阻攝政可核；本文把依賴與制衡不足當政治分析，未說武后始終無自主權或高宗從頭完全無權。"},
+    {"id":"setbacks-and-succession","passed":true,"detail":"670罷安西四鎮及大非川敗、675李弘薨、680廢李賢立李顯、683崩與690武周時序成立；李弘死因未被武斷坐實，未把高宗死後每個決策倒填成其安排。"},
+    {"id":"beitin-and-control-scope","passed":true,"detail":"702北庭設置得到作者研究支持，未提前歸給高宗；正州、羈縻與遙領控制範圍有區分。"},
+    {"id":"five-dimension-reference-values","passed":true,"detail":"實際稿分數94/25/95/94/86與第一行JSON及五標題一致；唐高祖、漢高祖、唐太宗、漢武帝、明太祖比較數值均與封存stats-reference相符，個人武藝與國家戰略分開。統率理由只有上述任命年錯置須修，不要求改分。"},
+    {"id":"interpretive-style-and-modern-analogy","passed":true,"detail":"私人信任、共同控制權與現代執行長比喻均是有事件支點的詮釋；沒有當作古籍記載的自述或真實現代職業。原S-評級延續，未改原深度評鑑。"},
+    {"id":"all-manuscript-urls-read","passed":true,"detail":"九個正式稿Markdown引用均核讀相關來源段落；西安官方頁直接逾時但同官方URL索引返回完整修律核心段落，並以刑法志直接原文覆核。另補讀上官儀、参政疾病與690改周原典。"}
+  ]
+}

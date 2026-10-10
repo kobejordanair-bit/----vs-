@@ -1,0 +1,316 @@
+{
+  "format": "dynasty-batch50-source-packets-verification",
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-09T18:53:00.667Z",
+  "passed": true,
+  "recordCount": 50,
+  "primarySourceReferences": 102,
+  "institutionalSourceReferences": 21,
+  "exactExcerpts": 274,
+  "notes": [
+    "Archive primary excerpts bound to saved text, offsets and revision; not full historical claim verification.",
+    "Institutional sources retain actual opened scope; ChatGPT actual web search remains required."
+  ],
+  "records": [
+    {
+      "slug": "01",
+      "recordId": "emperor_漢光武帝_80238619",
+      "sourceSha256": "27a6ca705e5440f3fac33227227add48355245e8ba7ddae1098f8d1ee0806c9b",
+      "passed": true
+    },
+    {
+      "slug": "02",
+      "recordId": "emperor_宋太祖_284437104",
+      "sourceSha256": "8d3fc3849399914472a08e6a91823d02fd9a64c77be10d914883e670202775cf",
+      "passed": true
+    },
+    {
+      "slug": "03",
+      "recordId": "emperor_康熙帝_283469836",
+      "sourceSha256": "9e07de93bfc74c8d2145553b3ca9df6bb3d2383e874026e224b72598ec4cbd1a",
+      "passed": true
+    },
+    {
+      "slug": "04",
+      "recordId": "emperor_明成祖_281780435",
+      "sourceSha256": "ddc405f5309883137baf906dcaa1b030ef601734c8c5e98a97afbca486f1f1c8",
+      "passed": true
+    },
+    {
+      "slug": "05",
+      "recordId": "emperor_唐高宗_285517784",
+      "sourceSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+      "passed": true
+    },
+    {
+      "slug": "06",
+      "recordId": "emperor_秦昭襄王_7247317",
+      "sourceSha256": "81b94dabc934c74ad1bd03dbbc09d666dc94df7c504ba4462b3aee8b0e0de9cd",
+      "passed": true
+    },
+    {
+      "slug": "07",
+      "recordId": "emperor_乾隆帝_287167826",
+      "sourceSha256": "43bb377f0311ea432716e624461a1b626ae783739e03d90ecbeba47b59d68d59",
+      "passed": true
+    },
+    {
+      "slug": "08",
+      "recordId": "emperor_漢宣帝_279605035",
+      "sourceSha256": "7ca28730cfcb726dfda53eb296d73d6d600b8e6e665b3daaeb30a1156dd9869d",
+      "passed": true
+    },
+    {
+      "slug": "09",
+      "recordId": "emperor_宋武帝_284299365",
+      "sourceSha256": "2d3ed8c138c3aeb282770d29da96bc2514aae49664b2474fd010916222e2ac86",
+      "passed": true
+    },
+    {
+      "slug": "10",
+      "recordId": "emperor_宋仁宗_284527334",
+      "sourceSha256": "1f43137b4d6a058453c9dfad1c7cb102edf7b4811f6a99220a6890c001c7690a",
+      "passed": true
+    },
+    {
+      "slug": "11",
+      "recordId": "emperor_武則天_280599295",
+      "sourceSha256": "934ea32a287bfb0cf3cd38c758f26fdcd3d18d24f623d7c02556fff491da9085",
+      "passed": true
+    },
+    {
+      "slug": "12",
+      "recordId": "emperor_宋太宗_284444719",
+      "sourceSha256": "dce216bc4c59e9125c96d19104629957abd0cd6bfff6730df4f9606d5435c00d",
+      "passed": true
+    },
+    {
+      "slug": "13",
+      "recordId": "emperor_明孝宗_281841215",
+      "sourceSha256": "25481308667d84bdacf63e699073e44b6eabb8e06f1fb77a43ea458f7189d052",
+      "passed": true
+    },
+    {
+      "slug": "14",
+      "recordId": "emperor_神武帝_276962130",
+      "sourceSha256": "251c909ac801d640ae4e286bc0b838bb0237baeccfbfb959767116a3ed0e3dfd",
+      "passed": true
+    },
+    {
+      "slug": "15",
+      "recordId": "emperor_宋孝宗_284427266",
+      "sourceSha256": "3a9d76c5d37ba9253f88a707ca18556644996062f7ffbbefa80ac8d00eabf472",
+      "passed": true
+    },
+    {
+      "slug": "16",
+      "recordId": "general_林彪_306298218",
+      "sourceSha256": "3c4c589ce15ce81eeddb297dceb19243c491bf7b5a674a5a0e7d5eb1196a39d4",
+      "passed": true
+    },
+    {
+      "slug": "17",
+      "recordId": "general_拓跋燾_904534991",
+      "sourceSha256": "dd9ee36c632a46c3532061a8a696a8b0de0f6ee11f8ce6e1e040d1a6d0f9565b",
+      "passed": true
+    },
+    {
+      "slug": "18",
+      "recordId": "general_曹操_306294699",
+      "sourceSha256": "e5b61157c431adee48685aaf402cbe566f767f39936b6817692a6a16431da479",
+      "passed": true
+    },
+    {
+      "slug": "19",
+      "recordId": "general_李勣_306292748",
+      "sourceSha256": "5b43290dc20e1b1057101a116328661cae1eb29014fd394f0435a6ea73da2c0d",
+      "passed": true
+    },
+    {
+      "slug": "20",
+      "recordId": "general_蘇定方_912794063",
+      "sourceSha256": "3928b221995357139f3824a50bfc288a3eed18ba864c14728a3afa966aa50f70",
+      "passed": true
+    },
+    {
+      "slug": "21",
+      "recordId": "general_粟裕_306475725",
+      "sourceSha256": "e04d643a530c320cae804d041052cfa5a9b124c6ae6d48962e116cee2a1206ae",
+      "passed": true
+    },
+    {
+      "slug": "22",
+      "recordId": "general_彭德懷_903329142",
+      "sourceSha256": "17850ef17020128e8ee14391b526ab3606574e8dc5ab5ea56998a1e5b2940ffe",
+      "passed": true
+    },
+    {
+      "slug": "23",
+      "recordId": "general_王忠嗣_908276471",
+      "sourceSha256": "1ce51b0106e3885a5710811e2ce8c329bdba47cc5d5c6c1ce5c37c05138ca390",
+      "passed": true
+    },
+    {
+      "slug": "24",
+      "recordId": "general_孫武_306204690",
+      "sourceSha256": "ff673b001385dc2e3296e489d30659761aab93ce4bb8bda1ed8d29f1c9eb8512",
+      "passed": true
+    },
+    {
+      "slug": "25",
+      "recordId": "general_朱德_306295133",
+      "sourceSha256": "b341524eb4835cc1eba5bd93cb21c2cc69c7090dfea4ae691def3df63461805d",
+      "passed": true
+    },
+    {
+      "slug": "26",
+      "recordId": "general_孟珙_306206481",
+      "sourceSha256": "74b7646674cb6549791611a65a1b034000336dae2af7d9b5ccdd8104290f2cb0",
+      "passed": true
+    },
+    {
+      "slug": "27",
+      "recordId": "general_李光弼_905152266",
+      "sourceSha256": "a32078f8654335706e8e1b950a95e79b9f618d7fe0c6faef128517d1435f3196",
+      "passed": true
+    },
+    {
+      "slug": "28",
+      "recordId": "general_孫臏_306210427",
+      "sourceSha256": "a39541d56eb530b3fa924c0d13adaf250f6156b92d0716df58d3173fd7c50223",
+      "passed": true
+    },
+    {
+      "slug": "29",
+      "recordId": "general_伍子胥_899273611",
+      "sourceSha256": "e3f25c3fa0867119f637fc10b7cc418180832e866e170bd7c514b5d45a8bf842",
+      "passed": true
+    },
+    {
+      "slug": "30",
+      "recordId": "general_白崇禧_908987622",
+      "sourceSha256": "877c46fb5051d068ca25cc7b679dd0d5bc6f77f31ea4a1dfcbda01477880a4e0",
+      "passed": true
+    },
+    {
+      "slug": "31",
+      "recordId": "general_左宗棠_902922424",
+      "sourceSha256": "84672ce9850e01a3a2c154635cf506ebfcf3cee9ff9f36cc5a8f2457c3a99da6",
+      "passed": true
+    },
+    {
+      "slug": "32",
+      "recordId": "general_戚繼光_904227344",
+      "sourceSha256": "15ddf7296e6a6b36b66f20a477720dd230e618cfb602ab3c03289c9179437a7a",
+      "passed": true
+    },
+    {
+      "slug": "33",
+      "recordId": "general_木華黎_905533968",
+      "sourceSha256": "833ce9aa894dff6d27cd044697d769d5468328da88f240ee59aa48a2e136eb22",
+      "passed": true
+    },
+    {
+      "slug": "34",
+      "recordId": "general_僕固懷恩_2119975374",
+      "sourceSha256": "2fd624dffbef2c0fd94543f566cf9912f8127adac21df25a97092e7026ac182f",
+      "passed": true
+    },
+    {
+      "slug": "35",
+      "recordId": "general_陳慶之_916874609",
+      "sourceSha256": "8c21d0b14eb65616c325170bdf574aa45bf13ae303b5e936e5f2e2fd9b4329c1",
+      "passed": true
+    },
+    {
+      "slug": "36",
+      "recordId": "minister_周恩來_1990120203",
+      "sourceSha256": "46ebfac5b5d762b09734760c7fcc5d697b63c5fa93506d50c7a873ec6ca6807e",
+      "passed": true
+    },
+    {
+      "slug": "37",
+      "recordId": "minister_荀彧_2004230913",
+      "sourceSha256": "48d29f3ae59096de880252bcc824e3815ba97005ee9bf3bec5305f78da531930",
+      "passed": true
+    },
+    {
+      "slug": "38",
+      "recordId": "minister_張良_2003953844",
+      "sourceSha256": "e7241ee0fdbe3063c9e7293c5f7bb418ca3aecd6f3ea1e8ef1907a337678d977",
+      "passed": true
+    },
+    {
+      "slug": "39",
+      "recordId": "minister_李斯_2004010747",
+      "sourceSha256": "df610b2b9918464da095851c50169ec0041c28a91c352147b82f0cad88039fa4",
+      "passed": true
+    },
+    {
+      "slug": "40",
+      "recordId": "minister_于謙(名臣)_924336368",
+      "sourceSha256": "2e3403d73b05994393d9f520f46f546dcd2cea610eb6a1d62dcb42e54b6b9486",
+      "passed": true
+    },
+    {
+      "slug": "41",
+      "recordId": "minister_謝安_2004292326",
+      "sourceSha256": "f1eba37e77830ba13bdfa244a9ccc54da2aa78b995c379672b84ca12affa2391",
+      "passed": true
+    },
+    {
+      "slug": "42",
+      "recordId": "minister_范仲淹_2001455088",
+      "sourceSha256": "5da89c79e3fde65f6813c566a2672ed73768d12f66de0341cd9c2c8214fc709d",
+      "passed": true
+    },
+    {
+      "slug": "43",
+      "recordId": "minister_朱鎔基_1995149885",
+      "sourceSha256": "55d1111d5572eb5cc5ed7a0cdd21dc66b122ef79a1fa54b08deb65c76fb9d968",
+      "passed": true
+    },
+    {
+      "slug": "44",
+      "recordId": "minister_劉基_2003842411",
+      "sourceSha256": "339d2a7da1fea1a94fc0e2aaf2e76b9f1f68479d3bc6ba4e0239a9956c91dc50",
+      "passed": true
+    },
+    {
+      "slug": "45",
+      "recordId": "minister_張廷玉_1992775117",
+      "sourceSha256": "d3373fb029ab5ea6d4e2a8115151dc9a374e79c7f6797917c9a0f8665e277d3d",
+      "passed": true
+    },
+    {
+      "slug": "46",
+      "recordId": "minister_霍光_2004384438",
+      "sourceSha256": "cc648de4adafd4b7e4189cf696bfa287a77a40a29e15e5de912408c64c6abbe1",
+      "passed": true
+    },
+    {
+      "slug": "47",
+      "recordId": "minister_張之洞_1992641166",
+      "sourceSha256": "e5a5b97c1269db76ff0a7c90f6d3e1c2b27ee7a94d904873e9d668b88953a7fd",
+      "passed": true
+    },
+    {
+      "slug": "48",
+      "recordId": "minister_子產_2003919532",
+      "sourceSha256": "bc784cfc3d0cc0aaeb30e97d9a5ac8ff1652913116cdd8b3508db9d385e0705d",
+      "passed": true
+    },
+    {
+      "slug": "49",
+      "recordId": "minister_陳雲_2004397497",
+      "sourceSha256": "d769317e5706a3f6bcee7fa5ee41df19914c0bf2f421d8afc56216a6fa47d969",
+      "passed": true
+    },
+    {
+      "slug": "50",
+      "recordId": "minister_徐光啟_1992746284",
+      "sourceSha256": "3a296294f29eb396ee87d8d160a78de72fe426ebfa4ccb240783a9daa7f50d1b",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": "dynasty-batch50-actual-capture",
+  "schemaVersion": 1,
+  "provider": "ChatGPT web",
+  "recordId": "emperor_乾隆帝_287167826",
+  "slug": "07",
+  "task": "analysisStats",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T22:24:39.830Z",
+  "requestSha256": "7fc6982d17e8695d08fd7f2392a74e93fe7e4dd751359994ff778a328c2f5eb1",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "0b8acd1c69ebe1883d4f60f844d535debac0866b1d6a06282af3913b39b1ab0c",
+  "promptSha256": "3ce74100486c8c3c761cdb0662a89e0331957099061ec86afd43907e4ba5fa25",
+  "sourcePackageSha256": "43bb377f0311ea432716e624461a1b626ae783739e03d90ecbeba47b59d68d59",
+  "preservedDeepSha256": "d4652a550667021509657e2f6c19a0d73ade63ca2e9a433d4e337bb68787ac75",
+  "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+  "renderedOriginalSha256": "2dfb9b158a89ae02853edf92d042d290741529e292e3efc7d1b204ffab9b477d",
+  "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+  "originalPromptVerified": true,
+  "rawResponseFile": "analysis-batch-50/drafts/07.analysisStats.raw.md",
+  "rawResponseSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b",
+  "responseFile": "analysis-batch-50/drafts/07.analysisStats.response.md",
+  "responseSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b",
+  "fieldsHashes": {
+    "analysis": "48ecf6c540c25cacb995c6bf59caf158ea9a92a212fdda659ab3ed6098245fdd",
+    "stats": "1306aa9a576ca4a478e2c421e7244ec61f66b9b5b56baa8a86d7f0217c2a8192",
+    "statsAnalysis": "73b7ab0235d684851a7da480510569a1b97429054c263734600890c3873f4f4c"
+  },
+  "webSearchPerformed": true,
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "file": "analysis-batch-50/drafts/07.analysisStats.search-evidence.txt",
+    "sha256": "c64aaa4e1b13af36ba212ac7268acc8bc4029a0574daa9dfcc76915c8d3e889b",
+    "visibleSearchCount": 23,
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 23 個網站"
+  },
+  "removedCardLines": 0,
+  "composition": "Actual browser clipboard retained. Only known ChatGPT export formatting normalized; transport metadata split mechanically. Scores and prose are neither authored nor rewritten.",
+  "referencePath": "analysis-batch-50/stats-reference.v1.json",
+  "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135"
+}

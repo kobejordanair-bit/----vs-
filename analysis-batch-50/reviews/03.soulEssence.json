@@ -1,0 +1,177 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_康熙帝_283469836",
+  "task": "soulEssence",
+  "reviewedOn": "2026-10-10",
+  "reviewer": "Codex source QA of actual ChatGPT web capture",
+  "passed": true,
+  "manuscriptFile": "analysis-batch-50/drafts/03.soulEssence.response.md",
+  "manuscriptSha256": "06b65a0ef31c018cdfa494499080c44ed6594cc84f4cc4d78e742836d32d371f",
+  "rawResponseFile": "analysis-batch-50/drafts/03.soulEssence.raw.md",
+  "rawResponseSha256": "49985633905099a6adc1bc132154a20056c026da07ac80510da1cc55285cebbb",
+  "sourcePackageFile": "analysis-batch-50/sources/03.md",
+  "sourcePackageSha256": "9e07de93bfc74c8d2145553b3ca9df6bb3d2383e874026e224b72598ec4cbd1a",
+  "soulEssenceFile": "analysis-batch-50/drafts/03.soulEssence.md",
+  "soulEssenceFileSha256": "fb38c3ea0a231297c5b1e3b5e14e157ac8489c595aaf68ff1c1cc9b779934072",
+  "soulEssenceFieldSha256": "b1ffcecf6fcfc6e12f60909709469f19d61bfa7bbab1d14f1da484816be24da3",
+  "webSearchEvidenceSha256": "f67cabb229a042b30dbd22151700c2131bba089bff6505ea73779a53427164f8",
+  "analysisContextSha256": "e1ebb8318122ed1f723fee5b364c58a7b7dc45d6863be0efc8a816d29cfeb321",
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "《清史稿》卷七〈聖祖本紀二〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B77",
+      "locator": "康熙二十六年三月太和門陳得失，第238行；二十二年臺灣鄭氏降與封爵，第138–153行；三十三年河工與于成龍、王騭、董訥，第398–399行；三十五年親征及費揚古昭莫多，第448–454行；尼布楚與多倫諾爾，第302、337行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《康熙朝實錄》卷二三四",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B234",
+      "locator": "康熙四十七年十月朔儲位成算不告，第123行；諸子結黨論，第134行；鎮厭案的供詞與官方調查，第171行；南苑行圍返宮及召見胤礽，第178–185行；允禔幽禁與爵位處置，第193–194行；復儲裁奪及勞之辨保奏，第203–204行；議舉儲君，第219行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《清史稿》卷二四九〈鰲拜傳〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B7249",
+      "locator": "鰲拜結黨專擅與干預任官，第255–260行；康熙八年三十罪及免死禁錮，第262行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《康熙朝實錄》卷一六九",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B169",
+      "locator": "康熙三十五年正月兵員、駝馬負重、糧車與孫思克西路會軍，第116–140行；補五百糧車，第155行；親征決意及回述1690患病未親至，第177行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《康熙朝實錄》卷二三三",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B233",
+      "locator": "康熙四十七年九月廢儲諭旨與皇权唯一、祖業民生，第120行；異常言行的當時官方陳述，第147、164、169行；幼年詩書與儒學教育、禁止結黨，第169–174行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《清史稿》卷八〈聖祖本紀三〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B78",
+      "locator": "康熙四十七年首次廢儲、第326行；四十八年復立、第342行；五十一年再廢、第434行；六十一年火耗、軍需與地方虧空、第709行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《康熙朝實錄》卷一三一",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B131",
+      "locator": "康熙二十六年十二月初一步詣天壇、親撰祝文及讀時流淚，第116行；侍疾、臣下勸休與拒離，第130、134行；孝莊崩及祖母撫育陳述，第151–153行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《康熙朝實錄》卷二三六",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B236",
+      "locator": "康熙四十八年三月復立告天文：患病、鎮魘、父子關係與再察子職，第132行；復授冊寶，第134行；皇子封爵及帝本人疾病回述，第135–136行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《康熙朝實錄》卷二五一",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B251",
+      "locator": "康熙五十一年十一月再廢祭告文與父子之恩、祖業責任，第142行；廢黜詔書及禁錮，第186行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Exact cited URL actually opened with the web tool; identified relevant annal/biography passages read. Regnal chronology, official speech and retrospective editorial narrative distinguished from the author’s personality interpretation. No claim of full-volume manuscript collation or independent confirmation of every accusation in an imperial edict."
+    },
+    {
+      "title": "《清史稿》卷六〈聖祖本紀一〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B76",
+      "locator": "康熙十二年撤藩，第406–422行；十四年十二月立胤礽，第470行；十五年六月王輔臣降、復官及靖寇將軍，第482行；二十年雲南平，第609行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Supplementary original annal actually reopened for Wang Fuchen’s restoration and the early heir appointment; withdrawal and war ending also checked during this person’s prior analysis review. The manuscript’s single link labelled volumes six and seven points to volume seven; this supplement verifies the adjacent volume-six claims without rewriting the manuscript."
+    }
+  ],
+  "checks": [
+    {
+      "id": "capture-binding",
+      "passed": true,
+      "detail": "Actual response, preserved raw, frozen source package, visible search evidence and accepted analysis context independently SHA-256 verified. Trimmed extracted soul field matches capture field hash; removing only the completion marker reproduces the body."
+    },
+    {
+      "id": "all-manuscript-links",
+      "passed": true,
+      "detail": "All nine unique Markdown source URLs actually opened and their relevant passages read; supplementary volume six resolves the combined-volume link label."
+    },
+    {
+      "id": "seven-soul-fields",
+      "passed": true,
+      "detail": "Full actual manuscript read with the seven required headings in order: 說話邏輯、壓力反應、核心驅動、慣性盲點、情感結構、參照系、內在裂縫. Sections use concrete individual events and culminate in the father/ruler conflict."
+    },
+    {
+      "id": "speech-and-reserved-decisions",
+      "passed": true,
+      "detail": "1687 demand for candid ministerial advice and 1708 undisclosed heir decision / exclusive final裁奪 are explicit in the cited annal and edicts. The synthesis is marked inference rather than invented dialogue."
+    },
+    {
+      "id": "ao-bai-and-campaign-roles",
+      "passed": true,
+      "detail": "1669 handling and clemency match the biography. 1690 illness is correctly distinguished from the 1696 personal middle-route command; western army and actual battlefield roles remain assigned to Feiyanggu."
+    },
+    {
+      "id": "surrender-and-core-drive",
+      "passed": true,
+      "detail": "1673–1681 war, 1676 Wang Fuchen restoration and 1683 Zheng/Liu surrender honors verified. The interpretation of submission to central order does not falsely assert every rebel was spared or every rival eliminated."
+    },
+    {
+      "id": "riverwork-and-fiscal-limit",
+      "passed": true,
+      "detail": "1694 royal criticism of Yu Chenglong’s accusations, actual official sanctions, and 1722 rejection of increased fire-loss levies amid military/corruption deficits match. Institutional insufficiency is the author’s historical interpretation, not a claim that no delegation ever occurred."
+    },
+    {
+      "id": "xiao-zhuang-emotion",
+      "passed": true,
+      "detail": "Regnal year 26, lunar twelfth-month Tian Tan prayer, requested transfer of lifespan, tears, personal bedside attendance and recollection of childhood care directly appear in volume 131. The author’s attachment inference is anchored in these statements rather than an invented private scene."
+    },
+    {
+      "id": "nanyuan-recall-and-summons",
+      "passed": true,
+      "detail": "1708 Nanyuan hunting, recollection of former outings with the crown prince and other sons, early return in illness and grief, and actual summons / meeting correspond to volume 234."
+    },
+    {
+      "id": "restoration-and-second-deposition",
+      "passed": true,
+      "detail": "1675 appointment; 1708 first deposition; 1709 formal restoration; 1712 second deposition retain distinct dates. Volumes 233/234/236 describe the emperor’s contemporary illness / witchcraft explanation; the manuscript expressly attributes it to that official explanation rather than asserting supernatural causation."
+    },
+    {
+      "id": "education-and-inner-conflict",
+      "passed": true,
+      "detail": "Early instruction, Zhang Ying / Xiong Cilu, imperial expectations and threats to dynastic trust are directly recorded. Father-versus-ruler tension and hunting / encirclement analogy remain labelled推斷 or詮釋 and are not treated as literal psychological diagnoses."
+    },
+    {
+      "id": "actual-search-evidence",
+      "passed": true,
+      "detail": "Capture records actual ChatGPT web searching of 11 websites with preserved evidence SHA. Search count is not conflated with the independent source reading undertaken here."
+    }
+  ],
+  "nonBlockingNotes": [
+    {
+      "id": "combined-volume-label",
+      "detail": "The core-drive citation label names 清史稿 volumes six and seven while its URL opens volume seven. Actual claims from volume six are verified in the supplemental checked source; no factual correction is required."
+    },
+    {
+      "id": "regnal-calendar",
+      "detail": "1687 is the conventional Gregorian year associated with Kangxi regnal year 26; the narrative then explicitly follows its lunar twelfth-month entry. No Gregorian day conversion or invented exact date is asserted."
+    }
+  ],
+  "disposition": "Accept actual ChatGPT soul manuscript. No material chronological, geographic or role-attribution error found. Preserve the strong personality synthesis and evidence layers.",
+  "reviewScope": "Complete actual seven-field manuscript read. All nine unique cited URLs independently opened and identified historical passages read; one supplemental primary annal checks claims under a combined-volume label. Official imperial allegations and witchcraft explanations are treated as recorded official statements, not independently proven diagnoses. Reviewer has not authored or edited manuscript prose."
+}

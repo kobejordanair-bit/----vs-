@@ -1,0 +1,12 @@
+{
+  "format": "dynasty-frontend-session-fix-deploy",
+  "schemaVersion": 1,
+  "passed": true,
+  "version": "034bf35e-f861-4c54-bcfa-e0caeb1e95f3",
+  "site": "https://dynasty.piamamba.com/play",
+  "fix": "Support signed three-part session token across reload, retaining seven-day TTL and server signature verification",
+  "targetedTestsPassed": 1,
+  "browserVerification": "passed-login-retained-after-reload",
+  "browserCheckedAt": "2026-10-09T20:46:49.108Z",
+  "browserProof": "analysis-batch-50/website-verification.v1.json"
+}

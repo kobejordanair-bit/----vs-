@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "emperor_漢光武帝_80238619",
+  "slug": "01",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "98869fc789ded0aa2e8e88f565e75b493787d4542befdcecb11f4cb26f0dca46",
+  "sourceSha256": "27a6ca705e5440f3fac33227227add48355245e8ba7ddae1098f8d1ee0806c9b",
+  "preservedDeepSha256": "fe868d32cb31d1c14a6a5afe5421861cdce071437ba6e23b832e7271b7fd3295",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/01.analysisStats.prompt.md",
+      "promptSha256": "dc801e91e4b9a4f2e7115651413cb1ca3658f688da1a51aa794d2b43c99c7c50",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "0cb9bd5c94687e5dba47d720a5ceec47e892512d10ac4b1b87907edcf7bbc3de",
+      "marker": "<!-- BATCH50_COMPLETE emperor_漢光武帝_80238619 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN emperor_漢光武帝_80238619 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/01.soulEssence.prompt.md",
+      "promptSha256": "9769ab5da31b75cbff62b546769d0408ba724e3a9f5ca5f7cae5f31584fc1670",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "8639a2f5f7ebff7091301310265023ca37875f08e86e0eb6c99a476c38d2363f",
+      "marker": "<!-- BATCH50_COMPLETE emperor_漢光武帝_80238619 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/01.analysis.md"
+    }
+  }
+}

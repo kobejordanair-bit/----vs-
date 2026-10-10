@@ -1,0 +1,182 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_明成祖_281780435",
+  "task": "analysisStats",
+  "reviewedOn": "2026-10-10",
+  "reviewer": "Codex source QA of actual ChatGPT web capture",
+  "passed": true,
+  "manuscriptFile": "analysis-batch-50/drafts/04.analysisStats.response.md",
+  "manuscriptSha256": "09aacd65bd2b2818a7a1f5c010ac7f68b361434ee02e7e6570e27081e2cd9a93",
+  "rawResponseFile": "analysis-batch-50/drafts/04.analysisStats.raw.md",
+  "rawResponseSha256": "cbac27ed292d43f4cdc972bb426aa16bbeda96af4b9b4c0db8c79e480b883d61",
+  "sourcePackageFile": "analysis-batch-50/sources/04.md",
+  "sourcePackageSha256": "ddc405f5309883137baf906dcaa1b030ef601734c8c5e98a97afbca486f1f1c8",
+  "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+  "fieldsHashes": {
+    "analysis": "b99c970ed80bbad533a9f52296474426b4b6745e8d05d9ae8208e23ec42f76e2",
+    "stats": "e5a0e7510c0f50e7885aa2164248f39479b284264aa28eb90d1f3c180be1ff97",
+    "statsAnalysis": "447f35e5339526475460b207e81ff24b8b0d400aca90cfd74f4791f95a0d025a"
+  },
+  "webSearchEvidenceSha256": "a58fd028d99dba61f8687b64982881cd624ef7a940fec9c4c0413b04244a6e67",
+  "stats": [
+    98,
+    90,
+    96,
+    92,
+    90
+  ],
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "《明史》卷五〈成祖本紀一〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B75",
+      "locator": "第127–208行：封燕、就藩、1390征乃兒不花；建文元年至四年真定、永平、大寧、白溝河、東昌、南下南京、金川門、清洗及文淵閣諸臣。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "《明史》卷一四一〈方孝孺傳〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7141",
+      "locator": "第134–143行：拒絕草詔、處死、家人死亡及宗族親友數百人牽連；未把十族敘事當無爭議同時代證據。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "《明史》卷七〈成祖本紀三〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B77",
+      "locator": "永樂十二至二十二年：137十五萬運糧，143–147忽蘭忽失溫，154迎駕遲東宮案，171清江浦，181官糧覆奏，205/217高煦，238黎利反，290–303遷都東廠，317夏原吉，361/365/379–384後三次北征及榆木川。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "万依〈論朱棣營建北京宮殿、遷都的主要動機及後果〉，故宮博物院",
+      "url": "https://www.dpm.org.cn/building/talk/224150.html",
+      "locator": "原站PDF掃描紙本頁52–61，全文及註釋視讀；54–58北部威脅與宮殿決策、政治軍事及次要熟悉感/合法性動機；59–60工程和晚年北征的成本；61引文註釋。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "public_original_scan_pdf_https_download_and_local_visual_read",
+      "readScope": "All ten original scanned pages actually rendered and visually read; landing page has no extractable article body. Named author interpretation distinguished from an imperial statement of sole motive.",
+      "scanUrlPattern": "https://img.dpm.org.cn/Uploads/pdf/2795/T000{52..61}_00.pdf",
+      "localReadingEvidenceDirectory": "tmp/pdfs/04-mingchengzu"
+    },
+    {
+      "title": "《明史》卷三〇四〈宦官一·鄭和〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7304",
+      "locator": "第147–161行：永樂宦官權力、1405首航、舊港陳祖義、錫蘭山、永樂六航與宣德再航、七奉使及軍費耗費。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "Ian Chapman，美國國會圖書館〈Yongle Encyclopedia Volumes Fully Digitized〉（2023-04-20）",
+      "url": "https://blogs.loc.gov/international-collections/2023/04/yongle-encyclopedia-volumes-fully-digitized/",
+      "locator": "原文第238–244行：1403開始、1404初稿、1405–1408擴編，22,937卷、11,095冊及內容；第253–254行原本與1567副本。",
+      "type": "official_institution",
+      "checked": true,
+      "readScope": "Original librarian-authored publication history paragraphs actually opened and read; juan chapters distinguished from bound ce volumes."
+    },
+    {
+      "title": "《明史》卷六〈成祖本紀二〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B76",
+      "locator": "136北京，166高熾太子，194首航，217–245朱能/張輔/沐晟征安南及交阯布政司，219營建决策，319–328第一次北征，347宋禮會通河，355五覆奏，377禁中官。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "故宮博物院〈永樂皇帝〉",
+      "url": "https://www.dpm.org.cn/court/lineage/226257.html",
+      "locator": "原站生平主文：靖難、即位、1406/1420/1421北京建設遷都、文淵閣、六次下西洋及成祖廟號後改；附表不優先於本紀具體日期。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Original biographical main body actually fetched and read. Web tool failed on this host; original public HTTPS retrieval succeeded."
+    },
+    {
+      "title": "《明史》卷九〈宣宗本紀〉（補核1427撤軍）",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B79",
+      "locator": "宣德二年，第193–206行：柳升覆軍、王通棄交阯與黎利盟，十一月悉召文武吏士還；與朱棣1424死年分離。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "《明史》卷三二一〈外國二·安南〉（補核政策後果）",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7321",
+      "locator": "第154–170行：持續反抗、採辦激變、黎利反後剿撫及宣宗撤軍；以作者立場的敘事核事件，不照搬交人好亂等立場作人格事實。",
+      "type": "primary_text",
+      "checked": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "actual-capture-and-frozen-binding",
+      "passed": true,
+      "detail": "Full normalized response and all five score reasons read. Response, raw, source package, reference, search evidence and all extracted field SHA-256 values recomputed against capture. No prose or scores edited."
+    },
+    {
+      "id": "all-manuscript-links",
+      "passed": true,
+      "detail": "All eight unique Markdown URLs actually accessed and read at recorded scope. Museum biography through original HTTP200 body; museum paper through all ten rendered original PDF scan pages. Two supplementary sources verify posthumous chronology."
+    },
+    {
+      "id": "early-life-and-jingnan",
+      "passed": true,
+      "detail": "1370 title,1380 residence,1390 campaign,1399–1402 struggle, battlefield risks, Zhang Yu death at Dongchang, march on南京 and gate actors match volume5. Four years denotes inclusive years, not four full elapsed calendar years."
+    },
+    {
+      "id": "purge-and-legitimacy",
+      "passed": true,
+      "detail": "Fang Xiaoru refusal and hundreds of clan/friend victims match volume141. Ten-clan narrative not stated as settled. Legitimacy anxiety explicitly interpretation from acts, not secret testimony."
+    },
+    {
+      "id": "capital-and-logistics",
+      "passed": true,
+      "detail": "1403 Beijing designation,1406 palace decision,1420 completion/proclamation and1421 formal move match annals.1411 Song Li Huitong and1415 Qingjiangpu match dated entries. Museum author supports military security centrality, additional political motives and logistical costs."
+    },
+    {
+      "id": "five-campaigns-and-costs",
+      "passed": true,
+      "detail": "1410/1414/1422/1423/1424 campaigns,1414 Mahamu and deployment, fifteen万 carriers,1421 minister imprisonment,1424 unsuccessful search and a contingent returning with no food, then Yumuchuan death, match volumes6/7. Draft correctly says partial troops."
+    },
+    {
+      "id": "voyages-and-cultural-project",
+      "passed": true,
+      "detail": "Volume304 separates Zheng He Old Port/Ceylon actions from imperial authorization and six Yongle from seventh Xuande voyage. Library of Congress verifies1403 start,1408 completion and22,937卷/11,095冊; no chapter/physical volume inversion."
+    },
+    {
+      "id": "annam-and-posthumous-outcome",
+      "passed": true,
+      "detail": "1406 commanders,1407 annexation,1418 Le Loi rebellion verified. Supplement volume9 verifies1427 recall under Xuande after Zhu Di death. Analysis evaluates policy consequence without assigning personal command in posthumous defeats."
+    },
+    {
+      "id": "central-power-and-succession",
+      "passed": true,
+      "detail": "1402 Wenyuan officials,1420 Eastern Depot,1404 crown prince,1414 East Palace arrests,1416/17 Gao Xu restraint and1415 revised judgment match primary records. Institutional risks not treated as sole direct cause of all later eunuch events."
+    },
+    {
+      "id": "five-dimensions-and-benchmarks",
+      "passed": true,
+      "detail": "Stats remain[98,90,96,92,90], each explained. Named Ming Taizu, Tang Taizong, general Zhu Di, Northern Wei Xiaowen, Qin Shihuang and Han Gaozu scores match frozen reference; S- retained. Scoring recognized as role-model evaluation."
+    },
+    {
+      "id": "personality-and-modern-analogy",
+      "passed": true,
+      "detail": "Forceful military, geopolitical and personality interpretation retained where grounded. Modern leadership analogy plainly counterfactual; no invented confession or diagnosis presented as history."
+    },
+    {
+      "id": "actual-search-evidence",
+      "passed": true,
+      "detail": "Actual ChatGPT evidence reports 已搜尋14個網站 and matching evidence hash. Reviewer independently read sources; website count alone not used as factual proof."
+    }
+  ],
+  "nonBlockingObservations": [
+    {
+      "id": "combined-annal-link-scope",
+      "detail": "Combined 卷六、卷七 labels link to one volume; both actual URLs are read.1427 independently supplemented with卷9 rather than attributed to Yongle entries."
+    },
+    {
+      "id": "residual-export-labels",
+      "detail": "Standalone 4 Corners of the World and 故宫博物院 labels remain in actual export. No factual contradiction; any display cleanup belongs to mechanical capture policy, not reviewer rewriting."
+    }
+  ],
+  "reviewScope": "Full manuscript and five dimension reasons reviewed; all eight cited URLs plus two supplement sources checked. Museum ten-page scanned paper visually read. Public primary transcriptions not collated to manuscripts. Strong grounded interpretations retained. No private data, credentials, frozen inputs or analysis prose modified."
+}

@@ -1,0 +1,384 @@
+{
+  "format": "dynasty-batch50-modern-source-starts",
+  "schemaVersion": 1,
+  "accessedDate": "2026-10-10",
+  "timezone": "Asia/Taipei",
+  "scope": "公開來源入口與最低限度核讀；不是人物分析、最終文獻查證或分數依據完成宣告。",
+  "method": "web search 發現後逐一實際 open；原始發言、當事人筆記、回憶錄與原創學術研究分別標示。正式機構網址不等於當代原始史料。",
+  "nextStep": "ChatGPT 仍須實際搜尋、打開來源並核讀需要的完整段落；引用具體主張時給直接網址、卷頁或文電日期。",
+  "records": [
+    {
+      "slug": "16",
+      "name": "林彪",
+      "id": "general_林彪_306298218",
+      "sources": [
+        {
+          "title": "遼沈戰役",
+          "url": "https://www.dswxyjy.org.cn/BIG5/n/2015/0415/c244520-26848188.html",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "official_history_with_document_citations",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀正文中 1948 年攻錦州決策、10 月 3–4 日往來電報與戰役部署段；未調閱被引用文集的原頁。",
+          "minimalSupportedClaim": "官方戰史記述林彪的攻錦、攻長選擇及與軍委的分歧，並指出錦州攻城與遼西圍殲的部署。",
+          "citationLocator": "網頁正文第 3–7 段；所引《中共中央文件選集》第 17 冊，1991 年版，頁 373–374。",
+          "gptSearchQuestion": "實際查閱 1948 年 10 月 3 日林彪電與 10 月 4 日軍委復電，區分戰略目標形成與戰役執行的個人貢獻。"
+        },
+        {
+          "title": "也论一九四八年卫立煌与中共的关系",
+          "url": "https://www.dswxyjy.org.cn/n/2015/0902/c219021-27542253.html",
+          "author": "李寶明",
+          "institution": "中共中央黨史和文獻研究院；原刊《中共黨史研究》",
+          "sourceType": "original_scholarly_research",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀摘要及第一節中林彪围城打援、長春作戰顧慮、衛立煌應對的史料引用；網頁有續頁，未宣稱全文已核讀。",
+          "minimalSupportedClaim": "作者依作戰資料反駁衛立煌故意幫助中共的簡化說法，提供林彪面對有實際應對能力對手的分析。",
+          "citationLocator": "第一節；引《遼沈戰役》1993 年版頁 53、72–74，及《毛澤東軍事文集》第 4 冊。",
+          "gptSearchQuestion": "核讀續頁與敵我双方文電，評估林彪的判斷如何受對手部署、補給和兵力限制，而不是把勝利只歸因於單人天才。"
+        },
+        {
+          "title": "中国共产党中央委员会关于建国以来党的若干历史问题的决议（官方電子書第 18 頁）",
+          "url": "https://ebook.dswxyjy.org.cn/storage/files/20220804/2c4c659ad7ba96af1727150ee496e02772340/files/basic-html/page18.html",
+          "institution": "中共中央黨史和文獻研究院電子書",
+          "sourceType": "primary_official_resolution_republication",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "僅核讀電子書第 18 頁；OCR 有數字與字形錯誤，未核原圖，未核後續九一三段。",
+          "minimalSupportedClaim": "1981 年官方決議在回顧文革起因時，明列林彪助長相關政治錯誤的角色。這是 1981 年官方評價本身的證據。",
+          "citationLocator": "第 18 頁，文革十年標題前的一段。",
+          "gptSearchQuestion": "實際打開決議後續文革與 1971 年事件各頁，另查可公開的原始政治文獻，區分官方定性、事件可證實部分與未解細節。"
+        }
+      ]
+    },
+    {
+      "slug": "21",
+      "name": "粟裕",
+      "id": "general_粟裕_306475725",
+      "sources": [
+        {
+          "title": "军事家粟裕",
+          "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423732-30947258.html",
+          "author": "關泠、金立昕",
+          "institution": "中共中央黨史和文獻研究院；作者任職軍事科學院軍事百科研究所",
+          "sourceType": "institutional_authored_military_history",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀作者、生平與作戰段落；頁面有完整軍事履歷和著作資訊。未逐項回查所有戰果數字。",
+          "minimalSupportedClaim": "記述粟裕由基层軍職成長，蘇中、孟良崮、豫東等指揮經歷及 1948 年黃淮決戰建議。",
+          "citationLocator": "紅軍基层干部與華東戰區主將兩節；文末記原刊《百年潮》2017 年第 8 期。",
+          "gptSearchQuestion": "查粟裕同期軍職與電報，具體區分陳毅、粟裕、軍委和淮海總前委的職責；核查 1958 年批判與後續平反材料。"
+        },
+        {
+          "title": "粟裕“斗胆直陈”二三事",
+          "url": "https://www.dswxyjy.org.cn/n/2015/0423/c244523-26891901.html",
+          "author": "劉華建",
+          "institution": "中共中央黨史和文獻研究院；原刊《世紀風采》",
+          "sourceType": "authored_historical_article_with_document_dates",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀 1946 年蘇中内線建議與 1948 年黄淮決戰建議；稱頌性引語未另核原始出處。",
+          "minimalSupportedClaim": "給出粟裕向上級提出不同作戰方案的具體時點，支持分析其獨立判斷與組織內溝通。",
+          "citationLocator": "三次斗膽直陳一節，1946 年 6 月 27／29 日及 1948 年 4 月底–5 月初。",
+          "gptSearchQuestion": "上網找相關電報原文與回憶錄核對日期；避免使用缺原出處的名將讚語來充當分數證據。"
+        },
+        {
+          "title": "大智大勇 奇中取勝——回憶解放戰爭時期粟裕大將二三事",
+          "url": "https://www.dswxyjy.org.cn/BIG5/n1/2019/0228/c423732-30918104.html",
+          "author": "季清明",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "participant_recollection",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀作者 1943–1948 年身邊工作身份說明、前線指揮與孟良崮門板故事段；不是同期筆記。",
+          "minimalSupportedClaim": "一名身邊工作人員回憶粟裕的材料閱讀、前線作風與生活行為，可用於描寫其人物特徵。",
+          "citationLocator": "作者身份說明與孟良崮指揮所段。",
+          "gptSearchQuestion": "另查具年份的年譜、戰地記錄交叉核對回憶故事；文中他人評語屬轉述，需要查原出處。"
+        }
+      ]
+    },
+    {
+      "slug": "22",
+      "name": "彭德懷",
+      "id": "general_彭德懷_903329142",
+      "sources": [
+        {
+          "title": "為什麼要寫信給毛主席",
+          "url": "https://www.dswxyjy.org.cn/BIG5/n/2015/0610/c244516-27134656.html",
+          "author": "彭德懷",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "primary_personal_notes_excerpt_republication",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀編輯說明與寫信動機、工農比例及經濟速度段；網站說明來自 1959 年 7–8 月筆記，僅為節錄，非 7 月 14 日信全文。",
+          "minimalSupportedClaim": "彭本人記述向毛報告所見經濟問題的動機，同時仍在當時政治框架內肯定大躍進的部分做法。",
+          "citationLocator": "編輯星號說明與其後前兩段。",
+          "gptSearchQuestion": "實際搜尋 1959 年 7 月 14 日信全文及《彭德懷自述》版本，具體寫出他敢言的内容與當時認識的限度；另查抗美援朝軍事原始資料。"
+        },
+        {
+          "title": "风云突变的庐山会议",
+          "url": "https://www.dswxyjy.org.cn/n/2015/0610/c244516-27134689.html",
+          "author": "萬毅",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "participant_recollection",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀參會背景、7 月 22–23 日發言與現場反應段；未另核會議简報和筆記原件。",
+          "minimalSupportedClaim": "參與者描述對彭意見的討論如何轉成批判，也描述作者自身支持彭後受到的牽連。",
+          "citationLocator": "7 月 22 日小組發言及 7 月 23 日毛講話的段落。",
+          "gptSearchQuestion": "與同期会议文献、彭笔记及 1978 年平反材料互證；軍事評分另用各次戰役的勝敗、後勤和指揮資料，不從敢言直接推高統率。"
+        }
+      ]
+    },
+    {
+      "slug": "25",
+      "name": "朱德",
+      "id": "general_朱德_306295133",
+      "sources": [
+        {
+          "title": "《朱德年谱》新编本与朱德研究新成果",
+          "url": "https://www.dswxyjy.org.cn/n1/2019/0621/c423733-31173725.html",
+          "author": "吳殿堯",
+          "institution": "中共中央黨史和文獻研究院；作者為新編年譜主編",
+          "sourceType": "original_editorial_scholarly_research_with_primary_document_excerpt",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀新編範圍、1937 年陳雲信、1938 年朱彭與中央往來電報和日期訂正段；未讀 150 萬字年譜全書。",
+          "minimalSupportedClaim": "主編說明年譜新增原始材料及訂正，包括朱德維護部隊團結、堅持華北部署和中央協商的角色。",
+          "citationLocator": "第三、第五與第六部分；原刊《黨的文獻》2006 年第 6 期。",
+          "gptSearchQuestion": "核 1937 年 6 月 19 日陳雲信與 1938 年 3 月電報；區分總司令制度統率、直接戰役指揮與下級實施，並查第五次反圍剿權限。"
+        },
+        {
+          "title": "红军时期的朱德和毛泽东",
+          "url": "https://www.dswxyjy.org.cn/n/2014/1208/c244523-26167537.html",
+          "author": "劉建",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "family_recollection_with_hearsay_disclosed",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀作者自述 1953 年後生活身份與明說早年軍事故事來自長輩聊天的來源說明。",
+          "minimalSupportedClaim": "朱德家屬記述其晚年與後輩互動、少談自己功勞的生活印象。作者不是 1928 年戰爭現場見證人。",
+          "citationLocator": "作者身份說明與第三段；紅軍故事屬事後轉述。",
+          "gptSearchQuestion": "人格細節可作有來源的回憶描寫；井岡山作戰、戰果及戰術創始歸屬另查同期史料，不能把家屬轉述寫成當場記錄。"
+        }
+      ]
+    },
+    {
+      "slug": "30",
+      "name": "白崇禧",
+      "id": "general_白崇禧_908987622",
+      "sources": [
+        {
+          "title": "白崇禧先生訪問紀錄電子書（正式出版入口）",
+          "url": "https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0",
+          "institution": "中央研究院近代史研究所",
+          "sourceType": "primary_oral_history_publication_catalogue",
+          "status": "opened_metadata_only",
+          "accessedDate": "2026-10-10",
+          "readDepth": "正式入口可開，列上下冊；兩個舊電子書子頁均 404。因此僅查出版入口，沒有讀訪問紀錄全書。",
+          "minimalSupportedClaim": "中研院近史所正式提供白崇禧訪問紀錄上下冊的出版入口。",
+          "gptSearchQuestion": "搜尋遷移後可讀電子書或紙本頁碼，核白自述的台兒莊、桂系政治、1949 年戰敗與二二八宣慰內容，並與他人材料互證。"
+        },
+        {
+          "title": "個人記事與時代印記：以熊式輝的日記、自傳及回憶錄為例",
+          "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf",
+          "author": "林美莉",
+          "institution": "中央研究院近代史研究所",
+          "sourceType": "original_scholarly_research_with_primary_document_excerpt",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "PDF 可開；核題名、摘要與印刷頁 126–133 賴世璜案，特別是頁 132 訪問紀錄引用與頁 133 國史館原函。47 頁並未逐頁核讀。",
+          "minimalSupportedClaim": "研究對比相互矛盾的當事人回憶與原始函電，提供白崇禧處於北伐派系競爭中的可查證細節。",
+          "citationLocator": "《近代史研究所集刊》121 期（2023 年 9 月），頁 105–151；相关頁 132–133、註 96、99–100。",
+          "gptSearchQuestion": "核白訪問紀錄下冊 1966 年 5 月 7 日第 110 次訪問頁 846，及國史館汪兆銘史料 118-010100-0005-003；避免把一方回憶當唯一結論。"
+        },
+        {
+          "title": "滯越軍民之接運來臺（1949–1953）",
+          "url": "https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf",
+          "author": "黃翔瑜",
+          "institution": "國史館",
+          "sourceType": "original_scholarly_research_with_archival_references",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "46 頁 PDF 可開；核摘要及印刷頁 148–151 湖南戰局、指揮協同與西南撤退；未查所引檔案原件。",
+          "minimalSupportedClaim": "對白崇禧華中系統 1949 年與湖南部隊協同失靈、南退決策提供有檔號的研究線索。",
+          "citationLocator": "頁 149 註 15／17：1950 年 2 月白崇禧報告，總統府檔案號 42828；頁 151 註 22：國軍檔案號 34457。",
+          "gptSearchQuestion": "查青樹坪與衡寶戰役雙方原始部署，核 1949 年敗局歸因；二二八宣慰與軍法責任需另查國史館檔案，不能只寫其宣慰功績。"
+        }
+      ]
+    },
+    {
+      "slug": "36",
+      "name": "周恩來",
+      "id": "minister_周恩來_1990120203",
+      "sources": [
+        {
+          "title": "周恩来总理在亚非会议全体会议上的补充发言",
+          "url": "https://www.fmprc.gov.cn/web/zyxw/200504/t20050415_284641.shtml",
+          "author": "周恩來",
+          "institution": "中華人民共和國外交部",
+          "sourceType": "primary_speech_republication",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀 1955 年 4 月 19 日發言中求同存異、共同基础、宗教與制度差異的段落。",
+          "minimalSupportedClaim": "周在萬隆以共同反殖民經驗作合作基礎，主張保留不同制度與意見而達成共同協議。",
+          "citationLocator": "1955 年 4 月 19 日發言，前半部；網站刊於 2005 年 4 月 15 日。",
+          "gptSearchQuestion": "對照會議紀錄、其他代表與已解密外交文書，說明其化解分歧的實際步驟，而非只重複求同存異四字。"
+        },
+        {
+          "title": "周恩来总理在万隆机场发表的谈话",
+          "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677244/1209_677254/200504/t20050415_9308093.shtml",
+          "author": "周恩來",
+          "institution": "中華人民共和國外交部",
+          "sourceType": "primary_speech_republication",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀 1955 年 4 月 17 日短篇談話全文及網站出版來源說明。",
+          "minimalSupportedClaim": "出席會議前，周公開表達和平合作目標，並提到中國代表團遭受破壞事件的損失。",
+          "citationLocator": "1955 年 4 月 17 日；網站註出自世界知識出版社《萬隆精神 普照大地》。",
+          "gptSearchQuestion": "查克什米爾公主號事件與周行程的原始檔案，核哪些細節為當時記錄，哪些為事後敘述。"
+        },
+        {
+          "title": "周恩来（歷任外交部長）",
+          "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
+          "institution": "中華人民共和國外交部",
+          "sourceType": "official_institutional_biography",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀任職與主要外交活動記述；官方概述不是秘密會談紀錄全文。",
+          "minimalSupportedClaim": "給出其總理、外長任期及日內瓦、萬隆、中美交往等活動的官方履歷。",
+          "gptSearchQuestion": "另查《周恩來年譜》與外交檔案，核其日常行政和文革期間的具體作為與責任，不把官方讚詞寫成已證實心理。"
+        }
+      ]
+    },
+    {
+      "slug": "43",
+      "name": "朱鎔基",
+      "id": "minister_朱鎔基_1995149885",
+      "sources": [
+        {
+          "title": "政府工作报告（2003年）",
+          "url": "https://www.fmprc.gov.cn/web/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2108_675689/200303/t20030320_9288239.shtml",
+          "author": "朱鎔基／國務院",
+          "institution": "中華人民共和國外交部轉刊政府報告",
+          "sourceType": "primary_government_report_republication",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀 1998–2002 年任期回顧、金融與國企改革、下崗背景和財政統計；其自評與成效數字未另與統計局歷史修訂對照。",
+          "minimalSupportedClaim": "末任政府报告明列改革政策、國企職工下崗與金融危機背景，可直接查其施政內容和自我評估。",
+          "citationLocator": "第一部分，過去五年政府工作回顧；外交部發布日 2003 年 3 月 20 日。",
+          "gptSearchQuestion": "上網核分稅制、金融清理和國企改革的政策原件及職工安置代價；將國務院集體績效和朱個人決策分開辨識。"
+        },
+        {
+          "title": "朱镕基总理代表国务院在九届全国人大五次会议上所作的《政府工作报告》",
+          "url": "https://lt.china-office.gov.cn/chn/xwdt/200203/t20020317_2725961.htm",
+          "author": "朱鎔基／國務院",
+          "institution": "中國駐立陶宛外交機構網站",
+          "sourceType": "primary_government_report_approved_text_republication",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀網站關於審議後修改、批准的說明，2001 年回顧及入世第一年、政府職能改革內容。",
+          "minimalSupportedClaim": "正式批准稿列出加入 WTO 後的工作安排及政府職能調整，是施政目標的當時文件。",
+          "citationLocator": "2002 年 3 月 5 日報告、3 月 15 日批准；網站 3 月 17 日刊全文。",
+          "gptSearchQuestion": "查 WTO 的 2001 年中國加入文件和加入後影響研究，核朱的談判角色，並查可具名的講話或訪談支撑其性格描述。"
+        }
+      ]
+    },
+    {
+      "slug": "49",
+      "name": "陳雲",
+      "id": "minister_陳雲_2004397497",
+      "sources": [
+        {
+          "title": "陈云经济思想的几个要点",
+          "url": "https://www.dswxyjy.org.cn/n1/2024/1223/c423731-40387919.html",
+          "author": "朱佳木",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "original_authored_scholarly_interpretation",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀摘要及進口糧食、外貿與特區段；鳥籠比喻雖由搜尋索引顯示，未在本次具體段落核讀中讀到其原始發言全文。",
+          "minimalSupportedClaim": "作者以具時點事件呈現陳的穩定、比例與市場受計畫指導的經濟思想，也描述進口糧食和對特區擴張的態度。",
+          "citationLocator": "外貿與對外開放相關段落；網站刊於 2024 年 12 月 23 日。",
+          "gptSearchQuestion": "實際查 1982 年鳥籠比喻原發言與《陳雲文選》頁碼，評其改革主張和計畫约束的歷史效果，別把後來辯護文章當陳本人原話。"
+        },
+        {
+          "title": "1949—1956年陈云在经济工作中的全局思维",
+          "url": "https://www.dswxyjy.org.cn/n1/2020/0424/c423731-31686912.html",
+          "author": "何雲峰",
+          "institution": "中共中央黨史和文獻研究院；原刊《黨的文獻》",
+          "sourceType": "original_scholarly_research",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀摘要與米棉之戰、物資調度、財政代價的正文段。",
+          "minimalSupportedClaim": "研究呈現陳在物價穩定政策中的跨地區物資、貿易、銀行與財政協調；也指出國家承担運輸差價。",
+          "citationLocator": "第一節，1949–1950 年物價治理相關段落。",
+          "gptSearchQuestion": "找當時中財委文件、物價數據與相關回憶，核上海銀元之戰／米棉之戰的具体先後，評國家調度能力與政策成本。"
+        },
+        {
+          "title": "陈云与中央财经工作领导机构的变迁",
+          "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423911-30913009.html",
+          "author": "張金才",
+          "institution": "中共中央黨史和文獻研究院",
+          "sourceType": "original_scholarly_research_with_institutional_document_citations",
+          "status": "opened_relevant_text",
+          "accessedDate": "2026-10-10",
+          "readDepth": "核讀 1949 年中財委組建、任職與起步工作段；未逐條調閱 138 行網頁所引文獻。",
+          "minimalSupportedClaim": "說明陳的財經权責隨組織變動而改變，提供 1949 年中財委和政務院財委的具体設置。",
+          "citationLocator": "第一節；1949 年 7 月 12 日、10 月 19–21 日任職與成立會議。",
+          "gptSearchQuestion": "查陳的不同時期職權、實際政策采納與政治影響，區分正式職位、幕后影響、國務院執行與他人共同貢獻。"
+        }
+      ]
+    }
+  ],
+  "candidateSourcesNotVerified": [
+    {
+      "personSlug": "22",
+      "title": "激战横城：志愿军如何反客为主",
+      "url": "https://www.81.cn/js_208592/16234728.html",
+      "accessedDate": "2026-10-10",
+      "status": "search_result_only_open_failed",
+      "note": "搜尋有具名作者與《抗美援朝戰爭史》引用，直接 open 失敗；不能當已核讀的軍事查證。"
+    },
+    {
+      "personSlug": "22",
+      "title": "彭德怀（中国军网）",
+      "url": "https://www.81.cn/yljnt_208627/ylml/P/16359999_2.html",
+      "accessedDate": "2026-10-10",
+      "status": "search_result_only_redirect_loop",
+      "note": "搜尋可見軍事指揮文章，直接 open 報重導迴圈；需 ChatGPT 另開可讀版本或同期作戰原文。"
+    },
+    {
+      "personSlug": "30",
+      "title": "白崇禧電蔣中正臺灣事件善後事（國家檔案資訊網）",
+      "url": "https://aa.archives.gov.tw/ELK/SearchDetailed?FullPath=A202000000A%2F0036%2F2020.40%2F1%2F0001%2F023",
+      "accessedDate": "2026-10-10",
+      "status": "search_metadata_only_open_failed",
+      "note": "索引呈現國史館與相關電報題名；未讀檔案影像，不能據此判定二二八事件責任。"
+    },
+    {
+      "personSlug": "30",
+      "title": "二二八事件檔案資料庫（相關白崇禧檔案入口）",
+      "url": "https://228.drnh.gov.tw/index.php?act=Display%2Fimage%2F54767RQXAF-s",
+      "accessedDate": "2026-10-10",
+      "status": "search_metadata_only_open_failed",
+      "note": "搜尋列相關人名；open 失敗，沒有核讀原圖。"
+    },
+    {
+      "personSlug": "30",
+      "title": "淞滬會戰期間的決策與指揮權之問題",
+      "url": "https://ah.lib.nccu.edu.tw/bitstream/140.119/114232/1/45%28165-192%29.pdf",
+      "accessedDate": "2026-10-10",
+      "status": "search_result_only_open_failed",
+      "note": "政大歷史學報 45 期題名與段落見搜尋；PDF 直接 open 失敗，作者與全文未在本次核讀確認。"
+    },
+    {
+      "personSlug": "49",
+      "title": "陈云文选（第三卷）官方電子書",
+      "url": "https://ebook.dswxyjy.org.cn/storage/files/2019/6bb64c72-ac69-4f56-86a3-dd90ee68a70e/flipviewerxpress.html",
+      "accessedDate": "2026-10-10",
+      "status": "official_link_opened_reader_shell_only",
+      "note": "由官方陳雲著作目錄點開，網頁僅讀取器殼；未核書頁，不能宣稱原話頁碼已確認。"
+    }
+  ]
+}

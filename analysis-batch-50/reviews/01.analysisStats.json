@@ -1,0 +1,173 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢光武帝_80238619",
+  "task": "analysisStats",
+  "reviewedOn": "2026-10-10",
+  "reviewer": "Codex source QA of actual ChatGPT web capture",
+  "passed": true,
+  "manuscriptFile": "analysis-batch-50/drafts/01.analysisStats.response.md",
+  "manuscriptSha256": "a39e8347847f3bce6afaaf69dbdef85b27ef25dedda19ba444f2a022c2e43fcb",
+  "rawResponseFile": "analysis-batch-50/drafts/01.analysisStats.raw.md",
+  "rawResponseSha256": "d1fc554cdab4fd4cd8ece3069bda6c2ab5b0130fb65e1b94922e65d1db1c50cc",
+  "sourcePackageFile": "analysis-batch-50/sources/01.md",
+  "sourcePackageSha256": "27a6ca705e5440f3fac33227227add48355245e8ba7ddae1098f8d1ee0806c9b",
+  "referenceFile": "analysis-batch-50/stats-reference.v1.json",
+  "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+  "stats": [
+    98,
+    84,
+    98,
+    96,
+    95
+  ],
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "《後漢書》卷一上〈光武帝紀上〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B71%E4%B8%8A",
+      "type": "primary_text",
+      "locator": "青年農事與尚書學習；更始元年昆陽、劉縯遇害；更始二年河北；建武元年即位，web text lines 113–148",
+      "checked": true,
+      "scope": "Actually opened and read relevant primary-text passages. Kunyang numbers treated as ancient reported figures; collective troop results not converted into individual kill counts. Current canonical text checked; not claiming the fixed-revision URL was fetched successfully."
+    },
+    {
+      "title": "《資治通鑑》卷三十九〈漢紀三十一〉",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7039",
+      "type": "primary_text",
+      "locator": "更始元年昆陽之戰與劉縯遇害，web text lines 126–148",
+      "checked": true,
+      "scope": "Actually read the relevant historical narrative. Treated as a later synthesis of earlier records rather than an independent eyewitness."
+    },
+    {
+      "title": "《後漢書》卷十七〈馮岑賈列傳〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B717",
+      "type": "primary_text",
+      "locator": "馮異傳投效及劉縯死後劉秀悲痛，lines 130–146；岑彭傳朱鮪降與官爵、鄧奉叛及被誅，lines 172–173",
+      "checked": true,
+      "scope": "Actually opened and read relevant passages. Zhu Wei role, pardon, title and surrender checked. Deng Feng revolt in 26 CE and imperial campaign/surrender/execution in summer 27 CE now match the corrected actual manuscript."
+    },
+    {
+      "title": "廖伯源〈試論光武帝用人政策之若干問題〉，史語所集刊61.1（1990）：1–27",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/973/Article/437",
+      "type": "scholarly_primary",
+      "locator": "Publisher article title/author, issue/date and official abstract; web text lines 668–687",
+      "checked": true,
+      "scope": "Official publisher metadata and abstract actually read. Abstract supports continued employment of meritorious officers and Nanyang preference. Full PDF was not read and is not represented as read. Issue uses publisher header, not its conflicting auto-generated citation."
+    },
+    {
+      "title": "廖伯源〈試論光武帝之統御術四事：柔道、人質、遙控諸將與安置降卒、軍事復員〉，史語所集刊61.4（1990）：869–894",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/141/Article/454",
+      "type": "scholarly_primary",
+      "locator": "Publisher article title/author, issue/date and official abstract; web text lines 668–687",
+      "checked": true,
+      "scope": "Exact URL cited in the actual manuscript opened. Official abstract supports military supervision, relatives retained at the capital, remote commands and staged settlement/demobilization. Full PDF was not read and is not represented as read."
+    },
+    {
+      "title": "《後漢書》卷一下〈光武帝紀下〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B71%E4%B8%8B",
+      "type": "primary_text",
+      "locator": "建武六年併省縣，line 132；十二年公孫述覆滅，lines 278–282；十五至十六年度田，lines 338–351；十七至十九年廢后與改儲，lines 366–398；二十一年西域諸國請都護，line 436",
+      "checked": true,
+      "scope": "Actually opened and read the relevant dated entries. Checked 30/36/39/40/41/43/45 CE conversions, participants and policy details. Current canonical text checked; not claiming the fixed-revision URL was fetched successfully."
+    },
+    {
+      "title": "《後漢書》卷十上〈皇后紀第十上〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B710%E4%B8%8A",
+      "type": "primary_text",
+      "locator": "光武郭皇后身世、更始二年婚姻、建武十七年廢后及郭氏待遇，web text lines 137–144；光烈陰皇后，line 149 onward",
+      "checked": true,
+      "scope": "Actually opened and read relevant passages. Marriage in 24 CE, change of empress in 41 CE, royal-dowager status and continued family favor checked; 43 CE heir replacement separately corroborated in the imperial annals."
+    }
+  ],
+  "checks": [
+    {
+      "id": "capture-binding",
+      "passed": true,
+      "detail": "Recomputed raw, normalized response, source package, stats reference and search-evidence file SHA-256; all equal actual capture metadata. No historical prose or score was authored or edited by reviewer."
+    },
+    {
+      "id": "all-manuscript-links",
+      "passed": true,
+      "detail": "All seven unique Markdown source URLs in the actual full manuscript were opened and their relevant primary passages or official article abstracts read; each is represented under checkedSources."
+    },
+    {
+      "id": "kunyang-roles-and-claims",
+      "passed": true,
+      "detail": "23 CE, Wang Feng/Wang Chang guarding, 13-rider breakout, relief recruitment, initial thousand-plus troops, three-thousand assault, Wang Xun death and simultaneous defenders' contribution match the texts. Fake relief letter is supported; ancient troop numbers and collective kills are appropriately distinguished."
+    },
+    {
+      "id": "hebei-unification-and-zhu-wei",
+      "passed": true,
+      "detail": "24 CE defeat of Wang Lang, 25 CE accession at Hao and 36 CE fall of Gongsun Shu match annals. Zhu Wei participated in the brother's death plotting, negotiated through Cen Peng and retained office/title after surrender, matching the biography."
+    },
+    {
+      "id": "deng-feng-revolt-year",
+      "passed": true,
+      "detail": "Corrected actual ChatGPT sentence now explicitly separates revolt in 建武二年 (26 CE) from the imperial campaign, surrender and execution in 建武三年夏 (27 CE), matching the Cen Peng biography."
+    },
+    {
+      "id": "dutian-and-official-penalties",
+      "passed": true,
+      "detail": "39 CE land/census order, 40 CE Zhang Ji and ten-plus governors imprisoned to death, four-province armed uprisings, mutual denunciation/capture and relocation with land/grain match dated annals. Manuscript does not falsely claim complete local penetration or immediate abandonment of reform."
+    },
+    {
+      "id": "meritorious-officers-and-governance",
+      "passed": true,
+      "detail": "Official 1990 article abstracts support continued use of meritorious officials, Nanyang preference, supervision/hostages/remote command and staged demobilization. The article correctly rejects universal retirement and identifies its reliance on public abstracts."
+    },
+    {
+      "id": "economy-frontier-and-succession",
+      "passed": true,
+      "detail": "30 CE reduction of 400-plus counties, 45 CE declined western protectorate request, Guo marriage in 24 CE, replacement in 41 CE and Liu Qiang's requested withdrawal/Liu Yang's accession as heir in 43 CE are supported by the relevant entries."
+    },
+    {
+      "id": "five-dimensions-and-reference",
+      "passed": true,
+      "detail": "Actual scores are [98,84,98,96,95] in 統率/武力/智謀/政治/魅力 order with five substantial reasons. All stated comparison numbers match the captured public reference: 漢高祖95/60/.../100, 唐太宗100/95/98/96/97, 秦始皇與秦孝公政治100. Scores remain evaluative judgments, not purported historical measurements."
+    },
+    {
+      "id": "actual-search-evidence",
+      "passed": true,
+      "detail": "Corrected actual capture search-evidence SHA verified; visible search count 5 websites. First rejected attempt search count 20 and evidence are preserved with verified SHA in the archived attempt. Reviewer independently opened and read all seven manuscript source URLs."
+    },
+    {
+      "id": "style-and-inference",
+      "passed": true,
+      "detail": "Strong historical appraisal, four original sections and modern analogy are retained. Psychological claims are grounded interpretations and the manuscript identifies them as analysis rather than invented interior monologue. No generic disclaimer expansion requested."
+    },
+    {
+      "id": "actual-correction-and-unchanged-remainder",
+      "passed": true,
+      "detail": "Read the entire corrected actual manuscript. Full-response comparison confirms only the one dated sentence changed. Archived eight-file attempt hashes verified. All source URLs, [98,84,98,96,95] and complete five-dimensional reason file are unchanged."
+    }
+  ],
+  "disposition": "Accept the actual ChatGPT corrected manuscript: sole requested historical-year issue resolved; all other text, links and five score explanations unchanged.",
+  "reviewScope": "Complete actual manuscript and five score explanations read. All Markdown source links checked. Full article PDFs and unsuccessful fixed-revision fetches are not claimed as read. Existing deepAnalysis and private userdata were not changed.",
+  "reviewedAt": "2026-10-09T19:24:45.387Z",
+  "resolvedIssues": [
+    {
+      "id": "deng-feng-revolt-year",
+      "severity": "correction_required",
+      "location": "analysis, section 2（二）, paragraph immediately after Zhu Wei reconciliation",
+      "manuscriptSentence": "建武三年（27年），鄧奉因不滿吳漢軍掠奪故鄉而反叛，兵敗投降後，劉秀本有意寬宥，最終仍接受岑彭、耿弇等人勸諫而將其處死。",
+      "finding": "The revolt began under the 建武二年 heading (26 CE); the imperial campaign, surrender and execution occur at 三年夏 (27 CE). The sentence conflates the revolt date with the execution date.",
+      "requiredCorrection": "Ask actual ChatGPT to distinguish the revolt in 26 CE from defeat, surrender and execution in 27 CE. Preserve its analysis and five scores.",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B717",
+      "locator": "岑彭傳, 建武二年 to 三年夏; web text line 173",
+      "status": "corrected_by_actual_chatgpt",
+      "correctedSentence": "建武二年（26年），鄧奉因不滿吳漢軍掠奪故鄉而反叛；建武三年夏（27年），劉秀親征，鄧奉兵敗投降後，劉秀本有意寬宥，最終仍接受岑彭、耿弇等人勸諫而將其處死。",
+      "previousManuscriptSha256": "9771fc045f8821a44a4359555b5744e5337dd353bceb937f1a4f2e27facd1c3c",
+      "previousFailedReviewFile": "analysis-batch-50/attempts/01.analysisStats.1/01.analysisStats.json"
+    }
+  ],
+  "revisionDiff": {
+    "comparisonMethod": "Full response exact equality after replacement of only the one identified dated sentence; comparison did not write or rewrite a manuscript.",
+    "changedHistoricalSentences": 1,
+    "allOtherTextUnchanged": true,
+    "sourceUrlsUnchanged": true,
+    "statsUnchanged": true,
+    "statsAnalysisFileUnchanged": true,
+    "archivedAttemptManifestFile": "analysis-batch-50/attempts/01.analysisStats.1/archive-manifest.json"
+  }
+}

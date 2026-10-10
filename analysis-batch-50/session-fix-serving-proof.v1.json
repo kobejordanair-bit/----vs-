@@ -1,0 +1,12 @@
+{
+  "format": "dynasty-session-fix-serving-proof",
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-09T20:37:27.444Z",
+  "url": "https://dynasty.piamamba.com/play",
+  "status": 200,
+  "servedFrontendMatchesFix": true,
+  "functionSha256": "2993ce6bc422b193735d97489a8433696efff602194afd9110b82cf04b34b133",
+  "browserSessionVerification": "passed-login-retained-after-reload",
+  "browserCheckedAt": "2026-10-09T20:46:49.108Z",
+  "browserProof": "analysis-batch-50/website-verification.v1.json"
+}

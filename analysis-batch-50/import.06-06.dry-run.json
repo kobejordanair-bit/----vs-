@@ -1,0 +1,38 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 3,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "efc06f6f58c6ab0901b3855f5409e1ed49234fd962c1dfdb8f899bbd343c0da6",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "0a024a21aa92c6645bc49fa5dc21f6664636c023c3d32fdf359093eba396c8d2",
+  "plannedAfterSha256": "4eae4c3e9fcf9e2f8026004de9a5f5f08670937f6767765ec82f642c8a54a4ef",
+  "beforeRevision": 5,
+  "plannedAfterRevision": 6,
+  "patchBytes": 2790811,
+  "plannedDocumentBytes": 9709630,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "field": "analysis",
+      "sha256": "26b7b6a9df0c18e849e5eb90d4ad4ddec4a62a86e8eb241bc754a4765fb74acb"
+    },
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "field": "stats",
+      "sha256": "a2971a0807f96afb3c3b1d9891994182b967037ce3941c7349d10568196c6f82"
+    },
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "field": "statsAnalysis",
+      "sha256": "967686a95d483a810b3096023629de01ae5dbc343a3dbeeec9aa9f2578a6f8a7"
+    }
+  ]
+}

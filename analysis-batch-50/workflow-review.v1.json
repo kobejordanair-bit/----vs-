@@ -1,0 +1,93 @@
+{
+  "format": "dynasty-batch50-workflow-review",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T20:36:44.787Z",
+  "userRequestedPause": true,
+  "objectiveComplete": false,
+  "publishedPauseAudit": "analysis-batch-50/pause-audit.v1.json",
+  "findings": [
+    {
+      "id": "duplicate-context-reads",
+      "evidence": "Rendered person PROMPT already includes full deepAnalysis and source packet; the control request also asks separate reads of the same files.",
+      "change": "Read one compiled person packet plus shared benchmarks."
+    },
+    {
+      "id": "separate-person-generations",
+      "evidence": "Current workflow uses one appraisal/stats request and a separate seven-column soul request per person.",
+      "change": "On resume, pilot one combined person request preserving both original PROMPTs and distinct output markers. Target 50 primary requests instead of100, excluding corrections."
+    },
+    {
+      "id": "extra-codex-preparation",
+      "evidence": "Up to four Codex agents were preparing/rechecking sources while the actual ChatGPT writer also searched.",
+      "change": "Extra preparation stopped; one low-effort QA agent with a compact task context handles necessary manuscripts."
+    },
+    {
+      "id": "manual-format-recovery",
+      "evidence": "Observed backslash-escaped markers and multiple search-summary groups triggered repeated manual handling.",
+      "change": "Existing mechanical parsers now handle the observed exports with strict negative checks."
+    },
+    {
+      "id": "wait-for-full-person-before-import",
+      "evidence": "Previously three reviewed analysis fields could not publish until soul was generated.",
+      "change": "Implemented a distinct exact three-field analysis import with unchanged capture/source/CAS/preservation gates."
+    },
+    {
+      "id": "reload-sign-in-loss",
+      "evidence": "Frontend accepted only two-part legacy token while Cloudflare creates a signed three-part token.",
+      "change": "Frontend supports the current signed format and unchanged seven-day lifetime; server verification unchanged."
+    }
+  ],
+  "implemented": [
+    "Stopped extra preparation",
+    "Low-effort single QA agent",
+    "Concise browser capture output",
+    "Mechanical export handling",
+    "Exact three-field partial import",
+    "Imported all19 accepted fields",
+    "Signed session format fix deployed and reload verified in production browser",
+    "One-file combined original-PROMPT packet and one-response split tested and published for07"
+  ],
+  "nextWorkflow": [
+    "Compile person context once",
+    "ChatGPT writes appraisal, five dimensions and soul in one person job with source claim table",
+    "Script checks completeness, source links, score order and exact original-PROMPT bindings",
+    "Low-effort Codex checks precise dates/roles and flagged conflicts using cached primary sources",
+    "ChatGPT corrects specific failed facts only",
+    "Import accepted tasks once; save receipt ledger and backup",
+    "Resume only from missing tasks, never regenerate or overwrite passed outputs"
+  ],
+  "qualityConstraints": [
+    "Original PROMPT and article style retained",
+    "Article length not reduced for savings",
+    "Actual ChatGPT web search retained",
+    "Failed factual reviews never publish",
+    "Existing962-person content and progress preserved"
+  ],
+  "metrics": {
+    "actualChatGPTResponses": 12,
+    "acceptedTaskResponses": 9,
+    "rejectedAttemptVersions": 3,
+    "publishedPeople": 5,
+    "fullyPublishedPeople": 4,
+    "publishedFields": 19
+  },
+  "savingsEstimate": "No percentage promised; measure the next one-person combined pilot before scaling.",
+  "websiteVerification": "analysis-batch-50/website-verification.v1.json",
+  "latestPilotReport": "analysis-batch-50/combined-pilot-report.07.v1.json",
+  "combinedPilot": {
+    "tested": true,
+    "passed": true,
+    "slug": "07",
+    "actualPrimaryRequests": 1,
+    "correctionRequests": 0,
+    "imported": true,
+    "remainingBatchPaused": true
+  },
+  "currentMetrics": {
+    "actualChatGPTResponses": 13,
+    "acceptedTaskOutputs": 11,
+    "fullyPublishedPeople": 5,
+    "publishedPeople": 6,
+    "publishedFields": 23
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "apply",
+  "status": "applied_verified",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 4,
+  "changedFields": 16,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "46515eb471c6b551c6b6923aff93112f98bf8faf2d135f21b831e3976d95c402",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "plannedAfterSha256": "0a024a21aa92c6645bc49fa5dc21f6664636c023c3d32fdf359093eba396c8d2",
+  "beforeRevision": 4,
+  "plannedAfterRevision": 5,
+  "patchBytes": 2766860,
+  "plannedDocumentBytes": 9685679,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "analysis",
+      "sha256": "58d8e723e4659f84daaff086fb0fbfcf55fc685c49ffd73b6d2333e5fa75042f"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "soulEssence",
+      "sha256": "f94792da8489e895f6b0c685c3200c7f41d09dd54f810997a292eeff375395e6"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "stats",
+      "sha256": "6be24d990bb5279f9d9a5d3ce657602ea48307da0dce9a356f0c2d14f4cd23d9"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "statsAnalysis",
+      "sha256": "fde1fafdf080fb58c98ac77fe3e6851339d1ff1073e1678098a0a8c2dd79b53a"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "field": "analysis",
+      "sha256": "2f26c5ba50ea18561803963c8cc6fb394a1b1fca42616ce0a668b390041cd2ba"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "field": "soulEssence",
+      "sha256": "cd623fcc5c9060409d5b4933dc529eae07862ef27b23058bca13dabd4f6f1f54"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "field": "stats",
+      "sha256": "5c2ed376c8e634662ffb71097fb52cc305945e77ee1394eadc696ded418a4bac"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "field": "statsAnalysis",
+      "sha256": "b0eaba76b92e6e663b2e5e91d7a7b8044038b3afebec5bbed0cc2996fce62f76"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "field": "analysis",
+      "sha256": "90aa916d5392727ecdc5b69e10899612c63d8e0e2d377cab9985779de4ab95db"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "field": "soulEssence",
+      "sha256": "b1ffcecf6fcfc6e12f60909709469f19d61bfa7bbab1d14f1da484816be24da3"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "field": "stats",
+      "sha256": "2b28d18e0a7fb9bc7041cbea0f2bdad34b084258cad9c008494cca26e03d7579"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "field": "statsAnalysis",
+      "sha256": "6bec77a26d485ab78f9dc41d7f36f13402c52db94121fbb8c5d6b7c0d2774722"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "field": "analysis",
+      "sha256": "b99c970ed80bbad533a9f52296474426b4b6745e8d05d9ae8208e23ec42f76e2"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "field": "soulEssence",
+      "sha256": "5f88009e48ac47b16554da036a73e4292f4d79470663a2a2558a070bb6227b43"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "field": "stats",
+      "sha256": "e5a0e7510c0f50e7885aa2164248f39479b284264aa28eb90d1f3c180be1ff97"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "field": "statsAnalysis",
+      "sha256": "447f35e5339526475460b207e81ff24b8b0d400aca90cfd74f4791f95a0d025a"
+    }
+  ],
+  "conflicts": 0,
+  "writeAttempted": true,
+  "writeSucceeded": true,
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 5,
+    "afterSha256": "0a024a21aa92c6645bc49fa5dc21f6664636c023c3d32fdf359093eba396c8d2",
+    "unaffectedBeforeSha256": "3f84b52abf84340e91b875b46a4299a16d495759d413cdd72813ee435931bc9e",
+    "unaffectedAfterSha256": "3f84b52abf84340e91b875b46a4299a16d495759d413cdd72813ee435931bc9e"
+  },
+  "rawExtrasPreserved": true
+}

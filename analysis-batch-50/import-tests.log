@@ -1,0 +1,21 @@
+✔ sealed manifest fixes exactly 50 original IDs, 15/20/15 types and four missing fields (3.3455ms)
+✔ one to five complete persons plan only four fields each, preserving every existing field and report privacy (104.9644ms)
+✔ empty, oversized, duplicate, foreign and incomplete chunks are rejected before networking (84.483ms)
+✔ all 50 original inputs, full source hash and 962 library identity are checked before any read (21.1288ms)
+✔ apply saves full before and after snapshots and compatible contracts retain unknown document fields (66.1758ms)
+✔ CAS retry merges unrelated player progress and previously completed people without losing it (142.6285ms)
+✔ a changed live target or newly populated field stops a retry instead of overwriting it (233.6158ms)
+✔ approval binds source, base, manifest and chunk and backup failure prevents every write (224.9502ms)
+✔ unknown write outcomes are never automatically retried or logged with private errors (133.3708ms)
+✔ readback detects any unaffected document edit, wrong target or newer revision without rollback (68.3262ms)
+✔ source size, unverified provenance and malformed stats are rejected locally (329.3826ms)
+✔ CLI cannot change manifest scope and requires explicit apply, report and backup arguments (0.3587ms)
+✔ all original article sections and five matching ordered reasons must be complete before a read (98.122ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1631.9659

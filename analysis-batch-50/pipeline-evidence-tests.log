@@ -1,0 +1,39 @@
+✔ mechanical split retains the exact four-chapter prose, scores, reasons and seven soul sections (13.821ms)
+✔ first-line JSON rejects extras, duplicate aliases, fractions, strings and out-of-range values (4.408ms)
+✔ completion and reason separators must be unique, standalone, last and bound to the correct ID (3.1473ms)
+✔ missing article sections, score discrepancies and unlabeled soul interpretations are rejected (3.5271ms)
+✔ capture binds public prompt, source, preserved deep analysis, reference and allowed file paths (25.7081ms)
+✔ actual search UI count is necessary and invalid conversation URLs are rejected (24.3383ms)
+✔ known UI formatting is normalized while original clipboard hash remains distinct (4.2317ms)
+✔ assembly rejects stale raw, clean captures, search receipts and split article files (34.8358ms)
+✔ forged clean prose cannot pass by updating clean and review hashes while retaining actual raw export (4.3394ms)
+✔ QA must pass without material issues and bind both raw and complete clean manuscripts (33.1821ms)
+✔ typed checked primary sources require HTTPS, title, locator and coverage of every manuscript link (28.6887ms)
+✔ soul captures remain bound to the exact reviewed appraisal context (10.4113ms)
+✔ chunks reject empty, six-person, duplicate or incomplete-person submissions (6.9369ms)
+✔ all 100 frozen prompts reproduce the original templates, rendered prefixes and full staged suffixes (140.5398ms)
+✔ forged template and rendered hashes cannot pass as hash-shaped metadata (21.4167ms)
+✔ replacement original prefixes or staged suffixes are rejected even after updating the claimed prompt SHA (18.627ms)
+✔ captured and reviewed fields import together after a CAS replan while preserving an earlier person and player progress (102.6011ms)
+✔ sealed manifest fixes exactly 50 original IDs, 15/20/15 types and four missing fields (3.2461ms)
+✔ one to five complete persons plan only four fields each, preserving every existing field and report privacy (100.0953ms)
+✔ empty, oversized, duplicate, foreign and incomplete chunks are rejected before networking (82.5017ms)
+✔ all 50 original inputs, full source hash and 962 library identity are checked before any read (18.6625ms)
+✔ apply saves full before and after snapshots and compatible contracts retain unknown document fields (67.3924ms)
+✔ CAS retry merges unrelated player progress and previously completed people without losing it (142.8035ms)
+✔ a changed live target or newly populated field stops a retry instead of overwriting it (208.8455ms)
+✔ approval binds source, base, manifest and chunk and backup failure prevents every write (198.4424ms)
+✔ unknown write outcomes are never automatically retried or logged with private errors (126.9222ms)
+✔ readback detects any unaffected document edit, wrong target or newer revision without rollback (66.4895ms)
+✔ source size, unverified provenance and malformed stats are rejected locally (293.4079ms)
+✔ CLI cannot change manifest scope and requires explicit apply, report and backup arguments (0.3593ms)
+✔ all original article sections and five matching ordered reasons must be complete before a read (89.7201ms)
+✔ apply requires passing evidence before any request and validates it again after a conflict (159.7427ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1678.0703

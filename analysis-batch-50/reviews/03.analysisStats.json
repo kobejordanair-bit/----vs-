@@ -1,0 +1,219 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_康熙帝_283469836",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedOn": "2026-10-10",
+  "reviewer": "Codex source QA of actual ChatGPT web capture; institution-source handoff by batch50_pipeline",
+  "manuscriptFile": "analysis-batch-50/drafts/03.analysisStats.response.md",
+  "manuscriptSha256": "01f710e7f9136c9a4822d1b738951798544f9600f48a3bc2f5b0711115506c6f",
+  "rawResponseSha256": "2b50e63c7e768bac701572f031ba7141f41ef437184efd48c767545aa91a6689",
+  "sourcePackageSha256": "9e07de93bfc74c8d2145553b3ca9df6bb3d2383e874026e224b72598ec4cbd1a",
+  "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+  "stats": [96, 89, 96, 95, 93],
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "《清史稿》卷六〈聖祖本紀一〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B76",
+      "locator": "順治十八年即位及四輔臣；康熙八年擒鰲拜；十二年三月尚可喜請老、七月撤藩、十二月叛問至；十四年立胤礽；十五年圖海、王進寶及趙良棟；十八至二十年三藩戰役與二十年十一月昆明捷報。實開頁第115–116、312、406–430、470–493、560–610行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Actual public primary-text transcription opened and relevant dated passages read. The local source archive's incomplete status was not equated with an unread public source. Traditional nominal ages distinguished from modern completed ages; Qing annal rhetoric not treated as proof of secret motives."
+    },
+    {
+      "title": "《清史稿》卷七〈聖祖本紀二〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B77",
+      "locator": "康熙二十二年施琅、澎湖及鄭克塽劉國軒歸降；二十三年臺灣府縣隸福建及劉國軒任天津總兵；二十八年清俄議界；二十九年帝病返及福全烏蘭布通；三十年多羅諾爾接見封爵編設；三十五年克魯倫與費揚古昭莫多；三十六年噶爾丹死報。第138–179、302、317–337、454–455、470–476行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Relevant primary chronology actually read. Emperor-level authorization/logistics distinguished from Shi Lang and Feiyanggu's direct battlefield achievements. The manuscript does not transfer Qianlong-era destruction of the Dzungar polity to Kangxi."
+    },
+    {
+      "title": "《清史稿》卷八〈聖祖本紀三〉",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B78",
+      "locator": "康熙四十七年廢胤礽、廷臣舉胤禩不納；四十八年三月復立；五十一年二月丁數定額、九月再廢；五十二年南山集最終處置；六十一年逝世與胤禛繼位。第326–342、423–448行及卷末六十一年。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Actual succession and fiscal passages read. The manuscript's 1712 Nanshanji statement is explicitly about deliberated penalties, not a claim that all executions occurred in 1712. Personal-control psychology is identified as analysis, not a quoted historical confession."
+    },
+    {
+      "title": "《尼布楚條約》漢文界碑文本",
+      "url": "https://zh.wikisource.org/wiki/%E5%B0%BC%E5%B8%83%E6%A5%9A%E6%A2%9D%E7%B4%84_%28%E6%BC%A2%E6%96%87%E7%95%8C%E7%A2%91%29",
+      "locator": "1689年9月7日條約日期；格爾必齊河及山嶺、額爾古納河分界、雅克薩俄築城拆毁及人員物資撤離；正文第117–133行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "All substantive displayed treaty clauses actually read. Supports the manuscript's limited description of the two rivers and Yaksa withdrawal; no claim of exhaustive diplomatic-version collation."
+    },
+    {
+      "title": "《康熙朝實錄》卷一六九（《聖祖仁皇帝實錄》卷169）",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B169",
+      "locator": "康熙三十五年正月出征籌議：中路軍、費揚古孫思克西路、馱糧及糧車、朝臣反對及帝回顧三次先行失機；烏蘭布通時患病未親達。第116–177行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Actual cited URL followed to the canonical Qing Shilu transcription. Dated strategic and logistics passages actually read; no claim of the emperor personally commanding Feiyanggu's last battle."
+    },
+    {
+      "title": "《康熙朝實錄》卷二四八（《聖祖仁皇帝實錄》卷248）",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B248",
+      "locator": "康熙五十一年壬辰：正月刑部議南山集戴名世、方孝標及帝令九卿再議；二月壬午，以現今錢糧冊人丁定額、增丁另造清冊、不使增徵丁銀與改進呈報的諭旨。第116、138、246行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Actual relevant primary entries read. Fixed taxable register and untaxed additions distinguished from abolishing existing poll tax and Yongzheng's later land-tax amalgamation. Deliberated criminal penalties distinguished from subsequent final execution."
+    },
+    {
+      "title": "《康熙朝實錄》卷一八九（《聖祖仁皇帝實錄》卷189）",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B189",
+      "locator": "康熙三十七年戊寅（1698）十月癸卯行圍，帝射殪二虎，其中一虎隔澗；第114及214行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Actual dated hunt entry read. Court narrative supports recorded hunting proficiency, not independent observation of modern martial scores or direct personal battlefield duels."
+    },
+    {
+      "title": "《康熙朝實錄》卷二八四（《聖祖仁皇帝實錄》卷284）",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%B7%E7%86%99%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%8D%B7%E4%B9%8B284",
+      "locator": "康熙五十八年己亥（1719）卷首日期與己未帝談幼年骑射、弓矢鳥槍累計獲虎135等；第114及211行。",
+      "type": "primary_text",
+      "checked": true,
+      "readScope": "Actual year heading and self-reported hunting speech read. Manuscript correctly marks lifetime tally as the emperor's retrospective statement, not independently verified kill-by-kill data."
+    },
+    {
+      "title": "徐凱〈吳三桂討清《檄文》原文本考〉，《清史研究》（2017），140–145頁，北京大學機構知識庫",
+      "url": "https://ir.pku.edu.cn/handle/20.500.11897/464369",
+      "locator": "官方知識庫索引題名、作者、2017年刊頁及可見摘要；摘要記1673年三月尚可喜請告老、七月吳三桂耿精忠請撤、十一月吳起事。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "web_search_official_repository_index",
+      "readScope": "Official indexed bibliography and available abstract only. Exact original handle retrieval timed out; full article was not read or claimed. Specific cited 1673 sequence is present in the abstract and independently checked against the Qing annal, whose December entry records reception of the rebellion report."
+    },
+    {
+      "title": "故宮博物院〈三藩〉",
+      "url": "https://www.dpm.org.cn/lemmas/241557.html",
+      "locator": "詞條全文，原封爵及後代、吳三桂雲南軍政、康熙十二年撤藩、尚之信及耿精忠響應、八年平叛。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Full short lemma read at the original public HTTPS page by institution-source reviewer."
+    },
+    {
+      "title": "故宮博物院〈允礽〉",
+      "url": "https://www.dpm.org.cn/lemmas/244122.html",
+      "locator": "詞條全文，赫舍里氏之子，1675立儲，1696/1697監國與代行政務，1708廢、1709復、1712再廢。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Full short original lemma read by institution-source reviewer; succession years independently crosschecked in the annals."
+    },
+    {
+      "title": "聶崇正，故宮博物院〈王翬等康熙南巡圖卷〉",
+      "url": "https://www.dpm.org.cn/collection/paint/228301.html",
+      "locator": "藏品介紹首三段，1684–1707六次南巡、了解民情、視察河防及江南政治安撫，1689第二次南巡後命繪十二巨卷與王翬領銜。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Original named-author collection introduction and tour-purpose paragraphs actually read by institution-source reviewer."
+    },
+    {
+      "title": "故宮博物院〈康熙皇帝〉",
+      "url": "https://www.dpm.org.cn/court/lineage/226256.html",
+      "locator": "主文康熙生平與1661年即位大事年表，1654生、八歲即位、四輔臣、1669鰲拜、61年統治、多族群治理、騎射及西學、晚年儲位。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "web_open",
+      "readScope": "Original biographical main text and accession chronology read by institution-source reviewer."
+    },
+    {
+      "title": "陳樺〈論清代「人丁」概念的異變〉，中國人民大學清史研究所（2007-11-26）",
+      "url": "https://iqh.ruc.edu.cn/kxyj/kydt/c5529c15e38f4d01a83a3ec4b6c5739b.htm",
+      "locator": "第二節人丁的財政属性、康熙五十一年固定在冊丁數及另冊增丁、避稅呈報動機、雍正攤丁入地；第三節編審困境與人口統計。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Original bibliographic metadata and relevant author text read by institution-source reviewer. Policy's intended reporting incentive distinguished from author's reservations about diagnosis and actual statistical success."
+    },
+    {
+      "title": "董建中〈清代耗羨歸公起始考〉，中國人民大學清史研究所（2007-05-15）",
+      "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/847247658ea94b07a3372af841b74dc0.htm",
+      "locator": "康熙六十、六十一年年羹堯奏折與末段官員低薪、地方經費短絀、李紱虧空數據及五十八年至五十九年清查。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Original metadata, Kangxi antecedents and concluding fiscal explanation read by institution-source reviewer. Supports multiple structural causes and attempted late investigation without attributing all Yongzheng reform to Kangxi."
+    }
+  ],
+  "checks": [
+    {
+      "id": "capture-and-frozen-input-binding",
+      "passed": true,
+      "detail": "Actual full response and split analysis/stat-reasons fields read. Response, raw, source-package, reference and search-evidence SHA-256 recomputed against capture metadata; field trim hashes checked. No manuscript or frozen source edited."
+    },
+    {
+      "id": "all-manuscript-links",
+      "passed": true,
+      "detail": "All 15 unique Markdown URLs accounted for: eight actual public primary texts and seven official/institutional or author-source items. PKU scope is its official indexed abstract only; six institution items have original-page body retrieval. Source scopes recorded individually rather than claiming all full papers read."
+    },
+    {
+      "id": "accession-and-aobai",
+      "passed": true,
+      "detail": "1654 birth, 1661 accession with traditional nominal age eight, four named regents and 1669 young-wrestler arrest stratagem match the annal and official biography. The account separates Aobai's spared death sentence from treatment of his party."
+    },
+    {
+      "id": "three-feudatories-and-command-attribution",
+      "passed": true,
+      "detail": "1673 retirement/withdrawal trigger and 1681 Kunming outcome checked against dated primary passages plus institutional sources. Tu Hai, Wang Jinbao and Zhao Liangdong's functions match. Initial risk and subsequent adaptation are analytical evaluations of the documented sequence."
+    },
+    {
+      "id": "taiwan-conquest-and-administration",
+      "passed": true,
+      "detail": "1683 Shi Lang's Penghu battle, Zheng Keshuang/Liu Guoxuan surrender and titles, 1684 Taiwan prefecture/counties under Fujian and Liu's appointment match. The emperor's policy role is explicitly separated from the navy commander's direct achievement; island society is not presented as previously empty."
+    },
+    {
+      "id": "nerchinsk-mongolia-and-galdan",
+      "passed": true,
+      "detail": "1689 treaty's two named rivers and Yaksa removal read in the treaty. 1690 illness prevented Kangxi's presence at the decisive battlefield; 1691 Dolon reception/organization, 1696 imperial middle route versus Feiyanggu's western Zhaomodo victory, and 1697 Galdan death report match primary dates. No Qianlong-era final destruction is assigned to Kangxi."
+    },
+    {
+      "id": "1712-tax-policy-and-tours",
+      "passed": true,
+      "detail": "Fixed existing taxable register, separately recorded additions without extra ding silver and intended reporting incentives match Shilu248. The draft does not state abolition of existing poll tax, successful exact census, or equivalence with Yongzheng reform. Six southern tours, river inspection and Jiangnan reassurance match the museum collection account."
+    },
+    {
+      "id": "late-fiscal-and-cultural-power",
+      "passed": true,
+      "detail": "Author's original fiscal study supports low pay, limited local funds, accumulated deficits and late checking. Nanshanji claim explicitly concerns the 1712 court penalty proposal; the record's 1713 final execution is not misdated in the manuscript."
+    },
+    {
+      "id": "hunting-and-five-dimensional-evaluation",
+      "passed": true,
+      "detail": "1698 two-tiger entry and 1719 self-reported lifetime tally of 135 tigers actually read and dated. Five dimensions each have historical support and explanations, and personal riding/shooting is distinguished from leadership and frontline combat. Numeric evaluations are interpretive application of the preserved prompt, not statements made by the sources."
+    },
+    {
+      "id": "score-reference-integrity",
+      "passed": true,
+      "detail": "Actual stats remain [96,89,96,95,93]. Named existing benchmark scores for Han Wudi, Ming Taizu, Tang Taizong, Han Gaozu, Qin Shihuang and Tang Gaozu match the frozen public reference. Song Taizu martial92 matches actual passed 02 draft, not an invented existing value. Original rank S- is retained; no arithmetic rank conversion."
+    },
+    {
+      "id": "succession-and-interpretation",
+      "passed": true,
+      "detail": "1675 designation, 1708 first deposition and rejected Yinsi proposal, 1709 restoration, 1712 second deposition, 1722 death and Yinzhen succession verified. Father's control anxiety and modern organizational analogy are openly analytical interpretation anchored to events; no unsupported secret confession or 四改十四 tale introduced."
+    },
+    {
+      "id": "actual-web-search-evidence",
+      "passed": true,
+      "detail": "Actual capture and retained search evidence report 已搜尋18個網站 with matching evidence hash. Reviewer performed additional real source reading, without treating website count as proof of every historical claim."
+    }
+  ],
+  "nonBlockingObservations": [
+    {
+      "id": "tax-summary-wording",
+      "detail": "The final short phrase 固定新增丁銀 is imprecise in isolation, but the main section and political-score section correctly explain fixed existing assessment and no added ding silver for new population. Reading the whole manuscript yields the correct substantive policy; no contradictory material historical claim requires regeneration."
+    },
+    {
+      "id": "registration-intent-versus-result",
+      "detail": "Chen Hua critiques Kangxi's explanation and actual statistical outcome. Manuscript describes intended and possible reporting incentives, not proof the scheme achieved precise demographic counts. This distinction remains in the review."
+    }
+  ],
+  "institutionHandoff": "analysis-batch-50/qa/03.institution-source-notes.v1.json",
+  "reviewScope": "Full actual captured response, all extracted analysis/stat-reasons text and public capture fields reviewed. All 15 cited URLs covered at explicitly recorded reading scopes. Strong source-grounded appreciation and personality interpretation retained. Public primary transcriptions were not collated to manuscript editions; inaccessible full papers were not claimed read. No private fields or secrets accessed; no analysis prose authored or edited."
+}

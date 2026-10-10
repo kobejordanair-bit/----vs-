@@ -1,0 +1,47 @@
+{
+  "format": "dynasty-batch50-rejected-attempt",
+  "createdAt": "2026-10-09T20:20:02.098Z",
+  "reason": "QA: 李勣受命遼東道行軍大總管 was 666; 668 was conquest of 平壤.",
+  "files": [
+    {
+      "originalPath": "drafts/05.analysisStats.raw.md",
+      "archivePath": "attempts/05.analysisStats.1/05.analysisStats.raw.md",
+      "sha256": "4f0713ec2dcdde7466138a18d054dbd739f1adb0af880ac48831bc0e8eb2bf27"
+    },
+    {
+      "originalPath": "drafts/05.analysisStats.search-evidence.txt",
+      "archivePath": "attempts/05.analysisStats.1/05.analysisStats.search-evidence.txt",
+      "sha256": "7a7f9431acef99ae7f670fa57184186f15a4222d0906e2d6aabb248ad86140c2"
+    },
+    {
+      "originalPath": "drafts/05.analysisStats.response.md",
+      "archivePath": "attempts/05.analysisStats.1/05.analysisStats.response.md",
+      "sha256": "5f9b731a6a4d9def03b7f4413b4f3a83daeac684cbae52b8dc12904b0792ed85"
+    },
+    {
+      "originalPath": "drafts/05.analysisStats.capture.json",
+      "archivePath": "attempts/05.analysisStats.1/05.analysisStats.capture.json",
+      "sha256": "53d1bedf39f538ee5cac60d199b969f6edd50985d51e55b2f229911a339bf41f"
+    },
+    {
+      "originalPath": "drafts/05.analysis.md",
+      "archivePath": "attempts/05.analysisStats.1/05.analysis.md",
+      "sha256": "5886967e5dd53193095c202f3b233a905073cbac8112eed4bac5593b2d75ba40"
+    },
+    {
+      "originalPath": "drafts/05.statsAnalysis.md",
+      "archivePath": "attempts/05.analysisStats.1/05.statsAnalysis.md",
+      "sha256": "2ba76c3b3f09ef578b53999c4390fe3f816d673fe0c6b3491b089b90e02a49c4"
+    },
+    {
+      "originalPath": "drafts/05.stats.json",
+      "archivePath": "attempts/05.analysisStats.1/05.stats.json",
+      "sha256": "371957b87bddd1abd97f6c351c93e6b761e41e9f378e92d6656b7b1fc89108ff"
+    },
+    {
+      "originalPath": "reviews/05.analysisStats.json",
+      "archivePath": "attempts/05.analysisStats.1/05.analysisStats.json",
+      "sha256": "715d7d9ed1ec9057fa8e59fc0270104bd58d8f2bea0c0e4e2f1221d4a48e3014"
+    }
+  ]
+}

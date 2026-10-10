@@ -1,0 +1,130 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:50:29.855Z",
+  "recordId": "general_朱德_306295133",
+  "slug": "25",
+  "name": "朱德",
+  "type": "general",
+  "dynasty": "中華人民共和國",
+  "identity": "朱德；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "核 1937 年 6 月 19 日陳雲信與 1938 年 3 月電報；區分總司令制度統率、直接戰役指揮與下級實施，並查第五次反圍剿權限。",
+    "人格細節可作有來源的回憶描寫；井岡山作戰、戰果及戰術創始歸屬另查同期史料，不能把家屬轉述寫成當場記錄。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-general_朱德_306295133",
+      "recordIds": [
+        "general_朱德_306295133"
+      ],
+      "recordNames": [
+        "朱德"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載朱德於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載朱德於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "《朱德年谱》新编本与朱德研究新成果",
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0621/c423733-31173725.html",
+      "author": "吳殿堯",
+      "institution": "中共中央黨史和文獻研究院；作者為新編年譜主編",
+      "sourceType": "original_editorial_scholarly_research_with_primary_document_excerpt",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀新編範圍、1937 年陳雲信、1938 年朱彭與中央往來電報和日期訂正段；未讀 150 萬字年譜全書。",
+      "minimalSupportedClaim": "主編說明年譜新增原始材料及訂正，包括朱德維護部隊團結、堅持華北部署和中央協商的角色。",
+      "citationLocator": "第三、第五與第六部分；原刊《黨的文獻》2006 年第 6 期。",
+      "gptSearchQuestion": "核 1937 年 6 月 19 日陳雲信與 1938 年 3 月電報；區分總司令制度統率、直接戰役指揮與下級實施，並查第五次反圍剿權限。"
+    },
+    {
+      "title": "红军时期的朱德和毛泽东",
+      "url": "https://www.dswxyjy.org.cn/n/2014/1208/c244523-26167537.html",
+      "author": "劉建",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "family_recollection_with_hearsay_disclosed",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀作者自述 1953 年後生活身份與明說早年軍事故事來自長輩聊天的來源說明。",
+      "minimalSupportedClaim": "朱德家屬記述其晚年與後輩互動、少談自己功勞的生活印象。作者不是 1928 年戰爭現場見證人。",
+      "citationLocator": "作者身份說明與第三段；紅軍故事屬事後轉述。",
+      "gptSearchQuestion": "人格細節可作有來源的回憶描寫；井岡山作戰、戰果及戰術創始歸屬另查同期史料，不能把家屬轉述寫成當場記錄。"
+    }
+  ],
+  "candidateTexts": [],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "朱德与蔡锷的友谊",
+      "url": "http://news.ifeng.com/history/zhongguojindaishi/detail_2011_06/16/7045652_0.shtml",
+      "type": "citation-template",
+      "template": "cite journal",
+      "author": "陈杨桂",
+      "publisher": "书报文摘",
+      "date": "2007",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94697656",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "Zhou Enlai: a political life",
+      "url": "https://archive.org/details/zhouenlaipolitic0000barn",
+      "type": "citation-template",
+      "template": "cite book",
+      "author": "Barbara Barnouin",
+      "publisher": "Chinese University Press",
+      "date": "2006",
+      "isbn": "978-962-996-244-9",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94697656",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "朱德 不可替代的总司令",
+      "url": "http://www.yhcqw.com/html/rwz/2009/712/290I.html",
+      "type": "citation-template",
+      "template": "cite journal",
+      "author": "",
+      "publisher": "炎黄春秋",
+      "date": "2009",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94697656",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "1929年陈毅大骂毛泽东：红四军不是你大权独揽",
+      "url": "http://mil.sohu.com/20141107/n405857362.shtml",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "搜狐",
+      "date": "2014-11-07",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94697656",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

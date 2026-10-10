@@ -1,0 +1,413 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "inputSha256": "0b8acd1c69ebe1883d4f60f844d535debac0866b1d6a06282af3913b39b1ab0c",
+      "promptSha256": "2124b683b24e1d053005e42a3322e360920167fd22f7997555930703bfc11091",
+      "fields": {
+        "analysis": "# 乾隆帝弘曆｜他把天下收進自己的目錄，卻把失敗也編進了「十全武功」\n\n乾隆帝弘曆，是中國歷史上最擅長將權力、疆域、文化與個人形象結合在一起的皇帝之一。\n\n他統治期間，清朝征服準噶爾與天山南路，建立新的新疆治理體系；軍隊遠征金川、緬甸、安南及廓爾喀；朝廷編纂《四庫全書》，收藏大量書畫古器，國家財政與人口規模也曾達到前所未有的高度。\n\n晚年，他將自己的軍事成就整理為「十全武功」，並在1792年親撰《十全記》，刻於精美玉冊，正式自號「十全老人」。\n\n但這位皇帝最值得研究的，不是究竟有多大的功績，而是他如何理解「功績」。\n\n乾隆不只想完成偉大的事業。他還想親自決定，哪些事業應當被稱為偉大，哪些戰爭應當被稱為勝利，哪些書籍值得流傳，以及哪些臣子的批評才算忠誠。\n\n這使他具備驚人的國家資源組織能力，也逐漸形成一個危險的政治世界：\n\n當最高統治者既負責決策，又決定決策應如何被記錄，帝國即使真的犯了錯，也可能越來越難讓皇帝承認那是一個錯誤。\n\n乾隆的悲劇，不是他完全看不見世界正在改變，而是他太相信：自己已經掌握了衡量世界的正確尺度。\n\n## 1.【歷史局勢與定位】：他不是從危機中建立帝國，而是在帝國最富足時，決定它還能有多大\n\n1735年，雍正帝去世，二十四歲的弘曆繼位。\n\n乾隆接手的清朝，與康熙早年所面對的國家完全不同。\n\n康熙必須平三藩、收臺灣、應對俄國與蒙古勢力；雍正則大力整頓地方財政、官僚制度和賦役安排。\n\n到了乾隆繼位時，清朝已擁有強大的中央決策體系、八旗與綠營軍事力量、軍機處，以及逐漸成熟的地方財政管理制度。\n\n他繼承的不是廢墟，而是一部效率相當高的帝國機器。\n\n但強大的國家，也有強大國家特有的問題。\n\n西北準噶爾汗國仍然具有軍事威脅，天山南路各地方政治勢力不願自動服從清廷；西藏、蒙古與西南山區，各自存在複雜的宗教、族群及地方權力關係。\n\n在國內，人口持續增長，耕地擴張、移民、糧食流通和官僚治理之間，也產生新的壓力。\n\n而在海洋另一側，歐洲貿易網絡與工業技術正在發生變化，清朝既參與海外貿易，也對外國人在境內的活動保持嚴格控制。\n\n乾隆面對的真正問題，不是怎樣讓清朝活下來，而是怎樣讓一個已經成功的帝國繼續成功。\n\n這是一種容易使人低估風險的政治處境。\n\n乾隆早年並非只顧排場。\n\n他即位後調整雍正時期較為嚴厲的政治風格，赦免部分舊案牽連者，減免災區賦稅，繼續整頓吏治，並尊重父親留下的行政人才。\n\n據清代財政研究，乾隆中期戶部銀庫積累曾達到相當高的水平，並非從登基開始就陷入財政衰敗。\n\n參見[《清史稿》卷十〈高宗本紀一〉](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B710)、[故宮博物院〈乾隆皇帝〉](https://www.dpm.org.cn/court/lineage/226263.html)及[中華文史網清代財政研究](https://www.qinghistory.cn/c/432/432316.shtml)。\n\n因此，若把乾隆的一生簡單描述成「一位富二代逐漸敗光家產」，便無法解釋他對清朝疆域與邊疆制度造成的真實影響。\n\n但若只稱讚「康乾盛世」，又會掩蓋其晚期政治結構日益僵化的問題。\n\n乾隆的歷史定位，是清朝帝國擴張與文化集權的巔峰人物，也是帝國制度逐漸失去自我糾錯能力的重要轉折點。\n\n## 2.【深度功過剖析】：他的最高成就，是把邊疆納入帝國；最大的代價，是不肯讓帝國的成功接受外部評判\n\n### （一）征服準噶爾：他真正改變的是亞洲內陸的權力格局\n\n1755年，清軍趁準噶爾內部分裂，由班第、阿睦爾撒納等人參與軍事行動，擊敗達瓦齊。\n\n但勝利沒有立即帶來穩定。\n\n阿睦爾撒納與清廷決裂後，戰爭進一步擴大。1757至1758年間，準噶爾蒙古社會遭到毀滅性打擊。\n\n清軍的屠殺政策，加上戰爭、饑荒與疫病，造成大規模人口死亡及流亡。\n\n劍橋大學出版社收錄的研究指出，乾隆政府針對持續抵抗的準噶爾群體採取了具有滅絕性質的軍事政策，這不只是一般意義上的戰爭傷亡。\n\n參見[David Brophy, The Qing Extermination of the Zünghars](https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/qing-extermination-of-the-zunghars/6D038CADD0F808459451175C1CAD6DC5)。\n\nThe Cambridge World History of Genocide\n\n這是乾隆軍功中最不能被輝煌地圖所掩蓋的一面。\n\n但他的戰略工程也沒有停留在擊敗準噶爾。\n\n1758至1759年，兆惠等將領繼續進攻大小和卓勢力，清廷最終控制天山南路的重要綠洲城市。\n\n隨後，清政府以伊犁將軍、參贊大臣、辦事大臣及地方伯克等不同制度，管理性質各異的地區。\n\n1759年，乾隆批准以原有伯克制度結合清朝行政體系，並對回疆職官、賦役、貨幣等事項作出安排；這些政策成為後來《回疆則例》的重要基礎。\n\n參見[中國人民大學清史研究所〈乾隆朝新疆政治經濟立法研究〉](https://iqh.ruc.edu.cn/old/qdbjmzyj/bj_wxkb/c660d9172d4c45f4b718b2d91759ec82.htm)。\n\niqh.ruc.edu.cn\n\n乾隆在西北真正厲害的地方，不是把同一套州縣制度強加於所有地方，而是讓不同族群與地方精英透過不同的行政安排，逐步進入清廷的統治結構。\n\n這是極高水準的帝國建制能力。\n\n然而，它與準噶爾社會所承受的毀滅性暴力，同時存在。\n\n既不能用暴力否定所有後續治理成果，也不能以疆域成就為暴力提供道德免責。\n\n### （二）十全武功：最危險的不是輸掉戰爭，而是把所有戰爭都命名為勝利\n\n1792年，乾隆親撰《十全記》。\n\n他將兩次平準噶爾、一次定回部、兩次金川戰爭、臺灣之役、緬甸之役、安南之役，以及兩次廓爾喀戰事，共列為十項武功。\n\n這份自述今天仍保存於國立故宮博物院收藏的《御筆十全記》玉冊。\n\n參見[國立故宮博物院〈御筆十全記〉玉冊及全文](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)。\n\n故宮\n\n其中確有重大勝利。\n\n1771年至1776年第二次金川戰爭，清軍最終擊敗當地土司勢力，但付出極其昂貴的代價。研究估計，這次戰役耗費約七千萬兩白銀。\n\n1787至1788年，福康安奉命赴臺灣，平定林爽文、莊大田領導的反清起義。這也屬於乾隆朝廷實際完成的軍事任務。\n\n但緬甸與安南，性質便截然不同。\n\n1760年代，清軍多次進攻緬甸，遭遇嚴重的後勤、疾病與作戰困難，最終未能征服緬甸。\n\n1788年，乾隆派孫士毅出兵安南，支持黎氏政權復位。1789年，清軍卻在阮惠率領的西山軍反擊下遭到慘敗，隨後撤回中國。\n\n這顯然不是一場依照清廷最初戰略目標完成的征服。\n\n可是，乾隆後來仍將緬甸、安南歸入「十全」。\n\n【反常識論點】：乾隆最危險的政治能力，不是把失敗隱藏起來，而是能將失敗重新分類，使其在皇帝親自制定的評價標準中，變成某種成功。\n\n如果敵國最後遣使修好或接受朝貢，便可被稱作「降」。\n\n如果戰場沒有完成征服，卻維持了朝貢關係，也可以被說成皇恩遠播。\n\n這種能力確實有外交上的彈性，因為它為停戰與恢復交往保留空間。\n\n但當它反過來成為皇帝考核自己戰略的標準，問題就出現了。\n\n一個永遠能夠替戰爭找到勝利名稱的君主，很難從敗仗中得到完整的教訓。\n\n### （三）《四庫全書》：他保存了無數文字，也親自決定哪些文字必須消失\n\n乾隆的文化政策，同樣充滿矛盾。\n\n1773年，清廷設立四庫全書館，廣泛徵集天下圖書，組織紀昀等大量學者校勘、分類、整理典籍。\n\n最終，《四庫全書》收錄三千四百餘種著作，是中國古代最龐大的官方典籍整理工程之一。\n\n這項成就具有不可否認的文化保存價值。\n\n許多典籍得以抄錄、整理與流傳，與此次編纂密切相關。\n\n但四庫工程同時也是一場由皇權主導的知識審查。\n\n清廷在徵書過程中查禁、銷毀部分被認為含有反清或不宜流傳內容的書籍；乾隆時期文字獄亦相當嚴厲。\n\n參見[故宮博物院〈乾隆皇帝〉與《四庫全書》](https://www.dpm.org.cn/court/lineage/226263.html)。\n\n故宫博物院\n\n這裡真正值得理解的，不是乾隆一面愛書、一面又討厭書。\n\n恰恰相反。\n\n他太重視書籍的力量，所以才不願讓書籍的解釋權完全留在作者與讀者手裡。\n\n他希望天下文獻經過朝廷整理後，成為可以查閱、收藏、分類與管理的知識體系。\n\n但在這套體系裡，皇帝不只是最大的贊助者，也是最終的審查者。\n\n這與他處理軍事功績的方式，存在極深的相似性。\n\n疆域可以納入版圖，書籍可以納入四庫，戰爭可以納入十全。\n\n問題是，被排除在正式分類之外的聲音，還能不能讓皇帝聽見？\n\n### （四）和珅與吏治：他最懂得控制官員，卻讓官員越來越懂得控制他所聽見的情報\n\n乾隆並非完全放任官場貪污。\n\n1781年，甘肅冒賑案爆發，牽涉捏報災情、侵吞捐監銀兩，乾隆嚴厲處置王亶望等人。\n\n他也多次派遣高級官員查核地方庫存、漕糧及財政虧空。\n\n但晚年真正值得注意的問題，不是缺少懲治，而是中央所依賴的資訊與人事渠道，逐漸形成另一種權力壟斷。\n\n1786年，御史曹錫寶彈劾和珅家人劉全。結果《清史稿》記載，朝廷以指控不能證實為由，將曹錫寶革職留任。\n\n同年，和珅反而進一步升任文華殿大學士，管理戶部事務。\n\n參見[《清史稿》卷十五，乾隆五十一年](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)。\n\n這不能直接證明乾隆有意授權和珅替自己收取非法財富。\n\n但它充分揭示了一項政治風險：\n\n當皇帝越來越相信某個能夠迅速辦事、掌握資訊、理解上意的親信，其他官員提出關於這名親信的警告，便可能越來越難獲得公平處理。\n\n1791年，尹壯圖因批評地方倉庫虧空及官場弊端而受到查辦。乾隆後來又表示可以把批評當作規勸，最終免其重罪。\n\n這種先嚴懲、再示寬大的處理方式，正是乾隆政治風格的濃縮。\n\n皇帝可以允許批評存在，但批評是否忠誠、是否正確，以及批評者應否被寬恕，最後仍由皇帝單方面決定。\n\n1796年，白蓮教起義爆發，顯示帝國部分地區的社會與地方行政矛盾已經相當尖銳。\n\n乾隆去世後，1799年嘉慶帝立即處置和珅，也反映晚年權力結構積累了嚴重問題。\n\n參見[故宮博物院〈嘉慶皇帝〉](https://www.dpm.org.cn/court/lineage/226238.html?hl=%E7%9A%87%E5%AE%AB)、[《清史稿》卷十五](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)。\n\n故宫博物院\n\n### （五）馬戛爾尼使團：他不是不知道外國存在，而是拒絕接受另一套平等交涉的規則\n\n1793年，英國使臣馬戛爾尼率團訪華，希望改善對華貿易條件，要求增加通商便利，並提出在北京設置常駐代表等事項。\n\n乾隆在致英國國王的敕書中拒絕相關要求，認為外國使臣長期留京與朝廷既有禮制不合。\n\n參見[《乾隆皇帝頒給英吉利國王敕書》原文](https://zh.wikisource.org/wiki/%E5%A5%89%E5%A4%A9%E6%89%BF%E9%81%8B%E7%9A%87%E5%B8%9D%E6%95%95%E8%AB%AD%E8%8B%B1%E5%92%AD%E5%88%A9%E5%9C%8B%E7%8E%8B)。\n\n這裡有一個重要區別。\n\n乾隆時期的中國並沒有完全停止海外貿易。廣州貿易持續發展，中國商人也繼續參與海外商業活動。\n\n1757年以後針對西方商人的廣州貿易管理制度，限制了對外商活動的安排；但「從此所有其他海關完全關閉」的說法，在學術研究中存在爭論。\n\n參見[王宏斌〈乾隆皇帝從未下令關閉江、浙、閩三海關〉](https://iqh.ruc.edu.cn/old/qdzwgxyj/zwgx_yjqy/my/a722ba632c27438083302e3b65084d8b.htm)。\n\niqh.ruc.edu.cn\n\n因此，不能說乾隆在1793年一紙敕書便使中國注定輸掉十九世紀所有對外衝突。\n\n也沒有充分證據支持他曾有一項全面、明確的政策，刻意禁止所有火器技術發展。\n\n真正值得批評的是其認知框架。\n\n乾隆把英國使團視為應當納入既有朝貢與禮制安排的遠方來客，而沒有充分把它理解成一個正在形成不同外交與商業制度的國家所提出的交涉。\n\n這是一種高度成熟、卻缺乏制度彈性的帝國思維。\n\n清朝當時仍非常強大，因此乾隆沒有立即感受到改變規則的必要。\n\n但國家越強大，越容易把目前仍然有效的規則，誤當成未來也必定有效的規則。\n\n## 3.【人性與性格側寫】：他太習慣當所有人的裁判，甚至無法容忍自己成為被評價的人\n\n乾隆並不是只懂得享樂、把朝政交給和珅的昏君。\n\n他受過嚴格的皇室教育，熟悉滿洲騎射傳統，學習經典，重視收藏、詩文與宮廷藝術。\n\n郎世寧等宮廷畫家留下大量描繪乾隆騎射、巡獵及朝廷活動的作品。\n\n故宮收藏的《乾隆皇帝射獵圖》，記錄他1755年在南苑騎馬射兔的形象；所附御製詩稱當日射中八兔。\n\n參見[故宮博物院〈郎世寧等乾隆皇帝射獵圖〉](https://www.dpm.org.cn/collection/paint/233335.html)。\n\n故宫博物院\n\n這不是一個只有文人習氣的皇帝。\n\n他十分在意自己是否仍然具備滿洲君主應有的武備能力。\n\n但他的興趣還有另一個共同特徵：他喜歡把自己所經歷、所擁有、所完成的事情，轉化為可以收藏、題跋與傳世的作品。\n\n他在繪畫上題詩，在古器上留下鑑藏印，在戰爭結束後製作功臣圖像，又以玉冊記錄《十全記》。\n\n這種行為不必全部理解為自戀。\n\n對一位帝王而言，收藏、編纂與記錄，本身也是將政治秩序轉化成文化秩序的方法。\n\n但當皇帝習慣為一切事物題名，他也容易相信，自己對事物的命名，就是事物最終的意義。\n\n然而，私人情感並不總能服從這套邏輯。\n\n1748年，孝賢純皇后富察氏在東巡途中病逝於德州舟次。\n\n乾隆悲痛，命人兼程返回北京，穿素服悼念，並撰寫《述悲賦》等文字。\n\n參見[故宮博物院〈孝賢純皇后朝服像〉](https://www.dpm.org.cn/collection/paint/233703.html)。\n\n故宫博物院\n\n這是他情感真切的一面。\n\n但1765年，繼皇后烏拉那拉氏在南巡期間因剪髮等事件觸怒乾隆，被遣送回京；1766年去世後，喪儀又遭降格處理。\n\n兩段婚姻中的乾隆，呈現出截然不同的面貌。\n\n前者是痛失愛人的丈夫；後者則是將家庭衝突視為皇室秩序問題、以皇權決定最後處置的君主。\n\n參見[故宮博物院〈清高宗納喇皇后〉](https://www.dpm.org.cn/court/figure/103992.html)。\n\n故宫博物院\n\n他可以投入極深的感情，卻很難容忍親近之人以違背自己意志的方式表達情感。\n\n這正是乾隆最難解開的人格矛盾。\n\n他希望自己的仁慈被理解為仁慈，希望自己的軍事行動被理解為勝利，希望自己的文化工程被理解為文明成就。\n\n而當別人拒絕這種理解，他往往不是先重新檢查自己，而是先要求對方修正立場。\n\n## 4.【如果生在現代】：他會是最成功的全球集團擴張者，也可能是最難被董事會糾正的最高執行長\n\n如果乾隆生活在現代，他很可能是一位同時擔任大型跨國集團最高執行長、文化基金會主席與全球品牌策略制定者的領導人。\n\n他不只是擅長行政管理。\n\n他會重視企業的全球版圖，持續進行跨境併購，建立不同地區的管理制度。\n\n他也會特別重視品牌文化。\n\n公司博物館、歷史檔案、創辦人影像、重大收購紀錄，都可能成為他親自審核的項目。\n\n他的好處是，能讓一個龐大的組織具有極強的共同形象和執行方向。\n\n他的問題則是，容易把企業的形象完整，誤認為企業的治理完整。\n\n當一個事業部取得真正成功，他會大力宣揚；當另一個事業部虧損，只要仍能透過合約、合作或市場份額找到有利敘事，他也可能把它列入年度成果。\n\n面對外部競爭者，他會優先要求對方適應自己現有的規則，而不是重新檢查規則是否已落後市場。\n\n如果某位財務長或監察主管提出難以接受的批評，他可能先質疑對方是否忠誠，而不是先查證數據。\n\n這樣的領導者在資源充沛時，能夠創造極其輝煌的成果。\n\n但當市場環境發生根本變化，他也可能讓整個組織失去及時修正方向的能力。\n\n乾隆最需要的現代制度，不是更多資訊蒐集渠道，而是即使最高領導者不喜歡，也能迫使他面對真實結果的獨立審計與決策監督機制。\n\n他的歷史價值極高。\n\n新疆治理、邊疆行政、文化典籍整理，以及長期帝國統御，都具有深遠影響。\n\n但他同樣留下了嚴重的高壓政治、戰爭暴力與制度僵化問題。\n\n乾隆最偉大的成就，是讓帝國能夠控制更多地方；他最深刻的失誤，則是讓帝國越來越難控制自己的錯誤。\n\n這正是既有A+帝王評級最有說服力的解釋：實體建制與疆域成就極高，卻未能讓強大國家發展出足以持續修正最高權力的制度。",
+        "soulEssence": "## 【說話邏輯】\n\n乾隆最典型的說話方式，是先承認對方表達的善意，再用祖宗成法、國家體制與皇帝恩典，將爭論變成不可再討論的結論。\n\n1793年馬戛爾尼使團來華，他在致英國國王敕書中首先嘉許遠方來使的恭順與誠意，接著才指出英方要求常駐代表、改變通商安排等事項不符合朝廷禮制，因而拒絕。[史載]\n\n這套說話方式的力量在於：他不必直接羞辱對方，也能讓對方失去進一步討價還價的空間。\n\n他的潛台詞是：我可以慷慨賞賜你，但不能讓你與我共同制定規則。[推斷]\n\n1791年處理尹壯圖批評地方倉庫虧空一案，也具有類似結構。乾隆先要求查辦，隨後又表示不妨把批評當成規勸，予以寬免。[史載]\n\n他不說話時，未必代表猶豫。1786年曹錫寶彈劾和珅家人劉全後，乾隆並未藉此公開重新檢討和珅的權力，反而以指控不能證實處置曹錫寶。[史載]\n\n這種不擴大追究的選擇，可能使朝臣明白：皇帝既不願意聽某些事實，繼續追問就可能比保持沉默更危險。[詮釋]\n\n參見[1793年致英王敕書](https://zh.wikisource.org/wiki/%E5%A5%89%E5%A4%A9%E6%89%BF%E9%81%8B%E7%9A%87%E5%B8%9D%E6%95%95%E8%AB%AD%E8%8B%B1%E5%92%AD%E5%88%A9%E5%9C%8B%E7%8E%8B)、[《清史稿》卷十五](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)。\n\n## 【壓力反應】\n\n乾隆遇到重大危機時，習慣先重組執行者，再透過皇帝本人重新定義事件的政治意義。\n\n1750年代準噶爾局勢劇變，原本參與清軍行動的阿睦爾撒納與朝廷決裂。乾隆沒有放棄西北戰略，而是重新調度將領、繼續進兵，最終於1759年前後完成對天山南北重要地區的征服。[史載]\n\n1767年前後，清軍進攻緬甸屢次失利，瘴疫與補給困難加重損失。乾隆撤換將領、追究責任，甚至因瘴疫下令暫停進兵。[史載]\n\n兩件事的共同結構，是遇到阻力時不願立即否定整體目標，而是先改變將領、人事與執行方式。[推斷]\n\n但緬甸沒有像準噶爾那樣被征服。\n\n到了1792年，他卻仍能將緬甸的後來遣使修好列入「十全武功」。\n\n這便顯示其壓力反應的兩面：當事實允許，他會真正改變戰場；當事實無法改變，他則可能改變對戰場結果的敘述。[詮釋]\n\n參見[《清史稿》卷十三](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B713)、[《御筆十全記》](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)。\n\n## 【核心驅動】\n\n乾隆真正追求的，不只是疆域擴張，而是建立一套能夠由皇帝本人決定功業價值的完整帝國秩序。\n\n1755至1759年間，他投入龐大兵力和財政資源，征服準噶爾與回部，並建立新的邊疆治理體系。這是具有真實戰略價值、也付出巨大生命代價的選擇。[史載]\n\n到了1792年，他已擁有極高威望，卻仍親自撰寫《十全記》，將不同性質的戰爭統一歸類為十項功業，刻成玉冊。[史載]\n\n這個行為揭示了他的核心心理需求：\n\n做成一件事還不夠；這件事必須以他認定的名稱和意義，永久留在歷史之中。[推斷]\n\n1796年，他依照不超過祖父康熙在位年數的承諾，正式傳位嘉慶，卻仍以太上皇身份訓政。\n\n這同樣展現出一種精密安排：君位可以交接，政治主導權卻不必立即交出。[史載]\n\n他最不願讓步的，正是決定國家方向、命名與評價的最終權力。\n\n參見[《御筆十全記》原文](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)、[故宮博物院〈嘉慶皇帝〉](https://www.dpm.org.cn/court/lineage/226238.html)。\n\n故宮\n\n## 【慣性盲點】\n\n乾隆一生反覆出現的心理陷阱，是他越能有效地控制資訊、分類與人事，便越容易相信自己所掌握的版本已經等同全部真相。\n\n1773年開始編纂《四庫全書》，他動員大批學者搜集、整理典籍，建立規模空前的知識工程。這是他善於組織資訊的優點。[史載]\n\n但徵書同時伴隨禁毀與審查，部分作品在進入官方目錄以前，便因政治立場而遭到排除。\n\n到了1786年曹錫寶彈劾劉全事件，乾隆仍習慣將問題交由既有調查渠道處理，最後懲處提出警告的人。[史載]\n\n這兩個事件具有相同結構：\n\n先建立一套由皇權掌握的審查程序，再將程序所確認的結果，當成判斷真假的終點。[推斷]\n\n但書籍可以被刪去，真實的歷史記憶不會因此消失；官員可以被斥責，地方虧空也不會因此自然填平。\n\n這種盲點到了晚年尤其危險，因為官僚越了解皇帝偏好的答案，就越可能讓上呈資訊與實際情況出現距離。[詮釋]\n\n參見[故宮博物院〈乾隆皇帝〉](https://www.dpm.org.cn/court/lineage/226263.html)、[《清史稿》卷十五](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)。\n\n故宫博物院\n\n## 【情感結構】\n\n乾隆對親近之人的感情並不冷漠。他可以極深地愛一個人，卻同樣可能在對方違背自己所要求的秩序時，迅速把私人關係轉化成君臣與禮法問題。\n\n1748年孝賢純皇后富察氏病逝於德州舟次，乾隆悲痛，命兼程返京，親自撰寫《述悲賦》，並以詩文追念。[史載]\n\n這是他最脆弱、最具私人感情的時刻之一。\n\n但1765年繼皇后烏拉那拉氏在南巡期間剪髮，觸怒乾隆，被遣送回京。1766年去世後，乾隆又要求降低喪葬規格。[史載]\n\n兩件事構成強烈對比。\n\n對富察氏，他以極盛大的哀悼表達愛；對烏拉那拉氏，則以皇權決定對方最後應當受到怎樣的禮遇。\n\n乾隆是否對她懷有長期怨恨，不能僅憑喪儀完全確定；但其處置顯示，私人情感一旦被視為挑戰皇室秩序，便可能立即失去自主空間。[推斷]\n\n他對生母崇慶皇太后則保持長期敬奉，經常奉母巡幸，直至1777年皇太后去世。\n\n這些關係顯示，他並不缺乏依戀能力；他真正困難的，是接受親密之人可能擁有與自己不同的意志。[詮釋]\n\n參見[故宮博物院〈孝賢純皇后〉](https://www.dpm.org.cn/court/figure/103993.html)、[〈納喇皇后〉](https://www.dpm.org.cn/court/figure/103992.html)、[〈崇慶皇太后〉](https://www.dpm.org.cn/lemmas/243230.html)。\n\n故宫博物院\n\n## 【參照系】\n\n乾隆最有個人特色的思考參照系，是宮廷收藏與目錄編纂：天下萬事，只要能被辨認、分類、命名與收藏，就彷彿能被長久掌握。\n\n這種思維來自他長期受經典教育、親自題跋書畫、蒐集古器，以及主持大型文化工程的經驗。[推斷]\n\n第一個例子是1773年的《四庫全書》。\n\n他將天下書籍分為經、史、子、集四部，建立前所未有的官方知識收藏體系。\n\n這種類比確實有效：龐大的文獻透過編目與校勘，變得更容易保存和利用。[史載]\n\n第二個例子是1792年的《十全記》。\n\n他同樣把複雜的戰爭分為十項，給予清楚名稱，再以玉冊將它們固定下來。[史載]\n\n但戰爭不是書籍。\n\n緬甸與安南的戰事，不能因為被放進「十全」目錄，就改變其原先未完成征服目標的歷史事實。\n\n目錄可以讓人迅速理解已知世界，卻也容易讓編目者誤以為，所有不符合分類的事實都是可以忽略的例外。[詮釋]\n\n參見[故宮博物院〈四庫全書〉](https://www.dpm.org.cn/court/lineage/226263.html)、[國立故宮博物院〈御筆十全記〉](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)。\n\n故宫博物院\n\n## 【內在裂縫】\n\n乾隆最根本的內在衝突，存在於【核心驅動】與【慣性盲點】之間。\n\n他希望自己成為最能掌握天下真實情況的皇帝，卻又要求天下的真實情況，最後必須符合自己願意承認的秩序。\n\n這個矛盾在不同時期反覆出現。\n\n乾隆中期，他透過邊疆軍事行動取得真實而重大的征服成果，並以嚴密的行政安排加以鞏固。\n\n但緬甸、安南之役未能取得相同結果時，他並沒有因此放棄將這些戰事納入自己的功業紀錄。\n\n1792年《十全記》遂成為這種矛盾最具體的象徵。[史載]\n\n同樣的矛盾，也出現在臣下提供的資訊上。\n\n1786年曹錫寶彈劾和珅家人劉全；1791年尹壯圖批評地方虧空。兩人都是在向皇帝指出國家運作可能存在的問題。\n\n但乾隆首先運用的，仍是審問、查核及對批評者本身的政治處置。[史載]\n\n在他看來，這可能是維護國家紀律的必要方式；然而，當批評者必須冒著失去官職甚至生命的危險，才能提出不受歡迎的資訊時，整個體系便容易逐漸失去糾錯能力。[推斷]\n\n乾隆是否意識到自己也可能犯錯？\n\n答案並不是完全沒有。\n\n《十全記》中，他曾強調「知進知退」，又表示天恩越深，自己越應戒懼。這顯示他並不把自我警惕視為與帝王身份矛盾的事情。[史載]\n\n但真正困難的問題，不是能不能在文章中寫出自省的道理。\n\n而是當另一個人提出與皇帝不同的判斷時，他能不能讓那個人的判斷真正改變自己。\n\n乾隆在政治與軍事上取得的成就非常巨大，因此他有充足理由相信自己的經驗。\n\n也正因如此，他更難接受那些與經驗不一致的警告。\n\n他能夠決定皇位何時交接，卻在1796年傳位之後，仍持續掌握最高政治權力；他能夠收集天下書籍，卻又使部分書籍遭到禁毀；他能夠命令臣僚清查虧空，卻讓某些批評因涉及自己信任的人而難以深入。[史載]\n\n這些不是互不相關的失誤。\n\n它們都是同一種力量的不同結果：極高的組織控制能力，逐漸削弱了對獨立判斷的容忍。[推斷]\n\n因此，乾隆最深刻的悲劇，不是他在某一次戰役中戰敗，也不是他曾經錯看某一個大臣。\n\n而是他把自己培養成了一位幾乎能替天下所有事物作出最後判斷的皇帝，卻沒有替天下留下足以糾正皇帝判斷的可靠機制。\n\n1799年乾隆去世，嘉慶帝立即處置和珅，重新調整朝廷權力關係。\n\n這個結局證明，乾隆所建立的個人控制秩序，並不會因他自認圓滿，就自然成為永遠穩固的制度。[詮釋]\n\n他可以將十場戰爭寫成十次功業，卻無法讓後世歷史只按照《十全記》的目錄，替他計算一生的得失。\n\n參見[《御筆十全記》全文](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)、[《清史稿》卷十五](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)、[故宮博物院〈嘉慶皇帝〉](https://www.dpm.org.cn/court/lineage/226238.html)。\n\n故宮",
+        "stats": [
+          94,
+          82,
+          92,
+          93,
+          89
+        ],
+        "statsAnalysis": "## 5.【五維能力數值】\n\n### 統率：94\n\n乾隆的統率優勢，在於以中央資源支撐多戰區的長期軍事行動。1755至1759年準噶爾、回部戰爭，清廷能跨越遙遠距離調運糧餉，並在征服後建立行政駐防體系；1771至1776年第二次金川戰爭，以及1792年廓爾喀戰事，也展現其大型軍事資源組織能力。\n\n但真正指揮前線作戰者包括兆惠、阿桂、福康安等將領。乾隆並無與唐太宗同等的個人決戰統帥紀錄，緬甸與安南之役亦暴露將帥選任及戰略判斷問題。\n\n因此統率94分，高於既有唐高祖（92），接近漢武帝（95），低於唐太宗（100）與明太祖（98）。\n\n參考：[《清史稿》卷十三](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B713)、[故宮博物院〈十全武功〉](https://www.dpm.org.cn/court/lineage/226263.html)。\n\n### 武力：82\n\n乾隆具備優秀的騎馬、射箭及狩獵能力。《清史稿》記載他青年時接受皇室騎射與火器訓練；郎世寧1755年繪製的《乾隆皇帝射獵圖》，則記錄其在南苑騎馬射兔的場景，並附有當日射獲八兔的御製詩。\n\n故宮收藏的《乾隆皇帝一箭雙鹿圖》也反映他重視騎射技藝，相關研究記載其晚年仍持續參與行圍。\n\n但宮廷圖像具有塑造君主形象的功能，狩獵表現也不能完全換算成戰場格鬥能力。\n\n評82分，高於既有唐高祖（72），低於具有更多實際戰場武勇記載的明太祖（85）與唐太宗（95）。\n\n參考：[故宮博物院〈乾隆皇帝射獵圖〉](https://www.dpm.org.cn/collection/paint/233335.html)、[〈乾隆皇帝一箭雙鹿圖〉](https://www.dpm.org.cn/collection/paint/233342.html)。\n\n故宫博物院\n\n### 智謀：92\n\n乾隆具有很強的政治與戰略整合能力。他能在準噶爾內部變局中抓住軍事機會，完成西北征服；又能透過伊犁將軍、伯克制度等安排，將戰場成果轉化為長期行政控制。\n\n文化方面，他利用《四庫全書》與宮廷收藏建立官方知識體系；外交方面，則善於透過封賞、朝貢與政治承認維繫不同地區的關係。\n\n但緬甸、安南戰事的代價，以及將戰敗也納入「十全武功」的自我敘事，說明他對負面資訊的吸收與修正能力存在限制。\n\n評92分，高於既有漢武帝（90），低於唐高祖（95）及唐太宗（98），肯定戰略技巧，但不將事後重新定義勝利當成真正的戰略成功。\n\n參考：[《御筆十全記》原文](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)。\n\n故宮\n\n### 政治：93\n\n乾隆的政治能力，體現在長期掌握龐大多民族帝國的中央行政、財政與人事系統。他既延續雍正朝留下的制度改革，也在新疆、西藏等地區進一步發展適應不同地方情況的治理安排。\n\n在國內，他多次減免災賦、查辦虧空，乾隆中期的戶部庫存亦曾維持高額盈餘。\n\n但後期和珅權勢膨脹、官場資訊逐漸失真，文字獄與禁毀書籍又限制政治討論。1796年雖正式傳位，仍以太上皇身份繼續訓政至1799年。\n\n因此政治93分，高於既有明太祖（92），低於北魏孝文帝（96）及秦始皇（100）的校準尺度。\n\n參考：[《清史稿》卷十五](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)、[故宮博物院〈嘉慶皇帝〉](https://www.dpm.org.cn/court/lineage/226238.html)。\n\n### 魅力：89\n\n乾隆的魅力表現在結合滿洲皇帝、儒家天子與多民族帝國君主的形象。他重視木蘭行圍、宴見蒙古王公，也以詩文、收藏、禮制及文化工程吸引和組織不同背景的臣僚。\n\n1790年八旬萬壽慶典，蒙古、回部王公與各地使者參與朝賀，展現其帝國形象的強大政治號召力。\n\n但這種凝聚力包含制度、封賞與軍事威懾，不能全部解釋成私人魅力。文字獄、對批評者的懲處，以及晚年對和珅的高度依賴，也限制了不同政治群體之間的真正信任。\n\n評89分，略高於既有明太祖（88），低於秦孝公（92）、唐太宗（97）與漢高祖（100）。\n\n參考：[《清史稿》卷十五](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715)、[國立故宮博物院〈御筆十全記〉](https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U)。\n\n五維尺度總結： 乾隆以統率94、政治93、智謀92構成主要能力核心，反映其對國家軍政資源、邊疆治理及帝國形象的高度整合能力；武力82具有騎射史料支持，卻不等同戰場個人格鬥；魅力89肯定其跨族群統御與文化號召力，同時扣除高壓治理及政治信任的限制。\n\n五維分數屬網站能力分析模型，而非史料直接記載的客觀測量。維持既有A+帝王評級不變，不重寫原深度評鑑。"
+      },
+      "provenance": {
+        "provider": "ChatGPT web",
+        "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+        "generatedAt": "2026-10-09T22:24:41.159Z",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "清史稿卷十·高宗本紀一",
+            "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B710",
+            "locator": "雍正十三年即位、幼年學射與火器、初政恩免",
+            "type": "primary_text",
+            "checked": true
+          },
+          {
+            "title": "乾隆皇帝",
+            "url": "https://www.dpm.org.cn/court/lineage/226263.html",
+            "locator": "即位、文治武功、四庫、十全、訓政段",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "全球視野下清朝國家的形成及性質問題——以地緣戰略和財政構造為中心",
+            "url": "https://www.qinghistory.cn/c/432/432316.shtml",
+            "locator": "第三節財政周期，1765–1777庫存及1771–1776金川軍費",
+            "type": "scholarly_primary",
+            "checked": true
+          },
+          {
+            "title": "David Brophy, The Qing Extermination of the Zünghars",
+            "url": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/qing-extermination-of-the-zunghars/6D038CADD0F808459451175C1CAD6DC5",
+            "locator": "公開Summary：屠殺命令、饑荒疫病與倖存者；未宣稱已取得付費全文",
+            "type": "scholarly_primary",
+            "checked": true
+          },
+          {
+            "title": "白京蘭：略論清政府轄制新疆的法律——《欽定回疆則例》",
+            "url": "https://iqh.ruc.edu.cn/old/qdbjmzyj/bj_wxkb/c660d9172d4c45f4b718b2d91759ec82.htm",
+            "locator": "第一節(四)：1759年新疆政治經濟立法為後來則例的基礎",
+            "type": "scholarly_primary",
+            "checked": true
+          },
+          {
+            "title": "御筆十全記玉冊",
+            "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U",
+            "locator": "1792藏品說明；官方頁搜尋索引器身御製詩文全文與篇末自警",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "清史稿卷十五·高宗本紀六",
+            "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715",
+            "locator": "五十一年曹錫寶與和珅、五十五年萬壽、五十六年尹壯圖",
+            "type": "primary_text",
+            "checked": true
+          },
+          {
+            "title": "嘉慶皇帝",
+            "url": "https://www.dpm.org.cn/court/lineage/226238.html?hl=%E7%9A%87%E5%AE%AB",
+            "locator": "同一官方頁帶高亮參數；實際公開HTTP200與內禪、訓政、親政段",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "乾隆皇帝頒給英吉利國王勅書",
+            "url": "https://zh.wikisource.org/wiki/%E5%A5%89%E5%A4%A9%E6%89%BF%E9%81%8B%E7%9A%87%E5%B8%9D%E6%95%95%E8%AB%AD%E8%8B%B1%E5%92%AD%E5%88%A9%E5%9C%8B%E7%8E%8B",
+            "locator": "乾隆五十八年八月十九日，嘉許來使後以體制拒絕留京",
+            "type": "primary_text",
+            "checked": true
+          },
+          {
+            "title": "王宏斌：乾隆皇帝從未下令關閉江、浙、閩三海關",
+            "url": "https://iqh.ruc.edu.cn/old/qdzwgxyj/zwgx_yjqy/my/a722ba632c27438083302e3b65084d8b.htm",
+            "locator": "正文導論及三海關繼續運作論證；作品將此呈現為學术爭論",
+            "type": "scholarly_primary",
+            "checked": true
+          },
+          {
+            "title": "郎世寧等乾隆皇帝射獵圖軸",
+            "url": "https://www.dpm.org.cn/collection/paint/233335.html",
+            "locator": "1755年南苑行圍、御製詩射中八兔",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "孝賢純皇后朝服像軸",
+            "url": "https://www.dpm.org.cn/collection/paint/233703.html",
+            "locator": "1748德州、服素12日及述悲賦；不採用頁中與人物頁矛盾的精確農曆日",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "清高宗納喇皇后",
+            "url": "https://www.dpm.org.cn/court/figure/103992.html",
+            "locator": "1765南巡剪髮與1766喪儀降格",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "清史稿卷十三·高宗本紀四",
+            "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B713",
+            "locator": "乾隆三十二年，換明瑞及四月因瘴暫停進兵",
+            "type": "primary_text",
+            "checked": true
+          },
+          {
+            "title": "乾隆皇帝一箭雙鹿圖",
+            "url": "https://www.dpm.org.cn/collection/paint/233342.html",
+            "locator": "1788題詩、晚年射鹿、1789仍行圍之記錄",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "嘉慶皇帝",
+            "url": "https://www.dpm.org.cn/court/lineage/226238.html",
+            "locator": "1796即位、前三年由乾隆控制、1799親政及誅和珅",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "清高宗孝賢純皇后",
+            "url": "https://www.dpm.org.cn/court/figure/103993.html",
+            "locator": "1748三月德州舟次病逝、素服及追諡",
+            "type": "official_institution",
+            "checked": true
+          },
+          {
+            "title": "崇慶皇太后",
+            "url": "https://www.dpm.org.cn/lemmas/243230.html",
+            "locator": "乾隆四十二年1777去世與乾隆生母身分",
+            "type": "official_institution",
+            "checked": true
+          }
+        ],
+        "requestSha256": "7fc6982d17e8695d08fd7f2392a74e93fe7e4dd751359994ff778a328c2f5eb1",
+        "sourcePackageSha256": "43bb377f0311ea432716e624461a1b626ae783739e03d90ecbeba47b59d68d59",
+        "preservedDeepSha256": "d4652a550667021509657e2f6c19a0d73ade63ca2e9a433d4e337bb68787ac75",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "3ce74100486c8c3c761cdb0662a89e0331957099061ec86afd43907e4ba5fa25",
+            "requestSha256": "7fc6982d17e8695d08fd7f2392a74e93fe7e4dd751359994ff778a328c2f5eb1",
+            "inputSha256": "0b8acd1c69ebe1883d4f60f844d535debac0866b1d6a06282af3913b39b1ab0c",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "2dfb9b158a89ae02853edf92d042d290741529e292e3efc7d1b204ffab9b477d",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "43bb377f0311ea432716e624461a1b626ae783739e03d90ecbeba47b59d68d59",
+            "preservedDeepSha256": "d4652a550667021509657e2f6c19a0d73ade63ca2e9a433d4e337bb68787ac75",
+            "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+            "generatedAt": "2026-10-09T22:24:39.830Z",
+            "rawResponseFile": "analysis-batch-50/drafts/07.analysisStats.raw.md",
+            "rawResponseSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b",
+            "responseFile": "analysis-batch-50/drafts/07.analysisStats.response.md",
+            "responseSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b",
+            "fieldsHashes": {
+              "analysis": "48ecf6c540c25cacb995c6bf59caf158ea9a92a212fdda659ab3ed6098245fdd",
+              "stats": "1306aa9a576ca4a478e2c421e7244ec61f66b9b5b56baa8a86d7f0217c2a8192",
+              "statsAnalysis": "73b7ab0235d684851a7da480510569a1b97429054c263734600890c3873f4f4c"
+            },
+            "captureFile": "analysis-batch-50/drafts/07.analysisStats.capture.json",
+            "captureSha256": "5378307149fe950f12a96fb76856a97aad6a9386ea35ea282283ec086b9063ce",
+            "sourceReviewFile": "analysis-batch-50/reviews/07.analysisStats.json",
+            "sourceReviewSha256": "1e3e3039c695273cfb20f2dbd908eae602604a6a51cb338140f373f3f2975aed",
+            "webSearchPerformed": true,
+            "webSearchVerified": true,
+            "webSearchEvidence": {
+              "file": "analysis-batch-50/drafts/07.analysisStats.search-evidence.txt",
+              "sha256": "c64aaa4e1b13af36ba212ac7268acc8bc4029a0574daa9dfcc76915c8d3e889b",
+              "visibleSearchCount": 23,
+              "uiLabel": "ChatGPT 思考摘要：已搜尋 23 個網站"
+            },
+            "checkedSources": [
+              {
+                "title": "清史稿卷十·高宗本紀一",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B710",
+                "locator": "雍正十三年即位、幼年學射與火器、初政恩免",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "乾隆皇帝",
+                "url": "https://www.dpm.org.cn/court/lineage/226263.html",
+                "locator": "即位、文治武功、四庫、十全、訓政段",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "全球視野下清朝國家的形成及性質問題——以地緣戰略和財政構造為中心",
+                "url": "https://www.qinghistory.cn/c/432/432316.shtml",
+                "locator": "第三節財政周期，1765–1777庫存及1771–1776金川軍費",
+                "type": "scholarly_primary",
+                "checked": true
+              },
+              {
+                "title": "David Brophy, The Qing Extermination of the Zünghars",
+                "url": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/qing-extermination-of-the-zunghars/6D038CADD0F808459451175C1CAD6DC5",
+                "locator": "公開Summary：屠殺命令、饑荒疫病與倖存者；未宣稱已取得付費全文",
+                "type": "scholarly_primary",
+                "checked": true
+              },
+              {
+                "title": "白京蘭：略論清政府轄制新疆的法律——《欽定回疆則例》",
+                "url": "https://iqh.ruc.edu.cn/old/qdbjmzyj/bj_wxkb/c660d9172d4c45f4b718b2d91759ec82.htm",
+                "locator": "第一節(四)：1759年新疆政治經濟立法為後來則例的基礎",
+                "type": "scholarly_primary",
+                "checked": true
+              },
+              {
+                "title": "御筆十全記玉冊",
+                "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U",
+                "locator": "1792藏品說明；官方頁搜尋索引器身御製詩文全文與篇末自警",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "清史稿卷十五·高宗本紀六",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715",
+                "locator": "五十一年曹錫寶與和珅、五十五年萬壽、五十六年尹壯圖",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "嘉慶皇帝",
+                "url": "https://www.dpm.org.cn/court/lineage/226238.html?hl=%E7%9A%87%E5%AE%AB",
+                "locator": "同一官方頁帶高亮參數；實際公開HTTP200與內禪、訓政、親政段",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "乾隆皇帝頒給英吉利國王勅書",
+                "url": "https://zh.wikisource.org/wiki/%E5%A5%89%E5%A4%A9%E6%89%BF%E9%81%8B%E7%9A%87%E5%B8%9D%E6%95%95%E8%AB%AD%E8%8B%B1%E5%92%AD%E5%88%A9%E5%9C%8B%E7%8E%8B",
+                "locator": "乾隆五十八年八月十九日，嘉許來使後以體制拒絕留京",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "王宏斌：乾隆皇帝從未下令關閉江、浙、閩三海關",
+                "url": "https://iqh.ruc.edu.cn/old/qdzwgxyj/zwgx_yjqy/my/a722ba632c27438083302e3b65084d8b.htm",
+                "locator": "正文導論及三海關繼續運作論證；作品將此呈現為學术爭論",
+                "type": "scholarly_primary",
+                "checked": true
+              },
+              {
+                "title": "郎世寧等乾隆皇帝射獵圖軸",
+                "url": "https://www.dpm.org.cn/collection/paint/233335.html",
+                "locator": "1755年南苑行圍、御製詩射中八兔",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "孝賢純皇后朝服像軸",
+                "url": "https://www.dpm.org.cn/collection/paint/233703.html",
+                "locator": "1748德州、服素12日及述悲賦；不採用頁中與人物頁矛盾的精確農曆日",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "清高宗納喇皇后",
+                "url": "https://www.dpm.org.cn/court/figure/103992.html",
+                "locator": "1765南巡剪髮與1766喪儀降格",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "清史稿卷十三·高宗本紀四",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B713",
+                "locator": "乾隆三十二年，換明瑞及四月因瘴暫停進兵",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "乾隆皇帝一箭雙鹿圖",
+                "url": "https://www.dpm.org.cn/collection/paint/233342.html",
+                "locator": "1788題詩、晚年射鹿、1789仍行圍之記錄",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "嘉慶皇帝",
+                "url": "https://www.dpm.org.cn/court/lineage/226238.html",
+                "locator": "1796即位、前三年由乾隆控制、1799親政及誅和珅",
+                "type": "official_institution",
+                "checked": true
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "89ce28ff3f2c0557cf1e9e2ab290de5b622f69e504b9a443fe51e649b8af82af",
+            "requestSha256": "7fc6982d17e8695d08fd7f2392a74e93fe7e4dd751359994ff778a328c2f5eb1",
+            "inputSha256": "0b8acd1c69ebe1883d4f60f844d535debac0866b1d6a06282af3913b39b1ab0c",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "9e0900ef6f102a384bba3e752fbf98167c67a776847ebd413bd3cb7680ad2ed9",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "43bb377f0311ea432716e624461a1b626ae783739e03d90ecbeba47b59d68d59",
+            "preservedDeepSha256": "d4652a550667021509657e2f6c19a0d73ade63ca2e9a433d4e337bb68787ac75",
+            "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+            "generatedAt": "2026-10-09T22:24:41.159Z",
+            "rawResponseFile": "analysis-batch-50/drafts/07.soulEssence.raw.md",
+            "rawResponseSha256": "5574693cc86ce9f4dca0e0bf334c914f2d531db202cad45aa997ed2721784a0a",
+            "responseFile": "analysis-batch-50/drafts/07.soulEssence.response.md",
+            "responseSha256": "5574693cc86ce9f4dca0e0bf334c914f2d531db202cad45aa997ed2721784a0a",
+            "fieldsHashes": {
+              "soulEssence": "583195647a7a811e633186331fde0e29de040535ee9bd8dad51f7fe26b7984d1"
+            },
+            "captureFile": "analysis-batch-50/drafts/07.soulEssence.capture.json",
+            "captureSha256": "faf837127181e7f6dfe81cc547992f1ad07f25190ad6725d3ac32ea1f4e59325",
+            "sourceReviewFile": "analysis-batch-50/reviews/07.soulEssence.json",
+            "sourceReviewSha256": "31a49393135585cf6460b3d8cf45e916dee438767cb1c0c10d518d6bb6cda12f",
+            "webSearchPerformed": true,
+            "webSearchVerified": true,
+            "webSearchEvidence": {
+              "file": "analysis-batch-50/drafts/07.soulEssence.search-evidence.txt",
+              "sha256": "c64aaa4e1b13af36ba212ac7268acc8bc4029a0574daa9dfcc76915c8d3e889b",
+              "visibleSearchCount": 23,
+              "uiLabel": "ChatGPT 思考摘要：已搜尋 23 個網站"
+            },
+            "checkedSources": [
+              {
+                "title": "乾隆皇帝頒給英吉利國王勅書",
+                "url": "https://zh.wikisource.org/wiki/%E5%A5%89%E5%A4%A9%E6%89%BF%E9%81%8B%E7%9A%87%E5%B8%9D%E6%95%95%E8%AB%AD%E8%8B%B1%E5%92%AD%E5%88%A9%E5%9C%8B%E7%8E%8B",
+                "locator": "乾隆五十八年八月十九日，嘉許來使後以體制拒絕留京",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "清史稿卷十五·高宗本紀六",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B715",
+                "locator": "五十一年曹錫寶與和珅、五十五年萬壽、五十六年尹壯圖",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "清史稿卷十三·高宗本紀四",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF/%E5%8D%B713",
+                "locator": "乾隆三十二年，換明瑞及四月因瘴暫停進兵",
+                "type": "primary_text",
+                "checked": true
+              },
+              {
+                "title": "御筆十全記玉冊",
+                "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/53877?dep=U",
+                "locator": "1792藏品說明；官方頁搜尋索引器身御製詩文全文與篇末自警",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "嘉慶皇帝",
+                "url": "https://www.dpm.org.cn/court/lineage/226238.html",
+                "locator": "1796即位、前三年由乾隆控制、1799親政及誅和珅",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "乾隆皇帝",
+                "url": "https://www.dpm.org.cn/court/lineage/226263.html",
+                "locator": "即位、文治武功、四庫、十全、訓政段",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "清高宗孝賢純皇后",
+                "url": "https://www.dpm.org.cn/court/figure/103993.html",
+                "locator": "1748三月德州舟次病逝、素服及追諡",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "清高宗納喇皇后",
+                "url": "https://www.dpm.org.cn/court/figure/103992.html",
+                "locator": "1765南巡剪髮與1766喪儀降格",
+                "type": "official_institution",
+                "checked": true
+              },
+              {
+                "title": "崇慶皇太后",
+                "url": "https://www.dpm.org.cn/lemmas/243230.html",
+                "locator": "乾隆四十二年1777去世與乾隆生母身分",
+                "type": "official_institution",
+                "checked": true
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/07.analysis.md",
+            "analysisContextSha256": "0fe1a2c36763f91323b6afa49e4464a2df8326f388377332c22a88f13d32ba38"
+          }
+        }
+      }
+    }
+  ]
+}

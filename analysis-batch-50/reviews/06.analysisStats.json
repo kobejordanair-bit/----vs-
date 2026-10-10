@@ -1,0 +1,78 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_秦昭襄王_7247317",
+  "task": "analysisStats",
+  "passed": true,
+  "manuscriptSha256": "eace708cd93fa6c10981e28b8eb86cd79977bc48973edfcff12565e3d021f148",
+  "rawResponseSha256": "3cbc89ff3d2827c3cba57d0c9c1054f81c37c0811022e03ef095ffd2fdc43afb",
+  "sourcePackageSha256": "81b94dabc934c74ad1bd03dbbc09d666dc94df7c504ba4462b3aee8b0e0de9cd",
+  "stats": [
+    97,
+    28,
+    96,
+    95,
+    82
+  ],
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "史記卷五・秦本紀",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7005",
+      "locator": "武王四年；昭襄王元年至五十六年，特別十四、二十八至二十九、四十七至五十二年；莊襄王元年",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "史記卷七十三・白起王翦列傳",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7073",
+      "locator": "白起傳：伊闕、鄢郢、四十五至五十年；長平反間換將、河內徵發、殺降、停戰、邯鄲拒命與杜郵賜死",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "史記卷七十九・范睢蔡澤列傳",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7079",
+      "locator": "范睢見昭王；遠交近攻、廢太后逐四貴、四十一年封相；鄭安平降趙、王稽通諸侯、內無良將",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "史記卷一一〇・匈奴列傳",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7110",
+      "locator": "篇首秦昭王時義渠戎王與宣太后、甘泉誘殺、伐殘義渠及置郡築長城段",
+      "type": "primary_text",
+      "checked": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "full_manuscript_and_urls",
+      "passed": true,
+      "detail": "完整核讀實際response及五維理由，實際開啟並核讀四個唯一HTTPS引用原典相關全文段落，全部URL覆蓋。"
+    },
+    {
+      "id": "chronology_roles",
+      "passed": true,
+      "detail": "伊闕293、鄢郢279/278、長平260、白起257、西周256與次年九鼎、東周249、卒年251均相容；河內徵發與前線白起分工正確，未把遠交近攻倒歸早期戰果。"
+    },
+    {
+      "id": "interpretation_scope",
+      "passed": true,
+      "detail": "君权控制與人才矛盾、長平暴力後果、現代類比為合理詮釋；心理推論有明示，未改寫。殺降古籍數量有不確定性說明。"
+    },
+    {
+      "id": "stats_reference",
+      "passed": true,
+      "detail": "封存舊參照之比較數值吻合；另實際核讀 attempts/05.analysisStats.1/05.stats.json 及capture，唐高宗本批已實際生成[94,25,95,94,86]，武力25吻合，作本批新比較來源，無需改正文。"
+    }
+  ],
+  "provenanceNotes": [
+    {
+      "id": "batch_generated_comparator",
+      "detail": "唐高宗25源自同次ChatGPT先前已生成05稿，未列入舊66筆參照。05該稿待修正另一史事年份；本比較分數25不受該更正影響。",
+      "file": "analysis-batch-50/attempts/05.analysisStats.1/05.stats.json",
+      "captureFile": "analysis-batch-50/attempts/05.analysisStats.1/05.analysisStats.capture.json"
+    }
+  ]
+}

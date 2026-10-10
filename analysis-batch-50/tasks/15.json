@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "emperor_宋孝宗_284427266",
+  "slug": "15",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "de6c3fa6cc8eaa06a0a3b099eb333a8c6855ef3ef60487d3a6984968a7d79da8",
+  "sourceSha256": "3a9d76c5d37ba9253f88a707ca18556644996062f7ffbbefa80ac8d00eabf472",
+  "preservedDeepSha256": "bc65af293368c787d37a456dba46fd4999779b35c4049aac2b6194a9bca57e9e",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/15.analysisStats.prompt.md",
+      "promptSha256": "430c4e013a6f61e8935bbc473af162d5d1cf194f21ecbd42c89167e6c19fcfe6",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "45933a7f1ea6b1e310fe5dc83e52101380184b39012b0d6efe0a5af6b4da2c84",
+      "marker": "<!-- BATCH50_COMPLETE emperor_宋孝宗_284427266 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN emperor_宋孝宗_284427266 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/15.soulEssence.prompt.md",
+      "promptSha256": "c5c21689faaffc57a862a1bbf5f8c3a0fd2944751fd8633d2a234f83ec7f5cab",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "b81cdc304c756e0289110cad69bd1092946d7ce6cf7ca81e76f04bbcdc402a5b",
+      "marker": "<!-- BATCH50_COMPLETE emperor_宋孝宗_284427266 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/15.analysis.md"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:50:59.998Z",
+  "recordId": "minister_朱鎔基_1995149885",
+  "slug": "43",
+  "name": "朱鎔基",
+  "type": "minister",
+  "dynasty": "中華人民共和國",
+  "identity": "朱鎔基；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "上網核分稅制、金融清理和國企改革的政策原件及職工安置代價；將國務院集體績效和朱個人決策分開辨識。",
+    "查 WTO 的 2001 年中國加入文件和加入後影響研究，核朱的談判角色，並查可具名的講話或訪談支撑其性格描述。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-minister_朱鎔基_1995149885",
+      "recordIds": [
+        "minister_朱鎔基_1995149885"
+      ],
+      "recordNames": [
+        "朱鎔基"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-archives",
+          "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977920.html",
+          "locator": "潇湘人物／朱镕基；1998年任職段",
+          "supportedFact": "湖南省檔案局朱鎔基條目記其1998年起任國務院總理。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "湖南省檔案局朱鎔基條目記其1998年起任國務院總理。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "政府工作报告（2003年）",
+      "url": "https://www.fmprc.gov.cn/web/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2108_675689/200303/t20030320_9288239.shtml",
+      "author": "朱鎔基／國務院",
+      "institution": "中華人民共和國外交部轉刊政府報告",
+      "sourceType": "primary_government_report_republication",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀 1998–2002 年任期回顧、金融與國企改革、下崗背景和財政統計；其自評與成效數字未另與統計局歷史修訂對照。",
+      "minimalSupportedClaim": "末任政府报告明列改革政策、國企職工下崗與金融危機背景，可直接查其施政內容和自我評估。",
+      "citationLocator": "第一部分，過去五年政府工作回顧；外交部發布日 2003 年 3 月 20 日。",
+      "gptSearchQuestion": "上網核分稅制、金融清理和國企改革的政策原件及職工安置代價；將國務院集體績效和朱個人決策分開辨識。"
+    },
+    {
+      "title": "朱镕基总理代表国务院在九届全国人大五次会议上所作的《政府工作报告》",
+      "url": "https://lt.china-office.gov.cn/chn/xwdt/200203/t20020317_2725961.htm",
+      "author": "朱鎔基／國務院",
+      "institution": "中國駐立陶宛外交機構網站",
+      "sourceType": "primary_government_report_approved_text_republication",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀網站關於審議後修改、批准的說明，2001 年回顧及入世第一年、政府職能改革內容。",
+      "minimalSupportedClaim": "正式批准稿列出加入 WTO 後的工作安排及政府職能調整，是施政目標的當時文件。",
+      "citationLocator": "2002 年 3 月 5 日報告、3 月 15 日批准；網站 3 月 17 日刊全文。",
+      "gptSearchQuestion": "查 WTO 的 2001 年中國加入文件和加入後影響研究，核朱的談判角色，並查可具名的講話或訪談支撑其性格描述。"
+    }
+  ],
+  "candidateTexts": [],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "朱天池 自求多福是祖训",
+      "url": "http://www.infzm.com/content/34672",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "张欢",
+      "publisher": "南方报业传媒集团",
+      "date": "2009-09-15",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94391601",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "揭朱镕基传奇身世之谜：乱世孤儿 乃朱元璋后裔 （组图）【13】",
+      "url": "http://edu.people.com.cn/n/2012/0720/c1053-18564246-13.html",
+      "type": "citation-template",
+      "template": "Cite web",
+      "author": "",
+      "publisher": "人民网",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94391601",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "朱总理今天90岁",
+      "url": "https://ml.mbd.baidu.com/r/10G9pHo5eJG?f=cp&u=adfc676f25c34cd1",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "环球网",
+      "date": "2018-10-23",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94391601",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "清华经管校友办发文：老院长朱镕基，祝您生日快乐",
+      "url": "https://minipro.baidu.com/ma/qrcode/parser?app_key=7vfNmlb4TB3cfsKTtyC2MwXzdwK34VhS&launchid=f09cc3a2-3bc1-4b34-bbbe-602302d25de1&path=subpackage%2Fpages%2Fdocdetails%2Fdoc-details%3Fid%3Ducms_7r0rqTuvVrZ%26_swebFromHost%3Dbaiduboxapp",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "凤凰网",
+      "date": "2019-10-23",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94391601",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

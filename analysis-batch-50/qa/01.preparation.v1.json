@@ -1,0 +1,64 @@
+{
+  "format": "dynasty-batch50-source-review-preparation",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢光武帝_80238619",
+  "slug": "01",
+  "status": "awaiting_actual_chatgpt_manuscript",
+  "checkedOn": "2026-10-10",
+  "reviewPolicy": "不預先判通過；對有根據的強有力詮釋不設保守措辭門檻。實稿完成後逐項核具體事實、年份、歸功、引文及全部Markdown來源URL。",
+  "sourcesOpened": [
+    {
+      "title": "後漢書/卷1上",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷1上",
+      "status": "opened_relevant_primary_text",
+      "scope": "更始元年至建武元年：昆陽、劉縯被殺、北渡河北、信都與上谷漁陽突騎、銅馬、稱帝。",
+      "locators": ["更始元年三月至六月昆陽段", "更始二年正月信都與五月邯鄲段", "建武元年即位段"],
+      "notes": "昆陽本人突擊與守城、援軍共同作用；王莽本人被殺另有長安起事角色，不能直接寫劉秀親殺王莽。"
+    },
+    {
+      "title": "後漢書/卷1下",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷1下",
+      "status": "opened_relevant_primary_text",
+      "scope": "建武六年裁縣／租稅、十一至十二年入蜀、十三年封賞、十五至十六年度田、十七年柔道自述與後期政務。",
+      "locators": ["建武六年六月／十二月", "建武十二年冬十一月", "建武十三年夏四月", "建武十五年六月至十六年冬十月", "建武十七年冬十月章陵"],
+      "notes": "統一收尾以36年公孫述敗亡為常用節點；吳漢、臧宮執行成都戰事，皇帝統籌不等於本人最後攻城。度田39年開始、40年官員下獄與大姓反抗，不可写完全沒有阻力的普遍平均土地改革。"
+    },
+    {
+      "title": "資治通鑑/卷039",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑/卷039",
+      "status": "opened_relevant_primary_text",
+      "scope": "更始元年昆陽決策及劉縯被殺、劉秀壓抑反應；更始二年河北局勢。",
+      "locators": ["更始元年六月己卯", "劉縯被殺段", "更始二年河北段"],
+      "notes": "23年昆陽與25年稱帝是不同時間。該卷與後漢書有史源承襲，不能計作完全獨立目擊。"
+    },
+    {
+      "title": "後漢書/卷22",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷22",
+      "status": "opened_relevant_primary_text",
+      "scope": "劉隆度田、杜茂處分、王梁違命與赦免、馬武傳末功臣政策及史論。",
+      "locators": ["劉隆傳建武十五至十六年度田", "杜茂傳建武十五年", "王梁傳建武二年", "馬武傳末與史論"],
+      "notes": "支持廣泛封賞、容小失而有控制的政策。仍有削邑、免官、監軍及任職差異，不宜說從不處分功臣或所有功臣立即退職。"
+    },
+    {
+      "title": "廖伯源：試論光武帝用人政策之若干問題",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/973/Article/437",
+      "status": "opened_official_scholarly_abstract",
+      "scope": "官方摘要與題名／期次metadata，未讀完整PDF。",
+      "citation": "中央研究院歷史語言研究所集刊61.1，1990，1–27",
+      "notes": "研究用官員及功臣任職統計質疑『光武不以功臣任職』的概括；不能把封賞／節制軍權說成全體功臣完全退出官僚體系。頁面自動引用寫61.8不合頁首61.1，引用以頁首期別和期刊目次為準。"
+    },
+    {
+      "title": "廖伯源：試論光武帝之統御術四事：柔道、人質、遙控諸將與安置降卒、軍事復員",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/973/Article/454",
+      "status": "opened_official_scholarly_abstract",
+      "scope": "官方摘要，未讀完整PDF。",
+      "citation": "中央研究院歷史語言研究所集刊61.4，1990，869–894",
+      "notes": "摘要支持柔道兼有監軍、人質、遠端詔令控制及分批安置降卒的詮釋。柔道可以強有力解讀成精密統御，並非必須收成無為或軟弱。"
+    }
+  ],
+  "accessLimitations": [
+    "三個來源包固定oldid的web工具直接開啟不可用；原典目前版本已實際打開，固定版本另以本機公開古籍全文及textSha256綁定核對。",
+    "中研院3327tCeGaRr.pdf直接開啟失敗；不宣稱核讀其全文或表格。"
+  ],
+  "pending": ["實際ChatGPT原稿/capture完成後才綁稿SHA", "依實稿全部MarkdownURL補核", "按實稿評分對照批次公開stats reference"]
+}

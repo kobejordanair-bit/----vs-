@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "14ecf1efdc2763df13dbc470debc90463a30e09db5bca8865b909d1c0dd78650",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "plannedAfterSha256": "aa08102d8bf63615509631a986b8876bda573da642a946ce4da208a0e2c39c16",
+  "beforeRevision": 4,
+  "plannedAfterRevision": 5,
+  "patchBytes": 2661078,
+  "plannedDocumentBytes": 9579897,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "analysis",
+      "sha256": "58d8e723e4659f84daaff086fb0fbfcf55fc685c49ffd73b6d2333e5fa75042f"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "soulEssence",
+      "sha256": "f94792da8489e895f6b0c685c3200c7f41d09dd54f810997a292eeff375395e6"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "stats",
+      "sha256": "6be24d990bb5279f9d9a5d3ce657602ea48307da0dce9a356f0c2d14f4cd23d9"
+    },
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "field": "statsAnalysis",
+      "sha256": "fde1fafdf080fb58c98ac77fe3e6851339d1ff1073e1678098a0a8c2dd79b53a"
+    }
+  ]
+}

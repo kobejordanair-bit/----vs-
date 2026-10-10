@@ -1,0 +1,66 @@
+{
+  "format": "dynasty-combined-person-pilot-report",
+  "schemaVersion": 1,
+  "completedAt": "2026-10-09T22:37:25.852Z",
+  "passed": true,
+  "person": "乾隆帝",
+  "slug": "07",
+  "limit": 1,
+  "originalPromptsPreserved": true,
+  "author": "Actual ChatGPT web;Codex performs mechanical processing and source verification",
+  "generation": {
+    "previousPrimaryRequestsPerCompletePerson": 2,
+    "actualPrimaryRequests": 1,
+    "correctionRequests": 0,
+    "actualBrowserResponses": 1,
+    "webSearchSessions": 1,
+    "visibleSearchedWebsites": 23,
+    "sharedSearchCountNotAddedTwice": true,
+    "elapsedToCaptureSeconds": 428
+  },
+  "context": {
+    "comparisonScope": "Two original task prompts plus one benchmark read; excludes the old additional deep/source/appraisal rereads and task metadata.",
+    "previousMinimumCharacters": 55065,
+    "combinedPacketCharacters": 39618,
+    "minimumCharacterReductionPercent": 28.1,
+    "actualTokenOrBillingReductionMeasured": false
+  },
+  "quality": {
+    "analysisCharacters": 7206,
+    "soulCharacters": 4626,
+    "statsReasonsCharacters": 2158,
+    "stats": [
+      94,
+      82,
+      92,
+      93,
+      89
+    ],
+    "allOriginalSections": true,
+    "sourceReviewsPassed": true,
+    "materialFactualIssues": 0,
+    "splitterTestsPassed": 4,
+    "additionalAgentsUsed": 0
+  },
+  "publication": {
+    "receiptFile": "analysis-batch-50/import.07-07.apply.json",
+    "beforeRevision": 6,
+    "afterRevision": 7,
+    "changedFields": 4,
+    "existingContentPreserved": true,
+    "rawExtrasPreserved": true,
+    "libraryTotal": 962,
+    "browserVerified": true,
+    "soulMatchesActualText": true
+  },
+  "proofFiles": [
+    "analysis-batch-50/drafts/07.combined.capture.json",
+    "analysis-batch-50/reviews/07.analysisStats.json",
+    "analysis-batch-50/reviews/07.soulEssence.json",
+    "analysis-batch-50/website-verification.07.v1.json"
+  ],
+  "assessment": "One combined response completed both layers without correction or truncation. Reuse this path for the next authorized person;one pilot does not establish long-run failure rate or actual token cost. Initial tool construction belongs to this trial,not recurring per-person work.",
+  "remainingBatchPaused": true,
+  "overall50Complete": false,
+  "privateDataIncluded": false
+}

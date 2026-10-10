@@ -1,0 +1,29 @@
+✔ mechanical split retains the exact four-chapter prose, scores, reasons and seven soul sections (13.3032ms)
+✔ first-line JSON rejects extras, duplicate aliases, fractions, strings and out-of-range values (4.393ms)
+✔ completion and reason separators must be unique, standalone, last and bound to the correct ID (3.2027ms)
+✔ missing article sections, score discrepancies and unlabeled soul interpretations are rejected (3.7498ms)
+✔ capture binds public prompt, source, preserved deep analysis, reference and allowed file paths (26.0676ms)
+✔ actual search UI count is necessary and invalid conversation URLs are rejected (29.7966ms)
+✔ single search groups and repeated identical counts keep legacy capture evidence byte for byte (11.8797ms)
+✔ different actual search groups retain all observed counts and use the last segment without claiming a unique total (12.2075ms)
+✔ known UI formatting is normalized while original clipboard hash remains distinct (4.5694ms)
+✔ assembly rejects stale raw, clean captures, search receipts and split article files (33.8913ms)
+✔ only the observed standalone final escaped completion marker is normalized and forged markers reject (8.5037ms)
+✔ forged clean prose cannot pass by updating clean and review hashes while retaining actual raw export (4.1348ms)
+✔ the observed single escaped standalone reason marker preserves prose and rejects forged or repeated separators (8.5054ms)
+✔ QA must pass without material issues and bind both raw and complete clean manuscripts (35.3788ms)
+✔ typed checked primary sources require HTTPS, title, locator and coverage of every manuscript link (30.0125ms)
+✔ soul captures remain bound to the exact reviewed appraisal context (9.1925ms)
+✔ chunks reject empty, six-person, duplicate or incomplete-person submissions (7.4012ms)
+✔ all 100 frozen prompts reproduce the original templates, rendered prefixes and full staged suffixes (153.6033ms)
+✔ forged template and rendered hashes cannot pass as hash-shaped metadata (20.711ms)
+✔ replacement original prefixes or staged suffixes are rejected even after updating the claimed prompt SHA (18.1308ms)
+✔ captured and reviewed fields import together after a CAS replan while preserving an earlier person and player progress (110.7616ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 657.0073

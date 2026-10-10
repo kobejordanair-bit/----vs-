@@ -1,0 +1,37 @@
+{
+  "format": "dynasty-batch50-rejected-attempt",
+  "createdAt": "2026-10-09T19:48:49.801Z",
+  "reason": "QA found one itinerary reversal: 劉林 proposed at 邯鄲; 光武 left 邯鄲 for 真定.",
+  "files": [
+    {
+      "originalPath": "drafts/01.soulEssence.raw.md",
+      "archivePath": "attempts/01.soulEssence.1/01.soulEssence.raw.md",
+      "sha256": "e2ff51c7b788a869911aa573b935234375876c3283b3235daa055f8e12ceb5e1"
+    },
+    {
+      "originalPath": "drafts/01.soulEssence.search-evidence.txt",
+      "archivePath": "attempts/01.soulEssence.1/01.soulEssence.search-evidence.txt",
+      "sha256": "d9bfbfe9326615550268cdce6c5cd225501805448765a19bcf96d9f6a648f5c6"
+    },
+    {
+      "originalPath": "drafts/01.soulEssence.response.md",
+      "archivePath": "attempts/01.soulEssence.1/01.soulEssence.response.md",
+      "sha256": "be163ceac254cd735f115bb42c74d202056b3fef0397be67c47b69b3faa5064f"
+    },
+    {
+      "originalPath": "drafts/01.soulEssence.capture.json",
+      "archivePath": "attempts/01.soulEssence.1/01.soulEssence.capture.json",
+      "sha256": "4d7480656282480529f313e6fda4036e1f124a0f65f26cbeba1f632e1616bb70"
+    },
+    {
+      "originalPath": "drafts/01.soulEssence.md",
+      "archivePath": "attempts/01.soulEssence.1/01.soulEssence.md",
+      "sha256": "c4837c51f0140502a8b16af4d54b82225a3f54671131d225c33bafff80f91cf0"
+    },
+    {
+      "originalPath": "reviews/01.soulEssence.json",
+      "archivePath": "attempts/01.soulEssence.1/01.soulEssence.json",
+      "sha256": "6945715662018ac61690869bd8b80ec7d781aaea1d0ad1310a0e99a298fbc5ec"
+    }
+  ]
+}

@@ -1,0 +1,1525 @@
+{
+  "format": "dynasty-analysis-batch50-manifest",
+  "schemaVersion": 1,
+  "createdAt": "2026-10-09T18:40:52.323Z",
+  "targetCount": 50,
+  "baselineRevision": 4,
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "selection": {
+    "method": "first-in-library-per-type-with-existing-deep-analysis-and-missing-appraisal-soul-stats",
+    "emperor": 15,
+    "general": 20,
+    "minister": 15
+  },
+  "policy": {
+    "onlyMissingFields": true,
+    "preserveAllExistingFields": true,
+    "actualChatGPTWebRequired": true,
+    "actualWebSearchRequired": true,
+    "originalPromptsRequired": true,
+    "privateStateExcluded": true
+  },
+  "records": [
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "slug": "01",
+      "context": {
+        "id": "emperor_漢光武帝_80238619",
+        "name": "漢光武帝",
+        "type": "emperor",
+        "dynasty": "東漢",
+        "rank": "S",
+        "title": "劉秀",
+        "tag": "柔道治國",
+        "desc": "史上學歷最高、代價最小的完美復國。",
+        "poem": "仕宦當作執金吾，娶妻當得陰麗華。"
+      },
+      "inputSha256": "98869fc789ded0aa2e8e88f565e75b493787d4542befdcecb11f4cb26f0dca46",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/01.deepAnalysis.md",
+          "sha256": "fe868d32cb31d1c14a6a5afe5421861cdce071437ba6e23b832e7271b7fd3295",
+          "characters": 1473
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/01.md"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "slug": "02",
+      "context": {
+        "id": "emperor_宋太祖_284437104",
+        "name": "宋太祖",
+        "type": "emperor",
+        "dynasty": "北宋",
+        "rank": "S-",
+        "title": "趙匡胤",
+        "tag": "崇文抑武，立基三百",
+        "desc": "結束五代十國，確立文官制度。",
+        "poem": "杯酒釋兵定國本，燕雲未收憾千年。"
+      },
+      "inputSha256": "896a56e77de2ba2a9a67eec123964f26e3cfbec6f9e070a495a670e36890bf49",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/02.deepAnalysis.md",
+          "sha256": "425af7674fe319bc25f3be331e39a771c7bf4fc66ba23fdec68636a4c674d7c5",
+          "characters": 1624
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/02.md"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "slug": "03",
+      "context": {
+        "id": "emperor_康熙帝_283469836",
+        "name": "康熙帝",
+        "type": "emperor",
+        "dynasty": "清朝",
+        "rank": "S-",
+        "title": "玄燁",
+        "tag": "定鼎寰宇",
+        "desc": "削平三藩收台灣，驅逐沙俄征漠北，奠定近代版圖；然晚年政風寬縱奪嫡慘烈，留制度隱患。",
+        "poem": "削藩平漠拓疆版，盛世隱憂留後患。"
+      },
+      "inputSha256": "9afcf72608c038aed8d4940799191958cc91af610d60a58c97563dc00d71a984",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/03.deepAnalysis.md",
+          "sha256": "55cfa70c1c68865abe7d4acbb3ce4ea39500bd6fe8d8d4b92b4e8b16d91b95b4",
+          "characters": 1592
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/03.md"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "slug": "04",
+      "context": {
+        "id": "emperor_明成祖_281780435",
+        "name": "明成祖",
+        "type": "emperor",
+        "dynasty": "明朝",
+        "rank": "S-",
+        "title": "永樂大帝",
+        "tag": "天子守國門",
+        "desc": "靖難奪嫡重組中樞，遷都北京奠定兩百年地緣防線；五征漠北，威震西洋，極限推升大明帝國版圖與威望。",
+        "poem": "靖難兵起清君側，五出漠北掃胡塵。"
+      },
+      "inputSha256": "a90b0367085600613a7cb565e818720ca0471204e11604e5e75a05487cc1a358",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/04.deepAnalysis.md",
+          "sha256": "cccb436f5431f6817ecbc6223d56cd363a0cadd5bc7e04bdd8a3e90ac1c22cfc",
+          "characters": 1536
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/04.md"
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "slug": "05",
+      "context": {
+        "id": "emperor_唐高宗_285517784",
+        "name": "唐高宗",
+        "type": "emperor",
+        "dynasty": "唐朝",
+        "rank": "S-",
+        "title": "李治",
+        "tag": "版圖最大",
+        "desc": "被低估的實權者，滅高句麗、西突厥。",
+        "poem": "龍朔版圖達蔥嶺，永徽法制定八荒。"
+      },
+      "inputSha256": "e57b261e1940deb783c3af927f7b12e3ca451fcd51dc578e2fe56b1a85cd7fcd",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/05.deepAnalysis.md",
+          "sha256": "dd650d225a8fd7a7457588df8b453ecf3d3801149003acf87f6dc9a108288cb4",
+          "characters": 1635
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/05.md"
+    },
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "slug": "06",
+      "context": {
+        "id": "emperor_秦昭襄王_7247317",
+        "name": "秦昭襄王",
+        "type": "emperor",
+        "dynasty": "戰國",
+        "rank": "S-",
+        "title": "嬴稷",
+        "tag": "遠交近攻",
+        "desc": "行遠交近攻，拔郢吞周，長平血戰摧毀趙國主力，掌權五十六載，為大秦一統天下奠定不可逆之實體霸業。",
+        "poem": "長平喋血斷趙脊，五十六載定霸基。"
+      },
+      "inputSha256": "8a0e61c9dc587cf48c1a23bb665558dc931a35611d2e2d4b3d58f378a7704691",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/06.deepAnalysis.md",
+          "sha256": "f449d3d37030275f1fc76f75734682ec03790f8ddf3f6888a4fb08da1f764742",
+          "characters": 1758
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/06.md"
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "slug": "07",
+      "context": {
+        "id": "emperor_乾隆帝_287167826",
+        "name": "乾隆帝",
+        "type": "emperor",
+        "dynasty": "清朝",
+        "rank": "A+",
+        "title": "十全老人",
+        "tag": "十全武功",
+        "desc": "清朝疆域極盛，人口爆炸，但晚年僵化。",
+        "poem": "十全武功拓萬里，天朝迷夢鎖國門。"
+      },
+      "inputSha256": "0b8acd1c69ebe1883d4f60f844d535debac0866b1d6a06282af3913b39b1ab0c",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/07.deepAnalysis.md",
+          "sha256": "d4652a550667021509657e2f6c19a0d73ade63ca2e9a433d4e337bb68787ac75",
+          "characters": 1789
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/07.md"
+    },
+    {
+      "id": "emperor_漢宣帝_279605035",
+      "slug": "08",
+      "context": {
+        "id": "emperor_漢宣帝_279605035",
+        "name": "漢宣帝",
+        "type": "emperor",
+        "dynasty": "西漢",
+        "rank": "A+",
+        "title": "劉詢",
+        "tag": "霸王道雜之",
+        "desc": "西漢中興，設立西域都護府，綜核名實。",
+        "poem": "故劍情深知民苦，霸王道雜鑄極盛。"
+      },
+      "inputSha256": "226a4752b9aa53e8e9442582904ff7e01ff48524404db93f0082cae36580f703",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/08.deepAnalysis.md",
+          "sha256": "95fd78101d25587ed89e8f8ff3fe7b01d1a15e961bcc8f1ddcf35675488d194c",
+          "characters": 1811
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/08.md"
+    },
+    {
+      "id": "emperor_宋武帝_284299365",
+      "slug": "09",
+      "context": {
+        "id": "emperor_宋武帝_284299365",
+        "name": "宋武帝",
+        "type": "emperor",
+        "dynasty": "南北朝",
+        "rank": "A+",
+        "title": "劉裕",
+        "tag": "氣吞萬里",
+        "desc": "終結東晉百年門閥，行土斷重塑國家財稅；北伐連滅南燕後秦，拓版圖為南朝之最。",
+        "poem": "想當年，金戈鐵馬，氣吞萬里如虎。"
+      },
+      "inputSha256": "e7214b0620f1751307ff9dc510f78d940615f0360d33b4e126e40def4c923bba",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/09.deepAnalysis.md",
+          "sha256": "71473b03c2fd119a7afceb007cd2a46a5dd3400256829b0b9a16dd91a7f2c448",
+          "characters": 1487
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/09.md"
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "slug": "10",
+      "context": {
+        "id": "emperor_宋仁宗_284527334",
+        "name": "宋仁宗",
+        "type": "emperor",
+        "dynasty": "北宋",
+        "rank": "A",
+        "title": "趙禎",
+        "tag": "千古第一仁",
+        "desc": "締造文官政治巔峰與經濟繁榮，然三冗積弊加深且武功孱弱，為守成之極致。",
+        "poem": "百司庶府皆賢士，天下歸心號仁宗。"
+      },
+      "inputSha256": "9e8001221db47f9f24b41930275972e425787e5bd8b2a14797d84a2fa5d4ce11",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/10.deepAnalysis.md",
+          "sha256": "a50ed57786135f12a37d0fdb7983e3b017e936baae4a4da226f8e4e53ac7c8ab",
+          "characters": 1148
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/10.md"
+    },
+    {
+      "id": "emperor_武則天_280599295",
+      "slug": "11",
+      "context": {
+        "id": "emperor_武則天_280599295",
+        "name": "武則天",
+        "type": "emperor",
+        "dynasty": "唐朝",
+        "rank": "A",
+        "title": "聖神皇帝",
+        "tag": "唯一女皇",
+        "desc": "以絕頂手腕摧毀關隴門閥，完善科舉奠定官僚政治；然為固權清洗軍方，導致地緣邊防全面倒退。",
+        "poem": "無字碑頭沉舊閥，明堂空耀失邊疆。"
+      },
+      "inputSha256": "0247c6199335bad105c80989197a1c35fbe01996e36762a807c8e30dd6c1b2e6",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/11.deepAnalysis.md",
+          "sha256": "ec11f68cfea3bb7f2a50524219c17d1edece16a3cd5f691269da321ff3398efb",
+          "characters": 1783
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/11.md"
+    },
+    {
+      "id": "emperor_宋太宗_284444719",
+      "slug": "12",
+      "context": {
+        "id": "emperor_宋太宗_284444719",
+        "name": "宋太宗",
+        "type": "emperor",
+        "dynasty": "北宋",
+        "rank": "A",
+        "title": "趙光義",
+        "tag": "鞏固宋室",
+        "desc": "滅北漢統一中原，但高粱河車神扣分。",
+        "poem": "文治大興奠國本，高粱車神喪幽燕。"
+      },
+      "inputSha256": "a35c3b93979c9e9c67ee84ba8dc9ded5940929f311bb3185d24a1abe913a4dea",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/12.deepAnalysis.md",
+          "sha256": "a65451aaa3777df762e1b964efe2b50340b4a94c0c09cb04946860f2ad556d39",
+          "characters": 1542
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/12.md"
+    },
+    {
+      "id": "emperor_明孝宗_281841215",
+      "slug": "13",
+      "context": {
+        "id": "emperor_明孝宗_281841215",
+        "name": "明孝宗",
+        "type": "emperor",
+        "dynasty": "明朝",
+        "rank": "A",
+        "title": "朱祐樘",
+        "tag": "弘治中興",
+        "desc": "寬厚仁慈，大明中興之主，私德完美。",
+        "poem": "中興之主復清明，仁厚守成缺破局。"
+      },
+      "inputSha256": "5f1f2839617a8486f27d310f7d8ac7784fed6471905cfc03dd0f7ecb3cea5057",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/13.deepAnalysis.md",
+          "sha256": "c9e492a9ba9cedd6b05efe208b63d5742e472887c77c6679896055eb6767fcf7",
+          "characters": 1545
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/13.md"
+    },
+    {
+      "id": "emperor_神武帝_276962130",
+      "slug": "14",
+      "context": {
+        "id": "emperor_神武帝_276962130",
+        "name": "神武帝",
+        "type": "emperor",
+        "dynasty": "南北朝",
+        "rank": "A",
+        "title": "高歡",
+        "tag": "北朝梟雄",
+        "desc": "關東霸主，起於微末，宇文泰的一生之敵。",
+        "poem": "敕勒川上射雕手，玉壁城下英雄淚。"
+      },
+      "inputSha256": "9fa5d0e71ff8c8c6792cde0edc917dbb326451ff25a1f6fcaa7070ebc1f56775",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/14.deepAnalysis.md",
+          "sha256": "fb653d5243414962cd636949f4c8b7bd4aba86a2ced041d90b6c6dc1cc1b237b",
+          "characters": 1570
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/14.md"
+    },
+    {
+      "id": "emperor_宋孝宗_284427266",
+      "slug": "15",
+      "context": {
+        "id": "emperor_宋孝宗_284427266",
+        "name": "宋孝宗",
+        "type": "emperor",
+        "dynasty": "南宋",
+        "rank": "A-",
+        "title": "趙昚",
+        "tag": "南宋第一帝",
+        "desc": "內政治績斐然締造乾淳之治，平穩過渡二元皇權；然隆興北伐受挫，終未能突破地緣天花板。",
+        "poem": "乾淳治世雪遺恨，偏安江左第一人。"
+      },
+      "inputSha256": "de6c3fa6cc8eaa06a0a3b099eb333a8c6855ef3ef60487d3a6984968a7d79da8",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/15.deepAnalysis.md",
+          "sha256": "bc65af293368c787d37a456dba46fd4999779b35c4049aac2b6194a9bca57e9e",
+          "characters": 1731
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/15.md"
+    },
+    {
+      "id": "general_林彪_306298218",
+      "slug": "16",
+      "context": {
+        "id": "general_林彪_306298218",
+        "name": "林彪",
+        "type": "general",
+        "dynasty": "中華人民共和國",
+        "rank": "S",
+        "title": "紅軍之鷹",
+        "tag": "現代軍神",
+        "desc": "百萬大軍統帥，三三制與現代戰爭體系的締造者。",
+        "poem": "白山黑水礪百萬，狂飆席捲定乾坤。"
+      },
+      "inputSha256": "685a418c253fd0cf1905079d84f15b75e3a3d1a4854f99da1598b751a1e15a1a",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/16.deepAnalysis.md",
+          "sha256": "768e1bca46b2650de19e66bca4f73f5eff2ec4f806fafdbeccd2189fa9e27b34",
+          "characters": 1564
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/16.md"
+    },
+    {
+      "id": "general_拓跋燾_904534991",
+      "slug": "17",
+      "context": {
+        "id": "general_拓跋燾_904534991",
+        "name": "拓跋燾",
+        "type": "general",
+        "dynasty": "南北朝",
+        "rank": "S-",
+        "title": "北魏太武帝",
+        "tag": "統一北方",
+        "desc": "終結十六國亂世，精通大縱深騎兵閃擊。拓疆萬里，飲馬長江，堪稱北朝武功第一人。",
+        "poem": "掃清十六國煙塵，佛狸祠下亦英雄。"
+      },
+      "inputSha256": "a26224709a8f884e24ccc52d33a6a284c2a3d693f2e30bafa3c3a147f7951441",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/17.deepAnalysis.md",
+          "sha256": "db04db8155f7f6fd1bc57cdee5a945a5a406a47141d8f822eb6f70435b4d0baa",
+          "characters": 1638
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/17.md"
+    },
+    {
+      "id": "general_曹操_306294699",
+      "slug": "18",
+      "context": {
+        "id": "general_曹操_306294699",
+        "name": "曹操",
+        "type": "general",
+        "dynasty": "三國",
+        "rank": "S-",
+        "title": "魏武帝",
+        "tag": "橫槊賦詩",
+        "desc": "北方統一戰奠定地緣霸權，惟赤壁與漢中暴露兵力投射極限。",
+        "poem": "老驥伏櫪志千里，東臨碣石有遺篇。"
+      },
+      "inputSha256": "2c128107444d936bfd667a3045799a6a7e02b3611eff6ec16d3ff0d08d42b3ec",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/18.deepAnalysis.md",
+          "sha256": "342e4f7b23177f900ef485ac864ac90d09cee1ad1a6a5eb46b57d8569354aab8",
+          "characters": 1633
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/18.md"
+    },
+    {
+      "id": "general_李勣_306292748",
+      "slug": "19",
+      "context": {
+        "id": "general_李勣_306292748",
+        "name": "李勣",
+        "type": "general",
+        "dynasty": "唐朝",
+        "rank": "S-",
+        "title": "徐懋功",
+        "tag": "大唐雙璧",
+        "desc": "歷經三朝，平突厥、滅薛延陀與高句麗，拓大唐版圖至極，明哲保身之萬代典範。",
+        "poem": "東平高麗雪前恥，智避權鋒保令名。"
+      },
+      "inputSha256": "53ef02f9faa0aa4afa485f3570a525c3b00e957edd4df59e4be363268d8727d4",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/19.deepAnalysis.md",
+          "sha256": "9cfb5c128c0e222a9b0a2f89754dcea94b3f5ae1ec27aee783443d6a7e7e72b4",
+          "characters": 1448
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/19.md"
+    },
+    {
+      "id": "general_蘇定方_912794063",
+      "slug": "20",
+      "context": {
+        "id": "general_蘇定方_912794063",
+        "name": "蘇定方",
+        "type": "general",
+        "dynasty": "唐朝",
+        "rank": "S-",
+        "title": "滅國狂魔",
+        "tag": "外戰之王",
+        "desc": "全地形跨海越漠，平突厥滅百濟，將大唐疆域推向極盛，為戰術執行的極致標竿。",
+        "poem": "雪夜狂飆擒可汗，萬里拓疆定八荒。"
+      },
+      "inputSha256": "4f5388823c543d477d5d7892d6a8452d6ec96c4c5d3da4ac0aed291bfa6883b2",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/20.deepAnalysis.md",
+          "sha256": "0fd3af75fc76f64bb439dbebaee5ebaac0d9e9ed77cb0b6d96ab9afe562d71a4",
+          "characters": 1523
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/20.md"
+    },
+    {
+      "id": "general_粟裕_306475725",
+      "slug": "21",
+      "context": {
+        "id": "general_粟裕_306475725",
+        "name": "粟裕",
+        "type": "general",
+        "dynasty": "中華人民共和國",
+        "rank": "S-",
+        "title": "殲滅戰神",
+        "tag": "大兵團會戰、戰役微操、讓帥自保",
+        "desc": "華東戰場的戰役級指揮天花板，以少勝多與大兵團殲滅戰的極致踐行者。然戰略宏圖依賴統帥部，未達獨立定鼎之境。",
+        "poem": "孟良崮上奇謀顯，淮海陣前定乾坤。"
+      },
+      "inputSha256": "9f013bd1c3a6c7340818747a51e48f73c5905a30b738b5ec440f59c11160d436",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/21.deepAnalysis.md",
+          "sha256": "f7a89f550338d22f7652f145d1b3d06728b50b746555830fbe7603232ad8bf9b",
+          "characters": 1859
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/21.md"
+    },
+    {
+      "id": "general_彭德懷_903329142",
+      "slug": "22",
+      "context": {
+        "id": "general_彭德懷_903329142",
+        "name": "彭德懷",
+        "type": "general",
+        "dynasty": "中華人民共和國",
+        "rank": "S-",
+        "title": "彭大將軍",
+        "tag": "逆風統帥",
+        "desc": "無與倫比的逆境破局力，以劣勢裝備硬撼超級大國，實體兌現抗美援朝立國紅利。",
+        "poem": "誰敢橫刀立馬，唯我彭大將軍。"
+      },
+      "inputSha256": "e8146a0b9b5a37f2f98d7e212b9b22ca5882a4b9e784131206709a505700bf79",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/22.deepAnalysis.md",
+          "sha256": "245882a1b46db04b3e4fb18ca20d6490007749b84165dc3ee19a0585ebe271b4",
+          "characters": 1557
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/22.md"
+    },
+    {
+      "id": "general_王忠嗣_908276471",
+      "slug": "23",
+      "context": {
+        "id": "general_王忠嗣_908276471",
+        "name": "王忠嗣",
+        "type": "general",
+        "dynasty": "唐朝",
+        "rank": "A+",
+        "title": "四鎮節度使",
+        "tag": "中唐將星之師",
+        "desc": "獨攬四鎮兵權威懾胡虜，拒戰石堡城展現頂級戰略清醒，其提拔之將校最終挽救了大唐國祚。",
+        "poem": "佩印四鎮安天下，不教石堡萬骨枯。"
+      },
+      "inputSha256": "1953bdc5815e1cbd6491d4feb900200abc79819b801536f7bf5c45345dcbd50c",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/23.deepAnalysis.md",
+          "sha256": "cd8539a0d3e44cc3dee339e40bfb29c621c6a558875120011f113e5ce8c6b905",
+          "characters": 1760
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/23.md"
+    },
+    {
+      "id": "general_孫武_306204690",
+      "slug": "24",
+      "context": {
+        "id": "general_孫武_306204690",
+        "name": "孫武",
+        "type": "general",
+        "dynasty": "春秋",
+        "rank": "A+",
+        "title": "兵聖",
+        "tag": "兵學宗師",
+        "desc": "以十三篇兵法奠定後世戰術圭臬，實戰中指揮柏舉之戰以少勝多破楚入郢，理論與戰果並耀。",
+        "poem": "十三篇章傳萬古，柏舉一戰破楚都。"
+      },
+      "inputSha256": "ad2cd4e5b79d3c17e458f3d94e01580e8f1b56e79cec242181a41ceeeae5ecb7",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/24.deepAnalysis.md",
+          "sha256": "9e9d9237bfb8a36f500d53750d2a76fc4be8b52d17b2c14c9779c2ce35329eee",
+          "characters": 1421
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/24.md"
+    },
+    {
+      "id": "general_朱德_306295133",
+      "slug": "25",
+      "context": {
+        "id": "general_朱德_306295133",
+        "name": "朱德",
+        "type": "general",
+        "dynasty": "中華人民共和國",
+        "rank": "A+",
+        "title": "紅軍之父",
+        "tag": "建軍宗師",
+        "desc": "武裝力量實體建制的基石，宏觀戰略與定海神針作用無可替代，然少一線大兵團微操戰績。",
+        "poem": "南昌城頭第一槍，太行山上把名揚。"
+      },
+      "inputSha256": "1aa61d01bf783fcf6897dd5aa713633874601973ac193f5c3cc52f35c3cfd2c9",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/25.deepAnalysis.md",
+          "sha256": "2609908b0d8cd5202a130183b7eb69eec8cf0f2faece12cb13e36e74e9906885",
+          "characters": 1516
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/25.md"
+    },
+    {
+      "id": "general_孟珙_306206481",
+      "slug": "26",
+      "context": {
+        "id": "general_孟珙_306206481",
+        "name": "孟珙",
+        "type": "general",
+        "dynasty": "南宋",
+        "rank": "A+",
+        "title": "防禦大師",
+        "tag": "機動防禦",
+        "desc": "南宋擎天柱，一人統御三分之二戰線。",
+        "poem": "蔡州雪恥絕金祀，藩籬三層拒鐵騎。"
+      },
+      "inputSha256": "38367cb1457135d63e0c8a62011706e1bc84885859a1a6848d9b8b4ed93ff2cd",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/26.deepAnalysis.md",
+          "sha256": "892cb16c486ae0be47378739149ef0d1f8026bca65421b4a02cbfccb114f2421",
+          "characters": 1591
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/26.md"
+    },
+    {
+      "id": "general_李光弼_905152266",
+      "slug": "27",
+      "context": {
+        "id": "general_李光弼_905152266",
+        "name": "李光弼",
+        "type": "general",
+        "dynasty": "唐朝",
+        "rank": "A+",
+        "title": "中興第一",
+        "tag": "太原奇蹟",
+        "desc": "安史之亂戰功第一，太原保衛戰堪稱戰術奇蹟，唯晚年擁兵不朝留下政治瑕疵。",
+        "poem": "太原城下出奇謀，地道借箭退叛軍。"
+      },
+      "inputSha256": "66c11e30cb20530f6fd61bc57663d802d0f9bc21b3cc64e91043a54dea4ec0f4",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/27.deepAnalysis.md",
+          "sha256": "c5bf49b0954a39ddf170c042bd56a0f7fa6f8fea9be9e89df8b67dc4a23ee591",
+          "characters": 1374
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/27.md"
+    },
+    {
+      "id": "general_孫臏_306210427",
+      "slug": "28",
+      "context": {
+        "id": "general_孫臏_306210427",
+        "name": "孫臏",
+        "type": "general",
+        "dynasty": "戰國",
+        "rank": "A+",
+        "title": "兵家亞聖",
+        "tag": "鬼謀殘軀",
+        "desc": "圍魏救趙首創戰略調動先河，馬陵減灶盡顯心理博弈極致；以殘軀謀霸業，一舉終結魏國百年霸權。",
+        "poem": "減灶誘敵除龐涓，圍魏救趙史無前。"
+      },
+      "inputSha256": "34aaf485bde4e4e240487879e29c0ef4fc057a1678c0c8fd70a27853f988ad59",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/28.deepAnalysis.md",
+          "sha256": "6f7c8d785ff6cba7bc60f6e2db97f8427a5f6af5c097e1f69d4daa53ee701dee",
+          "characters": 1450
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/28.md"
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "slug": "29",
+      "context": {
+        "id": "general_伍子胥_899273611",
+        "name": "伍子胥",
+        "type": "general",
+        "dynasty": "春秋",
+        "rank": "A+",
+        "title": "深擊戰先驅",
+        "tag": "三分疲楚",
+        "desc": "柏舉之戰3萬破20萬，游擊戰鼻祖。",
+        "poem": "疲楚破郢創深擊，日暮途遠死黨爭。"
+      },
+      "inputSha256": "0962c061a348385089e5d7590ca224ac3587b5a9990b5dde6b32a310d4903ff3",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/29.deepAnalysis.md",
+          "sha256": "0fd4eb3db16f19161274c6e9a2aac9448f887c7bdffb1b08ae157e081f5d15b6",
+          "characters": 1692
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/29.md"
+    },
+    {
+      "id": "general_白崇禧_908987622",
+      "slug": "30",
+      "context": {
+        "id": "general_白崇禧_908987622",
+        "name": "白崇禧",
+        "type": "general",
+        "dynasty": "中華民國",
+        "rank": "A+",
+        "title": "小諸葛",
+        "tag": "戰略大師",
+        "desc": "北伐定鼎與抗日樞密之絕對智囊，民國軍界戰略與大兵團指揮的最高表率，受制派系而留憾。",
+        "poem": "龍潭大捷定東南，智絕國軍恨局殘。"
+      },
+      "inputSha256": "82ee000a9a0eb069d90a4f88b932f7e4d917b41eca96596967e0d2c85b115b61",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/30.deepAnalysis.md",
+          "sha256": "604c4a4a67272a29d7f39ea7b500306075d3a389f04c698eeac9c1cebc6da916",
+          "characters": 1733
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/30.md"
+    },
+    {
+      "id": "general_左宗棠_902922424",
+      "slug": "31",
+      "context": {
+        "id": "general_左宗棠_902922424",
+        "name": "左宗棠",
+        "type": "general",
+        "dynasty": "清朝",
+        "rank": "A+",
+        "title": "鎮疆大將",
+        "tag": "收復新疆",
+        "desc": "戰略遠見卓絕，定緩進急戰之策，憑極限後勤跨越瀚海，收復百萬平方公里國土，晚清外戰第一功。",
+        "poem": "抬棺西出定天山，萬里黃沙百戰還。"
+      },
+      "inputSha256": "c5aae5ddbf67c066b36e7eaacc42b083c2b81cd627e1679bf926b58506f1fff1",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/31.deepAnalysis.md",
+          "sha256": "faeda0008524a45225e430926db3083342a500ddcec44036e02487586321eb63",
+          "characters": 1575
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/31.md"
+    },
+    {
+      "id": "general_戚繼光_904227344",
+      "slug": "32",
+      "context": {
+        "id": "general_戚繼光_904227344",
+        "name": "戚繼光",
+        "type": "general",
+        "dynasty": "明朝",
+        "rank": "A+",
+        "title": "武毅公",
+        "tag": "革新宗師",
+        "desc": "首創鴛鴦陣與近代步兵操典，重塑薊鎮防禦體系。實戰、工程與兵學並重的全能宗師。",
+        "poem": "封侯非我意，但願海波平。"
+      },
+      "inputSha256": "5dd56c27e6499a5bd1b4ed0ce5c38398534c4e87551e6de76903d6e35a9a763f",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/32.deepAnalysis.md",
+          "sha256": "1dd50f18797bd6592d9e491a9bf9bb82b6a8116fc846af702a7d9c757c613455",
+          "characters": 1767
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/32.md"
+    },
+    {
+      "id": "general_木華黎_905533968",
+      "slug": "33",
+      "context": {
+        "id": "general_木華黎_905533968",
+        "name": "木華黎",
+        "type": "general",
+        "dynasty": "元朝",
+        "rank": "A+",
+        "title": "東方經略",
+        "tag": "獨當一面",
+        "desc": "以寡擊眾經略中原，首創蒙漢武裝聯軍體系，將金國逼入絕境，奠定大元帝國基業。",
+        "poem": "受命太師開漢地，孤軍百戰定中原。"
+      },
+      "inputSha256": "1c6c9b0e74d3e9823d37087500e08d7ff96b71a16a4a4d575e491dca9ff53d4f",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/33.deepAnalysis.md",
+          "sha256": "8720159f44240f2130e954550857ae40e66787567fd405a7057b86250e153a56",
+          "characters": 1742
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/33.md"
+    },
+    {
+      "id": "general_僕固懷恩_2119975374",
+      "slug": "34",
+      "context": {
+        "id": "general_僕固懷恩_2119975374",
+        "name": "僕固懷恩",
+        "type": "general",
+        "dynasty": "唐朝",
+        "rank": "A+",
+        "title": "悲劇泰坦",
+        "tag": "滿門忠烈",
+        "desc": "安史之亂的軍事推土機，以四十六口家眷殉國換取大唐存續，卻敗於政治傾軋。",
+        "poem": "百戰平叛滿門喋血，一朝蒙冤飲恨引弓。"
+      },
+      "inputSha256": "6388b3d4b7fcefc04175e9d211524f02e70f1730f283b146936936fcb159dd30",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/34.deepAnalysis.md",
+          "sha256": "b34bf3b5380e100dd7efcb7c28e20a992941f24bd5a9234c8014fbeb2e0d8c40",
+          "characters": 1467
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/34.md"
+    },
+    {
+      "id": "general_陳慶之_916874609",
+      "slug": "35",
+      "context": {
+        "id": "general_陳慶之_916874609",
+        "name": "陳慶之",
+        "type": "general",
+        "dynasty": "南北朝",
+        "rank": "A+",
+        "title": "白袍戰神",
+        "tag": "戰術神蹟",
+        "desc": "7000白袍軍橫掃北魏，47戰全勝。",
+        "poem": "名師大將莫自牢，千軍萬馬避白袍。"
+      },
+      "inputSha256": "ba1137bf009022fb2c262ce4e9043607ab16463a08298e18a223b71958923df1",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/35.deepAnalysis.md",
+          "sha256": "ceb0d1b37cca92bbf01cc429ad843dc5e280554ab76c80c17716666da4bc3d8f",
+          "characters": 1827
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/35.md"
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "slug": "36",
+      "context": {
+        "id": "minister_周恩來_1990120203",
+        "name": "周恩來",
+        "type": "minister",
+        "dynasty": "中華人民共和國",
+        "rank": "S",
+        "title": "開國定海之相",
+        "tag": "宰相典範",
+        "desc": "於廢墟中建構現代國家行政機器，在極端政治風暴與冷戰夾縫中極限維穩，以外交破局奠定地緣根基。",
+        "poem": "鞠躬盡瘁為人民，十里長街送總理。"
+      },
+      "inputSha256": "62e760854fcf40d113e912fc20b509888e4abd0933fe3415c6905948b71268b5",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/36.deepAnalysis.md",
+          "sha256": "9b4e8ccfbf57c5b5a795c8511a23713c2fb8e80f029e3ab1f50d8d3a444e5622",
+          "characters": 1871
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/36.md"
+    },
+    {
+      "id": "minister_荀彧_2004230913",
+      "slug": "37",
+      "context": {
+        "id": "minister_荀彧_2004230913",
+        "name": "荀彧",
+        "type": "minister",
+        "dynasty": "三國",
+        "rank": "S",
+        "title": "令君",
+        "tag": "王佐之才",
+        "desc": "兼具子房之謀與蕭何之政，首倡奉天子以令不臣，舉薦魏晉英傑，實為曹魏霸業締造者。",
+        "poem": "王佐之才奠魏基，空盒遺恨嘆孤忠。"
+      },
+      "inputSha256": "07e8f2b5af4e6e4d3da7241aa27d71a03a846ce16c00c4dcc8352d40666e55b4",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/37.deepAnalysis.md",
+          "sha256": "82cc4438f6678886f372b05b161ea31bb35bb9dfacb198444cad0bda9e1db20e",
+          "characters": 1256
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/37.md"
+    },
+    {
+      "id": "minister_張良_2003953844",
+      "slug": "38",
+      "context": {
+        "id": "minister_張良_2003953844",
+        "name": "張良",
+        "type": "minister",
+        "dynasty": "西漢",
+        "rank": "S",
+        "title": "留侯",
+        "tag": "千古謀聖",
+        "desc": "畫策決勝締造大漢帝業，知止全身堪稱政治典範。",
+        "poem": "策定漢室平天下，功成身退伴赤松。"
+      },
+      "inputSha256": "7b93d9f1de753f8da601ba28386b225d180a2cf1a1f322c5317d08928d3aa4b4",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/38.deepAnalysis.md",
+          "sha256": "8acde6cb2a8df2180c632b8cea3679068361570e9c32b2309d6b7f3ebc712498",
+          "characters": 1588
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/38.md"
+    },
+    {
+      "id": "minister_李斯_2004010747",
+      "slug": "39",
+      "context": {
+        "id": "minister_李斯_2004010747",
+        "name": "李斯",
+        "type": "minister",
+        "dynasty": "秦朝",
+        "rank": "S",
+        "title": "丞相",
+        "tag": "建制立極",
+        "desc": "廢分封立郡縣，統一度量衡與文字，奠基兩千年帝國底層架構。然沙丘之謀引發戰略崩盤，剝奪S+潛力。",
+        "poem": "百代皆行秦政法，沙丘一燼誤帝國。"
+      },
+      "inputSha256": "ea0c7bb6c950b0680b510e9b5ffc0df8533f2ffe6937935acdfd197cbea330b2",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/39.deepAnalysis.md",
+          "sha256": "03e67589e2b23cee0f781987223dcb878b2e95fa7431e2c0bfe134ec9bd8a2c4",
+          "characters": 1564
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/39.md"
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "slug": "40",
+      "context": {
+        "id": "minister_于謙(名臣)_924336368",
+        "name": "于謙(名臣)",
+        "type": "minister",
+        "dynasty": "明朝",
+        "rank": "S-",
+        "title": "忠肅公",
+        "tag": "再造大明",
+        "desc": "北京保衛戰力挽狂瀾，粉身碎骨全不惜。",
+        "poem": "粉身碎骨全不惜，要留清白在人間。"
+      },
+      "inputSha256": "f647a236082adf37507a993faeccdd17b7401e82dd17163d571b3da03a0255cc",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/40.deepAnalysis.md",
+          "sha256": "7152a6acbcf8d2d6155080aca7001fc3bdae81ad92a4aab7610e77869762a803",
+          "characters": 1638
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/40.md"
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "slug": "41",
+      "context": {
+        "id": "minister_謝安_2004292326",
+        "name": "謝安",
+        "type": "minister",
+        "dynasty": "晉朝",
+        "rank": "S-",
+        "title": "太傅",
+        "tag": "東林再起",
+        "desc": "淝水之戰的幕後指揮，鎮定自若。",
+        "poem": "東山再起定江左，淝水捷報弈棋中。"
+      },
+      "inputSha256": "c0c33c33c67b91f8ac9b304294c479968be169b3915df61d3fcb1a508ffa2582",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/41.deepAnalysis.md",
+          "sha256": "dc8fda9a5138092db563c52a775b7c74821289c6c8e0dbffb9efd3b0104b50b4",
+          "characters": 1606
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/41.md"
+    },
+    {
+      "id": "minister_范仲淹_2001455088",
+      "slug": "42",
+      "context": {
+        "id": "minister_范仲淹_2001455088",
+        "name": "范仲淹",
+        "type": "minister",
+        "dynasty": "北宋",
+        "rank": "S-",
+        "title": "文正公",
+        "tag": "先憂後樂",
+        "desc": "慶曆新政，開創宋代士大夫風骨。",
+        "poem": "出將入相挽狂瀾，先憂後樂鑄國魂。"
+      },
+      "inputSha256": "0d0a1031fae0ccdca8e1001d128bdbf48db229f33362d96684738561150023aa",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/42.deepAnalysis.md",
+          "sha256": "a770a436a175de93608550135181fe3a4e43adcdeb3cbadee113aa77efc764b4",
+          "characters": 1662
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/42.md"
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "slug": "43",
+      "context": {
+        "id": "minister_朱鎔基_1995149885",
+        "name": "朱鎔基",
+        "type": "minister",
+        "dynasty": "中華人民共和國",
+        "rank": "S-",
+        "title": "鐵面總理",
+        "tag": "經濟體制重塑者",
+        "desc": "國企改革，分稅制，加入WTO，風格強硬。",
+        "poem": "不管前面是地雷陣，還是萬丈深淵。"
+      },
+      "inputSha256": "0de90946690f22280487de2144caf6b26129e1cbb9aed2087f9d1247fb771f49",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/43.deepAnalysis.md",
+          "sha256": "c748fa0dfee517d0df048b97fa46b7166b751aeb556193608d758b605692ce97",
+          "characters": 1813
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/43.md"
+    },
+    {
+      "id": "minister_劉基_2003842411",
+      "slug": "44",
+      "context": {
+        "id": "minister_劉基_2003842411",
+        "name": "劉基",
+        "type": "minister",
+        "dynasty": "明朝",
+        "rank": "S-",
+        "title": "誠意伯",
+        "tag": "開國戰略樞機",
+        "desc": "奠定明初平定群雄之戰略格局，參預洪武禮法建制，然受制於淮西武閥與皇權獨裁，未能執掌絕對行政實權。",
+        "poem": "機謀定洪武基業，孤臣困明初黨爭。"
+      },
+      "inputSha256": "cdf752af33b5b2b4681bdab6d19195b53702a3c5f70c4fd3d369c7bce7359c7d",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/44.deepAnalysis.md",
+          "sha256": "c7944ac4151af97abc9678ea01e3ef0b2bf2f19dfe1569b2431200f426640062",
+          "characters": 1525
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/44.md"
+    },
+    {
+      "id": "minister_張廷玉_1992775117",
+      "slug": "45",
+      "context": {
+        "id": "minister_張廷玉_1992775117",
+        "name": "張廷玉",
+        "type": "minister",
+        "dynasty": "清朝",
+        "rank": "S-",
+        "title": "軍機樞紐",
+        "tag": "制度建構/清廷名相/配享太廟",
+        "desc": "清朝唯一配享太廟的漢臣，制度完善者。",
+        "poem": "樞機輔政極人臣，百代清規由此定。"
+      },
+      "inputSha256": "09ec2ee8d56e53624a6d6aa002e97b79c32ed510d6acf9991cdd22f0c44f2113",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/45.deepAnalysis.md",
+          "sha256": "712d3e9650ddc2540c0804b061a58ab4a441b414b6beb7e46228f7d6d5a52c30",
+          "characters": 1484
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/45.md"
+    },
+    {
+      "id": "minister_霍光_2004384438",
+      "slug": "46",
+      "context": {
+        "id": "minister_霍光_2004384438",
+        "name": "霍光",
+        "type": "minister",
+        "dynasty": "西漢",
+        "rank": "S-",
+        "title": "博陸侯",
+        "tag": "昭宣中興",
+        "desc": "廢立皇帝，輔政兩朝，權傾朝野但安定漢室。",
+        "poem": "伊霍之威震主，與民休息存漢。"
+      },
+      "inputSha256": "fff973e9c0bb8914a97ee441763df42b068fbddb58c4529828ec17370734bdaf",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/46.deepAnalysis.md",
+          "sha256": "ef2b10934387ef40b0dd0658e5fc7da27fdce0d7369d0bf98fbe5e29ed96731f",
+          "characters": 1610
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/46.md"
+    },
+    {
+      "id": "minister_張之洞_1992641166",
+      "slug": "47",
+      "context": {
+        "id": "minister_張之洞_1992641166",
+        "name": "張之洞",
+        "type": "minister",
+        "dynasty": "清朝",
+        "rank": "S-",
+        "title": "香帥",
+        "tag": "中體西用",
+        "desc": "洋務運動後期領袖，漢陽鐵廠，勸學篇。",
+        "poem": "中體西用啟蒙昧，大漢陽造淬國魂。"
+      },
+      "inputSha256": "168d8630f0b5de46fdb478a45cbd1aae2be5995d5854ececde81c029739bc9ca",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/47.deepAnalysis.md",
+          "sha256": "66d957db7656ee2d60753beb27072e2a2154af56ef505bfd448736679d080ed4",
+          "characters": 1735
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/47.md"
+    },
+    {
+      "id": "minister_子產_2003919532",
+      "slug": "48",
+      "context": {
+        "id": "minister_子產_2003919532",
+        "name": "子產",
+        "type": "minister",
+        "dynasty": "春秋",
+        "rank": "S-",
+        "title": "鄭相",
+        "tag": "鑄刑書",
+        "desc": "春秋名相，鑄刑書，不毀鄉校，孔子敬重。",
+        "poem": "鑄刑書以立治，不毀鄉校聽民聲。"
+      },
+      "inputSha256": "47c06a82f8f57b1c640b219f0ca0eb1384a9f9b7260ef515b258207f44c2b503",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/48.deepAnalysis.md",
+          "sha256": "a87576b5bec6240d09dd1b03b778ddcde5efc6e17200f63b7c6b7342bcb20e28",
+          "characters": 1825
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/48.md"
+    },
+    {
+      "id": "minister_陳雲_2004397497",
+      "slug": "49",
+      "context": {
+        "id": "minister_陳雲_2004397497",
+        "name": "陳雲",
+        "type": "minister",
+        "dynasty": "中華人民共和國",
+        "rank": "S-",
+        "title": "財經大腦",
+        "tag": "鳥籠經濟",
+        "desc": "新中國經濟建設的奠基人之一，穩健派。",
+        "poem": "籌算神州調鼎鼐，鳥籠經濟穩盤根。"
+      },
+      "inputSha256": "5954fa854fd16ec238a56e913ae6365b0aad4d858c9a80932bb5648a6a398ed5",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/49.deepAnalysis.md",
+          "sha256": "79f3a2ceab1bc3f3fbed446546c9fac65e27e3f12296d7f38dac6994e37b4217",
+          "characters": 1545
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/49.md"
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "slug": "50",
+      "context": {
+        "id": "minister_徐光啟_1992746284",
+        "name": "徐光啟",
+        "type": "minister",
+        "dynasty": "明朝",
+        "rank": "A+",
+        "title": "文定公",
+        "tag": "西學東漸",
+        "desc": "引進西學，翻譯幾何原本，農政全書。",
+        "poem": "西學東漸開風氣，農政全書利萬民。"
+      },
+      "inputSha256": "5e4a8271e153f194cb0f9fa69dfa1e40a3d17c0d208a9928dcaf1cdb84c90e22",
+      "missingFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "preserved": {
+        "deepAnalysis": {
+          "path": "analysis-batch-50/existing/50.deepAnalysis.md",
+          "sha256": "2cc59664231ca5ea142dd8c4fc418f5190d0c1f2dab66063ab348850eba6de9a",
+          "characters": 1639
+        }
+      },
+      "sourcesPath": "analysis-batch-50/sources/50.md"
+    }
+  ]
+}

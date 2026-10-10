@@ -1,0 +1,113 @@
+{
+  "format": "dynasty-batch50-institution-source-notes",
+  "schemaVersion": 1,
+  "recordId": "emperor_康熙帝_283469836",
+  "task": "analysisStats",
+  "manuscriptSha256": "01f710e7f9136c9a4822d1b738951798544f9600f48a3bc2f5b0711115506c6f",
+  "checkedOn": "2026-10-10",
+  "scope": "Read the actual 03 captured manuscript. This is a partial source-review handoff, not the final 03 source-review. Seven specified institution/research links were attempted with web tools. The Palace Museum lineage page was read with web tools; three further Palace Museum pages and both RUC papers were fetched from their original public HTTPS URLs with HTTP200 and their relevant body text read. PKU was checked at its official-repository search-index bibliographic and abstract scope because direct HTTPS/HTTP retrieval timed out. No manuscript or final review changed.",
+  "materialIssues": [],
+  "sources": [
+    {
+      "title": "徐凱〈吳三桂討清《檄文》原文本考〉，《清史研究》（2017），140–145頁，北京大學機構知識庫",
+      "url": "https://ir.pku.edu.cn/handle/20.500.11897/464369",
+      "locator": "官方知識庫搜尋索引可見題名、徐凱、北京大學歷史學系、2017、《清史研究》140–145與摘要；摘要具述康熙十二年三月尚可喜請告老、七月吳三桂及耿精忠請撤、十一月吳反叛。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "web_search_official_repository_index",
+      "readScope": "Bibliographic record and all available indexed abstract text, not article full text. The manuscript only cites it for the 1673 withdrawal/rebellion sequence, which this abstract supports.",
+      "retrievalLimit": "Direct official HTTPS retrieval timed out in web tools and native fetch; HTTP retrieval also timed out. Repository index states that no files are associated with this item."
+    },
+    {
+      "title": "故宮博物院〈三藩〉",
+      "url": "https://www.dpm.org.cn/lemmas/241557.html",
+      "locator": "詞條正文全段：三藩原封爵人物及後代，吳三桂雲南勢力，康熙十二年撤藩，尚之信與耿精忠響應，八年平叛。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Full short lemma read. Supports the manuscript's 1673–1681 war framework, hereditary military/political groups and differentiated named actors."
+    },
+    {
+      "title": "故宮博物院〈允礽〉",
+      "url": "https://www.dpm.org.cn/lemmas/244122.html",
+      "locator": "詞條正文：赫舍里氏所生、1675年立太子、1696/1697年代行政務與監國、1708廢黜、1709復立、1712再廢。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Full short lemma read. Supports the manuscript's dates, mother and the growth of the crown prince's real political role. The manuscript treats the father's control anxiety as an interpretation, not a primary-source secret motive."
+    },
+    {
+      "title": "聶崇正，故宮博物院〈王翬等康熙南巡圖卷〉",
+      "url": "https://www.dpm.org.cn/collection/paint/228301.html",
+      "locator": "藏品介紹首三段：1684–1707年六次南巡、了解民情、視察河防、平息江南反清情緒、地方接駕費用；1689年第二次南巡後命繪十二巨卷，王翬領銜。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Collection introduction and named author's account read. Supports six tours, river-control inspection and political legitimation/reassurance. The manuscript does not claim the tours were cost-free."
+    },
+    {
+      "title": "故宮博物院〈康熙皇帝〉",
+      "url": "https://www.dpm.org.cn/court/lineage/226256.html",
+      "locator": "人物主文第189–194段與1661年大事年表第264–265段：1654出生、1661八歲繼位、四輔臣、1669鰲拜、61年統治、多族群整合、騎射及西方科技學習、晚年兩廢太子與政風。",
+      "type": "official_institution",
+      "checked": true,
+      "accessMethod": "web_open",
+      "readScope": "Main biographical section and accession chronology read. Supports the manuscript's main biography, learning, political integration and succession tension. Unrelated linked keyword mini-articles were not used to override primary chronology."
+    },
+    {
+      "title": "陳樺〈論清代「人丁」概念的異變〉，中國人民大學清史研究所（2007-11-26）",
+      "url": "https://iqh.ruc.edu.cn/kxyj/kydt/c5529c15e38f4d01a83a3ec4b6c5739b.htm",
+      "locator": "第二節關於人丁財政属性、康熙五十一年固定在冊丁數及另冊增丁、避稅與編審目標、雍正攤丁入地；第三節討論實際編審困境與後來人口統計制度。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Original author/date and relevant second/third-section body passages read. Supports the 1712 policy mechanism, intended improved reporting and its difference from Yongzheng's later reform. The author additionally judges the registration explanation incomplete and the expected statistical benefit unrealized; the manuscript describes an aim and possible incentive rather than declaring accurate registration was achieved."
+    },
+    {
+      "title": "董建中〈清代耗羨歸公起始考〉，中國人民大學清史研究所（2007-05-15）",
+      "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/847247658ea94b07a3372af841b74dc0.htm",
+      "locator": "原文起始時間考證中康熙六十、六十一年年羹堯奏折；結尾自官員低薪與地方經費短絀至李紱虧空數據、康熙五十八年清查及李樹德奏折、五十九年彙覆。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "accessMethod": "public_original_https_fetch_http200",
+      "readScope": "Title/date, Kangxi-era reform attempts and concluding causal/deficit paragraphs read. Explicitly supports insufficient official salaries/local funds, accumulated middle/late-Kangxi deficits and late attempts at investigation; also distinguishes Kangxi antecedents from Yongzheng's wider institutionalization."
+    }
+  ],
+  "claimChecks": [
+    {
+      "id": "three-feudatories",
+      "passed": true,
+      "detail": "Original Palace Museum lemma and PKU abstract support the dates and named political groups. No factual contradiction found in the manuscript's risky withdrawal decision, military adaptation and 1681 outcome."
+    },
+    {
+      "id": "crown-prince-sequence",
+      "passed": true,
+      "detail": "Original Palace Museum Yunreng lemma supports 1675 establishment and 1708/1709/1712 changes, and records substantial delegated authority in 1696/1697. The manuscript's succession-system interpretation is grounded in actual events rather than presented as a verbatim psychological confession."
+    },
+    {
+      "id": "tour-purpose-and-biography",
+      "passed": true,
+      "detail": "Original collection entry supports six tours, river inspection and Jiangnan political reassurance. The official biography supports childhood accession, named regents, later science learning and late succession problems."
+    },
+    {
+      "id": "1712-reform-scope",
+      "passed": true,
+      "detail": "RUC paper supports fixed existing taxable ding, separate reporting of additions and avoidance of an additional tax charge; the manuscript distinguishes this from cancelling all poll tax or completing Yongzheng's later reform. It describes reporting incentives rather than a proven successful census outcome."
+    },
+    {
+      "id": "late-fiscal-difficulties",
+      "passed": true,
+      "detail": "Dong Jianzhong's article explicitly discusses low pay, inadequate local administrative funds, increasing deficits and late investigation. The manuscript captures these multiple causes and does not claim simple universal corruption caused only by personal kindness."
+    }
+  ],
+  "nonBlockingNuances": [
+    {
+      "id": "policy-intent-versus-result",
+      "detail": "Chen Hua's paper agrees that Kangxi intended to improve registration but disputes his diagnosis and the expectation that this mechanism could deliver accurate statistics. The manuscript uses possible-incentive language, so this is a distinction to retain rather than a material falsehood requiring manuscript repair."
+    },
+    {
+      "id": "pku-access-scope",
+      "detail": "PKU checked status is limited to the official indexed bibliographic record and abstract. No claim of having read an inaccessible full paper is made. The specific cited withdrawal/rebellion chronology is present in that abstract and is independently checkable in the primary records assigned to the lead reviewer."
+    }
+  ]
+}

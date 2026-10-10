@@ -1,0 +1,151 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:51:00.201Z",
+  "recordId": "minister_陳雲_2004397497",
+  "slug": "49",
+  "name": "陳雲",
+  "type": "minister",
+  "dynasty": "中華人民共和國",
+  "identity": "陳雲；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "實際查 1982 年鳥籠比喻原發言與《陳雲文選》頁碼，評其改革主張和計畫约束的歷史效果，別把後來辯護文章當陳本人原話。",
+    "找當時中財委文件、物價數據與相關回憶，核上海銀元之戰／米棉之戰的具体先後，評國家調度能力與政策成本。",
+    "查陳的不同時期職權、實際政策采納與政治影響，區分正式職位、幕后影響、國務院執行與他人共同貢獻。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-minister_陳雲_2004397497",
+      "recordIds": [
+        "minister_陳雲_2004397497"
+      ],
+      "recordNames": [
+        "陳雲"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:prc-official-historical-texts",
+          "url": "https://www.gov.cn/ldhd/2005-06/14/content_6183.htm",
+          "locator": "胡錦濤2005年6月13日紀念講話／新中國成立後任職段",
+          "supportedFact": "該官方紀念講話記陳雲曾任政務院副總理兼財政經濟委員會主任。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "紀念講話是政治機構自述。本條只採姓名與職務，不採對功績、路線及人格的評價。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "該官方紀念講話記陳雲曾任政務院副總理兼財政經濟委員會主任。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "陈云经济思想的几个要点",
+      "url": "https://www.dswxyjy.org.cn/n1/2024/1223/c423731-40387919.html",
+      "author": "朱佳木",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "original_authored_scholarly_interpretation",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀摘要及進口糧食、外貿與特區段；鳥籠比喻雖由搜尋索引顯示，未在本次具體段落核讀中讀到其原始發言全文。",
+      "minimalSupportedClaim": "作者以具時點事件呈現陳的穩定、比例與市場受計畫指導的經濟思想，也描述進口糧食和對特區擴張的態度。",
+      "citationLocator": "外貿與對外開放相關段落；網站刊於 2024 年 12 月 23 日。",
+      "gptSearchQuestion": "實際查 1982 年鳥籠比喻原發言與《陳雲文選》頁碼，評其改革主張和計畫约束的歷史效果，別把後來辯護文章當陳本人原話。"
+    },
+    {
+      "title": "1949—1956年陈云在经济工作中的全局思维",
+      "url": "https://www.dswxyjy.org.cn/n1/2020/0424/c423731-31686912.html",
+      "author": "何雲峰",
+      "institution": "中共中央黨史和文獻研究院；原刊《黨的文獻》",
+      "sourceType": "original_scholarly_research",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀摘要與米棉之戰、物資調度、財政代價的正文段。",
+      "minimalSupportedClaim": "研究呈現陳在物價穩定政策中的跨地區物資、貿易、銀行與財政協調；也指出國家承担運輸差價。",
+      "citationLocator": "第一節，1949–1950 年物價治理相關段落。",
+      "gptSearchQuestion": "找當時中財委文件、物價數據與相關回憶，核上海銀元之戰／米棉之戰的具体先後，評國家調度能力與政策成本。"
+    },
+    {
+      "title": "陈云与中央财经工作领导机构的变迁",
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423911-30913009.html",
+      "author": "張金才",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "original_scholarly_research_with_institutional_document_citations",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀 1949 年中財委組建、任職與起步工作段；未逐條調閱 138 行網頁所引文獻。",
+      "minimalSupportedClaim": "說明陳的財經权責隨組織變動而改變，提供 1949 年中財委和政務院財委的具体設置。",
+      "citationLocator": "第一節；1949 年 7 月 12 日、10 月 19–21 日任職與成立會議。",
+      "gptSearchQuestion": "查陳的不同時期職權、實際政策采納與政治影響，區分正式職位、幕后影響、國務院執行與他人共同貢獻。"
+    }
+  ],
+  "candidateTexts": [
+    {
+      "title": "陈云文选（第三卷）官方電子書",
+      "url": "https://ebook.dswxyjy.org.cn/storage/files/2019/6bb64c72-ac69-4f56-86a3-dd90ee68a70e/flipviewerxpress.html",
+      "purpose": "由官方陳雲著作目錄點開，網頁僅讀取器殼；未核書頁，不能宣稱原話頁碼已確認。",
+      "status": "official_link_opened_reader_shell_only"
+    }
+  ],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "The CEO of the Utopian Project: Deng Xiaoping's Roles and Activities in the Great Leap Forward",
+      "url": "http://www.questia.com/read/1P3-2894194011.",
+      "type": "citation-template",
+      "template": "cite journal",
+      "author": "Yen-lin Chung",
+      "publisher": "The China Journal",
+      "date": "2013",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94305001",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "Deng Struggles to Set Reform Back on Track",
+      "url": "http://www.csmonitor.com/1992/0226/26091.html/(page)/2",
+      "type": "citation-template",
+      "template": "cite journal",
+      "author": "Ann Scott Tyson",
+      "publisher": "2",
+      "date": "1992",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94305001",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "Army Backs Deng's Market Reform by Rallying Its Support, the Senior Chinese Leader Issues a Challenge to Orthodox Socialists Who Hold Sway in the Government and Party",
+      "url": "http://www.csmonitor.com/1992/0330/30032.html",
+      "type": "citation-template",
+      "template": "cite journal",
+      "author": "James L. Tyson",
+      "publisher": "3",
+      "date": "1992",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94305001",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "调查研究和党内民主生活制度问题",
+      "url": "http://cpc.people.com.cn/GB/69112/83035/83317/83597/5738441.html",
+      "type": "citation-template",
+      "template": "Cite web",
+      "author": "",
+      "publisher": "",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94305001",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

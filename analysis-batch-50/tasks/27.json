@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "general_李光弼_905152266",
+  "slug": "27",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "66c11e30cb20530f6fd61bc57663d802d0f9bc21b3cc64e91043a54dea4ec0f4",
+  "sourceSha256": "a32078f8654335706e8e1b950a95e79b9f618d7fe0c6faef128517d1435f3196",
+  "preservedDeepSha256": "c5bf49b0954a39ddf170c042bd56a0f7fa6f8fea9be9e89df8b67dc4a23ee591",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/27.analysisStats.prompt.md",
+      "promptSha256": "5c12a6849399c34e3e8a4cb7c40a4e7650f937e0e4bad4d548d98ba5ec53d805",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "80865930d3bc7800ffa74edb4199b5f98596dd1105054a5bdffac377937218c6",
+      "marker": "<!-- BATCH50_COMPLETE general_李光弼_905152266 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN general_李光弼_905152266 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/27.soulEssence.prompt.md",
+      "promptSha256": "111eba10249769c608897a8ac8a07bc96b21d415ad5d2bf66b085c74ba07b11a",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "bf340d0224934d31d5a36852cb67138ff7083341dac216c4eb2b9cd256fa1c3e",
+      "marker": "<!-- BATCH50_COMPLETE general_李光弼_905152266 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/27.analysis.md"
+    }
+  }
+}

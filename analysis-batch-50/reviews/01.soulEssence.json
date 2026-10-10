@@ -1,0 +1,123 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢光武帝_80238619",
+  "task": "soulEssence",
+  "reviewedOn": "2026-10-10",
+  "reviewer": "Codex source QA of actual ChatGPT web capture",
+  "passed": true,
+  "manuscriptFile": "analysis-batch-50/drafts/01.soulEssence.response.md",
+  "manuscriptSha256": "2f65c859dc61d7ac83806d0ac1219f79aa447f5f4096c4b1d5e933e929f0747a",
+  "rawResponseFile": "analysis-batch-50/drafts/01.soulEssence.raw.md",
+  "rawResponseSha256": "ffb3c2ecef6811c678d80bf7d30ea76909e404e705733abb1d2b6f0adfee3db1",
+  "sourcePackageFile": "analysis-batch-50/sources/01.md",
+  "sourcePackageSha256": "27a6ca705e5440f3fac33227227add48355245e8ba7ddae1098f8d1ee0806c9b",
+  "soulEssenceFile": "analysis-batch-50/drafts/01.soulEssence.md",
+  "soulEssenceFileSha256": "293a40c2a2b2ddfb1338bb7aea543a8dc6130b0a62580967d2b7c20a4d25857f",
+  "soulEssenceFieldSha256": "f94792da8489e895f6b0c685c3200c7f41d09dd54f810997a292eeff375395e6",
+  "materialIssues": [],
+  "checkedSources": [
+    {
+      "title": "《後漢書》卷一上〈光武帝紀上〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B71%E4%B8%8A",
+      "locator": "青年農事及尚書，第113行；昆陽議論、王鳳王常留守及十三騎收兵，第120–122行；劉縯死後表面言笑，第123行；劉林決水及去之真定，第128行；薊城南逃至信都，第129行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Actual canonical source URL and relevant passages independently read; corrected Handan departure toward Zhending re-opened and rechecked against line 128. Annotations distinguished from annal text; no claim of full-volume collation or exact oldid retrieval."
+    },
+    {
+      "title": "《後漢書》卷十七〈馮岑賈列傳〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B717",
+      "locator": "馮異傳，劉縯死後枕席涕泣與卿勿妄言，第133行；寒食豆粥麥飯，第135行；建武六年入朝回憶，第155行；岑彭傳朱鮪降及官爵，第172行；鄧奉建武二年反、三年夏敗降被誅，第173行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Actually read the specified biographies and dated sequences. Zhu Wei pardon and promise fulfilled; Deng Feng revolt in 26 CE and execution in summer 27 CE correctly separated by the actual soul manuscript."
+    },
+    {
+      "title": "《後漢書》卷一下〈光武帝紀下〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B71%E4%B8%8B",
+      "locator": "建武六年併省四百餘縣，第132行；十五年度田檢核，第338行；十六年官員下獄與群盜處置，第350–351行；十七年郭后廢立及章陵柔道，第366–368行；十九年更換皇太子，第398行；二十一年請都護被拒，第436行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Actually opened and read the dated policy entries. Checked 30/39/40/41/43/45 CE sequences, differentiated late imperial political actions and concrete administrative measures from the author's personality model."
+    },
+    {
+      "title": "《後漢書》卷十上〈皇后紀上〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B710%E4%B8%8A",
+      "locator": "光武郭皇后，更始二年婚姻，第137行；建武十七年中山王太后，第139行；二十年沛太后、郭況第多次飲燕及後续恩澤，第140–142行",
+      "type": "primary_text",
+      "checked": true,
+      "scope": "Actual source opened and Guo's continued royal-dowager status and family favor read. The actual manuscript does not conflate the 41 CE empress replacement with the 43 CE heir replacement or assert a uniquely proven romantic motive."
+    },
+    {
+      "title": "廖伯源〈試論光武帝之統御術四事：柔道、人質、遙控諸將與安置降卒、軍事復員〉，史語所集刊61.4（1990）：869–894",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/141/Article/454",
+      "locator": "Official publisher article metadata，第668–680行；摘要柔道、監軍親屬與詔敕遙控、降卒屯田郡守及分批復員，第685–687行",
+      "type": "scholarly_primary",
+      "checked": true,
+      "scope": "Exact manuscript URL actually opened; official title, author, issue and complete public abstract read. The abstract directly supports the described supervision and phased military settlement/demobilization. Full PDF not read or claimed as read."
+    }
+  ],
+  "checks": [
+    {
+      "id": "capture-binding",
+      "passed": true,
+      "detail": "Recomputed normalized response, raw response, public source package and search-evidence SHA-256 and compared them to actual capture metadata. Soul field SHA equals hash of the trimmed extracted body; separate file-byte SHA includes its terminal newline. Body exactly equals response after mechanically removing only the completion marker."
+    },
+    {
+      "id": "all-manuscript-links",
+      "passed": true,
+      "detail": "All five unique Markdown source URLs in the actual manuscript were independently opened and the corresponding primary passages or official scholarly abstract actually read."
+    },
+    {
+      "id": "seven-soul-fields",
+      "passed": true,
+      "detail": "Complete actual response and extracted field read. Seven required headings are present in order: 說話邏輯、壓力反應、核心驅動、慣性盲點、情感結構、參照系、內在裂縫. Sections connect dated individual events, behavior patterns and a culminating internal tension. No score content is required for this soulEssence task."
+    },
+    {
+      "id": "deng-feng-and-zhu-wei",
+      "passed": true,
+      "detail": "Actual soul places Deng Feng's event in 26–27 CE and the execution specifically in 27 CE. Wu Han's invasion, imperial inclination to pardon and Cen Peng/Geng Yan advice are grounded. Zhu Wei's participation in Liu Yan's death plot, fear of reprisal, Cen Peng's mediation and eventual office/title match the biography."
+    },
+    {
+      "id": "private-grief-and-memory",
+      "passed": true,
+      "detail": "Publicly normal drinking/laughing and no mourning in the annal compared with private avoidance of wine/meat, crying traces and admonition to Feng Yi in the biography. The 30 CE recollection of Wulou bean gruel and Hutuo wheat meal is explicit in Feng Yi's biography. Interpretation is not fabricated secret dialogue."
+    },
+    {
+      "id": "policy-timeline-and-roles",
+      "passed": true,
+      "detail": "Kunyang collective defense, 13-rider breakout, Jicheng escape and Ren Guang support match. 39/40 CE land/census inquiry, prison deaths, capture incentives, relocation and land/ration settlement match. 30 CE county reduction, 45 CE declined protectorate and 41/43 CE differentiated family/succession measures verified."
+    },
+    {
+      "id": "liu-lin-departure-destination",
+      "passed": true,
+      "detail": "Corrected actual ChatGPT text now says departure from Handan toward Zhending, matching the annal sequence at line 128. The original psychological interpretation of silence is unchanged."
+    },
+    {
+      "id": "style-and-evidence-layers",
+      "passed": true,
+      "detail": "Strong personality synthesis, agricultural risk-ledger analogy and final image of the last blade are preserved as interpretation. [史載], [推斷], [詮釋] layers are naturally present, including explicit analytical uncertainty about private awareness. No generic disclaimer expansion or weakening of the established style requested."
+    },
+    {
+      "id": "actual-search-evidence",
+      "passed": true,
+      "detail": "Corrected actual capture and preserved visible evidence state 已搜尋 11 個網站; evidence SHA recomputed. All five manuscript source URLs were independently opened and relevant passages read, without equating search count to verification."
+    },
+    {
+      "id": "corrected-attempt-and-transport",
+      "passed": true,
+      "detail": "Line-by-line comparison against rejected attempt confirms the sole prose change is the corrected Handan-to-Zhending itinerary. Five URL strings and every other prose sentence are identical. Current raw preserves the browser-export backslash before the final completion marker; normalized response only mechanically removes that transport escape and normalizes terminal whitespace, without changing prose."
+    },
+    {
+      "id": "rejected-attempt-archive",
+      "passed": true,
+      "detail": "All six archive-manifest file mappings were independently SHA-256 validated. Original failed QA remains archived with passed:false and its itinerary issue. New accepted review binds only the current corrected capture, response, raw, source package, extracted field and search evidence."
+    }
+  ],
+  "disposition": "Accept the corrected actual ChatGPT soul manuscript. The sole geographic error was corrected by ChatGPT; no new material issue found. Strong seven-field personality synthesis and evidence layers are preserved.",
+  "reviewScope": "Complete corrected actual soul response and extracted body reread against the archived first attempt; current capture and frozen public source package bound by independent hashes. All five cited URLs independently opened and relevant passages read; changed itinerary additionally re-opened. Official research abstract checked, full PDF and fixed-revision collation not claimed. Reviewer has not authored or edited manuscript prose.",
+  "captureFile": "analysis-batch-50/drafts/01.soulEssence.capture.json",
+  "captureFileSha256": "10568d19433ab560d39d06090ab6f9db256997bf50eec8eab0103c31659d06a7",
+  "webSearchEvidenceSha256": "05a9288a01b75498bc681ecb4a5961a66b09242fb07e690e787d1adffc6298fe"
+}

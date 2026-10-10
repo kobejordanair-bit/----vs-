@@ -1,0 +1,26 @@
+{
+  "format": "dynasty-combined-pilot-browser-verification",
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-09T22:36:05.489Z",
+  "passed": true,
+  "site": "https://dynasty.piamamba.com/play",
+  "person": "乾隆帝",
+  "slug": "07",
+  "loginRetainedAfterReload": true,
+  "libraryTotal": 962,
+  "appraisalTitleVisible": true,
+  "stats": [
+    94,
+    82,
+    92,
+    93,
+    89
+  ],
+  "fiveReasonsVisible": true,
+  "soulHasAllSevenSections": true,
+  "soulMatchesImportedText": true,
+  "screenshots": [
+    "C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/人物分析ChatGPT批次50_2026-10-10/07.乾隆帝_網站賞析五維.png",
+    "C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/人物分析ChatGPT批次50_2026-10-10/07.乾隆帝_網站靈魂內核.png"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_范仲淹_2001455088",
+  "slug": "42",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "0d0a1031fae0ccdca8e1001d128bdbf48db229f33362d96684738561150023aa",
+  "sourceSha256": "5da89c79e3fde65f6813c566a2672ed73768d12f66de0341cd9c2c8214fc709d",
+  "preservedDeepSha256": "a770a436a175de93608550135181fe3a4e43adcdeb3cbadee113aa77efc764b4",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/42.analysisStats.prompt.md",
+      "promptSha256": "755fb5de0e33950e533c71c5001103086c7bf513448c9e3736df6486a6cdec97",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "6375c844f5382173fa772e7bf48bc801120e22d3447f7b889e67866e2f94d354",
+      "marker": "<!-- BATCH50_COMPLETE minister_范仲淹_2001455088 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_范仲淹_2001455088 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/42.soulEssence.prompt.md",
+      "promptSha256": "18f25a91b8c6bdc3a7a532006995d3a48930f12991eba0b4c1825773c08d40aa",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "221e6ff1c265329d6472804d5ca423c57a80f2103f8081bfbd5de9059e5b3370",
+      "marker": "<!-- BATCH50_COMPLETE minister_范仲淹_2001455088 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/42.analysis.md"
+    }
+  }
+}

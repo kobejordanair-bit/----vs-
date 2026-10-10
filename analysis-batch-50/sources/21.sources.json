@@ -1,0 +1,144 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:50:29.733Z",
+  "recordId": "general_粟裕_306475725",
+  "slug": "21",
+  "name": "粟裕",
+  "type": "general",
+  "dynasty": "中華人民共和國",
+  "identity": "粟裕；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "查粟裕同期軍職與電報，具體區分陳毅、粟裕、軍委和淮海總前委的職責；核查 1958 年批判與後續平反材料。",
+    "上網找相關電報原文與回憶錄核對日期；避免使用缺原出處的名將讚語來充當分數證據。",
+    "另查具年份的年譜、戰地記錄交叉核對回憶故事；文中他人評語屬轉述，需要查原出處。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-general_粟裕_306475725",
+      "recordIds": [
+        "general_粟裕_306475725"
+      ],
+      "recordNames": [
+        "粟裕"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:pla-history",
+          "url": "https://photo.81.cn/tsjs/2013-10/11/content_5582595.htm",
+          "locator": "人物生平末段：建國後任職及授銜",
+          "supportedFact": "粟裕曾任解放軍總參謀長，1955年獲授大將軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "粟裕曾任解放軍總參謀長，1955年獲授大將軍銜。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "军事家粟裕",
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423732-30947258.html",
+      "author": "關泠、金立昕",
+      "institution": "中共中央黨史和文獻研究院；作者任職軍事科學院軍事百科研究所",
+      "sourceType": "institutional_authored_military_history",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀作者、生平與作戰段落；頁面有完整軍事履歷和著作資訊。未逐項回查所有戰果數字。",
+      "minimalSupportedClaim": "記述粟裕由基层軍職成長，蘇中、孟良崮、豫東等指揮經歷及 1948 年黃淮決戰建議。",
+      "citationLocator": "紅軍基层干部與華東戰區主將兩節；文末記原刊《百年潮》2017 年第 8 期。",
+      "gptSearchQuestion": "查粟裕同期軍職與電報，具體區分陳毅、粟裕、軍委和淮海總前委的職責；核查 1958 年批判與後續平反材料。"
+    },
+    {
+      "title": "粟裕“斗胆直陈”二三事",
+      "url": "https://www.dswxyjy.org.cn/n/2015/0423/c244523-26891901.html",
+      "author": "劉華建",
+      "institution": "中共中央黨史和文獻研究院；原刊《世紀風采》",
+      "sourceType": "authored_historical_article_with_document_dates",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀 1946 年蘇中内線建議與 1948 年黄淮決戰建議；稱頌性引語未另核原始出處。",
+      "minimalSupportedClaim": "給出粟裕向上級提出不同作戰方案的具體時點，支持分析其獨立判斷與組織內溝通。",
+      "citationLocator": "三次斗膽直陳一節，1946 年 6 月 27／29 日及 1948 年 4 月底–5 月初。",
+      "gptSearchQuestion": "上網找相關電報原文與回憶錄核對日期；避免使用缺原出處的名將讚語來充當分數證據。"
+    },
+    {
+      "title": "大智大勇 奇中取勝——回憶解放戰爭時期粟裕大將二三事",
+      "url": "https://www.dswxyjy.org.cn/BIG5/n1/2019/0228/c423732-30918104.html",
+      "author": "季清明",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "participant_recollection",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀作者 1943–1948 年身邊工作身份說明、前線指揮與孟良崮門板故事段；不是同期筆記。",
+      "minimalSupportedClaim": "一名身邊工作人員回憶粟裕的材料閱讀、前線作風與生活行為，可用於描寫其人物特徵。",
+      "citationLocator": "作者身份說明與孟良崮指揮所段。",
+      "gptSearchQuestion": "另查具年份的年譜、戰地記錄交叉核對回憶故事；文中他人評語屬轉述，需要查原出處。"
+    }
+  ],
+  "candidateTexts": [],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "《粟裕战争回忆录》 第一章 从枫木树脚谈起",
+      "url": "https://www.jcszgdsxh.com/h-nd-171.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "粟裕",
+      "publisher": "晋城党史网",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93616920",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "《粟裕战争回忆录》，頁8",
+      "url": "http://staff.ustc.edu.cn/~zuojin/arts/11MEM11B22B-GG502-PRC.pdf",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "粟裕",
+      "publisher": "解放军出版社",
+      "date": "2006年",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93616920",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "粟裕曾设鸿门宴绑架开国上将 押送途中遇突袭",
+      "url": "http://history.sohu.com/20140401/n397486092.shtml",
+      "type": "citation-template",
+      "template": "cite news",
+      "author": "",
+      "publisher": "搜狐",
+      "date": "2014-04-01",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93616920",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "粟裕兵团暂不渡江，集中主力在中原歼敌",
+      "url": "http://www.mzdbl.cn/maoxuan/wenji-5.html",
+      "type": "citation-template",
+      "template": "citation",
+      "author": "毛泽东文集 第五卷",
+      "publisher": "",
+      "date": "1948",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93616920",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

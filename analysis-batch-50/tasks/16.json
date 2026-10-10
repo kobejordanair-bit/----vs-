@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "general_林彪_306298218",
+  "slug": "16",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "685a418c253fd0cf1905079d84f15b75e3a3d1a4854f99da1598b751a1e15a1a",
+  "sourceSha256": "3c4c589ce15ce81eeddb297dceb19243c491bf7b5a674a5a0e7d5eb1196a39d4",
+  "preservedDeepSha256": "768e1bca46b2650de19e66bca4f73f5eff2ec4f806fafdbeccd2189fa9e27b34",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/16.analysisStats.prompt.md",
+      "promptSha256": "4bc688476feea27dd7fd73f4d5861491b8a31c5ebd084019551206441f647799",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "429dda27ad578737fe6416a072af0ff5e1fa6c9dab71a7c118cf848082025fa3",
+      "marker": "<!-- BATCH50_COMPLETE general_林彪_306298218 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN general_林彪_306298218 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/16.soulEssence.prompt.md",
+      "promptSha256": "d2a957eb8756a939984ec5b1b24e5d6a407ce99ccfdc91a9da8354daa5859d24",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "c8dddacb9e5f488503aa82c428c881355839760fb94647174a8c16bc304daaf9",
+      "marker": "<!-- BATCH50_COMPLETE general_林彪_306298218 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/16.analysis.md"
+    }
+  }
+}

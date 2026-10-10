@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "82361d670df9422293cf85b2c6b4faf2f0aa93f9e37b677da4b5182130bc2fe3",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "4eae4c3e9fcf9e2f8026004de9a5f5f08670937f6767765ec82f642c8a54a4ef",
+  "plannedAfterSha256": "5a1b3a8aa628ea19543b6b6d483d29dedb6f27f6c09962f5340d521c92333796",
+  "beforeRevision": 6,
+  "plannedAfterRevision": 7,
+  "patchBytes": 2825501,
+  "plannedDocumentBytes": 9744320,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "field": "analysis",
+      "sha256": "48ecf6c540c25cacb995c6bf59caf158ea9a92a212fdda659ab3ed6098245fdd"
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "field": "soulEssence",
+      "sha256": "583195647a7a811e633186331fde0e29de040535ee9bd8dad51f7fe26b7984d1"
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "field": "stats",
+      "sha256": "1306aa9a576ca4a478e2c421e7244ec61f66b9b5b56baa8a86d7f0217c2a8192"
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "field": "statsAnalysis",
+      "sha256": "73b7ab0235d684851a7da480510569a1b97429054c263734600890c3873f4f4c"
+    }
+  ]
+}

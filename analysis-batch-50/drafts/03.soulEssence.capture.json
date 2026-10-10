@@ -1,0 +1,38 @@
+{
+  "format": "dynasty-batch50-actual-capture",
+  "schemaVersion": 1,
+  "provider": "ChatGPT web",
+  "recordId": "emperor_康熙帝_283469836",
+  "slug": "03",
+  "task": "soulEssence",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T19:57:07.582Z",
+  "requestSha256": "2bc7a533bf64d798043b7db6cf106b53c52270e94d9201298906ec8ab4bb3492",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "9afcf72608c038aed8d4940799191958cc91af610d60a58c97563dc00d71a984",
+  "promptSha256": "231a74134676c2f66d4382ba7869dd891f5a53e372903db9cedd8b917da7d0db",
+  "sourcePackageSha256": "9e07de93bfc74c8d2145553b3ca9df6bb3d2383e874026e224b72598ec4cbd1a",
+  "preservedDeepSha256": "55cfa70c1c68865abe7d4acbb3ce4ea39500bd6fe8d8d4b92b4e8b16d91b95b4",
+  "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+  "renderedOriginalSha256": "cd8a46c8ad64b3d41c2b4eb74c0690cf0ae1f66a440ce0d62d7452bba0aefedd",
+  "originalPromptVerified": true,
+  "rawResponseFile": "analysis-batch-50/drafts/03.soulEssence.raw.md",
+  "rawResponseSha256": "49985633905099a6adc1bc132154a20056c026da07ac80510da1cc55285cebbb",
+  "responseFile": "analysis-batch-50/drafts/03.soulEssence.response.md",
+  "responseSha256": "06b65a0ef31c018cdfa494499080c44ed6594cc84f4cc4d78e742836d32d371f",
+  "fieldsHashes": {
+    "soulEssence": "b1ffcecf6fcfc6e12f60909709469f19d61bfa7bbab1d14f1da484816be24da3"
+  },
+  "webSearchPerformed": true,
+  "webSearchVerified": true,
+  "webSearchEvidence": {
+    "file": "analysis-batch-50/drafts/03.soulEssence.search-evidence.txt",
+    "sha256": "f67cabb229a042b30dbd22151700c2131bba089bff6505ea73779a53427164f8",
+    "visibleSearchCount": 11,
+    "uiLabel": "ChatGPT 思考摘要：已搜尋 11 個網站"
+  },
+  "removedCardLines": 17,
+  "composition": "Actual browser clipboard retained. Only known ChatGPT export formatting normalized; transport metadata split mechanically. Scores and prose are neither authored nor rewritten.",
+  "analysisContextPath": "analysis-batch-50/drafts/03.analysis.md",
+  "analysisContextSha256": "e1ebb8318122ed1f723fee5b364c58a7b7dc45d6863be0efc8a816d29cfeb321"
+}

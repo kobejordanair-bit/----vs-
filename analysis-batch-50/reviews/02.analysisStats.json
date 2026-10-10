@@ -1,0 +1,162 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋太祖_284437104",
+  "task": "analysisStats",
+  "passed": true,
+  "manuscriptSha256": "e4dc1b82ab72f31107ce07fba3ec4ae28e09c1e1c8725b4b32c3b39a7c659009",
+  "rawResponseSha256": "c1fdad5b888e78f2635063a49660e18e0a799ce924b3c337ddac5ba4646f4216",
+  "sourcePackageSha256": "8d3fc3849399914472a08e6a91823d02fd9a64c77be10d914883e670202775cf",
+  "checkedOn": "2026-10-10",
+  "reviewScope": "Independently read the actual captured manuscript, its split analysis/stats/reasons, the source package and every distinct manuscript Markdown URL. Primary passages were opened and read to check attribution, chronology and contested narratives; the two academic repository pages were checked at their available bibliographic and abstract scope. No manuscript wording or scores were authored or changed by this review.",
+  "materialIssues": [],
+  "stats": [95, 92, 96, 98, 93],
+  "checkedSources": [
+    {
+      "title": "《宋史》卷一〈太祖一〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7001",
+      "locator": "出生、騎射與軍旅起點；高平、清流關、六合及十八里灘戰事；陳橋與韓通遇害；建隆元年李筠、李重進；乾德元年荊南與湖南。實核頁面第130–164及225–229段。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "司馬光《涑水記聞》卷一（識典古籍）",
+      "url": "https://www.shidianguji.com/zh/book/NGJ892412000007186232115/chapter/1lvzk709g43si",
+      "locator": "卷一陳橋擁立、范質等在兵刃威迫下接受交接、韓通之死與禁掠約束；幽燕未定而不受一統尊號；曹彬賞賜、趙普及太原撤圍相關敘事。實核頁面第12–25、64–81、102段。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "李燾《續資治通鑑長編》卷二",
+      "url": "https://zh.wikisource.org/wiki/%E7%BA%8C%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%E9%95%B7%E7%B7%A8/%E5%8D%B7002",
+      "locator": "建隆二年七月，實核第261段杯酒敘事與李燾考異：王曾筆錄、司馬光記聞、丁謂談錄的拼合，正史與實錄未載詳細敘事，宿將出任方鎮及石守信虛銜仍存、實權已去。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "《宋史》卷二百五十〈石守信〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7250",
+      "locator": "實核第141–146段：建隆二年移鎮鄆州、仍兼軍職；乾德初杯酒敘事與翌日稱疾解除兵權；趙普勸阻符彥卿掌軍。此書繫年與長編卷二不同。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "〈杯酒釋兵權再解釋〉（2024年4月25日）",
+      "url": "https://ccs.city/tc/beginners-domain/paper-award/detail/%E6%9D%AF%E9%85%92%E9%87%8B%E5%85%B5%E6%AC%8A%E5%86%8D%E8%A7%A3%E9%87%8B",
+      "locator": "實核原文第1–2節的來源與繫年討論、第3節宿將官職變動表及第4節結論與參考文獻；本文用其原創史料比較論證，相關年代另以宋史與長編核對。",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "title": "林瑞翰〈宋代兵制初探〉，《臺大歷史學報》第3期（1976），101–118頁",
+      "url": "https://toaj.stpi.niar.org.tw/index/journal/volume/article/4b1141f987544c3401878cf7e81b1ecd",
+      "locator": "實核學術期刊平台作者、年份、卷期、頁碼、DOI與完整摘要：樞密與三衙分工、內外相制、更戍、將兵不相熟及太宗以後演變。DOI 10.6253/ntuhistory.1976.03.04。",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "title": "《宋史》卷二百五十六〈趙普〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7256",
+      "locator": "實核第130–144段：軍中幕府與陳橋、趙普任相、雪夜與晉王商論太原先後順序、選兵與通判主錢穀、私材與婚姻經營、屬吏不法、分權及出鎮河陽。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "《宋史》卷三〈太祖三〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7003",
+      "locator": "實核第153段972年薛居正、呂餘慶兼轉運；第166–177段973年覆試、趙普權力調整與離相、趙光義封晉王；第233段975年曹彬取昇州；第245段976年江州屠城；第255段太祖崩。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "楊鎮魁〈北宋初期朝政之研究（960–997）〉，國立臺灣師範大學歷史學系博士論文（2021）",
+      "url": "https://www.airitilibrary.com/Article/Detail/U0021-NTNU40622",
+      "locator": "實核華藝平台作者、學位、學校、2021年、指導教授與摘要：唐末五代兩府制度的延續、後周宰輔基礎、趙普專政與參知政事、皇帝最終決策及太宗時期發展。DOI 10.6345/NTNU202101781。",
+      "type": "scholarly_primary",
+      "checked": true
+    },
+    {
+      "title": "《宋史》卷二〈太祖二〉",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7002",
+      "locator": "實核第133–135段965年王全斌滅蜀；第232–241段969年太祖親征太原未克而還；第272–285段潘美、尹崇珂征南漢及971年廣州、劉鋹歸宋。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "《宋史》卷四〈太宗一〉（交叉核查）",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7004",
+      "locator": "實核太平興國三年第179段978年錢俶獻兩浙；太平興國四年第197–203段979年太宗征北漢與劉繼元投降、北漢平。",
+      "type": "primary_text",
+      "checked": true
+    },
+    {
+      "title": "李燾《續資治通鑑長編》卷十七（交叉核查）",
+      "url": "https://zh.wikisource.org/wiki/%E7%BA%8C%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%E9%95%B7%E7%B7%A8/%E5%8D%B7017",
+      "locator": "實核第293段開寶九年太祖死亡與繼位考異：燭影柱斧敘事出文瑩湘山野錄，正史與實錄無此說，李燾逐項質疑預言、留宿等情節。",
+      "type": "primary_text",
+      "checked": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "early-career-and-personal-arms",
+      "passed": true,
+      "detail": "927年洛陽出生、郭威與柴榮軍旅關係、954年高平和956年淮南戰事有宋史卷一支持。武力理由落在騎射、親自衝擊、左臂中箭、涉水及擊傷擒獲皇甫暉等個人行動，未把國家征服冒充個人武力，也未將皇甫暉、姚鳳誤寫為被太祖親手殺死。"
+    },
+    {
+      "id": "chenqiao-and-armed-coercion",
+      "passed": true,
+      "detail": "陳橋、幼主繼位、黃袍、禁掠與韓通被王彥昇殺害可在宋史卷一及涑水記聞卷一核讀。稿件承認武裝壓力，未稱完全無血，也未把太祖事前親自策劃或完全不知情寫成可確證史實。"
+    },
+    {
+      "id": "cup-of-wine-source-layers",
+      "passed": true,
+      "detail": "961年長編繫年與宋史石守信傳乾德初繫年確實不同。李燾關於官方記載缺詳情、參用王曾、司馬光及丁謂的考異已實核。稿件區分傳說對話、人事變遷及漸進改革，並承認軍職虛銜可留，沒有把一次酒宴等同全套軍政改革瞬間完成。"
+    },
+    {
+      "id": "southern-conquests-and-agency",
+      "passed": true,
+      "detail": "963年荊南與武平、965年後蜀、971年南漢、975年南唐的年月與實際將帥可由宋史卷一至三核對。稿件給慕容延釗、王全斌、潘美及曹彬實際執行歸功，將太祖定位為戰略及資源統合者，沒有把全部戰役寫為其親征。"
+    },
+    {
+      "id": "unfinished-northern-unification",
+      "passed": true,
+      "detail": "宋史卷二記969年太原攻取未成；宋史卷四分別記978年錢俶納土與979年北漢投降，均在太宗時。涑水記聞亦記幽燕未定。稿件清楚排除太祖完成北漢、吳越及燕雲全體統一的誤歸功。"
+    },
+    {
+      "id": "fiscal-administration-and-shared-institutional-credit",
+      "passed": true,
+      "detail": "趙普傳的選兵、通判主錢穀及宋史卷三972年轉運職掌支持地方資源收攏。兩篇研究摘要支持兩府制度延續、分權與後繼發展；稿件明示後周、趙普、其他臣僚及後繼皇帝的作用，未主張太祖憑空創造現代三權分立或独力完成後世三衙體制。"
+    },
+    {
+      "id": "civil-governance-and-coercive-costs",
+      "passed": true,
+      "detail": "973年親自覆試、開寶年間貪贓重罰與976年曹翰江州屠城有本紀支持。稿件使用覆試而非首次發明科舉，且明述軍事暴力和治理成本，沒有把宋初統一敘成全然仁慈無害。"
+    },
+    {
+      "id": "zhaopu-and-jin-prince-chronology",
+      "passed": true,
+      "detail": "趙普傳記私材、婚姻、屬吏等政治問題，卷三記973年議政分權、趙普離相及趙光義封晉王、班位在宰相上，與稿件一致。雪夜敘事有明確傳記來源，稿件已表明不是逐字實錄。"
+    },
+    {
+      "id": "death-and-succession-source-status",
+      "passed": true,
+      "detail": "宋史卷三只記976年太祖崩；長編卷十七的死亡考異明列文瑩傳說及官方史料缺載，並質疑若干細節。稿件將繼承疑慮作政治分析，沒有把燭影斧聲當作已證實弒兄。"
+    },
+    {
+      "id": "five-stat-reasons-and-reference-values",
+      "passed": true,
+      "detail": "95、92、96、98、93五維各有相關事蹟及具體扣分；統率、武力與制度能力未混為同一成果。既有漢高祖、唐太宗、明太祖、秦孝公、秦始皇及唐高祖比較分數與封存66人參照一致；同批漢光武帝統98、智98、魅95亦與01已審稿且未變動的statsAnalysis一致。數值屬遊戲詮釋，稿件未冒稱古籍原有數字。"
+    },
+    {
+      "id": "interpretive-and-modern-sections",
+      "passed": true,
+      "detail": "性格核心由陳橋經驗、宿將人事改革、趙普分權與繼承問題推論；文中沒有冒作趙匡胤的直接心理自述。現代組織、股權、總部等段落置於明確假設章，作有據類比而非新增歷史事件。軍權限制的長期成本亦保留時代演變和後繼責任。"
+    },
+    {
+      "id": "citation-coverage-and-capture-binding",
+      "passed": true,
+      "detail": "稿件全部10個不同Markdown來源URL均實際開啟核讀並列入checkedSources；另核宋史卷四與長編卷十七。此review綁定實際capture的正文、raw與source package三個SHA；沒有修改正文、分數、原deepAnalysis或評級。"
+    }
+  ]
+}

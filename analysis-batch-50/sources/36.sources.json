@@ -1,0 +1,142 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:50:50.683Z",
+  "recordId": "minister_周恩來_1990120203",
+  "slug": "36",
+  "name": "周恩來",
+  "type": "minister",
+  "dynasty": "中華人民共和國",
+  "identity": "周恩來；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "對照會議紀錄、其他代表與已解密外交文書，說明其化解分歧的實際步驟，而非只重複求同存異四字。",
+    "查克什米爾公主號事件與周行程的原始檔案，核哪些細節為當時記錄，哪些為事後敘述。",
+    "另查《周恩來年譜》與外交檔案，核其日常行政和文革期間的具體作為與責任，不把官方讚詞寫成已證實心理。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-minister_周恩來_1990120203",
+      "recordIds": [
+        "minister_周恩來_1990120203"
+      ],
+      "recordNames": [
+        "周恩來"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:cppcc-biographies",
+          "url": "http://www.cppcc.gov.cn/2011/09/20/ARTI1316515847871354.shtml",
+          "locator": "歷屆主席／建國後歷任職務段",
+          "supportedFact": "周恩來曾任政府總理與全國政協第二、三、四屆主席。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "周恩來曾任政府總理與全國政協第二、三、四屆主席。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "周恩来总理在亚非会议全体会议上的补充发言",
+      "url": "https://www.fmprc.gov.cn/web/zyxw/200504/t20050415_284641.shtml",
+      "author": "周恩來",
+      "institution": "中華人民共和國外交部",
+      "sourceType": "primary_speech_republication",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀 1955 年 4 月 19 日發言中求同存異、共同基础、宗教與制度差異的段落。",
+      "minimalSupportedClaim": "周在萬隆以共同反殖民經驗作合作基礎，主張保留不同制度與意見而達成共同協議。",
+      "citationLocator": "1955 年 4 月 19 日發言，前半部；網站刊於 2005 年 4 月 15 日。",
+      "gptSearchQuestion": "對照會議紀錄、其他代表與已解密外交文書，說明其化解分歧的實際步驟，而非只重複求同存異四字。"
+    },
+    {
+      "title": "周恩来总理在万隆机场发表的谈话",
+      "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677244/1209_677254/200504/t20050415_9308093.shtml",
+      "author": "周恩來",
+      "institution": "中華人民共和國外交部",
+      "sourceType": "primary_speech_republication",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀 1955 年 4 月 17 日短篇談話全文及網站出版來源說明。",
+      "minimalSupportedClaim": "出席會議前，周公開表達和平合作目標，並提到中國代表團遭受破壞事件的損失。",
+      "citationLocator": "1955 年 4 月 17 日；網站註出自世界知識出版社《萬隆精神 普照大地》。",
+      "gptSearchQuestion": "查克什米爾公主號事件與周行程的原始檔案，核哪些細節為當時記錄，哪些為事後敘述。"
+    },
+    {
+      "title": "周恩来（歷任外交部長）",
+      "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
+      "institution": "中華人民共和國外交部",
+      "sourceType": "official_institutional_biography",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀任職與主要外交活動記述；官方概述不是秘密會談紀錄全文。",
+      "minimalSupportedClaim": "給出其總理、外長任期及日內瓦、萬隆、中美交往等活動的官方履歷。",
+      "gptSearchQuestion": "另查《周恩來年譜》與外交檔案，核其日常行政和文革期間的具體作為與責任，不把官方讚詞寫成已證實心理。"
+    }
+  ],
+  "candidateTexts": [],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "周恩来组织建立中国共产党旅欧支部",
+      "url": "http://politics.people.com.cn/GB/1026/14931380.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "人民网",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94698909",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "周恩來在國民黨歲月 完整保存台北",
+      "url": "http://hk.crntt.com/doc/1013/1/9/9/101319941.html?coluid=93&kindid=2910&docid=101319941&mdate=0513003240",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "倪鴻祥",
+      "publisher": "中評社",
+      "date": "2007-05-22",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94698909",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "周恩来曾被国民政府授予中将军衔，为何却享受上将待遇？",
+      "url": "https://wenhui.whb.cn/zhuzhan/dushu/20200714/360417.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "《党史纵览》2017年第一期",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94698909",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "周恩来鲜为人知的俄文名-红色文化网",
+      "url": "https://m.hswh.org.cn/wzzx/gsyz/hqpp/2025-12-09/96131.html",
+      "type": "citation-template",
+      "template": "Cite web",
+      "author": "",
+      "publisher": "m.hswh.org.cn",
+      "date": "",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94698909",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

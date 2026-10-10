@@ -1,0 +1,289 @@
+✖ mechanical split retains the exact four-chapter prose, scores, reasons and seven soul sections (2.7249ms)
+✖ first-line JSON rejects extras, duplicate aliases, fractions, strings and out-of-range values (1.6174ms)
+✖ completion and reason separators must be unique, standalone, last and bound to the correct ID (1.0201ms)
+✖ missing article sections, score discrepancies and unlabeled soul interpretations are rejected (0.9771ms)
+✖ capture binds public prompt, source, preserved deep analysis, reference and allowed file paths (1.2568ms)
+✖ actual search UI count is necessary and invalid conversation URLs are rejected (1.4649ms)
+✖ known UI formatting is normalized while original clipboard hash remains distinct (1.391ms)
+✖ assembly rejects stale raw, clean captures, search receipts and split article files (1.8917ms)
+✖ forged clean prose cannot pass by updating clean and review hashes while retaining actual raw export (1.2096ms)
+✖ QA must pass without material issues and bind both raw and complete clean manuscripts (1.2548ms)
+✖ typed checked primary sources require HTTPS, title, locator and coverage of every manuscript link (0.939ms)
+✖ soul captures remain bound to the exact reviewed appraisal context (1.0067ms)
+✖ chunks reject empty, six-person, duplicate or incomplete-person submissions (1.4142ms)
+✖ captured and reviewed fields import together after a CAS replan while preserving an earlier person and player progress (34.8825ms)
+✔ sealed manifest fixes exactly 50 original IDs, 15/20/15 types and four missing fields (3.2637ms)
+✔ one to five complete persons plan only four fields each, preserving every existing field and report privacy (105.0181ms)
+✔ empty, oversized, duplicate, foreign and incomplete chunks are rejected before networking (84.1844ms)
+✔ all 50 original inputs, full source hash and 962 library identity are checked before any read (18.6967ms)
+✔ apply saves full before and after snapshots and compatible contracts retain unknown document fields (68.2437ms)
+✔ CAS retry merges unrelated player progress and previously completed people without losing it (144.9293ms)
+✔ a changed live target or newly populated field stops a retry instead of overwriting it (210.9042ms)
+✔ approval binds source, base, manifest and chunk and backup failure prevents every write (199.0462ms)
+✔ unknown write outcomes are never automatically retried or logged with private errors (124.2221ms)
+✔ readback detects any unaffected document edit, wrong target or newer revision without rollback (66.6479ms)
+✔ source size, unverified provenance and malformed stats are rejected locally (318.9738ms)
+✔ CLI cannot change manifest scope and requires explicit apply, report and backup arguments (0.3349ms)
+✔ all original article sections and five matching ordered reasons must be complete before a read (94.8823ms)
+✔ apply requires passing evidence before any request and validates it again after a conflict (167.158ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 14
+ℹ fail 14
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1731.043
+
+✖ failing tests:
+
+test at analysis-batch-50\capture-assemble.test.mjs:57:1
+✖ mechanical split retains the exact four-chapter prose, scores, reasons and seven soul sections (2.7249ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:58:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:69:1
+✖ first-line JSON rejects extras, duplicate aliases, fractions, strings and out-of-range values (1.6174ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:70:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:76:1
+✖ completion and reason separators must be unique, standalone, last and bound to the correct ID (1.0201ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:77:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:81:1
+✖ missing article sections, score discrepancies and unlabeled soul interpretations are rejected (0.9771ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:82:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:88:1
+✖ capture binds public prompt, source, preserved deep analysis, reference and allowed file paths (1.2568ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:90:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:94:1
+✖ actual search UI count is necessary and invalid conversation URLs are rejected (1.4649ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: original_task_template_changed
+      at rejected (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:25:40)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:95:77)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: original_task_template_changed
+        at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+        at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+        at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+        at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+        at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+        at file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:95:111
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at rejected (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:25:40)
+        at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:95:77),
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:99:1
+✖ known UI formatting is normalized while original clipboard hash remains distinct (1.391ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:100:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:108:1
+✖ assembly rejects stale raw, clean captures, search receipts and split article files (1.8917ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:110:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:114:1
+✖ forged clean prose cannot pass by updating clean and review hashes while retaining actual raw export (1.2096ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:115:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:120:1
+✖ QA must pass without material issues and bind both raw and complete clean manuscripts (1.2548ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:122:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:126:1
+✖ typed checked primary sources require HTTPS, title, locator and coverage of every manuscript link (0.939ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:128:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:132:1
+✖ soul captures remain bound to the exact reviewed appraisal context (1.0067ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:133:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:139:1
+✖ chunks reject empty, six-person, duplicate or incomplete-person submissions (1.4142ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:141:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    code: 'original_task_template_changed',
+    report: null
+  }
+
+test at analysis-batch-50\capture-assemble.test.mjs:146:1
+✖ captured and reviewed fields import together after a CAS replan while preserving an earlier person and player progress (34.8825ms)
+  Error: original_task_template_changed
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:9:29)
+      at verifyTemplateHashes (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/prompt-bindings.mjs:15:82)
+      at validateRequest (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:47:3)
+      at captureExport (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture.mjs:106:18)
+      at fixture (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:46:20)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/capture-assemble.test.mjs:152:17)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    code: 'original_task_template_changed',
+    report: null
+  }

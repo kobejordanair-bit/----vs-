@@ -1,0 +1,11 @@
+✔ fifty completed stage flags never constitute completion without a final public document/library audit (3.8113ms)
+✔ a claimed complete audit cannot hide missing fields, altered hashes, stale document or a changed 962-person identity (35.1104ms)
+✔ individual stage flags must agree with both actual task states and all four field hashes (4.894ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 151.665

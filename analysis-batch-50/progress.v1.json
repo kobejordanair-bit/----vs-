@@ -1,0 +1,524 @@
+{
+  "format": "dynasty-batch50-progress",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T22:37:25.854Z",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "complete": false,
+  "status": "paused_after_single_person_pilot",
+  "passed": true,
+  "targetCount": 50,
+  "completionFields": [
+    "analysis",
+    "soulEssence",
+    "stats",
+    "statsAnalysis"
+  ],
+  "counts": {
+    "prepared": 50,
+    "generated": 5,
+    "sourceQA": 5,
+    "assembled": 5,
+    "imported": 5,
+    "partialImported": 1,
+    "importedPeople": 6,
+    "importedFields": 23
+  },
+  "finalAuditVerified": false,
+  "pauseAuditVerified": true,
+  "pauseAuditFile": "analysis-batch-50/pause-audit.v1.json",
+  "pauseAuditSha256": "a6e9b0873eae2fed5e482f3d718b59a812259a6d70837dde5c7dafc85bb1145f",
+  "libraryPreserved": true,
+  "libraryTotal": 962,
+  "records": [
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "slug": "01",
+      "name": "漢光武帝",
+      "prepared": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "status": "fully_imported"
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "slug": "02",
+      "name": "宋太祖",
+      "prepared": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "status": "fully_imported"
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "slug": "03",
+      "name": "康熙帝",
+      "prepared": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "status": "fully_imported"
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "slug": "04",
+      "name": "明成祖",
+      "prepared": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "status": "fully_imported"
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "slug": "05",
+      "name": "唐高宗",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "awaiting_factual_correction"
+    },
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "slug": "06",
+      "name": "秦昭襄王",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [
+        "analysis",
+        "stats",
+        "statsAnalysis"
+      ],
+      "status": "analysis_imported_soul_pending"
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "slug": "07",
+      "name": "乾隆帝",
+      "prepared": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "status": "fully_imported"
+    },
+    {
+      "id": "emperor_漢宣帝_279605035",
+      "slug": "08",
+      "name": "漢宣帝",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_宋武帝_284299365",
+      "slug": "09",
+      "name": "宋武帝",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "slug": "10",
+      "name": "宋仁宗",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_武則天_280599295",
+      "slug": "11",
+      "name": "武則天",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_宋太宗_284444719",
+      "slug": "12",
+      "name": "宋太宗",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_明孝宗_281841215",
+      "slug": "13",
+      "name": "明孝宗",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_神武帝_276962130",
+      "slug": "14",
+      "name": "神武帝",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "emperor_宋孝宗_284427266",
+      "slug": "15",
+      "name": "宋孝宗",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_林彪_306298218",
+      "slug": "16",
+      "name": "林彪",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_拓跋燾_904534991",
+      "slug": "17",
+      "name": "拓跋燾",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_曹操_306294699",
+      "slug": "18",
+      "name": "曹操",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_李勣_306292748",
+      "slug": "19",
+      "name": "李勣",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_蘇定方_912794063",
+      "slug": "20",
+      "name": "蘇定方",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_粟裕_306475725",
+      "slug": "21",
+      "name": "粟裕",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_彭德懷_903329142",
+      "slug": "22",
+      "name": "彭德懷",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_王忠嗣_908276471",
+      "slug": "23",
+      "name": "王忠嗣",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_孫武_306204690",
+      "slug": "24",
+      "name": "孫武",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_朱德_306295133",
+      "slug": "25",
+      "name": "朱德",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_孟珙_306206481",
+      "slug": "26",
+      "name": "孟珙",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_李光弼_905152266",
+      "slug": "27",
+      "name": "李光弼",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_孫臏_306210427",
+      "slug": "28",
+      "name": "孫臏",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "slug": "29",
+      "name": "伍子胥",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_白崇禧_908987622",
+      "slug": "30",
+      "name": "白崇禧",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_左宗棠_902922424",
+      "slug": "31",
+      "name": "左宗棠",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_戚繼光_904227344",
+      "slug": "32",
+      "name": "戚繼光",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_木華黎_905533968",
+      "slug": "33",
+      "name": "木華黎",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_僕固懷恩_2119975374",
+      "slug": "34",
+      "name": "僕固懷恩",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "general_陳慶之_916874609",
+      "slug": "35",
+      "name": "陳慶之",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "slug": "36",
+      "name": "周恩來",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_荀彧_2004230913",
+      "slug": "37",
+      "name": "荀彧",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_張良_2003953844",
+      "slug": "38",
+      "name": "張良",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_李斯_2004010747",
+      "slug": "39",
+      "name": "李斯",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "slug": "40",
+      "name": "于謙(名臣)",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "slug": "41",
+      "name": "謝安",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_范仲淹_2001455088",
+      "slug": "42",
+      "name": "范仲淹",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "slug": "43",
+      "name": "朱鎔基",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_劉基_2003842411",
+      "slug": "44",
+      "name": "劉基",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_張廷玉_1992775117",
+      "slug": "45",
+      "name": "張廷玉",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_霍光_2004384438",
+      "slug": "46",
+      "name": "霍光",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_張之洞_1992641166",
+      "slug": "47",
+      "name": "張之洞",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_子產_2003919532",
+      "slug": "48",
+      "name": "子產",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_陳雲_2004397497",
+      "slug": "49",
+      "name": "陳雲",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "slug": "50",
+      "name": "徐光啟",
+      "prepared": true,
+      "fullyImported": false,
+      "importedFields": [],
+      "status": "not_generated"
+    }
+  ],
+  "resumeConstraint": "Replan from the published receipt ledger. Do not blindly rerun the original fixed ten full chunks or overwrite published fields.",
+  "remainingBatchPaused": true,
+  "activePilot": {
+    "slug": "07",
+    "name": "乾隆帝",
+    "limit": 1,
+    "status": "completed_and_imported",
+    "reportFile": "analysis-batch-50/combined-pilot-report.07.v1.json"
+  },
+  "latestVerifiedPublicationRevision": 7,
+  "latestSinglePilotReport": "analysis-batch-50/combined-pilot-report.07.v1.json"
+}

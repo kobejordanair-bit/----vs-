@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_荀彧_2004230913",
+  "slug": "37",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "07e8f2b5af4e6e4d3da7241aa27d71a03a846ce16c00c4dcc8352d40666e55b4",
+  "sourceSha256": "48d29f3ae59096de880252bcc824e3815ba97005ee9bf3bec5305f78da531930",
+  "preservedDeepSha256": "82cc4438f6678886f372b05b161ea31bb35bb9dfacb198444cad0bda9e1db20e",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/37.analysisStats.prompt.md",
+      "promptSha256": "c17594214610675333915c85ca8f0be8153a11ee7b7c3d7f1e70d5e898076d33",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "574e5ad98bf6b08465c4cc98d95f5fe939cdc94d86a0240b04a2722dab1992ff",
+      "marker": "<!-- BATCH50_COMPLETE minister_荀彧_2004230913 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_荀彧_2004230913 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/37.soulEssence.prompt.md",
+      "promptSha256": "54600b40b691d61d16a015ac083b6bc59be098386e80397656dca3b0b09ca774",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "654407c8247014d9266339ea3092d82d8a32c29430c91a39c1f462bdad08d732",
+      "marker": "<!-- BATCH50_COMPLETE minister_荀彧_2004230913 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/37.analysis.md"
+    }
+  }
+}

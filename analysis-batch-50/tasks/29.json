@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "general_伍子胥_899273611",
+  "slug": "29",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "0962c061a348385089e5d7590ca224ac3587b5a9990b5dde6b32a310d4903ff3",
+  "sourceSha256": "e3f25c3fa0867119f637fc10b7cc418180832e866e170bd7c514b5d45a8bf842",
+  "preservedDeepSha256": "0fd4eb3db16f19161274c6e9a2aac9448f887c7bdffb1b08ae157e081f5d15b6",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/29.analysisStats.prompt.md",
+      "promptSha256": "2197ade9ec0810309cb5c8dd7fcc80dfc5aaeefb7e0c37a1cccd2fa93375ff90",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "1034c1286950a8b1adede9697dc7a361f0f9f51233e304d5bff9d6e198092f36",
+      "marker": "<!-- BATCH50_COMPLETE general_伍子胥_899273611 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN general_伍子胥_899273611 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/29.soulEssence.prompt.md",
+      "promptSha256": "561aa7af281346c27e6f2b4a0a5d525b7cfafdd05508459c088d6d3a615ca442",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "383f41056f0cf1bb65a7fc6066ce780810b450abac4377ca6750a57dd6bf502f",
+      "marker": "<!-- BATCH50_COMPLETE general_伍子胥_899273611 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/29.analysis.md"
+    }
+  }
+}

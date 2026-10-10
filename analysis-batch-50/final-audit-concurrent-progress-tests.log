@@ -1,0 +1,31 @@
+✔ fifty completed stage flags never constitute completion without a final public document/library audit (5.7418ms)
+✔ a claimed complete audit cannot hide missing fields, altered hashes, stale document or a changed 962-person identity (71.3377ms)
+✔ individual stage flags must agree with both actual task states and all four field hashes (5.6469ms)
+✖ legitimate progress between chunks and after the last chunk is preserved and explicitly differs from baseline (5.0714ms)
+✔ external old-article, rank, unknown extra and identity changes are rejected rather than labelled player progress (33.8664ms)
+✔ raw extras require an actual final receipt bound to the same visible snapshot and reject changed envelopes (0.8847ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 213.557
+
+✖ failing tests:
+
+test at analysis-batch-50\final-audit-proof.test.mjs:33:1
+✖ legitimate progress between chunks and after the last chunk is preserved and explicitly differs from baseline (5.0714ms)
+  Error: existing_analysis
+      at bad (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/cloudflare/scripts/analysis-pilot-import.mjs:14:29)
+      at figureForInput (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/cloudflare/scripts/analysis-pilot-import.mjs:47:45)
+      at verifyFinalDocumentPreservation (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/final-audit-proof.mjs:48:19)
+      at TestContext.<anonymous> (file:///C:/Users/user/Documents/Codex/2026-09-26/github-plugin-github-openai-curated-remote-2/app/analysis-batch-50/final-audit-proof.test.mjs:34:36)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    code: 'existing_analysis',
+    report: null
+  }

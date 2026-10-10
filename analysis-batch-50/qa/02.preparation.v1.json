@@ -1,0 +1,66 @@
+{
+  "format": "dynasty-batch50-source-review-preparation",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋太祖_284437104",
+  "status": "preparation_only_actual_manuscript_review_assigned_to_pipeline",
+  "checkedOn": "2026-10-10",
+  "scope": "Source passages actually opened and read as preparation. No actual 02 manuscript assessed, no passed review produced, no source/prompt/manuscript altered.",
+  "sources": [
+    {
+      "title": "《宋史》卷一〈太祖一〉",
+      "url": "https://zh.wikisource.org/wiki/宋史/卷001",
+      "locator": "lines 130–144 youth, Gao Ping, Qing Liu Guan and Chen Qiao; lines 148–164 accession and Li Yun/Li Chongjin; lines 225–229 Jingnan/Hunan",
+      "readScope": "927 Luoyang birth; 954 Gao Ping victory participation under Zhou Shizong, not sole-command attribution; 956 Qing Liu Guan personally struck Huangfu Hui in head and captured him and Yao Feng, not a record that he personally killed both. 960 Chen Qiao accession; ban on pillage with Han Tong killed as explicit exception. 963 Jingnan/Hunan under Murong Yanzhao."
+    },
+    {
+      "title": "《宋史》卷二〈太祖二〉",
+      "url": "https://zh.wikisource.org/wiki/宋史/卷002",
+      "locator": "lines 133–135 conquest of Shu and massacre; line 184 penalties; lines 232–241 Northern Han campaign; lines 272–285 Southern Han",
+      "readScope": "965 Wang Quanbin conquered Later Shu, then killed 27,000 surrendered soldiers; two Sichuan uprisings and discipline context. 967 Wang/Cui/Wang Renchan demotions over plunder and killing surrenderers. 969 Taizu personally besieged Taiyuan, eventually withdrew without conquering Northern Han. 970 Southern Han campaign opened with Pan Mei/Yin Chongke; Guangzhou/Liu Chang taken in 971."
+    },
+    {
+      "title": "《宋史》卷三〈太祖三〉",
+      "url": "https://zh.wikisource.org/wiki/宋史/卷003",
+      "locator": "line 166 examination re-test; lines 171–177 Zhao Pu and Guangyi; lines 233–255 Southern Tang/death",
+      "readScope": "973 imperial re-examination in Jiangwu Hall and Li Fang demotion; avoid stating no imperial testing existed earlier, Tang precedents exist. 973 split Zhao Pu authority, then removed as chancellor; Guangyi named Jin Prince and ranked above chancellors. 975 Cao Bin conquered Shengzhou and captured Li Yu. 976 death in Wansui Hall, annals report no murder proof. 976 Cao Han slaughter at Jiangzhou is explicit and prevents universal bloodless-conquest claims."
+    },
+    {
+      "title": "《宋史》卷二百五十〈石守信〉",
+      "url": "https://zh.wikisource.org/wiki/宋史/卷250",
+      "locator": "lines 141–146",
+      "readScope": "First 961 move to Yunchou retaining commander title. Wine narrative placed under 乾德初 here and says scattered offices/retire home. This differs from Long Compilation chronological reconstruction; do not pretend texts agree on exact date or institutional outcome. Zhao Pu urged not giving Fu Yanqing military command."
+    },
+    {
+      "title": "《宋史》卷二百五十六〈趙普〉",
+      "url": "https://zh.wikisource.org/wiki/宋史/卷256",
+      "locator": "lines 132–144",
+      "readScope": "Zhao Pu and Taizong in Chen Qiao narrative; 964 Zhao Pu chancellor with deputy participants; talks prioritizing other kingdoms before Taiyuan; recruitment of selected troops and provincial assistant prefects controlling finances; 973 split power and removal. Full governance credit should include adviser and executing officers."
+    },
+    {
+      "title": "《續資治通鑑長編》卷二",
+      "url": "https://zh.wikisource.org/wiki/續資治通鑑長編/卷002",
+      "locator": "lines 244 and 260–264, 建隆二年六月/七月",
+      "readScope": "961 wine narrative and military appointments. Li Tao explicitly says official history/Veritable Records omit detail, uses Wang Zeng notes for offices and Sima Guang account for language with additions from Ding Wei. States commanders left central guard posts for provincial commands; Shi Shouxin still titular commander but actual power gone. Corrects Sima Guang's conflation with 970 removal of other governors. June gold-casket story annotation identifies variations and revised official versions. These are historical source criticism, not a requirement to erase evidence-based appraisal."
+    },
+    {
+      "title": "《涑水記聞》卷一（四庫全書本）",
+      "url": "https://zh.wikisource.org/zh-hant/涑水記聞_(四庫全書本)/卷01",
+      "locator": "lines 114–135",
+      "readScope": "Named author Sima Guang; Chen Qiao account, statements banning pillage, later recollections identified by oral informants. Wine event at line 134, describes retirement and follows with fiscal/military centralization. Later author narrative, not verbatim contemporary stenographic transcript. Line 125 Taizu rejects 一統 title because You/Yan unresolved; line 136 withdrawal from Taiyuan."
+    },
+    {
+      "title": "《續資治通鑑長編》卷十七",
+      "url": "https://zh.wikisource.org/wiki/續資治通鑑長編/卷017",
+      "locator": "lines 208–235 and 267–295, plus frontier-delegation retrospective at 326",
+      "readScope": "976 Jiangzhou conquest, Lu Jiang execution variants, imperial favor of Guangyi, frontier operations and fiscal transport delegation. Lines 293–295 death and succession actually read: Li Tao explicitly identifies candle/axe account from Wen Ying's Xiangshan Yelu, absent official history/Veritable Records, criticizes miraculous details and overnight-stay account, and combines it with Sima Guang's competing summons account. No demonstrated axe murder. Retrospective line 326 attributes generous financial and operational discretion to frontier commanders, qualifying an absolute 'all generals had zero discretion' claim."
+    }
+  ],
+  "reviewWatchpoints": [
+    "Taizu did not conquer Northern Han (979 under Taizong), Wu Yue (978 submission), or recover all Sixteen Prefectures.",
+    "Cup-of-wine evidence has genuine source and chronology differences. Accept precise attribution and strong policy interpretation; reject 'all military/financial reforms completed overnight in one dinner' factual claim.",
+    "Personal skill claims may rely on primary mounted assault/riding/archery passages; legendary Taizu staff or martial-arts founder labels require explicit tradition attribution.",
+    "Chen Qiao planning is a plausible historical interpretation; sole certainty of accidental drunken coercion or an asserted transcript of pre-planning needs support.",
+    "Gold-casket succession and axe/candle death narratives should remain distinguishable from direct imperial-annals report and secure murder proof.",
+    "Strong civilian-control appraisal can remain; do not attribute later entire Song fiscal/military evolution or eventual defeat solely and mechanically to the founder."
+  ]
+}

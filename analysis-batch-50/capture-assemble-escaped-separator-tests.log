@@ -1,0 +1,27 @@
+✔ mechanical split retains the exact four-chapter prose, scores, reasons and seven soul sections (14.2324ms)
+✔ first-line JSON rejects extras, duplicate aliases, fractions, strings and out-of-range values (4.6356ms)
+✔ completion and reason separators must be unique, standalone, last and bound to the correct ID (3.3653ms)
+✔ missing article sections, score discrepancies and unlabeled soul interpretations are rejected (4.8893ms)
+✔ capture binds public prompt, source, preserved deep analysis, reference and allowed file paths (30.7868ms)
+✔ actual search UI count is necessary and invalid conversation URLs are rejected (26.9578ms)
+✔ known UI formatting is normalized while original clipboard hash remains distinct (4.8839ms)
+✔ assembly rejects stale raw, clean captures, search receipts and split article files (37.1905ms)
+✔ only the observed standalone final escaped completion marker is normalized and forged markers reject (9.5847ms)
+✔ forged clean prose cannot pass by updating clean and review hashes while retaining actual raw export (5.7071ms)
+✔ the observed single escaped standalone reason marker preserves prose and rejects forged or repeated separators (9.5598ms)
+✔ QA must pass without material issues and bind both raw and complete clean manuscripts (37.8141ms)
+✔ typed checked primary sources require HTTPS, title, locator and coverage of every manuscript link (36.0472ms)
+✔ soul captures remain bound to the exact reviewed appraisal context (11.9605ms)
+✔ chunks reject empty, six-person, duplicate or incomplete-person submissions (8.1813ms)
+✔ all 100 frozen prompts reproduce the original templates, rendered prefixes and full staged suffixes (153.154ms)
+✔ forged template and rendered hashes cannot pass as hash-shaped metadata (25.3256ms)
+✔ replacement original prefixes or staged suffixes are rejected even after updating the claimed prompt SHA (19.8599ms)
+✔ captured and reviewed fields import together after a CAS replan while preserving an earlier person and player progress (116.2579ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 693.0959

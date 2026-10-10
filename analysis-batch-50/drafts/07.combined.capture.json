@@ -1,0 +1,26 @@
+{
+  "format": "dynasty-combined-actual-response",
+  "schemaVersion": 1,
+  "slug": "07",
+  "recordId": "emperor_乾隆帝_287167826",
+  "provider": "ChatGPT web",
+  "conversationUrl": "https://chatgpt.com/g/g-p-6ab7be6c198481919c055d0e67634f87-app/c/6ac8bdd4-dc68-83ee-9b0f-7fc2d40cf437",
+  "generatedAt": "2026-10-09T22:24:38.417Z",
+  "originalClipboardFile": "analysis-batch-50/drafts/07.combined.raw.md",
+  "originalClipboardSha256": "15a2f6dc466b32f62f516ed34fabae249a647762030197afc5640b08614db53e",
+  "normalizedCombinedSha256": "7516bf07e9caf7cb4195c5665d3b4cd62d50066ccebe9f61fc43be9be82f2f7e",
+  "packetSha256": "a891ed3e6c5607677f332dff2c9235c36e75d571dbd47b1a4e076b11f4366c2e",
+  "searchEvidenceSha256": "c64aaa4e1b13af36ba212ac7268acc8bc4029a0574daa9dfcc76915c8d3e889b",
+  "actualResponseCount": 1,
+  "parts": {
+    "analysisStats": {
+      "rawFile": "analysis-batch-50/drafts/07.analysisStats.raw.md",
+      "rawSha256": "d0f84fe06f52eabc2b2b20eb94d30eb51b77124a80f395c5a710b8c16d1e929b"
+    },
+    "soulEssence": {
+      "rawFile": "analysis-batch-50/drafts/07.soulEssence.raw.md",
+      "rawSha256": "5574693cc86ce9f4dca0e0bf334c914f2d531db202cad45aa997ed2721784a0a"
+    }
+  },
+  "composition": "One untouched browser clipboard retained; known export normalization and exact marker split only. Both tasks come from the same actual response; prose and scores are not authored or rewritten."
+}

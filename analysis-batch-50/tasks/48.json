@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_子產_2003919532",
+  "slug": "48",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "47c06a82f8f57b1c640b219f0ca0eb1384a9f9b7260ef515b258207f44c2b503",
+  "sourceSha256": "bc784cfc3d0cc0aaeb30e97d9a5ac8ff1652913116cdd8b3508db9d385e0705d",
+  "preservedDeepSha256": "a87576b5bec6240d09dd1b03b778ddcde5efc6e17200f63b7c6b7342bcb20e28",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/48.analysisStats.prompt.md",
+      "promptSha256": "8154ada27440c204ffb3cd3ed9a9d049c44d29eeb09956718f9a4c2f180fa3ca",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "1bf306db167c07077d7e0f425312ab52cee95a767d0d7a101779896a091c8230",
+      "marker": "<!-- BATCH50_COMPLETE minister_子產_2003919532 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_子產_2003919532 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/48.soulEssence.prompt.md",
+      "promptSha256": "c62d61423a90409e20bed770b6b1d4f381926bc37b3236b881b3c2ce6a7bfb52",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "97a46b45a280cc2115b06b7e6252c3c7e2e0aa7b5a1070b6ffaf17b67c463169",
+      "marker": "<!-- BATCH50_COMPLETE minister_子產_2003919532 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/48.analysis.md"
+    }
+  }
+}

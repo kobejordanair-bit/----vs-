@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_朱鎔基_1995149885",
+  "slug": "43",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "inputSha256": "0de90946690f22280487de2144caf6b26129e1cbb9aed2087f9d1247fb771f49",
+  "sourceSha256": "55d1111d5572eb5cc5ed7a0cdd21dc66b122ef79a1fa54b08deb65c76fb9d968",
+  "preservedDeepSha256": "c748fa0dfee517d0df048b97fa46b7166b751aeb556193608d758b605692ce97",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-50/stats-reference.v1.json",
+      "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+      "promptFile": "analysis-batch-50/prompts/43.analysisStats.prompt.md",
+      "promptSha256": "b6e33088477d61388a620d8b646616d1dd6bfe5f25737646a22674bcf854ca6b",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "659f91a9ec632467008e4889c81c113c126a6778f366a2b3ce28595e44284068",
+      "marker": "<!-- BATCH50_COMPLETE minister_朱鎔基_1995149885 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_朱鎔基_1995149885 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-50/prompts/43.soulEssence.prompt.md",
+      "promptSha256": "aabd9504718ffa73588ad667e36276038180290c77c94af944c3d5c422a18f7d",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "05ad4cd69049d20efaf80fecaf69592379fbcace43ff24264688934cc8a86645",
+      "marker": "<!-- BATCH50_COMPLETE minister_朱鎔基_1995149885 soulEssence -->",
+      "contextPath": "analysis-batch-50/drafts/43.analysis.md"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+✔ mechanical split retains the exact four-chapter prose, scores, reasons and seven soul sections (12.1339ms)
+✔ first-line JSON rejects extras, duplicate aliases, fractions, strings and out-of-range values (4.1853ms)
+✔ completion and reason separators must be unique, standalone, last and bound to the correct ID (3.0766ms)
+✔ missing article sections, score discrepancies and unlabeled soul interpretations are rejected (3.5132ms)
+✔ capture binds public prompt, source, preserved deep analysis, reference and allowed file paths (22.6762ms)
+✔ actual search UI count is necessary and invalid conversation URLs are rejected (20.5269ms)
+✔ known UI formatting is normalized while original clipboard hash remains distinct (3.3619ms)
+✔ assembly rejects stale raw, clean captures, search receipts and split article files (28.9889ms)
+✔ forged clean prose cannot pass by updating clean and review hashes while retaining actual raw export (3.8318ms)
+✔ QA must pass without material issues and bind both raw and complete clean manuscripts (29.9289ms)
+✔ typed checked primary sources require HTTPS, title, locator and coverage of every manuscript link (28.1085ms)
+✔ soul captures remain bound to the exact reviewed appraisal context (8.5256ms)
+✔ chunks reject empty, six-person, duplicate or incomplete-person submissions (6.2748ms)
+✔ captured and reviewed fields import together after a CAS replan while preserving an earlier person and player progress (97.5253ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 365.15

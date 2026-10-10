@@ -1,0 +1,143 @@
+{
+  "format": "dynasty-batch50-source-packet",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T18:51:52.104Z",
+  "recordId": "general_彭德懷_903329142",
+  "slug": "22",
+  "name": "彭德懷",
+  "type": "general",
+  "dynasty": "中華人民共和國",
+  "identity": "彭德懷；近現代身份請核正式機構資料。",
+  "archivePath": "backend/static/data/history/source-archive.v1.json",
+  "archiveSha256": "af0e17bec9af07df4ace34076658589470874422344e553c56298807578f71e4",
+  "manifestSha256": "83c6f363b5d08c3b56a0c4144d1239f0ebc7ba5cc1c1cf33fb3452d02679e500",
+  "searchQuestions": [
+    "實際搜尋 1959 年 7 月 14 日信全文及《彭德懷自述》版本，具體寫出他敢言的内容與當時認識的限度；另查抗美援朝軍事原始資料。",
+    "與同期会议文献、彭笔记及 1978 年平反材料互證；軍事評分另用各次戰役的勝敗、後勤和指揮資料，不從敢言直接推高統率。"
+  ],
+  "primarySources": [],
+  "existingReviews": [
+    {
+      "id": "reading-review:modern-general_彭德懷_903329142",
+      "recordIds": [
+        "general_彭德懷_903329142"
+      ],
+      "recordNames": [
+        "彭德懷"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:hunan-marshal-record",
+          "url": "http://yjt.hunan.gov.cn/yjt/tszt/fdbnl/202109/t20210929_20683815.html",
+          "locator": "1955年9月27日懷仁堂授銜段（十人具名名單）",
+          "supportedFact": "此機構頁記載彭德懷於1955年獲授中華人民共和國元帥軍銜。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "named-collective-register",
+      "notes": "與其他九位元帥共用同一授銜名單；本條只核具名授銜事件，不等同個人完整傳記核讀。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "此機構頁記載彭德懷於1955年獲授中華人民共和國元帥軍銜。"
+      ]
+    }
+  ],
+  "institutionalStarts": [
+    {
+      "title": "為什麼要寫信給毛主席",
+      "url": "https://www.dswxyjy.org.cn/BIG5/n/2015/0610/c244516-27134656.html",
+      "author": "彭德懷",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "primary_personal_notes_excerpt_republication",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀編輯說明與寫信動機、工農比例及經濟速度段；網站說明來自 1959 年 7–8 月筆記，僅為節錄，非 7 月 14 日信全文。",
+      "minimalSupportedClaim": "彭本人記述向毛報告所見經濟問題的動機，同時仍在當時政治框架內肯定大躍進的部分做法。",
+      "citationLocator": "編輯星號說明與其後前兩段。",
+      "gptSearchQuestion": "實際搜尋 1959 年 7 月 14 日信全文及《彭德懷自述》版本，具體寫出他敢言的内容與當時認識的限度；另查抗美援朝軍事原始資料。"
+    },
+    {
+      "title": "风云突变的庐山会议",
+      "url": "https://www.dswxyjy.org.cn/n/2015/0610/c244516-27134689.html",
+      "author": "萬毅",
+      "institution": "中共中央黨史和文獻研究院",
+      "sourceType": "participant_recollection",
+      "status": "opened_relevant_text",
+      "accessedDate": "2026-10-10",
+      "readDepth": "核讀參會背景、7 月 22–23 日發言與現場反應段；未另核會議简報和筆記原件。",
+      "minimalSupportedClaim": "參與者描述對彭意見的討論如何轉成批判，也描述作者自身支持彭後受到的牽連。",
+      "citationLocator": "7 月 22 日小組發言及 7 月 23 日毛講話的段落。",
+      "gptSearchQuestion": "與同期会议文献、彭笔记及 1978 年平反材料互證；軍事評分另用各次戰役的勝敗、後勤和指揮資料，不從敢言直接推高統率。"
+    }
+  ],
+  "candidateTexts": [
+    {
+      "title": "激战横城：志愿军如何反客为主",
+      "url": "https://www.81.cn/js_208592/16234728.html",
+      "purpose": "搜尋有具名作者與《抗美援朝戰爭史》引用，直接 open 失敗；不能當已核讀的軍事查證。",
+      "status": "search_result_only_open_failed"
+    },
+    {
+      "title": "彭德怀（中国军网）",
+      "url": "https://www.81.cn/yljnt_208627/ylml/P/16359999_2.html",
+      "purpose": "搜尋可見軍事指揮文章，直接 open 報重導迴圈；需 ChatGPT 另開可讀版本或同期作戰原文。",
+      "status": "search_result_only_redirect_loop"
+    }
+  ],
+  "bibliographyCandidates": [
+    {
+      "citationTitle": "彭德懷侄女彭鋼少將 專家姜廷玉做客人民網——紀念中國人民志願軍赴朝參戰60周年",
+      "url": "http://cpc.people.com.cn/BIG5/74838/112401/206137/index.html",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "",
+      "publisher": "人民網",
+      "date": "2010-10-27",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93898757",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "讀《彭德懷自述》",
+      "url": "http://www.people.com.cn/GB/shizheng/8198/30144/30150/2133491.html",
+      "type": "citation-template",
+      "template": "cite journal",
+      "author": "李銳",
+      "publisher": "《讀書》",
+      "date": "1982-03-30",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93898757",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "开国大将黄克诚的传奇经历：彭德怀力挽刀下人",
+      "url": "http://www.chinanews.com.cn/cul/news/2008/12-31/1510011.shtml",
+      "type": "citation-template",
+      "template": "cite web",
+      "author": "黄禹康",
+      "publisher": "中国新闻网",
+      "date": "2008-12-31",
+      "isbn": "",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93898757",
+      "status": "candidate-bibliography-not-opened"
+    },
+    {
+      "citationTitle": "《中共历史转折关头》",
+      "url": "https://archive.org/details/zhonggonglishizh0001unse",
+      "type": "citation-template",
+      "template": "cite book",
+      "author": "李剑",
+      "publisher": "中共中央党校出版社",
+      "date": "1998",
+      "isbn": "9787503517259",
+      "locator": "citation template",
+      "encyclopediaRevisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93898757",
+      "status": "candidate-bibliography-not-opened"
+    }
+  ]
+}

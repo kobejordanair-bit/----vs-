@@ -1,0 +1,2882 @@
+{
+  "format": "dynasty-batch50-progress",
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T19:57:37.355Z",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "complete": false,
+  "status": "in_progress",
+  "passed": true,
+  "targetCount": 50,
+  "completionFields": [
+    "analysis",
+    "soulEssence",
+    "stats",
+    "statsAnalysis"
+  ],
+  "counts": {
+    "prepared": 50,
+    "generated": 3,
+    "sourceQA": 2,
+    "assembled": 0,
+    "imported": 0,
+    "importedFields": 0
+  },
+  "finalAuditVerified": false,
+  "libraryPreserved": false,
+  "libraryTotal": null,
+  "finalAuditFile": null,
+  "finalAuditSha256": null,
+  "records": [
+    {
+      "id": "emperor_漢光武帝_80238619",
+      "slug": "01",
+      "name": "漢光武帝",
+      "type": "emperor",
+      "prepared": true,
+      "generated": true,
+      "sourceQA": true,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "58d8e723e4659f84daaff086fb0fbfcf55fc685c49ffd73b6d2333e5fa75042f"
+        },
+        "soulEssence": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "f94792da8489e895f6b0c685c3200c7f41d09dd54f810997a292eeff375395e6"
+        },
+        "stats": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "6be24d990bb5279f9d9a5d3ce657602ea48307da0dce9a356f0c2d14f4cd23d9"
+        },
+        "statsAnalysis": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "fde1fafdf080fb58c98ac77fe3e6851339d1ff1073e1678098a0a8c2dd79b53a"
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": true,
+          "sourceQA": true,
+          "rawResponseSha256": "d1fc554cdab4fd4cd8ece3069bda6c2ab5b0130fb65e1b94922e65d1db1c50cc",
+          "responseSha256": "a39e8347847f3bce6afaaf69dbdef85b27ef25dedda19ba444f2a022c2e43fcb",
+          "fieldsHashes": {
+            "analysis": "58d8e723e4659f84daaff086fb0fbfcf55fc685c49ffd73b6d2333e5fa75042f",
+            "stats": "6be24d990bb5279f9d9a5d3ce657602ea48307da0dce9a356f0c2d14f4cd23d9",
+            "statsAnalysis": "fde1fafdf080fb58c98ac77fe3e6851339d1ff1073e1678098a0a8c2dd79b53a"
+          },
+          "actualSearchCount": 5,
+          "sourceReviewSha256": "41502f4c3ebb5eac8ba66dac7b06210b9700385e6bf194ab1f0806ab1e5ae8f1"
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": true,
+          "sourceQA": true,
+          "rawResponseSha256": "ffb3c2ecef6811c678d80bf7d30ea76909e404e705733abb1d2b6f0adfee3db1",
+          "responseSha256": "2f65c859dc61d7ac83806d0ac1219f79aa447f5f4096c4b1d5e933e929f0747a",
+          "fieldsHashes": {
+            "soulEssence": "f94792da8489e895f6b0c685c3200c7f41d09dd54f810997a292eeff375395e6"
+          },
+          "actualSearchCount": 11,
+          "sourceReviewSha256": "01f5bec4bbf54c6face448e07f2175a2187e89778edb2a2932fe3ae29b1fb4cc"
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_宋太祖_284437104",
+      "slug": "02",
+      "name": "宋太祖",
+      "type": "emperor",
+      "prepared": true,
+      "generated": true,
+      "sourceQA": true,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "2f26c5ba50ea18561803963c8cc6fb394a1b1fca42616ce0a668b390041cd2ba"
+        },
+        "soulEssence": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "cd623fcc5c9060409d5b4933dc529eae07862ef27b23058bca13dabd4f6f1f54"
+        },
+        "stats": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "5c2ed376c8e634662ffb71097fb52cc305945e77ee1394eadc696ded418a4bac"
+        },
+        "statsAnalysis": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "b0eaba76b92e6e663b2e5e91d7a7b8044038b3afebec5bbed0cc2996fce62f76"
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": true,
+          "sourceQA": true,
+          "rawResponseSha256": "c1fdad5b888e78f2635063a49660e18e0a799ce924b3c337ddac5ba4646f4216",
+          "responseSha256": "e4dc1b82ab72f31107ce07fba3ec4ae28e09c1e1c8725b4b32c3b39a7c659009",
+          "fieldsHashes": {
+            "analysis": "2f26c5ba50ea18561803963c8cc6fb394a1b1fca42616ce0a668b390041cd2ba",
+            "stats": "5c2ed376c8e634662ffb71097fb52cc305945e77ee1394eadc696ded418a4bac",
+            "statsAnalysis": "b0eaba76b92e6e663b2e5e91d7a7b8044038b3afebec5bbed0cc2996fce62f76"
+          },
+          "actualSearchCount": 18,
+          "sourceReviewSha256": "461b936d9841b1df41d51663dd3bb8093c039cb5f92769683a18c44414527cc6"
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": true,
+          "sourceQA": true,
+          "rawResponseSha256": "f238ec08bc06c268becda4c634c7c0895123c66a8a17c3edaa9b621c1fae6e02",
+          "responseSha256": "0c86fb911d747e41e1b0ed1dd8b854ad3ce4a18537aa7675b432b6103e5369bb",
+          "fieldsHashes": {
+            "soulEssence": "cd623fcc5c9060409d5b4933dc529eae07862ef27b23058bca13dabd4f6f1f54"
+          },
+          "actualSearchCount": 2,
+          "sourceReviewSha256": "329e5f557bc090a2b1c06c4642dd3778ce83a9676ea1ede433a75ae74e8a1bce"
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_康熙帝_283469836",
+      "slug": "03",
+      "name": "康熙帝",
+      "type": "emperor",
+      "prepared": true,
+      "generated": true,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "90aa916d5392727ecdc5b69e10899612c63d8e0e2d377cab9985779de4ab95db"
+        },
+        "soulEssence": {
+          "generated": true,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": "b1ffcecf6fcfc6e12f60909709469f19d61bfa7bbab1d14f1da484816be24da3"
+        },
+        "stats": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "2b28d18e0a7fb9bc7041cbea0f2bdad34b084258cad9c008494cca26e03d7579"
+        },
+        "statsAnalysis": {
+          "generated": true,
+          "sourceQA": true,
+          "assembled": false,
+          "imported": false,
+          "sha256": "6bec77a26d485ab78f9dc41d7f36f13402c52db94121fbb8c5d6b7c0d2774722"
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": true,
+          "sourceQA": true,
+          "rawResponseSha256": "2b50e63c7e768bac701572f031ba7141f41ef437184efd48c767545aa91a6689",
+          "responseSha256": "01f710e7f9136c9a4822d1b738951798544f9600f48a3bc2f5b0711115506c6f",
+          "fieldsHashes": {
+            "analysis": "90aa916d5392727ecdc5b69e10899612c63d8e0e2d377cab9985779de4ab95db",
+            "stats": "2b28d18e0a7fb9bc7041cbea0f2bdad34b084258cad9c008494cca26e03d7579",
+            "statsAnalysis": "6bec77a26d485ab78f9dc41d7f36f13402c52db94121fbb8c5d6b7c0d2774722"
+          },
+          "actualSearchCount": 18,
+          "sourceReviewSha256": "e3d23af09713ce2fe02e13bd4b3533883544a22308c4de261c8c9efbeca056a5"
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": true,
+          "sourceQA": false,
+          "rawResponseSha256": "49985633905099a6adc1bc132154a20056c026da07ac80510da1cc55285cebbb",
+          "responseSha256": "06b65a0ef31c018cdfa494499080c44ed6594cc84f4cc4d78e742836d32d371f",
+          "fieldsHashes": {
+            "soulEssence": "b1ffcecf6fcfc6e12f60909709469f19d61bfa7bbab1d14f1da484816be24da3"
+          },
+          "actualSearchCount": 11
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_明成祖_281780435",
+      "slug": "04",
+      "name": "明成祖",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "slug": "05",
+      "name": "唐高宗",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "slug": "06",
+      "name": "秦昭襄王",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_乾隆帝_287167826",
+      "slug": "07",
+      "name": "乾隆帝",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_漢宣帝_279605035",
+      "slug": "08",
+      "name": "漢宣帝",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_宋武帝_284299365",
+      "slug": "09",
+      "name": "宋武帝",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "slug": "10",
+      "name": "宋仁宗",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_武則天_280599295",
+      "slug": "11",
+      "name": "武則天",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_宋太宗_284444719",
+      "slug": "12",
+      "name": "宋太宗",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_明孝宗_281841215",
+      "slug": "13",
+      "name": "明孝宗",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_神武帝_276962130",
+      "slug": "14",
+      "name": "神武帝",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "emperor_宋孝宗_284427266",
+      "slug": "15",
+      "name": "宋孝宗",
+      "type": "emperor",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_林彪_306298218",
+      "slug": "16",
+      "name": "林彪",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_拓跋燾_904534991",
+      "slug": "17",
+      "name": "拓跋燾",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_曹操_306294699",
+      "slug": "18",
+      "name": "曹操",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_李勣_306292748",
+      "slug": "19",
+      "name": "李勣",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_蘇定方_912794063",
+      "slug": "20",
+      "name": "蘇定方",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_粟裕_306475725",
+      "slug": "21",
+      "name": "粟裕",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_彭德懷_903329142",
+      "slug": "22",
+      "name": "彭德懷",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_王忠嗣_908276471",
+      "slug": "23",
+      "name": "王忠嗣",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_孫武_306204690",
+      "slug": "24",
+      "name": "孫武",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_朱德_306295133",
+      "slug": "25",
+      "name": "朱德",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_孟珙_306206481",
+      "slug": "26",
+      "name": "孟珙",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_李光弼_905152266",
+      "slug": "27",
+      "name": "李光弼",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_孫臏_306210427",
+      "slug": "28",
+      "name": "孫臏",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "slug": "29",
+      "name": "伍子胥",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_白崇禧_908987622",
+      "slug": "30",
+      "name": "白崇禧",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_左宗棠_902922424",
+      "slug": "31",
+      "name": "左宗棠",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_戚繼光_904227344",
+      "slug": "32",
+      "name": "戚繼光",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_木華黎_905533968",
+      "slug": "33",
+      "name": "木華黎",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_僕固懷恩_2119975374",
+      "slug": "34",
+      "name": "僕固懷恩",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "general_陳慶之_916874609",
+      "slug": "35",
+      "name": "陳慶之",
+      "type": "general",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "slug": "36",
+      "name": "周恩來",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_荀彧_2004230913",
+      "slug": "37",
+      "name": "荀彧",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_張良_2003953844",
+      "slug": "38",
+      "name": "張良",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_李斯_2004010747",
+      "slug": "39",
+      "name": "李斯",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "slug": "40",
+      "name": "于謙(名臣)",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "slug": "41",
+      "name": "謝安",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_范仲淹_2001455088",
+      "slug": "42",
+      "name": "范仲淹",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "slug": "43",
+      "name": "朱鎔基",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_劉基_2003842411",
+      "slug": "44",
+      "name": "劉基",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_張廷玉_1992775117",
+      "slug": "45",
+      "name": "張廷玉",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_霍光_2004384438",
+      "slug": "46",
+      "name": "霍光",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_張之洞_1992641166",
+      "slug": "47",
+      "name": "張之洞",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_子產_2003919532",
+      "slug": "48",
+      "name": "子產",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_陳雲_2004397497",
+      "slug": "49",
+      "name": "陳雲",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "slug": "50",
+      "name": "徐光啟",
+      "type": "minister",
+      "prepared": true,
+      "generated": false,
+      "sourceQA": false,
+      "assembled": false,
+      "imported": false,
+      "fields": {
+        "analysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "soulEssence": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "stats": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        },
+        "statsAnalysis": {
+          "generated": false,
+          "sourceQA": false,
+          "assembled": false,
+          "imported": false,
+          "sha256": null
+        }
+      },
+      "perTask": {
+        "analysisStats": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        },
+        "soulEssence": {
+          "prepared": true,
+          "generated": false,
+          "sourceQA": false
+        }
+      },
+      "issues": []
+    }
+  ],
+  "chunks": [
+    {
+      "range": "01-05",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.01-05.v1.json",
+      "dryRunFile": "analysis-batch-50/import.01-05.dry-run.json",
+      "applyFile": "analysis-batch-50/import.01-05.apply.json"
+    },
+    {
+      "range": "06-10",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.06-10.v1.json",
+      "dryRunFile": "analysis-batch-50/import.06-10.dry-run.json",
+      "applyFile": "analysis-batch-50/import.06-10.apply.json"
+    },
+    {
+      "range": "11-15",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.11-15.v1.json",
+      "dryRunFile": "analysis-batch-50/import.11-15.dry-run.json",
+      "applyFile": "analysis-batch-50/import.11-15.apply.json"
+    },
+    {
+      "range": "16-20",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.16-20.v1.json",
+      "dryRunFile": "analysis-batch-50/import.16-20.dry-run.json",
+      "applyFile": "analysis-batch-50/import.16-20.apply.json"
+    },
+    {
+      "range": "21-25",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.21-25.v1.json",
+      "dryRunFile": "analysis-batch-50/import.21-25.dry-run.json",
+      "applyFile": "analysis-batch-50/import.21-25.apply.json"
+    },
+    {
+      "range": "26-30",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.26-30.v1.json",
+      "dryRunFile": "analysis-batch-50/import.26-30.dry-run.json",
+      "applyFile": "analysis-batch-50/import.26-30.apply.json"
+    },
+    {
+      "range": "31-35",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.31-35.v1.json",
+      "dryRunFile": "analysis-batch-50/import.31-35.dry-run.json",
+      "applyFile": "analysis-batch-50/import.31-35.apply.json"
+    },
+    {
+      "range": "36-40",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.36-40.v1.json",
+      "dryRunFile": "analysis-batch-50/import.36-40.dry-run.json",
+      "applyFile": "analysis-batch-50/import.36-40.apply.json"
+    },
+    {
+      "range": "41-45",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.41-45.v1.json",
+      "dryRunFile": "analysis-batch-50/import.41-45.dry-run.json",
+      "applyFile": "analysis-batch-50/import.41-45.apply.json"
+    },
+    {
+      "range": "46-50",
+      "assembled": false,
+      "dryRunVerified": false,
+      "imported": false,
+      "targetCount": 0,
+      "resultsFile": "analysis-batch-50/results.46-50.v1.json",
+      "dryRunFile": "analysis-batch-50/import.46-50.dry-run.json",
+      "applyFile": "analysis-batch-50/import.46-50.apply.json"
+    }
+  ],
+  "errors": [],
+  "privateFilesRead": false
+}
