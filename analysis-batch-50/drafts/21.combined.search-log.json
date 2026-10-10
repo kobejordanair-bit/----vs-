@@ -1,0 +1,37 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_粟裕_306475725",
+  "packetSha256": "471f6bedbbdd30ab19feef179a336d96aad02ebd790f709253632372f5da260e",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "粟裕 1958年 軍委擴大會議 批判 1994年 平反 軍事科學院 文章 蘇中七戰七捷 孟良崮",
+      "returnedUrls": [
+        "https://news.cnyes.com/news/id/3650002",
+        "https://c.m.163.com/news/a/L2EVISFS0523PR80.html",
+        "https://chinadigitaltimes.net/chinese/357809.html",
+        "https://ah.lib.nccu.edu.tw/bitstream/140.119/73465/1/77-103.pdf",
+        "https://www.ritsumei.ac.jp/acd/re/ssrc/result/memoirs/kiyou25/25-09.pdf"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "粟裕 1948年 斗膽直陳 暫不渡江 華東野戰軍 代司令員 讓位 陳毅 淮海戰役 總前委",
+      "returnedUrls": [
+        "https://www.chinatimes.com/opinion/20210930000002-262107",
+        "https://www.yzwb.net/news/wsj/202311/t20231106_193490.html",
+        "https://chiculture.org.hk/en/photo-story/3518",
+        "https://img1.xinmin.cn/xmwb/2019-05-27/1-160527.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Four official pages relied on only for propositions recorded by the handoff package. WebSearch results on 1958/1994 came mainly from aggregator or partisan sites and were not cited; the 1958 criticism and 1994 correction are stated as widely reported facts without links.",
+    "淮海總前委五人與常委、書記之組成屬通行史實，未附連結；未採用坊間負傷次數與名將讚語。"
+  ]
+}

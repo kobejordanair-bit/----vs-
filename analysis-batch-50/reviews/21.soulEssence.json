@@ -1,0 +1,81 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_粟裕_306475725",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:03:22.281Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "dea9e80ed04f730b0c5db2dd1d2aa3742edee77ab10160c193c3b9f4f5deac53",
+  "rawResponseSha256": "dea9e80ed04f730b0c5db2dd1d2aa3742edee77ab10160c193c3b9f4f5deac53",
+  "sourcePackageSha256": "e04d643a530c320cae804d041052cfa5a9b124c6ae6d48962e116cee2a1206ae",
+  "searchLogSha256": "daa302c99cf2345dd3a989c03737ccded45920e47e8162bc91dc8d0ef4474d08",
+  "checkedSources": [
+    {
+      "url": "https://www.dswxyjy.org.cn/n/2015/0423/c244523-26891901.html",
+      "title": "〈粟裕「斗膽直陳」二三事〉（中共中央黨史和文獻研究院，原刊《世紀風采》）",
+      "locator": "來源包已記錄先前核讀：1946年6月27／29日蘇中內線建議、1948年4月底–5月初黃淮決戰建議；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423732-30947258.html",
+      "title": "中共中央黨史和文獻研究院〈軍事家粟裕〉（軍事科學院作者，原刊《百年潮》2017年第8期）",
+      "locator": "來源包已記錄先前核讀：紅軍基層幹部與華東戰區主將兩節，蘇中、孟良崮、豫東指揮經歷及1948年黃淮決戰建議；未逐項回查戰果數字；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/BIG5/n1/2019/0228/c423732-30918104.html",
+      "title": "〈大智大勇 奇中取勝——回憶解放戰爭時期粟裕大將二三事〉",
+      "locator": "來源包已記錄先前核讀：作者1943–1948身邊工作身份、前線指揮與孟良崮門板故事段；屬事後回憶；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "兩次直陳；沉默標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "1946與1948兩次建議。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "孟良崮與直陳；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "1958批判標[推斷]並說明依據。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "門板回憶註明事後；晚年心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "戰役計算與1958；背景標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "1948與1958；申訴細節標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

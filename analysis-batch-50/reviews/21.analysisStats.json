@@ -1,0 +1,86 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_粟裕_306475725",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:03:22.280Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "046d3d9ccc2cdd1d85cab316b4e086f7ed070661b38554533b6d7d205492cc59",
+  "rawResponseSha256": "046d3d9ccc2cdd1d85cab316b4e086f7ed070661b38554533b6d7d205492cc59",
+  "sourcePackageSha256": "e04d643a530c320cae804d041052cfa5a9b124c6ae6d48962e116cee2a1206ae",
+  "searchLogSha256": "daa302c99cf2345dd3a989c03737ccded45920e47e8162bc91dc8d0ef4474d08",
+  "checkedSources": [
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423732-30947258.html",
+      "title": "中共中央黨史和文獻研究院〈軍事家粟裕〉（軍事科學院作者，原刊《百年潮》2017年第8期）",
+      "locator": "來源包已記錄先前核讀：紅軍基層幹部與華東戰區主將兩節，蘇中、孟良崮、豫東指揮經歷及1948年黃淮決戰建議；未逐項回查戰果數字；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://photo.81.cn/tsjs/2013-10/11/content_5582595.htm",
+      "title": "中國軍網〈粟裕〉",
+      "locator": "來源包已記錄先前核讀：人物生平末段，曾任總參謀長、1955年授大將；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n/2015/0423/c244523-26891901.html",
+      "title": "〈粟裕「斗膽直陳」二三事〉（中共中央黨史和文獻研究院，原刊《世紀風采》）",
+      "locator": "來源包已記錄先前核讀：1946年6月27／29日蘇中內線建議、1948年4月底–5月初黃淮決戰建議；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/BIG5/n1/2019/0228/c423732-30918104.html",
+      "title": "〈大智大勇 奇中取勝——回憶解放戰爭時期粟裕大將二三事〉",
+      "locator": "來源包已記錄先前核讀：作者1943–1948身邊工作身份、前線指揮與孟良崮門板故事段；屬事後回憶；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "粟裕，解放軍大將；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "zhichen",
+      "passed": true,
+      "detail": "1946年6月27／29日與1948年4月底–5月初兩次建議，依來源包所記文章。"
+    },
+    {
+      "id": "menglianggu",
+      "passed": true,
+      "detail": "攻擊整編74師依來源包所記軍事家粟裕；門板回憶標明非同期紀錄。"
+    },
+    {
+      "id": "1958",
+      "passed": true,
+      "detail": "批判與身後糾正無連結，於限制中說明。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[98,55,97,50,88] 對照林彪[99,50,97,45,70]、徐達[99,85,95,92,90]、韓信[100,70,100,25,60]、司馬懿[98,60,97,99,75]、霍去病[96,92,95,35,88]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    98,
+    55,
+    97,
+    50,
+    88
+  ]
+}
