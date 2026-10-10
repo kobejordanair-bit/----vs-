@@ -220,11 +220,16 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     const TOKEN_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 天
 
     function isTokenValid(token) {
-        if (!token) return false;
-        const parts = token.split('.');
-        if (parts.length !== 2 || !/^\d+$/.test(parts[1])) return false;
-        const issuedAt = parseInt(parts[1], 10) * 1000;
-        return Date.now() - issuedAt < TOKEN_TTL_MS;
+        if (typeof token !== 'string') return false;
+        const signed = token.match(/^v1\.(\d{1,13})\.([A-Za-z0-9_-]{43})$/);
+        const legacy = signed ? null : token.match(/^(.+)\.(\d{1,13})$/);
+        if (!signed && !legacy) return false;
+        const issued = Number((signed || legacy)[signed ? 1 : 2]);
+        const now = Math.floor(Date.now() / 1000);
+        // Only the server verifies the signature. This check preserves the
+        // existing seven-day session across reloads without accepting future dates.
+        return Number.isSafeInteger(issued) && issued <= now
+            && now - issued <= TOKEN_TTL_MS / 1000;
     }
 
     (function() {

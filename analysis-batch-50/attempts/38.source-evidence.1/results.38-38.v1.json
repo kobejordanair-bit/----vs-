@@ -77,15 +77,15 @@
               "statsAnalysis": "0df92692203a7ab63d2cef88d275364af5a9b9d899872b97d73eee47436ebcd8"
             },
             "captureFile": "analysis-batch-50/drafts/38.analysisStats.capture.json",
-            "captureSha256": "29d00a030ce695dbe6fb43f8cf1c4ee277ce127a62341b7ef7839dad9e0be280",
+            "captureSha256": "500bb18b008ef618955fddd8e49b39f5201f7dee7e6f0da0872009fc304d56bb",
             "sourceReviewFile": "analysis-batch-50/reviews/38.analysisStats.json",
-            "sourceReviewSha256": "213c03774c990e20026fa06c01a461047a2004d9d7ffae51a42dc0f8afcde369",
+            "sourceReviewSha256": "36636cd517ab39ad2eea2587d55c6337ab767500f214fe5730a353fbbe04c8a5",
             "webSearchPerformed": true,
             "searchLog": {
               "file": "analysis-batch-50/drafts/38.combined.search-log.json",
-              "sha256": "585782a79def74fe8744c72f68243d6951e0d15c43750577805096f7c1eaa709",
+              "sha256": "021ecf0a07e9d31756a060f4275eb21e668c0eaba31d48758116db8d96d74541",
               "webSearchCount": 1,
-              "archiveCheckCount": 63
+              "archiveCheckCount": 62
             },
             "checkedSources": [
               {
@@ -137,15 +137,15 @@
               "soulEssence": "e04bf88c3a73604f7a229ef39c6153a263bfc4132f68c0e9b8a1105749963b76"
             },
             "captureFile": "analysis-batch-50/drafts/38.soulEssence.capture.json",
-            "captureSha256": "df465d7251db34c91885869630c2f35c63d6026677498c5c4e7be506a52f89a0",
+            "captureSha256": "fdab2a3be226e6afa0c5e8407d83228bed54d1354e8ef5c0ce2b22806b91b487",
             "sourceReviewFile": "analysis-batch-50/reviews/38.soulEssence.json",
-            "sourceReviewSha256": "12c8936f20c58a5dd9ce6913698af41ba8731a89671139890783acc4e20f1c6f",
+            "sourceReviewSha256": "f4969e22b376fdacbaf7f62d9c8654b68fd35422056209bc9c2f72b513637135",
             "webSearchPerformed": true,
             "searchLog": {
               "file": "analysis-batch-50/drafts/38.combined.search-log.json",
-              "sha256": "585782a79def74fe8744c72f68243d6951e0d15c43750577805096f7c1eaa709",
+              "sha256": "021ecf0a07e9d31756a060f4275eb21e668c0eaba31d48758116db8d96d74541",
               "webSearchCount": 1,
-              "archiveCheckCount": 63
+              "archiveCheckCount": 62
             },
             "checkedSources": [
               {

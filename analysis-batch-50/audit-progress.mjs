@@ -6,7 +6,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { isDeepStrictEqual } from 'node:util';
 import { strictJsonParse, record, validRevision } from '../cloudflare/src/contracts.mjs';
 import { PilotError, sha256, contentHash } from '../cloudflare/scripts/analysis-pilot-import.mjs';
-import { loadFixedManifest, validateManifest, validateChunk, COMPLETION_FIELDS, EXPECTED_TOTAL } from './import.mjs';
+import { batchFields, loadFixedManifest, validateManifest, validateChunk, COMPLETION_FIELDS, EXPECTED_TOTAL } from './import.mjs';
 import { TASKS, validateRequest, captureExport, readRegularText } from './capture.mjs';
 import { verifyOriginalPromptBinding, recheckOriginalPromptMaterials } from './prompt-bindings.mjs';
 import { assembleResults, validateSourceReview } from './assemble.mjs';
@@ -17,7 +17,7 @@ const bad = code => { throw new PilotError(code); };
 const hashOk = value => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value);
 const errorCode = error => error instanceof PilotError ? error.code : error.code === 'ENOENT' ? 'not_yet_present' : 'public_evidence_invalid';
 export const CHUNKS = FINAL_CHUNKS;
-const expectedHashes = batch => batch.records.flatMap(item => COMPLETION_FIELDS.map(field => ({ id: item.id, field, sha256: field === 'stats' ? contentHash(item.fields[field]) : sha256(item.fields[field]) })));
+const expectedHashes = batch => batch.records.flatMap(item => batchFields(batch).map(field => ({ id: item.id, field, sha256: field === 'stats' ? contentHash(item.fields[field]) : sha256(item.fields[field]) })));
 const sortedHashes = values => values.map(value => ({ id: value.id, field: value.field, sha256: value.sha256 })).sort((one, two) => (one.id + '\0' + one.field).localeCompare(two.id + '\0' + two.field));
 
 function validateHashList(actual, expected) {
@@ -29,7 +29,7 @@ function validateReceiptHeader(value, mode, batch, manifest) {
   validateChunk(batch, manifest);
   if (!record(value) || value.format !== 'dynasty-analysis-batch50-import' || value.schemaVersion !== 1 || value.mode !== mode || value.passed !== true
       || value.status !== (mode === 'apply' ? 'applied_verified' : 'planned') || value.authorizedTargetCount !== 50
-      || value.targetCount !== batch.records.length || value.changedFields !== batch.records.length * 4 || value.provenanceFieldsWritten !== 0
+      || value.targetCount !== batch.records.length || value.changedFields !== batch.records.length * batchFields(batch).length || value.provenanceFieldsWritten !== 0
       || value.manifestSha256 !== contentHash(manifest) || value.batchSha256 !== contentHash(batch)
       || value.sourceSha256 !== manifest.sourceSha256 || value.baseLibrarySha256 !== manifest.baseLibrarySha256
       || !validRevision(value.beforeRevision) || value.beforeRevision < manifest.baselineRevision
@@ -284,10 +284,11 @@ export async function main(values = process.argv.slice(2)) {
     if (dirname(output) !== here || !/^(?:progress(?:[.\w-]*)?)\.json$/.test(output.slice(here.length + 1))) bad('output_must_be_public_progress_file');
     try { const info = await lstat(output); if (!info.isFile() || info.isSymbolicLink()) bad('output_must_be_regular_file'); }
     catch (error) { if (error.code !== 'ENOENT') throw error; }
-    const progress = await auditProgress();
+    const { buildReceiptLedger } = await import('./receipt-ledger.mjs');
+    const progress = await buildReceiptLedger();
     await writeFile(output, JSON.stringify(progress, null, 2) + '\n');
     console.log(JSON.stringify({ status: progress.status, passed: progress.passed, complete: progress.complete, counts: progress.counts, libraryPreserved: progress.libraryPreserved }));
     return progress.passed ? 0 : 1;
   } catch (error) { console.error(JSON.stringify({ status: errorCode(error), passed: false, complete: false })); return 1; }
 }
-if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) process.exitCode = await main();
+if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) main().then(code => { process.exitCode = code; });

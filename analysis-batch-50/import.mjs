@@ -156,7 +156,15 @@ export function validatePriorReceiptDocument(receipt, item, manifest = authority
   validatePriorReceipt(item?.priorReceipt);
   const written = Array.isArray(receipt?.writtenFieldHashes) ? receipt.writtenFieldHashes.filter(entry => entry?.id === item.id) : [];
   if (!record(receipt) || receipt.format !== 'dynasty-analysis-batch50-import' || receipt.mode !== 'apply' || receipt.status !== 'applied_verified'
-    || receipt.passed !== true || receipt.writeSucceeded !== true || receipt.verification?.passed !== true
+    || receipt.schemaVersion !== 1 || receipt.passed !== true || receipt.writeAttempted !== true || receipt.writeSucceeded !== true
+    || receipt.verification?.passed !== true || receipt.verification.targetsMatch !== true
+    || receipt.verification.contentPreserved !== true || receipt.verification.revisionMatches !== true
+    || !validRevision(receipt.beforeRevision) || receipt.beforeRevision < manifest.baselineRevision
+    || receipt.plannedAfterRevision !== receipt.beforeRevision + 1
+    || receipt.verification.afterRevision !== receipt.plannedAfterRevision
+    || !hashOk(receipt.plannedAfterSha256) || receipt.verification.afterSha256 !== receipt.plannedAfterSha256
+    || !hashOk(receipt.verification.unaffectedBeforeSha256)
+    || receipt.verification.unaffectedBeforeSha256 !== receipt.verification.unaffectedAfterSha256
     || receipt.manifestSha256 !== contentHash(manifest) || contentHash(receipt) !== item.priorReceipt.sha256
     || receipt.verification.afterRevision !== item.priorReceipt.afterRevision
     || !sameKeys(written.map(entry => entry.field), ANALYSIS_FIELDS) || written.length !== ANALYSIS_FIELDS.length

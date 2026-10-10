@@ -224,10 +224,16 @@ function verifiedClaudeTask(inputs) {
   for (const [field, value] of Object.entries(actual.fields)) if (inputs.fieldsFiles?.[field] !== fieldText(field, value)) bad('split_field_changed');
   if (inputs.review?.reviewer?.independent !== false || inputs.review.reviewer.provider !== CLAUDE_PROVIDER) bad('self_review_not_declared');
   const checkedSources = validateSourceReview(inputs.review, actual.capture, actual.fields);
+  if (inputs.review.searchLogSha256 !== actual.capture.searchLog.sha256) bad('review_search_log_changed');
+  const archiveUrls = new Set(inputs.searchLog.archiveChecks.map(check => new URL(check.sourceUrl).href));
+  const searchedUrls = new Set(inputs.searchLog.webSearches.flatMap(search => search.returnedUrls).map(url => new URL(url).href));
   const access = new Map(inputs.review.checkedSources.map(source => [new URL(source.url).href, source.access]));
   for (const source of checkedSources) {
     source.access = access.get(source.url);
     if (!SOURCE_ACCESS.includes(source.access)) bad('source_access_not_declared');
+    if (source.access === 'fixed_revision_archive_fulltext' && !archiveUrls.has(source.url)) bad('source_access_evidence_missing');
+    if (source.access === 'web_search_result_summary' && !searchedUrls.has(source.url)) bad('source_access_evidence_missing');
+    if (source.access === 'source_package_prior_review' && !inputs.sourcePackage.includes(source.url)) bad('source_access_evidence_missing');
   }
   const capture = actual.capture;
   return { fields: actual.fields, checkedSources, provenance: {

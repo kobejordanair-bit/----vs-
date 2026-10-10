@@ -13,3 +13,6 @@
 /backend/static/js/source-search-engine.js -text
 # Pilot manifests hash exact source, prompt, capture, and audit bytes.
 /analysis-pilot/** -text
+
+# Batch captures/manifests bind exact bytes across platforms.
+/analysis-batch-50/** -text

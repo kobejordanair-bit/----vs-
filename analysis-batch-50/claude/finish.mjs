@@ -37,47 +37,8 @@ async function archiveSources(checks) {
 }
 
 export async function refreshLedger() {
-  const progress = await readJson(at('progress.v1.json')), claude = new Map();
-  for (const file of (await readdir(batchDir)).filter(name => /^results\.\d\d-\d\d\.v1\.json$/.test(name)).sort()) {
-    const batch = await readJson(at(file));
-    for (const item of batch.records) if (item.provenance.provider === CLAUDE_PROVIDER) claude.set(item.id, { file, sha256: sha256(await readFile(at(file))) });
-  }
-  const soulOnly = new Map();
-  for (const file of (await readdir(batchDir)).filter(name => /^results\.\d\d-\d\d\.soul\.v1\.json$/.test(name)).sort()) {
-    const batch = await readJson(at(file));
-    for (const item of batch.records) soulOnly.set(item.id, { file, sha256: sha256(await readFile(at(file))), priorReceipt: item.priorReceipt.file });
-  }
-  const receipts = await readJson(at('claude-receipts.v1.json')).catch(() => ({ imports: [] }));
-  const imported = new Map(receipts.imports.flatMap(entry => entry.ids.map(id => [id, entry])));
-  const notes = {
-    '05': 'ChatGPT 稿史實查核不合格（李勣 666 年任遼東道行軍大總管 vs 668 年克平壤），未匯入；失敗稿存 attempts/05.analysisStats.1/。',
-    '06': '已發布 analysis/stats/statsAnalysis（import.06-06.apply.json）；缺 soulEssence。需綁定既有回執的 soul-only 續補匯入路徑，不得放寬成任意覆蓋。',
-  };
-  const records = progress.records.map(record => {
-    const full = record.fullyImported, partial = record.importedFields.length > 0 && !full, own = claude.get(record.id), receipt = imported.get(record.id);
-    const entry = { slug: record.slug, id: record.id, name: record.name, provider: own ? CLAUDE_PROVIDER : (full || partial || record.slug === '05') ? 'ChatGPT web' : null,
-      generated: Boolean(own) || full || partial || record.slug === '05', reviewed: Boolean(own) || full || partial, assembled: Boolean(own) || full || partial,
-      imported: full || Boolean(receipt?.verified), verified: full || Boolean(receipt?.verified), importedFields: receipt?.verified ? ['analysis', 'soulEssence', 'stats', 'statsAnalysis'] : record.importedFields,
-      status: receipt?.verified ? 'fully_imported' : own ? 'assembled_awaiting_local_dry_run' : record.status };
-    if (own) Object.assign(entry, { reviewKind: 'self_review_not_independent', resultsFile: `analysis-batch-50/${own.file}`, resultsSha256: own.sha256 });
-    const soul = soulOnly.get(record.id);
-    if (soul && !receipt?.verified) Object.assign(entry, { status: 'soul_continuation_assembled_awaiting_local_dry_run', soulProvider: CLAUDE_PROVIDER,
-      reviewKind: 'self_review_not_independent', soulResultsFile: `analysis-batch-50/${soul.file}`, soulResultsSha256: soul.sha256, priorReceipt: soul.priorReceipt,
-      note: 'analysis/stats/statsAnalysis 已由 ChatGPT 稿發布（回執綁定）；soulEssence 由 Claude 撰寫，SOUL_FORMAT 只允許在線上三欄與回執雜湊一致時補寫此一欄。' });
-    else if (notes[record.slug] && !own) entry.note = notes[record.slug];
-    return entry;
-  });
-  const count = key => records.filter(item => item[key]).length;
-  const ledger = { format: 'dynasty-batch50-claude-ledger', schemaVersion: 1, asOf: new Date().toISOString().slice(0, 10), targetCount: 50, libraryTotalExpected: 962,
-    authorPolicy: { file: 'analysis-batch-50/author-policy.v2.json', sha256: AUTHOR_POLICY_SHA256 },
-    basis: 'progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.',
-    latestVerifiedPublicationRevision: receipts.latestVerifiedRevision ?? 7,
-    counts: { generated: count('generated'), reviewed: count('reviewed'), assembled: count('assembled'), imported: count('imported'), verified: count('verified'),
-      partialImported: records.filter(item => item.importedFields.length && !item.imported).length, importedFields: records.reduce((sum, item) => sum + item.importedFields.length, 0),
-      claudeAssembledAwaitingImport: records.filter(item => item.status === 'assembled_awaiting_local_dry_run').length,
-      soulContinuationAwaitingImport: records.filter(item => item.status === 'soul_continuation_assembled_awaiting_local_dry_run').length, remainingIncomplete: 50 - count('verified') },
-    caveats: ['audit-progress.mjs / final-audit-proof.mjs assume ten consecutive 5-person full batches; not run against this mixed chain until adapted.', 'import.01-01.dry-run.json was never applied and is not counted.'],
-    records };
+  const { buildReceiptLedger } = await import('../receipt-ledger.mjs');
+  const ledger = await buildReceiptLedger();
   await writeFile(at('claude-ledger.v1.json'), JSON.stringify(ledger, null, 2) + '\n');
   return ledger.counts;
 }

@@ -390,40 +390,11 @@
       "title": "史記/卷055",
       "quote": "因疾不視事",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
-    },
-    {
-      "book": "zizhitongjian",
-      "title": "資治通鑑/卷012",
-      "quote": "太子將兵，有功則位不益，無功則從此受禍矣",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7012",
-      "verifiedBy": "Codex independent merge review",
-      "textSha256": "88e105b693c2d851fb5f1a8d7fbd73f779c2c59aeda2077838e797a314374d64"
     }
   ],
   "limits": [
     "Page fetches remain blocked; 史記卷55、資治通鑑卷11–12 verified in the repository archive.",
     "搜尋未得四皓史源考辨之學術論文，正文僅以史記與通鑑收錄情形並陳，並明示其戲劇性；漢書卷40未逐段比對。",
     "圯上老人、黃石屬傳說層次，依司馬遷『亦可怪矣』標示。"
-  ],
-  "mergeReviewSupplement": {
-    "provider": "Codex",
-    "reason": "Verify missing fulltext citation binding; author manuscript unchanged",
-    "quoteVerification": {
-      "book": "zizhitongjian",
-      "title": "資治通鑑/卷012",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7012",
-      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2496498",
-      "textSha256": "88e105b693c2d851fb5f1a8d7fbd73f779c2c59aeda2077838e797a314374d64",
-      "quote": "太子將兵，有功則位不益，無功則從此受禍矣",
-      "found": true,
-      "hits": [
-        {
-          "charStart": 6289,
-          "charEnd": 6309,
-          "excerptSha256": "fbe0c45f1e0800c67ebea887d9f2c2d4cd034d1e341791cc8c001a1b5187deef",
-          "context": "千戶。乃立皇子長為淮南王。 是時，上有疾，欲使太子往擊黥布。太子客東園公、綺里季、夏黃公、角里先生說建成侯呂釋之曰：「太子將兵，有功則位不益，無功則從此受禍矣。君何不急請呂后，承間為上泣言：『黥布，天下猛將也，善用兵。今諸將皆陛下故等夷，乃令太子將此屬，無異使羊將狼，莫肯為用；"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "reason": "Codex review: 通鑑卷12 citation declared archive fulltext but absent from archiveChecks; add independently verified quote. No prose or scores change.",
+  "files": [
+    {
+      "original": "claude/specs/38.json",
+      "file": "claude__specs__38.json",
+      "sha256": "58b16ccf4a5ff988bdeebf2301acf4d6aac5153a74ce9b59cc2a1b4e35fd9e24"
+    },
+    {
+      "original": "drafts/38.combined.search-log.json",
+      "file": "drafts__38.combined.search-log.json",
+      "sha256": "021ecf0a07e9d31756a060f4275eb21e668c0eaba31d48758116db8d96d74541"
+    },
+    {
+      "original": "drafts/38.analysisStats.capture.json",
+      "file": "drafts__38.analysisStats.capture.json",
+      "sha256": "82c49c8ddb808dd06327f090a692501c7d84f7da013cf352d87bad0bd9107019"
+    },
+    {
+      "original": "drafts/38.soulEssence.capture.json",
+      "file": "drafts__38.soulEssence.capture.json",
+      "sha256": "d773b16b572c546376c61c277da2567cff97cbb4efc02cb9bf6157a1f4202176"
+    },
+    {
+      "original": "drafts/38.combined.capture.json",
+      "file": "drafts__38.combined.capture.json",
+      "sha256": "4cf663aabe334b28a8da2196a4cfd426b91c6eedf462e45504d8a0719083928e"
+    },
+    {
+      "original": "reviews/38.analysisStats.json",
+      "file": "reviews__38.analysisStats.json",
+      "sha256": "a757cec23956ed3089592f0ce6db106c94f5750cc432e5b5cf271014a75c2fbe"
+    },
+    {
+      "original": "reviews/38.soulEssence.json",
+      "file": "reviews__38.soulEssence.json",
+      "sha256": "187743e73eea1cd73f352c37d072b88579f685126245ef4670c51abb6c374b6d"
+    },
+    {
+      "original": "results.38-38.v1.json",
+      "file": "results.38-38.v1.json",
+      "sha256": "51b6de39a6200817527b73dbd3b47c5b922cc4c95a5f1aa7740660ed043d48f2"
+    }
+  ]
+}
