@@ -1,0 +1,108 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_李鵬_2004025016",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:22:23.750Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "6c5e2494fcd8cb3d64dbf7f681f30b5f3c40e9fe44afbf4c6573f190a7ac2fd0",
+  "rawResponseSha256": "6c5e2494fcd8cb3d64dbf7f681f30b5f3c40e9fe44afbf4c6573f190a7ac2fd0",
+  "sourcePackageSha256": "9ed54edb0adc89556c7d42a8ac962ded54e1cb4ad16c883a6232273efd818a3a",
+  "searchLogSha256": "18caf9dc91eda7e56f842d281d7bbb3607a594f9a0a7745aadf37b0f2e19aded",
+  "checkedSources": [
+    {
+      "url": "https://www.ourchinastory.com/zh/763",
+      "title": "ourchinastory〈三峽工程〉",
+      "locator": "WebSearch 結果摘要：1992年4月3日表決票數、國務院第95次常務會議、李鵬三峽日記之語與李銳評語、移民一百一十多萬",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.cna.com.tw/news/acn/201907290292.aspx",
+      "title": "中央社〈李鵬告別式 江澤民出席胡錦濤缺席引揣測〉",
+      "locator": "WebSearch 結果摘要：生平、任職、2019年7月22日逝世、告別式常委到齊胡錦濤缺席",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://news.pts.org.tw/article/439155",
+      "title": "公視新聞〈中國前國務院總理李鵬病逝 享壽91歲〉",
+      "locator": "WebSearch 結果摘要：生平與官方訃告用語",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.csmonitor.com/1988/1130/opek.html",
+      "title": "Christian Science Monitor, 1988-11-30, Chinese leaders reaffirm state's control over the economy",
+      "locator": "WebSearch 結果摘要：1988年8月起兩年緊縮、通膨逾20%、李鵬論過熱",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://chinadigitaltimes.net/2019/05/30-years-ago-tide-turns-toward-hard-liner/",
+      "title": "China Digital Times, 30 years ago: tide turns toward hard liner",
+      "locator": "WebSearch 結果摘要：1989年5月20日宣布戒嚴、電視聲明、致信部隊",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.hk01.com/深度報道/357636/李鵬逝世-李鵬與六四-看一個爭議人物的-身後名",
+      "title": "香港01〈李鵬逝世｜李鵬與六四 看一個爭議人物的身後名〉",
+      "locator": "WebSearch 結果摘要：六四與三峽為評價焦點",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf",
+      "title": "民間檔案館：吳國光為《李鵬「六四」日記》相關訪談錄所作導言",
+      "locator": "WebSearch 結果摘要：戒嚴、謊報軍情與決策體系資訊傳遞；全文未讀",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.thepaper.cn/newsDetail_forward_1253252",
+      "title": "澎湃新聞〈李鵬新書：我是周總理養子？這不正確〉（2014-06-30）",
+      "locator": "source package 書目；未讀全文",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "1928年10月生、1955年留蘇返國入電力系統、1979副部長、1981部長、1983副總理、總理至1998、人大委員長、2002退常委、2019年7月22日卒年91，皆據中央社、公視搜尋摘要。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：電力系統與國務院常務會議；武力：無；智謀：緊縮判斷與三峽程序；政治：歷任要職與爭議身後名；魅力：官方禮遇與民間負評。對照朱鎔基、陳雲、周恩來、鄧小平。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "經濟過熱→1988緊縮；1989動盪→5月20日宣布戒嚴；國務院第95次常務會議→人大表決67%→三峽動工→百萬移民；回憶錄送審→暫不宜出版。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    72,
+    10,
+    70,
+    78,
+    30
+  ]
+}

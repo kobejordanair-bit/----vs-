@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_李鵬_2004025016",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:22:23.751Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7efe5d51610ed78eaf7129cf80f3f3db32cc15a81db137edf706324b346d9503",
+  "rawResponseSha256": "7efe5d51610ed78eaf7129cf80f3f3db32cc15a81db137edf706324b346d9503",
+  "sourcePackageSha256": "9ed54edb0adc89556c7d42a8ac962ded54e1cb4ad16c883a6232273efd818a3a",
+  "searchLogSha256": "18caf9dc91eda7e56f842d281d7bbb3607a594f9a0a7745aadf37b0f2e19aded",
+  "checkedSources": [
+    {
+      "url": "https://www.ourchinastory.com/zh/763",
+      "title": "ourchinastory〈三峽工程〉",
+      "locator": "WebSearch 結果摘要：1992年4月3日表決票數、國務院第95次常務會議、李鵬三峽日記之語與李銳評語、移民一百一十多萬",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.bannedbook.org/b5/forum2/topic151.html",
+      "title": "禁書網轉載法新社引《亞洲周刊》報導李鵬回憶錄《關鍵時刻》",
+      "locator": "WebSearch 結果摘要：約三十萬字送政治局審閱被告知暫時不宜出版；轉載來源立場鮮明",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以控制為治理核心、以門檻與程序衡量正當性；場景為多出451票、宣布戒嚴、日記與送審回憶錄。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "工程系統框架、程序完成不等於問題解決、辯護文字亦須跨門檻等皆標[詮釋]；事實均標此據搜尋摘要。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以451票與這不正確、緊縮與戒嚴、穩定與建設、表決與爭議、日記與告別式、電網與決策資訊、門檻與無法衡量之決定為事件。"
+    }
+  ],
+  "materialIssues": []
+}

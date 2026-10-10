@@ -1,0 +1,72 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_李鵬_2004025016",
+  "packetSha256": "8cfa605b728f7651c1e9de4f5efa49e02154c55b168f99748680ac71cb2908f3",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "李鵬 生平 1928 2019 國務院總理 全國人大委員長 電力工業部 訃告 新華社",
+      "returnedUrls": [
+        "https://www.cna.com.tw/news/acn/201907290292.aspx",
+        "https://www.cna.com.tw/news/acn/201907230375.aspx?topic=1781",
+        "https://news.pts.org.tw/article/439155",
+        "https://news.pts.org.tw/article/439244",
+        "https://www.taiwannews.com.tw/zh/news/3750245",
+        "https://www.hk01.com/深度報道/357636/李鵬逝世-李鵬與六四-看一個爭議人物的-身後名",
+        "https://cfjctoday.com/?p=770430"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "李鵬 三峽工程 1992 全國人大 表決 反對票 推動 移民 研究",
+      "returnedUrls": [
+        "https://www.ourchinastory.com/zh/763",
+        "https://www.ourchinastory.com/zh/3722",
+        "https://www.gvm.com.tw/article/2610",
+        "https://irtest.lib.nccu.edu.tw/handle/140.119/72513",
+        "https://www.ntdtv.com/b5/2015/07/04/a1207947.html"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "李鵬 1989 戒嚴令 5月20日 北京 天安門 角色 李鵬日記 關鍵時刻 研究",
+      "returnedUrls": [
+        "https://chinadigitaltimes.net/?p=76396",
+        "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf",
+        "https://chinadigitaltimes.net/?p=173175",
+        "https://www.hrichina.org/cht/print/ren-quan-lun-tan/1989nian-min-zhu-yun-dong-ji-liu-si-zhen-ya-da-shi-ji",
+        "https://www.rfa.org/english/news/china/tiananmen-baotong2-06032022163714.html",
+        "https://chinadigitaltimes.net/2019/05/30-years-ago-tide-turns-toward-hard-liner/"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "李鵬 治理整頓 1988 1991 通貨膨脹 經濟 總理 任內 評價 研究",
+      "returnedUrls": [
+        "https://chinadigitaltimes.net/?p=13183",
+        "https://csmonitor.com/1993/0714/14013.html",
+        "https://www.csmonitor.com/1988/1130/opek.html",
+        "https://www.proquest.com/docview/303982382/abstract/",
+        "https://www.thewirechina.com/2022/08/07/why-might-china-avoid-strong-inflation"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "李鵬 回憶錄 出版 三峽日記 電力要先行 眾志成城 六四日記 香港 出版 2010",
+      "returnedUrls": [
+        "https://www.bannedbook.org/b5/forum2/topic151.html",
+        "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "pageReads": [],
+  "limits": [
+    "李鵬為當代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch 被代理拒絕），全部內容僅據搜尋結果摘要與 source package 書目，正文以[史載：此據搜尋摘要]標示，摘要中之語句改以粗體而不作引句。",
+    "新華社訃告原文、《李鵬六四日記》《三峽日記》原書均未讀；六四傷亡與決策細節不作數字陳述，須人工抽查。"
+  ]
+}

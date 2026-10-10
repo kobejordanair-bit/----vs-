@@ -1,0 +1,146 @@
+{
+ "webSearches": [
+  {
+   "query": "李鵬 生平 1928 2019 國務院總理 全國人大委員長 電力工業部 訃告 新華社",
+   "returnedUrls": [
+    "https://www.cna.com.tw/news/acn/201907290292.aspx",
+    "https://www.cna.com.tw/news/acn/201907230375.aspx?topic=1781",
+    "https://news.pts.org.tw/article/439155",
+    "https://news.pts.org.tw/article/439244",
+    "https://www.taiwannews.com.tw/zh/news/3750245",
+    "https://www.hk01.com/深度報道/357636/李鵬逝世-李鵬與六四-看一個爭議人物的-身後名",
+    "https://cfjctoday.com/?p=770430"
+   ]
+  },
+  {
+   "query": "李鵬 三峽工程 1992 全國人大 表決 反對票 推動 移民 研究",
+   "returnedUrls": [
+    "https://www.ourchinastory.com/zh/763",
+    "https://www.ourchinastory.com/zh/3722",
+    "https://www.gvm.com.tw/article/2610",
+    "https://irtest.lib.nccu.edu.tw/handle/140.119/72513",
+    "https://www.ntdtv.com/b5/2015/07/04/a1207947.html"
+   ]
+  },
+  {
+   "query": "李鵬 1989 戒嚴令 5月20日 北京 天安門 角色 李鵬日記 關鍵時刻 研究",
+   "returnedUrls": [
+    "https://chinadigitaltimes.net/?p=76396",
+    "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf",
+    "https://chinadigitaltimes.net/?p=173175",
+    "https://www.hrichina.org/cht/print/ren-quan-lun-tan/1989nian-min-zhu-yun-dong-ji-liu-si-zhen-ya-da-shi-ji",
+    "https://www.rfa.org/english/news/china/tiananmen-baotong2-06032022163714.html",
+    "https://chinadigitaltimes.net/2019/05/30-years-ago-tide-turns-toward-hard-liner/"
+   ]
+  },
+  {
+   "query": "李鵬 治理整頓 1988 1991 通貨膨脹 經濟 總理 任內 評價 研究",
+   "returnedUrls": [
+    "https://chinadigitaltimes.net/?p=13183",
+    "https://csmonitor.com/1993/0714/14013.html",
+    "https://www.csmonitor.com/1988/1130/opek.html",
+    "https://www.proquest.com/docview/303982382/abstract/",
+    "https://www.thewirechina.com/2022/08/07/why-might-china-avoid-strong-inflation"
+   ]
+  },
+  {
+   "query": "李鵬 回憶錄 出版 三峽日記 電力要先行 眾志成城 六四日記 香港 出版 2010",
+   "returnedUrls": [
+    "https://www.bannedbook.org/b5/forum2/topic151.html",
+    "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf"
+   ]
+  }
+ ],
+ "archiveChecks": [],
+ "pageReads": [],
+ "extraSources": {
+  "https://www.cna.com.tw/news/acn/201907290292.aspx": {
+   "title": "中央社〈李鵬告別式 江澤民出席胡錦濤缺席引揣測〉",
+   "locator": "WebSearch 結果摘要：生平、任職、2019年7月22日逝世、告別式常委到齊胡錦濤缺席",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://news.pts.org.tw/article/439155": {
+   "title": "公視新聞〈中國前國務院總理李鵬病逝 享壽91歲〉",
+   "locator": "WebSearch 結果摘要：生平與官方訃告用語",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://www.hk01.com/深度報道/357636/李鵬逝世-李鵬與六四-看一個爭議人物的-身後名": {
+   "title": "香港01〈李鵬逝世｜李鵬與六四 看一個爭議人物的身後名〉",
+   "locator": "WebSearch 結果摘要：六四與三峽為評價焦點",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://www.ourchinastory.com/zh/763": {
+   "title": "ourchinastory〈三峽工程〉",
+   "locator": "WebSearch 結果摘要：1992年4月3日表決票數、國務院第95次常務會議、李鵬三峽日記之語與李銳評語、移民一百一十多萬",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://www.csmonitor.com/1988/1130/opek.html": {
+   "title": "Christian Science Monitor, 1988-11-30, Chinese leaders reaffirm state's control over the economy",
+   "locator": "WebSearch 結果摘要：1988年8月起兩年緊縮、通膨逾20%、李鵬論過熱",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://chinadigitaltimes.net/2019/05/30-years-ago-tide-turns-toward-hard-liner/": {
+   "title": "China Digital Times, 30 years ago: tide turns toward hard liner",
+   "locator": "WebSearch 結果摘要：1989年5月20日宣布戒嚴、電視聲明、致信部隊",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf": {
+   "title": "民間檔案館：吳國光為《李鵬「六四」日記》相關訪談錄所作導言",
+   "locator": "WebSearch 結果摘要：戒嚴、謊報軍情與決策體系資訊傳遞；全文未讀",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://www.thepaper.cn/newsDetail_forward_1253252": {
+   "title": "澎湃新聞〈李鵬新書：我是周總理養子？這不正確〉（2014-06-30）",
+   "locator": "source package 書目；未讀全文",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.bannedbook.org/b5/forum2/topic151.html": {
+   "title": "禁書網轉載法新社引《亞洲周刊》報導李鵬回憶錄《關鍵時刻》",
+   "locator": "WebSearch 結果摘要：約三十萬字送政治局審閱被告知暫時不宜出版；轉載來源立場鮮明",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "李鵬為當代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch 被代理拒絕），全部內容僅據搜尋結果摘要與 source package 書目，正文以[史載：此據搜尋摘要]標示，摘要中之語句改以粗體而不作引句。",
+  "新華社訃告原文、《李鵬六四日記》《三峽日記》原書均未讀；六四傷亡與決策細節不作數字陳述，須人工抽查。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity-date",
+    "1928年10月生、1955年留蘇返國入電力系統、1979副部長、1981部長、1983副總理、總理至1998、人大委員長、2002退常委、2019年7月22日卒年91，皆據中央社、公視搜尋摘要。"
+   ],
+   [
+    "five-dimensions",
+    "統率：電力系統與國務院常務會議；武力：無；智謀：緊縮判斷與三峽程序；政治：歷任要職與爭議身後名；魅力：官方禮遇與民間負評。對照朱鎔基、陳雲、周恩來、鄧小平。"
+   ],
+   [
+    "causality",
+    "經濟過熱→1988緊縮；1989動盪→5月20日宣布戒嚴；國務院第95次常務會議→人大表決67%→三峽動工→百萬移民；回憶錄送審→暫不宜出版。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "distinctive-person",
+    "主論點：以控制為治理核心、以門檻與程序衡量正當性；場景為多出451票、宣布戒嚴、日記與送審回憶錄。"
+   ],
+   [
+    "interpretation",
+    "工程系統框架、程序完成不等於問題解決、辯護文字亦須跨門檻等皆標[詮釋]；事實均標此據搜尋摘要。"
+   ],
+   [
+    "seven-fields",
+    "七欄各以451票與這不正確、緊縮與戒嚴、穩定與建設、表決與爭議、日記與告別式、電網與決策資訊、門檻與無法衡量之決定為事件。"
+   ]
+  ]
+ }
+}
