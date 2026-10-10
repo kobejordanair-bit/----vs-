@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_范仲淹_2001455088",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:56:48.420Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b31c7c853588bb8b2b3c8fc0369aa8e8fc1560ea3feca04151eb17ddf8247d26",
+  "rawResponseSha256": "b31c7c853588bb8b2b3c8fc0369aa8e8fc1560ea3feca04151eb17ddf8247d26",
+  "sourcePackageSha256": "5da89c79e3fde65f6813c566a2672ed73768d12f66de0341cd9c2c8214fc709d",
+  "searchLogSha256": "a5ce413dea7f030bbd563f06ac06e606a62a68cc774196d93d563cb0306ef5d8",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314",
+      "title": "宋史·卷三百十四 列傳第七十三",
+      "locator": "本機固定修訂 oldid=2546846 全文比對（textSha256 已驗）：一時士大夫矯厲尚風節，自仲淹倡之、晝夜不息，冬月憊甚，以水沃面；食不給，至以糜粥繼之、延州諸砦多失守、進用者多出其門、不可為後世法、宜掩其小故，以全后德…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://scholars.lib.ntu.edu.tw/handle/123456789/5703?locale=en",
+      "title": "王德毅〈范仲淹與慶曆政局〉（1990，范仲淹一千年誕辰國際學術研討會論文集；臺大學術典藏）",
+      "locator": "WebSearch 結果摘要：僅書目資訊（題名、作者、1990年6月），未見摘要內容",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "范仲淹，名臣；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "remonstrance",
+      "passed": true,
+      "detail": "太后受朝、掩小故、百官圖、朋黨之論興，原文核對。"
+    },
+    {
+      "id": "local",
+      "passed": true,
+      "detail": "江淮救災、蘇州治水、郡學胡瑗，原文核對。"
+    },
+    {
+      "id": "frontier",
+      "passed": true,
+      "detail": "分兵改制、按兵不動、城十二砦、屬羌條約、大順城、龍圖老子、掎角聯防，原文核對。"
+    },
+    {
+      "id": "qingli",
+      "passed": true,
+      "detail": "十事疏、悉採用之、更張無漸、稍稍沮罷，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[86,40,88,88,96] 對照于謙[90,40,90,88,90]、謝安[85,30,92,94,95]、荀彧[85,30,97,97,95]、姚崇[78,68,97,96,88]、周恩來[80,40,95,98,98]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    86,
+    40,
+    88,
+    88,
+    96
+  ]
+}

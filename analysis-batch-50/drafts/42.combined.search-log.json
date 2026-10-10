@@ -1,0 +1,436 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_范仲淹_2001455088",
+  "packetSha256": "a99e5fa4fccef47bf2a8be5aac341900e59bfee50f9b9c0d8d8df0bb78317915",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "范仲淹 慶曆新政 失敗原因 研究 論文 朋黨論 恩蔭 磨勘 1043 1045",
+      "returnedUrls": [
+        "https://scholars.lib.ntu.edu.tw/handle/123456789/5703?locale=en",
+        "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707",
+        "https://ah.lib.nccu.edu.tw/handle/140.119/125277",
+        "https://muse.jhu.edu/article/380502"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "一時士大夫矯厲尚風節，自仲淹倡之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "晝夜不息，冬月憊甚，以水沃面；食不給，至以糜粥繼之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "延州諸砦多失守",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "進用者多出其門",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "不可為後世法",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "宜掩其小故，以全后德",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "進退近臣，凡超格者，不宜全委之宰相",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "仲淹離間陛下君臣，所引用，皆朋黨也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "自是朋黨之論興矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "所至開倉振之，且禁民淫祀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "條上救弊十事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "疏五河，導太湖注之海，募人興作",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "首建郡學，聘胡瑗為師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "自是蘇學為諸郡倡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "寇至禦之，則官卑者先出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "將不擇人，以官為先後，取敗之道也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "各將三千人，分部教之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "按兵不動，以觀其釁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "城十二砦，於是羌漢之民，相踵歸業",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "諸羌皆受命，自是始為漢用矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "旬日而城成，即大順城是也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "白豹、金湯皆不敢犯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "復置陝西路安撫、經略、招討使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "大臣不得薦子弟任館閣職",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "眾以為不可而止",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "然更張無漸，規摹闊大，論者以為不可行。及按察使出，多所舉劾，人心不悅。自任子之恩薄，磨勘之法密，僥倖者不便，於是謗毀稍行，而朋黨之論浸聞上矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "其在中書所施為，亦稍稍沮罷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "事有先後，久安之弊，非朝夕可革也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "食不給，至以糜粥繼之，人不能堪，仲淹不苦也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "非賓客不重肉。妻子衣食，僅能自充",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "臣鄉論蓋國家事，于夷簡無憾也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "置義莊里中，以贍族人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "推其奉以食四方游士，諸子至易衣而出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "內剛外和，性至孝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "為政尚忠厚，所至有恩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "執政可由諫官而得乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "分為六，各將三千人，分部教之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "旬日而城成",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "環慶自此寇益少",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "率眾六千，由邠、涇援之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "騎三萬來戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "戒勿追，已而果有伏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "今討之，必與賊表裏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "更張無漸，規摹闊大",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "羌漢之民，相踵歸業",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "一時士大夫矯厲尚風節",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "羌酋數百人，哭之如父，齋三日而去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "畫像立生祠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "如此則公，如此則私",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "罰羊百、馬二",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "按兵不動，以觀其釁，許臣稍以恩信招來之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "平時諱言武備，寇至而專責守臣死事，可乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "以天下為己任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "以天下為己任，裁削幸濫，考覈官吏，日夜謀慮興致太平",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "每感激論天下事，奮不顧身",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "宮掖中半日不食，當何如",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "多所舉劾，人心不悅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "迎其母歸養",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "始還姓，更其名",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "以母在時方貧",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "非賓客不重肉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "頗親愛臣，呼臣為『龍圖老子』",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "遮使者請留",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "周制，三公分兼六官之職",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "惟進擢差除，循資級",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "章得象等皆曰不可",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "謗毀稍行，而朋黨之論浸聞上矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "非朝夕可革也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 宋史卷314 verified in the repository archive.",
+    "〈岳陽樓記〉『先天下之憂而憂』屬通行文本，未在 archive 核對，正文僅作文學自我形象引入並明示應與史傳分開評估。",
+    "王德毅論文僅依書目資訊引用，正文不主張其論點；宋史卷11未逐段比對。"
+  ]
+}

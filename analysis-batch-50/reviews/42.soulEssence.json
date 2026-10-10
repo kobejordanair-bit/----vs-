@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_范仲淹_2001455088",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:56:48.421Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "dbe3ab176f438496b15c39a935059b330c84f352436bf54826120bf481ae6012",
+  "rawResponseSha256": "dbe3ab176f438496b15c39a935059b330c84f352436bf54826120bf481ae6012",
+  "sourcePackageSha256": "5da89c79e3fde65f6813c566a2672ed73768d12f66de0341cd9c2c8214fc709d",
+  "searchLogSha256": "a5ce413dea7f030bbd563f06ac06e606a62a68cc774196d93d563cb0306ef5d8",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314",
+      "title": "宋史·卷三百十四 列傳第七十三",
+      "locator": "本機固定修訂 oldid=2546846 全文比對（textSha256 已驗）：一時士大夫矯厲尚風節，自仲淹倡之、晝夜不息，冬月憊甚，以水沃面；食不給，至以糜粥繼之、延州諸砦多失守、進用者多出其門、不可為後世法、宜掩其小故，以全后德…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "百官圖與太后受朝；屬羌條約。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "按兵觀釁、戒勿追、守臣不誅。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "以天下為己任、宮掖半日不食；岳陽樓記並讀標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "非朝夕可革與更張無漸；邊疆對照標[推斷]。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "辭母、迎養、義莊、龍圖老子；心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "周制三公；卒不果行。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "景祐與慶曆兩次朋黨之論。"
+    }
+  ],
+  "materialIssues": []
+}
