@@ -1,0 +1,231 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "emperor_宋武帝_284299365",
+      "inputSha256": "e7214b0620f1751307ff9dc510f78d940615f0360d33b4e126e40def4c923bba",
+      "promptSha256": "3d0f80969193f2bed044cebafa98e29c2c45a23b7e57c6a59f4b4e0abb7c980d",
+      "fields": {
+        "analysis": "「氣吞萬里如虎」是辛棄疾給劉裕的定語，也是後人記住他的方式：一個從京口賣力氣的寒人，一刀一刀砍出了南朝。但如果把《宋書》的原文攤開，你會發現劉裕最厲害的不是「吞」，而是「算」——他是一個把整個東晉當成一盤債務重整來做的人。他沒有終結門閥，他做的是更冷酷的事：讓門閥繼續體面地活著，但把兵權、州鎮與戶口全部收回自己手裡。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n劉裕生於晉哀帝興寧元年（363年），「家貧，有大志，不治廉隅」（[《宋書·武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。他窮到欠刁逵「社錢三萬，經時無以還」，被刁逵拘押，是琅邪王氏的王謐暗中替他還錢才脫身。這個細節很重要：在「盛流皆不與相知」的東晉，一個寒人的命運，是由門閥決定的。\n\n他面對的局是一個**三重破產的帝國**：\n\n1.  **政治破產**：「王與馬共天下」之後，皇帝是門閥輪流扶持的招牌。元興二年（403年）桓玄乾脆篡位，連招牌都拆了。\n2.  **軍事破產**：真正能打的北府兵，在劉牢之自縊後群龍無首；孫恩、盧循的海上起事從隆安三年（399年）一路燒到建康城下。\n3.  **財政破產**：《宋書》記其時「權門并兼，強弱相凌，百姓流離」（[《宋書·武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)），大量人口藏在豪族蔭庇之下，國家收不到稅、徵不到兵。\n\n他在歷史長河中的位置，是**南朝的奠基者與東晉門閥政治的清算人**。他是南北朝唯一一位從南方出兵、打進長安的君主，但他留下的不是統一，而是一個用武力重建皇權、卻始終缺乏制度底座的政權。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：義熙土斷不是「摧毀門閥」，而是一次為自己的軍團量身打造的財政重整。**\n\n主流說法是劉裕以「義熙土斷」打擊門閥。義熙九年（413年）他確實上表請行土斷，並誅殺藏匿亡命千餘人的會稽豪族虞亮，「豪強肅然，遠近知禁」。但同一段原文的下一句才是重點：「依界土斷，唯徐、兗、青三州居晉陵者，不在斷例」（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）。晉陵就是京口所在，正是北府兵與他本人的老家。換句話說，他對別人的蔭戶開刀，對自己的兵源網開一面。日本學者小尾孝夫專文討論義熙土斷背後的政治意圖，也把焦點放在僑州郡的實土劃分與劉裕對州鎮的控制上（[小尾孝夫〈義熙土斷における劉裕の政治的意図〉](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/264276)）。\n\n再看他對門閥的實際態度：當年替桓玄「手解安帝璽紱」的王謐，在義軍起事後「眾並謂謐宜誅，唯高祖保持之」（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。他保住了王謐，等於向整個門閥階層發出信號：「你們的地位我不動，但權力要交出來。」門閥沒有被終結，他們被**降格為裝飾品**，而真正的兵權落入劉氏宗室與寒人將領手中。這比消滅門閥更聰明，也更持久。\n\n**【功：用最少的兵打最險的仗】**\n\n義熙五年（409年）北伐南燕，眾將擔心南燕堅壁清野。劉裕的判斷是：「鮮卑貪，不及遠計，進利剋獲，退惜粟苗」，只要越過大峴山，「人無退心」。入峴之後，他「舉手指天曰：吾事濟矣」（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。這不是賭博，而是對敵人心理與後勤的精算。次年廣固城破，南燕滅亡。\n\n義熙十二年（416年）北伐後秦，他親率大軍沿黃河西進，擊退北魏「步騎十萬」的河津威脅；義熙十三年（417年）八月，王鎮惡「伐木為舟，自河浮渭」，攻克長安、生擒姚泓（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）。這是東晉南朝唯一一次光復長安。\n\n**【過：長安得而復失，真正的原因是他的政權沒有制度底座】**\n\n傳統解釋是劉裕「急於篡位」才放棄關中。《宋書》的記法是：「公欲息駕長安，經略趙、魏，會穆之卒，乃歸。」（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）劉穆之是他留在建康「總攝內外」的大管家，一死，後方就失去了唯一能鎮住朝廷的人。這揭示了更深的問題：劉裕的權力不是制度，而是一張以他本人為中心的人際網絡。他只能在長安與建康之間二選一。\n\n他選了建康，留下十來歲的次子劉義真鎮守長安。結果義熙十四年（418年），沈田子殺王鎮惡，諸將又殺王脩，「關中亂」；劉義真撤退途中「為佛佛虜所追，大敗，僅以身免」，關中盡失。這是**個人能力問題**——他擅長打仗，卻沒有建立一個可以在他不在場時運作的系統。\n\n**【過：開創殺前朝君主的先例】**\n\n義熙十四年，他「密使王韶之縊帝而立恭帝，以應讖語」；永初二年（421年），已遜位為零陵王的晉恭帝被「兵人逾垣而入，弒帝于內房」（[《晉書·恭帝紀》](https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7010)）。《宋書》只寫「零陵王薨」（[《宋書·武帝紀下》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73)），本朝史書的避諱本身就說明了問題。此後南朝每一次改朝換代，前朝君主幾乎都難逃一死。這是他留給南朝最壞的遺產。\n\n### **3. 【人性與性格側寫】**\n\n劉裕是一個**記帳極清楚的人**：恩要還，債要討，風險要算到最後一文錢。\n\n*   **身先士卒的狠勁**：孫恩之亂中，他奉命帶數十人偵察，遭遇數千敵軍，「所將人多死，而戰意方厲，手奮長刀，所殺傷甚眾」；元興三年（404年）討桓玄，在江乘「躬執長刀，大呼以衝之」，陣斬桓玄驍將吳甫之（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。\n*   **對盟友的冷酷**：一起起兵的劉毅，義熙八年（412年）被他攻滅；諸葛長民聽聞劉毅被殺，說出「昔年醢彭越，今年誅韓信，禍其至矣」，不久也被誅殺（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）。他能容忍舊恩人王謐，卻不能容忍與他平起平坐的同伴。\n*   **至死不改的寒素**：他「清簡寡欲，嚴整有法度，未嘗視珠玉輿馬之飾」（[《武帝紀下》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73)）。孫子孝武帝拆他舊居時，看到床頭土障、葛燈籠、麻繩拂，只說了一句：「田舍公得此，已為過矣」（[《南史·宋本紀上》](https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B701)）。這句話既是嘲諷，也是對劉裕出身最準確的描述。\n\n### **4. 【如果生在現代】**\n\n劉裕最適合的現代角色是：**接手瀕臨破產集團的重整型CEO，且出身於基層業務或特種部隊。**\n\n*   **第一線出身**：他會是那種親自帶隊跑最難客戶的業務主管，或在最危險任務中衝第一的特種部隊指揮官。\n*   **債務重整（土斷）**：接手公司後，他會清查所有被高層私吞的資源，但會保留自己核心團隊的特權，以確保關鍵戰力不流失。\n*   **保留舊股東的面子（王謐）**：他不會把老董事們趕走，而是讓他們留在董事會、領高薪，但把實際決策權收歸執行團隊。\n*   **致命弱點**：他的公司高度依賴他與一兩位核心幕僚。一旦關鍵人物離職或去世，海外擴張的分公司就會立刻失控。他會在退休前匆忙指定接班團隊，結果接班人上任兩年就被董事會換掉。",
+        "soulEssence": "【說話邏輯】\n他的說服方式是「先替對方把最壞的情況算清楚，再告訴你為什麼不會發生」。義熙五年北伐南燕，議者擔心南燕堅壁清野，他回答：「我揣之熟矣。鮮卑貪，不及遠計，進利剋獲，退惜粟苗……彼不能清野固守，為諸君保之。」（[《宋書·武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）[史載]。潛台詞是：「我已經替你們想過了，風險我扛。」劉牢之叛走後，何無忌問他何去何從，他說：「桓玄必能守節北面，我當與卿事之；不然，與卿圖之。」（同上）[史載]。他的話總是附帶條件與後手，從不把自己逼到死角。他沉默時，往往是在等待對方先犯錯[推斷：依據他在桓玄稱帝前拒絕何無忌立刻起兵的建議，選擇「俟其篡逆事著」]。\n\n【壓力反應】\n遇到危機，他的第一反應是「親自衝到最前線，用身體壓住局面」。\n隆安三年（399年）孫恩之亂中，他帶數十人偵察時遭遇數千敵軍，「所將人多死，而戰意方厲，手奮長刀」（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）[史載]。元興三年（404年）起兵討桓玄，在江乘遭遇桓玄精銳，他「躬執長刀，大呼以衝之，眾皆披靡」（同上）[史載]。兩次危機相隔五年，處境一是基層軍官、一是起義首領，他的反應卻相同：在兵力劣勢時，用主帥本人的衝鋒逆轉士氣[推斷：兩例反應結構一致]。\n\n【核心驅動】\n他真正追求的是「不再欠任何人」——把自己的命運從門閥手中徹底收回。\n早年他欠刁逵社錢三萬被拘，是王謐代償才得脫身，「高祖名微位薄，盛流皆不與相知」（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）[史載]。日後他寧可冒著放棄長安的代價，也要在劉穆之死後立刻回到建康掌控朝廷（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）[史載]。這個選擇揭示：對他而言，失去權力中樞的風險，遠比失去關中更不可承受[詮釋：史書記載的歸師理由是劉穆之之死，「篡位優先」是後人的解讀]。\n\n【慣性盲點】\n他最大的優點「親力親為」，讓他從未建立一套在他不在場時也能運轉的體系。\n義熙十三年（417年）他離開長安，留下年少的劉義真，隨後「沈田子殺安西司馬王鎮惡，諸將軍復殺安西長史王脩。關中亂」（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）[史載]。永初三年（422年）他臨終前倉促安排顧命，遺詔交代細節到「宰相帶揚州，可置甲士千人」（[《武帝紀下》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73)）[史載]，但他身後不久少帝即遭廢殺。兩次都是同一結構：只要他本人離開，他建立的秩序就迅速瓦解[推斷]。\n\n【情感結構】\n他的情感表達極少，卻有清楚的恩義帳本。\n王謐曾代他還債，後來王謐因為替桓玄解下皇帝璽綬而人人喊殺，「唯高祖保持之」（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）[史載]。對劉穆之，他把朝廷大事全數託付，「大事昔所決於穆之者，皆悉以諮」，穆之一死，他便放棄長安東歸（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）[史載]。他依賴的對象極少，但一旦依賴就是全盤交付。他最脆弱的時刻可能正是劉穆之去世時，但史書沒有記錄他的情緒反應[詮釋：只能從他立即改變國家戰略推測這次打擊之重]。\n\n【參照系】\n他習慣以「戰場上的兵源與補給」作為思考一切的參照系。這源自他從北府兵基層一路打上來的經歷（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）[史載]。\n類比準確之處：他把土斷看成「清點兵源與糧餉」，所以對豪族蔭戶開刀，卻讓晉陵僑民「不在斷例」，保住北府兵源（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）[史載]。\n類比失準之處：他把長安當成一座攻下就能守住的城池，卻沒看到關中守將之間的南北派系矛盾，結果沈田子殺王鎮惡，關中隨之失陷[詮釋：派系衝突的成因史家說法不一]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（徹底掌控、不再受制於人）與【慣性盲點】（一切依賴他本人親自在場）之間。\n這個衝突的結構是：他越想把權力牢牢抓在自己手中，就越不敢讓任何制度或人物分走這份控制權；但他本人只有一個，無法同時坐鎮長安與建康。\n第一次爆發在義熙十三年（417年）：劉穆之死後，他必須在關中與朝廷之間二選一，最終東歸，長安隨即失守[史載]。\n第二次爆發在對待功臣上：劉毅、諸葛長民都是起兵時的同伴，卻在他掌權後相繼被誅，諸葛長民臨死前說出「昔年醢彭越，今年誅韓信」（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）[史載]。他寧可親手剪除可能分權的人，也不願建立分權的制度。\n他是否意識到這個衝突？從遺詔仔細規定宰相甲士數量、禁止母后臨朝來看，他晚年顯然想用制度彌補自己身後的權力真空（[《武帝紀下》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73)），但為時已晚[詮釋：遺詔動機史書未明言]。",
+        "stats": [
+          97,
+          92,
+          93,
+          88,
+          85
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：97\n\n劉裕的統率力，是南北朝第一流水準。義熙五年北伐南燕，他判斷南燕不會堅壁清野，越過大峴山直取廣固；義熙十二年北伐後秦，他統籌水陸兩路，擊退北魏在黃河岸的大軍，最終攻克長安（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）。扣分在於長安得而復失，他沒有建立能在他離開後維持的軍事指揮體系。評97，略低於唐太宗（100）與明太祖（98），高於漢武帝（95）。\n\n### 武力：92\n\n他是少數有明確近戰紀錄的開國皇帝。孫恩之亂中，他以數十人遭遇數千敵軍，「手奮長刀，所殺傷甚眾」；討桓玄時在江乘「躬執長刀，大呼以衝之」，陣斬吳甫之（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。這些都是身處第一線的實戰紀錄。評92，高於明太祖（85），低於唐太宗（95），因為後者在大兵團決戰中的個人衝鋒紀錄更多。\n\n### 智謀：93\n\n大峴之役對南燕「鮮卑貪，不及遠計」的判斷，以及討桓玄時選擇「俟其篡逆事著，徐於京口圖之」的時機感，都顯示他對人心與局勢的精準掌握（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。土斷時保留晉陵的兵源，也是精算的結果。但他未能預見劉穆之死後的權力真空，也沒有為長安留下穩固的指揮結構。評93，高於漢武帝（90）與乾隆（92），低於唐太宗（98）與宋太祖（96）。\n\n### 政治：88\n\n義熙土斷整頓戶籍，誅豪族虞亮，「豪強肅然」（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)）；遺詔規定「後世若有幼主，朝事一委宰相，母后不煩臨朝」，試圖防範外戚干政（[《武帝紀下》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73)）。但他在位僅兩年，顧命安排很快失靈，並開創了殺害前朝君主的惡例。評88，低於北魏孝文帝（96）與漢宣帝（97），高於唐中宗（70）。\n\n### 魅力：85\n\n他能讓北府舊部與京口寒人死心追隨，對舊恩人王謐也能力排眾議加以保全（[《武帝紀上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71)）。但劉毅、諸葛長民等昔日盟友接連被殺，「昔年醢彭越，今年誅韓信」的恐懼在功臣圈中蔓延（[《武帝紀中》](https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72)），這種魅力帶著明顯的威懾成分。評85，與漢武帝（85）持平，高於北魏孝文帝（84），低於乾隆（89）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T05:23:32.670Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "宋書·本紀第一",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71",
+            "locator": "本機固定修訂 oldid=2228879 全文比對（textSha256 已驗）：高祖以晉哀帝興寧元年、家貧，有大志，不治廉隅、嘗負刁逵社錢三萬，經時無以還、王謐造逵見之，密以錢代還、盛流皆不與相知、謐手解安帝璽紱…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋書·本紀第二",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72",
+            "locator": "本機固定修訂 oldid=2583201 全文比對（textSha256 已驗）：權門并兼，強弱相凌，百姓流離、會稽餘姚虞亮復藏匿亡命千餘人、豪強肅然，遠近知禁、依界土斷，唯徐、兗、青三州居晉陵者，不在斷、索虜步騎十萬，營據河津、王鎮惡伐木為舟，自河浮渭…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "小尾孝夫〈義熙土斷における劉裕の政治的意図──僑豫州および僑淮南郡の實土をめぐって〉，《東洋史研究》77:1",
+            "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/264276",
+            "locator": "京都大學機構庫摘要（經 WebSearch 結果摘要）：413年土斷之政治意圖、軍郡與僑州郡實土；正文只引此論題",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "晉書·卷十 帝紀第十",
+            "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7010",
+            "locator": "本機固定修訂 oldid=2567072 全文比對（textSha256 已驗）：密使王韶之縊帝而立恭帝、兵人逾垣而入，弑帝于內房",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋書·本紀第三",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73",
+            "locator": "本機固定修訂 oldid=2358186 全文比對（textSha256 已驗）：後世若有幼主，朝事一委宰相，母后不煩臨朝、宰相帶揚州，可置甲士千人、上崩于西殿，時年六十、清簡寡欲，嚴整有法度，未嘗視珠玉輿馬之飾、零陵王薨",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "南史·卷一\n宋本紀上第一",
+            "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B701",
+            "locator": "本機固定修訂 oldid=1561312 全文比對（textSha256 已驗）：田舍公得此，已為過矣、床頭有土障，壁上掛葛燈籠、麻繩拂",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "958a372f33f3e525458598413798085bfe99b11b287f15cca99e5d18bccf451c",
+        "sourcePackageSha256": "2d3ed8c138c3aeb282770d29da96bc2514aae49664b2474fd010916222e2ac86",
+        "preservedDeepSha256": "71473b03c2fd119a7afceb007cd2a46a5dd3400256829b0b9a16dd91a7f2c448",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "993ff5a09f95c30a8b808db22a931c13954b7780e710d39ccc2881656d8bf71b",
+            "requestSha256": "958a372f33f3e525458598413798085bfe99b11b287f15cca99e5d18bccf451c",
+            "inputSha256": "e7214b0620f1751307ff9dc510f78d940615f0360d33b4e126e40def4c923bba",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "6cfe169bc9c84743b209b1076b1f3d6741f27251e1a18e550f20ddf8a752566a",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "2d3ed8c138c3aeb282770d29da96bc2514aae49664b2474fd010916222e2ac86",
+            "preservedDeepSha256": "71473b03c2fd119a7afceb007cd2a46a5dd3400256829b0b9a16dd91a7f2c448",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T05:23:32.670Z",
+            "rawResponseFile": "analysis-batch-50/drafts/09.analysisStats.raw.md",
+            "rawResponseSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571",
+            "responseFile": "analysis-batch-50/drafts/09.analysisStats.response.md",
+            "responseSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571",
+            "fieldsHashes": {
+              "analysis": "7b1b85246d0645b6e84a081e54dbe95a28d8a7495094f9a59c0cb35a19e47277",
+              "stats": "b0c762127440ac897c110dc6deb166849002374f6d542148c4da92b5dcadc9bb",
+              "statsAnalysis": "bfc2052859ea23970d4f222aee0559a1253171465b62a987acc1b4f218e0fa84"
+            },
+            "captureFile": "analysis-batch-50/drafts/09.analysisStats.capture.json",
+            "captureSha256": "ee877127ba8b8f0722710f95b662a00f557c2961b4c86848101be6753d402f24",
+            "sourceReviewFile": "analysis-batch-50/reviews/09.analysisStats.json",
+            "sourceReviewSha256": "d2ea33c7fa8c97ae51b6cd3861bed4e02767b9b4edfc2122810a22212a99cbbf",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/09.combined.search-log.json",
+              "sha256": "ebce01cdc07573a2cca015c9c96bc1ce46600ab9feb3a1e12c97412debdfd485",
+              "webSearchCount": 2,
+              "archiveCheckCount": 40
+            },
+            "checkedSources": [
+              {
+                "title": "宋書·本紀第一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71",
+                "locator": "本機固定修訂 oldid=2228879 全文比對（textSha256 已驗）：高祖以晉哀帝興寧元年、家貧，有大志，不治廉隅、嘗負刁逵社錢三萬，經時無以還、王謐造逵見之，密以錢代還、盛流皆不與相知、謐手解安帝璽紱…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋書·本紀第二",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72",
+                "locator": "本機固定修訂 oldid=2583201 全文比對（textSha256 已驗）：權門并兼，強弱相凌，百姓流離、會稽餘姚虞亮復藏匿亡命千餘人、豪強肅然，遠近知禁、依界土斷，唯徐、兗、青三州居晉陵者，不在斷、索虜步騎十萬，營據河津、王鎮惡伐木為舟，自河浮渭…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "小尾孝夫〈義熙土斷における劉裕の政治的意図──僑豫州および僑淮南郡の實土をめぐって〉，《東洋史研究》77:1",
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/264276",
+                "locator": "京都大學機構庫摘要（經 WebSearch 結果摘要）：413年土斷之政治意圖、軍郡與僑州郡實土；正文只引此論題",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "晉書·卷十 帝紀第十",
+                "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7010",
+                "locator": "本機固定修訂 oldid=2567072 全文比對（textSha256 已驗）：密使王韶之縊帝而立恭帝、兵人逾垣而入，弑帝于內房",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋書·本紀第三",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73",
+                "locator": "本機固定修訂 oldid=2358186 全文比對（textSha256 已驗）：後世若有幼主，朝事一委宰相，母后不煩臨朝、宰相帶揚州，可置甲士千人、上崩于西殿，時年六十、清簡寡欲，嚴整有法度，未嘗視珠玉輿馬之飾、零陵王薨",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "南史·卷一\n宋本紀上第一",
+                "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B701",
+                "locator": "本機固定修訂 oldid=1561312 全文比對（textSha256 已驗）：田舍公得此，已為過矣、床頭有土障，壁上掛葛燈籠、麻繩拂",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "710fd4a65444cc7786e812388d0f11a8fdf99876697acc0006c585b181251b97",
+            "requestSha256": "958a372f33f3e525458598413798085bfe99b11b287f15cca99e5d18bccf451c",
+            "inputSha256": "e7214b0620f1751307ff9dc510f78d940615f0360d33b4e126e40def4c923bba",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "ecb5eee5032d569b8433e7ebdf0bb435d3b734e454e87b25167e0030ea68f914",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "2d3ed8c138c3aeb282770d29da96bc2514aae49664b2474fd010916222e2ac86",
+            "preservedDeepSha256": "71473b03c2fd119a7afceb007cd2a46a5dd3400256829b0b9a16dd91a7f2c448",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T05:23:32.670Z",
+            "rawResponseFile": "analysis-batch-50/drafts/09.soulEssence.raw.md",
+            "rawResponseSha256": "97de92e0141b03c5bd1d6da4c1e128fb6d629a0bbb58927c2ef57f79b9bd0c02",
+            "responseFile": "analysis-batch-50/drafts/09.soulEssence.response.md",
+            "responseSha256": "97de92e0141b03c5bd1d6da4c1e128fb6d629a0bbb58927c2ef57f79b9bd0c02",
+            "fieldsHashes": {
+              "soulEssence": "6fa8a52a8827ff2daf200f14d65492c62e1f74482829cfc7c3ff4e1f6860e2e6"
+            },
+            "captureFile": "analysis-batch-50/drafts/09.soulEssence.capture.json",
+            "captureSha256": "e4de15625bab01a6d1d58d143af3c45a1d1fd26822e731f35f54399de9943dd4",
+            "sourceReviewFile": "analysis-batch-50/reviews/09.soulEssence.json",
+            "sourceReviewSha256": "641fa797fd301b6e08c2f3dc547cf6edee8509d2405936eb9f00e0cfb4640756",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/09.combined.search-log.json",
+              "sha256": "ebce01cdc07573a2cca015c9c96bc1ce46600ab9feb3a1e12c97412debdfd485",
+              "webSearchCount": 2,
+              "archiveCheckCount": 40
+            },
+            "checkedSources": [
+              {
+                "title": "宋書·本紀第一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71",
+                "locator": "本機固定修訂 oldid=2228879 全文比對（textSha256 已驗）：高祖以晉哀帝興寧元年、家貧，有大志，不治廉隅、嘗負刁逵社錢三萬，經時無以還、王謐造逵見之，密以錢代還、盛流皆不與相知、謐手解安帝璽紱…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋書·本紀第二",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72",
+                "locator": "本機固定修訂 oldid=2583201 全文比對（textSha256 已驗）：權門并兼，強弱相凌，百姓流離、會稽餘姚虞亮復藏匿亡命千餘人、豪強肅然，遠近知禁、依界土斷，唯徐、兗、青三州居晉陵者，不在斷、索虜步騎十萬，營據河津、王鎮惡伐木為舟，自河浮渭…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋書·本紀第三",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73",
+                "locator": "本機固定修訂 oldid=2358186 全文比對（textSha256 已驗）：後世若有幼主，朝事一委宰相，母后不煩臨朝、宰相帶揚州，可置甲士千人、上崩于西殿，時年六十、清簡寡欲，嚴整有法度，未嘗視珠玉輿馬之飾、零陵王薨",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/09.analysis.md",
+            "analysisContextSha256": "077ff7cbda74f80b2f78369fc6f522018f9d599382dba9bb258aa31407698068"
+          }
+        }
+      }
+    }
+  ]
+}

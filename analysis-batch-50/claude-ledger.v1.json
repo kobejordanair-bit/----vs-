@@ -8,17 +8,17 @@
     "file": "analysis-batch-50/author-policy.v2.json",
     "sha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed"
   },
-  "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude-mode records. Only imported+verified counts as complete; import requires a local authorized run.",
+  "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 8,
-    "reviewed": 7,
-    "assembled": 7,
+    "generated": 9,
+    "reviewed": 8,
+    "assembled": 8,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "completeAndVerified": 5,
+    "claudeAssembledAwaitingImport": 2,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -110,7 +110,7 @@
       "verified": false,
       "importedFields": [],
       "status": "awaiting_factual_correction",
-      "note": "ChatGPT 稿史實查核不合格（李勣 666 年任遼東道行軍大總管 vs 668 年克平壤），未匯入；失敗稿存 attempts/05.analysisStats.1/。待修正並補靈魂。"
+      "note": "ChatGPT 稿史實查核不合格（李勣 666 年任遼東道行軍大總管 vs 668 年克平壤），未匯入；失敗稿存 attempts/05.analysisStats.1/。"
     },
     {
       "slug": "06",
@@ -128,7 +128,7 @@
         "statsAnalysis"
       ],
       "status": "analysis_imported_soul_pending",
-      "note": "已發布 analysis/stats/statsAnalysis（import.06-06.apply.json）；缺 soulEssence。現有 importer 要求四欄全缺，需先實作綁定既有回執的 soul-only 續補路徑。"
+      "note": "已發布 analysis/stats/statsAnalysis（import.06-06.apply.json）；缺 soulEssence。需綁定既有回執的 soul-only 續補匯入路徑，不得放寬成任意覆蓋。"
     },
     {
       "slug": "07",
@@ -162,23 +162,23 @@
       "status": "assembled_awaiting_local_dry_run",
       "reviewKind": "self_review_not_independent",
       "resultsFile": "analysis-batch-50/results.08-08.v1.json",
-      "resultsSha256": "ac4f655f6212cf3a92fd3b39b047e7fd6358900ba53104111f05055d635c0fa4",
-      "attempts": [
-        "analysis-batch-50/attempts/08.combined.1 (self-found 趙充國「兩從其計」oversimplification; corrected, scores unchanged)"
-      ]
+      "resultsSha256": "ac4f655f6212cf3a92fd3b39b047e7fd6358900ba53104111f05055d635c0fa4"
     },
     {
       "slug": "09",
       "id": "emperor_宋武帝_284299365",
       "name": "宋武帝",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.09-09.v1.json",
+      "resultsSha256": "9e4f09116b113d106899bb0f5465ecb3cb4a4314d5a13c679f3c6ec68663e527"
     },
     {
       "slug": "10",

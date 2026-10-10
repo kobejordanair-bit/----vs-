@@ -1,0 +1,81 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋武帝_284299365",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:23:32.757Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "97de92e0141b03c5bd1d6da4c1e128fb6d629a0bbb58927c2ef57f79b9bd0c02",
+  "rawResponseSha256": "97de92e0141b03c5bd1d6da4c1e128fb6d629a0bbb58927c2ef57f79b9bd0c02",
+  "sourcePackageSha256": "2d3ed8c138c3aeb282770d29da96bc2514aae49664b2474fd010916222e2ac86",
+  "searchLogSha256": "ebce01cdc07573a2cca015c9c96bc1ce46600ab9feb3a1e12c97412debdfd485",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71",
+      "title": "宋書·本紀第一",
+      "locator": "本機固定修訂 oldid=2228879 全文比對（textSha256 已驗）：高祖以晉哀帝興寧元年、家貧，有大志，不治廉隅、嘗負刁逵社錢三萬，經時無以還、王謐造逵見之，密以錢代還、盛流皆不與相知、謐手解安帝璽紱…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72",
+      "title": "宋書·本紀第二",
+      "locator": "本機固定修訂 oldid=2583201 全文比對（textSha256 已驗）：權門并兼，強弱相凌，百姓流離、會稽餘姚虞亮復藏匿亡命千餘人、豪強肅然，遠近知禁、依界土斷，唯徐、兗、青三州居晉陵者，不在斷、索虜步騎十萬，營據河津、王鎮惡伐木為舟，自河浮渭…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73",
+      "title": "宋書·本紀第三",
+      "locator": "本機固定修訂 oldid=2358186 全文比對（textSha256 已驗）：後世若有幼主，朝事一委宰相，母后不煩臨朝、宰相帶揚州，可置甲士千人、上崩于西殿，時年六十、清簡寡欲，嚴整有法度，未嘗視珠玉輿馬之飾、零陵王薨",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "大峴「我揣之熟矣」與對何無忌的條件式回答，宋書卷1原文；沉默模式標[推斷]並寫依據。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "399年偵察遇敵「手奮長刀」、404年江乘「躬執長刀」，兩例相隔五年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "刁逵社錢、王謐代償、「盛流皆不與相知」；歸師動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "關中亂與遺詔細節原文核對；少帝被廢見宋書卷4。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "王謐保全與劉穆之託付原文核對；情緒反應未見史載，標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "晉陵不在斷例、沈田子殺王鎮惡原文核對；派系成因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "劉毅、諸葛長民之誅與遺詔原文核對。"
+    }
+  ],
+  "materialIssues": []
+}
