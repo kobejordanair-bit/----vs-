@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 28,
-    "reviewed": 27,
-    "assembled": 27,
+    "generated": 29,
+    "reviewed": 28,
+    "assembled": 28,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 21,
+    "claudeAssembledAwaitingImport": 22,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -488,14 +488,17 @@
       "slug": "29",
       "id": "general_伍子胥_899273611",
       "name": "伍子胥",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.29-29.v1.json",
+      "resultsSha256": "9747dedc4df30030ac3ac242f60627c85f2b1e9fbebfd6730ea4b7b58a3e45eb"
     },
     {
       "slug": "30",

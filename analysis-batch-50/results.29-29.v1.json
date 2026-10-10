@@ -1,0 +1,207 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "general_伍子胥_899273611",
+      "inputSha256": "0962c061a348385089e5d7590ca224ac3587b5a9990b5dde6b32a310d4903ff3",
+      "promptSha256": "f357c1dfd52e2ac6b160755cfc399937365c38b40ae6026b24ac8849b4650251",
+      "fields": {
+        "analysis": "伍子胥是中國歷史上最著名的復仇者：父兄被楚平王冤殺，他亡命吳國，十六年後率吳軍攻入郢都，掘平王墓、鞭屍三百。網站給他的標籤是「深擊戰先驅」「柏舉之戰3萬破20萬，游擊戰鼻祖」。我想把這個標籤校準一下：**伍子胥真正的軍事發明，不是柏舉之戰的某一次衝鋒，而是《左傳》記載的那套「疲楚之策」——用輪番騷擾讓楚國年年疲於奔命，直到它自己垮掉**。他是一位把仇恨轉化為長期戰略工程的人。而他一生最大的悲劇，是當他把同樣的長期眼光用在越國身上時，吳王夫差已經不再願意聽了。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n「伍子胥者，楚人也，名員。員父曰伍奢。員兄曰伍尚。其先曰伍舉，以直諫事楚莊王，有顯。」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）楚平王聽信費無忌的讒言，殺害伍奢與伍尚，伍子胥逃亡，歷經宋、鄭，最終投奔吳國。\n\n他面對的局有三個層次：\n\n1.  **吳國的權力鬥爭**：他到吳國時，公子光（後來的吳王闔廬）正在謀奪王位。伍子胥協助公子光取得政權，才換來他在吳國的地位。\n2.  **楚國的結構性弱點**：楚國疆域廣大，但「執政眾而乖，莫適任患」，政出多門、無人負責。\n3.  **吳越之間的世仇**：吳國的南方是越國，兩國的恩怨將決定吳國的最終命運。\n\n他在歷史上的位置是**春秋晚期吳國崛起的總設計師之一**。《史記》說：「吳以伍子胥、孫武之謀，西破彊楚，北威齊晉，南服越人。」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：伍子胥的「游擊」不是戰術，而是一場長達數年的國家級消耗戰。**\n\n《左傳·昭公三十年》記載，闔廬問伍員伐楚之策，伍員回答：「楚執政眾而乖，莫適任患。若為三師之肄焉，一師至，彼必皆出。彼出則歸，彼歸則出，楚必道敝。亟肄以罷之，多方以誤之，既罷而後以三軍繼之，必大克之。」「闔廬從之，楚於是乎始病。」（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)）\n\n這段話是中國軍事史上最早、最完整的「疲敵戰略」論述之一。它的邏輯非常清楚：\n\n*   **把軍隊分成三部分**，輪流出擊；\n*   **每次只派一部分**，楚國卻因為「執政眾而乖」，每次都要全軍出動；\n*   **楚出則吳歸，楚歸則吳出**，讓楚國在路上疲於奔命；\n*   **「多方以誤之」**，讓楚國無法判斷吳軍的真正意圖；\n*   **等楚國疲憊之後**，才以全軍決戰。\n\n《左傳·定公四年》也印證了這套戰略的效果：「楚自昭王即位，無歲不有吳師。」（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）年年有吳軍騷擾，楚國長期處於戰備狀態，最終在柏舉之戰中崩潰。所以，柏舉的勝利並不是一場孤立的以少勝多，而是數年消耗戰的收割。這才是伍子胥作為戰略家的真正貢獻。\n\n至於網站常用的「柏舉之戰3萬破20萬」，這組數字在《左傳》與《史記》伍子胥、孫武相關篇章中都找不到；目前常見的吳軍三萬、楚軍二十萬以上的估計，來自後世的推算（英文維基百科的柏舉之戰條目也將其列為估計值）。以先秦史料而言，我們能確定的是吳軍以「三師」輪番消耗楚國多年、最後由夫概王的五千人率先突破，而不是一場精確的兵力對比。\n\n**【史料分層：鞭屍三百】**\n\n伍子胥最著名的事蹟——「乃掘楚平王墓，出其尸，鞭之三百，然後已」——出自《史記·伍子胥列傳》（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）。但成書更早、記載柏舉之戰與入郢經過極為詳細的《左傳》，並沒有提到掘墓鞭屍（本文以本機固定修訂全文檢索確認）。這不能證明事件不存在，但提醒我們：伍子胥「復仇者」的形象，有一部分是在司馬遷的敘事中被強化的。\n\n《史記》記錄了他對好友申包胥的回答：「吾日莫途遠，吾故倒行而逆施之。」（同上）這句話是他對自己復仇方式的辯護：時間不多、路途太遠，只能不按常理行事。\n\n**【功：看透越國】**\n\n吳王闔廬死於越國之手後，夫差即位，兩年後大敗越國於夫湫。越王句踐「以餘兵五千人棲於會稽之上」，派人賄賂太宰伯嚭請和。伍子胥諫道：「越王為人能辛苦。今王不滅，後必悔之。」夫差不聽（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）。後來夫差北伐齊國，伍子胥再諫：「夫越，腹心之病，今信其浮辭詐偽而貪齊……」（同上）。他看出越國才是吳國真正的生死威脅，而齊國只是遠方的虛名。\n\n**【過與時代局限：被賜死】**\n\n伍子胥的結局，《左傳》與《史記》的記載略有不同。《左傳·哀公十一年》記載，他出使齊國時「屬其子於鮑氏，為王孫氏」，把兒子託付給齊國的鮑氏；回國後，夫差「使賜之屬鏤以死」。他臨死前說：「樹吾墓檟，檟可材也。吳其亡乎。」（[《春秋左氏傳·哀公十一年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC)）《史記》的版本則更加戲劇化：他要舍人「必樹吾墓上以梓，令可以為器；而抉吾眼縣吳東門之上，以觀越寇之入滅吳也」，夫差大怒，「取子胥尸盛以鴟夷革，浮之江中」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）。\n\n《左傳》的細節值得注意：伍子胥把兒子安置到齊國，在夫差看來，這幾乎就是叛逃的準備。所以他的死，不只是伯嚭讒言的結果，也與他自己對吳國前途絕望、提前安排後路有關。這是**個人選擇與時代局限交織**的悲劇。\n\n### **3. 【人性與性格側寫】**\n\n*   **把仇恨轉化為工程**：司馬遷說：「方子胥窘於江上，道乞食，志豈嘗須臾忘郢邪？故隱忍就功名，非烈丈夫孰能致此哉？」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）他的仇恨不是衝動的爆發，而是長達十多年的隱忍與計劃。\n*   **直言到底**：從闔廬到夫差，他始終堅持說出自己的判斷，即使明知夫差不愛聽。\n*   **與申包胥的友情**：《左傳》記他逃亡時對申包胥說「我必復楚國」，申包胥回答「子能復之，我必能興之」（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）。兩位朋友，一個要滅楚，一個要救楚，最後都做到了。\n*   **對吳國的絕望**：把兒子託付給齊國，說明他晚年已預見吳國的滅亡。一位曾經把全部生命押在吳國崛起上的人，最後為自己的血脈在敵國留下退路，這個舉動本身就是他對夫差最沉默的判決。\n\n### **4. 【如果生在現代】**\n\n伍子胥最適合的現代角色是：**一家企業的併購與競爭策略長，因為被前東家陷害而投奔競爭對手，花十多年擊垮前東家。**\n\n*   **長期消耗戰略**：他不會一次投入所有資源，而是派小團隊輪番攻擊前東家的不同市場，讓對方每次都全面應戰，疲於奔命，最後才發動全面收購。\n*   **看穿真正的威脅**：當新老闆要去遠方開拓虛名市場時，他會堅持「真正的威脅是隔壁那家正在臥薪嘗膽的小公司」。\n*   **職場悲劇**：新老闆不聽，反而聽信收了對手好處的高層的話。他在絕望中把家人移居國外，結果被老闆視為準備背叛，被迫離職。幾年後，那家小公司果然併吞了他效力的公司。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「直指對方的結構性弱點，並給出可執行的步驟」。回答闔廬伐楚之問時，他先說「楚執政眾而乖，莫適任患」，再提出「若為三師之肄焉……既罷而後以三軍繼之，必大克之」（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)）[史載]。勸夫差滅越時，他說：「越王為人能辛苦。今王不滅，後必悔之。」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）[史載]。潛台詞是：「我看到的是對方的本質，而你只看到眼前的利益。」當申包胥批評他的復仇過甚，他只回一句：「吾日莫途遠，吾故倒行而逆施之。」（同上）[史載]。他的沉默極少，他是一個習慣把判斷說出口的人[推斷：依據他在闔廬、夫差兩朝反覆進諫的記載]。\n\n【壓力反應】\n面對絕境，他的第一反應是「隱忍，並把怒火轉化為長期計畫」。\n父兄被殺後，他沒有與父親同死，而是逃亡入吳；司馬遷說「向令伍子胥從奢俱死，何異螻蟻。棄小義，雪大恥」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）[史載]。到了吳國，他沒有立刻要求伐楚，而是先協助公子光奪位，再以「三師以肄」的長期消耗瓦解楚國（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)）[史載]。闔廬當年也曾坦言對他的猜疑：「初而言伐楚，余知其可也，而恐其使余往也，又惡人之有余之功也。」（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)）[史載]。他必須先證明自己的復仇與吳國的利益一致，才能得到信任。兩件事的共同結構是：在最憤怒的時候，他選擇最慢、最有計劃的復仇路徑[推斷]。\n\n【核心驅動】\n他真正追求的是「雪恥」——讓殺害他父兄的楚國付出代價。\n司馬遷寫道：「方子胥窘於江上，道乞食，志豈嘗須臾忘郢邪？」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）[史載]。吳軍入郢後，他「求昭王。既不得，乃掘楚平王墓，出其尸，鞭之三百」（同上）[史載：此事見於《史記》，《左傳》未載]。這個選擇代價極高：它讓他背上「無天道之極」的批評，也讓他與好友申包胥徹底決裂。這揭示了他的核心驅動強烈到可以壓倒一切道德顧慮[詮釋]。\n\n【慣性盲點】\n他最大的優點「長期眼光與直言」，在夫差時期變成了被厭惡的理由。\n夫差敗越後，他力主滅越，夫差「不聽，用太宰嚭計」與越講和（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）[史載]。夫差北伐齊國時，他再諫「夫越，腹心之病」，結果「益疏子胥之謀」（同上）[史載]。兩次的共同結構是：他越是正確地堅持長期判斷，就越被只想要短期勝利的君主疏遠[推斷]。\n\n【情感結構】\n他的情感深刻而複雜，最深的兩條線是對父兄的悲憤與對申包胥的友情。\n他逃亡前對申包胥說「我必復楚國」，申包胥回答「子能復之，我必能興之」（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）[史載]。多年後兩人各自實現了諾言。他晚年出使齊國時「屬其子於鮑氏，為王孫氏」（[《春秋左氏傳·哀公十一年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC)）[史載]，為自己的兒子安排後路。他最脆弱的時刻，就是臨死前：「樹吾墓檟，檟可材也。吳其亡乎。」（同上）[史載]。他不是為自己哭，而是為他一手扶持起來的吳國哭[詮釋：《史記》版的「抉吾眼」更具情緒，但屬後出記載]。\n\n【參照系】\n他習慣以「國家的結構性弱點」作為理解一切競爭的參照系。這源自他對楚國政治的深刻了解——他本身就是楚國貴族出身（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）[史載]。\n類比準確之處：他看出楚國「執政眾而乖，莫適任患」，因此設計出讓楚國每次都全軍出動的疲楚之策（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)）[史載]。\n類比失準之處：他同樣看穿了越國「能辛苦」的本質，卻沒有看穿吳國自身的結構性弱點——君主好大喜功、寵臣受賄——最終讓吳國重蹈楚國的覆轍[詮釋：吳國滅亡的原因複雜，此為從他的盲點角度的解讀]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（雪恥復仇）與【慣性盲點】（直言不諱、長期眼光）之間。\n這個衝突的結構是：他的復仇需要吳國的強大，因此他全力扶持吳國；但吳國強大之後，君主變得驕傲，不再需要他的直言。他成就了吳國，也被吳國拋棄。\n第一次激烈爆發在入郢之後：他鞭屍復仇，申包胥批評他「無天道之極」，他回答「吾日莫途遠，吾故倒行而逆施之」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）[史載]。\n第二次是在夫差時期：他反覆勸滅越、反對伐齊，最終被「賜之屬鏤以死」（[《春秋左氏傳·哀公十一年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC)）[史載]。\n他是否意識到這個衝突？從他把兒子託付給齊國、臨死前說「吳其亡乎」來看，他清楚預見了結局，卻始終沒有改變自己的直言方式[詮釋]。",
+        "stats": [
+          93,
+          75,
+          97,
+          75,
+          80
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：93\n\n他提出並執行「三師以肄」的疲楚之策，使「楚於是乎始病」（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)），並在柏舉之戰後隨吳軍攻入郢都（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）。但柏舉戰場的決定性衝擊由夫概王完成，他的貢獻主要在戰略規劃與長期消耗，而非單一戰役的指揮。評93，高於孫臏（90）與孫武（88），低於李牧（98）。\n\n### 武力：75\n\n他早年亡命逃難、輾轉宋鄭，最終入吳，身經險境；司馬遷說他「窘於江上，道乞食」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）而志不稍減。但史料中沒有他親自上陣搏殺的具體紀錄，他在吳國的角色主要是謀臣與將領，身影多出現在廟算而非陣前，與親冒矢石的將領不同。評75，高於孫武（55）與孫臏（20），與李靖（75）持平，低於李牧（82）。\n\n### 智謀：97\n\n疲楚之策「亟肄以罷之，多方以誤之，既罷而後以三軍繼之」（[《春秋左氏傳·昭公三十年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC)）是中國最早的系統性疲敵戰略之一；他又看出「越王為人能辛苦。今王不滅，後必悔之」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)），預見吳國滅亡。扣分在於他未能說服夫差，也未能保全自己。評97，與李牧（97）持平，低於孫武（100）與孫臏（99）。\n\n### 政治：75\n\n他協助公子光奪位，並長期主導吳國的對楚戰略，「楚自昭王即位，無歲不有吳師」（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）。但他在夫差時期逐漸被伯嚭排擠，晚年把兒子託付給齊國鮑氏，最終被「賜之屬鏤以死」（[《春秋左氏傳·哀公十一年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC)），在宮廷權力鬥爭中敗下陣來。評75，高於孫臏（60）與孫武（70），低於李靖（85）。\n\n### 魅力：80\n\n他與申包胥有「我必復楚國」「我必能興之」的生死之約（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)），死後「吳人憐之，為立祠於江上，因命曰胥山」（[《史記·伍子胥列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066)）。但他的復仇手段極為激烈，鞭屍之事被申包胥批評為「豈其無天道之極乎」（同上），他與夫差的關係也最終破裂。評80，高於孫臏（78），低於孫武（82）與李牧（92）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T06:23:44.177Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "史記·卷六十六 伍子胥列傳 第六",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066",
+            "locator": "本機固定修訂 oldid=2621138 全文比對（textSha256 已驗）：伍子胥者，楚人也，名員。員父曰伍奢。員兄曰伍尚。其先曰伍舉，以直諫事楚莊王，有顯、吳以伍子胥、孫武之謀，西破彊楚，北威齊晉，南服越人、乃掘楚平王墓，出其尸，鞭之三百，然後已、此豈其無天道之極乎、吾日莫途遠，吾故倒行而逆施之、越王句踐乃以餘兵五千人棲於會稽之上…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "春秋左氏傳/昭公",
+            "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC",
+            "locator": "本機固定修訂 oldid=10445713 全文比對（textSha256 已驗）：吳子問於伍員曰、楚執政眾而乖．莫適任患．若為三師之肄焉．一師至．彼必皆出．彼出則歸．彼歸則出．楚必道敝．亟肄以罷之．多方以誤之．既罷而後以三軍繼之．必大克之、闔廬從之．楚於是乎始病、初而言伐楚．余知其可也．而恐其使余往也．又惡人之有余之功也",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "春秋左氏傳/定公",
+            "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+            "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：楚自昭王即位．無歲不有吳師、伍員與申包胥友．其亡也．謂申包胥曰．我必復楚國．申包胥曰．勉之．子能復之．我必能興之",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "春秋左氏傳/哀公",
+            "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC",
+            "locator": "本機固定修訂 oldid=7908334 全文比對（textSha256 已驗）：屬其子於鮑氏．為王孫氏、使賜之屬鏤以死、樹吾墓檟．檟可材也．吳其亡乎",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "b3db6f07b351bb62d8f411e4c577cb3992b713da4f974182740b39b62e022289",
+        "sourcePackageSha256": "e3f25c3fa0867119f637fc10b7cc418180832e866e170bd7c514b5d45a8bf842",
+        "preservedDeepSha256": "0fd4eb3db16f19161274c6e9a2aac9448f887c7bdffb1b08ae157e081f5d15b6",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "2197ade9ec0810309cb5c8dd7fcc80dfc5aaeefb7e0c37a1cccd2fa93375ff90",
+            "requestSha256": "b3db6f07b351bb62d8f411e4c577cb3992b713da4f974182740b39b62e022289",
+            "inputSha256": "0962c061a348385089e5d7590ca224ac3587b5a9990b5dde6b32a310d4903ff3",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "1034c1286950a8b1adede9697dc7a361f0f9f51233e304d5bff9d6e198092f36",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "e3f25c3fa0867119f637fc10b7cc418180832e866e170bd7c514b5d45a8bf842",
+            "preservedDeepSha256": "0fd4eb3db16f19161274c6e9a2aac9448f887c7bdffb1b08ae157e081f5d15b6",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:23:44.177Z",
+            "rawResponseFile": "analysis-batch-50/drafts/29.analysisStats.raw.md",
+            "rawResponseSha256": "bb48b20c5c4da4cbf61722e5a3ad879c4f16b4014e0d0976bcb2b53a0311c9a1",
+            "responseFile": "analysis-batch-50/drafts/29.analysisStats.response.md",
+            "responseSha256": "bb48b20c5c4da4cbf61722e5a3ad879c4f16b4014e0d0976bcb2b53a0311c9a1",
+            "fieldsHashes": {
+              "analysis": "87e9dcc78effb65b67b23ada746cacaa22fbd93be7a5e60efd758bdde4655446",
+              "stats": "180faf8553fd70b2b50262260d322270d4317799fd48ce0db83123cc9c1e217e",
+              "statsAnalysis": "61528eef98dbe91cd69eed42caa932a3cb23836076f5f8c5b603e8190a0ebf0c"
+            },
+            "captureFile": "analysis-batch-50/drafts/29.analysisStats.capture.json",
+            "captureSha256": "a17a35fa77e72f6f12ea1d60fafff7f2e1a3227590b2bea06c09922b9523bdf7",
+            "sourceReviewFile": "analysis-batch-50/reviews/29.analysisStats.json",
+            "sourceReviewSha256": "011851716dd652ffdf82d89af48bda845c88b2821df50049189e7588ddeb7927",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/29.combined.search-log.json",
+              "sha256": "0ba08da446e7c05699df7b19891e0077dd7d8e3b3f62f79dde3f329a6bd8c49b",
+              "webSearchCount": 1,
+              "archiveCheckCount": 23
+            },
+            "checkedSources": [
+              {
+                "title": "史記·卷六十六 伍子胥列傳 第六",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066",
+                "locator": "本機固定修訂 oldid=2621138 全文比對（textSha256 已驗）：伍子胥者，楚人也，名員。員父曰伍奢。員兄曰伍尚。其先曰伍舉，以直諫事楚莊王，有顯、吳以伍子胥、孫武之謀，西破彊楚，北威齊晉，南服越人、乃掘楚平王墓，出其尸，鞭之三百，然後已、此豈其無天道之極乎、吾日莫途遠，吾故倒行而逆施之、越王句踐乃以餘兵五千人棲於會稽之上…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/昭公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC",
+                "locator": "本機固定修訂 oldid=10445713 全文比對（textSha256 已驗）：吳子問於伍員曰、楚執政眾而乖．莫適任患．若為三師之肄焉．一師至．彼必皆出．彼出則歸．彼歸則出．楚必道敝．亟肄以罷之．多方以誤之．既罷而後以三軍繼之．必大克之、闔廬從之．楚於是乎始病、初而言伐楚．余知其可也．而恐其使余往也．又惡人之有余之功也",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/定公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+                "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：楚自昭王即位．無歲不有吳師、伍員與申包胥友．其亡也．謂申包胥曰．我必復楚國．申包胥曰．勉之．子能復之．我必能興之",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/哀公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC",
+                "locator": "本機固定修訂 oldid=7908334 全文比對（textSha256 已驗）：屬其子於鮑氏．為王孫氏、使賜之屬鏤以死、樹吾墓檟．檟可材也．吳其亡乎",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "561aa7af281346c27e6f2b4a0a5d525b7cfafdd05508459c088d6d3a615ca442",
+            "requestSha256": "b3db6f07b351bb62d8f411e4c577cb3992b713da4f974182740b39b62e022289",
+            "inputSha256": "0962c061a348385089e5d7590ca224ac3587b5a9990b5dde6b32a310d4903ff3",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "383f41056f0cf1bb65a7fc6066ce780810b450abac4377ca6750a57dd6bf502f",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "e3f25c3fa0867119f637fc10b7cc418180832e866e170bd7c514b5d45a8bf842",
+            "preservedDeepSha256": "0fd4eb3db16f19161274c6e9a2aac9448f887c7bdffb1b08ae157e081f5d15b6",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:23:44.177Z",
+            "rawResponseFile": "analysis-batch-50/drafts/29.soulEssence.raw.md",
+            "rawResponseSha256": "a642a59f638cae1a8bc231d48f17be06ee3cf303f422e2a8a765fedd47c0bf8f",
+            "responseFile": "analysis-batch-50/drafts/29.soulEssence.response.md",
+            "responseSha256": "a642a59f638cae1a8bc231d48f17be06ee3cf303f422e2a8a765fedd47c0bf8f",
+            "fieldsHashes": {
+              "soulEssence": "9e100046e4d439895ecc4121e94391b3affffd4c519912ba3ccebce5d4828fa4"
+            },
+            "captureFile": "analysis-batch-50/drafts/29.soulEssence.capture.json",
+            "captureSha256": "feb1ac207680b6f7168980fe314895b48ded24f571de56fa07e130e69d0277c5",
+            "sourceReviewFile": "analysis-batch-50/reviews/29.soulEssence.json",
+            "sourceReviewSha256": "6ae4ccb71fc6ba50f2242bf2b8f938fde04fa8fd0891f5fa5584eba012ad8847",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/29.combined.search-log.json",
+              "sha256": "0ba08da446e7c05699df7b19891e0077dd7d8e3b3f62f79dde3f329a6bd8c49b",
+              "webSearchCount": 1,
+              "archiveCheckCount": 23
+            },
+            "checkedSources": [
+              {
+                "title": "春秋左氏傳/昭公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E6%98%AD%E5%85%AC",
+                "locator": "本機固定修訂 oldid=10445713 全文比對（textSha256 已驗）：吳子問於伍員曰、楚執政眾而乖．莫適任患．若為三師之肄焉．一師至．彼必皆出．彼出則歸．彼歸則出．楚必道敝．亟肄以罷之．多方以誤之．既罷而後以三軍繼之．必大克之、闔廬從之．楚於是乎始病、初而言伐楚．余知其可也．而恐其使余往也．又惡人之有余之功也",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六十六 伍子胥列傳 第六",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7066",
+                "locator": "本機固定修訂 oldid=2621138 全文比對（textSha256 已驗）：伍子胥者，楚人也，名員。員父曰伍奢。員兄曰伍尚。其先曰伍舉，以直諫事楚莊王，有顯、吳以伍子胥、孫武之謀，西破彊楚，北威齊晉，南服越人、乃掘楚平王墓，出其尸，鞭之三百，然後已、此豈其無天道之極乎、吾日莫途遠，吾故倒行而逆施之、越王句踐乃以餘兵五千人棲於會稽之上…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/定公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+                "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：楚自昭王即位．無歲不有吳師、伍員與申包胥友．其亡也．謂申包胥曰．我必復楚國．申包胥曰．勉之．子能復之．我必能興之",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/哀公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%93%80%E5%85%AC",
+                "locator": "本機固定修訂 oldid=7908334 全文比對（textSha256 已驗）：屬其子於鮑氏．為王孫氏、使賜之屬鏤以死、樹吾墓檟．檟可材也．吳其亡乎",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/29.analysis.md",
+            "analysisContextSha256": "d638f4d98fd18b55a578f6c4369cfbfb690807e335051254f5c2b126d5b70475"
+          }
+        }
+      }
+    }
+  ]
+}
