@@ -1,0 +1,120 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_明孝宗_281841215",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:39:54.735Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a31c3d949276742b3d29450f45bd36536bc38b5d558dd712f4ef978b41d903b7",
+  "rawResponseSha256": "a31c3d949276742b3d29450f45bd36536bc38b5d558dd712f4ef978b41d903b7",
+  "sourcePackageSha256": "25481308667d84bdacf63e699073e44b6eabb8e06f1fb77a43ea458f7189d052",
+  "searchLogSha256": "bb9b8ba305894e4cf9619e5872e5e4a9553c2c5eb35054c3536f6c956709c8c8",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B715",
+      "title": "明史·本紀第十五　孝宗",
+      "locator": "本機固定修訂 oldid=2594630 全文比對（textSha256 已驗）：母淑妃紀氏，成化六年七月生帝於西宮。時萬貴妃專寵，宮中莫敢言、淑妃暴薨，帝年六歲、斥諸佞倖侍郎李孜省、太監梁芳、外戚萬喜及其黨、汰傳奉官，罷右通政任傑、侍郎蒯鋼等千餘人、革法王、佛子、國師、真人封號、萬安罷…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7113",
+      "title": "明史·卷一百一十三 列傳第一 后妃一​​",
+      "locator": "本機固定修訂 oldid=2594730 全文比對（textSha256 已驗）：令婢鉤治之、使門監張敏溺焉。敏驚曰：「上未有子，奈何棄之、至五六歲，未敢剪胎髮、老將至而無子",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7168",
+      "title": "明史·卷一百六十八\n列傳第五十六　陳循 王文 江淵 許彬 陳文 萬安 劉珝 劉吉 尹直",
+      "locator": "本機固定修訂 oldid=2594790 全文比對（textSha256 已驗）：紙糊三閣老，泥塑六尚書、孝宗仁明，同列徐溥、劉健皆正人、時時為正論",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7304",
+      "title": "明史·卷三百〇四\n列傳第一百九十二　宦官一\n鄭和 金英 王振 曹吉祥 懷恩 汪直 梁芳 何鼎 李廣 蔣琮 劉瑾 張永 谷大用",
+      "locator": "本機固定修訂 oldid=7902201 全文比對（textSha256 已驗）：鶴齡倚酒戴帝冠、二張大不敬，無人臣禮、皇后激帝怒，下鼎錦衣獄、帝以後故，俱不納、後竟使太監李廣杖殺鼎。帝追思之，賜祭勒其文於碑、以符箓禱祀蠱帝，因為奸弊，矯旨授傳奉官，如成化間故事，四方爭納賄賂…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7181",
+      "title": "明史·卷一百八十一\n列傳第六十九　徐溥 丘濬 劉健 謝遷 李東陽 王鏊 劉忠",
+      "locator": "本機固定修訂 oldid=2594820 全文比對（textSha256 已驗）：與先生輩議、盍就此面議、自成化間，憲宗召對彭時、商輅後，至此始再見、呼為「先生」而不名。每進見，帝輒屏左右、但聞帝數數稱善、竭情盡慮，知無不言",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ming.cnhis.ncnu.edu.tw/wp-content/uploads/2022/01/ming37_04Hsu_full.pdf",
+      "title": "徐泓、林絲婷〈《明史紀事本末》卷四十二〈弘治君臣〉校釋〉，《明代研究》第37期（2021）",
+      "locator": "WebSearch 結果摘要：以《皇明大政紀》為主要史源，敘事強調大臣進諫、弘治帝採納；正文只引此兩點",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7300",
+      "title": "明史·卷三百\n列傳第一百八十八　外戚",
+      "locator": "本機固定修訂 oldid=2594929 全文比對（textSha256 已驗）：壽寧侯張鶴齡至聚眾相鬥，都下震駭",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "朱祐樘，明孝宗；保留原 A 評級與 deepAnalysis。"
+    },
+    {
+      "id": "birth",
+      "passed": true,
+      "detail": "紀氏、萬貴妃、張敏、五六歲未剪胎髮、成化十一年相認、淑妃暴薨，紀傳原文。"
+    },
+    {
+      "id": "purge",
+      "passed": true,
+      "detail": "即位後斥佞倖、汰傳奉官千餘、革封號、罷萬安，原文與月份核對。"
+    },
+    {
+      "id": "cabinet",
+      "passed": true,
+      "detail": "弘治元年揭名文華殿、十年文華殿面議後以為常、十三年平臺議京營，年份經本機定位。"
+    },
+    {
+      "id": "consort-family",
+      "passed": true,
+      "detail": "何鼎案、李廣賄籍寢勿治、張周兩家相鬥，宦官傳與外戚傳原文。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[62,20,80,91,88] 對照宋仁宗[60,20,84,90,92]、宋太宗[75,50,88,92,70]、武則天[72,15,97,93,80]、唐高祖[92,72,95,96,90]。"
+    },
+    {
+      "id": "scholarship",
+      "passed": true,
+      "detail": "徐泓、林絲婷校釋僅依搜尋摘要引用。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    62,
+    20,
+    80,
+    91,
+    88
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "format": "dynasty-batch50-claude-combined",
+  "schemaVersion": 1,
+  "slug": "13",
+  "recordId": "emperor_明孝宗_281841215",
+  "provider": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T05:39:54.678Z",
+  "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+  "packetSha256": "d9e2b268f1f3671670da7e8a5308158f6372323e7dfa10d05e5b88436dbf9903",
+  "combinedFile": "analysis-batch-50/drafts/13.combined.raw.md",
+  "combinedSha256": "a6000537a3af25296672531a1e66d0d0101d31e33f1f7f5a02e08992463d80e4",
+  "searchLogSha256": "bb9b8ba305894e4cf9619e5872e5e4a9553c2c5eb35054c3536f6c956709c8c8",
+  "parts": {
+    "analysisStats": {
+      "rawFile": "analysis-batch-50/drafts/13.analysisStats.raw.md",
+      "rawSha256": "a31c3d949276742b3d29450f45bd36536bc38b5d558dd712f4ef978b41d903b7"
+    },
+    "soulEssence": {
+      "rawFile": "analysis-batch-50/drafts/13.soulEssence.raw.md",
+      "rawSha256": "c1fca5a628a7649348d583c54f4977e2b5aacceec49d3f4641969e37ea06e934"
+    }
+  },
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."
+}

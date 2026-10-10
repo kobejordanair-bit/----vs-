@@ -1,0 +1,89 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_明孝宗_281841215",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:39:54.736Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "c1fca5a628a7649348d583c54f4977e2b5aacceec49d3f4641969e37ea06e934",
+  "rawResponseSha256": "c1fca5a628a7649348d583c54f4977e2b5aacceec49d3f4641969e37ea06e934",
+  "sourcePackageSha256": "25481308667d84bdacf63e699073e44b6eabb8e06f1fb77a43ea458f7189d052",
+  "searchLogSha256": "bb9b8ba305894e4cf9619e5872e5e4a9553c2c5eb35054c3536f6c956709c8c8",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7181",
+      "title": "明史·卷一百八十一\n列傳第六十九　徐溥 丘濬 劉健 謝遷 李東陽 王鏊 劉忠",
+      "locator": "本機固定修訂 oldid=2594820 全文比對（textSha256 已驗）：與先生輩議、盍就此面議、自成化間，憲宗召對彭時、商輅後，至此始再見、呼為「先生」而不名。每進見，帝輒屏左右、但聞帝數數稱善、竭情盡慮，知無不言",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B715",
+      "title": "明史·本紀第十五　孝宗",
+      "locator": "本機固定修訂 oldid=2594630 全文比對（textSha256 已驗）：母淑妃紀氏，成化六年七月生帝於西宮。時萬貴妃專寵，宮中莫敢言、淑妃暴薨，帝年六歲、斥諸佞倖侍郎李孜省、太監梁芳、外戚萬喜及其黨、汰傳奉官，罷右通政任傑、侍郎蒯鋼等千餘人、革法王、佛子、國師、真人封號、萬安罷…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7304",
+      "title": "明史·卷三百〇四\n列傳第一百九十二　宦官一\n鄭和 金英 王振 曹吉祥 懷恩 汪直 梁芳 何鼎 李廣 蔣琮 劉瑾 張永 谷大用",
+      "locator": "本機固定修訂 oldid=7902201 全文比對（textSha256 已驗）：鶴齡倚酒戴帝冠、二張大不敬，無人臣禮、皇后激帝怒，下鼎錦衣獄、帝以後故，俱不納、後竟使太監李廣杖殺鼎。帝追思之，賜祭勒其文於碑、以符箓禱祀蠱帝，因為奸弊，矯旨授傳奉官，如成化間故事，四方爭納賄賂…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7113",
+      "title": "明史·卷一百一十三 列傳第一 后妃一​​",
+      "locator": "本機固定修訂 oldid=2594730 全文比對（textSha256 已驗）：令婢鉤治之、使門監張敏溺焉。敏驚曰：「上未有子，奈何棄之、至五六歲，未敢剪胎髮、老將至而無子",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "與先生輩議、盍就此面議、萬安罷；沉默模式標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "即位清退與李廣案，相隔十一年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "藏匿童年與何鼎案；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "何鼎與李廣兩案。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "追諡生母、皇后激帝怒、臨終顧命；心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "童年依靠宮人、面議屏左右；外戚結構因素標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "何鼎與李廣兩案。"
+    }
+  ],
+  "materialIssues": []
+}
