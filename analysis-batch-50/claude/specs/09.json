@@ -219,6 +219,56 @@
    "book": "songshu",
    "title": "宋書/卷4",
    "quote": "營陽"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "二十七人；願從者百餘人"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "玄未據極位，且會稽遙遠，事濟為難"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "先分軍還石頭，眾莫之曉。解甲息士，洗浴飲食之，乃出列陳於南塘"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "大治水軍，皆大艦重樓"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "即斬脩以徇。高祖哭甚慟，厚加殯斂"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "高祖常被堅執銳，為士卒先，每戰輒摧鋒陷陣"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "于時東伐諸帥，御軍無律"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "唯高祖法令明整"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "劉毅嘗因朝會，問謐璽紱所在"
+  },
+  {
+   "book": "songshu",
+   "title": "宋書/卷1",
+   "quote": "高祖牋白大將軍，深相保謐，迎還復位"
   }
  ],
  "extraSources": {
@@ -262,6 +312,10 @@
    [
     "scholarship",
     "小尾孝夫論文僅依搜尋摘要引用其論題，未宣稱讀過全文。"
+   ],
+   [
+    "luxun-410",
+    "盧循兵臨建康、解甲息士、大治水軍，宋書卷1原文；attempt 1 因篇幅不足存 attempts/09.combined.1。"
    ]
   ],
   "soulEssence": [
@@ -292,6 +346,10 @@
    [
     "fracture",
     "劉毅、諸葛長民之誅與遺詔原文核對。"
+   ],
+   [
+    "huan-xiu",
+    "斬桓脩後哭甚慟、厚加殯斂；保全王謐、迎還復位，宋書卷1原文。"
    ]
   ]
  }

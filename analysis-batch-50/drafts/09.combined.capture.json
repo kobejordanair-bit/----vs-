@@ -5,20 +5,20 @@
   "recordId": "emperor_宋武帝_284299365",
   "provider": "Claude Code (Anthropic)",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T05:23:32.670Z",
+  "generatedAt": "2026-10-10T05:29:32.116Z",
   "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
   "packetSha256": "b401f1ac169648f4077ba4e0bccd84d6481f06b08fee1c5144e678f7c3a934c9",
   "combinedFile": "analysis-batch-50/drafts/09.combined.raw.md",
-  "combinedSha256": "ad34bfcee8e6a896684fb2318e04e4993b5fed2b3998da5de003a453ee954dac",
-  "searchLogSha256": "ebce01cdc07573a2cca015c9c96bc1ce46600ab9feb3a1e12c97412debdfd485",
+  "combinedSha256": "8d7abe6a6e5a7267bc666aec11204f8e87819aeb2522f97b429b5ebb02ad457c",
+  "searchLogSha256": "79803b065433c8b4b32b5035a28477a7feaba668d681d348d37c1ea745d46190",
   "parts": {
     "analysisStats": {
       "rawFile": "analysis-batch-50/drafts/09.analysisStats.raw.md",
-      "rawSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571"
+      "rawSha256": "d9fd172f2b6c295c9735b31838d26f728d07db0f2c02515ecb5407a028ad3b02"
     },
     "soulEssence": {
       "rawFile": "analysis-batch-50/drafts/09.soulEssence.raw.md",
-      "rawSha256": "97de92e0141b03c5bd1d6da4c1e128fb6d629a0bbb58927c2ef57f79b9bd0c02"
+      "rawSha256": "2b011461fb31987310363ee061df1ae82a6258cf1f4635d8857b23af42e0e91d"
     }
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."

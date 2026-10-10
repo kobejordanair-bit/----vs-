@@ -4,16 +4,16 @@
   "recordId": "emperor_宋武帝_284299365",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T05:23:32.756Z",
+  "reviewedAt": "2026-10-10T05:29:32.174Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571",
-  "rawResponseSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571",
+  "manuscriptSha256": "d9fd172f2b6c295c9735b31838d26f728d07db0f2c02515ecb5407a028ad3b02",
+  "rawResponseSha256": "d9fd172f2b6c295c9735b31838d26f728d07db0f2c02515ecb5407a028ad3b02",
   "sourcePackageSha256": "2d3ed8c138c3aeb282770d29da96bc2514aae49664b2474fd010916222e2ac86",
-  "searchLogSha256": "ebce01cdc07573a2cca015c9c96bc1ce46600ab9feb3a1e12c97412debdfd485",
+  "searchLogSha256": "79803b065433c8b4b32b5035a28477a7feaba668d681d348d37c1ea745d46190",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71",
@@ -99,6 +99,11 @@
       "id": "scholarship",
       "passed": true,
       "detail": "小尾孝夫論文僅依搜尋摘要引用其論題，未宣稱讀過全文。"
+    },
+    {
+      "id": "luxun-410",
+      "passed": true,
+      "detail": "盧循兵臨建康、解甲息士、大治水軍，宋書卷1原文；attempt 1 因篇幅不足存 attempts/09.combined.1。"
     }
   ],
   "materialIssues": [],

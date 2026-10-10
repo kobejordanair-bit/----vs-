@@ -1,0 +1,277 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋武帝_284299365",
+  "packetSha256": "b401f1ac169648f4077ba4e0bccd84d6481f06b08fee1c5144e678f7c3a934c9",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "田余慶 東晉門閥政治 劉裕 北府兵 皇權政治 回歸",
+      "returnedUrls": [
+        "https://nccur.lib.nccu.edu.tw/ir/handle/140.119/78745",
+        "https://ir.sinica.edu.tw/handle/201000000A/5079",
+        "https://www.thenewslens.com/article/181040",
+        "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/u3issue3.doc"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "劉裕 義熙土斷 研究 論文 晉陵 僑民 不在斷例",
+      "returnedUrls": [
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/264276",
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/264276/1/JOR_77_1_99.pdf",
+        "https://www.airitilibrary.com/Publication/Index/U0001-0902202214293500",
+        "https://www.litphil.sinica.edu.tw/newsletter/122/122-47-60.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "高祖以晉哀帝興寧元年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "家貧，有大志，不治廉隅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "嘗負刁逵社錢三萬，經時無以還",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "王謐造逵見之，密以錢代還",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "盛流皆不與相知",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "謐手解安帝璽紱",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "眾並謂謐宜誅，唯高祖保持之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "我揣之熟矣。鮮卑貪，不及遠計，進利剋獲，退惜粟苗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "我一得入峴，則人無退心",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "舉手指天曰：「吾事濟矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "所將人多死，而戰意方厲，手奮長刀，所殺傷甚眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "高祖躬執長刀，大呼以衝之，眾皆披靡，即斬甫之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "桓玄必能守節北面，我當與卿事之；不然，與卿圖之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "俟其篡逆事著，徐於京口圖之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "安帝隆安三年十一月，妖賊孫恩作亂於會稽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷1",
+      "quote": "牢之叛走自縊死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "權門并兼，強弱相凌，百姓流離",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "會稽餘姚虞亮復藏匿亡命千餘人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "豪強肅然，遠近知禁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "依界土斷，唯徐、兗、青三州居晉陵者，不在斷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "索虜步騎十萬，營據河津",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "王鎮惡伐木為舟，自河浮渭",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "王鎮惡剋長安，生擒泓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "公欲息駕長安，經略趙、魏，會穆之卒，乃歸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "大事昔所決於穆之者，皆悉以諮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "沈田子殺安西司馬王鎮惡，諸將軍復殺安西長史王脩。關中亂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "為佛佛虜所追，大敗，僅以身免",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "昔年醢彭越，今年誅韓信，禍其至矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "鎮惡剋江陵，毅及黨與皆伏誅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷2",
+      "quote": "總攝內外",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷3",
+      "quote": "後世若有幼主，朝事一委宰相，母后不煩臨朝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷3",
+      "quote": "宰相帶揚州，可置甲士千人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷3",
+      "quote": "上崩于西殿，時年六十",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷3",
+      "quote": "清簡寡欲，嚴整有法度，未嘗視珠玉輿馬之飾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷3",
+      "quote": "零陵王薨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B73"
+    },
+    {
+      "book": "nanshi",
+      "title": "南史/卷01",
+      "quote": "田舍公得此，已為過矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B701"
+    },
+    {
+      "book": "nanshi",
+      "title": "南史/卷01",
+      "quote": "床頭有土障，壁上掛葛燈籠、麻繩拂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B701"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷010",
+      "quote": "密使王韶之縊帝而立恭帝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7010"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷010",
+      "quote": "兵人逾垣而入，弑帝于內房",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7010"
+    },
+    {
+      "book": "songshu",
+      "title": "宋書/卷4",
+      "quote": "營陽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B74"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked by this environment's network policy; primary texts verified against the repository's fixed-revision archive, scholarship only via WebSearch summaries.",
+    "「氣吞萬里如虎」出自辛棄疾〈永遇樂·京口北固亭懷古〉，屬通行文學引文，未附連結。"
+  ]
+}

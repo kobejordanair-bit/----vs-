@@ -1,0 +1,271 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋仁宗_284527334",
+  "packetSha256": "485c2a96748bbc39b885a6d1c72ea21f40a01bd21c30c180132f40879bc58b76",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "宋仁宗 慶曆新政 失敗原因 朋黨論 歐陽修 研究 論文",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Qingli_Reforms",
+        "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707",
+        "https://lawdata.com.tw/tw/detail.aspx?no=424136",
+        "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2503",
+        "https://muse.jhu.edu/article/380502"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "國立故宮博物院 宋仁宗坐像 宋仁宗皇后像 典藏",
+      "returnedUrls": [
+        "https://catalog.digitalarchives.tw/item/00/31/b2/d8.html",
+        "https://www.npm.edu.tw/NewChineseArtDownload.ashx?bid=4384",
+        "https://www.thepaper.cn/newsDetail_forward_10117229"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷009",
+      "quote": "真宗第六子，母李宸妃也。大中祥符三年四月十四日生",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷009",
+      "quote": "章獻皇后無子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷011",
+      "quote": "以范仲淹參知政事，富弼為樞密副使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷011",
+      "quote": "范仲淹、富弼罷。丙戌，杜衍罷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷011",
+      "quote": "歲賜銀、絹、茶、彩凡二十五萬五千",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷011",
+      "quote": "命韓琦、范仲淹、龐籍分領之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷011",
+      "quote": "元昊自名曩霄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "吾奉先帝苑囿，猶以為廣，何以是為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "大辟疑者，皆令上讞，歲常活千餘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "朕未嘗詈人以死，況敢濫用辟乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "夏人犯邊，御之出境；契丹渝盟，增以歲幣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "國未嘗無弊幸，而不足以累治世之體",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "有以培壅宋三百餘年之基",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "為人君，止於仁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "恭儉仁恕，出於天性",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "或跣立殿下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "狄青敗智高於邕州，斬首五千余級，智高遁去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "以狄青為樞密使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "狄青罷，以韓琦為樞密使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "詔以宗實為皇子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷187",
+      "quote": "慶曆之籍總一百二十五萬九千，而禁軍馬步八十二萬六千",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷187",
+      "quote": "慶曆之兵，西師後增置之數也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷187",
+      "quote": "開寶之籍總三十七萬八千",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "陛下乃李宸妃有所生，妃死以非命",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "仁宗號慟頓毀，不視朝累日，下哀痛之詔自責",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "妃玉色如生，冠服如皇太后，以水銀養之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "人言其可信哉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "遇劉氏加厚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "后不勝忿，批其頰，上自起救之，誤批上頸，上大怒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "后無過，不可廢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "帝思其保護之恩，命禮官議加服小功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "上春秋長，習知天下情偽，今始親政事，豈宜使女后相繼稱制乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "乃詔刪去遺誥「同議軍國事」語",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "后每勸帝擇宗子近屬而賢者，養于宮中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "吏部選人，一坐失入死罪，皆終身不遷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷012",
+      "quote": "賜名曙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; primary texts verified against the repository's fixed-revision archive, scholarship only via WebSearch summaries.",
+    "三川口、好水川、定川寨戰役名稱屬通行史實，正文未就其細節引證。"
+  ]
+}

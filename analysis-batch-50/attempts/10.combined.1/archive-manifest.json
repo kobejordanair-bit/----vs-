@@ -1,0 +1,26 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "10",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Self-check against the prompt's length band (analysis 約2600–3600字, soul 約1800–2400字) and the site style samples found the analysis and soul too short; expanded in the next attempt without changing scores.",
+  "files": {
+    "10.analysis.md": "fd2f825ead0834569808a181fd6b9526c46337a5bc4c1af7b11ab3f633941af4",
+    "10.analysisStats.response.md": "1e0d08e171efc5af17d5ad20034b85b9d97b68c952b4fc7f031fbb6d6db9d067",
+    "10.stats.json": "bf9bc15506919e9441de71963a297fd14c91a955ff9d31816c45c3088712ee01",
+    "10.combined.raw.md": "59ff54a1e7b4ce797450a602cc86446ee63533fe37cc4617605c72eac3ac6a27",
+    "10.soulEssence.md": "d54d6f0e61785579d42f7f0afe1a053240bd670fd98747be6d81057fb310ecf1",
+    "10.statsAnalysis.md": "15eb223db34c0eed96852eb74597b29240b3b0a70a68ab6b179e91f091c8fa0c",
+    "10.analysisStats.raw.md": "1e0d08e171efc5af17d5ad20034b85b9d97b68c952b4fc7f031fbb6d6db9d067",
+    "10.soulEssence.raw.md": "0b9ceea06e0fda41ff7d562c25c9c6f11019a61e7ad54ab32e1eff97ecf4fc24",
+    "10.combined.search-log.json": "c8dc5d30032d38737370343c88ac23f4c6698c068ffebc91c4b6466052ea3764",
+    "10.soulEssence.response.md": "0b9ceea06e0fda41ff7d562c25c9c6f11019a61e7ad54ab32e1eff97ecf4fc24",
+    "10.combined.capture.json": "53c4e714f56d497dca83f6bf52cfab0467700f19454785016bbf5020e67f60b0",
+    "10.soulEssence.capture.json": "429416ae634b6919f2b7aed3f0b097a51a976a14c4903d89716cf938913c4c39",
+    "10.analysisStats.capture.json": "58b7cce2375f07352dc3b9ea3f8312629be64e35c3ce7e8487e4f9730fa3b0e1",
+    "10.analysisStats.json": "18dcb8b964bcdc80e6ab3f1c9374fca23587a63cad098baad16249acaeee0481",
+    "10.soulEssence.json": "60b8b14fdae3669c82b22074311e7441d83328b055419949fc6ce0d5ca24be50",
+    "results.10-10.v1.json": "fc5c491a5dbdf0f9eea088b34bf7377bb9b47d59abe771b9029b4cf6d9574504"
+  }
+}

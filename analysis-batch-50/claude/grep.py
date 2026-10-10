@@ -7,4 +7,4 @@ for doc in docs:
   t=re.sub(r'〔[^〕]*〕','',doc['text'])
   for p in pats:
     for m in list(re.finditer(p,t))[:3]:
-      print(f"{doc['title']}|{p}|",t[max(0,m.start()-70):m.end()+90].replace('\n',' '))
+      print(f"{doc['title']}|{p}|",t[max(0,m.start()-40):m.end()+40].replace('\n',' '))

@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 9,
-    "reviewed": 8,
-    "assembled": 8,
+    "generated": 10,
+    "reviewed": 9,
+    "assembled": 9,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 2,
+    "claudeAssembledAwaitingImport": 3,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -178,20 +178,23 @@
       "status": "assembled_awaiting_local_dry_run",
       "reviewKind": "self_review_not_independent",
       "resultsFile": "analysis-batch-50/results.09-09.v1.json",
-      "resultsSha256": "9e4f09116b113d106899bb0f5465ecb3cb4a4314d5a13c679f3c6ec68663e527"
+      "resultsSha256": "7462187021041541b1bf42c1de83704edd8f82a86422bea97347937394e0265a"
     },
     {
       "slug": "10",
       "id": "emperor_宋仁宗_284527334",
       "name": "宋仁宗",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.10-10.v1.json",
+      "resultsSha256": "c5a0089b8418ed6b2d038d35b642a57eb4209c14151cdf2f52ed71b63d94d29c"
     },
     {
       "slug": "11",

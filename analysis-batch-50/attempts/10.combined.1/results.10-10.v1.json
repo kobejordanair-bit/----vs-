@@ -1,0 +1,247 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "inputSha256": "9e8001221db47f9f24b41930275972e425787e5bd8b2a14797d84a2fa5d4ce11",
+      "promptSha256": "2a0d2fbbbfb1f632395dad00620a651d2afbf5f0834cf8fa4e42d0e50189a127",
+      "fields": {
+        "analysis": "宋仁宗是中國歷史上少數把「仁」字直接刻進廟號的皇帝，後人給他的標籤是寬厚、節儉、好好先生，甚至帶點軟弱。但我想提出一個不太討喜的看法：**仁宗的「仁」不是性格缺陷，而是一套極其精密的統治技術**——用拖延代替決策，用輪替代替信任，用台諫的噪音代替皇帝的表態。他讓北宋文官政治走到巔峰，也讓這套政治在他手裡失去了自我修正的能力。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n趙禎生於大中祥符三年（1010年），是真宗第六子，生母李宸妃，卻由無子的章獻劉皇后收為己子（[《宋史·仁宗紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009)）。乾興元年（1022年）他十三歲即位，此後十一年「軍國事」由劉太后主持。他接手的局有三個結構性問題：\n\n1.  **一個不允許皇帝獨斷的體制**：太祖、太宗留下的「祖宗之法」，核心是分權與互相牽制——宰相、樞密、三司分掌政、軍、財，台諫專門挑錯。皇帝既是體制的最高裁判，也是被體制約束最深的人。\n2.  **越養越大的軍隊與財政**：據《宋史·兵志》，太祖開寶年間禁廂軍總數約三十七萬八千，到了仁宗慶曆年間已膨脹到「一百二十五萬九千，而禁軍馬步八十二萬六千」，而且明言「慶曆之兵，西師後增置之數也」（[《宋史·兵志一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187)）。\n3.  **兩個強鄰**：北有遼，西有寶元元年（1038年）稱帝的党項李元昊。\n\n他在歷史上的位置，是**北宋文官政治的完成者**。在他四十二年的統治下，范仲淹、韓琦、富弼、歐陽修、包拯、司馬光、王安石、蘇軾這些名字都已登場；但三冗、積弱與黨爭這些王朝的慢性病，也在他手裡定型。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：仁宗不是軟弱，而是刻意不讓任何一個人、任何一套方案獨大。**\n\n最能說明這點的是他身世真相揭曉的那一刻。明道二年（1033年）劉太后去世後，燕王告訴他：「陛下乃李宸妃有所生，妃死以非命。」仁宗「號慟頓毀，不視朝累日」，按常理這是清算劉氏家族的最好時機。但他先到洪福院開棺親驗，看到生母「玉色如生，冠服如皇太后，以水銀養之」，才歎說：「人言其可信哉！」隨後反而「遇劉氏加厚」（[《宋史·后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）。\n\n這個反應揭示了他一生的決策模式：**不根據單一說法行動，一定要親自查證；查證之後，選擇最不激化衝突的方案。**這在宮廷危機中是智慧，在國家改革上卻成了致命傷。\n\n**【過：慶曆新政——用一年半的時間證明，他不會押上全部】**\n\n慶曆三年（1043年）八月，仁宗以范仲淹為參知政事、富弼為樞密副使，啟動了後人所稱的慶曆新政（[《宋史·仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）。但到了慶曆五年（1045年）正月，史書只用了一行：「范仲淹、富弼罷。丙戌，杜衍罷。」改革派在兩天內全部出局。\n\n有研究指出，宋人自己並不把這次改革稱為「新政」，歐陽修等當事人將失敗歸因於「群言營營，卒壞於成」（[〈宋人如何看待慶曆改革〉](https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707)）。換句話說，仁宗不是被某個反對派打敗，而是被他自己最重視的東西——輿論與台諫的意見——說服了。對他而言，新政引發的朝堂分裂，比冗官冗費更危險。這是**個人選擇**，不是時代局限：同樣的體制，二十多年後的神宗就選擇了全力支持王安石。\n\n**【過：西夏戰爭——花錢買和平】**\n\n元昊稱帝後，宋軍在三川口、好水川、定川寨接連失利。慶曆四年（1044年），宋廷「賜曩霄誓詔，歲賜銀、絹、茶、彩凡二十五萬五千」（[《仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）。《宋史》本紀贊語的總結非常傳神：「夏人犯邊，御之出境；契丹渝盟，增以歲幣」（[《宋史·仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）。這是用財政承擔軍事失敗的代價，而這筆代價又回頭加重了三冗。\n\n**【功：一個讓人才自由生長的朝廷】**\n\n但仁宗的「不獨斷」也有巨大的正面效果。皇祐四年（1052年）儂智高亂起，他起用武人狄青，次年狄青在邕州「斬首五千余級，智高遁去」（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)），隨即拜狄青為樞密使——這在重文輕武的北宋極為罕見。不過，嘉祐元年（1056年）八月，狄青就在朝臣的猜疑聲中被罷免，「以韓琦為樞密使」。他給了機會，也收回了機會。\n\n本紀贊語寫他「吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士」，並稱「君臣上下惻怛之心，忠厚之政，有以培壅宋三百餘年之基」（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）。這句話說得很準：他的朝廷效率不高，但很少冤殺人，士大夫敢說話、敢爭論，北宋最好的一代文人幾乎都在他手中成長。\n\n### **3. 【人性與性格側寫】**\n\n*   **節制到近乎自我壓抑**：本紀記他「宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須」（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）。他擔心一次宵夜就會變成御膳房每天殺羊的「常例」。這不只是仁慈，而是一個深知自己一句話會被制度無限放大的人，對自身影響力的警覺。\n*   **憤怒時也會失控**：明道二年，郭皇后在爭吵中誤打到他的脖子，他「大怒」，在宦官閻文應與宰相呂夷簡的配合下廢后；孔道輔、范仲淹等十人伏閣力爭「后無過，不可廢」，反被貶斥（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）。他一生寬容，唯獨在私人受辱時，展現了少見的堅決。\n*   **補償型的情感**：得知生母身世後，他「追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋」（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）。他用女兒的婚姻來償還對生母的虧欠。\n\n### **4. 【如果生在現代】**\n\n仁宗最適合的現代角色是：**一所頂尖大學的校長，或一個大型公共機構的董事會主席。**\n\n*   **擅長搭舞台**：他會聘請最好的學者、給他們充分的言論自由，校園裡百家爭鳴，人才輩出。\n*   **不擅長大改革**：一旦有副校長提出激進的組織改造，他會支持一陣子；但只要教授會連署反對、媒體出現負評，他就會讓改革派「另有重用」，把方案擱置。\n*   **重視流程與查證**：任何指控他都要看到證據才處理，絕不憑一封匿名信開除人；但這也讓學校的冗員與預算問題越積越多。\n*   **風格**：開會時常常最後一個發言，而且多半只說：「再議。」",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「以自我克制作為示範」，讓臣下自己領會應該如何收斂。有司請以玉清宮舊地改建御苑，他回答：「吾奉先帝苑囿，猶以為廣，何以是為？」（[《宋史·仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）[史載]。他不直接駁斥建議，而是把自己放在比提案者更節制的位置上，讓對方無話可說。他也常把原則轉化成對自己的約束，曾對輔臣說：「朕未嘗詈人以死，況敢濫用辟乎！」（同上）[史載]。他的沉默通常意味著「我在等更多意見」：慶曆五年范仲淹、富弼、杜衍兩天內相繼罷免，史書沒有記下他任何一句解釋（[《宋史·仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）[推斷：依據他在重大人事變動中極少留下個人表態的紀錄，以及「群言營營，卒壞於成」的當事人觀察]。\n\n【壓力反應】\n面對突發的情感或政治衝擊，他的第一反應是「先查證，再選擇最不激化衝突的處理方式」。\n明道二年（1033年），燕王告訴他生母「死以非命」，他悲痛到「不視朝累日」，但沒有立刻下令追查劉氏，而是親自開棺查驗，確認生母以皇后之禮下葬後，反而「遇劉氏加厚」（[《宋史·后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）[史載]。慶曆年間，面對改革派與反對派的激烈爭論，他沒有選邊力挺，而是在兩年內讓改革派全數出局，恢復朝堂的平衡（[《仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）[史載]。兩件事相隔十年，一是家事、一是國政，共同結構都是：在衝突面前，他優先保護體制的穩定，而非追求某一方的正義或效率[推斷]。\n\n【核心驅動】\n他真正追求的是「不讓任何人因為他而受到傷害」——包括不讓自己的權力被放大成傷害。\n本紀記他夜裡肚子餓想吃燒羊，卻「戒勿宣索，恐膳夫自此戕賊物命，以備不時之須」（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）[史載]。他清楚知道，皇帝的一次需求會被制度固化成每日的常例。他寧可餓肚子，也不願讓一個偶然的念頭變成制度性的浪費。他對死刑也極其謹慎，「大辟疑者，皆令上讞，歲常活千餘」（同上）[史載]。這兩件事揭示：他把「權力的副作用」看得比權力本身更重[詮釋：這是對其行為動機的歸納，史料記錄的是行為而非他的自我陳述]。\n\n【慣性盲點】\n他最大的優點「不輕易傷人」，反過來讓他無法承擔改革必然帶來的衝突與傷害。\n慶曆三年（1043年）他起用范仲淹推行改革，但一年多後改革派便全體罷免（[《仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）[史載]。皇祐五年（1053年）他破格任命武將狄青為樞密使，嘉祐元年（1056年）又在朝議壓力下罷免狄青（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）[史載]。兩次都是同一結構：他敢給機會，卻在反對聲浪升高時選擇撤回，因為他無法承受因為支持某人而讓朝堂陷入分裂。結果是軍隊人數持續膨脹到一百二十五萬九千人，問題卻始終沒有被真正解決（[《宋史·兵志一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187)）[推斷]。\n\n【情感結構】\n他的情感深沉而帶著強烈的補償性。\n得知生母身世後，他「號慟頓毀，不視朝累日，下哀痛之詔自責」，追尊生母為皇太后，並「追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋」（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）[史載]。他對撫養他的楊淑妃也念念不忘，「帝思其保護之恩，命禮官議加服小功」（同上）[史載]。他最脆弱的時刻，是在洪福院開棺看見生母遺容後說出「人言其可信哉」的那一刻——那是一個從小被隱瞞身世的人，第一次親眼確認真相[詮釋：這句話的語氣是感慨、釋然還是悲涼，史料無法確定]。\n\n【參照系】\n他習慣以「禮法與先例」作為面對一切新問題的參照系。這源自他十三歲即位、在劉太后與宰執的禮制教育下長大的經歷（[《宋史·仁宗紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009)）[史載]。\n類比準確之處：面對身世真相，他依禮法查證、依禮法追尊、依禮法善待劉氏，把一場可能的宮廷風暴化解在制度框架內（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）[史載]。\n類比失準之處：面對西夏這個新崛起的軍事政權，他仍沿用對遼的「歲幣換和平」框架，以「歲賜銀、絹、茶、彩凡二十五萬五千」收場（[《仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)），沒有建立真正的軍事改革[詮釋：宋夏和議是否為當時最佳選擇，史家看法不一]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（不讓任何人因他而受傷）與【慣性盲點】（無法承擔改革必然的傷害）之間。\n這個衝突的結構是：他深知皇權的一舉一動都會被放大成制度性的後果，所以極度謹慎；但國家的慢性病需要一位願意承擔衝突的皇帝來根治。\n第一次激烈爆發是慶曆新政：他起用范仲淹，卻在「群言營營」中讓改革派兩天內全數出局（[《仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）[史載]。\n第二次是他的私人生活：一向寬容的他，在郭皇后誤傷他的脖子後「大怒」廢后，連孔道輔、范仲淹等十人伏閣力諫「后無過」都不採納（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）[史載]。這說明他的「仁」並非沒有底線，而是把底線放在「個人尊嚴與朝堂秩序」上，而非「國家需要的變革」上。\n他是否意識到這個衝突？本紀贊語說他的朝廷「國未嘗無弊幸，而不足以累治世之體」（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)），這是史家的總結，而非仁宗本人的自省[詮釋：史料中沒有他對新政失敗的直接表態]。",
+        "stats": [
+          60,
+          20,
+          84,
+          90,
+          92
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：60\n\n仁宗沒有親征紀錄，對西夏戰爭的指揮是透過韓琦、范仲淹、龐籍等人分領陝西各路（[《仁宗紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011)）。三川口、好水川、定川寨接連失利，最終以「歲賜銀、絹、茶、彩凡二十五萬五千」換取和平。正面例子是皇祐年間破格起用狄青平定儂智高，但三年後又罷免狄青，未能形成穩定的軍事指揮體系。軍隊在他任內擴張到一百二十五萬九千人，數量增加卻沒有轉化為戰力（[《兵志一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187)）。評60，與唐中宗（60）持平，遠低於宋太祖（95）與唐高祖（92）。\n\n### 武力：20\n\n仁宗從未上陣，史書也沒有任何騎射、武藝的紀錄。他自幼在深宮中由劉太后與楊淑妃撫育成長（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)），十三歲即位後再未離開過京城周邊。他的個人形象完全建立在節儉、寬容與禮法之上，是一位典型的文治型君主。評20，高於宋欽宗（10）與晉惠帝（5），與光緒帝（15）、漢獻帝（15）屬同一區間，遠低於宋太祖（92）與漢明帝（55）。\n\n### 智謀：84\n\n他最能體現智謀的時刻，是身世真相揭曉後先開棺查驗、再決定對劉氏「加厚」，避免了一場宮廷清算（[《后妃傳上》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242)）。他長期讓呂夷簡、范仲淹、韓琦等不同派系輪流執政，使任何一派都無法獨攬大權。但他對慶曆新政的半途而廢，以及對西夏的戰略被動，都顯示他缺乏長期戰略規劃能力。評84，略低於齊桓公（85），低於漢明帝（90）與宋太祖（96）。\n\n### 政治：90\n\n《宋史》贊其「吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士」（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）：他的朝廷效率不高，卻極少冤殺大臣，言路開放，北宋最優秀的一代士大夫都在此期間成長。扣分在於慶曆新政僅維持約一年半，三冗問題持續惡化，軍隊人數比開寶年間增加三倍以上（[《兵志一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187)）。評90，低於宋太祖（98）與唐高祖（96），高於崇禎帝（65）。\n\n### 魅力：92\n\n他的魅力來自道德形象。本紀記他「恭儉仁恕，出於天性」，遇水旱「或跣立殿下」，連宵夜都不敢點以免成為常例（[《仁宗紀四》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012)）。士大夫普遍對他懷有真誠的敬愛，「為人君，止於仁」成為後世對他的定評。扣分在於他的親和力未能轉化為對改革派的有力支持，范仲淹、狄青等人都在他的猶豫中離開權力中心。評92，高於漢明帝（65）與唐高祖（90），低於齊桓公（95）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T05:28:16.625Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "宋史·卷九 本紀第九 仁宗一",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009",
+            "locator": "本機固定修訂 oldid=7908328 全文比對（textSha256 已驗）：真宗第六子，母李宸妃也。大中祥符三年四月十四日生、章獻皇后無子",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋史·卷一百八十七 志第一百四十 兵一",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187",
+            "locator": "本機固定修訂 oldid=2709732 全文比對（textSha256 已驗）：慶曆之籍總一百二十五萬九千，而禁軍馬步八十二萬六千、慶曆之兵，西師後增置之數也、開寶之籍總三十七萬八千",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋史·卷二百四十二　列傳第一　 后妃上",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242",
+            "locator": "本機固定修訂 oldid=2258685 全文比對（textSha256 已驗）：陛下乃李宸妃有所生，妃死以非命、仁宗號慟頓毀，不視朝累日，下哀痛之詔自責、妃玉色如生，冠服如皇太后，以水銀養之、人言其可信哉、遇劉氏加厚、追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋史·卷十一 本紀第十一 仁宗三",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011",
+            "locator": "本機固定修訂 oldid=2285045 全文比對（textSha256 已驗）：以范仲淹參知政事，富弼為樞密副使、范仲淹、富弼罷。丙戌，杜衍罷、歲賜銀、絹、茶、彩凡二十五萬五千、命韓琦、范仲淹、龐籍分領之、元昊自名曩霄",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "〈宋人如何看待慶曆改革〉（香港浸會大學《人文中國學報》電子期刊）",
+            "url": "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707",
+            "locator": "WebSearch 結果摘要：宋人未稱「新政」、歐陽修等歸因「群言營營，卒壞於成」；正文只引此兩點",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "宋史·卷十二 本紀第十二 仁宗四",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012",
+            "locator": "本機固定修訂 oldid=7908327 全文比對（textSha256 已驗）：吾奉先帝苑囿，猶以為廣，何以是為、宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須、大辟疑者，皆令上讞，歲常活千餘、朕未嘗詈人以死，況敢濫用辟乎、夏人犯邊，御之出境；契丹渝盟，增以歲幣、吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "88e0702ce2a5511b7b3a66b1ef18f129a27a9ca38a4971efc23fb1a48795ab18",
+        "sourcePackageSha256": "1f43137b4d6a058453c9dfad1c7cb102edf7b4811f6a99220a6890c001c7690a",
+        "preservedDeepSha256": "a50ed57786135f12a37d0fdb7983e3b017e936baae4a4da226f8e4e53ac7c8ab",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "eff5aa031c4ae84ce30483507b2f91f2e83eda7b54dfea542bd51873c8e8a06c",
+            "requestSha256": "88e0702ce2a5511b7b3a66b1ef18f129a27a9ca38a4971efc23fb1a48795ab18",
+            "inputSha256": "9e8001221db47f9f24b41930275972e425787e5bd8b2a14797d84a2fa5d4ce11",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "0eab507cf4e2d3eb097c997c9834fb30aa28a17dff80977ea1ec181a0925a918",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "1f43137b4d6a058453c9dfad1c7cb102edf7b4811f6a99220a6890c001c7690a",
+            "preservedDeepSha256": "a50ed57786135f12a37d0fdb7983e3b017e936baae4a4da226f8e4e53ac7c8ab",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T05:28:16.625Z",
+            "rawResponseFile": "analysis-batch-50/drafts/10.analysisStats.raw.md",
+            "rawResponseSha256": "1e0d08e171efc5af17d5ad20034b85b9d97b68c952b4fc7f031fbb6d6db9d067",
+            "responseFile": "analysis-batch-50/drafts/10.analysisStats.response.md",
+            "responseSha256": "1e0d08e171efc5af17d5ad20034b85b9d97b68c952b4fc7f031fbb6d6db9d067",
+            "fieldsHashes": {
+              "analysis": "99a4a22e10f3dc4400a9aecd4f0d016a5889c3a46935d772d38e348f7a48b67f",
+              "stats": "68a90b9807046d0feda430bf75802c03b6d3a2cdb98287c0d3e9af79ab453476",
+              "statsAnalysis": "d018f89935ae19f60ad59d9696bc4532468484dba78dc8991ea351c6aafbea34"
+            },
+            "captureFile": "analysis-batch-50/drafts/10.analysisStats.capture.json",
+            "captureSha256": "8aca9c6f383e6cef50582e9bca3b34c73866bf4030a84796f988f5d5251fc2cf",
+            "sourceReviewFile": "analysis-batch-50/reviews/10.analysisStats.json",
+            "sourceReviewSha256": "d8adf3cf92911d12ba974f1c14c4847e934cd0ce63067a328f41cba14c821b93",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/10.combined.search-log.json",
+              "sha256": "c8dc5d30032d38737370343c88ac23f4c6698c068ffebc91c4b6466052ea3764",
+              "webSearchCount": 2,
+              "archiveCheckCount": 34
+            },
+            "checkedSources": [
+              {
+                "title": "宋史·卷九 本紀第九 仁宗一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009",
+                "locator": "本機固定修訂 oldid=7908328 全文比對（textSha256 已驗）：真宗第六子，母李宸妃也。大中祥符三年四月十四日生、章獻皇后無子",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷一百八十七 志第一百四十 兵一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187",
+                "locator": "本機固定修訂 oldid=2709732 全文比對（textSha256 已驗）：慶曆之籍總一百二十五萬九千，而禁軍馬步八十二萬六千、慶曆之兵，西師後增置之數也、開寶之籍總三十七萬八千",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷二百四十二　列傳第一　 后妃上",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242",
+                "locator": "本機固定修訂 oldid=2258685 全文比對（textSha256 已驗）：陛下乃李宸妃有所生，妃死以非命、仁宗號慟頓毀，不視朝累日，下哀痛之詔自責、妃玉色如生，冠服如皇太后，以水銀養之、人言其可信哉、遇劉氏加厚、追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷十一 本紀第十一 仁宗三",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011",
+                "locator": "本機固定修訂 oldid=2285045 全文比對（textSha256 已驗）：以范仲淹參知政事，富弼為樞密副使、范仲淹、富弼罷。丙戌，杜衍罷、歲賜銀、絹、茶、彩凡二十五萬五千、命韓琦、范仲淹、龐籍分領之、元昊自名曩霄",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "〈宋人如何看待慶曆改革〉（香港浸會大學《人文中國學報》電子期刊）",
+                "url": "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707",
+                "locator": "WebSearch 結果摘要：宋人未稱「新政」、歐陽修等歸因「群言營營，卒壞於成」；正文只引此兩點",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "宋史·卷十二 本紀第十二 仁宗四",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012",
+                "locator": "本機固定修訂 oldid=7908327 全文比對（textSha256 已驗）：吾奉先帝苑囿，猶以為廣，何以是為、宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須、大辟疑者，皆令上讞，歲常活千餘、朕未嘗詈人以死，況敢濫用辟乎、夏人犯邊，御之出境；契丹渝盟，增以歲幣、吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "093b10d38f81efc6f4f14676d582381575bfca27a74e322e6e27f74d6d1f7ba9",
+            "requestSha256": "88e0702ce2a5511b7b3a66b1ef18f129a27a9ca38a4971efc23fb1a48795ab18",
+            "inputSha256": "9e8001221db47f9f24b41930275972e425787e5bd8b2a14797d84a2fa5d4ce11",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "31427a8c528b467ba8feae94ca165189cd64d822fe3b25b407c91c08b382cb53",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "1f43137b4d6a058453c9dfad1c7cb102edf7b4811f6a99220a6890c001c7690a",
+            "preservedDeepSha256": "a50ed57786135f12a37d0fdb7983e3b017e936baae4a4da226f8e4e53ac7c8ab",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T05:28:16.625Z",
+            "rawResponseFile": "analysis-batch-50/drafts/10.soulEssence.raw.md",
+            "rawResponseSha256": "0b9ceea06e0fda41ff7d562c25c9c6f11019a61e7ad54ab32e1eff97ecf4fc24",
+            "responseFile": "analysis-batch-50/drafts/10.soulEssence.response.md",
+            "responseSha256": "0b9ceea06e0fda41ff7d562c25c9c6f11019a61e7ad54ab32e1eff97ecf4fc24",
+            "fieldsHashes": {
+              "soulEssence": "7cdc5eeeb75e9d7b916ca1fdcb7ed852beec65982dd831487bd4df9cc8e61192"
+            },
+            "captureFile": "analysis-batch-50/drafts/10.soulEssence.capture.json",
+            "captureSha256": "b39a1988d7569e864e10e27b34ce81d7826f4bd43b81fabcd2874b506dfad0bd",
+            "sourceReviewFile": "analysis-batch-50/reviews/10.soulEssence.json",
+            "sourceReviewSha256": "220aaf72d0fb6f39cdfc4c751e3497ac2186d41ad1e5d706dd859c445ce9e2e6",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/10.combined.search-log.json",
+              "sha256": "c8dc5d30032d38737370343c88ac23f4c6698c068ffebc91c4b6466052ea3764",
+              "webSearchCount": 2,
+              "archiveCheckCount": 34
+            },
+            "checkedSources": [
+              {
+                "title": "宋史·卷十二 本紀第十二 仁宗四",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012",
+                "locator": "本機固定修訂 oldid=7908327 全文比對（textSha256 已驗）：吾奉先帝苑囿，猶以為廣，何以是為、宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須、大辟疑者，皆令上讞，歲常活千餘、朕未嘗詈人以死，況敢濫用辟乎、夏人犯邊，御之出境；契丹渝盟，增以歲幣、吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷十一 本紀第十一 仁宗三",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011",
+                "locator": "本機固定修訂 oldid=2285045 全文比對（textSha256 已驗）：以范仲淹參知政事，富弼為樞密副使、范仲淹、富弼罷。丙戌，杜衍罷、歲賜銀、絹、茶、彩凡二十五萬五千、命韓琦、范仲淹、龐籍分領之、元昊自名曩霄",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷二百四十二　列傳第一　 后妃上",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242",
+                "locator": "本機固定修訂 oldid=2258685 全文比對（textSha256 已驗）：陛下乃李宸妃有所生，妃死以非命、仁宗號慟頓毀，不視朝累日，下哀痛之詔自責、妃玉色如生，冠服如皇太后，以水銀養之、人言其可信哉、遇劉氏加厚、追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷一百八十七 志第一百四十 兵一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187",
+                "locator": "本機固定修訂 oldid=2709732 全文比對（textSha256 已驗）：慶曆之籍總一百二十五萬九千，而禁軍馬步八十二萬六千、慶曆之兵，西師後增置之數也、開寶之籍總三十七萬八千",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷九 本紀第九 仁宗一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009",
+                "locator": "本機固定修訂 oldid=7908328 全文比對（textSha256 已驗）：真宗第六子，母李宸妃也。大中祥符三年四月十四日生、章獻皇后無子",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/10.analysis.md",
+            "analysisContextSha256": "fd2f825ead0834569808a181fd6b9526c46337a5bc4c1af7b11ab3f633941af4"
+          }
+        }
+      }
+    }
+  ]
+}

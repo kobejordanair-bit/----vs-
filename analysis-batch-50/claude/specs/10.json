@@ -1,0 +1,297 @@
+{
+ "webSearches": [
+  {
+   "query": "宋仁宗 慶曆新政 失敗原因 朋黨論 歐陽修 研究 論文",
+   "returnedUrls": [
+    "https://en.wikipedia.org/wiki/Qingli_Reforms",
+    "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707",
+    "https://lawdata.com.tw/tw/detail.aspx?no=424136",
+    "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2503",
+    "https://muse.jhu.edu/article/380502"
+   ]
+  },
+  {
+   "query": "國立故宮博物院 宋仁宗坐像 宋仁宗皇后像 典藏",
+   "returnedUrls": [
+    "https://catalog.digitalarchives.tw/item/00/31/b2/d8.html",
+    "https://www.npm.edu.tw/NewChineseArtDownload.ashx?bid=4384",
+    "https://www.thepaper.cn/newsDetail_forward_10117229"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "songshi",
+   "title": "宋史/卷009",
+   "quote": "真宗第六子，母李宸妃也。大中祥符三年四月十四日生"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷009",
+   "quote": "章獻皇后無子"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷011",
+   "quote": "以范仲淹參知政事，富弼為樞密副使"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷011",
+   "quote": "范仲淹、富弼罷。丙戌，杜衍罷"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷011",
+   "quote": "歲賜銀、絹、茶、彩凡二十五萬五千"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷011",
+   "quote": "命韓琦、范仲淹、龐籍分領之"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷011",
+   "quote": "元昊自名曩霄"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "吾奉先帝苑囿，猶以為廣，何以是為"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "大辟疑者，皆令上讞，歲常活千餘"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "朕未嘗詈人以死，況敢濫用辟乎"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "夏人犯邊，御之出境；契丹渝盟，增以歲幣"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "國未嘗無弊幸，而不足以累治世之體"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "有以培壅宋三百餘年之基"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "為人君，止於仁"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "恭儉仁恕，出於天性"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "或跣立殿下"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "狄青敗智高於邕州，斬首五千余級，智高遁去"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "以狄青為樞密使"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "狄青罷，以韓琦為樞密使"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "詔以宗實為皇子"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷187",
+   "quote": "慶曆之籍總一百二十五萬九千，而禁軍馬步八十二萬六千"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷187",
+   "quote": "慶曆之兵，西師後增置之數也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷187",
+   "quote": "開寶之籍總三十七萬八千"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "陛下乃李宸妃有所生，妃死以非命"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "仁宗號慟頓毀，不視朝累日，下哀痛之詔自責"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "妃玉色如生，冠服如皇太后，以水銀養之"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "人言其可信哉"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "遇劉氏加厚"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "后不勝忿，批其頰，上自起救之，誤批上頸，上大怒"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "后無過，不可廢"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "帝思其保護之恩，命禮官議加服小功"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "上春秋長，習知天下情偽，今始親政事，豈宜使女后相繼稱制乎"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "乃詔刪去遺誥「同議軍國事」語"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷242",
+   "quote": "后每勸帝擇宗子近屬而賢者，養于宮中"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "吏部選人，一坐失入死罪，皆終身不遷"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷012",
+   "quote": "賜名曙"
+  }
+ ],
+ "extraSources": {
+  "https://ejournals.lib.hkbu.edu.hk/index.php/sinohumanitas/article/view/2707": {
+   "title": "〈宋人如何看待慶曆改革〉（香港浸會大學《人文中國學報》電子期刊）",
+   "locator": "WebSearch 結果摘要：宋人未稱「新政」、歐陽修等歸因「群言營營，卒壞於成」；正文只引此兩點",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "Page fetches remain blocked; primary texts verified against the repository's fixed-revision archive, scholarship only via WebSearch summaries.",
+  "三川口、好水川、定川寨戰役名稱屬通行史實，正文未就其細節引證。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "趙禎，北宋仁宗；保留原 A 評級與 deepAnalysis。"
+   ],
+   [
+    "chronology",
+    "1010生、1022即位、1033劉太后崩與身世揭曉、1043范仲淹參政、1045正月罷、1044歲賜、皇祐五年（1053）狄青破儂智高並任樞密使、嘉祐元年（1056）罷、嘉祐七年立宗實；年份標題經本機全文定位。"
+   ],
+   [
+    "army-numbers",
+    "開寶37.8萬、慶曆125.9萬（禁軍82.6萬）依宋史兵志原文。"
+   ],
+   [
+    "li-consort",
+    "洪福院開棺、「人言其可信哉」、遇劉氏加厚、福康公主下嫁李瑋，依后妃傳原文。"
+   ],
+   [
+    "guo-empress",
+    "郭后誤批上頸、閻文應呂夷簡謀廢、十人伏閣，依后妃傳原文。"
+   ],
+   [
+    "stats-calibration",
+    "[60,20,84,90,92] 對照宋太祖[95,92,96,98,93]、唐高祖[92,72,95,96,90]、齊桓公[92,75,85,96,95]、漢明帝[82,55,90,95,65]、唐中宗[60,30,75,70,65]。"
+   ],
+   [
+    "scholarship",
+    "浸大期刊文章僅依搜尋摘要引用。"
+   ],
+   [
+    "succession-and-caizi",
+    "蔡齊阻遺誥同議軍國事、楊淑妃勸擇宗子、嘉祐七年立宗實，原文核對；濮議屬英宗朝通行史實未加引證。attempt 1 因篇幅不足存 attempts/10.combined.1。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "玉清舊地、朕未嘗詈人以死，本紀贊原文；沉默模式標[推斷]。"
+   ],
+   [
+    "pressure",
+    "身世揭曉與慶曆罷相兩例，相隔十年。"
+   ],
+   [
+    "drive",
+    "燒羊、大辟上讞原文；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "范仲淹與狄青之起用與罷免，原文與年份核對。"
+   ],
+   [
+    "emotion",
+    "李宸妃、楊淑妃、福康公主原文核對；語氣標[詮釋]。"
+   ],
+   [
+    "frame",
+    "禮法處置身世、西夏歲賜；和議評價標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "慶曆罷相與郭后之廢；本紀贊語屬史家總結，文中明示。"
+   ]
+  ]
+ }
+}

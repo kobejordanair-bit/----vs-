@@ -6,7 +6,7 @@
   "slug": "09",
   "task": "analysisStats",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T05:23:32.670Z",
+  "generatedAt": "2026-10-10T05:29:32.116Z",
   "authorPolicyFile": "analysis-batch-50/author-policy.v2.json",
   "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
   "combinedPacketSha256": "b401f1ac169648f4077ba4e0bccd84d6481f06b08fee1c5144e678f7c3a934c9",
@@ -21,20 +21,20 @@
   "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
   "originalPromptVerified": true,
   "rawResponseFile": "analysis-batch-50/drafts/09.analysisStats.raw.md",
-  "rawResponseSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571",
+  "rawResponseSha256": "d9fd172f2b6c295c9735b31838d26f728d07db0f2c02515ecb5407a028ad3b02",
   "responseFile": "analysis-batch-50/drafts/09.analysisStats.response.md",
-  "responseSha256": "9b1a2516ad15f71df3e5bc4ad7bad021ab4b7de2ab067fb7bbde4bc51ebd2571",
+  "responseSha256": "d9fd172f2b6c295c9735b31838d26f728d07db0f2c02515ecb5407a028ad3b02",
   "fieldsHashes": {
-    "analysis": "7b1b85246d0645b6e84a081e54dbe95a28d8a7495094f9a59c0cb35a19e47277",
+    "analysis": "53205f81b49e6d0a4d21243a0c9e228779a39d5a7c9bdb4945dfab8a9db2f756",
     "stats": "b0c762127440ac897c110dc6deb166849002374f6d542148c4da92b5dcadc9bb",
-    "statsAnalysis": "bfc2052859ea23970d4f222aee0559a1253171465b62a987acc1b4f218e0fa84"
+    "statsAnalysis": "e4e4546d12efa7b63cf0e386c57cbd01d1dc3538c6d5e7253a8ab141800d5eb3"
   },
   "webSearchPerformed": true,
   "searchLog": {
     "file": "analysis-batch-50/drafts/09.combined.search-log.json",
-    "sha256": "ebce01cdc07573a2cca015c9c96bc1ce46600ab9feb3a1e12c97412debdfd485",
+    "sha256": "79803b065433c8b4b32b5035a28477a7feaba668d681d348d37c1ea745d46190",
     "webSearchCount": 2,
-    "archiveCheckCount": 40
+    "archiveCheckCount": 50
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",
   "referencePath": "analysis-batch-50/stats-reference.v1.json",

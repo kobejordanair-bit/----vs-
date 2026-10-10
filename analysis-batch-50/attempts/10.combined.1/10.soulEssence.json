@@ -1,0 +1,97 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋仁宗_284527334",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:28:16.680Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "0b9ceea06e0fda41ff7d562c25c9c6f11019a61e7ad54ab32e1eff97ecf4fc24",
+  "rawResponseSha256": "0b9ceea06e0fda41ff7d562c25c9c6f11019a61e7ad54ab32e1eff97ecf4fc24",
+  "sourcePackageSha256": "1f43137b4d6a058453c9dfad1c7cb102edf7b4811f6a99220a6890c001c7690a",
+  "searchLogSha256": "c8dc5d30032d38737370343c88ac23f4c6698c068ffebc91c4b6466052ea3764",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7012",
+      "title": "宋史·卷十二 本紀第十二 仁宗四",
+      "locator": "本機固定修訂 oldid=7908327 全文比對（textSha256 已驗）：吾奉先帝苑囿，猶以為廣，何以是為、宮中夜饑，思膳燒羊，戒勿宣索，恐膳夫自此戕賊物命，以備不時之須、大辟疑者，皆令上讞，歲常活千餘、朕未嘗詈人以死，況敢濫用辟乎、夏人犯邊，御之出境；契丹渝盟，增以歲幣、吏治若偷惰，而任事蔑殘刻之人；刑法似縱弛，而決獄多平允之士…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7011",
+      "title": "宋史·卷十一 本紀第十一 仁宗三",
+      "locator": "本機固定修訂 oldid=2285045 全文比對（textSha256 已驗）：以范仲淹參知政事，富弼為樞密副使、范仲淹、富弼罷。丙戌，杜衍罷、歲賜銀、絹、茶、彩凡二十五萬五千、命韓琦、范仲淹、龐籍分領之、元昊自名曩霄",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242",
+      "title": "宋史·卷二百四十二　列傳第一　 后妃上",
+      "locator": "本機固定修訂 oldid=2258685 全文比對（textSha256 已驗）：陛下乃李宸妃有所生，妃死以非命、仁宗號慟頓毀，不視朝累日，下哀痛之詔自責、妃玉色如生，冠服如皇太后，以水銀養之、人言其可信哉、遇劉氏加厚、追念不已，顧無以厚其家，乃以福康公主下嫁用和之子瑋…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7187",
+      "title": "宋史·卷一百八十七 志第一百四十 兵一",
+      "locator": "本機固定修訂 oldid=2709732 全文比對（textSha256 已驗）：慶曆之籍總一百二十五萬九千，而禁軍馬步八十二萬六千、慶曆之兵，西師後增置之數也、開寶之籍總三十七萬八千",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7009",
+      "title": "宋史·卷九 本紀第九 仁宗一",
+      "locator": "本機固定修訂 oldid=7908328 全文比對（textSha256 已驗）：真宗第六子，母李宸妃也。大中祥符三年四月十四日生、章獻皇后無子",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "玉清舊地、朕未嘗詈人以死，本紀贊原文；沉默模式標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "身世揭曉與慶曆罷相兩例，相隔十年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "燒羊、大辟上讞原文；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "范仲淹與狄青之起用與罷免，原文與年份核對。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "李宸妃、楊淑妃、福康公主原文核對；語氣標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "禮法處置身世、西夏歲賜；和議評價標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "慶曆罷相與郭后之廢；本紀贊語屬史家總結，文中明示。"
+    }
+  ],
+  "materialIssues": []
+}
