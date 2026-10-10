@@ -4,16 +4,16 @@
   "recordId": "general_哲別_306146858",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:46:25.170Z",
+  "reviewedAt": "2026-10-10T11:54:22.704Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "cae9811a8356bb8a687dcb17dfe02016c6b1118a15a526e2d08b1d2f5c96140d",
-  "rawResponseSha256": "cae9811a8356bb8a687dcb17dfe02016c6b1118a15a526e2d08b1d2f5c96140d",
+  "manuscriptSha256": "d93f879975b25ffb91c5ebe090068fd99dfb5b2ac847a5f9ea74e0c7647e4e9c",
+  "rawResponseSha256": "d93f879975b25ffb91c5ebe090068fd99dfb5b2ac847a5f9ea74e0c7647e4e9c",
   "sourcePackageSha256": "60a12f51e3c2077a4dbd60f15c462155372f0367012a7268c51311168cacc6cc",
-  "searchLogSha256": "0de22765e302c1ba122eee552e100331648a3b1e06fc670697660d1d15e8e2c2",
+  "searchLogSha256": "20451511d212671a05604b64328e2359273bf9e5efcdd26c8d20724fcc2c9da3",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120",
@@ -38,14 +38,6 @@
       "type": "primary_text",
       "checked": true,
       "access": "fixed_revision_archive_fulltext"
-    },
-    {
-      "url": "https://www.iranicaonline.org/?p=4022",
-      "title": "Encyclopaedia Iranica〈Jebe〉條",
-      "locator": "搜尋結果摘要：引《蒙古秘史》第147節，原名 Jirḡoʾadai，自泰赤烏部投奔成吉思汗後被賜名 Jebe（釋為兵器）；本 session 未開啟全文。射馬細節、拉施特異說與1201/1204兩說來自同次搜尋之百科類摘要，正文未附其連結。",
-      "type": "scholarly_primary",
-      "checked": true,
-      "access": "web_search_result_summary"
     }
   ],
   "checks": [

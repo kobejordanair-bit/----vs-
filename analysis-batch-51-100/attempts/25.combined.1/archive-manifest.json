@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "25",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：射馬改名與武力92、魅力84依據偏薄；補 Iranica／秘史來源並區分傳說與正史戰績，武力 92→88、魅力 84→82",
+  "files": {
+    "25.statsAnalysis.md": "db4d6c9a4e7fa83fa4677382581358e2769b7fefc8b6cb6b35defc13e64d58fe",
+    "25.soulEssence.raw.md": "d93f879975b25ffb91c5ebe090068fd99dfb5b2ac847a5f9ea74e0c7647e4e9c",
+    "25.combined.capture.json": "3d9b3ef783353c302276bcf0d602e943ec67e89c1d99354649def7815f97e975",
+    "25.soulEssence.response.md": "d93f879975b25ffb91c5ebe090068fd99dfb5b2ac847a5f9ea74e0c7647e4e9c",
+    "25.analysisStats.raw.md": "2f0285f1a99667177ffe1737c434403557518304e34c7b8f39761bf396ce2fa4",
+    "25.soulEssence.md": "c0fcb4ef2934729c9fa5d9fb358120a6bd54a15f9f50ef4f6e5c4e1c0d0b795d",
+    "25.analysis.md": "c17ef36649287521bb95db4d3328f248514ab626955fc0efb83eb35695f16ad1",
+    "25.combined.raw.md": "41239bc6870240fdceef1ddc56a9ce474e89eab852d6f346902c22d92fd1c05b",
+    "25.analysisStats.capture.json": "bf3ac7ba0c42811b2ee463913a29f54f9fbbf1bd01d8068376c1cf865ce7b8c5",
+    "25.soulEssence.capture.json": "4416022ff3bbd0dc006f8fe0481412894a576c869e2838d2ed56a78ae095e20c",
+    "25.analysisStats.response.md": "2f0285f1a99667177ffe1737c434403557518304e34c7b8f39761bf396ce2fa4",
+    "25.stats.json": "d30bbc9ea43db4994f9fc2d7b827455be88d5074aba4afd2cc9a1bee167049e2",
+    "25.combined.search-log.json": "20451511d212671a05604b64328e2359273bf9e5efcdd26c8d20724fcc2c9da3",
+    "25.soulEssence.json": "58924bd1cd9a7ef198aa3fbc7be996bb4732b1ea3738119ec90594992a5a1585",
+    "25.analysisStats.json": "527955f151037224bd0e216934db3661cdd05e70fb297dadfc638c9c6d3ee0ce",
+    "results.25-25.v1.json": "7a2abefaa68e7ab912c056d10af4dd0e409358f9b3da3d11f28674749d387e24",
+    "spec.25.quotes.json": "313923c98441bbbd962a23c4b4c19ab2f72c6d53f72b1b3c2646f1ba8ee183ca",
+    "spec.25.json": "2a5b641e5ecef1ea3dc2d36ed65627194bfd47f0d17f8cdabd2861d10d262ce9"
+  }
+}

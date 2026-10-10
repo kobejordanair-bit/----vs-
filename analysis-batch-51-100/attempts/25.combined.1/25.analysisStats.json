@@ -4,16 +4,16 @@
   "recordId": "general_哲別_306146858",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:46:25.169Z",
+  "reviewedAt": "2026-10-10T11:54:22.703Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "124ac501c70b39cd7c6c2e922a95db2bc0233178e4e813c7ac108d57edef7725",
-  "rawResponseSha256": "124ac501c70b39cd7c6c2e922a95db2bc0233178e4e813c7ac108d57edef7725",
+  "manuscriptSha256": "2f0285f1a99667177ffe1737c434403557518304e34c7b8f39761bf396ce2fa4",
+  "rawResponseSha256": "2f0285f1a99667177ffe1737c434403557518304e34c7b8f39761bf396ce2fa4",
   "sourcePackageSha256": "60a12f51e3c2077a4dbd60f15c462155372f0367012a7268c51311168cacc6cc",
-  "searchLogSha256": "0de22765e302c1ba122eee552e100331648a3b1e06fc670697660d1d15e8e2c2",
+  "searchLogSha256": "20451511d212671a05604b64328e2359273bf9e5efcdd26c8d20724fcc2c9da3",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001",
@@ -38,14 +38,6 @@
       "type": "primary_text",
       "checked": true,
       "access": "fixed_revision_archive_fulltext"
-    },
-    {
-      "url": "https://www.iranicaonline.org/?p=4022",
-      "title": "Encyclopaedia Iranica〈Jebe〉條",
-      "locator": "搜尋結果摘要：引《蒙古秘史》第147節，原名 Jirḡoʾadai，自泰赤烏部投奔成吉思汗後被賜名 Jebe（釋為兵器）；本 session 未開啟全文。射馬細節、拉施特異說與1201/1204兩說來自同次搜尋之百科類摘要，正文未附其連結。",
-      "type": "scholarly_primary",
-      "checked": true,
-      "access": "web_search_result_summary"
     }
   ],
   "checks": [
@@ -57,7 +49,7 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：前鋒與方面追擊；武力：前鋒與射馬傳說（摘要）；智謀：持首徇地、東京佯退；政治：招撫降人但無治理紀錄；魅力：常稱曷思麥里之功。對照木華黎、霍去病、蘇定方、王忠嗣、李廣、岳飛。［修訂1］依 Codex 審查補查射馬與賜名來源（Iranica 引秘史），區分秘史賜名、射馬版本差異與元史前鋒戰績；武力 92→88（唯一個人技藝紀錄為版本互異的射馬故事，標內部估計）；魅力 84→82（被大汗信任不等於廣泛號召）。"
+      "detail": "統率：前鋒與方面追擊；武力：前鋒與射馬傳說（摘要）；智謀：持首徇地、東京佯退；政治：招撫降人但無治理紀錄；魅力：常稱曷思麥里之功。對照木華黎、霍去病、蘇定方、王忠嗣、李廣、岳飛。"
     },
     {
       "id": "causality",
@@ -68,9 +60,9 @@
   "materialIssues": [],
   "stats": [
     92,
-    88,
+    92,
     86,
     45,
-    82
+    84
   ]
 }
