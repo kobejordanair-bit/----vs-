@@ -1,0 +1,136 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋太宗_284444719",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:36:43.585Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e6263accb31ace3001ad612d986ce578119b349440e90a6983871f8374dc82bb",
+  "rawResponseSha256": "e6263accb31ace3001ad612d986ce578119b349440e90a6983871f8374dc82bb",
+  "sourcePackageSha256": "dce216bc4c59e9125c96d19104629957abd0cd6bfff6730df4f9606d5435c00d",
+  "searchLogSha256": "7efa94094f2af1a0c7d0345324fa96cbc4404a7e8def85db9a8265d393e15f09",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004",
+      "title": "宋史·卷四 本紀第四 太宗一",
+      "locator": "本機固定修訂 oldid=2448003 全文比對（textSha256 已驗）：開寶九年冬十月癸丑，太祖崩，帝遂即皇帝位、督諸將發機石攻城、盡徙餘民于新城，遣使督之，既出，即命縱火、帝督諸軍及契丹大戰于高梁河，敗績、帝作平晉詩，令從臣和、錢俶獻其兩浙諸州，凡得州十三、軍一、縣八十六、戶五十五萬六百八十、兵一十一萬五千三十六…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242",
+      "title": "宋史·卷二百四十二　列傳第一　 后妃上",
+      "locator": "本機固定修訂 oldid=2258685 全文比對（textSha256 已驗）：汝百歲後當傳位於汝弟、藏之金匱",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256",
+      "title": "宋史·卷二百五十六 列傳第十五",
+      "locator": "本機固定修訂 oldid=1476821 全文比對（textSha256 已驗）：將有陰謀竊發、自陳預聞太祖、昭憲皇太后顧託之事、太宗感悟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B79",
+      "title": "遼史·卷九 本紀第九",
+      "locator": "本機固定修訂 oldid=1745917 全文比對（textSha256 已驗）：休哥、斜軫橫擊，大敗之。宋主僅以身免，至涿州，竊乘驢車遁去",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B783",
+      "title": "遼史·卷八十三 列傳第十三",
+      "locator": "本機固定修訂 oldid=1378094 全文比對（textSha256 已驗）：追殺三十餘里，斬首萬餘級",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244",
+      "title": "宋史·卷二百四十四 列傳第三 宗室一",
+      "locator": "本機固定修訂 oldid=2627233 全文比對（textSha256 已驗）：久不行太原之賞、待汝自為之，賞未晚也、德昭退而自刎。上聞驚悔，往抱其屍，大哭曰：「癡兒何至此邪、廷美不悔過，怨望、因憂悸成疾而卒、嗚咽流涕…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005",
+      "title": "宋史·卷五 本紀第五 太宗二",
+      "locator": "本機固定修訂 oldid=2285025 全文比對（textSha256 已驗）：曹彬之師大敗于岐溝關、苦戰力盡，為所禽，守節而死、降潘美為檢校太保、置審官院、考課院、王小波聚徒為寇、服濣濯之衣，毀奇巧之器，却女樂之獻…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7272",
+      "title": "宋史·卷二百七十二 列傳第三十一",
+      "locator": "本機固定修訂 oldid=1476835 全文比對（textSha256 已驗）：陳家谷口、上遇我厚，期討賊捍邊以報，而反為奸臣所迫，致王師敗績，何面目求活耶、乃不食，三日死、帝聞之，痛惜甚",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7155",
+      "title": "宋史·卷一百五十五 志第一百〇八　選舉一",
+      "locator": "本機固定修訂 oldid=1964836 全文比對（textSha256 已驗）：朕欲博求俊彥於科場中，非敢望拔十得五，止得一二，亦可爲致治之具矣、得呂蒙正以下一百九人、覆試諸科，得二百人、一百八十餘人",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "趙光義（炅），北宋太宗；保留原 A 評級與 deepAnalysis。"
+    },
+    {
+      "id": "accession-sources",
+      "passed": true,
+      "detail": "宋史本紀僅書太祖崩帝即位；金匱之盟見杜太后傳，趙普傳載其於廷美事起時上書「預聞顧託」，文中據此陳述浮現時序，未判定真偽。"
+    },
+    {
+      "id": "gaoliang-river",
+      "passed": true,
+      "detail": "宋史「敗績」與遼史「竊乘驢車遁去」並陳，休哥傳斬首萬餘級。"
+    },
+    {
+      "id": "family",
+      "passed": true,
+      "detail": "德昭自刎、廷美房州憂悸卒及太宗反應，宗室傳原文。"
+    },
+    {
+      "id": "yongxi",
+      "passed": true,
+      "detail": "岐溝關、楊業陳家谷與不食三日死、潘美降秩，本紀及楊業傳原文。"
+    },
+    {
+      "id": "keju",
+      "passed": true,
+      "detail": "太平興國二年 109 進士、諸科 200、特賜 180 餘，選舉志原文；唐代規模比較為通行常識。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[75,50,88,92,70] 對照宋太祖[95,92,96,98,93]、宋仁宗[60,20,84,90,92]、武則天[72,15,97,93,80]、唐高祖[92,72,95,96,90]、漢明帝[82,55,90,95,65]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    75,
+    50,
+    88,
+    92,
+    70
+  ]
+}

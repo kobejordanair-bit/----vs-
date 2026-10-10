@@ -1,0 +1,244 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋太宗_284444719",
+  "packetSha256": "b53744998ec17d6e522e836932f27968076ac71f10230dbed04d58475adadd6b",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "燭影斧聲 湘山野錄 文瑩 續資治通鑑長編 李燾 史源 宋太宗 即位 研究",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Xu_Zizhi_Tongjian",
+        "https://www.thenewslens.com/article/242322",
+        "https://ir.sinica.edu.tw/handle/201000000A/5203?mode=full",
+        "https://ccs.ncl.edu.tw/newsletter_77/1-5.pdf",
+        "https://ira.lib.polyu.edu.hk/handle/10397/4571"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "開寶九年冬十月癸丑，太祖崩，帝遂即皇帝位",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "督諸將發機石攻城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "盡徙餘民于新城，遣使督之，既出，即命縱火",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "帝督諸軍及契丹大戰于高梁河，敗績",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "帝作平晉詩，令從臣和",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "錢俶獻其兩浙諸州，凡得州十三、軍一、縣八十六、戶五十五萬六百八十、兵一十一萬五千三十六",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷004",
+      "quote": "開封尹",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7004"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "曹彬之師大敗于岐溝關",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "苦戰力盡，為所禽，守節而死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "降潘美為檢校太保",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "置審官院、考課院",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "王小波聚徒為寇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "服濣濯之衣，毀奇巧之器，却女樂之獻",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷005",
+      "quote": "講學以求多聞，不罪狂悖以勸諫士，哀矜惻怛，勤以自勵，日晏忘食",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7005"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷155",
+      "quote": "朕欲博求俊彥於科場中，非敢望拔十得五，止得一二，亦可爲致治之具矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7155"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷155",
+      "quote": "得呂蒙正以下一百九人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7155"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷155",
+      "quote": "覆試諸科，得二百人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7155"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷155",
+      "quote": "一百八十餘人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7155"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "汝百歲後當傳位於汝弟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷242",
+      "quote": "藏之金匱",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7242"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "久不行太原之賞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "待汝自為之，賞未晚也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "德昭退而自刎。上聞驚悔，往抱其屍，大哭曰：「癡兒何至此邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "廷美不悔過，怨望",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "因憂悸成疾而卒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "嗚咽流涕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷244",
+      "quote": "廷美自少剛愎，長益兇惡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7244"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷256",
+      "quote": "將有陰謀竊發",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷256",
+      "quote": "自陳預聞太祖、昭憲皇太后顧託之事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷256",
+      "quote": "太宗感悟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷272",
+      "quote": "陳家谷口",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7272"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷272",
+      "quote": "上遇我厚，期討賊捍邊以報，而反為奸臣所迫，致王師敗績，何面目求活耶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7272"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷272",
+      "quote": "乃不食，三日死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7272"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷272",
+      "quote": "帝聞之，痛惜甚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7272"
+    },
+    {
+      "book": "liaoshi",
+      "title": "遼史/卷9",
+      "quote": "休哥、斜軫橫擊，大敗之。宋主僅以身免，至涿州，竊乘驢車遁去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B79"
+    },
+    {
+      "book": "liaoshi",
+      "title": "遼史/卷83",
+      "quote": "追殺三十餘里，斬首萬餘級",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B783"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; all linked citations are primary texts verified in the repository archive.",
+    "「燭影斧聲」出自文瑩《湘山野錄》、時距七八十年，此點依 WebSearch 摘要與通行史學常識陳述，未附連結；《湘山野錄》《續資治通鑑長編》不在本機原典庫。"
+  ]
+}
