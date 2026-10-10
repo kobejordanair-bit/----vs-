@@ -1,0 +1,25 @@
+{
+  "format": "dynasty-batch50-claude-combined",
+  "schemaVersion": 1,
+  "slug": "28",
+  "recordId": "general_孫臏_306210427",
+  "provider": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T06:20:21.968Z",
+  "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+  "packetSha256": "c8a59b65a12c25ba4bc6305c7dee5e7d655747f182c97a6bd8a34652179faffb",
+  "combinedFile": "analysis-batch-50/drafts/28.combined.raw.md",
+  "combinedSha256": "a180c2ab29e009f687fa4f0330afab34569cad3891840b395bebd06c47ba3524",
+  "searchLogSha256": "68408907c9ed07d3d66793d1ec145b02de9a4caeb796a71c85d3637d6dbe676a",
+  "parts": {
+    "analysisStats": {
+      "rawFile": "analysis-batch-50/drafts/28.analysisStats.raw.md",
+      "rawSha256": "e3e4a04534d251189c9e5078815e3b4e87790041f73b7f033374dcf33c4599eb"
+    },
+    "soulEssence": {
+      "rawFile": "analysis-batch-50/drafts/28.soulEssence.raw.md",
+      "rawSha256": "64e6619b087502c513bf1119dcf33376a0d0e9f3869af3d8350e58dfdddb371e"
+    }
+  },
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."
+}

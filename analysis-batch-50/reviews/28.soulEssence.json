@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_孫臏_306210427",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:20:22.009Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "64e6619b087502c513bf1119dcf33376a0d0e9f3869af3d8350e58dfdddb371e",
+  "rawResponseSha256": "64e6619b087502c513bf1119dcf33376a0d0e9f3869af3d8350e58dfdddb371e",
+  "sourcePackageSha256": "a39541d56eb530b3fa924c0d13adaf250f6156b92d0716df58d3173fd7c50223",
+  "searchLogSha256": "68408907c9ed07d3d66793d1ec145b02de9a4caeb796a71c85d3637d6dbe676a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065",
+      "title": "史記·卷六十五 孫子吳起列傳 第五",
+      "locator": "本機固定修訂 oldid=2567048 全文比對（textSha256 已驗）：孫武既死，後百餘歲有孫臏。臏生阿鄄之閒，臏亦孫武之後世子孫也、自以為能不及孫臏、則以法刑斷其兩足而黥之，欲隱勿見、孫臏以刑徒陰見，說齊使。齊使以為奇，竊載與之齊。齊將田忌善而客待之、孫子見其馬足不甚相遠，馬有上、中、下、輩、今以君之下駟與彼上駟，取君上駟與彼中駟，取君中駟與彼下駟…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7046",
+      "title": "史記·巻四十六 田敬仲完世家 第十六",
+      "locator": "本機固定修訂 oldid=2560838 全文比對（textSha256 已驗）：夫韓、魏之兵未獘而救之，是吾代韓受魏之兵，顧反聽命於韓也、吾因深結韓之親而晩承魏之獘，則可重利而得尊名也、乃陰告韓之使者而遣之、韓因恃齊，五戰不勝，而東委國於齊、使田忌、田嬰將、十月，邯鄲拔，齊因起兵撃魏，大敗之桂陵",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "批亢擣虛、救韓之論、賽馬觀察；沉默標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "受刑後說齊使與賽馬。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "圍魏救趙與晚承魏獘；心理推論標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "陰告韓使與邯鄲拔。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "龐涓之仇與大樹題字（標加工可能）、田忌知遇。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "賽馬參照系；外交後果標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "馬陵理性戰術與私人題字。"
+    }
+  ],
+  "materialIssues": []
+}
