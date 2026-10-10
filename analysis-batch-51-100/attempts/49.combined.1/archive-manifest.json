@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "49",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：魅力尺度與凍結校準（商鞅25、秦檜60、魏忠賢80、汪精衛95）不一致，逐人改量信任／追隨／聯盟／跨群體感召；溫體仁魅力維持28、補商鞅對照",
+  "files": {
+    "49.analysis.md": "4122794f555ae652ffe5f811598890a3c0fb3e9cb3801d1314cc7c8f65cdd603",
+    "49.analysisStats.response.md": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+    "49.analysisStats.capture.json": "4740c76ae599723bbfe083a4a6487a6c9e91d1483642bdd92f486f0af34896cb",
+    "49.stats.json": "c983e50e411a1612271cbcc8e5dccf6208d0aa4a1ad26196d5dc32b681a54547",
+    "49.soulEssence.capture.json": "6e572b5716fe9e19b7c39db39bd71b5499deacd6aefe8af77ba844fd386d7568",
+    "49.combined.search-log.json": "f3d5305b70d56db923a3274a81dbf8c45835f3b2ec536a01191a7dba9e360a45",
+    "49.combined.raw.md": "49163d7a5b95f4339b1051c30667e518ec604721f2208a8a7e627f9e9dd4a49c",
+    "49.analysisStats.raw.md": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+    "49.combined.capture.json": "6bb2513cb802c1db854194bda97d846307855c2766f875a23f5b891700d78ef6",
+    "49.statsAnalysis.md": "9d33ad6ce52767b331394c63c074975aaaaccbac10fd90b4e642bba9228c6f9a",
+    "49.soulEssence.md": "efa135c076dc77d9ed7ac953db22da5140bbc4f6a4362be68fda9cf8f09f5811",
+    "49.soulEssence.response.md": "2947d8b268394b5adf336187095f5f7bccf03ff080af8a2f22b60da83f501f9b",
+    "49.soulEssence.raw.md": "2947d8b268394b5adf336187095f5f7bccf03ff080af8a2f22b60da83f501f9b",
+    "49.soulEssence.json": "4c84f28ab08d7b235e205cdcfa1d718be18cd50508eb87c1c31e1ef511a347fc",
+    "49.analysisStats.json": "fa3299c6ee13badf8fb14307e35ac7f2a9ee9235cd6be0d5ae0d2258192bfa94",
+    "results.49-49.v1.json": "c5acff7144a6274252584626fd45219164f12f7d47add52ad7e28d2a8708aec9",
+    "spec.49.json": "65b043ff164b2eb7d903b9f600aedadbba02a160a1499636bdda636efa08a0b5",
+    "spec.49.quotes.json": "d15973961e192ff3210006ba71b0a14844b9755def9c73ddc7f3ed38639e2506"
+  }
+}

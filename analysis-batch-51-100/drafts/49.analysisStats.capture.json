@@ -6,7 +6,7 @@
   "slug": "49",
   "task": "analysisStats",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T16:29:42.249Z",
+  "generatedAt": "2026-10-10T17:51:41.364Z",
   "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "combinedPacketSha256": "c1b650bcc57fa8db8e09168b658a8d56c003f74179030b42bbc8e8e5774b9a7c",
@@ -21,13 +21,13 @@
   "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
   "originalPromptVerified": true,
   "rawResponseFile": "analysis-batch-51-100/drafts/49.analysisStats.raw.md",
-  "rawResponseSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+  "rawResponseSha256": "c103ca4eeffb5fadfce3cc6a49767239b09329e93c2cbaefa203a17753ec61f4",
   "responseFile": "analysis-batch-51-100/drafts/49.analysisStats.response.md",
-  "responseSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+  "responseSha256": "c103ca4eeffb5fadfce3cc6a49767239b09329e93c2cbaefa203a17753ec61f4",
   "fieldsHashes": {
     "analysis": "579a05143ffbd9a9fb23ac01dce5096279e5926d8710552dc4aa85466907a849",
     "stats": "d6d6012365d7e9bb8cecf2b9b9668e9c39763293f9214cefca2410839de3f1cf",
-    "statsAnalysis": "451a4d110a15c334c548463d97ac6d9147021a0032ce1f62e7f28a90b2d1439a"
+    "statsAnalysis": "369f021ad177e9bab617ff7086a4c4216d4eebf824ecc78d8556d3da1d30801a"
   },
   "webSearchPerformed": true,
   "searchLog": {

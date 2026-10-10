@@ -4,14 +4,14 @@
   "recordId": "minister_李林甫_1994836136",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T12:34:50.744Z",
+  "reviewedAt": "2026-10-10T17:51:19.497Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0",
-  "rawResponseSha256": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0",
+  "manuscriptSha256": "07fe69b80a763caefb33dba2e07c846de844daa62ee2e266c2bdab6750c55ba0",
+  "rawResponseSha256": "07fe69b80a763caefb33dba2e07c846de844daa62ee2e266c2bdab6750c55ba0",
   "sourcePackageSha256": "4263021faa76025d49cf1a08b77b5ba4c6e4e41eef50d1db9e3260b0a221f813",
   "searchLogSha256": "1a4a1528e4e27218b7fe82a0d2498f1d29ba30cd29f1322bd32ef8395d777853",
   "checkedSources": [
@@ -41,7 +41,7 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：秉鈞二十年、恆度格令；武力：無軍事、重扃復壁；智謀：預知上意、家事何須謀及於人、寒族蕃人之說；政治：未有其比與三庶人；魅力：朝野側目、天下以為冤。對照秦檜、魏忠賢、霍光、李斯。"
+      "detail": "統率：秉鈞二十年、恆度格令；武力：無軍事、重扃復壁；智謀：預知上意、家事何須謀及於人、寒族蕃人之說；政治：未有其比與三庶人；魅力：朝野側目、天下以為冤。對照秦檜、魏忠賢、霍光、李斯。［修訂1］依 Codex 審查統一兩批魅力尺度：改量取得信任、建立追隨、維持聯盟、跨群體感召，不量道德好感，並以凍結校準之商鞅25、秦檜60、魏忠賢80、汪精衛95為錨。李林甫 35→52：有玄宗長期信任與依附網絡，遠高於商鞅25；網絡只靠恩寵與恐懼、無秦檜的和議主張，低於秦檜60。其餘四項不調。"
     },
     {
       "id": "causality",
@@ -55,6 +55,6 @@
     10,
     93,
     90,
-    35
+    52
   ]
 }

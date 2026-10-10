@@ -5,16 +5,16 @@
   "recordId": "minister_嚴嵩_2003876879",
   "provider": "Claude Code (Anthropic)",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T16:27:24.564Z",
+  "generatedAt": "2026-10-10T17:51:34.541Z",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "packetSha256": "c01d50bb635815bdd895dd45b62be15e2f62078823a98cf5cf56b1685481d169",
   "combinedFile": "analysis-batch-51-100/drafts/48.combined.raw.md",
-  "combinedSha256": "f52b4d9f3641cf27e91068b14d6ca5c9a73c51e027a6719870372ba506702193",
+  "combinedSha256": "51aaaa30cec0a8ac249b907ea6fc3a7ad8326ef1a23539484f4cd109b665397f",
   "searchLogSha256": "a8cbda50b3ff2b7f8733c7238db75b0f6cab8b4d63b2b93a7c9cd75899511ffa",
   "parts": {
     "analysisStats": {
       "rawFile": "analysis-batch-51-100/drafts/48.analysisStats.raw.md",
-      "rawSha256": "ea65e0c5767f06feb131b79a8e131981394d8fed8ce90b6564f9d9d6eb6bf75c"
+      "rawSha256": "14d14099cc35376f00e91a65b180dedadd2bf78d2bfcee0cc39753b851a0a278"
     },
     "soulEssence": {
       "rawFile": "analysis-batch-51-100/drafts/48.soulEssence.raw.md",

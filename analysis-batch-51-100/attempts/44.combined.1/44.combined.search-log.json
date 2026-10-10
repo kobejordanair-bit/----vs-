@@ -1,0 +1,493 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_和珅_2003865491",
+  "packetSha256": "a0e7ce846da7cca10ddeb022c72e30782e3b74b735041165336efa2d30c902cf",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "和珅 議罪銀 乾隆晚年 吏治 貪腐 研究 論文 嘉慶 抄家",
+      "returnedUrls": [
+        "https://www.setn.com/klist/47131",
+        "https://www.163.com/dy/article/L3L3GGCB0553TEUI.html",
+        "https://www.ntdtv.com/b5/2018/02/11/a1363196.html",
+        "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/animation/MC_3_R.pdf",
+        "https://www.thepaper.cn/newsDetail_forward_6470904",
+        "https://www.aisixiang.com/data/65054.html",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0059024"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "慶成每至一省輒掣肘，待挪移既足，然後啟榷，迄無虧絀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "以妄言坐黜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "納賄者則為周旋，或故緩其事，以俟上怒之霽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "少貧無藉，為文生員",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "授三等侍衛，挑補黏桿處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "授戶部侍郎，命為軍機大臣，兼內務府大臣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "值高宗倦勤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "雲南吏治廢弛，府州縣多虧帑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "各省庫藏空虛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "川、楚匪亂，因激變而起，將帥多倚和珅，糜餉奢侈，久無功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "寵任冠朝列矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "面陳雲南鹽務、錢法、邊事，多稱上意",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "號才臣，帝所倚任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "鞫其僕，得侍堯婪索狀，論重闢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "嫌於事出所按劾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "充四庫全書館正總裁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "國史館正總裁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "清字經館總裁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "專司慶典事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "縱容家人婪索",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "請禁囤積，逾五十石者交廠減糶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "商民以為不便",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "委過諸將不聽調遣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "所指揮，輒應如響",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "匿圖欽保死事不上聞，赴師遲延",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "命和珅速回京",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "借市銀充抵狀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "預使劉全毀屋更造",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "年幼，不勝方面，斥和珅濫保",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "於蒙古重獄置未奏，鐫級留任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "於軍機寄諭獨署己銜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "令奏事者俱副本送軍機處；呈進方物，必先關白，擅自準駁，遇不全納者悉入私家",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "各路軍報任意壓擱，有心欺蔽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "夾牆藏金二萬六千馀兩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "地窖埋銀三百馀萬兩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "步軍統領巡捕營在和珅私宅供役者千馀人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "令各部以年老平庸之員保送御史",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "柄政久，善伺高宗意，因以弄竊作威福",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "不附己者，伺隙激上怒陷之；納賄者則為周旋，或故緩其事，以俟上怒之霽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "大僚恃為奧援",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "非天子不考文",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "使人撰考文提要舉正以攻之，冒為己作進上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "私使人磨碑字，凡從古者盡改之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "密取仁宗賀詩白高宗，指為市恩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "凡懷不軌者，必收人心，和珅則滿、漢幾無歸附者，即使中懷不軌，誰肯從之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "發之速，是義之盡；收之速，是仁之至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "於燈下懸掛，臨鏡自語",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "奏事者俱副本送軍機處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "每至一省輒掣肘，待挪移既足",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "在軍事不歸一",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "將帥多倚和珅，糜餉奢侈，久無功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "挑補黏桿處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "匿圖欽保死事不上聞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "鞫其僕，得侍堯婪索狀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "往勘各省庫",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "自在潛邸知其奸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "給事中王念孫首劾其不法狀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "大僚恃為奧援，剝削其下以供所欲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "滿、漢幾無歸附者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "諸劾和珅者比於操、莽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "請即命壯圖往勘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "率對不以實",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "故緩其事，以俟上怒之霽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "呈進方物，必先關白，擅自準駁，遇不全納者悉入私家",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "珍珠手串二百馀，多於大內數倍，大珠大於御用冠頂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "設享殿，置隧道，居民稱和陵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "家產至二十馀萬，並有大珍珠手串",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "仁宗自在潛邸知其奸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "先遞如意，以擁戴自居",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "巧彌縫，不悛益恣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "撤出太廟，毀專祠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "毫無憂慼，談笑如常",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "以宣遺詔日傳旨逮治",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "凡為和珅薦舉及奔走其門者，悉不深究",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "有言和珅家產尚有隱匿者，亦斥不問",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "挪移既足，然後啟榷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷319",
+      "quote": "一獄吏已辦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《清史稿》卷319 全文比對。",
+    "議罪銀與抄家總額各說分歧且出自通俗文章，正文未採；軍機處檔案與《清仁宗實錄》未比對。"
+  ]
+}

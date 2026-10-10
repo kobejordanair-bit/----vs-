@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "43",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：魅力尺度與凍結校準（商鞅25、秦檜60、魏忠賢80、汪精衛95）不一致，逐人改量信任／追隨／聯盟／跨群體感召；李林甫魅力 35→52",
+  "files": {
+    "43.analysisStats.capture.json": "8fb08a91209c0a09981bc8c6eabd1c78e4d7cc574f9da3c6829a7a6d1a3a23a8",
+    "43.soulEssence.response.md": "9fa668a3f260e5ee7c2bc1d78f8babb9d3b0d1cb4c8de01314239578688f5059",
+    "43.analysisStats.raw.md": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0",
+    "43.analysis.md": "b5bbdc738f25fea48f0db983ec45ea6d14e78ba8cb214398df30c34ac22bc1ea",
+    "43.soulEssence.raw.md": "9fa668a3f260e5ee7c2bc1d78f8babb9d3b0d1cb4c8de01314239578688f5059",
+    "43.combined.capture.json": "804ca38bb15c714d6d31b5fbd289122993beaf31d75b8f6394a615ccf173c67f",
+    "43.soulEssence.md": "554a6177d910f540454d2cafef106e91e46ad6a029f45c94a1b4950d9b7ebb2e",
+    "43.analysisStats.response.md": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0",
+    "43.combined.raw.md": "c85afe5b7acd6ce6d63be0adda80b3d680f772a3d46d0520e1b6b63e5b757cf0",
+    "43.stats.json": "bb15156e695c995485b3f9c9dbe8fe17b695818eaf0322ea4c96a38995bb4ff1",
+    "43.statsAnalysis.md": "86cda09de4ae2af4d2615e096382e532d992db061f513de6a5a2f2a6427e7246",
+    "43.soulEssence.capture.json": "9a63fc23d6973c542e1dc69a9b0ca80c1becd61065a1e7842cda660a8b923573",
+    "43.combined.search-log.json": "1a4a1528e4e27218b7fe82a0d2498f1d29ba30cd29f1322bd32ef8395d777853",
+    "43.soulEssence.json": "6d6f0ed1f0a9e40ac751d6a44a1355b90cb9dbd6449dd3768b8f98eb6333e319",
+    "43.analysisStats.json": "99f816600002597ce1c52f91122a694681710222b9b9d8be21ef64d669a7a50f",
+    "results.43-43.v1.json": "a6343524cc2ed7174c817116816cb0916aee76ce1220faf6885a117867b7d792",
+    "spec.43.json": "d4564af7fd269580d06ccf7ffa65dc347d32227664d5c4cac003f2e0688db4be",
+    "spec.43.quotes.json": "bb111b44a82c353bb63beb8c80fc26e617dc48b9ab5ef063d0eecfbc07d4d59a"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format": "dynasty-batch50-claude-combined",
+  "schemaVersion": 1,
+  "slug": "43",
+  "recordId": "minister_李林甫_1994836136",
+  "provider": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T12:34:50.671Z",
+  "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+  "packetSha256": "e6e66cb46164b0000e2f6f67c5f06483838b26af82a257cf04a5c9750f38d863",
+  "combinedFile": "analysis-batch-51-100/drafts/43.combined.raw.md",
+  "combinedSha256": "c85afe5b7acd6ce6d63be0adda80b3d680f772a3d46d0520e1b6b63e5b757cf0",
+  "searchLogSha256": "1a4a1528e4e27218b7fe82a0d2498f1d29ba30cd29f1322bd32ef8395d777853",
+  "parts": {
+    "analysisStats": {
+      "rawFile": "analysis-batch-51-100/drafts/43.analysisStats.raw.md",
+      "rawSha256": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0"
+    },
+    "soulEssence": {
+      "rawFile": "analysis-batch-51-100/drafts/43.soulEssence.raw.md",
+      "rawSha256": "9fa668a3f260e5ee7c2bc1d78f8babb9d3b0d1cb4c8de01314239578688f5059"
+    }
+  },
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."
+}

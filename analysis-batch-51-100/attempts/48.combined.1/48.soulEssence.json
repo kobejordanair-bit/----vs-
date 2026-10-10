@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_嚴嵩_2003876879",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:27:24.760Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "5ddbf18711fbc8395c914b3a4cca2953df4e32980674424c4295528c6d10916b",
+  "rawResponseSha256": "5ddbf18711fbc8395c914b3a4cca2953df4e32980674424c4295528c6d10916b",
+  "sourcePackageSha256": "7daa725335a3052fae4d9222ac2723831c104e8d5c4b41814c9a94ba7fe0b7e5",
+  "searchLogSha256": "a8cbda50b3ff2b7f8733c7238db75b0f6cab8b4d63b2b93a7c9cd75899511ffa",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308",
+      "title": "明史·卷三百八 列傳第一百九十六",
+      "locator": "本機固定修訂 oldid=2594954 全文比對（textSha256 已驗）：移疾歸，讀書鈐山十年，為詩古文辭，頗著清譽、言去，醮祀青詞，非嵩無當帝意者、語多不可曉，惟世蕃一覽了然、受詔多不能答、所進青詞，又多假手他人不能工，經此積失帝歡、長身戍削，疏眉目，大音聲…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：權力是解讀皇帝的權力，失去解讀能力即失去權力；場景為鈐山十年清譽、香葉冠籠輕紗、惟世蕃一覽了然、青詞假手他人不能工。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "眼淚亦是戰術、兒子之才誤為己才、文才換權而被歷史失聲等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以先稱其善與百華仙酒、長跪泣謝與祈鶴文、未嘗洗沐與左相國達、以質東樓與天下才惟三、羅拜徐階與乞移便地、殺離其勢與南城離宮、青詞工拙為事件。"
+    }
+  ],
+  "materialIssues": []
+}

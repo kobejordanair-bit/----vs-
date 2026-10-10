@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_和珅_2003865491",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:37:06.834Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "80a72c97fea3e89124820bab236f33a1ba8fe1d5b0864c005e92b7e6ff5ee246",
+  "rawResponseSha256": "80a72c97fea3e89124820bab236f33a1ba8fe1d5b0864c005e92b7e6ff5ee246",
+  "sourcePackageSha256": "850bcbadf61811dd9bd5d3c8c175940a58e0da1cf321286039920e1c48f9f3c2",
+  "searchLogSha256": "41e7cb9c8004ee2b50fba548b64681cb9dc0e82c525ba668d65f10f5e66ab76a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319",
+      "title": "清史稿·卷三百十九 列傳一百六",
+      "locator": "本機固定修訂 oldid=1761183 全文比對（textSha256 已驗）：慶成每至一省輒掣肘，待挪移既足，然後啟榷，迄無虧絀、以妄言坐黜、納賄者則為周旋，或故緩其事，以俟上怒之霽、少貧無藉，為文生員、授三等侍衛，挑補黏桿處、授戶部侍郎，命為軍機大臣，兼內務府大臣…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "鈕祜祿氏正紅旗、少貧文生員、乾隆三十四年襲職、四十年直乾清門、四十一年軍機大臣、四十五年按李侍堯、四十六年甘肅督師被召回、四十七年國泰案、五十一年曹錫寶案授文華殿大學士、五十五年尹壯圖案、五十六年石經案、嘉慶三年晉公爵、四年正月乾隆崩後二十大罪賜自盡，皆依清史稿卷319 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：兼職軍機內務府步軍統領、萬壽慶典；武力：侍衛出身、甘肅推諉；智謀：李侍堯案、尹壯圖查庫、毀屋更造、朱珪賀詩；政治：寵任冠朝列與二十大罪；魅力：大僚恃為奧援與滿漢幾無歸附。對照魏忠賢、秦檜、張廷玉。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "尹壯圖言庫空→和珅請命往勘→慶成掣肘待挪移足→迄無虧絀→壯圖坐黜；曹錫寶劾劉全→預毀屋更造→錫寶獲譴；阿桂卒→獨署己銜；乾隆崩→王念孫首劾→宣遺詔日逮治→二十大罪→賜自盡。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    72,
+    30,
+    88,
+    90,
+    38
+  ]
+}

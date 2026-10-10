@@ -4,14 +4,14 @@
   "recordId": "minister_溫體仁_1997044414",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T16:29:42.455Z",
+  "reviewedAt": "2026-10-10T17:51:41.543Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
-  "rawResponseSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+  "manuscriptSha256": "c103ca4eeffb5fadfce3cc6a49767239b09329e93c2cbaefa203a17753ec61f4",
+  "rawResponseSha256": "c103ca4eeffb5fadfce3cc6a49767239b09329e93c2cbaefa203a17753ec61f4",
   "sourcePackageSha256": "b10996e66d122d6e9f2941535f11ca41b2b6f3f766aab561d66c3e82094cb517",
   "searchLogSha256": "f3d5305b70d56db923a3274a81dbf8c45835f3b2ec536a01191a7dba9e360a45",
   "checkedSources": [
@@ -33,7 +33,7 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：腹心與部議論罷、未嘗建一策；武力：無；智謀：孤立之說、如允儒言乃真黨也、陰令人發端；政治：居位八年至削贈諡；魅力：大臣無助體仁者。對照秦檜、魏忠賢、張廷玉。"
+      "detail": "統率：腹心與部議論罷、未嘗建一策；武力：無；智謀：孤立之說、如允儒言乃真黨也、陰令人發端；政治：居位八年至削贈諡；魅力：大臣無助體仁者。對照秦檜、魏忠賢、張廷玉。［修訂1］依 Codex 審查統一兩批魅力尺度：改量取得信任、建立追隨、維持聯盟、跨群體感召，不量道德好感，並以凍結校準之商鞅25、秦檜60、魏忠賢80、汪精衛95為錨。溫體仁 維持28：處境同商鞅25（只有君主信任、無追隨者），略高於商鞅因長期居位；低於秦檜60、魏忠賢80。其餘四項不調。"
     },
     {
       "id": "causality",

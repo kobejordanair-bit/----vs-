@@ -5,16 +5,16 @@
   "recordId": "minister_溫體仁_1997044414",
   "provider": "Claude Code (Anthropic)",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T16:29:42.249Z",
+  "generatedAt": "2026-10-10T17:51:41.364Z",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "packetSha256": "c1b650bcc57fa8db8e09168b658a8d56c003f74179030b42bbc8e8e5774b9a7c",
   "combinedFile": "analysis-batch-51-100/drafts/49.combined.raw.md",
-  "combinedSha256": "49163d7a5b95f4339b1051c30667e518ec604721f2208a8a7e627f9e9dd4a49c",
+  "combinedSha256": "8d3fdb5744c1c718a3aa6213a8942f572e182852077db793dc0f3dc713ab5cd1",
   "searchLogSha256": "f3d5305b70d56db923a3274a81dbf8c45835f3b2ec536a01191a7dba9e360a45",
   "parts": {
     "analysisStats": {
       "rawFile": "analysis-batch-51-100/drafts/49.analysisStats.raw.md",
-      "rawSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b"
+      "rawSha256": "c103ca4eeffb5fadfce3cc6a49767239b09329e93c2cbaefa203a17753ec61f4"
     },
     "soulEssence": {
       "rawFile": "analysis-batch-51-100/drafts/49.soulEssence.raw.md",

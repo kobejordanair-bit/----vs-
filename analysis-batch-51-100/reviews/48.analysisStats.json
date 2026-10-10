@@ -4,14 +4,14 @@
   "recordId": "minister_嚴嵩_2003876879",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T16:27:24.758Z",
+  "reviewedAt": "2026-10-10T17:51:34.737Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "ea65e0c5767f06feb131b79a8e131981394d8fed8ce90b6564f9d9d6eb6bf75c",
-  "rawResponseSha256": "ea65e0c5767f06feb131b79a8e131981394d8fed8ce90b6564f9d9d6eb6bf75c",
+  "manuscriptSha256": "14d14099cc35376f00e91a65b180dedadd2bf78d2bfcee0cc39753b851a0a278",
+  "rawResponseSha256": "14d14099cc35376f00e91a65b180dedadd2bf78d2bfcee0cc39753b851a0a278",
   "sourcePackageSha256": "7daa725335a3052fae4d9222ac2723831c104e8d5c4b41814c9a94ba7fe0b7e5",
   "searchLogSha256": "a8cbda50b3ff2b7f8733c7238db75b0f6cab8b4d63b2b93a7c9cd75899511ffa",
   "checkedSources": [
@@ -41,7 +41,7 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：專直西苑政歸一人；武力：無；智謀：揣帝指與先稱其善之術；政治：竊政二十年至被徐階傾；魅力：清譽與奸臣之目。對照秦檜、魏忠賢、張廷玉。"
+      "detail": "統率：專直西苑政歸一人；武力：無；智謀：揣帝指與先稱其善之術；政治：竊政二十年至被徐階傾；魅力：清譽與奸臣之目。對照秦檜、魏忠賢、張廷玉。［修訂1］依 Codex 審查統一兩批魅力尺度：改量取得信任、建立追隨、維持聯盟、跨群體感召，不量道德好感，並以凍結校準之商鞅25、秦檜60、魏忠賢80、汪精衛95為錨。嚴嵩 32→50：早年清譽與士大夫輻輳屬跨群體吸引，高於商鞅25、溫體仁28；倒台無人相助，低於秦檜60。其餘四項不調。"
     },
     {
       "id": "causality",
@@ -55,6 +55,6 @@
     10,
     84,
     88,
-    32
+    50
   ]
 }
