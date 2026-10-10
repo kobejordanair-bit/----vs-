@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_左宗棠_902922424",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:31:28.152Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "26f66ebb266a6e2a7a4ebdb2145a9f705a26558cb1effa9a5b347874ca794d63",
+  "rawResponseSha256": "26f66ebb266a6e2a7a4ebdb2145a9f705a26558cb1effa9a5b347874ca794d63",
+  "sourcePackageSha256": "84672ce9850e01a3a2c154635cf506ebfcf3cee9ff9f36cc5a8f2457c3a99da6",
+  "searchLogSha256": "3bfc0043cd8e226c1c2ab2a4fce90ee6ec8d481c946c93115bbba651b1bd683a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412",
+      "title": "清史稿·卷四百十二",
+      "locator": "本機固定修訂 oldid=8736516 全文比對（textSha256 已驗）：遂絕意仕進，究心輿地、兵法、嘗以諸葛亮自比，人目其狂也、宗棠募五千人，參用珍法，號曰「楚軍」、通使結援英、俄，購兵械自備、宜徇英人議，許帕夏自立為國稱籓，罷西征，專力海防。鴻章言之尤力、無益海防而挫國威，且長亂。此必不可…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://journal.ctbu.edu.cn/zr/cqgsZr/article/abstract/200705329",
+      "title": "《重慶工商大學學報》2007年李揚穎論文（胡光墉與左宗棠西征）",
+      "locator": "WebSearch 結果摘要：從籌運餉銀、購運軍火、賑災西北等方面探討胡光墉在西征中的作用",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "左宗棠，晚清將領；保留原 A+ 評級與 deepAnalysis（將領維度，與名臣 S- 分離）。"
+    },
+    {
+      "id": "haifang",
+      "passed": true,
+      "detail": "海防塞防之爭、文祥支持，清史稿原文核對。"
+    },
+    {
+      "id": "logistics",
+      "passed": true,
+      "detail": "節兵裕餉、借外債五百萬、畫兵農為二、饋運饒給，原文核對；胡光墉依學報摘要。"
+    },
+    {
+      "id": "frontline",
+      "passed": true,
+      "detail": "劉錦棠達坂城、帕夏飲藥死，原文核對。"
+    },
+    {
+      "id": "violence",
+      "passed": true,
+      "detail": "董志原三萬、誅馬化隆、磔馬文祿、濫殺彈劾，原文核對並註明官方立場。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[94,45,93,90,85] 對照孟珙[96,85,94,80,95]、白崇禧[93,60,96,75,82]、伍子胥[93,75,94,75,92]、粟裕[98,55,97,50,88]、諸葛亮[92,25,99,100,96]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    94,
+    45,
+    93,
+    90,
+    85
+  ]
+}

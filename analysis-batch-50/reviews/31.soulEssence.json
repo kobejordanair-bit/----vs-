@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_左宗棠_902922424",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:31:28.158Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "11513f31cfd4bf2c2419ec92a34c0f8c6003c416795aa5e1bc648a0c662e7795",
+  "rawResponseSha256": "11513f31cfd4bf2c2419ec92a34c0f8c6003c416795aa5e1bc648a0c662e7795",
+  "sourcePackageSha256": "84672ce9850e01a3a2c154635cf506ebfcf3cee9ff9f36cc5a8f2457c3a99da6",
+  "searchLogSha256": "3bfc0043cd8e226c1c2ab2a4fce90ee6ec8d481c946c93115bbba651b1bd683a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412",
+      "title": "清史稿·卷四百十二",
+      "locator": "本機固定修訂 oldid=8736516 全文比對（textSha256 已驗）：遂絕意仕進，究心輿地、兵法、嘗以諸葛亮自比，人目其狂也、宗棠募五千人，參用珍法，號曰「楚軍」、通使結援英、俄，購兵械自備、宜徇英人議，許帕夏自立為國稱籓，罷西征，專力海防。鴻章言之尤力、無益海防而挫國威，且長亂。此必不可…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "地緣推演與浙江奏語；壓制同僚標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "浙江與西征相隔十餘年；抬棺意涵標[詮釋]。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "諸葛亮自比；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "戒褊衷、獨與抗行、同列厭苦。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "不顧家、廉勤；臨終心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "諸葛亮參照與陝甘殺戮之落差標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "海防辯論與入值軍機；對立加深標[推斷]。"
+    }
+  ],
+  "materialIssues": []
+}

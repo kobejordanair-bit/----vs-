@@ -1,0 +1,250 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_左宗棠_902922424",
+  "packetSha256": "be22d42d268393e016dbd2f07092f306532e73e181810d39fbf01a9339cfa1ed",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "左宗棠 西征 借洋款 胡雪巖 海防塞防之爭 1875 研究 收復新疆 1878 劉錦棠 學術",
+      "returnedUrls": [
+        "https://www.163.com/dy/article/L3LOO6V40517HHN8.html",
+        "https://lsx.jnu.edu.cn/_upload/article/files/21/78/755da03b44ddbc6f27223f6bd3a4/a0149ff9-6051-439c-99be-5ca6292ba87e.pdf",
+        "https://journal.ctbu.edu.cn/zr/cqgsZr/article/abstract/200705329",
+        "https://www.chinatimes.com/newspapers/20210105000105-260306"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "遂絕意仕進，究心輿地、兵法",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "嘗以諸葛亮自比，人目其狂也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "宗棠募五千人，參用珍法，號曰「楚軍」",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "通使結援英、俄，購兵械自備",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "宜徇英人議，許帕夏自立為國稱籓，罷西征，專力海防。鴻章言之尤力",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "無益海防而挫國威，且長亂。此必不可",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "軍機大臣文祥獨善宗棠議，遂決策出塞，不罷兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "宗棠用兵善審機，不常其方略。籌西事，尤以節兵裕餉為本謀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "為撥款五百萬，敕自借外國債五百萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "宜畫兵農為二，簡精壯為兵，散願弱使屯墾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "出塞凡二十月，而新疆南北城盡复者，饋運饒給之力也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "錦棠攻克達坂城，悉釋所擒纏回，縱之歸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "帕夏飲藥死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "大軍所至，勿淫掠，勿殘殺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "回死者至三萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "詣軍門乞降，誅之，夷其城堡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "窮蹙出降，磔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "綏遠城將軍至劾松山濫殺激變",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "德榜會諸軍大捷於諒山",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "卒於福州，年七十三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "為人多智略，內行甚篤，剛峻自天性。穆宗嘗戒其褊衷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "宗棠獨與抗行，不少屈",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "好自矜伐，故出其門者，成德達材不及國籓之盛雲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "同列頗厭苦之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "海禁開，非製備船械不能圖自強，乃創船廠馬尾山下，薦起沈葆楨主其事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "不西為英並，即北折而入俄耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "行軍之法，必避長圍，防後路",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "糧盡援絕之勢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "左公不顧家",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "廉不言貧，勤不言勞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "待將士以誠信相感",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "左侯至，樓即毀矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "自請出屯哈密，規复伊犁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "宗棠輿櫬發肅州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "以學問自斂抑，議外交常持和節",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "鋒穎凜凜向敵矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷412",
+      "quote": "再引疾乞退",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 清史稿卷412 verified in the repository archive.",
+    "「緩進急戰」明示為後人概括而非清史稿原文；借款利息之批評、與李鴻章系統對立加深僅作一般敘述並標[推斷]，未附連結；陝甘傷亡依清官方史書，正文明示需與回民方面記憶對照。",
+    "伊犁條約內容與曾紀澤談判細節未展開。"
+  ]
+}
