@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李勣_306292748",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:58:17.121Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "88de2d376c4ff5ff629c1460095dce6cbdca927fd82fe5a4c0361a376a3b399e",
+  "rawResponseSha256": "88de2d376c4ff5ff629c1460095dce6cbdca927fd82fe5a4c0361a376a3b399e",
+  "sourcePackageSha256": "5b43290dc20e1b1057101a116328661cae1eb29014fd394f0435a6ea73da2c0d",
+  "searchLogSha256": "90a9f04c3ba3d370004af9c3c54c3340db3dc3ae3294f4177652d8485aac7881",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767",
+      "title": "舊唐書·卷六十七\n列傳第十七　李靖　李勣",
+      "locator": "本機固定修訂 oldid=2296327 全文比對（textSha256 已驗）：家多僮僕，積粟數千鐘、時年十七、魏公既歸大唐，今此人眾土地，魏公所有也。吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也、徐世勣感德推功，實純臣也、率輕騎三千追及延陀於青山，擊大破之，斬其名王一人，俘獲首領，虜五萬餘計、太宗乃自翦鬚，為其和藥。勣頓首見血，泣以懇謝…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201",
+      "title": "資治通鑑·卷二百一 唐紀十七",
+      "locator": "本機固定修訂 oldid=1502953 全文比對（textSha256 已驗）：以李勣為遼東道行軍大總管兼安撫大使、李勣拔平壤、進至鴨綠柵、追奔二百餘里，拔辰夷城",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093",
+      "title": "新唐書·新唐書卷九十三 列傳第十八",
+      "locator": "本機固定修訂 oldid=2175677 全文比對（textSha256 已驗）：此陛下家事，無須問外人、帝意遂定，而王后廢。詔勣、志寧奉冊立武氏、號慟，割股肉啗之曰：「生死永訣，此肉同歸於土、為收養其子焉、姊多疾，而勣且老，雖欲數進粥，尚幾何、其用兵多籌算，料敵應變，皆契事機…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "李勣（徐世勣），唐初名將；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "liaodong-dates",
+      "passed": true,
+      "detail": "舊唐書李勣傳將任命記於總章元年；通鑑卷201作乾封元年十二月己酉任遼東道行軍大總管、總章元年九月癸巳拔平壤。正文明示兩書差異並採通鑑，與05唐高宗稿之錯誤相同處已避免。"
+    },
+    {
+      "id": "tuigong",
+      "passed": true,
+      "detail": "推功獻地與賜姓、散金帛、推功於下，原文核對。"
+    },
+    {
+      "id": "empress-wu",
+      "passed": true,
+      "detail": "此陛下家事與奉冊立武氏，新唐書原文。"
+    },
+    {
+      "id": "aftermath",
+      "passed": true,
+      "detail": "臨終告弼、年七十六、徐敬業起兵後削官毀塚除屬籍，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[97,80,95,88,90] 對照李靖[100,75,100,85,92]、徐達[99,85,95,92,90]、韋孝寬[96,75,98,92,85]、郭子儀[98,85,92,95,100]、宇文泰[97,72,95,96,92]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    97,
+    80,
+    95,
+    88,
+    90
+  ]
+}

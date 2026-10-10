@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李勣_306292748",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:58:17.122Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2df9ecf4d4ae4e5332d5e204e582f5ede74a624ed82d14cbc108aaca5bfbd555",
+  "rawResponseSha256": "2df9ecf4d4ae4e5332d5e204e582f5ede74a624ed82d14cbc108aaca5bfbd555",
+  "sourcePackageSha256": "5b43290dc20e1b1057101a116328661cae1eb29014fd394f0435a6ea73da2c0d",
+  "searchLogSha256": "90a9f04c3ba3d370004af9c3c54c3340db3dc3ae3294f4177652d8485aac7881",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767",
+      "title": "舊唐書·卷六十七\n列傳第十七　李靖　李勣",
+      "locator": "本機固定修訂 oldid=2296327 全文比對（textSha256 已驗）：家多僮僕，積粟數千鐘、時年十七、魏公既歸大唐，今此人眾土地，魏公所有也。吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也、徐世勣感德推功，實純臣也、率輕騎三千追及延陀於青山，擊大破之，斬其名王一人，俘獲首領，虜五萬餘計、太宗乃自翦鬚，為其和藥。勣頓首見血，泣以懇謝…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093",
+      "title": "新唐書·新唐書卷九十三 列傳第十八",
+      "locator": "本機固定修訂 oldid=2175677 全文比對（textSha256 已驗）：此陛下家事，無須問外人、帝意遂定，而王后廢。詔勣、志寧奉冊立武氏、號慟，割股肉啗之曰：「生死永訣，此肉同歸於土、為收養其子焉、姊多疾，而勣且老，雖欲數進粥，尚幾何、其用兵多籌算，料敵應變，皆契事機…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "推功與家事兩語；沉默標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "疊州之貶與立后之問，相隔六年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "推功與臨終告誡；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "家事與毀塚，相隔近三十年。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "單雄信、姊粥、剪鬚、臨終一訣；含義標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "投靠邏輯；是否真心支持武后標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "家事與毀塚；後見之明標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

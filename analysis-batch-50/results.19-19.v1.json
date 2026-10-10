@@ -1,0 +1,175 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "general_李勣_306292748",
+      "inputSha256": "53ef02f9faa0aa4afa485f3570a525c3b00e957edd4df59e4be363268d8727d4",
+      "promptSha256": "a414f1dd15490b74d096cad591920bed4872626d5ead82298bd65a1a45421522",
+      "fields": {
+        "analysis": "李勣（徐世勣）在唐初名將中總是排在李靖之後，形象是「平突厥、滅薛延陀、亡高句麗」的常勝將軍，加上一個「明哲保身」的註腳。我想把這兩件事反過來看：**李勣真正的天賦不是打仗，而是「把功勞讓出去」**。他用讓功換取了三代皇帝的信任，用一句「此陛下家事」換取了自己在政治風暴中的安全；但他最後也看見了這套生存術的極限——他死後十五年，親孫子起兵反武，祖墳被毀、屬籍被除。一個一生精於避險的人，終究沒能替子孫避開他親手放行的那場風暴。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n李勣本姓徐，名世勣，因避太宗諱單名勣。他出身富裕之家，「家多僮僕，積粟數千鐘」，隋末大業年間「時年十七」便投奔翟讓的瓦崗軍（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。\n\n他面對的局有三個階段：\n\n1.  **隋末群雄**：瓦崗軍、李密、王世充、竇建德、李唐各據一方，一個將領的生死往往取決於他投靠誰、何時投靠。\n2.  **唐初的對外戰爭**：東突厥、薛延陀、高句麗是唐朝必須解決的三大邊患。\n3.  **高宗朝的宮廷政治**：太宗死後，長孫無忌、褚遂良等顧命大臣與武昭儀的衝突，將決定唐朝的權力結構。\n\n他在戰爭史上的位置是**唐初三朝的軍事支柱**：參與擊滅東突厥，貞觀十五年（641年）率輕騎三千在青山大破薛延陀，總章元年（668年）攻克平壤，終結高句麗（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。\n\n這裡必須釐清一個常見的年代錯誤。《舊唐書·李勣傳》寫「乾封元年，高麗莫離支男產為其弟男建所逐……總章元年，命勣為遼東道行軍總管」（同上），把任命與進軍壓縮到總章元年。但《資治通鑑》明確記載，乾封元年（666年）冬十二月己酉「以李勣為遼東道行軍大總管兼安撫大使」，總章元年（668年）九月癸巳「李勣拔平壤」（[《資治通鑑》卷二百零一](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201)）。任命在666年，克平壤在668年，中間是將近兩年的戰役。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：李勣最大的武器是「推功」。**\n\n李勣的政治生涯始於一次精心計算的讓功。武德二年（619年）前後，李密降唐，李勣仍據守李密舊地。他對長史郭孝恪說：「魏公既歸大唐，今此人眾土地，魏公所有也。吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也。」於是他把州縣戶口造冊交給李密，讓李密去獻給唐朝（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。高祖聽說後大喜：「徐世勣感德推功，實純臣也。」隨即賜姓李氏（同上）。\n\n這一步棋的精妙在於：他放棄了直接獻地的功勞，卻得到了比功勞更珍貴的東西——「純臣」的名聲。此後他的整個仕途，都建立在這個形象之上。《新唐書》說他「及戰勝，必推功於下」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)），《舊唐書》說他「前後戰勝所得金帛，皆散之於將士」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。讓功給上級換取信任，讓利給下屬換取效命，這是一套完整的生存與領導系統。他也懂得在人才尚未成名時下注：瓦崗時期他據有黎陽倉，「就倉者數十萬人」，魏徵、高季輔、杜正倫、郭孝恪等人都曾在他門下往來，他「一見於眾人中，即加禮敬，引之臥內，談謔忘倦」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。這些人後來大多成為貞觀名臣，李勣早年的禮遇，成了他日後在朝中左右逢源的人脈基礎。\n\n**【功：青山之戰與平壤】**\n\n貞觀十五年，薛延陀派大度設率八萬騎南侵，李勣「率輕騎三千追及延陀於青山，擊大破之，斬其名王一人，俘獲首領，虜五萬餘計」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。以三千對八萬，靠的是輕騎追擊的速度與時機。\n\n總章元年平壤之役，他「率兵二萬略地至鴨綠水」，擊敗高句麗援軍後「追奔二百里，至於平壤城」，高句麗「諸城駭懼，多拔人眾遁走，降款者相繼」（同上）；《資治通鑑》記為「進至鴨綠柵……追奔二百餘里，拔辰夷城」，最後在九月攻克平壤（[《資治通鑑》卷二百零一](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201)）。高句麗內部的分裂（男生被弟弟男建驅逐）是**時代機遇**，但李勣以七十多歲高齡指揮這場跨越兩年的遠征，則是**個人能力**的展現。\n\n**【過：「此陛下家事」——一句話的歷史代價】**\n\n永徽六年（655年），高宗想立武昭儀為后，長孫無忌、褚遂良等顧命大臣強烈反對。高宗私下問李勣，《新唐書》記他的回答是：「此陛下家事，無須問外人。」結果「帝意遂定，而王后廢」，李勣還與于志寧一起「奉冊立武氏」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）。\n\n這句話是他一生「不站隊」哲學的頂點：他既沒有支持武后，也沒有反對，只是把問題推回給皇帝。但在當時的局勢下，不反對就等於支持。這不是時代局限，而是**個人選擇**，它直接改變了唐朝的權力走向。\n\n**【諷刺的結局】**\n\n李勣臨終前，把弟弟李弼叫到身邊說：「我見房玄齡、杜如晦、高季輔皆辛苦立門戶，亦望詒後，悉為不肖子敗之。我子孫今以付汝，汝可慎察，有不厲言行、交非類者，急榜殺以聞。」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）他總章二年（669年）去世，「年七十六」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。\n\n十五年後的嗣聖元年（684年），他的孫子徐敬業在揚州起兵反武。武后的報復是「削其祖父官爵，毀塚藏，除屬籍」（[《新唐書·李勣傳附徐敬業傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）。他當年以一句「家事」讓武氏登上后位，最終武氏掘開了他的墳墓。他預見了子孫可能敗家，卻沒預見到敗家的方式。\n\n### **3. 【人性與性格側寫】**\n\n*   **重情的一面**：攻下洛陽後，他的故友單雄信被判死刑，他請求以官爵贖其命，不被允許，於是「號慟，割股肉啗之曰：生死永訣，此肉同歸於土！」並收養單雄信之子（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）。\n*   **對家人的溫柔**：他的姊姊生病，他親自煮粥，結果燒到鬍鬚；姊姊勸他別再做，他說：「姊多疾，而勣且老，雖欲數進粥，尚幾何？」（同上）\n*   **被帝王試探的人**：太宗曾親自剪鬚為他和藥，他「頓首見血，泣以懇謝」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）；但太宗臨終前又把他貶為疊州都督，對太子說：「汝於李勣無恩，我今將責出之。我死後，汝當授以僕射，即荷汝恩，必致其死力。」（同上）他一生都活在帝王的恩寵與試探之間。\n\n### **4. 【如果生在現代】**\n\n李勣最適合的現代角色是：**一家跨國企業歷經三任執行長仍屹立不倒的資深營運長。**\n\n*   **把功勞讓給老闆**：他每完成一個大專案，都會在董事會上把功勞歸給執行長與團隊，自己只說「我只是執行」。\n*   **不選邊站**：當公司高層爆發權力鬥爭時，他永遠只說「這是董事長自己的決定」，從不公開表態。\n*   **帶兵有方**：他會把專案獎金全部分給團隊，因此下屬對他忠心耿耿。\n*   **晚年的遺憾**：退休前他對家人說「不要讓孩子學壞」，卻沒想到孫子後來捲入一場反對公司新掌門的叛變，連他的名字都被從公司歷史中抹去。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「把功勞或責任推給更高的人，讓自己永遠站在安全的位置」。歸唐時他說：「吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也。」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）[史載]。立后之爭時，他對高宗說：「此陛下家事，無須問外人。」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]。兩句話的潛台詞相同：「決定權在你，不在我。」他沉默時往往是在等待上位者先表態：立后之爭初期，他並未在朝堂上公開發言，直到高宗私下問他才開口（同上）[推斷：依據史書記載他是在「帝后密訪」時才回答]。\n\n【壓力反應】\n面對帝王的試探或政治風險，他的第一反應是「完全順從，不辯解、不抵抗」。\n貞觀二十三年（649年），太宗臨終前無故把他貶為疊州都督，他立即赴任；高宗即位當月便召回他，拜為洛州刺史，旋即冊拜尚書左僕射（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）[史載]。永徽六年（655年）面對立后的高風險問題，他也選擇以「家事」二字順從皇帝意志（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]。兩次相隔六年，共同結構是：在無法掌控的權力博弈中，他選擇把自己變成一個「無害」的存在[推斷]。\n\n【核心驅動】\n他真正追求的是「讓自己與家族永遠安全」。\n歸唐時，他放棄直接獻地的功勞，換得高祖「實純臣也」的評價與賜姓（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）[史載]。臨終前他把子孫託付給弟弟，要求「有不厲言行、交非類者，急榜殺以聞，毋令後人笑吾，猶吾笑房、杜也」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]。他寧可讓弟弟殺死不肖子孫，也不願家族重蹈房玄齡、杜如晦的覆轍。這個驅動貫穿了他的一生[詮釋：此為從其言行歸納的動機]。\n\n【慣性盲點】\n他最大的優點「不站隊、順從上意」，讓他在關鍵時刻放棄了本可影響歷史走向的機會。\n永徽六年，他以「此陛下家事」一語讓高宗下定立武后的決心（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]。嗣聖元年（684年），他的孫子徐敬業起兵反武，武后隨即「削其祖父官爵，毀塚藏，除屬籍」（同上）[史載]。兩件事相隔近三十年，共同結構是：他以為只要不站隊就能安全，卻沒想到自己的不站隊本身就是一種選擇，而這個選擇最終反噬了他的家族[推斷]。\n\n【情感結構】\n他的情感深厚而念舊，對朋友與家人極為真誠。\n故友單雄信被判死刑，他請求以官爵贖命不成，「號慟，割股肉啗之曰：生死永訣，此肉同歸於土！」並「收養其子」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]。姊姊生病，他親自煮粥燒了鬍鬚，還說「姊多疾，而勣且老，雖欲數進粥，尚幾何？」（同上）[史載]。太宗為他剪鬚和藥時，他「頓首見血，泣以懇謝」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）[史載]。他最脆弱的時刻，或許是臨終與弟弟訣別時說「恐悲哭不得盡，故一訣耳」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]——一位一生謹慎的老將，害怕自己哭得說不完遺言[詮釋：這句話也可能兼含對身後事的憂慮]。\n\n【參照系】\n他習慣以「隋末群雄的投靠邏輯」作為理解政治的參照系。這源自他十七歲投奔瓦崗、之後隨李密歸唐的經歷：在亂世中，一個將領的存亡取決於對上位者的忠誠與時機（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）[史載]。\n他在瓦崗時期以黎陽倉賑濟數十萬人、禮遇魏徵等落魄士人（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）[史載]，深知亂世中「先施恩、後得報」的道理。\n類比準確之處：歸唐時他以「推功」展現對舊主李密的忠誠，反而贏得新主高祖的信任（同上）[史載]。\n類比失準之處：他把高宗朝的立后之爭也當成「主上家事」，以為不介入就能保全自己，卻沒看到這場爭鬥關係到整個朝廷權力結構的重組[詮釋：他是否真心支持武后，史料沒有明確記載]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（讓自己與家族永遠安全）與【慣性盲點】（以不站隊換取安全）之間。\n這個衝突的結構是：他相信只要永遠順從上意、不站隊，就能讓家族長保富貴；但順從本身就是一種站隊，而他所順從的權力最終成為摧毀他家族的力量。\n第一次爆發是永徽六年「此陛下家事」：他避開了與長孫無忌一同反對武后的風險，卻也讓武后順利登上后位（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)）[史載]。\n第二次是他死後的嗣聖元年：孫子徐敬業起兵反武，武后「削其祖父官爵，毀塚藏」（同上）[史載]。\n他是否意識到這個衝突？從他臨終時對子孫的嚴厲告誡來看，他意識到家族可能毀於不肖子孫，卻沒有意識到真正的危險來自他當年親手放行的那股權力[詮釋：這是後見之明的評判，他生前無法預知武周的出現]。",
+        "stats": [
+          97,
+          80,
+          95,
+          88,
+          90
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：97\n\n貞觀十五年他「率輕騎三千追及延陀於青山，擊大破之……虜五萬餘計」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）；乾封元年受命為遼東道行軍大總管，總章元年九月攻克平壤（[《資治通鑑》卷二百零一](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201)），以七十餘歲高齡完成跨年遠征。《新唐書》稱他「用兵多籌算，料敵應變，皆契事機」。扣分在於其主要戰功多在唐朝國力鼎盛、對手內亂之時。評97，與宇文泰（97）持平，低於李靖（100）與徐達（99），高於韋孝寬（96）。\n\n### 武力：80\n\n他十七歲便投身瓦崗軍，長期在第一線作戰，青山之戰以輕騎三千追擊八萬騎（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)），需要極強的個人膽識。但史書對他的記載偏重籌算與指揮，缺乏陣斬名將或單騎衝陣的具體事蹟；晚年遠征高句麗時他已七十餘歲，指揮重心也轉向調度。評80，高於李靖（75）與韋孝寬（75），低於徐達（85）與郭子儀（85）。\n\n### 智謀：95\n\n他的智謀體現在戰場上的「料敵應變，皆契事機」（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)），更體現在政治上的生存判斷：歸唐時以「推功」換得賜姓與信任（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)），立后之爭中以「此陛下家事」避開漩渦。扣分在於他沒有預見武后崛起對自己家族的長遠影響。評95，與徐達（95）持平，低於李靖（100）與韋孝寬（98）。\n\n### 政治：88\n\n他歷仕高祖、太宗、高宗三朝，官至尚書左僕射、司空，善於在帝王試探中自保（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)）。但「此陛下家事，無須問外人」一語，使他在立后之爭中客觀上站到了武氏一方（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)），其政治選擇的長遠代價由唐室與他自己的家族承擔。評88，高於李靖（85），低於徐達（92）與韋孝寬（92）。\n\n### 魅力：90\n\n他「前後戰勝所得金帛，皆散之於將士」（[《舊唐書·李勣傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767)），「及戰勝，必推功於下」；對故友單雄信「割股肉啗之」並收養其子，對姊姊親自煮粥（[《新唐書·李勣傳》](https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093)），深得部屬與同僚之心。扣分在於「明哲保身」的形象，使他在顧命大臣與士大夫心中評價分歧。評90，與徐達（90）持平，低於李靖（92）與郭子儀（100）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T05:58:17.071Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書·卷六十七\n列傳第十七　李靖　李勣",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767",
+            "locator": "本機固定修訂 oldid=2296327 全文比對（textSha256 已驗）：家多僮僕，積粟數千鐘、時年十七、魏公既歸大唐，今此人眾土地，魏公所有也。吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也、徐世勣感德推功，實純臣也、率輕騎三千追及延陀於青山，擊大破之，斬其名王一人，俘獲首領，虜五萬餘計、太宗乃自翦鬚，為其和藥。勣頓首見血，泣以懇謝…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "資治通鑑·卷二百一 唐紀十七",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201",
+            "locator": "本機固定修訂 oldid=1502953 全文比對（textSha256 已驗）：以李勣為遼東道行軍大總管兼安撫大使、李勣拔平壤、進至鴨綠柵、追奔二百餘里，拔辰夷城",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "新唐書·新唐書卷九十三 列傳第十八",
+            "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093",
+            "locator": "本機固定修訂 oldid=2175677 全文比對（textSha256 已驗）：此陛下家事，無須問外人、帝意遂定，而王后廢。詔勣、志寧奉冊立武氏、號慟，割股肉啗之曰：「生死永訣，此肉同歸於土、為收養其子焉、姊多疾，而勣且老，雖欲數進粥，尚幾何、其用兵多籌算，料敵應變，皆契事機…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "3294519a7b4a381da65ef5e53d2b985edce6ae943a80f5a23bdf0780007afeab",
+        "sourcePackageSha256": "5b43290dc20e1b1057101a116328661cae1eb29014fd394f0435a6ea73da2c0d",
+        "preservedDeepSha256": "9cfb5c128c0e222a9b0a2f89754dcea94b3f5ae1ec27aee783443d6a7e7e72b4",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "0e305cc964c992b257ec8b0afc48356bc7553f519de4938a443d33fbac9dc544",
+            "requestSha256": "3294519a7b4a381da65ef5e53d2b985edce6ae943a80f5a23bdf0780007afeab",
+            "inputSha256": "53ef02f9faa0aa4afa485f3570a525c3b00e957edd4df59e4be363268d8727d4",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "5cbc229f8c0e90bdd0e7b3985518a8eb4692bd36c092e395b2d603b139a90cc7",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "5b43290dc20e1b1057101a116328661cae1eb29014fd394f0435a6ea73da2c0d",
+            "preservedDeepSha256": "9cfb5c128c0e222a9b0a2f89754dcea94b3f5ae1ec27aee783443d6a7e7e72b4",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T05:58:17.071Z",
+            "rawResponseFile": "analysis-batch-50/drafts/19.analysisStats.raw.md",
+            "rawResponseSha256": "88de2d376c4ff5ff629c1460095dce6cbdca927fd82fe5a4c0361a376a3b399e",
+            "responseFile": "analysis-batch-50/drafts/19.analysisStats.response.md",
+            "responseSha256": "88de2d376c4ff5ff629c1460095dce6cbdca927fd82fe5a4c0361a376a3b399e",
+            "fieldsHashes": {
+              "analysis": "4e62accd36e13a13825e67fbdc8accd902aaa10bbba00e63fd48cc6d1fca34bb",
+              "stats": "3231a20d59262cf16473ea58c727c6c2adc7cde53c414e05c9ba83a9f83dcbd4",
+              "statsAnalysis": "fc829f72b7c6dc9bfbc609bb98bbb144b8d0be670e57c781c762ab009102c0fe"
+            },
+            "captureFile": "analysis-batch-50/drafts/19.analysisStats.capture.json",
+            "captureSha256": "4267ea4a48bd50a9975a02b186179c59fe5cd79a6d9ea1d5aded1e0e50774107",
+            "sourceReviewFile": "analysis-batch-50/reviews/19.analysisStats.json",
+            "sourceReviewSha256": "12e4d99370d6e541e547ba8a5d42f57d0989c75858e5f4fe46f9632e4f6fdb3e",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/19.combined.search-log.json",
+              "sha256": "90a9f04c3ba3d370004af9c3c54c3340db3dc3ae3294f4177652d8485aac7881",
+              "webSearchCount": 1,
+              "archiveCheckCount": 34
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·卷六十七\n列傳第十七　李靖　李勣",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767",
+                "locator": "本機固定修訂 oldid=2296327 全文比對（textSha256 已驗）：家多僮僕，積粟數千鐘、時年十七、魏公既歸大唐，今此人眾土地，魏公所有也。吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也、徐世勣感德推功，實純臣也、率輕騎三千追及延陀於青山，擊大破之，斬其名王一人，俘獲首領，虜五萬餘計、太宗乃自翦鬚，為其和藥。勣頓首見血，泣以懇謝…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "資治通鑑·卷二百一 唐紀十七",
+                "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201",
+                "locator": "本機固定修訂 oldid=1502953 全文比對（textSha256 已驗）：以李勣為遼東道行軍大總管兼安撫大使、李勣拔平壤、進至鴨綠柵、追奔二百餘里，拔辰夷城",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "新唐書·新唐書卷九十三 列傳第十八",
+                "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093",
+                "locator": "本機固定修訂 oldid=2175677 全文比對（textSha256 已驗）：此陛下家事，無須問外人、帝意遂定，而王后廢。詔勣、志寧奉冊立武氏、號慟，割股肉啗之曰：「生死永訣，此肉同歸於土、為收養其子焉、姊多疾，而勣且老，雖欲數進粥，尚幾何、其用兵多籌算，料敵應變，皆契事機…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "606048ee1be797d461ecb11116a458778fca663a5b8b8cab11d39132a8f20d01",
+            "requestSha256": "3294519a7b4a381da65ef5e53d2b985edce6ae943a80f5a23bdf0780007afeab",
+            "inputSha256": "53ef02f9faa0aa4afa485f3570a525c3b00e957edd4df59e4be363268d8727d4",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "f2e76b7d0e77fb66214ad21556464c71537082b3b9eec0ce4613e017a61b6e93",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "5b43290dc20e1b1057101a116328661cae1eb29014fd394f0435a6ea73da2c0d",
+            "preservedDeepSha256": "9cfb5c128c0e222a9b0a2f89754dcea94b3f5ae1ec27aee783443d6a7e7e72b4",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T05:58:17.071Z",
+            "rawResponseFile": "analysis-batch-50/drafts/19.soulEssence.raw.md",
+            "rawResponseSha256": "2df9ecf4d4ae4e5332d5e204e582f5ede74a624ed82d14cbc108aaca5bfbd555",
+            "responseFile": "analysis-batch-50/drafts/19.soulEssence.response.md",
+            "responseSha256": "2df9ecf4d4ae4e5332d5e204e582f5ede74a624ed82d14cbc108aaca5bfbd555",
+            "fieldsHashes": {
+              "soulEssence": "16826cecb7c2988ec9c2d1b1bc6d5dc98a21e5c92e98ae0398ff5ca3368c0d9d"
+            },
+            "captureFile": "analysis-batch-50/drafts/19.soulEssence.capture.json",
+            "captureSha256": "ac9a7c1def3689fbec839c81eb2970752ca69008f6d5e9ff11fca4f2aeee3f71",
+            "sourceReviewFile": "analysis-batch-50/reviews/19.soulEssence.json",
+            "sourceReviewSha256": "30a20d5d2d2eaaf247821937b922e57fd5185a01b62efaf4f35c7e5b72a35ebf",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/19.combined.search-log.json",
+              "sha256": "90a9f04c3ba3d370004af9c3c54c3340db3dc3ae3294f4177652d8485aac7881",
+              "webSearchCount": 1,
+              "archiveCheckCount": 34
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·卷六十七\n列傳第十七　李靖　李勣",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B767",
+                "locator": "本機固定修訂 oldid=2296327 全文比對（textSha256 已驗）：家多僮僕，積粟數千鐘、時年十七、魏公既歸大唐，今此人眾土地，魏公所有也。吾若上表獻之，即是利主之敗，自為己功，以邀富貴，吾所恥也、徐世勣感德推功，實純臣也、率輕騎三千追及延陀於青山，擊大破之，斬其名王一人，俘獲首領，虜五萬餘計、太宗乃自翦鬚，為其和藥。勣頓首見血，泣以懇謝…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "新唐書·新唐書卷九十三 列傳第十八",
+                "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7093",
+                "locator": "本機固定修訂 oldid=2175677 全文比對（textSha256 已驗）：此陛下家事，無須問外人、帝意遂定，而王后廢。詔勣、志寧奉冊立武氏、號慟，割股肉啗之曰：「生死永訣，此肉同歸於土、為收養其子焉、姊多疾，而勣且老，雖欲數進粥，尚幾何、其用兵多籌算，料敵應變，皆契事機…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/19.analysis.md",
+            "analysisContextSha256": "99d9900efb9e14331dd3fc4787d20127af4260cc79462346d34ffb26f99b55f8"
+          }
+        }
+      }
+    }
+  ]
+}
