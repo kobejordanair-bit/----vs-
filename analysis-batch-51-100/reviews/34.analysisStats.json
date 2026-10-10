@@ -1,0 +1,60 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_封常清_902478519",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:14:52.778Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "f1ebb258436680aeb3409456f8e89993cc23e0cbfc9abcff9e4a13f38f57028f",
+  "rawResponseSha256": "f1ebb258436680aeb3409456f8e89993cc23e0cbfc9abcff9e4a13f38f57028f",
+  "sourcePackageSha256": "f744de98a0f091607c4e6e092682a6216def94908391983a3d0edd9aac56012c",
+  "searchLogSha256": "84d78d6ca01da7b1e80470c9a74bee4cec69b46b1f67d5592c31786e90ef8e0f",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7135",
+      "title": "新唐書·新唐書卷一百三十五 列傳第六十",
+      "locator": "本機固定修訂 oldid=2073487 全文比對（textSha256 已驗）：天下太平久，人不知戰。然事有逆順，勢有奇變，臣請馳至東京，悉府庫募驍勇，挑馬箠度河，計日取逆胡首以獻闕下、軍中莫不股栗、購祿山檄數十函、以分曉諸郡、潼關無兵，一夫奔突則京師危，不如急守潼關、計日取逆胡首…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7104",
+      "title": "舊唐書·卷一百〇四\n列傳第五十四　高仙芝　封常清　哥舒翰",
+      "locator": "本機固定修訂 oldid=2020474 全文比對（textSha256 已驗）：臣所將之兵，皆是烏合之徒，素未訓習。率周南市人之眾，當漁陽突騎之師、守胡城南門，頗讀書，每坐常清於城門樓上，教其讀書、孤貧，年三十餘、領兇徒十萬，徑犯中原、太平斯久，人不知戰、具言仙芝、常清逗撓奔敗之狀…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "蒲州猗氏人、外祖教讀、三十餘投牒為傔、開元末達奚捷書、天寶六年破小勃律、知留後杖殺鄭德詮、十一載知安西節度、十三載權北庭、十四載華清宮大言、募兵六萬守東京敗、白衣效力、潼關被誅，皆依兩唐書 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：留後與軍紀、募兵斷橋；武力：驍騎逆戰、跛足；智謀：捷書、急守潼關、傳檄顏真卿；政治：由傔至節度、與邊令誠不合；魅力：劉眺揖坐、人多哀之。對照李光弼、王忠嗣、袁崇煥、陳慶之、戚繼光、白起。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "以貌見拒→晨夕候門→補傔→捷書知名→判官留後→節度；祿山反→大言計日→募市井六萬→連敗→西奔陝→勸守潼關→削官白衣→邊令誠奏逗撓→並誅。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    84,
+    55,
+    85,
+    70,
+    72
+  ]
+}
