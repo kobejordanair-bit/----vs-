@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_木華黎_905533968",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:35:46.843Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "bb28e6d992406f7c177f05667da84d20efd22f7c2635e54d55e288ce441459d5",
+  "rawResponseSha256": "bb28e6d992406f7c177f05667da84d20efd22f7c2635e54d55e288ce441459d5",
+  "sourcePackageSha256": "833ce9aa894dff6d27cd044697d769d5468328da88f240ee59aa48a2e136eb22",
+  "searchLogSha256": "3afbf29bbcd411078d3c103e1254648529beecb4afb13d371eb9b5be23ad84ce",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119",
+      "title": "元史·列傳第六",
+      "locator": "本機固定修訂 oldid=2189693 全文比對（textSha256 已驗）：太行之北，朕自經略，太行以南，卿其勉之。、身當追騎，死之、沉毅多智略，猿臂善射，挽弓二石強、首命木華黎、博爾朮為左右萬戶、我與汝猶車之有轅，身之有臂也、詔封太師、國王、都行省承制行事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "君命與天象；潛台詞標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "遇寇、野狐嶺、黃陵岡。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "臨終語與家族；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "北京、錦州、遷民。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "車轅之喻、張鐵槍、石天應；哀痛標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "草原懲戒收編；攻堅失敗原因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "北京與庚辰禁掠。"
+    }
+  ],
+  "materialIssues": []
+}

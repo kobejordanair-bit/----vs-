@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_木華黎_905533968",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:35:46.842Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "849097d05d2d2d5c17101888a22bdb90b3cf1f7e38928d4195c3310fd247b2aa",
+  "rawResponseSha256": "849097d05d2d2d5c17101888a22bdb90b3cf1f7e38928d4195c3310fd247b2aa",
+  "sourcePackageSha256": "833ce9aa894dff6d27cd044697d769d5468328da88f240ee59aa48a2e136eb22",
+  "searchLogSha256": "3afbf29bbcd411078d3c103e1254648529beecb4afb13d371eb9b5be23ad84ce",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119",
+      "title": "元史·列傳第六",
+      "locator": "本機固定修訂 oldid=2189693 全文比對（textSha256 已驗）：太行之北，朕自經略，太行以南，卿其勉之。、身當追騎，死之、沉毅多智略，猿臂善射，挽弓二石強、首命木華黎、博爾朮為左右萬戶、我與汝猶車之有轅，身之有臂也、詔封太師、國王、都行省承制行事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0029136",
+      "title": "China Biographical Database (CBDB, Harvard) 木華黎條目",
+      "locator": "WebSearch 結果摘要：伐金初期領軍、追封國王；列有接受史秉直等人納降紀錄",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://global-sci.com/article/83964/indigenous-elite-networks-and-mongol-governance-in-thirteenth-century-north-china",
+      "title": "Chu Ming Kin, \"Indigenous Elite Networks and Mongol Governance in Thirteenth-century North China\" (饒宗頤國學院院刊, 2018)",
+      "locator": "WebSearch 結果摘要：金元之際北方漢人文士網絡，1260年後被忽必烈轉化為統治華北的本土精英",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "木華黎，蒙古國王；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "mandate",
+      "passed": true,
+      "detail": "太師國王承制行事、太行南北分工、如朕親臨，原文核對。"
+    },
+    {
+      "id": "surrender-network",
+      "passed": true,
+      "detail": "史天倪、石天應、武仙、嚴實降附與任用，原文核對；長期影響依論文摘要。"
+    },
+    {
+      "id": "violence",
+      "passed": true,
+      "detail": "欲坑北京、錦州悉屠之、禁無剽掠，原文核對。"
+    },
+    {
+      "id": "limits",
+      "passed": true,
+      "detail": "延安、長安、鳳翔不下、石天應戰死、臨終語，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[96,88,90,85,92] 對照孟珙[96,85,94,80,95]、戚繼光[95,85,92,70,88]、衛青[98,85,95,90,92]、石勒[96,88,94,85,95]、李牧[98,82,97,35,92]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    96,
+    88,
+    90,
+    85,
+    92
+  ]
+}

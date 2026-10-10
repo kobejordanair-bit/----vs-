@@ -1,0 +1,334 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_木華黎_905533968",
+  "packetSha256": "875236e6e5f8eae5c11d48a19029fbd59142a64a3ce9c28dd68d6fdd2683d0c8",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "木華黎 1217 太師國王 經略中原 漢人世侯 史天倪 嚴實 研究 論文",
+      "returnedUrls": [
+        "https://global-sci.com/article/83964/indigenous-elite-networks-and-mongol-governance-in-thirteenth-century-north-china",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0029136",
+        "https://openresearch-repository.anu.edu.au/handle/1885/15766",
+        "https://library.arce.org/portal/Record/59546?lng=ar"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "太行之北，朕自經略，太行以南，卿其勉之。",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "身當追騎，死之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "沉毅多智略，猿臂善射，挽弓二石強",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "首命木華黎、博爾朮為左右萬戶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "我與汝猶車之有轅，身之有臂也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "詔封太師、國王、都行省承制行事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "木華黎建此旗以出號令，如朕親臨也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "率眾來降，並奏為萬戶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "舉城降，奏為興中尹",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "籍所隸相、魏、磁、洺、恩、博、滑、濬等州戶三十萬，詣軍門降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "嚴實率所部先登",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "權山東西路行省",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "東平糧盡，必棄城走，汝伺其去，即入城安輯之，勿苦郡縣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "怒其降緩，欲坑之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "既降而坑之，後豈有降者乎？",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "此叛寇，存之無以懲後",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "除工匠優伶外，悉屠之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "今中原粗定，而所過猶縱兵抄掠，非王者弔民之意也。",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "下令禁無剽掠，所獲老稚，悉遣還田里，軍中肅然，吏民大悅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "圍之旬日，不下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "擁兵二十萬固守，不下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "吾奉命專征，不數年取遼西、遼東、山東、河北，不勞餘力；前攻天平、延安，今攻鳳翔皆不下，豈吾命將盡耶！",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "我為國家助成大業，擐甲執銳垂四十年，東征西討，無復遺恨，第恨汴京未下耳！",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "使木華黎在，朕不親至此矣！",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "張裘氊，立雪中，障蔽太祖，達旦竟不移足",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "徐解馬鞍持之，捍衞太祖以出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "主上命我平定中原",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "若因天象而不進兵，天下何時而定耶？且違君命，得為忠乎！",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "義之，欲解其縛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "諸將怒其不屈，竟殺之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "太師、國王、都行省承制行事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "取遼西、遼東、山東、河北",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "猿臂善射，挽弓二石強",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "率敢死士，策馬橫戈，大呼陷陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "今若急攻，賊必遣兵來援，我斷其歸路",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "此不可用長兵，當以短兵取勝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "東平糧盡，必棄城走",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "猶車之有轅，身之有臂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "使木華黎在，朕不親至此矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "且違君命，得為忠乎！",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "彼眾我寡，弗致死力戰，未易破也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "勿苦郡縣，以敗事也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "徐解馬鞍持之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "豈吾命將盡耶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "達旦竟不移足",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "橋未畢工，安可坐待乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "遷其人於趙城縣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "以天應子斡可襲領其眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "蒲為河東要害，我擇守者，非君不可",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "既降而坑之，後豈有降者乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷119",
+      "quote": "所過猶縱兵抄掠，非王者弔民之意也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7119"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 元史卷119 verified in the repository archive.",
+    "蒙古秘史及『一萬三千人』兵力說未核讀，正文未採用；Chu Ming Kin 論文僅依摘要，正文僅作背景連結，不主張其討論木華黎本人。",
+    "延安伏兵之計明示出自蒙古不花。"
+  ]
+}
