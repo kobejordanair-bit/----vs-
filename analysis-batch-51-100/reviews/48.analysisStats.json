@@ -1,0 +1,60 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_嚴嵩_2003876879",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:27:24.758Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "ea65e0c5767f06feb131b79a8e131981394d8fed8ce90b6564f9d9d6eb6bf75c",
+  "rawResponseSha256": "ea65e0c5767f06feb131b79a8e131981394d8fed8ce90b6564f9d9d6eb6bf75c",
+  "sourcePackageSha256": "7daa725335a3052fae4d9222ac2723831c104e8d5c4b41814c9a94ba7fe0b7e5",
+  "searchLogSha256": "a8cbda50b3ff2b7f8733c7238db75b0f6cab8b4d63b2b93a7c9cd75899511ffa",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308",
+      "title": "明史·卷三百八 列傳第一百九十六",
+      "locator": "本機固定修訂 oldid=2594954 全文比對（textSha256 已驗）：移疾歸，讀書鈐山十年，為詩古文辭，頗著清譽、言去，醮祀青詞，非嵩無當帝意者、語多不可曉，惟世蕃一覽了然、受詔多不能答、所進青詞，又多假手他人不能工，經此積失帝歡、長身戍削，疏眉目，大音聲…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.aisixiang.com/data/117414.html",
+      "title": "愛思想網所刊嚴嵩文學研究論文",
+      "locator": "WebSearch 結果摘要：嚴嵩生前文學聲望高，身後因奸臣身分在明代文學史中失聲；全文未讀",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "分宜人、弘治十八年進士、鈐山十年、嘉靖七年祭告顯陵、明堂之議改說、二十一年八月入閣、傾夏言、俺答薄都城、仇鸞、世蕃代票擬、四十一年五月致仕、世蕃伏誅、寄食墓舍以死，皆依明史卷308 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：專直西苑政歸一人；武力：無；智謀：揣帝指與先稱其善之術；政治：竊政二十年至被徐階傾；魅力：清譽與奸臣之目。對照秦檜、魏忠賢、張廷玉。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "明堂之議→帝作或問→惶恐盡改前說→益務佞悅→青詞非嵩不當→入閣→傾夏言→獨承顧問；母喪世蕃不能入直→受詔不能答、青詞不工→積失帝歡→徐階得寵→鄒應龍疏→致仕→世蕃伏誅→寄食墓舍。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    62,
+    10,
+    84,
+    88,
+    32
+  ]
+}

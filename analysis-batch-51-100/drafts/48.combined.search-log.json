@@ -1,0 +1,569 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_嚴嵩_2003876879",
+  "packetSha256": "c01d50bb635815bdd895dd45b62be15e2f62078823a98cf5cf56b1685481d169",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "嚴嵩 青詞宰相 鈐山堂集 評價 研究 論文 嘉靖 首輔 再評價",
+      "returnedUrls": [
+        "https://news.cnyes.com/news/id/1954675",
+        "https://input.cbdb.fas.harvard.edu/basicinformation/125411/assoc",
+        "https://input.cbdb.fas.harvard.edu/basicinformation/125411/texts",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0125411",
+        "https://www.aisixiang.com/data/117414.html"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "移疾歸，讀書鈐山十年，為詩古文辭，頗著清譽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "言去，醮祀青詞，非嵩無當帝意者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "語多不可曉，惟世蕃一覽了然",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "受詔多不能答",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "所進青詞，又多假手他人不能工，經此積失帝歡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "長身戍削，疏眉目，大音聲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "移居西苑萬壽宮，不入大內，大臣希得謁見，惟嵩獨承顧問",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "祀獻皇帝明堂，以配上帝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "稱宗入太廟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩竊政二十年，溺信惡子，流毒天下，人咸指目為奸臣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "與群臣議沮之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "惶恐，盡改前說",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "皆應時雨霽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "撰文刻石，以紀天眷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "奏慶雲見，請受群臣朝賀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "《慶雲賦》、《大禮告成頌》奏之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "惶恐，盡改前說，條畫禮儀甚備",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "自是，益務為佞悅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "精爽溢發，不異少壯。朝夕直西苑板房，未嘗一歸洗沐，帝益謂嵩勤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "何奪我吏部，使我旁睨人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "長跪榻下泣謝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "尊無二上，上非人臣所宜稱",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "欲有所救解，嵩必順帝意痛詆之，而婉曲解釋以中帝所不忍。即欲排陷者，必先稱其善，而以微言中之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "以是移帝喜怒，往往不失",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "用河套事構言及曾銑，俱棄市",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩皆有力焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "附張經疏尾殺之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩無所規畫，委之禮部",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "悉用階言，稍輕嵩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "受嵩指，不敢趣諸將戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "我在，毋慮也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "臨死始知為嵩紿",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "招權利無厭",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "熟諳中外官饒瘠險易，責賄多寡，毫髮不能匿",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "黃金可三萬餘兩，白金二百萬餘兩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "致寇亂益甚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "賂帝左右，發道行陰事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "及諸孫皆為民",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "其坐世蕃大逆，則徐階意也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "布席，展所具啟，跽讀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "謂嵩實下己，不疑也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "召對冠之，籠以輕紗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "帝見，益內親嵩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "門者以非詔旨格之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "置酒要階，使家人羅拜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩旦夕且死，此曹惟公乳哺之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "雖警敏，能先意揣帝指",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩無他才略，惟一意媚上，竊權罔利",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "黃金可三萬餘兩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "大臣希得謁見，惟嵩獨承顧問，御劄一日或數下，雖同列不獲聞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "遍引私人居要地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "士大夫輻輳附嵩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "政事一歸嵩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "皆不預聞票擬事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩文武管家",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "讀書鈐山十年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "聽以肩輿入禁苑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "不敢趣諸將戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "盡改前說，條畫禮儀甚備",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "必先稱其善，而以微言中之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "嵩無他才略",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "竊政二十年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "惟嵩獨承顧問",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "兼支尚書俸無謝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "亦不盡信其言，間一取獨斷，或故示異同，欲以殺離其勢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "寄食墓舍以死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "追念其贊玄功，意忽忽不樂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "人咸指目為奸臣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "使家人羅拜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "欲有所救解，嵩必順帝意痛詆之，而婉曲解釋以中帝所不忍。即欲排陷者，必先稱其善，而以微言中之，或觸帝所恥與諱",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "臣師嵩服之而壽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "臣生平不近藥餌，犬馬之壽誠不知何以然",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "建醮鐵柱宮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "並己祈鶴文上之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "帝優詔褒答",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "朝夕直西苑板房，未嘗一歸洗沐",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "載直西內如故",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "左相國達，功臣第一，亦止為左柱國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "語多不可曉，惟世蕃一覽了然，答語無不中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "受詔多不能答，遣使持問世蕃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "方耽女樂，不以時答",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "天下才，惟己與陸炳、楊博為三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "為世蕃請罪，且求解",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "臣年八十有四，惟一子世蕃及孫鵠皆遠戍，乞移便地就養，終臣餘年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "老病，寄食墓舍以死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "乞移便地就養",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "英察自信，果刑戮，頗護己短",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "英宗為太上皇時所居",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "讀書鈐山十年，為詩古文辭，頗著清譽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷308",
+      "quote": "醮祀青詞，非嵩無當帝意者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《明史》卷308 全文比對。",
+    "嚴嵩文學研究僅讀搜尋摘要；《鈐山堂集》、《世宗實錄》與楊繼盛、夏言本傳未比對；青詞宰相之稱的來源搜尋未得。"
+  ]
+}
