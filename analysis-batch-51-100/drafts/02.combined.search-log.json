@@ -1,0 +1,240 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐憲宗_285971314",
+  "packetSha256": "441769f6f24514a64355f7488629495c5bb306ef7a02ec08d70ad5832c57523e",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "唐憲宗 元和中興 削藩 淮西 裴度 李愬 雪夜入蔡州 研究 論文",
+      "returnedUrls": [
+        "https://zh.wikisource.org/wiki/%E5%94%90%E5%8F%B2%E6%BC%94%E7%BE%A9/076",
+        "https://zh.wikisource.org/zh-hant/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7240",
+        "https://news.ifeng.com/c/7jtG4ePVXzj",
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/219438",
+        "https://www.aboluowang.com/2011/1120/226708.html",
+        "https://hbreader.org/words/52043.html"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "唐憲宗 陳弘志 宦官弒逆 服金丹 柳泌 元和十五年 暴崩 學術",
+      "returnedUrls": [
+        "https://data.ctext.org/entity/805957",
+        "https://zh.wikisource.org/wiki/%E5%BE%A1%E6%89%B9%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%E7%B6%B1%E7%9B%AE_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B749%E4%B8%8A",
+        "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7008",
+        "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B716",
+        "https://thjcs.site.nthu.edu.tw/p/16-1452-284205.php?Lang=en"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "公卿持事柄者，以家僮兵仗自隨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "凡七十一州，不申戶口",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "率以兩戶資一兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "斬劉辟並子超郎等九人於獨柳樹下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "據潤州反，殺判官王澹、大將趙琦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "征伐大事，不可以內官為將帥",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "詔旨只改處置為宣慰，猶存招討之名",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "宥之，降承璀為軍器使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "賜三軍賞錢一百五十萬貫",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "徵兵討賊，凡十餘鎮之師，環於申、蔡，未立戰功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "詔權罷河北行營，專討淮、蔡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "李愬率師入蔡州，執吳元濟以獻，淮西平",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "為上於天臺山採仙藥",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "若金丹已成，且令方士自服一年，觀其效用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "崩於大明宮之中和殿，享年四十三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "時以暴崩，皆言內官陳弘志弒逆，史氏諱而不書",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "日加躁渴，遽棄萬國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "唐室中興，章武而已",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "惜乎服食過當，閹豎竊發",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "惟光顏見義能勇，必能立功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "上尤賞度之知人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "凡好事口說則易，躬行則難",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "令方士自服一年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "十五道，凡七十一州，不申戶口",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "皆言內官陳弘志弒逆",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "凡好事口說則易，躬行則難。卿等即言之，須行之，勿空口說",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "天下之人，從陛下所行，不從陛下所言，臣等亦願陛下每言之則行之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "上為之憤嘆",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "權罷河北行營，專討淮、蔡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷14",
+      "quote": "降承璀為軍器使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "從陛下所行，不從陛下所言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "以開元初為法，以天寶未為戒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷15",
+      "quote": "史氏諱而不書",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；正文所有史實引句皆對 repo 內固定修訂之《舊唐書》卷14–16 全文比對。",
+    "搜尋所得京都大學山下將司〈元和中興〉論文僅見摘要，正文未引用；陳弘志弒逆僅依《舊唐書》「皆言」之記載，未作定論。",
+    "元和年號與各事件年份依《舊唐書》本紀編年段落判讀。"
+  ]
+}

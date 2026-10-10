@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐憲宗_285971314",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:41:05.920Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "ff390795c50e20f301011899af0e20b2822fa107ace9e32511e2689205a66091",
+  "rawResponseSha256": "ff390795c50e20f301011899af0e20b2822fa107ace9e32511e2689205a66091",
+  "sourcePackageSha256": "cd29f0aeb0b50a60a2acec431294e5a4e7a90de1b3ee45e79e36a646b3bdc41b",
+  "searchLogSha256": "cc41423549f6a2987e48bfdae3346ecce9f6a18c5f52973997144229cc6717cf",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715",
+      "title": "舊唐書·本紀第十五　憲宗下",
+      "locator": "本機固定修訂 oldid=2348866 全文比對（textSha256 已驗）：公卿持事柄者，以家僮兵仗自隨、賜三軍賞錢一百五十萬貫、徵兵討賊，凡十餘鎮之師，環於申、蔡，未立戰功、詔權罷河北行營，專討淮、蔡、李愬率師入蔡州，執吳元濟以獻，淮西平、為上於天臺山採仙藥…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714",
+      "title": "舊唐書·本紀第十四　順宗　憲宗上",
+      "locator": "本機固定修訂 oldid=2614135 全文比對（textSha256 已驗）：凡七十一州，不申戶口、率以兩戶資一兵、斬劉辟並子超郎等九人於獨柳樹下、據潤州反，殺判官王澹、大將趙琦、征伐大事，不可以內官為將帥、詔旨只改處置為宣慰，猶存招討之名…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716",
+      "title": "舊唐書·本紀第十六　穆宗",
+      "locator": "本機固定修訂 oldid=2601735 全文比對（textSha256 已驗）：日加躁渴，遽棄萬國",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "享年四十三、元和十五年崩、淮西平與李師道平之年份，皆依舊唐書卷14–16 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：權罷河北專討淮蔡、承璀無功；武力：無臨陣；智謀：排序用兵與金丹；政治：國計簿與皇甫鎛；魅力：裴度與貶韓愈裴濆崔群。對照漢明帝、宋孝宗、唐高宗、宋仁宗、崇禎帝。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "承璀掛帥→無功；宰相遇刺→裴度入相→淮西平；宦官體制未改→死因成謎，推論均標層級。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    85,
+    25,
+    84,
+    86,
+    70
+  ]
+}

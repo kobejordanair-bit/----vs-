@@ -1,0 +1,183 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_唐憲宗_285971314",
+      "inputSha256": "d6b52d1ed0ef1a297965537450d6b464bf803d445c882dca5de8efaf42e49ca1",
+      "promptSha256": "2f194a88f98d13f8b487f1854f89a9c64a38bfe1408394ad86168d470037d5b2",
+      "fields": {
+        "analysis": "元和十年六月，宰相武元衡在長安靖安坊被刺身死，御史中丞裴度在通化坊被砍傷頭部；京城大駭，「公卿持事柄者，以家僮兵仗自隨」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。刺客來自藩鎮，目的很清楚：讓朝廷放棄對淮西用兵。唐憲宗的回應是讓那個傷了頭的人當宰相，兩年後再派他親赴前線。我對他的判斷是：**李純是一位懂得「排順序」的皇帝——先打能打的、再算清帳、受挫就收縮戰線、集中打一點；這份定力讓他在安史之亂後半世紀第一次把藩鎮壓下去。但他挑選執行者時，越來越偏好**只對他一人負責**的人：宦官、聚斂之臣、方士。他最後就死在這群人中間。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n李純即位時，唐朝已在安史之亂後掙扎了半個世紀。他面對的局可以拆成三層：\n\n1.  **財政空洞**：元和初年李吉甫編《元和國計簿》，結論觸目驚心——鳳翔、河東、魏博、鎮冀、淮西、淄青等十五道，「凡七十一州，不申戶口」；中央歲入實際只靠浙東西、淮南、江西等八道，而天下仰食官府的兵員八十三萬餘人，「率以兩戶資一兵」（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）。換言之，朝廷名義上統治天下，實際上靠東南八道養全國的兵。\n2.  **藩鎮世襲**：河北三鎮與淮西、淄青父死子繼，朝廷只能事後追認。德宗朝曾試圖強硬削藩，結果引發涇原兵變、皇帝出奔。\n3.  **禁軍宦官化**：德宗以後，神策軍由宦官掌握，成為皇帝唯一可以直接調動的中央武力。\n\n憲宗的位置因此很特殊：他必須用一支由宦官掌握的禁軍、一套只靠八道撐住的財政，去對付一群各擁數州的軍閥。他的成績單，要放在這個起點上看。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：元和中興不是一場連續的勝利，而是一連串**挑對手、認挫折、再集中**的選擇；憲宗最了不起的地方，是他在中途願意承認錯誤並縮小目標。**\n\n**第一步：先打孤立的、近的**\n\n即位之初，他先處理西川劉辟與浙西李錡。劉辟被擒，「斬劉辟並子超郎等九人於獨柳樹下」；李錡詐稱入朝，隨即「據潤州反，殺判官王澹、大將趙琦」，旋即敗亡（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）。這兩個對手都遠離河北藩鎮集團，也不掌握世襲數代的根基。新皇帝先拿下這兩場勝利，既樹威，也確保了江南財賦與入蜀通道。\n\n**第二步：河北受挫，承認失敗**\n\n元和四年，他對成德王承宗用兵，卻任命神策左軍中尉、宦官吐突承璀為統帥。京兆尹許孟容與諫官當面力爭：「征伐大事，不可以內官為將帥」；憲宗只做了表面讓步，「詔旨只改處置為宣慰，猶存招討之名」（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）。戰事無功，諫官要求依法追究，他「宥之，降承璀為軍器使」[史載]。這是他第一次在用人上付出代價：他寧可冒朝議反對，也要讓自己的家奴掌兵。\n\n**第三步：等待河北自己裂開**\n\n元和七年，魏博節度使田季安死，幼子懷諫年僅十一歲，軍中擁立衙將田興。憲宗沒有趁亂出兵，而是派裴度前往宣慰，「賜三軍賞錢一百五十萬貫」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。一筆錢換來河北三鎮之一主動歸附——比任何一場戰爭都便宜。\n\n**第四步：淮西，縮小目標、集中力量**\n\n元和十年削奪吳元濟官爵後，戰事拖延；朝廷「徵兵討賊，凡十餘鎮之師，環於申、蔡，未立戰功」[史載]。武元衡遇刺後，主和聲浪升高，他反而讓裴度入相。元和十二年，他做出整個元和年間最關鍵的決定：「詔權罷河北行營，專討淮、蔡」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）——暫時放下成德，把全國的兵力與錢都押在淮西一點。同年他任命裴度以宰相身分兼彰義軍節度、淮西宣慰處置使，親赴行營；秋冬之際，「李愬率師入蔡州，執吳元濟以獻，淮西平」[史載]。兩年後，淄青李師道也被平定。\n\n**陰暗面：同一雙手，選了另一群人**\n\n平定淮西後，他重用以「諂刻欺蔽」著稱的皇甫鎛為相，正直的崔群被排擠外放（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。他迎法門寺佛骨入宮，刑部侍郎韓愈上疏力陳其弊，被貶為潮州刺史[史載]。他命山人柳泌為臺州刺史，只因「為上於天臺山採仙藥」；服金丹後，起居舍人裴濆上表勸他「若金丹已成，且令方士自服一年，觀其效用」，結果「上怒」，裴濆被貶[史載]。元和十五年，他「崩於大明宮之中和殿，享年四十三」，而「時以暴崩，皆言內官陳弘志弒逆，史氏諱而不書」[史載]。穆宗即位後下詔處死柳泌，史官並記下憲宗服丹後「日加躁渴，遽棄萬國」（[《舊唐書·穆宗本紀》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716)）。\n\n**連鎖結果**：元和年間的勝利有一半是用錢買來的——魏博的一百五十萬貫、淮西前線的長期供軍，都出自那東南八道[推斷]。藩鎮在他手上第一次全面低頭，但他平藩時所倚重的宦官禁軍體制卻原封不動地留了下來；他一死，河北很快再叛，宦官廢立皇帝也成為晚唐常態[推斷]。《舊唐書》史臣的評語恰好是一正一反：「唐室中興，章武而已」，但「惜乎服食過當，閹豎竊發」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。\n\n### **3. 【人性與性格側寫】**\n\n*   **能忍受長期消耗**：淮西戰事前後打了數年，他在宰相遇刺、十餘鎮之師無功時仍不撤兵（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。\n*   **會識人，也會欣賞識人的人**：裴度從淮西宣慰回來，斷言「惟光顏見義能勇，必能立功」；李光顏告捷後，「上尤賞度之知人」[史載]。\n*   **對親信有偏私**：承璀戰敗，他明知朝議不滿，仍只降一級了事（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）。\n*   **喜歡別人說到做到**：他對裴度等人說「凡好事口說則易，躬行則難」[史載]——這句話既是要求，也是他對自己的自我形象。\n*   **晚年拒絕被糾正**：韓愈、裴濆、崔群三人先後因直言或被讒而遭貶，間隔不過一年（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。\n\n### **4. 【如果生在現代】**\n\n憲宗最接近的現代角色是：**一位接手長年被地方幫派割據的大城市、受命逐一掃黑的強勢檢察總長。**\n\n*   **排順序**：他先辦孤立的小幫派，立威後清查帳目，發現全市稅收只靠少數幾個行政區撐著。\n*   **承認一次失敗**：他派自己的親信助理掛帥圍剿最大的幫派，失敗後只把助理調職，沒有認真檢討用人。\n*   **在暗殺之後加碼**：副手被當街刺殺，他沒有收手，而是把受傷的另一名副手升為第一把手，並暫停其他戰線、全力辦一個案子。\n*   **晚年的封閉**：成功後，他身邊只剩下會替他找錢、找偏方的人，批評者一個個被調走。\n*   **邊界**：這個比喻只說明他**排順序、集中打擊、晚年封閉**的節奏；憲宗擁有的是君主的生殺大權與世襲正當性，而他的對手是擁兵數萬的節度使，不是犯罪組織，代價與規模遠非現代執法可比。",
+        "soulEssence": "【說話邏輯】\n他喜歡用「要求兌現」的方式說話：先把一個人人同意的原則講出來，再逼對方用行動證明。元和十三年冬，他對裴度等宰相說：「凡好事口說則易，躬行則難。卿等即言之，須行之，勿空口說」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]。這句話的潛台詞是：我看的是你做了什麼，不是你說了什麼[推斷]。有趣的是，裴度當場把話原樣奉還——「天下之人，從陛下所行，不從陛下所言，臣等亦願陛下每言之則行之」——而他「頗欣納」[史載]。他能接受這種回敬，因為這仍在他自己設定的遊戲規則之內：比誰更說到做到[推斷]。\n\n【壓力反應】\n他在壓力下的反射動作是**不退，但縮**。\n武元衡被刺身死、裴度傷首，京城公卿出門都要帶家僮兵仗；兵部侍郎許孟容灑泣極言，「上為之憤嘆」，隨即懸賞萬貫緝凶（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]。他沒有因恐懼而議和，卻也沒有四面出擊；兩年後他下的是「權罷河北行營，專討淮、蔡」[史載]。憤怒被他轉成了集中，而不是擴大——這是他和許多一怒興兵的君主最大的不同[推斷]。同樣的節奏也出現在承璀兵敗之後：他沒有在河北硬撐，而是收兵、降職、等待；兩年後魏博田興自己來歸，他才用錢接住這個機會（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]。\n\n【核心驅動】\n他要的是**朝廷說了算**這件事重新成立。\n從即位起，他對劉辟、李錡、吳元濟、李師道一一用兵，對魏博則用重賞招撫（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）[史載]；手段可以變，標準不變：節度使由誰當，必須由長安決定[推斷]。《元和國計簿》裡那一行「不申戶口」，對他而言大概不只是財政問題，而是一份清單：哪些地方還不承認他[詮釋：此為從其用兵順序歸納的動機]。\n\n【慣性盲點】\n他判斷敵人很準，判斷身邊的人卻常以**是否只屬於我**為準。\n討成德時，諫官明言「征伐大事，不可以內官為將帥」，他只改了一個頭銜，仍讓吐突承璀掛帥；戰敗後也只「降承璀為軍器使」（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）[史載]。晚年他讓皇甫鎛掌財政兼宰相，讓柳泌為他採仙藥（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]。宦官、聚斂之臣與方士的共通點，是他們的權力完全來自他本人，不依附任何朝臣集團[推斷]。他在藩鎮身上看得見「私人武力」的危險，卻沒把同樣的眼光放到禁軍與內廷[推斷]。\n\n【情感結構】\n他的情感投注在少數幾個能替他打贏的人身上，而且投得很深。\n裴度從淮西回來推薦李光顏，李光顏告捷，「上尤賞度之知人」；裴度遇刺之後，他讓裴度入相，再命其以宰相身分節制淮西，並派神策軍護送出征（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]。對承璀的偏袒也是同一種情感——一旦認定是自己人，他就不太肯放手[推斷]。反過來，韓愈、裴濆、崔群的直言讓他不快時，他處理得又快又冷[史載]。他最脆弱的時刻，大概是晚年「日加躁渴」、仍不肯停服金丹的那段日子（[《舊唐書·穆宗本紀》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716)）——一個一生講求「躬行」的人，最後把希望寄託在一顆藥上[詮釋]。\n\n【參照系】\n他理解局勢的框架是**德宗的反面**：德宗削藩失敗、出奔奉天，他就要證明同一件事可以做成[推斷]。\n類比準確之處：德宗的教訓是戰線過寬、財力不繼；他編國計簿、先取孤立之敵、再暫罷河北專攻淮西（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]，正是把這個教訓用對了地方。\n類比失準之處：德宗留下的另一個遺產是宦官掌神策軍，這一點他不但沒有反省，反而倚重得更深（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)）[史載]；他只從德宗身上學到「怎麼打」，沒有學到「靠誰打」的風險[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n裂縫出在他對「說到做到」的執著，與他晚年對批評者的不耐之間。\n他要求宰相「勿空口說」，也接受裴度回敬「從陛下所行，不從陛下所言」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）[史載]；然而僅僅一年後，裴濆以一個可以驗證的方法——讓方士先自服一年——勸他停藥，他卻「怒」而貶之[史載]。兩件事放在一起看，他尊重的其實是**替他把事做成**的人，而不是**替他檢驗他自己**的人[推斷]。他對藩鎮講法度，對自己卻漸漸只講感覺：崔群勸他「以開元初為法，以天寶未為戒」，暗指的正是當朝聚斂的皇甫鎛[史載]；韓愈論佛骨，同樣是拿前代帝王的下場來提醒他[推斷]，而他在最需要聽的時候選擇了不聽[推斷]。他死後「史氏諱而不書」的那一夜，把這道裂縫留成了一個沒有答案的謎[詮釋]。",
+        "stats": [
+          85,
+          25,
+          84,
+          86,
+          70
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：85\n\n他在元和十二年「詔權罷河北行營，專討淮、蔡」，並以宰相裴度親赴行營、李愬執吳元濟，終平淮西（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)），兩年後再平淄青；這是對全國兵力的集中調度。缺點是他早年以宦官吐突承璀為帥討成德，無功而返（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)），淮西前期十餘鎮之師也長期無功。評85，高於漢明帝（82）與宋孝宗（70），低於唐高宗（92）。\n\n### 武力：25\n\n憲宗是坐鎮長安的決策者，史料中沒有他親自領兵或臨陣的紀錄；淮西、淄青之役都由裴度、李愬、李光顏等人執行（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)）。他的勇氣表現在宰相遇刺後仍不撤兵，屬於政治意志而非個人武勇；也因為他不親臨前線，前期對前線諸將的實況掌握有限。評25，與唐高宗（25）持平，高於宋仁宗（20），低於宋孝宗（35）。\n\n### 智謀：84\n\n他懂得排列對手：先取劉辟、李錡（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)），再以一百五十萬貫賞錢收魏博，最後暫罷河北、專攻淮西（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)），每一步都把有限的錢與兵用在最可能成功之處。短板在於晚年被柳泌金丹所惑，連「令方士自服一年」這樣的常識檢驗都拒絕接受。評84，高於宋孝宗（82），低於漢明帝（90）與唐高宗（90）。\n\n### 政治：86\n\n他讓李吉甫編成《元和國計簿》，正視「十五道，凡七十一州，不申戶口」的財政真相（[《舊唐書·憲宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714)），並在任內使藩鎮全面歸順，史臣稱「唐室中興，章武而已」。但他晚年用皇甫鎛聚斂、排擠崔群（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)），宦官掌禁軍的體制也未改變，死後成果迅速流失。評86，低於宋孝宗（90）與唐高宗（93），遠高於崇禎帝（65）。\n\n### 魅力：70\n\n他能讓遇刺受傷的裴度繼續為他出征，也欣賞裴度「知人」（[《舊唐書·憲宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715)），淮西之役將相同心。但他對諫臣的耐性有限：韓愈因諫佛骨貶潮州，裴濆因諫金丹貶江陵，崔群因皇甫鎛譖言外放；最終「皆言內官陳弘志弒逆」，連身邊的宦官都未能真正收服。評70，高於漢明帝（65），低於宋孝宗（85）與唐高宗（80）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T10:41:05.846Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書·本紀第十五　憲宗下",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715",
+            "locator": "本機固定修訂 oldid=2348866 全文比對（textSha256 已驗）：公卿持事柄者，以家僮兵仗自隨、賜三軍賞錢一百五十萬貫、徵兵討賊，凡十餘鎮之師，環於申、蔡，未立戰功、詔權罷河北行營，專討淮、蔡、李愬率師入蔡州，執吳元濟以獻，淮西平、為上於天臺山採仙藥…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "舊唐書·本紀第十四　順宗　憲宗上",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714",
+            "locator": "本機固定修訂 oldid=2614135 全文比對（textSha256 已驗）：凡七十一州，不申戶口、率以兩戶資一兵、斬劉辟並子超郎等九人於獨柳樹下、據潤州反，殺判官王澹、大將趙琦、征伐大事，不可以內官為將帥、詔旨只改處置為宣慰，猶存招討之名…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "舊唐書·本紀第十六　穆宗",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716",
+            "locator": "本機固定修訂 oldid=2601735 全文比對（textSha256 已驗）：日加躁渴，遽棄萬國",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "3b88668494838a1cde0663f788c5978a554613d711a856a26621d684818fb670",
+        "sourcePackageSha256": "cd29f0aeb0b50a60a2acec431294e5a4e7a90de1b3ee45e79e36a646b3bdc41b",
+        "preservedDeepSha256": "ab8651b8df323856042f4752d662afbabb44ff55b872a9bc2e2ef1b822406b71",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "5a26a88ddc96f65cb8934d6da4bd0be46561d2cf97084eb655514696897c4adc",
+            "requestSha256": "3b88668494838a1cde0663f788c5978a554613d711a856a26621d684818fb670",
+            "inputSha256": "d6b52d1ed0ef1a297965537450d6b464bf803d445c882dca5de8efaf42e49ca1",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "20058dd700fd1a238f8bd395259f405f969fa7d54b53a73844e0576d205887e8",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "cd29f0aeb0b50a60a2acec431294e5a4e7a90de1b3ee45e79e36a646b3bdc41b",
+            "preservedDeepSha256": "ab8651b8df323856042f4752d662afbabb44ff55b872a9bc2e2ef1b822406b71",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T10:41:05.846Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/02.analysisStats.raw.md",
+            "rawResponseSha256": "ff390795c50e20f301011899af0e20b2822fa107ace9e32511e2689205a66091",
+            "responseFile": "analysis-batch-51-100/drafts/02.analysisStats.response.md",
+            "responseSha256": "ff390795c50e20f301011899af0e20b2822fa107ace9e32511e2689205a66091",
+            "fieldsHashes": {
+              "analysis": "57c00001359b5c2cc00f60dbef7c50cc7a6be2c7be42cd678221a16a6e8481c6",
+              "stats": "f0c5ccf49635fc9cd686843aa5242155757d9044fa777c0a31db3a5ca779e402",
+              "statsAnalysis": "32a6dd5cb225c7727eddbb2129c248677d8d7d03f70fa0705e11a2bad70025e0"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/02.analysisStats.capture.json",
+            "captureSha256": "7b9858d5bc4284e6c686394a5028e58d91b8090c9b6534f3550df22062af9d17",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/02.analysisStats.json",
+            "sourceReviewSha256": "6e1df1f97126f43c75ff40464c2d2d9abc0edd0672782314fdfc282534cdbda1",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/02.combined.search-log.json",
+              "sha256": "cc41423549f6a2987e48bfdae3346ecce9f6a18c5f52973997144229cc6717cf",
+              "webSearchCount": 2,
+              "archiveCheckCount": 33
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·本紀第十五　憲宗下",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715",
+                "locator": "本機固定修訂 oldid=2348866 全文比對（textSha256 已驗）：公卿持事柄者，以家僮兵仗自隨、賜三軍賞錢一百五十萬貫、徵兵討賊，凡十餘鎮之師，環於申、蔡，未立戰功、詔權罷河北行營，專討淮、蔡、李愬率師入蔡州，執吳元濟以獻，淮西平、為上於天臺山採仙藥…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第十四　順宗　憲宗上",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714",
+                "locator": "本機固定修訂 oldid=2614135 全文比對（textSha256 已驗）：凡七十一州，不申戶口、率以兩戶資一兵、斬劉辟並子超郎等九人於獨柳樹下、據潤州反，殺判官王澹、大將趙琦、征伐大事，不可以內官為將帥、詔旨只改處置為宣慰，猶存招討之名…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第十六　穆宗",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716",
+                "locator": "本機固定修訂 oldid=2601735 全文比對（textSha256 已驗）：日加躁渴，遽棄萬國",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "383f803a8c08be7af35a816975ebdf4b46d4911d1296f5f028064468f350d94e",
+            "requestSha256": "3b88668494838a1cde0663f788c5978a554613d711a856a26621d684818fb670",
+            "inputSha256": "d6b52d1ed0ef1a297965537450d6b464bf803d445c882dca5de8efaf42e49ca1",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "909ae339fb1597faad595c9ab085325cd3293638c78b0b3657fb9f5e048f017d",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "cd29f0aeb0b50a60a2acec431294e5a4e7a90de1b3ee45e79e36a646b3bdc41b",
+            "preservedDeepSha256": "ab8651b8df323856042f4752d662afbabb44ff55b872a9bc2e2ef1b822406b71",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T10:41:05.846Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/02.soulEssence.raw.md",
+            "rawResponseSha256": "1c389b22aaa7859478ec0334314bd44f39e71c31938f8c623526784f60f9e9e5",
+            "responseFile": "analysis-batch-51-100/drafts/02.soulEssence.response.md",
+            "responseSha256": "1c389b22aaa7859478ec0334314bd44f39e71c31938f8c623526784f60f9e9e5",
+            "fieldsHashes": {
+              "soulEssence": "48db74d0e3b69205783dd3c4b81f711160870fdeb7929a32813f91c620d31b8c"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/02.soulEssence.capture.json",
+            "captureSha256": "c1856e9537382fbe9e435d1554f6aae651a99588c7eddaa2898ce4e08a5b3c0a",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/02.soulEssence.json",
+            "sourceReviewSha256": "380a2157c7188cb4207cb8a37f99ead42e14b0d3148719c0dec5405054c6886c",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/02.combined.search-log.json",
+              "sha256": "cc41423549f6a2987e48bfdae3346ecce9f6a18c5f52973997144229cc6717cf",
+              "webSearchCount": 2,
+              "archiveCheckCount": 33
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·本紀第十五　憲宗下",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B715",
+                "locator": "本機固定修訂 oldid=2348866 全文比對（textSha256 已驗）：公卿持事柄者，以家僮兵仗自隨、賜三軍賞錢一百五十萬貫、徵兵討賊，凡十餘鎮之師，環於申、蔡，未立戰功、詔權罷河北行營，專討淮、蔡、李愬率師入蔡州，執吳元濟以獻，淮西平、為上於天臺山採仙藥…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第十四　順宗　憲宗上",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B714",
+                "locator": "本機固定修訂 oldid=2614135 全文比對（textSha256 已驗）：凡七十一州，不申戶口、率以兩戶資一兵、斬劉辟並子超郎等九人於獨柳樹下、據潤州反，殺判官王澹、大將趙琦、征伐大事，不可以內官為將帥、詔旨只改處置為宣慰，猶存招討之名…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第十六　穆宗",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716",
+                "locator": "本機固定修訂 oldid=2601735 全文比對（textSha256 已驗）：日加躁渴，遽棄萬國",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/02.analysis.md",
+            "analysisContextSha256": "c5174d994148eb5069234aeba10a41bded86b40c9ff585c83b485516d09ceae3"
+          }
+        }
+      }
+    }
+  ]
+}
