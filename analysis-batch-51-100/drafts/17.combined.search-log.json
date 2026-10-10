@@ -1,0 +1,331 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_李定國_905232040",
+  "packetSha256": "3174557d0b2b4d812a900dffc247e4723969f74ab8c6eeb512926c50ad5c998a",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "李定國 兩蹶名王 桂林 衡州 孔有德 尼堪 南明 研究 論文 顧誠",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Li_Dingguo",
+        "https://www.thenewslens.com/article/137823",
+        "https://en.wikisource.org/wiki/Eminent_Chinese_of_the_Ch%27ing_Period/Li_Ting-kuo",
+        "https://blog.udn.com/readeryen/180085443",
+        "https://www.legends.com.tw/2025/07/08/southern-ming-yongli-tongbao-shortened-shui-yong-reverse-with-double-dots-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E7%9F%AD%E6%B0%B4%E6%B0%B8%E8%83%8C%E9%9B%99%E6%98%9F/",
+        "https://www.legends.com.tw/2025/07/08/southern-ming-yongli-tongbao-left-shortened-shui-yong-reverse-with-gong-below-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E5%B7%A6%E7%9F%AD%E6%B0%B4%E8%83%8C%E4%B8%8B/",
+        "https://m.163.com/dy/article/KUK2MTMA0556DGUA.html",
+        "https://www.legends.com.tw/2025/07/07/southern-ming-yongli-tongbao-dot-stroke-shui-yong-reverse-with-double-dots-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E9%BB%9E%E6%B0%B4%E6%B0%B8%E8%83%8C%E9%9B%99%E6%98%9F%E7%89%88/",
+        "https://www.legends.com.tw/2025/07/04/southern-ming-yongli-tongbao-right-shortened-shui-reverse-with-large-ding-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E5%8F%B3%E7%9F%AD%E6%B0%B4%E8%83%8C%E5%A4%A7%E5%AE%9A/"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫可望 李定國 內訌 三岔河 1657 南明 永曆 研究 學報",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Li_Dingguo",
+        "https://www.legends.com.tw/2025/07/08/southern-ming-yongli-tongbao-left-shortened-shui-yong-reverse-with-gong-below-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E5%B7%A6%E7%9F%AD%E6%B0%B4%E8%83%8C%E4%B8%8B/",
+        "https://www.legends.com.tw/2025/07/08/southern-ming-yongli-tongbao-shortened-shui-yong-reverse-with-double-dots-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E7%9F%AD%E6%B0%B4%E6%B0%B8%E8%83%8C%E9%9B%99%E6%98%9F/",
+        "https://www.legends.com.tw/2025/07/07/southern-ming-yongli-tongbao-dot-stroke-shui-yong-reverse-with-double-dots-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E9%BB%9E%E6%B0%B4%E6%B0%B8%E8%83%8C%E9%9B%99%E6%98%9F%E7%89%88/",
+        "https://www.legends.com.tw/2025/07/03/great-xi-dashun-tongbao-thick-script-reverse-with-larger-gong-below-broad-inner-border-version-%E5%A4%A7%E8%A5%BF-%E5%A4%A7%E9%A0%86%E9%80%9A%E5%AF%B6-%E7%B2%97%E5%AD%97%E8%83%8C%E5%A4%A7/",
+        "https://www.legends.com.tw/2025/07/03/southern-ming-yongli-tongbao-short-yong-reverse-with-yue-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E7%9F%AE%E6%B0%B8%E8%83%8C%E7%B2%B5%E7%89%88/",
+        "https://journals.univie.ac.at/index.php/jeacs/article/download/8623/9331/28529",
+        "https://www.legends.com.tw/2025/07/08/southern-ming-yongli-tongbao-duckbill-headed-vertical-dot-short-tong-blank-reverse-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E9%B4%A8%E5%98%B4%E7%AB%8B%E9%BB%9E/",
+        "https://www.legends.com.tw/2025/07/08/southern-ming-yongli-tongbao-duckbill-headed-length-tong-right-shortened-shui-yong-blank-reverse-version-%E5%8D%97%E6%98%8E-%E6%B0%B8%E6%9B%86%E9%80%9A%E5%AF%B6-%E9%B4%A8%E5%98%B4%E9%95%B7/"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "任死荒徼，毋降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "襲破臨安，屠其城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "故儕輩，不相下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "縛而杖之百",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷120",
+      "quote": "聞李定國與可望有隙，遣使密召定國，以兵來迎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "定國軍中象陣略退，斬馭象者以徇，所部戰甚力，驅象突陣，有德敗績，退保桂林",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "晝夜環攻，城陷，有德自殺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷234",
+      "quote": "有德令其孥以火殉，遂自經",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7234"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "自率精騎追之，遇伏，沒於陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷216",
+      "quote": "我軍擊賊無退者。我為宗室，退，何面目歸乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7216"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷216",
+      "quote": "陷淖中，矢盡，拔刀戰，力竭，歿於陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7216"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "轉戰廣西、湖廣，下數十城，兵屢勝，可望益嫉之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "察其意，辭不赴",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "會雙禮追定國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "感泣，議奉迎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "棄其軍奔定國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "詣經略洪承疇降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "兵潰，妻子俱散失",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "自卯至午短兵接，死者如堵牆",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "彈穿脅，猶持刀潰圍出，乃死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "坐山巔督戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "土坌起撲面",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "上三十餘疏迎桂王，為吉翔所阻，不得達",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷474",
+      "quote": "李定國、白文選等分住三宣六慰，以擁戴為名，引潰眾肆擾，其患在門戶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7474"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "引兵橫擊之，緬人大敗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "終不肯出桂王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "為緬人所焚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "以降將受命敗軍後，崎嶇險阻，百折而不撓，比之擴廓帖木兒、陳友定輩，何多讓焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "率所部出降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "念兄事久，未可遽發難",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "斬馭象者以徇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "薦於王，使入閣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "收兵還雲南，奉桂王走永昌",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "遇伏，沒於陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "鞅鞅不為用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "號召諸土司起兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "上三十餘疏迎桂王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "百折而不撓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "上三十餘疏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "引軍還雲南",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "哀統武為言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "為吉翔所阻，不得達",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "皆鞅鞅不為用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "定國坐是終不競",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "妻子俱散失",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "方得定國妻子，將歸諸定國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷224",
+      "quote": "以降將受命敗軍後",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《清史稿》卷216、224、234、474 與《明史》卷120 全文比對。《清史稿》李定國傳底本有缺字，正文已避開含缺字之句。",
+    "搜尋未得顧誠《南明史》或孫李內訌之學術摘要，正文未引用。",
+    "「兩蹶名王」之語出自黃宗羲，僅見新聞摘要，正文未引用。"
+  ]
+}

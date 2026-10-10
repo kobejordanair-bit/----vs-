@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李定國_905232040",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:32:21.100Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e9ec1e7b0f1207695e460b3ae1ffe279cb3910ca110002aba37c15dbfc5bf978",
+  "rawResponseSha256": "e9ec1e7b0f1207695e460b3ae1ffe279cb3910ca110002aba37c15dbfc5bf978",
+  "sourcePackageSha256": "d404c5fed4e3b9d999d7e2cabe8662997c3d0c91ce4fc45bd553f82861bb1127",
+  "searchLogSha256": "3bf2f48aacd2c49efe12e4441a27611c22762401466d800e602be23388d2024a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224",
+      "title": "清史稿·卷二百二十四 列傳十一",
+      "locator": "本機固定修訂 oldid=2433586 全文比對（textSha256 已驗）：任死荒徼，毋降、襲破臨安，屠其城、故儕輩，不相下、縛而杖之百、定國軍中象陣略退，斬馭象者以徇，所部戰甚力，驅象突陣，有德敗績，退保桂林、晝夜環攻，城陷，有德自殺…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：用後半生償還前半生、戰場精明而政治心軟；場景為屠臨安、被杖、密敕感泣、薦馬吉翔、任死荒徼毋降。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "找到可奉獻的意義、號慟祈死為最脆弱時刻、以後半生定義自己，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以辭不赴與遺言、杖責與山巔督戰、密敕、馬吉翔與張趙不用、白文選與妻子散失、忠臣保主框架、降將與晉王身分為事件。"
+    }
+  ],
+  "materialIssues": []
+}

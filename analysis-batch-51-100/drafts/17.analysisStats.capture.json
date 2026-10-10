@@ -1,0 +1,42 @@
+{
+  "format": "dynasty-batch50-claude-capture",
+  "schemaVersion": 1,
+  "provider": "Claude Code (Anthropic)",
+  "recordId": "general_李定國_905232040",
+  "slug": "17",
+  "task": "analysisStats",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T11:32:21.034Z",
+  "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
+  "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+  "combinedPacketSha256": "3174557d0b2b4d812a900dffc247e4723969f74ab8c6eeb512926c50ad5c998a",
+  "requestSha256": "83e375b1f58061c4532ec2be970cc66b3fcdf6b8ea82eb6036146ce694853c31",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "inputSha256": "87b91bed5a2c0a2a174adf02ee4063738522086334017882c1c4cb8d8fdc8a97",
+  "promptSha256": "c3ec0bb3794ff4ab031d5cbb87f368d97df99cc7ed765f7c6187b2120c68aae1",
+  "sourcePackageSha256": "d404c5fed4e3b9d999d7e2cabe8662997c3d0c91ce4fc45bd553f82861bb1127",
+  "preservedDeepSha256": "63cc889804635e4164140b8914b38aa40d733f7ac2c24df67199ebb9c01d5de1",
+  "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+  "renderedOriginalSha256": "ebf91e65772ceb6bb879508249c48848f49c0bad5721169401822e2fb16e8b90",
+  "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+  "originalPromptVerified": true,
+  "rawResponseFile": "analysis-batch-51-100/drafts/17.analysisStats.raw.md",
+  "rawResponseSha256": "4a229366092d53f3fadbf9140d48807c1bfc12088071169efa09adeba7b3622c",
+  "responseFile": "analysis-batch-51-100/drafts/17.analysisStats.response.md",
+  "responseSha256": "4a229366092d53f3fadbf9140d48807c1bfc12088071169efa09adeba7b3622c",
+  "fieldsHashes": {
+    "analysis": "b236310767923a95b3dabed27341b9ed0ab84c76812a06dfe67ef2c871c1ef74",
+    "stats": "6bbfd2ae9460392adb2dc2bc4b400ae62bb2813969c0b95ffd3fbf19c32dfa4a",
+    "statsAnalysis": "08224bdc94273ce70dad2bae74e5591d596ce1911bc08b780f2cfd5c6544f30c"
+  },
+  "webSearchPerformed": true,
+  "searchLog": {
+    "file": "analysis-batch-51-100/drafts/17.combined.search-log.json",
+    "sha256": "3bf2f48aacd2c49efe12e4441a27611c22762401466d800e602be23388d2024a",
+    "webSearchCount": 2,
+    "archiveCheckCount": 47
+  },
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",
+  "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+  "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e"
+}

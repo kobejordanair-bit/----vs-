@@ -1,0 +1,92 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李定國_905232040",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:32:21.099Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4a229366092d53f3fadbf9140d48807c1bfc12088071169efa09adeba7b3622c",
+  "rawResponseSha256": "4a229366092d53f3fadbf9140d48807c1bfc12088071169efa09adeba7b3622c",
+  "sourcePackageSha256": "d404c5fed4e3b9d999d7e2cabe8662997c3d0c91ce4fc45bd553f82861bb1127",
+  "searchLogSha256": "3bf2f48aacd2c49efe12e4441a27611c22762401466d800e602be23388d2024a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7224",
+      "title": "清史稿·卷二百二十四 列傳十一",
+      "locator": "本機固定修訂 oldid=2433586 全文比對（textSha256 已驗）：任死荒徼，毋降、襲破臨安，屠其城、故儕輩，不相下、縛而杖之百、定國軍中象陣略退，斬馭象者以徇，所部戰甚力，驅象突陣，有德敗績，退保桂林、晝夜環攻，城陷，有德自殺…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7120",
+      "title": "明史·卷一百二十\n列傳第八　諸王五",
+      "locator": "本機固定修訂 oldid=2595107 全文比對（textSha256 已驗）：聞李定國與可望有隙，遣使密召定國，以兵來迎",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7234",
+      "title": "清史稿·卷二百三十四",
+      "locator": "本機固定修訂 oldid=2610991 全文比對（textSha256 已驗）：有德令其孥以火殉，遂自經",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Eminent_Chinese_of_the_Ch%27ing_Period/Li_Ting-kuo",
+      "title": "Arthur W. Hummel ed., Eminent Chinese of the Ch'ing Period, “Li Ting-kuo”（維基文庫）",
+      "locator": "WebSearch 結果摘要：記李定國於1652年8月攻取桂林",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7216",
+      "title": "清史稿·卷二百一十六 列傳三 諸王二",
+      "locator": "本機固定修訂 oldid=1777304 全文比對（textSha256 已驗）：我軍擊賊無退者。我為宗室，退，何面目歸乎、陷淖中，矢盡，拔刀戰，力竭，歿於陣",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7474",
+      "title": "清史稿·卷四百七十四 列傳二百六十一",
+      "locator": "本機固定修訂 oldid=1162953 全文比對（textSha256 已驗）：李定國、白文選等分住三宣六慰，以擁戴為名，引潰眾肆擾，其患在門戶",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "延安人、張獻忠養子、屠臨安、被孫可望杖百、順治九年破桂林孔有德自殺、衡州尼堪沒陣、十四年三岔河、十六年磨盤山、康熙元年卒，皆依清史稿卷224 等 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：桂林衡州與雙河口；武力：斬馭象者與山巔督戰；智謀：誘伏尼堪與磨盤山三伏；政治：薦馬吉翔與內戰；魅力：白文選來奔與百折不撓。對照岳飛、李光弼、戚繼光、孟珙、袁崇煥。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "屢勝→可望嫉→辭不赴；密敕→入衛→吳貞毓案；三岔河→可望降清；放馬吉翔→迎駕疏被阻。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    95,
+    85,
+    88,
+    45,
+    90
+  ]
+}
