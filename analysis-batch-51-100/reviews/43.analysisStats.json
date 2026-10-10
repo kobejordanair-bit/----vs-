@@ -1,0 +1,60 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_李林甫_1994836136",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:34:50.744Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0",
+  "rawResponseSha256": "a492ad7e06b3de1b7c709a301ed3e44c98f031d2f0a878537f0edba673cd88b0",
+  "sourcePackageSha256": "4263021faa76025d49cf1a08b77b5ba4c6e4e41eef50d1db9e3260b0a221f813",
+  "searchLogSha256": "1a4a1528e4e27218b7fe82a0d2498f1d29ba30cd29f1322bd32ef8395d777853",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7106",
+      "title": "舊唐書·卷一百〇六\n列傳第五十六　李林甫　楊國忠　張暐　王琚　王毛仲　陳玄禮",
+      "locator": "本機固定修訂 oldid=7902172 全文比對（textSha256 已驗）：敕林甫出於庭中，上登降聖閣遙視，舉紅巾招慰之，林甫不能興，使人代拜於席、秉鈞二十年、郎官須有素行才望高者，哥奴豈是郎官耶、太子瑛益疏薄、在位多載，倦於萬機，恆以大臣接對拘檢，難徇私欲，自得林甫，一以委成、皆以節度使入知政事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7223%E4%B8%8A",
+      "title": "新唐書·卷二百二十三上\n列傳第一百四十八上　姦臣上",
+      "locator": "本機固定修訂 oldid=2306895 全文比對（textSha256 已驗）：君等獨不見立仗馬乎，終日無聲，而飫三品芻豆；一鳴，則黜之矣、由是諫爭路絕、君等獨不見立仗馬乎",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "長平王叔良曾孫、哥奴之評、開元十四年御史中丞、結武惠妃與武氏、二十三年入相、二十四年代張九齡、三庶人之廢、晉國公、天寶右相與左僕射、韋堅楊慎矜杜有鄰諸獄、十一載用安思順與蕃將之奏、十一載十月華清宮遙視、卒後被誣奪官，皆依舊唐書卷106 archive 引句；立仗馬依新唐書卷223上。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：秉鈞二十年、恆度格令；武力：無軍事、重扃復壁；智謀：預知上意、家事何須謀及於人、寒族蕃人之說；政治：未有其比與三庶人；魅力：朝野側目、天下以為冤。對照秦檜、魏忠賢、霍光、李斯。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "結中官妃家→預知上意→動必稱旨→倦政委成；嚴挺之案→九齡有黨→罷相→林甫代之；杜出將入相之源→專任蕃將→祿山專大將之任→亂階；以微才不忌國忠→國忠入相→誣林甫謀反→奪官。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    80,
+    10,
+    93,
+    90,
+    35
+  ]
+}

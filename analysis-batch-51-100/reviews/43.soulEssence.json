@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_李林甫_1994836136",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:34:50.745Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "9fa668a3f260e5ee7c2bc1d78f8babb9d3b0d1cb4c8de01314239578688f5059",
+  "rawResponseSha256": "9fa668a3f260e5ee7c2bc1d78f8babb9d3b0d1cb4c8de01314239578688f5059",
+  "sourcePackageSha256": "4263021faa76025d49cf1a08b77b5ba4c6e4e41eef50d1db9e3260b0a221f813",
+  "searchLogSha256": "1a4a1528e4e27218b7fe82a0d2498f1d29ba30cd29f1322bd32ef8395d777853",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7106",
+      "title": "舊唐書·卷一百〇六\n列傳第五十六　李林甫　楊國忠　張暐　王琚　王毛仲　陳玄禮",
+      "locator": "本機固定修訂 oldid=7902172 全文比對（textSha256 已驗）：敕林甫出於庭中，上登降聖閣遙視，舉紅巾招慰之，林甫不能興，使人代拜於席、秉鈞二十年、郎官須有素行才望高者，哥奴豈是郎官耶、太子瑛益疏薄、在位多載，倦於萬機，恆以大臣接對拘檢，難徇私欲，自得林甫，一以委成、皆以節度使入知政事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最懂管道的宰相，控制接近皇帝的通道，終只能遠望紅巾；場景為家事何須謀及於人、立仗馬、重扃復壁一夕屢徙、紅巾遙視。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "只防有才名者之盲點、隔開君臣之牆亦隔開自己等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以家事之語與保護壽王、陰計中傷與夢裴寬與陳希烈、哥奴與固位、楊國忠與屈指待卿、重扃復壁與托後事、格令恩寵與祥瑞、紅巾遙視為事件。"
+    }
+  ],
+  "materialIssues": []
+}
