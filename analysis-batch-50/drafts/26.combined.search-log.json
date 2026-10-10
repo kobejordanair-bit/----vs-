@@ -1,0 +1,220 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_孟珙_306206481",
+  "packetSha256": "e56da9feea035583afdba1d9d7afaf54d5b9f0973732408fc2c6ab862476a10d",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "孟珙 京湖 屯田 襄陽 收復 1239 蔡州 1234 研究 南宋 防禦",
+      "returnedUrls": [
+        "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7412",
+        "https://m.thepaper.cn/newsDetail_forward_31771457",
+        "https://military-history.fandom.com/wiki/Mongol_conquest_of_the_Song_dynasty",
+        "https://lawdata.com.tw/tw/detail.aspx?no=264869",
+        "https://xb-zsb.hbu.edu.cn/CN/Y2018/V43/I5/9"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "孟珙，字璞玉，隨州棗陽人。四世祖安，嘗從岳飛軍中有功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙料其必窺樊城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "金人果至，半渡伏發，殲其半",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙請以二萬人行，因命珙盡護諸將",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "南北軍毋相犯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "柔中流矢如蝟，珙麾先鋒救之，挾柔以出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙與倴盞分守緒骨，得金諡寶、玉帶、金銀印牌有差",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "合三郡人馬糧械攻黃守王鑒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "軍民喜曰：「吾父來矣。」駐帳城樓，指畫戰守，卒全其城，斬逗留者四十有九人以徇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙益以白金五十兩賜之諸將",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙遣醫視療，士皆感泣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "軍無宿儲，珙大興屯田，調夫築堰，募農給種，首秭歸，尾漢口，爲屯二十，爲莊百七十，爲頃十八萬八千二百八十",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "上屯田始末與所減券食之數，降詔獎諭",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙以重慶積粟少，餉屯田米十萬石",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "得郢然後可以通饋餉，得荊門然後可以出奇兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "取襄不難而守爲難",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "劉全復樊城，遂復襄陽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "珙所招中原精銳百戰之士萬五千餘人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "創「飛鶻軍」",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "國事如此，合智並謀，猶懼弗克，而兩司方勇於私鬥，豈不愧廉、藺之風乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "隆之、大雅得書大慚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "彼若以兵綴我，上下流急",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "乃厚招之，降者不絕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "行省范用吉密通降款，以所受告爲質，珙白於朝，不從",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "三十年收拾中原人，今志不克伸矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "病遂革，乞休致",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "在軍中與參佐部曲論事，言人人異，珙徐以片語折衷，衆志皆愜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "謁士遊客，老校退卒，壹以恩意撫接",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "退則焚香掃地，隱几危坐，若蕭然事外。遠貨色，絕滋味",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "名《警心易贊》。亦通佛學，自號「無庵居士」",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "閔忠廟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷412",
+      "quote": "遣張德、劉整分兵入蔡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; all linked citations verified in the repository archive. The WebSearch corroborated the 1239 recovery of Xiangyang and the Jinghu army's role at Caizhou but returned no scholarship strong enough to cite.",
+    "劉整降元為通行史實，標為[推斷]，無連結。"
+  ]
+}

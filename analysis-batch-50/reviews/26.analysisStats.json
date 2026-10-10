@@ -1,0 +1,62 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_孟珙_306206481",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:15:31.198Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a54d78b26757ebfec0288de66371883e353f753c3edc1ba701faf699550a64a4",
+  "rawResponseSha256": "a54d78b26757ebfec0288de66371883e353f753c3edc1ba701faf699550a64a4",
+  "sourcePackageSha256": "74b7646674cb6549791611a65a1b034000336dae2af7d9b5ccdd8104290f2cb0",
+  "searchLogSha256": "90a27c519e48d505ef4fcadcd49f5072c0e5422e3cfc53bf324f8df7ce507978",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7412",
+      "title": "宋史·卷四百一十二 列傳第一百七十一",
+      "locator": "本機固定修訂 oldid=2004824 全文比對（textSha256 已驗）：孟珙，字璞玉，隨州棗陽人。四世祖安，嘗從岳飛軍中有功、珙料其必窺樊城、金人果至，半渡伏發，殲其半、珙請以二萬人行，因命珙盡護諸將、南北軍毋相犯、柔中流矢如蝟，珙麾先鋒救之，挾柔以出…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "孟珙，南宋京湖制置使；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "system",
+      "passed": true,
+      "detail": "屯田數字、餉米十萬石、鎮北軍萬五千、飛鶻軍，本傳原文。"
+    },
+    {
+      "id": "campaigns",
+      "passed": true,
+      "detail": "嘉定十年樊城設伏、端平元年蔡州（年份經本機定位）、嘉熙三年正月復襄陽、黃州守城，本傳原文；黃州地點已依本傳上下文校正。"
+    },
+    {
+      "id": "end",
+      "passed": true,
+      "detail": "范用吉降款不從與遺言、病革乞休，本傳原文。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[96,85,94,80,95] 對照李牧[98,82,97,35,92]、岳飛[98,95,88,35,96]、王忠嗣[95,88,94,55,92]、徐達[99,85,95,92,90]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    96,
+    85,
+    94,
+    80,
+    95
+  ]
+}
