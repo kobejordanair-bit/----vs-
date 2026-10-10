@@ -1,0 +1,396 @@
+{
+ "webSearches": [
+  {
+   "query": "陳群 九品官人法 九品中正制 創立 宮崎市定 研究 曹魏 吏部",
+   "returnedUrls": [
+    "https://zh.wikisource.org/wiki/%E9%80%9A%E5%85%B8/%E5%8D%B7014",
+    "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/9225888d-e71a-4448-bb3a-2d6a9c29c0fa/content",
+    "https://kotobank.jp/word/%E4%B9%9D%E5%93%81%E5%AE%98%E4%BA%BA%E6%B3%95-52182",
+    "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/145881/1/jor015_2_252.pdf",
+    "https://tohoku.repo.nii.ac.jp/record/135232/files/0495-9930-2005-94-41.pdf",
+    "https://kotobank.jp/word/%E4%B9%9D%E5%93%81%E4%B8%AD%E6%AD%A3-1300498",
+    "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/24500/p015.pdf"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "夫臣下雷同，是非相蔽，国之大患也。若不和睦则有雠党，有雠党则毁誉无端，毁誉无端则真伪失实"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷045",
+   "quote": "高下逐強弱，是非由愛憎"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷045",
+   "quote": "是以上品無寒門，下品無勢族"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "此兒必兴吾宗"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "更爲纪拜，由是显名"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "随纪避難徐州"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "营治宫室，百姓失农時"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "制九品官人之法，羣所建也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "并受遺诏辅政"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "动仗名義，有清流雅望"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "袁术尚强，今东，必與之争。吕布若袭將軍之後，將軍雖得徐州，事必无成"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "布果袭下邳"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "备恨不用羣言"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "封還教，以爲模、逵秽德，终必敗"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "後模、逵皆坐奸宄诛，太祖以谢羣"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "世以羣爲知人"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "制九品官人之法"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷036",
+   "quote": "魏氏承顛覆之運，起喪亂之後，人士流移，考詳無地，故立九品之制，粗且為一時選用之本耳。其始造也，鄉邑清議，不拘爵位，褒貶所加，足為勸勵"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "御史中丞能申其父之论乎"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "本兴仁恻而死者更众，所谓名轻而实重者也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "是重人支体而轻人躯命也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "深善繇、羣言"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "軍事未罢，顾众议，故且寝"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "斜谷阻险，難以进退，转运必见钞截"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "今舍此急而先宫室，臣惧百姓遂困，将何以应敌"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "今臣曾不能少凝圣听，不及意远矣"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "於是有所减省"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷036",
+   "quote": "中間漸染，遂計資定品，使天下觀望，唯以居位為貴"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷045",
+   "quote": "上品無寒門，下品無勢族"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "使淫者下蚕室，盗者刖其足"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "名轻则易犯，实重则伤民"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "王朗及议者多以爲未可行"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "在朝无適无莫，雅杖名義，不以非道假人"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "深敬器焉，待以交友之礼"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "自吾有回，门人日以亲"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "夫议刑爲國，非爲私也；且自明主之意，吾何知焉"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "其弘博不伐，皆此類也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "若必作之，固非臣下辞言所屈；若少留神，卓然回意，亦非臣下之所及也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "王者岂惮一臣，盖为百姓也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "事统台阁，重内轻外"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "即古六卿之任也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "今考绩之法废，而以毁誉相进退，故真伪浑杂，虚实相蒙"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "使羣领中领軍"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "假节，都督水軍"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "转运必见钞截"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "毁誉无端则真伪失实"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "议刑爲國，非爲私也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "待以交友之礼"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "恨不用羣言"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "有清流雅望"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "若不和睦则有雠党，有雠党则毁誉无端，毁誉无端则真伪失实"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "夫人之所欲，莫不有辞，况乃天王，莫之敢违"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "太祖以谢羣"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "萧何之大略"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "若必作之，固非臣下辞言所屈"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "雅杖名義，不以非道假人"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷036",
+   "quote": "人士流移，考詳無地"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷045",
+   "quote": "一人之身，了一州之才"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷036",
+   "quote": "猶有鄉論餘風"
+  },
+  {
+   "book": "jinshu",
+   "title": "晉書/卷036",
+   "quote": "遂計資定品"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "今考绩之法废，而以毁誉相进退"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "长短有命，存亡有分"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "今臣曾不能少凝圣听"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "追思羣功德，分羣户邑，封一子列侯"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "名如画地作饼，不可啖也"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "能以天下声教爲己任"
+  },
+  {
+   "book": "sanguozhi",
+   "title": "三國志/卷22",
+   "quote": "立功立事，过之"
+  }
+ ],
+ "pageReads": [],
+ "extraSources": {
+  "https://kotobank.jp/word/%E4%B9%9D%E5%93%81%E5%AE%98%E4%BA%BA%E6%B3%95-52182": {
+   "title": "コトバンク「九品官人法」條（引宮崎市定《九品官人法の研究》1956）",
+   "locator": "WebSearch 結果摘要：依陳群建議實施，本重個人才德，運作中漸偏出身門第；原書未讀",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；史實引句對 repo 內固定修訂《三國志》卷22 與《晉書》卷36、45 全文比對（三國志此版本繁簡混排，引句依原字）。",
+  "宮崎市定之說僅據百科摘要；《通典》延康元年立法記載僅見搜尋摘要，正文未作引句；九品官人法的具體條文史料未比對。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity-date",
+    "潁川許昌人、陳寔孫、劉備別駕勸勿取徐州、歸曹為西曹掾屬、御史中丞議肉刑、侍中、文帝時尚書制九品官人法、尚書令、受遺詔輔政、明帝時司空、諫伐蜀與宮室、青龍四年薨，皆依三國志卷22 archive 引句；九品後弊依晉書卷36衛瓘、卷45劉毅。"
+   ],
+   [
+    "five-dimensions",
+    "統率：領中領軍、都督水軍、錄尚書事；武力：純文臣；智謀：徐州之預言、模逵穢德、斜谷轉運；政治：九品官人法、輔政；魅力：曹丕交友之禮、清流雅望。對照荀彧、謝安、張廷玉、李斯。"
+   ],
+   [
+    "causality",
+    "人士流移考詳無地→立九品之制→始造鄉邑清議不拘爵位→中間漸染計資定品→上品無寒門；群上疏雷同→讎黨→毀譽無端→真偽失實，與九品後弊對照。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "distinctive-person",
+    "主論點：最善知人並將之制度化，卻親手寫下制度最大危險；場景為封還教、自吾有回、毀譽無端、上品無寒門。"
+   ],
+   [
+    "interpretation",
+    "制度離開設計者即失眼光、名義框架失守、諫而不逼等皆標[詮釋]。"
+   ],
+   [
+    "seven-fields",
+    "七欄各以連鎖推理與议刑爲國、太祖以謝羣與帝不聽與伐蜀分步諫、雅杖名義與必興吾宗、中正與考績之廢、劉廙與幼女之葬與追思功德、孔融拜紀與畫地作餅、毀譽無端與陳泰比較為事件。"
+   ]
+  ]
+ }
+}

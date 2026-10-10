@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_陳群_2004391531",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:23:56.971Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "34c2101f7fcb4b13d65fd8b688249e501fccf9ef52b6ddaaa52ad2d2c1145893",
+  "rawResponseSha256": "34c2101f7fcb4b13d65fd8b688249e501fccf9ef52b6ddaaa52ad2d2c1145893",
+  "sourcePackageSha256": "63a547e0219bb1d35e8c0568e29b9acb66d218e768ab17fc4fc62f47705c36eb",
+  "searchLogSha256": "eda82b974faa81c55f3d03144f2799a471b41e8639870f1200a54b41fe17f6e5",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B722",
+      "title": "三國志·魏書·桓二陈徐卫卢传",
+      "locator": "本機固定修訂 oldid=2085105 全文比對（textSha256 已驗）：夫臣下雷同，是非相蔽，国之大患也。若不和睦则有雠党，有雠党则毁誉无端，毁誉无端则真伪失实、此兒必兴吾宗、更爲纪拜，由是显名、随纪避難徐州、营治宫室，百姓失农時、制九品官人之法，羣所建也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最善知人並將之制度化，卻親手寫下制度最大危險；場景為封還教、自吾有回、毀譽無端、上品無寒門。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "制度離開設計者即失眼光、名義框架失守、諫而不逼等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以連鎖推理與议刑爲國、太祖以謝羣與帝不聽與伐蜀分步諫、雅杖名義與必興吾宗、中正與考績之廢、劉廙與幼女之葬與追思功德、孔融拜紀與畫地作餅、毀譽無端與陳泰比較為事件。"
+    }
+  ],
+  "materialIssues": []
+}

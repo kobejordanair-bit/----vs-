@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_陳群_2004391531",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:23:56.970Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "ea592892b3803ba8fc55528e94fac0aa65e839a536b83edcc686546ecfd4052a",
+  "rawResponseSha256": "ea592892b3803ba8fc55528e94fac0aa65e839a536b83edcc686546ecfd4052a",
+  "sourcePackageSha256": "63a547e0219bb1d35e8c0568e29b9acb66d218e768ab17fc4fc62f47705c36eb",
+  "searchLogSha256": "eda82b974faa81c55f3d03144f2799a471b41e8639870f1200a54b41fe17f6e5",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B722",
+      "title": "三國志·魏書·桓二陈徐卫卢传",
+      "locator": "本機固定修訂 oldid=2085105 全文比對（textSha256 已驗）：夫臣下雷同，是非相蔽，国之大患也。若不和睦则有雠党，有雠党则毁誉无端，毁誉无端则真伪失实、此兒必兴吾宗、更爲纪拜，由是显名、随纪避難徐州、营治宫室，百姓失农時、制九品官人之法，羣所建也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7045",
+      "title": "晉書·卷四十五 列傳第十五",
+      "locator": "本機固定修訂 oldid=2595687 全文比對（textSha256 已驗）：高下逐強弱，是非由愛憎、是以上品無寒門，下品無勢族、上品無寒門，下品無勢族、一人之身，了一州之才",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7036",
+      "title": "晉書·卷三十六 列傳第六",
+      "locator": "本機固定修訂 oldid=2108231 全文比對（textSha256 已驗）：魏氏承顛覆之運，起喪亂之後，人士流移，考詳無地，故立九品之制，粗且為一時選用之本耳。其始造也，鄉邑清議，不拘爵位，褒貶所加，足為勸勵、中間漸染，遂計資定品，使天下觀望，唯以居位為貴、人士流移，考詳無地、猶有鄉論餘風、遂計資定品",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "潁川許昌人、陳寔孫、劉備別駕勸勿取徐州、歸曹為西曹掾屬、御史中丞議肉刑、侍中、文帝時尚書制九品官人法、尚書令、受遺詔輔政、明帝時司空、諫伐蜀與宮室、青龍四年薨，皆依三國志卷22 archive 引句；九品後弊依晉書卷36衛瓘、卷45劉毅。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：領中領軍、都督水軍、錄尚書事；武力：純文臣；智謀：徐州之預言、模逵穢德、斜谷轉運；政治：九品官人法、輔政；魅力：曹丕交友之禮、清流雅望。對照荀彧、謝安、張廷玉、李斯。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "人士流移考詳無地→立九品之制→始造鄉邑清議不拘爵位→中間漸染計資定品→上品無寒門；群上疏雷同→讎黨→毀譽無端→真偽失實，與九品後弊對照。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    72,
+    20,
+    86,
+    92,
+    85
+  ]
+}
