@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_楊廷和_1995247525",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:21:39.935Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "9b23ae4df161b34d812130e56db075145cc354a861ec2047e9831c0e16f57e59",
+  "rawResponseSha256": "9b23ae4df161b34d812130e56db075145cc354a861ec2047e9831c0e16f57e59",
+  "sourcePackageSha256": "c498f4826672c8bacdbaae205c37c7bc7f1cb777e6dcf61bf89b116052ee6428",
+  "searchLogSha256": "8500ac1dd5b6efa145a701514b41761913ae23ae8d23cde9977672101652579d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7190",
+      "title": "明史·卷一百九十\n列傳第七十八　楊廷和 梁儲 蔣冕 毛紀 石珤",
+      "locator": "本機固定修訂 oldid=2620016 全文比對（textSha256 已驗）：兄終弟及，誰能瀆焉！興獻王長子，憲宗之孫，孝宗之從子，大行皇帝之從弟，序當立、封還御批者四，執奏幾三十疏、自詭門生天子、定策國老、先其父成進士、性沈靜詳審、好考究掌故、民瘼、邊事及一切法家言…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以兄終弟及立帝又要帝為人後，親手建構的正當性反被用來推翻他；場景為誰能瀆焉、秀才安知國家事體、封還手詔、此楊廷和功不可沒。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "宗法統嗣兩線、以為皇帝亦守其詮釋之盲點、名分即權力等皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以濮議與今亦新天子意耶、倫序之風與擒江彬與乞骸骨、祖訓與織造之爭、遺詔非為皇子與大明門、奔喪與楊慎伏闕、統嗣兩線與齋醮、四辭太傅與定策國老為事件。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_楊廷和_1995247525",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:21:39.934Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2a410092d58a8c58ef066d6593cf626b994e6c4bf50ec4c0c095c4d95819fbc5",
+  "rawResponseSha256": "2a410092d58a8c58ef066d6593cf626b994e6c4bf50ec4c0c095c4d95819fbc5",
+  "sourcePackageSha256": "c498f4826672c8bacdbaae205c37c7bc7f1cb777e6dcf61bf89b116052ee6428",
+  "searchLogSha256": "8500ac1dd5b6efa145a701514b41761913ae23ae8d23cde9977672101652579d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7190",
+      "title": "明史·卷一百九十\n列傳第七十八　楊廷和 梁儲 蔣冕 毛紀 石珤",
+      "locator": "本機固定修訂 oldid=2620016 全文比對（textSha256 已驗）：兄終弟及，誰能瀆焉！興獻王長子，憲宗之孫，孝宗之從子，大行皇帝之從弟，序當立、封還御批者四，執奏幾三十疏、自詭門生天子、定策國老、先其父成進士、性沈靜詳審、好考究掌故、民瘼、邊事及一切法家言…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "新都人、十九歲進士、正德二年入閣忤劉瑾、安化王之變、劉六劉七、首輔、乾清宮災、終父喪、宸濠之變居守、正德十六年三月武宗崩定策、總朝政四十日擒江彬、登極詔裁汰、大禮議封還御批四、嘉靖三年正月致仕、七年削職為民、次年卒年七十一，皆依明史卷190 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：布防九門、擒江彬、總朝政四十日；武力：純文臣、營卒護衛；智謀：馬中錫不任、班師早之戒、倫序之風；政治：定策、登極詔、聖人之頌與大禮議之敗；魅力：李東陽之言、廷臣百餘人同議。對照霍光、張廷玉、于謙、范仲淹。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "武宗無嗣崩→祖訓兄終弟及→迎興世子→四十日布防擒江彬→登極詔裁汰十四萬→中外稱聖；帝欲尊生父→廷和主濮議為人後→張璁繼統不繼嗣→封還御批四、執奏三十疏→帝意內移→致仕→明倫大典定罪削職。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    86,
+    20,
+    88,
+    90,
+    82
+  ]
+}
