@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_王衍_2004116732",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:31:44.117Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "8792f8a49d59dc2da30ab71f7445a914b200e848f01d7ef1fea1afbaa3286da8",
+  "rawResponseSha256": "8792f8a49d59dc2da30ab71f7445a914b200e848f01d7ef1fea1afbaa3286da8",
+  "sourcePackageSha256": "cd6d3c2418bcf24938848e58c0d58e74fa043d9e23efb9fcba3ed7096ee7948c",
+  "searchLogSha256": "9914926e7d795d7710ccf3627c0a2239c805e527a2550b2f7a8bb8240126685c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7043",
+      "title": "晉書·卷四十三 列傳第十三",
+      "locator": "本機固定修訂 oldid=2618531 全文比對（textSha256 已驗）：為陳禍敗之由，雲計不在己、君名蓋四海，身居重任，少壯登朝，至於白首，何得言不豫世事邪！破壞天下，正是君罪、使人夜排牆填殺之、嗚呼！吾曹雖不如古人，向若不祖尚浮虛，戮力以匡天下，猶可不至今日、足以為三窟矣、神情明秀，風姿詳雅…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以不豫世事立身而一直佈局自保，超然是自保技術，在石勒前失效；場景為山濤預言、阿堵物、三窟、何得言不豫世事、臨終之悔。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "超然免責之盲點、推辭名號不推辭位置、從預言到懺悔等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以口中雌黃與計不在己與臨終語、陽狂離婚與賣車牛、自比子貢與辭封、裴頠與孔萇、喪子之慟與攬鏡與李陽、以無為本與破壞天下、三窟與排牆為事件。"
+    }
+  ],
+  "materialIssues": []
+}

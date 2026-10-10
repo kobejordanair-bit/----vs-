@@ -1,11 +1,11 @@
 {
   "format": "dynasty-batch50-receipt-ledger",
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T16:29:49.335Z",
+  "generatedAt": "2026-10-10T16:31:50.365Z",
   "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
   "targetCount": 50,
   "libraryTotalExpected": 962,
-  "status": "prepared_awaiting_generation",
+  "status": "assembled_awaiting_publication",
   "passed": true,
   "complete": false,
   "finalAuditVerified": false,
@@ -15,10 +15,10 @@
   "latestReceiptedDocumentSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
   "counts": {
     "prepared": 50,
-    "generated": 49,
-    "reviewed": 49,
-    "sourceQA": 49,
-    "assembled": 49,
+    "generated": 50,
+    "reviewed": 50,
+    "sourceQA": 50,
+    "assembled": 50,
     "imported": 0,
     "verified": 0,
     "partialImported": 0,
@@ -28,7 +28,7 @@
   },
   "imports": [],
   "externalTransitionsRequiringSnapshotProof": [],
-  "rebuiltBatchCount": 49,
+  "rebuiltBatchCount": 50,
   "finalAuditNote": "Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Mixed-chain private final snapshot + identity/raw-extra audit is still required to declare overall completion.",
   "records": [
     {
@@ -1702,17 +1702,34 @@
       "id": "minister_王衍_2004116732",
       "name": "王衍",
       "prepared": true,
-      "generated": false,
-      "reviewed": false,
-      "sourceQA": false,
-      "assembled": false,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "fullyImported": false,
       "importedFields": [],
       "published": {},
-      "assembledFields": {},
-      "status": "incomplete"
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "assembled_awaiting_local_dry_run"
     }
   ]
 }

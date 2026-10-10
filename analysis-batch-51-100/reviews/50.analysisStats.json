@@ -1,0 +1,60 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_王衍_2004116732",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:31:44.115Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7540ec6619c606bd681e9657a0ac1b3dba7898167344dd5d9d90f240f3af4437",
+  "rawResponseSha256": "7540ec6619c606bd681e9657a0ac1b3dba7898167344dd5d9d90f240f3af4437",
+  "sourcePackageSha256": "cd6d3c2418bcf24938848e58c0d58e74fa043d9e23efb9fcba3ed7096ee7948c",
+  "searchLogSha256": "9914926e7d795d7710ccf3627c0a2239c805e527a2550b2f7a8bb8240126685c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7043",
+      "title": "晉書·卷四十三 列傳第十三",
+      "locator": "本機固定修訂 oldid=2618531 全文比對（textSha256 已驗）：為陳禍敗之由，雲計不在己、君名蓋四海，身居重任，少壯登朝，至於白首，何得言不豫世事邪！破壞天下，正是君罪、使人夜排牆填殺之、嗚呼！吾曹雖不如古人，向若不祖尚浮虛，戮力以匡天下，猶可不至今日、足以為三窟矣、神情明秀，風姿詳雅…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ocw.nthu.edu.tw/ocw/upload/115/news/【張元教授_資治通鑑輔助教材】西晉的最後一幕—老師讀通鑑之二.pdf",
+      "title": "張元〈西晉的最後一幕—老師讀通鑑之二〉，國立清華大學開放式課程",
+      "locator": "WebSearch 結果摘要：通鑑卷八十七石勒排牆殺王公事；全文未讀",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "琅邪王氏、山濤之評、十四歲見羊祜、泰始八年辭遼東太守、陽狂避楊駿與趙王倫、太子被誣離婚禁錮、歷河南尹尚書中書令、尚書令司空司徒、三窟之說、都督征討、東海王越死辭元帥、永嘉五年被俘排牆死年五十六，皆依晉書卷43 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：宰輔不經國、辭元帥；武力：無；智謀：陽狂自免與三窟；政治：一世龍門與禁錮終身；魅力：珠玉瓦石、石勒甚悅之。對照謝安、霍光、汪精衛、秦檜。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "辭遼東太守→口不論世事→清談聲名→一世龍門→選舉稱首→浮誕成俗；八王之亂→陽狂離婚自免→宰輔思自全→三窟；越死→辭元帥→全軍覆沒→石勒責何得言不豫世事→排牆殺之→臨死悔浮虛。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    40,
+    10,
+    70,
+    58,
+    85
+  ]
+}
