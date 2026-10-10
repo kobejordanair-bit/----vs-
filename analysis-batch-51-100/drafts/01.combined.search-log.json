@@ -1,0 +1,100 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_孫文_1671742205",
+  "packetSha256": "084b557c8c32b75421de8cd105b78fe49ac31a9aa049eae5580585d7cb50749a",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "孫中山 1912 讓位袁世凱 臨時大總統 辭職 條件 臨時約法 研究",
+      "returnedUrls": [
+        "https://chiculture.org.hk/en/node/2158",
+        "https://journal.ipm.edu.mo/images/journal_c/2019_4//ef222-201904-086-093.pdf",
+        "https://zh.wikisource.org/wiki/%E5%A4%A7%E7%B8%BD%E7%B5%B1%E8%AA%93%E8%A9%9E",
+        "https://exam.naer.edu.tw/otc/testStoreFile/100199662c68e2db367e.pdf"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫中山 中華革命黨 1914 按指模 誓約 服從孫先生 黃興 反對 研究",
+      "returnedUrls": [
+        "https://chiculture.org.hk/en/node/2325",
+        "https://sunology.culture.tw/detail/bb1c35f33545a55aae54c032155c9c09/",
+        "https://sunology.culture.tw/detail/81ab0653cfa1bfc037467ab65084744a/",
+        "https://project.zo.uni-heidelberg.de/representations/zhongshan/series/part03.html"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫中山 陳炯明 1922 六一六事變 永豐艦 聯俄容共 孫文越飛宣言 1923 黃埔軍校 1924 學術",
+      "returnedUrls": [
+        "https://commons.ln.edu.hk/sw_master/4602",
+        "https://nccur.lib.nccu.edu.tw/handle/140.119/97291",
+        "https://histweb.hkbu.edu.hk/upload/activitie/159/download/5f685e34c4b82.pdf",
+        "https://www.chinatimes.com/opinion/20220430000013-262107"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫中山 1925年3月12日 北京 逝世 遺囑 汪精衛 代筆 國父紀念館 生平",
+      "returnedUrls": [
+        "https://www.zdic.net/hant/孫文",
+        "https://www.storm.mg/article/86997",
+        "https://chiculture.org.hk/en/photo-story/2764"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "國立國父紀念館 國父年表 1866年11月12日 香山 1925年3月12日 逝世 北京",
+      "returnedUrls": [
+        "https://www.zdic.net/hant/孫文",
+        "https://commons.wikimedia.org/wiki/Sun_Yat-sen",
+        "https://kotobank.jp/word/%E5%AD%AB%E6%96%87"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫文越飛聯合宣言 1923年1月26日 共產組織 蘇維埃制度 不能引用於中國 原文",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Sun%E2%80%93Joffe_Manifesto",
+        "https://www.cambridge.org/core/journals/modern-asian-studies/article/an-alternative-to-kuomintangcommunist-collaboration-sun-yatsen-and-hong-kong-januaryjune-1923/2FB0B2B9ADAB8F818DB93A369ED2D3FE",
+        "https://cpc.people.com.cn/GB/64162/64164/4415944.html",
+        "https://alphahistory.com/chineserevolution/sun-joffe-agreement-1923/"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫中山 致黃興函 1914 中華革命黨 黃興不加入 sunology 國父紀念館 全集",
+      "returnedUrls": [
+        "https://sunology.culture.tw/detail/81ab0653cfa1bfc037467ab65084744a/",
+        "https://sunology.culture.tw/detail/bb1c35f33545a55aae54c032155c9c09/",
+        "https://toyo-bunko.repo.nii.ac.jp/records/5941",
+        "https://www.zdic.net/hant/黃興"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷24",
+      "quote": "命逮文廷式，捕孫文",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B724"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷24",
+      "quote": "除康有為、梁啟超、孫文外",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B724"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟：WebFetch 對 zh.wikisource.org、www.fmprc.gov.cn 回報 DNS ENOTFOUND，curl 經代理回 403；本稿無 web_page_read 來源，網路來源皆僅搜尋摘要。",
+    "孫文越飛宣言內容、1925年3月12日北京逝世、1866年生、陳炯明聯省自治主張、袁世凱解散國民黨屬通行史實，可用摘要僅見於非允許類型網站（維基百科、alphahistory、漢典），正文未附連結。",
+    "中華革命黨誓約之按指模與效忠孫文個人的具體條文未讀原文；國父紀念館致黃興函僅見條目標題。",
+    "劍橋論文僅據題名，未讀內容。"
+  ]
+}

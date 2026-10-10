@@ -1,0 +1,26 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "01",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "自查：靈魂欄標註含『通行史實／通行記述／通行文本』等工作流程套話，違反編輯要求第3條；修正標註後重新 split",
+  "files": {
+    "01.stats.json": "521fa0ce7e70407675871d9ab99bd8071d0984355e94bc5ba108b6a6c16ca70f",
+    "01.analysisStats.raw.md": "771ded4967fe15e678ba15a5c7117aea7e8a86aaf84836917bcf60220767b35b",
+    "01.soulEssence.response.md": "10f744e35952e41e1e8385ddea8a652cd1429fd80a0e3e4aa13651d2fb68aea2",
+    "01.combined.raw.md": "899e244aa524b2347f6aecc695581cb397e4cd452557c87379fb52677cc76190",
+    "01.combined.search-log.json": "63a26da84eafceb7fadd60eb80adbe67993472d1a42ee01a805e4c1219865340",
+    "01.combined.capture.json": "832dd1f27fd06ce7154a91bf9dda2d4acd6907dbed32dcf93c873b046e088991",
+    "01.soulEssence.raw.md": "10f744e35952e41e1e8385ddea8a652cd1429fd80a0e3e4aa13651d2fb68aea2",
+    "01.soulEssence.md": "59354c2a19571b45e449678fe2a2cfe3264276ce6bc67b2aff5412f909cf7aa6",
+    "01.analysisStats.capture.json": "dc69e94c5f2f536f61fe4aa23e63c4f27c704f167473f811faced0d3bce385b4",
+    "01.statsAnalysis.md": "0c2ee1aa6ff57d094d238e3944081f5d3c1c58ccf6b43ded30f7242ad09b45d9",
+    "01.analysisStats.response.md": "771ded4967fe15e678ba15a5c7117aea7e8a86aaf84836917bcf60220767b35b",
+    "01.soulEssence.capture.json": "b5add55e1d42b005d44771bb0a5234d1e6f9407f6ef3b21de40e4c2c7f2e2895",
+    "01.analysis.md": "8f9d41c110b7d1856f371bcab6233c3ca876359a15d7ac5bff3827f548425c67",
+    "01.soulEssence.json": "700e54269cb529d98f492c0abb4a5fbaa151f6c22b241dc48baaf9544cd20017",
+    "01.analysisStats.json": "5882624ced2f50e7f900c3a6d710fef5b4c28f1d1f5c91116e46aff6247324dd",
+    "results.01-01.v1.json": "6a6613c6273be1672bf88d8be8e539cffb4c40e1a376205c0c4d38c77a3ef067"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_孫文_1671742205",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:35:36.695Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "10f744e35952e41e1e8385ddea8a652cd1429fd80a0e3e4aa13651d2fb68aea2",
+  "rawResponseSha256": "10f744e35952e41e1e8385ddea8a652cd1429fd80a0e3e4aa13651d2fb68aea2",
+  "sourcePackageSha256": "f9a61e2840c3e368f10ebb4fb454f46f80bddc31d229139ce3ffc4f04c878588",
+  "searchLogSha256": "63a26da84eafceb7fadd60eb80adbe67993472d1a42ee01a805e4c1219865340",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%A7%E7%B8%BD%E7%B5%B1%E8%AA%93%E8%A9%9E",
+      "title": "《大總統誓詞》（1912年1月1日，維基文庫）",
+      "locator": "WebSearch 結果摘要：誓詞說明待專制政府倒覆、民國確立後即解臨時大總統之職；頁面本身未能開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://sunology.culture.tw/detail/bb1c35f33545a55aae54c032155c9c09/",
+      "title": "國立國父紀念館「國父思想研究」影像說明：中華革命黨成立大會合影（東京，民國3年7月8日）",
+      "locator": "WebSearch 結果摘要：圖說記中華革命黨成立大會於東京、民國3年7月8日",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://commons.ln.edu.hk/sw_master/4602",
+      "title": "〈一九二二年六一六事變 宋慶齡避難嶺南大學〉（嶺南大學學術典藏）",
+      "locator": "WebSearch 結果摘要：1922年6月16日粵軍炮轟廣州觀音山總統府，孫中山登永豐艦，宋慶齡另行避難",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B724",
+      "title": "清史稿·本纪二十四　德宗本纪二",
+      "locator": "本機固定修訂 oldid=2170948 全文比對（textSha256 已驗）：命逮文廷式，捕孫文、除康有為、梁啟超、孫文外",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/an-alternative-to-kuomintangcommunist-collaboration-sun-yatsen-and-hong-kong-januaryjune-1923/2FB0B2B9ADAB8F818DB93A369ED2D3FE",
+      "title": "\"An Alternative to Kuomintang-Communist Collaboration: Sun Yat-sen and Hong Kong, January–June 1923\" (Modern Asian Studies)",
+      "locator": "WebSearch 結果：僅題名；正文只據題名主張該期間另有與香港合作之探詢",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://sunology.culture.tw/detail/81ab0653cfa1bfc037467ab65084744a/",
+      "title": "國立國父紀念館「國父思想研究」條目：致函黃興，說明對黃興不加入中華革命黨一事的態度",
+      "locator": "WebSearch 結果摘要：僅條目標題，無函件全文與確切日期",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：擅立法統而缺槍與錢，押注他人→收緊黨；場景為1912誓詞、1914誓約、1922永豐艦、1923英蘇雙線。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "集權為共和打地基、遺囑託付全體同志為自我限制，皆標[詮釋]；陳孫路線與誓約約束不及外人標[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以誓詞、東京建黨與永豐艦、實業轉向、袁陳與英蘇、黃興函與遺囑、黨治框架、誓詞對誓約為事件。"
+    }
+  ],
+  "materialIssues": []
+}
