@@ -1,0 +1,70 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李光弼_905152266",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:18:00.017Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "441234ad7952b372fdd0d18aa135efdf3c28e7125cb8d66c294276e7c86771cd",
+  "rawResponseSha256": "441234ad7952b372fdd0d18aa135efdf3c28e7125cb8d66c294276e7c86771cd",
+  "sourcePackageSha256": "a32078f8654335706e8e1b950a95e79b9f618d7fe0c6faef128517d1435f3196",
+  "searchLogSha256": "6cb73b89e030d1edc36dae9f45992d885425f9751903c86a5811292e061f7243",
+  "checkedSources": [
+    {
+      "url": "https://www.aisixiang.com/data/124055.html",
+      "title": "黃朴民評李光弼文章（愛思想轉載）",
+      "locator": "WebSearch 結果摘要：戰功被推為中興第一，太原、河陽、懷州之戰精彩，以「以奇用兵，以少敗眾」概括；正文只引此點並指出該語出自舊唐書史臣",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110",
+      "title": "舊唐書·列傳第六十　李光弼　王思礼　邓景山　辛云京",
+      "locator": "本機固定修訂 oldid=2690613 全文比對（textSha256 已驗）：率眾十餘萬來攻太原、麾下皆烏合之眾，不滿萬人、光弼之兵寡弱，可屈指而取太原，鼓行而西，圖河隴、朔方，無後顧矣、城周四十里，賊垂至，今興功役，是未見敵而自疲矣、即令增壘於內，環輒補之、令穿地道，一夕而擒之，自此賊將行皆視地，不敢逼城…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "李光弼，唐代安史之亂平叛名將；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "campaigns",
+      "passed": true,
+      "detail": "至德二年太原、乾元二年河陽、懷州、上元二年邙山、徐州與江左、廣德二年卒年五十七，本傳原文。"
+    },
+    {
+      "id": "mangshan",
+      "passed": true,
+      "detail": "邙山之敗依本傳：屢表不可輕進、懷恩附朝恩、中使督戰；史臣「閫外之權不專」。"
+    },
+    {
+      "id": "cui-zhong",
+      "passed": true,
+      "detail": "斬崔眾與「若拜宰相，亦斬宰相」，本傳原文。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[97,82,96,55,85] 對照郭子儀[98,85,92,95,100]、王忠嗣[95,88,94,55,92]、李牧[98,82,97,35,92]、李勣[97,80,95,88,90]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    97,
+    82,
+    96,
+    55,
+    85
+  ]
+}

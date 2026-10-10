@@ -1,0 +1,244 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_李光弼_905152266",
+  "packetSha256": "44183b058c60bfcba017a84cbb0038cc8f23e978d072ea5c96a73eacd1d8cb4f",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "李光弼 太原保衛戰 757 史思明 十萬 河陽之戰 759 邙山之敗 761 魚朝恩 研究 安史之亂",
+      "returnedUrls": [
+        "https://www.aisixiang.com/data/124055.html",
+        "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7137",
+        "https://biweekly.huayuworld.org/Material/293/Text",
+        "https://data.ctext.org/entity/139584",
+        "https://en.Wikipedia.com/wiki/Li_Guangbi"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "率眾十餘萬來攻太原",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "麾下皆烏合之眾，不滿萬人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "光弼之兵寡弱，可屈指而取太原，鼓行而西，圖河隴、朔方，無後顧矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "城周四十里，賊垂至，今興功役，是未見敵而自疲矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "即令增壘於內，環輒補之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "令穿地道，一夕而擒之，自此賊將行皆視地，不敢逼城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "強弩發石以擊之，賊驍將勁卒死者十二三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "月餘，我怒而寇怠，光弼率敢死之士出擊，大破之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "今委五百里而不顧，是張賊勢也。若移軍河陽，北阻澤潞、三城以抗，勝則擒之，敗則自守，表裏相應，使賊不敢西侵，此則猿臂之勢也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "夫辨朝廷之禮，光弼不如公；論軍旅之事，公不如光弼",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "排閱守備，號令嚴明，與士卒同甘苦，鹹誓力戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "賊憚光弼威略，頓兵白馬寺，南不出百里，西不敢犯宮闕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "由地道而入，得其軍號，乃登陴大呼，我師同登，城遂拔",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "觀軍容使魚朝恩屢言賊可滅之狀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "賊鋒尚銳，請候時而動，不可輕進",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "仆固懷恩又害光弼之功，潛附朝恩，言賊可滅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "光弼不獲已，進軍列陣於北邙山下。賊悉精銳來戰，光弼敗績，軍資器械並為賊所有",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "以懷恩異同致敗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "抗表請罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "徑赴徐州以鎮之，遣田神功擊敗之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "克定江左，人心乃安",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "光弼與程元振不協，遷延不至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "數詔問其母",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "且歸徐州，欲收江淮租賦以自給",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "光弼御軍嚴肅，天下服其威名，每申號令，諸將不敢仰視",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "及懼朝恩之害，不敢入朝，田神功等皆不稟命，因愧恥成疾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "廣德二年七月，薨於徐州，時年五十七",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "吾久在軍中，不得就養，既為不孝子，夫復何言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "錢三千貫文分給將士",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "魚朝恩吊問其母於私第",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "以奇用兵，以少敗眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "邙山之敗，閫外之權不專",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "失律之尤雖免，匪躬之義或虧，令名不全，良可惜也。然閫外之事，君側之人，得不慎諸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "今只斬侍御史；若宣制命，即斬中丞；若拜宰相，亦斬宰相",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "威震三軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷110",
+      "quote": "眾莫知所用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7110"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; primary texts verified in the repository archive; 黃朴民文章僅依搜尋摘要。",
+    "李光弼為王忠嗣部將並勸其重賞一事，見通鑑卷215（已於23號紀錄核對），本紀錄未另附連結。"
+  ]
+}
