@@ -1,0 +1,151 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "minister_張廷玉_1992775117",
+      "inputSha256": "09ec2ee8d56e53624a6d6aa002e97b79c32ed510d6acf9991cdd22f0c44f2113",
+      "promptSha256": "20e9cfa82095fb9784225c13889b42333285b7d21a591d7cd46f85a7910f3831",
+      "fields": {
+        "analysis": "張廷玉是清朝唯一配享太廟的漢人大臣，也是軍機處規制的制定者。但他的晚年卻幾乎是一場羞辱：因為向乾隆求一句保證配享的話，被削去伯爵、罷去配享、追繳歷年賞賜，直到死後才恢復。我要提出的看法是：**張廷玉的成就與他的屈辱，來自同一個邏輯——他親手設計的制度，讓臣子的一切都繫於皇帝一人。**他定下「要事用摺……下軍機處擬旨，親禦硃筆批發」的規制，讓內閣權力移到皇帝身邊；而當他晚年想要皇帝「一言為券」、預先鎖定自己的身後哀榮時，他等於是在要求皇帝被自己的承諾約束——這恰恰違反了他一生所維護的那套制度。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n張廷玉是安徽桐城人，大學士張英的次子，康熙三十九年進士（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。他歷經康熙、雍正、乾隆三朝，在雍正朝達到權力高峰。\n\n他面對的局是：\n\n1.  **雍正的集權需求**：雍正即位後急於整頓吏治、強化皇權，需要高效而可靠的中樞機構。\n2.  **西北用兵**：雍正年間對準噶爾用兵，軍情緊急、需要保密，原有的內閣程序過於繁複。\n3.  **滿漢與朋黨**：作為漢臣，他必須在滿洲貴族主導的朝廷中謹慎自處；他與鄂爾泰兩人長期並列中樞，門下各有勢力。\n\n他的歷史定位是：**清代中樞制度的主要設計者，也是「皇權極盛時代」漢人大臣的極致典型**。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：張廷玉最大的成就，是讓皇帝更不需要宰相；而他最大的錯誤，是在晚年忘記了這一點。**\n\n**軍機處：把權力搬到皇帝身邊**\n\n《清史稿》記載，雍正因西北用兵，「命設軍機房隆宗門內，以怡親王允祥、廷玉及大學士蔣廷錫領其事。嗣改稱辦理軍機處」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。本傳把設立時間繫於雍正八年，而一般說法多作雍正七年，兩者有所出入，應以檔案進一步核對。\n\n真正關鍵的是張廷玉制定的文書程序：「諸臣陳奏，常事用疏，自通政司上，下內閣擬旨；要事用摺，自奏事處上，下軍機處擬旨，親禦硃筆批發。」結果是「自是內閣權移於軍機處，大學士必充軍機大臣，始得預政事」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。《清史稿》論贊也說：「軍機處初設，職制皆廷玉所定。」\n\n這套制度的效果是雙面的：它讓機要事務繞過繁冗的內閣程序，大幅提升決策效率與保密性；但也讓重大決策完全集中在皇帝與少數近臣之間，大臣的權力不再來自職位，而來自皇帝每日的召見與信任。**張廷玉建立的不是一個更強的宰相府，而是一個更強的皇帝。**\n\n**政務：周敏勤慎**\n\n在具體政務上，他提出不少務實建議。他建議對浙江、江西、福建一帶的「棚民」慎選州縣官加以約束，同時對其中讀書向學、有技勇者「察明考驗錄用」，「初無歧視」；他也指出刑部不分輕重一律收禁、引律「往往刪截」導致「高下其手」的弊端，請求改正（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。他回鄉途中見直隸被水諸縣仍有積潦，奏請「加賑一月」並「以工代賑」。這些建議顯示他對行政細節的掌握。\n\n雍正對他極為倚重，遺詔稱他「器量純全，抒誠供職，命他日配享太廟」；乾隆初年他還主持完成《明史》（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。\n\n**康熙朝的起點**\n\n張廷玉的政治生涯並非始於雍正。康熙五十九年他任刑部侍郎時，奉命會勘山東鹽販王美公等「糾眾倡邪教」一案，最後「戮七人、戍三十五人而讞定」，從一百五十餘名被捕者中只處決七人（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。這個案子顯示，他早在康熙朝就以審慎的司法判斷受到注意，也為他日後在雍正朝的重用打下基礎。雍正即位後，他先後擔任禮部、戶部、吏部尚書，並在三年之內從文淵閣大學士升到保和殿大學士——這種升遷速度，本身就說明了他與雍正之間的高度信任。\n\n**晚年：一言為券**\n\n乾隆十三年，張廷玉以老病乞休，乾隆不准，說配享太廟的元臣「豈有從祀元臣歸田終老？」並以諸葛亮鞠躬盡瘁為例；張廷玉回答「亮受任軍旅，臣幸得優游太平，未可同日而語」，乾隆更長篇駁斥，張廷玉「自是不敢言去」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。\n\n次年乾隆終於准他致仕，張廷玉卻「免冠叩首，乞上一言為券」，要求乾隆保證他身後仍能配享。乾隆「意不懌」，雖仍頒手詔，但第二天張廷玉只派兒子入謝，乾隆大怒；此後又因他在皇長子初祭時就請求南歸，乾隆命他自審是否應配享，最後「罷廷玉配享」，並因姻親朱荃案「命盡繳歷年頒賜諸物」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。他死後，乾隆才「命仍遵世宗遺詔，配享太廟」。\n\n這段經歷說明：**在張廷玉參與打造的體制中，皇帝的恩典只能被給予，不能被要求。**他一生謹守這條規則，卻在最後一刻試圖為自己爭取保證——這不只是性格失誤，也是一位老臣對無常皇恩的焦慮。值得注意的是，乾隆最後仍讓他配享，還把他反對三老五更的議論刻碑，稱他「有此卓識」；這說明乾隆打擊的並不是張廷玉的功績，而是他「向皇帝索取保證」這個行為本身。\n\n**朋黨的陰影**\n\n《清史稿》論贊指出，他與鄂爾泰「在政地久，兩家子弟賓客，漸且競權勢、角門戶，高宗燭幾摧萌，不使成朋黨之禍，非二臣之幸歟？」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）這說明乾隆對他的打擊，也有防範張、鄂兩派坐大的政治考量。這是**皇權體制的結構性限制**：再忠誠的重臣，一旦門下勢力過大，就會成為皇帝的戒備對象。\n\n### **3. 【人性與性格側寫】**\n\n*   **周敏勤慎**：《清史稿》說他「周敏勤慎，尤為上所倚」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。他的著作有《澄懷園語》等傳世（[CBDB 張廷玉著作條目](https://input.cbdb.fas.harvard.edu/basicinformation/56675/texts)）。\n*   **避嫌**：兒子張若靄殿試被雍正親定一甲三名，拆卷後張廷玉「堅辭，乃改二甲一名」。\n*   **見識**：乾隆想恢復古代「三老五更」之禮，他認為「無足當此者，撰議以為不可行」；四十多年後乾隆自己得出同樣結論，還特地將他的議論勒碑。\n*   **焦慮**：晚年的「一言為券」之請，暴露了他對身後名位的深切不安。\n\n### **4. 【如果生在現代】**\n\n張廷玉最適合的現代角色是：**一家由強勢創辦人掌控的大型集團的總裁辦公室主任兼制度總設計師。**\n\n*   **設計決策流程**：他設計了一套新的公文流程：日常事務照舊走行政系統，重大事項則直接送到董事長辦公室，由他的小組擬好意見後讓董事長親自批示。從此，各部門主管的權力大減，所有關鍵決策都集中到董事長身邊。\n*   **兩代老闆的信任**：前任董事長在遺囑中承諾，他退休後可以在公司名人堂留名。\n*   **晚年的失算**：他想退休，新任董事長一再挽留；終於獲准退休時，他卻要求董事長白紙黑字保證名人堂的承諾，結果董事長大怒，取消了他的榮譽，還要他繳回所有獎牌。\n*   **身後平反**：直到他過世，董事長才依照前任的遺囑，把他的名字放回名人堂。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「以制度與先例說話，避免個人立場」。乾隆挽留他時，他引「宋、明配享諸臣亦有乞休得請者」與「七十懸車，古今通義」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]；乾隆以諸葛亮為例，他回答「亮受任軍旅，臣幸得優游太平，未可同日而語」[史載]。他話語中的潛台詞是：「這不是我個人的要求，而是古今通行的規矩。」這種方式在一般政務上很有效，但面對乾隆時卻遭到長篇駁斥，乾隆甚至「命舉所諭宣告朝列」[史載]——皇帝不接受臣子以「規矩」約束自己[推斷]。相較之下，他在政務奏議中則習慣條列具體事實與建議，例如指出刑部引律「往往刪截，但用數語」，再請都察院、大理寺駁正[史載]，語言務實而節制[推斷]。\n\n【壓力反應】\n面對壓力，他的第一反應是「退讓與服從」。\n乾隆十三年他乞休被駁回後，「自是不敢言去」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]；乾隆命他自審應否配享時，他「惶懼，疏請罷配享治罪」[史載]。兩次相隔約兩年，共同結構是：一旦皇帝表達不滿，他立即收回自己的要求[推斷]。唯一的例外是「乞上一言為券」那一次，他主動向皇帝要求保證，結果引發了晚年最大的災難[史載]。而在這之後，他第二天只派兒子入謝的做法，更讓乾隆認為他心存怨懟[推斷]；一位一生謹慎的老臣，在最需要謹慎的時候卻連續出錯，或許也與他的年邁多病有關[推斷]。\n\n【核心驅動】\n他真正追求的是「謹守本分、保全家族與身後名位」。\n他對兒子的科名極為謹慎，張若靄被定為一甲三名時他「堅辭」，改為二甲一名（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]；晚年他最在意的是雍正遺命的配享，甚至「恐身後不獲更蒙大典」而「免冠叩首」[史載]。這些行為一致指向一位極度重視名分與家族延續的士大夫[詮釋：此為從其行為歸納的動機]。他請求以子若靄承襲世職[史載]，也是同一種心理的表現：把皇恩轉化為可以傳承的家族資產[推斷]。\n\n【慣性盲點】\n他最大的優點「謹慎周密」，讓他在晚年對皇恩產生了過度的焦慮。\n他一生「周敏勤慎」，從不越矩（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]；但當他擔心配享不保時，卻要求乾隆「一言為券」，隨後又只派兒子入謝、在皇長子初祭時就請求南歸[史載]。共同結構是：他越是想用制度化的保證來消除不確定性，就越觸犯了「皇恩不可要求」的核心規則[推斷]。乾隆後來評他「老而戒得」，並說「朕以廷玉之戒為戒，且為廷玉惜之」[史載]。\n\n【情感結構】\n他的情感核心是對家族與先人的責任感。\n雍正特命他回鄉為父親張英行祭禮，並「發帑金萬為英建祠」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]；長子張若靄去世後，乾隆讓次子張若澄入值南書房，扶掖年邁的他[史載]。他晚年對配享的執著，或許也包含了對父親張英與家族名望的延續期待[推斷]。他最脆弱的時刻，是被命「盡繳歷年頒賜諸物」時——那些賞賜是他一生忠勤的見證，卻被一件件收回[詮釋：其當時感受史書未記]。五年後他去世，乾隆又「命仍遵世宗遺詔，配享太廟」[史載]，他終究沒能親眼看到這個結果[推斷]。\n\n【參照系】\n他習慣以「歷代成例」作為理解自身處境的參照系。他以宋、明配享諸臣乞休得請為例要求退休，乾隆則「以明劉基乞休後仍配享為例」回應（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]；他反對三老五更，也是以古禮在當代「無足當此者」為由[史載]。\n類比準確之處：以成例討論制度問題，讓他在三老五更等議題上做出了經得起時間檢驗的判斷[史載]。\n類比失準之處：宋、明的成例並不能約束清朝皇帝；在乾隆眼中，皇恩來自皇帝的意志而非前朝的規矩[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（保全身後名位）與他自己參與建立的制度邏輯（一切繫於皇帝意志）之間。\n這個衝突的結構是：他設計的軍機處制度，讓臣子的權力與榮譽完全依附於皇帝；而他晚年想要的，卻是一個不受皇帝當下意志左右的保證。\n第一次體現在雍正八年：他定下「要事用摺……親禦硃筆批發」的規制，讓「內閣權移於軍機處」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）[史載]。\n第二次體現在乾隆十四年：他「乞上一言為券」，要求皇帝預先承諾配享，結果被罷配享、追繳賞賜[史載]。\n兩次事件的共同點在於：他親手強化的皇權，最後成了懲罰他的力量[推斷]。他是否意識到這個衝突？他在被命自審時「惶懼，疏請罷配享治罪」，說明他很快就明白自己觸犯了什麼[詮釋]。",
+        "stats": [
+          78,
+          25,
+          90,
+          96,
+          80
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：78\n\n他與怡親王允祥、蔣廷錫共同主持軍機處，在西北用兵期間處理軍情文書，並「定規制」使「內閣權移於軍機處」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。但他的工作集中在中樞文書與決策程序，從未統兵或主持前線，即使西北用兵期間也只在隆宗門內處理文書。評78，與姚崇（78）持平，低於劉基（80）與周恩來（80），高於張良（72）。\n\n### 武力：25\n\n他是康熙年間的進士，一生在南書房、翰林院與內閣中樞任職，晚年「入內廷須扶掖」，《清史稿》本傳中沒有任何軍事行動或個人武勇的記載（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。給予25分，是比照最典型的文書型名臣，並非依據任何戰陣經歷或個人膽識的事蹟，屬名臣中最低一檔。評25，低於荀彧（30）與劉基（35），高於張良（20）。\n\n### 智謀：90\n\n他設計「常事用疏……要事用摺」的分流程序，使機要事務保密而高效；又以「無足當此者」反對恢復三老五更，四十多年後被乾隆認為「有此卓識」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。扣分在於晚年「乞上一言為券」的嚴重失算，對自身處境的判斷遠不如對制度的設計。評90，與于謙（90）、朱鎔基（90）持平，低於謝安（92）與劉基（96）。\n\n### 政治：96\n\n他定下軍機處職制，「庶政修舉，宇內乂安」，受雍正遺命配享太廟，成為「終清世，漢大臣配享太廟，惟廷玉一人而已」；並提出棚民、刑部收禁等具體改革（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。扣分在於晚年處理去留失當，被削爵罷配享，並因姻親案被追繳賞賜。評96，與姚崇（96）持平，高於謝安（94），低於荀彧（97）與周恩來（98）。\n\n### 魅力：80\n\n他受康熙、雍正、乾隆三朝重用，雍正稱其「器量純全」，乾隆初年也「命總理事務」（[《清史稿·張廷玉傳》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288)）。但他的影響力主要來自皇帝的信任，而非個人感召；論贊更指出張、鄂兩家「子弟賓客，漸且競權勢、角門戶」。評80，高於李斯（70），低於劉基（85）與朱鎔基（86）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T07:03:37.714Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "清史稿·卷二百八十八",
+            "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288",
+            "locator": "本機固定修訂 oldid=2433531 全文比對（textSha256 已驗）：下軍機處擬旨，親禦硃筆批發、命設軍機房隆宗門內，以怡親王允祥、廷玉及大學士蔣廷錫領其事。嗣改稱辦理軍機處、諸臣陳奏，常事用疏，自通政司上，下內閣擬旨；要事用摺，自奏事處上，下軍機處擬旨，親禦硃筆批發、自是內閣權移於軍機處，大學士必充軍機大臣，始得預政事、軍機處初設，職制皆廷玉所定、察明考驗錄用…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "China Biographical Database (CBDB, Harvard) 張廷玉 (56675) 著作條目",
+            "url": "https://input.cbdb.fas.harvard.edu/basicinformation/56675/texts",
+            "locator": "WebSearch 結果摘要：著有《澄懷園語》四卷等",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "26194fc9b645f6599511643b46b8f62c82e227e6b66eda9d0b97b7207b990565",
+        "sourcePackageSha256": "d3373fb029ab5ea6d4e2a8115151dc9a374e79c7f6797917c9a0f8665e277d3d",
+        "preservedDeepSha256": "712d3e9650ddc2540c0804b061a58ab4a441b414b6beb7e46228f7d6d5a52c30",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "0354559c1baf478bc224549a8c4baf4edf2d6f48c522b86a55d2c7af3fe86de5",
+            "requestSha256": "26194fc9b645f6599511643b46b8f62c82e227e6b66eda9d0b97b7207b990565",
+            "inputSha256": "09ec2ee8d56e53624a6d6aa002e97b79c32ed510d6acf9991cdd22f0c44f2113",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "0e2ca02818172ab4fc72b59cf8498a1e520dafefb8b0a85c83cb2158780847de",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "d3373fb029ab5ea6d4e2a8115151dc9a374e79c7f6797917c9a0f8665e277d3d",
+            "preservedDeepSha256": "712d3e9650ddc2540c0804b061a58ab4a441b414b6beb7e46228f7d6d5a52c30",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:03:37.714Z",
+            "rawResponseFile": "analysis-batch-50/drafts/45.analysisStats.raw.md",
+            "rawResponseSha256": "5ecc89fa3d678b2a262b3b10067acac82b034829a3f38640941aa8e25958f388",
+            "responseFile": "analysis-batch-50/drafts/45.analysisStats.response.md",
+            "responseSha256": "5ecc89fa3d678b2a262b3b10067acac82b034829a3f38640941aa8e25958f388",
+            "fieldsHashes": {
+              "analysis": "01cc101682c69c85e3bebaf0e1580eecb308481741798f88c96e3c85e19c98a7",
+              "stats": "36a0a977d823c1bef5cf31e957c242e1518b349c0a67851bf7d633a3e22caf21",
+              "statsAnalysis": "0b380a0b6eeca828723c7441b95b18a7a00bae934c96c53273b611e6042d8163"
+            },
+            "captureFile": "analysis-batch-50/drafts/45.analysisStats.capture.json",
+            "captureSha256": "239ad3b5aeabb8604e5082b95e48d29b08969cf1a6fe5e792a2549ba948d761d",
+            "sourceReviewFile": "analysis-batch-50/reviews/45.analysisStats.json",
+            "sourceReviewSha256": "0c86fc08dcce4490960a56543ed372bd5de8e77ab40be3c75cf59a0a8375040b",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/45.combined.search-log.json",
+              "sha256": "6cda4cd6b3591b7142d753754412f252fde0c871f52c6ca5bd215294be472d1f",
+              "webSearchCount": 1,
+              "archiveCheckCount": 39
+            },
+            "checkedSources": [
+              {
+                "title": "清史稿·卷二百八十八",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288",
+                "locator": "本機固定修訂 oldid=2433531 全文比對（textSha256 已驗）：下軍機處擬旨，親禦硃筆批發、命設軍機房隆宗門內，以怡親王允祥、廷玉及大學士蔣廷錫領其事。嗣改稱辦理軍機處、諸臣陳奏，常事用疏，自通政司上，下內閣擬旨；要事用摺，自奏事處上，下軍機處擬旨，親禦硃筆批發、自是內閣權移於軍機處，大學士必充軍機大臣，始得預政事、軍機處初設，職制皆廷玉所定、察明考驗錄用…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "China Biographical Database (CBDB, Harvard) 張廷玉 (56675) 著作條目",
+                "url": "https://input.cbdb.fas.harvard.edu/basicinformation/56675/texts",
+                "locator": "WebSearch 結果摘要：著有《澄懷園語》四卷等",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "9a32df7db7f6b7f97393b4b79c8e745bcc97278e49eb27de5883cfdc7b8a8769",
+            "requestSha256": "26194fc9b645f6599511643b46b8f62c82e227e6b66eda9d0b97b7207b990565",
+            "inputSha256": "09ec2ee8d56e53624a6d6aa002e97b79c32ed510d6acf9991cdd22f0c44f2113",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "57534ff5bce648835cf14aaa4b667c5f7cef996605ccf771c0d0dcea5bb99599",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "d3373fb029ab5ea6d4e2a8115151dc9a374e79c7f6797917c9a0f8665e277d3d",
+            "preservedDeepSha256": "712d3e9650ddc2540c0804b061a58ab4a441b414b6beb7e46228f7d6d5a52c30",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:03:37.714Z",
+            "rawResponseFile": "analysis-batch-50/drafts/45.soulEssence.raw.md",
+            "rawResponseSha256": "bb1516898a3a1c71bfb3ee6aaf848d7c1dac1a0b550c6e0dbcdbc692b25c8e5f",
+            "responseFile": "analysis-batch-50/drafts/45.soulEssence.response.md",
+            "responseSha256": "bb1516898a3a1c71bfb3ee6aaf848d7c1dac1a0b550c6e0dbcdbc692b25c8e5f",
+            "fieldsHashes": {
+              "soulEssence": "1e8d013ba7b205b0d34cac5cb070cf8bfe6e21be9637c8a623de71eb2afed4eb"
+            },
+            "captureFile": "analysis-batch-50/drafts/45.soulEssence.capture.json",
+            "captureSha256": "ae035ac10bef55fac2995ca75a1543ce2606775ace65f03c9ce563267733e73a",
+            "sourceReviewFile": "analysis-batch-50/reviews/45.soulEssence.json",
+            "sourceReviewSha256": "2eaaf605082553b3234a5f6ce182c74ff29e098337620e380d6e6de86a0f6070",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/45.combined.search-log.json",
+              "sha256": "6cda4cd6b3591b7142d753754412f252fde0c871f52c6ca5bd215294be472d1f",
+              "webSearchCount": 1,
+              "archiveCheckCount": 39
+            },
+            "checkedSources": [
+              {
+                "title": "清史稿·卷二百八十八",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288",
+                "locator": "本機固定修訂 oldid=2433531 全文比對（textSha256 已驗）：下軍機處擬旨，親禦硃筆批發、命設軍機房隆宗門內，以怡親王允祥、廷玉及大學士蔣廷錫領其事。嗣改稱辦理軍機處、諸臣陳奏，常事用疏，自通政司上，下內閣擬旨；要事用摺，自奏事處上，下軍機處擬旨，親禦硃筆批發、自是內閣權移於軍機處，大學士必充軍機大臣，始得預政事、軍機處初設，職制皆廷玉所定、察明考驗錄用…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/45.analysis.md",
+            "analysisContextSha256": "3ae987e6ca45e37f98f0314f642243c770a1d25b76081bdcc132615260629e3a"
+          }
+        }
+      }
+    }
+  ]
+}

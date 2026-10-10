@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_張廷玉_1992775117",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:03:37.782Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "bb1516898a3a1c71bfb3ee6aaf848d7c1dac1a0b550c6e0dbcdbc692b25c8e5f",
+  "rawResponseSha256": "bb1516898a3a1c71bfb3ee6aaf848d7c1dac1a0b550c6e0dbcdbc692b25c8e5f",
+  "sourcePackageSha256": "d3373fb029ab5ea6d4e2a8115151dc9a374e79c7f6797917c9a0f8665e277d3d",
+  "searchLogSha256": "6cda4cd6b3591b7142d753754412f252fde0c871f52c6ca5bd215294be472d1f",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7288",
+      "title": "清史稿·卷二百八十八",
+      "locator": "本機固定修訂 oldid=2433531 全文比對（textSha256 已驗）：下軍機處擬旨，親禦硃筆批發、命設軍機房隆宗門內，以怡親王允祥、廷玉及大學士蔣廷錫領其事。嗣改稱辦理軍機處、諸臣陳奏，常事用疏，自通政司上，下內閣擬旨；要事用摺，自奏事處上，下軍機處擬旨，親禦硃筆批發、自是內閣權移於軍機處，大學士必充軍機大臣，始得預政事、軍機處初設，職制皆廷玉所定、察明考驗錄用…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "懸車之義與諸葛亮之辯；刑部奏議。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "不敢言去、惶懼請罷；一言為券例外。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "若靄科名、配享執念；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "乞券、遣子入謝、初祭請歸；老而戒得。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "父祠、若澄扶掖、繳賜物；感受標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "宋明成例與劉基之例；失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "雍正八年規制與乾隆十四年乞券。"
+    }
+  ],
+  "materialIssues": []
+}
