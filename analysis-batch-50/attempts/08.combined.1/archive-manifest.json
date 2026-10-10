@@ -1,0 +1,23 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "08",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Self-review found an oversimplification before any source review or assembly: the draft said 宣帝 finally adopted 趙充國's 屯田 plan; 漢書卷069 says 「於是兩從其計」 (he approved 屯田 and also ordered 破羌/彊弩 to attack). Corrected in attempt 2; no score changed.",
+  "files": {
+    "08.analysis.md": "7ef059994e1c7d52e6d3e04ee04bbf2dee64270d5fe7b35d7ca68029a5c439ca",
+    "08.analysisStats.capture.json": "090bb8f664bf496883ce197e938062aee9f3c23cd6898345c294d5ef1dc60296",
+    "08.analysisStats.raw.md": "e6b13ec611a7fbd80d35e7f4ce09e66eff9d29d2cb312439952bf31ce7edcd53",
+    "08.analysisStats.response.md": "e6b13ec611a7fbd80d35e7f4ce09e66eff9d29d2cb312439952bf31ce7edcd53",
+    "08.combined.capture.json": "6df79eec81517c934b51943be98d29d84395aeaf30afee78e938c3965a3752ca",
+    "08.combined.raw.md": "ba51dbd50eeef740264f556aaa1264d1ad36c9f0d5f27b8bc5b25d14fb6a7f9d",
+    "08.combined.search-log.json": "c92667662bb6532cfbed8f79affe54dec6ed9afebd91b1b57f5b6ac472893a2e",
+    "08.soulEssence.capture.json": "5e61d18f25a6cfcc51353b19a6570af76ad1e7e6bf0844e5b1074b5c3e1dbd81",
+    "08.soulEssence.md": "ebd67d0410651cba2a0861f70162d1d901ae6f8cedff579bddeb590245d1f679",
+    "08.soulEssence.raw.md": "320a81f975497a081f36c8775ffad36a8e5389f330899d176d902cb4cc8d4b3a",
+    "08.soulEssence.response.md": "320a81f975497a081f36c8775ffad36a8e5389f330899d176d902cb4cc8d4b3a",
+    "08.stats.json": "0034f6d6136cd6440152034d08e148189a5c771de5af637b96fc383a75a8ac7a",
+    "08.statsAnalysis.md": "ad060cd6b2601fb0e462b1d3287db4c52ce793d003e87ca326301470841870b4"
+  }
+}

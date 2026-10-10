@@ -1,0 +1,18 @@
+{
+  "format": "dynasty-batch50-author-policy",
+  "schemaVersion": 2,
+  "decidedAt": "2026-10-10",
+  "decidedBy": "project owner, in the Claude Code session that took over the handoff",
+  "supersedes": "manifest.v1.json policy.actualChatGPTWebRequired for records authored after this date only",
+  "manifestUnchanged": true,
+  "existingReceiptsUnchanged": ["01", "02", "03", "04", "06", "07"],
+  "provider": "Claude Code (Anthropic)",
+  "rules": [
+    "Claude writes the prose and scores directly from the unchanged original prompts, style samples, preserved deepAnalysis and stats reference compiled by combined-pilot.mjs.",
+    "Claude text is never labelled ChatGPT, never given a chatgpt.com URL, and never paired with invented browser or search evidence.",
+    "Every manuscript keeps a search log of the actual WebSearch queries and returned URLs, plus primary-text quotations re-verified against the repository's fixed-revision archive.",
+    "Sources seen only through search-result summaries are marked as such; no claim of having read a page that could not be opened.",
+    "Author and reviewer are the same agent: source reviews are self-reviews and say so; the owner may spot-check before publication.",
+    "Published records keep their original ChatGPT provenance; this policy never authorizes overwriting a published field."
+  ]
+}

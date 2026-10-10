@@ -1,0 +1,129 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢宣帝_279605035",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:30:00.000Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；學術來源僅經搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "320a81f975497a081f36c8775ffad36a8e5389f330899d176d902cb4cc8d4b3a",
+  "rawResponseSha256": "320a81f975497a081f36c8775ffad36a8e5389f330899d176d902cb4cc8d4b3a",
+  "sourcePackageSha256": "7ca28730cfcb726dfda53eb296d73d6d600b8e6e665b3daaeb30a1156dd9869d",
+  "searchLogSha256": "bc8a6cec236d9cc221eadd7ba6ff91b78e248e8af73899f06561144ea7b32313",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8A",
+      "title": "漢書卷九十七上·外戚傳上",
+      "locator": "本機固定修訂 oldid=2610736 全文逐句比對（textSha256 已驗）：上乃詔求微時故劍，大臣知指，白立許婕妤為皇后、女醫淳于衍、署衍勿論、選後宮素謹慎而無子者，遂立王婕妤為皇后，令母養太子",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "title": "漢書卷九·元帝紀",
+      "locator": "本機固定修訂 oldid=2315084 全文逐句比對（textSha256 已驗）：漢家自有制度，本以霸王道雜之、亂我家者，太子也、淮陽王明察好法、以少依許氏，俱從微起，故終不背焉、好是古非今，使人眩於名實",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "title": "漢書卷六十八·霍光傳",
+      "locator": "本機固定修訂 oldid=1752745 全文逐句比對（textSha256 已驗）：若有芒刺在背、諸事皆先關白光，然後奏御天子、光秉政前後二十年、車駕自臨問光病，上爲之涕泣、冠小冠，亡印綬，罷其右將軍屯兵官屬、又收范明友度遼將軍印綬…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "title": "漢書卷八·宣帝紀",
+      "locator": "本機固定修訂 oldid=2562101 全文逐句比對（textSha256 已驗）：坐收繫郡邸獄、輕重皆殺之、喜游俠，鬥雞走馬，具知閭里奸邪，吏治得失、常困於蓮勺鹵中、至今年十八、二年春三月庚午，大司馬大將軍光薨…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "title": "漢書卷八十九·循吏傳",
+      "locator": "本機固定修訂 oldid=1742323 全文逐句比對（textSha256 已驗）：外攘四夷，內改法度，民用彫敝、光因循守職，無所改作、觀其所繇，退而考察所行以質其言、數變易則下不安，民知其將久，不可欺罔、流民自占八萬餘口、偽自增加，以蒙顯賞，是後俗吏多為虛名云…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7077",
+      "title": "漢書卷七十七·蓋寬饒傳",
+      "locator": "本機固定修訂 oldid=2199053 全文逐句比對（textSha256 已驗）：以刑餘爲周召，以法律爲詩書、引佩刀自剄北闕下",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7066",
+      "title": "漢書卷六十六·楊惲傳",
+      "locator": "本機固定修訂 oldid=5979001 全文逐句比對（textSha256 已驗）：報會宗書",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7054",
+      "title": "漢書卷五十四·李廣蘇建傳（蘇武傳附麒麟閣）",
+      "locator": "本機固定修訂 oldid=7531358 全文逐句比對（textSha256 已驗）：唯霍光不名",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+      "title": "漢書卷七十八·蕭望之傳",
+      "locator": "本機固定修訂 oldid=1476154 全文逐句比對（textSha256 已驗）：其以客禮待之，令單于位在諸侯王上、皆受遺詔輔政",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "故劍詔「大臣知指」、作色論霸王道雜之、徐生書三上輒報聞，均原文核對；沉默模式標[推斷]並寫明依據。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "許后被毒後無公開反應並次年立霍后；霍光死後先令霍山領尚書、開封事，再收兵權，兩年後誅滅，兩例跨三年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "元康二年更諱詢之理由與黃龍元年計簿詔原文核對；以早年經歷解釋動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "王成造假與黃龍計簿；蓋寬饒神爵二年自剄、楊惲五鳳二年腰斬（紀載十二月），原文核對。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "故劍、王皇后「素謹慎而無子」令母養太子、元康三年報郡邸獄復作阿保之功、霍光病篤涕泣，均原文核對；涕泣動機標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "「具知閭里奸邪，吏治得失」、太守久任理由、「好是古非今，使人眩於名實」、甘露三年稱制臨決五經同異，原文核對；推論標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "麒麟閣「唯霍光不名」（《蘇武傳》甘露三年）與連坐數千家；亂我家者太子也與終不背；史高、蕭望之、周堪受遺詔輔政，原文核對。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,219 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢宣帝_279605035",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:30:00.000Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；學術來源僅經搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e55d872e3b66198b9b9ffe77f9cac840f804add8fb8d77d899e6640b8a01bed8",
+  "rawResponseSha256": "e55d872e3b66198b9b9ffe77f9cac840f804add8fb8d77d899e6640b8a01bed8",
+  "sourcePackageSha256": "7ca28730cfcb726dfda53eb296d73d6d600b8e6e665b3daaeb30a1156dd9869d",
+  "searchLogSha256": "bc8a6cec236d9cc221eadd7ba6ff91b78e248e8af73899f06561144ea7b32313",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "title": "漢書卷八·宣帝紀",
+      "locator": "本機固定修訂 oldid=2562101 全文逐句比對（textSha256 已驗）：坐收繫郡邸獄、輕重皆殺之、喜游俠，鬥雞走馬，具知閭里奸邪，吏治得失、常困於蓮勺鹵中、至今年十八、二年春三月庚午，大司馬大將軍光薨…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "title": "漢書卷六十八·霍光傳",
+      "locator": "本機固定修訂 oldid=1752745 全文逐句比對（textSha256 已驗）：若有芒刺在背、諸事皆先關白光，然後奏御天子、光秉政前後二十年、車駕自臨問光病，上爲之涕泣、冠小冠，亡印綬，罷其右將軍屯兵官屬、又收范明友度遼將軍印綬…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "title": "漢書卷八十九·循吏傳",
+      "locator": "本機固定修訂 oldid=1742323 全文逐句比對（textSha256 已驗）：外攘四夷，內改法度，民用彫敝、光因循守職，無所改作、觀其所繇，退而考察所行以質其言、數變易則下不安，民知其將久，不可欺罔、流民自占八萬餘口、偽自增加，以蒙顯賞，是後俗吏多為虛名云…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8A",
+      "title": "漢書卷九十七上·外戚傳上",
+      "locator": "本機固定修訂 oldid=2610736 全文逐句比對（textSha256 已驗）：上乃詔求微時故劍，大臣知指，白立許婕妤為皇后、女醫淳于衍、署衍勿論、選後宮素謹慎而無子者，遂立王婕妤為皇后，令母養太子",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7074",
+      "title": "漢書卷七十四·魏相丙吉傳",
+      "locator": "本機固定修訂 oldid=1491986 全文逐句比對（textSha256 已驗）：去副封以防雍蔽、霍氏殺許后之謀始得上聞、吉絕口不道前恩、上親見問，然後知吉有舊恩，而終不言",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7024",
+      "title": "漢書卷二十四·食貨志",
+      "locator": "本機固定修訂 oldid=7498330 全文逐句比對（textSha256 已驗）：穀賤時增其賈而糴、穀貴時減賈而糶，名曰常平倉、穀至石五錢",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7096%E4%B8%8A",
+      "title": "漢書卷九十六上·西域傳上",
+      "locator": "本機固定修訂 oldid=7907037 全文逐句比對（textSha256 已驗）：都護之起，自吉置矣、是歲，神爵二年也",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.aisixiang.com/data/149893.html",
+      "checked": true,
+      "title": "陳凌、娃斯瑪·塔拉提、陳婷〈西域都護府考古探索與反思——基於方法論的觀察〉",
+      "locator": "WebSearch 結果摘要：治所認定（卓爾庫特、奎玉克協海爾古城）學界未定；正文僅引用此點",
+      "type": "scholarly_primary",
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+      "title": "漢書卷七十八·蕭望之傳",
+      "locator": "本機固定修訂 oldid=1476154 全文逐句比對（textSha256 已驗）：其以客禮待之，令單于位在諸侯王上、皆受遺詔輔政",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7069",
+      "title": "漢書卷六十九·趙充國傳",
+      "locator": "本機固定修訂 oldid=1751975 全文逐句比對（textSha256 已驗）：會得進兵璽書、遂上屯田奏、留屯田得十二便、今聽將軍，將軍計善、於是兩從其計、詔罷兵，獨充國留屯田",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "title": "漢書卷九·元帝紀",
+      "locator": "本機固定修訂 oldid=2315084 全文逐句比對（textSha256 已驗）：漢家自有制度，本以霸王道雜之、亂我家者，太子也、淮陽王明察好法、以少依許氏，俱從微起，故終不背焉、好是古非今，使人眩於名實",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+      "checked": true,
+      "title": "Michael Loewe, \"Han Yuandi, Reigned 48 to 33 B.C.E., and His Advisors\", Early China 35–36",
+      "locator": "Cambridge 摘要頁（經 WebSearch 結果摘要）：元帝輔臣辯論推動以周制為理想；正文標明僅據摘要，未宣稱讀過全文",
+      "type": "scholarly_primary",
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7077",
+      "title": "漢書卷七十七·蓋寬饒傳",
+      "locator": "本機固定修訂 oldid=2199053 全文逐句比對（textSha256 已驗）：以刑餘爲周召，以法律爲詩書、引佩刀自剄北闕下",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7076",
+      "title": "漢書卷七十六·韓延壽、張敞傳",
+      "locator": "本機固定修訂 oldid=1490654 全文逐句比對（textSha256 已驗）：延壽竟坐棄市、吏民數千人送至渭城",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7066",
+      "title": "漢書卷六十六·楊惲傳",
+      "locator": "本機固定修訂 oldid=5979001 全文逐句比對（textSha256 已驗）：報會宗書",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "劉詢（初名病已），戾太子孫，與北魏宣武帝區分；保留原 A+ 評級與 deepAnalysis，不重新校準。"
+    },
+    {
+      "id": "birth-reign",
+      "passed": true,
+      "detail": "生年依「至今年十八」（元平元年）推為前91年前後；元平元年（前74）七月即位，黃龍元年（前49）十二月崩，均對照《宣帝紀》。"
+    },
+    {
+      "id": "huo-timeline",
+      "passed": true,
+      "detail": "本始三年（前71）許后崩、本始四年立霍后、地節二年（前68）三月霍光薨、地節三年（前67）十月罷車騎/右將軍屯兵、地節四年（前66）七月霍氏誅、八月廢后，均對照《宣帝紀》《霍光傳》《外戚傳》。"
+    },
+    {
+      "id": "deep-analysis-disagreement",
+      "passed": true,
+      "detail": "既有 deepAnalysis 寫「兵不血刃」；《霍光傳》載「與霍氏相連坐誅滅者數千家」，賞析以原典修正此說，但不改動 deepAnalysis 欄位。"
+    },
+    {
+      "id": "information-channel",
+      "passed": true,
+      "detail": "封事、去副封出自《宣帝紀》地節二年條與《魏相傳》；「霍氏殺許后之謀始得上聞」原文核對。"
+    },
+    {
+      "id": "governance",
+      "passed": true,
+      "detail": "五日一聽事、親見守相、太守久任理由、增吏俸十五（神爵三年）、初置廷尉平（地節三年十二月）、元康二年獄吏詔，均原文核對。"
+    },
+    {
+      "id": "granary",
+      "passed": true,
+      "detail": "常平倉：《宣帝紀》五鳳四年耿壽昌奏設，《食貨志》述「五鳳中」及糴糶機制；比年豐穀石五錢在元康四年條。"
+    },
+    {
+      "id": "western-regions",
+      "passed": true,
+      "detail": "都護：《西域傳上》「是歲，神爵二年也」「都護之起，自吉置矣」；另有研究引文作神爵三年，正文採漢書本傳且不展開；治所爭議僅引學術文章摘要。"
+    },
+    {
+      "id": "xiongnu",
+      "passed": true,
+      "detail": "五單于、甘露三年呼韓邪入朝、有司原議位次諸侯王下、採蕭望之客禮議位在諸侯王上，對照《宣帝紀》與《蕭望之傳》。"
+    },
+    {
+      "id": "qiang-war",
+      "passed": true,
+      "detail": "神爵元年先下進兵璽書、後准屯田又「兩從其計」令兩將軍出擊，對照《趙充國傳》；首版過度簡化已存 attempts/08.combined.1。"
+    },
+    {
+      "id": "wang-cheng-and-ledgers",
+      "passed": true,
+      "detail": "王成地節三年受賞、後揭「偽自增加」；黃龍元年「上計簿，具文而已」原文核對。"
+    },
+    {
+      "id": "succession",
+      "passed": true,
+      "detail": "霸王道雜之、亂我家者太子也、淮陽王明察好法、以少依許氏終不背，對照《元帝紀》；Loewe 僅引摘要。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[88,48,95,97,86]：對照參考表北魏孝文帝[88,79,95,96,84]、乾隆[94,82,92,93,89]、漢武帝[95,30,90,98,85]、漢明帝[82,55,90,95,65]；每維理由均列同角色比較與短板。"
+    },
+    {
+      "id": "unverifiable-avoided",
+      "passed": true,
+      "detail": "未採用網路常見但未能追到原典的說法（如具體戰役兵力細節以外的數字）；學術來源只寫其摘要可支撐之處。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    48,
+    95,
+    97,
+    86
+  ]
+}

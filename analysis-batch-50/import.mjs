@@ -9,6 +9,7 @@ import { MAX_DOCUMENT_BYTES } from '../cloudflare/src/d1-store.mjs';
 import { loadBaseLibrary } from '../cloudflare/scripts/audit-counts.mjs';
 import { PilotError, sourceUserdata, contentHash, sha256, validateOrigin, productionAdapter } from '../cloudflare/scripts/analysis-pilot-import.mjs';
 import { validateStatsAnalysis } from '../cloudflare/scripts/analysis-pilot-stats-import.mjs';
+import { CHATGPT_PROVIDER, CLAUDE_PROVIDER, validClaudeProvenance } from './claude/provenance.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 export const FIXED_MANIFEST_SHA256 = '2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700';
@@ -81,12 +82,17 @@ function validateBaseline(source, base, manifest) {
 }
 
 function validateProvenance(provenance) {
-  if (!record(provenance) || provenance.provider !== 'ChatGPT web' || provenance.webSearchPerformed !== true
+  if (!record(provenance) || ![CHATGPT_PROVIDER, CLAUDE_PROVIDER].includes(provenance.provider) || provenance.webSearchPerformed !== true
     || typeof provenance.generatedAt !== 'string' || !Number.isFinite(Date.parse(provenance.generatedAt))
     || !Array.isArray(provenance.checkedSources) || !provenance.checkedSources.length) bad('invalid_provenance');
-  let url; try { url = new URL(provenance.conversationUrl); } catch { bad('invalid_provenance'); }
-  if (url.protocol !== 'https:' || url.hostname !== 'chatgpt.com' || !/^\/(?:g\/[^/]+\/)?c\/[a-zA-Z0-9-]+$/.test(url.pathname)
-    || url.username || url.password || url.search || url.hash) bad('invalid_provenance');
+  // Claude-authored records (author-policy.v2.json) carry a Claude session URL
+  // and the policy hash, never a ChatGPT conversation URL.
+  if (provenance.provider === CLAUDE_PROVIDER) { if (!validClaudeProvenance(provenance)) bad('invalid_provenance'); }
+  else {
+    let url; try { url = new URL(provenance.conversationUrl); } catch { bad('invalid_provenance'); }
+    if (url.protocol !== 'https:' || url.hostname !== 'chatgpt.com' || !/^\/(?:g\/[^/]+\/)?c\/[a-zA-Z0-9-]+$/.test(url.pathname)
+      || url.username || url.password || url.search || url.hash) bad('invalid_provenance');
+  }
   for (const source of provenance.checkedSources) {
     let sourceUrl; try { sourceUrl = new URL(source?.url); } catch { bad('invalid_provenance'); }
     if (sourceUrl.protocol !== 'https:' || sourceUrl.username || sourceUrl.password
@@ -198,6 +204,16 @@ function approved(report, source, base, batch, manifest) {
 // Dynamic import avoids loading the assembler during module initialization.
 export async function validateBatch50Evidence({ batch, manifest = authority }) {
   validateChunk(batch, manifest);
+  const providers = new Set(batch.records.map(item => item.provenance.provider));
+  if (providers.size !== 1) bad('mixed_provider_batch');
+  if (providers.has(CLAUDE_PROVIDER)) {
+    if (batch.format === ANALYSIS_FORMAT) bad('claude_analysis_only_unsupported');
+    const { loadClaudePerson, assembleClaudeResults } = await import('./claude-author.mjs');
+    const people = [];
+    for (const item of batch.records) people.push(await loadClaudePerson(manifest.records.find(value => value.id === item.id).slug));
+    if (contentHash(assembleClaudeResults({ manifest, people })) !== contentHash(batch)) bad('batch_evidence_changed');
+    return true;
+  }
   const { loadPerson, assembleResults, loadAnalysisPerson, assembleAnalysisResults } = await import('./assemble.mjs');
   const analysisOnly = batch.format === ANALYSIS_FORMAT;
   const people = [];

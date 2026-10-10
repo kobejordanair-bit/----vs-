@@ -1,0 +1,553 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢宣帝_279605035",
+  "packetSha256": "7587f3708ab1854c9f8a57e38aa0474b25035c23467ad218a14f656d34bbde38",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "漢書 宣帝紀 本始 地節 元康 神爵 五鳳 甘露 黃龍",
+      "returnedUrls": [
+        "https://zh.wikisource.org/wiki/%E5%85%A8%E6%BC%A2%E6%96%87/%E5%8D%B7%E4%BA%94",
+        "https://ll-chinesereferenceshelf.brillonline.com/chinese-english/pdfdocument/appendix5",
+        "https://zh.wikisource.org/zh-hant/%E6%BC%A2%E6%9B%B8/%E5%8D%B7009",
+        "https://www.Wikipedia.com/wiki/Hanshu",
+        "https://eprints.lib.hokudai.ac.jp/repo/huscap/all/98784/21_rjgshhs_25_p001-011_r.pdf"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "漢宣帝 霸王道雜之 論文 儒法 綜核名實 學報",
+      "returnedUrls": [
+        "https://zh.wikisource.org/zh-hant/%E6%BC%A2%E6%9B%B8/%E5%8D%B7009",
+        "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+        "https://www.thenewslens.com/article/204191",
+        "https://scholar.xjtlu.edu.cn/en/publications/han-fei-versus-the-confucians-should-a-ruler-govern-through-laws-/"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "西域都護府 神爵二年 鄭吉 設立 研究 社科院",
+      "returnedUrls": [
+        "https://www.cssn.cn/skqns/skqns_bsslt/202401/t20240112_5727913.shtml",
+        "https://www.aisixiang.com/data/74999.html",
+        "https://www.aisixiang.com/data/149893.html",
+        "https://www.cssn.cn/skgz/202303/t20230302_5600384.shtml",
+        "https://xbbjb.ucass.edu.cn/__local/A/4B/0C/5E4D795B1A9E7DC97FB86259D99_E3263FA8_136D4A.pdf"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "Michael Loewe Crisis and Conflict in Han China modernist reformist Xuan di",
+      "returnedUrls": [
+        "https://mitpressbookstore.mit.edu/book/9781138316591",
+        "https://eld.bl.uk/catalog/019033084",
+        "https://www.clarehall.cam.ac.uk/?p=3069",
+        "https://e-aoi.uzh.ch/apps/china-west/documents/8696"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "海昏侯 劉賀 元康三年 封 南昌漢代海昏侯國遺址博物館",
+      "returnedUrls": [
+        "https://www.cna.com.tw/news/acn/201701040377.aspx",
+        "https://www.thepaper.cn/newsDetail_forward_25833155",
+        "https://www.chinanews.com.cn/cul/2016/03-03/7781518.shtml"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "\"Han Yuandi\" \"and his advisors\" Early China Cambridge abstract Xuandi",
+      "returnedUrls": [
+        "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+        "https://www.britannica.com/biography/Xuandi",
+        "https://www.britannica.com/biography/Yuandi"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "陈凌 娃斯玛·塔拉提 西域都护府考古探索与反思 乌垒 奎玉克协海尔",
+      "returnedUrls": [
+        "https://www.aisixiang.com/data/149893.html",
+        "https://cn.chinadaily.com.cn/a/202307/04/WS64a4bdeea310ba94c5614de1.html",
+        "https://www.cssn.cn/skgz/202303/t20230302_5600384.shtml"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "漢宣帝 霍光 霍氏 地節四年 誅滅 研究 中央研究院 歷史語言研究所集刊",
+      "returnedUrls": [
+        "https://www.airitilibrary.com/Article/Detail/1023358x-200809-x-19-19-36-a",
+        "https://commons.ln.edu.hk/sw_master/5385",
+        "https://cnmoo.mnd.gov.tw/Files/Paper/%E6%B5%B7%E8%BB%8D%E5%AE%98%E6%A0%A1%E5%AD%A3%E5%88%8A41%E5%8D%B72%E6%9C%9F.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "坐收繫郡邸獄"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "輕重皆殺之"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "喜游俠，鬥雞走馬，具知閭里奸邪，吏治得失"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "常困於蓮勺鹵中"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "至今年十八"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "二年春三月庚午，大司馬大將軍光薨"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "乃復使樂平侯山領尚書事"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "群臣得奏封事，以知下情"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "五日一聽事"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "其罷車騎將軍、右將軍屯兵"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "初置廷尉平四人"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "子首匿父母"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "其更諱詢"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "京兆尹趙廣漢有罪，要斬"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "郡邸獄復作嘗有阿保之功"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "比年豐，穀石五錢"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "其益吏百石以下奉十五"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "用法或持巧心，析律貳端"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "校尉常惠將烏孫兵入匈奴右地，大克獲"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "祁連將軍廣明、虎牙將軍順有罪，下有司，皆自殺"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "司隸校尉蓋寬饒有罪，下有司，自殺"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "左馮翊韓延壽有罪，棄巿"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "不悔過，怨望，大逆不道，要斬"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "分為五單于"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "位次諸侯王下"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "位在諸侯王上"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "蠻夷君長王侯迎者數萬人"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "上親稱制臨決焉"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "置西河、北地屬國以處匈奴降者"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "具文而已，務為欺謾，以避其課。三公不以為意，朕將何任"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "信賞必罰，綜核名實"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷008",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7008",
+      "quote": "都護西域騎都尉鄭吉"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "quote": "漢家自有制度，本以霸王道雜之"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "quote": "亂我家者，太子也"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "quote": "淮陽王明察好法"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "quote": "以少依許氏，俱從微起，故終不背焉"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "quote": "好是古非今，使人眩於名實"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷024",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7024",
+      "quote": "穀賤時增其賈而糴"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷024",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7024",
+      "quote": "穀貴時減賈而糶，名曰常平倉"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷024",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7024",
+      "quote": "穀至石五錢"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷054",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7054",
+      "quote": "唯霍光不名"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷066",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7066",
+      "quote": "報會宗書"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "若有芒刺在背"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "諸事皆先關白光，然後奏御天子"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "光秉政前後二十年"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "車駕自臨問光病，上爲之涕泣"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "冠小冠，亡印綬，罷其右將軍屯兵官屬"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "又收范明友度遼將軍印綬"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "禹要斬，顯及諸女昆弟皆弃市"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "與霍氏相連坐誅滅者數千家"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "quote": "書三上，輒報聞"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷069",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7069",
+      "quote": "會得進兵璽書"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷069",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7069",
+      "quote": "遂上屯田奏"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷074",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7074",
+      "quote": "去副封以防雍蔽"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷074",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7074",
+      "quote": "霍氏殺許后之謀始得上聞"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷074",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7074",
+      "quote": "吉絕口不道前恩"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷074",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7074",
+      "quote": "上親見問，然後知吉有舊恩，而終不言"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷076",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7076",
+      "quote": "延壽竟坐棄市"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷076",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7076",
+      "quote": "吏民數千人送至渭城"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷077",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7077",
+      "quote": "以刑餘爲周召，以法律爲詩書"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷077",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7077",
+      "quote": "引佩刀自剄北闕下"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+      "quote": "其以客禮待之，令單于位在諸侯王上"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+      "quote": "皆受遺詔輔政"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "外攘四夷，內改法度，民用彫敝"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "光因循守職，無所改作"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "觀其所繇，退而考察所行以質其言"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "數變易則下不安，民知其將久，不可欺罔"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "流民自占八萬餘口"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "偽自增加，以蒙顯賞，是後俗吏多為虛名云"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷089",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7089",
+      "quote": "漢世良吏，於是為盛，稱中興焉"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷096上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7096%E4%B8%8A",
+      "quote": "都護之起，自吉置矣"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷096上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7096%E4%B8%8A",
+      "quote": "是歲，神爵二年也"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷097上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8A",
+      "quote": "上乃詔求微時故劍，大臣知指，白立許婕妤為皇后"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷097上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8A",
+      "quote": "女醫淳于衍"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷097上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8A",
+      "quote": "署衍勿論"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷097上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8A",
+      "quote": "選後宮素謹慎而無子者，遂立王婕妤為皇后，令母養太子"
+    }
+  ],
+  "limits": [
+    "This cloud session's network policy denied page fetches (HTTP 403 at the proxy / DNS failure) for zh.wikisource.org, zh.wikipedia.org, en.wikipedia.org, ctext.org and www.npm.gov.tw; WebFetch could not open any page.",
+    "Primary-text claims were therefore verified against the repository's fixed-revision Wikisource archive (backend/static/data/history/archive-books/hanshu.json, per-document textSha256 checked), which is the same text the cited Wikisource URLs serve at the recorded revisions.",
+    "Scholarly and institutional sources (aisixiang, Cambridge Early China abstract) were seen only through WebSearch result summaries; the manuscript cites them only for what those summaries state.",
+    "The archive text reads 純住德教 where the standard Zhonghua edition reads 純任德教; the manuscript does not quote that clause."
+  ]
+}
