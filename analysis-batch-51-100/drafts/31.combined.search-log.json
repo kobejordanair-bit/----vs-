@@ -1,0 +1,420 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_廉頗_306242853",
+  "packetSha256": "d038149697e37cddaf4424ab9803f89e03b8a6400b9bce33cfad939d4fa160a4",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "廉頗 長平之戰 堅壁不戰 趙括 換將 鄗之戰 研究 論文",
+      "returnedUrls": [
+        "https://www.rthk.hk/oldassets/files/extra_file/20260401150047_2019888636.pdf",
+        "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/war1.pdf",
+        "https://www.chinatimes.com/opinion/20220611000003-262107",
+        "https://www.ntdtv.com/b5/2019/07/29/a102633120.html",
+        "https://www.chinatimes.com/opinion/20220702000001-262107",
+        "https://www.mnd.gov.tw/NewUpload/202005/02%E7%A7%A6%E8%B6%99%E9%95%B7%E5%B9%B3%E6%AE%B2%E6%BB%85%E6%88%B0%E4%B9%8B%E7%A0%94%E7%A9%B6_333230.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "一飯斗米，肉十斤，被甲上馬，以示尚可用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "廉將軍雖老，尚善飯，然與臣坐，頃之三遺矢矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "以爲老，遂不召",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "我思用趙人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "勇氣聞於諸侯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "趙之良將也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "爲趙將伐齊，大破之，取陽晉，拜爲上卿，以勇氣聞於諸侯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "彊秦之所以不敢加兵於趙者，徒以吾兩人在也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "使樂乘代廉頗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "趙前後所亡凡四十五萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "趙壯者盡於長平，其孤未壯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷102",
+      "quote": "吾獨不得廉頗、李牧時爲吾將，吾豈憂匈奴哉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7102"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷102",
+      "quote": "陛下雖得廉頗、李牧，弗能用也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7102"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "東攻齊，破其一軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "復伐齊幾，拔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "攻魏之防陵、安陽，拔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷043",
+      "quote": "攻魏房子，拔之，因城而還。又攻安陽，取之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7043"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "陷趙軍，取二鄣四尉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "堅壁以待秦，秦數挑戰，趙兵不出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "趙王數以為讓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "廉頗易與，且降矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "既怒廉頗軍多失亡，軍數敗，又反堅壁不敢戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "悉更約束，易置軍吏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "王以名使括，若膠柱而鼓瑟耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "縱奇兵，詳敗走，而絶其糧道",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "大破燕軍於鄗，殺栗腹，遂圍燕。燕割五城請和",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "伐魏之繁陽，拔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "士卒犯秦斥兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "怒，攻樂乘，樂乘走",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "奔魏之大梁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "魏不能信用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "一爲楚將，無功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "道遠險狹，難救",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "兩鼠鬥於穴中，將勇者勝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "破秦軍閼與下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "我爲趙將，有攻城野戰之大功，而藺相如徒以口舌爲勞，而位居我上，且相如素賤人，吾羞，不忍爲之下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "我見相如，必辱之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "先國家之急而後私讎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "肉袒負荊，因賓客至藺相如門謝罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "鄙賤之人，不知將軍寬之至此也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "卒相與驩，爲刎頸之交",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "天下以市道交，君有勢，我則從君，君無勢則去，此固其理也，有何怨乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "三十日不還，則請立太子爲王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "堅壁以待秦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "數挑戰，趙兵不出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "趙軍士卒犯秦斥兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "以勇氣聞於諸侯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "有攻城野戰之大功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "王不行，示趙弱且怯也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "郭開多與使者金，令毀之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "趙王思復得廉頗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "失勢之時，故客盡去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "吾羞，不忍爲之下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "怒，攻樂乘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "我爲趙將，有攻城野戰之大功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "思復用於趙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "陰使人迎之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "徒以口舌爲勞，而位居我上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "拔武遂、方城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "君有勢，我則從君，君無勢則去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "一飯斗米，肉十斤，被甲上馬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "以尉文封廉頗爲信平君",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "堅壁不敢戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "一飯斗米，肉十斤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷081",
+      "quote": "卒死於壽春",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；史實引句對 repo 內固定修訂《史記》卷81、73、43、102 全文比對。",
+    "搜尋結果以教材與評論為主，國防部〈秦趙長平殲滅戰之研究〉僅見標題未得摘要，正文未引用現代研究；《戰國策》與《資治通鑑》對長平、鄗之戰的記載未比對。"
+  ]
+}

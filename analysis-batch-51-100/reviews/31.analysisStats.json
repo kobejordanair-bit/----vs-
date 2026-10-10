@@ -1,0 +1,76 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_廉頗_306242853",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:08:06.634Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "28ccfe945487f257a1567d684a7ee602afa604c51da24658a3ee1d93e0ba8fb3",
+  "rawResponseSha256": "28ccfe945487f257a1567d684a7ee602afa604c51da24658a3ee1d93e0ba8fb3",
+  "sourcePackageSha256": "680a23cfa1130bf09df3de19e0f638e1836086ac7043a60c38aaf59c23fc1a1c",
+  "searchLogSha256": "00c705d1f8551c2d30c86c130627c2964f52c2a00ece9163a9590783589f8245",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081",
+      "title": "史記·巻八十一 廉頗藺相如列傳 第二十一",
+      "locator": "本機固定修訂 oldid=8735558 全文比對（textSha256 已驗）：一飯斗米，肉十斤，被甲上馬，以示尚可用、廉將軍雖老，尚善飯，然與臣坐，頃之三遺矢矣、以爲老，遂不召、我思用趙人、勇氣聞於諸侯、趙之良將也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7102",
+      "title": "史記·卷一百零二 張釋之馮唐列傳 第四十二",
+      "locator": "本機固定修訂 oldid=1753957 全文比對（textSha256 已驗）：吾獨不得廉頗、李牧時爲吾將，吾豈憂匈奴哉、陛下雖得廉頗、李牧，弗能用也",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7043",
+      "title": "史記·巻四十三 趙世家 第十三",
+      "locator": "本機固定修訂 oldid=7903603 全文比對（textSha256 已驗）：攻魏房子，拔之，因城而還。又攻安陽，取之",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073",
+      "title": "史記·卷七十三 白起王翦列傳 第十三",
+      "locator": "本機固定修訂 oldid=7909285 全文比對（textSha256 已驗）：陷趙軍，取二鄣四尉、堅壁以待秦，秦數挑戰，趙兵不出、趙王數以為讓、廉頗易與，且降矣、既怒廉頗軍多失亡，軍數敗，又反堅壁不敢戰、士卒犯秦斥兵…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "惠文王十六年伐齊取陽晉拜上卿、澠池之會、負荊、攻齊魏諸城、閼與之議、孝成王七年長平堅壁被代、鄗之戰封信平君假相國、伐繁陽、悼襄王使樂乘代而奔魏、使者三遺矢、入楚卒於壽春，皆依史記卷81/73/43/102 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：攻齊魏、長平堅壁、鄗之戰；武力：以勇氣聞、斗米十斤肉；智謀：堅壁、澠池預案、閼與錯判；政治：負荊與郭開之害、攻樂乘；魅力：刎頸之交、趙王思復得、漢文帝搏髀。對照李牧、王翦、白起、孫臏、項羽、岳飛。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "初戰失二鄣四尉→堅壁不出→趙王數讓→應侯反間→趙括代→更約束易軍吏→白起絕糧→四十五萬亡；燕謂趙壯者盡→廉頗大破燕於鄗；樂乘代→攻樂乘→奔魏→郭開賄使→三遺矢→不召→入楚無功。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    92,
+    86,
+    82,
+    55,
+    84
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_廉頗_306242853",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:08:06.635Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "083600ac784eb87434968c30b2997f1db11f66d464792d044f911fbe0112ecd6",
+  "rawResponseSha256": "083600ac784eb87434968c30b2997f1db11f66d464792d044f911fbe0112ecd6",
+  "sourcePackageSha256": "680a23cfa1130bf09df3de19e0f638e1836086ac7043a60c38aaf59c23fc1a1c",
+  "searchLogSha256": "00c705d1f8551c2d30c86c130627c2964f52c2a00ece9163a9590783589f8245",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081",
+      "title": "史記·巻八十一 廉頗藺相如列傳 第二十一",
+      "locator": "本機固定修訂 oldid=8735558 全文比對（textSha256 已驗）：一飯斗米，肉十斤，被甲上馬，以示尚可用、廉將軍雖老，尚善飯，然與臣坐，頃之三遺矢矣、以爲老，遂不召、我思用趙人、勇氣聞於諸侯、趙之良將也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以勇聞名卻以不戰為最大貢獻，最在乎被趙國需要卻因怒氣離趙；場景為吾羞不忍為之下、負荊、客退矣、一飯斗米、我思用趙人。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "被趙國需要之驅動、位次重於合作之盲點、戰功框架解釋不了堅壁等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以必辱之與鄙賤之人與我思用趙人、堅壁與攻樂乘與被甲上馬、我為趙將與不能信用、藺相如與樂乘與郭開、門客與三遺矢、陽晉信平君與弗能用、壽春之死為事件。"
+    }
+  ],
+  "materialIssues": []
+}
