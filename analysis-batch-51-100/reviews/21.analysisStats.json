@@ -1,0 +1,76 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_薛岳_306535727",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:43:22.270Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "ca708a83230bcf181574cc0e920510764fdcb3cbb770a055320d8b8cf75321af",
+  "rawResponseSha256": "ca708a83230bcf181574cc0e920510764fdcb3cbb770a055320d8b8cf75321af",
+  "sourcePackageSha256": "5f7a440c137bd66350099160af0cf4e1ee9388689674eb84433c69d09402066c",
+  "searchLogSha256": "91bef8c51075936b5d4925816074641379d657526788c80f90643ee1fe260209",
+  "checkedSources": [
+    {
+      "url": "https://www.mnd.gov.tw/File/30455",
+      "title": "楊名宇〈長沙第三次會戰「天爐戰法」之研究〉，國防部",
+      "locator": "WebSearch 結果摘要：抗戰共四次長沙會戰（1939.9–1944.6）；天爐戰法以洞庭湖、幕阜山為屏障，以數條東西向河川為會戰區域，屬後退決戰，以伏擊、誘殲、側擊逐次消耗，再於決戰陣地反擊與反包圍",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000342",
+      "title": "國家教育研究院〈薛岳〉人物資料",
+      "locator": "來源包已記錄先前核讀：薛岳字伯陵，原名仰岳，中華民國陸軍將領；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://ir.sinica.edu.tw/handle/201000000A/75239",
+      "title": "《薛岳將軍與國民革命》（中央研究院近代史研究所，1988），中研院機構典藏",
+      "locator": "WebSearch 結果摘要：僅書目資訊，正文只據題名指出有專書",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.mnd.gov.tw/File/26270",
+      "title": "國防部部隊史資料（第七十四軍與武漢會戰）",
+      "locator": "WebSearch 結果摘要：第74軍參與武漢會戰，其中以萬家嶺大捷最具代表性；薛岳任第一兵團總司令一點僅見部落格轉載，正文以推斷標示其聲望關聯",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "字伯陵、原名仰岳、陸軍將領依國教院來源包核讀；四次長沙會戰起訖依國防部論文摘要；萬家嶺依國防部部隊史摘要；1944失守與1998卒為通行史實以[推斷]標示。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：萬家嶺與長沙；武力：行伍出身；智謀：天爐戰法；政治：軍事威望未轉化；魅力：大捷與1944之挫。對照彭德懷、粟裕、白崇禧、袁崇煥。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "後退決戰→逐次消耗→反擊；有限目標攻勢→戰法奏效；戰略性攻勢→長沙失守（[推斷]）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    92,
+    60,
+    90,
+    58,
+    85
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_薛岳_306535727",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:43:22.271Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b199c1008b860845bd26d81e63e70807b1cfd00ac825f09180f4832978b76934",
+  "rawResponseSha256": "b199c1008b860845bd26d81e63e70807b1cfd00ac825f09180f4832978b76934",
+  "sourcePackageSha256": "5f7a440c137bd66350099160af0cf4e1ee9388689674eb84433c69d09402066c",
+  "searchLogSha256": "91bef8c51075936b5d4925816074641379d657526788c80f90643ee1fe260209",
+  "checkedSources": [
+    {
+      "url": "https://www.mnd.gov.tw/File/30455",
+      "title": "楊名宇〈長沙第三次會戰「天爐戰法」之研究〉，國防部",
+      "locator": "WebSearch 結果摘要：抗戰共四次長沙會戰（1939.9–1944.6）；天爐戰法以洞庭湖、幕阜山為屏障，以數條東西向河川為會戰區域，屬後退決戰，以伏擊、誘殲、側擊逐次消耗，再於決戰陣地反擊與反包圍",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.mnd.gov.tw/File/26270",
+      "title": "國防部部隊史資料（第七十四軍與武漢會戰）",
+      "locator": "WebSearch 結果摘要：第74軍參與武漢會戰，其中以萬家嶺大捷最具代表性；薛岳任第一兵團總司令一點僅見部落格轉載，正文以推斷標示其聲望關聯",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：把讓出空間變成武器；場景為湘北縱深、四次長沙、1944失守、嘉義終老。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "長沙失守為最脆弱時刻、以勝利證明讓地值得、嘉義與戰爭和解，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以戰法即說服、讓地的心理壓力、選擇戰場、方法變信念、戰區與部隊、縱深框架、讓地代價為推論主軸。"
+    }
+  ],
+  "materialIssues": []
+}
