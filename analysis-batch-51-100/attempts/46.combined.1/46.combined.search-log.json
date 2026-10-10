@@ -61,40 +61,12 @@
         "https://www.bannedbook.org/b5/forum2/topic151.html",
         "https://minjian-danganguan.org/files/original/39ed01fc24562067271342d44a1fa16d47c3af20.pdf"
       ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "李鵬同志生平 新華社 2019 訃告 全文 電力 總理 委員長",
-      "returnedUrls": [
-        "https://www.cnn.co.jp/world/35140339.html",
-        "https://www.afpbb.com/articles/-/3236548",
-        "https://www.nikkei.com/article/DGXMZO47697460T20C19A7MM8000/",
-        "https://business.nikkei.com/atcl/gen/19/00002/072500565/",
-        "https://j.people.com.cn/n3/2019/0724/c94474-9600007.html",
-        "https://input.cbdb.fas.harvard.edu/basicinformation/448233/statuses"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "國務院令 1989年5月20日 北京市部分地區實行戒嚴 李鵬 簽署 中央政治局常委 5月17日 會議",
-      "returnedUrls": [
-        "https://www.chinesepen.org/blog/archives/48348",
-        "https://www.rfa.org/mandarin/ytbdzhuantixilie/6430/64-05172019125725.html",
-        "https://global.udn.com/global_vision/story/8662/3823892",
-        "https://zh.wikipedia.org/zh-tw/%E5%85%AD%E5%9B%9B%E6%B8%85%E5%9C%BA",
-        "https://topic.rti.org.tw/64memo/archives/1426",
-        "https://zh.wikipedia.org/wiki/%E5%85%AD%E5%9B%9B%E6%88%92%E4%B8%A5",
-        "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B9%8F"
-      ]
     }
   ],
   "archiveChecks": [],
   "pageReads": [],
   "limits": [
     "李鵬為當代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch 被代理拒絕），全部內容僅據搜尋結果摘要與 source package 書目，正文以[史載：此據搜尋摘要]標示，摘要中之語句改以粗體而不作引句。",
-    "新華社訃告原文、《李鵬六四日記》《三峽日記》原書均未讀；六四傷亡與決策細節不作數字陳述，須人工抽查。",
-    "［修訂1］官方生平（中國政府網轉載新華社訃告）與國務院戒嚴令文本（改革數據平台轉載）只在搜尋摘要中看到，兩頁皆為 http 網址，驗證器只收 https，故正文以[史載：國務院令]標示、未附連結；三峽決議與國務院第95次常務會議文件全文未讀。",
-    "［修訂1］依 Codex 審查，正文改以立場標註區分來源：官方訃告的定性、當事人自述（三峽日記）、批評者說法（李銳、黨紀約束說）、海外學者研究（吳國光導言）、轉載報導（禁書網）；程序事實（簽署者、生效時間、解除日期）與定性分開寫。",
-    "［修訂1］刪除由單一書訊標題延伸的性格推論；六四相關仍不寫傷亡數字。"
+    "新華社訃告原文、《李鵬六四日記》《三峽日記》原書均未讀；六四傷亡與決策細節不作數字陳述，須人工抽查。"
   ]
 }

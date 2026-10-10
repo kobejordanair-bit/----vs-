@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "46",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：來源立場與事實未分、摘要延伸為心理結論、魅力重複扣分；補官方訃告與戒嚴令程序事實，魅力 30→40",
+  "files": {
+    "46.combined.capture.json": "9f9141ad64e835057b7d837c971caa5df4101a7ec937718a8dbf4612eb04396b",
+    "46.soulEssence.raw.md": "7efe5d51610ed78eaf7129cf80f3f3db32cc15a81db137edf706324b346d9503",
+    "46.soulEssence.md": "d68a9010343ed2f39668c0f8c8b6c95b28b44184e0e80fa3d4ee70b0df95bbf6",
+    "46.stats.json": "4bddd13e11d9dd791f3cccf6d9261f4cbf35f4776bb815cc40bdc29a0e6e3519",
+    "46.statsAnalysis.md": "6b42f0f1bd51fa3860d9ff82feccd6a0ed3290cd58b30b309aa41206d743686b",
+    "46.soulEssence.capture.json": "9c567f3fc5e3a456ed7052f7a00e3aeb3687bd9fed8fb0759eb843373a920679",
+    "46.combined.raw.md": "b15b2651d580b2ffba89b07315656e68bbb902042379c39a467a624717c31896",
+    "46.analysis.md": "b58bde86fcbf97e6617f631f0fd58418bde94c57f4687981a9107ace2043f000",
+    "46.analysisStats.raw.md": "6c5e2494fcd8cb3d64dbf7f681f30b5f3c40e9fe44afbf4c6573f190a7ac2fd0",
+    "46.analysisStats.capture.json": "d90fa7cb3caa2347a42d9274e540a6bc9a9333e919c94be2d220d265b0ff9433",
+    "46.analysisStats.response.md": "6c5e2494fcd8cb3d64dbf7f681f30b5f3c40e9fe44afbf4c6573f190a7ac2fd0",
+    "46.combined.search-log.json": "18caf9dc91eda7e56f842d281d7bbb3607a594f9a0a7745aadf37b0f2e19aded",
+    "46.soulEssence.response.md": "7efe5d51610ed78eaf7129cf80f3f3db32cc15a81db137edf706324b346d9503",
+    "46.analysisStats.json": "27d183bd1b69bbd25ddea928965d1c87d798c2d7a8b5f945272f2ae581463e40",
+    "46.soulEssence.json": "214e28892c6cf6b765c75797d7b79455b48e1b6fa1eba382673a1877c3a63b2d",
+    "results.46-46.v1.json": "23d44a19f62ff8f57e81714ea7e43dcc5f4ac27204aa7fb1575e237bc787db9d",
+    "spec.46.quotes.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "spec.46.json": "abc14940b51517d4841adbb336d60708c72016467cce1081c91279235737f1af"
+  }
+}

@@ -4,29 +4,21 @@
   "recordId": "minister_李鵬_2004025016",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:50:01.555Z",
+  "reviewedAt": "2026-10-10T16:22:23.750Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "a4ac6a04695dba750bcb7f24e1baa41987199b2b57083ced1d91a20855b186b7",
-  "rawResponseSha256": "a4ac6a04695dba750bcb7f24e1baa41987199b2b57083ced1d91a20855b186b7",
+  "manuscriptSha256": "6c5e2494fcd8cb3d64dbf7f681f30b5f3c40e9fe44afbf4c6573f190a7ac2fd0",
+  "rawResponseSha256": "6c5e2494fcd8cb3d64dbf7f681f30b5f3c40e9fe44afbf4c6573f190a7ac2fd0",
   "sourcePackageSha256": "9ed54edb0adc89556c7d42a8ac962ded54e1cb4ad16c883a6232273efd818a3a",
-  "searchLogSha256": "f82e262b83ffb35b0a33e2814bfbd0919a382d42140527659e8dc169710936a7",
+  "searchLogSha256": "18caf9dc91eda7e56f842d281d7bbb3607a594f9a0a7745aadf37b0f2e19aded",
   "checkedSources": [
     {
       "url": "https://www.ourchinastory.com/zh/763",
       "title": "ourchinastory〈三峽工程〉",
       "locator": "WebSearch 結果摘要：1992年4月3日表決票數、國務院第95次常務會議、李鵬三峽日記之語與李銳評語、移民一百一十多萬",
-      "type": "official_institution",
-      "checked": true,
-      "access": "web_search_result_summary"
-    },
-    {
-      "url": "https://j.people.com.cn/n3/2019/0724/c94474-9600007.html",
-      "title": "人民網日文版〈李鵬氏逝去〉（轉載新華社訃告）",
-      "locator": "搜尋結果摘要：官方訃告以中共中央、全國人大常委會、國務院、全國政協名義發布，2019-07-22 在北京病逝，享年91歲；中國政府網中文轉載頁只有 http 版本，未附連結。",
       "type": "official_institution",
       "checked": true,
       "access": "web_search_result_summary"
@@ -92,12 +84,12 @@
     {
       "id": "identity-date",
       "passed": true,
-      "detail": "1928年10月生、1955年留蘇返國入電力系統、1979副部長、1981部長、1983副總理、總理至1998、人大委員長、2002退常委、2019年7月22日卒年91，皆據中央社、公視搜尋摘要。［修訂1］補官方訃告（2019-07-22 北京病逝、91歲）與戒嚴令程序事實（1989-05-20 10時生效、八城區、1990-01-11 解除）。"
+      "detail": "1928年10月生、1955年留蘇返國入電力系統、1979副部長、1981部長、1983副總理、總理至1998、人大委員長、2002退常委、2019年7月22日卒年91，皆據中央社、公視搜尋摘要。"
     },
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：電力系統與國務院常務會議；武力：無；智謀：緊縮判斷與三峽程序；政治：歷任要職與爭議身後名；魅力：官方禮遇與民間負評。對照朱鎔基、陳雲、周恩來、鄧小平。［修訂1］魅力 30→40：依校準人物尺度（秦檜60靠君主信任與黨羽、汪精衛95靠公眾感召）改量信任、追隨、聯盟、跨群體感召，不再把六四與三峽的歷史後果重複扣在魅力；武力明確只量個人戰鬥。其餘不調。"
+      "detail": "統率：電力系統與國務院常務會議；武力：無；智謀：緊縮判斷與三峽程序；政治：歷任要職與爭議身後名；魅力：官方禮遇與民間負評。對照朱鎔基、陳雲、周恩來、鄧小平。"
     },
     {
       "id": "causality",
@@ -111,6 +103,6 @@
     10,
     70,
     78,
-    40
+    30
   ]
 }
