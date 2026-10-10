@@ -6,7 +6,7 @@
   "slug": "27",
   "task": "analysisStats",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T11:59:17.560Z",
+  "generatedAt": "2026-10-10T17:44:44.899Z",
   "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "combinedPacketSha256": "624f4525848e4096f8f125227d2095b4c4bf29d3ab85465a8c2a82f5acc158fe",
@@ -21,20 +21,20 @@
   "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
   "originalPromptVerified": true,
   "rawResponseFile": "analysis-batch-51-100/drafts/27.analysisStats.raw.md",
-  "rawResponseSha256": "1f6eaaffb108bd61eaf1585a82175e1f3238f2f5da3993a67631557e1501c068",
+  "rawResponseSha256": "72e27f73de8298f721cf8376cc0a43377d15ff42f710495a47a18c626b3bcd18",
   "responseFile": "analysis-batch-51-100/drafts/27.analysisStats.response.md",
-  "responseSha256": "1f6eaaffb108bd61eaf1585a82175e1f3238f2f5da3993a67631557e1501c068",
+  "responseSha256": "72e27f73de8298f721cf8376cc0a43377d15ff42f710495a47a18c626b3bcd18",
   "fieldsHashes": {
     "analysis": "f13d6557e1b3ae8912c9f1f545d9b39e7a67c0b4f7b25a057daee3899eccc852",
     "stats": "9703e5019dfa4ba1cc8c55609460595daba94d2046befb1d0726b29d138837b8",
-    "statsAnalysis": "ad52d0db6a7714f629f3b807e5210b28e6ae3ef2c5e81fbd1085ed4551d80758"
+    "statsAnalysis": "9b1739f3b56570dc639ece946d4e06b4aa210c1b6bed7f7a28f3db59add25221"
   },
   "webSearchPerformed": true,
   "searchLog": {
     "file": "analysis-batch-51-100/drafts/27.combined.search-log.json",
-    "sha256": "ab2b7df83a4eb06fc32f6cf91dd936f6cfa909090d6023473926a6ec6e20998d",
+    "sha256": "48a72b7c541f903f8c4119463c2e9dd564a8e66cd0824b0f613323e65ac350d8",
     "webSearchCount": 1,
-    "archiveCheckCount": 78
+    "archiveCheckCount": 79
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",
   "referencePath": "analysis-batch-51-100/stats-reference.v1.json",

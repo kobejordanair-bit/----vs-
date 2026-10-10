@@ -4,7 +4,7 @@
   "recordId": "general_田單_306403637",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:44:44.976Z",
+  "reviewedAt": "2026-10-10T11:59:17.644Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
@@ -13,7 +13,7 @@
   "manuscriptSha256": "f8ed37971a397264af7f0f3c2fd44c4049d8078e5064324e28716675965b2faf",
   "rawResponseSha256": "f8ed37971a397264af7f0f3c2fd44c4049d8078e5064324e28716675965b2faf",
   "sourcePackageSha256": "b08a8d97d1e83846a1e6db39989145c746d49a30cd795605b5787ef6c27fe3d6",
-  "searchLogSha256": "48a72b7c541f903f8c4119463c2e9dd564a8e66cd0824b0f613323e65ac350d8",
+  "searchLogSha256": "ab2b7df83a4eb06fc32f6cf91dd936f6cfa909090d6023473926a6ec6e20998d",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7082",

@@ -1,7 +1,7 @@
 {
   "format": "dynasty-batch50-receipt-ledger",
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T17:44:04.336Z",
+  "generatedAt": "2026-10-10T17:44:49.977Z",
   "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
   "targetCount": 50,
   "libraryTotalExpected": 962,

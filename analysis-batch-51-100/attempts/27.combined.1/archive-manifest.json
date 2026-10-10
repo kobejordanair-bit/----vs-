@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "27",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：魅力理由轉述《戰國策·齊策六》貂勃事未逐字比對、無引用入口；補比對並將通鑑有收錄的部分連到卷四；分數不調",
+  "files": {
+    "27.combined.raw.md": "8b159fd61d1cd6a7d4c6700a357a82039830e9d28dfdfe55376c9c015ee19341",
+    "27.analysisStats.response.md": "1f6eaaffb108bd61eaf1585a82175e1f3238f2f5da3993a67631557e1501c068",
+    "27.analysisStats.capture.json": "60b037e8654e4aa7328227d476413c86709105f37c19d4150f7f92c2ccc513cc",
+    "27.analysis.md": "96d6764f7635a3874a9b7feb7e233c64d37fdede336ecaba7213142a37fb1d5a",
+    "27.combined.capture.json": "900cd07116ffdaafa7d5e381318702dd29abda1dec2e87358e951f61d80a408e",
+    "27.statsAnalysis.md": "f6ed15e1389d3af7c599e15fd4ba9c0fd886980a0b213dd25e173420c55610c0",
+    "27.combined.search-log.json": "ab2b7df83a4eb06fc32f6cf91dd936f6cfa909090d6023473926a6ec6e20998d",
+    "27.soulEssence.capture.json": "84e9d4965b0a4b3274c6a5e6b78543783a320d26c8351c088143f205d67139e8",
+    "27.soulEssence.raw.md": "f8ed37971a397264af7f0f3c2fd44c4049d8078e5064324e28716675965b2faf",
+    "27.soulEssence.md": "b8a69b7629a24cd2fbcdda7b3cc64f1349ee36bd2fa9b47b62162bcb5c420980",
+    "27.soulEssence.response.md": "f8ed37971a397264af7f0f3c2fd44c4049d8078e5064324e28716675965b2faf",
+    "27.analysisStats.raw.md": "1f6eaaffb108bd61eaf1585a82175e1f3238f2f5da3993a67631557e1501c068",
+    "27.stats.json": "b4ca4919dc5eaf7ac46cd6cb8b6edfcfa95200dd543d580544db61bf126f4562",
+    "27.soulEssence.json": "c5159865ea348e0a132fd6d4ab7fd6c5a290f4a42e255d9c595e97a3192d6ce0",
+    "27.analysisStats.json": "a2ae58690e493280fd7bf1cfc3df913871d1e8668126857e2bfd1c01de029e88",
+    "results.27-27.v1.json": "224a5407c07540e61ddf2727c74bf1f7b29199436f6ff02282be6b96ebfbd9f6",
+    "spec.27.quotes.json": "a52bc4fb4f93632fa3f0e4d5322ac21cda4b847c69d4ade886810bc92c598637",
+    "spec.27.json": "df594bb1a1e6403bf3570ad59c6719d086fee6345c1c4b559a82f523ec8dde51"
+  }
+}
