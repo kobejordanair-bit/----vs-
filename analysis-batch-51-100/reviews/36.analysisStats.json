@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_司馬光_1990467451",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:19:36.184Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b857b80ca24ef086cc562685f2a6824efb43df8390cb85e4c4ffde8d6104d0f4",
+  "rawResponseSha256": "b857b80ca24ef086cc562685f2a6824efb43df8390cb85e4c4ffde8d6104d0f4",
+  "sourcePackageSha256": "53df69309bb107b8b1abde80caaf93c0fbf1de8908e4f748d96f21e3b3ad60d7",
+  "searchLogSha256": "60413d84df19e609127fd44a130ff6928d9ff3a925ae26258fed7c34a3108693",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336",
+      "title": "宋史·卷三百三十六 列傳第九十五",
+      "locator": "本機固定修訂 oldid=2058350 全文比對（textSha256 已驗）：治天下譬如居室，敝則修之，非大壞不更造也、若安石、惠卿所建，爲天下害者，改之當如救焚拯溺、即了其大指、京、洛間畫以爲圖、河朔旱傷，國用不足、未得善理財者故也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314",
+      "title": "宋史·卷三百十四 列傳第七十三",
+      "locator": "本機固定修訂 oldid=2546846 全文比對（textSha256 已驗）：去其太甚者可也。差役一事，尤當熟講而緩行、先行之一路，以觀其究竟、盡改熙甯、元豐法度、是使人不得言爾。若欲媚公以為容悅，何如少年合安石以速富貴哉、去其太甚者可也",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338",
+      "title": "宋史·卷三百三十八 列傳第九十七",
+      "locator": "本機固定修訂 oldid=1458054 全文比對（textSha256 已驗）：事有漸則民不驚、差役、免役，各有利害、法相因則事易成，事有漸則民不驚、公欲驟罷免役而行差役，正如罷長徵而復民兵，蓋未易也、知免役之害，不知其利、法相因則事易成",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "陝州夏縣人、寶元初進士、并州通判、仁宗立嗣之諫、濮議、熙寧與王安石理財之爭、辭樞密副使、知永興軍、居洛十五年、元祐元年拜左僕射、九月薨年六十八、紹聖追貶與姦黨碑，皆依宋史卷336 archive 引句；范純仁與蘇軾之諫依卷314、338。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：并州築堡、永興軍免徵調、躬親庶務；武力：純文臣；智謀：十年之外、滅一諒祚生一諒祚、夜半寸紙；政治：立嗣、開言路、剗革略盡、紹聖反撲；魅力：司馬相公、罷市往弔、石工安民。對照范仲淹、謝安、霍光、秦檜、荀彧、張廷玉。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "新法→光逆疏利害→辭樞密→居洛十五年→民望→元祐拜相→開言路→盡改新法→拒范純仁蘇軾漸進之議→剗革略盡→薨→紹聖以盡廢其法追貶。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    62,
+    15,
+    84,
+    70,
+    96
+  ]
+}

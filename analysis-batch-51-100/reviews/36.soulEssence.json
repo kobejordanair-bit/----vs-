@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_司馬光_1990467451",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:19:36.186Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "fd2887c7088b5ba822203d4c809ab03df90c7015fe049772bc754b4cb98d1f0c",
+  "rawResponseSha256": "fd2887c7088b5ba822203d4c809ab03df90c7015fe049772bc754b4cb98d1f0c",
+  "sourcePackageSha256": "53df69309bb107b8b1abde80caaf93c0fbf1de8908e4f748d96f21e3b3ad60d7",
+  "searchLogSha256": "60413d84df19e609127fd44a130ff6928d9ff3a925ae26258fed7c34a3108693",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336",
+      "title": "宋史·卷三百三十六 列傳第九十五",
+      "locator": "本機固定修訂 oldid=2058350 全文比對（textSha256 已驗）：治天下譬如居室，敝則修之，非大壞不更造也、若安石、惠卿所建，爲天下害者，改之當如救焚拯溺、即了其大指、京、洛間畫以爲圖、河朔旱傷，國用不足、未得善理財者故也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最擅預見長期風險，執政時卻以其反對之速度廢法；場景為敝則修之非大壞不更造、改之當如救焚拯溺、范純仁去其太甚、蘇軾事有漸則民不驚。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "在野氣節與在朝固執、天意保護之信念、品格與方法之落差皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以居室之喻與六言、抗章七八與忿然、四患未除與開言路、知害不知利與天若祚宗社、兄旦龐籍與遺表、通鑑與差役舊弊、敝則修之與剗革略盡為事件。"
+    }
+  ],
+  "materialIssues": []
+}

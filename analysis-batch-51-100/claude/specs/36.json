@@ -1,0 +1,516 @@
+{
+ "webSearches": [
+  {
+   "query": "司馬光 元祐更化 廢免役法 五日 棄地 西夏 四寨 研究 評價",
+   "returnedUrls": [
+    "https://img1.xinmin.cn/xmzk/2021-12-13/231213.pdf",
+    "https://www.hk01.com/藝文/568596/大宋之變-司馬光被轟鼓吹君主專制-背後有這難言之隱",
+    "https://kotobank.jp/word/%E5%8F%B8%E9%A6%AC%E5%85%89",
+    "https://language.site.nthu.edu.tw/var/file/212/1212/img/4086/284484303.pdf",
+    "https://www.chinanews.com/cul/2014/04-28/6112599.shtml",
+    "https://www.rujiazg.com/article/17665",
+    "https://input.cbdb.fas.harvard.edu/basicinformation/1488/assoc"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "治天下譬如居室，敝則修之，非大壞不更造也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "若安石、惠卿所建，爲天下害者，改之當如救焚拯溺"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷314",
+   "quote": "去其太甚者可也。差役一事，尤當熟講而緩行"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "即了其大指"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "京、洛間畫以爲圖"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "河朔旱傷，國用不足"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "未得善理財者故也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "天地所生財貨百物，不在民，則在官"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "逆疏其利害"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "躬親庶務，不舍晝夜"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "凡居洛陽十五年，天下以爲真宰相"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷314",
+   "quote": "先行之一路，以觀其究竟"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷338",
+   "quote": "事有漸則民不驚"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "天下寒心而莫敢言"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "諸公不及今定議，異日禁中夜半出寸紙，以某人爲嗣，則天下莫敢違"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "竦何人，可以當之"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "繁纓以朝，孔子且猶不可"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "愚民知取債之利，不知還債之害"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "富者不願取，使者以多散爲功，一切抑配"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "貧者既盡，富者亦貧"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "臣之所憂，乃在十年之外，非今日也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "滅一諒祚，生一諒祚"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "西方用兵，蓋自此始矣"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "此非求諫，乃拒諫也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "上封者以千數"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "除民所欠錢"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "不數月之間，剗革略盡"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "如寒極而春，旱極而雨"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷338",
+   "quote": "差役、免役，各有利害"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷338",
+   "quote": "法相因則事易成，事有漸則民不驚"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷338",
+   "quote": "公欲驟罷免役而行差役，正如罷長徵而復民兵，蓋未易也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷338",
+   "quote": "知免役之害，不知其利"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "邊計以和戎爲便"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "中國相司馬矣，毋輕生事、開邊隙"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "誣謗先帝，盡廢其法"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "請發塚斫棺"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "如司馬相公者，海內稱其正直，今謂之奸邪，民不忍刻也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "吾無過人者，但平生所爲，未嘗有不可對人言者耳"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "有田三頃，喪妻，賣田以葬，惡衣菲食以終其身"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "奉之如嚴父，保之如嬰兒"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "三上書自引咎"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "升堂拜其妻如母，撫其子如昆弟"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "外託劘上之名，內懷附下之實"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "用光，是與異論者立赤幟也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "若徒以祿位榮之，而不取其言，是以天官私非其人也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "諸葛亮食少事煩"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "死生，命也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "諄諄如夢中語，然皆朝廷天下事也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "光以身付醫，以家事付愚子，惟國事未有所託，今以屬公"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "天下以爲真宰相"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "公無歸洛，留相天子，活百姓"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "乞直降敕罷之"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "築二堡以制夏人，募民耕之"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "引兵夜渡河，不設備，沒於敵"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "若乏軍興，臣當任其責"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "一路獨得免"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "手不釋書，至不知饑渴寒暑"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "十年之外，百姓無復存者"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "禁中夜半出寸紙"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "不加賦而國用足"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "桑羊欺武帝之言"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "必問光起居"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷314",
+   "quote": "盡改熙甯、元豐法度"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "婦人孺子亦知其爲君實"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "京師人罷市往弔，鬻衣以致奠"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "異論者立赤幟"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "祖宗之法不可變也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "漢武取高帝約束紛更，盜賊半天下"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "臣獲事三朝，皆以此六言獻，平生力學所得，盡在是矣"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷338",
+   "quote": "法相因則事易成"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "抗章至七八"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "絶口不論事"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "讀之感泣，欲嘿不忍"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷314",
+   "quote": "是使人不得言爾。若欲媚公以為容悅，何如少年合安石以速富貴哉"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "平民舉錢出息，尚能蠶食下戸，況縣官督責之威乎"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "四患未除，吾死不瞑目矣"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "欲以身徇社稷，躬親庶務，不舍晝夜"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "誠心自然，天下敬信"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷314",
+   "quote": "去其太甚者可也"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "先帝之法，其善者"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "安石、惠卿所建，爲天下害者"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "乃在十年之外"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "他日有以父子義間上，則禍作矣"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "天若祚宗社，必無此事"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "拜其妻如母，撫其子如昆弟"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "忽得語澀疾，疑且死，豫作遺表置臥內"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "賢于荀悅《漢紀》"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "爲人後者爲之子，不得顧私親"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "敝則修之，非大壞不更造"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "改之當如救焚拯溺"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷336",
+   "quote": "未嘗有不可對人言者"
+  }
+ ],
+ "pageReads": [],
+ "extraSources": {
+  "https://www.hk01.com/藝文/568596/大宋之變-司馬光被轟鼓吹君主專制-背後有這難言之隱": {
+   "title": "香港01〈大宋之變｜司馬光被轟鼓吹君主專制？〉（介紹趙冬梅《大宋之變》）",
+   "locator": "WebSearch 結果摘要：元祐初司馬光等施政仍受新黨主導格局所限；原書未讀",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；史實引句對 repo 內固定修訂《宋史》卷336、314、338 全文比對。",
+  "搜尋未得元祐棄地與廢免役時程之專題研究，正文未採「五日」等說法；《續資治通鑑長編》元祐元年記載未比對；趙冬梅觀點僅據新聞介紹摘要。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity-date",
+    "陝州夏縣人、寶元初進士、并州通判、仁宗立嗣之諫、濮議、熙寧與王安石理財之爭、辭樞密副使、知永興軍、居洛十五年、元祐元年拜左僕射、九月薨年六十八、紹聖追貶與姦黨碑，皆依宋史卷336 archive 引句；范純仁與蘇軾之諫依卷314、338。"
+   ],
+   [
+    "five-dimensions",
+    "統率：并州築堡、永興軍免徵調、躬親庶務；武力：純文臣；智謀：十年之外、滅一諒祚生一諒祚、夜半寸紙；政治：立嗣、開言路、剗革略盡、紹聖反撲；魅力：司馬相公、罷市往弔、石工安民。對照范仲淹、謝安、霍光、秦檜、荀彧、張廷玉。"
+   ],
+   [
+    "causality",
+    "新法→光逆疏利害→辭樞密→居洛十五年→民望→元祐拜相→開言路→盡改新法→拒范純仁蘇軾漸進之議→剗革略盡→薨→紹聖以盡廢其法追貶。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "distinctive-person",
+    "主論點：最擅預見長期風險，執政時卻以其反對之速度廢法；場景為敝則修之非大壞不更造、改之當如救焚拯溺、范純仁去其太甚、蘇軾事有漸則民不驚。"
+   ],
+   [
+    "interpretation",
+    "在野氣節與在朝固執、天意保護之信念、品格與方法之落差皆標[詮釋]。"
+   ],
+   [
+    "seven-fields",
+    "七欄各以居室之喻與六言、抗章七八與忿然、四患未除與開言路、知害不知利與天若祚宗社、兄旦龐籍與遺表、通鑑與差役舊弊、敝則修之與剗革略盡為事件。"
+   ]
+  ]
+ }
+}

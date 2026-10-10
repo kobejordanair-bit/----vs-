@@ -1,0 +1,577 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_司馬光_1990467451",
+  "packetSha256": "a80b9c52dbb212358f4160bd213da98b633e3bb30439d8d4a99d7becbc35923a",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "司馬光 元祐更化 廢免役法 五日 棄地 西夏 四寨 研究 評價",
+      "returnedUrls": [
+        "https://img1.xinmin.cn/xmzk/2021-12-13/231213.pdf",
+        "https://www.hk01.com/藝文/568596/大宋之變-司馬光被轟鼓吹君主專制-背後有這難言之隱",
+        "https://kotobank.jp/word/%E5%8F%B8%E9%A6%AC%E5%85%89",
+        "https://language.site.nthu.edu.tw/var/file/212/1212/img/4086/284484303.pdf",
+        "https://www.chinanews.com/cul/2014/04-28/6112599.shtml",
+        "https://www.rujiazg.com/article/17665",
+        "https://input.cbdb.fas.harvard.edu/basicinformation/1488/assoc"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "治天下譬如居室，敝則修之，非大壞不更造也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "若安石、惠卿所建，爲天下害者，改之當如救焚拯溺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "去其太甚者可也。差役一事，尤當熟講而緩行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "即了其大指",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "京、洛間畫以爲圖",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "河朔旱傷，國用不足",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "未得善理財者故也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "天地所生財貨百物，不在民，則在官",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "逆疏其利害",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "躬親庶務，不舍晝夜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "凡居洛陽十五年，天下以爲真宰相",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "先行之一路，以觀其究竟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷338",
+      "quote": "事有漸則民不驚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "天下寒心而莫敢言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "諸公不及今定議，異日禁中夜半出寸紙，以某人爲嗣，則天下莫敢違",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "竦何人，可以當之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "繁纓以朝，孔子且猶不可",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "愚民知取債之利，不知還債之害",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "富者不願取，使者以多散爲功，一切抑配",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "貧者既盡，富者亦貧",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "臣之所憂，乃在十年之外，非今日也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "滅一諒祚，生一諒祚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "西方用兵，蓋自此始矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "此非求諫，乃拒諫也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "上封者以千數",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "除民所欠錢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "不數月之間，剗革略盡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "如寒極而春，旱極而雨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷338",
+      "quote": "差役、免役，各有利害",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷338",
+      "quote": "法相因則事易成，事有漸則民不驚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷338",
+      "quote": "公欲驟罷免役而行差役，正如罷長徵而復民兵，蓋未易也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷338",
+      "quote": "知免役之害，不知其利",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "邊計以和戎爲便",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "中國相司馬矣，毋輕生事、開邊隙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "誣謗先帝，盡廢其法",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "請發塚斫棺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "如司馬相公者，海內稱其正直，今謂之奸邪，民不忍刻也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "吾無過人者，但平生所爲，未嘗有不可對人言者耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "有田三頃，喪妻，賣田以葬，惡衣菲食以終其身",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "奉之如嚴父，保之如嬰兒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "三上書自引咎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "升堂拜其妻如母，撫其子如昆弟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "外託劘上之名，內懷附下之實",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "用光，是與異論者立赤幟也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "若徒以祿位榮之，而不取其言，是以天官私非其人也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "諸葛亮食少事煩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "死生，命也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "諄諄如夢中語，然皆朝廷天下事也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "光以身付醫，以家事付愚子，惟國事未有所託，今以屬公",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "天下以爲真宰相",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "公無歸洛，留相天子，活百姓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "乞直降敕罷之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "築二堡以制夏人，募民耕之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "引兵夜渡河，不設備，沒於敵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "若乏軍興，臣當任其責",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "一路獨得免",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "手不釋書，至不知饑渴寒暑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "十年之外，百姓無復存者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "禁中夜半出寸紙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "不加賦而國用足",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "桑羊欺武帝之言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "必問光起居",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "盡改熙甯、元豐法度",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "婦人孺子亦知其爲君實",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "京師人罷市往弔，鬻衣以致奠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "異論者立赤幟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "祖宗之法不可變也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "漢武取高帝約束紛更，盜賊半天下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "臣獲事三朝，皆以此六言獻，平生力學所得，盡在是矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷338",
+      "quote": "法相因則事易成",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7338"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "抗章至七八",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "絶口不論事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "讀之感泣，欲嘿不忍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "是使人不得言爾。若欲媚公以為容悅，何如少年合安石以速富貴哉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "平民舉錢出息，尚能蠶食下戸，況縣官督責之威乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "四患未除，吾死不瞑目矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "欲以身徇社稷，躬親庶務，不舍晝夜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "誠心自然，天下敬信",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷314",
+      "quote": "去其太甚者可也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "先帝之法，其善者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "安石、惠卿所建，爲天下害者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "乃在十年之外",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "他日有以父子義間上，則禍作矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "天若祚宗社，必無此事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "拜其妻如母，撫其子如昆弟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "忽得語澀疾，疑且死，豫作遺表置臥內",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "賢于荀悅《漢紀》",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "爲人後者爲之子，不得顧私親",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "敝則修之，非大壞不更造",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "改之當如救焚拯溺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷336",
+      "quote": "未嘗有不可對人言者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；史實引句對 repo 內固定修訂《宋史》卷336、314、338 全文比對。",
+    "搜尋未得元祐棄地與廢免役時程之專題研究，正文未採「五日」等說法；《續資治通鑑長編》元祐元年記載未比對；趙冬梅觀點僅據新聞介紹摘要。"
+  ]
+}
