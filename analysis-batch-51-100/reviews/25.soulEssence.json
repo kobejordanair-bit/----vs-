@@ -1,0 +1,61 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_哲別_306146858",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:54:22.704Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "d93f879975b25ffb91c5ebe090068fd99dfb5b2ac847a5f9ea74e0c7647e4e9c",
+  "rawResponseSha256": "d93f879975b25ffb91c5ebe090068fd99dfb5b2ac847a5f9ea74e0c7647e4e9c",
+  "sourcePackageSha256": "60a12f51e3c2077a4dbd60f15c462155372f0367012a7268c51311168cacc6cc",
+  "searchLogSha256": "20451511d212671a05604b64328e2359273bf9e5efcdd26c8d20724fcc2c9da3",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120",
+      "title": "元史·列傳第七",
+      "locator": "本機固定修訂 oldid=2189955 全文比對（textSha256 已驗）：皆望風降附、大將哲伯以聞、從哲伯為先鋒，攻乃蠻，克之，斬其主曲出律、哲伯令曷思麥里持曲出律首往徇其地，若可失哈兒、押兒牽、斡端諸城，皆望風降附、遣使趣哲伯疾馳以討欽察、進擊斡羅思於鐵兒山，克之，獲其國主密只思臘…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001",
+      "title": "元史·本紀第一",
+      "locator": "本機固定修訂 oldid=2259382 全文比對（textSha256 已驗）：多苦其主非法，見帝寬仁，時賜人以裘馬，心悅之、若赤老溫、若哲別、若失力哥也不干諸人、皆慕義來降、先遣虎必來、哲別二人為前鋒、金謀來伐，築烏沙堡。帝命遮別襲殺其眾、命遮別攻烏沙堡及烏月營，拔之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121",
+      "title": "元史·列傳第八",
+      "locator": "本機固定修訂 oldid=2190209 全文比對（textSha256 已驗）：命速不台與只別追之、及于灰里河，只別戰不利，速不台駐軍河東，戒其眾人爇三炬以張軍勢，其王夜遁、只別戰不利、駐軍河東，戒其眾人爇三炬以張軍勢、先發千人為游騎，繼以大軍晝夜兼行",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：成吉思汗的一支箭，速度與穿透力極強，卻只以前鋒功能被記住，無本傳、四種譯名；場景為慕義來降、持首徇地、軍還哲伯卒。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以戰功回報赦免、過度追擊之盲點、與速不台互補等皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以哲伯以聞與常稱曷思麥里之功、烏沙堡與灰里河與東京佯退、慕義來降、灰里河、金寶悉賜、望風降附與無水之地、四種寫法與軍還卒為事件。"
+    }
+  ],
+  "materialIssues": []
+}

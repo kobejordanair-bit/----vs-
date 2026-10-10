@@ -1,0 +1,240 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_哲別_306146858",
+  "packetSha256": "eb39c3b54663831d826c8f4f86b8f3bc4d443fef81c13f50a8fdd2404dec9095",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "哲別 蒙古秘史 射傷 成吉思汗 馬 只兒豁阿歹 改名 箭",
+      "returnedUrls": [
+        "https://news.17173.com/z/rxjh/content/2006-04-04/20060404162519384.shtml",
+        "https://www.gamersky.com/ent/201512/699074_10.shtml",
+        "https://www.ntdtv.com/b5/2020/10/04/a102955880.html",
+        "https://zh.wikisource.org/wiki/%E7%9A%87%E5%85%83%E8%81%96%E6%AD%A6%E8%A6%AA%E5%BE%81%E9%8C%84",
+        "https://www.worldhistory.org/trans/zh/1-18463/",
+        "https://chiculture.org.hk/sites/mainsite/files/2021-10/0113_chengjisihan_yuanwen_hk.edited.pdf",
+        "https://wuxiasociety.com/jebe/"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "Jebe Subutai Kalka River 1223 Khwarazm pursuit Kuchlug death Jebe scholarship",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Jebe",
+        "https://en.wikipedia.org/wiki/Battle_of_the_Kalka_River",
+        "https://encyclopedai.stavros.io/entries/jebe",
+        "https://kingsandgenerals.libsyn.com/website/210-jebe-and-subutai",
+        "https://historycollection.com/terror-steppe-12-terrifying-nomadic-leaders-eurasia/5/"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "多苦其主非法，見帝寬仁，時賜人以裘馬，心悅之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "若赤老溫、若哲別、若失力哥也不干諸人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "皆慕義來降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "先遣虎必來、哲別二人為前鋒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "金謀來伐，築烏沙堡。帝命遮別襲殺其眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "命遮別攻烏沙堡及烏月營，拔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "遮別遂入關，抵中都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "皆望風降附",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "拔德興府，居庸關守將遁去。遮別遂入關，抵中都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "攻東京不拔，即引去，夜馳還，襲克之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "遂取居庸，與可忒、薄剎會",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "大將哲伯以聞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "從哲伯為先鋒，攻乃蠻，克之，斬其主曲出律",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "哲伯令曷思麥里持曲出律首往徇其地，若可失哈兒、押兒牽、斡端諸城，皆望風降附",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "遣使趣哲伯疾馳以討欽察",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "進擊斡羅思於鐵兒山，克之，獲其國主密只思臘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "獻諸朮赤太子，誅之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "軍還，哲伯卒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷121",
+      "quote": "命速不台與只別追之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷121",
+      "quote": "及于灰里河，只別戰不利，速不台駐軍河東，戒其眾人爇三炬以張軍勢，其王夜遁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "哲伯常稱曷思麥里之功，其軀幹雖小，而聲聞甚大",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "令曷思麥里持曲出律首往徇其地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "遂入關，抵中都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "持曲出律首往徇其地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "哲伯常稱曷思麥里之功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "常稱曷思麥里之功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "攻烏沙堡及烏月營，拔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷121",
+      "quote": "只別戰不利",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷121",
+      "quote": "駐軍河東，戒其眾人爇三炬以張軍勢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷001",
+      "quote": "即引去，夜馳還，襲克之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "軀幹雖小，而聲聞甚大",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷120",
+      "quote": "隨其力所勝，悉賜之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷121",
+      "quote": "先發千人為游騎，繼以大軍晝夜兼行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read。《元史》無哲別本傳，史實引句對 repo 內固定修訂《元史》卷001、卷120、卷121 全文比對。",
+    "射馬改名故事與迦勒迦河、卒年考證僅據搜尋摘要，正文以[史載：此據搜尋摘要]標示；《蒙古秘史》《聖武親征錄》、拉施特《史集》與羅斯編年史均未讀原文。"
+  ]
+}

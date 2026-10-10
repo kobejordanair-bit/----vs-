@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_哲別_306146858",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:54:22.703Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2f0285f1a99667177ffe1737c434403557518304e34c7b8f39761bf396ce2fa4",
+  "rawResponseSha256": "2f0285f1a99667177ffe1737c434403557518304e34c7b8f39761bf396ce2fa4",
+  "sourcePackageSha256": "60a12f51e3c2077a4dbd60f15c462155372f0367012a7268c51311168cacc6cc",
+  "searchLogSha256": "20451511d212671a05604b64328e2359273bf9e5efcdd26c8d20724fcc2c9da3",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001",
+      "title": "元史·本紀第一",
+      "locator": "本機固定修訂 oldid=2259382 全文比對（textSha256 已驗）：多苦其主非法，見帝寬仁，時賜人以裘馬，心悅之、若赤老溫、若哲別、若失力哥也不干諸人、皆慕義來降、先遣虎必來、哲別二人為前鋒、金謀來伐，築烏沙堡。帝命遮別襲殺其眾、命遮別攻烏沙堡及烏月營，拔之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7120",
+      "title": "元史·列傳第七",
+      "locator": "本機固定修訂 oldid=2189955 全文比對（textSha256 已驗）：皆望風降附、大將哲伯以聞、從哲伯為先鋒，攻乃蠻，克之，斬其主曲出律、哲伯令曷思麥里持曲出律首往徇其地，若可失哈兒、押兒牽、斡端諸城，皆望風降附、遣使趣哲伯疾馳以討欽察、進擊斡羅思於鐵兒山，克之，獲其國主密只思臘…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7121",
+      "title": "元史·列傳第八",
+      "locator": "本機固定修訂 oldid=2190209 全文比對（textSha256 已驗）：命速不台與只別追之、及于灰里河，只別戰不利，速不台駐軍河東，戒其眾人爇三炬以張軍勢，其王夜遁、只別戰不利、駐軍河東，戒其眾人爇三炬以張軍勢、先發千人為游騎，繼以大軍晝夜兼行",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "泰赤烏部人慕義來降、甲子伐乃蠻為前鋒、太祖五年襲烏沙堡、六年拔烏沙堡入居庸抵中都、七年東京佯退夜襲、八年取居庸、西征斬曲出律、灰里河戰不利、鐵兒山破斡羅思、軍還卒，皆依元史卷001/120/121 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：前鋒與方面追擊；武力：前鋒與射馬傳說（摘要）；智謀：持首徇地、東京佯退；政治：招撫降人但無治理紀錄；魅力：常稱曷思麥里之功。對照木華黎、霍去病、蘇定方、王忠嗣、李廣、岳飛。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "曷思麥里迎降→哲伯以聞→為先鋒斬曲出律→持首徇地→諸城望風降附；東京不拔→引去→夜馳還襲克；灰里河戰不利→速不台爇三炬→其王夜遁。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    92,
+    92,
+    86,
+    45,
+    84
+  ]
+}
