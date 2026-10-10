@@ -1,0 +1,453 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_曾國荃_1994631548",
+  "packetSha256": "8130a11b7732c0232bcc32716e30cc0f5ddcb922fc0c73c434a3d1928a8e954e",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "曾國荃 攻陷天京 1864 湘軍 劫掠 洪福瑱 丁戊奇荒 山西 賑災 研究",
+      "returnedUrls": [
+        "https://www.chiculture.org.hk/en/photo-story/1190",
+        "https://chiculture.org.hk/en/photo-story/1189",
+        "https://chiculture.org.hk/en/photo-story/1183",
+        "https://www.zdic.net/hant/天京",
+        "https://wantrich.chinatimes.com/news/20260428901198-420501",
+        "https://www.chinanews.com.cn/cul/2012/05-22/3905885.shtml",
+        "https://www.163.com/dy/article/D356SANI0523CHKB.html",
+        "https://data.ctext.org/entity/67867",
+        "https://blog.udn.com/teddy5422/4457840"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "舍老巢勿攻，浪戰無益，逼城足以致敵。雖危，事有可為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "砲傷頰，裹創力戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "先後賑銀一千三百萬兩、米二百萬石，活饑民六百萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "少負奇氣，從國籓受學京師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "詔以軍務緊要，毋庸與兄國籓迴避同省",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "中朝和戰兩議相持",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "周鳳山軍敗潰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "督水師毀白鷺洲賊船，破城外堅壘，遂克吉安",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "時諸軍與賊相持數月，莫肯先進",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "合力敗援賊於浮梁南",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "選死士緣砲穴入，拔之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "憑壕而戰，屢擊卻，仍復進，增築新壘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "以地雷轟城，克之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "秋疫大作，士卒病者半",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "結二百餘壘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "環攻六晝夜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "屢掘地道來襲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "於要隘增壘，輔以水師，先固糧道",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "以病餘之卒，苦戰四十餘日，卒保危局",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "以賊雖眾，烏合不足畏，不肯退",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "江寧前敵需餉亟，而江西協解不至，國籓疏爭",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "命各分其半",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "迭令掘地道數十處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "慮師老生變",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "城崩二十餘丈",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "手刃退卒數人，遂擁入",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "告貸諸行省，勸捐協濟，分別災情輕重、賑期久暫",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "活饑民六百萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "同時荒政，山西為各省之冠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "諸將以城計日可破，恥借力於人，攻益力",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "初奏洪福瑱已斃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "奔竄浙江、江西，仍為諸賊所擁，言者以為口實",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "遂引疾求退",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "疏劾其貪庸驕蹇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "長驅經河南擾及山東",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "摘頂，下部議處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "命遣兵輪援台灣，原議五，實遣其三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "分路沿江進師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "染疫，將假歸，援賊至，被圍，強起任戰守，圍解而病劇，卒於軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "國荃功高多謗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "遣撤部下諸軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "始允開缺回籍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "總攬宏綱，不苛細故，軍民相安",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "上海關係諸國商務，法兵不能驟至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "分別災情輕重、賑期久暫",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "斃賊十餘萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "凡偽王主將大小酋目三千餘，皆死亂兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "告貸諸行省，勸捐協濟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "以病餘之卒，苦戰四十餘日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "募圍師至五萬人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "舍老巢勿攻，浪戰無益，逼城足以致敵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "欲困之山地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "為各省之冠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "修江海防務",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "言權不可分",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "原議五，實遣其三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "奏起國荃統吉安諸軍，軍復振",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "賊雖眾，烏合不足畏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "士卒多傷亡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "諸將以城計日可破，恥借力於人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "推恩加太子太保",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "恥借力於人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "士卒病者半",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "善後蠲徭役，歲省民錢鉅萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "民德之，為立生祠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "賊糧匱，城中種麥濟飢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "賊多騎，難與追逐",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "總攬宏綱，不苛細故",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "掘地道數十處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "告貸諸行省",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《清史稿》卷413（含沈葆楨傳）全文比對。",
+    "湘軍入城劫掠僅據轉引趙烈文日記之搜尋摘要，以粗體標示不作引句；丁戊奇荒山西賑務之現代研究搜尋未得；《曾國荃全集》奏稿與《能靜居日記》原文未比對。"
+  ]
+}

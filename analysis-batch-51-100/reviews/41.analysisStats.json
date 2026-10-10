@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_曾國荃_1994631548",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:30:26.788Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
+  "rawResponseSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
+  "sourcePackageSha256": "5ee7e6597114b9bb42a24f0c56687156e623b69a53e3f3b24701e14a3f55b752",
+  "searchLogSha256": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413",
+      "title": "清史稿·卷四百十三",
+      "locator": "本機固定修訂 oldid=2433597 全文比對（textSha256 已驗）：舍老巢勿攻，浪戰無益，逼城足以致敵。雖危，事有可為、砲傷頰，裹創力戰、先後賑銀一千三百萬兩、米二百萬石，活饑民六百萬、少負奇氣，從國籓受學京師、詔以軍務緊要，毋庸與兄國籓迴避同省、中朝和戰兩議相持…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "湘鄉人、國藩之弟、咸豐二年優貢、六年援江西、八年克吉安、九年景德鎮、十一年八月克安慶、同治元年雨花臺四十餘日、三年六月十六日克江寧封伯、開缺、五年湖北巡撫劾官文、光緒二年山西荒政、十年兩江總督中法戰爭、十六年卒諡忠襄，皆依清史稿卷413 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：長壕地雷、雨花臺、地道破城、救荒；武力：砲傷頰裹創；智謀：逼城致敵、先固糧道、分別災情；政治：荒政冠各省、總攬宏綱；魅力：生祠、九人誓先登。對照曾國藩、王守仁、張之洞、于謙。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "國藩兵不利→國荃募勇赴援→吉安景德鎮→安慶長壕地雷→東下雨花臺→李秀成數十萬援軍四十餘日不退→地道破江寧→誤奏洪福瑱已斃→功高多謗→開缺；大旱→告貸勸捐分等賑濟→活饑民六百萬→立生祠。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    90,
+    62,
+    78,
+    80,
+    78
+  ]
+}

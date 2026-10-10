@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_曾國荃_1994631548",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:30:26.790Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c",
+  "rawResponseSha256": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c",
+  "sourcePackageSha256": "5ee7e6597114b9bb42a24f0c56687156e623b69a53e3f3b24701e14a3f55b752",
+  "searchLogSha256": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413",
+      "title": "清史稿·卷四百十三",
+      "locator": "本機固定修訂 oldid=2433597 全文比對（textSha256 已驗）：舍老巢勿攻，浪戰無益，逼城足以致敵。雖危，事有可為、砲傷頰，裹創力戰、先後賑銀一千三百萬兩、米二百萬石，活饑民六百萬、少負奇氣，從國籓受學京師、詔以軍務緊要，毋庸與兄國籓迴避同省、中朝和戰兩議相持…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：一生以不退為能，攻天京與救饑民皆用同一種持久；場景為逼城足以致敵、裹創力戰、恥借力於人、活饑民六百萬。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "急於宣告完成之盲點、後半生以另一種不退回答前半生等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以四句戰略與貪庸驕蹇、增築新壘與地道、赴兄急與恥借力、洪福瑱誤奏與困之山地、貞幹病歿與生祠、絕糧與捻軍騎兵與分等賑濟、斃賊十餘萬與活饑民六百萬為事件。"
+    }
+  ],
+  "materialIssues": []
+}
