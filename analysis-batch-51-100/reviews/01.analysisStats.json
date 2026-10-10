@@ -4,14 +4,14 @@
   "recordId": "emperor_孫文_1671742205",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T10:36:10.665Z",
+  "reviewedAt": "2026-10-10T17:34:39.296Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "771ded4967fe15e678ba15a5c7117aea7e8a86aaf84836917bcf60220767b35b",
-  "rawResponseSha256": "771ded4967fe15e678ba15a5c7117aea7e8a86aaf84836917bcf60220767b35b",
+  "manuscriptSha256": "51316e2ac9b588a3e96c58c4daca5f951df0c9882617e3279692dd651e71410b",
+  "rawResponseSha256": "51316e2ac9b588a3e96c58c4daca5f951df0c9882617e3279692dd651e71410b",
   "sourcePackageSha256": "f9a61e2840c3e368f10ebb4fb454f46f80bddc31d229139ce3ffc4f04c878588",
   "searchLogSha256": "63a26da84eafceb7fadd60eb80adbe67993472d1a42ee01a805e4c1219865340",
   "checkedSources": [
@@ -89,12 +89,17 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：六一六事變與黃埔；武力：無臨陣紀錄；智謀：讓位交易、信仰自由入約法、1923英蘇兩路；政治：約法與改組、黃興離去；魅力：清廷排除特赦與海外號召。對照宋孝宗、漢明帝、光緒帝、崇禎帝、毛澤東、王莽。"
+      "detail": "統率：六一六事變與黃埔；武力：無臨陣紀錄；智謀：讓位交易、信仰自由入約法、1923英蘇兩路；政治：約法與改組、黃興離去；魅力：清廷排除特赦與海外號召。對照宋孝宗、漢明帝、光緒帝、崇禎帝、毛澤東、王莽。［修訂2］魅力對照依凍結校準表重核：毛澤東在表中有帝王（魅力100）與將領（魅力99）兩筆，原稿只寫100未說明條目；改為兩筆並列，孫文97低於兩者，並補上感召能否沉澱為組織的差別。分數不調。"
     },
     {
       "id": "causality",
       "passed": true,
       "detail": "讓位→袁掌實權；中華革命黨效忠→黃興離去；六一六→黨軍；聯蘇→死後國共分裂，均標明推論層級。"
+    },
+    {
+      "id": "calibration-scan",
+      "passed": true,
+      "detail": "［修訂2］以 claude/calibscan.py 掃描全部五維理由的「姓名（數字）」：數字皆與校準表同維度條目相符，唯毛澤東因雙條目需標明。"
     }
   ],
   "materialIssues": [],

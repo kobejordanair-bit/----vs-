@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "01",
+  "attempt": 2,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：魅力對照之毛澤東校準條目未標明（表中帝王100／將領99兩筆），改為並列並補組織化差別；分數不調",
+  "files": {
+    "01.stats.json": "521fa0ce7e70407675871d9ab99bd8071d0984355e94bc5ba108b6a6c16ca70f",
+    "01.analysisStats.raw.md": "771ded4967fe15e678ba15a5c7117aea7e8a86aaf84836917bcf60220767b35b",
+    "01.soulEssence.response.md": "ce415d12b551eb57cd575050c37a9ca516fcf0af3b952c72602a7da4e8ece9f6",
+    "01.combined.raw.md": "61994f3eac41cf3205026eda15a9b65bef4cb914b76e90feb183db701bc1a533",
+    "01.combined.search-log.json": "63a26da84eafceb7fadd60eb80adbe67993472d1a42ee01a805e4c1219865340",
+    "01.combined.capture.json": "9349592538843ce7493337da2b9c762d52ede05020b96f23dc070a256bc7c35e",
+    "01.soulEssence.raw.md": "ce415d12b551eb57cd575050c37a9ca516fcf0af3b952c72602a7da4e8ece9f6",
+    "01.soulEssence.md": "73a08c985aa384cb298643f70d401ffa1ecf657fecd0bf6e9af1c989f9467421",
+    "01.analysisStats.capture.json": "2f642c2147194ed8167b69815766556889436d34ca2254bdf6629986adfb1cf5",
+    "01.statsAnalysis.md": "0c2ee1aa6ff57d094d238e3944081f5d3c1c58ccf6b43ded30f7242ad09b45d9",
+    "01.analysisStats.response.md": "771ded4967fe15e678ba15a5c7117aea7e8a86aaf84836917bcf60220767b35b",
+    "01.soulEssence.capture.json": "f0a49b3ef4540b73e6b483bae3993092138d7dfc586c94fcf136c43711d34e6b",
+    "01.analysis.md": "8f9d41c110b7d1856f371bcab6233c3ca876359a15d7ac5bff3827f548425c67",
+    "01.soulEssence.json": "eba30e19c2754d930ca8d367979751e5dd8d9c5f9495eeeacac3ee9ef2a37fed",
+    "01.analysisStats.json": "668c78b6c1411d7981c4d42332cb348b384a0db8b0ba172ec8bb8cb5f1315b4b",
+    "results.01-01.v1.json": "8276b9333ce8d99b9f39716fba75770196f0aa2b5bc9f02d6cc90b562578dd41",
+    "spec.01.quotes.json": "da62ce9ade5bfb32179c303252ce5de9f6bfccddf014a559beabad85fe2e948a",
+    "spec.01.json": "48a697d7dc6368510a16db5617332dc0e0ffdee3d5db85845509130969469389"
+  }
+}

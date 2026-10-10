@@ -1,0 +1,158 @@
+{
+ "webSearches": [
+  {
+   "query": "孫中山 1912 讓位袁世凱 臨時大總統 辭職 條件 臨時約法 研究",
+   "returnedUrls": [
+    "https://chiculture.org.hk/en/node/2158",
+    "https://journal.ipm.edu.mo/images/journal_c/2019_4//ef222-201904-086-093.pdf",
+    "https://zh.wikisource.org/wiki/%E5%A4%A7%E7%B8%BD%E7%B5%B1%E8%AA%93%E8%A9%9E",
+    "https://exam.naer.edu.tw/otc/testStoreFile/100199662c68e2db367e.pdf"
+   ]
+  },
+  {
+   "query": "孫中山 中華革命黨 1914 按指模 誓約 服從孫先生 黃興 反對 研究",
+   "returnedUrls": [
+    "https://chiculture.org.hk/en/node/2325",
+    "https://sunology.culture.tw/detail/bb1c35f33545a55aae54c032155c9c09/",
+    "https://sunology.culture.tw/detail/81ab0653cfa1bfc037467ab65084744a/",
+    "https://project.zo.uni-heidelberg.de/representations/zhongshan/series/part03.html"
+   ]
+  },
+  {
+   "query": "孫中山 陳炯明 1922 六一六事變 永豐艦 聯俄容共 孫文越飛宣言 1923 黃埔軍校 1924 學術",
+   "returnedUrls": [
+    "https://commons.ln.edu.hk/sw_master/4602",
+    "https://nccur.lib.nccu.edu.tw/handle/140.119/97291",
+    "https://histweb.hkbu.edu.hk/upload/activitie/159/download/5f685e34c4b82.pdf",
+    "https://www.chinatimes.com/opinion/20220430000013-262107"
+   ]
+  },
+  {
+   "query": "孫中山 1925年3月12日 北京 逝世 遺囑 汪精衛 代筆 國父紀念館 生平",
+   "returnedUrls": [
+    "https://www.zdic.net/hant/孫文",
+    "https://www.storm.mg/article/86997",
+    "https://chiculture.org.hk/en/photo-story/2764"
+   ]
+  },
+  {
+   "query": "國立國父紀念館 國父年表 1866年11月12日 香山 1925年3月12日 逝世 北京",
+   "returnedUrls": [
+    "https://www.zdic.net/hant/孫文",
+    "https://commons.wikimedia.org/wiki/Sun_Yat-sen",
+    "https://kotobank.jp/word/%E5%AD%AB%E6%96%87"
+   ]
+  },
+  {
+   "query": "孫文越飛聯合宣言 1923年1月26日 共產組織 蘇維埃制度 不能引用於中國 原文",
+   "returnedUrls": [
+    "https://en.wikipedia.org/wiki/Sun%E2%80%93Joffe_Manifesto",
+    "https://www.cambridge.org/core/journals/modern-asian-studies/article/an-alternative-to-kuomintangcommunist-collaboration-sun-yatsen-and-hong-kong-januaryjune-1923/2FB0B2B9ADAB8F818DB93A369ED2D3FE",
+    "https://cpc.people.com.cn/GB/64162/64164/4415944.html",
+    "https://alphahistory.com/chineserevolution/sun-joffe-agreement-1923/"
+   ]
+  },
+  {
+   "query": "孫中山 致黃興函 1914 中華革命黨 黃興不加入 sunology 國父紀念館 全集",
+   "returnedUrls": [
+    "https://sunology.culture.tw/detail/81ab0653cfa1bfc037467ab65084744a/",
+    "https://sunology.culture.tw/detail/bb1c35f33545a55aae54c032155c9c09/",
+    "https://toyo-bunko.repo.nii.ac.jp/records/5941",
+    "https://www.zdic.net/hant/黃興"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷24",
+   "quote": "命逮文廷式，捕孫文"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷24",
+   "quote": "除康有為、梁啟超、孫文外"
+  }
+ ],
+ "pageReads": [],
+ "extraSources": {
+  "https://zh.wikisource.org/wiki/%E5%A4%A7%E7%B8%BD%E7%B5%B1%E8%AA%93%E8%A9%9E": {
+   "title": "《大總統誓詞》（1912年1月1日，維基文庫）",
+   "locator": "WebSearch 結果摘要：誓詞說明待專制政府倒覆、民國確立後即解臨時大總統之職；頁面本身未能開啟",
+   "type": "primary_text",
+   "access": "web_search_result_summary"
+  },
+  "https://sunology.culture.tw/detail/81ab0653cfa1bfc037467ab65084744a/": {
+   "title": "國立國父紀念館「國父思想研究」條目：致函黃興，說明對黃興不加入中華革命黨一事的態度",
+   "locator": "WebSearch 結果摘要：僅條目標題，無函件全文與確切日期",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://sunology.culture.tw/detail/bb1c35f33545a55aae54c032155c9c09/": {
+   "title": "國立國父紀念館「國父思想研究」影像說明：中華革命黨成立大會合影（東京，民國3年7月8日）",
+   "locator": "WebSearch 結果摘要：圖說記中華革命黨成立大會於東京、民國3年7月8日",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://commons.ln.edu.hk/sw_master/4602": {
+   "title": "〈一九二二年六一六事變 宋慶齡避難嶺南大學〉（嶺南大學學術典藏）",
+   "locator": "WebSearch 結果摘要：1922年6月16日粵軍炮轟廣州觀音山總統府，孫中山登永豐艦，宋慶齡另行避難",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://journal.ipm.edu.mo/images/journal_c/2019_4//ef222-201904-086-093.pdf": {
+   "title": "《澳門理工學報》2019年第4期論文（孫中山與民初政教關係）",
+   "locator": "WebSearch 結果摘要：孫中山民元力主政教分立，首次把信仰自由寫入憲法；辭臨時大總統後轉投實業建設",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://www.cambridge.org/core/journals/modern-asian-studies/article/an-alternative-to-kuomintangcommunist-collaboration-sun-yatsen-and-hong-kong-januaryjune-1923/2FB0B2B9ADAB8F818DB93A369ED2D3FE": {
+   "title": "\"An Alternative to Kuomintang-Communist Collaboration: Sun Yat-sen and Hong Kong, January–June 1923\" (Modern Asian Studies)",
+   "locator": "WebSearch 結果：僅題名；正文只據題名主張該期間另有與香港合作之探詢",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000025": {
+   "title": "國家教育研究院〈孫文〉人物資料",
+   "locator": "來源包已記錄先前核讀（2026-10-02）：孫文與孫中山為同一人物，曾任中華民國臨時大總統；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  }
+ },
+ "limits": [
+  "網頁全文無法開啟：WebFetch 對 zh.wikisource.org、www.fmprc.gov.cn 回報 DNS ENOTFOUND，curl 經代理回 403；本稿無 web_page_read 來源，網路來源皆僅搜尋摘要。",
+  "孫文越飛宣言內容、1925年3月12日北京逝世、1866年生、陳炯明聯省自治主張、袁世凱解散國民黨屬通行史實，可用摘要僅見於非允許類型網站（維基百科、alphahistory、漢典），正文未附連結。",
+  "中華革命黨誓約之按指模與效忠孫文個人的具體條文未讀原文；國父紀念館致黃興函僅見條目標題。",
+  "劍橋論文僅據題名，未讀內容。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity-date",
+    "清史稿卷24捕孫文與特赦排除，archive 核對；臨時大總統依國教院來源包記錄；生卒為通行史實。"
+   ],
+   [
+    "five-dimensions",
+    "統率：六一六事變與黃埔；武力：無臨陣紀錄；智謀：讓位交易、信仰自由入約法、1923英蘇兩路；政治：約法與改組、黃興離去；魅力：清廷排除特赦與海外號召。對照宋孝宗、漢明帝、光緒帝、崇禎帝、毛澤東、王莽。"
+   ],
+   [
+    "causality",
+    "讓位→袁掌實權；中華革命黨效忠→黃興離去；六一六→黨軍；聯蘇→死後國共分裂，均標明推論層級。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "distinctive-person",
+    "主論點：擅立法統而缺槍與錢，押注他人→收緊黨；場景為1912誓詞、1914誓約、1922永豐艦、1923英蘇雙線。"
+   ],
+   [
+    "interpretation",
+    "集權為共和打地基、遺囑託付全體同志為自我限制，皆標[詮釋]；陳孫路線與誓約約束不及外人標[推斷]。"
+   ],
+   [
+    "seven-fields",
+    "七欄各以誓詞、東京建黨與永豐艦、實業轉向、袁陳與英蘇、黃興函與遺囑、黨治框架、誓詞對誓約為事件。"
+   ]
+  ]
+ }
+}

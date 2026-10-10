@@ -126,6 +126,24 @@
     "https://newtalk.tw/news/view/2023-10-25/893870",
     "https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf"
    ]
+  },
+  {
+   "query": "蔣介石 1911 杭州光復 敢死隊 高田 野砲兵 士官候補生",
+   "returnedUrls": [
+    "https://www.hpcbristol.sjtu.edu.cn/tag/conflict?page=74",
+    "https://1plusbooks.substack.com/p/de8",
+    "https://www.aisixiang.com/data/45296.html",
+    "https://joetsu-stories.jp/2022/12/02/chiang-kai-shek-and-japan-his-military-and-social-experiences-in-takada-joetsu/",
+    "https://alphahistory.com/chineserevolution/huang-xing/",
+    "https://m.zhangyue.com/readbook/12541043/19.html?p2=109980"
+   ]
+  },
+  {
+   "query": "蔣中正 辛亥 杭州 敢死隊 攻打 撫署 率領 先鋒",
+   "returnedUrls": [
+    "https://en.wikipedia.org/wiki/1911_Revolution_in_Xinjiang",
+    "https://history.state.gov/historicaldocuments/frus1926v01/d526"
+   ]
   }
  ],
  "archiveChecks": [],
@@ -190,13 +208,20 @@
    "locator": "WebSearch 綜合摘要：蔣中正總統文物（大溪檔案）涵蓋1924–1975年，26萬餘件，含親筆手稿、電令、事略稿本；摘要整合多筆結果",
    "type": "official_institution",
    "access": "web_search_result_summary"
+  },
+  "https://www.aisixiang.com/data/45296.html": {
+   "title": "愛思想網站比較毛澤東、蔣介石早年經歷的文章",
+   "locator": "搜尋結果摘要：武昌起義後不久，蔣介石作為敢死隊隊長，帶隊攻打浙江巡撫衙門；本 session 未能開啟全文。僅支持「據記載曾任敢死隊隊長」一句。",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
   }
  },
  "limits": [
   "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read，亦無固定修訂原典可比對；全部網路來源僅搜尋摘要，部分摘要整合多筆結果，來源對應為判讀。",
   "西安事變、開羅會議、清黨、1975年逝世等屬通行史實，可用摘要多來自新聞或維基類網站（非允許來源類型），正文未附連結。",
   "二二八責任歸屬報告之結論僅見新聞報導，正文只採政大條目摘要所述派兵決策，並避免下定論。",
-  "金圓券由蔣經國主導之說與學者異說並存（新聞來源），正文未採用。"
+  "金圓券由蔣經國主導之說與學者異說並存（新聞來源），正文未採用。",
+  "［修訂1］杭州光復敢死隊一事只見一則比較毛、蔣早年經歷的文章摘要，第二次搜尋未得佐證；正文寫作「據記載」，只用於說明武力45的粗估，不作他項依據。"
  ],
  "checks": {
   "analysisStats": [
@@ -206,7 +231,7 @@
    ],
    [
     "five-dimensions",
-    "統率：北伐、淞滬越級指揮；武力：軍校出身無個人武勇；智謀：中山艦事件與二二八框架；政治：金圓券與遷臺；魅力：黃埔與同儕決裂。對照毛澤東、孫文、漢明帝、宋孝宗、崇禎帝。"
+    "統率：北伐、淞滬越級指揮；武力：軍校出身無個人武勇；智謀：中山艦事件與二二八框架；政治：金圓券與遷臺；魅力：黃埔與同儕決裂。對照毛澤東、孫文、漢明帝、宋孝宗、崇禎帝。［修訂1］依 Codex 審查重核校準：毛澤東在凍結表有帝王 [100,60,98,100,100] 與將領 [98,40,100,95,99] 兩筆，原稿只引帝王條目且未標明；四項比較改為兩筆並列。武力45明確只量個人戰鬥，補杭州敢死隊紀錄，並說明45介於毛澤東兩筆之間。魅力原稿「高於宋孝宗（85）以下」方向錯誤，改為低於宋孝宗並說明理由。五項分數均不調。"
    ],
    [
     "causality",

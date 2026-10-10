@@ -10,5 +10,7 @@ for f in files:
   dst=os.path.join(A,os.path.basename(f)); man[os.path.basename(f)]=hashlib.sha256(open(f,'rb').read()).hexdigest()
   if f.endswith('.search-log.json'): shutil.copy(f,dst); os.remove(f)
   else: shutil.move(f,dst)
+for f in glob.glob(f'{B}/claude/specs/{n}.*json'):  # keep the superseded spec beside the outputs it produced
+  dst=os.path.join(A,'spec.'+os.path.basename(f)); man['spec.'+os.path.basename(f)]=hashlib.sha256(open(f,'rb').read()).hexdigest(); shutil.copy(f,dst)
 json.dump({"format":"dynasty-batch50-attempt-archive","schemaVersion":1,"slug":n,"attempt":int(k),"provider":"Claude Code (Anthropic)","reason":reason,"files":man},open(f'{A}/archive-manifest.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
 print(A,len(man))

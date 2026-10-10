@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "06",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：毛澤東校準雙條目未標明、魅力對宋孝宗方向錯誤、武力未區分個人戰鬥；改寫四項比較並補杭州敢死隊紀錄；分數不調",
+  "files": {
+    "06.soulEssence.response.md": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
+    "06.analysisStats.raw.md": "78af6efbfba34c9366ac3123cfc16f14ef43a3c03a1901ca6ddab0a52e27d8e3",
+    "06.combined.capture.json": "de1d324c4d8e1db4f5396e2f9b365ebce5c5c52ff77133071336f61b3c08b5b5",
+    "06.analysis.md": "5cfef0351d83cfd02abf0138a92a8b39f962e650b8004a2367c42924b6f5e8ec",
+    "06.soulEssence.md": "7ba153ea8c780ce4bd9ce15a4ce62db7798bce4faba75e57f4fd5362d07ba7e0",
+    "06.combined.search-log.json": "f6263c87cf9440535d327044137a70da24b2754385e48ea1e2168c511d2cac5f",
+    "06.analysisStats.capture.json": "2a4980a72bfb78c7035e92729c54060e3f0b26c10e69148aa36917689f03a114",
+    "06.statsAnalysis.md": "f5d25cb1b7a5affa5358318ccec32f5f4c9380b3df42e1832febcc7ebbeafb7e",
+    "06.analysisStats.response.md": "78af6efbfba34c9366ac3123cfc16f14ef43a3c03a1901ca6ddab0a52e27d8e3",
+    "06.combined.raw.md": "7e7f2cf7f090f50b4c05822dc4688c9df6ec963face2aa173a51a475441c697d",
+    "06.soulEssence.raw.md": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
+    "06.soulEssence.capture.json": "b150a6176bcf674f254a1d0037fe1ae5de8c5a20fd204424c941c0a5075a17d9",
+    "06.stats.json": "57719246c1060346c985a1d7532e1fd955ecf71e99ec08e13dfac87bd1648b53",
+    "06.soulEssence.json": "1b6e901756fedc0a3504d9dd84608cebe40bd4038443e911c3ba422ef9706601",
+    "06.analysisStats.json": "b4d58cabc8d1d9c77f5e3c7068699482720cb5d4268e030a684c6cc54010e794",
+    "results.06-06.v1.json": "bec158e7026339c4e230a10d9064be1e811a05fb4812ab599eccda92359b383d",
+    "spec.06.json": "41e7447f982a1aa9b310c94533943b08ffe5faf7211d4b11bff3da55df0a73b5",
+    "spec.06.quotes.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

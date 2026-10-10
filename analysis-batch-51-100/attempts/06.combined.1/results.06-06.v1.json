@@ -1,0 +1,335 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_蔣介石_274287036",
+      "inputSha256": "33e5d33b95c69a2734753ec36078732a9f0e70777001ee755b58544bc7583fcf",
+      "promptSha256": "4efd6e3b727a96c85a99405b668d444f8038fe8cfb405d3c8e6174831bfae832",
+      "fields": {
+        "analysis": "一九二六年三月，廣州的中山艦事件之後，蔣中正以黃埔軍校校長、第一軍軍長、廣州衛戍司令的身分壓制共產黨員，逐走親共的汪精衛；但學位論文的研究也提醒，當時的他雖已掌握軍權，卻還沒有掌握黨政系統的核心權力（[國立中央大學學位論文（中大機構典藏）](https://ir.lib.ncu.edu.tw/handle/987654321/75042)；[京都大學學術資料庫研究摘要](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)）。這個起點幾乎決定了他的一生。我對他的判斷是：**蔣中正終其一生是一位**校長**——他最熟悉、也最信任的工具是指揮系統：軍隊、黨、情報組織。靠著這套系統，他完成北伐、撐住八年抗戰、在臺灣重建政權；但凡是無法用命令解決的問題——通貨、地方社會、民心——他也習慣用同一套工具處理，結果往往是命令越下越多，局面卻越收越緊。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n依總統府的官方生平，蔣中正字介石，曾任國民政府主席，並於行憲後擔任總統（[總統府〈歷任總統〉蔣中正生平](https://www.president.gov.tw/Page/83)）。他面對的局面一路翻轉：\n\n1.  **軍閥割據的中國（1920年代）**：他以黃埔軍校起家，一九二六年出任國民革命軍總司令，率軍北伐。\n2.  **日本全面侵華（1937–1945）**：中國的工業、交通與兵員訓練都遠落後於日本，要在不投降的前提下撐到國際局勢改變。\n3.  **國共內戰與遷臺（1945–1950）**：抗戰勝利後不到四年，國民政府失去大陸；他在一九四九年底抵臺，一九五〇年復行視事，直到一九七五年去世。\n\n國史館所藏的《蔣中正總統文物》（俗稱大溪檔案）時間涵蓋一九二四至一九七五年，數量達二十六萬餘件，包括親筆手稿、電令與事略稿本（[國家文化記憶庫／數位典藏聯合目錄〈國史館蔣中正總統文物〉規格文件](https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf)）。他留下的電令之多，本身就說明了他的統治方式：幾乎所有事情，都要經過他的手諭。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：蔣中正最成功的時刻，都是**指揮系統能夠直接作用**的時刻；最失敗的時刻，都是他試圖用指揮系統去處理一個需要說服、交易或讓利的問題。**\n\n**一、中山艦事件：用軍權打開黨權**\n\n一九二六年他雖已身兼黃埔校長、第一軍軍長、衛戍司令與中央常務委員，卻仍未掌握黨政核心（[國立中央大學學位論文（中大機構典藏）](https://ir.lib.ncu.edu.tw/handle/987654321/75042)）。中山艦事件後，他以軍事力量為後盾壓制共產黨員、逐走汪精衛，蘇聯顧問亦默許（[京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)）。香港中文大學《二十一世紀》的書評更把這次事件視為他反共思想進入限共時期的起點（[《二十一世紀》書評，香港中文大學](https://webarchive.lib.cuhk.edu.hk/20201208131707mp_/http://www.cuhk.edu.hk/ics/21c/media/online/0602038.pdf)）。該書評把一九二六年三月至一九二七年三月劃為限共階段，緊接其後的，便是一九二七年的清黨與南京國民政府的建立。他一生的權力路徑由此確立：先握住槍，再用槍去整理黨；黨整理好之後，再用黨去整理政府。這個順序在北伐期間極有效率，因為當時最大的問題確實是軍隊各自為政[推斷]。\n\n**二、淞滬會戰：用整個國家的軍隊換取時間**\n\n一九三七年，他把戰場擴大到上海。陸軍學術期刊的研究主張，國軍意圖改變日軍的作戰線，這個構想從民國二十四年開始醞釀、二十五年定為戰略、二十六年在上海付諸實施（[張鑄勳〈淞滬會戰75週年析論〉，國防部《陸軍學術雙月刊》](https://www.mnd.gov.tw/File/17009)）。林桶法的研究則指出，他著眼全局，與張治中等前線將領在何時進攻、何時撤退上意見不同，並屢次親自介入前線指揮（[林桶法〈淞滬會戰期間的決策與指揮權之問題〉，《政大歷史學報》第45期](https://history.nccu.edu.tw/upload/24/publication_file/316/淞滬會戰期間的決策與指揮權之問題.pdf)）。林桶法也討論了中央與地方對擴大淞滬戰役的不同態度，以及擴大戰役的決策原因。這場會戰的戰略目的有其道理：把日軍主攻方向從華北南下轉為沿長江西進，換取內遷的時間。但最高統帥越級指揮前線，正是他**校長**習慣的延伸；精銳部隊在上海的消耗，也讓戰後國軍的骨幹難以恢復[推斷]。\n\n**三、金圓券與二二八：命令無法解決的問題**\n\n一九四八年八月的金圓券改革，以行政命令強制民眾以金銀外幣兌換新幣，並實施限價；短短數月即告失敗，城市中產階級大量破產（[國立臺灣大學課程講義（第九單元摘要）](https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf)）。更早的一九四七年，臺灣爆發二二八事件，研究指出陳儀起初向他報告事態並不嚴重，他則認定事件與共產黨有關，遂應陳儀之請派兵來臺（[政大學術集成典藏研究](https://ah.lib.nccu.edu.tw/handle/140.119/43380)）。前者由中央直接以法令推行，後者由地方軍政首長陳儀主導、中央派兵鎮壓。兩件事的性質不同，卻有相同的處理邏輯：把經濟問題當作紀律問題，把社會不滿當作敵情處理[推斷]。\n\n**連鎖結果**：他在抗戰中撐住了國家，戰後中國更以戰勝國身分參與開羅會議等國際安排；但內戰期間財政與民心同時崩潰，他失去了大陸。到了臺灣，他以黨、軍、情治的指揮系統重建政權，也讓臺灣經歷了長期的戒嚴[推斷]。他的功過得失，至今在兩岸與臺灣內部仍有相當對立的詮釋[推斷]。\n\n### **3. 【人性與性格側寫】**\n\n*   **事必躬親**：國史館所藏蔣檔多達二十六萬件，親筆手稿與電令數量驚人（[國家文化記憶庫規格文件](https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf)）。\n*   **越級指揮**：淞滬會戰中他屢次繞過前線將領直接下令（[林桶法論文](https://history.nccu.edu.tw/upload/24/publication_file/316/淞滬會戰期間的決策與指揮權之問題.pdf)）。\n*   **以組織制衡組織**：一九二六年成立的黨務調查科是在他授意下設立的，日後成為情報系統的源頭之一（[國立中央大學學位論文（中大機構典藏）](https://ir.lib.ncu.edu.tw/handle/987654321/75042)）。\n*   **長年寫日記自省**：他的日記手稿本被學者視為具有不可替代的史料價值，不能以事略稿本或任何抄本代替（[《二十一世紀》論文，香港中文大學](https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf)）。\n*   **對共產黨的判斷先於一切**：從中山艦事件到二二八，他總是先把局勢放進**共黨滲透**的框架裡理解[推斷]。\n\n### **4. 【如果生在現代】**\n\n蔣中正最接近的現代角色是：**一所軍校出身、後來執掌整個國家安全與國防體系的總司令，習慣以作戰命令處理所有事務。**\n\n*   **靠指揮鏈起家**：他從校長做起，培養出一整代只聽他號令的學生軍官，再以這批人掌握黨與政府。\n*   **最擅長的是硬撐**：面對比自己強大得多的對手，他能以全國動員換取時間，撐到盟友到來。\n*   **不擅長的是市場**：當經濟陷入惡性通膨，他頒布限價與強制兌換令，派親信下去打老虎，結果市場以囤積和黑市回應。\n*   **親自改前線的作戰計畫**：重大戰役期間，他常繞過戰區指揮官直接打電話給前線部隊長，讓下屬常常不知道到底該聽誰的命令。\n*   **對異議的反射**：地方發生大規模抗議，他把它當成敵方滲透，派兵處理。\n*   **邊界**：這個比喻只描述他的管理風格；他面對的是外敵全面入侵、內戰與國家分裂，不是一般的組織管理，而他的決定牽涉數以百萬計的生命，其中包括臺灣社會至今仍在面對的傷痕。",
+        "soulEssence": "【說話邏輯】\n他的說話方式是「下令」而不是「說服」。國史館所藏二十六萬餘件蔣檔中，有大量親筆手稿、電令與諭告（[國家文化記憶庫規格文件](https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf)）[史載]——他與部屬溝通的主要文體，是一紙紙條列具體的命令[推斷]。淞滬會戰期間，他與張治中等前線將領爭論何時進攻、何時撤退，最後常以直接下令的方式介入（[林桶法論文](https://history.nccu.edu.tw/upload/24/publication_file/316/淞滬會戰期間的決策與指揮權之問題.pdf)）[史載]。他相信只要命令夠清楚、執行者夠忠誠，事情就能完成；而當執行者有不同意見時，他傾向於把它理解成**不服從**，而不是**另一種判斷**[推斷]。\n\n【壓力反應】\n他在壓力下的第一反應是收緊控制，第二反應是找出敵人。\n一九二六年他在軍權已握、黨權未得的不安中，以中山艦事件為契機壓制共產黨員（[京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)）[史載]；同年在他授意下成立黨務調查科（[國立中央大學學位論文（中大機構典藏）](https://ir.lib.ncu.edu.tw/handle/987654321/75042)）[史載]。二十一年後二二八事件爆發，他認定事件與共產黨有關而派兵（[政大學術集成](https://ah.lib.nccu.edu.tw/handle/140.119/43380)）[史載]。兩次危機相隔二十年，處理順序幾乎一樣：先判定背後有敵，再以武力與組織反制[推斷]。這讓他極少在危機中崩潰，也讓他常把盟友與民眾推向對立面[推斷]。一九二六年被壓制的共產黨員日後成為他最大的對手；一九四七年被派兵鎮壓的臺灣社會，則在他身後數十年仍在追問責任歸屬[推斷]。\n\n【核心驅動】\n他想要的是一個**指揮得動**的國家。\n從黃埔軍校、國民革命軍到黨務調查科，他一生不斷建立只對他負責的組織（[國立中央大學學位論文（中大機構典藏）](https://ir.lib.ncu.edu.tw/handle/987654321/75042)）[史載]。北伐與抗戰對他而言，不只是統一與禦侮，也是讓一個四分五裂的國家第一次能被同一道命令調動[詮釋：此為從其組織建設方向歸納的動機]。\n\n【慣性盲點】\n他擅長管理會服從的人，卻常誤判不會服從的東西——市場與社會。\n金圓券改革以強制兌換與限價推行，結果物資不入市場、短期內全面崩潰（[國立臺灣大學課程講義](https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf)）[史載]。二二八事件中，陳儀起初報告事態並不嚴重，他則依**共黨**框架決定派兵（[政大學術集成](https://ah.lib.nccu.edu.tw/handle/140.119/43380)）[史載]。物價不會因為命令而下降，民怨也不會因為派兵而消失；但這兩件事在他的工具箱裡，都只有命令與部隊可用[推斷]。\n\n【情感結構】\n他把最深的情感投注在「學生」與「部屬」身上，期待的回報是忠誠。\n黃埔出身的軍官長期構成他權力的核心，他以校長身分與他們建立近乎師生的關係[推斷]。他長年寫日記，學者認為日記手稿本具有事略稿本與抄本無法取代的真實性（[《二十一世紀》論文](https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf)）[史載]——日記是他唯一不必下命令、也不必擺出統帥姿態的地方[詮釋]。他與汪精衛等平輩同志卻長期處於競爭與決裂之中（[京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)）[史載]。他最脆弱的時刻，或許就是一九四九年底離開大陸、抵達臺灣之後——一位以**指揮得動**為生命的人，第一次面對指揮系統整片崩解的現實[詮釋]。\n\n【參照系】\n他理解政治的框架是「戰爭」：國家是一支軍隊，政策是作戰計畫，反對者是敵軍或滲透者[推斷]。\n類比準確之處：抗戰時期，國家確實處於全面戰爭狀態，他以改變日軍作戰線為核心的戰略，讓國家能以空間換取時間（[國防部《陸軍學術雙月刊》](https://www.mnd.gov.tw/File/17009)）[史載]；北伐時，這套框架也讓他迅速整合各路軍隊[推斷]。\n類比失準之處：通貨膨脹與地方社會的不滿，不是敵軍；把金圓券當作經濟作戰、把二二八當作平亂（[政大學術集成](https://ah.lib.nccu.edu.tw/handle/140.119/43380)）[史載]，使他用戰爭手段處理了需要政治解決的問題[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n他的裂縫在於：他建立的指揮系統既是他的力量來源，也是他無法聽見反對意見的原因。\n中山艦事件讓他第一次以軍權壓過黨權（[京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)）[史載]，此後他一路以軍、黨、情治三套系統掌握國家。這套系統讓他在抗戰中能撐住局面，卻也讓地方大員能向他報告事態並不嚴重，而他仍以既定框架下達派兵命令（[政大學術集成](https://ah.lib.nccu.edu.tw/handle/140.119/43380)）[史載]。系統越忠誠，送到他面前的資訊就越接近他想聽的內容[推斷]。淞滬會戰中他越級下令，表面上是不信任前線將領的判斷（[林桶法論文](https://history.nccu.edu.tw/upload/24/publication_file/316/淞滬會戰期間的決策與指揮權之問題.pdf)）[史載]，深一層看，也是因為他知道層層轉呈的報告未必可靠——他不信任資訊，卻又只信任自己建立的系統，於是只能把越來越多的決定攬回自己手上[推斷]。他在日記裡反覆自省（[《二十一世紀》論文](https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf)）[史載]，卻很少在制度上為自己設下限制——自省停留在紙上，權力則留在他的手中[詮釋]。",
+        "stats": [
+          80,
+          45,
+          78,
+          70,
+          82
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：80\n\n他以國民革命軍總司令率軍北伐，抗戰時期指揮淞滬會戰等大規模作戰，戰略上意圖改變日軍作戰線（[國防部《陸軍學術雙月刊》張鑄勳論文](https://www.mnd.gov.tw/File/17009)），撐過八年全面戰爭。但他屢次越級介入前線指揮，與張治中等將領意見衝突（[林桶法論文](https://history.nccu.edu.tw/upload/24/publication_file/316/淞滬會戰期間的決策與指揮權之問題.pdf)），戰後內戰更全面失利。評80，低於毛澤東（100）與漢明帝（82），高於宋孝宗（70）與孫文（55）。\n\n### 武力：45\n\n他出身軍校、主持黃埔，是職業軍人出身的領袖，一九二六年身兼第一軍軍長與廣州衛戍司令（[國立中央大學學位論文（中大機構典藏）](https://ir.lib.ncu.edu.tw/handle/987654321/75042)）。但他的角色主要是統帥而非衝鋒陷陣的將領，史料所見多是指揮與電令（[國家文化記憶庫規格文件](https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf)），並無個人武勇的事蹟可供評分。評45，高於孫文（25）與宋孝宗（35），低於毛澤東（60）與漢明帝（55）。\n\n### 智謀：78\n\n中山艦事件中，他抓住時機以軍權壓制共產黨員、逐走汪精衛，取得北伐前的主導權（[京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)）；淞滬會戰的戰略構想也有長期準備（[國防部《陸軍學術雙月刊》](https://www.mnd.gov.tw/File/17009)）。短板在於他對經濟與社會問題的判斷常被**共黨滲透**框架主導，二二八與金圓券都是例證。評78，低於毛澤東（98）與孫文（82），與宋孝宗（82）接近。\n\n### 政治：70\n\n他曾任國民政府主席與行憲後總統（[總統府蔣中正生平](https://www.president.gov.tw/Page/83)），帶領國家撐過抗戰，戰後在臺灣重建政權。但內戰期間的金圓券改革短期內崩潰，城市中產階級破產（[國立臺灣大學課程講義](https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf)）；二二八派兵與長期戒嚴也留下深重代價（[政大學術集成](https://ah.lib.nccu.edu.tw/handle/140.119/43380)）。評70，低於孫文（80）與宋孝宗（90），高於崇禎帝（65），抗戰與遷臺之功無法抵銷大陸失守的結構性崩潰。\n\n### 魅力：82\n\n黃埔一代軍官長期效忠於他，國民黨在他領導下歷經北伐、抗戰與遷臺仍能維持組織（[總統府蔣中正生平](https://www.president.gov.tw/Page/83)），抗戰時期他也是國家團結的象徵。但他與汪精衛等黨內同儕長期對立（[京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843)），內戰後期民心大量流失，在臺灣的評價也至今分裂。評82，低於孫文（97）與毛澤東（100），高於宋孝宗（85）以下的多數守成之君。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T10:56:41.334Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "國立中央大學學位論文（中大機構典藏條目）",
+            "url": "https://ir.lib.ncu.edu.tw/handle/987654321/75042",
+            "locator": "WebSearch 結果摘要：1926年蔣身兼黃埔校長、第一軍軍長、廣州衛戍司令、中常委等職，軍權在握但未掌握黨政核心；黨務調查科於1926年在其授意下成立",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "京都大學學術資料庫研究條目（中山艦事件）",
+            "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843",
+            "locator": "WebSearch 結果摘要（日文）：蔣以中山艦事件壓制共產黨員、逐走親共的汪精衛而取得獨裁性權力，蘇聯默許",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "中華民國總統府〈歷任總統〉蔣中正先生生平",
+            "url": "https://www.president.gov.tw/Page/83",
+            "locator": "來源包已記錄先前核讀（2026-10-02）：中正字介石，曾任國民政府主席、行憲後總統；本 session 未重新開啟",
+            "type": "official_institution",
+            "checked": true,
+            "access": "source_package_prior_review"
+          },
+          {
+            "title": "數位典藏計畫〈國史館蔣中正總統文物〉報告文件",
+            "url": "https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf",
+            "locator": "WebSearch 綜合摘要：蔣中正總統文物（大溪檔案）涵蓋1924–1975年，26萬餘件，含親筆手稿、電令、事略稿本；摘要整合多筆結果",
+            "type": "official_institution",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "《二十一世紀》網絡版書評（蔣介石反共思想演變），香港中文大學",
+            "url": "https://webarchive.lib.cuhk.edu.hk/20201208131707mp_/http://www.cuhk.edu.hk/ics/21c/media/online/0602038.pdf",
+            "locator": "WebSearch 結果摘要：將1926.3–1927.3定為以中山艦事件為契機的限共時期",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "張鑄勳〈淞滬會戰75週年析論〉，國防部《陸軍學術雙月刊》（2012）",
+            "url": "https://www.mnd.gov.tw/File/17009",
+            "locator": "WebSearch 結果摘要：國軍改變日軍作戰線之構想民國24年醞釀、25年定為戰略、26年於上海實施；兩個 mnd.gov.tw 檔案中此篇之對應依摘要順序判讀",
+            "type": "official_institution",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "林桶法〈淞滬會戰期間的決策與指揮權之問題〉，《政大歷史學報》第45期（2016）",
+            "url": "https://history.nccu.edu.tw/upload/24/publication_file/316/%E6%B7%9E%E6%BB%AC%E6%9C%83%E6%88%B0%E6%9C%9F%E9%96%93%E7%9A%84%E6%B1%BA%E7%AD%96%E8%88%87%E6%8C%87%E6%8F%AE%E6%AC%8A%E4%B9%8B%E5%95%8F%E9%A1%8C.pdf",
+            "locator": "WebSearch 結果摘要：中央與地方對擴大淞滬戰役之態度與決策原因；蔣著眼全局，與張治中等前線將領在進退時機上意見不同並介入前線指揮",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "國立臺灣大學課程講義（第九單元摘要）",
+            "url": "https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf",
+            "locator": "WebSearch 綜合摘要：金圓券1948年8月發行，以行政命令強制兌換金銀外幣並限價，數月內失敗，城市中產階級破產；摘要未逐條標明出自哪一結果",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "政大學術集成典藏研究（二二八事件相關）",
+            "url": "https://ah.lib.nccu.edu.tw/handle/140.119/43380",
+            "locator": "WebSearch 綜合摘要：陳儀向蔣報告事變並不嚴重，蔣認定與共產黨有關，應陳儀所請派兵；摘要未逐條標明出處，此對應為判讀",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "《二十一世紀》第177期論文（《蔣介石日記》手稿本），香港中文大學",
+            "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf",
+            "locator": "WebSearch 結果摘要：斯坦福所藏日記應稱手稿本，其真實性與重要性不能以事略稿本、大事長編初稿或抄本代替",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "510d55738999172abdefd4a7fd1f663010fa69e85349de0c3721bf949627dfe8",
+        "sourcePackageSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
+        "preservedDeepSha256": "54a42a1ee820ecbf47cdffd04e7d45327bcf5543229f6548bb4418817966a074",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "87a6e4bbf511869e015bc4f74e031cfd5ef33aaf47b147555c2032209555d7e9",
+            "requestSha256": "510d55738999172abdefd4a7fd1f663010fa69e85349de0c3721bf949627dfe8",
+            "inputSha256": "33e5d33b95c69a2734753ec36078732a9f0e70777001ee755b58544bc7583fcf",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "704394246b3c8194696323b2a0ee44115110df38ce4c8ba84f7f3d1042e1c848",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
+            "preservedDeepSha256": "54a42a1ee820ecbf47cdffd04e7d45327bcf5543229f6548bb4418817966a074",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T10:56:41.334Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/06.analysisStats.raw.md",
+            "rawResponseSha256": "78af6efbfba34c9366ac3123cfc16f14ef43a3c03a1901ca6ddab0a52e27d8e3",
+            "responseFile": "analysis-batch-51-100/drafts/06.analysisStats.response.md",
+            "responseSha256": "78af6efbfba34c9366ac3123cfc16f14ef43a3c03a1901ca6ddab0a52e27d8e3",
+            "fieldsHashes": {
+              "analysis": "9191b6564ca0304f940c37dbde99de100d659e2fd9163344eb2271806f062283",
+              "stats": "9462ee15cf018c5b7e106099fd87b5d401887a52bd7f5ca77b0ab79eb28e6db2",
+              "statsAnalysis": "097ccae4744dc63f9f6d58483a460a90b74e13a052fc61041787112fb1218bd6"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/06.analysisStats.capture.json",
+            "captureSha256": "8a3d720bf19fa37666d77dcc42aa40cb311f755950b5618f40c5f3d45a3a5e7d",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/06.analysisStats.json",
+            "sourceReviewSha256": "c126857dfb72baf2f2829a3a87696d43504343fef95bbc7367fa3e9cfae87332",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/06.combined.search-log.json",
+              "sha256": "f6263c87cf9440535d327044137a70da24b2754385e48ea1e2168c511d2cac5f",
+              "webSearchCount": 9,
+              "archiveCheckCount": 0
+            },
+            "checkedSources": [
+              {
+                "title": "國立中央大學學位論文（中大機構典藏條目）",
+                "url": "https://ir.lib.ncu.edu.tw/handle/987654321/75042",
+                "locator": "WebSearch 結果摘要：1926年蔣身兼黃埔校長、第一軍軍長、廣州衛戍司令、中常委等職，軍權在握但未掌握黨政核心；黨務調查科於1926年在其授意下成立",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "京都大學學術資料庫研究條目（中山艦事件）",
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843",
+                "locator": "WebSearch 結果摘要（日文）：蔣以中山艦事件壓制共產黨員、逐走親共的汪精衛而取得獨裁性權力，蘇聯默許",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "中華民國總統府〈歷任總統〉蔣中正先生生平",
+                "url": "https://www.president.gov.tw/Page/83",
+                "locator": "來源包已記錄先前核讀（2026-10-02）：中正字介石，曾任國民政府主席、行憲後總統；本 session 未重新開啟",
+                "type": "official_institution",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "數位典藏計畫〈國史館蔣中正總統文物〉報告文件",
+                "url": "https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf",
+                "locator": "WebSearch 綜合摘要：蔣中正總統文物（大溪檔案）涵蓋1924–1975年，26萬餘件，含親筆手稿、電令、事略稿本；摘要整合多筆結果",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "《二十一世紀》網絡版書評（蔣介石反共思想演變），香港中文大學",
+                "url": "https://webarchive.lib.cuhk.edu.hk/20201208131707mp_/http://www.cuhk.edu.hk/ics/21c/media/online/0602038.pdf",
+                "locator": "WebSearch 結果摘要：將1926.3–1927.3定為以中山艦事件為契機的限共時期",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "張鑄勳〈淞滬會戰75週年析論〉，國防部《陸軍學術雙月刊》（2012）",
+                "url": "https://www.mnd.gov.tw/File/17009",
+                "locator": "WebSearch 結果摘要：國軍改變日軍作戰線之構想民國24年醞釀、25年定為戰略、26年於上海實施；兩個 mnd.gov.tw 檔案中此篇之對應依摘要順序判讀",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "林桶法〈淞滬會戰期間的決策與指揮權之問題〉，《政大歷史學報》第45期（2016）",
+                "url": "https://history.nccu.edu.tw/upload/24/publication_file/316/%E6%B7%9E%E6%BB%AC%E6%9C%83%E6%88%B0%E6%9C%9F%E9%96%93%E7%9A%84%E6%B1%BA%E7%AD%96%E8%88%87%E6%8C%87%E6%8F%AE%E6%AC%8A%E4%B9%8B%E5%95%8F%E9%A1%8C.pdf",
+                "locator": "WebSearch 結果摘要：中央與地方對擴大淞滬戰役之態度與決策原因；蔣著眼全局，與張治中等前線將領在進退時機上意見不同並介入前線指揮",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "國立臺灣大學課程講義（第九單元摘要）",
+                "url": "https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf",
+                "locator": "WebSearch 綜合摘要：金圓券1948年8月發行，以行政命令強制兌換金銀外幣並限價，數月內失敗，城市中產階級破產；摘要未逐條標明出自哪一結果",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "政大學術集成典藏研究（二二八事件相關）",
+                "url": "https://ah.lib.nccu.edu.tw/handle/140.119/43380",
+                "locator": "WebSearch 綜合摘要：陳儀向蔣報告事變並不嚴重，蔣認定與共產黨有關，應陳儀所請派兵；摘要未逐條標明出處，此對應為判讀",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "《二十一世紀》第177期論文（《蔣介石日記》手稿本），香港中文大學",
+                "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf",
+                "locator": "WebSearch 結果摘要：斯坦福所藏日記應稱手稿本，其真實性與重要性不能以事略稿本、大事長編初稿或抄本代替",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "763fa518ed85c53eca34570f3dd491e750ae35fe9b2c41ca40619aaf05a89de8",
+            "requestSha256": "510d55738999172abdefd4a7fd1f663010fa69e85349de0c3721bf949627dfe8",
+            "inputSha256": "33e5d33b95c69a2734753ec36078732a9f0e70777001ee755b58544bc7583fcf",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "bbfd74cb6b32e4f236c0f3ecd149229d0fa66efa334664ff1c9c4d1313b0ebb5",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
+            "preservedDeepSha256": "54a42a1ee820ecbf47cdffd04e7d45327bcf5543229f6548bb4418817966a074",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T10:56:41.334Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/06.soulEssence.raw.md",
+            "rawResponseSha256": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
+            "responseFile": "analysis-batch-51-100/drafts/06.soulEssence.response.md",
+            "responseSha256": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
+            "fieldsHashes": {
+              "soulEssence": "8e8b46959e280ef3dae3c0f7dba296ad97c27fabc3c93a7d2fe22d3c524d461d"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/06.soulEssence.capture.json",
+            "captureSha256": "703dd496a5effc4c8746387e502fad6d27069e1998a67cbf4eea2da34417406c",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/06.soulEssence.json",
+            "sourceReviewSha256": "5c242b394a9da52e8d6f3649780a46ee27a4b54c7c34b0a21d6d330ae29c0cd1",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/06.combined.search-log.json",
+              "sha256": "f6263c87cf9440535d327044137a70da24b2754385e48ea1e2168c511d2cac5f",
+              "webSearchCount": 9,
+              "archiveCheckCount": 0
+            },
+            "checkedSources": [
+              {
+                "title": "數位典藏計畫〈國史館蔣中正總統文物〉報告文件",
+                "url": "https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf",
+                "locator": "WebSearch 綜合摘要：蔣中正總統文物（大溪檔案）涵蓋1924–1975年，26萬餘件，含親筆手稿、電令、事略稿本；摘要整合多筆結果",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "林桶法〈淞滬會戰期間的決策與指揮權之問題〉，《政大歷史學報》第45期（2016）",
+                "url": "https://history.nccu.edu.tw/upload/24/publication_file/316/%E6%B7%9E%E6%BB%AC%E6%9C%83%E6%88%B0%E6%9C%9F%E9%96%93%E7%9A%84%E6%B1%BA%E7%AD%96%E8%88%87%E6%8C%87%E6%8F%AE%E6%AC%8A%E4%B9%8B%E5%95%8F%E9%A1%8C.pdf",
+                "locator": "WebSearch 結果摘要：中央與地方對擴大淞滬戰役之態度與決策原因；蔣著眼全局，與張治中等前線將領在進退時機上意見不同並介入前線指揮",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "京都大學學術資料庫研究條目（中山艦事件）",
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843",
+                "locator": "WebSearch 結果摘要（日文）：蔣以中山艦事件壓制共產黨員、逐走親共的汪精衛而取得獨裁性權力，蘇聯默許",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "國立中央大學學位論文（中大機構典藏條目）",
+                "url": "https://ir.lib.ncu.edu.tw/handle/987654321/75042",
+                "locator": "WebSearch 結果摘要：1926年蔣身兼黃埔校長、第一軍軍長、廣州衛戍司令、中常委等職，軍權在握但未掌握黨政核心；黨務調查科於1926年在其授意下成立",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "政大學術集成典藏研究（二二八事件相關）",
+                "url": "https://ah.lib.nccu.edu.tw/handle/140.119/43380",
+                "locator": "WebSearch 綜合摘要：陳儀向蔣報告事變並不嚴重，蔣認定與共產黨有關，應陳儀所請派兵；摘要未逐條標明出處，此對應為判讀",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "國立臺灣大學課程講義（第九單元摘要）",
+                "url": "https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf",
+                "locator": "WebSearch 綜合摘要：金圓券1948年8月發行，以行政命令強制兌換金銀外幣並限價，數月內失敗，城市中產階級破產；摘要未逐條標明出自哪一結果",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "《二十一世紀》第177期論文（《蔣介石日記》手稿本），香港中文大學",
+                "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf",
+                "locator": "WebSearch 結果摘要：斯坦福所藏日記應稱手稿本，其真實性與重要性不能以事略稿本、大事長編初稿或抄本代替",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "張鑄勳〈淞滬會戰75週年析論〉，國防部《陸軍學術雙月刊》（2012）",
+                "url": "https://www.mnd.gov.tw/File/17009",
+                "locator": "WebSearch 結果摘要：國軍改變日軍作戰線之構想民國24年醞釀、25年定為戰略、26年於上海實施；兩個 mnd.gov.tw 檔案中此篇之對應依摘要順序判讀",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/06.analysis.md",
+            "analysisContextSha256": "5cfef0351d83cfd02abf0138a92a8b39f962e650b8004a2367c42924b6f5e8ec"
+          }
+        }
+      }
+    }
+  ]
+}

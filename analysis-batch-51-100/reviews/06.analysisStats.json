@@ -4,16 +4,16 @@
   "recordId": "emperor_蔣介石_274287036",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T10:56:41.367Z",
+  "reviewedAt": "2026-10-10T17:34:55.797Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "78af6efbfba34c9366ac3123cfc16f14ef43a3c03a1901ca6ddab0a52e27d8e3",
-  "rawResponseSha256": "78af6efbfba34c9366ac3123cfc16f14ef43a3c03a1901ca6ddab0a52e27d8e3",
+  "manuscriptSha256": "9b38b52e9951a2e0fdac01010b7b9677f191fa82aab463a5e888b796908fd5cc",
+  "rawResponseSha256": "9b38b52e9951a2e0fdac01010b7b9677f191fa82aab463a5e888b796908fd5cc",
   "sourcePackageSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
-  "searchLogSha256": "f6263c87cf9440535d327044137a70da24b2754385e48ea1e2168c511d2cac5f",
+  "searchLogSha256": "2214b6e5542835520551c341cbe58de59a1122c117dce056a1060a42342f38ad",
   "checkedSources": [
     {
       "url": "https://ir.lib.ncu.edu.tw/handle/987654321/75042",
@@ -94,6 +94,14 @@
       "type": "scholarly_primary",
       "checked": true,
       "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.aisixiang.com/data/45296.html",
+      "title": "愛思想網站比較毛澤東、蔣介石早年經歷的文章",
+      "locator": "搜尋結果摘要：武昌起義後不久，蔣介石作為敢死隊隊長，帶隊攻打浙江巡撫衙門；本 session 未能開啟全文。僅支持「據記載曾任敢死隊隊長」一句。",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
     }
   ],
   "checks": [
@@ -105,7 +113,7 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：北伐、淞滬越級指揮；武力：軍校出身無個人武勇；智謀：中山艦事件與二二八框架；政治：金圓券與遷臺；魅力：黃埔與同儕決裂。對照毛澤東、孫文、漢明帝、宋孝宗、崇禎帝。"
+      "detail": "統率：北伐、淞滬越級指揮；武力：軍校出身無個人武勇；智謀：中山艦事件與二二八框架；政治：金圓券與遷臺；魅力：黃埔與同儕決裂。對照毛澤東、孫文、漢明帝、宋孝宗、崇禎帝。［修訂1］依 Codex 審查重核校準：毛澤東在凍結表有帝王 [100,60,98,100,100] 與將領 [98,40,100,95,99] 兩筆，原稿只引帝王條目且未標明；四項比較改為兩筆並列。武力45明確只量個人戰鬥，補杭州敢死隊紀錄，並說明45介於毛澤東兩筆之間。魅力原稿「高於宋孝宗（85）以下」方向錯誤，改為低於宋孝宗並說明理由。五項分數均不調。"
     },
     {
       "id": "causality",

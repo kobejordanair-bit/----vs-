@@ -4,7 +4,7 @@
   "recordId": "emperor_蔣介石_274287036",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T10:56:41.368Z",
+  "reviewedAt": "2026-10-10T17:34:55.798Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
@@ -13,7 +13,7 @@
   "manuscriptSha256": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
   "rawResponseSha256": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
   "sourcePackageSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
-  "searchLogSha256": "f6263c87cf9440535d327044137a70da24b2754385e48ea1e2168c511d2cac5f",
+  "searchLogSha256": "2214b6e5542835520551c341cbe58de59a1122c117dce056a1060a42342f38ad",
   "checkedSources": [
     {
       "url": "https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf",

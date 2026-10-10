@@ -1,0 +1,101 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_蔣介石_274287036",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:56:41.368Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
+  "rawResponseSha256": "fc6f205d1631bed689a95b01acb1b0fad1cc320b3ad087407d670a2895110ec6",
+  "sourcePackageSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
+  "searchLogSha256": "f6263c87cf9440535d327044137a70da24b2754385e48ea1e2168c511d2cac5f",
+  "checkedSources": [
+    {
+      "url": "https://metadata.teldap.tw/project/filebox/historica/ah_cck_report050704.pdf",
+      "title": "數位典藏計畫〈國史館蔣中正總統文物〉報告文件",
+      "locator": "WebSearch 綜合摘要：蔣中正總統文物（大溪檔案）涵蓋1924–1975年，26萬餘件，含親筆手稿、電令、事略稿本；摘要整合多筆結果",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://history.nccu.edu.tw/upload/24/publication_file/316/淞滬會戰期間的決策與指揮權之問題.pdf",
+      "title": "林桶法〈淞滬會戰期間的決策與指揮權之問題〉，《政大歷史學報》第45期（2016）",
+      "locator": "WebSearch 結果摘要：中央與地方對擴大淞滬戰役之態度與決策原因；蔣著眼全局，與張治中等前線將領在進退時機上意見不同並介入前線指揮",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/238843",
+      "title": "京都大學學術資料庫研究條目（中山艦事件）",
+      "locator": "WebSearch 結果摘要（日文）：蔣以中山艦事件壓制共產黨員、逐走親共的汪精衛而取得獨裁性權力，蘇聯默許",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ir.lib.ncu.edu.tw/handle/987654321/75042",
+      "title": "國立中央大學學位論文（中大機構典藏條目）",
+      "locator": "WebSearch 結果摘要：1926年蔣身兼黃埔校長、第一軍軍長、廣州衛戍司令、中常委等職，軍權在握但未掌握黨政核心；黨務調查科於1926年在其授意下成立",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ah.lib.nccu.edu.tw/handle/140.119/43380",
+      "title": "政大學術集成典藏研究（二二八事件相關）",
+      "locator": "WebSearch 綜合摘要：陳儀向蔣報告事變並不嚴重，蔣認定與共產黨有關，應陳儀所請派兵；摘要未逐條標明出處，此對應為判讀",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://homepage.ntu.edu.tw/~ntut019/teh/bm-Summary-unit9-2025.pdf",
+      "title": "國立臺灣大學課程講義（第九單元摘要）",
+      "locator": "WebSearch 綜合摘要：金圓券1948年8月發行，以行政命令強制兌換金銀外幣並限價，數月內失敗，城市中產階級破產；摘要未逐條標明出自哪一結果",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c177-201809013.pdf",
+      "title": "《二十一世紀》第177期論文（《蔣介石日記》手稿本），香港中文大學",
+      "locator": "WebSearch 結果摘要：斯坦福所藏日記應稱手稿本，其真實性與重要性不能以事略稿本、大事長編初稿或抄本代替",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.mnd.gov.tw/File/17009",
+      "title": "張鑄勳〈淞滬會戰75週年析論〉，國防部《陸軍學術雙月刊》（2012）",
+      "locator": "WebSearch 結果摘要：國軍改變日軍作戰線之構想民國24年醞釀、25年定為戰略、26年於上海實施；兩個 mnd.gov.tw 檔案中此篇之對應依摘要順序判讀",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：終身以校長式指揮系統治國；場景為中山艦事件、黨務調查科、淞滬越級指揮、二二八派兵、日記。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "日記為唯一不下命令之處、指揮系統崩解為最脆弱時刻、自省停留紙上，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以電令與淞滬爭論、1926與1947危機處理、組織建設、金圓券與二二八、黃埔與日記與汪精衛、戰爭框架、系統忠誠與資訊為事件。"
+    }
+  ],
+  "materialIssues": []
+}
