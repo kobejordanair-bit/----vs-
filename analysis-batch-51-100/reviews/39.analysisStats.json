@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_孫承宗_1991864841",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:26:18.126Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "6607173c10488fbb9eac62fe5ab23034baccfd2ad47e0bf070e6e078f8dcda2d",
+  "rawResponseSha256": "6607173c10488fbb9eac62fe5ab23034baccfd2ad47e0bf070e6e078f8dcda2d",
+  "sourcePackageSha256": "0313735ceb1fe8b46a5936fd56aa602269a8c4521dcdec22c1e8214b76dc19cc",
+  "searchLogSha256": "3693558549129f7071f5dc51228c9488d513f9778bc4e3d9a828ee7295d4aafb",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7250",
+      "title": "明史·卷二百五十 列傳第一百三十八",
+      "locator": "本機固定修訂 oldid=2594609 全文比對（textSha256 已驗）：我促敵二百里外，敵促我二百里中，勢又辨、臣不敢為百年久計，只計及五年間究竟何如。倘臣言不當，立斥臣以定大計、請撤關外以守關內、貌奇偉，須髯戟張。與人言，聲殷牆壁、往來飛狐、拒馬間、喜從材官老兵究問險要厄塞，用是曉暢邊事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "高陽人、萬曆三十二年進士第二、梃擊之對、熹宗日講、天啟二年兵部尚書兼東閣大學士、駁八里鋪、督師四年、魏忠賢攔阻通州、五年柳河之敗去職、崇禎二年己巳之變守通州與山海關、三年復四城、四年大凌河之敗奪官、十一年高陽城破自盡年七十六，皆依明史卷250 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：城九堡四十五練兵十一萬、復四城；武力：二十七騎赴通、率家人拒守；智謀：連番追問、二百里之論、先圖灤；政治：心開、不從中制、拒中使；魅力：群疑頓釋、人心始定、子孫皆戰死。對照于謙、曾國藩、王守仁。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "廣寧失→王在晉議八里重關→承宗親往追問→議熄→督師四年拓地四百里→柳河之敗與言官→去職→高第撤關外；己巳之變→祖大壽東潰→密札招撫→復四城；大凌河築城→被圍→長山敗→奪官→高陽城破自盡。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    92,
+    50,
+    90,
+    80,
+    88
+  ]
+}
