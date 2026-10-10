@@ -1,0 +1,459 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_呂蒙_306154318",
+  "packetSha256": "fc2b97accb88e41a01b88c517a5f0e69a687ac86ec5049d3a432855456c48597",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "呂蒙 白衣渡江 襲取荊州 219 關羽 孫權 戰略 研究 論文",
+      "returnedUrls": [
+        "https://www.rthk.hk/oldassets/files/extra_file/20250715152515_692249676.pdf",
+        "https://uptogo.com.tw/歷史/中國歷史/誰砍了關羽？/",
+        "https://data.ctext.org/entity/841677",
+        "https://military-history.fandom.com/wiki/L%C3%BC_Meng%27s_invasion_of_Jing_Province",
+        "https://disp.cc/b/ACG/hreF",
+        "https://www.rthk.hk/oldassets/files/extra_file/20250415160911_295765930.pdf",
+        "https://disp.cc/m/ACG/hreF",
+        "https://thetvdb.com/series/new-three-kingdoms/episodes/4461322",
+        "https://deniseemerson.substack.com/p/lyu-meng-captures-jiangling"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "必恐蒙圖其後故也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "以治疾為名",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "必撤備兵，盡赴襄陽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "使白衣搖櫓，作商賈人服，晝夜兼行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "欲以肉餧虎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "雄烈，膽略兼人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "學問開益，籌略奇至，可以次於公瑾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "圖取關羽，勝於子敬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "勇而有謀，斷識軍計，譎郝普，禽關羽，最其妙者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "初雖輕果妄殺，終於克己，有國士之量，豈徒武將而已乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "貧賤難可居，脫誤有功，富貴可致。旦不探虎穴，安得虎子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "彼堅子何能為？此欲以肉餧虎耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "大怒，引刀殺吏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "陳列赫然，兵人練習",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "今東西雖為一家，而關羽實熊虎也，計安可不豫定",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "為肅畫五策",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "呂子明，吾不知卿才畧所及乃至於此也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "遂拜蒙母，結友而別",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "彼方首尾倒懸，救死不給",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "出書示之。因拊手大笑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "留凌公績，蒙與君行，解圍釋急，勢亦不久，蒙保公績能十日守也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "分遣三百人柴斷險道，賊走可得其馬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "騎皆捨馬步走",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "獲馬三百匹",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "地勢陸通，驍騎所聘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "後旬必來爭，雖以七八萬人守之，猶當懷憂。不如取羽，全據長江，形勢益張",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "盡得羽及將士家屬，皆撫慰，約令軍中不得乾歷人家，有所求取",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "不可以鄉里故而廢法，遂垂涕斬之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "於是軍中震慄，道不拾遺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "輒厚遇其使，周遊城中，家家致問",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "見待過於平時",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "故羽吏士無鬬心",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "眾皆委羽而降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "據前所立塢，置強弩萬張於其上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "皖田肥美，若一收孰，彼眾必增",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "手執枹鼓，士卒皆騰踴自升，食時破之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "年四十二，遂卒於內殿",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "君欲為祁奚耶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "天下未定，鬥將如寧難得，宜容忍之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "為擇師，使輔導之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "置強弩萬張",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "軍中震慄，道不拾遺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "勒前鋒，親梟就首",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "手執枹鼓，士卒皆騰踴自升",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "白衣搖櫓，作商賈人服",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "不如取羽，全據長江",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "旦暮使親近存卹耆老，問所不足，疾病者給醫藥，饑寒者賜衣糧",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "皆封閉以待權至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "誅其首惡，餘皆釋放，復為平民",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "少不修書傳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "拜蒙母，結友而別",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "將何計畧以備不虞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "關羽實熊虎也，計安可不豫定",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "首尾倒懸，救死不給",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "曾不移日，而城必破",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "令百歲老母，戴白受誅，豈不痛哉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "少不修書傳，每陳大事，常口占為箋疏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "露檄召蒙還，陰與圖計",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "諸將討擊不能禽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "鷙鳥累百，不如一鶚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "旦不探虎穴，安得虎子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "學問開益，籌略奇至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "豈徒武將而已乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "羽君臣，矜其詐力，所在反覆，不可以腹心待也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "宜相輔協，與之同仇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "帝王之起，皆有驅除，羽不足忌",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "內不能辦，外為大言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "常穿壁瞻之，見小能下食則喜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "命道士於星辰下為之請命",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "或手書示信",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    {
+      "book": "sanguozhi",
+      "title": "三國志/卷54",
+      "quote": "慕化遠來，於義宜益不宜奪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；全部史實引句對 repo 內固定修訂《三國志》卷54（周瑜魯肅呂蒙傳）正文全文比對。",
+    "搜尋僅得香港電台講義與通俗文章，未得學術論文摘要，正文未引用現代研究；「士別三日」等裴注《江表傳》故事未採用。"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_呂蒙_306154318",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:34:34.361Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "c52ffc2876d25148df1c075c878d5ff78882e149e9ad1c3089c89fea26a90eeb",
+  "rawResponseSha256": "c52ffc2876d25148df1c075c878d5ff78882e149e9ad1c3089c89fea26a90eeb",
+  "sourcePackageSha256": "344b87a634e72e799d135bdeee552dd244c2a2b0ec025d79a248ca0ad5c10c25",
+  "searchLogSha256": "bead6eb4828ebcefd5edac158c2edb832e625202af3f77d7715049e0ef2282e2",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754",
+      "title": "三國志·吴書·周瑜、魯肅、吕蒙傳",
+      "locator": "本機固定修訂 oldid=2387393 全文比對（textSha256 已驗）：必恐蒙圖其後故也、以治疾為名、必撤備兵，盡赴襄陽、使白衣搖櫓，作商賈人服，晝夜兼行、欲以肉餧虎、雄烈，膽略兼人…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "汝南富陂人、依鄧當、殺吏、畫五策、譎郝普、稱病白衣渡江、斬取笠者、年四十二卒於內殿，皆依三國志卷54 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：黃祖夷陵皖城濡須荊州；武力：親梟陳就與手執枹鼓；智謀：譎郝普、稱病、取羽不取徐；政治：存卹耆老與誅首惡；魅力：孫權穿壁瞻之與保三將遺孤。對照孫策、韋孝寬、關羽、陳慶之、李光弼。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "稱病→關羽撤兵；白衣→收縛屯候；家家致問→羽吏士無鬬心→委羽而降；取荊州→孫劉決裂（[推斷]）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    93,
+    82,
+    95,
+    72,
+    88
+  ]
+}

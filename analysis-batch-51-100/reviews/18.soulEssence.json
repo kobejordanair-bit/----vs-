@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_呂蒙_306154318",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:34:34.362Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e638d318f7ffbda49e24fe715acb5e9b54877e2212891cc8be9a5bc8be17c2ba",
+  "rawResponseSha256": "e638d318f7ffbda49e24fe715acb5e9b54877e2212891cc8be9a5bc8be17c2ba",
+  "sourcePackageSha256": "344b87a634e72e799d135bdeee552dd244c2a2b0ec025d79a248ca0ad5c10c25",
+  "searchLogSha256": "bead6eb4828ebcefd5edac158c2edb832e625202af3f77d7715049e0ef2282e2",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754",
+      "title": "三國志·吴書·周瑜、魯肅、吕蒙傳",
+      "locator": "本機固定修訂 oldid=2387393 全文比對（textSha256 已驗）：必恐蒙圖其後故也、以治疾為名、必撤備兵，盡赴襄陽、使白衣搖櫓，作商賈人服，晝夜兼行、欲以肉餧虎、雄烈，膽略兼人…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：讓對手低估自己、對部下比對敵人更嚴；場景為肉餧虎、畫五策、譎郝普拊手大笑、垂涕斬同鄉。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "豈徒武將為其所求、病發時無暇享功、把欺騙留給敵將，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以五策與郝普說辭、秘詔與稱病、探虎穴、圖羽與魯肅路線、三將遺孤與斬笠、虛實框架、欺敵與誠信為事件。"
+    }
+  ],
+  "materialIssues": []
+}
