@@ -1,0 +1,105 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_武則天_280599295",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:33:30.178Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2852502e8addb4901308ccc300f647c49064307c1c6c17ba939a115261e50027",
+  "rawResponseSha256": "2852502e8addb4901308ccc300f647c49064307c1c6c17ba939a115261e50027",
+  "sourcePackageSha256": "934ea32a287bfb0cf3cd38c758f26fdcd3d18d24f623d7c02556fff491da9085",
+  "searchLogSha256": "19bcce5e4c4ccb1014394bedbd360e862d07781297a64027802a3223b61571eb",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7206",
+      "title": "資治通鑑·卷二百六 唐紀二十二",
+      "locator": "本機固定修訂 oldid=1554189 全文比對（textSha256 已驗）：姑侄之與母子孰親、陛下立子，則千秋萬歲後，配食太廟、則未聞侄為天子而祔姑於廟者也、此朕家事，卿勿預知",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76",
+      "title": "舊唐書·本紀第六　則天皇后",
+      "locator": "本機固定修訂 oldid=2585366 全文比對（textSha256 已驗）：則天年十四時，太宗聞其美容止，召入宮，立為才人。及太宗崩，遂為尼，居感業寺、永徽六年，廢王皇后而立、多苦風疾，百司表奏，皆委天后詳決。自此內輔國政數十年，威勢與帝無異，當時稱為「二聖」、以匡復為辭、初置匭於朝堂，有進書言事者聽投之，由是人間善惡事多所知悉、革唐命，改國號為周…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7186%E4%B8%8A",
+      "title": "舊唐書·卷一百八十六上\n列傳第一百三十六上　酷吏上",
+      "locator": "本機固定修訂 oldid=2589923 全文比對（textSha256 已驗）：則天以女主臨朝，大臣未附；委政獄吏，剪除宗枝、於是來俊臣、索元禮、萬國俊、周興、生人屏息，莫能自固",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751",
+      "title": "舊唐書·后妃上",
+      "locator": "本機固定修訂 oldid=2646536 全文比對（textSha256 已驗）：願阿武為老鼠，吾作貓兒，生生扼其喉、自是宮中不畜貓",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7076",
+      "title": "新唐書·卷七十六\n列傳第一　后妃上",
+      "locator": "本機固定修訂 oldid=2574495 全文比對（textSha256 已驗）：昭儀潛斃兒衾下、頻見二人被髮瀝血為厲，惡之，以巫祝解謝，即徙蓬萊宮，厲復見，故多駐東都",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7204",
+      "title": "資治通鑑·卷二百四 唐紀二十",
+      "locator": "本機固定修訂 oldid=1553956 全文比對（textSha256 已驗）：太后策貢士於洛城殿。貢士殿試自此始",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "此朕家事、姑侄母子之論，通鑑卷206原文；狄仁傑反駁改為轉述，不加引號。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "徐敬業與置匭、營州與誅來俊臣，兩例相隔十二年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "改周與召廬陵王；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "酷吏傳序與營州二十八將，原文核對。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "不畜貓（舊唐書）與厲鬼（新唐書，註明後出）、遺制去帝號復業。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "置匭、殿試；營州歸因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "改周、召廬陵王、遺制，原文核對。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,216 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_武則天_280599295",
+  "packetSha256": "ee70b168c3dfab50b8910bb19a189d7b01ec1099e3bbf66acfba66b6f8cf83a9",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "陳寅恪 關隴集團 武則天 破壞 唐代政治史述論稿 科舉 新興階級",
+      "returnedUrls": [
+        "https://ncyuweb.ncyu.edu.tw/files/list/ncyuhg/隋唐史專題研究課程大綱.pdf",
+        "https://kansai-u.repo.nii.ac.jp/records/23179",
+        "https://www.aisixiang.com/data/123908.html",
+        "https://nccur.lib.nccu.edu.tw/handle/140.119/70996"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "武則天 扼殺女兒 史源 舊唐書未載 新唐書 資治通鑑 唐會要 安定公主 考辨",
+      "returnedUrls": [
+        "https://www2.ihp.sinica.edu.tw/file/643McEWUhb.pdf",
+        "https://input.cbdb.fas.harvard.edu/basicinformation/93663/sources",
+        "https://www.setn.com/news/718574",
+        "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/exploring_chinese_historical_figures_in_short_stories/Article_T3.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "則天年十四時，太宗聞其美容止，召入宮，立為才人。及太宗崩，遂為尼，居感業寺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "永徽六年，廢王皇后而立",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "多苦風疾，百司表奏，皆委天后詳決。自此內輔國政數十年，威勢與帝無異，當時稱為「二聖」",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "以匡復為辭",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "初置匭於朝堂，有進書言事者聽投之，由是人間善惡事多所知悉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "革唐命，改國號為周",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "加尊號曰聖神皇帝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "制官人者咸令自舉。殺文昌左相岑長倩、納言歐陽通、地官尚書格輔元",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "攻陷營州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "二十八將討之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "來俊臣以罪伏誅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "召廬陵王哲於房州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "令去帝號，稱則天大聖皇后",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "咸令復業",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "崩於上陽宮之仙居殿，年八十三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷6",
+      "quote": "李孝逸為大總管",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B76"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷51",
+      "quote": "願阿武為老鼠，吾作貓兒，生生扼其喉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷51",
+      "quote": "自是宮中不畜貓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷186上",
+      "quote": "則天以女主臨朝，大臣未附；委政獄吏，剪除宗枝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7186%E4%B8%8A"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷186上",
+      "quote": "於是來俊臣、索元禮、萬國俊、周興",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7186%E4%B8%8A"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷186上",
+      "quote": "生人屏息，莫能自固",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7186%E4%B8%8A"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷004",
+      "quote": "武威道行軍總管王孝傑敗吐蕃，克四鎮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7004"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷076",
+      "quote": "昭儀潛斃兒衾下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7076"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷076",
+      "quote": "頻見二人被髮瀝血為厲，惡之，以巫祝解謝，即徙蓬萊宮，厲復見，故多駐東都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7076"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷199",
+      "quote": "昭儀生女，后憐而弄之，后出，昭儀潛扼殺之，覆之以被",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7199"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷204",
+      "quote": "太后策貢士於洛城殿。貢士殿試自此始",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7204"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷206",
+      "quote": "姑侄之與母子孰親",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7206"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷206",
+      "quote": "陛下立子，則千秋萬歲後，配食太廟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7206"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷206",
+      "quote": "則未聞侄為天子而祔姑於廟者也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7206"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷206",
+      "quote": "此朕家事，卿勿預知",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7206"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; all citations in this record are primary texts verified against the repository's fixed-revision archive. The two WebSearches returned no scholarship strong enough to cite; the source-layer comparison of the infant-death story was done directly across 舊唐書卷6/卷51, 新唐書卷076 and 資治通鑑卷199 in the archive (string absent from the 舊唐書 chapters)."
+  ]
+}
