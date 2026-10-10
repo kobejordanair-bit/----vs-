@@ -75,12 +75,93 @@
         "https://en.wikipedia.org/wiki/Sun_Fo",
         "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke"
       ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 廣州市長 1921 首任 三任 市政建設 拆城牆 馬路",
+      "returnedUrls": [
+        "https://www.adh.journal.mantova.polimi.it/issue/heritage-cities-and-destruction-vol2/essay/destruction-of-urban-boundaries-in-historic-cities",
+        "https://repozytorium.p.lodz.pl/items/32f4e0fc-8c7e-4dd1-b4b1-024aff397fc2/full",
+        "https://www.newsgd.com/node_5c070fdd03/b556b15f7b.shtml",
+        "https://www.linkreit.com/tc/community/channel823/must-go/historical-photo-exhibition-takes-you-through-the-time-tunnel-between-guangzhou-and-hong-kong",
+        "https://graphbooks.com/products/progressive-canton"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1931年12月 行政院長 1932年1月 辭職 一個月",
+      "returnedUrls": [
+        "https://archontology.org/nations/china/china-roc/00_1928_48_g.php",
+        "https://oac.cdlib.org/data/13030/0n/kt2z09r50n/files/KMT_Zheng%2011.pdf",
+        "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke",
+        "https://en.wikipedia.com/wiki/Sun_Fo",
+        "https://en.wikipedia.org/wiki/Sun_Fo"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1948年 行政院長 任命 11月26日 就職 12月23日 立法院同意",
+      "returnedUrls": [
+        "https://www.nownews.com/news/6766616",
+        "https://archontology.org/nations/china/china-roc/00_1928_48_g.php",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c047-199712028.pdf",
+        "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke",
+        "https://en.wikipedia.com/wiki/Sun_Fo"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 立法院長 1933年1月 就職 民國二十二年 立法院 第三屆",
+      "returnedUrls": [
+        "https://ja.wikipedia.org/wiki/%E7%AB%8B%E6%B3%95%E9%99%A2%E9%99%A2%E9%95%B7",
+        "https://history.ey.gov.tw/author/sun-fo/",
+        "https://aam.ly.gov.tw/P000011_02.do/52",
+        "https://ja.wikipedia.org/wiki/%E5%AD%AB%E7%A7%91",
+        "https://zh.m.wikipedia.org/zh-hk/%E5%AD%AB%E7%A7%91",
+        "https://www.sunyat-sen.org/portal/article/index.html?id=29795&cid=299"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科內閣 1948年12月 組閣 宣誓就職 行政院長 翁文灝辭職",
+      "returnedUrls": [
+        "https://zh.wikipedia.org/wiki/%E5%AD%99%E7%A7%91",
+        "https://zh.wikipedia.org/zh-hk/%E7%BF%81%E6%96%87%E7%81%9D",
+        "https://zh.wikipedia.org/zh-tw/%E8%A1%8C%E6%94%BF%E9%99%A2%E9%99%A2%E9%95%B7%E5%9C%A8%E4%BB%BB%E6%99%82%E9%96%93%E6%8E%92%E8%A1%8C",
+        "https://zh.wikipedia.org/zh-hans/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AD%AB%E7%A7%91%E5%85%A7%E9%96%A3"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 廣州市長 1921 1923 1926 三度出任 市政 馬路 公園",
+      "returnedUrls": [
+        "https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%B7%9E%E5%B8%82%E5%B8%82%E9%95%BF%E5%88%97%E8%A1%A8",
+        "https://zh-yue.wikipedia.org/wiki/%E5%BB%A3%E5%B7%9E%E5%B8%82%E9%95%B7",
+        "https://zh-classical.wikipedia.org/wiki/%E5%AD%AB%E7%A7%91",
+        "https://zh.wikipedia.org/wiki/%E5%AD%99%E7%A7%91",
+        "https://baike.baidu.com/item/%E5%AD%99%E7%A7%91/697"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1938 1939 赴蘇聯 史達林 借款 中蘇文化協會 中蘇互不侵犯條約",
+      "returnedUrls": [
+        "https://chineseposters.net/resources/news-release-1939-04-13",
+        "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Ko_Sun",
+        "https://history.state.gov/historicaldocuments/frus1939v03/d238",
+        "https://mhdb.mh.sinica.edu.tw/fbc/entry/18th-december-1939",
+        "https://www.e-aoi.uzh.ch/apps/china-west/chronologies/37374"
+      ]
     }
   ],
   "archiveChecks": [],
   "pageReads": [],
   "limits": [
-    "孫科為近代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch 被代理拒絕），全部內容僅據搜尋結果摘要，正文以[史載：此據搜尋摘要]標示，摘要語句改以粗體不作引句。",
-    "國史館《孫科先生事略》、《國民大會實錄》副總統選舉票數、孫科日記與回憶錄均未讀；廣州市長任期只依行政院網站列1926-27，早年任期未補，須人工抽查。"
+    "孫科為近代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch ENOTFOUND、代理 403），本稿無 web_page_read，全部網路來源僅搜尋結果摘要（各來源 access 皆標 web_search_result_summary）；修訂1 已將正文逐句「此據搜尋摘要」提示移入本來源註記。",
+    "［修訂1］Codex 審查實讀之行政院履歷（民國21–37年任立法院長）與立法院小傳 PDF（1921首任廣州市長、先後三任；1933-01-06 正式就任；1948 行政院長記 12-23）本 session 無法開啟，正文以可查之搜尋摘要另行支持，未寫出 1 月 6 日此一精確日期。",
+    "［修訂1］廣州市長第三任年份（維基1926、百度1925）有出入，正文採維基；六局分工一點未能確定出自哪一筆結果。",
+    "［修訂1］對蘇外交：信貸數字出自 FRUS 電報摘要，電報未記孫科角色，正文明言信貸成果不能全歸於他；中蘇文化協會角色查無可核來源，未寫。",
+    "［修訂1］百科與新聞來源在 type 欄只能三選一，暫歸 official_institution，不代表其為官方機構。",
+    "國史館《孫科先生事略》、《國民大會實錄》副總統選舉票數、孫科日記與回憶錄均未讀。"
   ]
 }

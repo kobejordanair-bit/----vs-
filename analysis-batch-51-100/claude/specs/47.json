@@ -61,6 +61,76 @@
     "https://en.wikipedia.org/wiki/Sun_Fo",
     "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke"
    ]
+  },
+  {
+   "query": "孫科 廣州市長 1921 首任 三任 市政建設 拆城牆 馬路",
+   "returnedUrls": [
+    "https://www.adh.journal.mantova.polimi.it/issue/heritage-cities-and-destruction-vol2/essay/destruction-of-urban-boundaries-in-historic-cities",
+    "https://repozytorium.p.lodz.pl/items/32f4e0fc-8c7e-4dd1-b4b1-024aff397fc2/full",
+    "https://www.newsgd.com/node_5c070fdd03/b556b15f7b.shtml",
+    "https://www.linkreit.com/tc/community/channel823/must-go/historical-photo-exhibition-takes-you-through-the-time-tunnel-between-guangzhou-and-hong-kong",
+    "https://graphbooks.com/products/progressive-canton"
+   ]
+  },
+  {
+   "query": "孫科 1931年12月 行政院長 1932年1月 辭職 一個月",
+   "returnedUrls": [
+    "https://archontology.org/nations/china/china-roc/00_1928_48_g.php",
+    "https://oac.cdlib.org/data/13030/0n/kt2z09r50n/files/KMT_Zheng%2011.pdf",
+    "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke",
+    "https://en.wikipedia.com/wiki/Sun_Fo",
+    "https://en.wikipedia.org/wiki/Sun_Fo"
+   ]
+  },
+  {
+   "query": "孫科 1948年 行政院長 任命 11月26日 就職 12月23日 立法院同意",
+   "returnedUrls": [
+    "https://www.nownews.com/news/6766616",
+    "https://archontology.org/nations/china/china-roc/00_1928_48_g.php",
+    "https://www.cuhk.edu.hk/ics/21c/media/articles/c047-199712028.pdf",
+    "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke",
+    "https://en.wikipedia.com/wiki/Sun_Fo"
+   ]
+  },
+  {
+   "query": "孫科 立法院長 1933年1月 就職 民國二十二年 立法院 第三屆",
+   "returnedUrls": [
+    "https://ja.wikipedia.org/wiki/%E7%AB%8B%E6%B3%95%E9%99%A2%E9%99%A2%E9%95%B7",
+    "https://history.ey.gov.tw/author/sun-fo/",
+    "https://aam.ly.gov.tw/P000011_02.do/52",
+    "https://ja.wikipedia.org/wiki/%E5%AD%AB%E7%A7%91",
+    "https://zh.m.wikipedia.org/zh-hk/%E5%AD%AB%E7%A7%91",
+    "https://www.sunyat-sen.org/portal/article/index.html?id=29795&cid=299"
+   ]
+  },
+  {
+   "query": "孫科內閣 1948年12月 組閣 宣誓就職 行政院長 翁文灝辭職",
+   "returnedUrls": [
+    "https://zh.wikipedia.org/wiki/%E5%AD%99%E7%A7%91",
+    "https://zh.wikipedia.org/zh-hk/%E7%BF%81%E6%96%87%E7%81%9D",
+    "https://zh.wikipedia.org/zh-tw/%E8%A1%8C%E6%94%BF%E9%99%A2%E9%99%A2%E9%95%B7%E5%9C%A8%E4%BB%BB%E6%99%82%E9%96%93%E6%8E%92%E8%A1%8C",
+    "https://zh.wikipedia.org/zh-hans/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AD%AB%E7%A7%91%E5%85%A7%E9%96%A3"
+   ]
+  },
+  {
+   "query": "孫科 廣州市長 1921 1923 1926 三度出任 市政 馬路 公園",
+   "returnedUrls": [
+    "https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%B7%9E%E5%B8%82%E5%B8%82%E9%95%BF%E5%88%97%E8%A1%A8",
+    "https://zh-yue.wikipedia.org/wiki/%E5%BB%A3%E5%B7%9E%E5%B8%82%E9%95%B7",
+    "https://zh-classical.wikipedia.org/wiki/%E5%AD%AB%E7%A7%91",
+    "https://zh.wikipedia.org/wiki/%E5%AD%99%E7%A7%91",
+    "https://baike.baidu.com/item/%E5%AD%99%E7%A7%91/697"
+   ]
+  },
+  {
+   "query": "孫科 1938 1939 赴蘇聯 史達林 借款 中蘇文化協會 中蘇互不侵犯條約",
+   "returnedUrls": [
+    "https://chineseposters.net/resources/news-release-1939-04-13",
+    "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Ko_Sun",
+    "https://history.state.gov/historicaldocuments/frus1939v03/d238",
+    "https://mhdb.mh.sinica.edu.tw/fbc/entry/18th-december-1939",
+    "https://www.e-aoi.uzh.ch/apps/china-west/chronologies/37374"
+   ]
   }
  ],
  "archiveChecks": [],
@@ -113,25 +183,71 @@
    "locator": "WebSearch 結果摘要：1932年1月行政院長、1949後流亡香港歐洲美國、1965返台、1966-73考試院長、東吳董事長、1973年9月13日卒；部分待考",
    "type": "official_institution",
    "access": "web_search_result_summary"
+  },
+  "https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%B7%9E%E5%B8%82%E5%B8%82%E9%95%BF%E5%88%97%E8%A1%A8": {
+   "title": "維基百科〈廣州市市長列表〉",
+   "locator": "搜尋結果摘要（百科條目，非官方；類型欄僅三選一）：1921-02-15 廣州市政廳成立，孫科首任市長；1923-02-26 再任；1926-06 任市政委員會委員長。摘要整合多筆結果，六局分工一點之出處對應為判讀。",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://baike.baidu.com/item/%E5%AD%99%E7%A7%91/697": {
+   "title": "百度百科〈孫科〉條目",
+   "locator": "搜尋結果摘要（百科條目）：第二任期間拆除土地廟公開拍賣，所得撥作市政建設經費；並記三任年份為1921、1923、1925，與維基1926有出入。",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://ja.wikipedia.org/wiki/%E5%AD%AB%E7%A7%91": {
+   "title": "日文維基百科〈孫科〉條目",
+   "locator": "搜尋結果摘要（百科條目）：第4代立法院長，1932年任命，1933年1月正式就任；就任後組織憲法起草委員會。",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://zh.wikipedia.org/wiki/%E5%AD%99%E7%A7%91": {
+   "title": "中文維基百科〈孫科〉條目",
+   "locator": "搜尋結果摘要（百科條目）：1948-11-26 翁文灝辭職獲准、蔣提名孫科，立法院隔日表決通過；12-23 正式視事主持首次內閣會議；1949-03 去職由何應欽接任。",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://aam.ly.gov.tw/P000011_02.do/52": {
+   "title": "立法院議政博物館〈歷任院長問政專輯〉",
+   "locator": "搜尋結果摘要：民國37年5月17日當選行憲後第一任立法院長，任至同年12月24日。",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://mhdb.mh.sinica.edu.tw/fbc/entry/18th-december-1939": {
+   "title": "中研院近史所數位典藏 1939年12月18日日記條目",
+   "locator": "搜尋結果摘要：孫科向會議報告與蘇聯等國聯絡情況，與米高揚、伏羅希洛夫談判進行順利；莫洛托夫曾要求與孫科會面。日記作者未見於摘要。",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://history.state.gov/historicaldocuments/frus1939v03/d238": {
+   "title": "美國外交文件 FRUS 1939 第三卷 893.51/6985 電報",
+   "locator": "搜尋結果摘要：美國駐蘇大使史坦哈特1939年9月電報，蘇聯對華援助以長期低利信貸為主，前一年六月授予近2億美元，累計約5億美元；未記孫科角色。",
+   "type": "primary_text",
+   "access": "web_search_result_summary"
   }
  },
  "limits": [
-  "孫科為近代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch 被代理拒絕），全部內容僅據搜尋結果摘要，正文以[史載：此據搜尋摘要]標示，摘要語句改以粗體不作引句。",
-  "國史館《孫科先生事略》、《國民大會實錄》副總統選舉票數、孫科日記與回憶錄均未讀；廣州市長任期只依行政院網站列1926-27，早年任期未補，須人工抽查。"
+  "孫科為近代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch ENOTFOUND、代理 403），本稿無 web_page_read，全部網路來源僅搜尋結果摘要（各來源 access 皆標 web_search_result_summary）；修訂1 已將正文逐句「此據搜尋摘要」提示移入本來源註記。",
+  "［修訂1］Codex 審查實讀之行政院履歷（民國21–37年任立法院長）與立法院小傳 PDF（1921首任廣州市長、先後三任；1933-01-06 正式就任；1948 行政院長記 12-23）本 session 無法開啟，正文以可查之搜尋摘要另行支持，未寫出 1 月 6 日此一精確日期。",
+  "［修訂1］廣州市長第三任年份（維基1926、百度1925）有出入，正文採維基；六局分工一點未能確定出自哪一筆結果。",
+  "［修訂1］對蘇外交：信貸數字出自 FRUS 電報摘要，電報未記孫科角色，正文明言信貸成果不能全歸於他；中蘇文化協會角色查無可核來源，未寫。",
+  "［修訂1］百科與新聞來源在 type 欄只能三選一，暫歸 official_institution，不代表其為官方機構。",
+  "國史館《孫科先生事略》、《國民大會實錄》副總統選舉票數、孫科日記與回憶錄均未讀。"
  ],
  "checks": {
   "analysisStats": [
    [
     "identity-date",
-    "廣州市長、財政部長、鐵道部長、1931-48立法院長、1932年1月與1948-49兩度行政院長、1948副總統選舉四輪落敗、1965資政、1966-73考試院長、1973年9月卒，皆據行政院網站與搜尋摘要。"
+    "廣州市長、財政部長、鐵道部長、1931-48立法院長、1932年1月與1948-49兩度行政院長、1948副總統選舉四輪落敗、1965資政、1966-73考試院長、1973年9月卒，皆據行政院網站與搜尋摘要。［修訂1］立法院長改為1932任命、1933年1月正式就任、行憲後至1948-12-24（原誤換算為1931–1948）；補1921/1923/1926三任廣州市長與1932-01首次行政院長；1948年區分11-26提名同意與12-23正式視事。"
    ],
    [
     "five-dimensions",
-    "統率：憲法起草委員會與部會；武力：無；智謀：民主主張與均權設計；政治：長任立法院長與兩度短命組閣；魅力：國父之子名望與選舉落敗。對照張廷玉、張之洞、周恩來、汪精衛。"
+    "統率：憲法起草委員會與部會；武力：無；智謀：民主主張與均權設計；政治：長任立法院長與兩度短命組閣；魅力：國父之子名望與選舉落敗。對照張廷玉、張之洞、周恩來、汪精衛。［修訂1］補廣州市政、對蘇談判後重評：智謀64→66、政治70→74；統率與魅力理由補事件但分數不調；魅力刪「缺乏自己的派系」此一過強說法。"
    ],
    [
     "causality",
-    "1933組憲草委員會→1936五五憲草→抗戰延宕→政協重議；1948蔣屬意參選→四輪落敗李宗仁→蔣授意組閣→不足四月去職；1949後海外漂泊→1965返台→考試院長。"
+    "1933組憲草委員會→1936五五憲草→抗戰延宕→政協重議；1948蔣屬意參選→四輪落敗李宗仁→蔣授意組閣→不足四月去職；1949後海外漂泊→1965返台→考試院長。［修訂1］功過剖析改為「次一層舞台有成、頂層權力屢敗」，以四項功績（市政、憲草、對蘇、立法院）與三項局限重寫，非僅加履歷清單。"
    ]
   ],
   "soulEssence": [
@@ -145,7 +261,7 @@
    ],
    [
     "seven-fields",
-    "七欄各以民主主張與吞吞吐吐、被推上台與1932月餘、三階段立法與考試院東吳、條文與一九三二汪精衛接任、四輪投票與海外漂泊、權能區分與選票軍事、五院走遍而無權為事件。"
+    "七欄各以民主主張與吞吞吐吐、被推上台與1932月餘、三階段立法與考試院東吳、條文與一九三二汪精衛接任、四輪投票與海外漂泊、權能區分與選票軍事、五院走遍而無權為事件。［修訂1］壓力反應改正任期描述；核心驅動補1921市政作為地方自治試行；內在裂縫補任務明確位置（廣州、莫斯科）之對照。"
    ]
   ]
  }

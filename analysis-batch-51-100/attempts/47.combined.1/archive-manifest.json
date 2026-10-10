@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "47",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：立法院長任期誤換算為1931–1948、漏早期廣州市長三任與1932首次行政院長、1948日期未區分提名與視事；補對蘇外交後重寫功過，智謀64→66、政治70→74",
+  "files": {
+    "47.analysisStats.raw.md": "f5d7690ed478f30f81738cc223315181475d249fdd3d4a25d0e0905898560a2a",
+    "47.combined.raw.md": "6658f64d638decbc561cab6852f8531058db79f636b09eeb55db1000126c557d",
+    "47.soulEssence.raw.md": "e5178cc632a7052ba8d7f0f842633d4cf85d69651adb7821eb557a47baa4f463",
+    "47.combined.capture.json": "ba403564ff55b0850a230239560604c74ac9dfe126a33b946f0a2c39a4240962",
+    "47.stats.json": "44fb6ddbbf1977c1369c7c898d0a8b758dae2bfd1bc8d00ac5873cc57993ff2a",
+    "47.combined.search-log.json": "13d62224e577ede2d36c90a8e95ffe92ecc939979a63de4a5c6a77a570d54a7f",
+    "47.statsAnalysis.md": "69e804f24e5a0ab4f54f733e6bfaf1af18ca1d2fdee1a56a8d7e8eb6fdc0d69a",
+    "47.soulEssence.response.md": "e5178cc632a7052ba8d7f0f842633d4cf85d69651adb7821eb557a47baa4f463",
+    "47.analysisStats.response.md": "f5d7690ed478f30f81738cc223315181475d249fdd3d4a25d0e0905898560a2a",
+    "47.analysis.md": "8d6cf4e918dc846a985cc58e88da7d328984d4d57794e6daa4eef98985c7c97c",
+    "47.analysisStats.capture.json": "fa64a6a5f81ed59fce5e728a5f88e2dd201101feac9e54027df786ba39134067",
+    "47.soulEssence.capture.json": "1ebf235a0b8ebb1f383c177b613909ab48041bebf82eb21b82ea476a84c84a01",
+    "47.soulEssence.md": "1829026ca9de67e517d1d612acf6def0b84d28b7c4124969a26aca48de170fd2",
+    "47.soulEssence.json": "c1b779b1e8606f1379fe5784bb5d0cb336c60feb0f478415fd58f74b873dede9",
+    "47.analysisStats.json": "b74748f037d0dd0caa93529865968e24bd68f6b4bed513e9e5522313074949c7",
+    "results.47-47.v1.json": "7fb8fdf88ee51f4b2ec163efe2dd59967885d2a0dd8ca979eb2cfcd6c75ea305",
+    "spec.47.json": "9df2d17a9537c543070f521d9131e8c021ff976fcdb8eabe7e595410a59bee9d",
+    "spec.47.quotes.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}
