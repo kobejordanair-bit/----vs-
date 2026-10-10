@@ -1,0 +1,86 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_周恩來_1990120203",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:43:11.552Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b0c9fea6224c239b6b4ba903154e7463e6c831179f1e10a5796d1a6e56621304",
+  "rawResponseSha256": "b0c9fea6224c239b6b4ba903154e7463e6c831179f1e10a5796d1a6e56621304",
+  "sourcePackageSha256": "46ebfac5b5d762b09734760c7fcc5d697b63c5fa93506d50c7a873ec6ca6807e",
+  "searchLogSha256": "8c5863f800f78a36e3e7df7baf7d647fa5a430ff8c99e171f11474acd2c5e7ab",
+  "checkedSources": [
+    {
+      "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
+      "title": "外交部〈歷任外交部長：周恩來〉",
+      "locator": "來源包已記錄先前核讀：總理、外長任期及日內瓦、萬隆、中美交往等官方履歷；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677244/1209_677254/200504/t20050415_9308093.shtml",
+      "title": "外交部〈周恩來總理在萬隆機場發表的談話〉（1955年4月17日）",
+      "locator": "來源包已記錄先前核讀：短篇談話全文，和平合作目標與代表團遭破壞事件之損失；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.fmprc.gov.cn/web/zyxw/200504/t20050415_284641.shtml",
+      "title": "外交部〈周恩來總理在亞非會議全體會議上的補充發言〉（1955年4月19日）",
+      "locator": "來源包已記錄先前核讀：發言前半部求同存異、共同基礎、宗教與制度差異段落；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.marxists.org/chinese/zhouenlai/151.htm",
+      "title": "中文馬克思主義文庫〈關於保護幹部的若干文電〉（周恩來）",
+      "locator": "WebSearch 結果摘要：要求保護章士釗住宅、命醫院準備接收多位民主人士入院保護",
+      "type": "primary_text",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "周恩來，名臣維度；保留原 S 評級與 deepAnalysis。"
+    },
+    {
+      "id": "bandung",
+      "passed": true,
+      "detail": "萬隆機場談話與補充發言依來源包記錄；求同存異作談判結構分析。"
+    },
+    {
+      "id": "admin",
+      "passed": true,
+      "detail": "反冒進與檢討、調整時期屬通行史實。"
+    },
+    {
+      "id": "cultural-revolution",
+      "passed": true,
+      "detail": "保護幹部依文電摘要；高文謙與鄧小平兩種評價並陳，未作定論。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[80,40,95,98,98] 對照諸葛亮(名臣)[88,35,92,100,95]、鄧小平[92,75,95,98,85]、姚崇[78,68,97,96,88]、管仲[88,45,98,100,92]、周公旦[96,55,99,100,98]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    80,
+    40,
+    95,
+    98,
+    98
+  ]
+}

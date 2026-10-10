@@ -1,0 +1,37 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_周恩來_1990120203",
+  "packetSha256": "0d59c1f98405e507ecda98494f1d70f6bbb70037e6675fab6bbeb296158b1457",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "周恩來 文化大革命 角色 研究 保護幹部 責任 高文謙 晚年周恩來 學術評價",
+      "returnedUrls": [
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200808053.pdf",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c131-201112018.pdf",
+        "https://www.marxists.org/chinese/zhouenlai/151.htm",
+        "https://chinadigitaltimes.net/chinese/548721.html",
+        "https://news.ifeng.com/history/2/shidian/200803/0305_2666_426837.shtml"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "周恩來 1972 尼克森訪華 上海公報 談判 1976年1月8日 逝世 國務院總理 1949-1976 官方",
+      "returnedUrls": [
+        "https://www.storm.mg/article/228896",
+        "https://www.ourchinastory.com/zh/3503",
+        "https://newtalk.tw/news/view/2022-05-21/758491"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. fmprc pages relied on only for propositions recorded by the handoff package; marxists.org via WebSearch summary.",
+    "旅歐、黃埔、南昌起義、遵義會議、1956反冒進與1958檢討、大躍進饑荒、林彪事件、批林批孔、四屆人大四個現代化、1976年逝世與四五悼念、上海公報各自表述屬通行史實，未附連結。",
+    "高文謙《晚年周恩來》與鄧小平1980年談話僅依搜尋摘要轉述其基本立場，未核原書原文，正文不引原句；cppcc.gov.cn 為 http，未引用。官方讚詞中的心理描述不作已證實陳述。"
+  ]
+}

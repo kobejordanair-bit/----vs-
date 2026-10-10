@@ -1,0 +1,89 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_周恩來_1990120203",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:43:11.553Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "d357e56238e54e383840a6edffacadc547f9665f125e6a8f08e572feb26ef736",
+  "rawResponseSha256": "d357e56238e54e383840a6edffacadc547f9665f125e6a8f08e572feb26ef736",
+  "sourcePackageSha256": "46ebfac5b5d762b09734760c7fcc5d697b63c5fa93506d50c7a873ec6ca6807e",
+  "searchLogSha256": "8c5863f800f78a36e3e7df7baf7d647fa5a430ff8c99e171f11474acd2c5e7ab",
+  "checkedSources": [
+    {
+      "url": "https://www.fmprc.gov.cn/web/zyxw/200504/t20050415_284641.shtml",
+      "title": "外交部〈周恩來總理在亞非會議全體會議上的補充發言〉（1955年4月19日）",
+      "locator": "來源包已記錄先前核讀：發言前半部求同存異、共同基礎、宗教與制度差異段落；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677244/1209_677254/200504/t20050415_9308093.shtml",
+      "title": "外交部〈周恩來總理在萬隆機場發表的談話〉（1955年4月17日）",
+      "locator": "來源包已記錄先前核讀：短篇談話全文，和平合作目標與代表團遭破壞事件之損失；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.marxists.org/chinese/zhouenlai/151.htm",
+      "title": "中文馬克思主義文庫〈關於保護幹部的若干文電〉（周恩來）",
+      "locator": "WebSearch 結果摘要：要求保護章士釗住宅、命醫院準備接收多位民主人士入院保護",
+      "type": "primary_text",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml",
+      "title": "外交部〈歷任外交部長：周恩來〉",
+      "locator": "來源包已記錄先前核讀：總理、外長任期及日內瓦、萬隆、中美交往等官方履歷；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "萬隆發言；國內妥協標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "萬隆機場與文革保護文電，相隔十餘年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "總理外長任期；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "反冒進檢討標[推斷]；兩種評價並陳標[詮釋]。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "萬隆與文電；心理標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "談判桌參照；國內失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "大躍進與文革；違心之語標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,108 @@
+{
+ "webSearches": [
+  {
+   "query": "周恩來 文化大革命 角色 研究 保護幹部 責任 高文謙 晚年周恩來 學術評價",
+   "returnedUrls": [
+    "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200808053.pdf",
+    "https://www.cuhk.edu.hk/ics/21c/media/articles/c131-201112018.pdf",
+    "https://www.marxists.org/chinese/zhouenlai/151.htm",
+    "https://chinadigitaltimes.net/chinese/548721.html",
+    "https://news.ifeng.com/history/2/shidian/200803/0305_2666_426837.shtml"
+   ]
+  },
+  {
+   "query": "周恩來 1972 尼克森訪華 上海公報 談判 1976年1月8日 逝世 國務院總理 1949-1976 官方",
+   "returnedUrls": [
+    "https://www.storm.mg/article/228896",
+    "https://www.ourchinastory.com/zh/3503",
+    "https://newtalk.tw/news/view/2022-05-21/758491"
+   ]
+  }
+ ],
+ "archiveChecks": [],
+ "extraSources": {
+  "https://www.fmprc.gov.cn/web/zyxw/200504/t20050415_284641.shtml": {
+   "title": "外交部〈周恩來總理在亞非會議全體會議上的補充發言〉（1955年4月19日）",
+   "locator": "來源包已記錄先前核讀：發言前半部求同存異、共同基礎、宗教與制度差異段落；本 session 未重新開啟",
+   "type": "primary_text",
+   "access": "source_package_prior_review"
+  },
+  "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677244/1209_677254/200504/t20050415_9308093.shtml": {
+   "title": "外交部〈周恩來總理在萬隆機場發表的談話〉（1955年4月17日）",
+   "locator": "來源包已記錄先前核讀：短篇談話全文，和平合作目標與代表團遭破壞事件之損失；本 session 未重新開啟",
+   "type": "primary_text",
+   "access": "source_package_prior_review"
+  },
+  "https://www.fmprc.gov.cn/web/ziliao_674904/wjrw_674925/2166_674931/200805/t20080509_9880973.shtml": {
+   "title": "外交部〈歷任外交部長：周恩來〉",
+   "locator": "來源包已記錄先前核讀：總理、外長任期及日內瓦、萬隆、中美交往等官方履歷；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.marxists.org/chinese/zhouenlai/151.htm": {
+   "title": "中文馬克思主義文庫〈關於保護幹部的若干文電〉（周恩來）",
+   "locator": "WebSearch 結果摘要：要求保護章士釗住宅、命醫院準備接收多位民主人士入院保護",
+   "type": "primary_text",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "No classical archive applies; page fetches remain blocked. fmprc pages relied on only for propositions recorded by the handoff package; marxists.org via WebSearch summary.",
+  "旅歐、黃埔、南昌起義、遵義會議、1956反冒進與1958檢討、大躍進饑荒、林彪事件、批林批孔、四屆人大四個現代化、1976年逝世與四五悼念、上海公報各自表述屬通行史實，未附連結。",
+  "高文謙《晚年周恩來》與鄧小平1980年談話僅依搜尋摘要轉述其基本立場，未核原書原文，正文不引原句；cppcc.gov.cn 為 http，未引用。官方讚詞中的心理描述不作已證實陳述。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "周恩來，名臣維度；保留原 S 評級與 deepAnalysis。"
+   ],
+   [
+    "bandung",
+    "萬隆機場談話與補充發言依來源包記錄；求同存異作談判結構分析。"
+   ],
+   [
+    "admin",
+    "反冒進與檢討、調整時期屬通行史實。"
+   ],
+   [
+    "cultural-revolution",
+    "保護幹部依文電摘要；高文謙與鄧小平兩種評價並陳，未作定論。"
+   ],
+   [
+    "stats-calibration",
+    "[80,40,95,98,98] 對照諸葛亮(名臣)[88,35,92,100,95]、鄧小平[92,75,95,98,85]、姚崇[78,68,97,96,88]、管仲[88,45,98,100,92]、周公旦[96,55,99,100,98]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "萬隆發言；國內妥協標[推斷]。"
+   ],
+   [
+    "pressure",
+    "萬隆機場與文革保護文電，相隔十餘年。"
+   ],
+   [
+    "drive",
+    "總理外長任期；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "反冒進檢討標[推斷]；兩種評價並陳標[詮釋]。"
+   ],
+   [
+    "emotion",
+    "萬隆與文電；心理標[詮釋]。"
+   ],
+   [
+    "frame",
+    "談判桌參照；國內失準標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "大躍進與文革；違心之語標[詮釋]。"
+   ]
+  ]
+ }
+}
