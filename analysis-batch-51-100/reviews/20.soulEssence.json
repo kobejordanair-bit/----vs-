@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_王保保_908147860",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:39:49.847Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "d16de75fe53d7313727be1dcf6e5189481c0400b28221ea3c17838ab9076ca68",
+  "rawResponseSha256": "d16de75fe53d7313727be1dcf6e5189481c0400b28221ea3c17838ab9076ca68",
+  "sourcePackageSha256": "2e693cc40ed4f7d8194b75b7eef272ce4693d3249641f2f39ba562288ab4d812",
+  "searchLogSha256": "a223d67e0327b6462fedfa9337dc45595fefb8446f7bedb92e97c22673c7134c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124",
+      "title": "明史·卷一百二十四 列傳第十二",
+      "locator": "本機固定修訂 oldid=2594743 全文比對（textSha256 已驗）：天下奇男子誰也、將不過萬人，橫行無敵，真奇男子、遇春雖人傑，吾得而臣之。吾不能臣王保保，其人奇男子也、主帥有命，請公留一物為別、本王姓，小字保保、汝、潁盜起，中原大亂…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141",
+      "title": "元史·列傳第二十八",
+      "locator": "本機固定修訂 oldid=2220618 全文比對（textSha256 已驗）：銜哀以討賊，攻城益急、取田豐、王士誠之心以祭其父、知其意，比至京城三十里，即散遣其軍、夜出師薄其營掩擊之、廬墓以終喪、數請戰，擴廓帖木兒不應…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：仗多打在自己人身上、亡國後才找到真正對手；場景為剖心祭父、散遣其軍、若發未燥、七書不答與斷臂。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "流木渡河為最脆弱時刻、失去一切後忠誠不再被懷疑，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以何討賊為與七書不答、平陽與嶺北、復仇與拒降、檄四將與貊高軍變、毛氏與蔡子英、總兵大帥框架、忠而見疑為事件。"
+    }
+  ],
+  "materialIssues": []
+}

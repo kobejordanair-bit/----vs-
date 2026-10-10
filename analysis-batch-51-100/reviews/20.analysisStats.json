@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_王保保_908147860",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:39:49.846Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "6dfa8585587e62db5cf9272bb3dd8b2c083ea1705fbaa9050d7f1696b3cf5feb",
+  "rawResponseSha256": "6dfa8585587e62db5cf9272bb3dd8b2c083ea1705fbaa9050d7f1696b3cf5feb",
+  "sourcePackageSha256": "2e693cc40ed4f7d8194b75b7eef272ce4693d3249641f2f39ba562288ab4d812",
+  "searchLogSha256": "a223d67e0327b6462fedfa9337dc45595fefb8446f7bedb92e97c22673c7134c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124",
+      "title": "明史·卷一百二十四 列傳第十二",
+      "locator": "本機固定修訂 oldid=2594743 全文比對（textSha256 已驗）：天下奇男子誰也、將不過萬人，橫行無敵，真奇男子、遇春雖人傑，吾得而臣之。吾不能臣王保保，其人奇男子也、主帥有命，請公留一物為別、本王姓，小字保保、汝、潁盜起，中原大亂…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ah.lib.nccu.edu.tw/handle/140.119/92999",
+      "title": "鍾雲校《明初與北元關係之研究（1368-1464）》（政治大學碩士論文，1979），政大學術集成",
+      "locator": "WebSearch 結果摘要：僅題名與關鍵詞，正文只據題名指出有北元關係專論",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141",
+      "title": "元史·列傳第二十八",
+      "locator": "本機固定修訂 oldid=2220618 全文比對（textSha256 已驗）：銜哀以討賊，攻城益急、取田豐、王士誠之心以祭其父、知其意，比至京城三十里，即散遣其軍、夜出師薄其營掩擊之、廬墓以終喪、數請戰，擴廓帖木兒不應…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "沈丘人本姓王、察罕甥與養子、破益都祭父、討孛羅、拒擁太子逼宮、西攻李思齊、擒貊高關保、太原十八騎北走、沈兒峪、嶺北大敗明軍、洪武八年卒，皆依明史卷124 與元史卷141 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：益都、大同、平陽、嶺北與太原沈兒峪之敗；武力：絕境脫身；智謀：平陽夜襲與檄四將之誤；政治：拒逼宮與跋扈之跡；魅力：奇男子與蔡子英。對照爾朱榮、李光弼、僕固懷恩、袁崇煥、王忠嗣。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "拒逼宮→太子銜之、順帝心忌；檄李思齊→內戰經年；貊高叛→撫軍院；內耗→明軍北伐乘虛（[推斷]）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    92,
+    80,
+    85,
+    50,
+    85
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_王保保_908147860",
+  "packetSha256": "54ab20fe1a45bdf21b8794687ca5fc60b5badd459cb3b84a9430c63c5a4ddcfa",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "擴廓帖木兒 王保保 嶺北之戰 1372 徐達 北元 研究 論文",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/K%C3%B6ke_Tem%C3%BCr",
+        "https://www.wikipedia.org/wiki/Koketemur",
+        "https://zh.wikisource.org/zh-hant/%E5%9C%8B%E5%88%9D%E7%BE%A4%E9%9B%84%E4%BA%8B%E7%95%A5/%E5%8D%B711",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0066283",
+        "https://wuxiasociety.com/koke-temur/",
+        "https://wuxiasociety.com/wang-baobao/",
+        "https://m.thepaper.cn/newsDetail_forward_31970858",
+        "https://chinesenotes.com/analysis/mingshi/mingshi124_analysis.html",
+        "https://ah.lib.nccu.edu.tw/handle/140.119/92999"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "天下奇男子誰也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "將不過萬人，橫行無敵，真奇男子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "遇春雖人傑，吾得而臣之。吾不能臣王保保，其人奇男子也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "主帥有命，請公留一物為別",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "本王姓，小字保保",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "汝、潁盜起，中原大亂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "朝廷下詔和解，終不聽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "太祖已滅陳友諒，盡有江、楚地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "戰河南、北，擊賊關中、河東，復汴梁，走劉福通，平山東",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "穴地而入，克之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "執豐、士誠，剖其心以祭察罕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "銜哀以討賊，攻城益急",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "取田豐、王士誠之心以祭其父",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "以萬騎入衛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "以太子令舉兵討孛羅，入大同，進薄大都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "當是時，微擴廓，太子幾殆",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "以重兵擁太子入城，脅順帝禪位",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "留其軍，以數騎入朝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "知其意，比至京城三十里，即散遣其軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "由是太子銜之，而順帝亦心忌擴廓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "吾與若父交，若發未燥，敢檄我耶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "吾奉詔總天下兵，而鎮將不受節制，何討賊為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "相持經年，數百戰未能決",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "夜出師薄其營掩擊之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "戰于韓店，明師大敗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "乘虛搗太原",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "倉卒以十八騎北走",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "盡亡其眾，獨與妻子數人北走，至黃河，得流木以渡，遂奔和林",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "大敗，死者數萬人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "吾用兵未嘗敗北。今諸將自請深入，敗于和林，輕信無謀，致多殺士卒，不可不戒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "明兵希出塞矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "命諸將嚴為之備",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "廬墓以終喪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "鹵簿甲仗互數十里，軍容甚盛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "凡七致書，皆不答",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "數請戰，擴廓帖木兒不應",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "入大同，進薄大都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "死者數萬人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "得流木以渡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "諜知貊高分軍掠祁縣，即夜出師薄其營掩擊之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "南軍強，未可輕進",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "分省以自隨，官屬之盛，幾與朝廷等",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "冊其妹為秦王妃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "輒留使者不遣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "yuanshi",
+      "title": "元史/卷141",
+      "quote": "數請戰，擴廓帖木兒不應，或師出即復退",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7141"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "剖其心以祭察罕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "出不意搗鳳翔，覆思齊巢穴",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "行至衛輝，軍變",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "罪狀擴廓於朝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "名義所存，不敢輒渝初志",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "鹵簿甲仗互數十里",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷124",
+      "quote": "微擴廓，太子幾殆",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7124"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；全部史實引句對 repo 內固定修訂《明史》卷124 與《元史》卷141 全文比對。",
+    "搜尋未得嶺北之戰專題研究摘要；嶺北戰況僅依《明史》本傳。"
+  ]
+}
