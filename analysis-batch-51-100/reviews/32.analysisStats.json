@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_蒙恬_306528682",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:10:11.578Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "1083edae602b7e8af245094c16ecd87c56446bfc61eec6028e4dd26f278e1fee",
+  "rawResponseSha256": "1083edae602b7e8af245094c16ecd87c56446bfc61eec6028e4dd26f278e1fee",
+  "sourcePackageSha256": "3fc6f6c527bce07d3c58bfcc30c808ab25fd1069ed04cbe6d4767ca07a0d1a33",
+  "searchLogSha256": "bb75d736ac9dd98bf2396dd5e0ded46b663c67dc19955b550f4b734640e35f87",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7088",
+      "title": "史記·卷八十八 蒙恬列傳 第二十八",
+      "locator": "本機固定修訂 oldid=1965690 全文比對（textSha256 已驗）：今臣將兵三十餘萬，身雖囚系，其勢足以倍畔，然自知必死而守義者，不敢辱先人之教，以不忘先主也、我何罪於天，無過而死乎、恬罪固當死矣。起臨洮屬之遼東，城塹萬餘里，此其中不能無絕地脈哉？此乃恬之罪也、固輕百姓力矣、何乃罪地脈哉、自齊事秦昭王，官至上卿…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006",
+      "title": "史記·卷六 秦始皇本紀 第六",
+      "locator": "本機固定修訂 oldid=7907969 全文比對（textSha256 已驗）：亡秦者胡也、始皇乃使將軍蒙恬發兵三十萬人北擊胡，略取河南地、自榆中并河以東，屬之陰山，以為三十四縣，城河上為塞、渡河取高闕、陽山、北假中，筑亭障以逐戎人、徙謫，實之初縣、城河上為塞…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087",
+      "title": "史記·卷八十七 李斯列傳 第二十七",
+      "locator": "本機固定修訂 oldid=2364605 全文比對（textSha256 已驗）：以兵屬蒙恬，與喪會咸陽而葬、功高孰與蒙恬？謀遠不失孰與蒙恬？無怨於天下孰與蒙恬？長子舊而信之孰與蒙恬、以兵屬蒙恬、無怨於天下、以數直諫上",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "蒙驁蒙武三代、始皇二十六年攻齊拜內史、三十萬北逐戎狄收河南、築長城直道、居上郡十餘年、扶蘇監軍、三十七年沙丘之變、囚陽周、吞藥自殺，皆依史記卷88/6/87 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：三十萬北逐與駐防工程；武力：家世將門、無陷陣紀錄；智謀：因地形用制險塞、城河為塞、周公之諫；政治：內史、忠信莫敢爭、以兵屬蒙恬；魅力：尊寵與無怨於天下。對照王翦、衛青、李牧、霍去病、白起。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "毅法治趙高→高怨蒙氏；始皇崩→趙高李斯胡亥陰謀→賜扶蘇蒙恬死→扶蘇自殺、恬疑而復請→屬吏囚陽周→胡亥欲釋→趙高恐復貴毀惡→殺毅→使者至→恬守義吞藥。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    70,
+    76,
+    72,
+    80
+  ]
+}

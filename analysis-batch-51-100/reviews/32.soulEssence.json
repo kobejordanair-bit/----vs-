@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_蒙恬_306528682",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:10:11.579Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "d9f7f5e75dd42b5ee1e1dcd47e74b5cfda30f13a94fa4d8b4f9f71782a0a06f9",
+  "rawResponseSha256": "d9f7f5e75dd42b5ee1e1dcd47e74b5cfda30f13a94fa4d8b4f9f71782a0a06f9",
+  "sourcePackageSha256": "3fc6f6c527bce07d3c58bfcc30c808ab25fd1069ed04cbe6d4767ca07a0d1a33",
+  "searchLogSha256": "bb75d736ac9dd98bf2396dd5e0ded46b663c67dc19955b550f4b734640e35f87",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7088",
+      "title": "史記·卷八十八 蒙恬列傳 第二十八",
+      "locator": "本機固定修訂 oldid=1965690 全文比對（textSha256 已驗）：今臣將兵三十餘萬，身雖囚系，其勢足以倍畔，然自知必死而守義者，不敢辱先人之教，以不忘先主也、我何罪於天，無過而死乎、恬罪固當死矣。起臨洮屬之遼東，城塹萬餘里，此其中不能無絕地脈哉？此乃恬之罪也、固輕百姓力矣、何乃罪地脈哉、自齊事秦昭王，官至上卿…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：建造者多於戰鬥者，手握三十萬守義赴死，罪地脈而未見輕百姓力；場景為其勢足以倍畔、我何罪於天、絕地脈、太史公何乃罪地脈。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "三代忠信包袱、只對上負責、引周公之忠而不學周公之走等皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以周公之諫與使者之答、疑而復請與即欲釋、積功信三世與扶蘇、阿意興功與地脈、兄弟與我何罪於天、周公成王、長城之罪為事件。"
+    }
+  ],
+  "materialIssues": []
+}
