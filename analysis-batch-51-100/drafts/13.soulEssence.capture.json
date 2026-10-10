@@ -1,0 +1,39 @@
+{
+  "format": "dynasty-batch50-claude-capture",
+  "schemaVersion": 1,
+  "provider": "Claude Code (Anthropic)",
+  "recordId": "emperor_同治帝_286132953",
+  "slug": "13",
+  "task": "soulEssence",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T11:19:07.584Z",
+  "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
+  "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+  "combinedPacketSha256": "9857f51c435afc34ef3e430df12167b5abd277855c5f0de5407b2288e219029c",
+  "requestSha256": "f73411c74e7fc3222f7a4873b5a4cc870187c3bbba7e9068d1a6d5ecb266e20d",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "inputSha256": "f18278c4dcb601b29a70c3b70864f37b25a83a12b94b43914c1d47d019ca0040",
+  "promptSha256": "5afce2341cd9d21a52c1018f5b3b448264be048a8561254800e6916b767773aa",
+  "sourcePackageSha256": "47e8ba60726c5bf24292a3803b95b9b27627475d02c05a681973309402887aa7",
+  "preservedDeepSha256": "d1c752b3987836e5531f1d7d2c79a36a4bb6df2d9bfd47fe22b1dc91b8570f33",
+  "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+  "renderedOriginalSha256": "b46b4127c704a08edca7e2a8f70e151c1f8ba765d819ba7e2d2e329a6ab2383b",
+  "originalPromptVerified": true,
+  "rawResponseFile": "analysis-batch-51-100/drafts/13.soulEssence.raw.md",
+  "rawResponseSha256": "7aeb97c44a8bb1cec3b07dc1b1bca369824f6aafea0634413439df1dbfe5e994",
+  "responseFile": "analysis-batch-51-100/drafts/13.soulEssence.response.md",
+  "responseSha256": "7aeb97c44a8bb1cec3b07dc1b1bca369824f6aafea0634413439df1dbfe5e994",
+  "fieldsHashes": {
+    "soulEssence": "039a5601b7ff7cb52dcc58e7f737c3636f1512a9ebf9d2b4cdb4832484414d39"
+  },
+  "webSearchPerformed": true,
+  "searchLog": {
+    "file": "analysis-batch-51-100/drafts/13.combined.search-log.json",
+    "sha256": "7636bb740bc9497b1b9e80596aa4c5c7abb09595542c21563c6ebc557225704a",
+    "webSearchCount": 2,
+    "archiveCheckCount": 28
+  },
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",
+  "analysisContextPath": "analysis-batch-51-100/drafts/13.analysis.md",
+  "analysisContextSha256": "55ffd2ecc40de51e5c4b77afb481f464157a2ebbded6a4f4177c90c64cd650f0"
+}

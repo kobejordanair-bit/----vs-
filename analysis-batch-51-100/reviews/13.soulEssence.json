@@ -1,0 +1,69 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_同治帝_286132953",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:19:07.638Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7aeb97c44a8bb1cec3b07dc1b1bca369824f6aafea0634413439df1dbfe5e994",
+  "rawResponseSha256": "7aeb97c44a8bb1cec3b07dc1b1bca369824f6aafea0634413439df1dbfe5e994",
+  "sourcePackageSha256": "47e8ba60726c5bf24292a3803b95b9b27627475d02c05a681973309402887aa7",
+  "searchLogSha256": "7636bb740bc9497b1b9e80596aa4c5c7abb09595542c21563c6ebc557225704a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722",
+      "title": "清史稿·穆宗本紀二",
+      "locator": "本機固定修訂 oldid=2294671 全文比對（textSha256 已驗）：停修圓明園工程、諭責恭親王召對失儀，奪親王世襲，降郡王、懿旨復恭親王世襲及載澂爵銜、奏設招商局，試辦輪船分運江、浙漕糧、穆宗沖齡即阼，母后垂簾。國運中興，十年之間，盜賊劃平，中外乂安。非夫宮府一體，將相協和，何以臻茲、以親政屆期…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://history.state.gov/historicaldocuments/frus1875v01/d128",
+      "title": "美國國務院史料室《美國對外關係文件》（FRUS）1875年卷第128號文件",
+      "locator": "WebSearch 結果摘要：恭親王表面因言語失當降職，眾人皆知真因是拒絕夏宮工程繼續撥款",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721",
+      "title": "清史稿·本紀二十一　穆宗本紀一",
+      "locator": "本機固定修訂 oldid=1814546 全文比對（textSha256 已驗）：編修李鴻藻授讀、詔改祺祥為同治、誡內務府，宮闈器用，力行節儉",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://scholars.uky.edu/en/publications/reconstructing-the-imperial-retreat-politics-communications-and-t-2/",
+      "title": "“Reconstructing the Imperial Retreat: Politics, Communications, and the Yuanming Yuan under the Tongzhi Emperor, 1873–4,” Late Imperial China 33.2 (2012)",
+      "locator": "WebSearch 結果摘要：實錄載木材商欲騙取數千兩、內務府人員勾結，同治盛怒中降恭親王爵",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：從未真正掌權、唯一一次證明自己即被推翻；場景為恪遵慈訓、沈淮諫園、降恭親王一日、病中由恭親王代繕。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "修園為保留一塊地方、修好園子回到戰前、論贊假設本身之悲劇，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以親政詔與怒斥、讓步與爆發、圓明園、權力網絡、兩宮與恭親王、祖先盛世框架、親政到被推翻為事件。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,207 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_同治帝_286132953",
+      "inputSha256": "f18278c4dcb601b29a70c3b70864f37b25a83a12b94b43914c1d47d019ca0040",
+      "promptSha256": "d974933627e6d607f7edc50e7ccfcb6cd9160adfb84435f4921e1d95d3015a17",
+      "fields": {
+        "analysis": "同治十三年七月，十八歲的同治帝做出了他親政後最激烈的一個決定：在下令「停修圓明園工程」的隔天，他「諭責恭親王召對失儀，奪親王世襲，降郡王」，連恭親王之子載澂的貝勒郡王銜也一併革去。可是到了八月初一，「懿旨復恭親王世襲及載澂爵銜」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。皇帝的一道諭旨，在兩宮太后面前只維持了一天。我對他的判斷是：**同治帝是一位從頭到尾都沒有真正掌握過權力的皇帝。他六歲即位時，權力在兩宮與恭親王手中；他十七歲親政時，權力仍然在兩宮與恭親王手中。他唯一一次試圖證明自己是皇帝的方式，是修一座園子、罷一位親王——而這兩件事都在數日之內被推翻。他的悲劇不在於做錯了什麼，而在於他從來沒有機會學會怎麼做對。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n載淳是文宗長子，母親為孝欽顯皇后那拉氏，咸豐六年生於儲秀宮；咸豐十一年文宗崩於熱河，他在六歲時即位，遺命八大臣「贊襄政務」；同年他剛開始讀書，由「編修李鴻藻授讀」（[《清史稿·穆宗本紀一》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721)）。辛酉政變後，兩宮垂簾、恭親王奕訢為議政王，本紀記「詔改祺祥為同治」[史載]。\n\n他所處的時代有三個特點：\n\n1.  **內亂在臣下手中平定**：太平天國、捻軍、回亂由曾國藩、李鴻章、左宗棠等督撫分頭剿平；本紀記載的多是某地官軍克復某城、某人奉命督辦某省軍務[史載]。\n2.  **洋務初起**：總理各國事務衙門運作，同治十一年李鴻章「奏設招商局，試辦輪船分運江、浙漕糧」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。\n3.  **皇權實際上由兩宮行使**：從即位到親政，奏章由兩宮覽閱、王大臣擬旨；連他的教育，也是在兩宮安排下由李鴻藻、翁同龢等人授讀[史載]；即位之初的懿旨，還特別「誡內務府，宮闈器用，力行節儉」（[《清史稿·穆宗本紀一》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721)）。\n\n《清史稿》論贊的評價頗為寬厚：「穆宗沖齡即阼，母后垂簾。國運中興，十年之間，盜賊劃平，中外乂安。非夫宮府一體，將相協和，何以臻茲？」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）——但這段話其實說明了一件事：中興的主角是宮府與將相，不是皇帝本人。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：同治中興越成功，同治帝本人就越沒有位置；他親政時面對的，不是一個需要他的朝廷，而是一個已經習慣沒有他的朝廷。**\n\n**一、親政：帶著母后的訓誡上任**\n\n同治十二年正月，兩宮皇太后「以親政屆期」，懿旨勉勵他「祇承家法，講求用人行政，毋荒典學」；他隨即親政，詔「恪遵慈訓，敬天法祖，勤政愛民」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。親政的第一道詔書，以「恪遵慈訓」開頭。\n\n**二、圓明園：一個屬於自己的計畫**\n\n他最想做的事，是重修被英法聯軍焚毀的圓明園。同治十二年十月，御史沈淮疏請緩修，他讓步為「僅治安佑宮為駐蹕殿宇，餘免興修」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）；次年他仍「幸圓明園還宮」[史載]。《Late Imperial China》的研究指出，這項工程最後以難堪收場：一名木材商人企圖向朝廷騙取數千兩白銀，內務府人員與之勾結，皇帝在盛怒中降了他最親近的輔政者恭親王的爵（[“Reconstructing the Imperial Retreat: Politics, Communications, and the Yuanming Yuan under the Tongzhi Emperor, 1873–4,” *Late Imperial China*](https://scholars.uky.edu/en/publications/reconstructing-the-imperial-retreat-politics-communications-and-t-2/)）。本紀記載，內務府大臣貴寶因當年任郎中時「於知府李光昭報效木植，欺罔奏陳」而被褫職，隨後「停修圓明園工程」，李光昭最終「論斬」[史載]。\n\n**三、與日本的危機同時發生**\n\n就在同一年，「日本兵船抵台灣登岸，與生番尋釁」，朝廷命沈葆楨辦海防；六月他還「諭戶部撙節不急之需，豫籌海防經費」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。一邊是台灣海防需要撙節經費，一邊是圓明園工程仍在進行——這個矛盾最終由恭親王等大臣出面處理[推斷]。\n\n**四、罷恭親王：一天的皇權**\n\n恭親王是辛酉政變的功臣、十餘年的議政王，也是同治中興最重要的中樞人物；同治三年江南平定論功，他的兒子載澂便因此晉封貝勒（[《清史稿·穆宗本紀一》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721)）。停修圓明園的隔天，他以「召對失儀」為由，奪恭親王親王世襲、降為郡王，並革載澂爵銜；一天之後，懿旨將一切恢復[史載]。一八七五年的美國外交文書記載了當時外界的理解：恭親王表面上因言語失當被降職，但眾人都知道真正原因是他拒絕讓夏宮工程繼續撥款（[美國國務院史料室《美國對外關係文件》1875年卷第128號](https://history.state.gov/historicaldocuments/frus1875v01/d128)）。\n\n**連鎖結果**：同年十一月他病倒，「命恭親王代繕批答清文摺件」，「命內外奏牘呈兩宮披覽」；十二月「崩於養心殿，年十九」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。他沒有子嗣，兩宮召集王公大臣，「以醇親王之子承繼文宗為嗣皇帝」[史載]——繼承者不是他的嗣子，而是他的堂弟。\n\n### **3. 【人性與性格側寫】**\n\n*   **自幼在安排中長大**：六歲即位，教育、婚姻、親政時程都由兩宮與大臣安排（[《清史稿·穆宗本紀一》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721)）。\n*   **渴望有自己的計畫**：圓明園是他少數主動推動的事，被御史諫阻後仍堅持修治安佑宮（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。\n*   **情緒化的決斷**：在工程弊案曝光後，他把怒氣轉向恭親王父子，以「召對失儀」為名降爵[史載]。\n*   **仍保有勤政與恤民的一面**：論贊稱他「遇變修省，至勤也。聞災蠲恤，至仁也。不言符瑞，至明也」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。\n*   **重視名義上的盛事**：親政後不久「上奉兩宮皇太后謁東陵」，加上兩宮徽號、頒詔覃恩（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。\n*   **在母后面前退讓**：懿旨一下，他對恭親王的處分立即撤回，史料中看不到他的反抗[推斷]。\n\n### **4. 【如果生在現代】**\n\n同治帝最接近的現代角色是：**一位從小被指定為家族企業接班人、成年後名義上接任董事長，卻發現公司的重大決策仍由母親與資深總經理決定的年輕人。**\n\n*   **名義上的接班**：他在一場隆重的交接儀式中上任，第一份公開聲明就是**遵照母親的教誨**。\n*   **想要一個自己的專案**：他推動重建一座家族的舊園區，卻遭到內部監察人員反對，只能縮小規模。\n*   **專案出事**：負責供應建材的廠商被揭發詐騙，與公司內部人員勾結。\n*   **情緒化的人事決定**：他在盛怒下拔掉了總經理的職位，第二天就被母親以董事會名義恢復原職。\n*   **邊界**：這個比喻只描寫他**名義掌權、實際受制**的處境；他面對的是一個內亂剛平、外患又起的帝國，而他十九歲就去世，幾乎沒有機會真正累積治國的經驗。",
+        "soulEssence": "【說話邏輯】\n他的公開語言幾乎都是別人寫好的格式。親政第一天，他的詔書是「恪遵慈訓，敬天法祖，勤政愛民」，緊接在兩宮「祇承家法，講求用人行政，毋荒典學」的懿旨之後（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]。他少數用自己的聲音說話的時刻，是在怒氣中：以「召對失儀」責罰恭親王[史載]。這兩種語言——順從的套語與突然的怒斥——之間幾乎沒有中間地帶[推斷]。御史沈淮諫阻園工時，他也沒有與之辯論，而是以縮小規模的方式默默保留了自己想要的部分（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]。他沒有機會練習一種既有主見、又能說服朝臣的說話方式[推斷]。對一位十七歲才親政的皇帝來說，這不是性格的缺陷，而是訓練的空白[推斷]。\n\n【壓力反應】\n他在壓力下的反應，是先讓步，然後在某個時刻突然爆發。\n御史沈淮諫阻圓明園，他讓步為只修安佑宮（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]；工程弊案曝光，貴寶被褫職、工程停止之後，他立刻把怒氣發在恭親王父子身上[史載]。外界的理解是，恭親王真正的「罪名」是拒絕繼續撥款給夏宮工程（[美國國務院史料](https://history.state.gov/historicaldocuments/frus1875v01/d128)）[史載]。一個長期被安排的人，終於在自己唯一的計畫被否定時，用最直接的方式表達了不滿[推斷]。而這次爆發換來的不是權威，而是更清楚地證明了權威在誰手上[推斷]。\n\n【核心驅動】\n他想要的是一件能證明「我是皇帝」的事。\n重修圓明園，在財政與海防都吃緊的同治末年並不明智，朝中也有人公開反對（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]。但對他而言，這可能是唯一一件不是由兩宮或大臣替他決定的事[推斷]。他堅持保留安佑宮的工程，「幸圓明園還宮」[史載]，與其說是貪圖享樂，不如說是在一個處處被安排的人生裡，為自己保留一塊地方[詮釋：此為從其親政後唯一主動計畫歸納的動機]。\n\n【慣性盲點】\n他以為親政就等於掌權，沒有看到真正的權力網絡早已成形。\n辛酉政變後，恭親王以議政王身分主持軍機，曾國藩、李鴻章、左宗棠等督撫分掌兵權（[《清史稿·穆宗本紀一》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721)）[史載]；這張網絡運作了十多年，皇帝並不在其中[推斷]。他降恭親王的爵，等於直接挑戰這張網絡的核心，結果兩宮一道懿旨就全部恢復（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]。他不是不夠聰明，而是從來沒有人教他如何與這些人周旋[推斷]。十多年的垂簾，讓大臣們習慣向兩宮請示，而不是向皇帝請示；他親政後面對的，是一套已經不需要他的流程[推斷]。\n\n【情感結構】\n他的情感生活被兩宮太后包圍：即位由兩宮扶持，親政由兩宮訓勉，病中奏牘也「呈兩宮披覽」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]。他與恭親王的關係複雜：恭親王是他的叔父與輔政者，也是阻止他修園的人[推斷]。他去世時無嗣，兩宮立醇親王之子為文宗嗣皇帝[史載]；他的皇后阿魯特氏在次年二月也隨之崩逝[史載]。他最脆弱的時刻，大概是病中把批答清文摺件的權力交給恭親王代繕的時候——那位他幾個月前才想罷黜的叔父，此時成了替他簽字的人[詮釋]。\n\n【參照系】\n他理解皇帝角色的框架，似乎是祖先的盛世——康熙、乾隆時代的園居與巡幸[推斷]。\n類比準確之處：清代皇帝確實以園林為重要的理政場所，重修圓明園在形式上是恢復祖制（[“Reconstructing the Imperial Retreat,” *Late Imperial China*](https://scholars.uky.edu/en/publications/reconstructing-the-imperial-retreat-politics-communications-and-t-2/)）[史載]。\n類比失準之處：康乾時代國庫充盈、皇權集中；同治末年內務府弊案叢生，台灣又有日本兵船登岸，朝廷正「撙節不急之需，豫籌海防經費」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]。他想像的是祖先的皇帝，面對的卻是一個已經被戰爭與外患改變的國家[詮釋：此為本文的分析判斷]。圓明園的廢墟本身就是那場外患的紀念碑；他想把它修好，彷彿修好了園子，就能回到戰爭之前的世界[推斷]。\n\n【內在裂縫】\n他的裂縫在於：他越想證明自己是皇帝，就越暴露自己不是。\n親政時，他以「恪遵慈訓」開始自己的統治（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）[史載]；一年多後，他以罷黜恭親王試圖確立自己的權威，結果懿旨一下即告推翻[史載]。這次失敗把他與兩宮之間的權力關係公開化了：連外國使節都知道降爵的真正原因（[美國國務院史料](https://history.state.gov/historicaldocuments/frus1875v01/d128)）[史載]。論贊說「藉使蘄至中壽，日新而光大之，庸詎不與前古媲隆」[史載]——這個假設本身，正說明他的十九年人生裡，從未得到一個可以證明自己的機會[詮釋]。",
+        "stats": [
+          35,
+          15,
+          48,
+          45,
+          52
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：35\n\n他在位期間太平天國、捻軍與回亂相繼平定，但用兵決策出自兩宮、恭親王與曾國藩、李鴻章、左宗棠等督撫（[《清史稿·穆宗本紀一》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721)）；親政後遇日本兵船登台，也由沈葆楨辦理海防（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。他本人沒有任何可以獨立評估的軍事決策。評35，與光緒帝（35）持平，高於宋欽宗（25），低於崇禎帝（45）。\n\n### 武力：15\n\n他六歲即位，在深宮中接受教育，十九歲病逝，史料中沒有任何領兵或臨陣的紀錄（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）；親政後只見「閱御前王大臣、乾清門侍衛射」等例行校閱，屬於禮儀性質。他的人生幾乎完全在宮廷之內度過，與戰場沒有交集。評15，與光緒帝（15）及漢獻帝（15）持平，高於晉惠帝（5），反映的是空白而非缺陷。\n\n### 智謀：48\n\n他曾在御史諫阻後把圓明園工程縮小為「僅治安佑宮」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)），顯示一定的妥協能力。但工程最終因李光昭木植弊案而停止，他在盛怒中以「召對失儀」降恭親王的爵，隔日便被懿旨推翻（[美國國務院《美國對外關係文件》1875年](https://history.state.gov/historicaldocuments/frus1875v01/d128)），可見判斷倉促、缺乏權力盤算。評48，低於光緒帝（65）與崇禎帝（75），高於晉惠帝（20）。\n\n### 政治：45\n\n論贊稱他「遇變修省」「聞災蠲恤」「不言符瑞」（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)），在位期間也有李鴻章設招商局等洋務新政。但這些多出自兩宮與大臣的運作；他親政不到兩年，主要作為是推動圓明園工程，並引發木植弊案與罷免恭親王的風波，最終仍是「命內外奏牘呈兩宮披覽」。評45，高於光緒帝（30）與宋欽宗（35），低於崇禎帝（65）。\n\n### 魅力：52\n\n他在位期間「宮府一體，將相協和」，名義上是同治中興的君主（[《清史稿·穆宗本紀二》](https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722)）。但大臣們效忠的實際對象是兩宮與朝廷，他對恭親王的處分一天就被推翻，御史沈淮也公開諫阻他的園工；他沒有建立屬於自己的追隨者。評52，低於光緒帝（60）與漢獻帝（88），高於崇禎帝（40）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T11:19:07.584Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "清史稿·穆宗本紀二",
+            "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722",
+            "locator": "本機固定修訂 oldid=2294671 全文比對（textSha256 已驗）：停修圓明園工程、諭責恭親王召對失儀，奪親王世襲，降郡王、懿旨復恭親王世襲及載澂爵銜、奏設招商局，試辦輪船分運江、浙漕糧、穆宗沖齡即阼，母后垂簾。國運中興，十年之間，盜賊劃平，中外乂安。非夫宮府一體，將相協和，何以臻茲、以親政屆期…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "清史稿·本紀二十一　穆宗本紀一",
+            "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721",
+            "locator": "本機固定修訂 oldid=1814546 全文比對（textSha256 已驗）：編修李鴻藻授讀、詔改祺祥為同治、誡內務府，宮闈器用，力行節儉",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "“Reconstructing the Imperial Retreat: Politics, Communications, and the Yuanming Yuan under the Tongzhi Emperor, 1873–4,” Late Imperial China 33.2 (2012)",
+            "url": "https://scholars.uky.edu/en/publications/reconstructing-the-imperial-retreat-politics-communications-and-t-2/",
+            "locator": "WebSearch 結果摘要：實錄載木材商欲騙取數千兩、內務府人員勾結，同治盛怒中降恭親王爵",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "美國國務院史料室《美國對外關係文件》（FRUS）1875年卷第128號文件",
+            "url": "https://history.state.gov/historicaldocuments/frus1875v01/d128",
+            "locator": "WebSearch 結果摘要：恭親王表面因言語失當降職，眾人皆知真因是拒絕夏宮工程繼續撥款",
+            "type": "official_institution",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "f73411c74e7fc3222f7a4873b5a4cc870187c3bbba7e9068d1a6d5ecb266e20d",
+        "sourcePackageSha256": "47e8ba60726c5bf24292a3803b95b9b27627475d02c05a681973309402887aa7",
+        "preservedDeepSha256": "d1c752b3987836e5531f1d7d2c79a36a4bb6df2d9bfd47fe22b1dc91b8570f33",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "bcf2e45d3b4738b76b5709d62a23e8e55a2574d744f9d1ac9f991d55d04e7a50",
+            "requestSha256": "f73411c74e7fc3222f7a4873b5a4cc870187c3bbba7e9068d1a6d5ecb266e20d",
+            "inputSha256": "f18278c4dcb601b29a70c3b70864f37b25a83a12b94b43914c1d47d019ca0040",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "e958967251779a76c910a91834c0ce16e526f62d4ee8f13544922517fa0f2ca0",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "47e8ba60726c5bf24292a3803b95b9b27627475d02c05a681973309402887aa7",
+            "preservedDeepSha256": "d1c752b3987836e5531f1d7d2c79a36a4bb6df2d9bfd47fe22b1dc91b8570f33",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:19:07.584Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/13.analysisStats.raw.md",
+            "rawResponseSha256": "8b5c513978b0edd843a10c2be053a842ce173069764bd09f54059d1c04dadf27",
+            "responseFile": "analysis-batch-51-100/drafts/13.analysisStats.response.md",
+            "responseSha256": "8b5c513978b0edd843a10c2be053a842ce173069764bd09f54059d1c04dadf27",
+            "fieldsHashes": {
+              "analysis": "be1ccb95944f2f7ff46dbdfaf6c0daedde68fe3d09040db914aa4c5bb9b25c87",
+              "stats": "fbfa1aefd73db51241bf4e9ef1ff6bd20de12b30965cefe21b6978e4b2a8810e",
+              "statsAnalysis": "a7bad6d4c359f7c56fb11f4f080097e0047cd6f6e853b71997792dc8b8665514"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/13.analysisStats.capture.json",
+            "captureSha256": "a16a7b05ff5a8159e83f781a0a04e2c9815bb385075e1ba2296b18e3b4b6f8a3",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/13.analysisStats.json",
+            "sourceReviewSha256": "bba2b1c5b5679899071a923927eeeffd07d11f67a1d3d1959e5b8cec5bd6881e",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/13.combined.search-log.json",
+              "sha256": "7636bb740bc9497b1b9e80596aa4c5c7abb09595542c21563c6ebc557225704a",
+              "webSearchCount": 2,
+              "archiveCheckCount": 28
+            },
+            "checkedSources": [
+              {
+                "title": "清史稿·穆宗本紀二",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722",
+                "locator": "本機固定修訂 oldid=2294671 全文比對（textSha256 已驗）：停修圓明園工程、諭責恭親王召對失儀，奪親王世襲，降郡王、懿旨復恭親王世襲及載澂爵銜、奏設招商局，試辦輪船分運江、浙漕糧、穆宗沖齡即阼，母后垂簾。國運中興，十年之間，盜賊劃平，中外乂安。非夫宮府一體，將相協和，何以臻茲、以親政屆期…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "清史稿·本紀二十一　穆宗本紀一",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721",
+                "locator": "本機固定修訂 oldid=1814546 全文比對（textSha256 已驗）：編修李鴻藻授讀、詔改祺祥為同治、誡內務府，宮闈器用，力行節儉",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "“Reconstructing the Imperial Retreat: Politics, Communications, and the Yuanming Yuan under the Tongzhi Emperor, 1873–4,” Late Imperial China 33.2 (2012)",
+                "url": "https://scholars.uky.edu/en/publications/reconstructing-the-imperial-retreat-politics-communications-and-t-2/",
+                "locator": "WebSearch 結果摘要：實錄載木材商欲騙取數千兩、內務府人員勾結，同治盛怒中降恭親王爵",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "美國國務院史料室《美國對外關係文件》（FRUS）1875年卷第128號文件",
+                "url": "https://history.state.gov/historicaldocuments/frus1875v01/d128",
+                "locator": "WebSearch 結果摘要：恭親王表面因言語失當降職，眾人皆知真因是拒絕夏宮工程繼續撥款",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "5afce2341cd9d21a52c1018f5b3b448264be048a8561254800e6916b767773aa",
+            "requestSha256": "f73411c74e7fc3222f7a4873b5a4cc870187c3bbba7e9068d1a6d5ecb266e20d",
+            "inputSha256": "f18278c4dcb601b29a70c3b70864f37b25a83a12b94b43914c1d47d019ca0040",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "b46b4127c704a08edca7e2a8f70e151c1f8ba765d819ba7e2d2e329a6ab2383b",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "47e8ba60726c5bf24292a3803b95b9b27627475d02c05a681973309402887aa7",
+            "preservedDeepSha256": "d1c752b3987836e5531f1d7d2c79a36a4bb6df2d9bfd47fe22b1dc91b8570f33",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:19:07.584Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/13.soulEssence.raw.md",
+            "rawResponseSha256": "7aeb97c44a8bb1cec3b07dc1b1bca369824f6aafea0634413439df1dbfe5e994",
+            "responseFile": "analysis-batch-51-100/drafts/13.soulEssence.response.md",
+            "responseSha256": "7aeb97c44a8bb1cec3b07dc1b1bca369824f6aafea0634413439df1dbfe5e994",
+            "fieldsHashes": {
+              "soulEssence": "039a5601b7ff7cb52dcc58e7f737c3636f1512a9ebf9d2b4cdb4832484414d39"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/13.soulEssence.capture.json",
+            "captureSha256": "791486d8a1dab48de5deed9c326aa63364a9fd04b5ffd9353c29ba682e325735",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/13.soulEssence.json",
+            "sourceReviewSha256": "f51f356d7357b9ff1da3d45fc45f64c4ecd87edb7ea0630f7609286e856de897",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/13.combined.search-log.json",
+              "sha256": "7636bb740bc9497b1b9e80596aa4c5c7abb09595542c21563c6ebc557225704a",
+              "webSearchCount": 2,
+              "archiveCheckCount": 28
+            },
+            "checkedSources": [
+              {
+                "title": "清史稿·穆宗本紀二",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B722",
+                "locator": "本機固定修訂 oldid=2294671 全文比對（textSha256 已驗）：停修圓明園工程、諭責恭親王召對失儀，奪親王世襲，降郡王、懿旨復恭親王世襲及載澂爵銜、奏設招商局，試辦輪船分運江、浙漕糧、穆宗沖齡即阼，母后垂簾。國運中興，十年之間，盜賊劃平，中外乂安。非夫宮府一體，將相協和，何以臻茲、以親政屆期…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "美國國務院史料室《美國對外關係文件》（FRUS）1875年卷第128號文件",
+                "url": "https://history.state.gov/historicaldocuments/frus1875v01/d128",
+                "locator": "WebSearch 結果摘要：恭親王表面因言語失當降職，眾人皆知真因是拒絕夏宮工程繼續撥款",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "清史稿·本紀二十一　穆宗本紀一",
+                "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B721",
+                "locator": "本機固定修訂 oldid=1814546 全文比對（textSha256 已驗）：編修李鴻藻授讀、詔改祺祥為同治、誡內務府，宮闈器用，力行節儉",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "“Reconstructing the Imperial Retreat: Politics, Communications, and the Yuanming Yuan under the Tongzhi Emperor, 1873–4,” Late Imperial China 33.2 (2012)",
+                "url": "https://scholars.uky.edu/en/publications/reconstructing-the-imperial-retreat-politics-communications-and-t-2/",
+                "locator": "WebSearch 結果摘要：實錄載木材商欲騙取數千兩、內務府人員勾結，同治盛怒中降恭親王爵",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/13.analysis.md",
+            "analysisContextSha256": "55ffd2ecc40de51e5c4b77afb481f464157a2ebbded6a4f4177c90c64cd650f0"
+          }
+        }
+      }
+    }
+  ]
+}
