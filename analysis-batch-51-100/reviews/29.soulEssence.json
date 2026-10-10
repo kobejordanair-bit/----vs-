@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_盧象昇_909460246",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:03:38.881Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "fee01858100bebca8eec65c0f57dcd1c87f2ae8edb009ff06e77772f6aba6663",
+  "rawResponseSha256": "fee01858100bebca8eec65c0f57dcd1c87f2ae8edb009ff06e77772f6aba6663",
+  "sourcePackageSha256": "f7399cb2062588a68c3805b85ead5bd81854d21e8343a3a805effd70663a1b55",
+  "searchLogSha256": "0e6aa7da44a3bf16f8c276126c70bdff4b558d1c25cb4ee38fa2f400c06ffb61",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7261",
+      "title": "明史·卷二百六十一\n列傳第一百四十九　盧象昇 劉之綸 丘民仰",
+      "locator": "本機固定修訂 oldid=2621163 全文比對（textSha256 已驗）：疏十上，乞奔喪、麻衣草履，誓師及郊、臣非軍旅才。愚心任事，誼不避難、色變，良久、白皙而臞，膊獨骨，負殊力、募萬人入衛…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：非一味死戰（宣大持一月）卻因主戰被孤立，穿喪服戰死；場景為臣主戰、齒劍者我也、三宮野外父老、麻衣白網巾。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "忠孝不能兩全以死完成、直言改變朝局之盲點、孝子與將軍合一等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以齒劍者我與後局危形、身先士卒與起潛遁、人臣無親安有君、帝意銳甚之誤判、楊陸凱與俞振龍與侯弘文、城下盟與專兵專餉、臣非軍旅才與八十日而後殮為事件。"
+    }
+  ],
+  "materialIssues": []
+}

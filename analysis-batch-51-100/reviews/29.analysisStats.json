@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_盧象昇_909460246",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:03:38.880Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "80785472c0e8ad83a208efd90a05ecfc7da01cd8bc3c51c62c5a5e58aa6b616d",
+  "rawResponseSha256": "80785472c0e8ad83a208efd90a05ecfc7da01cd8bc3c51c62c5a5e58aa6b616d",
+  "sourcePackageSha256": "f7399cb2062588a68c3805b85ead5bd81854d21e8343a3a805effd70663a1b55",
+  "searchLogSha256": "0e6aa7da44a3bf16f8c276126c70bdff4b558d1c25cb4ee38fa2f400c06ffb61",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7261",
+      "title": "明史·卷二百六十一\n列傳第一百四十九　盧象昇 劉之綸 丘民仰",
+      "locator": "本機固定修訂 oldid=2621163 全文比對（textSha256 已驗）：疏十上，乞奔喪、麻衣草履，誓師及郊、臣非軍旅才。愚心任事，誼不避難、色變，良久、白皙而臞，膊獨骨，負殊力、募萬人入衛…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "宜興人、天啟二年進士、崇禎二年募萬人入衛、天雄軍、六年畿南、七年鄖陽、八年總理、九年滁州七頂山、入衛、宣大屯政、十一年丁憂奪情、督天下援兵、賈莊戰死年三十九，皆依明史卷261 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：天雄軍、五里橋、七頂山、宣大持重；武力：膊獨骨、刃及鞍、箭銜花、手擊殺數十人；智謀：右窺雲晉之判、後局危形；政治：鄖陽完輯、屯政、與嗣昌衝突；魅力：絕餉不食、父老裹糧、楊陸凱伏屍。對照王忠嗣、戚繼光、袁崇煥、岳飛、關羽。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "喪父乞奔喪→席喪候代→清兵入→麻衣督師；臣主戰→帝色變→與嗣昌起潛不合→分兵實不及二萬；斥嗣昌、楊廷麟疏→奪尚書、絕餉、王樸引去→疲卒五千→起潛不援→賈莊一軍盡覆。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    90,
+    84,
+    52,
+    94
+  ]
+}
