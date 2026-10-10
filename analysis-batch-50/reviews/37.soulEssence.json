@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_荀彧_2004230913",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:45:33.314Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4f9af03396ca709bc18d6c554cd6016a916e0a425e715197e67280b3ed180ef0",
+  "rawResponseSha256": "4f9af03396ca709bc18d6c554cd6016a916e0a425e715197e67280b3ed180ef0",
+  "sourcePackageSha256": "48d29f3ae59096de880252bcc824e3815ba97005ee9bf3bec5305f78da531930",
+  "searchLogSha256": "1370b4fc2d8b790de4925256f7f04f7e653f6eeec8406eaf4ba15d6ccddcc809",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B710",
+      "title": "三國志·魏書·荀彧荀攸賈詡傳",
+      "locator": "本機固定修訂 oldid=2274279 全文比對（textSha256 已驗）：奉主上以從民望、有子八人，號曰八龍、待彧以上賔之禮、度紹終不能成大事、吾之子房也、兖州諸城皆應布矣…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "兗州、奉迎、四勝；九錫未舉利害標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "張邈、郭貢、官渡。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "匡天下之素志與裴松之論；內心標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "奉迎與九錫對照、陳壽評。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "宗族、散財、焚書；死因並存標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "晉文公與子房；失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "建安元年與十七年；自覺標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

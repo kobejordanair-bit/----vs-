@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 36,
-    "reviewed": 35,
-    "assembled": 35,
+    "generated": 37,
+    "reviewed": 36,
+    "assembled": 36,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 29,
+    "claudeAssembledAwaitingImport": 30,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -616,14 +616,17 @@
       "slug": "37",
       "id": "minister_荀彧_2004230913",
       "name": "荀彧",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.37-37.v1.json",
+      "resultsSha256": "2f7e55e964c9cff7d3772a5711a24549f4fa92de098a4f9335fca3c55fec45ae"
     },
     {
       "slug": "38",

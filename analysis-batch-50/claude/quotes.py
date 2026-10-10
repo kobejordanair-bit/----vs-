@@ -11,6 +11,7 @@ for d in docs:
   j=json.load(open(f'backend/static/data/history/archive-books/{book}.json'))
   t=[x for x in j['documents'] if x['title']==title][0]['text']
   texts.append((book,title,re.sub(r'〔[^〕]*〕','',t)))
+  texts.append((book,title,re.sub(r'[〔〕]','',t)))  # commentary fallback
 out=[];miss=[]
 for q in re.findall(r'「([^」]{5,})」',s):
   for p in q.split('……'):

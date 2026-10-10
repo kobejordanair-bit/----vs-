@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_荀彧_2004230913",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:45:33.313Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "3173d8208e5e226ae157e0bcbb7e1f95ffeed9c2f4bf67251325d0e3ff63d274",
+  "rawResponseSha256": "3173d8208e5e226ae157e0bcbb7e1f95ffeed9c2f4bf67251325d0e3ff63d274",
+  "sourcePackageSha256": "48d29f3ae59096de880252bcc824e3815ba97005ee9bf3bec5305f78da531930",
+  "searchLogSha256": "1370b4fc2d8b790de4925256f7f04f7e653f6eeec8406eaf4ba15d6ccddcc809",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B710",
+      "title": "三國志·魏書·荀彧荀攸賈詡傳",
+      "locator": "本機固定修訂 oldid=2274279 全文比對（textSha256 已驗）：奉主上以從民望、有子八人，號曰八龍、待彧以上賔之禮、度紹終不能成大事、吾之子房也、兖州諸城皆應布矣…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://scholars.lib.ntu.edu.tw/handle/123456789/7216?mode=full",
+      "title": "《臺大歷史學報》第21期論文（通鑑考異與三國志注相關）",
+      "locator": "WebSearch 結果摘要：後漢書、三國志並為荀彧立傳，魏晉間乃有荀彧為漢臣或魏臣之議；反對九錫後飲藥而卒之說",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "荀彧，名臣；保留原 S 評級與 deepAnalysis。"
+    },
+    {
+      "id": "yanzhou",
+      "passed": true,
+      "detail": "兗州留守、說郭貢、先定兗州之論，原文核對。"
+    },
+    {
+      "id": "emperor",
+      "passed": true,
+      "detail": "奉迎天子大順大略大德、居中持重，原文核對。"
+    },
+    {
+      "id": "talent-strategy",
+      "passed": true,
+      "detail": "薦人與嚴象韋康之失、四勝、官渡用奇、九州之議，原文核對。"
+    },
+    {
+      "id": "nine-bestowals",
+      "passed": true,
+      "detail": "九錫之議、以憂薨、空器裴注、陳壽評與裴松之駁世論，原文核對；臺大學報摘要佐證漢臣魏臣之議。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[85,30,97,97,95] 對照諸葛亮(名臣)[88,35,92,100,95]、姚崇[78,68,97,96,88]、管仲[88,45,98,100,92]、周恩來[80,40,95,98,98]、曾國藩武力30。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    85,
+    30,
+    97,
+    97,
+    95
+  ]
+}
