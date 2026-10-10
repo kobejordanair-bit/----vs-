@@ -1,0 +1,512 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "minister_楊嗣昌_1995179961",
+  "name": "楊嗣昌",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "明朝",
+    "title": "督師"
+  },
+  "candidatePages": [
+    {
+      "title": "楊嗣昌",
+      "pageId": 216253,
+      "revisionId": 90812640,
+      "revisionTimestamp": "2025-12-24T02:19:17Z",
+      "url": "https://zh.wikipedia.org/wiki/%E6%A5%8A%E5%97%A3%E6%98%8C",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=90812640",
+      "wikidataId": "Q11117880",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "杨嗣昌研究.pdf",
+          "url": "https://max.book118.com/html/2014/0421/7816821.shtm",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "萬曆三十八年進士登科錄",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國榷",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "芷兰春秋",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "池北偶谈",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·杨嗣昌传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "常德府志·城池",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "杨文弱先生集·卷九",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "滟滪囊",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "备述献贼孤穷，亟宜悬赏购缚疏",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "建平杨氏家谱",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "绥寇纪略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "怀陵流寇始终录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孤儿吁天录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "筹军录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "蜀碧",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "武陵起复",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明季北略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "张献忠陷襄阳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明季遺聞",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "權與血—明帝國官場政治",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [
+        {
+          "title": "明史/卷252",
+          "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "明季北略/卷01",
+          "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%AD%A3%E5%8C%97%E7%95%A5%2F%E5%8D%B701",
+          "origin": "sister-template",
+          "retrieved": false
+        }
+      ],
+      "retrievedAt": "2026-10-02T10:34:04.115Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:mingshi-3393d5c12a953ce8",
+      "query": "楊嗣昌",
+      "count": 10,
+      "offset": 287,
+      "excerpt": "。\n\n　　六月癸巳，安民廠災，壞城垣，傷萬餘人。壬寅，孔貞運致仕。乙卯，兵部尚書楊嗣昌、戶部尚書程國祥、禮部侍郎方逢年、工部侍郎蔡國用俱禮部尚書，大理少卿范復粹為禮部侍郎，並兼東閣大學士，預機務。嗣昌仍掌兵部。是月，兩畿、山東、河南大旱蝗。\n\n　",
+      "matchType": "name-occurrence",
+      "title": "明史/卷24",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B724",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594640",
+      "textSha256": "80050f3b7be74e909f68a639e66cfaf675d0179f38565a2176365482b4b085d6",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-aa6e2f0ee6f172ac",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 6020,
+      "excerpt": "年，復行均輸法，因糧輸餉，畝計米六合，石折銀八錢，又畝加徵一分四釐九絲。越二年，楊嗣昌督師，畝加練餉銀一分。兵部郎張若麒請收兵殘遺產為官莊，分上、中、下，畝納租八斗至二三斗有差。御史衛周胤言：「嗣昌流毒天下，剿練之餉多至七百萬，民怨何極。」御史郝",
+      "matchType": "name-occurrence",
+      "title": "明史/卷78",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B778",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594694",
+      "textSha256": "ab980e8afcaf8f023c42a24defde6047026a73e2221ac5551f1bce3a11498f35",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-76f0fc7d0a2fbb6d",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 9275,
+      "excerpt": "郎中鄒維璉陳調募之害。山西參政徐九翰尤極言民兵不可調。崇禎時，中原盜急，兵部尚書楊嗣昌議令責州縣訓練土著為兵。工部侍郎張慎言言其不便者數事，而御史米壽圖又言其害有十，謂不若簡練民兵，增民壯快手，備御地方為便。後嗣昌死，練兵亦不行。\n\n　　鄉兵者，",
+      "matchType": "name-occurrence",
+      "title": "明史/卷91",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B791",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594710",
+      "textSha256": "001997100ca3f53b00e347ba8474e3cbe46f77d3df6e3a0a0876993f70455144",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-3d4fe517c58dd915",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 4612,
+      "excerpt": "始末》一卷\n\n　　楊士聰《玉堂薈記》四卷\n\n　　孫承宗《督師全書》一百卷\n\n　　楊嗣昌《督師紀事》五十卷\n\n　　夏允彝《倖存錄》一卷\n\n　　夏完淳《續倖存錄》一卷\n\n　　吳偉業《綏寇紀略》十二卷\n\n　　文秉《先撥志始》六卷，《烈皇小識》四卷\n\n　",
+      "matchType": "name-occurrence",
+      "title": "明史/卷97",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B797",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2635994",
+      "textSha256": "21022144b6fa34e04329cb363ee866e97378da1ea45551279ed4e5f8cb0acc31",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-9a0ed9cdc78f6da9",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 8940,
+      "excerpt": "月罷。\n\n　國觀六月晉禮部尚書。\n\n　程國祥六月改禮部尚書兼東閣大學士入。\n\n　楊嗣昌六月改禮部尚書兼東閣大學士入，仍掌兵部。\n\n　方逢年六月晉禮部尚書兼東閣大學士入。十二月閒住。\n\n　蔡國用六月晉禮部尚書兼東閣大學士入。\n\n　范復粹六月晉禮部侍",
+      "matchType": "name-occurrence",
+      "title": "明史/卷110",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7110",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594726",
+      "textSha256": "962c1d7cab14a894dedf472cab77760c860b19e3a1d2e8f49303b4f5c0232e08",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-37bdbb017d837956",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 13695,
+      "excerpt": "陞　恂十一月削職。　士俊六月入閣。\n\n姜逢元七月任。　鳳翼七月督師。九月卒。\n\n楊嗣昌十月奪情任。　英　遵憲　世濟十一月下獄。\n\n十年丁丑　陞二月免。\n\n田維嘉三月任。　程國祥正月任。　逢元十二月免。　嗣昌　英四月削職充軍。\n\n鄭三俊閏四月任，加",
+      "matchType": "name-occurrence",
+      "title": "明史/卷112",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7112",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594729",
+      "textSha256": "acdd3c410200cf439c39d2b9cf35dea3c051ecf1a17dad607b457c0b6ab51f66",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-482ceae2db571068",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 2303,
+      "excerpt": "載堯嗣，萬歷二十三年薨。子翊銘嗣。崇禎十四年，張獻忠陷襄陽，遇害。\n\n初，大學士楊嗣昌之視師也，以襄陽為軍府，增堞浚隍，貯五省餉金及弓刀火器。是年二月，獻忠邀殺嗣昌使於道，奪其符驗，以數十騎紿入襄城。夜半火作，遲明，賊大至。執翊銘南城樓，屬卮酒曰",
+      "matchType": "name-occurrence",
+      "title": "明史/卷119",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7119",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2611591",
+      "textSha256": "69eb81511eb0d1cad8515c089bbebb1e40dc0409b8ed150c157580b7d1d8f33e",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-8540dec40bb7009a",
+      "query": "楊嗣昌",
+      "count": 3,
+      "offset": 2534,
+      "excerpt": "眉生，為諸生有聲。崇禎九年，行保舉法，巡撫張國維以壽民應詔。甫入都，疏劾兵部尚書楊嗣昌奪情。復攻總督熊文燦，言：「嗣昌挈軍旅權，付文燦兵十二萬，餉二百八十餘萬。使賊面縛輿櫬，猶應宣布皇威，而後待以不死；今乃講盟結約，若與國然。天下有授柄於賊而能制",
+      "matchType": "name-occurrence",
+      "title": "明史/卷216",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7216",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594843",
+      "textSha256": "eed39df6fcf73db5de337f0e7c650ed7c7dbbd6929240bc40fcf7935b9d1c733",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-1680cae8db0ea7c3",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 6663,
+      "excerpt": "孫士春、士錦，崇禎十年同舉進士。士春，字景之。第三人及第，授編修。明年，兵部尚書楊嗣昌奪情視事，未幾入閣。少詹事黃道周劾之，下獄。士春上疏曰：「嗣昌墨衰視事，既已罔效，陛下簡入綸扉，自應力辭新命。乃閱其奏牘，徒計歲月久近間，絕無哀痛惻怛之念，何奸",
+      "matchType": "name-occurrence",
+      "title": "明史/卷229",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7229",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2620007",
+      "textSha256": "1dd7fa4839071a05f93d6a5b24a580f0ea9256245b8bcf0a9cf03d5e674e098f",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-bc453d9df000588e",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 6547,
+      "excerpt": "不允。九年，條上戰守之策，並論賊三可擊狀。帝如議敕行。十一年，黃道周、劉同升等諫楊嗣昌奪情，被貶謫。範景文等疏救，春名與焉。明年正月，削景文籍，置春不問。春為御史，甚有聲。及居大僚，循職無咎。會上疏請改折白糧，忤旨，罷歸。是年卒。\n\n於孔兼，字元",
+      "matchType": "name-occurrence",
+      "title": "明史/卷231",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7231",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594859",
+      "textSha256": "bd2eb392df22a451455f3e05c4246fb6c1d90a1521f5217883744682dcb245f9",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-787ecdcc50c97ef5",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 7617,
+      "excerpt": "城。一時推知兵。歷尚寶司丞、大理左寺丞。十一年冬，都城被兵，兵部兩侍郎皆缺，尚書楊嗣昌請不拘常格，博推才望者遷補，遂擢必顯右侍郎。甫一月，無疾而卒。\n\n丁元薦，字長孺，長興人。父應詔，江西僉事。元薦舉萬歷十四年進士。請告歸。家居八年，始謁選為中書",
+      "matchType": "name-occurrence",
+      "title": "明史/卷236",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7236",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594864",
+      "textSha256": "0997d74d61f072ae653450e4e35c808f7ae80db273b814cde9a871ea66aa5b32",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-287c555495f747c3",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 3682,
+      "excerpt": "脫歸，謁象昇陽和。象昇令募兵山、陝。尋薦之朝，令赴軍前立功，帝不許。十年四月，以楊嗣昌言逮付法司，謫戍邊衞。\n\n德昌，崇禎初為清水營守備。三年夏，勦王嘉胤被傷，坐奪官。久之，起歷保定參將，連破土寇仁義王。十四年春，總督楊文岳命從虎大威以五千人援開",
+      "matchType": "name-occurrence",
+      "title": "明史/卷239",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7239",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594867",
+      "textSha256": "cd48ff039be3d1239754fc8a0da908f73fdb307fcfe281f19ac9b61f5a3609e9",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-5428a20bfac9b397",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 12534,
+      "excerpt": "「此待後至者，即舉眾南下爾。」越三日，蒙古兵數萬果從青山口入，即日南下。於是尚書楊嗣昌以嘉績知兵，調為職方員外郎。進郎中。督師中官高起潛譖之，會有發其納賄事，遂下獄。已，黃道周亦下獄。嘉績躬親飲食湯藥，力調護之，因從受《易》。會諸生塗仲吉疏救道周",
+      "matchType": "name-occurrence",
+      "title": "明史/卷240",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7240",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594868",
+      "textSha256": "ad07288a4ecf69a89f67e49a7bec3e305cdbb0a6f9c8402611d043fa2a6a811b",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-3a35ee995b59c746",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 5558,
+      "excerpt": "安，鞏遁去，後詣闕自言拒聘，上所撰《卻聘書》。兵部尚書梁廷棟論之，下獄坐死。巡撫楊嗣昌為訟冤，得遣戍。\n\n黃尊素，字真長，余姚人。萬歷四十四年進士。除寧國推官，精敏強執。\n\n天啟二年，擢御史，謁假歸。明年冬還朝，疏請召還余懋衡、曹於汴、劉宗周、周",
+      "matchType": "name-occurrence",
+      "title": "明史/卷245",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7245",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594873",
+      "textSha256": "79f8926e118484a622a7799d26a14e01ad6e03f84602b30fdd25ec99dd2c7339",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-b3a5d055a6e087b5",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 3472,
+      "excerpt": "餉二萬有奇，被旨嘉獎。十一年，畿輔戒嚴，命繼祖移駐德州。時標下卒僅三千，而奉本兵楊嗣昌令，五旬三更調。後令專防德州，濟南由此空虛。繼祖屢請敕諸將劉澤清、倪寵等赴援，皆逗遛不進。明年正月，大清兵克濟南，執德王。繼祖一人不能兼顧，言官交章劾繼祖，繼祖",
+      "matchType": "name-occurrence",
+      "title": "明史/卷248",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7248",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2630042",
+      "textSha256": "ed319e582f94be70238d59b595183e6f5543f754eb04b049a11bd501be3e3111",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-00ee9b1dacce2046",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 5504,
+      "excerpt": "守貴寧道，蔭子錦衣世千戶。久之，擢貴州布政使。四年大計，坐不謹落職。十三年，督師楊嗣昌薦之，詔以武昌通判監標下軍事。嗣昌卒，乃罷歸。\n\n盧安世，貴州赤水衛人。萬歷四十年舉於鄉，為富順教諭。天啟初，奢崇明反，遣賊逼取縣印，署令棄城走。安世收印，率壯",
+      "matchType": "name-occurrence",
+      "title": "明史/卷249",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7249",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2646328",
+      "textSha256": "5adebc9bae87de8b3c78771931ef0ecd5ba735ad1adb0de0cc404edff75b5c85",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-8e7e580d882d918b",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 6760,
+      "excerpt": "、之泳、之澤、之渙、之瀚，皆戰死。督師中官高起潛以聞。帝嗟悼，命所司優恤。當國者楊嗣昌、薛國觀輩陰扼之，但復故官，予祭葬而已。福王時，始贈太師，諡文忠。\n\n贊\n\n　　贊曰：承宗以宰相再視師，皆粗有成效矣，奄豎斗筲，後先齮扼，卒屏諸田野，至闔門膏斧",
+      "matchType": "name-occurrence",
+      "title": "明史/卷250",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7250",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594609",
+      "textSha256": "cd11929233f8d2f91579c9e502a50ea0233ced60a48cf8c24a4770ebcd5de302",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-67d17a932573c6d3",
+      "query": "楊嗣昌",
+      "count": 1,
+      "offset": 10868,
+      "excerpt": "水利。府縣官考滿，以是為殿最。至常平義倉，歲輸本色，依令甲行之足矣。」十四年春，楊嗣昌卒於軍，命九卿議罪。德璟議曰：「嗣昌倡聚斂之議，加剿餉、練餉，致天下民窮財盡，胥為盜，又匿失事，飾首功。宜按仇鸞事，追正其罪。」不從。\n\n十五年二月，耕耤禮成，",
+      "matchType": "name-occurrence",
+      "title": "明史/卷251",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594513",
+      "textSha256": "43131dac1425c006f63e1c6993cd02a1ecc313d70267b0e482f18bc631815e42",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-bc123fc0b9c46d57",
+      "query": "楊嗣昌",
+      "count": 7,
+      "offset": 19,
+      "excerpt": "〔篇題：卷二百五十二\n列傳第一百四十　楊嗣昌 吳甡〕\n\n○楊嗣昌吳甡\n\n楊嗣昌\n\n楊嗣昌，字文弱，武陵人。萬歷三十八年進士。改除杭州府教授。遷南京國子監博士，累進戶部郎中。天啟初，引疾歸。\n\n崇禎元年，起",
+      "matchType": "name-occurrence",
+      "title": "明史/卷252",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2609328",
+      "textSha256": "30ae9ba4bb23cfdf93878c61c25576998aadb2545789082cdb3c8ddacf21dadf",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-802f677365e36fb9",
+      "query": "楊嗣昌",
+      "count": 5,
+      "offset": 3990,
+      "excerpt": "。帝喜，即革總督盧象升任，命宇亮往代。字亮請督察，而帝忽改為總督，大懼，與國觀及楊嗣昌謀，且具疏自言。乃留象升，而宇亮仍往督察，各鎮勤王兵皆屬焉。甫抵保定，聞象升戰歿，過安平，偵者報大清兵將至，相顧無人色，急趨晉州避之，知州陳弘緒閉門不納，士民亦",
+      "matchType": "name-occurrence",
+      "title": "明史/卷253",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7253",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594879",
+      "textSha256": "b4ab60af5c026548732b9445bd9414a74912724ed256c3a65ea5381ce6b8494f",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-a81d59019b0152b5",
+      "query": "楊嗣昌",
+      "count": 3,
+      "offset": 4928,
+      "excerpt": "猷受李自成顯職，卒為世大詬。\n\n冬十月，京師被兵。請旌死事盧象升，而追戮誤國奸臣楊嗣昌，逮跋扈悍將左良玉；防關以備反攻，防潞以備透渡，防通、津、臨、德以備南下。帝不能盡行。\n\n閏月晦日召見廷臣於中左門。時姜埰、熊開元以言事下詔獄，宗周約九卿共救。",
+      "matchType": "name-occurrence",
+      "title": "明史/卷255",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7255",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594881",
+      "textSha256": "cedb7005ad7707517fb6cf577171a02dfa325bb7d5f5d25bfb3ad49cf62a2456",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-9c05cd4d00f85185",
+      "query": "楊嗣昌",
+      "count": 5,
+      "offset": 3999,
+      "excerpt": "計有裨，軍食無缺。」帝稱善，即命行之。嘗奏汰年深武弁無薦者四十八人，以邊才舉監司楊嗣昌、梁廷棟，後皆大用。\n\n二年十月，我大清兵由大安口入，都城戒嚴。洽急征四方兵入衛，督師袁崇煥，巡撫解經傳、郭之琮，總兵官祖大壽、趙率教、滿桂、侯世祿、尤世威、曹",
+      "matchType": "name-occurrence",
+      "title": "明史/卷257",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7257",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594883",
+      "textSha256": "80aa9c846e303855484f002e70fe2a899baf14425eaa66ad1303e9eaeaa73357",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-53a1d227097318a3",
+      "query": "楊嗣昌",
+      "count": 2,
+      "offset": 16629,
+      "excerpt": "亦罪，且其罪反重。勸懲無當，欲勘定大亂，未之前聞。從來無詘督臣以伸庸帥者，至今而楊嗣昌不得關其說；從來無抑言路以伸劣弁者，至今而王肇坤不得保其秩。王樸恇怯暴著，聽敵飽去，猶得與吳甡並論，播之天下，不大為口實哉！若撫臣之不肯任不敢任者，如了陜西之胡",
+      "matchType": "name-occurrence",
+      "title": "明史/卷258",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7258",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594893",
+      "textSha256": "1b9d86dec85639702c54976b12b02566cd0adcff74a60133af997e97cde17bdd",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-805e29b8273d06fa",
+      "query": "楊嗣昌",
+      "count": 2,
+      "offset": 19443,
+      "excerpt": "惡光抃，卒與志完同日斬西市。\n\n　　光抃才氣豪邁，而於大慮亦疏。在職方，深為尚書楊嗣昌所倚，曰：「吾不及光抃。」先是，毛文龍據東江，海疆賴之。文龍死，陳繼盛、黃龍、沈世魁代其部，往往為亂，中朝又素以糜餉為憂。及世魁死，島中無帥，光抃慫臾嗣昌撤之。",
+      "matchType": "name-occurrence",
+      "title": "明史/卷259",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2626298",
+      "textSha256": "b1c106cf4a6f021d4f5ef95f3218cc092a26ebcd30374e5099c50303f1b12a5e",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "楊嗣昌的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

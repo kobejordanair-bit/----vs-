@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "a67b5a5048df2c6297e181cf6dc1c6ff5ce40317cf7ef188ed05d244302c2b5c",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "2a19f2cb9fcf4b9cc88c3bad2733437ad70fb46697ea4a8721d3b2391353135d",
+  "plannedAfterSha256": "1e68c96e76d239c0c87e0b424db7de5900dc3b12800f8a198f41d117a5231a64",
+  "beforeRevision": 37,
+  "plannedAfterRevision": 38,
+  "patchBytes": 3369273,
+  "plannedDocumentBytes": 10288092,
+  "writtenFieldHashes": [
+    {
+      "id": "minister_周恩來_1990120203",
+      "field": "analysis",
+      "sha256": "9ee914208adc137a1f6683be8873c8c7822da16bbfe68e4aa18972cfba3c5154"
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "field": "soulEssence",
+      "sha256": "502ab6125b6828c6a6c027e9a90bf0f362354ee9d197df35196c34456aa8f4ee"
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "field": "stats",
+      "sha256": "38f0b66b6b99dfd7796a7800d013579dd3f822769e101cd83cc9f62c64bb3161"
+    },
+    {
+      "id": "minister_周恩來_1990120203",
+      "field": "statsAnalysis",
+      "sha256": "66987993dc9d54aebbdd00d520b9f3598f319cd0f114fe981f1137c33730dfca"
+    }
+  ]
+}

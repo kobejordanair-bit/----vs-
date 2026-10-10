@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_和珅_2003865491",
+  "slug": "44",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "inputSha256": "31b33edbca146beaf14dbb48f15d871a8e5fc2c39c8466b9fcc998936e037138",
+  "sourceSha256": "850bcbadf61811dd9bd5d3c8c175940a58e0da1cf321286039920e1c48f9f3c2",
+  "preservedDeepSha256": "e5a192277f77228ea0cbaf635c53b494398a8612eb29a722aa047444fef99978",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+      "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+      "promptFile": "analysis-batch-51-100/prompts/44.analysisStats.prompt.md",
+      "promptSha256": "aa7914ef5b74102b34e9018da95a003007e88b9405834b6339b864cba51c93c7",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "bb2bdb79cc56394f5027ac44a11fd75425e562270f5e949570cb02bcaec647e9",
+      "marker": "<!-- BATCH50_COMPLETE minister_和珅_2003865491 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_和珅_2003865491 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-51-100/prompts/44.soulEssence.prompt.md",
+      "promptSha256": "d165968fea7b13a2288802d5317c9aa7da89b6f24cfa8f4ccad3fcab7d20e252",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "a81cad2755ccaf50137fda5b05878fe27109bd43c481551e161dfe3c47907139",
+      "marker": "<!-- BATCH50_COMPLETE minister_和珅_2003865491 soulEssence -->",
+      "contextPath": "analysis-batch-51-100/drafts/44.analysis.md"
+    }
+  }
+}

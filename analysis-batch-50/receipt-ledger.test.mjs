@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { loadFixedManifest, validatePriorReceiptDocument, validateChunk } from './import.mjs';
 import { contentHash } from '../cloudflare/scripts/analysis-pilot-import.mjs';
-import { buildReceiptLedger, reduceReceiptChain } from './receipt-ledger.mjs';
+import { buildReceiptLedger, reduceReceiptChain, validateMixedFinalAudit } from './receipt-ledger.mjs';
 const json = async file => JSON.parse(await readFile(new URL(file,import.meta.url),'utf8'));
 const manifest = await loadFixedManifest();
 const steps = await Promise.all(['01-04','06-06','07-07'].map(async range => ({ file: `import.${range}.apply.json`, receipt: await json(`./import.${range}.apply.json`), dryRun: await json(`./import.${range}.dry-run.json`), batch: await json(`./results.${range}.v1.json`) })));
@@ -39,14 +39,20 @@ test('a complete valid full batch cannot smuggle a prior receipt', async () => {
   assert.throws(()=>validateChunk(full),error=>error.code==='invalid_completion_record');
 });
 
-test('real file-backed ledger rebuilds both authors and leaves whole-task completion pending final audit',async()=>{
+test('real file-backed ledger binds both authors to the completed production final audit',async()=>{
   const ledger=await buildReceiptLedger();
-  assert.equal(ledger.counts.assembled,50);assert.equal(ledger.counts.imported,5);
-  assert.equal(ledger.counts.partialImported,1);assert.equal(ledger.counts.importedFields,23);
-  assert.equal(ledger.complete,false);assert.equal(ledger.finalAuditVerified,false);
-  assert.equal(ledger.imports.length,3);
+  assert.equal(ledger.counts.assembled,50);assert.equal(ledger.counts.imported,50);
+  assert.equal(ledger.counts.partialImported,0);assert.equal(ledger.counts.importedFields,200);
+  assert.equal(ledger.complete,true);assert.equal(ledger.finalAuditVerified,true);
+  assert.equal(ledger.imports.length,48);
   assert.equal(ledger.records.find(item=>item.slug==='06').published.analysis.provider,'ChatGPT web');
   assert.equal(ledger.records.find(item=>item.slug==='06').assembledFields.soulEssence.provider,'Claude Code (Anthropic)');
+  const actualSteps=await Promise.all(ledger.imports.map(async item=>({file:item.file,receipt:await json('./'+item.file),dryRun:await json('./'+item.file.replace('apply.json','dry-run.json')),batch:await json('./'+item.resultsFile)})));
+  const chain=reduceReceiptChain(actualSteps,manifest),audit=await json('./final-audit.mixed.v2.json');
+  const changed=structuredClone(audit);changed.writtenFieldHashes[0].sha256='a'.repeat(64);
+  assert.throws(()=>validateMixedFinalAudit(changed,chain,manifest),e=>e.code==='mixed_final_audit_binding');
+  const forged=structuredClone(audit);forged.publicationSnapshots[0].receiptSha256='a'.repeat(64);
+  assert.throws(()=>validateMixedFinalAudit(forged,chain,manifest),e=>e.code==='mixed_final_audit_snapshot_binding');
 });import { loadClaudePerson, assembleClaudeResults } from './claude-author.mjs';
 
 test('source access labels and review search hashes must point to the recorded evidence', async () => {

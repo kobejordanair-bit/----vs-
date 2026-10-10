@@ -1,0 +1,1719 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "emperor_孫文_1671742205",
+  "name": "孫文",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "中華民國",
+    "title": "孫中山"
+  },
+  "candidatePages": [
+    {
+      "title": "孫中山",
+      "pageId": 139,
+      "revisionId": 94535291,
+      "revisionTimestamp": "2026-09-24T12:34:01Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AD%AB%E4%B8%AD%E5%B1%B1",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94535291",
+      "wikidataId": "Q8573",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "國民黨歷屆全代會-第二次全代會",
+          "url": "http://www.kmt.org.tw/p/blog-page_36.html?m=1",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "總理年譜長編初稿各方簽注彙編",
+          "url": "https://www.sunyat-sen.org/html/sunjiasi/sunjiansi7.htm",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "孫科簽注",
+          "publisher": "",
+          "date": "1933",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "中華革命黨誓約",
+          "url": "https://sunology.culture.tw/cgi-bin/gs32/s2gsweb.cgi/ccd=FylKSP/dispimggraph?fulltext=%9B%9ARZbJRZbFbJU%80k%A2ep%5CEY%9B%87%A0&dbid=%7BzRZbJRZbFbJ",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "國立國父紀念館",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "台媒揭秘：孙中山为何失掉美国国籍?",
+          "url": "https://taiwan.huanqiu.com/article/9CaKrnJrsPR",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "环球网",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山傳》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "尚明軒",
+          "publisher": "金城出版社",
+          "date": "2023",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孙中山",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite encyclopedia",
+          "author": "",
+          "publisher": "上海辭書出版社",
+          "date": "1989",
+          "isbn": "7532600831",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "翠亨孫中山故居文物的社會史解讀 - Publication",
+          "url": "https://schina-publication.hkust.edu.hk/sites/default/files/pubs/Jour-04.2.A03.pdf",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山全集》第一卷",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "中華書局",
+          "date": "1981",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《宋教仁：中國民主憲政的先驅》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "吳相湘",
+          "publisher": "傳記文學出版社",
+          "date": "1985-09-15",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "What did Sun Yat-sen really die of? A re-assessment of his illness and the cause of his death",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "",
+          "publisher": "Chinese Journal of Cancer",
+          "date": "2016-09-02",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山非常言：論道1896—1925》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "孫中山",
+          "publisher": "人民日報出版社",
+          "date": "2011",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "胡锦涛在孙中山先生诞辰140周年纪念大会上的讲话",
+          "url": "http://www.gov.cn/ldhd/2006-11/12/content_440200.htm",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "新华社",
+          "date": "2006-11-12",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫逸仙先生傳》上冊",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "吳相湘",
+          "publisher": "遠東圖書公司",
+          "date": "1982",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《三十歲前的孫中山——翠亨、檀島、香港1866-1895》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "黄宇和",
+          "publisher": "中華書局（香港）",
+          "date": "2011",
+          "isbn": "978-988-8104-67-3",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山與香港》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "劉家泉",
+          "publisher": "中央文獻出版社",
+          "date": "2001",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫逸仙》",
+          "url": "https://archive.org/details/sunyixian0000berg",
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "白吉爾（Marie-Claire Bergère）著、溫哈溢譯（第九章協力林添貴，人物小傳協力楊詩韻）",
+          "publisher": "時報出版",
+          "date": "2010-06-21",
+          "isbn": "978-957-13-5208-4",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孫中山生平事業追憶錄",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "人民出版社",
+          "date": "1986",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山生平事業追憶錄》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "邵元沖",
+          "publisher": "人民出版社",
+          "date": "1986",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《國父革命運動史要及其思想之演進》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "蔣永敬",
+          "publisher": "正中書局",
+          "date": "1975",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《國父之大學時代》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "羅香林",
+          "publisher": "獨立出版社",
+          "date": "1945",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫逸仙傳記》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "中和出版",
+          "date": "2011",
+          "isbn": "978-988-15119-7-3",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山年譜長編》上冊",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "中華書局",
+          "date": "1991",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《香港的歷史》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "劉蜀永",
+          "publisher": "新華出版社",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山研究》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "李敖",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《論民國時期領導精英》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "蔣永敬",
+          "publisher": "商務印書館",
+          "date": "2009",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《近代中日關係研究論集》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "彭澤周",
+          "publisher": "藝文出版社",
+          "date": "1978",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《末代王朝與近代中國：晚清與中華民國》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "臺灣商務印書館",
+          "date": "2017",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孫文革命：《聖經》和《易經》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "黃宇和",
+          "publisher": "中華書局（香港）",
+          "date": "2015",
+          "isbn": "978-988-8310-67-8",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "〈武昌起義的經緯〉",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "唐德剛",
+          "publisher": "明報雜誌有限公司",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《武昌起義》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "湖北人民出版社",
+          "date": "1961",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《中國近代被消失的八十年終極版》（下）",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "Hong Kong New Media",
+          "date": "2015",
+          "isbn": "978-988-14176-8-8",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孙中山留影辨证",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "上海书店出版社",
+          "date": "2001",
+          "isbn": "9787806227732",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "偉人孫中山",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "孫繼業",
+          "publisher": "團結出版社",
+          "date": "2017",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《中國歷史問題精解》下冊",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "現代教育研究社",
+          "date": "1993",
+          "isbn": "962-11-2592-8",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《會考版中國歷史（中學五年級適用）》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "王爾敏校訂",
+          "publisher": "現代教育研究社",
+          "date": "1993",
+          "isbn": "962-11-2588-X",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《近代中國史綱》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "郭廷以",
+          "publisher": "中文大學出版社",
+          "date": "1986",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "陸榮廷等反對廣東組織軍政府之要電",
+          "url": "https://archive.org/details/shishi-xinbao-1917.09.12/page/n5/mode/2up?view=theater",
+          "type": "citation-template",
+          "template": "Cite news",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《蔣介石先生年表》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "傳記文學出版社",
+          "date": "1978-06-01",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山全集》第七卷",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "孫中山",
+          "publisher": "中華書局有限公司",
+          "date": "1981",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孫中山與香港",
+          "url": "https://www.eduhk.hk/chineseculture/content/hkculture/tm/history/history01.pdf",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《國父傳》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "劉中和編著",
+          "publisher": "益群書店",
+          "date": "1984",
+          "isbn": "9575520858",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "共产国际与商团事件——孙中山及国民党镇压广州商团的原因及其影响",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "敖光旭 中山大学历史系",
+          "publisher": "中國評論",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山全集》第十一卷",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "孫中山",
+          "publisher": "中華書局",
+          "date": "1981",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孫中山的名號稱謂獵趣",
+          "url": "http://www.sunyat-sen.org:1980/b5/sunyat-sen.org/sun2007/show.php?id=182",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "孙中山故居纪念馆",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "辛亥年孫中山在倫敦化名考",
+          "url": "http://www.sszx.org.cn/sunyjView.aspx?id=969",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "李纾",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《孫中山：從鴉片戰爭到辛亥革命》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "黃宇和",
+          "publisher": "聯經出版",
+          "date": "2016",
+          "isbn": "978-957-08-4828-1",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《天下為公：孫中山傳》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "李菁",
+          "publisher": "團結出版社",
+          "date": "2021",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《張學良口述歷史》",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "遠流出版",
+          "date": "2009-03-01",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "中華革命史",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "貝畢",
+          "publisher": "上海光明書局",
+          "date": "1933",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《革命逸史》第一集",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "馮自由",
+          "publisher": "臺灣商務印書館",
+          "date": "1971",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《德宗景皇帝實錄卷之四百七十九》",
+          "url": "https://sillok.history.go.kr/mc/id/qsilok_012_4790_0010_0010_0040_0010",
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《毛澤東文集》第三卷",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "人民出版社",
+          "date": "1993-1999",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《毛泽东选集》第五卷",
+          "url": "http://www.southcn.com/news/community/shzt/sunys/memory/200503100957.htm",
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "人民出版社",
+          "date": "1977",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "〈宋慶齡第一張出國護照及其結婚誓約書〉(下)",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite journal",
+          "author": "周谷",
+          "publisher": "明報雜誌有限公司",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《懸案百年–宋教仁案與國民黨》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "張耀杰",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "我也談談孫政府",
+          "url": "https://archive.org/details/NPTCM19240714/",
+          "type": "citation-template",
+          "template": "Cite news",
+          "author": "",
+          "publisher": "",
+          "date": "1924-07-14",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "蓋棺論定之孫文",
+          "url": "https://drb-qa.nypl.org/read/8963494",
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "",
+          "publisher": "討赤旬報",
+          "date": "1926",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孫中山兩女名考",
+          "url": "http://www.zsnews.cn/Column/2006/03/22/551192.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "中山政協",
+          "publisher": "中山網",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "獨家專訪：孫中山外孫宮川東一追溯孫中山的日本婚戀與血脈",
+          "url": "http://www.yzzk.com/cfm/Content_Archive.cfm?Channel=aw&Path=3105002231/09aw2.cfm",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "毛峰",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "「孫逸仙博士」一詞引發的聯想",
+          "url": "https://wufi.org.tw/%E3%80%8C%E5%AD%AB%E9%80%B8%E4%BB%99%E5%8D%9A%E5%A3%AB%E3%80%8D%E4%B8%80%E8%A9%9E%E5%BC%95%E7%99%BC%E7%9A%84%E8%81%AF%E6%83%B3",
+          "type": "citation-template",
+          "template": "cite journal",
+          "author": "葉彥邦",
+          "publisher": "台灣獨立建國聯盟",
+          "date": "2005-11",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "陈其美：坐镇大连 指挥东北讨袁斗争",
+          "url": "https://www.dl-library.net.cn/wenxian/dlnet/content.php?id=337793",
+          "type": "citation-template",
+          "template": "cite news",
+          "author": "孙玉",
+          "publisher": "",
+          "date": "2014-08-11",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孫中山傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "辭海",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山全集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中華民國臨時約法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "宋教仁：中國民主憲政的先驅",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "建設",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "實業計畫",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山非常言：論道1896—1925",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫逸仙先生傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "三十歲前的孫中山——翠亨、檀島、香港1866-1895",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山與香港",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫逸仙",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "聖經",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新政真詮",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國父革命運動史要及其思想之演進",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國父之大學時代",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "盛世危言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫逸仙傳記",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山年譜長編",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "太平雜誌",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中西日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "總理開始學醫與革命運動五十周年紀念史略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "萬國公報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "興中會章程",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "德臣西報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "易經",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "香港的歷史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山研究",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "倫敦蒙難記",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "赤十字會救傷第一法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國近代史詞典",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "論民國時期領導精英",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "近代中日關係研究論集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "與孫文問答",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "支那現勢地圖",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "末代王朝與近代中國：晚清與中華民國",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國民報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "三十三年落花夢",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "支那保全分割合論",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "江蘇",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "檀山新報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "敬告同鄉",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大同日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國問題之真解決",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "圖南日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明報月刊",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "革命方略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "軍政府宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "對外宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中興日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "南洋總滙報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "論革命不可強為主張",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "平實開口便錯",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "美洲少年",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "少年中國晨報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "武昌起義",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國近代被消失的八十年終極版",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "濱海雜誌",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "告世界書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大陸報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "臨時大總統就職宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "告全國同胞書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國歷史問題精解",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "臨時約法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "約法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "會考版中國歷史（中學五年級適用）",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "解決民生問題",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "任命狀",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "近代中國史綱",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "商務專條",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "每日新聞",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民國",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中華革命黨總章",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中華新報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "蔣介石先生年表",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "軍政府改組大綱修訂案",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "軍政府改組修正案審查報告",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中華民國政府組織大綱",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "军人精神教育",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫文越飛聯合宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國父傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北上宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大亞洲主義",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "入京宣言",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山：從鴉片戰爭到辛亥革命",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "天下為公：孫中山傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "張學良口述歷史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "倫敦被難記",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北支日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "革命逸史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "德宗景皇帝實錄卷之四百七十九",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "上李鴻章書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "湼瓦明星報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國的民主主義和民粹主義",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "三民主義",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "五權憲法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國革命史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中國存亡問題",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "建國大綱",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "建國方略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民權初步",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫文學說",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山選集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "国父全集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "社會建設",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "實業計劃",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "在列宁逝世二周年纪念大会上的演说",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "李大钊文集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "毛澤東文集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "毛泽东选集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "致香港總督書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "致日本黑龍會內田良平書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "致日本總理桂太郎書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "致日本首相大隈重信書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "致日本政務局長小池張造書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "懸案百年–宋教仁案與國民黨",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山——勉爲其難的革命家",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山被囚域多利監獄？",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中山先生的名字",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中央日報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晚清七十年：袁世凱、孫文與辛亥革命",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "百年反思，孫中山是問題人物",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "蔣總統秘錄",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "產經新聞",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中山先生與日本",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "三十歲前的孫中山：翠亨．檀島．香港，1866-1895",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫逸仙倫敦蒙難真相",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫逸仙在倫敦，1896-1897：三民主義思想探源",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山未完成的革命",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山——壯志未酬的愛國者",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "[http://taiwanebook.ncl.edu.tw/en/book/NCL-003108326/reader 中山先生與美國]",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中山市小欖鎮志",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "百年反思，孫中山是問題人物",
+          "url": "http://www.open.com.hk/content.php?id=490#.WgkO2mhSzIU",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民權思想與先鋒主義：民國時期孫中山的政治主張",
+          "url": "http://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_1503.pdf",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山的蘇聯顧問，1920-1925",
+          "url": "http://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_938.pdf",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山的權能區分理論與中國政治文化的連接關係",
+          "url": "http://www.rchss.sinica.edu.tw/files/archive/147_d0775b8c.pdf",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中山先生與港澳",
+          "url": "https://books.google.com.hk/books?id=ZLOlVGIZ2_sC&printsec=frontcover&dq=%E4%B8%AD%E5%B1%B1%E5%85%88%E7%94%9F%E8%88%87%E6%B8%AF%E6%BE%B3&hl=zh-TW&sa=X&ved=0ahUKEwjU3OCKj_3MAhWCkpQKHXGsDnIQ6AEIGzAA#v=onepage&q=%E4%B8%AD%E5%B1%B1%E5%85%88%E7%94%9F%E8%88%87%E6%B8%AF%E6%BE%B3&f=false",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孙中山与辛亥革命时期的“五族共和”论",
+          "url": "http://www.nssd.org/articles/article_read.aspx?id=10403959",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孙中山的革命活动与日本",
+          "url": "http://www.nssd.org/articles/article_read.aspx?id=1002097827",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山與近代法國",
+          "url": "http://www.nssd.org/articles/article_read.aspx?id=1002246958",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中山先生與美國",
+          "url": "http://taiwanebook.ncl.edu.tw/en/book/NCL-003108326/reader",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "论孙中山晚年与美国关系",
+          "url": "http://www.nssd.org/articles/article_read.aspx?id=15568146",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孙中山与德国——兼论“中德苏联盟”的构想",
+          "url": "http://www.nssd.org/articles/article_read.aspx?id=30537279",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "国立国父紀念館 (台湾)",
+          "url": "http://www.yatsen.gov.tw/",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國父孫中山紀念網（孫穗芳博士提供）",
+          "url": "http://www.sinofather.org/",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山學術研究資訊網",
+          "url": "https://web.archive.org/web/20050829181818/http://sun.yatsen.gov.tw/",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中山學術資料庫系統",
+          "url": "http://sunology.culture.tw/",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "上海市孙中山宋庆龄文物管理委员会",
+          "url": "http://sswgw.org.cn/",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孫中山評論集",
+          "url": "https://taiwanebook.ncl.edu.tw/zh-tw/book/NCL-004175426/reader",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [
+        {
+          "title": "上李鴻章書",
+          "url": "https://zh.wikisource.org/wiki/%E4%B8%8A%E6%9D%8E%E9%B4%BB%E7%AB%A0%E6%9B%B8",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "心理建設/第八章",
+          "url": "https://zh.wikisource.org/wiki/%E5%BF%83%E7%90%86%E5%BB%BA%E8%A8%AD%2F%E7%AC%AC%E5%85%AB%E7%AB%A0",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "入京宣言",
+          "url": "https://zh.wikisource.org/wiki/%E5%85%A5%E4%BA%AC%E5%AE%A3%E8%A8%80",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "授孫文以籌劃全國鐵路全權令",
+          "url": "https://zh.wikisource.org/wiki/%E6%8E%88%E5%AD%AB%E6%96%87%E4%BB%A5%E7%B1%8C%E5%8A%83%E5%85%A8%E5%9C%8B%E9%90%B5%E8%B7%AF%E5%85%A8%E6%AC%8A%E4%BB%A4",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "孫文禍國禍粵罪状",
+          "url": "https://zh.wikisource.org/wiki/%E5%AD%AB%E6%96%87%E7%A6%8D%E5%9C%8B%E7%A6%8D%E7%B2%B5%E7%BD%AA%E7%8A%B6",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "建國方畧/心理建設",
+          "url": "https://zh.wikisource.org/wiki/%E5%BB%BA%E5%9C%8B%E6%96%B9%E7%95%A7%2F%E5%BF%83%E7%90%86%E5%BB%BA%E8%A8%AD",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "建國方畧/物質建設",
+          "url": "https://zh.wikisource.org/wiki/%E5%BB%BA%E5%9C%8B%E6%96%B9%E7%95%A7%2F%E7%89%A9%E8%B3%AA%E5%BB%BA%E8%A8%AD",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "建國方畧/社會建設",
+          "url": "https://zh.wikisource.org/wiki/%E5%BB%BA%E5%9C%8B%E6%96%B9%E7%95%A7%2F%E7%A4%BE%E6%9C%83%E5%BB%BA%E8%A8%AD",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        }
+      ],
+      "retrievedAt": "2026-10-02T10:33:08.955Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [
+    {
+      "id": "reading-review:modern-emperor_孫文_1671742205",
+      "recordIds": [
+        "emperor_孫文_1671742205"
+      ],
+      "recordNames": [
+        "孫文"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:nlpi-modern",
+          "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000025",
+          "locator": "生平開頭及臨時大總統段",
+          "supportedFact": "孫文與通稱孫中山指向同一人物；此頁記其曾任中華民國臨時大總統。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "limited-claim-reviewed",
+      "claimsReviewed": [
+        "孫文與通稱孫中山指向同一人物；此頁記其曾任中華民國臨時大總統。"
+      ],
+      "canonicalName": "孫文",
+      "aliases": [
+        "孫中山",
+        "孫逸仙"
+      ]
+    }
+  ],
+  "archiveCandidates": [],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "孫文的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

@@ -1,0 +1,693 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "minister_王衍_2004116732",
+  "name": "王衍",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "ambiguous",
+    "dynasty": "晉朝",
+    "title": "清談誤國"
+  },
+  "candidatePages": [
+    {
+      "title": "王衍",
+      "pageId": 101990,
+      "revisionId": 88143032,
+      "revisionTimestamp": "2025-07-06T17:55:49Z",
+      "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%A1%8D",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=88143032",
+      "wikidataId": "Q11573206",
+      "isDisambiguation": true,
+      "disambiguationTargets": [
+        "王衍 (西晋)",
+        "冉魏",
+        "王衍 (南北朝)",
+        "王衍 (前蜀)"
+      ],
+      "bibliography": [],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:47:00.912Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    },
+    {
+      "title": "王衍 (西晋)",
+      "pageId": 769076,
+      "revisionId": 89436958,
+      "revisionTimestamp": "2025-10-07T13:30:30Z",
+      "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%A1%8D_(%E8%A5%BF%E6%99%8B)",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=89436958",
+      "wikidataId": "Q15886837",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "东晋门阀政治",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "田余庆",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "惠帝紀",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世說新語·傷逝篇",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "翰林：95學測專刊",
+          "url": "http://teach.ymhs.tyc.edu.tw/chinese/Exam/knowledge_test/education_95.pdf",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世說新語·容止篇",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世說新語·汰侈篇",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "古中國科技與文明——造紙",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "雌黄在古代充当“涂改液”",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晉書·羊祜傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晉書·王衍傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世说新语·品藻",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晉書·桓溫傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "三國志·崔林傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世說人名譜",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "金谷詩敘",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "王氏譜",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世说新语·规箴第十·8",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "世说新语注·规箴第十·8",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晉書·后妃傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "資治通鑑",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [
+        {
+          "title": "世說新語/傷逝",
+          "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E%2F%E5%82%B7%E9%80%9D",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "世說新語/容止",
+          "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E%2F%E5%AE%B9%E6%AD%A2",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "世說新語/汰侈",
+          "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E%2F%E6%B1%B0%E4%BE%88",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "晉書/卷034",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7034",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "晉書/卷043",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7043",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "世說新語/品藻",
+          "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E%2F%E5%93%81%E8%97%BB",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        },
+        {
+          "title": "晉書/卷032",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7032",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        }
+      ],
+      "retrievedAt": "2026-10-02T10:50:02.646Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    },
+    {
+      "title": "冉魏",
+      "pageId": 54484,
+      "revisionId": 91610991,
+      "revisionTimestamp": "2026-02-21T03:14:10Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%86%89%E9%AD%8F",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=91610991",
+      "wikidataId": "Q845531",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "十六国春秋·后赵录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晋书.载记七.石季龙下",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "染华墓志",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:50:02.646Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    },
+    {
+      "title": "王衍 (南北朝)",
+      "pageId": 6029917,
+      "revisionId": 88655047,
+      "revisionTimestamp": "2025-08-09T12:37:18Z",
+      "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%A1%8D_(%E5%8D%97%E5%8C%97%E6%9C%9D)",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=88655047",
+      "wikidataId": "Q48934479",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "南齐书·卷四十九·列传第三十",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "南史·卷二十三·列传第十三",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "魏书·卷六十三·列传第五十一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北史·卷四十二·列传第三十",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "魏书·卷十·帝纪第十",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "资治通鉴·卷第一百五十四",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北齐书·卷四十二·列传第三十四",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北史·卷三十·列传第十八",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:50:02.646Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    },
+    {
+      "title": "王衍 (前蜀)",
+      "pageId": 170782,
+      "revisionId": 91695234,
+      "revisionTimestamp": "2026-02-27T17:34:03Z",
+      "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%A1%8D_(%E5%89%8D%E8%9C%80)",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=91695234",
+      "wikidataId": "Q1129329",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "蜀梼杌校笺",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "资治通鉴 卷第二百七十一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:50:02.646Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:hanshu-f8b4a720f33f3d41",
+      "query": "王衍",
+      "count": 1,
+      "offset": 8746,
+      "excerpt": "年，徙楚，二十八年薨。　陽朔元年，懷王芳嗣，一年薨，亡後。　　\n\n　陽朔二年，思王衍以孝王子紹封，二十一年薨。　元壽元年，王紆嗣，十年，王莽篡位，貶為公，明年廢。　\n\n　　信都綏和元年十一月壬子，王景以孝王孫立為定陶王，奉恭王後，三年。\n建平二",
+      "matchType": "name-occurrence",
+      "title": "漢書/卷014",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7014",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2605964",
+      "textSha256": "ee72ce0bdf0950e551a276b90b2644a3b4296d739af34c14ed8a79978536779f",
+      "contentPath": "/static/data/history/archive-books/hanshu.json"
+    },
+    {
+      "documentId": "document:hanshu-67d574981018de00",
+      "query": "王衍",
+      "count": 1,
+      "offset": 4071,
+      "excerpt": "私賂遺趙皇后、昭儀，定陶王竟為太子。\n\n明年春，成帝崩。帝素彊，無疾病。是時楚思王衍、梁王立來朝，明旦當辭去，上宿供張白虎殿。又欲拜左將軍孔光為丞相，已刻侯印書贊。昏夜平善，鄉晨，傅恊拦欲起，因失衣，不能言，晝漏上十刻而崩。民間歸罪趙昭儀，皇太",
+      "matchType": "name-occurrence",
+      "title": "漢書/卷097下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7097%E4%B8%8B",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=8742343",
+      "textSha256": "465e6f3ee1de0f94cda253b4621e649ad7086246fcf4aeddc8c2ea69e43d6445",
+      "contentPath": "/static/data/history/archive-books/hanshu.json"
+    },
+    {
+      "documentId": "document:houhanshu-b17bbd0820bd67bb",
+      "query": "王衍",
+      "count": 1,
+      "offset": 1159,
+      "excerpt": "曰肅宗，共進武德之舞。」制曰：「可。」\n\n癸亥，陳王羨、彭城王恭、樂成王黨、下邳王衍、梁王暢始就國。〔建初三年，章帝不忍與諸王乖離，皆留京師，今遣之國。〕\n\n夏四月丙子，謁高廟。丁丑，謁世祖廟。\n\n戊寅，詔曰：「昔孝武皇帝致誅胡、越，故權收鹽鐵",
+      "matchType": "name-occurrence",
+      "title": "後漢書/卷4",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B74",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2457366",
+      "textSha256": "6222804d20d10106b36e9c74ee812783f729d04b4dc7f060a4eba02d644b6311",
+      "contentPath": "/static/data/history/archive-books/houhanshu.json"
+    },
+    {
+      "documentId": "document:houhanshu-c10fd68759ec1989",
+      "query": "王衍",
+      "count": 1,
+      "offset": 13532,
+      "excerpt": "一見濮陽。〔縣名，屬東郡，即古昆吾國，帝顓頊之墟，今濮州縣。〕\n\n二月乙亥，下邳王衍薨。\n\n甲辰，南巡狩。\n\n三月戊午朔，日有食之。\n\n庚申，幸宛，帝不豫。辛酉，令大將軍耿寶行太尉事。祠章陵園廟，告長沙、零陵太守，祠定王、節侯、鬱林府君。乙丑，",
+      "matchType": "name-occurrence",
+      "title": "後漢書/卷5",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B75",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2457367",
+      "textSha256": "c265dc1d776b8c78922a14caa4d264f50b70eb4dadb15bee62da12ec938c72bf",
+      "contentPath": "/static/data/history/archive-books/houhanshu.json"
+    },
+    {
+      "documentId": "document:houhanshu-ba3b356754ec64ed",
+      "query": "王衍",
+      "count": 1,
+      "offset": 4906,
+      "excerpt": "斛。」〕\n\n劉般\n\n劉般字伯興，宣帝之玄孫也。宣帝封子囂於楚，是為孝王。孝王生思王衍，衍生王紆，紆生般。自囂至般，積累仁義，世有名節，而紆尤慈篤。早失母，同產弟原鄉侯平尚幼，紆親自鞠養，常與共臥起飲食。及成人，未嘗離左右。平病卒，紆哭泣歐血，數",
+      "matchType": "name-occurrence",
+      "title": "後漢書/卷39",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B739",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1761068",
+      "textSha256": "ea22bf2da333cb7de061fc2574c8a6e60ec77460bdf86a1475b5e89e4dcc6062",
+      "contentPath": "/static/data/history/archive-books/houhanshu.json"
+    },
+    {
+      "documentId": "document:houhanshu-142a1dda5fda6f61",
+      "query": "王衍",
+      "count": 2,
+      "offset": 3572,
+      "excerpt": "道被誅。立三十四年，國除。\n\n〔注[一]今貝州宗城縣也，隨室諱改焉。〕\n\n下邳惠王衍\n\n下邳惠王衍，永平十五年封。衍有容貌，肅宗即位，常在左右。建初初冠，詔賜衍師傅已下官屬金帛各有差。四年，以臨淮郡及九江之鐘離﹑當塗﹑東城﹑歷陽﹑全椒合十七縣益",
+      "matchType": "name-occurrence",
+      "title": "後漢書/卷50",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B750",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2457184",
+      "textSha256": "03688da3f68854b786d1b5798c42bdfe0fff7140ed70caeca73dbeeb4bf52d7f",
+      "contentPath": "/static/data/history/archive-books/houhanshu.json"
+    },
+    {
+      "documentId": "document:sanguozhi-3da789286e895a6e",
+      "query": "王衍",
+      "count": 1,
+      "offset": 11614,
+      "excerpt": "也。性纯笃闲雅，好礼无违，存心经诰，博学洽闻。选为濮阳王文学，迁领军长史，丧官。王衍时为领军，哭之甚恸。〕\n\n鄭渾\n\n郑浑字文公，河南开封人也。高祖父众，众父兴，皆为名儒。〔续汉书曰：兴字少赣，谏议大夫。众字子师，大司农。〕浑兄泰，与荀攸等谋诛",
+      "matchType": "name-occurrence",
+      "title": "三國志/卷16",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B716",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2610840",
+      "textSha256": "32e2ed205bcfde82111415e0ec80db1efa6ffbb5eacb2ec1850e8e2d08c601d0",
+      "contentPath": "/static/data/history/archive-books/sanguozhi.json"
+    },
+    {
+      "documentId": "document:sanguozhi-034e27b90c698a59",
+      "query": "王衍",
+      "count": 1,
+      "offset": 9072,
+      "excerpt": "泰舒。有器度幹用，歷職著績，終於太僕。次弟豫，字泰寧，相國參軍，知名，早卒。女適王衍。配弟鎮，字季南，謁者僕射。鎮子弈，字泰業。山濤啟事稱弈高簡有雅量，歷位雍州刺史、尚書。〕\n\n【評】\n\n評曰：滿寵立志剛毅，勇而有謀。田豫居身清白，規畧明練。牽",
+      "matchType": "name-occurrence",
+      "title": "三國志/卷26",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B726",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2085108",
+      "textSha256": "2508c924d1aee65cbb795b1ecb2748f23ed0a86ab7260cb15cec77b9420b2077",
+      "contentPath": "/static/data/history/archive-books/sanguozhi.json"
+    },
+    {
+      "documentId": "document:songshu-153e51e70c5cc1b0",
+      "query": "王衍",
+      "count": 1,
+      "offset": 5993,
+      "excerpt": "明帝造\n\n皇業沿德建，帝運資勳融。\n\n胤唐重盛軌，胄楚載休風。\n\n堯帝兆深祥，元王衍遐慶。\n\n積善傳上業，祚福啟英聖。\n\n衰數隨金祿，登歷昌永命。\n\n維宋垂光烈，世美流舞咏。\n\n《聖祖頌》\n\n聖祖惟高德，積勳代晉歷。\n\n永建享鴻基，萬古盛音冊。",
+      "matchType": "name-occurrence",
+      "title": "宋書/卷22",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B722",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=449316",
+      "textSha256": "ef3d1a80dfc9bef5200c0e440b67b8277174c980b5fbedb10b9a19ae39bd7652",
+      "contentPath": "/static/data/history/archive-books/songshu.json"
+    },
+    {
+      "documentId": "document:jinshu-178e0178b4c349d8",
+      "query": "王衍",
+      "count": 1,
+      "offset": 8052,
+      "excerpt": "皇太弟，以隆我晉邦。以司空越爲太傅，與太宰顒夾輔朕躬。司徒王戎參錄朝政，光祿大夫王衍爲尚書左僕射。安南將軍虓、安北將軍浚〔安北將軍浚「浚」原作「濬」。周校：安北將軍時爲王浚。今據懷紀、成都王穎傳及本傳改。〕、平北將軍騰各守本鎮。高密王簡爲鎮南將",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷004",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7004",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2317129",
+      "textSha256": "ba2a78ad886733210936e2eb1156d73160350340b2255229e47ec7b4dc1d43f4",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-1d9179447366c9ff",
+      "query": "王衍",
+      "count": 5,
+      "offset": 502,
+      "excerpt": "植子融爲樂城縣王。南陽王模殺河間王顒于雍谷。辛丑，以中書監溫羨爲司徒，尚書左僕射王衍爲司空。己酉，葬孝惠皇帝于太陽陵。李雄別帥李離寇梁州。\n\n永嘉元年\n\n　　永嘉元年春正月癸丑朔〔正月癸丑朔　正月壬子朔，非癸丑。〕，大赦，改元，除三族刑。以太傅",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷005",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7005",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=7904721",
+      "textSha256": "dbe8bf574eec0bc2eac67bd18de0c04ce36df78bec98d118f8f07496f5e8423a",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-7801302bec230636",
+      "query": "王衍",
+      "count": 1,
+      "offset": 8986,
+      "excerpt": "后知瑋怨之，乃使帝作密詔令瑋誅瓘、亮，以報宿憾。模知后凶暴，恐禍及己，乃與裴頠、王衍謀廢之，衍悔而謀寢。\n\n　　后遂荒淫放恣，與太醫令程據等亂彰內外。洛南有盜尉部小吏，端麗美容止，既給冢役，忽有非常衣服，眾咸疑其竊盜，尉嫌而辯之。賈后疏親欲求盜",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷031",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7031",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2479706",
+      "textSha256": "8bd172744c2d5c4b4e21b3805e86739fae9d62e49588d6ed145813dd29974048",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-35dc9ee348937c6c",
+      "query": "王衍",
+      "count": 1,
+      "offset": 2300,
+      "excerpt": "是彰其德，於祜無傷也。」\n\n　　祜貞愨無私，疾惡邪佞，荀勖、馮紞之徒甚忌之。從甥王衍嘗詣祜陳事，辭甚俊辨，祜不然之，衍拂衣而起。祜顧謂賓客曰：「王夷甫方以盛名處大位，然敗俗傷化，必此人也。」步闡之役，祜以軍法將斬王戎，故戎、衍並憾之，每言論多毀",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷034",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7034",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2567662",
+      "textSha256": "64b4f2d2bb00d44c09bb880d495075789b538d79d7af9846b375b4471f3048e1",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-8abf91def4061bc7",
+      "query": "王衍",
+      "count": 4,
+      "offset": 4549,
+      "excerpt": "蕩，不尊儒術，何晏、阮籍素有高名於世，口談浮虛，不遵禮法，屍祿耽寵，仕不事事；至王衍之徒，聲譽太盛，位高勢重，不以物務自嬰，遂相放效，風教陵遲，乃著崇有之論以釋其蔽曰：\n\n夫總混群本，宗極之道也。方以族異，庶類之品也。形象著分，有生之體也。化感",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷035",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7035",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2506399",
+      "textSha256": "07d0c0d87d07bc1a3af6aadf9dadd4b2ee9cecac5e553c43c9e40fc50c145e84",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-9466e1adbb9fcd49",
+      "query": "王衍",
+      "count": 1,
+      "offset": 8541,
+      "excerpt": "公。太寧二年卒，追贈衛尉，諡曰定。子達嗣。\n\n藩弟組\n\n　　組字大章。弱冠，太尉王衍見而稱之曰：「夷雅有才識。」初為司徒左西屬，補太子舍人。司徒王渾請為從事中郎，轉左長史，歷太子中庶子、滎陽太守。\n\n　　趙王倫為相國，欲收大名，選海內德望之士，",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷039",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7039",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2108782",
+      "textSha256": "e78bb13a204125de708ea97c5b05f393ba3d0d26b48f2aa531eecdbaadc2da56",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-f1afb7134dc4d68b",
+      "query": "王衍",
+      "count": 1,
+      "offset": 4840,
+      "excerpt": "帝立，更使議之。謐上議，請從泰始爲斷。於是事下三府，司徒王戎、司空張華、領軍將軍王衍、侍中樂廣、黃門侍郎嵇紹、國子博士謝衡皆從謐議。騎都尉濟北侯荀畯、侍中荀籓、黃門侍郎華混以爲宜用正始開元。博士荀熙、刁協謂宜嘉平起年。謐重執奏戎、華之議，事遂施",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷040",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7040",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2606035",
+      "textSha256": "4eada1960db5354eddb9eb7a349167b2bd4b8a89ce09a79bdba350be1142dccb",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-7cefb98600233392",
+      "query": "王衍",
+      "count": 3,
+      "offset": 6393,
+      "excerpt": "十二，諡曰元。\n\n　　戎有人倫鑒識，嘗目山濤如璞玉渾金，人皆欽其寶，莫知名其器；王衍神姿高徹，如瑤林瓊樹，自然是風塵表物。謂裴頠拙於用長，荀勖工於用短，陳道寧𦃩𦃩如束長竿。族弟敦有高名，戎惡之。敦每候戎，輒托疾不見。敦後果為逆亂。其鑒嘗先見",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷043",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7043",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2618531",
+      "textSha256": "51491f8d2a5f7f06ee5796fbbfcd82f70acae620d8e73c012c06c86ceb952c0d",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-204f45c1f153bc69",
+      "query": "王衍",
+      "count": 4,
+      "offset": 2387,
+      "excerpt": "然，其旨同異？」瞻曰：「將無同。」戎咨嗟良久，即命辟之。時人謂之「三語掾」。太尉王衍亦雅重之。瞻嘗群行，冒熱渇甚，逆旅有井，衆人競趨之，瞻獨逡巡在後，須飲者畢乃進，其夷退無競如此。\n\n　　東海王越鎭許昌，以瞻爲記室參軍，與王承、謝鯤、鄧攸倶在越",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷049",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7049",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2199702",
+      "textSha256": "9f20d6dbbafdc71aa4d13438172785033089359fce1820a9a44ab0e6d55534cd",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-41d913bcc042af99",
+      "query": "王衍",
+      "count": 3,
+      "offset": 3159,
+      "excerpt": "酣暢，寄通而已。處眾人中，居然獨立。嘗讀《老》《莊》，曰：「正與人意暗同。」太尉王衍雅重之。\n\n　　敳見王室多難，終知嬰禍，乃著《意賦》以豁情，猶賈誼之《服鳥》也。其詞曰：「至理歸於渾一兮，榮辱固亦同貫。存亡既已均齊兮，正盡死復何歎。物咸定于無",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷050",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7050",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2305862",
+      "textSha256": "959d5967b2960cbb0a33ea21171d07b0ff5204bb17f4d847f6dc21b9f7147a78",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-573c559717aeddd4",
+      "query": "王衍",
+      "count": 2,
+      "offset": 998,
+      "excerpt": "母郭槐欲以韓壽女為太子妃，太子亦欲婚韓氏以自固。而壽妻賈午及后皆不聽，而為太子聘王衍小女惠風。太子聞衍長女美，而賈后為謐聘之，心不能平，頗以為言。謐嘗與太子圍棋，爭道，成都王穎見而訶謐，謐意愈不平，因此譖太子于后曰：「太子廣買田業，多畜私財以結",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷053",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7053",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2595666",
+      "textSha256": "4e47099188ff09cf7dd85136782a23078d5523d9f50534038af60334afa6e100",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-8fc04ce126a6681b",
+      "query": "王衍",
+      "count": 1,
+      "offset": 13166,
+      "excerpt": "以乂為大都督以距顒。連戰自八月至十月，朝議以乂、穎兄弟，可以辭說而釋，乃使中書令王衍行太尉，光祿勳石陋行司徒，使說穎，令與乂分陝而居，穎不從。乂因致書於穎曰：\n\n先帝應乾撫運，統攝四海，勤身苦己，克成帝業，六合清泰，慶流子孫。孫秀作逆，反易天常",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷059",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7059",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2650517",
+      "textSha256": "0790f402debc7e4a152ed0a11fcc604599345d8badf0a43e93c804b89ff7778d",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-343828d782a307a7",
+      "query": "王衍",
+      "count": 1,
+      "offset": 9132,
+      "excerpt": "尚書郎，朝士多稱之。東海王越聞，召以爲主簿。王彌逼洛，敦及胡毋輔之勸越擊王彌，而王衍、潘滔共執不聽，敦庭爭苦至，眾咸壯之。出補汝南內史。元帝之爲鎮東，請爲軍諮祭酒，不就。征南將軍山簡以爲司馬。尋而王如、杜曾相繼爲亂，簡乃使敦監沔北七郡軍事、振威",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷070",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7070",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2595540",
+      "textSha256": "c12d913de07777a34ad13df2f6b4a198b9a370f8a568880a6dee31856f87dc2d",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-9ed4cd34361b22e9",
+      "query": "王衍",
+      "count": 1,
+      "offset": 794,
+      "excerpt": "欲，無所修尚。言理辯物，但明其指要而不飾文辭，有識者服其約而能通。弱冠知名。太尉王衍雅貴異之，比南陽樂廣焉。永寧初，為驃騎參軍。值天下將亂，乃避難南下。遷司空從事中郎。豫迎大駕，賜爵藍田縣侯。遷尚書郎，不就。東海王越鎮許，以為記室參軍。雅相知重",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷075",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7075",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2645530",
+      "textSha256": "8c893e6ae7786603fab8d7cfcb73ce0f072307d0714e725de1962f03f6d7df11",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    },
+    {
+      "documentId": "document:jinshu-c7b11efb985b45d5",
+      "query": "王衍",
+      "count": 1,
+      "offset": 5593,
+      "excerpt": "東曹掾。克素有格量，及居選官，苟進之徒，望風畏憚。初，克未仕時，河內山簡嘗與琅邪王衍書曰：「蔡子尼今之正人。」衍以書示眾曰：「山子以一字拔人，然未易可稱。」後衍聞克在選官，曰：「山子正人之言，驗於今矣。」陳留時為大郡，號稱多士，琅邪王澄行經其界",
+      "matchType": "name-occurrence",
+      "title": "晉書/卷077",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7077",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=8750392",
+      "textSha256": "8805e2a6805a5d0ea91452ac1c50700f6ca0ba9da7f2ab43f08cbaabc1d19a17",
+      "contentPath": "/static/data/history/archive-books/jinshu.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "王衍的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

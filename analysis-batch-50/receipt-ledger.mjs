@@ -39,6 +39,27 @@ export function reduceReceiptChain(steps, manifest) {
   return { fields, ordered, revision, documentSha256: hash, transitions };
 }
 
+export function validateMixedFinalAudit(audit, chain, manifest) {
+  const hashOk=value=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);
+  const expected=manifest.records.flatMap(item=>COMPLETION_FIELDS.map(field=>({id:item.id,field,sha256:chain.fields.get(item.id).get(field)?.sha256})));
+  const sorted=items=>[...items].sort((a,b)=>(a.id+'|'+a.field).localeCompare(b.id+'|'+b.field));
+  if(audit?.format!=='dynasty-batch50-mixed-final-audit'||audit.schemaVersion!==2||audit.passed!==true||audit.actualProductionRead!==true||audit.privateDataIncluded!==false
+    ||audit.manifestSha256!==contentHash(manifest)||audit.revision!==chain.revision||audit.documentSha256!==chain.documentSha256
+    ||expected.some(item=>!hashOk(item.sha256))||!Array.isArray(audit.writtenFieldHashes)||contentHash(sorted(audit.writtenFieldHashes))!==contentHash(sorted(expected)))bad('mixed_final_audit_binding');
+  const p=audit.preservation,l=audit.library;
+  if(!l||l.beforeTotal!==962||l.afterTotal!==962||l.idsPreserved!==true||!hashOk(l.idsBeforeSha256)||l.idsBeforeSha256!==l.idsAfterSha256
+    ||!p||contentHash(p.library)!==contentHash(l)||p.nonProgressBaselinePreserved!==true||!hashOk(p.nonProgressInitialSha256)||p.nonProgressInitialSha256!==p.nonProgressFinalSha256
+    ||audit.rawExtrasPreserved!==true||!hashOk(audit.rawExtrasSha256)||!hashOk(audit.finalReadReceiptSha256))bad('mixed_final_audit_preservation');
+  const preserved=new Map(p.preservedDeepHashes?.map(item=>[item.id,item.sha256]));
+  if(manifest.records.some(item=>preserved.get(item.id)!==item.preserved.deepAnalysis.sha256))bad('mixed_final_audit_deep_binding');
+  const snapshots=audit.publicationSnapshots;
+  if(!Array.isArray(snapshots)||snapshots.length!==45)bad('mixed_final_audit_snapshot_count');
+  const seen=new Set();for(const snapshot of snapshots){const step=chain.ordered.find(s=>contentHash(s.receipt)===snapshot.receiptSha256);if(!step||seen.has(snapshot.receiptSha256)||contentHash(snapshot.verification)!==contentHash(step.receipt.verification))bad('mixed_final_audit_snapshot_binding');seen.add(snapshot.receiptSha256);
+    const t=snapshot.transition;if(!t||t.toRevision!==step.receipt.beforeRevision||t.toSha256!==step.receipt.beforeSha256||!Array.isArray(t.changedFields)||t.changedFields.some(f=>!['gameState','worldDeskState','gameHistory','simulationHistory','courtHistory','debateHistory','soulHistory','crisisHistory','snapshotHistory','history'].includes(f)))bad('mixed_final_audit_transition');}
+  const t=audit.finalTransition;if(t?.fromRevision!==chain.revision||t.toRevision!==audit.revision||t.fromSha256!==chain.documentSha256||t.toSha256!==audit.documentSha256||t.changedFields?.length!==0)bad('mixed_final_audit_final_read_binding');
+  return true;
+}
+
 export async function buildReceiptLedger() {
   const manifest = await loadFixedManifest(), files = await readdir(root);
   const batches = new Map(), staged = new Map(manifest.records.map(item => [item.id, new Map()]));
@@ -73,10 +94,12 @@ export async function buildReceiptLedger() {
       status: full ? 'fully_imported' : published.size ? 'partial_imported_with_assembled_continuation' : assembled ? 'assembled_awaiting_local_dry_run' : 'incomplete' };
   });
   const count = key => records.filter(item => item[key]).length;
+  let finalAuditVerified=false;
+  if(files.includes('final-audit.mixed.v2.json'))finalAuditVerified=validateMixedFinalAudit(await read('final-audit.mixed.v2.json'),chain,manifest);
   return { format: 'dynasty-batch50-receipt-ledger', schemaVersion: 2, generatedAt: new Date().toISOString(),
     manifestSha256: contentHash(manifest), targetCount: 50, libraryTotalExpected: 962,
-    status: count('verified') === 50 ? 'all_fields_receipted_final_audit_pending' : 'assembled_awaiting_publication',
-    passed: true, complete: false, finalAuditVerified: false, libraryPreserved: null,
+    status: finalAuditVerified ? 'fully_published_final_audit_verified' : count('verified') === 50 ? 'all_fields_receipted_final_audit_pending' : 'assembled_awaiting_publication',
+    passed: true, complete: finalAuditVerified, finalAuditVerified, libraryPreserved: finalAuditVerified ? true : null,
     basis: 'Validated apply + dry-run receipts and rebuilt manuscript evidence; no registration flags or fixed five-person chunks.',
     latestVerifiedPublicationRevision: chain.revision, latestReceiptedDocumentSha256: chain.documentSha256,
     counts: { prepared: 50, generated: count('generated'), reviewed: count('reviewed'), sourceQA: count('sourceQA'), assembled: count('assembled'), imported: count('imported'), verified: count('verified'),
@@ -85,5 +108,5 @@ export async function buildReceiptLedger() {
       importedFields: records.reduce((sum,item) => sum + item.importedFields.length,0), remainingIncomplete: 50-count('verified') },
     imports: chain.ordered.map(step => ({ file: step.file, receiptSha256: contentHash(step.receipt), resultsFile: step.resultsFile, beforeRevision: step.receipt.beforeRevision, afterRevision: step.receipt.verification.afterRevision, changedFields: step.receipt.changedFields })),
     externalTransitionsRequiringSnapshotProof: chain.transitions, rebuiltBatchCount: checked.size,
-    finalAuditNote: 'Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Mixed-chain private final snapshot + identity/raw-extra audit is still required to declare overall completion.', records };
+    finalAuditNote: finalAuditVerified ? 'All fields and preserved library were verified by the production final read at latestVerifiedPublicationRevision; this records that observation, not perpetual freshness.' : 'Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Mixed-chain private final snapshot + identity/raw-extra audit is still required to declare overall completion.', records };
 }

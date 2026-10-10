@@ -1,0 +1,1817 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "emperor_洪憲帝_280041298",
+  "name": "洪憲帝",
+  "identity": {
+    "canonicalName": "袁世凱",
+    "aliases": [
+      "袁世凱",
+      "洪憲帝"
+    ],
+    "identityStatus": "reviewed",
+    "dynasty": "中華民國",
+    "title": "袁世凱"
+  },
+  "candidatePages": [
+    {
+      "title": "袁世凯",
+      "pageId": 857,
+      "revisionId": 94484360,
+      "revisionTimestamp": "2026-09-21T17:45:06Z",
+      "url": "https://zh.wikipedia.org/wiki/%E8%A2%81%E4%B8%96%E5%87%AF",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94484360",
+      "wikidataId": "Q210329",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "北洋集团的崛起与袁世凯",
+          "url": "http://www.gmw.cn/02blqs/2010-02/07/content_1133360.htm",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "光明网",
+          "date": "2010-02-07",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "一人敌一国：袁世凯在朝鲜的戎马岁月",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0621_6961_1212232.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-21",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "晚清的袁世凯：改革先锋 中华脊梁",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0621_6961_1212238.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-21",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "外媒筆下的民國初年——《紐約時報》1911─1921共和十年",
+          "url": "http://www.want-daily.com/portal.php?mod=view&aid=57584",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "旺报",
+          "date": "2012-12-26",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯“窃国”是误解：没有他就没有中华民国",
+          "url": "http://history.people.com.cn/GB/205396/14147897.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "《文史天地》2010年第11期",
+          "date": "2011-03-04",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯与中国警察制度的建立袁世凯与中国警察制度的建立",
+          "url": "http://gec.cpu.edu.tw/ezfiles/91/1091/img/509/730314039.pdf",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "中央警察大學-通識教育中心",
+          "date": "2010-11-25",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "近年来关于袁世凯与中国近代化研究综述",
+          "url": "http://www.china1840-1949.com/portal.php?mod=view&aid=23",
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "苏全有、殷国辉",
+          "publisher": "《商丘职业技术学院学报》",
+          "date": "2005年12月",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯：中国近代陆军之父",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0621_6961_1212246.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-21",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁氏望族根在汝南",
+          "url": "http://www.zmdnews.cn/2014/1210/247549.shtml",
+          "type": "citation-template",
+          "template": "cite news",
+          "author": "",
+          "publisher": "驻马店网",
+          "date": "2014-12-10",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯全传",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "中国文史出版社",
+          "date": "2017年2月",
+          "isbn": "9787503483844",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "日本人对袁世凯恨之入骨",
+          "url": "http://news.163.com/11/0920/05/7ECCG34I00014AED.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "济南时报",
+          "date": "2011-09-20",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《甲午悲歌》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "郑彭年",
+          "publisher": "中国社会科学出版社",
+          "date": "2011-05-16",
+          "isbn": "9787214021007",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《影响近代中日关系的若干人物》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "社会科学文献出版社",
+          "date": "2005年",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《寫給香港人的中國現代史·上冊——從辛亥革命到聯俄容共》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "陳敬堂",
+          "publisher": "中華書局（香港）",
+          "date": "2020",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《袁来如此——袁世凯与晚清三十年》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "汤伏祥",
+          "publisher": "当代中国出版社",
+          "date": "2011-05-01",
+          "isbn": "9787801709691",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "中国近代史",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "北京师范大学出版社",
+          "date": "2007",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "揭袁世凯和慈禧太后不为人知的历史真相_卫视频道_凤凰网",
+          "url": "http://phtv.ifeng.com/program/fhdsy/detail_2010_02/25/1077850_0.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "phtv.ifeng.com",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "李永胜袁世凯《戊戌纪略》版本源流及其写作时间考述",
+          "url": "https://history.ifeng.com/c/8CgSDnRBzx4",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "history.ifeng.com",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "回顾戊戌 重温历史──在戊戌变法110周年之际",
+          "url": "http://jds.cssn.cn/newzxdt/202101/t20210128_5305628.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "中国社科院近代史所",
+          "date": "2008-12-09",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "戊戌变法时袁世凯倾向“维新” 并未主动告密",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0621_6961_1212314.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-21",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "重评袁世凯不可矫枉过正",
+          "url": "https://www.sinoss.net/c/2010-09-14/526787.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "www.sinoss.net",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "列强窥视山东 为避免予人口实袁世凯镇压义和团",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0621_6961_1212328.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-21",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "论景廷宾“扫清灭洋”起义",
+          "url": "http://202.194.14.19/CN/Y1956/V0/I10/8",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "文史哲",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "景廷宾起义",
+          "url": "http://www.xhgmw.com/html/xiezhen/licheng/2014/0715/725.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "辛亥革命网",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《中華民國史大事記》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "中華書局",
+          "date": "2011",
+          "isbn": "9787101079982",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "晚清时袁世凯推行行政改革遭醇亲王手枪抵胸",
+          "url": "http://news.163.com/08/0410/08/495F86PN00011247.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "网易",
+          "date": "2008-04-10",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "1907年 天津开启中国“第一选”",
+          "url": "https://news.sina.com.cn/c/2004-04-11/21003116720.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "news.sina.com.cn",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁党破坏辛亥革命叙录",
+          "url": "https://www.huanghuagang.org/2160823567268481/5951045",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "周小棠",
+          "publisher": "黄花岗光复网",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯当选临时大总统前的南北博弈",
+          "url": "http://www.infzm.com/content/17556",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "南方周末",
+          "date": "2008-09-24",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "DR. SUN'S ELECTION IS NOT TAKEN SERIOUSLY",
+          "url": "http://query.nytimes.com/mem/archive-free/pdf?res=990CE3DC123AE633A25752C3A9649D946096D6CF",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "纽约时报",
+          "date": "1911-12-31",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "从\"臣民\"到\"国民\":清末民初袁世凯的身份认同",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite journal",
+          "author": "马建标",
+          "publisher": "安徽大学学报（哲学社会科学版）",
+          "date": "2018-09-13",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯曾遭行刺，装病逼迫清帝退位",
+          "url": "http://phtv.ifeng.com/program/tfzg/detail_2011_03/01/4907542_0.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2011-03-01",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "真相：中华民国总统是孙中山让给袁世凯的吗?",
+          "url": "http://news.ifeng.com/history/1/jishi/200906/0624_2663_1216844.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-24",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "制衡袁世凯 孙中山威逼议员改变投票结果",
+          "url": "http://news.ifeng.com/history/special/sunzhongshan/200906/0626_7072_1221695.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-26",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "近代中国史",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "中华书局",
+          "date": "2018年1月",
+          "isbn": "9787101127812",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "中國近代史",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "中文大學出版社",
+          "date": "2001",
+          "isbn": "9789622019874",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "民国初年袁世凯对中国民主化进程的贡献",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0622_6961_1213847_6.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-22",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《胡适全集》第28卷第89页",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "胡适",
+          "publisher": "安徽教育出版社",
+          "date": "2003-09-01",
+          "isbn": "9787533622176",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯传",
+          "url": null,
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "苏, 全有",
+          "publisher": "浙江大学出版社",
+          "date": "2013",
+          "isbn": "978-7-308-10769-3",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "二十一条起因：临时民国政府与日本合办汉冶萍借款案",
+          "url": "http://news.ifeng.com/history/special/yuanshikai/200906/0621_6961_1212371.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-06-21",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《从帝制走向共和——辛亥前后史事发微》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "杨天石",
+          "publisher": "社会科学文献出版社",
+          "date": "2002年10月",
+          "isbn": "7801497856",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "孙中山曾表示愿接受比“二十一条”更苛刻条款",
+          "url": "http://news.ifeng.com/history/minjianshuoshi/xiashuangren/detail_2010_12/15/3514824_0.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网历史",
+          "date": "2010-12-15",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "民四条约",
+          "url": "http://news.ifeng.com/history/special/bupingdengtiaoyue/news/200808/0801_4259_689888.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2008-08-01",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯与中日“二十一条”交涉",
+          "url": "http://view.news.qq.com/a/20130515/001982.htm",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "腾讯网",
+          "date": "2013-05-15",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《被“废除不平等条约”遮蔽的北洋修约史（1912-1928）》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "唐启华",
+          "publisher": "社会科学文献出版社",
+          "date": "2010-09-01",
+          "isbn": "9787509717509",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "外国人眼中的袁世凯",
+          "url": "http://www.bwchinese.com/article/1022774.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "BWCHINESE中文网",
+          "date": "2011-11-07",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "追溯近现代中国起源与历史 第四章（上）",
+          "url": "https://books.google.com.tw/books?id=J_05EAAAQBAJ&pg=PA166",
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "Matthew Henry",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "辛亥革命时期期刊介绍",
+          "url": "https://books.google.com.tw/books?id=DgqFAAAAIAAJ",
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "人民出版社",
+          "date": "1982",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯称帝的几个幕后推手",
+          "url": "http://theory.people.com.cn/GB/49157/49163/9389095.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "人民网",
+          "date": "2009-06-01",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "告诉你一个真实的袁世凯",
+          "url": "http://www.infzm.com/content/36750/2",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "南方周末",
+          "date": "2009-11-02",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "1915年12月11日 袁世凯称帝",
+          "url": "http://www.people.com.cn/GB/historic/1211/5430.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "人民网",
+          "date": "2003-12-11",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯曾是蔡锷恩公",
+          "url": "http://paper.dzwww.com/xcb/data/20130518/html/22/content_2.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "张永久（历史学者）",
+          "publisher": "大众报业集团下属《新晨报》",
+          "date": "2013-05-18",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《中华民国史事日志》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "郭廷以",
+          "publisher": "中央研究院近代史研究所",
+          "date": "1979",
+          "isbn": "9786666712945",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯最后日子：推荐总统候选人没写自己儿子",
+          "url": "http://news.ifeng.com/history/zhongguojindaishi/201001/0111_7180_1505626.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2010-01-11",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "項城逝後之袁氏家族",
+          "url": "https://archive.org/details/shenbao-1916.06-159/page/n5/mode/2up?view=theater",
+          "type": "citation-template",
+          "template": "Cite news",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁家宾：祖父袁世凯葬仪回忆",
+          "url": "https://www.dwnews.com/%E4%B8%AD%E5%9B%BD/59658916/%E8%A2%81%E5%AE%B6%E5%AE%BE%E7%A5%96%E7%88%B6%E8%A2%81%E4%B8%96%E5%87%AF%E8%91%AC%E4%BB%AA%E5%9B%9E%E5%BF%86",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "多维新闻",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "命令",
+          "url": "https://commons.wikimedia.org/w/index.php?title=File%3AROC1916-06-01--06-30%E6%94%BF%E5%BA%9C%E5%85%AC%E5%A0%B1147--175.pdf&page=130",
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "",
+          "publisher": "政府公報",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "命令",
+          "url": "https://commons.wikimedia.org/w/index.php?title=File:ROC1916-06-01--06-30%E6%94%BF%E5%BA%9C%E5%85%AC%E5%A0%B1147--175.pdf&page=167",
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "",
+          "publisher": "政府公報",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯的葬礼",
+          "url": "http://history.people.com.cn/GB/205396/13802140.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "人民网",
+          "date": "2011-01-24",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁項城出殯紀",
+          "url": "https://archive.org/details/shenbao-1916.07-178/page/n5/mode/1up?view=theater",
+          "type": "citation-template",
+          "template": "cite news",
+          "author": "",
+          "publisher": "",
+          "date": "1916-07-02",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "清朝的汉化与尊孔",
+          "url": "http://www.chinanews.com/hb/2010/09-01/2505367.shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "专家称我国现行春节仅“99岁”：由袁世凯提出",
+          "url": "http://news.qq.com/a/20120123/000221.htm",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "腾讯网",
+          "date": "2012-01-23",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯死后为何享受“国葬”待遇？",
+          "url": "http://news.ifeng.com/history/minjianshuoshi/jinmanlou/detail_2009_08/31/323390_0.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰网",
+          "date": "2009-08-31",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "千秋功过袁世凯",
+          "url": "http://www.zbnews.net/lz/1517566.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "淄博报业传媒集团",
+          "date": "2013-03-12",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "山东大学历史沿革",
+          "url": "http://www.sdu.edu.cn/2010/lsyg.html",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "山东大学官网",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯对张謇四改称呼",
+          "url": "http://www.xinhuanet.com/politics/2016-04/07/c_128870928.htm",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "人民政协报",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "袁世凯行贿之一例",
+          "url": "http://www.nmglib.com:8904/KCMS/detail/detail.aspx?filename=SHWZ200507018&dbcode=CJFT&dbname=CJFT7911",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "书屋 2005年07期",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "民国往事系列之四：袁世凯的一妻九妾",
+          "url": "https://news.ifeng.com/history/4/lianzai/200902/0213_2672_1010214_1.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "凤凰资讯",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "历史皱褶里的真相",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "河南人民出版社",
+          "date": "2007",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "晚清戲曲的變革",
+          "url": "https://books.google.com.af/books?id=Tps782J_mHgC&pg=PA72&lpg=PA72&dq=%E2%80%9C%E5%9B%BD%E8%B4%BC%E5%AD%99%E6%96%87%E2%80%9D&source=bl&ots=AXvzr6JiF4&sig=ACfU3U0hakdggWhmrdheHeG_PiIU9kLphw&hl=en&sa=X&ved=2ahUKEwjt45D8s7r0AhVik1YBHTJGBp84RhDoAXoECBIQAg#v=onepage&q&f=true",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "Google Books",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "我所知道的袁世凯",
+          "url": "https://books.google.co.kr/books?id=iCt8DwAAQBAJ&pg=PT523&lpg=PT523&dq=%E2%80%9C%E5%A7%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E4%B8%9C%E5%9F%8E%E7%BF%A0%E8%8A%B1%E2%80%9D&source=bl&ots=HIwPMsNzcl&sig=ACfU3U2btgzNM-kBwi-k79q12WJ3KzdwCw&hl=en&sa=X&redir_esc=y#v=onepage&q=%E2%80%9C%E5%A7%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E4%B8%9C%E5%9F%8E%E7%BF%A0%E8%8A%B1%E2%80%9D&f=false",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "《辛亥革命回忆录》(六)",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "非常作家:::唐德剛:::",
+          "url": "https://ylib.com/author/TangDeGang/history.asp",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "ylib.com",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "項城夫人逝世",
+          "url": "https://archive.org/details/chenbao-beiping-1919.01.16/page/n5/mode/1up",
+          "type": "citation-template",
+          "template": "Cite news",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "紐約時報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "文史天地",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "商丘职业技术学院学报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "历史研究",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "甲午悲歌",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "影响近代中日关系的若干人物",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "寫給香港人的中國現代史·上冊——從辛亥革命到聯俄容共",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "袁来如此——袁世凯与晚清三十年",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民國紀事本末：北洋政府時期·上",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "姜鳴：關於袁世凱告密的新史料",
+          "url": "http://pdf.news365.com.cn/xmpdf/20081206/XM081206B109.pdf",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "戊戌纪略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "养寿园电稿",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "袁世凯致徐世昌函",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "近代史资料",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "袁世凯奏议",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "美国对外关系",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北洋創練常備軍營制餉章",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "密陈办结英教士卜克斯始末情形折",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中華民國史大事記",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "辛丑和約",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "立憲綱要",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "滿韓陸路通商詳細專章",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "宪法重大信条十九条",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "抑斋文集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "纽约时报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "当选中华民国临时大总统孙文来电",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "袁世凯全集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "优待清室条件",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "宣统帝退位诏书",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民权报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "胆大妄为之袁世凯",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大总统之叛逆",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民初政争与二次革命",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "辛亥革命运动史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "胡适全集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "从帝制走向共和——辛亥前后史事发微",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于山东省之条约",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲及东部内蒙古之条约",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于山东事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于山东开埠事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于旅大南满安奉期限之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于东部内蒙古开埠事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲开矿事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲东部内蒙古铁路课税事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲聘用顾问事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲商租解释换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲东部内蒙古接洽警察法令课税之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于南满洲东部内蒙古条约第二至第五条延期实行之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于汉冶萍事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于福建事项之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "关于交还胶澳之换文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "被“废除不平等条约”遮蔽的北洋修约史（1912-1928）",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中日民四条约",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "六十年来中国与日本",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "晚淸民國史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "順天時報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "国民代表大会组织法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國民代表大會組織法",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "辭海",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "日本皇室典范",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新皇室规范",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "洪宪纪事诗本薄注",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "北洋政府简史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "蔣介石先生年表",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新晨报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中华民国史事日志",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "日本外交文书",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "评传.田中义一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "撤销帝制令",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "二十一条",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "我的父亲袁世凯",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "八十三天皇帝梦",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "续志项城逝世前后情状",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "申报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "袁世凯丧礼如是",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民国日报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "袁总统殡礼之一斑",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "益世报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "时评一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "回忆父亲二三事",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "民主报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "正宗爱国报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "爱国白话报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "辽宁教育学院学报",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "殷都学刊",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "安庆师范学院学报(社会科学版)",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "河南师范大学学报(哲学社会科学版)",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "山东试办大学堂暂行章程折稿",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "折稿",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "济南大学学报(社会科学版)",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "聊城师范学院学报（哲学社会科学版）",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "中国军事制度史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "洪宪纪事诗三种",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "孙中山先生读后",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "文献",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "辛亥革命回忆录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "洪宪惨史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "回放民国现场：女儿眼中另面袁世凯",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "夢蕉亭雜記",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [
+        {
+          "title": "異辭錄",
+          "url": "https://zh.wikisource.org/wiki/%E7%95%B0%E8%BE%AD%E9%8C%84",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "共和與君主論",
+          "url": "https://zh.wikisource.org/wiki/%E5%85%B1%E5%92%8C%E8%88%87%E5%90%9B%E4%B8%BB%E8%AB%96",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "禁止反对皇帝令",
+          "url": "https://zh.wikisource.org/wiki/%E7%A6%81%E6%AD%A2%E5%8F%8D%E5%AF%B9%E7%9A%87%E5%B8%9D%E4%BB%A4",
+          "origin": "sister-template",
+          "retrieved": false
+        },
+        {
+          "title": "Author:袁世凯",
+          "url": "https://zh.wikisource.org/wiki/Author%3A%E8%A2%81%E4%B8%96%E5%87%AF",
+          "origin": "sister-template",
+          "retrieved": false
+        }
+      ],
+      "retrievedAt": "2026-10-02T10:33:10.974Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [
+    {
+      "id": "identity-review:modern-emperor_洪憲帝_280041298",
+      "recordIds": [
+        "emperor_洪憲帝_280041298"
+      ],
+      "recordNames": [
+        "洪憲帝"
+      ],
+      "evidence": [
+        {
+          "sourceId": "source:ey-history",
+          "url": "https://www.ey.gov.tw/state/62879155A536D543/bf75db05-30af-4c3a-bdda-3fe32e3f8e5a",
+          "locator": "國情簡介／中華民國之肇建；北洋時期段（資料來源國史館）",
+          "supportedFact": "此國史館供稿記袁世凱籌備洪憲帝制，支持原卡『洪憲帝』應連向袁世凱。",
+          "accessedOn": "2026-10-02",
+          "readingMethod": "頁面正文或具名名單核讀",
+          "reviewScope": "僅核本條姓名、過去任職或具名事件；原卡全文、動機、性格、分數及所有生平尚未全部查證。"
+        }
+      ],
+      "evidenceLevel": "limited-identity-or-office",
+      "notes": "本次只核列出的最小命題；來源中的政治或人格評判不納入本條。",
+      "status": "identity-supported",
+      "issue": "原卡以年號帝稱命名，需連向可檢索的姓名。",
+      "decision": "保留原卡名稱並增加袁世凱為標準姓名；不把洪憲帝另建為第二人。",
+      "canonicalName": "袁世凱",
+      "aliases": [
+        "洪憲帝"
+      ]
+    }
+  ],
+  "archiveCandidates": [
+    {
+      "documentId": "document:qingshigao-dfad45109e762491",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 27679,
+      "excerpt": "亥朔，日本侵朝鮮，下詔宣戰。戊寅，命李瀚章毀南海舉人康祖詒所著書。己卯，諭遣道員袁世凱往平壤撫輯。丙辰，命台灣布政使唐景崧、南澳鎮總兵劉永福助邵友濂籌防。辛巳，諭李鴻章擴充海軍，慎選將才，精求訓練，通籌熟計以聞。乙酉，免賓川等州縣田租。丙戌，敕神",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷23",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B723",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2132469",
+      "textSha256": "5f593de2d738f6cd1ef14993f00396c229d579ca7a2da14e86df3e6a4366099f",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-7d5cc56a0ab55441",
+      "query": "袁世凱",
+      "count": 22,
+      "offset": 2278,
+      "excerpt": "使互換歸遼條約。甲申，長麟、汪鳴鑾並以召對妄言褫職。己丑，初設新建陸軍，命溫處道袁世凱督練。丙申，免江川被災田賦二年。賑鶴慶等州縣水旱災。\n\n　　十一月乙酉朔，山東趙家口合龍。丁未，免盛京被淹官莊額賦。戊申，留河南漕折八萬備內黃等縣工賑。己酉，以",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷24",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B724",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2170948",
+      "textSha256": "b5db3d6e8648b30dd21a74241b5eaa80ce2bf600598f96c7c1700e2a4ab5de8b",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-97c50e2248fccfa7",
+      "query": "袁世凱",
+      "count": 31,
+      "offset": 1259,
+      "excerpt": "大學士王文韶卒，贈太保。追予故云貴總督張亮基謚。民政部上調查戶口章程表式。壬戌，袁世凱罷，命大學士那桐為軍機大臣。癸亥，以梁敦彥為外務部尚書兼會辦大臣。那桐免步軍統領，以毓朗代之。乙丑，詔定西陵金龍峪為德宗景皇帝山陵，稱曰崇陵。丁卯，復祈雪。己巳",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷25",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B725",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2692357",
+      "textSha256": "6f091e75b5e20e8406765bbc250a8e4fcda6100d3fad815763c174447d0ae44c",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-86f657825124132d",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 5810,
+      "excerpt": "捐納貢監考取如歲貢例。五十六年停考職。嘉慶五年，僅一行之。光緒三十一年，直隸總督袁世凱等奏停科舉摺寬籌舉貢生員出路一條，「請十年三科內優貢加額錄取。己酉選拔如舊，朝考用京官知縣。督、撫、學政三科內考選學貢通算學、地理、財政、兵事、交涉、鐵路、礦務",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷106",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7106",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1542431",
+      "textSha256": "6c261dcd8ec87a1a503345c19424cb394e83c744a3261cb773f8c42cc0c64d36",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-365fcc491bd79f26",
+      "query": "袁世凱",
+      "count": 3,
+      "offset": 3409,
+      "excerpt": "舊黨把持朝局，卒釀成庚子之禍。逮二十七年，學校漸有復興之議。其首倡者，則山東巡撫袁世凱也。初，世凱奏陳東省開辦大學堂章程，有旨飭下各省仿辦，令政務處會同禮部妥議選舉鼓勵章程。尋議言：「東西各國學堂，皆系小學、中學、大學以次遞升，畢業後始予出身，擬",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷107",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7107",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=7909179",
+      "textSha256": "062b98c7cde364a4347f25530b0cb886ce02dc92b57d60e13239a1af15254d5b",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-0b72443a99552279",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 8730,
+      "excerpt": "勇駐防南北洋者，所存亦無幾矣。\n\n陸軍新制，始於甲午戰後，步軍統領榮祿疏保溫處道袁世凱練新軍，是曰新建陸軍。復練兵小站，名曰定武軍。兩江總督張之洞聘德人教練新軍，名曰江南自強軍。其後榮祿以兵部尚書協辦大學士節制北洋海陸各軍，益練新軍，是為武衛軍。",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷132",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7132",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1326364",
+      "textSha256": "1b0fb5ca9818405c652b9f6184ceab7ac9944cff4aa1f9e5883a2970d958691e",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-421477027c8b0563",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 17972,
+      "excerpt": "西省製造局陸續制給各營火藥三萬餘斤，鉛丸七千餘斤，為滿、綠各營操防之用。直隸總督袁世凱、兩江總督端方會議，令金陵機器局仿照外洋製造各式砲位車輛架具、炸彈銅火以及修配砲台等處需用物件，分設機器翻沙、鐵木、槍子、卷銅、火藥各廠，雇募工匠，常川製造。四",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷140",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7140",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1542553",
+      "textSha256": "b43ba67da8d18eb91d4bae63aa994acd728ba9446b137bb09137dfc465afa899",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-228183b3046a535e",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 3391,
+      "excerpt": "咸謂非取法歐、美，不足以圖強。於是條陳時事者，頗稍稍議及刑律。二十八年，直隸總督袁世凱、兩江總督劉坤一、湖廣總督張之洞，會保刑部左侍郎沈家本、出使美國大臣伍廷芳修訂法律，兼取中西。旨如所請，並諭將一切現行律例，按照通商交涉情形，參酌各國法律，妥為",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷142",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7142",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1380010",
+      "textSha256": "73e5c4196aa7c01c52b04feb8c27bb40c38be5f3480a6d4817d1ffb47bef0e92",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-50a412bf5887d068",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 7520,
+      "excerpt": "鎊。本由商辦，迨胡燏棻為督辦，始官為之。拳匪亂起，關外路為俄踞，關內路為英踞。命袁世凱等與英使立約收回，英人遂攫有百里內不准他人承修之權。三十一年，全路告竣，是為京奉路。道清路為英商福公司所造，長九十里，利微費鉅。初，英商索澤襄、懷浦，俱不獲。遂",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷149",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7149",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2630087",
+      "textSha256": "370bbc8ea45be5cba746c188b28d6f3b91193fc1585714f2d1e0047ad4226f56",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-56e7dcc9a514fc88",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 3886,
+      "excerpt": "舊辦理，以維大局。」報聞。\n\n宣懷時綜司輪、電兩局，疊被指摘。二十八年，言於直督袁世凱：「電報宜歸官有。輪船純系商業，可易督辦，不可歸官。」世凱謀諸執政者，以為然，聞於上。尋命世凱督辦電局，候補侍郎吳和喜副之。明詔發還商股，不遽予行。眾商洶懼，爭",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷151",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7151",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2603919",
+      "textSha256": "4feff23984ad715233b822071001f97c3033cab7be52954a2cd646323ad92d96",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-38cd2fb295e111b7",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 20154,
+      "excerpt": "。三十一年四月，與英續訂滇緬電線約款。英派委印度電務司貝林登為議約專員，電政大臣袁世凱委道員硃寶奎與議。貝林登又請添造江通至思茅副線一條，不許。遂定議簽押。\n\n又與英訂道清鐵路借款行車合同。初，英使向總署索英商承造鐵路五條，不許。英復援礦務合同許",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷154",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7154",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2621218",
+      "textSha256": "355c4e10f97ab71b95d930709699492276b7f65869785063fe1f97b403e2e6cb",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-88bcf7470749bba5",
+      "query": "袁世凱",
+      "count": 5,
+      "offset": 3785,
+      "excerpt": "不許。又要求中國借德款，用德工程師。二十五年，山東高密民人阻德人修鐵路，山東巡撫袁世凱諭解之，因立鐵路章程，設華商德商膠濟鐵路公司，立交涉局，招股購地丈量建築。又立膠澳交涉章程十一款：一，兩國交涉案件，須兩國會辦；二，德人遊歷，須發護照；三，兩國",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷157",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7157",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2433491",
+      "textSha256": "b09cd4b30796c24487d89547facda6715e881021fd41f4e99c604fa6b54d7f0b",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-f54e34418b049118",
+      "query": "袁世凱",
+      "count": 3,
+      "offset": 7291,
+      "excerpt": "亦以兵往。李鴻章電駐日公使汪鳳藻，與日本政府抗議，日仍陸續出兵。及事平，駐韓道員袁世凱牒日本駐韓公使大鳥圭介，援約同時撤兵。日本外務省提出三項：一，中、日兩國兵協同平定韓國內亂；二，亂定後，兩國各設委員于京城，監督財政及吏治；三，募集公債，以為朝",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷158",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7158",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2433502",
+      "textSha256": "70c9de0811078fe2eab8380b9f5ede012c59b5317e10fe907c1d98b8e81e6013",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-949d4e0d322a15f3",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 13942,
+      "excerpt": "商之加稅、傳教、嗎啡鴉片、國幣、治外法權等五款照交，因致外務部及鄂督張之洞、直督袁世凱，謂：「查義約前四條系新款：一，欲絲貨出口興旺，索開紹興、無錫兩處口岸；一，原襄助中國詳細考求養蠶學堂，及設立局所，代為經理；一，於未加稅以前，改訂蘇杭鐵路運貨",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷159",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7159",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2195491",
+      "textSha256": "1c82a1a299196e2300d7d9e24b22a056d12ea295380f6acef2e32c6f71d51fd5",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-b57104cf6b68e515",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 1911,
+      "excerpt": "年九月卒。晉贈一等侯，世襲。〕\n李國杰〔鴻章孫。光緒三十年八月襲。〕\n\n一等侯\n袁世凱〔河南項城附貢生。官內閣總理大臣。宣統三年十一月封。〕\n\n二等順義侯\n田雄〔鑲黃旗漢軍。順治二年，以來歸及軍功，授一等精奇尼哈番。十八年五月，復敍其擒獻福王功，",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷169",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7169",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2490202",
+      "textSha256": "831c98047cb2473007e149b21af120ae442e1c8f05ffb78a05c484c2faf548aa",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-9b6589cee2b4b2a9",
+      "query": "袁世凱",
+      "count": 2,
+      "offset": 25349,
+      "excerpt": "月，兼管學部事。〕\n\n〔未展開模板：{{ww}}〕〔未展開模板：{{ww}}〕\n袁世凱〔七月丙辰，以太子少保、外務部尚書爲軍機大臣。〕\n\n三十四年戊申\n\n〔未展開模板：{{ww}}〕〔未展開模板：{{ww}}〕\n慶親王奕劻〔十一月，賜其爵世襲罔替",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷177",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7177",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2514335",
+      "textSha256": "055010e624a003039a46808cd918fe18e9be40dc6543fe8c25dee01b2fc81502",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-67b47427947eaa57",
+      "query": "袁世凱",
+      "count": 2,
+      "offset": 9798,
+      "excerpt": "\n堃岫\n梁仲衡\n鳳鳴\n許景澄五月乙卯遷。楊儒工部左侍郎。\n英年\n楊儒五月乙卯遷。袁世凱工部右侍郎。\n\n光緒二十六年庚子\n熙敬三月己未卒。庚申剛毅吏部尚書。八月己卯交議。敬信吏部尚書。\n徐郙\n敬信三月庚申遷。立山戶部尚書。五月逮。六月庚寅崇綺戶部尚",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷194",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7194",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2509145",
+      "textSha256": "a5657fb40102ee53eeb52b57d9bd80397928f3a91ab2060c49f0d207cdad109e",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-4aead0c8156ae4e4",
+      "query": "袁世凱",
+      "count": 2,
+      "offset": 4590,
+      "excerpt": "緒三十三年丁未\n奕劻\n那桐\n瞿鴻禨五月丁酉免。戊戌呂海寰外務部尚書。七月丙辰遷。袁世凱外務部尚書。\n鹿傳霖\n徐世昌三月己亥遷。那桐兼署。五月戊戌善耆民政部尚書。\n溥頲四月丁卯遷。載澤度支部尚書。\n溥良\n榮慶\n鐵良\n戴鴻慈\n載振四月丙寅免。丁卯溥頲",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷196",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7196",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2502442",
+      "textSha256": "e622708e7c296ece0c8d63a61d225d99861834b303d0db9da142164c3ed16ba2",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-1fff053dcb416025",
+      "query": "袁世凱",
+      "count": 10,
+      "offset": 5686,
+      "excerpt": "總督。九月戊辰復設。\n王文韶四月己酉召。榮祿直隸總督。八月甲午遷。裕祿直隸總督。袁世凱護。\n劉坤一\n陶模\n恭壽署。五月丙子奎俊四川總督。七月恭壽卒。文光護。十一月甲辰奎俊任。\n邊寶泉九月辛酉免。許應騤閩浙總督。增祺署。\n張之洞召。閏三月庚午譚繼洵",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷200",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7200",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2493681",
+      "textSha256": "9493d31aac70793e9a2943b58a526af3f4336c9ea7cb005587ca61ef842d94c5",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-437b00943c3297d1",
+      "query": "袁世凱",
+      "count": 3,
+      "offset": 9654,
+      "excerpt": "華熙十月丙子遷。王之春安徽巡撫。\n張汝梅二月辛巳免。毓賢山東巡撫。十一月戊申召。袁世凱署。\n胡聘之正月壬申入覲。何樞護山西巡撫。四月辛丑胡聘之回任。八月癸丑免。王之春補。何樞護。十月丙午王之春遷。鄧華熙補。\n裕長二月辛卯入覲。景星護河南巡撫。四月",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷204",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7204",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2502251",
+      "textSha256": "9fdda978dcf309d87af84c884d890775e9fc9b58ae7afd48d8d5b51d340963d5",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-bd5e77fc9eaf18ca",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 4365,
+      "excerpt": "學士那桐、徐世昌協理大臣。八月，武昌兵起，初命陸軍部尚書廕昌視師，奕劻請於朝，起袁世凱湖廣總督視師。世凱入京師，代奕劻為內閣總理大臣，授奕劻弼德院總裁。十二月，詔遜位，奕劻避居天津。後七年薨，諡曰密。\n\n仁宗諸子\n\n仁宗五子：孝淑睿皇后生宣宗，孝",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷221",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7221",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2551217",
+      "textSha256": "22e8eb2f7537adaeb8daf2d6599492ac1b4ff95e8d0c158eeaef74ad2123d1d4",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-3c0050757f63d39c",
+      "query": "袁世凱",
+      "count": 3,
+      "offset": 363,
+      "excerpt": "，再授步軍統領。日本構釁，恭親王、慶親王督辦軍務，榮祿參其事。和議成，疏薦溫處道袁世凱練新軍，是曰「新建陸軍」。授兵部尚書、協辦大學士。疏請益練新軍，而調甘肅提督董福祥軍入衛京師。 \n\n二十四年，晉大學士，命為直隸總督。是時上擢用主事康有為及知府",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷437",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2592002",
+      "textSha256": "3c94abd72db143cdb84b3ac9a0cb6e48f2aa6e0f54e70e36c7c1f2a1fbc29f06",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-b6a3b0fcd928db7d",
+      "query": "袁世凱",
+      "count": 2,
+      "offset": 2347,
+      "excerpt": "大臣。是時學說紛歧，景崇力謀溝通新舊，慎擇教科書。兼任弼德院顧問大臣。武昌變起，袁世凱總理內閣，仍命掌學務。引疾去。越三年，卒，諡文簡。 \n\n景崇博覽羣書，通天文算術，尤喜治史。自爲編修時，取新唐書爲作注，大例有三：曰糾繆，曰補闕，曰疏解，甄采書",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷443",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7443",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2433508",
+      "textSha256": "fd835b9070708d494980c7383ff64e6a8798a0b94975453d95cbbffb89d0af1d",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    },
+    {
+      "documentId": "document:qingshigao-b7f523b239105635",
+      "query": "袁世凱",
+      "count": 1,
+      "offset": 4500,
+      "excerpt": "史，首論都御史陸寶忠幹煙禁，不宜為台長，劾親貴及樞臣疆臣，章凡數十上。德宗季葉，袁世凱出督畿輔，入贊樞廷，權勢傾一時。春霖獨論列十二事，謂：「洪範有言：'臣之有作威作福，其害於爾家，兇於爾國。'左氏傳云：'受君之祿，是以聚黨，有黨而爭命，罪孰大焉",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷445",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7445",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2433533",
+      "textSha256": "0124f52937d2045689179a95ea0743faee6c56acb64cc36827c53035ea4773fd",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "洪憲帝的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

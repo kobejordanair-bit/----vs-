@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "minister_李鵬_2004025016",
+  "slug": "46",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "inputSha256": "0b8346705d0af9e07566846f856f0b93c62a328a49601622d990af6a37d95c84",
+  "sourceSha256": "9ed54edb0adc89556c7d42a8ac962ded54e1cb4ad16c883a6232273efd818a3a",
+  "preservedDeepSha256": "a514b2a6e1be02dbe65ebbce190fc6c9e480b7a1a9bafd19cbcea1d5df0628f7",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+      "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+      "promptFile": "analysis-batch-51-100/prompts/46.analysisStats.prompt.md",
+      "promptSha256": "87e7dc5619e0c5da56dad984e876a68021453ccbe731748700bcaa669ca65db4",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "a4ffa9c6dc81d0501279f3e605d04ba147deedc1c695d3287b5407781ce27ac0",
+      "marker": "<!-- BATCH50_COMPLETE minister_李鵬_2004025016 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN minister_李鵬_2004025016 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-51-100/prompts/46.soulEssence.prompt.md",
+      "promptSha256": "b8e9758181302b5e931701a508a278aa378c6fbc5b2a60971b5d17a225938c41",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "d1b1ba045b44f72034e09b81e6d2f0b297cdcafc78681e786282bee29e3ebf2e",
+      "marker": "<!-- BATCH50_COMPLETE minister_李鵬_2004025016 soulEssence -->",
+      "contextPath": "analysis-batch-51-100/drafts/46.analysis.md"
+    }
+  }
+}

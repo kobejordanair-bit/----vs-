@@ -1,0 +1,15 @@
+{
+  "format": "dynasty-batch50-author-policy",
+  "schemaVersion": 2,
+  "decidedAt": "2026-10-10",
+  "decidedBy": "project owner explicitly requested next 50 for Claude",
+  "provider": "Claude Code (Anthropic)",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "rules": [
+    "Original prompts and preserved deepAnalysis remain unchanged.",
+    "Actual WebSearch and honest source-access logs required.",
+    "Self-review is labelled independent:false; no invented independent review.",
+    "No production access or publication; return results plus evidence.",
+    "Only missing completion fields; preserve all existing fields and source identity."
+  ]
+}

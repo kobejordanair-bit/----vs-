@@ -16,3 +16,4 @@
 
 # Batch captures/manifests bind exact bytes across platforms.
 /analysis-batch-50/** -text
+/analysis-batch-51-100/** -text

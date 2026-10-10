@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "a90e4a40e99ca3c7364749899155ab7445359102e6b3d0fb3fec0f1025209144",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "abbb020f232955a2ba23dc327dc88e10afb45c73e51b158d1f49cdc0b06c5987",
+  "plannedAfterSha256": "1e27e07938136fb884ebc9cbb3d258fac41b2fa645fa440b25aa06051fee5ef3",
+  "beforeRevision": 44,
+  "plannedAfterRevision": 45,
+  "patchBytes": 3488241,
+  "plannedDocumentBytes": 10407060,
+  "writtenFieldHashes": [
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "field": "analysis",
+      "sha256": "8b3e8e4046592328cc3cb24571acef7a3ac6a70bfa97ea410584e58b311b8e27"
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "field": "soulEssence",
+      "sha256": "1c1e9f31f303bff59ef1c629c395075c27fa413ab078360df72395a2b07a2904"
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "field": "stats",
+      "sha256": "25bfff25cd29eddd4e1060fd69aa43368c2cdc4f521762083f2c23954a857749"
+    },
+    {
+      "id": "minister_朱鎔基_1995149885",
+      "field": "statsAnalysis",
+      "sha256": "4dbe96725c23bbe7df3de19a6db709fd7f4adbc93dfcc66e6798a745035d1f80"
+    }
+  ]
+}

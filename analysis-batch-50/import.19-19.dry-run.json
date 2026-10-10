@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "bf163d061b90289f18e1f6a086063a0b1fe332d149bd7a13c1e77c544e299712",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "06467cf89f6738b673961d65d05c4c15411cb88e85097c0fad59b728f6c2ada1",
+  "plannedAfterSha256": "daaab1f2a8223bc7fcfeea75ed12b215dfa943727bb42eab4deda08b26510f16",
+  "beforeRevision": 20,
+  "plannedAfterRevision": 21,
+  "patchBytes": 3075095,
+  "plannedDocumentBytes": 9993914,
+  "writtenFieldHashes": [
+    {
+      "id": "general_李勣_306292748",
+      "field": "analysis",
+      "sha256": "4e62accd36e13a13825e67fbdc8accd902aaa10bbba00e63fd48cc6d1fca34bb"
+    },
+    {
+      "id": "general_李勣_306292748",
+      "field": "soulEssence",
+      "sha256": "16826cecb7c2988ec9c2d1b1bc6d5dc98a21e5c92e98ae0398ff5ca3368c0d9d"
+    },
+    {
+      "id": "general_李勣_306292748",
+      "field": "stats",
+      "sha256": "3231a20d59262cf16473ea58c727c6c2adc7cde53c414e05c9ba83a9f83dcbd4"
+    },
+    {
+      "id": "general_李勣_306292748",
+      "field": "statsAnalysis",
+      "sha256": "fc829f72b7c6dc9bfbc609bb98bbb144b8d0be670e57c781c762ab009102c0fe"
+    }
+  ]
+}

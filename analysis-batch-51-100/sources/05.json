@@ -1,0 +1,488 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "emperor_唐玄宗_285829892",
+  "name": "唐玄宗",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "唐朝",
+    "title": "李隆基"
+  },
+  "candidatePages": [
+    {
+      "title": "唐玄宗",
+      "pageId": 7615,
+      "revisionId": 94565451,
+      "revisionTimestamp": "2026-09-25T19:02:08Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E7%8E%84%E5%AE%97",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94565451",
+      "wikidataId": "Q9746",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "卷第二百六十八 酷暴二_太平广记（宋）李昉_国学导航",
+          "url": "http://www.guoxue123.com/zhibu/0401/01tpgj/270.htm",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "www.guoxue123.com",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "李杜论略--罗宗强文集",
+          "url": "https://books.google.com/books?id=YbXUDwAAQBAJ",
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "【專訪】漢學家羅漢：范冰冰和劉曉慶證明了武曌一直是中國集體想像的一部分",
+          "url": "https://m.jiemian.com/article/6925829.html",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "西安南郊发现唐玄宗董贵妃亲族董氏家族墓",
+          "url": "http://www.sn.xinhuanet.com/20241212/63c122fd75a746ab899652509572f5bf/c.html",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "新华网",
+          "date": "2024-12-11",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "專家稱唐玄宗有位「洋貴妃」 懷疑為粟特人進貢_cctv.com提供",
+          "url": "http://discovery.cctv.com/20080214/102466.shtml",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "東坡全集.惟聖罔念作狂惟狂克念作聖",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "全唐文/卷0352.胡交.修洛陽宮記",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "宋宰輔編年錄.卷十三",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明皇实录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "旧唐书",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "旧唐书 列传第二 后妃下",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "唐会要·卷三",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "通鑑·景雲元年",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "旧唐书·卷五十二·列传第二",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "資治通鑒",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "词史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "次柳氏旧闻",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "水調",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "羯鼓录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "冊封皇帝良娣董氏等誥",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "關雎",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大易",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大唐故右威卫左中侯项君墓志铭",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "旧唐书 卷五十一 列传第一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "云仙杂记·袖里春",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新唐书·诸帝公主列传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "《新唐书·诸帝公主列传》",
+          "url": "http://guoxue.baidu.com/page/d0c2ccc6cae9/95.html",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新唐书",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "全唐文 卷二十四",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新唐书 卷八十三 列传第八",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "十駕齋養新錄",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "道德真經",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "唐玄宗《道德真經》注疏之撰述與思想特徵",
+          "url": "http://www.daoist.org/BookSearch/BookSearch/list009/0442.pdf",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [
+        {
+          "title": "全唐文/卷0019",
+          "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E5%94%90%E6%96%87%2F%E5%8D%B70019",
+          "origin": "literal-wikitext-link",
+          "retrieved": false
+        }
+      ],
+      "retrievedAt": "2026-10-02T10:33:10.974Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:jinshi-3a735e47b9a6548c",
+      "query": "唐玄宗",
+      "count": 2,
+      "offset": 1191,
+      "excerpt": "玄注、賈公彥疏，《論語》用何晏集注。邢昺疏，《孟子》用趙岐注，孫奭疏，《孝經》用唐玄宗注，《史記》用裴駰注，《前漢書》用顏師古注。《後漢書》用李賢注，《三國志》用裴松之注，及唐太宗《晉書》、沈約《宋書》，蕭子顯《齊書》、姚思廉《梁書》《陳書》、魏",
+      "matchType": "name-occurrence",
+      "title": "金史/卷51",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B751",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2432733",
+      "textSha256": "7f711ced9ce29016e904d44edbe8db736a87ba0e2481d39553e8e06bce15ef9e",
+      "contentPath": "/static/data/history/archive-books/jinshi.json"
+    },
+    {
+      "documentId": "document:yuanshi-197db4bc0a3bedd6",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 1952,
+      "excerpt": "史中丞蠻子、翰林學士明里董阿皆稱善。月魯帖木兒獨起拜曰：「臣聞昔之所謂太上皇，若唐玄宗、宋徽宗，皆當禍亂，不得已而為之者也。願陛下正大位，以保萬世無疆之業，前代虛名何足慕哉！」帝善其對。\n\n仁宗崩，帖木迭兒復入中書，據相位。參議乞失監以受人金帶繫",
+      "matchType": "name-occurrence",
+      "title": "元史/卷144",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7144",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2248853",
+      "textSha256": "d1ed11b77066b54a65c7f28b2c67c34fd37f30a1c327ebd1189115bcbc1643d6",
+      "contentPath": "/static/data/history/archive-books/yuanshi.json"
+    },
+    {
+      "documentId": "document:yuanshi-92db2de5b78f2db1",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 2377,
+      "excerpt": "當世得失，與左右司員外郎宋文瓚，詣上都奏之。其議曰：\n\n:國之安危，在乎論相。昔唐玄宗，前用姚崇、宋璟則治；後用李林甫、楊國忠，天下騷動，幾致亡國。雖賴郭子儀諸將，效忠竭力，克復舊物，然自是藩鎮縱橫，紀綱亦不復振矣。良由李林甫妬害忠良，布置邪黨，",
+      "matchType": "name-occurrence",
+      "title": "元史/卷175",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7175",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1961375",
+      "textSha256": "4903828d597ad8035d29e4370fff44f36e344278bd2d559d4a56d4c726046e50",
+      "contentPath": "/static/data/history/archive-books/yuanshi.json"
+    },
+    {
+      "documentId": "document:yuanshi-0fab985d216a79ff",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 4964,
+      "excerpt": "王故事，總百有六篇：一曰聖慧，如漢孝昭、後漢明帝幼敏之類；二曰孝友，如舜、文王及唐玄宗友愛之類；三曰恭儉，如漢文帝却千里馬、罷露臺之類；四曰聖學，如殷宗緝學，及陳、隋諸君不善學之類。以為太子問安餘暇之助。又取古史，自三皇迄金、宋，歷代授受，國祚久",
+      "matchType": "name-occurrence",
+      "title": "元史/卷183",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7183",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1961390",
+      "textSha256": "da253e5aa6aca370eda380f58e10af25b8ced3ff1bb7f8917f4016b7cf3c60be",
+      "contentPath": "/static/data/history/archive-books/yuanshi.json"
+    },
+    {
+      "documentId": "document:yuanshi-feb24991603bf06d",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 6935,
+      "excerpt": "恐遲晚，豈可使數萬之師，棄置於一方。當此危急之秋，宗社存亡，僅在旦夕，不幸一日有唐玄宗倉卒之出，則是以祖宗百年之宗社，朝廷委而棄之，此時雖欲碎首殺身，何濟於事！故今不復避忌，惟以宗社存亡為重，奉疏以聞。」疏上，亦不報。\n\n二十八年秋，大明兵進壓近",
+      "matchType": "name-occurrence",
+      "title": "元史/卷186",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7186",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1961395",
+      "textSha256": "145566529bf717db43c491d7f823d587eefd4d0d27c9ef1440f0a46922dc6e92",
+      "contentPath": "/static/data/history/archive-books/yuanshi.json"
+    },
+    {
+      "documentId": "document:songshi-41c5f390fd918a17",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 601,
+      "excerpt": "采三脊茅三十束，有老人黃皓識之，補州助教，賜以粟帛。\n\n　　初，太平興國中，有得唐玄宗社首玉冊、蒼璧，至是令瘞於舊所。其前代封禪壇址摧圯者，命修完之。山上置圜臺，徑五丈，高九尺，四陛，上飾以青，四面如其方色；一壝，廣一丈，圍以青繩三周。燎壇在其東",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷104",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7104",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2604672",
+      "textSha256": "a260db9efacf23141f63beda860420214f8c2a35fed4c7bb265bb4572a20e153",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-0b92ebdec33e70ed",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 6559,
+      "excerpt": "各置三戶，歲一享以太牢；秦始皇帝，漢景帝、武帝、明帝、章帝，魏文帝，後魏孝文帝，唐玄宗、憲宗、肅宗、宣宗，梁太祖，後唐莊宗明宗，晉高祖，各置守陵兩戶，三年一祭以太牢；周桓王、景王、威烈王，漢元帝、成帝、哀帝、平帝、和帝、殤帝、安帝、順帝、衝帝、質",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷105",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7105",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2631989",
+      "textSha256": "f0d9a4cedc02a8ef5eb7b7f887feb8c077ac9d35c68b076189785c8a0aaf65c8",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-132e55bd7caca88e",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 1951,
+      "excerpt": "》之明文也。又按太宗享祀太祖二十有二載，稱曰『孝弟』，此不易之制，又安可追改乎？唐玄宗謂中宗為皇伯考，德宗謂中宗為高伯 祖，則伯氏之稱，復何不可？臣等參議：自今合祭日，太祖、太宗依典禮同位異坐，皇帝於太祖仍稱孝子，餘並遵舊制。」\n\n景德元年，有司",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷106",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7106",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=7904651",
+      "textSha256": "0cbf8e6ef40e7ac3dfb11acffab2eac7b23f151f5be18fc3a05df582c0d7fc73",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-4696ed0351c7064c",
+      "query": "唐玄宗",
+      "count": 2,
+      "offset": 8291,
+      "excerpt": "卷陳僧智匠\n*《古今樂録》十三卷趙邦利\n*《彈琴手勢譜》一卷又《彈琴右手法》一卷唐玄宗\n*《金風樂弄》一卷太宗\n*《九弦琴譜》二十卷《琴譜》六卷《唐宗廟用樂儀》一卷《唐肅明皇后廟用樂儀》一卷崔令欽\n*《教坊記》一卷吳兢\n*《樂府古題要解》二卷王昌",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷202",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7202",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2632938",
+      "textSha256": "66bd332d0e66ef2f0588a086458a4f5499ef343e53bd03af37346520eab92d98",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-52f5f2fd5e1ed925",
+      "query": "唐玄宗",
+      "count": 2,
+      "offset": 1438,
+      "excerpt": "二十卷《唐中宗實錄》二十卷《唐睿宗實錄》十卷又五卷〔（並劉知幾、吳兢撰）〕\n\n《唐玄宗實錄》一百卷〔（元載、令狐亙撰）〕《唐肅宗實錄》三十卷〔（元載撰）〕《唐代宗實錄》四十卷〔（令狐亙撰）〕《唐德宗實錄》五十卷〔（裴垍等撰）〕\n\n《唐建中實錄》十",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷203",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7203",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1520278",
+      "textSha256": "741d6a85e140ae244bfbb5e9693fbed3ec4d83bf15552a9c80d16e04a57b94b6",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-02c84fb535f6dd1a",
+      "query": "唐玄宗",
+      "count": 3,
+      "offset": 2296,
+      "excerpt": "注》二卷\n\n又《道德略歸》一卷陸修靜《老子道德經雜說》一卷傅奕《道德經音義》二卷唐玄宗注《老子道德經》二卷〔（有序）〕\n\n唐玄宗《道德經音疏》六卷成玄英《道德經開題序訣義疏》七卷杜光庭《道德經廣聖義疏》三十卷僧文儻《道德經疏義》十卷\n\n趙至堅《道",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷205",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7205",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2568734",
+      "textSha256": "4419372693dbe32ded1a19d253ffc12089fa122956fadecc32699aa0a35a5f51",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-f4c2abbf824c5f39",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 469,
+      "excerpt": "太宗潛藩時，白嘗贄文，有襲衣之賜。及即位，擢為左拾遺，權知兗州，歲餘召還。泰山有唐玄宗刻銘，白摹本以獻，且述承平東人望幸之意。預修《太祖實錄》，俄直史館，判吏部南曹。從征太原，判行在御史臺。劉繼元降，翌日，奏《平晉頌》，太宗夜召至行宮褒慰，且曰：",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷439",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7439",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1490414",
+      "textSha256": "b6064f3520eb0e24e8bbc8c2aa828100db5a227c74432a3b05b28f80547aa947",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-27d20850fbedc409",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 7744,
+      "excerpt": "，曰：「諸錢皆效浙僧亞栖之跡，故筆力軟弱，獨惟治為工耳。」惟治嘗以鍾繇、王羲之、唐玄宗墨跡凡七軸為獻，優詔褒答。\n\n雍熙三年，大出師征幽州，命惟治知真定軍府兼兵馬都部署。前一日曲宴內殿，惟治獻詩，帝覽之悅，酒半，遣小黃門密諭北面之寄。至則訓兵享士",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷480",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7480",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1517446",
+      "textSha256": "0f580a39dc14e145c72f68876d0411d9f11a449dcb63e7f9e42f3eee4dadfe15",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:mingshi-ef5829c2190713c5",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 579,
+      "excerpt": "於南郊。由漢歷唐，千餘年間，皆因之合祭。其親祀北郊者，惟魏文帝、周武帝、隋高祖、唐玄宗四帝而已。宋元豐中，議罷合祭。紹聖、政和間，或分或合。高宗南渡以後，惟用合祭之禮。元成宗始合祭天地五方帝，已而立南郊，專祀天。泰定中，又合祭。文宗至順以後，惟祀",
+      "matchType": "name-occurrence",
+      "title": "明史/卷48",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B748",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594660",
+      "textSha256": "0a102be66db3579782a333bf84def68f83d90982fe3182dfd969e2bd3a211554",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-49ffb40db906f1df",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 1807,
+      "excerpt": "伯、少俞、高陽十大名醫從祀。儀同釋奠。四年，帝以天下郡邑通祀三皇為瀆。禮臣議：「唐玄宗嘗立三皇五帝廟於京師。至元成宗時，乃立三皇廟於府州縣。春秋通祀，而以醫藥主之，甚非禮也。」帝曰： 「三皇繼天立極，開萬世教化之原，汨於藥師可乎？」命天下郡縣毋得",
+      "matchType": "name-occurrence",
+      "title": "明史/卷50",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B750",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594663",
+      "textSha256": "08acbfd6516e5acf6f6af0df336e3ae9134ccbbde8d5dac151a4e327fabc49d5",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:qingshigao-f7cb358d3fa78481",
+      "query": "唐玄宗",
+      "count": 1,
+      "offset": 21169,
+      "excerpt": "其理，理明而詁以精：二者不可偏廢。其於易，述程子之傳，撰周易述傳二巻；於孝經，集唐玄宗、宋司馬光、范祖禹之注，撰孝經述註一巻。\n\n尤熟於通鑑，故經世優裕。嘗與人論鈔弊，謂輕錢行鈔，必有利而無害。論禁洋菸，謂不禁則民日以弱，中國必疲，禁則利在所爭，",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷482",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7482",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2611033",
+      "textSha256": "8406a0fcdfd6e5c1978876d00594845b56055887f075162cda285771fada83ca",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "唐玄宗的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

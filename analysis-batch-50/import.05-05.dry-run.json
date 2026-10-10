@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "999c7ea85c3ad54afb728a976100afc549cc5f2cf3779fed87d8991b5ed969b4",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "9f657f6f861cd862fed776d39ba2233ac6ead1dd2c30a0c1ea68e69aa27a69d8",
+  "plannedAfterSha256": "67bf74885f52267398c4714dc255b10391314c8adaa77231783ce448c3f74dc3",
+  "beforeRevision": 8,
+  "plannedAfterRevision": 9,
+  "patchBytes": 2849368,
+  "plannedDocumentBytes": 9768187,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_唐高宗_285517784",
+      "field": "analysis",
+      "sha256": "9e29af7729ee3e07147171d06915a781602a3f65c75d9ccd0c8ef6c87e19d705"
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "field": "soulEssence",
+      "sha256": "37c2782e57c51f77edf586f5d58d8853919d2ea79bdf0ae6cfb259cde05d6297"
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "field": "stats",
+      "sha256": "cb0b9b0055f6923afd35d216a460d9b96002907c6496602cdf00a94dbee58b68"
+    },
+    {
+      "id": "emperor_唐高宗_285517784",
+      "field": "statsAnalysis",
+      "sha256": "14be7829acbc5283552c6607a495ffc04cd8036ee54ce69b181b571ab9db1a99"
+    }
+  ]
+}

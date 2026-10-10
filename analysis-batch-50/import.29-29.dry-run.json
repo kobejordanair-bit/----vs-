@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "cbb2646b49eb6a0c9551cab7bdd96312c4efc55357849147280f766aa7d40b02",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "415d8c30816f855eeca07d10d0ae898a163bf5ee8f7b0aa4067bcdec8ff1e30e",
+  "plannedAfterSha256": "bb577e4a7a223f10cea2ce10d082e38ce0e9f4c74ea732e1ac521c34d320656d",
+  "beforeRevision": 30,
+  "plannedAfterRevision": 31,
+  "patchBytes": 3248199,
+  "plannedDocumentBytes": 10167018,
+  "writtenFieldHashes": [
+    {
+      "id": "general_伍子胥_899273611",
+      "field": "analysis",
+      "sha256": "87e9dcc78effb65b67b23ada746cacaa22fbd93be7a5e60efd758bdde4655446"
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "field": "soulEssence",
+      "sha256": "9e100046e4d439895ecc4121e94391b3affffd4c519912ba3ccebce5d4828fa4"
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "field": "stats",
+      "sha256": "180faf8553fd70b2b50262260d322270d4317799fd48ce0db83123cc9c1e217e"
+    },
+    {
+      "id": "general_伍子胥_899273611",
+      "field": "statsAnalysis",
+      "sha256": "61528eef98dbe91cd69eed42caa932a3cb23836076f5f8c5b603e8190a0ebf0c"
+    }
+  ]
+}

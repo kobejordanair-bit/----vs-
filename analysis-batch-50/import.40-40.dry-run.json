@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "0ec01ee15e123413ac92bcb6fd69677f97cef9427a619aaff6bf3aef0644a42a",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "00c5ef0cc96625ec960c48040360e8ac3ebe689a437d3ff70fb392e9cfc3950d",
+  "plannedAfterSha256": "a9d0953c152034c2d86f74eaee70fee0fce88f817cf72088813e9401a381e092",
+  "beforeRevision": 41,
+  "plannedAfterRevision": 42,
+  "patchBytes": 3437623,
+  "plannedDocumentBytes": 10356442,
+  "writtenFieldHashes": [
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "field": "analysis",
+      "sha256": "9f7fece205574400ae1214cfed54337ae3e3974a022a88032cc089e018a77bc3"
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "field": "soulEssence",
+      "sha256": "62e108b6524b23ecb363563edcfcfbfe9d2d5e6060dd2f6706d3951d64b87f29"
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "field": "stats",
+      "sha256": "93b8da4016c798a138b6f07f5115af01a5cc1a39fd1501f7a0de522f1b1f1fc7"
+    },
+    {
+      "id": "minister_于謙(名臣)_924336368",
+      "field": "statsAnalysis",
+      "sha256": "ea2c6abb0675ee94aeab69487ce4e6e8d89239edd9383cbe1d51fa0909818f48"
+    }
+  ]
+}

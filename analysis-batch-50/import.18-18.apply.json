@@ -1,0 +1,57 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "apply",
+  "status": "applied_verified",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "f838a32e2e29c9d15f91c086c14fd2adbfe01afef54496396c98177790d98bf3",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "81970f9004a7decff8e1a72e88fbdb5eb19da8fc6c63917843d4e031dba1ca0d",
+  "plannedAfterSha256": "06467cf89f6738b673961d65d05c4c15411cb88e85097c0fad59b728f6c2ada1",
+  "beforeRevision": 19,
+  "plannedAfterRevision": 20,
+  "patchBytes": 3056891,
+  "plannedDocumentBytes": 9975710,
+  "writtenFieldHashes": [
+    {
+      "id": "general_曹操_306294699",
+      "field": "analysis",
+      "sha256": "e565427fe49e7131f3ee63cdb0b62a68da87491db2632a60c005665fe2789303"
+    },
+    {
+      "id": "general_曹操_306294699",
+      "field": "soulEssence",
+      "sha256": "94c40a5c62ed701a1433a742a5d62bc11d2836978b7783e4f8b231233f4755b7"
+    },
+    {
+      "id": "general_曹操_306294699",
+      "field": "stats",
+      "sha256": "68d710c48b5696f0c53314404af08746ca89ca4fbd3de93ece7135ac882ad95f"
+    },
+    {
+      "id": "general_曹操_306294699",
+      "field": "statsAnalysis",
+      "sha256": "f2bc8b22c84a8c37393f3b0f420a6b1f9f11fd9ad678bf436417a97f0b7cf1aa"
+    }
+  ],
+  "conflicts": 0,
+  "writeAttempted": true,
+  "writeSucceeded": true,
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 20,
+    "afterSha256": "06467cf89f6738b673961d65d05c4c15411cb88e85097c0fad59b728f6c2ada1",
+    "unaffectedBeforeSha256": "7940104cc1e770d51079a897cbd44ecef5f070506b40d327ee0fd8372da387f3",
+    "unaffectedAfterSha256": "7940104cc1e770d51079a897cbd44ecef5f070506b40d327ee0fd8372da387f3"
+  },
+  "rawExtrasPreserved": true
+}

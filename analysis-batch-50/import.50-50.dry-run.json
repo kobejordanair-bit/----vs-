@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "565fbc7873e97611300ae6656e2d1da06644715b4c9ed7afee5efa6045afda0f",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "298e7dc0f4f92de11d6cf85ab68a7f54e7fcd67918a981aafc4404b780d75360",
+  "plannedAfterSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "beforeRevision": 51,
+  "plannedAfterRevision": 52,
+  "patchBytes": 3607549,
+  "plannedDocumentBytes": 10526368,
+  "writtenFieldHashes": [
+    {
+      "id": "minister_徐光啟_1992746284",
+      "field": "analysis",
+      "sha256": "a72619540990c10b5a2af76f09fe727f652540f10d9e63ba8e19ef2f082777b2"
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "field": "soulEssence",
+      "sha256": "b6d0815ca8968752d90d12b79c1b647f2182a7cf3f6db9a3b6e6efa25b7bd0f9"
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "field": "stats",
+      "sha256": "4b03ec71006be94faf88499df5d7226ba1abf49e1a4ba145e990058fd5839946"
+    },
+    {
+      "id": "minister_徐光啟_1992746284",
+      "field": "statsAnalysis",
+      "sha256": "0369d10b1137d36e5160973c7b9034c668998b41de8d9a1b4c91f071159f55fa"
+    }
+  ]
+}

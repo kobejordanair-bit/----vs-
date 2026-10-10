@@ -1,0 +1,266 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "emperor_唐憲宗_285971314",
+  "name": "唐憲宗",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "唐朝",
+    "title": "李純"
+  },
+  "candidatePages": [
+    {
+      "title": "唐宪宗",
+      "pageId": 53576,
+      "revisionId": 94331771,
+      "revisionTimestamp": "2026-09-13T06:36:25Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E5%AE%AA%E5%AE%97",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94331771",
+      "wikidataId": "Q9761",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "资治通鉴·唐纪五十·卷第二百三十四",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "資治通鑑",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "读通鉴论",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "唐会要·卷二十一·列传第二十一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "永乐大典残卷",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "全唐文 卷六百八十一",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "旧唐书·本纪第十四·顺宗 宪宗上",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "资治通鉴",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新唐书·诸帝公主列传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "《新唐书·诸帝公主列传》",
+          "url": "http://guoxue.baidu.com/page/d0c2ccc6cae9/95.html",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:33:08.955Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:xinwudaishi-c4ad7e378aff1fd3",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 1282,
+      "excerpt": "請昪復姓，昪謙抑不敢忘徐氏恩，下其議百官，百官皆請，然後復姓李氏，改名曰昪。自言唐憲宗子建王恪生超，超生志，為徐州判司；志生榮。乃自以為建王四世孫，改國號曰唐。立唐高祖、太宗廟，追尊四代祖恪為孝靜皇帝，廟號定宗；曾祖超為孝平皇帝，廟號成宗；祖志孝",
+      "matchType": "name-occurrence",
+      "title": "新五代史/卷62",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B762",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1674689",
+      "textSha256": "efb088a35514e97560ea75bc6af2607af76089c657b72807c5adb74be0524996",
+      "contentPath": "/static/data/history/archive-books/xinwudaishi.json"
+    },
+    {
+      "documentId": "document:yuanshi-fae62374c7b77d77",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 2460,
+      "excerpt": "未，皇太子薨。太常博士議曰：「前代太子薨，梁武帝諡統曰昭明，齊武帝諡長懋曰文惠，唐憲宗諡寧曰惠昭，金世宗諡允恭曰宣孝，又建別廟以奉神主，准中祀以陳登歌，例設令丞，歲供洒掃。斯皆累代之典，莫不追美洪休。」時中書、翰林諸老臣，亦議宜加諡，立別廟奉祀。",
+      "matchType": "name-occurrence",
+      "title": "元史/卷074",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7074",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2258479",
+      "textSha256": "ef3ffb8e208bf9e96cac7a018df8fbe97c49ffd25601d3cc2f1f0c7c23ab4ea1",
+      "contentPath": "/static/data/history/archive-books/yuanshi.json"
+    },
+    {
+      "documentId": "document:songshi-04d01f99a9514b44",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 284,
+      "excerpt": "禫除畢，服吉，心喪終制。」從之。\n\n　　七月，太常禮院言：「准詔議定皇太后諡，按唐憲宗母王太后崩，有司集議，以諡狀讀於太廟，然後上之。周宣懿皇后諡，即有司撰定奏聞，未常集議，制下之日，亦不告郊廟，修諡冊畢始告廟，還，讀於靈坐前。」詔從周制。於是，",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷123",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7123",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2610707",
+      "textSha256": "346f2a585e445a1c127d8459cf216cf5d2b0554ecf1764bc4452baf7261a79fc",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-52f5f2fd5e1ed925",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 1548,
+      "excerpt": "撰）〕\n\n《唐建中實錄》十五卷〔（沈既濟撰）〕《唐順宗實錄》五卷〔（韓愈撰）〕《唐憲宗實錄》四十卷《唐穆宗實錄》二十卷\n\n〔（並路隋等撰）〕《唐敬宗實錄》十卷〔（李讓夷等撰）〕《唐文宗實錄》四十卷〔（魏謩修撰。）〕《唐武宗實錄》二十卷\n\n《唐宣宗",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷203",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7203",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1520278",
+      "textSha256": "741d6a85e140ae244bfbb5e9693fbed3ec4d83bf15552a9c80d16e04a57b94b6",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-8b347164e4830831",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 8089,
+      "excerpt": "反其道，則士氣日振，而見危授命者有人矣。」\n\n知婺州。孝宗初即位，陛辭，陳裴垍對唐憲宗「為治先正其心」，以為臨御之初，出治大原，無越於此。上嘉納。至郡，勸民義役。金華長仙鄉民十有一家，自以甲乙第其產，相次執役，幾二十年。芾輿致十一人者，與合宴，更",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷387",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7387",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1476254",
+      "textSha256": "6b3f50c15f14677e1a1f341c84af945a020db396ca0b558bd0480dc5c629fdea",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-5ca6f2e44118b557",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 9056,
+      "excerpt": "稱。\n\n孝宗受禪，議上「光堯壽聖」尊號冊寶，有欲俟欽宗服除者，太常博士林栗謂：「唐憲宗上順宗冊寶在德宗服中，不必避，備樂而不作可也。」儀鳳獨上議曰：「謹按上尊號事屬嘉禮，累朝必俟郊祀慶成然後舉行。太上皇帝為欽宗備禮終制，見於詔書。議者引憲宗故事，",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷389",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7389",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1518395",
+      "textSha256": "c2048eab896dae2a061851cc151ac34ade837a7f8ad3fac8c130ea663381da1b",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-5992d2e07c476666",
+      "query": "唐憲宗",
+      "count": 2,
+      "offset": 852,
+      "excerpt": "必大曰：「太上萬壽，而紹興末議文及近上表用『嗣皇帝』為未安。按建炎遙拜徽宗表，及唐憲宗上順宗尊號冊文，皆稱皇帝。」議遂定。趙雄使金，齎國書，議受書禮。必大立具草，略謂：「尊卑分定，或較等威；叔侄親情，豈嫌坐起！」上褒之曰：「未嘗諭國書之意，而卿能",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷391",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7391",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1476486",
+      "textSha256": "4baa8140ff93bb79c670591b3af8126561c882d4e8a78d62a717ac963bcd1fae",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-0758b60aa70e5ad0",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 1430,
+      "excerpt": "事，未幾而斥，則是上疏者以共工、驩兜之刑加之矣。昔韓愈論後世人主奉佛，運祚短促，唐憲宗大怒，將抵以死，自崔群、裴度、戚里諸賢皆為愈言，止貶潮州，尋復內徙。今上疏者非可愈比，然在列之臣，無一為言者，萬一死於瘴癘，陛下與大臣有殺諫者之謗，史冊書之，有",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷415",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7415",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1486986",
+      "textSha256": "72156a0882365bd8ddf773e0f568df97addd98c83caf5cd15edc2648e90bafa5",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-5b65142e8ade8afd",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 9139,
+      "excerpt": "權納賄之狀，遂奪職與外祠。帝念之，復除浙東馬步軍副總管，詔賜錢二千緡為行裝。正引唐憲宗召吐突承璀事，乞罷相，不許。正復言：「臣與特立勢難兩立。」帝答曰：「成命已班，朕無反汗，卿宜自處。」正待罪國門外，帝不復召，而特立亦不至。寧宗受禪，特立遷和州防",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷470",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7470",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1510424",
+      "textSha256": "b04f164a85f483921b0781d3e5cb1c534e382986e0b62ac3071b6f83a755564c",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:mingshi-49ffb40db906f1df",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 583,
+      "excerpt": "帝，鹹甯祀漢文帝，興平祀漢武帝，長安祀漢宣帝，三原祀唐高祖，醴泉祀唐太宗，蒲城祀唐憲宗，涇陽祀唐宣宗。歲祭用仲春、仲秋朔。於是遣使詣各陵致祭。陵置一碑，刊祭期及牲帛之數，俾所在有司守之。已而命有司歲時修葺，設陵戶二人守視。又每三年，出祝文、香帛，",
+      "matchType": "name-occurrence",
+      "title": "明史/卷50",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B750",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594663",
+      "textSha256": "08acbfd6516e5acf6f6af0df336e3ae9134ccbbde8d5dac151a4e327fabc49d5",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-788e3742f4f9f084",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 879,
+      "excerpt": "齋醮修煉之說進者。宋徽宗崇道教，科儀符箓最盛，卒至乘輿播遷。金石之藥，性多酷烈。唐憲宗信柳泌以殞身，其禍可鑒。今龍虎山上清宮、神樂觀、祖師殿及內府番經廠皆焚毀無余，彼如有靈，何不自保？天厭其穢，亦已明甚。陛下若親近儒臣，明正道，行仁政，福祥善慶，",
+      "matchType": "name-occurrence",
+      "title": "明史/卷181",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7181",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594820",
+      "textSha256": "9773d8b3fae59bb99debf57994077273da46f8d84b27a9c062c528f5f7a6eb53",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:qingshigao-8fd84c9b0c638a8d",
+      "query": "唐憲宗",
+      "count": 1,
+      "offset": 1992,
+      "excerpt": "祀桓、靈，亦思漢之所由亡乎？其再詳議。」尋議增祀兩晉、元魏、前後五代各帝王，並以唐憲宗平亂，金哀宗殉國，亦宜列祀。允行。\n\n同治四年，以散宜生配饗，位次畢公高。高允配饗，位次趙雲。\n\n陵寢之祭，太宗征明，至燕京，即遣貝勒阿巴泰等赴金太祖、世宗陵致",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷84",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B784",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2604648",
+      "textSha256": "1f1adc737476097db06979a24f436518641efe79e815a36f29795ac7da1424a4",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "唐憲宗的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

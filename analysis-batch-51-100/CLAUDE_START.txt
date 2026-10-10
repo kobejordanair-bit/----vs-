@@ -1,0 +1,1 @@
+請完成 analysis-batch-51-100/CLAUDE_HANDOFF.md 的全部任務。先讀 EDITORIAL_BRIEF.md 和 PEOPLE.md，先跑完本批 01 孫文的全套並核對，再完成其餘 49 人。使用原 PROMPT、既有深度評鑑、同類五維校準与真實上網來源；交付完整稿、搜尋紀錄、查核證據、50 個 results，推到 claude/analysis-batch-51-100。不要修改首批，不要存取任何憑證或正式網站資料。

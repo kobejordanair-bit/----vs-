@@ -1,0 +1,354 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "general_孫傳庭_902223150",
+  "name": "孫傳庭",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "明朝",
+    "title": "殘明絕壁"
+  },
+  "candidatePages": [
+    {
+      "title": "孙传庭",
+      "pageId": 213461,
+      "revisionId": 92754913,
+      "revisionTimestamp": "2026-05-22T14:38:14Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E4%BC%A0%E5%BA%AD",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=92754913",
+      "wikidataId": "Q7638235",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "山西地方志网--李淳：“传庭死而明亡矣”的相关解读",
+          "url": "http://dfz.shanxi.gov.cn/ShowFile/Earth/20181018/6FEAEED17CD52BF0.Shtml",
+          "type": "citation-template",
+          "template": "Cite web",
+          "author": "",
+          "publisher": "",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "《李自成新传》",
+          "url": null,
+          "type": "citation-template",
+          "template": "cite book",
+          "author": "",
+          "publisher": "上海人民出版社",
+          "date": "1986",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "欽定勝朝殉節諸臣錄",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "萬曆四十七年己未科進士履歷",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·卷二百六十二",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "東林列傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "天間閣集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明末农民战争史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "李自成新传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:33:17.313Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:mingshi-d2a36d3f9437c721",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 6872,
+      "excerpt": "，詔諸鎮星馳入援。己未，大清兵入昌平，巡關御史王肇坤等死之。壬戌，巡撫陝西都御史孫傳庭擊擒賊首高迎祥於盩厔，送京師伏誅。癸亥，諭廷臣助餉。甲子，兵部尚書張鳳翼督援軍，高起潛為總監。是月，大清兵入寶坻，連下近畿州縣。\n\n　　八月癸酉，括勳戚文武諸臣",
+      "matchType": "name-occurrence",
+      "title": "明史/卷23",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B723",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594639",
+      "textSha256": "3db2d6b1bdb3738a6e6266fdebfea5f1223cf86e676eb9d6edbf831a4ac3b0b1",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-3393d5c12a953ce8",
+      "query": "孫傳庭",
+      "count": 13,
+      "offset": 720,
+      "excerpt": "之。是月，羅汝才降。\n\n　　十二月庚子，方逢年罷。盧象昇兵敗於鉅鹿，死之。戊申，孫傳庭為兵部侍郎督援軍，徵洪承疇入衞。\n\n　　是年，土魯番、琉球入貢。\n\n崇禎十二年\n\n　　十二年春正月己未朔，以時事多艱，卻廷臣賀。庚申，大清兵入濟南，德王由樞被執",
+      "matchType": "name-occurrence",
+      "title": "明史/卷24",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B724",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594640",
+      "textSha256": "80050f3b7be74e909f68a639e66cfaf675d0179f38565a2176365482b4b085d6",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-5151604f3ecb02bf",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 6864,
+      "excerpt": "副將王世寵、王加春、魯胤昌等討破叛番，斬首七百餘級，撫安三十八族而還。其冬，督師孫傳庭檄召不至，疏劾之。帝令察爌堪辦賊，許戴罪圖功，否即以賜劍從事。及爌至軍，傳庭貸其罪。已，復以逗留淫掠被劾，帝仍令載罪自效。明年秋，傳庭將出關。有傳賊自內鄉窺商、",
+      "matchType": "name-occurrence",
+      "title": "明史/卷211",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7211",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2609438",
+      "textSha256": "3b01089a58c6730962af3f42f8b9127fa54c26de4834d36c7492417530f87d55",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-67d17a932573c6d3",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 13762,
+      "excerpt": "旌死節、停催征、蘇郵困、禁勞役六事。帝采納焉。歷禮部左右侍郎。因召對，言：「督師孫傳庭出關，安危所繋，慎勿促之輕出。俾鎮定關中，猶可號召諸將，相機進剿。」帝不能從。十七年正月以本官兼東閣大學士，同範景文入閣。都城陷，受拷掠者再，搜獲止二千金，既而",
+      "matchType": "name-occurrence",
+      "title": "明史/卷251",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594513",
+      "textSha256": "43131dac1425c006f63e1c6993cd02a1ecc313d70267b0e482f18bc631815e42",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-bc123fc0b9c46d57",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 1520,
+      "excerpt": "獻忠，戰舞陽、光山，剿撫俱有功，應免罪。諸巡撫則河南常道立、湖廣余應桂有功，陜西孫傳庭、山西宋賢、山東顏繼祖、保定張其平、江南張國維、江西解學龍、浙江喻思恂有勞，鄖陽戴東旻無功過，鳳陽朱大典、安慶史可法宜策勵圖功。總兵則河南左良玉有功，陜西曹變蛟",
+      "matchType": "name-occurrence",
+      "title": "明史/卷252",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2609328",
+      "textSha256": "30ae9ba4bb23cfdf93878c61c25576998aadb2545789082cdb3c8ddacf21dadf",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-9c05cd4d00f85185",
+      "query": "孫傳庭",
+      "count": 3,
+      "offset": 9917,
+      "excerpt": "都御史，奪情任之。會大清兵深入內地，詔新甲受代，即督所部兵協禦。未幾，象升戰歿，孫傳庭代統其軍，新甲與相倚仗，終不敢戰。明年春，畿輔解嚴。順天巡按劉呈瑞劾其前後逗撓。新甲歷陳功狀，且言呈瑞挾仇，帝不問。既赴鎮，列上編隊伍、嚴哨探、明訓練、飭馬政、",
+      "matchType": "name-occurrence",
+      "title": "明史/卷257",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7257",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594883",
+      "textSha256": "80aa9c846e303855484f002e70fe2a899baf14425eaa66ad1303e9eaeaa73357",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-2f65b2289890b17d",
+      "query": "孫傳庭",
+      "count": 5,
+      "offset": 5944,
+      "excerpt": "不肯從，則賫金帛酒牢犒之，名曰「求賊」。帝诇得狀，曰：「文燦大言無實。」文燦恐。孫傳庭出關擊賊，文燦不救，而嗣昌已入政府掌中樞矣。九月，文燦次襄陽，賊分踞鄖、襄諸險。諸將請戰，文燦議分兵。盧九德曰：「兵分則力弱，一失利，全軍搖矣。莫若厚集其力而合",
+      "matchType": "name-occurrence",
+      "title": "明史/卷260",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7260",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2609492",
+      "textSha256": "5f38b46f83c6949f18fed2422196e59d62ee143bd0c3969d3879cb980402f49c",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-70b484b2740d03e5",
+      "query": "孫傳庭",
+      "count": 7,
+      "offset": 31,
+      "excerpt": "〔篇題：卷二百六十二\n列傳第一百五十　傅宗龍 汪喬年 楊文岳 孫傳庭〕\n\n○傅宗龍汪喬年〔（張國欽等）〕楊文嶽〔（傅汝為等）〕孫傳庭\n\n傅宗龍\n\n傅宗龍，字仲綸，昆明人。萬歷三十八年進士。除銅梁知縣，調巴縣，行取，入為戶部主事。",
+      "matchType": "name-occurrence",
+      "title": "明史/卷262",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7262",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594889",
+      "textSha256": "cb56f6c8e0352ad4886c29ff6ec019d51d7eff16a5f08bc2881a8d8a49635614",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-42441431575f47ae",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 1631,
+      "excerpt": "下賢能方面官，鄭三俊薦師孔。六月，擢右僉都御史，代蔡官治巡撫陜西，調兵食，趣總督孫傳庭出關。\n\n當是之時，賊十三家七十二營降，師殆盡，惟李自成、張獻忠存。自成尤強，據襄陽。以河洛、荊襄四戰之地，關中其故鄉，士馬甲天下，據之可以霸，決策西向。憚潼關",
+      "matchType": "name-occurrence",
+      "title": "明史/卷263",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7263",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2618603",
+      "textSha256": "4475215890ed0e547614b35a46e993296b51db1af05833986dd3801d5384d544",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-f1f5ad92478ff960",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 3393,
+      "excerpt": "並轄平賊等鎮援剿官兵。拔知縣蘇京、王漢、王燮為御史。詔蘇京監延、寧、甘、固軍，趣孫傳庭出關；王漢監平賊鎮標楚、蜀軍，同侯恂等急擊；王燮監陽、懷東晉軍，刻期渡河。總兵許定國以晉軍次沁水，一夕潰去，寧武兵亦潰於懷慶，詔逮定國。七月，河上之兵潰。督師丁",
+      "matchType": "name-occurrence",
+      "title": "明史/卷267",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7267",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2600794",
+      "textSha256": "743a3473468c0c44a9fee4989e38d08becfd89193307e60788c52b872ebd9368",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-91b652ea3cd1a7cf",
+      "query": "孫傳庭",
+      "count": 3,
+      "offset": 6818,
+      "excerpt": "河南賊。其冬，畿輔有警，馳還鎮。大清兵薄保定，以光祚堅守，不攻而去。光祚尋從總督孫傳庭南下。明年二月，大清兵還至渾河，值水漲，輜重難渡，諸將王樸、曹變蛟等相顧不敢擊，光祚恇怯尤甚。視師大學士劉宇亮劾之，詔即軍前正法。光祚適報武清捷，宇亮乃系之武清",
+      "matchType": "name-occurrence",
+      "title": "明史/卷269",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7269",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594897",
+      "textSha256": "b7c78db3ef6b61c2b49c60c22d4a9f797a9a1e7300e7252be2dc469b10388c0c",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-f945c287df26f235",
+      "query": "孫傳庭",
+      "count": 3,
+      "offset": 891,
+      "excerpt": "十一年冬，入衛畿輔，從總督盧象升戰賈莊。象升敗歿，國柱當坐罪。大學士劉宇亮、侍郎孫傳庭皆言其身入重圍，非臨敵退卻者比。乃充為事官，戴罪圖功。十四年，祖大壽被困錦州，總督洪承疇率八大將往救。國柱先至松山，陷伏中。大清兵四面呼降，國柱太息，語其下曰：",
+      "matchType": "name-occurrence",
+      "title": "明史/卷272",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7272",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594901",
+      "textSha256": "2f9f0528ce4d9e20d72f11946dc381969ae92fb4c9a60502b8fa1a9458dd7b60",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-bbefe514909c99ca",
+      "query": "孫傳庭",
+      "count": 3,
+      "offset": 7957,
+      "excerpt": "令人龍及遊擊孫守法挾之趨富平，乘夜擊敗賊。人龍尋移守延綏。\n\n　　九年七月從巡撫孫傳庭大破賊盩啡，擒迎祥。九月，惠登相等屯寶雞，承疇遣人龍等往擊，戰于賈家村。追奔，為賊所截。川將曾榮耀等來援，敗去，人龍坐褫官立功。十年，小紅狼圍漢中，瑞王告急。承",
+      "matchType": "name-occurrence",
+      "title": "明史/卷273",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7273",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=8749082",
+      "textSha256": "743ef04aea9bc7fa496d2c97e88702d53eafd0b2048bf71a2d876c02b7d4466b",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-dafe81bd7418b083",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 2322,
+      "excerpt": "好伸其言，多不顧事之損益。殿上之彼己日爭，閫外之從違遙制，一人任事，眾口議之。如孫傳庭守關中，識者俱謂不宜輕出，而已有以逗撓議之者矣。賊既渡河，臣語史可法、姜曰廣急撤關、寧吳三桂兵，隨樞輔迎擊。先帝召對時，群臣亦曾及此，而已有以蹙地議之者矣。及賊",
+      "matchType": "name-occurrence",
+      "title": "明史/卷278",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7278",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2600832",
+      "textSha256": "e8131e135e7b6489253b16d8f55bc705bafaccb927afcb647ac8ba9b899addf8",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-39f66714e35843e9",
+      "query": "孫傳庭",
+      "count": 2,
+      "offset": 8464,
+      "excerpt": "。李自成躪荊、襄，遠近震動。世清一子方幼，屬友人養人，誓身殉。十六年十月，自成敗孫傳庭軍，長驅入關，遣右營十萬人從南陽犯商州。世清憑城守，有奸民投賊，至城下說降，世清佯與語，發炮斃之，懸其首城上曰：「懷二心者視此！」士民皆效死，炮矢盡，繼以石，石",
+      "matchType": "name-occurrence",
+      "title": "明史/卷294",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7294",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594923",
+      "textSha256": "b8e8e18a8e78e1fc1df5380a90cb46af73b208b75ed53b5f9084f28b1e6290a1",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-0357333c9e46a2e6",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 2329,
+      "excerpt": "內更新。因言復社一案，其人盡縫掖，不可以一夫私怨開禍端。帝多采納。明年出按陜西。孫傳庭治兵關中，吏民苦征繕，日夜望出關，天子亦屢詔督趣。毓峒獨謂將驕卒悍，未可輕戰，抗疏爭。帝不納，師果敗。\n\n十六年冬，期滿得代，甫出境，而賊入關。復還至朝邑，核上",
+      "matchType": "name-occurrence",
+      "title": "明史/卷295",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7295",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594924",
+      "textSha256": "9a8620b6e5cd6f9863830bbf9c5327db7980a734006377bd91bce5dc783fac70",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-2ee7725db8f20265",
+      "query": "孫傳庭",
+      "count": 3,
+      "offset": 4408,
+      "excerpt": "襲榆林，河水驟長，賊淹死甚眾，乃改道，從韓城而西。時象升及大樂、寬等皆入援京師。孫傳庭新除陝西巡撫，銳意滅賊。秋七月，擒迎祥於盩啡，獻俘闕下，磔死。於是賊黨乃共推自成為闖王矣。是月，犯階、徽。未幾，出、隴，犯鳳翔，渡渭河。\n\n　　十年，犯涇陽、",
+      "matchType": "name-occurrence",
+      "title": "明史/卷309",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2651593",
+      "textSha256": "fb987cfb3eb354eb5b49367a2d0e2cae532dcd32868883158b58338df4e46599",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:qingshigao-3e147097f0f008d2",
+      "query": "孫傳庭",
+      "count": 1,
+      "offset": 3616,
+      "excerpt": "斬以徇。如此則威立，軍事辦，然後渡河收中原土寨團結之眾，以合左良玉於襄陽，約陝督孫傳庭犄角並進，則汴圍不救自解。」恂叱其跋扈，不用，趣遣之歸。\n\n方域既負才無所試，一放意聲伎，流連秦淮間。閹黨阮大鋮時亦屏居金陵，謀復用。諸名士共檄大鋮罪，作留都防",
+      "matchType": "name-occurrence",
+      "title": "清史稿/卷484",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7484",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2433602",
+      "textSha256": "36551ba1c13a349eaa84db930b335f45ee58c392498039a2b9f013012f573d13",
+      "contentPath": "/static/data/history/archive-books/qingshigao.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "孫傳庭的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

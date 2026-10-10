@@ -1,0 +1,570 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "minister_嚴嵩_2003876879",
+  "name": "嚴嵩",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "明朝",
+    "title": "御用首輔"
+  },
+  "candidatePages": [
+    {
+      "title": "严嵩",
+      "pageId": 194625,
+      "revisionId": 94410533,
+      "revisionTimestamp": "2026-09-17T15:23:39Z",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%B5%A9",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94410533",
+      "wikidataId": "Q698700",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "剑桥中国明代史（上卷）",
+          "url": "https://book.douban.com/subject/1777478/",
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "牟复礼",
+          "publisher": "中国社会科学出版社 出版年: 2006-12-1",
+          "date": "2006-12-01",
+          "isbn": "978-7-5004-1011-9",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "龙床",
+          "url": "https://book.douban.com/subject/21405316/",
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "李洁非",
+          "publisher": "人民文学出版社 副标题: 明六帝纪",
+          "date": "2013-01-01",
+          "isbn": "978-7-02-009349-6",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "帝国的惆怅",
+          "url": "https://book.douban.com/subject/26249395/",
+          "type": "citation-template",
+          "template": "Cite book",
+          "author": "易中天",
+          "publisher": "浙江文艺出版社 副标题: 中国传统社会的政治与人性",
+          "date": "2014-10",
+          "isbn": "978-7-5339-4046-1",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "明史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "名山藏",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·世宗本纪二",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "朝鮮王朝實錄",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·王宗茂傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·張翀傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史紀事",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大明世宗肅皇帝實錄",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·卷三百八·列传第一百九十六",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "國榷",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明世宗实录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "请诛贼臣疏",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "国榷",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "茶餘客話‧李紱為嚴嵩翻案",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "茅鹿门先生文集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "上袁元峰相公书",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "皇明大事記·嚴嵩",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "萬曆野獲篇·內閣·居官居鄉不同",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "四友斋丛说",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "都门识小录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "蕙榜杂记",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "满江红",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "众说纷纭论严嵩",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "鈐山堂集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "名分禮秩與皇權重塑：大禮議與嘉靖政治文化",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "大學士嚴嵩新論",
+          "url": "http://www.aihuau.com/a/25101018/375207.html",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "夏言‧嚴嵩‧徐階",
+          "url": "http://commons.ln.edu.hk/cgi/viewcontent.cgi?article=1012&context=ljcs_1999",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "小說戲曲中的嚴嵩父子",
+          "url": "http://commons.ln.edu.hk/cgi/viewcontent.cgi?article=1073&context=ljcs_1999",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [
+        {
+          "title": "明史/卷308",
+          "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308",
+          "origin": "sister-template",
+          "retrieved": false
+        }
+      ],
+      "retrievedAt": "2026-10-02T10:34:04.115Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:songshu-bb72ec0fe8daf244",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 4269,
+      "excerpt": "準度數。\n\n漢章帝元和元年，待詔候鍾律殷肜上言：「官無曉六十律以準調音者，故待詔嚴嵩具以準法教子男宣，願召宣補學官，主調樂器。」詔曰：「嵩子學審曉律，別其族，協其聲者，審試。不得依託父學，以聾為聰。聲微妙，獨非莫知，獨是莫曉，以律錯吹，能知命十",
+      "matchType": "name-occurrence",
+      "title": "宋書/卷11",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B711",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2228690",
+      "textSha256": "cf51e786d86feb3b4b8ba20bd003bad9f39ba0d8a1bc329464924b67118eefa9",
+      "contentPath": "/static/data/history/archive-books/songshu.json"
+    },
+    {
+      "documentId": "document:weishu-dc6628cb8d7edf00",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 217,
+      "excerpt": "矣。王莽世，徵天下通鍾律之士，劉歆總而條奏之，最為該博，故班固取以為志。後漢待詔嚴嵩頗為知律，至其子宣不傳，遂罷。魏世杜夔亦以通樂制律，晉中書監荀勗持夔律校練八音，以謂後漢至魏尺長古尺四分有餘。又得古玉律，勗以新律命之，謂其應合，遂改晉調，而散",
+      "matchType": "name-occurrence",
+      "title": "魏書/卷107上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B7107%E4%B8%8A",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1489573",
+      "textSha256": "5393496b31c8500de51b58bbdd84d9deef65b2ccac7b784c96fbd9711a8d0c35",
+      "contentPath": "/static/data/history/archive-books/weishu.json"
+    },
+    {
+      "documentId": "document:weishu-bf949e5f6aab6b55",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 6568,
+      "excerpt": "二字，今從盧校補。〕黃鍾為徵，何由可諧？仲儒以調和樂器，文飾五聲，非準不妙。若如嚴嵩父子，心賞清濁，是則為難。若依案見尺作準，調絃緩急，清濁可以意推耳。\n\n:但音聲精微，史傳簡略，舊志唯云準形如瑟十三絃，隱間九尺，以應黃鍾九寸，調中一絃，令與黃",
+      "matchType": "name-occurrence",
+      "title": "魏書/卷109",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B7109",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1567129",
+      "textSha256": "2ac8799cddb54ac6b416dfb30623891aa68a547cc3dc27db34cf57f7e50c76e4",
+      "contentPath": "/static/data/history/archive-books/weishu.json"
+    },
+    {
+      "documentId": "document:beishi-0e5e65d0080b0e99",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 7582,
+      "excerpt": "未知延壽所承也。至元和元年，待詔候鐘律般肜上言：'官無曉六十律以准調音者。故待詔嚴嵩，具以准法教其子宣，願召宣補學官，主調樂器。'太史丞弘試宣十二律，其二中，其四不中，其六不知何律，宣遂罷。自此律家莫能為准施弦。熹平六年，東觀召典律者太子舍人張",
+      "matchType": "name-occurrence",
+      "title": "北史/卷072",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E5%8F%B2%2F%E5%8D%B7072",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1153541",
+      "textSha256": "afc7bfba7f85068fc5da39d2f76ccf095b882aab8903ee4c2c203a247c5ac13a",
+      "contentPath": "/static/data/history/archive-books/beishi.json"
+    },
+    {
+      "documentId": "document:mingshi-d4287019137a84b4",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 8357,
+      "excerpt": "　八月辛巳，募兵於直隸、山東、河南。壬午，振山西被兵州縣，免田租。癸巳，禮部尚書嚴嵩兼武英殿大學士，預機務。\n\n　　九月癸亥，員外郎劉魁諫營雷殿，予杖下獄。\n\n　　冬十月丁酉，宮人謀逆伏誅，磔端妃曹氏、寧嬪王氏於市。\n\n　　是年，免畿內、陝西、",
+      "matchType": "name-occurrence",
+      "title": "明史/卷17",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B717",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594632",
+      "textSha256": "752fd7d381ae847c003867831cb2cb58c9b47fabf7ce6ccb4ff2ad388806831e",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-a482580fab6cfce0",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 6014,
+      "excerpt": "賀。壬寅，賜申時行等進士及第、出身有差。己酉，重作萬壽宮成。\n\n　　夏五月壬寅，嚴嵩罷。壬子，土蠻攻湯站堡，副總兵黑春力戰死。\n\n　　秋九月壬午，三殿成，改奉天曰皇極，華蓋曰中極，謹身曰建極。\n\n　　冬十月，免南畿、江西被災稅糧。\n\n　　十一月",
+      "matchType": "name-occurrence",
+      "title": "明史/卷18",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B718",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594633",
+      "textSha256": "ed1278c513f19573ee2c4dc36389c558483a8a4c2114bbc97835f7f80046459e",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-ef5829c2190713c5",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 6948,
+      "excerpt": "大於配天。請復古禮，建明堂。加尊皇考獻皇帝廟號稱宗，以配上帝。」下禮部會議。尚書嚴嵩等言：\n\n　　昔羲、農肇祀上帝，或為明堂。嗣是夏后氏世室，殷人重屋，周人作明堂之制，視夏、殷加詳焉。蓋聖王事天，如子事父，體尊而情親。故制為一歲享祀之禮，冬至圜",
+      "matchType": "name-occurrence",
+      "title": "明史/卷48",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B748",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594660",
+      "textSha256": "0a102be66db3579782a333bf84def68f83d90982fe3182dfd969e2bd3a211554",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-d4b62eec1ac39e01",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 3577,
+      "excerpt": "廟，藏祧主，皆南向。\n\n　　二十七年，帝欲祔孝烈皇后方氏於太廟，而祧仁宗。大學士嚴嵩、禮部尚書徐階等初皆持不可，既而不能堅其議。二十九年十一月，祧仁宗，遂祔孝烈於西第四室。隆慶六年八月，穆宗將祔廟，敕禮臣議當祧廟室。禮科陸樹德言：「宣宗於穆宗僅",
+      "matchType": "name-occurrence",
+      "title": "明史/卷51",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B751",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594664",
+      "textSha256": "4c88777280ac475b2a3595850837de2d38ce0e9a9e61c0408201484002657f6f",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-31a2ec790a87cc20",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 5846,
+      "excerpt": "冠禮之年，近則十二，遠則十五。嘉靖二十四年，穆宗在東宮，方十歲，欲行冠禮。大學士嚴嵩、尚書費寀初皆難之，後遂阿旨以爲可行，而請稍簡煩儀，止取成禮。帝以冠當具禮，至二十八年始行之。\n\n　　其儀洪武元年定。前期，太史監卜日，工部置袞冕諸服，翰林院撰",
+      "matchType": "name-occurrence",
+      "title": "明史/卷54",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B754",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594668",
+      "textSha256": "515a0a2f83b8741a2857dd97b67276cfccc13090aa80169c846f2c22c516c765",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-7b8280e7067bea7c",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 7445,
+      "excerpt": "並交牀\n上馬。至若破格殊典，則宣德中少保黃淮陪遊西苑，嘗乘肩輿入禁中。嘉靖間，\n嚴嵩奉詔苑直，年及八旬，出入得乘肩輿。武臣則郭勳、朱希忠特命乘肩輿扈南\n巡蹕，後遂賜常乘焉。皆非制也。\n\n傘蓋之制：洪武元年，令庶民不得用羅絹涼傘，但許用油紙雨傘。",
+      "matchType": "name-occurrence",
+      "title": "明史/卷65",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B765",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594680",
+      "textSha256": "684890441347451e7964b9a8f8182ab8ec8ed079ead9561f6e35b08ca7a3c340",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-b2105fc88ef5eee7",
+      "query": "嚴嵩",
+      "count": 2,
+      "offset": 3797,
+      "excerpt": "以為常。內閣賜蟒衣，自弘治中劉健、李東陽始。麒麟本公、侯服，而內閣服之，則嘉靖中嚴嵩、徐階皆受賜也。仙鶴，文臣一品服也，嘉靖中成國公硃希忠、都督陸炳服之，皆以玄壇供事。而學士嚴訥、李春芳、董份以五品撰青詞，亦賜仙鶴。尋諭供事壇中乃用，於是尚書皆",
+      "matchType": "name-occurrence",
+      "title": "明史/卷67",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B767",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594682",
+      "textSha256": "fd6061e508da6e17b1c524587783a3ca465bb14ed6aeebefe25e01f3a21d0640",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-98caffcf96ec9f73",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 5843,
+      "excerpt": "政謫官，寅泰皆斥譴。寅，江左才士，戊午南闈第一，論者多惜之。嘉靖十六年，禮部尚書嚴嵩連摘應天、廣東試錄語，激世宗怒。應天主考及廣東巡按御史俱逮問。二十二年，帝手批山東試錄譏訕，逮御史葉經杖死闕下，佈政以下皆遠謫，亦嵩所中傷也。四十年，應天主考中",
+      "matchType": "name-occurrence",
+      "title": "明史/卷70",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B770",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=11117073",
+      "textSha256": "3871f5fe1ae5987e733297df0764379cc11d5bdbcce30bb058037168afe38ab2",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-a758ba2730ff22c2",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 309,
+      "excerpt": "奇等親。自是內閣權日重，即有一二吏、兵之長與執持是非，輒以敗。至世宗中葉，夏言、嚴嵩迭用事，遂赫然為真宰相，壓制六卿矣。然內閣之擬票，不得不決於內監之批紅，而相權轉歸之寺人。於是朝廷之紀綱，賢士大夫之進退，悉顛倒於其手。伴食者承意指之不暇，間有",
+      "matchType": "name-occurrence",
+      "title": "明史/卷72",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B772",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594687",
+      "textSha256": "1129a36f72de2b50a9d0e127f3dad5945ef45d4474e22bb8562811761139f240",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-938909ba7f593609",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 6331,
+      "excerpt": "\n　　三十九年，帝欲整鹽法，乃命副都御史鄢懋卿總理淮、浙、山東、長蘆鹽法。懋卿，嚴嵩黨也，苞苴無虛日。兩淮額鹽銀六十一萬有奇，自設工本鹽，增九十萬，懋卿復增之，遂滿百萬。半年一解。又蒐括四司殘鹽，共得銀幾二百萬，一時詡為奇功。乃立克限法，每卒一",
+      "matchType": "name-occurrence",
+      "title": "明史/卷80",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B780",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2630010",
+      "textSha256": "63a628e8a654d8da9969570e2303bf28c807b9b99d6d987560e3ecf3160a77e0",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-65e62f4738798b51",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 13109,
+      "excerpt": "船由通濟橋溯溝出淮，以達黃河者也。\n\n　　時浚徐、邳將訖工，一夕，水湧復淤。帝用嚴嵩言，遣官祭河神。而鵬、鈞復共奏請急築浚草灣、劉伶臺，建閘三里溝，迎納泗水清流；且於徐州以上至開封浚支河一二，令水分殺。其冬，漕河工竣，進鈞秩侍郎。\n\n　　三十七",
+      "matchType": "name-occurrence",
+      "title": "明史/卷83",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B783",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2626557",
+      "textSha256": "bc5f03a65878676071417d7bc4a48fffaa23703a2757b7422dca7fffb76fb92f",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-c0a32072050a2446",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 2480,
+      "excerpt": "夔核營伍不及五六萬人。驅出城門，皆流涕不敢前，諸將領亦相顧變色。汝夔坐誅。大學士嚴嵩乃請振刷以圖善後。吏部侍郎王邦瑞攝兵部，因言：「國初，京營勁旅不減七八十萬，元戎宿將常不乏人。自三大營變為十二團營，又變為兩官廳，雖浸不如初，然額軍尚三十八萬有",
+      "matchType": "name-occurrence",
+      "title": "明史/卷89",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B789",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594707",
+      "textSha256": "37750021089ea864ea3f8b596a51ad09a6dfae78ac9105a7a60ec6b3b68046bc",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-839b148f4c67badf",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 16489,
+      "excerpt": "，班軍遂耗減。豐城侯李熙核其數，僅四萬人，因請改徵銀召募，而以見軍四萬歸營操練。嚴嵩議以「各衛兵雖有折幹之弊，然清核令下，猶凜凜畏罪。若奉旨徵銀，恐借為口實，祖宗良法深意，一旦蕩然」。帝是之。折幹者，衛卒納銀，將弁以免其行，有事則召募以應。亡何",
+      "matchType": "name-occurrence",
+      "title": "明史/卷90",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B790",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594709",
+      "textSha256": "c42c1df15ef0998f6f04c4798d6853d9b9492719f7b753c1e03dff970c78365c",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-76f0fc7d0a2fbb6d",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 2873,
+      "excerpt": "復套地。」明年，敵犯延安，總督三邊侍郎曾銑力主復套，條上十八事。帝嘉獎之。大學士嚴嵩窺帝意憚兵，且欲殺舊閣臣夏言，因劾銑，並言誅死，自是無敢言邊事者。\n\n　　二十九年，俺答攻古北口，從間道黃榆溝入，直薄東直門，諸將不敢戰。敵退，大將軍仇鸞力主貢",
+      "matchType": "name-occurrence",
+      "title": "明史/卷91",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B791",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594710",
+      "textSha256": "001997100ca3f53b00e347ba8474e3cbe46f77d3df6e3a0a0876993f70455144",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-ce4151d472a62bfa",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 5085,
+      "excerpt": "也。李夢陽論延齡兄弟不法事，下獄，斌傅輕比，得不死云。世宗中年，衛使陸炳為忮，與嚴嵩比，而傾夏言。然帝數興大獄，而炳多保全之，故士大夫不疾炳。\n\n　　萬曆中，建言及忤礦稅榼者，輒下詔獄。刑科給事中楊應文言：「監司守令及齊民被逮者百五十餘人，雖已",
+      "matchType": "name-occurrence",
+      "title": "明史/卷95",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B795",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2610746",
+      "textSha256": "21a1ddc3b8326f09278cbacca3039aa68f3183260073297946f6bb7b70750f55",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-3d4fe517c58dd915",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 3602,
+      "excerpt": "卷\n\n　　夏言《聖駕渡黃河記》一卷，《記召對廟廷事》一卷，《扈蹕錄》一卷\n\n　　嚴嵩《嘉靖奏對錄》十二卷\n\n　　毛澄《聖駕臨雍錄》一卷\n\n　　陸深《聖駕南巡錄》一卷，《北還錄》一卷\n\n　　韓邦奇《大同紀事》一卷\n\n　　孫允中《雲中紀變》一卷\n\n",
+      "matchType": "name-occurrence",
+      "title": "明史/卷97",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B797",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2635994",
+      "textSha256": "21022144b6fa34e04329cb363ee866e97378da1ea45551279ed4e5f8cb0acc31",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-792e9b3bc9b439a4",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 8218,
+      "excerpt": "龍《漁石集》四卷\n\n　　《歐陽鐸集》二十二卷\n\n　　夏言《桂洲集》二十卷\n\n　　嚴嵩《鈐山堂集》二十六卷\n\n　　《張孚敬詩集》三卷\n\n　　歐陽德《南野集》三十卷\n\n　　《許誥奏議》二卷\n\n　　許論《默齋集》四卷\n\n　　張時徹《芝園全集》八十五卷",
+      "matchType": "name-occurrence",
+      "title": "明史/卷99",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B799",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2630015",
+      "textSha256": "6f6ae3997d2ccdea9df9acd8890aabaea0c6aff82730a4d16a416ade7042c6cc",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-9a0ed9cdc78f6da9",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 1373,
+      "excerpt": "殿大學士，勳階兼官悉如舊。七月革職閒住。\n\n　鑾八月加少傅兼謹身殿大學士。\n\n　嚴嵩八月，少保太子太保禮部尚書兼武英殿大學士，仍掌禮部事。\n\n二十二年癸卯　鑾\n\n　嵩\n\n二十三年甲辰　鑾八月削籍。\n\n　嵩八月加太子太傅。九月晉兼吏部尚書謹身殿大",
+      "matchType": "name-occurrence",
+      "title": "明史/卷110",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7110",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594726",
+      "textSha256": "962c1d7cab14a894dedf472cab77760c860b19e3a1d2e8f49303b4f5c0232e08",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-37bdbb017d837956",
+      "query": "嚴嵩",
+      "count": 1,
+      "offset": 2044,
+      "excerpt": "二月任。　材　言七月兼太子太傅。九月晉少傅。十一月兼太子太師。閏十二月入閣。\n\n嚴嵩閏十二月任。　瓚十一月加太子太保。　龍　庭?十一月加太子太保。\n\n甘為霖十月任，專督大工。　廷相四月加太子少保。\n\n　吏部尚書　戶部尚書　禮部尚書　兵部尚書　刑",
+      "matchType": "name-occurrence",
+      "title": "明史/卷112",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7112",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594729",
+      "textSha256": "acdd3c410200cf439c39d2b9cf35dea3c051ecf1a17dad607b457c0b6ab51f66",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-d407369a7ebda6e7",
+      "query": "嚴嵩",
+      "count": 3,
+      "offset": 2388,
+      "excerpt": "祥，禮臣請安主奉先殿東夾室，帝曰：「奉先殿夾室，非正也，可即祔太廟。」於是大學士嚴嵩等請設位於太廟東，皇妣睿皇后之次，后寢藏主則設幄於憲廟皇祖妣之右，以從祔於祖姑之義。帝曰：「祔禮至重，豈可權就。后非帝，乃配帝者，自有一定之序，安有享從此而主藏",
+      "matchType": "name-occurrence",
+      "title": "明史/卷114",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7114",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594731",
+      "textSha256": "e9230b1e23cb218a7ecf04548650960297ca9d3905fcbbbdf615a305966ba0e4",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "嚴嵩的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

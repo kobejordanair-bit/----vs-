@@ -1,0 +1,368 @@
+{
+  "format": "dynasty-claude-receipt-index",
+  "schemaVersion": 2,
+  "basis": "Index only; receipt-ledger validates actual receipts and manuscript evidence.",
+  "count": 45,
+  "receipts": [
+    {
+      "file": "import.06-06.soul.apply.json",
+      "receiptSha256": "e43a7a90a23dcab2f36ac2d2bac2f8be70980bb4c80a858e0f7285172580fcd5",
+      "resultsFile": "results.06-06.soul.v1.json",
+      "beforeRevision": 7,
+      "afterRevision": 8,
+      "changedFields": 1
+    },
+    {
+      "file": "import.05-05.apply.json",
+      "receiptSha256": "98b09bf0e050814c117b5d4aee9cf8d5ad142251fd77c26eea49bb97117abfa2",
+      "resultsFile": "results.05-05.v1.json",
+      "beforeRevision": 8,
+      "afterRevision": 9,
+      "changedFields": 4
+    },
+    {
+      "file": "import.08-08.apply.json",
+      "receiptSha256": "95d30fe19aaa5ff0e3e9782f406127f51b72f6aa9eeceff4abcd8009260c405a",
+      "resultsFile": "results.08-08.v1.json",
+      "beforeRevision": 9,
+      "afterRevision": 10,
+      "changedFields": 4
+    },
+    {
+      "file": "import.09-09.apply.json",
+      "receiptSha256": "0d3fcf6987ca894f96e686eeec1860656ef6438c0f8b503c4c53d3dd1fa68315",
+      "resultsFile": "results.09-09.v1.json",
+      "beforeRevision": 10,
+      "afterRevision": 11,
+      "changedFields": 4
+    },
+    {
+      "file": "import.10-10.apply.json",
+      "receiptSha256": "ae3e06a940ab10e7bf91203d09b6188bf8a7678a89710002d479561479db3e7f",
+      "resultsFile": "results.10-10.v1.json",
+      "beforeRevision": 11,
+      "afterRevision": 12,
+      "changedFields": 4
+    },
+    {
+      "file": "import.11-11.apply.json",
+      "receiptSha256": "f2856a04e43af216d22374d9ca9c83a97099dd106f5363628be5c6da1ca34da9",
+      "resultsFile": "results.11-11.v1.json",
+      "beforeRevision": 12,
+      "afterRevision": 13,
+      "changedFields": 4
+    },
+    {
+      "file": "import.12-12.apply.json",
+      "receiptSha256": "3f9a5b692997b3432cd4bf1179975649333f7bebccd835c753b3c2479b516aeb",
+      "resultsFile": "results.12-12.v1.json",
+      "beforeRevision": 13,
+      "afterRevision": 14,
+      "changedFields": 4
+    },
+    {
+      "file": "import.13-13.apply.json",
+      "receiptSha256": "4cffd497d34b74bcf22b9a1b92da5c80141ddd30b741fe05a9e297c42e96e16f",
+      "resultsFile": "results.13-13.v1.json",
+      "beforeRevision": 14,
+      "afterRevision": 15,
+      "changedFields": 4
+    },
+    {
+      "file": "import.14-14.apply.json",
+      "receiptSha256": "1bb780184b4a8722a8b80fbabe6767584c80fec12ff7acbf21ccfb1589f7a179",
+      "resultsFile": "results.14-14.v1.json",
+      "beforeRevision": 15,
+      "afterRevision": 16,
+      "changedFields": 4
+    },
+    {
+      "file": "import.15-15.apply.json",
+      "receiptSha256": "e38bccb6284f99395a9fc117f3f5418a0804d8f5fdd5746665b8456d099dc85d",
+      "resultsFile": "results.15-15.v1.json",
+      "beforeRevision": 16,
+      "afterRevision": 17,
+      "changedFields": 4
+    },
+    {
+      "file": "import.16-16.apply.json",
+      "receiptSha256": "565991ed96448508b00e5a14c7801ae1143228290902bdf162871958947d188a",
+      "resultsFile": "results.16-16.v1.json",
+      "beforeRevision": 17,
+      "afterRevision": 18,
+      "changedFields": 4
+    },
+    {
+      "file": "import.17-17.apply.json",
+      "receiptSha256": "7ac2adc4bcae9d5c83526cd39dc65efbe55c70ddc566eb21e1175b0324a255e5",
+      "resultsFile": "results.17-17.v1.json",
+      "beforeRevision": 18,
+      "afterRevision": 19,
+      "changedFields": 4
+    },
+    {
+      "file": "import.18-18.apply.json",
+      "receiptSha256": "dc100d3d5695f17868c360fc1a0d315a7e6eb491fb55ebcd533c12eafcb93cdd",
+      "resultsFile": "results.18-18.v1.json",
+      "beforeRevision": 19,
+      "afterRevision": 20,
+      "changedFields": 4
+    },
+    {
+      "file": "import.19-19.apply.json",
+      "receiptSha256": "bc2716c550a3557d02e7edee58076aeabe9973aacb4ac0c5d5871cda0d1a7893",
+      "resultsFile": "results.19-19.v1.json",
+      "beforeRevision": 20,
+      "afterRevision": 21,
+      "changedFields": 4
+    },
+    {
+      "file": "import.20-20.apply.json",
+      "receiptSha256": "c6655fcf0043e05cc28596d9cafc438f2259ad0442103509653f31cd990da72a",
+      "resultsFile": "results.20-20.v1.json",
+      "beforeRevision": 21,
+      "afterRevision": 22,
+      "changedFields": 4
+    },
+    {
+      "file": "import.21-21.apply.json",
+      "receiptSha256": "148437916854a5637ff9f1410e2f3342c0b47db84540067ec90f10d69e321454",
+      "resultsFile": "results.21-21.v1.json",
+      "beforeRevision": 22,
+      "afterRevision": 23,
+      "changedFields": 4
+    },
+    {
+      "file": "import.22-22.apply.json",
+      "receiptSha256": "2d94d51500554ec9d1825309b03499ae216b243a30faa5b93bda902260d50b73",
+      "resultsFile": "results.22-22.v1.json",
+      "beforeRevision": 23,
+      "afterRevision": 24,
+      "changedFields": 4
+    },
+    {
+      "file": "import.23-23.apply.json",
+      "receiptSha256": "030c004fb07178b4e9c885b074bd5c1bf1f7208443917684728867355249668f",
+      "resultsFile": "results.23-23.v1.json",
+      "beforeRevision": 24,
+      "afterRevision": 25,
+      "changedFields": 4
+    },
+    {
+      "file": "import.24-24.apply.json",
+      "receiptSha256": "c4dd0ec87cee26acef9ff92d02bf5e9994b0260eade6c792ba89e8f42adebb43",
+      "resultsFile": "results.24-24.v1.json",
+      "beforeRevision": 25,
+      "afterRevision": 26,
+      "changedFields": 4
+    },
+    {
+      "file": "import.25-25.apply.json",
+      "receiptSha256": "90b4abb0b836aa73ae958958644c0fd9b38de27d988327f8dfa92bb2ce77a647",
+      "resultsFile": "results.25-25.v1.json",
+      "beforeRevision": 26,
+      "afterRevision": 27,
+      "changedFields": 4
+    },
+    {
+      "file": "import.26-26.apply.json",
+      "receiptSha256": "44a0f353279cadf8e288a5ee3ab618b87d1f6211273b1436022bb38582ea8eca",
+      "resultsFile": "results.26-26.v1.json",
+      "beforeRevision": 27,
+      "afterRevision": 28,
+      "changedFields": 4
+    },
+    {
+      "file": "import.27-27.apply.json",
+      "receiptSha256": "2f07b3b784e1330695b5f761a933a1460e2a596449c22069bd7cfa3c487e5e1a",
+      "resultsFile": "results.27-27.v1.json",
+      "beforeRevision": 28,
+      "afterRevision": 29,
+      "changedFields": 4
+    },
+    {
+      "file": "import.28-28.apply.json",
+      "receiptSha256": "030c21940a285f4e493e19722f28b075cdb49574e39fbc779db86e65dbb29277",
+      "resultsFile": "results.28-28.v1.json",
+      "beforeRevision": 29,
+      "afterRevision": 30,
+      "changedFields": 4
+    },
+    {
+      "file": "import.29-29.apply.json",
+      "receiptSha256": "bab6ea8ca575718dd71be913c7ad1b457790dc9be9c47693b192f3266eaaf7be",
+      "resultsFile": "results.29-29.v1.json",
+      "beforeRevision": 30,
+      "afterRevision": 31,
+      "changedFields": 4
+    },
+    {
+      "file": "import.30-30.apply.json",
+      "receiptSha256": "7ca4d3833a6d4ace9b1b4bedcdead6373e9d87045ab045e7a428c368002c1ee8",
+      "resultsFile": "results.30-30.v1.json",
+      "beforeRevision": 31,
+      "afterRevision": 32,
+      "changedFields": 4
+    },
+    {
+      "file": "import.31-31.apply.json",
+      "receiptSha256": "b1248f54b6e1f459c665d54ef852eeb8f9a30b34dbd46cf8188c341fd9d28ac1",
+      "resultsFile": "results.31-31.v1.json",
+      "beforeRevision": 32,
+      "afterRevision": 33,
+      "changedFields": 4
+    },
+    {
+      "file": "import.32-32.apply.json",
+      "receiptSha256": "d0c9711dd6d2ecf0fab22aea2f32fae43a4b7705a9f96c9b81cc65f57f1add82",
+      "resultsFile": "results.32-32.v1.json",
+      "beforeRevision": 33,
+      "afterRevision": 34,
+      "changedFields": 4
+    },
+    {
+      "file": "import.33-33.apply.json",
+      "receiptSha256": "c0897c0916bcec184860738150c6dfd47425e7f35511de6bac0b12740bd4c6ce",
+      "resultsFile": "results.33-33.v1.json",
+      "beforeRevision": 34,
+      "afterRevision": 35,
+      "changedFields": 4
+    },
+    {
+      "file": "import.34-34.apply.json",
+      "receiptSha256": "94c971153ea86dee61a1a41e69c08ed2bd554e228fd234a46e5bc0b7089bc747",
+      "resultsFile": "results.34-34.v1.json",
+      "beforeRevision": 35,
+      "afterRevision": 36,
+      "changedFields": 4
+    },
+    {
+      "file": "import.35-35.apply.json",
+      "receiptSha256": "fd0ae938c709c3dc6a394c5e9b6f700402efa027eeff011ac703781e950bb887",
+      "resultsFile": "results.35-35.v1.json",
+      "beforeRevision": 36,
+      "afterRevision": 37,
+      "changedFields": 4
+    },
+    {
+      "file": "import.36-36.apply.json",
+      "receiptSha256": "a206fa54b564c3c05caad67fca91c9cc7206f536abaf053bc107cdc9d0da60c7",
+      "resultsFile": "results.36-36.v1.json",
+      "beforeRevision": 37,
+      "afterRevision": 38,
+      "changedFields": 4
+    },
+    {
+      "file": "import.37-37.apply.json",
+      "receiptSha256": "ac6dc7035f14208d89dad84d8e5994a0272eb64ff994e7870b4d2e068d88256e",
+      "resultsFile": "results.37-37.v1.json",
+      "beforeRevision": 38,
+      "afterRevision": 39,
+      "changedFields": 4
+    },
+    {
+      "file": "import.38-38.apply.json",
+      "receiptSha256": "4c0877ea47e7809388278c6bde051113137670b4b6da9080d952f03142ce6f54",
+      "resultsFile": "results.38-38.v1.json",
+      "beforeRevision": 39,
+      "afterRevision": 40,
+      "changedFields": 4
+    },
+    {
+      "file": "import.39-39.apply.json",
+      "receiptSha256": "e3734ef8f6bcad0fda8a051dd50fd0e134acbc8c302954ae75707dd56334e7ab",
+      "resultsFile": "results.39-39.v1.json",
+      "beforeRevision": 40,
+      "afterRevision": 41,
+      "changedFields": 4
+    },
+    {
+      "file": "import.40-40.apply.json",
+      "receiptSha256": "8129301d80dfa2d8561c1bc2abb59fd87c9afa5c1cdc78ac33d900df8ddbb7a9",
+      "resultsFile": "results.40-40.v1.json",
+      "beforeRevision": 41,
+      "afterRevision": 42,
+      "changedFields": 4
+    },
+    {
+      "file": "import.41-41.apply.json",
+      "receiptSha256": "d39e06e223c201cbe547fc8ff8af7cc218debad7c55bfdbdf0be5ecc3781d4d6",
+      "resultsFile": "results.41-41.v1.json",
+      "beforeRevision": 42,
+      "afterRevision": 43,
+      "changedFields": 4
+    },
+    {
+      "file": "import.42-42.apply.json",
+      "receiptSha256": "c772f694cae6ab39354249ad7447cd8664b8515ce98bfd60dc9911e1e45cc49c",
+      "resultsFile": "results.42-42.v1.json",
+      "beforeRevision": 43,
+      "afterRevision": 44,
+      "changedFields": 4
+    },
+    {
+      "file": "import.43-43.apply.json",
+      "receiptSha256": "7e2811dd9fd07b768cd42f9d76824d7829730ad660f735b1b8c3d601a3b7b436",
+      "resultsFile": "results.43-43.v1.json",
+      "beforeRevision": 44,
+      "afterRevision": 45,
+      "changedFields": 4
+    },
+    {
+      "file": "import.44-44.apply.json",
+      "receiptSha256": "87f9fc022e09dd5672f8c47d793d5891e320c8e2cfb84b2dcfbabe357e176fbd",
+      "resultsFile": "results.44-44.v1.json",
+      "beforeRevision": 45,
+      "afterRevision": 46,
+      "changedFields": 4
+    },
+    {
+      "file": "import.45-45.apply.json",
+      "receiptSha256": "e640b3d92dbf6a0c985e5e9cf6033826c31534bf4db26233fd57580a268a2c18",
+      "resultsFile": "results.45-45.v1.json",
+      "beforeRevision": 46,
+      "afterRevision": 47,
+      "changedFields": 4
+    },
+    {
+      "file": "import.46-46.apply.json",
+      "receiptSha256": "8de18111be798f6bd7dca70a7c2bcfa265a9a78f7c78ad4a37dbf0edf3a97a21",
+      "resultsFile": "results.46-46.v1.json",
+      "beforeRevision": 47,
+      "afterRevision": 48,
+      "changedFields": 4
+    },
+    {
+      "file": "import.47-47.apply.json",
+      "receiptSha256": "d9b6555e1bc0758256d1d5720db8270a6f1be3dc92d4a941000a1a2317287ed2",
+      "resultsFile": "results.47-47.v1.json",
+      "beforeRevision": 48,
+      "afterRevision": 49,
+      "changedFields": 4
+    },
+    {
+      "file": "import.48-48.apply.json",
+      "receiptSha256": "7839f5020286df0049a05c6c2f635a6593471c61cbc5de21ef87066e8cc370ee",
+      "resultsFile": "results.48-48.v1.json",
+      "beforeRevision": 49,
+      "afterRevision": 50,
+      "changedFields": 4
+    },
+    {
+      "file": "import.49-49.apply.json",
+      "receiptSha256": "a19b3aa1e7f68f16b726d087969018c4b65ce2c26a0f3568ab9846007474b55d",
+      "resultsFile": "results.49-49.v1.json",
+      "beforeRevision": 50,
+      "afterRevision": 51,
+      "changedFields": 4
+    },
+    {
+      "file": "import.50-50.apply.json",
+      "receiptSha256": "9f5270821773b8a072cc02f367c31aa13f5e99c5e58241b1a4271fd3183f2492",
+      "resultsFile": "results.50-50.v1.json",
+      "beforeRevision": 51,
+      "afterRevision": 52,
+      "changedFields": 4
+    }
+  ]
+}

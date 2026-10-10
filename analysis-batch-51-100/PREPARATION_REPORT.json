@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "people": 50,
+  "originalPromptBindingsVerified": 100,
+  "combinedPacketHashesVerified": 50,
+  "existingDeepHashesVerified": 50,
+  "referencePeople": 116,
+  "firstBatchOverlap": 0,
+  "allFourFieldsMissingAtBaseline": true,
+  "sourceCandidatesAreNotNewVerification": true,
+  "privateDataIncluded": false,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "baselineRevision": 52
+}

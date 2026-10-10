@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "caacc129f008faf709ab3d48c21f29e1b67b60cccfa7a7a80eae9e848e73618b",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "ddd8978289a073fdbd21dc104315c003fc0a64e2515ad728cb5dd96aa2e4c135",
+  "plannedAfterSha256": "437ae4f4b132e6d1fa31c03ae5d8be93dab0453dfdbe366fc1f468aaf13879e3",
+  "beforeRevision": 11,
+  "plannedAfterRevision": 12,
+  "patchBytes": 2912601,
+  "plannedDocumentBytes": 9831420,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "field": "analysis",
+      "sha256": "dc3d778d8ebb115e4bf23431cf94f66a19a24e80429d5a961c88b20a1356439a"
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "field": "soulEssence",
+      "sha256": "6489cd40cf593188e5d7a38df04d93a8ae2219d2acc6814ab390f4d4c3e81ba9"
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "field": "stats",
+      "sha256": "68a90b9807046d0feda430bf75802c03b6d3a2cdb98287c0d3e9af79ab453476"
+    },
+    {
+      "id": "emperor_宋仁宗_284527334",
+      "field": "statsAnalysis",
+      "sha256": "fcf4bd76ba32595baabd2e74495238463774140a8bcfef31b3073710accd2309"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "general_哲別_306146858",
+  "name": "哲別",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "元朝",
+    "title": "絕域神鋒"
+  },
+  "candidatePages": [
+    {
+      "title": "哲別",
+      "pageId": 544957,
+      "revisionId": 94690785,
+      "revisionTimestamp": "2026-10-01T14:57:45Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%93%B2%E5%88%A5",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=94690785",
+      "wikidataId": "Q1346632",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "ᠴᠢᠩᠭᠢᠰ ᠵᠤᠷᠢᠭ ᠤᠨ ᠨᠢᠭᠤᠴᠠ ᠳᠤᠪᠴᠢᠶᠠᠨ",
+          "url": "http://www.burgud.com/MGL/View.aspx?burgudID=B1A5-9B31-5FC9A300-2CE38BBE-070EC3F5",
+          "type": "citation-template",
+          "template": "cite web",
+          "author": "",
+          "publisher": "Burgud.com",
+          "date": "",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "蒙古秘史",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:33:17.313Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:yuanshi-94d492ab28186e26",
+      "query": "哲別",
+      "count": 2,
+      "offset": 2156,
+      "excerpt": "帝功德日盛，泰赤烏諸部多苦其主非法，見帝寬仁，時賜人以裘馬，心悅之。若赤老溫、若哲別、若失力哥也不干諸人，若朵郎吉、若札剌兒、若忙兀諸部，皆慕義來降。\n\n帝會諸族薛徹、大丑（及薛徹別吉）等，〔薛徹大丑（及薛徹別吉）等　按薛徹別吉即薛徹。聖武親征",
+      "matchType": "name-occurrence",
+      "title": "元史/卷001",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7001",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2259382",
+      "textSha256": "9a5755c9b10846ce19f60a1bcf570072b3ce4d1ff9f8bef0a302ea8ff529b630",
+      "contentPath": "/static/data/history/archive-books/yuanshi.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "哲別的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

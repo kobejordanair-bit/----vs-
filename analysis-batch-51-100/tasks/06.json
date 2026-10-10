@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "emperor_蔣介石_274287036",
+  "slug": "06",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "inputSha256": "33e5d33b95c69a2734753ec36078732a9f0e70777001ee755b58544bc7583fcf",
+  "sourceSha256": "40b9ca6afd840f7693dc95fad64c117116834e9f3a00ad8ab72491b5bf090a48",
+  "preservedDeepSha256": "54a42a1ee820ecbf47cdffd04e7d45327bcf5543229f6548bb4418817966a074",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+      "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+      "promptFile": "analysis-batch-51-100/prompts/06.analysisStats.prompt.md",
+      "promptSha256": "87a6e4bbf511869e015bc4f74e031cfd5ef33aaf47b147555c2032209555d7e9",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "704394246b3c8194696323b2a0ee44115110df38ce4c8ba84f7f3d1042e1c848",
+      "marker": "<!-- BATCH50_COMPLETE emperor_蔣介石_274287036 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN emperor_蔣介石_274287036 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-51-100/prompts/06.soulEssence.prompt.md",
+      "promptSha256": "763fa518ed85c53eca34570f3dd491e750ae35fe9b2c41ca40619aaf05a89de8",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "bbfd74cb6b32e4f236c0f3ecd149229d0fa66efa334664ff1c9c4d1313b0ebb5",
+      "marker": "<!-- BATCH50_COMPLETE emperor_蔣介石_274287036 soulEssence -->",
+      "contextPath": "analysis-batch-51-100/drafts/06.analysis.md"
+    }
+  }
+}

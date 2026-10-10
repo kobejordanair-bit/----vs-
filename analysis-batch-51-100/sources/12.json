@@ -1,0 +1,106 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "emperor_唐穆宗_285776262",
+  "name": "唐穆宗",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "唐朝",
+    "title": "李恆"
+  },
+  "candidatePages": [
+    {
+      "title": "唐穆宗",
+      "pageId": 102011,
+      "revisionId": 91041129,
+      "revisionTimestamp": "2026-01-09T04:49:52Z",
+      "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E7%A9%86%E5%AE%97",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=91041129",
+      "wikidataId": "Q9763",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "新唐书·本纪第十四·顺宗 宪宗上",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "唐语林",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新唐书·穆宗、敬宗纪",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新唐书·诸帝公主列传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "《新唐书·诸帝公主列传》",
+          "url": "http://guoxue.baidu.com/page/d0c2ccc6cae9/95.html",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:33:10.974Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:songshi-833f234f635712cd",
+      "query": "唐穆宗",
+      "count": 1,
+      "offset": 1265,
+      "excerpt": "禮院李宗訥等言：「元德皇太后別建廟室，淑德皇后亦在別廟，同是帝母而無『太』字。按唐穆宗三后，除宣懿升祔，正獻、恭僖二后並立別廟，各有『太』字。又開元初，太常議昭成皇太后，請不除『太』字，云『入廟稱後，義係於夫，在朝稱太后，義係於子。如諡冊入陵，神",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷109",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7109",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=7904770",
+      "textSha256": "2b33869b96c9f370b93431cec67fae333b8a2a69c782a67139a64f955b98e441",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    },
+    {
+      "documentId": "document:songshi-52f5f2fd5e1ed925",
+      "query": "唐穆宗",
+      "count": 1,
+      "offset": 1558,
+      "excerpt": "錄》十五卷〔（沈既濟撰）〕《唐順宗實錄》五卷〔（韓愈撰）〕《唐憲宗實錄》四十卷《唐穆宗實錄》二十卷\n\n〔（並路隋等撰）〕《唐敬宗實錄》十卷〔（李讓夷等撰）〕《唐文宗實錄》四十卷〔（魏謩修撰。）〕《唐武宗實錄》二十卷\n\n《唐宣宗實錄》三十卷《唐懿宗",
+      "matchType": "name-occurrence",
+      "title": "宋史/卷203",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7203",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1520278",
+      "textSha256": "741d6a85e140ae244bfbb5e9693fbed3ec4d83bf15552a9c80d16e04a57b94b6",
+      "contentPath": "/static/data/history/archive-books/songshi.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "唐穆宗的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

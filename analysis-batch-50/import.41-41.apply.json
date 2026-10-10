@@ -1,0 +1,57 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "apply",
+  "status": "applied_verified",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "6ad610c2158beba391565bc2dc835042653b4cdb08c6ff551c5e69daf33105fe",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "a9d0953c152034c2d86f74eaee70fee0fce88f817cf72088813e9401a381e092",
+  "plannedAfterSha256": "56fbe49c3084fb4b9dbbf70fc05ad867dfdc55e26607bf2a0cc1bc8c1a82d49b",
+  "beforeRevision": 42,
+  "plannedAfterRevision": 43,
+  "patchBytes": 3454429,
+  "plannedDocumentBytes": 10373248,
+  "writtenFieldHashes": [
+    {
+      "id": "minister_謝安_2004292326",
+      "field": "analysis",
+      "sha256": "3af473287f88c17bd136181ffa65f740ca81dc64ded7d45f6cd058653eb1d637"
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "field": "soulEssence",
+      "sha256": "1e86bcf01d661dc7dfeafa28fe3420ee7e1e717075eae3def9a61189f7d58c9b"
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "field": "stats",
+      "sha256": "fcd3b1de22b2b11270653825d26fee4982ecd66995506741374ef67ad73531ed"
+    },
+    {
+      "id": "minister_謝安_2004292326",
+      "field": "statsAnalysis",
+      "sha256": "08c73abab8cc5d985e37188df209a1d0dc1327be6022b919d4744435e23aaf1d"
+    }
+  ],
+  "conflicts": 0,
+  "writeAttempted": true,
+  "writeSucceeded": true,
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 43,
+    "afterSha256": "56fbe49c3084fb4b9dbbf70fc05ad867dfdc55e26607bf2a0cc1bc8c1a82d49b",
+    "unaffectedBeforeSha256": "d5143e808380d16b8db2474d1a005698f52e003168cf514a6faf2f7339a6db85",
+    "unaffectedAfterSha256": "d5143e808380d16b8db2474d1a005698f52e003168cf514a6faf2f7339a6db85"
+  },
+  "rawExtrasPreserved": true
+}

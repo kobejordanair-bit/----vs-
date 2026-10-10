@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "batchSha256": "03a4af1ece8ae10e01bded30f6ec6b438a7cac09c98997c429092f74a15ece20",
+  "sourceSha256": "32bacdfe0fe42a74d8f79330a7bbb7bcba012360b1ba77b5d9d0a44a2630328c",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "03b95f71cf50e4a13323d917b20e3409fe3ff1e22f4997b70ad3a47324072cb7",
+  "plannedAfterSha256": "588c00c4084dded895f5c7e014eff776031975928797170ca84f89a9de8b8d09",
+  "beforeRevision": 17,
+  "plannedAfterRevision": 18,
+  "patchBytes": 3021743,
+  "plannedDocumentBytes": 9940562,
+  "writtenFieldHashes": [
+    {
+      "id": "general_林彪_306298218",
+      "field": "analysis",
+      "sha256": "b87fe17eb55d447288fd20181984e89d7410aa0002a4d263a25641588368e6c4"
+    },
+    {
+      "id": "general_林彪_306298218",
+      "field": "soulEssence",
+      "sha256": "7853c370718fa6636d3dd29dd54632e41a8c3fce117426c8aa6ac73acad70838"
+    },
+    {
+      "id": "general_林彪_306298218",
+      "field": "stats",
+      "sha256": "896804d27a6a6e88a169466e2b4a6203c92d829a148ab0064d1289ac0f3029e3"
+    },
+    {
+      "id": "general_林彪_306298218",
+      "field": "statsAnalysis",
+      "sha256": "850d8b7f6c572f2a45befbb66aad36bfcd529592e10712649550fd7e423f632f"
+    }
+  ]
+}

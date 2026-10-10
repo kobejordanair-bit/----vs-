@@ -1,0 +1,410 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "minister_溫體仁_1997044414",
+  "name": "溫體仁",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "明朝",
+    "title": "誤國孤臣"
+  },
+  "candidatePages": [
+    {
+      "title": "溫體仁",
+      "pageId": 124087,
+      "revisionId": 90812585,
+      "revisionTimestamp": "2025-12-24T02:17:55Z",
+      "url": "https://zh.wikipedia.org/wiki/%E6%BA%AB%E9%AB%94%E4%BB%81",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=90812585",
+      "wikidataId": "Q15912974",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "萬曆二十六年戊戌科進士履歷便覽",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明季北略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史·列傳308卷",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明季南略",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "爝火录",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "新宇温公暨配沈淑人神道碑",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "明史纪事本末",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "烈皇小識",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:34:04.115Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:mingshi-d2a36d3f9437c721",
+      "query": "溫體仁",
+      "count": 3,
+      "offset": 2022,
+      "excerpt": "王嘉胤陷府谷，米脂賊張獻忠聚眾應之。己未，授宋儒邵雍後裔五經博士。辛酉，禮部尚書溫體仁、吳宗達並兼東閣大學士，預機務。\n\n　　秋八月癸亥，殺袁崇煥。\n\n　　九月己卯，逮錢龍錫下獄。\n\n　　冬十月癸亥，停刑。丙寅，巡撫延綏副都御史洪承疇、總兵官杜文",
+      "matchType": "name-occurrence",
+      "title": "明史/卷23",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B723",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594639",
+      "textSha256": "3db2d6b1bdb3738a6e6266fdebfea5f1223cf86e676eb9d6edbf831a4ac3b0b1",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-98caffcf96ec9f73",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 6352,
+      "excerpt": "，謙益自檢舉，千秋謫戍。未幾，赦還。崇禎二年會推閣臣，謙益以禮部侍郎與焉，而尚書溫體仁不與。體仁摘千秋事，出疏攻謙益。謙益由此罷，遂終明世不復起。其他指摘科場事者，前後非一，往往北闈為甚，他省次之。其賄買鑽營、懷挾倩代、割卷傳遞、頂名冒籍，弊端百",
+      "matchType": "name-occurrence",
+      "title": "明史/卷70",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B770",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=11117073",
+      "textSha256": "3871f5fe1ae5987e733297df0764379cc11d5bdbcce30bb058037168afe38ab2",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-63e515243e9b64dc",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 12092,
+      "excerpt": "後，銳意綜理，用刑頗急，大臣多下獄者矣。六年冬論囚，素服御建極殿，召閣臣商榷，而溫體仁無所平反。陝西華亭知縣徐兆麒抵任七日，城陷，坐死。帝心憫之，體仁不為救。十一年，南通政徐石麒疏救鄭三俊，因言：「皇上御極以來，諸臣麗丹書者幾千，圜扉為滿。使情法",
+      "matchType": "name-occurrence",
+      "title": "明史/卷94",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B794",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2611723",
+      "textSha256": "9214afbf1632de5ae6565d8bed406ba0b85ffa9d4061341d9e4d3bfff386929d",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-3d4fe517c58dd915",
+      "query": "溫體仁",
+      "count": 2,
+      "offset": 728,
+      "excerpt": "十卷，《寶訓》八卷張居正等修。\n\n　　《神宗實錄》五百九十四卷，《寶訓》二十六卷溫體仁等修。\n\n　　《光宗實錄》八卷天啟三年，葉向高等修成，有熹宗御製序。既而霍維華等改修，未及上，而熹宗崩。至崇禎元年，始進呈向高原本，並貯皇史宬。\n\n　　《熹宗實",
+      "matchType": "name-occurrence",
+      "title": "明史/卷97",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B797",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2635994",
+      "textSha256": "21022144b6fa34e04329cb363ee866e97378da1ea45551279ed4e5f8cb0acc31",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-9a0ed9cdc78f6da9",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 7837,
+      "excerpt": "殿大學士。\n\n　象坤二月晉太子太保文淵閣大學士。十一月晉少保武英殿大學士。\n\n　溫體仁禮部尚書。六月兼東閣大學士入。十一月晉太子太保文淵閣大學士。\n\n　吳宗達禮部尚書。六月兼東閣大學士入。十一月晉太子太保文淵閣大學士。\n\n四年辛未　延儒\n\n　如寵",
+      "matchType": "name-occurrence",
+      "title": "明史/卷110",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7110",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594726",
+      "textSha256": "962c1d7cab14a894dedf472cab77760c860b19e3a1d2e8f49303b4f5c0232e08",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-affff136757c9ed5",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 9344,
+      "excerpt": "弼。天啟中，楊漣劾魏忠賢，國弼亦乞速賜處分。忠賢怒，停其歲祿。崇禎時，總督京營。溫體仁柄國，國弼抗疏劾之。詔捕其門客及繕疏者下獄，停祿如初。及至南京，進保國公。乃與馬士英、阮大鋮相結，以訖明亡。\n\n孫鏜，字振遠，東勝州人。襲濟陽衛指揮同知。用朱勇",
+      "matchType": "name-occurrence",
+      "title": "明史/卷173",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7173",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594795",
+      "textSha256": "0eaf4e1ec65051ef918d99f4c7928fdc98dec5fae24454a782ba14c5b26781e4",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-8540dec40bb7009a",
+      "query": "溫體仁",
+      "count": 4,
+      "offset": 11738,
+      "excerpt": "右之者不得其人」語，頗傷執政；末陳祖宗大閱之規，京營之制，冀有所興革。呈稿政府，溫體仁不懌，使正字官語喻義，令改。喻義造閣中，隔扉誚體仁。體仁怒，上言：「故事，惟經筵進規，多於正講，目講則正多規少。今喻義以日講而用經筵之制，及令刪改，反遭其侮，惟",
+      "matchType": "name-occurrence",
+      "title": "明史/卷216",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7216",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594843",
+      "textSha256": "eed39df6fcf73db5de337f0e7c650ed7c7dbbd6929240bc40fcf7935b9d1c733",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-4c69289b5fa2686d",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 1081,
+      "excerpt": "總理諸鎮監視內臣。思睿請並撤監視京營關、寧者。因詆向來秉政大臣阿承將順之罪，意指溫體仁也。體仁二子儼、伉數請囑提學僉事黎元寬。會元寬以文體險怪論黜，遂發其二子私書。思睿劾體仁縱子作奸，以元寬揭為據。體仁謂揭不出元寬手，思睿等群謀排陷。元寬上疏證明",
+      "matchType": "name-occurrence",
+      "title": "明史/卷233",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7233",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594861",
+      "textSha256": "c6ed9bcb35dfac3edac909f283f85ace578ae745e255001c49fc67dc71cf6941",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-5465b990f2251521",
+      "query": "溫體仁",
+      "count": 2,
+      "offset": 10561,
+      "excerpt": "港、荊嶼、石灣。諸將禦之銅山，連戰數日，始敗去。維璉在事二年，勞績甚著。會當國者溫體仁輩雅忌維璉，而閩人宦京師者騰謗於朝，竟坐是罷官。八年春，敘卻賊功，詔許起用。旋召拜兵部右侍郎，遘疾不赴，卒於家。\n\n吳羽文既謝病歸，至崇禎六年始復出。歷考功文選",
+      "matchType": "name-occurrence",
+      "title": "明史/卷235",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7235",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594863",
+      "textSha256": "01b20904edc80996849cc43575279616c44efc941dbab10724d76cdb5463d8cd",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-5428a20bfac9b397",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 8459,
+      "excerpt": "」帝即諭百僚遵行。\n\n二年正月，大學士劉鴻訓以張慶臻敕書事被重譴，爌疏救，不聽。溫體仁訐錢謙益，御史任贊化亦疏訐體仁。帝召見廷臣，體仁力詆贊化及御史毛羽健為謙益死黨。帝怒，切責贊化。爌請寬贊化以安體仁。帝因謂：「進言者不憂國而植黨，自名東林，於朝",
+      "matchType": "name-occurrence",
+      "title": "明史/卷240",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7240",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594868",
+      "textSha256": "ad07288a4ecf69a89f67e49a7bec3e305cdbb0a6f9c8402611d043fa2a6a811b",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-b3a5d055a6e087b5",
+      "query": "溫體仁",
+      "count": 2,
+      "offset": 906,
+      "excerpt": "定其變，復整軍東。明年五月抵京師，已後時矣，有詔之煥入朝。翌日又詔之煥落職候勘，溫體仁已柄政矣。初，體仁訐錢謙益，之煥移書中朝，右謙益。至是，體仁修隙，之煥遂得罪。\n\n之煥雖文士，負材武，善射，既廢，無所見。所居縣，阻山多盜。之煥無事，輒率健兒助",
+      "matchType": "name-occurrence",
+      "title": "明史/卷248",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7248",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2630042",
+      "textSha256": "ed319e582f94be70238d59b595183e6f5543f754eb04b049a11bd501be3e3111",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-67d17a932573c6d3",
+      "query": "溫體仁",
+      "count": 8,
+      "offset": 457,
+      "excerpt": "。」帝默然。同官劉鴻訓以增敕事為御史吳玉所糾，帝欲置鴻訓於法，標力辯其納賄之誣。溫體仁訐錢謙益引己結浙闈事為詞，給事中章允儒廷駁之。帝怒，並謙益將重譴，又欲罪給事中瞿式耜、御史房可壯等。標言：「陛下處分謙益、允儒，本因體仁言，體仁乃不安求罷。乞陛",
+      "matchType": "name-occurrence",
+      "title": "明史/卷251",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594513",
+      "textSha256": "43131dac1425c006f63e1c6993cd02a1ecc313d70267b0e482f18bc631815e42",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-bc123fc0b9c46d57",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 6671,
+      "excerpt": "還鄒元標、馮從吾、文震孟，乃積與魏忠賢忤。七年二月削其籍。\n\n崇禎改元，起故官。溫體仁訐錢謙益，周延儒助之。甡恐帝即用二人，言枚卜大典當就廷推中簡用，事乃止。時大治忠賢黨，又值京察，甡言此輩罪惡非考功法所能盡，宜先定其罪，毋混察典。御史任贊化以劾",
+      "matchType": "name-occurrence",
+      "title": "明史/卷252",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2609328",
+      "textSha256": "30ae9ba4bb23cfdf93878c61c25576998aadb2545789082cdb3c8ddacf21dadf",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-802f677365e36fb9",
+      "query": "溫體仁",
+      "count": 5,
+      "offset": 433,
+      "excerpt": "發其貪汙狀，帝不省。\n\n應熊博學多才，熟諳典故，而性谿刻強很，人多畏之。周延儒、溫體仁援以自助，鹹與親善。及延儒罷，體仁援益力。六年冬，廷推閣臣，應熊望輕不與，特旨擢禮部尚書兼東閣大學士，與何吾騶並入參機務。命下，朝野胥駭。給事中章正宸劾之曰：「",
+      "matchType": "name-occurrence",
+      "title": "明史/卷253",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7253",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594879",
+      "textSha256": "b4ab60af5c026548732b9445bd9414a74912724ed256c3a65ea5381ce6b8494f",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-bba79820f815423d",
+      "query": "溫體仁",
+      "count": 3,
+      "offset": 505,
+      "excerpt": "詰知二奸所為，疏劾之，並千秋俱下吏。罪當戍，二奸瘐死，千秋更赦釋還。事已七年矣，溫體仁以枚卜不與，疑謙益主之，復發其事。詔逮千秋再訊。帝深疑廷臣結黨，蓄怒以待，而體仁又密伺於旁，廷臣相顧惕息。允升乃會都御史曹于汴、大理卿康新民等讞鞫者再，千秋受拷",
+      "matchType": "name-occurrence",
+      "title": "明史/卷254",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7254",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594880",
+      "textSha256": "e2126ec8dcba80ca6ea0fbd259e9e35ff4d5bc372d1d102ed30c4b7f4c5d6760",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-a81d59019b0152b5",
+      "query": "溫體仁",
+      "count": 4,
+      "offset": 2357,
+      "excerpt": "以大獄，結國家朋黨之禍；毋寵利居成功，導人主以富強，釀天下土崩之勢。\n\n周延儒、溫體仁見疏不懌。以時方禱雨，而宗周稱疾，指為偃蹇，激帝怒，擬旨詰之。且令陳足兵、足餉之策，宗周條畫以對，延儒、體仁不能難。\n\n為京尹，政令一新，挫豪家尤力。閹人言事輒",
+      "matchType": "name-occurrence",
+      "title": "明史/卷255",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7255",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594881",
+      "textSha256": "cedb7005ad7707517fb6cf577171a02dfa325bb7d5f5d25bfb3ad49cf62a2456",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-e11b1fec929ad66f",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 4738,
+      "excerpt": "病歸。其後附魏忠賢，歷擢左通政，論者薄之。及是，以忤中官罷。\n\n長庚不植黨援，與溫體仁不甚合。推郎中王茂學為真定知府，帝不允。復推為順德知府，帝怒，責以欺蒙，並追咎冠帶監生授職事，責令回奏。奏上，斥為民。家居十年，國變，久之卒。\n\n劉之鳳，字雍鳴",
+      "matchType": "name-occurrence",
+      "title": "明史/卷256",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7256",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594882",
+      "textSha256": "35120d32f8eaec020a4f04ec59563c1df2e3599fdf334f2466df6814c7a9b577",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-9c05cd4d00f85185",
+      "query": "溫體仁",
+      "count": 4,
+      "offset": 8234,
+      "excerpt": "督，鳳翼不能決，既而承疇竟無功。及賊將南犯，請以江北巡撫楊一鵬鎮鳳陽，防護皇陵，溫體仁不聽，鳳翼亦不能再請。八年正月，賊果毀鳳陽皇陵。言官交章劾鳳翼，鳳翼亦自危，引罪乞罷。帝不許，令戴罪視事。\n\n初，賊之犯江北也，給事中桐城孫晉以鄉里為憂。鳳翼曰",
+      "matchType": "name-occurrence",
+      "title": "明史/卷257",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7257",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594883",
+      "textSha256": "80aa9c846e303855484f002e70fe2a899baf14425eaa66ad1303e9eaeaa73357",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-53a1d227097318a3",
+      "query": "溫體仁",
+      "count": 10,
+      "offset": 670,
+      "excerpt": "千人守鳳陽。疏入而鳳陽已陷，皇陵毀焉。譽卿痛憤，直發本兵張鳳翼固位失事，及大學士溫體仁、王應熊玩寇速禍罪。言：「賊在秦、晉時，早設總督，遏其渡河，禍止西北一隅耳，乃侍郎彭汝楠避不肯行。及賊入楚、豫，人言交攻，然後不得已而議設之。侍郎汪慶百又避不行",
+      "matchType": "name-occurrence",
+      "title": "明史/卷258",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7258",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594893",
+      "textSha256": "1b9d86dec85639702c54976b12b02566cd0adcff74a60133af997e97cde17bdd",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-2f65b2289890b17d",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 10720,
+      "excerpt": "四十有一員，殺軍民數萬人。\n\n先是，賊漸逼江北，兵部尚書張鳳翼請敕一鵬移鎮鳳陽，溫體仁格其議。賊驟至，一鵬在淮安，遠不及救。帝聞變大驚，素服避殿，親祭告太廟，遂逮一鵬及巡按御史吳振纓、守陵官澤。澤先自殺，一鵬棄市，振纓戍邊。\n\n邵捷春\n\n邵捷春，",
+      "matchType": "name-occurrence",
+      "title": "明史/卷260",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7260",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2609492",
+      "textSha256": "5f38b46f83c6949f18fed2422196e59d62ee143bd0c3969d3879cb980402f49c",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-42441431575f47ae",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 5437,
+      "excerpt": "不納。出按真定諸府。父喪，不俟命竟歸。服闋，起故官。疏救給事中傅朝佑、李汝璨以論溫體仁下吏，故帝不懌，左遷行人司正。歷尚寶、大理丞，進少卿。十五年春，擢右僉都御史，巡撫大同。歲饑疫，疏乞振濟。搜軍實，練火器，戢豪宗，聲績甚著。\n\n十七年正月，李自",
+      "matchType": "name-occurrence",
+      "title": "明史/卷263",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7263",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2618603",
+      "textSha256": "4475215890ed0e547614b35a46e993296b51db1af05833986dd3801d5384d544",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-57de63ea07b4e4c4",
+      "query": "溫體仁",
+      "count": 1,
+      "offset": 7172,
+      "excerpt": "吏部尚書王永光用為四川巡撫，仰迄罷去。時震以發鴻訓私，進秩一等。未幾，又劾永光及溫體仁，忤旨切責。御史袁弘勛者，永光心腹也，被劾罷職，永光力援之。時震言：「弘勛因閣臣劉鴻訓賄敗，輒肆瀆辯。不知鴻訓之差快人意者，正以能別白徐大化、霍維華諸人之奸而斥",
+      "matchType": "name-occurrence",
+      "title": "明史/卷264",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7264",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594891",
+      "textSha256": "5cb257491319cafde1fedc430dfdb51acf8bab6b9297a3a4a1a3536eb014606c",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-63857c43cb929e19",
+      "query": "溫體仁",
+      "count": 2,
+      "offset": 3527,
+      "excerpt": "議，曰宣義問，曰一條教，曰慮久遠，曰昭激勸，曰勵名節，曰假體貌。其端政本，悉規切溫體仁；其伸公議，則詆張捷薦呂純如謀翻逆案事。捷大怒，上疏力攻，元璐疏辨，帝俱不問。八年，遷國子祭酒。\n\n元璐雅負時望，位漸通顯。帝意向之，深為體仁所忌。一日，帝手書",
+      "matchType": "name-occurrence",
+      "title": "明史/卷265",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7265",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594892",
+      "textSha256": "c12fd8ea045974ec8627dd7c5e323fff5de7350e6ed43ffed0759c912ee02d00",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    },
+    {
+      "documentId": "document:mingshi-75d6c8b010d2e856",
+      "query": "溫體仁",
+      "count": 2,
+      "offset": 2265,
+      "excerpt": "設重臣，練敢死士為後圖，疏格不行。嗣昌、薛國觀、周延儒叠用事，理順一無所附麗。出溫體仁門，言論不少徇。\n\n賊犯京師急，守卒缺餉，陰雨饑凍。理順詣朝房語諸執政，急請帑，眾唯唯。理順太息歸，捐家貲犒守城卒。僚友問進止，正色曰：「存亡視國，尚須商酌耶！",
+      "matchType": "name-occurrence",
+      "title": "明史/卷266",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7266",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2594898",
+      "textSha256": "f3c3bf8d50256579f791f3815c3ba7ae93352add6b32491bd881449ece25f7b4",
+      "contentPath": "/static/data/history/archive-books/mingshi.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "溫體仁的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

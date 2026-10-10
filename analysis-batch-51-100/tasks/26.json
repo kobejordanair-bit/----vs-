@@ -1,0 +1,31 @@
+{
+  "format": "dynasty-batch50-person-request",
+  "schemaVersion": 1,
+  "id": "general_桓溫_306307951",
+  "slug": "26",
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "inputSha256": "4f174f6b8bdbad53e58ad8556a1e9d8a1f535d72aa7ff4609ce4a57edbb024bc",
+  "sourceSha256": "051cf3ffe74042634763e8af74578b1116f646650ed97f18d3ecdd681b7f9664",
+  "preservedDeepSha256": "0aa158a60d3686aa670ad5c2006112fc1218a2bee5e64539330d11e0c03d77ba",
+  "tasks": {
+    "analysisStats": {
+      "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+      "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+      "promptFile": "analysis-batch-51-100/prompts/26.analysisStats.prompt.md",
+      "promptSha256": "7f05cce519bf41c9918a86fdcb06dfac5469d786dcba6a85574c8e6cac85b822",
+      "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+      "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
+      "renderedOriginalSha256": "6e887bd7f07ccdc88de23a378f2a669b36b45e728fef2202616bd27d5ed289ac",
+      "marker": "<!-- BATCH50_COMPLETE general_桓溫_306307951 analysisStats -->",
+      "reasonMarker": "<!-- STATS_REASONS_BEGIN general_桓溫_306307951 -->"
+    },
+    "soulEssence": {
+      "promptFile": "analysis-batch-51-100/prompts/26.soulEssence.prompt.md",
+      "promptSha256": "2090ce6a75844374f13b95a0a2607c5306b5d51d444bfcdbde299cc8aa3465c9",
+      "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+      "renderedOriginalSha256": "750a1c05867a394b54dc0a3a0d98661781febddd2f3b708b6803df8a446a084f",
+      "marker": "<!-- BATCH50_COMPLETE general_桓溫_306307951 soulEssence -->",
+      "contextPath": "analysis-batch-51-100/drafts/26.analysis.md"
+    }
+  }
+}

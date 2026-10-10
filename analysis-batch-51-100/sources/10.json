@@ -1,0 +1,505 @@
+{
+  "format": "dynasty-next50-source-starting-packet",
+  "schemaVersion": 1,
+  "id": "emperor_梁武帝_281110767",
+  "name": "梁武帝",
+  "identity": {
+    "canonicalName": null,
+    "aliases": [],
+    "identityStatus": "candidate",
+    "dynasty": "南北朝",
+    "title": "蕭衍"
+  },
+  "candidatePages": [
+    {
+      "title": "萧衍",
+      "pageId": 22565,
+      "revisionId": 93808904,
+      "revisionTimestamp": "2026-08-08T03:02:20Z",
+      "url": "https://zh.wikipedia.org/wiki/%E8%90%A7%E8%A1%8D",
+      "revisionUrl": "https://zh.wikipedia.org/w/index.php?oldid=93808904",
+      "wikidataId": "Q736726",
+      "isDisambiguation": false,
+      "bibliography": [
+        {
+          "citationTitle": "從「三教同源」看梁武帝之政治理念",
+          "url": "http://enlight.lib.ntu.edu.tw/FULLTEXT/JR-MAG/mag156308.pdf",
+          "type": "citation-template",
+          "template": "Cite journal",
+          "author": "李曉虹",
+          "publisher": "《普門學報》",
+          "date": "2007年11月",
+          "isbn": "",
+          "locator": "citation template"
+        },
+        {
+          "citationTitle": "梁書",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "武帝本紀",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "南史·梁纪中·武帝下",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "南史·循吏-郭祖深傳",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "資治通鑒",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "万善先资",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "通鉴",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "魏晉南北朝史論拾遺",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "梁皇宝忏",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "述三教诗",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "广弘明集",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "经籍志·道经",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "隋书",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "斷酒肉文",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "《斷酒肉文》",
+          "url": "http://tripitaka.cbeta.org/T52n2103_026",
+          "type": "reference-link",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "律制生活",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "涅槃經",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "慧约传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "普門學報",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "僧伽婆罗传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "续高僧传",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        },
+        {
+          "citationTitle": "隋书·卷八·志第三·礼仪三",
+          "url": null,
+          "type": "named-work",
+          "locator": "reference or bibliography section"
+        }
+      ],
+      "wikisourceLinks": [],
+      "retrievedAt": "2026-10-02T10:33:10.974Z",
+      "attribution": {
+        "source": "Chinese Wikipedia contributors",
+        "license": "CC BY-SA 4.0; bibliography metadata only",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "status": "candidate index, not independently verified evidence"
+      }
+    }
+  ],
+  "priorReviews": [],
+  "archiveCandidates": [
+    {
+      "documentId": "document:songshu-a2b5140a38e07797",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 2668,
+      "excerpt": "從時讀令者，〔夫先王所以從時讀令者　「從」，晉書禮志、通典禮典作「順」，蓋沈約為梁武帝父蕭順之諱而改。〕蓋後天而奉天時。正服，尊嚴之所重，今服章多闕如。比熱隆赫，臣等謂可如恒議，依故事闕而不讀。」詔可。六年三月，有司奏：「今月十六日立夏。案五年六",
+      "matchType": "name-occurrence",
+      "title": "宋書/卷15",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B715",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1748378",
+      "textSha256": "c8f3f6b754fd5b8b270ff89cb8ecf20e6bfa9e1abd27730199971b62a09b9cb3",
+      "contentPath": "/static/data/history/archive-books/songshu.json"
+    },
+    {
+      "documentId": "document:songshu-153e51e70c5cc1b0",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 19625,
+      "excerpt": "《從天道》。○《晉書》作《順天道》。〔臣承蒼〕按：沈約仕齊作《宋書》，其後復顯於梁武帝，父名順之，故凡「順」字皆改為「從」，其有仍用「順」字者殆傳寫之誤也。\n\n《從天道》篇：「三時亦講武事」。○亦，《晉書》作「示」，以「三時示」為句。\n\n又：「將",
+      "matchType": "name-occurrence",
+      "title": "宋書/卷22",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B722",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=449316",
+      "textSha256": "ef3d1a80dfc9bef5200c0e440b67b8277174c980b5fbedb10b9a19ae39bd7652",
+      "contentPath": "/static/data/history/archive-books/songshu.json"
+    },
+    {
+      "documentId": "document:songshu-dd748e1ffc953153",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 14445,
+      "excerpt": "溪、平道、武興、根寧、南移六縣。宋志武平太守領縣六，蓋即南齊志之武平郡六縣。通鑑梁武帝大同十一年胡三省注云：「沈約志，吳孫晧建衡三年，分交趾立新興郡，並立嘉寧縣。晉武帝太康三年，更郡曰新昌。」此即宋志此葉脫去之佚文。又據晉書地理志，新昌郡統縣六，",
+      "matchType": "name-occurrence",
+      "title": "宋書/卷38",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B738",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1760695",
+      "textSha256": "6c36a1c9fb6959d73e9c4a5aea1475f2c9996d4a1627b11f4483bd52d4951ee2",
+      "contentPath": "/static/data/history/archive-books/songshu.json"
+    },
+    {
+      "documentId": "document:songshu-aa001c649e0c679b",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 10404,
+      "excerpt": "玄固辭不受，〔子景玄固辭不受　「景玄」南史作「子順字景玄」，蓋景玄本名順，沈約避梁武帝父諱，單稱其字。〕又奏還封，表疏十餘上，見許。詔曰：「景玄表如此。故散騎常侍、中書監、左光祿大夫、開府儀同三司、樂安縣開國伯興宗，忠恪立朝，謀猷宣著，往屬時難，",
+      "matchType": "name-occurrence",
+      "title": "宋書/卷57",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B757",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2190887",
+      "textSha256": "a86b947fb6ca5ebcfcf8efad2330e7aad8d720d3db4ab441f7d32a0d47a4a529",
+      "contentPath": "/static/data/history/archive-books/songshu.json"
+    },
+    {
+      "documentId": "document:nanqishu-73c8000d322179d0",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 630,
+      "excerpt": "內史、行郢州事。從帝立，〔從帝立　「從帝」各本作「順帝」。按錢大昕廿二史考異云：梁武帝父名順之，故子顯修史，多易為「從」字，宋順帝亦作「從帝」，作「順帝」者，蓋後人所改。〕徵晉熙王燮為撫軍、揚州刺史，以上為左衞將軍，輔燮俱下。沈攸之事起，未得朝廷",
+      "matchType": "name-occurrence",
+      "title": "南齊書/卷3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B73",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2312008",
+      "textSha256": "f69566fae5df057a6ffc6a95694820b10aafabe9c65aa03e72eebc2193ea8fe1",
+      "contentPath": "/static/data/history/archive-books/nanqishu.json"
+    },
+    {
+      "documentId": "document:nanqishu-1b6f74b22cf5cbb0",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 1667,
+      "excerpt": "賜天下為父後者爵一級，孝子從孫，〔孝子從孫　「從」毛本、殿本作「順」。按蕭子顯避梁武帝父蕭順之諱，「順」字皆改為「從」字，作「順」者，蓋後人所改。〕義夫節婦，普加甄賜明揚。表其衡閭，賚以束帛。己丑，詔「東宮肇建，遠近或有慶禮，可悉斷之」。壬辰，以",
+      "matchType": "name-occurrence",
+      "title": "南齊書/卷6",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B76",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2311630",
+      "textSha256": "1fd407023e1c8197fa27674ac2879c9cfdac2eecc21dd0ce40f82f672d0eb0ec",
+      "contentPath": "/static/data/history/archive-books/nanqishu.json"
+    },
+    {
+      "documentId": "document:nanqishu-48dc481de411b5cf",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 2373,
+      "excerpt": "考異云：「東昏侯紀云『丁未南康王寶融即皇帝位』，蓋是日建康始聞之耳。今從和帝紀及梁武帝紀。」〕癸丑，遣平西將軍陳伯之西征。\n\n六月，京邑雨水，遣中書舍人、二縣官長賑賜有差。蕭穎冑弟穎孚起兵廬陵。戊子，曲赦江州安成、廬陵二郡。\n\n秋七月癸巳，曲赦荊",
+      "matchType": "name-occurrence",
+      "title": "南齊書/卷7",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B77",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2438183",
+      "textSha256": "f624373a6a6658462a635265d33a463ce0ad03e0a02a22538badaec3882b5c87",
+      "contentPath": "/static/data/history/archive-books/nanqishu.json"
+    },
+    {
+      "documentId": "document:nanqishu-9938ec04e585d33c",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 130,
+      "excerpt": "不移，據在杠軸，眾星動流，實繫天體，五星從伏，〔五星從伏　錢大昕廿二史考異云：「梁武帝父名順之，故子顯修史，多易為『從』字。如天文志『五星從伏』、『熒惑從行』、『歲星太白俱從行』、『辰星從行』之類。」〕非關二義，故徐顯思以五星為非星，虞喜論之詳矣",
+      "matchType": "name-occurrence",
+      "title": "南齊書/卷13",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B713",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1768715",
+      "textSha256": "e8a05062198f42bfb4c830e3747b112e795ad33ec94072cbe7874ffc6a02b1d3",
+      "contentPath": "/static/data/history/archive-books/nanqishu.json"
+    },
+    {
+      "documentId": "document:chenshu-f075f1753aa57490",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 759,
+      "excerpt": "恐。高祖率精兵三千，卷甲兼行以救之，頻戰屢捷，天合中流矢死，賊红大潰，僧明遂降。梁武帝深歎異焉，授直閤將軍，封新安子，邑三百戶，仍遣畫工圖高祖容貌而觀之。\n\n　　其年冬，蕭暎卒。明年，高祖送喪還都，至大庾嶺，會有詔高祖為交州司馬，領武平太守，與刺",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B71",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2576168",
+      "textSha256": "b846f39dfa914f3f9d4f084cc13806767ca646ac6541a6f612095bbb824660d4",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-39efe20e59422874",
+      "query": "梁武帝",
+      "count": 2,
+      "offset": 227,
+      "excerpt": "昭儀、〔昭容昭儀　北監本、汲本、殿本「昭儀」在「昭容」上。按《南史·后妃傳》序，梁武帝所制九嬪之序，「昭儀」在「昭容」上，陳制多襲梁，當以作「昭儀、昭容」為是。〕脩華、脩儀、脩容九人，以擬古之九嬪。又置婕妤、容華、充華、承徽、烈榮五人，謂之五職，",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷7",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B77",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2015446",
+      "textSha256": "81632806aeb190e3535565aaa816b97d52b9163d619b945d3a4aa4ee2bd22338",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-6e96b1cff83f8e43",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 289,
+      "excerpt": "六七，红嵭憚役潰散，禁之不可，乃引其餘兵退還。蕭諮啟子雄及冏與賊交通，逗留不進，梁武帝队於廣州賜死。子雄弟子略、子烈嵭雄豪任俠，家屬在南江。天合謀於红曰：「盧公累代待遇我等亦甚厚矣，今見枉而死，不能為報，非丈夫也。我弟僧明萬人之敵，若圍州城，召百",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷8",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B78",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1750028",
+      "textSha256": "851083259ae11b47658d2b697dde2ca89800b94d31507c1787ae78f7e43bbd38",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-a7ec4d02c037a0b6",
+      "query": "梁武帝",
+      "count": 5,
+      "offset": 92,
+      "excerpt": "\n\n　　王沖字長深，琅邪臨沂人也。祖僧衍，齊侍中。父茂璋，梁給事黃門侍郎。沖母，梁武帝妹新安穆公主，卒於齊世，武帝以沖偏孤，深所鍾愛。年十八，起家梁祕書郎。尋為永嘉太守。入為太子舍人，以父憂去職。服闋，除太尉臨川王府外兵參軍、東宮領直。累遷太子洗",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷17",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B717",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1544244",
+      "textSha256": "98794b6eaf17385a98b2bab68c984556f2bfde558ac7e0dbc6b60eb835dc3b5f",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-1b5b9fa1da7f6f65",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 134,
+      "excerpt": "事黃門侍郎。\n\n　　眾好學，頗有文詞，起家梁鎮衛南平王法曹參軍、太子舍人。是時，梁武帝制千字詩，眾為之注解。與陳郡謝景同時召見于文德殿，帝令眾為竹賦，賦成，奏，帝善之，手敕答曰：〔賦成奏帝善之手敕答曰　按北監本、汲本、殿本及《南史沈約傳》附眾傳並",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷18",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B718",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2132778",
+      "textSha256": "3eb2d7e1226497b25309aa95dc774052150403d953e29610e6dc6ed8f63bf766",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-784c4fcff84f293b",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 2001,
+      "excerpt": "，美風儀，博覽墳籍，善屬文。釋褐梁西中郎行參軍，尋署法曹外兵參軍，兼丹陽詔獄正。梁武帝於城西置士林館，荔乃製碑，奏上，帝命勒之于館，仍用荔為士林學士。尋為司文郎，遷通直散騎侍郎，兼中書舍人。時左右之任，多參權軸，內外機務，互有帶掌，唯荔與顧協淡然",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷19",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B719",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2132781",
+      "textSha256": "0e3eec87c5d71c0920388c6d09bbbcc651506706be3a568eb229fca8d278aaa9",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-086ad24bb5af30fb",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 2593,
+      "excerpt": "並以清白稱。\n\n王固\n\n　　王固字子堅，左光祿大夫通之弟也。少清正，頗涉文史，以梁武帝甥封莫口亭侯。舉秀才。起家梁祕書郎，遷太子洗馬，掌東宮管記，丁所生母憂去職。服闋，除丹陽尹丞。侯景之亂，奔于荊州，梁元帝承制以為相國戶曹屬，掌管記。尋聘于西魏，",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷21",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B721",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1511909",
+      "textSha256": "45c948e16a0dce43a5512dd002c6d6869712c31b0c3776825bd014a9a1996573",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-421acfdc60faa277",
+      "query": "梁武帝",
+      "count": 3,
+      "offset": 965,
+      "excerpt": "類也。\n\n　　累遷國子博士。時於城西立士林館，弘正居以講授，聽者傾朝野焉。弘正啟梁武帝周易疑義五十條，又請釋乾坤二繫曰：「臣聞易稱立象以盡意，繫辭以盡言，然後知聖人之情，幾可見矣。自非含微體極，盡化窮神，豈能通志成務，探賾致遠。而宣尼比之桎梏，絕",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷24",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B724",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1494985",
+      "textSha256": "497fbc7eaf7e00281571d1a7471d93dc499bce3abe2ddb4523b4ceaa04e5f1aa",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-c311db13f208a941",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 143,
+      "excerpt": "相聚寇抄，詔以之平為假節、超武將軍、都督衡州五郡征討諸軍事。及之平至，即皆平殄，梁武帝甚嘉賞之。元帝承聖中，累遷散騎常侍、右衛將軍、晉陵太守。世祖即位，除光祿大夫，慈訓宮衛尉，並不就，乃築山穿池，植以卉木，居處其中，有終焉之志。天康元年〔紀年對照",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷25",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B725",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2063242",
+      "textSha256": "1832bf7f6f86b49206cdd17a4490b40ba564787022a6f12efd77af558925f016",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-806b16be18a2ee59",
+      "query": "梁武帝",
+      "count": 2,
+      "offset": 4312,
+      "excerpt": "屈，未喻高懷。若問梁朝朱領軍异亦為卿相，此不踰其本分邪？此是天子所拔，非關選序。梁武帝云『世間人言有目色，我特不目色范悌』。宋文帝亦云『人世豈無運命，每有好官缺，輒憶羊玄保。』此則清階顯職，不由選也。秦有車府令趙高直至丞相，漢有高廟令田千秋亦為丞",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷26",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B726",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2132678",
+      "textSha256": "98c59b5e8648ac0bad8e33c3c44065512985ed6b140a0ca0aca5d9c903f272c1",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-2627fb956e96bb72",
+      "query": "梁武帝",
+      "count": 3,
+      "offset": 275,
+      "excerpt": "中權將軍、丹陽尹何敬容開府，置佐史，並以貴冑充之，仍除敬容府主簿。遷尚書殿中郎。梁武帝撰正言始畢，製述懷詩，總預同此作，帝覽總詩，深降嗟賞。仍轉侍郎。尚書僕射范陽張纘，度支尚書琅邪王筠，都官尚書南陽劉之遴，並高才碩學，總時年少有名，纘等雅相推重，",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷27",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B727",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1463644",
+      "textSha256": "4bdca440cfd7cee5943a90ad9f4905e535818686b5a01642760fbbd3556ab024",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-a855ec94614bf87a",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 4393,
+      "excerpt": "到洽之子，見梁書到洽傳，未嘗為吏部。梁書到溉傳云溉以建安內史遷中書郎兼吏部。又云梁武帝每與對棋，從夕達旦。是「到仲舉」明為「到溉」之訛。\n\n〔二〕　即於坐所呼與為對　「為對」北監本、汲本、殿本作「對弈」。\n\n〔三〕　封文（始）〔招〕縣伯　據百衲本",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷29",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B729",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1511159",
+      "textSha256": "332c005ec3468cd74daa1fd35367a900f6a3bac892bbd6bb0d682b61d354dbc0",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-3e6aa242cac8eb9d",
+      "query": "梁武帝",
+      "count": 3,
+      "offset": 79,
+      "excerpt": "瓊　顧野王　傅縡〕\n\n蕭濟\n\n　　蕭濟字孝康，東海蘭陵人也。少好學，博通經史，諮梁武帝左氏疑義三十餘條，尚書僕射范陽張纘、太常卿南陽劉之遴並與濟討論，纘等莫能抗對。解褐梁祕書郎，遷太子舍人。預平侯景之功，封松陽縣侯，邑五百戶。\n\n　　及高祖作鎮徐",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷30",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B730",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1511158",
+      "textSha256": "9cd7559e38d913cb5c7aad455b53077c0a5ace68034dda22668af659876b86e0",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-8360de1c11b7e645",
+      "query": "梁武帝",
+      "count": 1,
+      "offset": 6579,
+      "excerpt": "刪。\n\n〔六〕　隨晉熙太守梅伯龍討景將王貴顯於壽春　按「王貴顯」梁書侯景傳及通鑑梁武帝太清二年、三年並作「王顯貴」。\n\n〔七〕　進軍蘄譙　「蘄」原訛「斬」，據北監本、汲本、殿本改正。按南監本「蘄」作「舒」，訛。\n\n〔八〕　改封梁信（都）郡公　據南",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷31",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B731",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2149203",
+      "textSha256": "721164d39eea548a2507415ee29dd6dda8c75fb8b22d1f41b3e7355779843ab6",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-aff92fea3ca36073",
+      "query": "梁武帝",
+      "count": 3,
+      "offset": 366,
+      "excerpt": "室參軍，尋以本官兼東宮通事舍人。是時朝廷政事多委東宮，不害與舍人庾肩吾直日奏事，梁武帝嘗謂肩吾曰：「卿是文學之士，吏事非卿所長，何不使殷不害來邪？」其見知如此。簡文又以不害善事親，賜其母蔡氏錦裙襦、氈席、被褥，單復畢備。七年，除東宮步兵校尉。太清",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷32",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B732",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=1514501",
+      "textSha256": "f1f0e7e7d736214897d36ec9db386ae1b0afc8e913bece847ccab94a4e009f8e",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    },
+    {
+      "documentId": "document:chenshu-7a9e3c386ad30f8c",
+      "query": "梁武帝",
+      "count": 4,
+      "offset": 169,
+      "excerpt": "咸資經術。魏、晉浮蕩，儒教淪歇，公卿士庶，罕通經業矣。宋、齊之間，國學時復開置。梁武帝開五館，建國學，總以五經教授，（唯國學乃經）經各置助教云。〔三〕武帝或紆鑾駕，臨幸庠序，釋奠先師，躬親試冑，申之醼語，勞之束帛，濟濟焉斯蓋一代之盛矣。高祖創業開",
+      "matchType": "name-occurrence",
+      "title": "陳書/卷33",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%9B%B8%2F%E5%8D%B733",
+      "revisionUrl": "https://zh.wikisource.org/w/index.php?oldid=2261988",
+      "textSha256": "44ba7da90502d10628fa95409334bbc69646ab6e435203154137551822b228e4",
+      "contentPath": "/static/data/history/archive-books/chenshu.json"
+    }
+  ],
+  "limits": [
+    "Candidate pages and name-occurrence hits are research starting points, not new verification or proof of identity.",
+    "Prior reviews establish only the supportedFact and reviewScope recorded in their evidence.",
+    "Open original / official / scholarly sources; record actual searches and access honestly. Never infer full-page reading from snippets.",
+    "Existing deepAnalysis is a preserved interpretation, not independently established historical evidence."
+  ],
+  "researchQuestions": [
+    "梁武帝的關鍵抉擇、權力／戰爭／制度成效與失敗代價，至少兩個可定位事件。",
+    "釐清同名、年代、職位、因果與後世傳說；引句比對完整原典固定修訂。",
+    "五維逐項對照同角色人物，區分實際能力、可調動資源及結果。",
+    "靈魂內核：用具體場景與關係支持判讀，不能把心理推斷當成史實。"
+  ]
+}

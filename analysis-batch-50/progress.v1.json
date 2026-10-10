@@ -1,524 +1,3420 @@
 {
-  "format": "dynasty-batch50-progress",
-  "schemaVersion": 1,
-  "generatedAt": "2026-10-09T22:37:25.854Z",
+  "format": "dynasty-batch50-receipt-ledger",
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T10:14:16.845Z",
   "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
-  "complete": false,
-  "status": "paused_after_single_person_pilot",
-  "passed": true,
   "targetCount": 50,
-  "completionFields": [
-    "analysis",
-    "soulEssence",
-    "stats",
-    "statsAnalysis"
-  ],
+  "libraryTotalExpected": 962,
+  "status": "fully_published_final_audit_verified",
+  "passed": true,
+  "complete": true,
+  "finalAuditVerified": true,
+  "libraryPreserved": true,
+  "basis": "Validated apply + dry-run receipts and rebuilt manuscript evidence; no registration flags or fixed five-person chunks.",
+  "latestVerifiedPublicationRevision": 52,
+  "latestReceiptedDocumentSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
   "counts": {
     "prepared": 50,
-    "generated": 5,
-    "sourceQA": 5,
-    "assembled": 5,
-    "imported": 5,
-    "partialImported": 1,
-    "importedPeople": 6,
-    "importedFields": 23
+    "generated": 50,
+    "reviewed": 50,
+    "sourceQA": 50,
+    "assembled": 50,
+    "imported": 50,
+    "verified": 50,
+    "partialImported": 0,
+    "importedPeople": 50,
+    "importedFields": 200,
+    "remainingIncomplete": 0
   },
-  "finalAuditVerified": false,
-  "pauseAuditVerified": true,
-  "pauseAuditFile": "analysis-batch-50/pause-audit.v1.json",
-  "pauseAuditSha256": "a6e9b0873eae2fed5e482f3d718b59a812259a6d70837dde5c7dafc85bb1145f",
-  "libraryPreserved": true,
-  "libraryTotal": 962,
-  "records": [
+  "imports": [
     {
-      "id": "emperor_漢光武帝_80238619",
-      "slug": "01",
-      "name": "漢光武帝",
-      "prepared": true,
-      "fullyImported": true,
-      "importedFields": [
-        "analysis",
-        "soulEssence",
-        "stats",
-        "statsAnalysis"
-      ],
-      "status": "fully_imported"
+      "file": "import.01-04.apply.json",
+      "receiptSha256": "3d454746ae524b0b99ab2904c1fc888f329781e55ea1cd5ee805263228df7f96",
+      "resultsFile": "results.01-04.v1.json",
+      "beforeRevision": 4,
+      "afterRevision": 5,
+      "changedFields": 16
     },
     {
-      "id": "emperor_宋太祖_284437104",
-      "slug": "02",
-      "name": "宋太祖",
-      "prepared": true,
-      "fullyImported": true,
-      "importedFields": [
-        "analysis",
-        "soulEssence",
-        "stats",
-        "statsAnalysis"
-      ],
-      "status": "fully_imported"
+      "file": "import.06-06.apply.json",
+      "receiptSha256": "58d66ca908ca2815756cf6eab5ae3282d1000da9e4e86d22f299d1fb35455de2",
+      "resultsFile": "results.06-06.v1.json",
+      "beforeRevision": 5,
+      "afterRevision": 6,
+      "changedFields": 3
     },
     {
-      "id": "emperor_康熙帝_283469836",
-      "slug": "03",
-      "name": "康熙帝",
-      "prepared": true,
-      "fullyImported": true,
-      "importedFields": [
-        "analysis",
-        "soulEssence",
-        "stats",
-        "statsAnalysis"
-      ],
-      "status": "fully_imported"
+      "file": "import.07-07.apply.json",
+      "receiptSha256": "a3d804bcd18af0e11aea69d44b45da3a9aac8f6b14a8af8eb5e050fe440ff526",
+      "resultsFile": "results.07-07.v1.json",
+      "beforeRevision": 6,
+      "afterRevision": 7,
+      "changedFields": 4
     },
     {
-      "id": "emperor_明成祖_281780435",
-      "slug": "04",
-      "name": "明成祖",
-      "prepared": true,
-      "fullyImported": true,
-      "importedFields": [
-        "analysis",
-        "soulEssence",
-        "stats",
-        "statsAnalysis"
-      ],
-      "status": "fully_imported"
+      "file": "import.06-06.soul.apply.json",
+      "receiptSha256": "e43a7a90a23dcab2f36ac2d2bac2f8be70980bb4c80a858e0f7285172580fcd5",
+      "resultsFile": "results.06-06.soul.v1.json",
+      "beforeRevision": 7,
+      "afterRevision": 8,
+      "changedFields": 1
     },
     {
-      "id": "emperor_唐高宗_285517784",
-      "slug": "05",
-      "name": "唐高宗",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "awaiting_factual_correction"
+      "file": "import.05-05.apply.json",
+      "receiptSha256": "98b09bf0e050814c117b5d4aee9cf8d5ad142251fd77c26eea49bb97117abfa2",
+      "resultsFile": "results.05-05.v1.json",
+      "beforeRevision": 8,
+      "afterRevision": 9,
+      "changedFields": 4
     },
     {
-      "id": "emperor_秦昭襄王_7247317",
-      "slug": "06",
-      "name": "秦昭襄王",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [
-        "analysis",
-        "stats",
-        "statsAnalysis"
-      ],
-      "status": "analysis_imported_soul_pending"
+      "file": "import.08-08.apply.json",
+      "receiptSha256": "95d30fe19aaa5ff0e3e9782f406127f51b72f6aa9eeceff4abcd8009260c405a",
+      "resultsFile": "results.08-08.v1.json",
+      "beforeRevision": 9,
+      "afterRevision": 10,
+      "changedFields": 4
     },
     {
-      "id": "emperor_乾隆帝_287167826",
-      "slug": "07",
-      "name": "乾隆帝",
-      "prepared": true,
-      "fullyImported": true,
-      "importedFields": [
-        "analysis",
-        "soulEssence",
-        "stats",
-        "statsAnalysis"
-      ],
-      "status": "fully_imported"
+      "file": "import.09-09.apply.json",
+      "receiptSha256": "0d3fcf6987ca894f96e686eeec1860656ef6438c0f8b503c4c53d3dd1fa68315",
+      "resultsFile": "results.09-09.v1.json",
+      "beforeRevision": 10,
+      "afterRevision": 11,
+      "changedFields": 4
     },
     {
-      "id": "emperor_漢宣帝_279605035",
-      "slug": "08",
-      "name": "漢宣帝",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.10-10.apply.json",
+      "receiptSha256": "ae3e06a940ab10e7bf91203d09b6188bf8a7678a89710002d479561479db3e7f",
+      "resultsFile": "results.10-10.v1.json",
+      "beforeRevision": 11,
+      "afterRevision": 12,
+      "changedFields": 4
     },
     {
-      "id": "emperor_宋武帝_284299365",
-      "slug": "09",
-      "name": "宋武帝",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.11-11.apply.json",
+      "receiptSha256": "f2856a04e43af216d22374d9ca9c83a97099dd106f5363628be5c6da1ca34da9",
+      "resultsFile": "results.11-11.v1.json",
+      "beforeRevision": 12,
+      "afterRevision": 13,
+      "changedFields": 4
     },
     {
-      "id": "emperor_宋仁宗_284527334",
-      "slug": "10",
-      "name": "宋仁宗",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.12-12.apply.json",
+      "receiptSha256": "3f9a5b692997b3432cd4bf1179975649333f7bebccd835c753b3c2479b516aeb",
+      "resultsFile": "results.12-12.v1.json",
+      "beforeRevision": 13,
+      "afterRevision": 14,
+      "changedFields": 4
     },
     {
-      "id": "emperor_武則天_280599295",
-      "slug": "11",
-      "name": "武則天",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.13-13.apply.json",
+      "receiptSha256": "4cffd497d34b74bcf22b9a1b92da5c80141ddd30b741fe05a9e297c42e96e16f",
+      "resultsFile": "results.13-13.v1.json",
+      "beforeRevision": 14,
+      "afterRevision": 15,
+      "changedFields": 4
     },
     {
-      "id": "emperor_宋太宗_284444719",
-      "slug": "12",
-      "name": "宋太宗",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.14-14.apply.json",
+      "receiptSha256": "1bb780184b4a8722a8b80fbabe6767584c80fec12ff7acbf21ccfb1589f7a179",
+      "resultsFile": "results.14-14.v1.json",
+      "beforeRevision": 15,
+      "afterRevision": 16,
+      "changedFields": 4
     },
     {
-      "id": "emperor_明孝宗_281841215",
-      "slug": "13",
-      "name": "明孝宗",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.15-15.apply.json",
+      "receiptSha256": "e38bccb6284f99395a9fc117f3f5418a0804d8f5fdd5746665b8456d099dc85d",
+      "resultsFile": "results.15-15.v1.json",
+      "beforeRevision": 16,
+      "afterRevision": 17,
+      "changedFields": 4
     },
     {
-      "id": "emperor_神武帝_276962130",
-      "slug": "14",
-      "name": "神武帝",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.16-16.apply.json",
+      "receiptSha256": "565991ed96448508b00e5a14c7801ae1143228290902bdf162871958947d188a",
+      "resultsFile": "results.16-16.v1.json",
+      "beforeRevision": 17,
+      "afterRevision": 18,
+      "changedFields": 4
     },
     {
-      "id": "emperor_宋孝宗_284427266",
-      "slug": "15",
-      "name": "宋孝宗",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.17-17.apply.json",
+      "receiptSha256": "7ac2adc4bcae9d5c83526cd39dc65efbe55c70ddc566eb21e1175b0324a255e5",
+      "resultsFile": "results.17-17.v1.json",
+      "beforeRevision": 18,
+      "afterRevision": 19,
+      "changedFields": 4
     },
     {
-      "id": "general_林彪_306298218",
-      "slug": "16",
-      "name": "林彪",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.18-18.apply.json",
+      "receiptSha256": "dc100d3d5695f17868c360fc1a0d315a7e6eb491fb55ebcd533c12eafcb93cdd",
+      "resultsFile": "results.18-18.v1.json",
+      "beforeRevision": 19,
+      "afterRevision": 20,
+      "changedFields": 4
     },
     {
-      "id": "general_拓跋燾_904534991",
-      "slug": "17",
-      "name": "拓跋燾",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.19-19.apply.json",
+      "receiptSha256": "bc2716c550a3557d02e7edee58076aeabe9973aacb4ac0c5d5871cda0d1a7893",
+      "resultsFile": "results.19-19.v1.json",
+      "beforeRevision": 20,
+      "afterRevision": 21,
+      "changedFields": 4
     },
     {
-      "id": "general_曹操_306294699",
-      "slug": "18",
-      "name": "曹操",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.20-20.apply.json",
+      "receiptSha256": "c6655fcf0043e05cc28596d9cafc438f2259ad0442103509653f31cd990da72a",
+      "resultsFile": "results.20-20.v1.json",
+      "beforeRevision": 21,
+      "afterRevision": 22,
+      "changedFields": 4
     },
     {
-      "id": "general_李勣_306292748",
-      "slug": "19",
-      "name": "李勣",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.21-21.apply.json",
+      "receiptSha256": "148437916854a5637ff9f1410e2f3342c0b47db84540067ec90f10d69e321454",
+      "resultsFile": "results.21-21.v1.json",
+      "beforeRevision": 22,
+      "afterRevision": 23,
+      "changedFields": 4
     },
     {
-      "id": "general_蘇定方_912794063",
-      "slug": "20",
-      "name": "蘇定方",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.22-22.apply.json",
+      "receiptSha256": "2d94d51500554ec9d1825309b03499ae216b243a30faa5b93bda902260d50b73",
+      "resultsFile": "results.22-22.v1.json",
+      "beforeRevision": 23,
+      "afterRevision": 24,
+      "changedFields": 4
     },
     {
-      "id": "general_粟裕_306475725",
-      "slug": "21",
-      "name": "粟裕",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.23-23.apply.json",
+      "receiptSha256": "030c004fb07178b4e9c885b074bd5c1bf1f7208443917684728867355249668f",
+      "resultsFile": "results.23-23.v1.json",
+      "beforeRevision": 24,
+      "afterRevision": 25,
+      "changedFields": 4
     },
     {
-      "id": "general_彭德懷_903329142",
-      "slug": "22",
-      "name": "彭德懷",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.24-24.apply.json",
+      "receiptSha256": "c4dd0ec87cee26acef9ff92d02bf5e9994b0260eade6c792ba89e8f42adebb43",
+      "resultsFile": "results.24-24.v1.json",
+      "beforeRevision": 25,
+      "afterRevision": 26,
+      "changedFields": 4
     },
     {
-      "id": "general_王忠嗣_908276471",
-      "slug": "23",
-      "name": "王忠嗣",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.25-25.apply.json",
+      "receiptSha256": "90b4abb0b836aa73ae958958644c0fd9b38de27d988327f8dfa92bb2ce77a647",
+      "resultsFile": "results.25-25.v1.json",
+      "beforeRevision": 26,
+      "afterRevision": 27,
+      "changedFields": 4
     },
     {
-      "id": "general_孫武_306204690",
-      "slug": "24",
-      "name": "孫武",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.26-26.apply.json",
+      "receiptSha256": "44a0f353279cadf8e288a5ee3ab618b87d1f6211273b1436022bb38582ea8eca",
+      "resultsFile": "results.26-26.v1.json",
+      "beforeRevision": 27,
+      "afterRevision": 28,
+      "changedFields": 4
     },
     {
-      "id": "general_朱德_306295133",
-      "slug": "25",
-      "name": "朱德",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.27-27.apply.json",
+      "receiptSha256": "2f07b3b784e1330695b5f761a933a1460e2a596449c22069bd7cfa3c487e5e1a",
+      "resultsFile": "results.27-27.v1.json",
+      "beforeRevision": 28,
+      "afterRevision": 29,
+      "changedFields": 4
     },
     {
-      "id": "general_孟珙_306206481",
-      "slug": "26",
-      "name": "孟珙",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.28-28.apply.json",
+      "receiptSha256": "030c21940a285f4e493e19722f28b075cdb49574e39fbc779db86e65dbb29277",
+      "resultsFile": "results.28-28.v1.json",
+      "beforeRevision": 29,
+      "afterRevision": 30,
+      "changedFields": 4
     },
     {
-      "id": "general_李光弼_905152266",
-      "slug": "27",
-      "name": "李光弼",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.29-29.apply.json",
+      "receiptSha256": "bab6ea8ca575718dd71be913c7ad1b457790dc9be9c47693b192f3266eaaf7be",
+      "resultsFile": "results.29-29.v1.json",
+      "beforeRevision": 30,
+      "afterRevision": 31,
+      "changedFields": 4
     },
     {
-      "id": "general_孫臏_306210427",
-      "slug": "28",
-      "name": "孫臏",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.30-30.apply.json",
+      "receiptSha256": "7ca4d3833a6d4ace9b1b4bedcdead6373e9d87045ab045e7a428c368002c1ee8",
+      "resultsFile": "results.30-30.v1.json",
+      "beforeRevision": 31,
+      "afterRevision": 32,
+      "changedFields": 4
     },
     {
-      "id": "general_伍子胥_899273611",
-      "slug": "29",
-      "name": "伍子胥",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.31-31.apply.json",
+      "receiptSha256": "b1248f54b6e1f459c665d54ef852eeb8f9a30b34dbd46cf8188c341fd9d28ac1",
+      "resultsFile": "results.31-31.v1.json",
+      "beforeRevision": 32,
+      "afterRevision": 33,
+      "changedFields": 4
     },
     {
-      "id": "general_白崇禧_908987622",
-      "slug": "30",
-      "name": "白崇禧",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.32-32.apply.json",
+      "receiptSha256": "d0c9711dd6d2ecf0fab22aea2f32fae43a4b7705a9f96c9b81cc65f57f1add82",
+      "resultsFile": "results.32-32.v1.json",
+      "beforeRevision": 33,
+      "afterRevision": 34,
+      "changedFields": 4
     },
     {
-      "id": "general_左宗棠_902922424",
-      "slug": "31",
-      "name": "左宗棠",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.33-33.apply.json",
+      "receiptSha256": "c0897c0916bcec184860738150c6dfd47425e7f35511de6bac0b12740bd4c6ce",
+      "resultsFile": "results.33-33.v1.json",
+      "beforeRevision": 34,
+      "afterRevision": 35,
+      "changedFields": 4
     },
     {
-      "id": "general_戚繼光_904227344",
-      "slug": "32",
-      "name": "戚繼光",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.34-34.apply.json",
+      "receiptSha256": "94c971153ea86dee61a1a41e69c08ed2bd554e228fd234a46e5bc0b7089bc747",
+      "resultsFile": "results.34-34.v1.json",
+      "beforeRevision": 35,
+      "afterRevision": 36,
+      "changedFields": 4
     },
     {
-      "id": "general_木華黎_905533968",
-      "slug": "33",
-      "name": "木華黎",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.35-35.apply.json",
+      "receiptSha256": "fd0ae938c709c3dc6a394c5e9b6f700402efa027eeff011ac703781e950bb887",
+      "resultsFile": "results.35-35.v1.json",
+      "beforeRevision": 36,
+      "afterRevision": 37,
+      "changedFields": 4
     },
     {
-      "id": "general_僕固懷恩_2119975374",
-      "slug": "34",
-      "name": "僕固懷恩",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.36-36.apply.json",
+      "receiptSha256": "a206fa54b564c3c05caad67fca91c9cc7206f536abaf053bc107cdc9d0da60c7",
+      "resultsFile": "results.36-36.v1.json",
+      "beforeRevision": 37,
+      "afterRevision": 38,
+      "changedFields": 4
     },
     {
-      "id": "general_陳慶之_916874609",
-      "slug": "35",
-      "name": "陳慶之",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.37-37.apply.json",
+      "receiptSha256": "ac6dc7035f14208d89dad84d8e5994a0272eb64ff994e7870b4d2e068d88256e",
+      "resultsFile": "results.37-37.v1.json",
+      "beforeRevision": 38,
+      "afterRevision": 39,
+      "changedFields": 4
     },
     {
-      "id": "minister_周恩來_1990120203",
-      "slug": "36",
-      "name": "周恩來",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.38-38.apply.json",
+      "receiptSha256": "4c0877ea47e7809388278c6bde051113137670b4b6da9080d952f03142ce6f54",
+      "resultsFile": "results.38-38.v1.json",
+      "beforeRevision": 39,
+      "afterRevision": 40,
+      "changedFields": 4
     },
     {
-      "id": "minister_荀彧_2004230913",
-      "slug": "37",
-      "name": "荀彧",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.39-39.apply.json",
+      "receiptSha256": "e3734ef8f6bcad0fda8a051dd50fd0e134acbc8c302954ae75707dd56334e7ab",
+      "resultsFile": "results.39-39.v1.json",
+      "beforeRevision": 40,
+      "afterRevision": 41,
+      "changedFields": 4
     },
     {
-      "id": "minister_張良_2003953844",
-      "slug": "38",
-      "name": "張良",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.40-40.apply.json",
+      "receiptSha256": "8129301d80dfa2d8561c1bc2abb59fd87c9afa5c1cdc78ac33d900df8ddbb7a9",
+      "resultsFile": "results.40-40.v1.json",
+      "beforeRevision": 41,
+      "afterRevision": 42,
+      "changedFields": 4
     },
     {
-      "id": "minister_李斯_2004010747",
-      "slug": "39",
-      "name": "李斯",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.41-41.apply.json",
+      "receiptSha256": "d39e06e223c201cbe547fc8ff8af7cc218debad7c55bfdbdf0be5ecc3781d4d6",
+      "resultsFile": "results.41-41.v1.json",
+      "beforeRevision": 42,
+      "afterRevision": 43,
+      "changedFields": 4
     },
     {
-      "id": "minister_于謙(名臣)_924336368",
-      "slug": "40",
-      "name": "于謙(名臣)",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.42-42.apply.json",
+      "receiptSha256": "c772f694cae6ab39354249ad7447cd8664b8515ce98bfd60dc9911e1e45cc49c",
+      "resultsFile": "results.42-42.v1.json",
+      "beforeRevision": 43,
+      "afterRevision": 44,
+      "changedFields": 4
     },
     {
-      "id": "minister_謝安_2004292326",
-      "slug": "41",
-      "name": "謝安",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.43-43.apply.json",
+      "receiptSha256": "7e2811dd9fd07b768cd42f9d76824d7829730ad660f735b1b8c3d601a3b7b436",
+      "resultsFile": "results.43-43.v1.json",
+      "beforeRevision": 44,
+      "afterRevision": 45,
+      "changedFields": 4
     },
     {
-      "id": "minister_范仲淹_2001455088",
-      "slug": "42",
-      "name": "范仲淹",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.44-44.apply.json",
+      "receiptSha256": "87f9fc022e09dd5672f8c47d793d5891e320c8e2cfb84b2dcfbabe357e176fbd",
+      "resultsFile": "results.44-44.v1.json",
+      "beforeRevision": 45,
+      "afterRevision": 46,
+      "changedFields": 4
     },
     {
-      "id": "minister_朱鎔基_1995149885",
-      "slug": "43",
-      "name": "朱鎔基",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.45-45.apply.json",
+      "receiptSha256": "e640b3d92dbf6a0c985e5e9cf6033826c31534bf4db26233fd57580a268a2c18",
+      "resultsFile": "results.45-45.v1.json",
+      "beforeRevision": 46,
+      "afterRevision": 47,
+      "changedFields": 4
     },
     {
-      "id": "minister_劉基_2003842411",
-      "slug": "44",
-      "name": "劉基",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.46-46.apply.json",
+      "receiptSha256": "8de18111be798f6bd7dca70a7c2bcfa265a9a78f7c78ad4a37dbf0edf3a97a21",
+      "resultsFile": "results.46-46.v1.json",
+      "beforeRevision": 47,
+      "afterRevision": 48,
+      "changedFields": 4
     },
     {
-      "id": "minister_張廷玉_1992775117",
-      "slug": "45",
-      "name": "張廷玉",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.47-47.apply.json",
+      "receiptSha256": "d9b6555e1bc0758256d1d5720db8270a6f1be3dc92d4a941000a1a2317287ed2",
+      "resultsFile": "results.47-47.v1.json",
+      "beforeRevision": 48,
+      "afterRevision": 49,
+      "changedFields": 4
     },
     {
-      "id": "minister_霍光_2004384438",
-      "slug": "46",
-      "name": "霍光",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.48-48.apply.json",
+      "receiptSha256": "7839f5020286df0049a05c6c2f635a6593471c61cbc5de21ef87066e8cc370ee",
+      "resultsFile": "results.48-48.v1.json",
+      "beforeRevision": 49,
+      "afterRevision": 50,
+      "changedFields": 4
     },
     {
-      "id": "minister_張之洞_1992641166",
-      "slug": "47",
-      "name": "張之洞",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.49-49.apply.json",
+      "receiptSha256": "a19b3aa1e7f68f16b726d087969018c4b65ce2c26a0f3568ab9846007474b55d",
+      "resultsFile": "results.49-49.v1.json",
+      "beforeRevision": 50,
+      "afterRevision": 51,
+      "changedFields": 4
     },
     {
-      "id": "minister_子產_2003919532",
-      "slug": "48",
-      "name": "子產",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
-    },
-    {
-      "id": "minister_陳雲_2004397497",
-      "slug": "49",
-      "name": "陳雲",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
-    },
-    {
-      "id": "minister_徐光啟_1992746284",
-      "slug": "50",
-      "name": "徐光啟",
-      "prepared": true,
-      "fullyImported": false,
-      "importedFields": [],
-      "status": "not_generated"
+      "file": "import.50-50.apply.json",
+      "receiptSha256": "9f5270821773b8a072cc02f367c31aa13f5e99c5e58241b1a4271fd3183f2492",
+      "resultsFile": "results.50-50.v1.json",
+      "beforeRevision": 51,
+      "afterRevision": 52,
+      "changedFields": 4
     }
   ],
-  "resumeConstraint": "Replan from the published receipt ledger. Do not blindly rerun the original fixed ten full chunks or overwrite published fields.",
-  "remainingBatchPaused": true,
-  "activePilot": {
-    "slug": "07",
-    "name": "乾隆帝",
-    "limit": 1,
-    "status": "completed_and_imported",
-    "reportFile": "analysis-batch-50/combined-pilot-report.07.v1.json"
-  },
-  "latestVerifiedPublicationRevision": 7,
-  "latestSinglePilotReport": "analysis-batch-50/combined-pilot-report.07.v1.json"
+  "externalTransitionsRequiringSnapshotProof": [],
+  "rebuiltBatchCount": 48,
+  "finalAuditNote": "All fields and preserved library were verified by the production final read at latestVerifiedPublicationRevision; this records that observation, not perpetual freshness.",
+  "records": [
+    {
+      "slug": "01",
+      "id": "emperor_漢光武帝_80238619",
+      "name": "漢光武帝",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "58d8e723e4659f84daaff086fb0fbfcf55fc685c49ffd73b6d2333e5fa75042f",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "f94792da8489e895f6b0c685c3200c7f41d09dd54f810997a292eeff375395e6",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "stats": {
+          "sha256": "6be24d990bb5279f9d9a5d3ce657602ea48307da0dce9a356f0c2d14f4cd23d9",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "fde1fafdf080fb58c98ac77fe3e6851339d1ff1073e1678098a0a8c2dd79b53a",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "soulEssence": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "stats": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "02",
+      "id": "emperor_宋太祖_284437104",
+      "name": "宋太祖",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "2f26c5ba50ea18561803963c8cc6fb394a1b1fca42616ce0a668b390041cd2ba",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "cd623fcc5c9060409d5b4933dc529eae07862ef27b23058bca13dabd4f6f1f54",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "stats": {
+          "sha256": "5c2ed376c8e634662ffb71097fb52cc305945e77ee1394eadc696ded418a4bac",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "b0eaba76b92e6e663b2e5e91d7a7b8044038b3afebec5bbed0cc2996fce62f76",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "soulEssence": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "stats": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "03",
+      "id": "emperor_康熙帝_283469836",
+      "name": "康熙帝",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "90aa916d5392727ecdc5b69e10899612c63d8e0e2d377cab9985779de4ab95db",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b1ffcecf6fcfc6e12f60909709469f19d61bfa7bbab1d14f1da484816be24da3",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "stats": {
+          "sha256": "2b28d18e0a7fb9bc7041cbea0f2bdad34b084258cad9c008494cca26e03d7579",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "6bec77a26d485ab78f9dc41d7f36f13402c52db94121fbb8c5d6b7c0d2774722",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "soulEssence": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "stats": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "04",
+      "id": "emperor_明成祖_281780435",
+      "name": "明成祖",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b99c970ed80bbad533a9f52296474426b4b6745e8d05d9ae8208e23ec42f76e2",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "5f88009e48ac47b16554da036a73e4292f4d79470663a2a2558a070bb6227b43",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "stats": {
+          "sha256": "e5a0e7510c0f50e7885aa2164248f39479b284264aa28eb90d1f3c180be1ff97",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "447f35e5339526475460b207e81ff24b8b0d400aca90cfd74f4791f95a0d025a",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.01-04.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "soulEssence": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "stats": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.01-04.v1.json",
+          "provider": "ChatGPT web"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "05",
+      "id": "emperor_唐高宗_285517784",
+      "name": "唐高宗",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9e29af7729ee3e07147171d06915a781602a3f65c75d9ccd0c8ef6c87e19d705",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "37c2782e57c51f77edf586f5d58d8853919d2ea79bdf0ae6cfb259cde05d6297",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        },
+        "stats": {
+          "sha256": "cb0b9b0055f6923afd35d216a460d9b96002907c6496602cdf00a94dbee58b68",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "14be7829acbc5283552c6607a495ffc04cd8036ee54ce69b181b571ab9db1a99",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.05-05.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.05-05.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.05-05.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.05-05.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "06",
+      "id": "emperor_秦昭襄王_7247317",
+      "name": "秦昭襄王",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "26b7b6a9df0c18e849e5eb90d4ad4ddec4a62a86e8eb241bc754a4765fb74acb",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.06-06.apply.json"
+        },
+        "stats": {
+          "sha256": "a2971a0807f96afb3c3b1d9891994182b967037ce3941c7349d10568196c6f82",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.06-06.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "967686a95d483a810b3096023629de01ae5dbc343a3dbeeec9aa9f2578a6f8a7",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.06-06.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "c0b2a15e10bbaef1b516a589a241cd4f010ca57b65168ceba0895b28c9f1551f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.06-06.soul.apply.json"
+        }
+      },
+      "assembledFields": {
+        "soulEssence": {
+          "resultsFile": "results.06-06.soul.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "analysis": {
+          "resultsFile": "results.06-06.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "stats": {
+          "resultsFile": "results.06-06.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.06-06.v1.json",
+          "provider": "ChatGPT web"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "07",
+      "id": "emperor_乾隆帝_287167826",
+      "name": "乾隆帝",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "48ecf6c540c25cacb995c6bf59caf158ea9a92a212fdda659ab3ed6098245fdd",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.07-07.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "583195647a7a811e633186331fde0e29de040535ee9bd8dad51f7fe26b7984d1",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.07-07.apply.json"
+        },
+        "stats": {
+          "sha256": "1306aa9a576ca4a478e2c421e7244ec61f66b9b5b56baa8a86d7f0217c2a8192",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.07-07.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "73b7ab0235d684851a7da480510569a1b97429054c263734600890c3873f4f4c",
+          "provider": "ChatGPT web",
+          "receiptFile": "import.07-07.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.07-07.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "soulEssence": {
+          "resultsFile": "results.07-07.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "stats": {
+          "resultsFile": "results.07-07.v1.json",
+          "provider": "ChatGPT web"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.07-07.v1.json",
+          "provider": "ChatGPT web"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "08",
+      "id": "emperor_漢宣帝_279605035",
+      "name": "漢宣帝",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "79c4de8657b3d7d6aad46588dd2f8656ff42fdbe25dc2b5919dd6d315c99de0d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "3df11ec223ef72198e2e9762783a83e8a742700bcad0b88d190919cb580ce23e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        },
+        "stats": {
+          "sha256": "101c1ce1ea1c1808d852df38d7ddd40de135d28ba728f33ea40d227d4d235a14",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "5e6a5b76e24009d1ec4447d8fbe330077a764619983c252f14f1198c9da3099e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.08-08.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.08-08.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.08-08.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.08-08.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "09",
+      "id": "emperor_宋武帝_284299365",
+      "name": "宋武帝",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "53205f81b49e6d0a4d21243a0c9e228779a39d5a7c9bdb4945dfab8a9db2f756",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "1de96165cbf1ba22c6e0e18a942752cabe1c66f5c5116355ae437dae25024ae8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        },
+        "stats": {
+          "sha256": "b0c762127440ac897c110dc6deb166849002374f6d542148c4da92b5dcadc9bb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "e4e4546d12efa7b63cf0e386c57cbd01d1dc3538c6d5e7253a8ab141800d5eb3",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "10",
+      "id": "emperor_宋仁宗_284527334",
+      "name": "宋仁宗",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "dc3d778d8ebb115e4bf23431cf94f66a19a24e80429d5a961c88b20a1356439a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "6489cd40cf593188e5d7a38df04d93a8ae2219d2acc6814ab390f4d4c3e81ba9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        },
+        "stats": {
+          "sha256": "68a90b9807046d0feda430bf75802c03b6d3a2cdb98287c0d3e9af79ab453476",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "fcf4bd76ba32595baabd2e74495238463774140a8bcfef31b3073710accd2309",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.10-10.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.10-10.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.10-10.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.10-10.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "11",
+      "id": "emperor_武則天_280599295",
+      "name": "武則天",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "ed1873401778b34c3c0a849c0b2fbb258a0376f3c4a239608f4effadba23bb97",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "ac763be09164be901c4b0ba84450256c7c76d8a01e186cac3aed9d2cf62e0a90",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        },
+        "stats": {
+          "sha256": "f41cc18d9b6b3c260e204f86521587d55a482c54fc0e7a4c51ee7e7f49e4cca4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "61e97626c433600165e3e85c80700ebcd6151535f08d4cdeaeac2da74fcfee5b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.11-11.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.11-11.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.11-11.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.11-11.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "12",
+      "id": "emperor_宋太宗_284444719",
+      "name": "宋太宗",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "401e9404a947cec05a2af926769335b3367cc38bfe5e7118aabd6ded4c103c01",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "64669999a2c9a52f2d6c53a321572b01877a7500a84ca429d61ad25b31d0b8d8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        },
+        "stats": {
+          "sha256": "05444914eb5545640852d59888331bb4331389a16ace02b928578c55ea7c870b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "fee814ae51e8f1c7ded619633eb3ad5fe95364263666b010dcc0f6fabca99d77",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.12-12.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.12-12.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.12-12.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.12-12.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "13",
+      "id": "emperor_明孝宗_281841215",
+      "name": "明孝宗",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "2e3471e23d6d635b7e157e0a8b8027c3f9f79a98574c2e83da06d0c80e0556f8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "2866e45c8ba2e801e38876f6938e38f7a925852a24681cca65c06060e7d0aed9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        },
+        "stats": {
+          "sha256": "479ca62bf51b1d00348accfd7b5bc82c8bc0ded7960d9039994cfedd39e8ba1b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "632df22642620400948a1f337d99e2498e222450ea7358447f132729c1940843",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.13-13.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.13-13.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.13-13.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.13-13.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "14",
+      "id": "emperor_神武帝_276962130",
+      "name": "神武帝",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "90ec744cd2d2a52995b38f3ffa59197aad4297f90730e27a5393efaf77300c6d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "2906040b89eabeb92a51d148b71233946bad65a27091fe607e14bc731bc92ec5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        },
+        "stats": {
+          "sha256": "b5c6f121108775a1883260db477b89fbb2872535348eae9444e0bdc0837ac2ee",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "aae330cc671d489960dd4c7420004a6c7b2948d2f049a11dac87da4f354e7dff",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.14-14.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.14-14.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.14-14.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.14-14.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "15",
+      "id": "emperor_宋孝宗_284427266",
+      "name": "宋孝宗",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "8f231a1e9c1b27e35aad7c01afd37cd16b280b74a9754fdd90ee3fb613ec8464",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "f63b1fda1139e1766c46cefacfc20d7b7fd706e967876205699aa1fffcab7496",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        },
+        "stats": {
+          "sha256": "5ddad52f6a0273ac5508c2c31f499370eb900d576c39d50de2acbaa97abfab55",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "d6efa4ad627d45fac701e7a8d18381384633d65d4739200185086be1c45de43d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.15-15.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.15-15.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.15-15.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.15-15.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "16",
+      "id": "general_林彪_306298218",
+      "name": "林彪",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b87fe17eb55d447288fd20181984e89d7410aa0002a4d263a25641588368e6c4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "7853c370718fa6636d3dd29dd54632e41a8c3fce117426c8aa6ac73acad70838",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        },
+        "stats": {
+          "sha256": "896804d27a6a6e88a169466e2b4a6203c92d829a148ab0064d1289ac0f3029e3",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "850d8b7f6c572f2a45befbb66aad36bfcd529592e10712649550fd7e423f632f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.16-16.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.16-16.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.16-16.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.16-16.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "17",
+      "id": "general_拓跋燾_904534991",
+      "name": "拓跋燾",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "3f7a9a6dc6f4819722b80b728e4067451431eafac20a6fc141be304c8839efc5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "5fe55cdab0263b4fd896bdf96c54da1048e5b232dc823d4bfa6e02c05f3f4e1a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        },
+        "stats": {
+          "sha256": "dff881d3099e3214011daa1775c4ea37c8d7cbd5491c47c47e74c0c4c2ba0eb0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "aeada09371ec25ae6d8616aa9be8970c8ec1a780377cf4c5b2ed19bad5870792",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.17-17.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.17-17.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.17-17.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.17-17.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "18",
+      "id": "general_曹操_306294699",
+      "name": "曹操",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "e565427fe49e7131f3ee63cdb0b62a68da87491db2632a60c005665fe2789303",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "94c40a5c62ed701a1433a742a5d62bc11d2836978b7783e4f8b231233f4755b7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        },
+        "stats": {
+          "sha256": "68d710c48b5696f0c53314404af08746ca89ca4fbd3de93ece7135ac882ad95f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "f2bc8b22c84a8c37393f3b0f420a6b1f9f11fd9ad678bf436417a97f0b7cf1aa",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.18-18.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.18-18.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.18-18.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.18-18.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "19",
+      "id": "general_李勣_306292748",
+      "name": "李勣",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "4e62accd36e13a13825e67fbdc8accd902aaa10bbba00e63fd48cc6d1fca34bb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "16826cecb7c2988ec9c2d1b1bc6d5dc98a21e5c92e98ae0398ff5ca3368c0d9d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        },
+        "stats": {
+          "sha256": "3231a20d59262cf16473ea58c727c6c2adc7cde53c414e05c9ba83a9f83dcbd4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "fc829f72b7c6dc9bfbc609bb98bbb144b8d0be670e57c781c762ab009102c0fe",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.19-19.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.19-19.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.19-19.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.19-19.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "20",
+      "id": "general_蘇定方_912794063",
+      "name": "蘇定方",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "127c9d3e9227b23f35480fbecbb11b2114e2440bb695e6653187e7a238913b4c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "329d44249ae1bafea89c896bdf95d4fa9ed61b59d7dc984dde78192400ad19e2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        },
+        "stats": {
+          "sha256": "1cf2e720742bb4971b6c76d736d74f7eb9918e62e17d60277fb7ec3faf9ab608",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "84c9b5654c735b5d09ec1ad9120f2854471e3423d0acdc4dacf7373c45f18332",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.20-20.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.20-20.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.20-20.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.20-20.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "21",
+      "id": "general_粟裕_306475725",
+      "name": "粟裕",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "3f4fb771382fa61d3e11e81c7a256c75201b4dabe06411fa9b21872081f230aa",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "10409e69b3bcc2a5554acd7d2dcae977d22647fe0ed9c1c2ebf4969bb61dada9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        },
+        "stats": {
+          "sha256": "1c5501de3695f2740e5adcb53d9b49f28c22f5327f4c4a3661639ce03684e920",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "3613a7fb611ce1b7ae6377220685f96b10f75aa23df7a89e1082fe98647b4f72",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.21-21.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.21-21.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.21-21.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.21-21.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "22",
+      "id": "general_彭德懷_903329142",
+      "name": "彭德懷",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "c5f411e18f4a3ce21552890ea1ae4c4984cbddc377169d60de011d31ff0d7cb9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "5b8716194bc82ef2999cbdb2ca6b185c43ccad9c4334e32d08dc525715f46cdb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        },
+        "stats": {
+          "sha256": "2db7c7c96646ed1a71db613a3b236683029d91506140a9b8591c833a917a738a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "704781119e23545e9441d783ee5ee951368b6930204de2053fda43b5ab0dcba3",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.22-22.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.22-22.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.22-22.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.22-22.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "23",
+      "id": "general_王忠嗣_908276471",
+      "name": "王忠嗣",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9e7f7b8339421570057ce0046f22f564de378a0aaaca795acb4391df3a98d8e5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "2d604e22fa12a47e9c06fc45fd391db3ebf75464159423c8feb659dd3d2f58d7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        },
+        "stats": {
+          "sha256": "328c6f864e994f5ac92bbc314d54ad067e15b1098f10517bf0c101a8c9699371",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "88096393fdef366a56d0e2da48919a70a1767dd277450f15f7013b1677c18a65",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.23-23.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.23-23.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.23-23.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.23-23.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "24",
+      "id": "general_孫武_306204690",
+      "name": "孫武",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "88f20f2cb59342bd5da5c722efdc147bb66f5922a2554fbc668ed05c0d332ee8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "25c24f34194f50ffad6bfdb6924d5ae5a3640677510524e51905dfa51912a9b0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        },
+        "stats": {
+          "sha256": "d3a174966b3044ca7ad80b64abd270b3ff4c89087de7d3bcf169447ebd28aeb6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ef05c6758fe126c07645ea495f7b14e66a9901f88e5c761f94a4fb1a04ed9f0f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.24-24.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.24-24.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.24-24.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.24-24.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "25",
+      "id": "general_朱德_306295133",
+      "name": "朱德",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "45dda8d50a96cd0a4fbca40c91a3895baa9a032a13b4c9f885b7f5d271cc92e7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "a1eb41724a2fae79649648514d281ec6c1e4d8a19c1b87038e6e9452250378e2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        },
+        "stats": {
+          "sha256": "97ac5f55b8a5162214031039efd81cb2f1d352eb90c9f12cbc40be2ce8ef04fe",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9cfde795a5f9af12376a20e0bc60be658f7e287ed5d824ed8ee364921ba7b110",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.25-25.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.25-25.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.25-25.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.25-25.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "26",
+      "id": "general_孟珙_306206481",
+      "name": "孟珙",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "c6df86d584a7b9c315ac4cdc5e6ed49343bcd0bdb857c00e6e73ac34a76122f4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b21f542f50543d91eb5aa0050aa7bef9582e0ea6dc1644e54652f0c2c42fff74",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        },
+        "stats": {
+          "sha256": "0f6d03f362c0c5c26618965cbbfee28ba74d306a5f29bffdba8ca0677fd4ef11",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "630377cc48123dd477bda74dbad7183748e97d530051ce55ae1fe84792ee220c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.26-26.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.26-26.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.26-26.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.26-26.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "27",
+      "id": "general_李光弼_905152266",
+      "name": "李光弼",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b26ae606461fe59977d9461e80836e730a06084a351904d21b0832014f7aa037",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "47ee2a942db52b446da2ad1b41081008c994b46b254eda9a00083e25effa0d7e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        },
+        "stats": {
+          "sha256": "d378e328ef1da7a8dddaa8b779596589b7b5b58d407d7752eb17d671cbf63ff0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "e4ac6c696f00ca0b025af7eed52051f7c823cba7a5caffb6fbc2a50a51b8e1c5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.27-27.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.27-27.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.27-27.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.27-27.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "28",
+      "id": "general_孫臏_306210427",
+      "name": "孫臏",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "e4898561f755154ca7ded4fe7e755f740cfd576ba861cdb44c3e561266e548c1",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "678bb0684c779dc78c865e0ea9c58b18fcf3337b67ac62a8fda56031b684ff10",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        },
+        "stats": {
+          "sha256": "1ee43a1ad020659bdf5ef6d27e6235fc1d894291eb8582edcd39bd45ac1a4b7f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7d4c619f4bf3d51eae2083e10cefb8fac4c85b5a79e52448d31b9bc61033b7d1",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.28-28.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.28-28.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.28-28.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.28-28.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "29",
+      "id": "general_伍子胥_899273611",
+      "name": "伍子胥",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "87e9dcc78effb65b67b23ada746cacaa22fbd93be7a5e60efd758bdde4655446",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "9e100046e4d439895ecc4121e94391b3affffd4c519912ba3ccebce5d4828fa4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        },
+        "stats": {
+          "sha256": "180faf8553fd70b2b50262260d322270d4317799fd48ce0db83123cc9c1e217e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "61528eef98dbe91cd69eed42caa932a3cb23836076f5f8c5b603e8190a0ebf0c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.29-29.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.29-29.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.29-29.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.29-29.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "30",
+      "id": "general_白崇禧_908987622",
+      "name": "白崇禧",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9d0db548d9c2c570ae36cee4cf64a96eebf994ca12635957ab018196c33ec0b4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "315c1f8f5c5ffc8a1c4734cee33a1fc9eb75af0f4a19c00176d850954e235b7f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        },
+        "stats": {
+          "sha256": "c9fa909183c6c697aea45c86a119c18894c0002305edc490c34ea2814d90417f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "3f78697b3c155a9abf9bd0d25ebcea44eafb0d6e60afd083d28863679e7f4f12",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.30-30.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.30-30.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.30-30.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.30-30.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "31",
+      "id": "general_左宗棠_902922424",
+      "name": "左宗棠",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "338dd32ce1f1e05275290c0ccd0cf110b0f4aae216473583e11b405cb1d49b2b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "00018aed7ecc0d1453a1dc060c85f8ffdfe91411df5170c3d507234b095a2fed",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        },
+        "stats": {
+          "sha256": "1a8cac63a1c3a393589f2e61a729f14702c2fbaae829f8707be8c62016fb397f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "73ebf025f8e29518b94104b0e435ea564c8a32c4fe6ee5e97d43c04282db4373",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.31-31.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.31-31.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.31-31.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.31-31.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "32",
+      "id": "general_戚繼光_904227344",
+      "name": "戚繼光",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "a81e7c895efdf893d36ca0a640825127b7861c707e59784391738c7a2f09be6a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "875991065b023d679882f3a487251d2d95bd3eb5c54047f10d46c27bc98989c4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        },
+        "stats": {
+          "sha256": "4eb90bed496b1a7b8ab1ff057c83eaed497ec787e2878dd00d3111cba69fbd89",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "412c33385a420b59077b650f581a6a2a4feea9e8370cd1bd19226152b886a6e0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.32-32.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.32-32.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.32-32.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.32-32.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "33",
+      "id": "general_木華黎_905533968",
+      "name": "木華黎",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "40e32f766066b1b4784611a53633e3b8b4c638941bbc88ab2bcc2ed91b9edeca",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "06c4f08438d63ad67c72abad07e2fd73406a6de03d91609dbb266d3ae2ae99ee",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        },
+        "stats": {
+          "sha256": "3fb882acd19c0ee4b8ebdfd5eaf77f4da9309c5acc46fef708aede834e155ccb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "c54bd5599a1339c24a492c58d1e5f126be0eaaddd54ccb5161c3890e30b73fec",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.33-33.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.33-33.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.33-33.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.33-33.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "34",
+      "id": "general_僕固懷恩_2119975374",
+      "name": "僕固懷恩",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "175808a10b4e84e3b2d9327f65f3369ebb13e549e536eeda20c1480b0f8866d6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "ac631f6242cfb0988fb3c7efec9260d9e987bce7ad306f1d096cddf8457f03e5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        },
+        "stats": {
+          "sha256": "d926c3611888f71e8e666a3c306552658481f2adebe3c0983956bf9fb13a3210",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "03b31c0f416608a3355d19862175a3bd2bed7cdc83eece42dedeb6ce85cf74ac",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.34-34.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.34-34.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.34-34.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.34-34.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "35",
+      "id": "general_陳慶之_916874609",
+      "name": "陳慶之",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "ebd8d264c83dc7069cc68323d6d480fff5727f71475d748ecb48290f800a5396",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "35fb7e59490c184495d1a2f8775cfb2af498204ba695da887afe9a932ebefd74",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        },
+        "stats": {
+          "sha256": "1b246ea4054f39f3e54a5c02237d00787fc15b9276719007d11b074535ee0f68",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "e50bec1ed2e22fd1c8381dbeeef668493b157a902564e20092bd787c38f57c36",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.35-35.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.35-35.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.35-35.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.35-35.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "36",
+      "id": "minister_周恩來_1990120203",
+      "name": "周恩來",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9ee914208adc137a1f6683be8873c8c7822da16bbfe68e4aa18972cfba3c5154",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "502ab6125b6828c6a6c027e9a90bf0f362354ee9d197df35196c34456aa8f4ee",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        },
+        "stats": {
+          "sha256": "38f0b66b6b99dfd7796a7800d013579dd3f822769e101cd83cc9f62c64bb3161",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "66987993dc9d54aebbdd00d520b9f3598f319cd0f114fe981f1137c33730dfca",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.36-36.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.36-36.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.36-36.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.36-36.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "37",
+      "id": "minister_荀彧_2004230913",
+      "name": "荀彧",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b7ca2729ed5b14b074737d9b526e69a60cbdbe14d94ddb17a7042c4745124e8b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "6f2791acdd82fc34740fd10e1af4517932bd5cbb6e496b9770deba7711c73f84",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        },
+        "stats": {
+          "sha256": "34f0984bcf470db24dbb193e7392ed1be9f9d33d371c78188ba13ce6db66fde2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7dbd4faf0186c3cb2cc12675b3e1ff59965d639e397489293d5b80e0e3890a3d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.37-37.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.37-37.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.37-37.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.37-37.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "38",
+      "id": "minister_張良_2003953844",
+      "name": "張良",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "91ddec2f93abfa8c67ad8e4bccc3c627c39e15a322aeec8b9b59eeb0f9fd938a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "e04bf88c3a73604f7a229ef39c6153a263bfc4132f68c0e9b8a1105749963b76",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        },
+        "stats": {
+          "sha256": "ef6ee2e1dc9eeca0cc2456bec587acd1015a2c4ab3e29148066d436cc77b3bd8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "0df92692203a7ab63d2cef88d275364af5a9b9d899872b97d73eee47436ebcd8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.38-38.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.38-38.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.38-38.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.38-38.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "39",
+      "id": "minister_李斯_2004010747",
+      "name": "李斯",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "4408816cb2db0e614c90046da4f0ec6f8771cd2a2b826301136e913b26b3f33a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "83d564d72a6ba8e8b1ab747885ff096c867a67156b454c16b27d528898b89e3a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        },
+        "stats": {
+          "sha256": "ffb9b947a0447805497133a617a76dde009d6baa673a3abff6701fd8876519c7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "2cd637baaecbaf503f863a1d169a598e09b084d3cd448ff0cd254a2c3d24af78",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.39-39.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.39-39.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.39-39.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.39-39.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "40",
+      "id": "minister_于謙(名臣)_924336368",
+      "name": "于謙(名臣)",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9f7fece205574400ae1214cfed54337ae3e3974a022a88032cc089e018a77bc3",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "62e108b6524b23ecb363563edcfcfbfe9d2d5e6060dd2f6706d3951d64b87f29",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        },
+        "stats": {
+          "sha256": "93b8da4016c798a138b6f07f5115af01a5cc1a39fd1501f7a0de522f1b1f1fc7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ea2c6abb0675ee94aeab69487ce4e6e8d89239edd9383cbe1d51fa0909818f48",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.40-40.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.40-40.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.40-40.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.40-40.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "41",
+      "id": "minister_謝安_2004292326",
+      "name": "謝安",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "3af473287f88c17bd136181ffa65f740ca81dc64ded7d45f6cd058653eb1d637",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "1e86bcf01d661dc7dfeafa28fe3420ee7e1e717075eae3def9a61189f7d58c9b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        },
+        "stats": {
+          "sha256": "fcd3b1de22b2b11270653825d26fee4982ecd66995506741374ef67ad73531ed",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "08c73abab8cc5d985e37188df209a1d0dc1327be6022b919d4744435e23aaf1d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.41-41.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.41-41.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.41-41.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.41-41.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "42",
+      "id": "minister_范仲淹_2001455088",
+      "name": "范仲淹",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "3e7ddded4ac8944adb64bf14e13bb0e237a44c708744311eea747b0e026043d6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "18963ab2cdf0c5662c1e7ae2880ad8c44e82f5b6722e840da2710154a698107c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        },
+        "stats": {
+          "sha256": "44f8244dc7bf30789d7abe18b930d0ddd40fba2e4a1ad1e080591a6436cc4544",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "1a2b45fe44829b8986b6cd32537bd381c913fc8233279e69bac1475cb2b88e23",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.42-42.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.42-42.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.42-42.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.42-42.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "43",
+      "id": "minister_朱鎔基_1995149885",
+      "name": "朱鎔基",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "8b3e8e4046592328cc3cb24571acef7a3ac6a70bfa97ea410584e58b311b8e27",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "1c1e9f31f303bff59ef1c629c395075c27fa413ab078360df72395a2b07a2904",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        },
+        "stats": {
+          "sha256": "25bfff25cd29eddd4e1060fd69aa43368c2cdc4f521762083f2c23954a857749",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "4dbe96725c23bbe7df3de19a6db709fd7f4adbc93dfcc66e6798a745035d1f80",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.43-43.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.43-43.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.43-43.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.43-43.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "44",
+      "id": "minister_劉基_2003842411",
+      "name": "劉基",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b6c4e1eb18c539b65a00e067b7311b5f22eb26f1b2ecd7895569b2957435b551",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "9066c8f8f5832e63611fa69d09b2f517524241cb7cc6bcd8e52e811f1be48800",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        },
+        "stats": {
+          "sha256": "0e74bdcf9c51800e33c307bb6880a14c7bdbc14aa1d9f069cac4c924684e4f8a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "10f5e88b0f1f3cf981802f5bd48ac72574891ce0492f3aa80a5414d1c2b1fdd5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.44-44.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.44-44.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.44-44.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.44-44.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "45",
+      "id": "minister_張廷玉_1992775117",
+      "name": "張廷玉",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "01cc101682c69c85e3bebaf0e1580eecb308481741798f88c96e3c85e19c98a7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "1e8d013ba7b205b0d34cac5cb070cf8bfe6e21be9637c8a623de71eb2afed4eb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        },
+        "stats": {
+          "sha256": "36a0a977d823c1bef5cf31e957c242e1518b349c0a67851bf7d633a3e22caf21",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "0b380a0b6eeca828723c7441b95b18a7a00bae934c96c53273b611e6042d8163",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.45-45.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.45-45.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.45-45.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.45-45.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "46",
+      "id": "minister_霍光_2004384438",
+      "name": "霍光",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "0d931fc84d80235763d372fdda154d2e353606d87f9cb7f2818ed0c9fbdad2da",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "3a474beda4aad6c158262e4cd2e195820ae2f0968fba0f4bb1e2ed6969136ad4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        },
+        "stats": {
+          "sha256": "8b31edcfb3632d261c2efa2f397b0117556b46c8cac479039732dc722dd11e52",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "8bd2ff691ec850486325f9d41c7f22a209ef7d8cf33a7b9dc46f09e1b0a4bdb6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.46-46.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.46-46.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.46-46.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.46-46.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "47",
+      "id": "minister_張之洞_1992641166",
+      "name": "張之洞",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "83fdf9f03fa126e0920ad1843d1104bc4d58b76320b146e679e6dc559b9888c0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "27816f1b2abd88a59c21dc817f8b80ed3e37052a5d8327c9e6cbd122881bb036",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        },
+        "stats": {
+          "sha256": "73b03a0cdec956e09e5ebe6377fece3d59bc5102fb1194b6d5edb365aaa06957",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "6cee5695097b893b1b5c0d1f1cb3fa1bf16a1bf5a87e3fef4490deacc2e6a573",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.47-47.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.47-47.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.47-47.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.47-47.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "48",
+      "id": "minister_子產_2003919532",
+      "name": "子產",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "363e1edd6c7401e6a89a14b2a41f9c2c5b81374453d10e40437aca354db31915",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "57342d3ba9e1f6bf6b1e8774e5258f0b42003664d113433d566a1d5fee65a439",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        },
+        "stats": {
+          "sha256": "0c2b82b2879b7ad0ce2506bee34a8266c55cff490892634e0d41740039e3991b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "40eb857e3920f0a7677b55b72fb0356d67a7998acdb2a324b52e59f9a37ce44b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.48-48.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.48-48.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.48-48.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.48-48.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "49",
+      "id": "minister_陳雲_2004397497",
+      "name": "陳雲",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9d387de2d888d41d834896f157bb5d0c3f75be501ccf7126595ab5c0bea7cdae",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "f21a6284c2ff516d005b66fc7c9513025688251620a4f2bff7a4faa5354e15b4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        },
+        "stats": {
+          "sha256": "78ff83a77a823abf8bafa732c64ed594d599ca9d10a1567ca655150b0b2e6ac2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ea12e87a84e67581e5044dea296ca17edd434efa0ceaf21be1b2f188bd2a9735",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.49-49.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.49-49.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.49-49.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.49-49.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    },
+    {
+      "slug": "50",
+      "id": "minister_徐光啟_1992746284",
+      "name": "徐光啟",
+      "prepared": true,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "a72619540990c10b5a2af76f09fe727f652540f10d9e63ba8e19ef2f082777b2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b6d0815ca8968752d90d12b79c1b647f2182a7cf3f6db9a3b6e6efa25b7bd0f9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        },
+        "stats": {
+          "sha256": "4b03ec71006be94faf88499df5d7226ba1abf49e1a4ba145e990058fd5839946",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "0369d10b1137d36e5160973c7b9034c668998b41de8d9a1b4c91f071159f55fa",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        }
+      },
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.50-50.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "fully_imported"
+    }
+  ]
 }
