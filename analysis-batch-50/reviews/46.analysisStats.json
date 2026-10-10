@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_霍光_2004384438",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:06:03.799Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a1eb6985223f51b85f47ed8a36a341a5ab2e5e3d56202251712808a18f508496",
+  "rawResponseSha256": "a1eb6985223f51b85f47ed8a36a341a5ab2e5e3d56202251712808a18f508496",
+  "sourcePackageSha256": "cc648de4adafd4b7e4189cf696bfa287a77a40a29e15e5de912408c64c6abbe1",
+  "searchLogSha256": "0ff85d23a2a0767fceae541e5c90dba24558fdcd267939634a61cbb181609f1b",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "title": "漢書·卷六十八 霍光金日磾傳　第三十八",
+      "locator": "本機固定修訂 oldid=1752745 全文比對（textSha256 已驗）：不學亡術，闇於大理、欲自發舉，不忍、出入禁闥二十餘年，小心謹慎，未甞有過，甚見親信、受遺詔輔少主、使黃門畫者畫周公負成王朝諸侯以賜光、君未諭前畫意邪？立少子，君行周公之事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://commons.ln.edu.hk/sw_master/5385",
+      "title": "王純紅〈前漢昌邑王考〉（嶺南大學學術典藏；《長江學術》2016）",
+      "locator": "WebSearch 結果摘要：考證昌邑王兩代生平，揭示霍光立廢昌邑王時的矛盾心理",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.airitilibrary.com/Article/Detail/1023358x-200809-x-19-19-36-a",
+      "title": "《霍光與昭宣之治研究》（2008，華藝線上圖書館期刊論文）",
+      "locator": "WebSearch 結果摘要：探討霍光歷經昭帝、昌邑王、宣帝三朝的權力爭奪與霍家覆滅原因",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "霍光，名臣；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "trust",
+      "passed": true,
+      "detail": "周公負成王圖、讓金日磾、符璽郎，原文核對。"
+    },
+    {
+      "id": "shangguan",
+      "passed": true,
+      "detail": "偽燕王書、昭帝辨詐、盡誅桀安弘羊，原文核對。"
+    },
+    {
+      "id": "deposition",
+      "passed": true,
+      "detail": "田延年伊尹之議、按劔、皇太后詔、二十七日千一百二十七事、安得天子，原文核對；研究摘要提示矛盾心理。"
+    },
+    {
+      "id": "xu-empress",
+      "passed": true,
+      "detail": "不忍猶與、署衍勿論、班固贊、宗族誅夷、芒刺在背，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[85,40,88,95,78] 對照荀彧[85,30,97,97,95]、于謙[90,40,90,88,90]、張廷玉[78,25,90,96,80]、謝安[85,30,92,94,95]、姚崇[78,68,97,96,88]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    85,
+    40,
+    88,
+    95,
+    78
+  ]
+}

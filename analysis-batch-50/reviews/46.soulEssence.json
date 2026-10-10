@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_霍光_2004384438",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:06:03.800Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "eb2f8e5443058abf8172010c73e6803dac251b3991efa8326c2a964717768d52",
+  "rawResponseSha256": "eb2f8e5443058abf8172010c73e6803dac251b3991efa8326c2a964717768d52",
+  "sourcePackageSha256": "cc648de4adafd4b7e4189cf696bfa287a77a40a29e15e5de912408c64c6abbe1",
+  "searchLogSha256": "0ff85d23a2a0767fceae541e5c90dba24558fdcd267939634a61cbb181609f1b",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068",
+      "title": "漢書·卷六十八 霍光金日磾傳　第三十八",
+      "locator": "本機固定修訂 oldid=1752745 全文比對（textSha256 已驗）：不學亡術，闇於大理、欲自發舉，不忍、出入禁闥二十餘年，小心謹慎，未甞有過，甚見親信、受遺詔輔少主、使黃門畫者畫周公負成王朝諸侯以賜光、君未諭前畫意邪？立少子，君行周公之事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "於古甞有此否、九卿責光、安得天子。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "止畫室、太后詔；不忍猶與。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "行周公之事、寧負王不負社稷；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "署衍勿論、黨親連體、徐生之言。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "霍去病、涕泣、大驚；選擇標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "周公伊尹；大義滅親之缺標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "廢昌邑與許后之死。"
+    }
+  ],
+  "materialIssues": []
+}

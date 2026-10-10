@@ -1,0 +1,370 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_霍光_2004384438",
+  "packetSha256": "de5fc51ccf020c04bc1de7f00cde1882b058101e91b3baab1661b13f3e483e9f",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "霍光 廢昌邑王 劉賀 海昏侯墓 研究 霍光專權 論文 昭宣中興",
+      "returnedUrls": [
+        "https://www.airitilibrary.com/Article/Detail/1023358x-200809-x-19-19-36-a",
+        "https://www.whb.cn/zhuzhan/jiaodian/20160303/50789.html",
+        "https://commons.ln.edu.hk/sw_master/5385",
+        "https://www.aisixiang.com/data/139574.html"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "不學亡術，闇於大理",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "欲自發舉，不忍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "出入禁闥二十餘年，小心謹慎，未甞有過，甚見親信",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "受遺詔輔少主",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "使黃門畫者畫周公負成王朝諸侯以賜光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "君未諭前畫意邪？立少子，君行周公之事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "臣不如金日磾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "臣外國人，不如光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "政事壹決於光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "臣頭可得，璽不可得也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "衆庶莫不多光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "專權自恣，疑有非常",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "何以得知之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "且將軍爲非，不須校尉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "光盡誅桀、安、弘羊、外人宗族",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "羣臣後應者，臣請劔斬之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "唯大將軍令",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "受璽以來二十七日，使者旁午，持節詔諸官署徵發，凡千一百二十七事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "天子有爭臣七人，雖無道不失天下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "皇太后詔廢，安得天子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "當斷不斷，反受其亂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "百姓充實，四夷賔服",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "具以實語光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "大驚，欲自發舉，不忍，猶與",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "因署衍勿論",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "陰妻邪謀，立女爲后，湛溺盈溢之欲，以增顛覆之禍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "悉易以所親信許、史子弟代之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "於是始有邪謀矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "與霍氏相連坐誅滅者數千家",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "威震主者不畜，霍氏之禍萌於驂乘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "若有芒刺在背",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "每出入下殿門，止進有常處，郎僕射竊識視之，不失尺寸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "爲人沈靜詳審",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "臣寧負王，不敢負社稷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "但事馮子都、王子方等",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "盡誅桀、安、弘羊、外人宗族",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "將羽林騎收縛二百餘人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "出則奉車，入侍左右",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "擁昭立宣，光爲師保",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "雖周公、阿衡，何以加此",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "諸事皆先關白光，然後奏御天子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "黨親連體，根據於朝廷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "連坐誅滅者數千家",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "今欲如是，於古甞有此否",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "昌邑王行昬亂，恐危社稷，如何",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "九卿責光是也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "止畫室中不入",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "免冠頓首謝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "欲自發舉，不忍，猶與",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "周公負成王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "行周公之事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "躬秉誼，率三公九卿大夫定萬世冊以安社稷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "在人之右，衆必害之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "奉兄票騎將軍去病祀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "臣長不復左右",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "謙讓不受，諸事皆先關白光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷068",
+      "quote": "臨大節而不可奪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 漢書卷68 verified in the repository archive.",
+    "海昏侯墓出土材料與劉賀形象之再評價未核讀，正文僅提示廢立奏章為起訴書性質；漢書卷8及外戚傳未逐段比對。",
+    "搜尋摘要中關於司馬光評劉賀之說未經核實，未採用。"
+  ]
+}
