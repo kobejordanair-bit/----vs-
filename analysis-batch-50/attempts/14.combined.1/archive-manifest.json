@@ -1,0 +1,26 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "14",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Calibration self-check: the site's stats reference already scores the same person (general record 高歡) at [95,78,90,92,96]; attempt 1 [90,75,93,85,90] diverged without justification. Attempt 2 aligns to [95,78,92,88,95] and states the comparison; prose unchanged otherwise.",
+  "files": {
+    "14.stats.json": "74bc27015b21f8e217c1e5d01da76f8270bb3660338d0e5d8f989c0a3d8c2898",
+    "14.soulEssence.md": "a0027d53b389bd27a879373fa36dcaf1dc679b2fe2c7f4d1519b7e5277a8a2be",
+    "14.soulEssence.capture.json": "d5c114ee40f278dc6cb01a1a4c81102a146a832830eef5f23931b28fb99c1333",
+    "14.analysisStats.capture.json": "590d5adb3bb2f7f53830f7959fc68ee91650e69dd4fa6d2adf05d3f6fc35a3ee",
+    "14.combined.capture.json": "663cdfda54f4a2e1f8a461f905fce2a60d1a226bdd0408da2c6462636c7fbd48",
+    "14.analysis.md": "4a08d25818601770a6ccf618f3d2a395a6db70a873f3a2c7693a4bc361f01ea4",
+    "14.soulEssence.raw.md": "9b483cae88e99fe04de60a8bfe354262f9bb0019b431643396c60a80d53a4669",
+    "14.soulEssence.response.md": "9b483cae88e99fe04de60a8bfe354262f9bb0019b431643396c60a80d53a4669",
+    "14.statsAnalysis.md": "1885f797a87c41ae73ef77bfb9c56d2a18a19ec002f5c6d6038d5fe5c7958943",
+    "14.analysisStats.raw.md": "435b2274d74b995b18b61396a8152da108104db801e45878e6f6de3d40fde819",
+    "14.combined.raw.md": "3280e05fd09194b494426dce28d562720109bf0ea1155956c52355d458be390b",
+    "14.analysisStats.response.md": "435b2274d74b995b18b61396a8152da108104db801e45878e6f6de3d40fde819",
+    "14.combined.search-log.json": "0dc15124104c42da518f5dc78503d173c21266323e5ebfba5307428268537e3d",
+    "14.soulEssence.json": "48c06a01bc66bee0f01c8fd0b1e5c6ee6e8e25fc10956540b41b1be61f618b5c",
+    "14.analysisStats.json": "f5a5c8f1cb3725ef715af493f8efabbb466ddb93cae086924a1df25388369bf3",
+    "results.14-14.v1.json": "5d88e50b6700efc4dffcca5cdf3fba206ebcdd7097ccbb32a1d7ec340b0d9cd8"
+  }
+}

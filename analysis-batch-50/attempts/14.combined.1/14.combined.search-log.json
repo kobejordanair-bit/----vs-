@@ -1,0 +1,267 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_神武帝_276962130",
+  "packetSha256": "156ca550a7524cc829f946b5da8bdcd694556df4f4ac6b5ff30526eac355fc0b",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "北齊書 本紀 神武紀 殘缺 後人以北史補 補卷 校勘 研究",
+      "returnedUrls": [
+        "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8/%E5%8D%B71",
+        "https://chinesenotes.com/beiqishu.html",
+        "https://zh.wikisource.org/wiki/%E5%8C%97%E5%8F%B2/%E5%8D%B7006",
+        "https://www.zdic.net/hant/北齊書"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "坐法徙居懷朔鎮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "宿衛羽林相率焚領軍張彝宅，朝廷懼其亂而不問。為政若此，事可知也。財物豈可常守邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "傾產以結客",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "衆號二十萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "時馬不滿二千，步兵不至三萬，衆寡不敵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "乃於韓陵為圓陣，連牛驢以塞歸道，於是將士皆有死志",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "外兵史侯景亦相友結",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "為奔走之友",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷1",
+      "quote": "字賀六渾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "神武西討，自蒲津濟，衆二十萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "軍大亂，棄器甲十有八萬，神武跨橐駝，候船以歸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "大破西魏軍，俘獲數萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "乃起土山，鑿十道，又於東面鑿二十一道以攻之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "神武使移汾，一夜而畢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "頓軍五旬，城不拔，死者七萬人，聚為一冢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "輿疾班師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "使斛律金作《勑勒歌》，神武自和之，哀感流涕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "王在，吾不敢有異，王無，吾不能與鮮卑小兒共事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "景專制河南十四年矣，常有飛揚跋扈志，顧我能養，豈為汝駕御也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "厙狄干鮮卑老公，斛律金勑勒老公，並性遒直，終不負汝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "日蝕其為我耶，死亦何恨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "崩於晉陽，時年五十二",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "衆潰，神武失馬，赫連陽順下馬以授神武",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "從者步騎六七人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "王去矣，興慶腰邊百箭，足殺百人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷2",
+      "quote": "以爾為懷州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷9",
+      "quote": "及見神武於城上執役，驚曰：「此真吾夫也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B79"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷9",
+      "quote": "乃使婢通意，又數致私財，使以聘己",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B79"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷9",
+      "quote": "密謀秘策，后恒參預",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B79"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷9",
+      "quote": "閫闈之事悉決焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B79"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "天下濁亂，習俗已久",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "江東復有一吳兒老翁蕭衍者，專事衣冠禮樂，中原士大夫望之以為正朔所在",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "恐督將盡投黑獺，士子悉奔蕭衍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "諸勳貴掠奪萬民者皆是",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "因令軍人皆張弓挾矢，舉刀按矟以夾道",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "弼戰慄汗流",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "beiqishu",
+      "title": "北齊書/卷24",
+      "quote": "諸勳人身觸鋒刃，百死一生，縱其貪鄙，所取處大",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷157",
+      "quote": "漢民是汝奴，夫為汝耕，婦為汝織，輸汝粟帛，令汝溫飽，汝何為陵之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7157"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷157",
+      "quote": "鮮卑是汝作客，得汝一斛粟、一匹絹，為汝擊賊，令汝安寧，汝何為疾之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7157"
+    },
+    {
+      "book": "beishi",
+      "title": "北史/卷006",
+      "quote": "姓高氏，諱歡，字賀六渾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8C%97%E5%8F%B2%2F%E5%8D%B7006"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; all linked citations verified in the repository archive. 北齊書卷1、卷9 的「補」字來自本機維基文庫修訂的卷首標題；補卷具體來源未查證，正文只說與北史文字高度重疊、不作獨立見證。",
+    "《勑勒歌》「天蒼蒼，野茫茫」為通行歌詞，未另附連結。"
+  ]
+}

@@ -4,14 +4,14 @@
   "recordId": "emperor_神武帝_276962130",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T05:49:34.734Z",
+  "reviewedAt": "2026-10-10T05:42:58.955Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "17db499ce868406e3fd794ab3a83a473c262c1819be24da8a40e052d188b2aac",
-  "rawResponseSha256": "17db499ce868406e3fd794ab3a83a473c262c1819be24da8a40e052d188b2aac",
+  "manuscriptSha256": "435b2274d74b995b18b61396a8152da108104db801e45878e6f6de3d40fde819",
+  "rawResponseSha256": "435b2274d74b995b18b61396a8152da108104db801e45878e6f6de3d40fde819",
   "sourcePackageSha256": "251c909ac801d640ae4e286bc0b838bb0237baeccfbfb959767116a3ed0e3dfd",
   "searchLogSha256": "0dc15124104c42da518f5dc78503d173c21266323e5ebfba5307428268537e3d",
   "checkedSources": [
@@ -88,15 +88,15 @@
     {
       "id": "stats-calibration",
       "passed": true,
-      "detail": "[95,78,92,88,95]：對照網站既有將領版高歡[95,78,90,92,96]（同一人物）、宋武帝[97,92,93,88,85]、唐高祖[92,72,95,96,90]；attempt 1 未對照同人紀錄，存 attempts/14.combined.1。"
+      "detail": "[90,75,93,85,90] 對照宋武帝[97,92,93,88,85]、唐高祖[92,72,95,96,90]、宋太宗[75,50,88,92,70]、唐中宗[60,30,75,70,65]。"
     }
   ],
   "materialIssues": [],
   "stats": [
-    95,
-    78,
-    92,
-    88,
-    95
+    90,
+    75,
+    93,
+    85,
+    90
   ]
 }
