@@ -1,0 +1,191 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "emperor_唐高宗_285517784",
+      "inputSha256": "e57b261e1940deb783c3af927f7b12e3ca451fcd51dc578e2fe56b1a85cd7fcd",
+      "promptSha256": "82ff2aee580fd8d462e9f52bdc872bf0c9aa51ea5621076513edbb25ceea3fb0",
+      "fields": {
+        "analysis": "唐高宗李治在傳統史學裡的形象，大多是「懦弱」、「被武后操控」。《舊唐書》史臣的評語更是嚴厲：「惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤。」但他在位期間，唐朝滅西突厥、平百濟、滅高句麗，疆域達到極盛。我要提出的看法是：**唐高宗不是一位被動的皇帝，而是一位「借力打力」的皇帝——他借武后之力扳倒關隴元老，借名將之力完成開疆，最後也因為身體的衰弱，把自己借來的力量交到了別人手上。**他的成功與他身後的變局，其實是同一套統治方式的兩個階段。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n李治是唐太宗第九子，母親是文德皇后長孫氏。《舊唐書》說他「幼而岐嶷端審，寬仁孝友」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。貞觀十七年，太子承乾被廢、魏王泰獲罪，太宗與長孫無忌、房玄齡、李勣等人「計議，立晉王為皇太子」。\n\n他面對的局有三個層面：\n\n1.  **元老輔政**：即位之初，朝政由舅舅長孫無忌與褚遂良等貞觀老臣主導，皇帝的權威受到很大限制。\n2.  **對外的未竟之業**：唐太宗親征高句麗未能成功；西突厥阿史那賀魯在永徽年間「以府叛，自稱可汗，總有西域之地」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。\n3.  **皇帝的健康**：他後期長年受「風疹」（一般稱風疾）所苦，「不能聽朝」，這直接影響了權力的運作方式。\n\n他的歷史定位是：**唐代疆域極盛時期的皇帝，也是唐朝權力結構從元老政治轉向皇后參政的關鍵人物**。台灣學者的研究也指出，二十世紀初學者常以「昏庸」、「懦弱」形容高宗，但近年研究認為高宗朝的軍國大政仍由高宗掌握，讓武后參與政事並非出於軟弱（[〈唐高宗政治權謀的再認識——兼論高宗朝的武則天〉，《臺灣師大歷史學報》第47期，香港樹仁大學學術庫](https://ra.lib.hksyu.edu.hk/entities/publication/447152cf-5b44-4015-be06-0e1959ae080f)）。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：唐高宗扳倒長孫無忌，不是武后操控的結果，而是一位皇帝收回權力的必經之路——只是他選擇的盟友，最後比他走得更遠。**\n\n**收回權力：從元老到皇后**\n\n永徽年間，褚遂良「以諫立武昭儀，貶授潭州都督」；同年十月，高宗廢王皇后、立武氏為后（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。顯慶四年，太尉長孫無忌被「於黔州安置」。從政治結構來看，立后之爭的本質是皇帝與元老集團之間的權力之爭：長孫無忌與褚遂良反對立武氏，而高宗藉此機會一舉清除了輔政元老的勢力。\n\n《舊唐書》史臣把這段歷史寫成「聽趙師之誣說，元舅銜冤」，把責任歸於讒言（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。但值得注意的是，上元元年高宗又「追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳」——這說明他對舅舅的處置，未必完全出於一時受騙，而更像是權力穩固之後的平反。\n\n**開疆：決策與執行的分工**\n\n高宗朝的軍事成就主要由名將執行。顯慶年間，「蘇定方攻破西突厥沙缽羅可汗賀魯」，賀魯逃到石國，被副將蕭嗣業「追擒之」，「西域平，以其地置濛池、昆陵二都護府」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。顯慶五年，「蘇定方等討平百濟，面縛其王扶餘義慈」，以其地置熊津等五都督府。\n\n高句麗之役需要特別注意時間。高宗任命李勣為遼東道行軍大總管，是在乾封元年（六六六年）：《舊唐書·高宗本紀》記為該年冬十月己酉（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)），《資治通鑑》則記為十二月己酉（[《資治通鑑》卷二百一](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201)）。真正攻克平壤，則是兩年後的總章元年（六六八年）九月癸巳，「司空、英國公勣破高麗，拔平壤城，擒其王高藏」，以其地為安東都護府（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。**任命在六六六年、滅國在六六八年，兩者不能混為一談。**\n\n這些戰役的現場指揮屬於蘇定方、李勣等名將；高宗的角色是決策、任命與持續支持。但他的軍事事業也有挫敗：咸亨元年，「薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗」，「吐谷渾全國盡沒」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。唐朝在西方的擴張，從此遇到吐蕃這個強大的對手。\n\n**制度與禮儀**\n\n永徽四年，高宗「頒新律疏於天下」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)），這就是後世所稱的《唐律疏議》的前身，為唐代法制奠定了重要基礎。乾封元年，他在泰山舉行封禪大典，皇后武氏擔任亞獻（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）——這個安排本身就象徵著皇后在國家禮儀中的地位大幅提升。\n\n**風疾與二聖**\n\n高宗後期的權力運作，與他的健康密切相關。《舊唐書》記載：「時帝風疹不能聽朝，政事皆決於天後。自誅上官儀後，上每視朝，天後垂簾於御座後，政事大小皆預聞之」，當時朝野內外稱之為「二聖」。高宗甚至想「下詔令天后攝國政」，被郝處俊諫止（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。他臨終前的遺詔仍說：「軍國大事有不決者，取天后處分。」\n\n這是理解高宗最關鍵的一點：**武后的權力不是篡奪而來，而是高宗在身體衰弱的情況下，一步步主動交出的。**這是**時代與個人健康的局限**；但把權力交給一個人而沒有建立制衡，則是他作為皇帝必須承擔的**決策責任**。高宗死後不久，武后便臨朝稱制，最終改唐為周。\n\n### **3. 【人性與性格側寫】**\n\n*   **仁孝**：他少時讀《孝經》，對太宗說要「進思盡忠，退思補過」；太宗患癰時，他「親吮之，扶輦步從數日」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。\n*   **依戀**：太宗征高句麗時，他「悲啼累日」，請求以「飛驛遞表起居」，史稱「飛表奏事，自此始也」。\n*   **不委過他人**：總章元年彗星出現，群臣說這是高句麗將滅之兆，他說：「高麗百姓，即朕之百姓也。既為萬國之主，豈可推過於小蕃！」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）\n*   **病中仍關心百姓**：臨終前宣赦，他問侍臣「民庶喜否？」，得知百姓感悅後說：「蒼生雖喜，我命危篤。」\n*   **對武后的信任**：太醫要刺他頭部放血，武后在帷中說「此可斬」，他卻說「吾苦頭重，出血未必不佳」，刺後說「吾眼明矣」——這個細節同時顯示了他對武后的依賴與他自己的判斷。\n\n### **4. 【如果生在現代】**\n\n唐高宗最適合的現代角色是：**一位繼承強勢父親企業的第二代董事長。**\n\n*   **被元老架空**：他接班時，公司由父親留下的元老團隊掌控，他的決定常常被元老否決。\n*   **借力反擊**：他與妻子結盟，以人事改組為契機，一舉把元老們調離權力核心。\n*   **開疆拓土**：他任用父親時代的幾位名將級經理人，完成了父親沒能完成的海外併購，公司規模達到史上最大。\n*   **健康問題**：他後來長期生病，把越來越多的決策交給妻子，最後在遺囑中寫明「重大事項由夫人決定」；他過世後，妻子掌握了公司，甚至改了公司的名字。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「以帝王的責任感承擔問題，而不推給他人」。總章元年彗星出現，群臣說是高句麗將滅之兆，他回答：「高麗百姓，即朕之百姓也。既為萬國之主，豈可推過於小蕃！」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]；永徽元年晉州地震，他也對群臣說「朕謬膺大位，政教不明」[史載]。他話語中的潛台詞是：「天下的問題，首先是我的問題。」這種說話方式顯示了他的責任感，但在權力運作上，他更習慣讓別人替他出面——立后時由許敬宗等人推動，晚年則由武后代為處理政事[推斷]。\n\n【壓力反應】\n面對壓力，他的第一反應是「依靠身邊最信任的人」。\n即位之初，他依靠長孫無忌等元老輔政（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）[史載]；立后之爭後，他轉而依靠武后；後期身患風疾，「政事皆決於天後」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]。共同結構是：每當壓力來臨，他都選擇把權力交給一位他信任的人，而不是建立分散的制衡[推斷]。太醫刺血的故事顯示，即使在病中，他仍保有自己的判斷，敢於違背武后的意見[史載]。這種在依賴與自主之間擺盪的狀態，貫穿了他的後半生[推斷]：上官儀被殺之後，他曾想讓武后攝政；郝處俊一諫，他又收回成命[史載]。可見他並非無條件地服從武后，而是在每一次具體情境中重新權衡[推斷]。\n\n【核心驅動】\n他真正追求的是「完成父親未竟的事業，並證明自己不是一位只會守成的皇帝」。\n太宗征高句麗未竟全功，他在位時派李勣於乾封元年出師、總章元年「拔平壤城」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]；他也在泰山舉行太宗生前未能完成的封禪大典[史載]。這些作為指向一位希望在父親的陰影下建立自己功業的繼承者[詮釋：此為從其施政歸納的動機，其內心無第一手記錄]。封禪後他還「幸孔子廟。追贈太師」[史載]，以禮儀昭告天下：這是一個由他完成的盛世[推斷]。\n\n【慣性盲點】\n他最大的優點「善於借力」，讓他忽略了權力集中於一人的風險。\n他借武后之力清除長孫無忌等元老（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）[史載]；後期他甚至想「下詔令天后攝國政」，被郝處俊諫止，臨終遺詔仍說「軍國大事有不決者，取天后處分」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]。共同結構是：他把權力從一個集團轉移到另一個人手上，卻沒有建立能夠在他身後約束這個人的制度[推斷]。從長孫無忌到武后，權力的形式變了，「集中於一人之手」的結構卻沒有改變；唯一不同的是，這一次他無法在身後收回[推斷]。\n\n【情感結構】\n他的情感核心是對家人的深厚依戀。\n少年時，太宗出征他「悲啼累日」；太宗患癰，他「親吮之，扶輦步從數日」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）[史載]。他對舅舅長孫無忌先是貶謫，後又追復官爵，讓其「歸葬於昭陵先造之墳」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]。他臨終時說「天地神祇若延吾一兩月之命，得還長安，死亦無恨」[史載]——他最脆弱的時刻，是病重滯留洛陽、無法回到長安的最後日子[詮釋]。\n\n【參照系】\n他習慣以「父親太宗的功業」作為衡量自己的參照系。他完成了太宗未竟的高句麗之役，也完成了太宗未能舉行的封禪（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]。\n類比準確之處：在開疆拓土上，他確實延續並超越了太宗的事業，滅西突厥、平百濟、滅高句麗[史載]。\n類比失準之處：太宗以強勢的個人權威統御群臣，而高宗受限於健康，無法以同樣的方式掌控朝政；他以父親為參照，卻走出了一條依靠他人代理的權力道路[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（建立超越父親的功業）與【慣性盲點】（善於借力而忽略權力集中的風險）之間。\n這個衝突的結構是：他越是想在對外擴張與禮儀大典上展現帝王的功業，就越需要一位能在他病中代理朝政的人；而這位代理人的權力越大，就越可能在他身後改變王朝的方向。\n第一次體現在乾封元年：他在泰山封禪，皇后擔任亞獻，同年又任命李勣出征高句麗（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）[史載]——帝王功業的巔峰，也是皇后地位的明顯提升。\n第二次體現在臨終：遺詔「軍國大事有不決者，取天后處分」[史載]，武后由此獲得了合法的權力基礎。\n兩次事件的共同點在於：他用來成就功業的方式，也同時壯大了武后的權力[推斷]。他是否意識到這個衝突？他曾想讓武后攝國政而被郝處俊諫止[史載]，說明他至少在某些時刻認為這樣的安排是合理的[詮釋]。",
+        "stats": [
+          92,
+          25,
+          90,
+          93,
+          80
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：92\n\n他在位期間先後派蘇定方平定西突厥賀魯、討平百濟，又於乾封元年任命李勣為遼東道行軍大總管，至總章元年九月「拔平壤城」，設安東都護府（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。扣分在於戰役皆由名將執行，且咸亨元年大非川之敗使吐谷渾盡沒。評92，與唐高祖（92）持平，高於漢宣帝（88），低於漢武帝（95）與唐太宗（100）。\n\n### 武力：25\n\n他自幼以「寬仁孝友」著稱，太宗親征時他留守後方，《舊唐書》沒有他親身作戰的記載；後期更長年「風疹不能聽朝」，晚年甚至「氣逆不能上馬」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。給予25分，是考慮他作為帝王並非完全不習武事，但個人武勇明顯不足。評25，低於漢武帝（30）與漢宣帝（48），高於漢獻帝（15）。\n\n### 智謀：90\n\n他借立后之爭清除長孫無忌、褚遂良等元老勢力，後又「追復長孫無忌官爵」以收人心；面對彗星之兆，他拒絕「推過於小蕃」（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。學術研究亦認為高宗朝軍國大政仍由其掌握（[〈唐高宗政治權謀的再認識〉](https://ra.lib.hksyu.edu.hk/entities/publication/447152cf-5b44-4015-be06-0e1959ae080f)）。扣分在於未能為武后的權力設下制衡。評90，與漢武帝（90）、漢高祖（90）持平，低於漢宣帝（95）與唐太宗（98）。\n\n### 政治：93\n\n他「頒新律疏於天下」，在泰山行封禪之禮，並在疆域上設置濛池、昆陵、熊津、安東等都護府與都督府（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。扣分在於他晚年「政事皆決於天後」，內外稱「二聖」，最後遺詔「軍國大事有不決者，取天后處分」，為武周代唐埋下伏筆（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。評93，低於北魏孝文帝（96）、唐太宗（96）與漢宣帝（97）。\n\n### 魅力：80\n\n他以仁孝著稱，太宗患癰時「親吮之」，臨終仍關心「民庶喜否」（[《舊唐書·高宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74)）。但《舊唐書》史臣批評他「虛襟似納於觸鱗」，贊語更說他「藉文鴻業，僅保餘位」，傳統史家對他的評價普遍偏低（[《舊唐書·高宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75)）。評80，低於北魏孝文帝（84）、漢武帝（85）與漢宣帝（86）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T07:20:01.724Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書·本紀第四　高宗上",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74",
+            "locator": "本機固定修訂 oldid=2312023 全文比對（textSha256 已驗）：幼而岐嶷端審，寬仁孝友、計議，立晉王為皇太子、以府叛，自稱可汗，總有西域之地、以諫立武昭儀，貶授潭州都督、於黔州安置、蘇定方攻破西突厥沙缽羅可汗賀魯…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "〈唐高宗政治權謀的再認識——兼論高宗朝的武則天〉（《臺灣師大歷史學報》第47期，2012，頁39–62；香港樹仁大學學術庫）",
+            "url": "https://ra.lib.hksyu.edu.hk/entities/publication/447152cf-5b44-4015-be06-0e1959ae080f",
+            "locator": "WebSearch 結果摘要：前輩學者多以昏庸懦弱形容高宗；作者認為高宗朝軍國大政仍由高宗掌握，讓武后參政非出於軟弱",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "舊唐書·本紀第五　高宗下",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75",
+            "locator": "本機固定修訂 oldid=2307335 全文比對（textSha256 已驗）：惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤、聽趙師之誣說，元舅銜冤、追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳、司空、英國公勣破高麗，拔平壤城，擒其王高藏、薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗、吐谷渾全國盡沒…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "資治通鑑·卷二百一 唐紀十七",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201",
+            "locator": "本機固定修訂 oldid=1502953 全文比對（textSha256 已驗）：以李勣為遼東道行軍大總管兼安撫大使、九月，癸巳，李勣拔平壤",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "71f79c07b54f36821bc79986fb6c8980c8262183eec8bdd9d323618dd9d70dad",
+        "sourcePackageSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+        "preservedDeepSha256": "dd650d225a8fd7a7457588df8b453ecf3d3801149003acf87f6dc9a108288cb4",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "4080a5ec43616ddde7a9b2943c6118346df450f9c1878e06effa46b42940420a",
+            "requestSha256": "71f79c07b54f36821bc79986fb6c8980c8262183eec8bdd9d323618dd9d70dad",
+            "inputSha256": "e57b261e1940deb783c3af927f7b12e3ca451fcd51dc578e2fe56b1a85cd7fcd",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "9a932e573c16c6e191337141adef77a021ba4f124c8f0633fc5b7d5c2a88a329",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+            "preservedDeepSha256": "dd650d225a8fd7a7457588df8b453ecf3d3801149003acf87f6dc9a108288cb4",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:20:01.724Z",
+            "rawResponseFile": "analysis-batch-50/drafts/05.analysisStats.raw.md",
+            "rawResponseSha256": "be84581b18068c0ecde57ee8c2ff8052ebac9f6f86338e8fd3a188e7cb2d5ec6",
+            "responseFile": "analysis-batch-50/drafts/05.analysisStats.response.md",
+            "responseSha256": "be84581b18068c0ecde57ee8c2ff8052ebac9f6f86338e8fd3a188e7cb2d5ec6",
+            "fieldsHashes": {
+              "analysis": "9e29af7729ee3e07147171d06915a781602a3f65c75d9ccd0c8ef6c87e19d705",
+              "stats": "cb0b9b0055f6923afd35d216a460d9b96002907c6496602cdf00a94dbee58b68",
+              "statsAnalysis": "14be7829acbc5283552c6607a495ffc04cd8036ee54ce69b181b571ab9db1a99"
+            },
+            "captureFile": "analysis-batch-50/drafts/05.analysisStats.capture.json",
+            "captureSha256": "8a8ff08f4ec5cdc505fa679145a38ba35d1ff78dfc2610b70f09e2fa83d8a87a",
+            "sourceReviewFile": "analysis-batch-50/reviews/05.analysisStats.json",
+            "sourceReviewSha256": "2fb8d7272ad3deb56cf8cd5e72045e5c3b49dd25ca19588c3d77a38f5a294d03",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/05.combined.search-log.json",
+              "sha256": "af8f38f0b57e4dee53b46302d9339c5b07af171065465ecaa59944909ccc76fd",
+              "webSearchCount": 1,
+              "archiveCheckCount": 38
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·本紀第四　高宗上",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74",
+                "locator": "本機固定修訂 oldid=2312023 全文比對（textSha256 已驗）：幼而岐嶷端審，寬仁孝友、計議，立晉王為皇太子、以府叛，自稱可汗，總有西域之地、以諫立武昭儀，貶授潭州都督、於黔州安置、蘇定方攻破西突厥沙缽羅可汗賀魯…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "〈唐高宗政治權謀的再認識——兼論高宗朝的武則天〉（《臺灣師大歷史學報》第47期，2012，頁39–62；香港樹仁大學學術庫）",
+                "url": "https://ra.lib.hksyu.edu.hk/entities/publication/447152cf-5b44-4015-be06-0e1959ae080f",
+                "locator": "WebSearch 結果摘要：前輩學者多以昏庸懦弱形容高宗；作者認為高宗朝軍國大政仍由高宗掌握，讓武后參政非出於軟弱",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "舊唐書·本紀第五　高宗下",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75",
+                "locator": "本機固定修訂 oldid=2307335 全文比對（textSha256 已驗）：惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤、聽趙師之誣說，元舅銜冤、追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳、司空、英國公勣破高麗，拔平壤城，擒其王高藏、薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗、吐谷渾全國盡沒…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "資治通鑑·卷二百一 唐紀十七",
+                "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201",
+                "locator": "本機固定修訂 oldid=1502953 全文比對（textSha256 已驗）：以李勣為遼東道行軍大總管兼安撫大使、九月，癸巳，李勣拔平壤",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "b9e7a8b982a82e7aa3eed20d1220109c346120b49c2c109cde0894613f0651cf",
+            "requestSha256": "71f79c07b54f36821bc79986fb6c8980c8262183eec8bdd9d323618dd9d70dad",
+            "inputSha256": "e57b261e1940deb783c3af927f7b12e3ca451fcd51dc578e2fe56b1a85cd7fcd",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "5103a3d99a65c41573f1d2cb2f4f2e00a2a566f3628279ce3beb121f2e17db99",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+            "preservedDeepSha256": "dd650d225a8fd7a7457588df8b453ecf3d3801149003acf87f6dc9a108288cb4",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:20:01.724Z",
+            "rawResponseFile": "analysis-batch-50/drafts/05.soulEssence.raw.md",
+            "rawResponseSha256": "37e92769ea6866231fe98111d327a69ddb40013c2ed60dd13dc3bbdc22458129",
+            "responseFile": "analysis-batch-50/drafts/05.soulEssence.response.md",
+            "responseSha256": "37e92769ea6866231fe98111d327a69ddb40013c2ed60dd13dc3bbdc22458129",
+            "fieldsHashes": {
+              "soulEssence": "37c2782e57c51f77edf586f5d58d8853919d2ea79bdf0ae6cfb259cde05d6297"
+            },
+            "captureFile": "analysis-batch-50/drafts/05.soulEssence.capture.json",
+            "captureSha256": "0249b6401212e32c8e09194473a57da85bea564c9b6c801ff9833b8c2e705b62",
+            "sourceReviewFile": "analysis-batch-50/reviews/05.soulEssence.json",
+            "sourceReviewSha256": "9af7fea5b7da75e571410c400b46919f9d5658095e9d772bd2c31b39956c239b",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/05.combined.search-log.json",
+              "sha256": "af8f38f0b57e4dee53b46302d9339c5b07af171065465ecaa59944909ccc76fd",
+              "webSearchCount": 1,
+              "archiveCheckCount": 38
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·本紀第五　高宗下",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75",
+                "locator": "本機固定修訂 oldid=2307335 全文比對（textSha256 已驗）：惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤、聽趙師之誣說，元舅銜冤、追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳、司空、英國公勣破高麗，拔平壤城，擒其王高藏、薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗、吐谷渾全國盡沒…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第四　高宗上",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74",
+                "locator": "本機固定修訂 oldid=2312023 全文比對（textSha256 已驗）：幼而岐嶷端審，寬仁孝友、計議，立晉王為皇太子、以府叛，自稱可汗，總有西域之地、以諫立武昭儀，貶授潭州都督、於黔州安置、蘇定方攻破西突厥沙缽羅可汗賀魯…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/05.analysis.md",
+            "analysisContextSha256": "e251d106795e5f41c6f7e8e052df0e967f5e244c43542fab0f84219c123869c3"
+          }
+        }
+      }
+    }
+  ]
+}

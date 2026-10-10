@@ -12,13 +12,13 @@
   "latestVerifiedPublicationRevision": 7,
   "counts": {
     "generated": 50,
-    "reviewed": 49,
-    "assembled": 49,
+    "reviewed": 50,
+    "assembled": 50,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 43,
+    "claudeAssembledAwaitingImport": 44,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -102,15 +102,17 @@
       "slug": "05",
       "id": "emperor_唐高宗_285517784",
       "name": "唐高宗",
-      "provider": "ChatGPT web",
+      "provider": "Claude Code (Anthropic)",
       "generated": true,
-      "reviewed": false,
-      "assembled": false,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "awaiting_factual_correction",
-      "note": "ChatGPT 稿史實查核不合格（李勣 666 年任遼東道行軍大總管 vs 668 年克平壤），未匯入；失敗稿存 attempts/05.analysisStats.1/。"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.05-05.v1.json",
+      "resultsSha256": "ca346a4532e2013dc65bd7eb7dedbb0b4a845a43b05a92e0b5dedc12588d9f23"
     },
     {
       "slug": "06",

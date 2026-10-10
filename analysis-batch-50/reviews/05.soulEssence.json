@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐高宗_285517784",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:20:01.797Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "37e92769ea6866231fe98111d327a69ddb40013c2ed60dd13dc3bbdc22458129",
+  "rawResponseSha256": "37e92769ea6866231fe98111d327a69ddb40013c2ed60dd13dc3bbdc22458129",
+  "sourcePackageSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+  "searchLogSha256": "af8f38f0b57e4dee53b46302d9339c5b07af171065465ecaa59944909ccc76fd",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75",
+      "title": "舊唐書·本紀第五　高宗下",
+      "locator": "本機固定修訂 oldid=2307335 全文比對（textSha256 已驗）：惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤、聽趙師之誣說，元舅銜冤、追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳、司空、英國公勣破高麗，拔平壤城，擒其王高藏、薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗、吐谷渾全國盡沒…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74",
+      "title": "舊唐書·本紀第四　高宗上",
+      "locator": "本機固定修訂 oldid=2312023 全文比對（textSha256 已驗）：幼而岐嶷端審，寬仁孝友、計議，立晉王為皇太子、以府叛，自稱可汗，總有西域之地、以諫立武昭儀，貶授潭州都督、於黔州安置、蘇定方攻破西突厥沙缽羅可汗賀魯…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "彗星不推過、晉州地震罪己；借他人出面標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "元老、武后、風疾；刺血自主。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "高句麗與封禪；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "攝政之議與遺詔。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "吮癰、追復舅官爵、思還長安；心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "太宗功業參照；失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "乾封元年與臨終遺詔。"
+    }
+  ],
+  "materialIssues": []
+}

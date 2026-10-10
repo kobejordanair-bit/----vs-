@@ -1,0 +1,91 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐高宗_285517784",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:20:01.796Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "be84581b18068c0ecde57ee8c2ff8052ebac9f6f86338e8fd3a188e7cb2d5ec6",
+  "rawResponseSha256": "be84581b18068c0ecde57ee8c2ff8052ebac9f6f86338e8fd3a188e7cb2d5ec6",
+  "sourcePackageSha256": "a9f19a9c6fadd237f87a79fe3acbe5e69c576cf5ce7e1654e40b6f490e07a12e",
+  "searchLogSha256": "af8f38f0b57e4dee53b46302d9339c5b07af171065465ecaa59944909ccc76fd",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74",
+      "title": "舊唐書·本紀第四　高宗上",
+      "locator": "本機固定修訂 oldid=2312023 全文比對（textSha256 已驗）：幼而岐嶷端審，寬仁孝友、計議，立晉王為皇太子、以府叛，自稱可汗，總有西域之地、以諫立武昭儀，貶授潭州都督、於黔州安置、蘇定方攻破西突厥沙缽羅可汗賀魯…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ra.lib.hksyu.edu.hk/entities/publication/447152cf-5b44-4015-be06-0e1959ae080f",
+      "title": "〈唐高宗政治權謀的再認識——兼論高宗朝的武則天〉（《臺灣師大歷史學報》第47期，2012，頁39–62；香港樹仁大學學術庫）",
+      "locator": "WebSearch 結果摘要：前輩學者多以昏庸懦弱形容高宗；作者認為高宗朝軍國大政仍由高宗掌握，讓武后參政非出於軟弱",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75",
+      "title": "舊唐書·本紀第五　高宗下",
+      "locator": "本機固定修訂 oldid=2307335 全文比對（textSha256 已驗）：惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤、聽趙師之誣說，元舅銜冤、追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳、司空、英國公勣破高麗，拔平壤城，擒其王高藏、薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗、吐谷渾全國盡沒…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201",
+      "title": "資治通鑑·卷二百一 唐紀十七",
+      "locator": "本機固定修訂 oldid=1502953 全文比對（textSha256 已驗）：以李勣為遼東道行軍大總管兼安撫大使、九月，癸巳，李勣拔平壤",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "唐高宗，帝王；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "power",
+      "passed": true,
+      "detail": "褚遂良貶、廢立皇后、長孫無忌黔州安置、追復官爵，原文核對。"
+    },
+    {
+      "id": "campaigns",
+      "passed": true,
+      "detail": "賀魯就擒、平百濟、李勣乾封元年任命（本紀十月／通鑑十二月）、總章元年九月拔平壤、大非川之敗，原文核對——修正 05 失敗稿之年代錯誤。"
+    },
+    {
+      "id": "institutions",
+      "passed": true,
+      "detail": "頒新律疏、泰山封禪皇后亞獻，原文核對。"
+    },
+    {
+      "id": "erzheng",
+      "passed": true,
+      "detail": "風疹不能聽朝、二聖、欲令天后攝政、遺詔取天后處分，原文核對；研究摘要佐證再評價。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[92,25,90,93,80] 對照漢武帝[95,30,90,98,85]、唐太宗[100,95,98,96,97]、唐高祖[92,72,95,96,90]、北魏孝文帝[88,79,95,96,84]、漢宣帝[88,48,95,97,86]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    92,
+    25,
+    90,
+    93,
+    80
+  ]
+}

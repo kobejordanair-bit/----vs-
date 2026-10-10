@@ -1,0 +1,256 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐高宗_285517784",
+  "packetSha256": "d83266a4a4201f1086e282a8e35df5a908e0b10f8cb5eef2ad0f6a96159491ce",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "唐高宗 李治 再評價 研究 永徽律疏 長孫無忌 武后 二聖 風疾 論文 高句麗 668",
+      "returnedUrls": [
+        "https://zh.wikisource.org/wiki/Author:%E6%9D%8E%E6%B2%BB",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=19241",
+        "https://ra.lib.hksyu.edu.hk/entities/publication/447152cf-5b44-4015-be06-0e1959ae080f",
+        "https://book.douban.com/subject/35627025/comments/"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "惑麥斛之佞言，中宮被毒；聽趙師之誣說，元舅銜冤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "幼而岐嶷端審，寬仁孝友",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "計議，立晉王為皇太子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "以府叛，自稱可汗，總有西域之地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "以諫立武昭儀，貶授潭州都督",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "於黔州安置",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "聽趙師之誣說，元舅銜冤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "追復長孫無忌官爵，仍以其曾孫翼襲封趙國公，許歸葬於昭陵先造之墳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "蘇定方攻破西突厥沙缽羅可汗賀魯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "西域平，以其地置濛池、昆陵二都護府",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "蘇定方等討平百濟，面縛其王扶餘義慈",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "司空、英國公勣破高麗，拔平壤城，擒其王高藏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "薛仁貴、郭待封至大非川，為吐蕃大將論欽陵所襲，大敗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "吐谷渾全國盡沒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "頒新律疏於天下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "時帝風疹不能聽朝，政事皆決於天後。自誅上官儀後，上每視朝，天後垂簾於御座後，政事大小皆預聞之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "下詔令天后攝國政",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "軍國大事有不決者，取天后處分",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "進思盡忠，退思補過",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "親吮之，扶輦步從數日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "飛驛遞表起居",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "飛表奏事，自此始也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "高麗百姓，即朕之百姓也。既為萬國之主，豈可推過於小蕃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "蒼生雖喜，我命危篤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "吾苦頭重，出血未必不佳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "風疹不能聽朝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "氣逆不能上馬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "追復長孫無忌官爵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "推過於小蕃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "政事皆決於天後",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "虛襟似納於觸鱗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "藉文鴻業，僅保餘位",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷4",
+      "quote": "朕謬膺大位，政教不明",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B74"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "幸孔子廟。追贈太師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "歸葬於昭陵先造之墳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷5",
+      "quote": "天地神祇若延吾一兩月之命，得還長安，死亦無恨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B75"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷201",
+      "quote": "以李勣為遼東道行軍大總管兼安撫大使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷201",
+      "quote": "九月，癸巳，李勣拔平壤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7201"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 舊唐書卷4–5、資治通鑑卷201 verified in the repository archive.",
+    "05 ChatGPT 稿因李勣任命（666）與拔平壤（668）年代混淆查核不合格，原稿保留於 attempts/05.analysisStats.1/ 未刪改；本稿為 Claude 重新撰寫，並明示本紀十月己酉與通鑑十二月己酉之月份差異。",
+    "舊唐書李勣傳（卷67）將任命繫於總章元年之異文未在本 session 逐段比對；archive 本紀『立儀武昭氏為皇后』有字序錯亂，正文不引該句。"
+  ]
+}
