@@ -1,0 +1,189 @@
+{
+ "webSearches": [
+  {
+   "query": "伍子胥 疲楚之策 三師以肄 左傳 昭公三十年 研究 柏舉之戰 兵力",
+   "returnedUrls": [
+    "https://en.wikipedia.org/wiki/Battle_of_Boju",
+    "https://www.mnd.gov.tw/File/25962",
+    "https://www.aisixiang.com/data/104301.html",
+    "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7066"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "伍子胥者，楚人也，名員。員父曰伍奢。員兄曰伍尚。其先曰伍舉，以直諫事楚莊王，有顯"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "用子胥、孫武之謀，西破彊楚，北威齊晉，南服越人"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "乃掘楚平王墓，出其尸，鞭之三百，然後已"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "此豈其無天道之極乎"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "吾日莫途遠，吾故倒行而逆施之"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "越王句踐乃以餘兵五千人棲於會稽之上"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "越王為人能辛苦。今王不滅，後必悔之"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "夫越，腹心之病，今信其浮辭詐偽而貪齊"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "益疏子胥之謀"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "必樹吾墓上以梓，令可以為器；而抉吾眼縣吳東門之上，以觀越寇之入滅吳也"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "乃取子胥尸盛以鴟夷革，浮之江中"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "吳人憐之，為立祠於江上，因命曰胥山"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "向令伍子胥從奢俱死，何異螻蟻。棄小義，雪大恥"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷066",
+   "quote": "方子胥窘於江上，道乞食，志豈嘗須臾忘郢邪？故隱忍就功名，非烈丈夫孰能致此哉"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/昭公",
+   "quote": "吳子問於伍員曰"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/昭公",
+   "quote": "楚執政眾而乖．莫適任患．若為三師之肄焉．一師至．彼必皆出．彼出則歸．彼歸則出．楚必道敝．亟肄以罷之．多方以誤之．既罷而後以三軍繼之．必大克之"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/昭公",
+   "quote": "闔廬從之．楚於是乎始病"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/定公",
+   "quote": "楚自昭王即位．無歲不有吳師"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/定公",
+   "quote": "伍員與申包胥友．其亡也．謂申包胥曰．我必復楚國．申包胥曰．勉之．子能復之．我必能興之"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/哀公",
+   "quote": "屬其子於鮑氏．為王孫氏"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/哀公",
+   "quote": "使賜之屬鏤以死"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/哀公",
+   "quote": "樹吾墓檟．檟可材也．吳其亡乎"
+  },
+  {
+   "book": "zuozhuan",
+   "title": "春秋左氏傳/昭公",
+   "quote": "初而言伐楚．余知其可也．而恐其使余往也．又惡人之有余之功也"
+  }
+ ],
+ "limits": [
+  "Page fetches remain blocked; all linked citations verified in the repository archive.",
+  "「鞭平王」字樣在本機《春秋左氏傳》全文中出現0次，以程式計數確認；正文明言不能據此否定事件。",
+  "WebSearch summary claimed 三師以肄 is in 定公四年; the archive places it in 昭公三十年 (before the 昭公三十一年 heading) and the manuscript follows the archive. 柏舉兵力數字僅說明為後世估計（英文維基百科摘要），未附連結。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "伍員（子胥），春秋吳國謀臣將領；保留原 A+ 評級與 deepAnalysis。"
+   ],
+   [
+    "pichu",
+    "「三師以肄」疲楚之策與「無歲不有吳師」，左傳昭公三十年、定公四年原文；以此校準 deepAnalysis「游擊戰鼻祖」之說。"
+   ],
+   [
+    "whipping",
+    "鞭屍見史記、左傳不載，文中明示。"
+   ],
+   [
+    "death-versions",
+    "左傳哀公十一年（屬子於鮑氏、樹墓檟）與史記（樹梓、抉眼、鴟夷）並陳。"
+   ],
+   [
+    "stats-calibration",
+    "[93,75,97,75,80] 對照孫武[88,55,100,70,82]、孫臏[90,20,99,60,78]、李牧[98,82,97,35,92]、李靖[100,75,100,85,92]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "疲楚之對、能辛苦之諫、倒行逆施；進諫頻繁標[推斷]。"
+   ],
+   [
+    "pressure",
+    "棄小義雪大恥與三師以肄。"
+   ],
+   [
+    "drive",
+    "志不忘郢、鞭屍（註明左傳未載）。"
+   ],
+   [
+    "blind-spot",
+    "滅越之諫與伐齊之諫。"
+   ],
+   [
+    "emotion",
+    "申包胥之約、屬子鮑氏、吳其亡乎；抉眼為後出標[詮釋]。"
+   ],
+   [
+    "frame",
+    "楚之結構弱點；吳亡原因標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "鞭屍與賜死。"
+   ]
+  ]
+ }
+}
