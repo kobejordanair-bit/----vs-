@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_溫體仁_1997044414",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:29:42.457Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2947d8b268394b5adf336187095f5f7bccf03ff080af8a2f22b60da83f501f9b",
+  "rawResponseSha256": "2947d8b268394b5adf336187095f5f7bccf03ff080af8a2f22b60da83f501f9b",
+  "sourcePackageSha256": "b10996e66d122d6e9f2941535f11ca41b2b6f3f766aab561d66c3e82094cb517",
+  "searchLogSha256": "f3d5305b70d56db923a3274a81dbf8c45835f3b2ec536a01191a7dba9e360a45",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308",
+      "title": "明史·卷三百八 列傳第一百九十六",
+      "locator": "本機固定修訂 oldid=2594954 全文比對（textSha256 已驗）：望輕，不與也、謙益結黨受賄，舉朝無一人敢言者，臣不忍見皇上孤立於上，是以不得不言、微體仁，朕幾誤、體仁方食，失匕箸、為人外謹而中猛鷙，機深刺骨、帝久疑廷臣植党…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以孤立為武器上位存活，終被證明有黨；場景為臣不忍見皇上孤立於上、臣孤立可見、帝始悟體仁有黨、失匕箸。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "反駁即結黨之說話邏輯、無痕即無黨之盲點、反朋黨者留下最持久之黨等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以乃真黨也與避嫌不言、要帝與失匕箸、惡其逼與徐兆麟、陰令人發端與奉體仁指、猛鷙與猶惜之、植黨疑懼與效法體仁、孤立與腹心為事件。"
+    }
+  ],
+  "materialIssues": []
+}

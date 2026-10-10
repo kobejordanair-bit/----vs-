@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_溫體仁_1997044414",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:29:42.455Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+  "rawResponseSha256": "a3b33b189b5b9c336132e97c02a2b568f78f8942316a2132f202ac581114ab8b",
+  "sourcePackageSha256": "b10996e66d122d6e9f2941535f11ca41b2b6f3f766aab561d66c3e82094cb517",
+  "searchLogSha256": "f3d5305b70d56db923a3274a81dbf8c45835f3b2ec536a01191a7dba9e360a45",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7308",
+      "title": "明史·卷三百八 列傳第一百九十六",
+      "locator": "本機固定修訂 oldid=2594954 全文比對（textSha256 已驗）：望輕，不與也、謙益結黨受賄，舉朝無一人敢言者，臣不忍見皇上孤立於上，是以不得不言、微體仁，朕幾誤、體仁方食，失匕箸、為人外謹而中猛鷙，機深刺骨、帝久疑廷臣植党…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "烏程人、萬曆二十六年進士、崇禎元年冬會推不與而劾錢謙益、毛九華任贊化之劾、三年六月入閣、傾周延儒為首輔、逐姚希孟羅喻義文震孟、皇陵之變、復社之獄、十年六月引疾放歸、逾年卒，皆依明史卷308 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：腹心與部議論罷、未嘗建一策；武力：無；智謀：孤立之說、如允儒言乃真黨也、陰令人發端；政治：居位八年至削贈諡；魅力：大臣無助體仁者。對照秦檜、魏忠賢、張廷玉。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "帝久疑廷臣植黨→體仁以孤立自居劾謙益→帝稱微體仁朕幾誤→入閣→傾延儒為首輔→排陷正人、閣揭不存→張漢儒案密謀被曹化淳查出→帝始悟體仁有黨→引疾竟放歸→失匕箸。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    58,
+    10,
+    86,
+    84,
+    28
+  ]
+}
