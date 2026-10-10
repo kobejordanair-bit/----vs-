@@ -1,0 +1,167 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "general_楊素_306319309",
+      "inputSha256": "f6ae16f83d7f59da667a8ab79cfe11c0878c9e9fb1e3d5506842efb95b2efd7b",
+      "promptSha256": "32b3e9798b01969a4242f6698dc2a7c6d5704cf5894d2640d7d75114133ff9f2",
+      "fields": {
+        "analysis": "楊素年輕時，為了替陷沒於北齊的父親請求朝廷追贈，「上表申理」再三，周武帝大怒，命左右將他斬首。他說：「臣事無道天子，死其分也。」武帝反而欣賞他的氣魄。後來武帝誇他文章寫得好，「勿憂不富貴」，他答：「臣但恐富貴來逼臣，臣無心圖富貴。」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）幾十年後，《隋書》形容他「家僮數千，後庭妓妾曳綺羅者以千數。第宅華侈，制擬宮禁」，並說他「貪冒財貨，營求產業」[史載]。我對他的判斷是：**楊素是一位把「除掉障礙」當成方法論的將帥。在戰場上，他除掉敵人的地利、除掉舊陣法、甚至除掉自己軍中不夠勇敢的士兵；這讓他戰無不勝，成為隋朝統一與北禦突厥的第一功臣。但他把同一套方法帶進朝堂——除掉不合作的同僚、除掉擋路的太子——最後連他自己也成了新皇帝心中需要被除掉的人。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n楊素字處道，弘農華陰人，出身北朝官宦世家；他「少落拓，有大志」，又「善屬文，工草隸」，被從叔祖楊寬稱為「非常之器」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。\n\n他經歷了北周到隋的全部轉折：\n\n1.  **北周滅齊**：他請求率父親舊部為前鋒，周武帝賜他竹策，說「朕方欲大相驅策」。\n2.  **隋朝建立與南北統一**：楊堅為丞相時，他「深自結納」；開皇年間主持伐陳的上游水軍，又平定江南的大規模叛亂。\n3.  **北方突厥與皇位繼承**：他兩度出塞擊破突厥，同時深度介入隋文帝晚年的廢立之爭。\n\n有研究專門考察他的政治生涯，如劉健明〈楊素政治生涯考析〉（[臺大佛學數位圖書館所收《唐研究》第五卷目錄](https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=357244)）。《隋書》史臣的總評是兩截的：「考其夷凶靜亂，功臣莫居其右」，但「專以智詐自立，不由仁義之道」，甚至說隋朝「究其禍敗之源，實乃素之由也」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：楊素的戰場天才與朝堂罪責，來自同一種思考方式——把一切變數都視為可以清除的障礙；這種方式在戰場上產生奇效，在朝廷裡卻摧毀了國本。**\n\n**一、伐陳：用夜色與巨艦除掉地利**\n\n他在永安造大艦「五牙」，「上起樓五層，高百餘尺，左右前後置六拍竿……容戰士八百人」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。伐陳時陳將戚欣扼守狼尾灘，地勢險峭，他判斷「若晝日下船，彼則見我，灘流迅激，制不由人」，於是「以夜掩之」，親率黃龍船數千艘「銜枚而下」，又派步騎從兩岸夾擊，戚欣敗走；他對俘虜「勞而遣之，秋毫不犯，陳人大悅」[史載]。陳將以鐵鎖三條橫截江峽，他登陸先攻其柵，「徐去其鎖」；再以五牙艦的拍竿「碎賊十餘艦」[史載]。陳人望見他坐在船上，說：「清河公即江神也。」[史載]關於中古水戰的演變，學界另有專論（[Andrew Chittick, “The transformation of naval warfare in early Medieval China”](https://ecscholar.eckerd.edu/esploro/outputs/journalArticle/The-transformation-of-naval-warfare-in/992553043906111)）。\n\n**二、平江南：以首惡換和平**\n\n陳亡後江南大亂，「大者數萬，小者數千」。他「前後百餘戰」，從京口一路追擊到永嘉、泉州（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。最後他派人對泉州豪族王國慶說：「爾之罪狀，計不容誅。唯有斬送智慧，可以塞責。」王國慶遂執送高智慧，江南大定[史載]。\n\n**三、破突厥：除掉舊陣法**\n\n開皇十八年突厥達頭可汗犯塞。過去諸將「以戎車步騎相參，輿鹿角爲方陣，騎在其內」，他說：「此乃自固之道，非取勝之方也。」於是「悉除舊法，令諸軍爲騎陣」；達頭以為「此天賜我也」，率十餘萬騎來戰，結果被他「奮擊，大破之，達頭被重創而遁」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。仁壽初再出雲州，他「親將兩騎，並降突厥二人，與虜並行」，等敵軍紮營未定才發動突襲，「自是突厥遠遁，磧南無復虜庭」[史載]。\n\n**四、治軍：除掉不勇敢的人**\n\n《隋書》記他「每將臨寇，輒求人過失而斬之，多者百餘人，少不下十數。流血盈前，言笑自若」；臨陣時先派一二百人陷陣，「如不能陷陣而還者，無問多少，悉斬之」[史載]。但他也「微功必録」，所以「雖嚴忍，士亦以此願從焉」[史載]。\n\n**五、朝堂：除掉擋路的人**\n\n他監修仁壽宮，「夷山堙谷，督役嚴急，作者多死」；晉王楊廣「卑躬以交素」，他與楊約定策廢太子楊勇；後來又與楊廣謀構蜀王秀之罪；朝臣「如賀若弼、史萬歳、李綱、柳彧等，素皆陰中之」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。文帝病危時，他「矯詔追東宮兵士帖上臺宿衞」，文帝「以此日崩，由是頗有異論」[史載]。\n\n**六、平楊諒：計日破賊**：煬帝即位，漢王楊諒起兵。他先以輕騎五千「潛於渭口宵濟」，奪回蒲州；臨行前「計日破賊，皆如所量」。楊諒派趙子開擁眾十餘萬「布陣五十里」，他「令諸將以兵臨之，自引奇兵潛入霍山，緣崖谷而進，直指其營，一戰破之」，並在清源擒獲名將蕭摩訶，楊諒「窮蹙而降」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。這是他最後一次出征，也是他軍事生涯中最完整的一次正奇並用。\n\n**連鎖結果**：他平定漢王楊諒之叛，煬帝手詔稱他「疾風知勁草，世亂有誠臣」；但煬帝「外示殊禮，內情甚薄」，他病重時煬帝「密問醫人，恆恐不死」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。他死後，其子楊玄感起兵反隋，「諸子皆坐玄感誅死」[史載]。\n\n### **3. 【人性與性格側寫】**\n\n*   **膽氣過人**：周武帝要斬他，他說「臣事無道天子，死其分也」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。\n*   **文武兼才**：下筆立成詔書，晚年贈薛道衡五言詩七百字，「詞氣宏拔，風韻秀上」[史載]。\n*   **冷酷無情**：臨陣斬人「流血盈前，言笑自若」[史載]。\n*   **好惡分明**：朝臣中「頗推高熲，敬牛弘，厚接薛道衡，視蘇威蔑如也」[史載]。\n*   **愛才也記才**：他推重高熲、敬重牛弘、厚待薛道衡，對真正有才學的人並不吝於尊重（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。\n*   **貪財好宅**：東西二京宅第「朝毀夕復，營繕無已」，邸店、水磑、田宅「以千百數」[史載]。\n\n### **4. 【如果生在現代】**\n\n楊素最接近的現代角色是：**一位戰功彪炳、後來進入政府高層並捲入接班人鬥爭的軍方強人。**\n\n*   **戰場上的創新者**：他設計了全新的大型艦艇，並以夜間突襲突破敵人的天險。\n*   **打破教條**：當所有人都採用防守陣型時，他改用全騎兵進攻，引誘敵人主力出擊後一舉擊潰。\n*   **極端的紀律**：他以近乎恐怖的手段逼部隊死戰，但對有功的部下絕不吝於獎賞。\n*   **進入政壇**：他協助一位年輕的王子取代原定接班人，並在老領導人病危時掌控了宮廷警衛。\n*   **邊界**：這個比喻只描寫他的軍事與政治手法；他「流血盈前，言笑自若」的斬殺士兵與督役致死，是當時亦受非議的殘酷行為，不能以「紀律」或「效率」輕描淡寫。",
+        "soulEssence": "【說話邏輯】\n他說話的方式是先把對方的退路堵死，再給出唯一的出口。對泉州的王國慶，他說：「爾之罪狀，計不容誅。唯有斬送智慧，可以塞責」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]；對周武帝，他說：「臣事無道天子，死其分也」[史載]——把自己放在無可退讓的位置，反而逼對方讓步[推斷]。在朝堂上，他的語言又變得柔軟而狡猾：仁壽宮被批評太奢華時，他繞過文帝，直接對獨孤皇后說「帝王法有離宮別館，今天下太平，造此一宮，何足損費」[史載]。他知道該對誰說什麼話，也知道哪一扇門通往決定權[推斷]。連妻子鄭氏性情強悍，他氣急時說的竟是「我若作天子，卿定不堪爲皇后」，結果被妻子告發而「坐免」[史載]——即使是氣話，他的想像也是從權力的頂端出發[推斷]。\n\n【壓力反應】\n他在壓力下的第一反應，是找到能夠改變局面的關鍵人物或關鍵點。\n仁壽宮引起文帝不悅，他「尤懼，計無所出，即於北門啟獨孤皇后」，以皇后之口說服皇帝（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]；文帝病危、太子處境危急，他「矯詔追東宮兵士帖上臺宿衞」[史載]。在戰場上也是如此：狼尾灘地勢險峭，他找到的關鍵是夜色；突厥騎兵強大，他找到的關鍵是讓對方以為有機可乘[史載]。他很少硬抗壓力，而是尋找一個可以撬動整個局面的支點[推斷]。即使支點是一道假詔、一位皇后、或一個願意出賣同伴的叛軍首領，他都不排斥[推斷]。\n\n【核心驅動】\n他想要的是「功名」——而且是可以被看見、被賞賜、被記錄的功名。\n史臣說他「志懷遠大，以功名自許」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]。年輕時他說「無心圖富貴」，晚年卻「家僮數千」、宅第「制擬宮禁」[史載]。這兩者也許並不矛盾：他追求的是功名，而富貴是功名的證明；他要的不是錢本身，而是那份讓所有人都看得見的「貴盛」[詮釋：此為從其早晚期言行對照歸納的動機]。\n\n【慣性盲點】\n他把人當成戰場上的變數來處理，卻忘了朝廷裡的人會記仇，也會比他活得更久。\n他陰中賀若弼、史萬歲等人，「若有附會及親戚，雖無才用，必加進擢」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]；他協助楊廣奪嫡，以為這是「長保榮祿，傳祚子孫」的保障[史載]。但他沒有算到：一位靠他上位的皇帝，最不能容忍的，正是那個知道他如何上位的人[推斷]。煬帝即位後「外示殊禮，內情甚薄」，甚至因為太史說隋的分野有大喪，故意把他改封到與隋同分的楚國，「欲以此厭當之」[史載]。\n\n【情感結構】\n他與弟弟楊約感情極深，「凡有所爲，必先籌於約而後行之」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]；廢太子之計，正是楊約向他提出，他「撫掌而對曰」：「吾之智思，殊不及此，賴汝起予。」[史載]。他與薛道衡互相欣賞，臨終前還寄詩七百字給他[史載]。但對大多數朝臣，他的情感只剩下輕視與壓制。煬帝每次派名醫去探病、賜上藥，表面殷勤，私下卻「密問醫人，恆恐不死」[史載]。他最脆弱的時刻，是知道自己「名位已極」之後的病榻：他「不肯服藥，亦不將慎」，對楊約說「我豈須更活耶」[史載]——他看懂了煬帝的心意，也選擇不再抵抗；一生都在逼別人選擇的人，最後替自己做了選擇[詮釋]。\n\n【參照系】\n他理解權力的框架是「勝負」：誰贏了戰場，誰就有資格決定朝廷[推斷]。\n類比準確之處：在隋初的統一戰爭中，這套框架讓他屢立大功，文帝也確實以軍功提拔他為僕射、讓他「專掌朝政」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]。\n類比失準之處：朝廷不是一場打完就結束的戰役，廢立太子的勝利讓他成為新皇帝的功臣，也成為新皇帝的威脅；史臣說他「幸而得死，子爲亂階，墳土未乾，闔門殂戮」[史載]。他以為贏了繼承之爭就贏了一切，卻沒有意識到這場勝利也為自己掘了墳[詮釋：此為本文的分析判斷]。戰場上的勝利會隨著戰爭結束而落幕，朝堂上的勝利卻會一直被記住，並被勝利者重新評估[推斷]。\n\n【內在裂縫】\n他的裂縫在於：他一生最擅長的是讓別人無路可退，最後自己也走到了無路可退的地方。\n他用「如不能陷陣而還者，無問多少，悉斬之」逼士兵死戰，用「唯有斬送智慧」逼王國慶出賣同夥（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）[史載]；他幫楊廣奪嫡、矯詔調兵，讓太子楊勇與蜀王秀都失去退路[史載]。到了晚年，煬帝「密問醫人，恆恐不死」，他知道自己已經沒有退路，於是「不肯服藥」[史載]。那個年輕時說「臣但恐富貴來逼臣」的人，最終確實被富貴與權勢逼到了盡頭[詮釋]。",
+        "stats": [
+          97,
+          80,
+          95,
+          78,
+          70
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：97\n\n他統領上游水軍伐陳，「舟艫被江，旌甲曜日」；平定江南叛亂「前後百餘戰」；兩度出塞大破突厥，「自是突厥遠遁，磧南無復虜庭」；又平漢王楊諒（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。水陸南北皆有大捷，「戰無不勝，稱爲名將」。扣分在於他的勝利有部分建立在近乎殘酷的督戰之上。評97，低於李靖（100）與王翦（99），與李光弼（97）持平，高於韋孝寬（96）。\n\n### 武力：80\n\n周滅齊時齊主大軍追擊，他「與驍將十餘人盡力苦戰，憲僅而獲免」；仁壽初出雲州，他「親將兩騎，並降突厥二人，與虜並行」偵察敵營；平楊諒時「忘身殉義，親當矢石」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。他有親臨險地的勇氣，但主要以統帥身分作戰。評80，與李勣（80）持平，高於韋孝寬（75）與李靖（75），低於蘇定方（90）。\n\n### 智謀：95\n\n狼尾灘「以夜掩之」、截江鐵鎖「先攻其柵」、對突厥「悉除舊法，令諸軍爲騎陣」誘敵決戰、平楊諒時「自引奇兵潛入霍山，緣崖谷而進」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)），本傳稱其「多權略，乘機赴敵，應變無方」。但他把權謀用在構陷同僚、廢立太子，史臣稱其「專以智詐自立」。評95，低於李靖（100）與韋孝寬（98），高於岳飛（88）。\n\n### 政治：78\n\n他代蘇威為尚書右僕射，與高熲「專掌朝政」，平江南時以招降之策使「江南大定」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。但他「營構離宮，陷君於奢侈；謀廢冡嫡，致國於傾危」，陰中賀若弼、史萬歲等人，史臣甚至稱隋亡「實乃素之由也」。評78，低於韋孝寬（92）與王翦（98），高於李光弼（55）與白起（15），才幹足以為相，德行不足以為相。\n\n### 魅力：70\n\n他「微功必録」，「士亦以此願從焉」；煬帝手詔稱他「疾風知勁草，世亂有誠臣」（[《隋書·楊素傳》](https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748)）。但他「流血盈前，言笑自若」，朝臣「莫不畏附」，柳述、梁毗等人公開抗表言其「作威作福」，晚年更被煬帝猜忌。評70，與王翦（70）持平，高於白起（30），低於韋孝寬（85）與李靖（92）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T11:37:03.022Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "隋書·卷四十八\n列傳第十三　楊素",
+            "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748",
+            "locator": "本機固定修訂 oldid=2180330 全文比對（textSha256 已驗）：臣事無道天子，死其分也、勿憂不富貴、臣但恐富貴來逼臣，臣無心圖富貴、家僮數千，後庭妓妾曳綺羅者以千數。第宅華侈，制擬宮禁、貪冒財貨，營求產業、少落拓，有大志…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "臺大佛學數位圖書館所收《唐研究》第五卷目錄（含劉健明〈楊素政治生涯考析〉）",
+            "url": "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=357244",
+            "locator": "WebSearch 結果摘要：僅目錄篇名，正文只據題名指出有專題研究",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "Andrew Chittick, “The transformation of naval warfare in early Medieval China: the role of light fast boats,” Journal of Asian History 44.2",
+            "url": "https://ecscholar.eckerd.edu/esploro/outputs/journalArticle/The-transformation-of-naval-warfare-in/992553043906111",
+            "locator": "WebSearch 結果摘要：僅書目資訊，正文只據題名指出中古水戰有專論",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "58e27db4315a2e53c5015d64af677243a2e5d74581d79e739151e3b9a8381a54",
+        "sourcePackageSha256": "5455e7f078baf952b6e8c5d6a1f607a1324d486571781234413173c13616181f",
+        "preservedDeepSha256": "f037b13b8c398906f98c0268b5b678b7f6de81679c8a9cd9de5d662ba7fab521",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "6dd1ca29f7ac226e10850f36360f713e53391aedfce9a12c01d97e07cdcc2a69",
+            "requestSha256": "58e27db4315a2e53c5015d64af677243a2e5d74581d79e739151e3b9a8381a54",
+            "inputSha256": "f6ae16f83d7f59da667a8ab79cfe11c0878c9e9fb1e3d5506842efb95b2efd7b",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "e3838c1e85f117c0b3fef54f0b4f64a29cd0de9234a8ba466b750d46773f53cb",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "5455e7f078baf952b6e8c5d6a1f607a1324d486571781234413173c13616181f",
+            "preservedDeepSha256": "f037b13b8c398906f98c0268b5b678b7f6de81679c8a9cd9de5d662ba7fab521",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:37:03.022Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/19.analysisStats.raw.md",
+            "rawResponseSha256": "06ca0daa131df8f3523de2ea22528a8efb0c91baada39b2eb8b100e55f39cabd",
+            "responseFile": "analysis-batch-51-100/drafts/19.analysisStats.response.md",
+            "responseSha256": "06ca0daa131df8f3523de2ea22528a8efb0c91baada39b2eb8b100e55f39cabd",
+            "fieldsHashes": {
+              "analysis": "48250836f67cc3baef05c4e9d1185e293a359f5cd66a9fc3ca70b1805d7f9962",
+              "stats": "6f0c268dc8bc8d5a6ee4493e0aa8194f1795c2709b8e89cf22620b3fd298bebe",
+              "statsAnalysis": "84865c6941a065a9ad0702ec4e29b209869ff5a94d3935360c3833e928b27161"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/19.analysisStats.capture.json",
+            "captureSha256": "2c91c81a4f1f22c0f061dc1ae7337180f6f3059c8edf1f7b6dcfe020bb88bce6",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/19.analysisStats.json",
+            "sourceReviewSha256": "e0e9d80841cd602972d461d08a411f503b0ac904cae93a35a1eaa2bfba1c27e5",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/19.combined.search-log.json",
+              "sha256": "2aed542ad58fadf9bf30196d63f58e821f68dd0938eb0265f2dac4d7e2db002a",
+              "webSearchCount": 1,
+              "archiveCheckCount": 73
+            },
+            "checkedSources": [
+              {
+                "title": "隋書·卷四十八\n列傳第十三　楊素",
+                "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748",
+                "locator": "本機固定修訂 oldid=2180330 全文比對（textSha256 已驗）：臣事無道天子，死其分也、勿憂不富貴、臣但恐富貴來逼臣，臣無心圖富貴、家僮數千，後庭妓妾曳綺羅者以千數。第宅華侈，制擬宮禁、貪冒財貨，營求產業、少落拓，有大志…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "臺大佛學數位圖書館所收《唐研究》第五卷目錄（含劉健明〈楊素政治生涯考析〉）",
+                "url": "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=357244",
+                "locator": "WebSearch 結果摘要：僅目錄篇名，正文只據題名指出有專題研究",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "Andrew Chittick, “The transformation of naval warfare in early Medieval China: the role of light fast boats,” Journal of Asian History 44.2",
+                "url": "https://ecscholar.eckerd.edu/esploro/outputs/journalArticle/The-transformation-of-naval-warfare-in/992553043906111",
+                "locator": "WebSearch 結果摘要：僅書目資訊，正文只據題名指出中古水戰有專論",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "306e9622372227b48145dd5a17785203be054a83616eceb216485e9db6626402",
+            "requestSha256": "58e27db4315a2e53c5015d64af677243a2e5d74581d79e739151e3b9a8381a54",
+            "inputSha256": "f6ae16f83d7f59da667a8ab79cfe11c0878c9e9fb1e3d5506842efb95b2efd7b",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "af504b6e4e86d3e0dc43ba169fe715787fbd1a2d82f6175c86fb15b9710b37ab",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "5455e7f078baf952b6e8c5d6a1f607a1324d486571781234413173c13616181f",
+            "preservedDeepSha256": "f037b13b8c398906f98c0268b5b678b7f6de81679c8a9cd9de5d662ba7fab521",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:37:03.022Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/19.soulEssence.raw.md",
+            "rawResponseSha256": "a5508ba80ea74438d0400207eff3ff0cd9fbdd4611aa667101d312efd97424ca",
+            "responseFile": "analysis-batch-51-100/drafts/19.soulEssence.response.md",
+            "responseSha256": "a5508ba80ea74438d0400207eff3ff0cd9fbdd4611aa667101d312efd97424ca",
+            "fieldsHashes": {
+              "soulEssence": "c4a7d94044b812c9929e329a3ebad7c904cd401d3fc5dd260472685b567d90b0"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/19.soulEssence.capture.json",
+            "captureSha256": "1cdcd365fd249476819a768ad394163267acd6ee9cc40e75ca9da024dbb530cb",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/19.soulEssence.json",
+            "sourceReviewSha256": "ba85d0f2e7f9a64062a81bcd99973ceed3b765a04449ec8e63879b5c21150b59",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/19.combined.search-log.json",
+              "sha256": "2aed542ad58fadf9bf30196d63f58e821f68dd0938eb0265f2dac4d7e2db002a",
+              "webSearchCount": 1,
+              "archiveCheckCount": 73
+            },
+            "checkedSources": [
+              {
+                "title": "隋書·卷四十八\n列傳第十三　楊素",
+                "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748",
+                "locator": "本機固定修訂 oldid=2180330 全文比對（textSha256 已驗）：臣事無道天子，死其分也、勿憂不富貴、臣但恐富貴來逼臣，臣無心圖富貴、家僮數千，後庭妓妾曳綺羅者以千數。第宅華侈，制擬宮禁、貪冒財貨，營求產業、少落拓，有大志…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/19.analysis.md",
+            "analysisContextSha256": "a32b048d8409f5d4b51714ff0da0fbd680a02ed9539896534997cbaedcf6a732"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_楊素_306319309",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:37:03.084Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a5508ba80ea74438d0400207eff3ff0cd9fbdd4611aa667101d312efd97424ca",
+  "rawResponseSha256": "a5508ba80ea74438d0400207eff3ff0cd9fbdd4611aa667101d312efd97424ca",
+  "sourcePackageSha256": "5455e7f078baf952b6e8c5d6a1f607a1324d486571781234413173c13616181f",
+  "searchLogSha256": "2aed542ad58fadf9bf30196d63f58e821f68dd0938eb0265f2dac4d7e2db002a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748",
+      "title": "隋書·卷四十八\n列傳第十三　楊素",
+      "locator": "本機固定修訂 oldid=2180330 全文比對（textSha256 已驗）：臣事無道天子，死其分也、勿憂不富貴、臣但恐富貴來逼臣，臣無心圖富貴、家僮數千，後庭妓妾曳綺羅者以千數。第宅華侈，制擬宮禁、貪冒財貨，營求產業、少落拓，有大志…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以除掉障礙為方法論，終被新君視為障礙；場景為臣事無道天子、狼尾灘夜掩、斬人言笑自若、北門啟皇后、我豈須更活耶。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "功名與貴盛、替自己做了選擇、被富貴逼到盡頭，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以王國慶與皇后、矯詔與支點、功名與宅第、陰中朝臣與改封楚、楊約與薛道衡、勝負框架、逼人無路與不肯服藥為事件。"
+    }
+  ],
+  "materialIssues": []
+}

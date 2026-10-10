@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_楊素_306319309",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:37:03.082Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "06ca0daa131df8f3523de2ea22528a8efb0c91baada39b2eb8b100e55f39cabd",
+  "rawResponseSha256": "06ca0daa131df8f3523de2ea22528a8efb0c91baada39b2eb8b100e55f39cabd",
+  "sourcePackageSha256": "5455e7f078baf952b6e8c5d6a1f607a1324d486571781234413173c13616181f",
+  "searchLogSha256": "2aed542ad58fadf9bf30196d63f58e821f68dd0938eb0265f2dac4d7e2db002a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748",
+      "title": "隋書·卷四十八\n列傳第十三　楊素",
+      "locator": "本機固定修訂 oldid=2180330 全文比對（textSha256 已驗）：臣事無道天子，死其分也、勿憂不富貴、臣但恐富貴來逼臣，臣無心圖富貴、家僮數千，後庭妓妾曳綺羅者以千數。第宅華侈，制擬宮禁、貪冒財貨，營求產業、少落拓，有大志…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=357244",
+      "title": "臺大佛學數位圖書館所收《唐研究》第五卷目錄（含劉健明〈楊素政治生涯考析〉）",
+      "locator": "WebSearch 結果摘要：僅目錄篇名，正文只據題名指出有專題研究",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ecscholar.eckerd.edu/esploro/outputs/journalArticle/The-transformation-of-naval-warfare-in/992553043906111",
+      "title": "Andrew Chittick, “The transformation of naval warfare in early Medieval China: the role of light fast boats,” Journal of Asian History 44.2",
+      "locator": "WebSearch 結果摘要：僅書目資訊，正文只據題名指出中古水戰有專論",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "弘農華陰人、周武帝欲斬、平齊從齊王憲、伐陳五牙與狼尾灘、平江南百餘戰、開皇十八年破達頭、仁壽初出雲州、廢太子、平楊諒、大業二年卒，皆依隋書卷48 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：伐陳平南破突厥平諒；武力：苦戰護憲與親偵敵營；智謀：夜掩、騎陣、霍山奇兵；政治：專掌朝政與謀廢冡嫡；魅力：微功必録與莫不畏附。對照李靖、王翦、李光弼、韋孝寬、李勣、蘇定方、白起。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "騎陣→誘達頭→大破；斬未陷陣者→將士必死；奪嫡→煬帝猜忌→改封楚以厭當；子玄感反→闔門誅戮。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    97,
+    80,
+    95,
+    78,
+    70
+  ]
+}
