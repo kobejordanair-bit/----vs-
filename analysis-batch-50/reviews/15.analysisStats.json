@@ -1,0 +1,99 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋孝宗_284427266",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:45:40.540Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "5cddb6f2b4564195c442fad194955f2f38e522c90315517b26144830ab678fc9",
+  "rawResponseSha256": "5cddb6f2b4564195c442fad194955f2f38e522c90315517b26144830ab678fc9",
+  "sourcePackageSha256": "3a9d76c5d37ba9253f88a707ca18556644996062f7ffbbefa80ac8d00eabf472",
+  "searchLogSha256": "2375dac135b79ad75246dc3efedf08cb809b9415244165c116e72382d1db4925",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7033",
+      "title": "宋史·卷三十三 本紀第三十三 孝宗一",
+      "locator": "本機固定修訂 oldid=7908408 全文比對（textSha256 已驗）：以建炎元年十月戊寅生帝於秀州青杉閘之官舍、追復岳飛元官，以禮改葬、以二將不葉而遁、李顯忠、邵宏淵軍大潰于符離、四州地、歲幣可與，名分、歸正人不可從、復以龍大淵知閣門事，曾覿同知閣門事…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7035",
+      "title": "宋史·卷三十五 本紀第三十五 孝宗三",
+      "locator": "本機固定修訂 oldid=7908410 全文比對（textSha256 已驗）：高宗以公天下之心，擇太祖之後而立之，乃得孝宗之賢、卓然爲南渡諸帝之稱首、符離邂逅失利，重違高宗之命，不輕出師，又值金世宗之立，金國平治，無釁可乘、易表稱書，改臣稱侄，減去歲幣，以定鄰好、吾恐宋人之和，終不可恃、自古人君起自外藩，入繼大統，而能盡宮庭之孝，未有若帝…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198629/1/JOR_71_1_69.pdf",
+      "title": "林晃〈南宋孝宗朝における太上皇帝の影響力と皇帝側近政治〉，《東洋史研究》71:1",
+      "locator": "WebSearch 結果摘要：孝宗朝27年中太上皇高宗在世約25年；章節涵蓋符離前後宰執人事與和戰、太上皇影響力與側近政治；正文只引此範圍",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7034",
+      "title": "宋史·卷三十四 本紀第三十四 孝宗二",
+      "locator": "本機固定修訂 oldid=2285148 全文比對（textSha256 已驗）：詔廷尉大理官毋以獄情白宰執，探刺旨意爲輕重",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7036",
+      "title": "宋史·卷三十六 本紀第三十六 光宗",
+      "locator": "本機固定修訂 oldid=2285197 全文比對（textSha256 已驗）：皇帝有疾，聽就內中成服",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "趙昚，南宋孝宗；保留原 A- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "chronology",
+      "passed": true,
+      "detail": "建炎元年生、紹興三十二年受禪（七月追復岳飛）、隆興元年符離、同年十月四州之答、淳熙十四年高宗崩、淳熙十六年傳位、紹熙五年崩年六十八。"
+    },
+    {
+      "id": "peace-terms",
+      "passed": true,
+      "detail": "四州歲幣可與、名分歸正人不可從（隆興元年），和議結果依本紀贊；名分意義為分析推論。"
+    },
+    {
+      "id": "courtiers",
+      "passed": true,
+      "detail": "龍大淵、曾覿隆興元年復知閣門事，原文核對。"
+    },
+    {
+      "id": "guangzong",
+      "passed": true,
+      "detail": "孝宗崩時光宗以疾就內中成服，光宗紀原文。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[70,35,82,90,85] 對照漢明帝[82,55,90,95,65]、宋仁宗[60,20,84,90,92]、明孝宗[62,20,80,91,88]、宋太宗[75,50,88,92,70]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    70,
+    35,
+    82,
+    90,
+    85
+  ]
+}

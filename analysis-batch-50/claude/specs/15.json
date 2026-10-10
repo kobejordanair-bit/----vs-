@@ -1,0 +1,185 @@
+{
+ "webSearches": [
+  {
+   "query": "宋孝宗 太上皇 高宗 干預 隆興北伐 符離之戰 研究 論文 二元皇權",
+   "returnedUrls": [
+    "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198629/1/JOR_71_1_69.pdf",
+    "https://www.thenewslens.com/article/163500",
+    "https://scholars.lib.ntu.edu.tw/handle/123456789/5354?locale=en",
+    "https://ir.sinica.edu.tw/handle/201000000A/1394",
+    "https://www.zdic.net/hant/隆兴和议"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "以建炎元年十月戊寅生帝於秀州青杉閘之官舍"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "追復岳飛元官，以禮改葬"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "以二將不葉而遁"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "李顯忠、邵宏淵軍大潰于符離"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "四州地、歲幣可與，名分、歸正人不可從"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "復以龍大淵知閣門事，曾覿同知閣門事"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷033",
+   "quote": "張浚進樞密使、都督江淮東西路軍馬"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷034",
+   "quote": "詔廷尉大理官毋以獄情白宰執，探刺旨意爲輕重"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "高宗以公天下之心，擇太祖之後而立之，乃得孝宗之賢"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "卓然爲南渡諸帝之稱首"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "符離邂逅失利，重違高宗之命，不輕出師，又值金世宗之立，金國平治，無釁可乘"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "易表稱書，改臣稱侄，減去歲幣，以定鄰好"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "吾恐宋人之和，終不可恃"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "自古人君起自外藩，入繼大統，而能盡宮庭之孝，未有若帝"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "終喪三年，又能卻群臣之請而力行之"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "以太上皇未御常膳，自來日不視朝"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "詣德壽宮侍疾，太上皇崩于德壽殿"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "下詔傳位皇太子"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷035",
+   "quote": "崩于重華殿，年六十有八"
+  },
+  {
+   "book": "songshi",
+   "title": "宋史/卷036",
+   "quote": "皇帝有疾，聽就內中成服"
+  }
+ ],
+ "extraSources": {
+  "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198629/1/JOR_71_1_69.pdf": {
+   "title": "林晃〈南宋孝宗朝における太上皇帝の影響力と皇帝側近政治〉，《東洋史研究》71:1",
+   "locator": "WebSearch 結果摘要：孝宗朝27年中太上皇高宗在世約25年；章節涵蓋符離前後宰執人事與和戰、太上皇影響力與側近政治；正文只引此範圍",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "Page fetches remain blocked; primary texts verified against the repository archive; 林晃論文僅依搜尋摘要。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "趙昚，南宋孝宗；保留原 A- 評級與 deepAnalysis。"
+   ],
+   [
+    "chronology",
+    "建炎元年生、紹興三十二年受禪（七月追復岳飛）、隆興元年符離、同年十月四州之答、淳熙十四年高宗崩、淳熙十六年傳位、紹熙五年崩年六十八。"
+   ],
+   [
+    "peace-terms",
+    "四州歲幣可與、名分歸正人不可從（隆興元年），和議結果依本紀贊；名分意義為分析推論。"
+   ],
+   [
+    "courtiers",
+    "龍大淵、曾覿隆興元年復知閣門事，原文核對。"
+   ],
+   [
+    "guangzong",
+    "孝宗崩時光宗以疾就內中成服，光宗紀原文。"
+   ],
+   [
+    "stats-calibration",
+    "[70,35,82,90,85] 對照漢明帝[82,55,90,95,65]、宋仁宗[60,20,84,90,92]、明孝宗[62,20,80,91,88]、宋太宗[75,50,88,92,70]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "四州之答與重違高宗之命；沉默標[推斷]。"
+   ],
+   [
+    "pressure",
+    "符離後和談與高宗喪服，相隔二十四年。"
+   ],
+   [
+    "drive",
+    "擇太祖之後、追復岳飛；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "二將不葉與龍大淵曾覿。"
+   ],
+   [
+    "emotion",
+    "侍疾、服喪、光宗缺席；感受標[詮釋]。"
+   ],
+   [
+    "frame",
+    "改臣稱侄、重違高宗之命；光宗因素標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "符離後與高宗崩後兩次。"
+   ]
+  ]
+ }
+}
