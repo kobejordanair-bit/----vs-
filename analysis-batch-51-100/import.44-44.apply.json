@@ -1,0 +1,57 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "apply",
+  "status": "applied_verified",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "1af775f0095c3db2e61a8d40118d5d4278046ebb1e919ce79a596fadb721c77d",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "c7cc42ef7e97856fe537bab2f9cdf1fc8fe8f58917d35b86f266fcb32e2edd84",
+  "plannedAfterSha256": "7e31e9c9c7849dec37657c03324a00c569a2f2584c2e153645b82e563a731fc4",
+  "beforeRevision": 95,
+  "plannedAfterRevision": 96,
+  "patchBytes": 4362512,
+  "plannedDocumentBytes": 11281331,
+  "writtenFieldHashes": [
+    {
+      "id": "minister_和珅_2003865491",
+      "field": "analysis",
+      "sha256": "f7bdb98615b3d538cac27080b832198661a99aacf5226f1986019e4a39f6ab68"
+    },
+    {
+      "id": "minister_和珅_2003865491",
+      "field": "soulEssence",
+      "sha256": "8b4f85a7669587801367824f87be30111f58db3eccb704d8a152ff40340bbbd2"
+    },
+    {
+      "id": "minister_和珅_2003865491",
+      "field": "stats",
+      "sha256": "527a4a4094ecaf87c688ae75eeff9222ca3aafdec962cfda3fdbd435548d0d72"
+    },
+    {
+      "id": "minister_和珅_2003865491",
+      "field": "statsAnalysis",
+      "sha256": "9e25dd1923d330554f95e2eae36f1d7b64b9540265bca37727c8092d2ee11e1e"
+    }
+  ],
+  "conflicts": 0,
+  "writeAttempted": true,
+  "writeSucceeded": true,
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 96,
+    "afterSha256": "7e31e9c9c7849dec37657c03324a00c569a2f2584c2e153645b82e563a731fc4",
+    "unaffectedBeforeSha256": "195bc0c1b64dded8215a3cc5d938d2f457db2cba71f07d85124028b65439116e",
+    "unaffectedAfterSha256": "195bc0c1b64dded8215a3cc5d938d2f457db2cba71f07d85124028b65439116e"
+  },
+  "rawExtrasPreserved": true
+}

@@ -1,35 +1,436 @@
 {
   "format": "dynasty-batch50-receipt-ledger",
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T18:17:19.413Z",
+  "generatedAt": "2026-10-10T18:40:44.794Z",
   "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
   "targetCount": 50,
   "libraryTotalExpected": 962,
-  "status": "assembled_awaiting_publication",
+  "status": "fully_published_final_audit_verified",
   "passed": true,
-  "complete": false,
-  "finalAuditVerified": false,
-  "libraryPreserved": null,
+  "complete": true,
+  "finalAuditVerified": true,
+  "libraryPreserved": true,
   "basis": "Validated apply + dry-run receipts and rebuilt manuscript evidence; no registration flags or fixed five-person chunks.",
-  "latestVerifiedPublicationRevision": 52,
-  "latestReceiptedDocumentSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "latestVerifiedPublicationRevision": 102,
+  "latestReceiptedDocumentSha256": "1268ec1e0bc8f991b93874f18283d9d922f381d04fdcabca68f063ce03ba777e",
   "counts": {
     "prepared": 50,
     "generated": 50,
     "reviewed": 50,
     "sourceQA": 50,
     "assembled": 50,
-    "imported": 0,
-    "verified": 0,
+    "imported": 50,
+    "verified": 50,
     "partialImported": 0,
-    "importedPeople": 0,
-    "importedFields": 0,
-    "remainingIncomplete": 50
+    "importedPeople": 50,
+    "importedFields": 200,
+    "remainingIncomplete": 0
   },
-  "imports": [],
+  "imports": [
+    {
+      "file": "import.01-01.apply.json",
+      "receiptSha256": "d3ed929aa640ef212e625a9f93c981451be25ebb354e20183553d3a9c2347a14",
+      "resultsFile": "results.01-01.v1.json",
+      "beforeRevision": 52,
+      "afterRevision": 53,
+      "changedFields": 4
+    },
+    {
+      "file": "import.02-02.apply.json",
+      "receiptSha256": "8f5a1a6119ec0e9c80899b0e24a7e9952b02026015e41a541f8265586e56c3b3",
+      "resultsFile": "results.02-02.v1.json",
+      "beforeRevision": 53,
+      "afterRevision": 54,
+      "changedFields": 4
+    },
+    {
+      "file": "import.03-03.apply.json",
+      "receiptSha256": "220bc7100a98ffbb62c3082fe3deb8fb8ba2e928842adff1837679675b6d7dc3",
+      "resultsFile": "results.03-03.v1.json",
+      "beforeRevision": 54,
+      "afterRevision": 55,
+      "changedFields": 4
+    },
+    {
+      "file": "import.04-04.apply.json",
+      "receiptSha256": "0a1e003742d62e488b96efb645f519d10b45f0dc9e0d4064f35886879ce63bd8",
+      "resultsFile": "results.04-04.editorial.v1.json",
+      "beforeRevision": 55,
+      "afterRevision": 56,
+      "changedFields": 4
+    },
+    {
+      "file": "import.05-05.apply.json",
+      "receiptSha256": "6daeb5d8e2121458fedddcb43bf1916d4c2adb95ea4762486b488610b3f68d7f",
+      "resultsFile": "results.05-05.v1.json",
+      "beforeRevision": 56,
+      "afterRevision": 57,
+      "changedFields": 4
+    },
+    {
+      "file": "import.06-06.apply.json",
+      "receiptSha256": "d00fb0389dc7a2cc711fd16645f4f16c8d1813566877d033f2a51df0463859cc",
+      "resultsFile": "results.06-06.v1.json",
+      "beforeRevision": 57,
+      "afterRevision": 58,
+      "changedFields": 4
+    },
+    {
+      "file": "import.07-07.apply.json",
+      "receiptSha256": "8de02fc85f5d3e4e3e0117a179e60ecb884d98cfea156bee57450d3d4cd12b21",
+      "resultsFile": "results.07-07.v1.json",
+      "beforeRevision": 58,
+      "afterRevision": 59,
+      "changedFields": 4
+    },
+    {
+      "file": "import.08-08.apply.json",
+      "receiptSha256": "4471239637e6624d4aea34aff25b2e1f2f869d63561c6c310f3a6b1319f263f9",
+      "resultsFile": "results.08-08.v1.json",
+      "beforeRevision": 59,
+      "afterRevision": 60,
+      "changedFields": 4
+    },
+    {
+      "file": "import.09-09.apply.json",
+      "receiptSha256": "3ede54a8b091ea56a8a3abc3b62a1d752a66fbed6dfa93bce56347fa11e7d8eb",
+      "resultsFile": "results.09-09.v1.json",
+      "beforeRevision": 60,
+      "afterRevision": 61,
+      "changedFields": 4
+    },
+    {
+      "file": "import.10-10.apply.json",
+      "receiptSha256": "249000259cac686913bb1e2cfcb8d2f876146afd9ea8ebb82a6c7fc844f69fb4",
+      "resultsFile": "results.10-10.v1.json",
+      "beforeRevision": 61,
+      "afterRevision": 62,
+      "changedFields": 4
+    },
+    {
+      "file": "import.11-11.apply.json",
+      "receiptSha256": "f1ec120c496f01429572c30f43e5ad0a05434b0e66506450a7ae35b2f29682df",
+      "resultsFile": "results.11-11.v1.json",
+      "beforeRevision": 62,
+      "afterRevision": 63,
+      "changedFields": 4
+    },
+    {
+      "file": "import.12-12.apply.json",
+      "receiptSha256": "a99891bb9645a5890e1b5756f62d7342ada37426edc605b968d788dd16b07255",
+      "resultsFile": "results.12-12.v1.json",
+      "beforeRevision": 63,
+      "afterRevision": 64,
+      "changedFields": 4
+    },
+    {
+      "file": "import.13-13.apply.json",
+      "receiptSha256": "641a421e7304f189f057afca0dbf257bef73ce3a6f7ec5456cd20c24a0d7a1d3",
+      "resultsFile": "results.13-13.v1.json",
+      "beforeRevision": 64,
+      "afterRevision": 65,
+      "changedFields": 4
+    },
+    {
+      "file": "import.14-14.apply.json",
+      "receiptSha256": "50e32498e561391648bf0079e0a05049c38b3032cc215c54fac8446900a395c1",
+      "resultsFile": "results.14-14.v1.json",
+      "beforeRevision": 65,
+      "afterRevision": 66,
+      "changedFields": 4
+    },
+    {
+      "file": "import.15-15.apply.json",
+      "receiptSha256": "19877815053cc99979f8afd9b0b4d1b996955e499d2bf567e7e83e69b3d1ac98",
+      "resultsFile": "results.15-15.v1.json",
+      "beforeRevision": 66,
+      "afterRevision": 67,
+      "changedFields": 4
+    },
+    {
+      "file": "import.16-16.apply.json",
+      "receiptSha256": "28e176be9e98e90c10cfa5c58c7792524f9ec66cc9172b4e678c0d68355e18ea",
+      "resultsFile": "results.16-16.v1.json",
+      "beforeRevision": 67,
+      "afterRevision": 68,
+      "changedFields": 4
+    },
+    {
+      "file": "import.17-17.apply.json",
+      "receiptSha256": "e1ee58d7391e4e48a65c7774400f220fb129db034df92ea59abd641bcb39039f",
+      "resultsFile": "results.17-17.v1.json",
+      "beforeRevision": 68,
+      "afterRevision": 69,
+      "changedFields": 4
+    },
+    {
+      "file": "import.18-18.apply.json",
+      "receiptSha256": "a2d6c395300711fb20228518877653b52fc3e972c0383cb42ffb34d3833a580b",
+      "resultsFile": "results.18-18.v1.json",
+      "beforeRevision": 69,
+      "afterRevision": 70,
+      "changedFields": 4
+    },
+    {
+      "file": "import.19-19.apply.json",
+      "receiptSha256": "ed9b8c5298f82c594f870f4be4bbbc9be64fdd39bd5862af63afbd32f52579ef",
+      "resultsFile": "results.19-19.v1.json",
+      "beforeRevision": 70,
+      "afterRevision": 71,
+      "changedFields": 4
+    },
+    {
+      "file": "import.20-20.apply.json",
+      "receiptSha256": "36ad41f6c7b43968713243d6176484dade7afb84d551738fab0f1ce315f6b971",
+      "resultsFile": "results.20-20.v1.json",
+      "beforeRevision": 71,
+      "afterRevision": 72,
+      "changedFields": 4
+    },
+    {
+      "file": "import.21-21.apply.json",
+      "receiptSha256": "6f471cd5c995299b29faf4863a0e33e7eb643f108b530e1485ce1485ea684e39",
+      "resultsFile": "results.21-21.v1.json",
+      "beforeRevision": 72,
+      "afterRevision": 73,
+      "changedFields": 4
+    },
+    {
+      "file": "import.22-22.apply.json",
+      "receiptSha256": "2347f3bc457fe4e16f85480dcaff6d9f5947b44d172e63596b0be9527e13f7ba",
+      "resultsFile": "results.22-22.v1.json",
+      "beforeRevision": 73,
+      "afterRevision": 74,
+      "changedFields": 4
+    },
+    {
+      "file": "import.23-23.apply.json",
+      "receiptSha256": "aff0ab3dd8ef3d3a149e2284d743710c072728dd596f7af4b7ca74a609846aa7",
+      "resultsFile": "results.23-23.v1.json",
+      "beforeRevision": 74,
+      "afterRevision": 75,
+      "changedFields": 4
+    },
+    {
+      "file": "import.24-24.apply.json",
+      "receiptSha256": "49d3ced8c9ace8da2d06694c3e464eebd1ef5831b2e1f860891dc0302d8c3c9f",
+      "resultsFile": "results.24-24.v1.json",
+      "beforeRevision": 75,
+      "afterRevision": 76,
+      "changedFields": 4
+    },
+    {
+      "file": "import.25-25.apply.json",
+      "receiptSha256": "cddd3406aace192e3b57607abdbd423647fbb00c54a767dd21647bef2426b2ca",
+      "resultsFile": "results.25-25.v1.json",
+      "beforeRevision": 76,
+      "afterRevision": 77,
+      "changedFields": 4
+    },
+    {
+      "file": "import.26-26.apply.json",
+      "receiptSha256": "6233e49ad33e74085ef5e7f0b1412cad7e23a497551ef00ae55fc508a9f2bb3a",
+      "resultsFile": "results.26-26.v1.json",
+      "beforeRevision": 77,
+      "afterRevision": 78,
+      "changedFields": 4
+    },
+    {
+      "file": "import.27-27.apply.json",
+      "receiptSha256": "94de5c42a545003f02ef978b707fd9c1db548a7b642a8af480337f9ca40b888d",
+      "resultsFile": "results.27-27.v1.json",
+      "beforeRevision": 78,
+      "afterRevision": 79,
+      "changedFields": 4
+    },
+    {
+      "file": "import.28-28.apply.json",
+      "receiptSha256": "7f7f2c1ce4e945a04dd40c5725770c44fff0cf4c6a853a4770e95b86415a1914",
+      "resultsFile": "results.28-28.v1.json",
+      "beforeRevision": 79,
+      "afterRevision": 80,
+      "changedFields": 4
+    },
+    {
+      "file": "import.29-29.apply.json",
+      "receiptSha256": "8b0d1981d5b047c33be8b049b23ae4e18d9a15c60484fc5f6726e80bd6ae6a56",
+      "resultsFile": "results.29-29.v1.json",
+      "beforeRevision": 80,
+      "afterRevision": 81,
+      "changedFields": 4
+    },
+    {
+      "file": "import.30-30.apply.json",
+      "receiptSha256": "4a64a615e0f00d4a303b9603c43251eeab9f75bdae2eb130efad0253ef0e3dac",
+      "resultsFile": "results.30-30.v1.json",
+      "beforeRevision": 81,
+      "afterRevision": 82,
+      "changedFields": 4
+    },
+    {
+      "file": "import.31-31.apply.json",
+      "receiptSha256": "0ed171e80280574193e780c137009aa2a6554f0c40f538c5692dd16dfa2cd1bd",
+      "resultsFile": "results.31-31.v1.json",
+      "beforeRevision": 82,
+      "afterRevision": 83,
+      "changedFields": 4
+    },
+    {
+      "file": "import.32-32.apply.json",
+      "receiptSha256": "3f47aff3f4ddce076e0fd732ec51e47ef28a6376c17ae851f9a7bc0b9b3006bd",
+      "resultsFile": "results.32-32.v1.json",
+      "beforeRevision": 83,
+      "afterRevision": 84,
+      "changedFields": 4
+    },
+    {
+      "file": "import.33-33.apply.json",
+      "receiptSha256": "95b81830f4df8a47a0cf28ebf3497dec6a51f8fcaafd7729687e91f30f9d9295",
+      "resultsFile": "results.33-33.v1.json",
+      "beforeRevision": 84,
+      "afterRevision": 85,
+      "changedFields": 4
+    },
+    {
+      "file": "import.34-34.apply.json",
+      "receiptSha256": "038bd2d0a6573ecf28f54d04f327537d1089ce782a786da2ad809c6fd10a04a2",
+      "resultsFile": "results.34-34.v1.json",
+      "beforeRevision": 85,
+      "afterRevision": 86,
+      "changedFields": 4
+    },
+    {
+      "file": "import.35-35.apply.json",
+      "receiptSha256": "d4031c34482eeaf71abb3bcfd8c949954ee60c1516acc956363ee6a67993a856",
+      "resultsFile": "results.35-35.v1.json",
+      "beforeRevision": 86,
+      "afterRevision": 87,
+      "changedFields": 4
+    },
+    {
+      "file": "import.36-36.apply.json",
+      "receiptSha256": "e720d1414c6d0b4b917ae54e8500a7325da24c53aabb2c5f0e3f43c53fd4c2f5",
+      "resultsFile": "results.36-36.v1.json",
+      "beforeRevision": 87,
+      "afterRevision": 88,
+      "changedFields": 4
+    },
+    {
+      "file": "import.37-37.apply.json",
+      "receiptSha256": "fa3ec0a94c988a8c917d752d7ef900e338b5f275fbdfb15f22e9968f8e92c513",
+      "resultsFile": "results.37-37.v1.json",
+      "beforeRevision": 88,
+      "afterRevision": 89,
+      "changedFields": 4
+    },
+    {
+      "file": "import.38-38.apply.json",
+      "receiptSha256": "2f5238e05ddc77c14e37d947163d947498efdc92a3bd423753c2dfcc5037b930",
+      "resultsFile": "results.38-38.v1.json",
+      "beforeRevision": 89,
+      "afterRevision": 90,
+      "changedFields": 4
+    },
+    {
+      "file": "import.39-39.apply.json",
+      "receiptSha256": "e1f1820e02454882a4c98aba123d09721fbd547122693331efafdb63201dac6b",
+      "resultsFile": "results.39-39.v1.json",
+      "beforeRevision": 90,
+      "afterRevision": 91,
+      "changedFields": 4
+    },
+    {
+      "file": "import.40-40.apply.json",
+      "receiptSha256": "34d4030588c55ccab3e2fdc42a842a2aebb652c2fd11ef4742b2297850c9349b",
+      "resultsFile": "results.40-40.v1.json",
+      "beforeRevision": 91,
+      "afterRevision": 92,
+      "changedFields": 4
+    },
+    {
+      "file": "import.41-41.apply.json",
+      "receiptSha256": "4badcbf3d89bb44d20415065ccf919ba6690c47a0f823fb87f2a93d20f67e0b2",
+      "resultsFile": "results.41-41.v1.json",
+      "beforeRevision": 92,
+      "afterRevision": 93,
+      "changedFields": 4
+    },
+    {
+      "file": "import.42-42.apply.json",
+      "receiptSha256": "027fcf5dbc32b2d577bb671f46f0ba227d81650e32d31da19da9a158d7edf042",
+      "resultsFile": "results.42-42.v1.json",
+      "beforeRevision": 93,
+      "afterRevision": 94,
+      "changedFields": 4
+    },
+    {
+      "file": "import.43-43.apply.json",
+      "receiptSha256": "9ee1c8d0afd31bc3ca03c1306ba5ceadf8b96d7e78dae457f8aafc7b10ba53ef",
+      "resultsFile": "results.43-43.v1.json",
+      "beforeRevision": 94,
+      "afterRevision": 95,
+      "changedFields": 4
+    },
+    {
+      "file": "import.44-44.apply.json",
+      "receiptSha256": "02cfa67249d06433094cd8e712c5f741c934c748a1a5f3d9c7743961c2b7bc50",
+      "resultsFile": "results.44-44.v1.json",
+      "beforeRevision": 95,
+      "afterRevision": 96,
+      "changedFields": 4
+    },
+    {
+      "file": "import.45-45.apply.json",
+      "receiptSha256": "c9fd0343eef1fdc9538caa2e5550fcab35f854225e8e675ac1648ceb988f8b35",
+      "resultsFile": "results.45-45.v1.json",
+      "beforeRevision": 96,
+      "afterRevision": 97,
+      "changedFields": 4
+    },
+    {
+      "file": "import.46-46.apply.json",
+      "receiptSha256": "d71c156b1456879d50262e57e585f82617699be5c4af7f07909813f4896d4a7f",
+      "resultsFile": "results.46-46.v1.json",
+      "beforeRevision": 97,
+      "afterRevision": 98,
+      "changedFields": 4
+    },
+    {
+      "file": "import.47-47.apply.json",
+      "receiptSha256": "fe2ab05b802d4c67cc25e13dae4c15ee8d0c5362bc3f7e7c78ba2cd7e13b38ce",
+      "resultsFile": "results.47-47.editorial.v1.json",
+      "beforeRevision": 98,
+      "afterRevision": 99,
+      "changedFields": 4
+    },
+    {
+      "file": "import.48-48.apply.json",
+      "receiptSha256": "a1fcd0fb78547bed5d09a0d5c846fae281a2cd7af55293da7f149f8003e8efc4",
+      "resultsFile": "results.48-48.v1.json",
+      "beforeRevision": 99,
+      "afterRevision": 100,
+      "changedFields": 4
+    },
+    {
+      "file": "import.49-49.apply.json",
+      "receiptSha256": "83543bc9cd2ce6601e4c65db86f4addd710d7fa9a84d2aa1f32be9d7d6da63e0",
+      "resultsFile": "results.49-49.v1.json",
+      "beforeRevision": 100,
+      "afterRevision": 101,
+      "changedFields": 4
+    },
+    {
+      "file": "import.50-50.apply.json",
+      "receiptSha256": "7e31182496a05676f4fce5152bf5413568985cd7acd34a0415746048b392447f",
+      "resultsFile": "results.50-50.v1.json",
+      "beforeRevision": 101,
+      "afterRevision": 102,
+      "changedFields": 4
+    }
+  ],
   "externalTransitionsRequiringSnapshotProof": [],
-  "rebuiltBatchCount": 50,
-  "finalAuditNote": "Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Mixed-chain private final snapshot + identity/raw-extra audit is still required to declare overall completion.",
+  "rebuiltBatchCount": 52,
+  "finalAuditNote": "All fields and the preserved library were verified by the production final read; this records that observation, not perpetual freshness.",
   "records": [
     {
       "slug": "01",
@@ -40,11 +441,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "174dc2d7bdd6632d08d6ac7d8ab9b806e7d180dd39cfeb1399bb8ef64026b6dd",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.01-01.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "399d12f8c5a6d895119206fc9e70a58815193c386c8dbd286178ccaa858db92f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.01-01.apply.json"
+        },
+        "stats": {
+          "sha256": "b50d4c48f15fba43c3cfd6c593ac37eb4c96280dd49e020712eef44229f40844",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.01-01.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "2b1806f13de764bd6603abb6cad7baea9708a24e3d48304f5b2c0c0c53656f65",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.01-01.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.01-01.v1.json",
@@ -63,7 +490,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "02",
@@ -74,11 +501,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "57c00001359b5c2cc00f60dbef7c50cc7a6be2c7be42cd678221a16a6e8481c6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.02-02.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "48db74d0e3b69205783dd3c4b81f711160870fdeb7929a32813f91c620d31b8c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.02-02.apply.json"
+        },
+        "stats": {
+          "sha256": "f0c5ccf49635fc9cd686843aa5242155757d9044fa777c0a31db3a5ca779e402",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.02-02.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "32a6dd5cb225c7727eddbb2129c248677d8d7d03f70fa0705e11a2bad70025e0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.02-02.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.02-02.v1.json",
@@ -97,7 +550,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "03",
@@ -108,11 +561,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "d282c1346947f01ccf4046468ea04239b462f4d6dae9392e2c2d83e2098d8650",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.03-03.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "07c3eb1e8393a9620c81b82d93ff4cdf3ca1ebc109a55249df2aef04361b3bac",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.03-03.apply.json"
+        },
+        "stats": {
+          "sha256": "0f3366dc10af06494125aa0c7f59eff7dd57556f82e3ecfe94953d98ce1a33ae",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.03-03.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7ea3b8307e114dc57362fd2c7ff6a0073c73d8281fe23285238463978dc8024a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.03-03.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.03-03.v1.json",
@@ -131,7 +610,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "04",
@@ -142,11 +621,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "74851b738375c8fb568e237ad94a3312ff7b8895ebfdc99a40a04f5b6977e386",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.04-04.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "8eb8212fe4b3c3c323a732226fee164ca2013a9b36c5bc8d17da51a4a4be8011",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.04-04.apply.json"
+        },
+        "stats": {
+          "sha256": "f704a287d45519ddf2d5a0b165f0ec485e50bd932803a83ab4122f7cbc4a818d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.04-04.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "69740a8e578e578e3a68b09c6179bc01b1dc6be2cf9262a007a405822dcd788b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.04-04.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.04-04.v1.json",
@@ -165,7 +670,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "05",
@@ -176,11 +681,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "6811aabac31975068b26ae7152a61aab4058c28a4aade1ca8672829dcceb25a8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "a9c2fb8e30bb037fdbc9b0e070cb523c23888d2f8e8adf8ea97fcdfcb94a357e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        },
+        "stats": {
+          "sha256": "06a87bd372f0532602f4589c0337a2d75a933a9a5118cad415703fdc88487b9a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7d9699c890af14fe7933d9d9cbcc83db1d039f83a57c453de0ce7b0bc259b77d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.05-05.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.05-05.v1.json",
@@ -199,7 +730,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "06",
@@ -210,11 +741,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9191b6564ca0304f940c37dbde99de100d659e2fd9163344eb2271806f062283",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.06-06.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "8e8b46959e280ef3dae3c0f7dba296ad97c27fabc3c93a7d2fe22d3c524d461d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.06-06.apply.json"
+        },
+        "stats": {
+          "sha256": "9462ee15cf018c5b7e106099fd87b5d401887a52bd7f5ca77b0ab79eb28e6db2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.06-06.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7e921985b6d375bbb632d77eac28549d85208d5cebd65f4f340aea95d8997f89",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.06-06.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.06-06.v1.json",
@@ -233,7 +790,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "07",
@@ -244,11 +801,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "1c68b7682c267306713010c1a1badb8de131c0edd4d6b8143dd643fd4c74df42",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.07-07.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "7e013a4ae0b10403c12bfa4f263d05581def6f859bea5949ae73c017fa7a64e9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.07-07.apply.json"
+        },
+        "stats": {
+          "sha256": "9fb38258cdb69c1371da3f4a4c4634afbfe4b4dc55798ecce3bc7bb6c2f8a558",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.07-07.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "e5d0ea88d74d0588bb764c76bd8b0cf1fb949c80fd6409ae1973d0875c036ad6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.07-07.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.07-07.v1.json",
@@ -267,7 +850,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "08",
@@ -278,11 +861,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "e77415224d43db2afdd876419c45de0b1ea3f3939e0119e71caf232ab7200c68",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "23e4d696822a42a3ed25c804e92e5bf7804be70f50f872a970e8dc1e9f876441",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        },
+        "stats": {
+          "sha256": "84f86ebb3ff0a2be3c930fd49fff5c0f988654b2b4c96b7830ca095bdc4e9a35",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "827983d384e7b0e8b9353780d0b172aca2be80f053532bb3c5e07263255bbd93",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.08-08.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.08-08.v1.json",
@@ -301,7 +910,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "09",
@@ -312,11 +921,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "25679ddfe38fcf3e9aad46817c0f684d85e94e291d316b0f8bd9f29a2ba47463",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "aa3b107ecf274a3c3f4c911bbaf06f6e4ab268ba67f6aa46f3cfd6e6290972f2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        },
+        "stats": {
+          "sha256": "d962e08a1ab3098dca9393dbec5a1ee5f8cd03ffc9b23c5b0eb50a67f8e4fefb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ee466e57d07fb74daa18e87120f937a11e251d88da67cccf5824591728583424",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.09-09.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.09-09.v1.json",
@@ -335,7 +970,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "10",
@@ -346,11 +981,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "28261dbdfec15a4da0b8612fcbd3d81247418c7621e0cc6f7feef4e929e999bc",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "76480548b16ca2dcdfc74be9f98330a9c853ce8f90e7317716978ccc57a1ae2a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        },
+        "stats": {
+          "sha256": "e63ee55a9e5881aaa83cf5b0c9e4b3e6dd162a81d8873a1b85bdd99e0b0b476e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7147c357652fd8311ee55bb417186615511d42ed07ee655fc4218d9159eb154d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.10-10.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.10-10.v1.json",
@@ -369,7 +1030,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "11",
@@ -380,11 +1041,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "3903185c24cc0faf06d782a2fe0011d222fe330aae0e8e4a3b00a5f2f4389fa4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "1fe5a00fd93a91295e1a074cb63f9acd646d24c59e984b7c1510246a4525b3c8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        },
+        "stats": {
+          "sha256": "534e486832cc06ca3323d5a8492bf3b6811f64cc22b45309da5e5464e98f3da0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9ba6e164831ec819737bc28d978d029db3dd2b5c29042af441a7644e2bfdd1e1",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.11-11.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.11-11.v1.json",
@@ -403,7 +1090,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "12",
@@ -414,11 +1101,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "7c6f6e7e5d0ada13c667c169d334bff4ba8d8cc4592b410de057aadd1042c1b1",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "6a55ac8a7ab3a09aef0bb4e923f60c43e09682624f71af56f0273c0a195b3a81",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        },
+        "stats": {
+          "sha256": "74ec8899630078e481b23d9ec75cf4909bfc7a0fb53802ecba04d67bc254fd8d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "aaec8427c73de4fa732d45c09ab50782f794dc961e6fc8874160b83735da3f5f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.12-12.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.12-12.v1.json",
@@ -437,7 +1150,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "13",
@@ -448,11 +1161,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "be1ccb95944f2f7ff46dbdfaf6c0daedde68fe3d09040db914aa4c5bb9b25c87",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "039a5601b7ff7cb52dcc58e7f737c3636f1512a9ebf9d2b4cdb4832484414d39",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        },
+        "stats": {
+          "sha256": "fbfa1aefd73db51241bf4e9ef1ff6bd20de12b30965cefe21b6978e4b2a8810e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "a7bad6d4c359f7c56fb11f4f080097e0047cd6f6e853b71997792dc8b8665514",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.13-13.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.13-13.v1.json",
@@ -471,7 +1210,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "14",
@@ -482,11 +1221,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "a97372dcf49560f8125c589831e69f49ca97a5a06a57e11f766c2bf33ebd850d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "10915713784fa9c2a1dfc656bf2c05a89ced8e0edd36d24a82a92a2ca219c293",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        },
+        "stats": {
+          "sha256": "293de829a9caccadbad8aaf25c18bfd06dfccd5d7c305c6cd3d1263a29f42cd6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "929c44f22f837e56aba59e5a8ee6fbef6ef2f55df837af1484d6b07a7759bb3e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.14-14.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.14-14.v1.json",
@@ -505,7 +1270,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "15",
@@ -516,11 +1281,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "6139563f32afe7061e6509c62a056a3574c7e855a3f7cd74bdcf3b8c7bcf7d82",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b341aea8ab7fb6e6a2b7a2cd457c909a3d21028cf8769727a10d61160a4d4052",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        },
+        "stats": {
+          "sha256": "c55a0c9cc091b7aeb7444f32fe787993536b76dfef606daeb724c09efc58a419",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "db564a8552503b727198cf6093482b87b6db398925af586002caa86364d6154f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.15-15.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.15-15.v1.json",
@@ -539,7 +1330,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "16",
@@ -550,11 +1341,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "d686a1797f99948ee9687fd0f114e15c1b6c46a701dcae98faf1741140d37e75",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "427ed367a4e420d19a24126bdc2dc10137ad2483921171090896bc1b2ea9a35b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        },
+        "stats": {
+          "sha256": "5b090b8c31c6098b704e7cdc6ff1c17d9a0971ff4619f7835e21e58bb5c48fc2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "a4ce23fc63cb09b2420214faea45aa364533a83a8fb680230e5adf0f88bc83c7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.16-16.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.16-16.v1.json",
@@ -573,7 +1390,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "17",
@@ -584,11 +1401,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b236310767923a95b3dabed27341b9ed0ab84c76812a06dfe67ef2c871c1ef74",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "89065e1684ab9026d46a1bb86318fb8365551a8a57fb15302a81e2a4087d0fd0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        },
+        "stats": {
+          "sha256": "6bbfd2ae9460392adb2dc2bc4b400ae62bb2813969c0b95ffd3fbf19c32dfa4a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "08224bdc94273ce70dad2bae74e5591d596ce1911bc08b780f2cfd5c6544f30c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.17-17.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.17-17.v1.json",
@@ -607,7 +1450,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "18",
@@ -618,11 +1461,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "30bdeeabbd83997c3884041e12a098d024873ae4eff63da4d1a0ae829431d51c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "9e4707065503b9ac3f0dd5f5fe2e545efdc0f49d602f9240288d095d0f0c5090",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        },
+        "stats": {
+          "sha256": "f8655ec6a97ac3e5aae7927cde698c58d56e85aacdfd098d5bf8ec417d87c430",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ef207118e0fe0736665c858f05d4ee7c8ac7092978f6c0d70298509bd5aeb95f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.18-18.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.18-18.v1.json",
@@ -641,7 +1510,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "19",
@@ -652,11 +1521,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "48250836f67cc3baef05c4e9d1185e293a359f5cd66a9fc3ca70b1805d7f9962",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "c4a7d94044b812c9929e329a3ebad7c904cd401d3fc5dd260472685b567d90b0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        },
+        "stats": {
+          "sha256": "6f0c268dc8bc8d5a6ee4493e0aa8194f1795c2709b8e89cf22620b3fd298bebe",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "84865c6941a065a9ad0702ec4e29b209869ff5a94d3935360c3833e928b27161",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.19-19.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.19-19.v1.json",
@@ -675,7 +1570,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "20",
@@ -686,11 +1581,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "f5f1f6328f03b527c1e7166d7d0eb2b336d4335ae5fc7551bfc30af9779b1259",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "d97c922b3b5667e9cafb812b9945b81039fd1f336ed1a395be3f4b0bfc935bed",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        },
+        "stats": {
+          "sha256": "0a9a359280f13dd0c449c1a13214e0abfd18886321115ffd0b481c1c39643fcf",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "67e442b4908db20f29934c3f3e4133993f5fd9d7eab2125fcd256d08b62e66ac",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.20-20.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.20-20.v1.json",
@@ -709,7 +1630,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "21",
@@ -720,11 +1641,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "da63dcca2650330db59d41d4aa3d2ff16404481873965352616ee3505f580b29",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "311ebe4f9db49e2e8b8c07f7a5cf09a10c8d9c745d99cab97932dce18c3296c3",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        },
+        "stats": {
+          "sha256": "d1b52c5baacbff52e45a14b824c832918a32d6898755a12116f48053c4894fa0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ab189f44fa7ebc8c74dcc9c77beceb3f240bc2bce38bf08a31c2753ab719f343",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.21-21.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.21-21.v1.json",
@@ -743,7 +1690,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "22",
@@ -754,11 +1701,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b30d36cba59904cc6864dd4452eaedf4069fc44349c8d8d5de2c3cbd8b8eb656",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "27679ff8c16ec47ab8b2221295b66132acf936ab5a269e99af0fc12df2640982",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        },
+        "stats": {
+          "sha256": "13cf586a74ff1d617f4838358f584920b032f2c8703b6bd0a26b03aeb411f2ba",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "fe14cb85bbd40caae0e103c802ccc3e0ca8d5a9e0fa253ce5c5d0f5259d81b54",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.22-22.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.22-22.v1.json",
@@ -777,7 +1750,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "23",
@@ -788,11 +1761,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "610e42d97835e653cd2252fc33eaaddd0069702912ad89c9ed3a2fde2425d56d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "c6bace6b9f66efb33396e4426a92760538a8f85aa7781f2d10db0d4e9e6eaf38",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        },
+        "stats": {
+          "sha256": "db6f49aa257400baf14cc631e070b70c5d0d8aa7226b9193d89bedfa06c7ea68",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "1af00b545cfa21d8879156548951ba7dddc94d9d5ba05e304aaf1829db8b43d0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.23-23.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.23-23.v1.json",
@@ -811,7 +1810,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "24",
@@ -822,11 +1821,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "1b5db4044df446e85033b4d2c3a5777bdedc913c6b3b6d0ddea872f4144405f8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "fc4626aa0aa94ade46549034102e038e70bd367cf9e7ca510735b41d416ab5ce",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        },
+        "stats": {
+          "sha256": "8793277720df545ea463168021bd92c588b1ed32eec02977812eccb4af889868",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "51fd4df5d3eb407c94945c87dc886f7e38e41bb6f44b1d19ec88cf08d84309e6",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.24-24.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.24-24.v1.json",
@@ -845,7 +1870,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "25",
@@ -856,11 +1881,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "a772a1f88b9e0ad9dbcba684634ccb3a718833d24747bf7776f32f417991ee35",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "2017bb95429043fc903bbfa8ee5978098a8bcdc26ad05cca314c9092105d27e0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        },
+        "stats": {
+          "sha256": "1a5d0ad07781c6207d3f76f5e0d2b6e3e8a7d4b0bfefdd6fdb2ce4b82c3afa1f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "6595d6399e7d64c9deb0220a700dfe47af135c172d826272bb60655777725965",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.25-25.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.25-25.v1.json",
@@ -879,7 +1930,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "26",
@@ -890,11 +1941,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "cf56cf692e71f1395d15f89cf8a329b93aff7c9bad25ccccd4e5d6023db2f0a8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "be80c1ac3518bca181f3ec8f55fbf8649fc6a23a1d14ec2844d68340b6275420",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        },
+        "stats": {
+          "sha256": "ea082d4c1ed03d60dedc2b56f5c5d787e09980c7f2685e1fe46fa9da732a4271",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9762654c6e3ec204136d6c8810868bfa9defa8fffacc721e7c097c2c3ed4c6d8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.26-26.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.26-26.v1.json",
@@ -913,7 +1990,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "27",
@@ -924,11 +2001,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "f13d6557e1b3ae8912c9f1f545d9b39e7a67c0b4f7b25a057daee3899eccc852",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "38b38ba71e9fe9d8eaf1e01e1f263967e8155173c6735e261d92309ca255c8ec",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        },
+        "stats": {
+          "sha256": "9703e5019dfa4ba1cc8c55609460595daba94d2046befb1d0726b29d138837b8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9b1739f3b56570dc639ece946d4e06b4aa210c1b6bed7f7a28f3db59add25221",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.27-27.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.27-27.v1.json",
@@ -947,7 +2050,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "28",
@@ -958,11 +2061,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b9807bbde215abebc62ee78fc5b9b5faf7a44a25f19ee40a82fdd20b2e45610b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b4c0ccf437812b91612bc2398a1b71f871b4e31df7929d5b14a9724cf7283f13",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        },
+        "stats": {
+          "sha256": "379b09fd2122522301cf7a6fff591de6b5d67d432c6138ae67a57043b92be73b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "39d36a77e23b0a824d18eae5c6d2eb613ab9d607722adf977f58df49716bcf86",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.28-28.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.28-28.v1.json",
@@ -981,7 +2110,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "29",
@@ -992,11 +2121,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "c0fededbebbae112e33892044ffcea52861ac27b60d55486341c9ff009cc61d0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "da358c8625b64dce3bd56f0f0cd14ad15c948e09ac05b0b8a7a336a6b1d0973f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        },
+        "stats": {
+          "sha256": "1d91b8ec90a17662b27ab46a3e89a63cfe874bb01aa3f46b740df8cdfd7b5a9c",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "d9639b57addbb6d8e0c1f6551de0fed02703738d928ef26b3fbf5e3d4127e7d2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.29-29.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.29-29.v1.json",
@@ -1015,7 +2170,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "30",
@@ -1026,11 +2181,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "b151c6cb936fcd4fc06d6ed4fb97732fe3e74314643b006e4218b6b3aead856a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "3c61cb2cae38d44d4fdb76d00447c28397ef027bd4260f08e80baa80aaa7e898",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        },
+        "stats": {
+          "sha256": "18df57015133103d15c22009460a52eba95630c64c5a01b945cde7ac89160aa3",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "5184e8c1f5befa5f7e3585353e1e4952db93a39cfaba80e51cdc98b41ee65b18",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.30-30.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.30-30.v1.json",
@@ -1049,7 +2230,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "31",
@@ -1060,11 +2241,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "86c0f9167a67dcd0f76cb209815c66104e7621289515abb12ca3680b20be3500",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "5b3b4d2f046c1c5b2446cf309526b88bc24651542f9b0eae3d59b05912851c7f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        },
+        "stats": {
+          "sha256": "78b604373072cfb33da274b71a32ec35da8988701f7c114e5d946737c7252640",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ccef119674e05bef054fc5347240d1c3ebc6d2c73b52f9c00cf1b1ac9dd4c0a4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.31-31.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.31-31.v1.json",
@@ -1083,7 +2290,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "32",
@@ -1094,11 +2301,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "d61d6a3c35ab00d23c11e61a3efac9c9915972d2f4f22cfd7872393dfbb5e2c8",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "28e86a9d8c6f9d23d86b6b378f8585a94ecadc2dfcb9529b3eb4e1617c259e57",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        },
+        "stats": {
+          "sha256": "cf708acfa7208542dc3d5a7ceaa44c7915944e47ab65b166d240df6d115e54d0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9f7566f04e68a990280f1dd72563f3643de2c0f3f0cd4500f9a6518bbf67c6bb",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.32-32.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.32-32.v1.json",
@@ -1117,7 +2350,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "33",
@@ -1128,11 +2361,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "f627e5d9ecad168d7f88de722d80a8d32079d92e19b7a1ebb394e6226f3ba60d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "d4582d58c0caebe5a4fbad7b789baf8e6b680ab472b69c6d6cd0d4eead8db6e0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        },
+        "stats": {
+          "sha256": "fa85932803c759b4e69fb7b9bd64dc0a0ee032faf6b40b1fcf30c415dd77e991",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "5bcdaae508b4e2d8d21afb5f942d5fa8494134220175afaf771933403d49dc8d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.33-33.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.33-33.v1.json",
@@ -1151,7 +2410,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "34",
@@ -1162,11 +2421,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "1b1c4ed44a3c81d1a2f49f48bd32ac47a927578f9e12d4ac3b31468e683d9db7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "50321cb8cfad05f8963ada8dd5fe8cfe1b06b1b8659c2a11f6ec3ef7044ccf26",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        },
+        "stats": {
+          "sha256": "5796d04136614e85a9243d92323a409fa8e0e8f2f953da20572623fe3c3cbe34",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "82db0372e5822e9959bfb4934a8f0c21530def76506e50e8e88a038dfc3ec515",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.34-34.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.34-34.v1.json",
@@ -1185,7 +2470,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "35",
@@ -1196,11 +2481,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "82a25269f6a6f839d020e04a61392f56eb88005937375925a73142e4c30d4add",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "6c15e5ac367404b8d20a0d4608ed04ddaec15cf6c4be58bcddbb82347ce74f2e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        },
+        "stats": {
+          "sha256": "7d36da328b95faa06f8de91476e5ecd1fd74da5e0dc584a73f0876bfcc4e5b20",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "849115b1556ccb4a1c87093757731ab5d0e0037ed5bcaf8867f2f6784d31ec7e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.35-35.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.35-35.v1.json",
@@ -1219,7 +2530,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "36",
@@ -1230,11 +2541,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "9fd3873c0f48f908b2b35597707b4b5cb8263a4e055cb27c22258264031d3d3d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "8fb8d178d38260259dfa569fa02f2b124b26477e271ba1a2d3937ee8594a84d9",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        },
+        "stats": {
+          "sha256": "8d2caf1c5d58767b7944acfd66312e9098914a9525fc2cf13ee463d6ed1c8e19",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "84e7ab272baf5afe70196a9266c7b2d56d9686307819b9d729dc95382ab652d5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.36-36.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.36-36.v1.json",
@@ -1253,7 +2590,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "37",
@@ -1264,11 +2601,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "8e5420c57eba52af30ef80b51b6de9c8227d4cec02a7fa86f645da516e91e696",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "ae965fcc9d024ada191156ceaf882fdadd74836c2de1c4a82a5889f94623f53f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        },
+        "stats": {
+          "sha256": "6028ea8d79e9eb5dbcad3f11c373c212d601ca8024912cbd25e87f3332cd3332",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "7fac05ceb158bd72072cd03dd0534f6632ef138a2229c397e3f056902f3805d0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.37-37.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.37-37.v1.json",
@@ -1287,7 +2650,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "38",
@@ -1298,11 +2661,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "6b0186aaa559bd59a668ea30e9b8e7471f2e0a8d838ba12bc3df44f2fc5e04d7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "561c9ad98657f5c7355668707e707925f9a76ad25e401004c3f0aceec576ec40",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        },
+        "stats": {
+          "sha256": "1d3c980fe3d3030902877489f41403d77d2229ee449da135d0a629461095092d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "b1e73b76aab6208d661e42d10deeeb90daf54acba2e1fdb5821ea9ee77163e7a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.38-38.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.38-38.v1.json",
@@ -1321,7 +2710,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "39",
@@ -1332,11 +2721,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "5737555e87f83dd1084a7a4b4c6d75ba8cf68e7c96c7c5aff36149effc8668a0",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b981cfd60baa32efc7c8abf7009949889a5243f1adcf4b7ecb6ad2d00e267d60",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        },
+        "stats": {
+          "sha256": "48533a633a4d46cf207ecaa324f9be10adff68b5028e2b67aa8b43b75b0c88df",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "de0f40f0a046401f0e786b2ea498b8ac87a19c5ed6fb4738769734a01a8abd5d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.39-39.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.39-39.v1.json",
@@ -1355,7 +2770,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "40",
@@ -1366,11 +2781,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "084035e1e9862647506526e5c8ee5247f821835bc62a3c0f0a5ba6f047bb6139",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "d8309696a503a554fe35955ec8771b2176e722057e69ee817c45f25d251bba06",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        },
+        "stats": {
+          "sha256": "8ecd0d8cc74cce358e7ddedec8c89d6a3a0a7bb5d40a92caa0e916ceae1eb074",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "a09c1046516480e278406ec09504fc1aae598714f3e6849823a4d1bb2413d330",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.40-40.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.40-40.v1.json",
@@ -1389,7 +2830,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "41",
@@ -1400,11 +2841,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "2d8ac08c8d95eec533651dc00a995b9e016ea5428116403ef0153e55c2730c71",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "25e4041b390053b329d496328a71d0977a613bc51bc1d1ebcdc1e0db518bc0cf",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        },
+        "stats": {
+          "sha256": "eda5adfbcd68bf1fd1f3233a8968bae01fead5755af98c997beca889304ee453",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "5f0cf0593d3976f853ea45a5c4a69cad558ffbb3d6a62a23bb87ed2659897726",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.41-41.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.41-41.v1.json",
@@ -1423,7 +2890,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "42",
@@ -1434,11 +2901,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "a930889ae7bc3fb14017284294a77654c2bc53e81e416547521c759a6eb3fc01",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "027de158fe223866f0d49c86459a5a78798c64c6f96aa3e619967db05c007be7",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        },
+        "stats": {
+          "sha256": "a79babc5aa6bd4b3fc29422bb27b18c25c88e666c5581622bedae6671449a9f1",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "14892d6a191f0b6ff17566f77538232243916bf182d950d62490423d159c9a3f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.42-42.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.42-42.v1.json",
@@ -1457,7 +2950,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "43",
@@ -1468,11 +2961,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "e11ecd78908a4e58586b116ef3a2f743b2d7bf4a20879686af5fcc770877e8da",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "acf32b31eaed7835e68ce4c4e65737eaebeeeb46334b3fda5c82d1d78d7ca509",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        },
+        "stats": {
+          "sha256": "4d488208bcf80326e62261899ae462e5155a58ea51999969d3b0b3ca2a97b09e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9f0772e7c464f0af96bd376ed4e01b23fbfa6db5dbad56a5c19076d7828d7e18",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.43-43.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.43-43.v1.json",
@@ -1491,7 +3010,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "44",
@@ -1502,11 +3021,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "f7bdb98615b3d538cac27080b832198661a99aacf5226f1986019e4a39f6ab68",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "8b4f85a7669587801367824f87be30111f58db3eccb704d8a152ff40340bbbd2",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        },
+        "stats": {
+          "sha256": "527a4a4094ecaf87c688ae75eeff9222ca3aafdec962cfda3fdbd435548d0d72",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "9e25dd1923d330554f95e2eae36f1d7b64b9540265bca37727c8092d2ee11e1e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.44-44.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.44-44.v1.json",
@@ -1525,7 +3070,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "45",
@@ -1536,11 +3081,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "c02a9d4135c0e07cc72ecaf30c12e08f2536e36f3c5e42ab1af571e3f0a84edf",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "0c148eb2dea3e295e39051203af3d5675bf81fd469cf66cc0d6b4d2089d7f45f",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        },
+        "stats": {
+          "sha256": "7206cdf8f02eb9713e0c2662310c9642cdcfa7f37e755bd11a8936485380716e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "e62d1f2ff9d8178fd2cb01786f5a1f6eb55b4477433b670a3e677504a4360cc4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.45-45.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.45-45.v1.json",
@@ -1559,7 +3130,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "46",
@@ -1570,11 +3141,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "ebe4f123dad549d148f72713fdca1c96f418ffe468483b833bb649ebf25b0c4b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "bb73aea7c177bd0f6223187a90ffee68846a21a66f985f7e0dcf25766387c332",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        },
+        "stats": {
+          "sha256": "f654637fab3be6ee7e39368f4870bd01f74a4a0384199a5f0ae334d3aada4535",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "ebcbb158fc7eadb3bd1debac24d0de32203ee2bfc42a922576d81d78df88306d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.46-46.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.46-46.v1.json",
@@ -1593,7 +3190,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "47",
@@ -1604,11 +3201,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "2f992fde3f87e9c6d3a5fcf8d3f56a379aa0f32632823a2af4c76834546202de",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "8c1dcf41798f681531a51cdbc30ab89fd687c11bed2a6e2c6d4065b47d514e37",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        },
+        "stats": {
+          "sha256": "bab928347622f813c4f78ed4b77a679d39bb0af1da8f402dc3cc83215aacaccc",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "44cb3236a24e2be646b67bb2b3e7e0372151194d639b6855cd727424eba14fe4",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.47-47.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.47-47.v1.json",
@@ -1627,7 +3250,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "48",
@@ -1638,11 +3261,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "57dd0d13fa5428ed17575da149305f64395ac3903916e959f74df11656f7eddf",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "da1533b1c46b43d7d18544b749006b8d6dedb13f4d35e7d7f01b2fcb0286523b",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        },
+        "stats": {
+          "sha256": "b1df31689f18db7d7ae9f87525a66ba9e0464fa16e52860a9aeae845eb03f2cf",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "6a071298b6a211c0214e3d534e57fd01de5598db32a4cb308babe391825e1b5e",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.48-48.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.48-48.v1.json",
@@ -1661,7 +3310,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "49",
@@ -1672,11 +3321,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "579a05143ffbd9a9fb23ac01dce5096279e5926d8710552dc4aa85466907a849",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "b61fff3c7071d2cb00711e5dbda22d7ffbf0778165dcb1192b79c8f9d763fc46",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        },
+        "stats": {
+          "sha256": "d6d6012365d7e9bb8cecf2b9b9668e9c39763293f9214cefca2410839de3f1cf",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "369f021ad177e9bab617ff7086a4c4216d4eebf824ecc78d8556d3da1d30801a",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.49-49.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.49-49.v1.json",
@@ -1695,7 +3370,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     },
     {
       "slug": "50",
@@ -1706,11 +3381,37 @@
       "reviewed": true,
       "sourceQA": true,
       "assembled": true,
-      "imported": false,
-      "verified": false,
-      "fullyImported": false,
-      "importedFields": [],
-      "published": {},
+      "imported": true,
+      "verified": true,
+      "fullyImported": true,
+      "importedFields": [
+        "analysis",
+        "soulEssence",
+        "stats",
+        "statsAnalysis"
+      ],
+      "published": {
+        "analysis": {
+          "sha256": "ed229d0a5f4750e5497757361138955dc9ea796c71aadd4051949380d74cc6e5",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        },
+        "soulEssence": {
+          "sha256": "aa3eb966a326e798099ffa54d71b6d264c1ecf03dba1c5d6d70e54efaf78dbca",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        },
+        "stats": {
+          "sha256": "c96020c42064b619af2c38c3302cd8379554ee3b368b1e0d1b2ffb431b12e15d",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        },
+        "statsAnalysis": {
+          "sha256": "f555dfb372769ec204e0ca7e44dd06fee453240a87ff5589205f74635a167d05",
+          "provider": "Claude Code (Anthropic)",
+          "receiptFile": "import.50-50.apply.json"
+        }
+      },
       "assembledFields": {
         "analysis": {
           "resultsFile": "results.50-50.v1.json",
@@ -1729,7 +3430,7 @@
           "provider": "Claude Code (Anthropic)"
         }
       },
-      "status": "assembled_awaiting_local_dry_run"
+      "status": "fully_imported"
     }
   ]
 }

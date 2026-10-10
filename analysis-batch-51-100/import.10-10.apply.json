@@ -1,0 +1,57 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "apply",
+  "status": "applied_verified",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "c7fcc6d23b3438afa9f81aa239f2aeff725384f6011fb7350e8cfdac50934ef1",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "2b6c912dbf6069a3e9e1726f642c149f2b75598264d757af9ca21261adaa8414",
+  "plannedAfterSha256": "2abb0f951566843e8e60730a4a11ddfc825df4b5c4c0f870fc793434a01f38a1",
+  "beforeRevision": 61,
+  "plannedAfterRevision": 62,
+  "patchBytes": 3790450,
+  "plannedDocumentBytes": 10709269,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_梁武帝_281110767",
+      "field": "analysis",
+      "sha256": "28261dbdfec15a4da0b8612fcbd3d81247418c7621e0cc6f7feef4e929e999bc"
+    },
+    {
+      "id": "emperor_梁武帝_281110767",
+      "field": "soulEssence",
+      "sha256": "76480548b16ca2dcdfc74be9f98330a9c853ce8f90e7317716978ccc57a1ae2a"
+    },
+    {
+      "id": "emperor_梁武帝_281110767",
+      "field": "stats",
+      "sha256": "e63ee55a9e5881aaa83cf5b0c9e4b3e6dd162a81d8873a1b85bdd99e0b0b476e"
+    },
+    {
+      "id": "emperor_梁武帝_281110767",
+      "field": "statsAnalysis",
+      "sha256": "7147c357652fd8311ee55bb417186615511d42ed07ee655fc4218d9159eb154d"
+    }
+  ],
+  "conflicts": 0,
+  "writeAttempted": true,
+  "writeSucceeded": true,
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 62,
+    "afterSha256": "2abb0f951566843e8e60730a4a11ddfc825df4b5c4c0f870fc793434a01f38a1",
+    "unaffectedBeforeSha256": "62dd940da36e7a9b8ec596102d758d3095bb9f7942b0c795c79cd180925e7db3",
+    "unaffectedAfterSha256": "62dd940da36e7a9b8ec596102d758d3095bb9f7942b0c795c79cd180925e7db3"
+  },
+  "rawExtrasPreserved": true
+}

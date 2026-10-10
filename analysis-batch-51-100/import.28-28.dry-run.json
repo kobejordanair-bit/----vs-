@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "42a020bed36fdc4c3aff55345a81ae6ab9072743d839854d6943a66dc86f8fc6",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "63022f7037d03b4ea5c594b703e7e94b9f15093ca9c01479354c1877a741a15d",
+  "plannedAfterSha256": "9d9d0883340f2e71a09fc2cb3b2abc4559dea285ec9ef3d3cef946fafee31d68",
+  "beforeRevision": 79,
+  "plannedAfterRevision": 80,
+  "patchBytes": 4102094,
+  "plannedDocumentBytes": 11020913,
+  "writtenFieldHashes": [
+    {
+      "id": "general_孫傳庭_902223150",
+      "field": "analysis",
+      "sha256": "b9807bbde215abebc62ee78fc5b9b5faf7a44a25f19ee40a82fdd20b2e45610b"
+    },
+    {
+      "id": "general_孫傳庭_902223150",
+      "field": "soulEssence",
+      "sha256": "b4c0ccf437812b91612bc2398a1b71f871b4e31df7929d5b14a9724cf7283f13"
+    },
+    {
+      "id": "general_孫傳庭_902223150",
+      "field": "stats",
+      "sha256": "379b09fd2122522301cf7a6fff591de6b5d67d432c6138ae67a57043b92be73b"
+    },
+    {
+      "id": "general_孫傳庭_902223150",
+      "field": "statsAnalysis",
+      "sha256": "39d36a77e23b0a824d18eae5c6d2eb613ab9d607722adf977f58df49716bcf86"
+    }
+  ]
+}

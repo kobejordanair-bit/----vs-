@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "f859e2d8dc0ded2c4f16849647c4988f75e1e1cad8635e104dc5c6f4dec152be",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "c411d8e59e686a3eb00c805be4b840cc2aa93ee438956f4eb4889e4f47c0a078",
+  "plannedAfterSha256": "2b6c912dbf6069a3e9e1726f642c149f2b75598264d757af9ca21261adaa8414",
+  "beforeRevision": 60,
+  "plannedAfterRevision": 61,
+  "patchBytes": 3772825,
+  "plannedDocumentBytes": 10691644,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_慈禧太后_176093814",
+      "field": "analysis",
+      "sha256": "25679ddfe38fcf3e9aad46817c0f684d85e94e291d316b0f8bd9f29a2ba47463"
+    },
+    {
+      "id": "emperor_慈禧太后_176093814",
+      "field": "soulEssence",
+      "sha256": "aa3b107ecf274a3c3f4c911bbaf06f6e4ab268ba67f6aa46f3cfd6e6290972f2"
+    },
+    {
+      "id": "emperor_慈禧太后_176093814",
+      "field": "stats",
+      "sha256": "d962e08a1ab3098dca9393dbec5a1ee5f8cd03ffc9b23c5b0eb50a67f8e4fefb"
+    },
+    {
+      "id": "emperor_慈禧太后_176093814",
+      "field": "statsAnalysis",
+      "sha256": "ee466e57d07fb74daa18e87120f937a11e251d88da67cccf5824591728583424"
+    }
+  ]
+}

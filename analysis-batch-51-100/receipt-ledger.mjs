@@ -7,6 +7,7 @@ import { contentHash, sha256, PilotError } from '../cloudflare/scripts/analysis-
 import { loadFixedManifest, validateBatch50Evidence, batchFields, COMPLETION_FIELDS, SOUL_FORMAT, validatePriorReceiptDocument } from './import.mjs';
 import { readRegularText } from './capture.mjs';
 import { validateImportReceipt } from './audit-progress.mjs';
+import { validatePublicationAudit } from './publication-audit.mjs';
 const root = dirname(fileURLToPath(import.meta.url));
 const bad = code => { throw new PilotError(code); };
 const read = async file => strictJsonParse(await readRegularText(resolve(root, file)));
@@ -42,7 +43,7 @@ export function reduceReceiptChain(steps, manifest) {
 export async function buildReceiptLedger() {
   const manifest = await loadFixedManifest(), files = await readdir(root);
   const batches = new Map(), staged = new Map(manifest.records.map(item => [item.id, new Map()]));
-  for (const file of files.filter(name => /^results\.\d\d-\d\d(?:\.soul)?\.v1\.json$/.test(name))) {
+  for (const file of files.filter(name => /^results\.\d\d-\d\d(?:\.soul|\.editorial)?\.v1\.json$/.test(name))) {
     const batch = await read(file); batches.set(contentHash(batch), { batch, file });
   }
   const steps = [];
@@ -73,10 +74,12 @@ export async function buildReceiptLedger() {
       status: full ? 'fully_imported' : published.size ? 'partial_imported_with_assembled_continuation' : assembled ? 'assembled_awaiting_local_dry_run' : 'incomplete' };
   });
   const count = key => records.filter(item => item[key]).length;
+  const finalAuditVerified=files.includes('final-audit.publication.v2.json')
+    ? validatePublicationAudit(await read('final-audit.publication.v2.json'),chain,manifest) : false;
   return { format: 'dynasty-batch50-receipt-ledger', schemaVersion: 2, generatedAt: new Date().toISOString(),
     manifestSha256: contentHash(manifest), targetCount: 50, libraryTotalExpected: 962,
-    status: count('verified') === 50 ? 'all_fields_receipted_final_audit_pending' : count('assembled') === 50 ? 'assembled_awaiting_publication' : 'prepared_awaiting_generation',
-    passed: true, complete: false, finalAuditVerified: false, libraryPreserved: null,
+    status: finalAuditVerified ? 'fully_published_final_audit_verified' : count('verified') === 50 ? 'all_fields_receipted_final_audit_pending' : count('assembled') === 50 ? 'assembled_awaiting_publication' : 'prepared_awaiting_generation',
+    passed: true, complete: finalAuditVerified, finalAuditVerified, libraryPreserved: finalAuditVerified ? true : null,
     basis: 'Validated apply + dry-run receipts and rebuilt manuscript evidence; no registration flags or fixed five-person chunks.',
     latestVerifiedPublicationRevision: chain.revision, latestReceiptedDocumentSha256: chain.documentSha256,
     counts: { prepared: 50, generated: count('generated'), reviewed: count('reviewed'), sourceQA: count('sourceQA'), assembled: count('assembled'), imported: count('imported'), verified: count('verified'),
@@ -85,5 +88,5 @@ export async function buildReceiptLedger() {
       importedFields: records.reduce((sum,item) => sum + item.importedFields.length,0), remainingIncomplete: 50-count('verified') },
     imports: chain.ordered.map(step => ({ file: step.file, receiptSha256: contentHash(step.receipt), resultsFile: step.resultsFile, beforeRevision: step.receipt.beforeRevision, afterRevision: step.receipt.verification.afterRevision, changedFields: step.receipt.changedFields })),
     externalTransitionsRequiringSnapshotProof: chain.transitions, rebuiltBatchCount: checked.size,
-    finalAuditNote: 'Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Mixed-chain private final snapshot + identity/raw-extra audit is still required to declare overall completion.', records };
+    finalAuditNote: finalAuditVerified ? 'All fields and the preserved library were verified by the production final read; this records that observation, not perpetual freshness.' : 'Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Private final snapshot + identity/raw-extra audit is still required to declare overall completion.', records };
 }

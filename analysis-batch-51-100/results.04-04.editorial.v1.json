@@ -1,0 +1,343 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_楚威王_281034787",
+      "inputSha256": "a1257e8e93e41802295ec9385f8cf4020b432a0fdb7efed9ab946c41a6ff4e04",
+      "promptSha256": "fd8ac2b0c2621514b17d824fc04080703f82e4e8fcf4ec0c00ff277cc763cbe4",
+      "fields": {
+        "analysis": "楚威王熊商在徐州打敗齊國之後，向齊國提出了一個奇特的條件：驅逐齊相田嬰。齊人派張丑來說服他：大王之所以能在徐州取勝，是因為齊國不用名將田盻，而田嬰偏偏不喜歡田盻；如果逼走田嬰，田盻必然起用，「復搏其士卒以與王遇，必不便於王矣」。威王聽完，「因弗逐也」（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）。我對他的判斷是：**楚威王是一位擅長閱讀對手內政的君主——他知道敵國誰在掌權、誰被冷落、誰正忙著打別人，並在最合適的時刻出手；他在位十一年，徐州敗齊是確鑿的戰績；《史記》還把擊殺越王、派莊蹻入滇記在他名下，把楚國的兵鋒寫到浙江與滇池，但這兩件事的年代後世都有異說。但他對自己的朝廷卻坦白承認「內與羣臣謀，不足恃也」，而他把找不到忠臣歸咎於「今之人」，沒有回頭檢查楚國自己的用人機制。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n熊商是楚宣王之子，宣王三十年秦封衛鞅於商、南侵楚，同年宣王去世，「子威王熊商立」（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）。年表在西元前三三九年一欄記「楚威王熊商元年」，在位至第十一年去世（[《史記·六國年表》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7015)）。\n\n他接手的局面有三個特點：\n\n1.  **西方的秦已經變法成功**：商鞅新法讓秦國迅速崛起，宣王末年秦已南侵楚地。\n2.  **東方的齊、魏正在稱王爭霸**：齊宣王與魏襄王「會徐州而相王」，田嬰為齊相（[《史記·孟嘗君列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075)）。\n3.  **東南的越國仍是威脅**：越王無彊「北伐齊，西伐楚，與中國爭彊」（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)）。\n\n楚國的底子很厚：縱橫家形容楚國「地方五千餘里，帶甲百萬，車千乘，騎萬匹，粟支十年」（[《史記·蘇秦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069)）。問題在於這份資本由大批世族掌握，國君能動員多少，取決於他和這些世族的關係[推斷]。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：楚威王的戰功，多半不是靠楚軍比對手強，而是靠他看準對手「正在分心」的那一刻；這種本領讓他十一年內兩面開疆，卻也讓他從未被迫面對楚國內部的結構問題。**\n\n**第一擊：徐州之戰，打齊國的「人事空檔」**\n\n齊相田嬰與魏君在徐州互相稱王，「楚威王聞之，怒田嬰。明年，楚伐敗齊師於徐州，而使人逐田嬰」（[《史記·孟嘗君列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075)）。張丑的說辭揭露了這場勝利的真正原因：齊國當時用的是「大臣不附，百姓不爲用」的申紀，而不用「百姓爲之用」的田盻（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）。威王接受了這個分析，放棄驅逐田嬰——他寧可讓敵國留著一位排擠名將的宰相。對一位剛打了勝仗、又在氣頭上的君主而言，這是一個非常冷靜的選擇：他把「羞辱齊國」的面子，換成了**讓齊國繼續用錯人**的裡子[推斷]。\n\n**第二擊：越國轉攻時，反手大敗越**\n\n據《史記·越王句踐世家》，齊威王派使者遊說越王，指出楚軍正分散於各地，「楚三大夫張九軍，北圍曲沃、於中」，勸越「轉攻楚」；越王「遂釋齊而伐楚」。結果「楚威王興兵而伐之，大敗越，殺王無彊」，取得吳國故地直到浙江，並「北破齊於徐州」，越國從此「諸族子爭立……服朝於楚」（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)）。越國以為楚軍分散可乘，實際上楚國的動員能力遠超越人的估算；威王不但擋下越軍，還一舉吞下吳越故地。這段敘事要分兩層看。《資治通鑑》把此役繫於周顯王三十五年（前334年），但只寫「楚人大敗之，乘勝盡取呉故地」，沒有殺無彊一事（[《資治通鑑》卷002](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002)）；同卷整理本據《紀年》補入越君世系，並註明「依楊寬《戰國史料編年輯証》越君年世之考訂繫於此年」，可見越國年代本身就是重建出來的。近代另有一說，主張越王無彊之死與越國實際覆亡應在楚懷王時。因此，**威王時楚大敗越軍**有兩部史書支持；**威王殺無彊、盡吞吳越**則是《史記》的說法，仍有爭議[史載]。\n\n**第三擊：派莊蹻向西南**\n\n《史記·西南夷列傳》記載：「始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西」；莊蹻一路打到滇池，「以兵威定屬楚」（[《史記·西南夷列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116)）。但《後漢書·西南夷傳》另記「楚頃襄王時，遣將莊豪從沅水伐夜郎」（[《後漢書》卷86](https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B786)），時代晚了兩代、人名與路線也不同。學界對莊蹻入滇的路線與時代有專門考證（[桑秀雲〈莊蹻入滇考〉，《中央研究院歷史語言研究所集刊》51本3分](https://www1.ihp.sinica.edu.tw/Publications/Bulletin/180/Article/596)），所以入滇能否算作威王本人的功業，只能說《史記》如此記載[史載]。依《史記》的敘事，這條戰線最後被秦國切斷：秦奪巴、黔中郡後，莊蹻「道塞不通」，只能「以其眾王滇」[史載]——一支遠征軍變成了一個獨立王國。這也說明他的擴張缺少一條能長期維持的補給與行政線。\n\n**缺口：面對秦國，他沒有自己的答案**\n\n《史記·蘇秦列傳》記載蘇秦以「秦之所害莫如楚，楚彊則秦弱」勸他合縱，他回答：「寡人自料以楚當秦，不見勝也；內與羣臣謀，不足恃也。寡人臥不安席，食不甘味，心搖搖然如縣旌而無所終薄」，於是「謹奉社稷以從」（[《史記·蘇秦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069)）。需要說明的是，《史記》所載蘇秦事蹟的年代，自馬王堆帛書《戰國縱橫家書》出土後備受質疑，學界主流認為帛書才是蘇秦的可靠史料（[《東洋史研究》78卷4號論文，京都大學學術資料庫](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/281571)）；這段對答因此更適合視為戰國末至漢初人對楚威王處境的理解。即便如此，它點出的問題是真實的：楚國對秦缺乏戰略主動，西南的成果也在他死後被秦奪去[推斷]。\n\n**連鎖結果**：他去世當年，「魏聞楚喪，伐楚，取我陘山」（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）。鄰國對楚國的敬畏，顯然繫於威王本人，而不是楚國的制度：國君一死，連陘山都守不住。他留給楚懷王一個版圖空前遼闊、卻沒有經過制度重整的國家；懷王時代楚國被秦外交與軍事反覆擊敗，正說明威王的擴張成果並未轉化為內部的組織優勢[推斷]。\n\n### **3. 【人性與性格側寫】**\n\n*   **冷靜重利**：他能為了讓齊國繼續用錯人，而收回驅逐田嬰的要求（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）。\n*   **出手果斷**：越國轉攻楚國，他不只防守，而是一路打到浙江，殺越王無彊（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)）。\n*   **好奇「無私之臣」**：他問莫敖子華：「自從先君文王以至不穀之身，亦有不為爵勸，不為祿勉，以憂社稷者乎？」（《戰國策·楚策一》）\n*   **求賢而被拒**：他「聞莊周賢，使使厚幣迎之，許以為相」，莊周卻以郊祭的犧牛自比，拒絕出仕（[《史記·老子韓非列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063)）。\n*   **知道自己的弱點**：《史記》讓他自承「臥不安席，食不甘味」，顯示當時人心目中的楚威王並非一味自大的君主（[《史記·蘇秦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069)）。\n\n### **4. 【如果生在現代】**\n\n楚威王最接近的現代角色是：**一位擅長在競爭對手內部動盪時出手併購的大型家族企業掌門人。**\n\n*   **讀對手的人事**：他打聽到對手公司由一位排擠能將的總經理掌舵，於是在談判中刻意不要求對方換人。\n*   **趁亂出擊**：另一個對手誤以為他資源分散而發動價格戰，他反手全面反擊，把對方的市場整個吃下。\n*   **派人開拓偏遠市場**：他派一位老將開拓遙遠的新市場，後來補給線被大競爭者截斷，那位老將就地自立門戶。\n*   **內部依賴家族股東**：他坦言自己無法和董事會深談，卻也沒有改革家族股東掌權的結構。\n*   **邊界**：這個比喻只描寫他**讀對手、趁空檔出手**的節奏；他的戰爭牽涉數十萬人的生死與國家存亡，而且楚國世族的權力來自封邑與兵權，並非現代股權可以類比。",
+        "soulEssence": "【說話邏輯】\n他提問的方式，總是先拋出一個帶著答案的問題。他問莫敖子華：「自從先君文王以至不穀之身，亦有不為爵勸，不為祿勉，以憂社稷者乎？」（《戰國策·楚策一》）[史載]問題的潛台詞是：我懷疑沒有。子華講完令尹子文、葉公子高、棼冒勃蘇、蒙穀等五人的事蹟，他的結論果然是「此古之人也。今之人，焉能有之耶」[史載]。他不是不懂得聽，而是習慣讓對方的話成為自己既有判斷的註腳[推斷]。張丑遊說時，他也是先聽完對方對齊國人事的整套分析，再決定「弗逐」（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）[史載]——只要對方的論證能換算成楚國的利益，他就能接受[推斷]。\n\n【壓力反應】\n他面對外來攻擊時的第一反應是**不只擋，而是吞**。\n越王聽從齊使之言，「釋齊而伐楚」，他隨即「興兵而伐之，大敗越，殺王無彊」，一路取得吳國故地直到浙江（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)）[史載]。齊相田嬰與魏君徐州相王，他「怒田嬰」，隔年就在徐州擊敗齊師（[《史記·孟嘗君列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075)）[史載]。兩次反應都很快，而且都把對方的挑釁轉成楚國擴張的機會[推斷]。但面對真正比他強的秦，他的反應卻是《史記》所寫的「臥不安席，食不甘味」——他擅長反擊比他弱或比他分心的對手，對更強的對手則只剩焦慮[推斷]。這種焦慮沒有轉化為改革的動力，而是轉化為對外結盟的依賴：在《史記》的敘事裡，他最後選擇「謹奉社稷以從」，把楚國的安全寄託在一紙合縱盟約上（[《史記·蘇秦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069)）[史載]。\n\n【核心驅動】\n他想要的是讓楚國的實力，真正對得上它的面積。\n楚國「地方五千餘里，帶甲百萬」（[《史記·蘇秦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069)）[史載]，卻在他即位前被秦南侵、被魏與齊壓過聲勢。依《史記》，他十一年間東吞越地、北敗齊師、西南派莊蹻至滇（[《史記·西南夷列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116)）[史載：前後兩項年代有異說]，每一步都在把紙面上的大國變成實際的大國[詮釋：此為從其擴張方向歸納的動機]。\n\n【慣性盲點】\n他看得清別人的人事問題，卻看不清自己的。\n他明白齊國之所以戰敗，是因為齊用了「大臣不附，百姓不爲用」的申紀而冷落田盻（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）[史載]；但當莫敖子華告訴他「其君好發者，其臣抉拾……若君王誠好賢，此五臣者，皆可得而致之」（《戰國策·楚策一》）[史載]，這段話在史料中沒有得到他的回應。對外，他把對手的失敗歸因於用人；對內，他把楚國缺乏忠臣歸因於時代[推斷]。這種雙重標準讓他在戰場上精明，在朝堂上卻停在原地[推斷]。\n\n【情感結構】\n他的情感表達很少，史料留下的幾乎都是決策；唯一明顯流露情緒的，是「怒田嬰」與面對秦國時的焦慮（[《史記·孟嘗君列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075)）[史載]。他對賢者懷有真誠的嚮往：他以相位與厚幣迎聘莊周，換來的卻是「子亟去，無污我」的拒絕（[《史記·老子韓非列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063)）[史載]。他向莫敖子華打聽古代忠臣，最後只能嘆息[史載]。這兩件事放在一起，呈現的是一位渴望被真心輔佐、卻總覺得身邊沒有這種人的君主[詮釋]。他最脆弱的時刻，大概就是那聲「今之人，焉能有之耶」[詮釋]。\n\n【參照系】\n他理解國際政治的框架，是**誰正在分心**。\n類比準確之處：齊國用錯人、越國以為楚軍分散，他都準確抓住了對方注意力與人力的空檔（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)）[史載]；這套框架讓他在東方與東南連戰皆捷[推斷]。\n類比失準之處：秦國不是一個會分心的對手。商鞅變法後的秦，不依賴某一位宰相的好惡，而是依賴一套制度；用**找對手人事破綻**的方法對付秦國，很難找到可以下手的空檔，莊蹻的後路也正是被秦國切斷（[《史記·西南夷列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116)）[史載]。他的框架在制度化的對手面前失效[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n他的裂縫，在於他極度相信**用人決定成敗**，卻從不把這個信念用在楚國自己身上。\n他留住齊國的田嬰，因為他相信齊國用錯人就會輸（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）[史載]；他問子華有沒有無私之臣，因為他知道楚國的世族多半「為爵勸」「為祿勉」（《戰國策·楚策一》）[推斷]。子華把責任丟回給他——君主好什麼，臣下就會變成什麼——而他選擇把問題歸給「今之人」[史載]。他死時楚國正處於版圖最大的時刻，同年魏國便趁喪來伐、奪取陘山（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）[史載]；他的擴張靠的是他個人的判斷，而他沒有留下能在他之後繼續判斷的人[推斷]。這也是他與秦孝公最大的差別：後者留下的是一套換了國君也能運作的法令。",
+        "stats": [
+          80,
+          35,
+          80,
+          72,
+          68
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：80\n\n確鑿的戰績是徐州擊敗齊師（[《史記·孟嘗君列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075)），以及越國來攻時楚軍大勝（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)；[《資治通鑑》卷002](https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002)）。《史記》另記他「殺王無彊」、派莊蹻遠征西南（[《史記·西南夷列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116)），但前者有懷王時之說，後者《後漢書》繫於頃襄王（[《後漢書》卷86](https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B786)），只作次要參考。扣分在於他沒有對秦取得任何戰果。原評82把三面用兵都算作已證功業，修訂為80，低於漢明帝（82）、齊桓公（92）與秦孝公（98）。\n\n### 武力：35\n\n史料記載他「興兵而伐之，大敗越」（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)），但沒有交代他是否親臨戰陣，也沒有他個人武勇的記載；徐州之戰與西南遠征的執行者也不明確或另有其人（[《史記·西南夷列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116)）。戰國君主多有親征之例，給予略高於純粹宮廷君主的分數，但不能憑空推高。評35，與宋孝宗（35）持平，高於秦昭襄王（28），低於齊桓公（75）。\n\n### 智謀：80\n\n他接受張丑的分析，刻意讓齊國保留田嬰、繼續冷落名將田盻（[《史記·楚世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040)）；越國誤判楚軍分散而來攻，他反而趁勢滅越（[《史記·越王句踐世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041)）。這兩次都顯示他善於利用對手的判斷錯誤。短板在於對秦缺乏長遠方略，連《史記》都讓他自承「以楚當秦，不見勝也」。評80，低於齊桓公（85）與宋孝宗（82），高於崇禎帝（75）。\n\n### 政治：72\n\n《史記》把東南及滇池的擴張記在他名下，但如統率項所述，相關戰事的系年有異說，不能直接當作他在位期間已確證的疆域（[《史記·西南夷列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116)），並有求賢之舉，曾以相位厚幣聘莊周（[《史記·老子韓非列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063)）。但史料中幾乎看不到他在內政、法令或世族權力上的改革；他問莫敖子華有無「不為爵勸，不為祿勉」之臣，最後自嘆「今之人，焉能有之耶」。評72，遠低於秦孝公（100）與齊桓公（96），高於崇禎帝（65）。\n\n### 魅力：68\n\n莫敖子華當面提醒他：「若君王誠好賢，此五臣者，皆可得而致之」（《戰國策·楚策一》），暗示他未能吸引到真正的社稷之臣；莊周也拒絕了他的聘請（[《史記·老子韓非列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063)）。不過越國戰敗後「服朝於楚」，楚國在他手上確實具有區域威望。評68，高於漢明帝（65），低於宋孝宗（85）與秦昭襄王（82）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T17:43:58.761Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "史記·巻四十 楚世家 第十",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",
+            "locator": "本機固定修訂 oldid=8736796 全文比對（textSha256 已驗）：復搏其士卒以與王遇，必不便於王矣、子威王熊商立、大臣不附，百姓不爲用、百姓爲之用、魏聞楚喪，伐楚，取我陘山",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·卷十五 六國年表 第三",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7015",
+            "locator": "本機固定修訂 oldid=2607002 全文比對（textSha256 已驗）：楚威王熊商元年",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·巻七十五 孟嘗君列傳 第十五",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075",
+            "locator": "本機固定修訂 oldid=1965692 全文比對（textSha256 已驗）：會徐州而相王、楚威王聞之，怒田嬰。明年，楚伐敗齊師於徐州，而使人逐田嬰",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·巻四十一 越王勾踐世家 第十一",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041",
+            "locator": "本機固定修訂 oldid=2018395 全文比對（textSha256 已驗）：北伐齊，西伐楚，與中國爭彊、楚三大夫張九軍，北圍曲沃、於中、遂釋齊而伐楚、楚威王興兵而伐之，大敗越，殺王無彊、北破齊於徐州、諸族子爭立…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·卷六十九 蘇秦列傳 第九",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069",
+            "locator": "本機固定修訂 oldid=2621145 全文比對（textSha256 已驗）：內與羣臣謀，不足恃也、地方五千餘里，帶甲百萬，車千乘，騎萬匹，粟支十年、秦之所害莫如楚，楚彊則秦弱、寡人自料以楚當秦，不見勝也；內與羣臣謀，不足恃也。寡人臥不安席，食不甘味，心搖搖然如縣旌而無所終薄、謹奉社稷以從、臥不安席，食不甘味…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "資治通鑑·第二巻",
+            "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002",
+            "locator": "本機固定修訂 oldid=2638853 全文比對（textSha256 已驗）：楚人大敗之，乘勝盡取呉故地、依楊寬《戰國史料編年輯証》越君年世之考訂繫於此年",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·卷一百一十六 西南夷列傳 第五十六",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116",
+            "locator": "本機固定修訂 oldid=7903636 全文比對（textSha256 已驗）：始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西、以兵威定屬楚、以其眾王滇",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "後漢書·卷八十六·南蠻西南夷列傳第七十",
+            "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B786",
+            "locator": "本機固定修訂 oldid=1523514 全文比對（textSha256 已驗）：楚頃襄王時，遣將莊豪從沅水伐夜郎",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "桑秀雲〈莊蹻入滇考〉，《中央研究院歷史語言研究所集刊》51本3分（1980）",
+            "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/180/Article/596",
+            "locator": "WebSearch 結果摘要：僅書目資訊（頁535–545），正文只據題名說明學界有專門考證",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "《東洋史研究》78卷4號論文（蘇秦史料問題），京都大學學術資料庫",
+            "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/281571",
+            "locator": "WebSearch 結果摘要：1976年學者主張《戰國縱橫家書》為蘇秦可靠史料、《史記》蘇秦事蹟不可靠，已成主流見解，但仍有爭議",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "史記·卷六十三 老子韓非列傳 第三",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063",
+            "locator": "本機固定修訂 oldid=7903601 全文比對（textSha256 已驗）：聞莊周賢，使使厚幣迎之，許以為相、子亟去，無污我",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "bdb7d79175e765a37019b7ef2fa4d30e1f7ad36620f9ef249c38604f3f5cd7df",
+        "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
+        "preservedDeepSha256": "6d0dd53752e8176ee9af4f37c6cf11e9d3463c490e374611351014ab7b2a032b",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "a28743bb00b329a49b6537bdbc0bde1bdc5f5a010ac0c24e5664158ac7c650a8",
+            "requestSha256": "bdb7d79175e765a37019b7ef2fa4d30e1f7ad36620f9ef249c38604f3f5cd7df",
+            "inputSha256": "a1257e8e93e41802295ec9385f8cf4020b432a0fdb7efed9ab946c41a6ff4e04",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "272312e252db56c82aeb2b2d856f2f2ffa4df14a9e810ad62c979365b451fc60",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
+            "preservedDeepSha256": "6d0dd53752e8176ee9af4f37c6cf11e9d3463c490e374611351014ab7b2a032b",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T17:43:58.761Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/04.analysisStats.raw.md",
+            "rawResponseSha256": "7915aeb214d97393518469f6d555c8794909ee6476fc36ae62e20fd11b4ee7f3",
+            "responseFile": "analysis-batch-51-100/drafts/04.analysisStats.response.md",
+            "responseSha256": "7915aeb214d97393518469f6d555c8794909ee6476fc36ae62e20fd11b4ee7f3",
+            "fieldsHashes": {
+              "analysis": "74851b738375c8fb568e237ad94a3312ff7b8895ebfdc99a40a04f5b6977e386",
+              "stats": "f704a287d45519ddf2d5a0b165f0ec485e50bd932803a83ab4122f7cbc4a818d",
+              "statsAnalysis": "5d9abadd31d484707342e6dd166397dc90cfbb3fa0187b9e58b9a4ed056c09d0"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/04.analysisStats.capture.json",
+            "captureSha256": "28057b3ebe549b1468e3e405f3cc457d45d307e15a8977b6baafa7b61abc97ec",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/04.analysisStats.json",
+            "sourceReviewSha256": "cdff496c3029e42af32832b6732b92b77ccb621cee697970e47415ce39b62ffc",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/04.combined.search-log.json",
+              "sha256": "45fe2bd3f7fd87bd8ac4c1ec89729dd142297eaf83b768568ae20afa1d5c9a27",
+              "webSearchCount": 4,
+              "archiveCheckCount": 39
+            },
+            "checkedSources": [
+              {
+                "title": "史記·巻四十 楚世家 第十",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",
+                "locator": "本機固定修訂 oldid=8736796 全文比對（textSha256 已驗）：復搏其士卒以與王遇，必不便於王矣、子威王熊商立、大臣不附，百姓不爲用、百姓爲之用、魏聞楚喪，伐楚，取我陘山",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷十五 六國年表 第三",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7015",
+                "locator": "本機固定修訂 oldid=2607002 全文比對（textSha256 已驗）：楚威王熊商元年",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·巻七十五 孟嘗君列傳 第十五",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075",
+                "locator": "本機固定修訂 oldid=1965692 全文比對（textSha256 已驗）：會徐州而相王、楚威王聞之，怒田嬰。明年，楚伐敗齊師於徐州，而使人逐田嬰",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·巻四十一 越王勾踐世家 第十一",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041",
+                "locator": "本機固定修訂 oldid=2018395 全文比對（textSha256 已驗）：北伐齊，西伐楚，與中國爭彊、楚三大夫張九軍，北圍曲沃、於中、遂釋齊而伐楚、楚威王興兵而伐之，大敗越，殺王無彊、北破齊於徐州、諸族子爭立…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六十九 蘇秦列傳 第九",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069",
+                "locator": "本機固定修訂 oldid=2621145 全文比對（textSha256 已驗）：內與羣臣謀，不足恃也、地方五千餘里，帶甲百萬，車千乘，騎萬匹，粟支十年、秦之所害莫如楚，楚彊則秦弱、寡人自料以楚當秦，不見勝也；內與羣臣謀，不足恃也。寡人臥不安席，食不甘味，心搖搖然如縣旌而無所終薄、謹奉社稷以從、臥不安席，食不甘味…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "資治通鑑·第二巻",
+                "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002",
+                "locator": "本機固定修訂 oldid=2638853 全文比對（textSha256 已驗）：楚人大敗之，乘勝盡取呉故地、依楊寬《戰國史料編年輯証》越君年世之考訂繫於此年",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷一百一十六 西南夷列傳 第五十六",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116",
+                "locator": "本機固定修訂 oldid=7903636 全文比對（textSha256 已驗）：始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西、以兵威定屬楚、以其眾王滇",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "後漢書·卷八十六·南蠻西南夷列傳第七十",
+                "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B786",
+                "locator": "本機固定修訂 oldid=1523514 全文比對（textSha256 已驗）：楚頃襄王時，遣將莊豪從沅水伐夜郎",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "桑秀雲〈莊蹻入滇考〉，《中央研究院歷史語言研究所集刊》51本3分（1980）",
+                "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/180/Article/596",
+                "locator": "WebSearch 結果摘要：僅書目資訊（頁535–545），正文只據題名說明學界有專門考證",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "《東洋史研究》78卷4號論文（蘇秦史料問題），京都大學學術資料庫",
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/281571",
+                "locator": "WebSearch 結果摘要：1976年學者主張《戰國縱橫家書》為蘇秦可靠史料、《史記》蘇秦事蹟不可靠，已成主流見解，但仍有爭議",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "史記·卷六十三 老子韓非列傳 第三",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063",
+                "locator": "本機固定修訂 oldid=7903601 全文比對（textSha256 已驗）：聞莊周賢，使使厚幣迎之，許以為相、子亟去，無污我",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "7c45d0bfe769f2b5cf79199abab93facfb4b7871b14e593160cb27f91a6fda4a",
+            "requestSha256": "bdb7d79175e765a37019b7ef2fa4d30e1f7ad36620f9ef249c38604f3f5cd7df",
+            "inputSha256": "a1257e8e93e41802295ec9385f8cf4020b432a0fdb7efed9ab946c41a6ff4e04",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "075f43628e5f4c2be243b070073aa21d1a770c897401c66d1c958e0c2063c048",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
+            "preservedDeepSha256": "6d0dd53752e8176ee9af4f37c6cf11e9d3463c490e374611351014ab7b2a032b",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T17:43:58.761Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/04.soulEssence.raw.md",
+            "rawResponseSha256": "0799731ffea4e66d67e785b3d5481fbb11df84ec414900803d3fb4fe40f5863e",
+            "responseFile": "analysis-batch-51-100/drafts/04.soulEssence.response.md",
+            "responseSha256": "0799731ffea4e66d67e785b3d5481fbb11df84ec414900803d3fb4fe40f5863e",
+            "fieldsHashes": {
+              "soulEssence": "8eb8212fe4b3c3c323a732226fee164ca2013a9b36c5bc8d17da51a4a4be8011"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/04.soulEssence.capture.json",
+            "captureSha256": "8fa18bbe2d01dd5352c565a7190ad7bd723847f82369ecbaed53044724c4217d",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/04.soulEssence.json",
+            "sourceReviewSha256": "0b49f12fd1b6bc9cf5fd7bf2bd92b60f4c22a6642918c76e0e27bddd6de94855",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/04.combined.search-log.json",
+              "sha256": "45fe2bd3f7fd87bd8ac4c1ec89729dd142297eaf83b768568ae20afa1d5c9a27",
+              "webSearchCount": 4,
+              "archiveCheckCount": 39
+            },
+            "checkedSources": [
+              {
+                "title": "史記·巻四十 楚世家 第十",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",
+                "locator": "本機固定修訂 oldid=8736796 全文比對（textSha256 已驗）：復搏其士卒以與王遇，必不便於王矣、子威王熊商立、大臣不附，百姓不爲用、百姓爲之用、魏聞楚喪，伐楚，取我陘山",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·巻四十一 越王勾踐世家 第十一",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041",
+                "locator": "本機固定修訂 oldid=2018395 全文比對（textSha256 已驗）：北伐齊，西伐楚，與中國爭彊、楚三大夫張九軍，北圍曲沃、於中、遂釋齊而伐楚、楚威王興兵而伐之，大敗越，殺王無彊、北破齊於徐州、諸族子爭立…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·巻七十五 孟嘗君列傳 第十五",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075",
+                "locator": "本機固定修訂 oldid=1965692 全文比對（textSha256 已驗）：會徐州而相王、楚威王聞之，怒田嬰。明年，楚伐敗齊師於徐州，而使人逐田嬰",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六十九 蘇秦列傳 第九",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069",
+                "locator": "本機固定修訂 oldid=2621145 全文比對（textSha256 已驗）：內與羣臣謀，不足恃也、地方五千餘里，帶甲百萬，車千乘，騎萬匹，粟支十年、秦之所害莫如楚，楚彊則秦弱、寡人自料以楚當秦，不見勝也；內與羣臣謀，不足恃也。寡人臥不安席，食不甘味，心搖搖然如縣旌而無所終薄、謹奉社稷以從、臥不安席，食不甘味…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷一百一十六 西南夷列傳 第五十六",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116",
+                "locator": "本機固定修訂 oldid=7903636 全文比對（textSha256 已驗）：始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西、以兵威定屬楚、以其眾王滇",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六十三 老子韓非列傳 第三",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063",
+                "locator": "本機固定修訂 oldid=7903601 全文比對（textSha256 已驗）：聞莊周賢，使使厚幣迎之，許以為相、子亟去，無污我",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/04.analysis.md",
+            "analysisContextSha256": "a4af76d4184f8eb943cb5c8bf89252d3264b18d363e21e293aab0d88e1f2a79f"
+          }
+        },
+        "editorialRevision": {
+          "editor": "Codex (OpenAI)",
+          "policyFile": "analysis-batch-51-100/editorial-revision.20261011.json",
+          "policySha256": "8e71dbb87af5f6b6ece40b2847b4118f47c476d8707073c97c5fd716f7ed3f74",
+          "originalResultsFile": "analysis-batch-51-100/results.04-04.v1.json",
+          "originalBatchSha256": "26d072ad77f6e5756259e2c9050cb43c570441a0e5d61e319032a835ce11c938",
+          "note": "Claude authored the preserved original manuscript. Codex made the listed factual copy edits; original captures are unchanged."
+        }
+      }
+    }
+  ]
+}

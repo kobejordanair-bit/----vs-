@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "3e7232e0c5fa519455778d9985b88d72d4c0ed64c9ca2c84ce92266110f53d97",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "994b5b49dce71efb605117b14164a330071d160e6f26de34aa5bb00ae79090bb",
+  "plannedAfterSha256": "983067d6dca924beb8ec42415f9905ef180683fb90b7debb78dc8c945e0bc448",
+  "beforeRevision": 71,
+  "plannedAfterRevision": 72,
+  "patchBytes": 3963061,
+  "plannedDocumentBytes": 10881880,
+  "writtenFieldHashes": [
+    {
+      "id": "general_王保保_908147860",
+      "field": "analysis",
+      "sha256": "f5f1f6328f03b527c1e7166d7d0eb2b336d4335ae5fc7551bfc30af9779b1259"
+    },
+    {
+      "id": "general_王保保_908147860",
+      "field": "soulEssence",
+      "sha256": "d97c922b3b5667e9cafb812b9945b81039fd1f336ed1a395be3f4b0bfc935bed"
+    },
+    {
+      "id": "general_王保保_908147860",
+      "field": "stats",
+      "sha256": "0a9a359280f13dd0c449c1a13214e0abfd18886321115ffd0b481c1c39643fcf"
+    },
+    {
+      "id": "general_王保保_908147860",
+      "field": "statsAnalysis",
+      "sha256": "67e442b4908db20f29934c3f3e4133993f5fd9d7eab2125fcd256d08b62e66ac"
+    }
+  ]
+}

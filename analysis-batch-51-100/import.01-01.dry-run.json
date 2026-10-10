@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "d14d2add931403de2b3f9eddadeaa8d1562b6d7d4e7b754326b0d66313d0c18c",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "plannedAfterSha256": "fa6d59b649e9e643ec90bcf630839b68f8ed32d5b99898eaf1a9af8c903dd967",
+  "beforeRevision": 52,
+  "plannedAfterRevision": 53,
+  "patchBytes": 3625751,
+  "plannedDocumentBytes": 10544570,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_孫文_1671742205",
+      "field": "analysis",
+      "sha256": "174dc2d7bdd6632d08d6ac7d8ab9b806e7d180dd39cfeb1399bb8ef64026b6dd"
+    },
+    {
+      "id": "emperor_孫文_1671742205",
+      "field": "soulEssence",
+      "sha256": "399d12f8c5a6d895119206fc9e70a58815193c386c8dbd286178ccaa858db92f"
+    },
+    {
+      "id": "emperor_孫文_1671742205",
+      "field": "stats",
+      "sha256": "b50d4c48f15fba43c3cfd6c593ac37eb4c96280dd49e020712eef44229f40844"
+    },
+    {
+      "id": "emperor_孫文_1671742205",
+      "field": "statsAnalysis",
+      "sha256": "2b1806f13de764bd6603abb6cad7baea9708a24e3d48304f5b2c0c0c53656f65"
+    }
+  ]
+}

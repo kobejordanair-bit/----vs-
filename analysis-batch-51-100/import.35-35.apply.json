@@ -1,0 +1,57 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "apply",
+  "status": "applied_verified",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "469d65ca13ef28bb49f613a8a2728ec80399535c6a4db675f66025ad99cf7915",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "d8e7c2f37f41646d3592696090385b832a82de0563791518a30e5a8fb8d7a1dc",
+  "plannedAfterSha256": "188aa389034ad51e4e2379d3910fc527c9c20355beebb2409af9be46ebb04b52",
+  "beforeRevision": 86,
+  "plannedAfterRevision": 87,
+  "patchBytes": 4215791,
+  "plannedDocumentBytes": 11134610,
+  "writtenFieldHashes": [
+    {
+      "id": "general_劉錡_306144367",
+      "field": "analysis",
+      "sha256": "82a25269f6a6f839d020e04a61392f56eb88005937375925a73142e4c30d4add"
+    },
+    {
+      "id": "general_劉錡_306144367",
+      "field": "soulEssence",
+      "sha256": "6c15e5ac367404b8d20a0d4608ed04ddaec15cf6c4be58bcddbb82347ce74f2e"
+    },
+    {
+      "id": "general_劉錡_306144367",
+      "field": "stats",
+      "sha256": "7d36da328b95faa06f8de91476e5ecd1fd74da5e0dc584a73f0876bfcc4e5b20"
+    },
+    {
+      "id": "general_劉錡_306144367",
+      "field": "statsAnalysis",
+      "sha256": "849115b1556ccb4a1c87093757731ab5d0e0037ed5bcaf8867f2f6784d31ec7e"
+    }
+  ],
+  "conflicts": 0,
+  "writeAttempted": true,
+  "writeSucceeded": true,
+  "verification": {
+    "passed": true,
+    "targetsMatch": true,
+    "contentPreserved": true,
+    "revisionMatches": true,
+    "afterRevision": 87,
+    "afterSha256": "188aa389034ad51e4e2379d3910fc527c9c20355beebb2409af9be46ebb04b52",
+    "unaffectedBeforeSha256": "2821c9101f9afcc57c13f6e27970274737bbdd96462f11511b35924fedc5d263",
+    "unaffectedAfterSha256": "2821c9101f9afcc57c13f6e27970274737bbdd96462f11511b35924fedc5d263"
+  },
+  "rawExtrasPreserved": true
+}

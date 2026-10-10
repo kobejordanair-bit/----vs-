@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "76cb64f9eca06cbd4d0ca7f10583fdbc025fa1c7aa3f2c47bd1916990ba213b1",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "2f5a7016aac5d18619abfce27ad4baff736e508c71e79b50f949bff1eb8302b2",
+  "plannedAfterSha256": "7a15d1a892101618845151ff2eee88417605e0902be43efa0418603a61573693",
+  "beforeRevision": 57,
+  "plannedAfterRevision": 58,
+  "patchBytes": 3717712,
+  "plannedDocumentBytes": 10636531,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_蔣介石_274287036",
+      "field": "analysis",
+      "sha256": "9191b6564ca0304f940c37dbde99de100d659e2fd9163344eb2271806f062283"
+    },
+    {
+      "id": "emperor_蔣介石_274287036",
+      "field": "soulEssence",
+      "sha256": "8e8b46959e280ef3dae3c0f7dba296ad97c27fabc3c93a7d2fe22d3c524d461d"
+    },
+    {
+      "id": "emperor_蔣介石_274287036",
+      "field": "stats",
+      "sha256": "9462ee15cf018c5b7e106099fd87b5d401887a52bd7f5ca77b0ab79eb28e6db2"
+    },
+    {
+      "id": "emperor_蔣介石_274287036",
+      "field": "statsAnalysis",
+      "sha256": "7e921985b6d375bbb632d77eac28549d85208d5cebd65f4f340aea95d8997f89"
+    }
+  ]
+}

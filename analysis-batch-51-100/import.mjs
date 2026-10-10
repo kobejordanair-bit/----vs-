@@ -264,6 +264,10 @@ function approved(report, source, base, batch, manifest) {
 // Dynamic import avoids loading the assembler during module initialization.
 export async function validateBatch50Evidence({ batch, manifest = authority }) {
   validateChunk(batch, manifest);
+  if (batch.records.some(item => item.provenance.editorialRevision !== undefined)) {
+    const { validateEditorialRevision } = await import('./editorial-revision.mjs');
+    return validateEditorialRevision({ batch, manifest, validateOriginal: validateBatch50Evidence });
+  }
   const providers = new Set(batch.records.map(item => item.provenance.provider));
   if (providers.size !== 1) bad('mixed_provider_batch');
   if (batch.format === SOUL_FORMAT) {

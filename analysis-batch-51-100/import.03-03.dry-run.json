@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "cc5d8311325ae144eeea91acc3dc38f98ea419a058e82b16e1aa96130c2444e8",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "c3dd85a0be3182d0edc87d6891569e3e143a30a857b5336958ec549547ad4960",
+  "plannedAfterSha256": "11582617fa1d3544708d09e69e68781d6d2fe7be63b398555a39e1217912069f",
+  "beforeRevision": 54,
+  "plannedAfterRevision": 55,
+  "patchBytes": 3661264,
+  "plannedDocumentBytes": 10580083,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_明世宗_281946584",
+      "field": "analysis",
+      "sha256": "d282c1346947f01ccf4046468ea04239b462f4d6dae9392e2c2d83e2098d8650"
+    },
+    {
+      "id": "emperor_明世宗_281946584",
+      "field": "soulEssence",
+      "sha256": "07c3eb1e8393a9620c81b82d93ff4cdf3ca1ebc109a55249df2aef04361b3bac"
+    },
+    {
+      "id": "emperor_明世宗_281946584",
+      "field": "stats",
+      "sha256": "0f3366dc10af06494125aa0c7f59eff7dd57556f82e3ecfe94953d98ce1a33ae"
+    },
+    {
+      "id": "emperor_明世宗_281946584",
+      "field": "statsAnalysis",
+      "sha256": "7ea3b8307e114dc57362fd2c7ff6a0073c73d8281fe23285238463978dc8024a"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "format": "dynasty-analysis-batch50-import",
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "status": "planned",
+  "passed": true,
+  "authorizedTargetCount": 50,
+  "targetCount": 1,
+  "changedFields": 4,
+  "provenanceFieldsWritten": 0,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "batchSha256": "033f72440c33c7784205dcbc23ee2a5dedfa3f166e3baba721aa6b4dc37c4842",
+  "sourceSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
+  "baseLibrarySha256": "55b5ab9f344f679809d5515bc92a017fae065a990a2c99912693c0a8fd27ab30",
+  "beforeSha256": "74bef676b19551ecdf8810ff7dec2340cac965a1c75e435667dcf310804b9575",
+  "plannedAfterSha256": "d2080c3d547006ba8789b9c8f8756798c376b6ca5c435349a5f2e7fbe11c925f",
+  "beforeRevision": 66,
+  "plannedAfterRevision": 67,
+  "patchBytes": 3878071,
+  "plannedDocumentBytes": 10796890,
+  "writtenFieldHashes": [
+    {
+      "id": "emperor_道光帝_271521568",
+      "field": "analysis",
+      "sha256": "6139563f32afe7061e6509c62a056a3574c7e855a3f7cd74bdcf3b8c7bcf7d82"
+    },
+    {
+      "id": "emperor_道光帝_271521568",
+      "field": "soulEssence",
+      "sha256": "b341aea8ab7fb6e6a2b7a2cd457c909a3d21028cf8769727a10d61160a4d4052"
+    },
+    {
+      "id": "emperor_道光帝_271521568",
+      "field": "stats",
+      "sha256": "c55a0c9cc091b7aeb7444f32fe787993536b76dfef606daeb724c09efc58a419"
+    },
+    {
+      "id": "emperor_道光帝_271521568",
+      "field": "statsAnalysis",
+      "sha256": "db564a8552503b727198cf6093482b87b6db398925af586002caa86364d6154f"
+    }
+  ]
+}
