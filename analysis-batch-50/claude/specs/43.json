@@ -1,0 +1,133 @@
+{
+ "webSearches": [
+  {
+   "query": "朱鎔基 1994 分稅制改革 中央財政 比重 研究 國企改革 下崗 職工 人數 1998-2003 學術",
+   "returnedUrls": [
+    "https://ah.lib.nccu.edu.tw/handle/140.119/4929",
+    "https://www.worldjournal.com/wj/story/121471/9688230",
+    "https://core.ac.uk/works/69368222",
+    "https://chinadigitaltimes.net/chinese/?p=179525"
+   ]
+  },
+  {
+   "query": "China WTO accession 2001 Zhu Rongji 1999 Washington visit negotiation Clinton rejected deal November 1999 agreement",
+   "returnedUrls": [
+    "https://clintonwhitehouse6.archives.gov/1999/04/1999-04-08-joint-us-china-statement.html",
+    "https://www.everycrsreport.com/reports/RS20135.html",
+    "https://csmonitor.com/1999/0419/p17s1.html"
+   ]
+  },
+  {
+   "query": "朱鎔基逝世 新華社 享年",
+   "returnedUrls": [
+    "https://m.thepaper.cn/newsDetail_forward_33769071",
+    "https://udn.com/news/story/7331/9687577",
+    "https://www.yzwb.net/news/txs/202608/t20260812_381989.html"
+   ]
+  }
+ ],
+ "archiveChecks": [],
+ "extraSources": {
+  "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977920.html": {
+   "title": "湖南省檔案局〈瀟湘人物：朱鎔基〉",
+   "locator": "來源包已記錄先前核讀：1998年起任國務院總理之任職段；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.fmprc.gov.cn/web/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2108_675689/200303/t20030320_9288239.shtml": {
+   "title": "外交部轉刊《2003年政府工作報告》（朱鎔基）",
+   "locator": "來源包已記錄先前核讀：第一部分1998–2002年回顧，金融與國企改革、下崗背景、財政統計；本 session 未重新開啟",
+   "type": "primary_text",
+   "access": "source_package_prior_review"
+  },
+  "https://lt.china-office.gov.cn/chn/xwdt/200203/t20020317_2725961.htm": {
+   "title": "《2002年政府工作報告》批准稿（中國駐立陶宛使館轉刊）",
+   "locator": "來源包已記錄先前核讀：2001年回顧、入世第一年工作安排與政府職能改革；本 session 未重新開啟",
+   "type": "primary_text",
+   "access": "source_package_prior_review"
+  },
+  "https://m.thepaper.cn/newsDetail_forward_33769071": {
+   "title": "澎湃新聞轉載〈中共中央 全國人大常委會 國務院 全國政協訃告 朱鎔基同志逝世〉",
+   "locator": "WebSearch 結果摘要：2026年8月12日11時06分在北京逝世，享年98歲；1928年10月生，湖南長沙人；1998–2003年任國務院總理",
+   "type": "primary_text",
+   "access": "web_search_result_summary"
+  },
+  "https://core.ac.uk/works/69368222": {
+   "title": "Comment on \"Assessing China's 1994 Fiscal Reforms: An Intermediate Report\" (CORE)",
+   "locator": "WebSearch 結果摘要：改革目標為提高政府收入占GDP比重與中央收入占比；作者認為改革在達成目標上相當成功但仍有待解決問題",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://clintonwhitehouse6.archives.gov/1999/04/1999-04-08-joint-us-china-statement.html": {
+   "title": "White House Archives, \"Joint U.S.-China Statement\" (April 8, 1999)",
+   "locator": "WebSearch 結果摘要：雙方確認入世符合利益；貿易權、技術轉讓、國企、補貼等規則一致；執行機制、反傾銷與保障條款期限、紡織品仍有分歧；指示恢復談判",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://ah.lib.nccu.edu.tw/handle/140.119/4929": {
+   "title": "陳小紅，城鎮下崗職工再就業與社會保障研究（2001，政治大學學術典藏）",
+   "locator": "WebSearch 結果摘要：從社會學角度分析城鎮下崗職工再就業與社會保障體系的關係",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "No classical archive applies; page fetches remain blocked. Three sources from handoff package prior reviews; four via WebSearch summaries.",
+  "錯劃右派、上海市長與副總理經歷、1999年11月中美協議、2001年底入世、『地雷陣』記者會語屬通行史實，未附連結並於正文標示。",
+  "下崗人數、財政比重等具體數字未取得可靠來源，正文不給數字；改革屬集體決策，正文明示個人角色為主導與執行。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "朱鎔基，名臣；保留原 S- 評級與 deepAnalysis；補入2026年8月12日逝世之訃告資訊。"
+   ],
+   [
+    "fiscal",
+    "分稅制目標與成效依學術評論摘要；地方財政副作用作分析判斷。"
+   ],
+   [
+    "soe-finance",
+    "2003年報告依來源包記錄；下崗研究依典藏摘要。"
+   ],
+   [
+    "wto",
+    "1999年4月聯合聲明依白宮檔案摘要；2002年報告依來源包記錄。"
+   ],
+   [
+    "stats-calibration",
+    "[85,30,90,94,86] 對照周恩來[80,40,95,98,98]、謝安[85,30,92,94,95]、于謙[90,40,90,88,90]、姚崇[78,68,97,96,88]、鄧小平[92,75,95,98,85]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "2003年報告；地雷陣語標[推斷]。"
+   ],
+   [
+    "pressure",
+    "金融危機後持續改革、1999年談判。"
+   ],
+   [
+    "drive",
+    "分稅制與入世目標；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "下崗與地方財政。"
+   ],
+   [
+    "emotion",
+    "右派經歷標[推斷]；卸任沉默標[詮釋]。"
+   ],
+   [
+    "frame",
+    "國際規則參照；失準標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "分稅制與國企改革。"
+   ]
+  ]
+ }
+}

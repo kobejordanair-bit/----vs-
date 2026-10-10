@@ -1,0 +1,110 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_朱鎔基_1995149885",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:59:10.719Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "25f8b20aba415b51d769d327f560013c8e90afe8137f9dca1e396ceaf9813fa6",
+  "rawResponseSha256": "25f8b20aba415b51d769d327f560013c8e90afe8137f9dca1e396ceaf9813fa6",
+  "sourcePackageSha256": "55d1111d5572eb5cc5ed7a0cdd21dc66b122ef79a1fa54b08deb65c76fb9d968",
+  "searchLogSha256": "7dbb7a82fbba4458cb40023bf0e1c7bc54b6098508e7d2f40c7a4826de7a3c83",
+  "checkedSources": [
+    {
+      "url": "https://m.thepaper.cn/newsDetail_forward_33769071",
+      "title": "澎湃新聞轉載〈中共中央 全國人大常委會 國務院 全國政協訃告 朱鎔基同志逝世〉",
+      "locator": "WebSearch 結果摘要：2026年8月12日11時06分在北京逝世，享年98歲；1928年10月生，湖南長沙人；1998–2003年任國務院總理",
+      "type": "primary_text",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977920.html",
+      "title": "湖南省檔案局〈瀟湘人物：朱鎔基〉",
+      "locator": "來源包已記錄先前核讀：1998年起任國務院總理之任職段；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://core.ac.uk/works/69368222",
+      "title": "Comment on \"Assessing China's 1994 Fiscal Reforms: An Intermediate Report\" (CORE)",
+      "locator": "WebSearch 結果摘要：改革目標為提高政府收入占GDP比重與中央收入占比；作者認為改革在達成目標上相當成功但仍有待解決問題",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.fmprc.gov.cn/web/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2108_675689/200303/t20030320_9288239.shtml",
+      "title": "外交部轉刊《2003年政府工作報告》（朱鎔基）",
+      "locator": "來源包已記錄先前核讀：第一部分1998–2002年回顧，金融與國企改革、下崗背景、財政統計；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://ah.lib.nccu.edu.tw/handle/140.119/4929",
+      "title": "陳小紅，城鎮下崗職工再就業與社會保障研究（2001，政治大學學術典藏）",
+      "locator": "WebSearch 結果摘要：從社會學角度分析城鎮下崗職工再就業與社會保障體系的關係",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://clintonwhitehouse6.archives.gov/1999/04/1999-04-08-joint-us-china-statement.html",
+      "title": "White House Archives, \"Joint U.S.-China Statement\" (April 8, 1999)",
+      "locator": "WebSearch 結果摘要：雙方確認入世符合利益；貿易權、技術轉讓、國企、補貼等規則一致；執行機制、反傾銷與保障條款期限、紡織品仍有分歧；指示恢復談判",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://lt.china-office.gov.cn/chn/xwdt/200203/t20020317_2725961.htm",
+      "title": "《2002年政府工作報告》批准稿（中國駐立陶宛使館轉刊）",
+      "locator": "來源包已記錄先前核讀：2001年回顧、入世第一年工作安排與政府職能改革；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "朱鎔基，名臣；保留原 S- 評級與 deepAnalysis；補入2026年8月12日逝世之訃告資訊。"
+    },
+    {
+      "id": "fiscal",
+      "passed": true,
+      "detail": "分稅制目標與成效依學術評論摘要；地方財政副作用作分析判斷。"
+    },
+    {
+      "id": "soe-finance",
+      "passed": true,
+      "detail": "2003年報告依來源包記錄；下崗研究依典藏摘要。"
+    },
+    {
+      "id": "wto",
+      "passed": true,
+      "detail": "1999年4月聯合聲明依白宮檔案摘要；2002年報告依來源包記錄。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[85,30,90,94,86] 對照周恩來[80,40,95,98,98]、謝安[85,30,92,94,95]、于謙[90,40,90,88,90]、姚崇[78,68,97,96,88]、鄧小平[92,75,95,98,85]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    85,
+    30,
+    90,
+    94,
+    86
+  ]
+}

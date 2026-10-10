@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_朱鎔基_1995149885",
+  "packetSha256": "7323390e261deff75e8051cdb9a2655617b74f75a5a46bc9a50e2fb7045c09d1",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "朱鎔基 1994 分稅制改革 中央財政 比重 研究 國企改革 下崗 職工 人數 1998-2003 學術",
+      "returnedUrls": [
+        "https://ah.lib.nccu.edu.tw/handle/140.119/4929",
+        "https://www.worldjournal.com/wj/story/121471/9688230",
+        "https://core.ac.uk/works/69368222",
+        "https://chinadigitaltimes.net/chinese/?p=179525"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "China WTO accession 2001 Zhu Rongji 1999 Washington visit negotiation Clinton rejected deal November 1999 agreement",
+      "returnedUrls": [
+        "https://clintonwhitehouse6.archives.gov/1999/04/1999-04-08-joint-us-china-statement.html",
+        "https://www.everycrsreport.com/reports/RS20135.html",
+        "https://csmonitor.com/1999/0419/p17s1.html"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "朱鎔基逝世 新華社 享年",
+      "returnedUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_33769071",
+        "https://udn.com/news/story/7331/9687577",
+        "https://www.yzwb.net/news/txs/202608/t20260812_381989.html"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Three sources from handoff package prior reviews; four via WebSearch summaries.",
+    "錯劃右派、上海市長與副總理經歷、1999年11月中美協議、2001年底入世、『地雷陣』記者會語屬通行史實，未附連結並於正文標示。",
+    "下崗人數、財政比重等具體數字未取得可靠來源，正文不給數字；改革屬集體決策，正文明示個人角色為主導與執行。"
+  ]
+}
