@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_桓溫_306307951",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:56:41.461Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "3f8a84f417ea3a949da228471b95c3446503b348143854ade919da5c0503a3aa",
+  "rawResponseSha256": "3f8a84f417ea3a949da228471b95c3446503b348143854ade919da5c0503a3aa",
+  "sourcePackageSha256": "051cf3ffe74042634763e8af74578b1116f646650ed97f18d3ecdd681b7f9664",
+  "searchLogSha256": "ce141e177b02cf22a9db4dc4ec03ea37c739a09aa84cf599b8d81f583e98ab83",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7098",
+      "title": "晉書·卷九十八 列傳第六十八",
+      "locator": "本機固定修訂 oldid=2614273 全文比對（textSha256 已驗）：木猶如此，人何以堪、攀枝執條，泫然流涕、既不能流芳後世，不足復遺臭萬載邪、先立功河朔，還受九錫、枕戈泣血，志在復仇、刃彪於廬中，並追二弟殺之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "桓彝之子、十八歲復仇、尚南康長公主、庾翼薦、永和二年伐蜀、第一次北伐入關、第二次伊水復洛、隆和上疏北徙、太和四年枋頭敗、壽陽擒袁瑾、廢帝立簡文、求九錫未成而薨年六十二，皆依晉書卷98 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：伐蜀與三次北伐；武力：復仇與伊水被甲督戰；智謀：常山蛇勢、鑿钜野；政治：便宜七事、廢殷浩、廢立；魅力：耆老迎軍與士族畏懼。對照爾朱榮、拓跋燾、孟珙、李光弼、司馬懿、曹操、宇文泰。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "石季龍死→欲北伐→朝廷杖殷浩→武昌回軍；殷浩敗→奏廢浩→大權歸溫；石門不開→糧盡焚舟→枋頭死三萬→歸罪袁真→袁真叛；名實頓減→郗超廢立之計→求九錫→謝王密緩→未成而薨。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    75,
+    82,
+    86,
+    82
+  ]
+}

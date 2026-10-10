@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_桓溫_306307951",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:56:41.462Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2934ba8e98d921fc92bae6cf970d9940af04a4d7102d8ff009d796eb92b6c972",
+  "rawResponseSha256": "2934ba8e98d921fc92bae6cf970d9940af04a4d7102d8ff009d796eb92b6c972",
+  "sourcePackageSha256": "051cf3ffe74042634763e8af74578b1116f646650ed97f18d3ecdd681b7f9664",
+  "searchLogSha256": "ce141e177b02cf22a9db4dc4ec03ea37c739a09aa84cf599b8d81f583e98ab83",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7098",
+      "title": "晉書·卷九十八 列傳第六十八",
+      "locator": "本機固定修訂 oldid=2614273 全文比對（textSha256 已驗）：木猶如此，人何以堪、攀枝執條，泫然流涕、既不能流芳後世，不足復遺臭萬載邪、先立功河朔，還受九錫、枕戈泣血，志在復仇、刃彪於廬中，並追二弟殺之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：北伐與九錫野心為一事，想當劉琨又想當司馬昭；場景為金城柳、劉琨老婢、遺臭萬載、王敦墓可人。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "被歷史記住之驅動、公私語言指向不同角色、未和解之裂縫皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以千斤大牛與為爾寂寂、歸罪袁真與簡文泣下與謝安遙拜、褰裳赴鑊與不入參朝政、恃麥熟與石門、枋戈泣血與老婢與四詔、諸葛亮故事與王敦墓、九錫未成為事件。"
+    }
+  ],
+  "materialIssues": []
+}
