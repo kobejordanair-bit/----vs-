@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_李斯_2004010747",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:50:14.032Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "67cd54434aae2cb11189ac1b0a4ff45134ba2a0b656f67a2e9bffcc902b0e39d",
+  "rawResponseSha256": "67cd54434aae2cb11189ac1b0a4ff45134ba2a0b656f67a2e9bffcc902b0e39d",
+  "sourcePackageSha256": "df610b2b9918464da095851c50169ec0041c28a91c352147b82f0cad88039fa4",
+  "searchLogSha256": "c427613acafcd8a0b4a85da2ba368ec9c8bc51211907db681c1ecc34649bdc12",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087",
+      "title": "史記·卷八十七 李斯列傳 第二十七",
+      "locator": "本機固定修訂 oldid=2364605 全文比對（textSha256 已驗）：人之賢不肖譬如鼠矣，在所自處耳、斯之功且與周、召列矣、從荀卿學帝王之術、楚王不足事，而六國皆弱，無可為建功者、故詬莫大於卑賤，而悲莫甚於窮困、此萬世之一時也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006",
+      "title": "史記·卷六 秦始皇本紀 第六",
+      "locator": "本機固定修訂 oldid=7907969 全文比對（textSha256 已驗）：群臣皆以為便、周文武所封子弟同姓甚眾，然後屬疏遠，相攻擊如仇讎、置諸侯不便、分天下以為三十六郡、一法度衡石丈尺。車同軌。書同文字、有敢偶語詩書者棄市。以古非今者族…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "李斯，名臣；保留原 S 評級與 deepAnalysis。"
+    },
+    {
+      "id": "memorial",
+      "passed": true,
+      "detail": "諫逐客書與除逐客令，原文核對。"
+    },
+    {
+      "id": "commandery",
+      "passed": true,
+      "detail": "置諸侯不便、三十六郡、車同軌書同文字，秦始皇本紀原文核對。"
+    },
+    {
+      "id": "book-burning",
+      "passed": true,
+      "detail": "李斯列傳與秦始皇本紀兩版焚書奏議並陳差異。"
+    },
+    {
+      "id": "shaqiu",
+      "passed": true,
+      "detail": "趙高五問、聽高、督責之書、罪七矣、具五刑、黃犬，原文核對；太史公評引入。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[65,30,95,93,70] 對照商鞅[88,45,96,100,25]、姚崇[78,68,97,96,88]、荀彧[85,30,97,97,95]、張良[72,20,100,90,92]、周恩來[80,40,95,98,98]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    65,
+    30,
+    95,
+    93,
+    70
+  ]
+}

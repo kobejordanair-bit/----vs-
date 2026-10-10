@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_李斯_2004010747",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:50:14.033Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "481030826a59534afb1f95dd0d9387017dc6ef0247a367f828cafc5de15810bc",
+  "rawResponseSha256": "481030826a59534afb1f95dd0d9387017dc6ef0247a367f828cafc5de15810bc",
+  "sourcePackageSha256": "df610b2b9918464da095851c50169ec0041c28a91c352147b82f0cad88039fa4",
+  "searchLogSha256": "c427613acafcd8a0b4a85da2ba368ec9c8bc51211907db681c1ecc34649bdc12",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087",
+      "title": "史記·卷八十七 李斯列傳 第二十七",
+      "locator": "本機固定修訂 oldid=2364605 全文比對（textSha256 已驗）：人之賢不肖譬如鼠矣，在所自處耳、斯之功且與周、召列矣、從荀卿學帝王之術、楚王不足事，而六國皆弱，無可為建功者、故詬莫大於卑賤，而悲莫甚於窮困、此萬世之一時也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006",
+      "title": "史記·卷六 秦始皇本紀 第六",
+      "locator": "本機固定修訂 oldid=7907969 全文比對（textSha256 已驗）：群臣皆以為便、周文武所封子弟同姓甚眾，然後屬疏遠，相攻擊如仇讎、置諸侯不便、分天下以為三十六郡、一法度衡石丈尺。車同軌。書同文字、有敢偶語詩書者棄市。以古非今者族…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "逐客書與焚書奏議；督責之書。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "沙丘與督責，相隔約一年；辭服。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "倉鼠之嘆與卑賤之論；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "入秦與沙丘之選擇。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "物禁大盛、聯姻、黃犬；最後心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "周封建先例與晉齊之例；失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "沙丘與督責；自覺標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

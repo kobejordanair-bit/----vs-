@@ -1,0 +1,159 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "minister_李斯_2004010747",
+      "inputSha256": "ea0c7bb6c950b0680b510e9b5ffc0df8533f2ffe6937935acdfd197cbea330b2",
+      "promptSha256": "5be4ba39b0769342dc1e4e94b4b87a1e8f3be7485906ec8d8508a5f224a32e89",
+      "fields": {
+        "analysis": "李斯的一生，可以從《史記》開頭的一個小故事讀起：他年輕時當郡中小吏，看到廁所裡的老鼠吃髒東西、一見人狗就驚慌，倉庫裡的老鼠卻吃著積粟、安居大屋，於是感嘆：「人之賢不肖譬如鼠矣，在所自處耳！」我要提出的看法是：**這段「老鼠哲學」不是年少的感慨，而是貫穿李斯一生的行動邏輯——他相信人的價值取決於所處的位置。**這個信念讓他成為秦帝國制度最重要的設計者之一；也是同一個信念，讓他在沙丘選擇了趙高，在獄中上書時把自己的功績寫成「罪」。司馬遷說，如果不是後來的選擇，「斯之功且與周、召列矣」。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n李斯是楚國上蔡人，曾「從荀卿學帝王之術」。學成之後，他判斷「楚王不足事，而六國皆弱，無可為建功者」，決定西入秦國；他向荀子辭行時說：「故詬莫大於卑賤，而悲莫甚於窮困。」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）\n\n他面對的局是：\n\n1.  **秦國統一前夜**：秦國經過六代經營，已具備吞併六國的實力。李斯一入秦就對秦王說：「此萬世之一時也。」\n2.  **客卿政治**：秦國長期重用外國人才，但宗室大臣始終排斥客卿；鄭國渠事件後，秦國一度下令「一切逐客」。\n3.  **統一後的制度選擇**：天下初定，要分封還是郡縣？如何處理六國舊貴族與士人的思想？這些選擇決定了帝國的形態。\n\n他的歷史定位是：**秦帝國中央集權制度的主要設計者與執行者，也是中國歷史上「制度建設者因個人選擇而毀掉自己所建制度」的典型**。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：李斯的大功與大罪，來自同一種能力——他總能說出當權者最需要的那套道理。**\n\n**大功一：〈諫逐客書〉**\n\n秦國下令逐客時，李斯自己也在被驅逐之列。他上書說：「是以太山不讓土壤，故能成其大；河海不擇細流，故能就其深；王者不卻眾庶，故能明其德。」並指出逐客等於「藉寇兵而齎盜糧」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。結果「秦王乃除逐客之令，復李斯官，卒用其計謀」。這篇文章既是文學名篇，也是一份精準的政策論證：它把秦國歷代強盛歸功於客卿，讓秦王明白逐客的代價。值得玩味的是，這篇救了他的文章，正是在他自己的位置受到威脅時寫成的。\n\n**大功二：郡縣制與標準化**\n\n統一之後，丞相王綰等人建議分封諸子，「群臣皆以為便」。李斯以廷尉身分反對：「周文武所封子弟同姓甚眾，然後屬疏遠，相攻擊如仇讎……置諸侯不便。」秦始皇接受了他的意見，「分天下以為三十六郡」，並「一法度衡石丈尺。車同軌。書同文字」（[《史記·秦始皇本紀》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006)）。〈李斯列傳〉也記載：「使秦無尺土之封，不立子弟為王，功臣為諸侯者，使後無戰攻之患。」這套郡縣制度，被後世王朝延續了兩千年。\n\n**爭議：焚書**\n\n始皇三十四年，淳于越主張恢復分封，李斯上書反對，並建議：「臣請諸有文學詩書百家語者，蠲除去之。令到滿三十日弗去，黥為城旦。所不去者，醫藥卜筮種樹之書。若有欲學者，以吏為師。」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）值得注意的是，《史記·秦始皇本紀》記載的同一份奏議更為嚴厲，多了「有敢偶語詩書者棄市。以古非今者族」等條款（[《史記·秦始皇本紀》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006)）。兩篇記載的差異，說明司馬遷手上至少有不同版本的材料。無論採用哪一版，焚書都是以國家權力壓制「以古非今」的思想管制，李斯是其主要倡議者。\n\n**轉折：沙丘**\n\n始皇三十七年，秦始皇在沙丘病逝，遺詔要扶蘇「與喪會咸陽而葬」。趙高扣留詔書，先說服胡亥，再遊說李斯。李斯起初嚴詞拒絕：「安得亡國之言！此非人臣所當議也！」但趙高接連問他：「君侯自料能孰與蒙恬？功高孰與蒙恬？……」李斯承認「此五者皆不及蒙恬」；趙高又說扶蘇即位「必用蒙恬為丞相，君侯終不懷通侯之印歸於鄉里，明矣」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。最後，李斯「仰天而歎，垂淚太息」，說：「嗟乎！獨遭亂世，既以不能死，安讬命哉！」接著《史記》只用了一句話：「於是斯乃聽高。」\n\n這段對話最讓人震撼的，是趙高打動李斯的方式：**不是道理，而是位置。**趙高精準地找到了李斯一生最深的恐懼——失去自己好不容易爬上的位置。\n\n**墮落：督責之書**\n\n二世即位後，天下大亂，李斯的兒子李由守三川卻擋不住起義軍，李斯被追責。《史記》寫得毫不留情：「李斯恐懼，重爵祿，不知所出，乃阿二世意，欲求容。」他上書說：「夫賢主者，必且能全道而行督責之術者也」，甚至主張君主應「專以天下自適」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。這是一位丞相為了自保而為暴政提供理論。\n\n**結局：「罪七矣」**\n\n最後，他仍被趙高陷害下獄。他在獄中上書，以反諷的方式列出自己的「七罪」：兼併六國、北逐胡貉、「更剋畫，平斗斛度量文章，布之天下」等等，每一條都以「罪某矣」作結（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。這封信被趙高「棄去不奏」。二世二年七月，他被「具斯五刑，論腰斬咸陽市」；臨刑前對兒子說：「吾欲與若復牽黃犬俱出上蔡東門逐狡兔，豈可得乎！」\n\n**司馬遷的判決**\n\n太史公說他「知六藝之歸，不務明政以補主上之缺；持爵祿之重，阿順苟合，嚴威酷刑，聽高邪說，廢適立庶。諸侯已畔，斯乃欲諫爭，不亦末乎？」並指出世人以為他「極忠而被五刑死」，其實「察其本，乃與俗議之異」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。這是對李斯最精準的評價：他的功績是真實的，但他的選擇使這些功績與他一同毀滅。\n\n### **3. 【人性與性格側寫】**\n\n*   **極度在意位置**：從廁鼠與倉鼠的對比，到「詬莫大於卑賤」的自白，他的一生都在逃離卑賤（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。\n*   **清醒的不安**：權勢最盛時，他在家宴上感嘆：「吾聞之荀卿曰『物禁大盛』……物極則衰，吾未知所稅駕也！」他知道危險，卻停不下來。\n*   **雄辯的文筆**：〈諫逐客書〉與獄中上書都顯示他極擅長以結構嚴密的文字說服君主。\n*   **最後的懷念**：臨刑前懷念的不是權位，而是在故鄉「牽黃犬」逐兔的平凡生活。\n\n### **4. 【如果生在現代】**\n\n李斯最適合的現代角色是：**一家大型集團的首席法務長兼制度設計者，從基層一路爬到權力核心。**\n\n*   **改變命運的一封信**：公司準備裁撤所有外籍員工時，他寫了一封備忘錄說服老闆收回成命，從此平步青雲。\n*   **建立整套制度**：他廢除了各事業部的獨立王國，建立統一的總部管理、會計標準與內部規範，影響了整個產業數十年。\n*   **控制輿論**：他也建議公司全面禁止員工在內部討論「以前的做法比較好」，違者開除。\n*   **最致命的妥協**：創辦人過世時，一位心腹私下篡改遺囑，他明知不對，卻因擔心新接班人會撤換自己而選擇配合；最後，他被那位心腹送進了監獄。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「先為對方描繪利害得失，再把自己的建議包裝成唯一正確的選擇」。〈諫逐客書〉中，他先列舉秦穆公、孝公、惠王、昭王「皆以客之功」，再指出逐客等於「藉寇兵而齎盜糧」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]；焚書奏議中，他先說私學「入則心非，出則巷議」，再說「如此不禁，則主勢降乎上，黨與成乎下」[史載]。他話語中的潛台詞是：「我所說的，正是陛下自己最在乎的利益。」這種說話方式讓他屢屢成功，但也讓他習慣只說君主想聽的話——到了二世時期，這就變成了「阿二世意，欲求容」的督責之書[史載]。\n\n【壓力反應】\n面對危機，他的第一反應是「先保住自己的位置」。\n始皇三十七年在沙丘，趙高以「君侯終不懷通侯之印歸於鄉里」相逼，他最終「仰天而歎，垂淚太息」，選擇了服從（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]；二世時期兒子李由失守、自己被追責，他「恐懼，重爵祿，不知所出，乃阿二世意，欲求容」[史載]。兩次相隔約一年，共同結構是：每當位置受到威脅，他便放棄原則、轉向迎合[推斷]。只有在下獄之後，他才寫出了「罪七矣」那樣帶有尊嚴的文字，但為時已晚[推斷]。趙高派人假扮御史反覆審訊，「斯更以其實對，輒使人復榜之」，到二世真正派人查驗時，他已「終不敢更言，辭服」[史載]——壓力最終讓他連說真話的勇氣都失去了[推斷]。\n\n【核心驅動】\n他真正追求的是「永遠不再回到卑賤的位置」。\n他年少時的「倉鼠」之嘆，以及辭別荀子時說的「詬莫大於卑賤，而悲莫甚於窮困」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]，都表明他把位置視為人生價值的根本。沙丘時他自述「斯，上蔡閭巷布衣也，上幸擢為丞相，封為通侯」[史載]，可見他從未忘記自己的出身[詮釋：此為從其多次自述歸納的動機]。正因為記得太清楚，他對「回到原點」的恐懼也格外強烈；趙高那句「終不懷通侯之印歸於鄉里」，擊中的正是這個要害[推斷]。\n\n【慣性盲點】\n他最大的優點「精準判斷利害」，讓他相信只要站在權力的一邊就能安全。\n入秦時他判斷「楚王不足事」，選擇了最強的秦國（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]；沙丘時他判斷扶蘇即位會重用蒙恬，選擇了胡亥與趙高[史載]。共同結構是：他總是選擇最有利於自己位置的那一方，卻沒有意識到，與趙高結盟並不是站在「權力的一邊」，而是把自己的性命交給一個比他更不擇手段的人[推斷]。太史公所說的「聽高邪說，廢適立庶」[史載]，正是這個盲點最致命的一次發作。\n\n【情感結構】\n他的情感深處，是對故鄉與家族的眷戀，以及對富貴的不安。\n權勢最盛時，他在家宴上引荀子「物禁大盛」，感嘆「吾未知所稅駕也」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]。他讓「諸男皆尚秦公主，女悉嫁秦諸公子」[史載]，把家族命運與秦室綁在一起。臨刑前，他對兒子說「吾欲與若復牽黃犬俱出上蔡東門逐狡兔，豈可得乎」，隨後「父子相哭」[史載]。他最脆弱的時刻正是此時——一生追求位置的人，在最後一刻懷念的卻是沒有位置的日子[詮釋]。\n\n【參照系】\n他習慣以「歷史上的成敗先例」作為說服君主的參照系。〈諫逐客書〉列舉秦國四君用客之功，反對分封時則以「周文武所封子弟……周天子弗能禁止」為鑑（[《史記·秦始皇本紀》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006)）[史載]。\n類比準確之處：他以周代分封的教訓論證郡縣，說服了秦始皇，奠定了此後兩千年的帝國體制[史載]。\n類比失準之處：沙丘時他也曾引「晉易太子，三世不安；齊桓兄弟爭位，身死為戮」等先例反駁趙高（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]，明知廢立會「遂危社稷」，卻仍然屈服。他的參照系能說服別人，卻說服不了自己的恐懼[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（永遠不再回到卑賤）與【慣性盲點】（相信站在權力一邊就能安全）之間。\n這個衝突的結構是：他越是害怕失去位置，就越容易被能威脅他位置的人操控；而他越被操控，就越快失去一切。\n第一次體現在沙丘：他引了三個歷史先例反對廢立，最後仍「聽高」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）[史載]。\n第二次體現在督責之書：他為保住爵祿而為二世的暴政提供理論，最後仍被趙高陷害、「具斯五刑」[史載]。\n兩次事件的共同點在於：他用來保住位置的每一個選擇，都在削弱他最終保住性命的可能[推斷]。他是否意識到這個衝突？他在獄中把一生功業寫成「罪」，又在刑場懷念牽黃犬的日子，似乎直到最後才明白，位置從來不是安全的保證[詮釋]。",
+        "stats": [
+          65,
+          30,
+          95,
+          93,
+          70
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：65\n\n他入秦後建議秦王「陰遣謀士齎持金玉以游說諸侯」，離間六國君臣，並在獄中自述曾「陰修甲兵，飾政敎，官鬬士，尊功臣」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。但這些多屬戰略謀劃與行政動員，他本人從未領兵；二世時期面對起義也無力組織有效應對。評65，低於張良（72）與周恩來（80），屬於純文官的統率水準，與其「以吏為師」的行政型角色相符。\n\n### 武力：30\n\n他是楚國上蔡的郡小吏出身，曾「從荀卿學帝王之術」，一生以文書、奏議與制度設計見長；《史記》本傳中沒有任何他親身作戰的記載（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。給予30分，是比照其他文官名臣的基本水準，並非依據任何具體戰例。評30，與荀彧（30）、曾國藩（30）持平，高於張良（20），低於周恩來（40）。\n\n### 智謀：95\n\n〈諫逐客書〉以「太山不讓土壤，故能成其大」扭轉秦王決策；統一後他以「置諸侯不便」說服始皇採行郡縣，又入秦之初就看出「此萬世之一時也」（[《史記·秦始皇本紀》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006)）。扣分在於他在沙丘被趙高以「孰與蒙恬」五問擊潰，未能看穿與胡亥、趙高合作的致命後果。評95，與周恩來（95）持平，低於荀彧（97）與商鞅（96）。\n\n### 政治：93\n\n他主導郡縣制、「一法度衡石丈尺。車同軌。書同文字」等制度，影響後世兩千年（[《史記·秦始皇本紀》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006)）；位至丞相，「當今人臣之位無居臣上者」。但他「阿順苟合」，以督責之術迎合二世，最終被趙高陷害腰斬，政治生存徹底失敗（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。評93，低於姚崇（96）與商鞅（100），高於張良（90）。\n\n### 魅力：70\n\n他的〈諫逐客書〉打動了秦王，權勢最盛時「百官長皆前為壽，門廷車騎以千數」（[《史記·李斯列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087)）。但這些多是權位帶來的趨附，而非人格感召；他下獄後無人能救，獄中上書被趙高「棄去不奏」，連二世都相信「幾為丞相所賣」。評70，高於商鞅（25），低於張良（92）與荀彧（95）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T06:50:13.973Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "史記·卷八十七 李斯列傳 第二十七",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087",
+            "locator": "本機固定修訂 oldid=2364605 全文比對（textSha256 已驗）：人之賢不肖譬如鼠矣，在所自處耳、斯之功且與周、召列矣、從荀卿學帝王之術、楚王不足事，而六國皆弱，無可為建功者、故詬莫大於卑賤，而悲莫甚於窮困、此萬世之一時也…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·卷六 秦始皇本紀 第六",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006",
+            "locator": "本機固定修訂 oldid=7907969 全文比對（textSha256 已驗）：群臣皆以為便、周文武所封子弟同姓甚眾，然後屬疏遠，相攻擊如仇讎、置諸侯不便、分天下以為三十六郡、一法度衡石丈尺。車同軌。書同文字、有敢偶語詩書者棄市。以古非今者族…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "a93fcfce1d83ab442b18fa2340d5409be851e73f60525c008e54686a12bec012",
+        "sourcePackageSha256": "df610b2b9918464da095851c50169ec0041c28a91c352147b82f0cad88039fa4",
+        "preservedDeepSha256": "03e67589e2b23cee0f781987223dcb878b2e95fa7431e2c0bfe134ec9bd8a2c4",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "e4e99769faa363d074f2af609462d1f1f9c350ac7505a9b16b8593d8cfbbd960",
+            "requestSha256": "a93fcfce1d83ab442b18fa2340d5409be851e73f60525c008e54686a12bec012",
+            "inputSha256": "ea0c7bb6c950b0680b510e9b5ffc0df8533f2ffe6937935acdfd197cbea330b2",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "db58916e270b942ba65ad64fc7d7a5536ec360f58a28069f6dc8f72f7da37eaa",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "df610b2b9918464da095851c50169ec0041c28a91c352147b82f0cad88039fa4",
+            "preservedDeepSha256": "03e67589e2b23cee0f781987223dcb878b2e95fa7431e2c0bfe134ec9bd8a2c4",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:50:13.973Z",
+            "rawResponseFile": "analysis-batch-50/drafts/39.analysisStats.raw.md",
+            "rawResponseSha256": "67cd54434aae2cb11189ac1b0a4ff45134ba2a0b656f67a2e9bffcc902b0e39d",
+            "responseFile": "analysis-batch-50/drafts/39.analysisStats.response.md",
+            "responseSha256": "67cd54434aae2cb11189ac1b0a4ff45134ba2a0b656f67a2e9bffcc902b0e39d",
+            "fieldsHashes": {
+              "analysis": "4408816cb2db0e614c90046da4f0ec6f8771cd2a2b826301136e913b26b3f33a",
+              "stats": "ffb9b947a0447805497133a617a76dde009d6baa673a3abff6701fd8876519c7",
+              "statsAnalysis": "2cd637baaecbaf503f863a1d169a598e09b084d3cd448ff0cd254a2c3d24af78"
+            },
+            "captureFile": "analysis-batch-50/drafts/39.analysisStats.capture.json",
+            "captureSha256": "e67d27fba76b6d429122b7417f14b93909adb11f6a70b3c98ba055059315a884",
+            "sourceReviewFile": "analysis-batch-50/reviews/39.analysisStats.json",
+            "sourceReviewSha256": "37b2cae357dee25d52b743d22a6febcd5e37baf771f8933a860638f37d4dd3c7",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/39.combined.search-log.json",
+              "sha256": "c427613acafcd8a0b4a85da2ba368ec9c8bc51211907db681c1ecc34649bdc12",
+              "webSearchCount": 1,
+              "archiveCheckCount": 61
+            },
+            "checkedSources": [
+              {
+                "title": "史記·卷八十七 李斯列傳 第二十七",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087",
+                "locator": "本機固定修訂 oldid=2364605 全文比對（textSha256 已驗）：人之賢不肖譬如鼠矣，在所自處耳、斯之功且與周、召列矣、從荀卿學帝王之術、楚王不足事，而六國皆弱，無可為建功者、故詬莫大於卑賤，而悲莫甚於窮困、此萬世之一時也…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六 秦始皇本紀 第六",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006",
+                "locator": "本機固定修訂 oldid=7907969 全文比對（textSha256 已驗）：群臣皆以為便、周文武所封子弟同姓甚眾，然後屬疏遠，相攻擊如仇讎、置諸侯不便、分天下以為三十六郡、一法度衡石丈尺。車同軌。書同文字、有敢偶語詩書者棄市。以古非今者族…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "67c58ac11ac74c110927110f203c279406e6ad61a312d0a38415bc37a0672a1c",
+            "requestSha256": "a93fcfce1d83ab442b18fa2340d5409be851e73f60525c008e54686a12bec012",
+            "inputSha256": "ea0c7bb6c950b0680b510e9b5ffc0df8533f2ffe6937935acdfd197cbea330b2",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "f00328b18106798cc6166def795c96444cac86ccc12707aa6cd0e5088fbcbf1b",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "df610b2b9918464da095851c50169ec0041c28a91c352147b82f0cad88039fa4",
+            "preservedDeepSha256": "03e67589e2b23cee0f781987223dcb878b2e95fa7431e2c0bfe134ec9bd8a2c4",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:50:13.973Z",
+            "rawResponseFile": "analysis-batch-50/drafts/39.soulEssence.raw.md",
+            "rawResponseSha256": "481030826a59534afb1f95dd0d9387017dc6ef0247a367f828cafc5de15810bc",
+            "responseFile": "analysis-batch-50/drafts/39.soulEssence.response.md",
+            "responseSha256": "481030826a59534afb1f95dd0d9387017dc6ef0247a367f828cafc5de15810bc",
+            "fieldsHashes": {
+              "soulEssence": "83d564d72a6ba8e8b1ab747885ff096c867a67156b454c16b27d528898b89e3a"
+            },
+            "captureFile": "analysis-batch-50/drafts/39.soulEssence.capture.json",
+            "captureSha256": "7c88ae9dcefe328189e85682e0a1758b409685f39a14dffd966f46f4df4415ba",
+            "sourceReviewFile": "analysis-batch-50/reviews/39.soulEssence.json",
+            "sourceReviewSha256": "9aa033ca4b9c98e9fb16f9d5a0163643e47391df50a886f3e7c3588ea15359d3",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/39.combined.search-log.json",
+              "sha256": "c427613acafcd8a0b4a85da2ba368ec9c8bc51211907db681c1ecc34649bdc12",
+              "webSearchCount": 1,
+              "archiveCheckCount": 61
+            },
+            "checkedSources": [
+              {
+                "title": "史記·卷八十七 李斯列傳 第二十七",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7087",
+                "locator": "本機固定修訂 oldid=2364605 全文比對（textSha256 已驗）：人之賢不肖譬如鼠矣，在所自處耳、斯之功且與周、召列矣、從荀卿學帝王之術、楚王不足事，而六國皆弱，無可為建功者、故詬莫大於卑賤，而悲莫甚於窮困、此萬世之一時也…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六 秦始皇本紀 第六",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7006",
+                "locator": "本機固定修訂 oldid=7907969 全文比對（textSha256 已驗）：群臣皆以為便、周文武所封子弟同姓甚眾，然後屬疏遠，相攻擊如仇讎、置諸侯不便、分天下以為三十六郡、一法度衡石丈尺。車同軌。書同文字、有敢偶語詩書者棄市。以古非今者族…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/39.analysis.md",
+            "analysisContextSha256": "259a713a9c13acb2f45ac98dec2f22625b82741cca16596d6a281d217eb3302b"
+          }
+        }
+      }
+    }
+  ]
+}
