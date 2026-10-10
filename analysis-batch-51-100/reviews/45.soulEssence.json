@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_楊嗣昌_1995179961",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:39:17.194Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e4b43e6d94be5a1ba7e04c37669ecee60da33a169230aa7a04faccea6d69a8bb",
+  "rawResponseSha256": "e4b43e6d94be5a1ba7e04c37669ecee60da33a169230aa7a04faccea6d69a8bb",
+  "sourcePackageSha256": "a33587a242b3b46f019334524553d33a33148454141283d8e1910b643a5bbac4",
+  "searchLogSha256": "39d79b7118e8cb06639dc4dbbe2220f946f25f18e56d3a35b8528c207fd9bca4",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252",
+      "title": "明史·卷二百五十二\n列傳第一百四十　楊嗣昌 吳甡",
+      "locator": "本機固定修訂 oldid=2609328 全文比對（textSha256 已驗）：以輕騎一日夜馳三百里，殺督師使者於道，取軍符、守者合符而信，入之、吾欲斷楊嗣昌頭，嗣昌在遠。今借王頭，俾嗣昌以陷藩伏法、非符要合者不得渡、三疏請代，得減死、積歲林居，博涉文籍，多識先朝故事，工筆劄，有口辨…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最會設計體系的大臣，體系依賴文書符檄，終被一枚偷來的軍符穿過；場景為十面之網、非符要合者不得渡、白金三錢、合符而信。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以體系取代判斷、制度運作對象錯誤等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以十面之網奏疏與稍抑兼並與君言不宿於家、鞭將斬監與疑左右皆賊、恨用卿晚與薦人自代、操心太苦與良玉人龍、請代父與為文燦疏辯與發墓、網格與飛梁橫枑、軍符入城與嚴飭再三為事件。"
+    }
+  ],
+  "materialIssues": []
+}

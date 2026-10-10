@@ -1,0 +1,499 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_楊嗣昌_1995179961",
+  "packetSha256": "1c8dd679a8b74675621347349bcf7bc7ebac7a5c7b93925d11063e50cd4328f0",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "楊嗣昌 四正六隅 十面張網 剿餉 練餉 研究 論文 崇禎 督師 襄陽",
+      "returnedUrls": [
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/66649/1/jic058_593.pdf",
+        "https://www.storm.mg/lifestyle/4025659",
+        "https://blog.udn.com/tianfeng1985/27083802",
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/154180",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0064264",
+        "https://otani.academia.edu/HaoPENG",
+        "https://cl.site.nthu.edu.tw/var/file/401/1401/img/420007345.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "以輕騎一日夜馳三百里，殺督師使者於道，取軍符",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "守者合符而信，入之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "吾欲斷楊嗣昌頭，嗣昌在遠。今借王頭，俾嗣昌以陷藩伏法",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "非符要合者不得渡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "三疏請代，得減死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "積歲林居，博涉文籍，多識先朝故事，工筆劄，有口辨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "中原饑，群盜蜂起",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "亡七十餘城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "父子不附奄，無嫌於東林",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "請開金銀銅錫礦，以解散其黨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "又六疏陳邊事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "若必遵督輔號令，良玉當退守興安，無此捷矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "請以陜西、河南、湖廣、江北為四正，四巡撫分剿而專防；以延綏、山西、山東、江南、江西、四川為六隅，六巡撫分防而協剿；是謂十面之網",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "巡撫不用命，立解其兵柄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "總兵不用命，立奪其帥印",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "畝輸糧六合，石折銀八錢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "不集兵無以平寇，不增賦無以餉兵。勉從廷議，暫累吾民一年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "夾擊獻忠於瑪瑙山，大破之，斬馘三千六百二十",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "連敗之黃墩、木瓜溪，軍聲大振",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "下招撫令，為諭帖萬紙，散之賊中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "諸部士馬居山谷，罹炎暑瘴毒，物故十二三",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "久屯思歸，夜亡多",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "大言自詭足辦賊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "凡七十三萬有奇，然民流餉絀，未嘗有實也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "期一年而止",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "復增練餉七百三十萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "加賦出於土田，土田盡歸有力家，百畝增銀三四錢，稍抑兼並耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "先後增賦千六百七十萬，民不聊生，益起為盜矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "九邊自有額餉，概予新餉，則舊者安歸？邊兵多虛額，今指為實數，餉盡虛糜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "好自用，躬親簿書，過於繁碎。軍行必自裁進止，千里待報，坐失機會",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "貶三秩，戴罪視事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "貶削不及，物議益嘩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "己巳之罪未正，致有丙子；丙子之罪未正，致有今日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "丁汝夔、袁崇煥故事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "每對必移時，所奏請無不聽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "君言不宿於家，臣朝受命，夕啟行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "跪誦，拜且泣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "欲專委重文燦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "文燦就逮，嗣昌猶為疏辯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "熊文燦在事三月，承疇七年不效",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "知嗣昌有意左右之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "承疇宜遣逮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "善戰服上刑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "今天下一統，非戰國兵爭比",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "自是益不理於人口",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "軍行必自裁進止，千里待報",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "文牒往返，動逾旬月",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "事鉅莫敢難也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "民不聊生，益起為盜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "諸將積驕玩，無鬥誌",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "三檄人龍，不奉令",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "鞭刁明忠，斬監軍僉事殷大白以徇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "有斬督師獻者，賚白金三錢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "駭愕，疑左右皆賊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "始悔不用元吉言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "所奏請無不聽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "亡七十餘城，而帝眷嗣昌不衰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "昭雪嗣昌罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "嗣昌貶削不及，物議益嘩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "帝甚傷悼之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "發其七世祖墓，焚嗣昌夫婦柩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "陜撫斷商、雒，鄖撫斷鄖、襄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "期三月盡諸劇寇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "土田盡歸有力家，百畝增銀三四錢，稍抑兼並耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "漢永平、唐元和、宋太平興國事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "軍行必自裁進止",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "益憂懼，遂不食",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "疏引罪，薦人自代",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "操心之太苦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "天下事，總挈大綱則易，獨周萬目則難",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "人人效力，何賊不平",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "藉口持重觀望",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "驚悸，上疏請死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "輔臣二載辛勞，一朝畢命",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "發其七世祖墓，焚嗣昌夫婦柩，斷其屍見血",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "仞深溝方洫而三環之，造飛梁，設橫枑，陳利兵而譏訶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "一日夜馳三百里",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷252",
+      "quote": "乃詐城夜襲之檄，嚴飭再三，地方若罔聞知",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7252"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《明史》卷252 全文比對。",
+    "吉尾寬論文與京大〈別納〉案論文僅讀搜尋摘要；楊嗣昌《楊文弱先生集》與《督師紀事》原文未比對，剿餉練餉數字只依本傳。"
+  ]
+}
