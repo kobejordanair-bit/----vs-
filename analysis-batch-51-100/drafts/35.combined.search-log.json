@@ -1,0 +1,552 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_劉錡_306144367",
+  "packetSha256": "584c714355a60acca0be4e0e027927d4032e0f985e5ffcc02e6afa3f80ff39f8",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "劉錡 順昌之戰 1140 八字軍 拐子馬 鐵浮圖 研究 論文",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Guaizi_Ma",
+        "https://en.wikipedia.org/wiki/Battle_of_Yancheng",
+        "https://scholars.lib.ntu.edu.tw/handle/123456789/7176?locale=en",
+        "https://scholars.lib.ntu.edu.tw/entities/publication/cf769dbd-06ce-43d6-8c56-144be55a467b",
+        "https://scholars.lib.ntu.edu.tw/bitstreams/12a81117-ff7d-4ca8-8ece-69961e94b0bd/download",
+        "https://input.cbdb.fas.harvard.edu/basicinformation/11580/assoc"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "有敢言錡姓名者，罪不赦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "疾何必問。朝廷養兵三十年，一技不施，而大功乃出一儒生，我輩愧死矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "美儀狀，善射，聲如洪鐘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "拔箭水注，隨以一矢窒之，人服其精",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "合五路師潰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "未至，五月，抵順昌三百里，金人果敗盟來侵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "驟貴，諸將多嫉之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "為腹心，而與錡有隙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "守備一無可恃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "金兵不可敵也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "順流還江南",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "吾本赴官留司，今東京雖失，幸全軍至此，有城可守，奈何棄之？吾意已決，敢言去者斬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "鑿舟沉之，示無去意",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "置家寺中，積薪於門",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "脫有不利，即焚吾家，毋辱敵手也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "男子備戰守，婦人礪刀劍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "平時人欺我八字軍，今日當為國家破賊立功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "破敵弓翼以神臂、強弩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "電所燭則皆奮擊，電止則匿不動",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "終夜自戰，積屍盈野",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "太平邊帥子，喜聲伎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "置鵝車炮具不用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "毒潁上流及草中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "敵晝夜不解甲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "番休更食羊馬垣下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "敵力疲氣索",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "亦為錡軍所殺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "命曳薪壘橋，須臾而成",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "此順昌旗幟也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "斬景山，俘數百人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "留李彥琪捍洧",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "敵得城而遽退，必有謀也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "果遇伏敗還",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "病，求解兵柄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "失其都統制印",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "雖渴死，毋得飲於河者；飲，夷其族",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "慷慨深毅，有儒將風",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "用靴尖趯倒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "太尉非但請與太子戰，且謂太子必不敢濟河，願獻浮橋五所",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "明日府治會食",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "戒軍士雖渴死，毋得飲於河者；飲，夷其族",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "懼惑軍心，立焚之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "擒十六人，梟首槊上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "錡為國家將帥，有罪，宣撫當言於朝，豈得與卒伍對事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "長揖上馬去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "朝廷養兵十五年，正為緩急之用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "平生報國之志，反成誤國之罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "朝廷養兵三十年，一技不施",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "發怒，嘔血數升而卒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "兵不盈二萬，出戰僅五千人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "錡始能成軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "善射，聲如洪鐘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "拔箭水注，隨以一矢窒之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "於城上躬自督厲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "法當先擊兀朮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "流民自占者幾千戶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "奏留錡掌兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "柘皐之賞，錡軍獨不與",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "建大將旗鼓，軍容甚肅，觀者歎息",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "諸將多嫉之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "飲，夷其族",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "朝廷養兵十五年，正為緩急之用，況已挫賊鋒，軍聲稍振，雖眾寡不侔，然有進無退",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "吾軍一動，彼躡其後，則前功俱廢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "城中有糧，則能與君共守",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "豈得與卒伍對事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "具舟全軍而歸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "方晨氣清涼，錡按兵不動",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "未、申間，敵力疲氣索",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "出飯羹，坐餉戰士如平時",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "披靡不敢近",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "撤拒馬木，深入斫敵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "黃幟久不舉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "憤懣，病益甚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "敵侵軼兩淮，震驚江、浙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "錡軍獨不與",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "出師之謀寢矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "我輩愧死矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "疑汜累己，常懼有後命",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "勝則舉黃幟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "錡以逸待勞，以故輒勝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "讙譁，終夜有聲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "肅然，無雞犬聲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "分番假寐馬上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "金人震恐喪魄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "諸將協心，分路追討，則兀朮可擒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "朝廷養兵三十年，一技不施，而大功乃出一儒生，我輩愧死矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷366",
+      "quote": "朝廷養兵十五年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《宋史》卷366 全文比對。",
+    "王德毅論文僅讀搜尋摘要；順昌兩軍兵力只依《宋史》本傳所記；〈陳規守城錄〉與《三朝北盟會編》對順昌的記載未比對。"
+  ]
+}

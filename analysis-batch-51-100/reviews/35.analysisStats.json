@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_劉錡_306144367",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:16:57.713Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "debb699a6c981d0974f64f8e871a7b7a3358f9e0f7bdd52ef174bc8a66eb53d8",
+  "rawResponseSha256": "debb699a6c981d0974f64f8e871a7b7a3358f9e0f7bdd52ef174bc8a66eb53d8",
+  "sourcePackageSha256": "9378d1febf6ad678df20e8ca35464277ac8ed5edf9533182e0e84495bf5e2f19",
+  "searchLogSha256": "2b33df1275d1b4b6f9e5a437668a13ca5f19d62ccdbe2d8769ee13049221037c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366",
+      "title": "宋史·卷三百六十六　列傳第一百二十五",
+      "locator": "本機固定修訂 oldid=2108485 全文比對（textSha256 已驗）：有敢言錡姓名者，罪不赦、疾何必問。朝廷養兵三十年，一技不施，而大功乃出一儒生，我輩愧死矣、美儀狀，善射，聲如洪鐘、拔箭水注，隨以一矢窒之，人服其精、合五路師潰、未至，五月，抵順昌三百里，金人果敗盟來侵…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "德順軍人、仲武第九子、宣和閤門祗候、隴右都護、富平後貶、紹興六年整編六軍、十年東京副留守至順昌、順昌大捷、十一年柘皐與濠州、罷兵柄知荊南、三十一年制置使皂角林、病而瓜洲失利、三十二年閏二月嘔血卒諡武穆，皆依宋史卷366 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：順昌、整編、柘皐、皂角林；武力：射水斛、劉都護來；智謀：佯俘、獻浮橋、毒上流、竹嘂夜襲、未申反擊；政治：荊南治理與張俊衝突；魅力：八字軍、惟太尉命、莫有應者。對照岳飛、孟珙、戚繼光、李光弼、韋孝寬、陳慶之。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "金敗盟→至順昌→諸將欲走→敢言去者斬、沉舟積薪→守備六日→夜襲與竹嘂→兀朮至→佯俘撤攻具→獻浮橋→大暑以逸待勞→未申出擊→兀朮北去；驟貴→諸將嫉→柘皐賞不與→劫砦衝突→誣戰不力→罷；病→求解兵柄→瓜洲敗→愧死。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    94,
+    82,
+    93,
+    50,
+    88
+  ]
+}

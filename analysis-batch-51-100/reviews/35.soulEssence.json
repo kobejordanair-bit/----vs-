@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_劉錡_306144367",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:16:57.714Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a2e5e9f3ca6b49c7bd48c14126783ea867840a615f3b1509208c6a944a5126fa",
+  "rawResponseSha256": "a2e5e9f3ca6b49c7bd48c14126783ea867840a615f3b1509208c6a944a5126fa",
+  "sourcePackageSha256": "9378d1febf6ad678df20e8ca35464277ac8ed5edf9533182e0e84495bf5e2f19",
+  "searchLogSha256": "2b33df1275d1b4b6f9e5a437668a13ca5f19d62ccdbe2d8769ee13049221037c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7366",
+      "title": "宋史·卷三百六十六　列傳第一百二十五",
+      "locator": "本機固定修訂 oldid=2108485 全文比對（textSha256 已驗）：有敢言錡姓名者，罪不赦、疾何必問。朝廷養兵三十年，一技不施，而大功乃出一儒生，我輩愧死矣、美儀狀，善射，聲如洪鐘、拔箭水注，隨以一矢窒之，人服其精、合五路師潰、未至，五月，抵順昌三百里，金人果敗盟來侵…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以逸待勞、先斷退路的守城名將，為金主所懼卻病倒，以養兵為榮終以養兵為愧；場景為沉舟積薪、坐餉戰士、吾自當之、我輩愧死。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "報國之志反成誤國之罪的恐懼、戰功招嫉之盲點、旗幟等待等皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以城中有糧與無以枚也與豈得與卒伍對事、按兵至未申與黃幟、養兵十五年、驟貴與長揖上馬、積薪與嘔血、以逸待勞與三帥不相節制、吾自當之與愧死為事件。"
+    }
+  ],
+  "materialIssues": []
+}
