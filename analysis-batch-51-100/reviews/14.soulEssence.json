@@ -1,0 +1,77 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋高宗_283923485",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:22:10.678Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "0b618b95abd72bea15e1eff8f1deb2ffa6480acd3aeee25fb2b275dd71f4e554",
+  "rawResponseSha256": "0b618b95abd72bea15e1eff8f1deb2ffa6480acd3aeee25fb2b275dd71f4e554",
+  "sourcePackageSha256": "c48906b6442c883b335ed1a58af786cd10e4424aff9adc31955409df97faa0bb",
+  "searchLogSha256": "9eece3ae361602b9e5ce26314d2373aa6ac1af24b2b62d77129e49d962b42eb6",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7025",
+      "title": "宋史·卷二十五 本紀第二十五 高宗二",
+      "locator": "本機固定修訂 oldid=2285120 全文比對（textSha256 已驗）：勒兵向闕，殺王淵及內侍康履以下百餘人、遜位於皇子魏國公、睿聖仁孝皇帝、失馭臣之柄、定議航海避兵、四失罪己：一曰昧經邦之大略，二曰昧戡難之遠圖，三曰無綏人之德，四曰失馭臣之柄…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7029",
+      "title": "宋史·卷二十九 本紀第二十九 高宗六",
+      "locator": "本機固定修訂 oldid=2285125 全文比對（textSha256 已驗）：賜岳飛死于大理寺，斬其子雲及張憲于市、岳飛乞增兵，不許、留岳飛行在、謀據襄陽爲變、賜岳飛死于大理寺、乞增兵，不許…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/145/Article/812",
+      "title": "黃寬重〈酈瓊兵變與南宋初期的政局〉，《中央研究院歷史語言研究所集刊》60本1分（1989）",
+      "locator": "WebSearch 結果摘要：兵變後高宗起用秦檜、放棄主戰，藉和議鞏固帝位，以推恩、眾建使軍隊直隸中央；苗劉之變、酈瓊兵變、殺岳飛為南宋初三大事件",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7030",
+      "title": "宋史·卷三十 本紀第三十 高宗七",
+      "locator": "本機固定修訂 oldid=2285126 全文比對（textSha256 已驗）：藏金國誓書於內侍省、割商、秦之半畀金國、以大散關為界、党援岳飛，不主和議、士亻褭嘗營護岳飛為朋比、上壽于慈甯宮",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7032",
+      "title": "宋史·卷三十二 本紀第三十二 高宗九",
+      "locator": "本機固定修訂 oldid=2315065 全文比對（textSha256 已驗）：高宗恭儉仁厚，以之繼體守文則有餘，以之撥亂反正則非其才也、時危勢逼，兵弱財匱，而事之難處又有甚於數君者、罷三招討司、詔皇太子即皇帝位、崩于德壽殿，年八十一、其始惑于汪、黃，其終制於奸檜，恬墮猥懦，坐失事機。甚而趙鼎、張浚相繼竄斥，岳飛父子竟死于大功垂成之秋…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最怕自己的軍隊；場景為遜位於皇子、四失罪己、岳飛乞增兵不許、賜死大理寺、主動禪位。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "罪己詔重新定義問題、退成為最信任策略、兩次退位之間的安全感，皆標[推斷]或[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以罪己詔與不許、航海斬卒與苗劉、遜位與收兵權、苗傅與岳飛之別、韋太后與欽宗、杯酒釋兵權框架、兩次退位為事件。"
+    }
+  ],
+  "materialIssues": []
+}
