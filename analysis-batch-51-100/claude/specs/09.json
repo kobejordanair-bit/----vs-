@@ -1,0 +1,293 @@
+{
+ "webSearches": [
+  {
+   "query": "光緒帝 死因 砒霜 2008 清西陵 頭髮 檢測 研究報告 中國原子能科學研究院",
+   "returnedUrls": [
+    "https://www.aisixiang.com/data/22689.html",
+    "https://www.chinanews.com.cn/cul/news/2008/12-02/1470861.shtml",
+    "https://www.historynewsnetwork.org/article/56498",
+    "https://covid-19.chinadaily.com.cn/china/2008-11/21/content_7226663.htm",
+    "https://www.nbcnews.com/id/wbna23127091",
+    "https://www.foxnews.com/world/al-jazeera-reports-swiss-scientists-found-evidence-of-arafat-poisoning",
+    "https://physicsworld.com/?p=19753",
+    "https://physicsworld.com/a/napoleon-not-murdered-say-physicists",
+    "https://www.historynewsnetwork.org/article/47316"
+   ]
+  },
+  {
+   "query": "慈禧太后 1900 宣戰 諭旨 義和團 決策 研究 論文 近代史研究所",
+   "returnedUrls": [
+    "https://blog.udn.com/dff1baf6/131594947",
+    "https://blog.udn.com/dff1baf6/176857796",
+    "https://chiculture.org.hk/en/node/1732",
+    "https://www.aisixiang.com/data/119795.html",
+    "https://chiculture.org.hk/en/photo-story/1730",
+    "https://www.aisixiang.com/data/119699.html",
+    "https://chinadigitaltimes.net/chinese/649303.html",
+    "https://chinadigitaltimes.net/chinese/?p=649303",
+    "https://chinadigitaltimes.net/chinese/2020/07/春色三分｜空前绝后！那一年，大清向全世界宣/"
+   ]
+  },
+  {
+   "query": "辛酉政變 1861 慈禧 恭親王 肅順 垂簾聽政 研究 學報",
+   "returnedUrls": [
+    "https://www.jointpublishing.com/wp-content/uploads/2026/07/9789620459559_b.pdf",
+    "https://qsyj.ruc.edu.cn/CN/Y2002/V0/I4/49",
+    "https://thesis.lib.nccu.edu.tw/detail/d762bab6f141e0352af2ab0c007f034a/",
+    "https://m.163.com/dy/article/HBUL36LF0542HDTE.html",
+    "https://book.douban.com/subject/1430444/",
+    "https://www.thetvdb.com/series/crazy-for-history/episodes/4490372",
+    "https://rikkyo.repo.nii.ac.jp/record/6674/files/32686A347_Abstract.pdf",
+    "https://www.aisixiang.com/data/30582.html",
+    "https://www.thenewslens.com/article/101059"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "垂簾聽政，本萬不得已之舉"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "使訓政永無底止"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "遽自頤和園還宮，復訓政"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "本朝未有皇太后垂簾"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "兩太后為言載垣等擅政狀"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "垂簾非所樂爲，惟以時事多艱"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "是以姑允所請。俟皇帝典學有成，即行歸政"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "兩太后同心求治，登進老成，倚任將帥，粵、捻蕩平，滇、隴漸定"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "我朝未明定儲位，可讀所請，與家法不合"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "其繼大統者為穆宗嗣子"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "定策立德宗"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "責恭親王奕訢等因循貽誤，罷之"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "此中委曲，諸臣不能盡知也"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "上事太后謹，朝廷大政，必請命乃行"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "思變法救亡，太后意不謂然"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "載漪等信其術，言於太后，謂為義民，縱令入京師"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "母子一心，勵行新政"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "下詔預備立憲"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "垂簾非所樂爲"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "本萬不得已之舉"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "罪宮監之不法者，戍三人，杖四人。一時宮府整肅"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "既歸政，奉太后駐焉"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "以太后命罷之"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "登進老成，倚任將帥，粵、捻蕩平，滇、隴漸定"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "率上出自德勝門"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "一時宮府整肅"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "必請命乃行"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "是以姑允所請"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "時事艱難，不得已垂簾聽政"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "訛言謂太后將勒兵廢上；又謂有謀圍頤和園劫太后者"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "請上徽號，堅不許"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "信其術，言於太后，謂為義民"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "歸政於穆宗"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "斥為謬妄，奪官"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "粵、捻蕩平"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "思變法救亡"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "俟皇帝典學有成，即行歸政"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "定策立宣統皇帝"
+  },
+  {
+   "book": "qingshigao",
+   "title": "清史稿/卷214",
+   "quote": "俟皇帝典學有成"
+  }
+ ],
+ "pageReads": [],
+ "extraSources": {
+  "https://qsyj.ruc.edu.cn/CN/Y2002/V0/I4/49": {
+   "title": "《清史研究》2002年第4期論文（辛酉政變），中國人民大學",
+   "locator": "WebSearch 結果摘要：咸豐臨終鈐印制度既防肅順挾制，也使慈禧掌握最高權力；正統皇權思想為政變成功之深層原因",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://rikkyo.repo.nii.ac.jp/record/6674/files/32686A347_Abstract.pdf": {
+   "title": "立教大學學位論文摘要（辛酉政變與「辛酉體制」）",
+   "locator": "WebSearch 結果摘要：從人事與制度角度分析辛酉政變，提出辛酉體制概念",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《清史稿·后妃傳》（卷214）全文比對。",
+  "1900年宣戰諭旨與決策過程搜尋僅得部落格與通俗文章，正文只依《清史稿》載漪言於太后之記載。",
+  "光緒帝2008年頭髮砷檢測結論僅見新聞報導，正文未採用。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity-date",
+    "惠徵女、咸豐元年入宮、辛酉政變、同治十二年歸政、光緒十五年歸政、二十四年復訓政、三十四年崩年七十四，皆依清史稿卷214 archive 引句。"
+   ],
+   [
+    "five-dimensions",
+    "統率：倚任將帥與縱拳；武力：無；智謀：辛酉政變與載漪誤判；政治：宮府整肅與辛丑；魅力：必請命乃行與黜言官。對照武則天、宋孝宗、崇禎帝、光緒帝、晉惠帝、漢明帝、王莽。"
+   ],
+   [
+    "causality",
+    "鈐印與奏請→垂簾；歸政而實權仍在→光緒變法被止；立載漪子→縱拳→聯軍入京（[推斷]標示）。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "distinctive-person",
+    "主論點：每次掌權皆稱不得已暫時；場景為垂簾諭、屠仁守奪官、吳可讀尸諫、遽自頤和園還宮、載漪言義民。"
+   ],
+   [
+    "interpretation",
+    "宮廷規則對國際規則、西逃為最脆弱時刻、承諾附永遠到不了的條件，皆標[詮釋]或[推斷]。"
+   ],
+   [
+    "seven-fields",
+    "七欄各以三道諭旨與委曲之語、罷恭王與還宮、拒徽號與必請命、載漪、穆宗后與李蓮英、垂簾框架、歸政承諾與定策宣統為事件。"
+   ]
+  ]
+ }
+}

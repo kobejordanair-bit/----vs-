@@ -1,7 +1,7 @@
 {
   "format": "dynasty-batch50-receipt-ledger",
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T11:04:21.787Z",
+  "generatedAt": "2026-10-10T11:06:49.323Z",
   "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
   "targetCount": 50,
   "libraryTotalExpected": 962,
@@ -15,10 +15,10 @@
   "latestReceiptedDocumentSha256": "745b29a3bbae175db2f84d5cbae30268f9aa80d5d0f24baa18e5e8bc8ddb3ec6",
   "counts": {
     "prepared": 50,
-    "generated": 8,
-    "reviewed": 8,
-    "sourceQA": 8,
-    "assembled": 8,
+    "generated": 9,
+    "reviewed": 9,
+    "sourceQA": 9,
+    "assembled": 9,
     "imported": 0,
     "verified": 0,
     "partialImported": 0,
@@ -28,7 +28,7 @@
   },
   "imports": [],
   "externalTransitionsRequiringSnapshotProof": [],
-  "rebuiltBatchCount": 8,
+  "rebuiltBatchCount": 9,
   "finalAuditNote": "Receipt readbacks establish publication at each recorded revision, not a fresh current production read. Mixed-chain private final snapshot + identity/raw-extra audit is still required to declare overall completion.",
   "records": [
     {
@@ -308,17 +308,34 @@
       "id": "emperor_慈禧太后_176093814",
       "name": "慈禧太后",
       "prepared": true,
-      "generated": false,
-      "reviewed": false,
-      "sourceQA": false,
-      "assembled": false,
+      "generated": true,
+      "reviewed": true,
+      "sourceQA": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "fullyImported": false,
       "importedFields": [],
       "published": {},
-      "assembledFields": {},
-      "status": "incomplete"
+      "assembledFields": {
+        "analysis": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "soulEssence": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "stats": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        },
+        "statsAnalysis": {
+          "resultsFile": "results.09-09.v1.json",
+          "provider": "Claude Code (Anthropic)"
+        }
+      },
+      "status": "assembled_awaiting_local_dry_run"
     },
     {
       "slug": "10",

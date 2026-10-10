@@ -1,0 +1,298 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_慈禧太后_176093814",
+  "packetSha256": "72c95eea029dbf7dba1f1eddc47e3a5b574a948d4dbac86d6736532b61e95eee",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "光緒帝 死因 砒霜 2008 清西陵 頭髮 檢測 研究報告 中國原子能科學研究院",
+      "returnedUrls": [
+        "https://www.aisixiang.com/data/22689.html",
+        "https://www.chinanews.com.cn/cul/news/2008/12-02/1470861.shtml",
+        "https://www.historynewsnetwork.org/article/56498",
+        "https://covid-19.chinadaily.com.cn/china/2008-11/21/content_7226663.htm",
+        "https://www.nbcnews.com/id/wbna23127091",
+        "https://www.foxnews.com/world/al-jazeera-reports-swiss-scientists-found-evidence-of-arafat-poisoning",
+        "https://physicsworld.com/?p=19753",
+        "https://physicsworld.com/a/napoleon-not-murdered-say-physicists",
+        "https://www.historynewsnetwork.org/article/47316"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "慈禧太后 1900 宣戰 諭旨 義和團 決策 研究 論文 近代史研究所",
+      "returnedUrls": [
+        "https://blog.udn.com/dff1baf6/131594947",
+        "https://blog.udn.com/dff1baf6/176857796",
+        "https://chiculture.org.hk/en/node/1732",
+        "https://www.aisixiang.com/data/119795.html",
+        "https://chiculture.org.hk/en/photo-story/1730",
+        "https://www.aisixiang.com/data/119699.html",
+        "https://chinadigitaltimes.net/chinese/649303.html",
+        "https://chinadigitaltimes.net/chinese/?p=649303",
+        "https://chinadigitaltimes.net/chinese/2020/07/春色三分｜空前绝后！那一年，大清向全世界宣/"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "辛酉政變 1861 慈禧 恭親王 肅順 垂簾聽政 研究 學報",
+      "returnedUrls": [
+        "https://www.jointpublishing.com/wp-content/uploads/2026/07/9789620459559_b.pdf",
+        "https://qsyj.ruc.edu.cn/CN/Y2002/V0/I4/49",
+        "https://thesis.lib.nccu.edu.tw/detail/d762bab6f141e0352af2ab0c007f034a/",
+        "https://m.163.com/dy/article/HBUL36LF0542HDTE.html",
+        "https://book.douban.com/subject/1430444/",
+        "https://www.thetvdb.com/series/crazy-for-history/episodes/4490372",
+        "https://rikkyo.repo.nii.ac.jp/record/6674/files/32686A347_Abstract.pdf",
+        "https://www.aisixiang.com/data/30582.html",
+        "https://www.thenewslens.com/article/101059"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "垂簾聽政，本萬不得已之舉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "使訓政永無底止",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "遽自頤和園還宮，復訓政",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "本朝未有皇太后垂簾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "兩太后為言載垣等擅政狀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "垂簾非所樂爲，惟以時事多艱",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "是以姑允所請。俟皇帝典學有成，即行歸政",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "兩太后同心求治，登進老成，倚任將帥，粵、捻蕩平，滇、隴漸定",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "我朝未明定儲位，可讀所請，與家法不合",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "其繼大統者為穆宗嗣子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "定策立德宗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "責恭親王奕訢等因循貽誤，罷之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "此中委曲，諸臣不能盡知也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "上事太后謹，朝廷大政，必請命乃行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "思變法救亡，太后意不謂然",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "載漪等信其術，言於太后，謂為義民，縱令入京師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "母子一心，勵行新政",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "下詔預備立憲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "垂簾非所樂爲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "本萬不得已之舉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "罪宮監之不法者，戍三人，杖四人。一時宮府整肅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "既歸政，奉太后駐焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "以太后命罷之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "登進老成，倚任將帥，粵、捻蕩平，滇、隴漸定",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "率上出自德勝門",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "一時宮府整肅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "必請命乃行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "是以姑允所請",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "時事艱難，不得已垂簾聽政",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "訛言謂太后將勒兵廢上；又謂有謀圍頤和園劫太后者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "請上徽號，堅不許",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "信其術，言於太后，謂為義民",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "歸政於穆宗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "斥為謬妄，奪官",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "粵、捻蕩平",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "思變法救亡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "俟皇帝典學有成，即行歸政",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "定策立宣統皇帝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷214",
+      "quote": "俟皇帝典學有成",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《清史稿·后妃傳》（卷214）全文比對。",
+    "1900年宣戰諭旨與決策過程搜尋僅得部落格與通俗文章，正文只依《清史稿》載漪言於太后之記載。",
+    "光緒帝2008年頭髮砷檢測結論僅見新聞報導，正文未採用。"
+  ]
+}

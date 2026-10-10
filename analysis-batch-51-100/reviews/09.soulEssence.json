@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_慈禧太后_176093814",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:06:47.955Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "d87194ec12e29b320a9ea9f257540c5ee652d9eec00aea6a3abc391f30672885",
+  "rawResponseSha256": "d87194ec12e29b320a9ea9f257540c5ee652d9eec00aea6a3abc391f30672885",
+  "sourcePackageSha256": "256f0e8c7ca87e095172e846e128685b1f9e76a5857e45cecfd5dbc18e8a91aa",
+  "searchLogSha256": "e03c0b70d8cc506cc66c2d7006305cdc7ca050c0214d73f0cd87694d739b1dda",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214",
+      "title": "清史稿·卷二百一十四 列傳一",
+      "locator": "本機固定修訂 oldid=2549848 全文比對（textSha256 已驗）：垂簾聽政，本萬不得已之舉、使訓政永無底止、遽自頤和園還宮，復訓政、本朝未有皇太后垂簾、兩太后為言載垣等擅政狀、垂簾非所樂爲，惟以時事多艱…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：每次掌權皆稱不得已暫時；場景為垂簾諭、屠仁守奪官、吳可讀尸諫、遽自頤和園還宮、載漪言義民。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "宮廷規則對國際規則、西逃為最脆弱時刻、承諾附永遠到不了的條件，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以三道諭旨與委曲之語、罷恭王與還宮、拒徽號與必請命、載漪、穆宗后與李蓮英、垂簾框架、歸政承諾與定策宣統為事件。"
+    }
+  ],
+  "materialIssues": []
+}
