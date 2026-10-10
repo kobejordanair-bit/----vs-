@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_僕固懷恩_2119975374",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:38:18.539Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b3f51a7466c985cf42dbb5ecbede0081a7797585100a85e00968ccabc4969c70",
+  "rawResponseSha256": "b3f51a7466c985cf42dbb5ecbede0081a7797585100a85e00968ccabc4969c70",
+  "sourcePackageSha256": "2fd624dffbef2c0fd94543f566cf9912f8127adac21df25a97092e7026ac182f",
+  "searchLogSha256": "0755caab61f009a6a1447524e7b365fc2024a1648238d7d8f35a9955aa3116e1",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121",
+      "title": "舊唐書·卷一百二十一\n列傳第七十一　僕固懷恩　梁崇義　李懷光",
+      "locator": "本機固定修訂 oldid=2579120 全文比對（textSha256 已驗）：懷恩不反，為左右所誤、歷事節度王忠嗣、安思順，皆以善格鬥，達諸蕃情，有統御材，委之心腹、肅宗雖仗朔方之眾，將假蕃兵以張形勢，乃遣懷恩與燉煌王承寀使於回紇，請兵結好、皆大破之，懷恩功居多、引回紇馳殺之，匹馬不歸，賊乃大潰、凡經五月，常為先鋒，堅敵大陣，必經其戰，勇冠三軍…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7224%E4%B8%8A",
+      "title": "新唐書·卷二百二十四上\n列傳第一百四十九上　叛臣上",
+      "locator": "本機固定修訂 oldid=2401752 全文比對（textSha256 已驗）：與賊百戰，闔宗死事至四十六人，遂汛掃燕、趙無餘埃、拔刀逐賊，烈婦人也",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "僕固懷恩，唐蕃將；保留原 A+ 評級與 deepAnalysis；新唐書列叛臣傳並陳。"
+    },
+    {
+      "id": "battle",
+      "passed": true,
+      "detail": "常山嘉山、長安追擊之議、相州河陽、黃水昭覺寺，原文核對。"
+    },
+    {
+      "id": "uighur-tie",
+      "passed": true,
+      "detail": "請兵結好、女為可敦、辛雲京疑其召戎，原文核對——論點核心。"
+    },
+    {
+      "id": "memorial",
+      "passed": true,
+      "detail": "臣罪有六、弓藏鳥盡、來瑱前例，原文核對並標自述立場。"
+    },
+    {
+      "id": "rebellion",
+      "passed": true,
+      "detail": "范志誠勸阻、顏真卿其辭曲、誘吐蕃入寇與擄掠，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[93,92,82,45,75] 對照郭子儀[98,85,92,95,100]、霍去病[96,92,95,35,88]、項羽[98,100,85,45,95]、木華黎[96,88,90,85,92]、白崇禧[93,60,96,75,82]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    93,
+    92,
+    82,
+    45,
+    75
+  ]
+}

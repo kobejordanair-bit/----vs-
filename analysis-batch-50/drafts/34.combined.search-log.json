@@ -1,0 +1,322 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_僕固懷恩_2119975374",
+  "packetSha256": "1c52d75dbe11b5808d00411e8ac92168bc544a1c4620af5b3d31d0c39099d6d1",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "僕固懷恩 叛亂 研究 回紇 和親 辛雲京 駱奉先 代宗 論文 唐代 蕃將",
+      "returnedUrls": [
+        "https://genedu.stust.edu.tw/Sysid/genedu/621GEP/GEP07/gep0762_01.pdf",
+        "https://irtest.lib.nccu.edu.tw/handle/140.119/44160",
+        "https://toyo-bunko.repo.nii.ac.jp/record/3149/files/Memoirs68_Inaba.pdf",
+        "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7121"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "懷恩不反，為左右所誤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "歷事節度王忠嗣、安思順，皆以善格鬥，達諸蕃情，有統御材，委之心腹",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "肅宗雖仗朔方之眾，將假蕃兵以張形勢，乃遣懷恩與燉煌王承寀使於回紇，請兵結好",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "皆大破之，懷恩功居多",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "引回紇馳殺之，匹馬不歸，賊乃大潰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "凡經五月，常為先鋒，堅敵大陣，必經其戰，勇冠三軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "摧鋒陷敵，功冠諸將",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "夫戰尚速，何明日為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "一夕四五起",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "守忠等果逃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "廣張旗幟以當之，命驍騎及回紇之眾傍南山出於東北，兩軍舉旗內應，表裏擊之，一鼓而拔",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷224上",
+      "quote": "與賊百戰，闔宗死事至四十六人，遂汛掃燕、趙無餘埃",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7224%E4%B8%8A"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "將士懾駭，無不一當百",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "辛雲京以可汗是其子婿，疑其召戎，閉關不報，且懼可汗相襲，不敢犒軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "以雲京有功，手詔和解之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "臣有二女，俱聘遠蕃，為國和親",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "弓藏鳥盡，兔死犬烹，臣昔謂非，今方知實",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "臣欲入朝，恐罹斯禍，諸道節度使皆懼，非臣獨敢如此",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "進不勤王，退不釋眾，其辭曲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "誘吐蕃十萬入寇涇、邠州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "糾合諸蕃，眾號二十萬，南犯京師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "大掠居人，焚燒舍宇，驅男女數萬而去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "為人雄毅寡言，應對舒緩，而剛決犯上，始居偏裨之中，意有不合，雖主將必詬怒之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "以寬厚容眾，素重懷恩",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "持法嚴肅，法不貸下，懷恩心憚而頗不葉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "自以為功無以讓",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "抱其足號泣而訴",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "率麾下數百騎，棄其母，渡河北走靈武",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷224上",
+      "quote": "拔刀逐賊，烈婦人也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7224%E4%B8%8A"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "表裏擊之，一鼓而拔",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "束甲來奔，歸者數萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "常為先鋒，堅敵大陣，必經其戰，勇冠三軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "是臣不忠於國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "復為我患，雖悔無及",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "苦邀之，命藏其馬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "是將害我也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "遽令追還其馬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "以懼死為辭",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "臣實不欺天地，不負神明",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "若無極諫，有負聖朝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "畫像於淩煙閣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "意有不合，雖主將必詬怒之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "心憚而頗不葉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "怒，上表列其狀，頓軍汾州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "獨辛雲京、李抱玉、駱奉先、魚朝恩四人耳，自外朝臣，咸言其枉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "棄其母，渡河北走靈武",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "陛下若以此誅臣，何異伍子胥存吳，卒浮屍於江上，大夫種霸越，終賜劍於稽山",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "誘吐蕃十萬入寇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷121",
+      "quote": "臣昔謂非，今方知實",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 舊唐書卷121、新唐書卷224上 verified in the repository archive.",
+    "搜尋所得之政大典藏論文與南台通識電子報僅有摘要，未引用；資治通鑑卷223未另行比對。",
+    "上書內容為懷恩自述，正文以其立場呈現並與顏真卿評語、新唐書贊語對照。"
+  ]
+}

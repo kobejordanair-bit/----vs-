@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_僕固懷恩_2119975374",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:38:18.540Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a7eaf83505a412474dae3a6e4959e06bd2a13ae23dfcd34693cf83c48c21d791",
+  "rawResponseSha256": "a7eaf83505a412474dae3a6e4959e06bd2a13ae23dfcd34693cf83c48c21d791",
+  "sourcePackageSha256": "2fd624dffbef2c0fd94543f566cf9912f8127adac21df25a97092e7026ac182f",
+  "searchLogSha256": "0755caab61f009a6a1447524e7b365fc2024a1648238d7d8f35a9955aa3116e1",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7121",
+      "title": "舊唐書·卷一百二十一\n列傳第七十一　僕固懷恩　梁崇義　李懷光",
+      "locator": "本機固定修訂 oldid=2579120 全文比對（textSha256 已驗）：懷恩不反，為左右所誤、歷事節度王忠嗣、安思順，皆以善格鬥，達諸蕃情，有統御材，委之心腹、肅宗雖仗朔方之眾，將假蕃兵以張形勢，乃遣懷恩與燉煌王承寀使於回紇，請兵結好、皆大破之，懷恩功居多、引回紇馳殺之，匹馬不歸，賊乃大潰、凡經五月，常為先鋒，堅敵大陣，必經其戰，勇冠三軍…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "臣罪有六與追擊論證；被解讀為怨懟標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "駱奉先與裴遵慶兩事。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "上書與冊勳；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "剛決犯上、頓軍汾州、顏真卿四人之說。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "斬子、和親、棄母；內心標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "伍子胥文種之喻；落差標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "汾州與裴遵慶；自覺標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}
