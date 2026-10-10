@@ -1,0 +1,97 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_神武帝_276962130",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:42:58.956Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "9b483cae88e99fe04de60a8bfe354262f9bb0019b431643396c60a80d53a4669",
+  "rawResponseSha256": "9b483cae88e99fe04de60a8bfe354262f9bb0019b431643396c60a80d53a4669",
+  "sourcePackageSha256": "251c909ac801d640ae4e286bc0b838bb0237baeccfbfb959767116a3ed0e3dfd",
+  "searchLogSha256": "0dc15124104c42da518f5dc78503d173c21266323e5ebfba5307428268537e3d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B724",
+      "title": "北齊書·卷二四\n列傳第十六　孫搴 陳元康 杜弼",
+      "locator": "本機固定修訂 oldid=2432516 全文比對（textSha256 已驗）：天下濁亂，習俗已久、江東復有一吳兒老翁蕭衍者，專事衣冠禮樂，中原士大夫望之以為正朔所在、恐督將盡投黑獺，士子悉奔蕭衍、諸勳貴掠奪萬民者皆是、因令軍人皆張弓挾矢，舉刀按矟以夾道、弼戰慄汗流…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7157",
+      "title": "資治通鑑·卷一百五十七 梁紀十三",
+      "locator": "本機固定修訂 oldid=1151206 全文比對（textSha256 已驗）：漢民是汝奴，夫為汝耕，婦為汝織，輸汝粟帛，令汝溫飽，汝何為陵之、鮮卑是汝作客，得汝一斛粟、一匹絹，為汝擊賊，令汝安寧，汝何為疾之",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71",
+      "title": "北齊書·第一卷 補帝紀第一 神武帝 高歡上",
+      "locator": "本機固定修訂 oldid=2432532 全文比對（textSha256 已驗）：坐法徙居懷朔鎮、宿衛羽林相率焚領軍張彝宅，朝廷懼其亂而不問。為政若此，事可知也。財物豈可常守邪、傾產以結客、衆號二十萬、時馬不滿二千，步兵不至三萬，衆寡不敵、乃於韓陵為圓陣，連牛驢以塞歸道，於是將士皆有死志…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B72",
+      "title": "北齊書·第二卷 補帝紀第二 神武帝 高歡下",
+      "locator": "本機固定修訂 oldid=2432493 全文比對（textSha256 已驗）：神武西討，自蒲津濟，衆二十萬、軍大亂，棄器甲十有八萬，神武跨橐駝，候船以歸、大破西魏軍，俘獲數萬、乃起土山，鑿十道，又於東面鑿二十一道以攻之、神武使移汾，一夜而畢、頓軍五旬，城不拔，死者七萬人，聚為一冢…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B79",
+      "title": "北齊書·卷九\n補列傳第一　後宮",
+      "locator": "本機固定修訂 oldid=2432521 全文比對（textSha256 已驗）：及見神武於城上執役，驚曰：「此真吾夫也、乃使婢通意，又數致私財，使以聘己、密謀秘策，后恒參預、閫闈之事悉決焉",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "夾道刀箭、胡漢兩套說辭；沉默模式標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "韓陵塞歸道、邙山許懷州，相隔十一年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "杜弼之論與臨終點名；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "沙苑與侯景。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "勑勒歌、婁后參預；「哀感」內容標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "奔走之友、侯景相友結；叛變歸因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "杜弼與侯景兩次。"
+    }
+  ],
+  "materialIssues": []
+}

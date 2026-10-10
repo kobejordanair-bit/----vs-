@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 13,
-    "reviewed": 12,
-    "assembled": 12,
+    "generated": 14,
+    "reviewed": 13,
+    "assembled": 13,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 6,
+    "claudeAssembledAwaitingImport": 7,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -248,14 +248,17 @@
       "slug": "14",
       "id": "emperor_神武帝_276962130",
       "name": "神武帝",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.14-14.v1.json",
+      "resultsSha256": "5d88e50b6700efc4dffcca5cdf3fba206ebcdd7097ccbb32a1d7ec340b0d9cd8"
     },
     {
       "slug": "15",
