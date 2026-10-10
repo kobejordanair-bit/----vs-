@@ -1,0 +1,116 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_楚威王_281034787",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:49:14.424Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "2cf76439ed1720470db92d246ef0cc4f4e47b7e8ba235deb9568911d16ff89aa",
+  "rawResponseSha256": "2cf76439ed1720470db92d246ef0cc4f4e47b7e8ba235deb9568911d16ff89aa",
+  "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
+  "searchLogSha256": "2b9733b95a079637d0ba832fa064e09f487a29f343993c568da556f7ba2c2e9c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",
+      "title": "史記·巻四十 楚世家 第十",
+      "locator": "本機固定修訂 oldid=8736796 全文比對（textSha256 已驗）：復搏其士卒以與王遇，必不便於王矣、子威王熊商立、大臣不附，百姓不爲用、百姓爲之用、魏聞楚喪，伐楚，取我陘山",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7015",
+      "title": "史記·卷十五 六國年表 第三",
+      "locator": "本機固定修訂 oldid=2607002 全文比對（textSha256 已驗）：楚威王熊商元年",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075",
+      "title": "史記·巻七十五 孟嘗君列傳 第十五",
+      "locator": "本機固定修訂 oldid=1965692 全文比對（textSha256 已驗）：會徐州而相王、楚威王聞之，怒田嬰。明年，楚伐敗齊師於徐州，而使人逐田嬰",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041",
+      "title": "史記·巻四十一 越王勾踐世家 第十一",
+      "locator": "本機固定修訂 oldid=2018395 全文比對（textSha256 已驗）：北伐齊，西伐楚，與中國爭彊、楚三大夫張九軍，北圍曲沃、於中、遂釋齊而伐楚、楚威王興兵而伐之，大敗越，殺王無彊、北破齊於徐州、諸族子爭立…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069",
+      "title": "史記·卷六十九 蘇秦列傳 第九",
+      "locator": "本機固定修訂 oldid=2621145 全文比對（textSha256 已驗）：內與羣臣謀，不足恃也、地方五千餘里，帶甲百萬，車千乘，騎萬匹，粟支十年、秦之所害莫如楚，楚彊則秦弱、寡人自料以楚當秦，不見勝也；內與羣臣謀，不足恃也。寡人臥不安席，食不甘味，心搖搖然如縣旌而無所終薄、謹奉社稷以從、臥不安席，食不甘味…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116",
+      "title": "史記·卷一百一十六 西南夷列傳 第五十六",
+      "locator": "本機固定修訂 oldid=7903636 全文比對（textSha256 已驗）：始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西、以兵威定屬楚、以其眾王滇",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/180/Article/596",
+      "title": "桑秀雲〈莊蹻入滇考〉，《中央研究院歷史語言研究所集刊》51本3分（1980）",
+      "locator": "WebSearch 結果摘要：僅書目資訊（頁535–545），正文只據題名說明學界有專門考證",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/281571",
+      "title": "《東洋史研究》78卷4號論文（蘇秦史料問題），京都大學學術資料庫",
+      "locator": "WebSearch 結果摘要：1976年學者主張《戰國縱橫家書》為蘇秦可靠史料、《史記》蘇秦事蹟不可靠，已成主流見解，但仍有爭議",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063",
+      "title": "史記·卷六十三 老子韓非列傳 第三",
+      "locator": "本機固定修訂 oldid=7903601 全文比對（textSha256 已驗）：聞莊周賢，使使厚幣迎之，許以為相、子亟去，無污我",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "宣王子、元年前339（六國年表）、十一年卒，依史記卷15、40；徐州之戰與滅越依卷40、41、75。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：徐州、滅越、莊蹻；武力：無親征明證；智謀：弗逐田嬰與趁越轉攻；政治：版圖與缺乏改革；魅力：莫敖子華與莊周辭聘。對照齊桓公、秦孝公、秦昭襄王、宋孝宗、漢明帝、崇禎帝。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "弗逐田嬰→齊續用錯人（[推斷]）；越轉攻→滅越；秦奪巴黔中→莊蹻王滇；死後魏取陘山。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    82,
+    35,
+    80,
+    72,
+    68
+  ]
+}

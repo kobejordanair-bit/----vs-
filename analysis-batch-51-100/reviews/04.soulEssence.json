@@ -1,0 +1,85 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_楚威王_281034787",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:49:14.425Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "f521852b174f15b84b1f5cb3d3984b8333ac6626c59b0c014793f0a060cb3dcb",
+  "rawResponseSha256": "f521852b174f15b84b1f5cb3d3984b8333ac6626c59b0c014793f0a060cb3dcb",
+  "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
+  "searchLogSha256": "2b9733b95a079637d0ba832fa064e09f487a29f343993c568da556f7ba2c2e9c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",
+      "title": "史記·巻四十 楚世家 第十",
+      "locator": "本機固定修訂 oldid=8736796 全文比對（textSha256 已驗）：復搏其士卒以與王遇，必不便於王矣、子威王熊商立、大臣不附，百姓不爲用、百姓爲之用、魏聞楚喪，伐楚，取我陘山",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041",
+      "title": "史記·巻四十一 越王勾踐世家 第十一",
+      "locator": "本機固定修訂 oldid=2018395 全文比對（textSha256 已驗）：北伐齊，西伐楚，與中國爭彊、楚三大夫張九軍，北圍曲沃、於中、遂釋齊而伐楚、楚威王興兵而伐之，大敗越，殺王無彊、北破齊於徐州、諸族子爭立…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7075",
+      "title": "史記·巻七十五 孟嘗君列傳 第十五",
+      "locator": "本機固定修訂 oldid=1965692 全文比對（textSha256 已驗）：會徐州而相王、楚威王聞之，怒田嬰。明年，楚伐敗齊師於徐州，而使人逐田嬰",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069",
+      "title": "史記·卷六十九 蘇秦列傳 第九",
+      "locator": "本機固定修訂 oldid=2621145 全文比對（textSha256 已驗）：內與羣臣謀，不足恃也、地方五千餘里，帶甲百萬，車千乘，騎萬匹，粟支十年、秦之所害莫如楚，楚彊則秦弱、寡人自料以楚當秦，不見勝也；內與羣臣謀，不足恃也。寡人臥不安席，食不甘味，心搖搖然如縣旌而無所終薄、謹奉社稷以從、臥不安席，食不甘味…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116",
+      "title": "史記·卷一百一十六 西南夷列傳 第五十六",
+      "locator": "本機固定修訂 oldid=7903636 全文比對（textSha256 已驗）：始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西、以兵威定屬楚、以其眾王滇",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063",
+      "title": "史記·卷六十三 老子韓非列傳 第三",
+      "locator": "本機固定修訂 oldid=7903601 全文比對（textSha256 已驗）：聞莊周賢，使使厚幣迎之，許以為相、子亟去，無污我",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：善讀對手人事、不檢討自身用人；場景為張丑說弗逐、莫敖子華對、莊周辭聘、臥不安席。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "今之人焉能有之為最脆弱時刻、讀分心框架對制度化秦國失效，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以莫敖子華問答、越來攻與怒田嬰、三面擴張、君好臣抉拾、莊周辭聘、莊蹻後路被斷、弗逐田嬰為事件。"
+    }
+  ],
+  "materialIssues": []
+}
