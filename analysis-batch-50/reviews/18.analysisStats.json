@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_曹操_306294699",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:55:12.398Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "90be9abf88f0698d3799eb7c9dee5bd0ebf29d81025e029233c176afd425911e",
+  "rawResponseSha256": "90be9abf88f0698d3799eb7c9dee5bd0ebf29d81025e029233c176afd425911e",
+  "sourcePackageSha256": "e5b61157c431adee48685aaf402cbe566f767f39936b6817692a6a16431da479",
+  "searchLogSha256": "84d7ab51d8a0a36f1ef7aad1b0c02f4911495e662ac29b02b808e3821cd2d677",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B701",
+      "title": "三國志·魏書•武帝紀",
+      "locator": "本機固定修訂 oldid=2585429 全文比對（textSha256 已驗）：沛國譙人也，姓曹，諱操，字孟德，漢相國參之後、太祖乃變易姓名，間行東歸、漢末，天下大亂，雄豪並起，而袁紹虎眎四州，彊盛莫敵、與戰不利，士卒死傷甚多。太祖爲流矢所中，所乘馬被創，從弟洪以馬與太祖，得夜遁去、馳突火出，墜馬，燒左手掌、太祖乃自力勞軍，令軍中促爲攻具，進復攻之，與布相守百餘日…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.kodansha.co.jp/titles/1000045329",
+      "title": "渡邉義浩譯注《魏武注孫子》（講談社學術文庫，2023）",
+      "locator": "WebSearch 結果摘要（出版社解題）：曹操為已知最早注《孫子》者之一，今本《孫子》以其校定本文為基礎；正文只引此兩點",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "曹操，以將領角色評；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "defeats",
+      "passed": true,
+      "detail": "汴水（初平元年）、濮陽（興平元年）、宛城（建安二年）三敗原文與「吾知所以敗」。"
+    },
+    {
+      "id": "guandu",
+      "passed": true,
+      "detail": "許攸來奔、荀攸賈詡勸、自將五千夜往，功勞分配依原文。"
+    },
+    {
+      "id": "xuzhou",
+      "passed": true,
+      "detail": "「所過多所殘戮」為陳壽正文，文中明示非敵方指控。"
+    },
+    {
+      "id": "lu-boshe-layers",
+      "passed": true,
+      "detail": "魏書／世語／孫盛雜記三版本皆為裴注引文，逐字核對，並說明「寧我負人」出自最不友善一層。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[97,72,97,96,90] 對照司馬懿[98,60,97,99,75]、諸葛亮[92,25,99,100,96]、宇文泰[97,72,95,96,92]、高歡[95,78,90,92,96]、朱棣[96,88,92,85,89]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    97,
+    72,
+    97,
+    96,
+    90
+  ]
+}

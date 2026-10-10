@@ -36,7 +36,14 @@ export function locate(text, quote) {
   const needle = quote.replace(/\s/g, '');
   const flat = keep.join(''), hits = [];
   for (let at = flat.indexOf(needle); at >= 0; at = flat.indexOf(needle, at + 1)) hits.push(at);
-  return hits.map(at => ({ charStart: map[at], charEnd: map[at + needle.length - 1] + 1 }));
+  if (hits.length) return hits.map(at => ({ charStart: map[at], charEnd: map[at + needle.length - 1] + 1 }));
+  // Fallback for quotations from the commentary itself (e.g. Pei Songzhi's
+  // notes kept inside 〔…〕): match on the full text with only whitespace removed.
+  const all = [], allMap = [];
+  for (let at = 0; at < text.length; at++) if (!/\s/.test(text[at])) { all.push(text[at]); allMap.push(at); }
+  const whole = all.join(''), noteHits = [];
+  for (let at = whole.indexOf(needle); at >= 0; at = whole.indexOf(needle, at + 1)) noteHits.push(at);
+  return noteHits.map(at => ({ charStart: allMap[at], charEnd: allMap[at + needle.length - 1] + 1, inCommentary: true }));
 }
 
 export async function quote(book, title, needle) {

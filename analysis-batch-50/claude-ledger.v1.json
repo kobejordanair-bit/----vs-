@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 17,
-    "reviewed": 16,
-    "assembled": 16,
+    "generated": 18,
+    "reviewed": 17,
+    "assembled": 17,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 10,
+    "claudeAssembledAwaitingImport": 11,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -312,14 +312,17 @@
       "slug": "18",
       "id": "general_曹操_306294699",
       "name": "曹操",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.18-18.v1.json",
+      "resultsSha256": "bbf56e89dd661be91fbf38c5368560882a53ab394ceaeeb0a2d17e205f9ee93e"
     },
     {
       "slug": "19",
