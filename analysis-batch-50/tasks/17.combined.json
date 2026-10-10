@@ -1,0 +1,29 @@
+{
+  "format": "dynasty-combined-person-prompt",
+  "schemaVersion": 1,
+  "slug": "17",
+  "recordId": "general_拓跋燾_904534991",
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "requestSha256": "b7250b2ad332a7ff48773f6185dc2ab3deb058abd44964b1e21a101c3cb27374",
+  "originalPromptHashes": {
+    "analysisStats": "3dc3ce62905aff21af48bc1f96d9830a1cbff16f63c639b8a095ad1f5feba622",
+    "soulEssence": "4fcb592ec49f355978bb2261bc880b4d6b2b71ccecbe78928348ce80d920a31f"
+  },
+  "sharedSourcesSha256": "dd9ee36c632a46c3532061a8a696a8b0de0f6ee11f8ce6e1e040d1a6d0f9565b",
+  "sharedDeepSha256": "db04db8155f7f6fd1bc57cdee5a945a5a406a47141d8f822eb6f70435b4d0baa",
+  "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+  "originalPromptBodiesUnchangedOnDisk": true,
+  "transportAdjustments": [
+    "shared source packet once",
+    "full preserved deep context once instead of duplicated excerpt",
+    "same-response appraisal context",
+    "embedded shared benchmark once"
+  ],
+  "previousTwoPromptCharacters": 41112,
+  "previousBenchmarkReadCharacters": 13392,
+  "comparisonScope": "Two original task prompts plus one benchmark read; excludes the old additional deep/source/appraisal rereads and task metadata.",
+  "compiledPacketCharacters": 39392,
+  "packetSha256": "465679e72bf1834f163a182020ccdb6253619a46bf4a1facdc1b9fa7ffb81bb4",
+  "packetFile": "analysis-batch-50/prompts/17.combined.prompt.md",
+  "compiledAt": "2026-10-10T05:49:44.659Z"
+}

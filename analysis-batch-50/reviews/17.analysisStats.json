@@ -1,0 +1,94 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_拓跋燾_904534991",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:52:09.740Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "6ac5eebcc2ee385cf0b6ac4529e79dc16b0d4778deaa6a03c6ebc9309030d7d0",
+  "rawResponseSha256": "6ac5eebcc2ee385cf0b6ac4529e79dc16b0d4778deaa6a03c6ebc9309030d7d0",
+  "sourcePackageSha256": "dd9ee36c632a46c3532061a8a696a8b0de0f6ee11f8ce6e1e040d1a6d0f9565b",
+  "searchLogSha256": "0a0ffc5f2670cb269d623d26c2a64ceacedaee43a044c9d8f985628741c4ec9b",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B74%E4%B8%8B",
+      "title": "魏書·世祖紀第四下",
+      "locator": "本機固定修訂 oldid=2322627 全文比對（textSha256 已驗）：生不逮密太后，及有所識，言則悲慟，哀感傍人、太宗聞而嘉歎、臨敵常與士卒同在矢石之間，左右死傷者相繼，而帝神色自若，是以人思効命，所向無前、命將出師，指授節度，從命者無不制勝，違爽者率多敗失、性又知人，拔士於卒伍之中，惟其才效所長，不論本末、皆是死事勳績之家，親戚愛寵未曾橫有所及…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B713",
+      "title": "魏書·皇后列傳第一",
+      "locator": "本機固定修訂 oldid=2100436 全文比對（textSha256 已驗）：泰常五年薨、追尊號諡，配饗太廟、立后廟于鄴",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B74%E4%B8%8A",
+      "title": "魏書·世祖紀第四上",
+      "locator": "本機固定修訂 oldid=2318474 全文比對（textSha256 已驗）：天賜五年生於東宮、蠕蠕率六萬騎入雲中，殺掠吏民，攻陷盛樂宮、大簡輿徒，治兵於東郊，部分諸軍五萬騎，將北討、輕騎兼馬，至栗水，蠕蠕震怖，焚燒廬舍，絕跡西走、車駕西討沮渠牧犍",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.ihp.sinica.edu.tw/~bihp/72/72.1/liu.htm",
+      "title": "劉淑芬〈從民族史的角度看太武滅佛〉，《中央研究院歷史語言研究所集刊》72:1",
+      "locator": "WebSearch 結果摘要：自盧水胡與蓋吳叛變角度解釋滅佛，滅佛後誅沮渠王族為後續行動；正文只引此論點",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B735",
+      "title": "魏書·列傳第二十三",
+      "locator": "本機固定修訂 oldid=1530931 全文比對（textSha256 已驗）：浩盡述國事，備而不典、石銘顯在衢路，往來行者咸以為言、清河崔氏無遠近，范陽盧氏、太原郭氏、河東柳氏，皆浩之姻親，盡夷其族",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "拓跋燾，北魏太武帝，本條以將領角色評；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "chronology",
+      "passed": true,
+      "detail": "天賜五年生、始光元年柔然入雲中、始光四年破統萬、太延二年滅北燕、太延五年西討北涼、真君七年坑沙門、十一年六月誅崔浩、十二月瓜步、正平元年太子薨、二年三月崩年四十五；年份經本機定位。"
+    },
+    {
+      "id": "destruction-of-buddhism",
+      "passed": true,
+      "detail": "詔書原文與劉淑芬論點（摘要）分層陳述。"
+    },
+    {
+      "id": "cui-hao",
+      "passed": true,
+      "detail": "崔浩傳「備而不典」與夷族範圍原文。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[98,90,92,75,85] 對照爾朱榮[98,95,88,42,80]、宇文泰[97,72,95,96,92]、石勒[96,88,94,85,95]、項羽[98,100,85,45,95]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    98,
+    90,
+    92,
+    75,
+    85
+  ]
+}
