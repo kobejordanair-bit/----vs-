@@ -1,0 +1,428 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_狄青_306401221",
+  "packetSha256": "ca31a90bd28652e7f0f826f3ded440a42b6740b1badbc8fce5617ac07ac7f39a",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "狄青 崑崙關 儂智高 1053 樞密使 北宋 重文輕武 猜忌 研究 論文",
+      "returnedUrls": [
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0008127",
+        "https://www.thenewslens.com/article/151629",
+        "https://www.cuhk.edu.hk/ics/journal/articles/v56p101.pdf",
+        "https://hub.hku.hk/handle/10722/350332",
+        "https://www.rujiazg.com/article/17383",
+        "https://www.goodreads.com/book/show/36055714",
+        "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%90%8D%E8%87%A3%E8%A8%80%E8%A1%8C%E9%8C%84/%E5%89%8D%E9%9B%86%E5%8D%B708"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "歐陽修 論狄青劄子 狄青 罷樞密使 出判陳州 嘉祐 猜忌",
+      "returnedUrls": [
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0008127",
+        "https://input.cbdb.fas.harvard.edu/basicinformation/8127/assoc",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0007104",
+        "https://zh.wikisource.org/zh/%E4%B8%8A%E6%9D%9C%E4%B8%AD%E4%B8%9E%E6%9B%B8",
+        "https://data.ctext.org/entity/397090",
+        "https://zh.wikisource.org/zh-hant/%E6%AD%90%E9%99%BD%E4%BF%AE%E9%9B%86/%E5%8D%B7105",
+        "https://zh.wikisource.org/wiki/%E7%BA%8C%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7046"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "陛下以功擢臣，不問門地，臣所以有今日，由此涅爾，臣願留以勸軍中，不敢奉詔",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "偏將屢為賊敗，士卒多畏怯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "行常為先鋒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "廣源州蠻儂智高反，陷邕州，又破沿江九州，圍廣州，嶺外騷動",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "仁宗猶以為憂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "起健卒至政府，隱然為時名將，惟青與逵兩人爾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "前後大小二十五戰，中流矢者八",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "燔積聚數萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "被創甚，聞寇至，即挺起馳赴，眾爭前為用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "被發、帶銅面具，出入賊中，皆披靡莫敢當",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "此良將材也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "將不知古今，匹夫勇爾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "折節讀書，悉通秦、漢以來將帥兵法",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "皆扼賊要害",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "皆輕敵敗死，軍聲大沮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "毋妄與賊鬥，聽吾所為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "潰於崑崙關",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "令之不齊，兵所以敗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "驅出軍門斬之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "沔、靖相顧愕眙，諸將股慄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "令軍中休十日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "整軍騎，一晝夜絕昆侖關，出歸仁鋪為陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "賊氣銳甚，沔等懼失色",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "執白旗麾騎兵，縱左右翼，出賊不意，大敗之，追奔五十里，斬首數千級",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "安知非詐邪？寧失智高，不敢誣朝廷以貪功也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "假兵於外以除內寇，非我利也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "人服其有遠略",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "在邊境凡二十五戰，無大勝，亦無大敗，最後崑崙一舉，頗著奇雋",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "每出，士卒輒指目以相矜誇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "青家狗生角，且數有光怪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "避水徙家相國寺，行止殿上，人情頗疑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "疽發髭，卒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "為人慎密寡言，其計事必審中機會而後發",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "先正部伍，明賞罰，與士同饑寒勞苦，雖敵猝犯之，無一士敢後先者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "尤喜推功與將佐",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "悉以諉沔，退若不用意者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "始歎其勇，既而服其為人，自以為不如也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "悉力賙其家事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "起行伍而名動夷夏，深沈有智略，能以畏慎保全終始",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "士卒輒指目以相矜誇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "一晝夜絕昆侖關",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "先正部伍，明賞罰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "無大勝，亦無大敗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "覘者還，以為軍未即進",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "安知非詐邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "指目以相矜誇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "無一士敢後先者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "服其為人，自以為不如也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "臣起行伍，非戰伐無以報國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "願得蕃落騎數百，益以禁兵，羈賊首致闕下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "陛下以功擢臣，不問門地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "蠻夷貪得忘義",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "蔣偕、張忠皆輕敵敗死，軍聲大沮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "沔等懼失色",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "執白旗麾騎兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "士飲者多死，青殊憂之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "有泉湧砦下，汲之甘，眾遂以濟",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "寧失智高，不敢誣朝廷以貪功也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "審中機會而後發",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "退若不用意者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "同饑寒勞苦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "家狗生角，且數有光怪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "臣所以有今日，由此涅爾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    },
+    {
+      "book": "songshi",
+      "title": "宋史/卷290",
+      "quote": "能以畏慎保全終始",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《宋史》卷290 全文比對。",
+    "歐陽修〈論狄青劄子〉僅自 CBDB 搜尋摘要得知篇名，奏文內容未讀，正文僅據以說明朝中有論奏；《續資治通鑑長編》嘉祐年間相關記載未比對。"
+  ]
+}

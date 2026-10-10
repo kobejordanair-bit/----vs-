@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_狄青_306401221",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:49:20.291Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b71825448e9d98cd1ef527115c5a0c1db7998e5fc7ea8e92aa1665ccaba7399d",
+  "rawResponseSha256": "b71825448e9d98cd1ef527115c5a0c1db7998e5fc7ea8e92aa1665ccaba7399d",
+  "sourcePackageSha256": "aeed70fd17b7d019883afaead37a25e19a54bc8494597898dc161ca135dd9a4e",
+  "searchLogSha256": "95fb684a6c0d3f3d1ed336fad6f6bba27f27761c255c1886e90ce6b3d94c15d6",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290",
+      "title": "宋史·卷二百九十 列傳第四十八",
+      "locator": "本機固定修訂 oldid=1418408 全文比對（textSha256 已驗）：陛下以功擢臣，不問門地，臣所以有今日，由此涅爾，臣願留以勸軍中，不敢奉詔、偏將屢為賊敗，士卒多畏怯、行常為先鋒、廣源州蠻儂智高反，陷邕州，又破沿江九州，圍廣州，嶺外騷動、仁宗猶以為憂、起健卒至政府，隱然為時名將，惟青與逵兩人爾…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：刺字既是號召力也是被猜疑的身分標記；場景為不敢奉詔除字、起行伍請纓、相國寺人情頗疑。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以戰功證明出身、謹慎無法消解身分威脅等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以請纓之語與令之不齊、休兵與白旗與毒水、折節讀書與金龍衣、相國寺、賙尹洙家與推功孫沔、家狗生角、刺字與畏慎為事件。"
+    }
+  ],
+  "materialIssues": []
+}

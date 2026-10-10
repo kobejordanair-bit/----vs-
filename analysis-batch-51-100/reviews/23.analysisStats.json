@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_狄青_306401221",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:49:20.290Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "ff97ebded667395074b4a40c6261265d617f2644806daae0bb5d1ad546b18927",
+  "rawResponseSha256": "ff97ebded667395074b4a40c6261265d617f2644806daae0bb5d1ad546b18927",
+  "sourcePackageSha256": "aeed70fd17b7d019883afaead37a25e19a54bc8494597898dc161ca135dd9a4e",
+  "searchLogSha256": "95fb684a6c0d3f3d1ed336fad6f6bba27f27761c255c1886e90ce6b3d94c15d6",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290",
+      "title": "宋史·卷二百九十 列傳第四十八",
+      "locator": "本機固定修訂 oldid=1418408 全文比對（textSha256 已驗）：陛下以功擢臣，不問門地，臣所以有今日，由此涅爾，臣願留以勸軍中，不敢奉詔、偏將屢為賊敗，士卒多畏怯、行常為先鋒、廣源州蠻儂智高反，陷邕州，又破沿江九州，圍廣州，嶺外騷動、仁宗猶以為憂、起健卒至政府，隱然為時名將，惟青與逵兩人爾…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "汾州西河人、散直出身、寶元初元昊反、延州四年二十五戰、尹洙薦於韓范、皇祐儂智高、崑崙關歸仁鋪、樞密四年、相國寺、出判陳州、次年卒、熙寧神宗取畫像，皆依宋史卷290 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：斬陳曙休十日奔襲；武力：中流矢八、銅面具；智謀：示弱欺敵、金龍衣、拒交阯兵；政治：推功與被猜疑外放；魅力：士卒指目矜誇與孫沔歎服。對照岳飛、戚繼光、關羽、李光弼、陳慶之、霍去病。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "陳曙違令潰→斬三十人立令→休十日麻痺覘者→一晝夜絕崑崙關→歸仁鋪縱兩翼大破；士卒崇拜與流言→人情頗疑→出判陳州→疽發卒。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    90,
+    90,
+    86,
+    55,
+    88
+  ]
+}
