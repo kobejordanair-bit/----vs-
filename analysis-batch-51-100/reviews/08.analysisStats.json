@@ -1,0 +1,188 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_洪憲帝_280041298",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:04:20.636Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
+  "rawResponseSha256": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
+  "sourcePackageSha256": "9251efd9d3f88221f806ed7d12a8d5508b5f504d221e1c177ba5837ebe760458",
+  "searchLogSha256": "d35e708c4b75b03ced06c45aa7717429fbddba56f21b78288cddc0790d606043",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7472",
+      "title": "清史稿·卷四百七十二 列傳二百五十九",
+      "locator": "本機固定修訂 oldid=2433579 全文比對（textSha256 已驗）：武昌旦夕下、議修和息戰禍、於是遜位詔下矣、克漢陽，武昌旦夕下",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B725",
+      "title": "清史稿·宣統皇帝本紀",
+      "locator": "本機固定修訂 oldid=2692357 全文比對（textSha256 已驗）：命前敵諸軍停進兵、由袁世凱以全權組織臨時共和政府、陸海各軍及長江水師仍聽袁世凱節制調遣、辭內閣總理大臣，溫詔勉之、俱聽袁世凱節制、即由袁世凱以全權組織臨時共和政府，與民軍協商統一辦法…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7132",
+      "title": "清史稿·卷一百三十二",
+      "locator": "本機固定修訂 oldid=1326364 全文比對（textSha256 已驗）：步軍統領榮祿疏保溫處道袁世凱練新軍，是曰新建陸軍",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B724",
+      "title": "清史稿·本纪二十四　德宗本纪二",
+      "locator": "本機固定修訂 oldid=2170948 全文比對（textSha256 已驗）：初設新建陸軍，命溫處道袁世凱督練、集新兵二十營，增立一軍，名為武衛右軍先鋒隊",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7465",
+      "title": "清史稿·卷四百六十五",
+      "locator": "本機固定修訂 oldid=1324569 全文比對（textSha256 已驗）：自興兵疾擊，以故匪不敢近山東、自興兵疾擊",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7449",
+      "title": "清史稿·卷四百四十九",
+      "locator": "本機固定修訂 oldid=2005162 全文比對（textSha256 已驗）：首練軍籌款，尤多興革，務樹威信，北洋大臣遂為中外所屬目、首練軍籌款，尤多興革，務樹威信、首練軍籌款，尤多興革",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.ey.gov.tw/state/62879155A536D543/bf75db05-30af-4c3a-bdda-3fe32e3f8e5a",
+      "title": "行政院國情簡介（國史館供稿）",
+      "locator": "來源包已記錄先前核讀：記袁世凱籌備洪憲帝制，支持「洪憲帝」即袁世凱；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7467",
+      "title": "清史稿·卷四百六十七",
+      "locator": "本機固定修訂 oldid=2611503 全文比對（textSha256 已驗）：世凱軍仿日式",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7473",
+      "title": "清史稿·卷四百七十三 列傳二百六十",
+      "locator": "本機固定修訂 oldid=5977208 全文比對（textSha256 已驗）：袁世凱練兵小站，充管帶",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7107",
+      "title": "清史稿·卷一百七 志八十二 選舉二、學校二",
+      "locator": "本機固定修訂 oldid=7909179 全文比對（textSha256 已驗）：其首倡者，則山東巡撫袁世凱也",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7445",
+      "title": "清史稿·卷四百四十五",
+      "locator": "本機固定修訂 oldid=2433533 全文比對（textSha256 已驗）：出督畿輔，入贊樞廷，權勢傾一時、權勢傾一時",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://journal.ipm.edu.mo/images/journal_c/2023_1//56ed9-202301170-.pdf",
+      "title": "《澳門理工學報》2023年第1期二次革命專題論文",
+      "locator": "WebSearch 結果摘要：二次革命起因較傳統理解複雜，如李烈鈞對軍民分治態度之變化",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ah.lib.nccu.edu.tw/bitstream/140.119/51816/1/%e5%8c%97%e6%b4%8b%e3%80%8c%e4%bf%ae%e7%b4%84%e5%a4%96%e4%ba%a4%e3%80%8d%e7%a0%94%e7%a9%b62006.pdf",
+      "title": "國立政治大學〈北洋「修約外交」研究〉研究計畫報告（2006）",
+      "locator": "WebSearch 結果摘要：研究含中日廢止民四條約（二十一條）交涉；過去研究多受民族主義史觀限制",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ias.um.edu.mo/wp-content/South%20China%20Quarterly/PDF/2024%E5%B9%B4%E7%AC%AC1%E6%9C%9F/10.%E5%B0%89%E5%BD%A5%E8%B6%85.pdf",
+      "title": "尉彥超論文，澳門大學《南國學術》2024年第1期",
+      "locator": "WebSearch 結果摘要：梁啟超等公布並解析政府密電，揭露偽造民意，與護國軍事抗爭相配合",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c212-202502037.pdf",
+      "title": "《二十一世紀》第212期（2025）論文，香港中文大學",
+      "locator": "WebSearch 結果摘要：聚焦日本參謀本部在護國戰爭中的介入",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7462",
+      "title": "清史稿·卷四百六十二",
+      "locator": "本機固定修訂 oldid=2360074 全文比對（textSha256 已驗）：數約志超電請北洋發戰艦赴仁川",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7471",
+      "title": "清史稿·卷四百七十一 列傳二百五十八",
+      "locator": "本機固定修訂 oldid=2386761 全文比對（textSha256 已驗）：俱受世凱節制",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7446",
+      "title": "清史稿·卷四百四十六",
+      "locator": "本機固定修訂 oldid=2640966 全文比對（textSha256 已驗）：其隨員袁世凱始來佐營務",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "新建陸軍、直隸總督、軍機外務、宣統元年罷、辛亥起用與總理、遜位詔授全權，皆依清史稿卷24、25 等 archive 引句；洪憲帝即袁世凱依行政院國情簡介來源包核讀。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：新軍與節制各軍；武力：朝鮮與山東帶兵經驗；智謀：辛亥停進兵議和；政治：新政與帝制；魅力：北洋部屬與權勢傾一時。對照蔣中正、漢明帝、唐高宗、唐玄宗、孫文、王莽、崇禎帝。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "練新軍→北洋核心；停進兵→遜位詔授全權；帝制→密電公開與各省獨立→取消；身後軍閥割據（[推斷]）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    84,
+    40,
+    86,
+    72,
+    58
+  ]
+}

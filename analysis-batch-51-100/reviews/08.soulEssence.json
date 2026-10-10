@@ -1,0 +1,101 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_洪憲帝_280041298",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:04:20.637Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "58e55166577decbb20768620505506e27e7e99b2eadd49b5cfe023de34c72126",
+  "rawResponseSha256": "58e55166577decbb20768620505506e27e7e99b2eadd49b5cfe023de34c72126",
+  "sourcePackageSha256": "9251efd9d3f88221f806ed7d12a8d5508b5f504d221e1c177ba5837ebe760458",
+  "searchLogSha256": "d35e708c4b75b03ced06c45aa7717429fbddba56f21b78288cddc0790d606043",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B725",
+      "title": "清史稿·宣統皇帝本紀",
+      "locator": "本機固定修訂 oldid=2692357 全文比對（textSha256 已驗）：命前敵諸軍停進兵、由袁世凱以全權組織臨時共和政府、陸海各軍及長江水師仍聽袁世凱節制調遣、辭內閣總理大臣，溫詔勉之、俱聽袁世凱節制、即由袁世凱以全權組織臨時共和政府，與民軍協商統一辦法…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ias.um.edu.mo/wp-content/South%20China%20Quarterly/PDF/2024%E5%B9%B4%E7%AC%AC1%E6%9C%9F/10.%E5%B0%89%E5%BD%A5%E8%B6%85.pdf",
+      "title": "尉彥超論文，澳門大學《南國學術》2024年第1期",
+      "locator": "WebSearch 結果摘要：梁啟超等公布並解析政府密電，揭露偽造民意，與護國軍事抗爭相配合",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B724",
+      "title": "清史稿·本纪二十四　德宗本纪二",
+      "locator": "本機固定修訂 oldid=2170948 全文比對（textSha256 已驗）：初設新建陸軍，命溫處道袁世凱督練、集新兵二十營，增立一軍，名為武衛右軍先鋒隊",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c212-202502037.pdf",
+      "title": "《二十一世紀》第212期（2025）論文，香港中文大學",
+      "locator": "WebSearch 結果摘要：聚焦日本參謀本部在護國戰爭中的介入",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7473",
+      "title": "清史稿·卷四百七十三 列傳二百六十",
+      "locator": "本機固定修訂 oldid=5977208 全文比對（textSha256 已驗）：袁世凱練兵小站，充管帶",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7471",
+      "title": "清史稿·卷四百七十一 列傳二百五十八",
+      "locator": "本機固定修訂 oldid=2386761 全文比對（textSha256 已驗）：俱受世凱節制",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437",
+      "title": "清史稿·卷四百三十七 列傳二百二十四",
+      "locator": "本機固定修訂 oldid=2592002 全文比對（textSha256 已驗）：疏薦溫處道袁世凱練新軍",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.ey.gov.tw/state/62879155A536D543/bf75db05-30af-4c3a-bdda-3fe32e3f8e5a",
+      "title": "行政院國情簡介（國史館供稿）",
+      "locator": "來源包已記錄先前核讀：記袁世凱籌備洪憲帝制，支持「洪憲帝」即袁世凱；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以按住不動累積籌碼、終被部屬反用；場景為辭總理、停進兵、遜位詔、勸進與密電。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "名分為位置之結果、學生還給老師、人際經營破產，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以辭與停、宣統元年罷與1916退讓、全權組織、部屬按兵、榮祿張勛段馮、實力名分框架、共和與帝制為事件。"
+    }
+  ],
+  "materialIssues": []
+}

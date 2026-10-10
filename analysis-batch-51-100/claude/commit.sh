@@ -2,6 +2,7 @@
 # Commit one finished person and push the working branch.
 set -e
 cd "$(dirname "$0")/../.."
+N=${1%% *}; [ -f analysis-batch-51-100/results.$N-$N.v1.json ] || { echo "no results.$N-$N"; exit 1; }
 git add -A analysis-batch-51-100
 git commit -qm "Batch 51-100: add $1 record
 

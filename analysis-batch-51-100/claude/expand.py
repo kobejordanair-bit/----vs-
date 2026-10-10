@@ -9,7 +9,7 @@ def url(m):
   book,title=m.group(1),m.group(2).replace('_',' ')
   d=cache.setdefault(book,json.load(open(f'backend/static/data/history/archive-books/{book}.json')))
   return '('+[x for x in d['documents'] if x['title']==title][0]['sourceUrl']+')'
-out=re.sub(r'\(@([a-z]+):(\S+?)\)(?=）|\s|$)',url,t)
+out=re.sub(r'\(@([a-z]+):([^\s()]+(?:\([^\s()]*\)[^\s()]*)*)\)',url,t)
 open(dst,'x',encoding='utf-8').write(out); left=re.findall(r'\(@',out)
 if left: sys.exit('unexpanded links remain')
 print('expanded',len(re.findall(r'\(@',t)),'links')
