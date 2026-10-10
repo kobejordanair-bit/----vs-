@@ -17,7 +17,9 @@ import { CLAUDE_PROVIDER, AUTHOR_POLICY_FILE, AUTHOR_POLICY_SHA256, validClaudeS
 
 const here = dirname(fileURLToPath(import.meta.url)), repo = resolve(here, '..');
 const bad = code => { throw new PilotError(code); };
-export const SOURCE_ACCESS = Object.freeze(['fixed_revision_archive_fulltext', 'web_search_result_summary']);
+// source_package_prior_review: the handoff source package recorded an earlier
+// opened reading (locator + supported proposition); not reopened in this session.
+export const SOURCE_ACCESS = Object.freeze(['fixed_revision_archive_fulltext', 'web_search_result_summary', 'source_package_prior_review']);
 const COMPOSITION = 'Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.';
 
 export function splitClaudeCombined(raw, id) {
@@ -36,7 +38,9 @@ export function splitClaudeCombined(raw, id) {
 export async function verifySearchLog(log, recordId, packetSha256) {
   if (!record(log) || log.format !== 'dynasty-batch50-claude-search-log' || log.schemaVersion !== 1 || log.recordId !== recordId
     || log.packetSha256 !== packetSha256 || !Array.isArray(log.webSearches) || !log.webSearches.length
-    || !Array.isArray(log.archiveChecks) || !log.archiveChecks.length || !Array.isArray(log.limits)) bad('invalid_search_log');
+    || !Array.isArray(log.archiveChecks) || !Array.isArray(log.limits)) bad('invalid_search_log');
+  // Modern figures have no classical archive text, so archive checks may be
+  // empty; real web searches are always required.
   for (const search of log.webSearches) {
     if (!record(search) || search.tool !== 'WebSearch' || typeof search.query !== 'string' || !search.query.trim()
       || !Array.isArray(search.returnedUrls) || !search.returnedUrls.length

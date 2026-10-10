@@ -1,0 +1,56 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_林彪_306298218",
+  "packetSha256": "d46cc4c0ecc6bf5f49718c1812e5934274e80ca3e4deda4fcce33905a4800cd3",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "林彪 遼沈戰役 攻錦州 1948年10月 電報 猶豫 回師 毛澤東 批評 黨史",
+      "returnedUrls": [
+        "https://cpc.people.com.cn/BIG5/33837/2534606.html",
+        "https://www.zdic.net/hant/辽沈战役",
+        "https://m.thepaper.cn/newsDetail_forward_11636279",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200805076.pdf",
+        "https://www.chinanews.com.cn/cul/news/2009/06-18/1738935.shtml"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "林彪 平型關戰役 1937 一一五師 四平保衛戰 1946 撤退 三三制 一點兩面 戰術",
+      "returnedUrls": [
+        "https://ir.lib.ncu.edu.tw/handle/987654321/72352",
+        "https://www.marxists.org/chinese/linbiao/mia-chinese-linbiao-193711.htm",
+        "https://www.marxists.org/chinese/linbiao/index.htm",
+        "https://news.sina.com.cn/c/2002-07-26/0058649473.html"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "林彪 1950 抗美援朝 稱病 不願掛帥 彭德懷 九一三事件 溫都爾汗 官方 定性",
+      "returnedUrls": [
+        "https://www.aisixiang.com/data/65645.html",
+        "https://chinadigitaltimes.net/chinese/303522.html",
+        "https://www.chinatimes.com/newspapers/20180215000214-263301"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "林彪 東北野戰軍 \"三三制\" \"一點兩面\" \"四快一慢\" 戰術原則 來源",
+      "returnedUrls": [
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200805076.pdf",
+        "https://smallwarsjournal.com/2026/08/19/technology-vs-mission-command-an-evaluation-of-pla-infantry-tactics/",
+        "https://newworldencyclopedia.org/entry/Lin_Biao"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Three official/scholarly pages are relied on only for the propositions the handoff source package recorded from an earlier opened reading (source_package_prior_review). Other sources were seen only as WebSearch summaries.",
+    "1955年授元帥、1971年9月出逃墜機屬通行史實，正文未附連結；來源包所列湖南省頁為 http 網址，不符 https 引用規則，故未引用。",
+    "未採用家屬回憶等難以核實材料；九一三細節明示未解。"
+  ]
+}

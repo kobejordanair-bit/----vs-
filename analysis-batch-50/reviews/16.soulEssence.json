@@ -1,0 +1,97 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_林彪_306298218",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T05:49:14.771Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b1819cb2c5805e80bd156fa5bd52bffd301535d27988e3e7ccea6271a27e1a7b",
+  "rawResponseSha256": "b1819cb2c5805e80bd156fa5bd52bffd301535d27988e3e7ccea6271a27e1a7b",
+  "sourcePackageSha256": "3c4c589ce15ce81eeddb297dceb19243c491bf7b5a674a5a0e7d5eb1196a39d4",
+  "searchLogSha256": "1e123a5d824a0da0e6f8ce2c3457f0bd2e1fa59ad71606d37659efbfd48d1f0e",
+  "checkedSources": [
+    {
+      "url": "https://www.dswxyjy.org.cn/BIG5/n/2015/0415/c244520-26848188.html",
+      "title": "中共中央黨史和文獻研究院〈遼沈戰役〉",
+      "locator": "來源包已記錄先前核讀：正文第3–7段，1948年攻錦州決策、10月3–4日往來電報與戰役部署（所引《中共中央文件選集》第17冊頁373–374）；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.marxists.org/chinese/linbiao/mia-chinese-linbiao-193711.htm",
+      "title": "林彪〈平型關戰鬥的經驗〉（1937），中文馬克思主義文庫",
+      "locator": "WebSearch 結果摘要：只能選有利地形打伏擊、不打陣地戰，利用日軍輕敵，攻擊敵側後；為林彪本人事後經驗總結",
+      "type": "primary_text",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n/2015/0902/c219021-27542253.html",
+      "title": "〈也論一九四八年衛立煌與中共的關係〉（原刊《中共黨史研究》）",
+      "locator": "來源包已記錄先前核讀：摘要及第一節，林彪圍城打援、長春作戰顧慮、衛立煌應對；本 session 未重新開啟",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://ir.lib.ncu.edu.tw/handle/987654321/72352",
+      "title": "國立中央大學學位論文（四平之戰）摘要",
+      "locator": "WebSearch 結果摘要：林彪部溃敗後杜聿明追至松花江南岸止；毛澤東堅持守四平",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ebook.dswxyjy.org.cn/storage/files/20220804/2c4c659ad7ba96af1727150ee496e02772340/files/basic-html/page18.html",
+      "title": "《關於建國以來黨的若干歷史問題的決議》（中共中央黨史和文獻研究院電子書第18頁）",
+      "locator": "來源包已記錄先前核讀：第18頁文革十年標題前一段，1981年官方決議明列林彪角色；僅作官方評價證據；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "電報與經驗總結的論證方式；沉默標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "平型關與遼沈，相隔十一年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "可控性；政治時期動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "攻長傾向與四平。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "缺乏可靠情感紀錄，明示不採家屬回憶；全欄以[詮釋]標示不確定處。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "衛立煌評估與決議；政治失敗原因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "四平與1971；出逃細節標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

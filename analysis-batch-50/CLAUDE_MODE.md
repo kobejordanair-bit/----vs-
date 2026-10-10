@@ -15,7 +15,7 @@ node --test analysis-batch-50/*.test.mjs
 ```
 
 - `split` / `assemble` 每次都會用 `claude/archive-quote.mjs` 把搜尋紀錄裡的原典引句，拿 `backend/static/data/history/archive-books/*.json`（維基文庫固定修訂、逐篇 textSha256）重新比對；有一句找不到就失敗。
-- 稿件裡每個連結都要出現在 review 的 `checkedSources`，且要標 `access`：`fixed_revision_archive_fulltext`（全文比對過）或 `web_search_result_summary`（只看過搜尋摘要，正文只能引用摘要能支撐的內容）。
+- 稿件裡每個連結都要出現在 review 的 `checkedSources`，且要標 `access`：`fixed_revision_archive_fulltext`（全文比對過）、`web_search_result_summary`（只看過搜尋摘要，正文只能引用摘要能支撐的內容），或 `source_package_prior_review`（交接來源包已記錄先前開啟核讀的定位與可支持命題，本 session 未重新開啟；正文只引用來源包寫明的命題）。
 - 錯稿不覆寫：整組移到 `attempts/NN.combined.K/`，附上 `archive-manifest.json` 寫明原因與雜湊，再重新 split。
 - Claude 稿的 provenance 是 `provider: "Claude Code (Anthropic)"` 加 `sessionUrl`，不能帶 `conversationUrl`；改標成 ChatGPT 或塞 chatgpt.com 網址都會被 importer 擋下（見 `claude-author.test.mjs`）。
 

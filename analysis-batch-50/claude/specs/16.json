@@ -1,0 +1,157 @@
+{
+ "webSearches": [
+  {
+   "query": "林彪 遼沈戰役 攻錦州 1948年10月 電報 猶豫 回師 毛澤東 批評 黨史",
+   "returnedUrls": [
+    "https://cpc.people.com.cn/BIG5/33837/2534606.html",
+    "https://www.zdic.net/hant/辽沈战役",
+    "https://m.thepaper.cn/newsDetail_forward_11636279",
+    "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200805076.pdf",
+    "https://www.chinanews.com.cn/cul/news/2009/06-18/1738935.shtml"
+   ]
+  },
+  {
+   "query": "林彪 平型關戰役 1937 一一五師 四平保衛戰 1946 撤退 三三制 一點兩面 戰術",
+   "returnedUrls": [
+    "https://ir.lib.ncu.edu.tw/handle/987654321/72352",
+    "https://www.marxists.org/chinese/linbiao/mia-chinese-linbiao-193711.htm",
+    "https://www.marxists.org/chinese/linbiao/index.htm",
+    "https://news.sina.com.cn/c/2002-07-26/0058649473.html"
+   ]
+  },
+  {
+   "query": "林彪 1950 抗美援朝 稱病 不願掛帥 彭德懷 九一三事件 溫都爾汗 官方 定性",
+   "returnedUrls": [
+    "https://www.aisixiang.com/data/65645.html",
+    "https://chinadigitaltimes.net/chinese/303522.html",
+    "https://www.chinatimes.com/newspapers/20180215000214-263301"
+   ]
+  },
+  {
+   "query": "林彪 東北野戰軍 \"三三制\" \"一點兩面\" \"四快一慢\" 戰術原則 來源",
+   "returnedUrls": [
+    "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200805076.pdf",
+    "https://smallwarsjournal.com/2026/08/19/technology-vs-mission-command-an-evaluation-of-pla-infantry-tactics/",
+    "https://newworldencyclopedia.org/entry/Lin_Biao"
+   ]
+  }
+ ],
+ "archiveChecks": [],
+ "extraSources": {
+  "https://www.dswxyjy.org.cn/BIG5/n/2015/0415/c244520-26848188.html": {
+   "title": "中共中央黨史和文獻研究院〈遼沈戰役〉",
+   "locator": "來源包已記錄先前核讀：正文第3–7段，1948年攻錦州決策、10月3–4日往來電報與戰役部署（所引《中共中央文件選集》第17冊頁373–374）；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.dswxyjy.org.cn/n/2015/0902/c219021-27542253.html": {
+   "title": "〈也論一九四八年衛立煌與中共的關係〉（原刊《中共黨史研究》）",
+   "locator": "來源包已記錄先前核讀：摘要及第一節，林彪圍城打援、長春作戰顧慮、衛立煌應對；本 session 未重新開啟",
+   "type": "scholarly_primary",
+   "access": "source_package_prior_review"
+  },
+  "https://ebook.dswxyjy.org.cn/storage/files/20220804/2c4c659ad7ba96af1727150ee496e02772340/files/basic-html/page18.html": {
+   "title": "《關於建國以來黨的若干歷史問題的決議》（中共中央黨史和文獻研究院電子書第18頁）",
+   "locator": "來源包已記錄先前核讀：第18頁文革十年標題前一段，1981年官方決議明列林彪角色；僅作官方評價證據；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://cpc.people.com.cn/BIG5/33837/2534606.html": {
+   "title": "人民網·中國共產黨新聞〈遼沈戰役〉",
+   "locator": "WebSearch 結果摘要：10月14日攻擊錦州、15日攻克、全殲守敵、俘敵10萬餘人",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://www.cuhk.edu.hk/ics/21c/media/articles/c112-200805076.pdf": {
+   "title": "香港中文大學中國文化研究所《二十一世紀》論文（遼瀋戰役長春／錦州之爭）",
+   "locator": "WebSearch 結果摘要：討論林彪與毛澤東在攻打長春或錦州之間的分歧",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://www.marxists.org/chinese/linbiao/mia-chinese-linbiao-193711.htm": {
+   "title": "林彪〈平型關戰鬥的經驗〉（1937），中文馬克思主義文庫",
+   "locator": "WebSearch 結果摘要：只能選有利地形打伏擊、不打陣地戰，利用日軍輕敵，攻擊敵側後；為林彪本人事後經驗總結",
+   "type": "primary_text",
+   "access": "web_search_result_summary"
+  },
+  "https://ir.lib.ncu.edu.tw/handle/987654321/72352": {
+   "title": "國立中央大學學位論文（四平之戰）摘要",
+   "locator": "WebSearch 結果摘要：林彪部溃敗後杜聿明追至松花江南岸止；毛澤東堅持守四平",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://smallwarsjournal.com/2026/08/19/technology-vs-mission-command-an-evaluation-of-pla-infantry-tactics/": {
+   "title": "Small Wars Journal, \"Technology vs. Mission Command: An Evaluation of PLA Infantry Tactics\"",
+   "locator": "WebSearch 結果摘要：將一點兩面、四快一慢、三三制等歸為林彪「六條戰術原則」；該文未引原始文件，正文明言出處待考",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "No classical archive applies; page fetches remain blocked. Three official/scholarly pages are relied on only for the propositions the handoff source package recorded from an earlier opened reading (source_package_prior_review). Other sources were seen only as WebSearch summaries.",
+  "1955年授元帥、1971年9月出逃墜機屬通行史實，正文未附連結；來源包所列湖南省頁為 http 網址，不符 https 引用規則，故未引用。",
+  "未採用家屬回憶等難以核實材料；九一三細節明示未解。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "林彪，中國人民解放軍元帥；保留原 S 評級與 deepAnalysis。"
+   ],
+   [
+    "liaoshen",
+    "攻長／攻錦分歧與10月3–4日電報依來源包記錄；錦州14–15日、俘10萬依搜尋摘要；功勞分配與衛立煌能力依來源包所記論文。"
+   ],
+   [
+    "pingxingguan",
+    "僅引林彪本人經驗總結的摘要內容。"
+   ],
+   [
+    "siping",
+    "依學位論文摘要，未補具體日期與兵力。"
+   ],
+   [
+    "tactics",
+    "戰術口訣標明出處待考。"
+   ],
+   [
+    "political-verdict",
+    "1981決議僅作官方評價證據，與軍事表現分開。"
+   ],
+   [
+    "stats-calibration",
+    "[99,50,97,45,70] 對照李靖[100,75,100,85,92]、徐達[99,85,95,92,90]、韓信[100,70,100,25,60]、白起[100,85,98,15,30]、司馬懿[98,60,97,99,75]、毛澤東將領版[98,40,100,95,99]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "電報與經驗總結的論證方式；沉默標[推斷]。"
+   ],
+   [
+    "pressure",
+    "平型關與遼沈，相隔十一年。"
+   ],
+   [
+    "drive",
+    "可控性；政治時期動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "攻長傾向與四平。"
+   ],
+   [
+    "emotion",
+    "缺乏可靠情感紀錄，明示不採家屬回憶；全欄以[詮釋]標示不確定處。"
+   ],
+   [
+    "frame",
+    "衛立煌評估與決議；政治失敗原因標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "四平與1971；出逃細節標[詮釋]。"
+   ]
+  ]
+ }
+}
