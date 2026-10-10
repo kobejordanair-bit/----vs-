@@ -1,0 +1,400 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_張良_2003953844",
+  "packetSha256": "f18624a980c0a255bd9828a4decac3371f86cd311e43d1f2ea6243747f9ee154",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "張良 商山四皓 司馬光 通鑑考異 不取 史源 研究 留侯世家 辟穀 功成身退",
+      "returnedUrls": [
+        "https://genedu.stust.edu.tw/Sysid/genedu/621GEP/GEP11/gep1109_01.pdf",
+        "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%E8%80%83%E7%95%B0_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%85%A8%E8%A6%BD",
+        "https://www.silkqin.com/09hist/qinshi/sihao.htm",
+        "https://language.site.nthu.edu.tw/var/file/212/1212/img/4086/284484303.pdf"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "運籌策帷帳中，決勝千里外，子房功也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "多病，未嘗特將也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "從赤松子游",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "悉以家財求客刺秦王，為韓報仇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "更名姓，亡匿下邳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "往來為游兵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "間行歸漢王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "意欲留居之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "夫秦為無道，故沛公得至此。夫為天下除殘賊，宜縞素為資。今始入秦，即安其樂，此所謂『助桀為虐』",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "臣請藉前箸為大王籌之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "今陛下能制項籍之死命乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "徒欲日夜望咫尺之地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "天下游士各歸事其主",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "陛下與誰取天下乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "豎儒，幾敗而公事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "九江王黥布，楚梟將，與項王有郄；彭越與齊王田榮反梁地：此兩人可急使。而漢王之將獨韓信可屬大事，當一面",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "然卒破楚者，此三人力也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "左殽函，右隴蜀，沃野千里",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "此所謂金城千里，天府之國也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "即日駕，西都關中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "不能盡封，恐又見疑平生過失及誅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "雍齒尚為侯，我屬無患矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "此難以口舌爭也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "羽翼已成，難動矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "竟不易太子者，留侯本招此四人之力也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "今以三寸舌為帝者師，封萬戶，位列侯，此布衣之極，於良足矣。願棄人間事，欲從赤松子游耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "學辟穀，道引輕身",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷011",
+      "quote": "足以知神仙之為虛詭矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7011"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷011",
+      "quote": "淮陰誅夷，蕭何繫獄",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7011"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷011",
+      "quote": "托於神仙，遺棄人間，等功名於外物",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7011"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷011",
+      "quote": "所謂明哲保身者，子房有焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7011"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "鄂然，欲毆之。為其老，彊忍，下取履",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "臣為韓王送沛公，今事有急，亡去不義",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "善之，常用其策",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "沛公殆天授",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "自擇齊三萬戶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "臣願封留足矣，不敢當三萬戶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "計魁梧奇偉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "狀貌如婦人好女",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "以貌取人，失之子羽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "與韓王將千餘人西略韓地，得數城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "下韓十餘城，擊破楊熊軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "多病，未嘗特將也，常為畫策",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "得力士，為鐵椎重百二十斤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "病，自彊起，至曲郵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "金城千里，天府之國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "德留侯，乃彊食之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "沛公誠欲背項羽邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "沛公自度能卻項羽乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "具以語沛公",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "恐又見疑平生過失及誅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "悉以家財求客刺秦王，為韓報仇，以大父、父五世相韓故",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "為韓報讐彊秦，天下振動。今以三寸舌為帝者師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "此布衣之極，於良足矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "骨肉之間，雖臣等百餘人何益",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "愈欲易太子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "諫，不聽，因疾不視事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "此天以臣授陛下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "并葬黃石冢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "彊臥而傅太子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "忠言逆耳利於行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷055",
+      "quote": "因疾不視事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 史記卷55、資治通鑑卷11–12 verified in the repository archive.",
+    "搜尋未得四皓史源考辨之學術論文，正文僅以史記與通鑑收錄情形並陳，並明示其戲劇性；漢書卷40未逐段比對。",
+    "圯上老人、黃石屬傳說層次，依司馬遷『亦可怪矣』標示。"
+  ]
+}
