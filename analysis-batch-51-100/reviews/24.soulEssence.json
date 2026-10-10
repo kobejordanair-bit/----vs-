@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_虞允文_912795501",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:51:38.369Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4ccbc88eb12bbf77b6cff68dfea0fe260f015ee115f626e98eefe854f67f87b7",
+  "rawResponseSha256": "4ccbc88eb12bbf77b6cff68dfea0fe260f015ee115f626e98eefe854f67f87b7",
+  "sourcePackageSha256": "38e366c406af71db9ce8384e9fa1a5b4743eeb724e991e6ae94abca28db7e9e2",
+  "searchLogSha256": "6b46286a67932803d51684abd8b92ea215cd2f553f3f35e65dfdb3f3f9cc9567",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7383",
+      "title": "宋史·卷三百八十三 列傳第一百四十二",
+      "locator": "本機固定修訂 oldid=1473804 全文比對（textSha256 已驗）：三五星散，解鞍束甲坐道旁、公受命犒師，不受命督戰，他人壞之，公任其咎乎、危及社稷，吾將安避、六歲誦《九經》，七歲能屬文、蜀士多屏棄、運糧造舟者多…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：識破敵人虛聲並在指揮鏈斷裂時承擔責任，晚年卻被自己的恢復承諾困住；場景為危及社稷吾將安避、虛聲撼我、無進兵期。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "承擔與恢復之驅動、聲勢框架、承諾困局等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以一軍兩用與以笏畫地、反間書、內外不相應、八可戰與軍需未備、七年不調與救陳俊卿、車船三周金山與月給米、期以某日會河南為事件。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_虞允文_912795501",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:51:38.368Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "30634a558b24f48fa8dd1a324c5c387d9cbe0ec96cb70bd0384ca6f162f36cbb",
+  "rawResponseSha256": "30634a558b24f48fa8dd1a324c5c387d9cbe0ec96cb70bd0384ca6f162f36cbb",
+  "sourcePackageSha256": "38e366c406af71db9ce8384e9fa1a5b4743eeb724e991e6ae94abca28db7e9e2",
+  "searchLogSha256": "6b46286a67932803d51684abd8b92ea215cd2f553f3f35e65dfdb3f3f9cc9567",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7383",
+      "title": "宋史·卷三百八十三 列傳第一百四十二",
+      "locator": "本機固定修訂 oldid=1473804 全文比對（textSha256 已驗）：三五星散，解鞍束甲坐道旁、公受命犒師，不受命督戰，他人壞之，公任其咎乎、危及社稷，吾將安避、六歲誦《九經》，七歲能屬文、蜀士多屏棄、運糧造舟者多…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "隆州仁壽人、紹興二十三年進士、三十年使金、三十一年十一月采石、京口車船、完顏亮被殺、孝宗朝棄地之爭、乾道五年右相、八年左相、淳熙元年薨，皆依宋史卷383 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：招集潰兵與分戈船為五、四川汰兵；武力：賓射破的與入陣；智謀：識破虛聲與反間；政治：材館錄、罷三衙承受；魅力：今既有主請死戰。對照孟珙、左宗棠、陳慶之、孫臏、李光弼、戚繼光。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "王權遁、顯忠未至→允文招諸將→分戈船、時俊出戰、潰軍疑兵→金遁；次日夾擊焚舟→亮趨瓜洲→京口車船演示→亮為下所殺；許上恢復→軍需未備→上不樂。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    40,
+    90,
+    86,
+    88
+  ]
+}
