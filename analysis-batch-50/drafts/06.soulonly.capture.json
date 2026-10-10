@@ -1,0 +1,25 @@
+{
+  "format": "dynasty-batch50-claude-soul-continuation",
+  "schemaVersion": 1,
+  "slug": "06",
+  "recordId": "emperor_秦昭襄王_7247317",
+  "provider": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T07:25:00.797Z",
+  "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+  "packetSha256": "1236bcf7b4bcb3d40fd2aca9e419b95f61806f081db463c36925cae7442738e0",
+  "manuscriptFile": "analysis-batch-50/drafts/06.soulonly.raw.md",
+  "manuscriptSha256": "5feebbe66539ecfce81a81f832a08c90ce1edc1efdfeae8d98dfb21721da66ca",
+  "priorReceipt": {
+    "file": "analysis-batch-50/import.06-06.apply.json",
+    "sha256": "58d66ca908ca2815756cf6eab5ae3282d1000da9e4e86d22f299d1fb35455de2",
+    "afterRevision": 6,
+    "fieldHashes": {
+      "analysis": "26b7b6a9df0c18e849e5eb90d4ad4ddec4a62a86e8eb241bc754a4765fb74acb",
+      "stats": "a2971a0807f96afb3c3b1d9891994182b967037ce3941c7349d10568196c6f82",
+      "statsAnalysis": "967686a95d483a810b3096023629de01ae5dbc343a3dbeeec9aa9f2578a6f8a7"
+    }
+  },
+  "analysisContextPath": "analysis-batch-50/drafts/06.analysis.md",
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."
+}

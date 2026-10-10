@@ -19,6 +19,7 @@
     "partialImported": 1,
     "importedFields": 23,
     "claudeAssembledAwaitingImport": 44,
+    "soulContinuationAwaitingImport": 1,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -129,8 +130,13 @@
         "stats",
         "statsAnalysis"
       ],
-      "status": "analysis_imported_soul_pending",
-      "note": "已發布 analysis/stats/statsAnalysis（import.06-06.apply.json）；缺 soulEssence。需綁定既有回執的 soul-only 續補匯入路徑，不得放寬成任意覆蓋。"
+      "status": "soul_continuation_assembled_awaiting_local_dry_run",
+      "soulProvider": "Claude Code (Anthropic)",
+      "reviewKind": "self_review_not_independent",
+      "soulResultsFile": "analysis-batch-50/results.06-06.soul.v1.json",
+      "soulResultsSha256": "da59b01d3f7b7c29679af255225f775fcc40e58d50626372fa489a6ef0e2badb",
+      "priorReceipt": "analysis-batch-50/import.06-06.apply.json",
+      "note": "analysis/stats/statsAnalysis 已由 ChatGPT 稿發布（回執綁定）；soulEssence 由 Claude 撰寫，SOUL_FORMAT 只允許在線上三欄與回執雜湊一致時補寫此一欄。"
     },
     {
       "slug": "07",

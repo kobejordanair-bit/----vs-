@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_秦昭襄王_7247317",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:25:00.839Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。soul-only 續補：分析段沿用回執已發布之 ChatGPT 稿，本查核只涵蓋 soulEssence。"
+  },
+  "manuscriptSha256": "5feebbe66539ecfce81a81f832a08c90ce1edc1efdfeae8d98dfb21721da66ca",
+  "rawResponseSha256": "5feebbe66539ecfce81a81f832a08c90ce1edc1efdfeae8d98dfb21721da66ca",
+  "sourcePackageSha256": "81b94dabc934c74ad1bd03dbbc09d666dc94df7c504ba4462b3aee8b0e0de9cd",
+  "searchLogSha256": "f5bf62e0e8ca55b9441468acaae54bdcee02dc3c105ead73a629443893286d82",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079",
+      "title": "史記·卷七十九 范睢蔡澤列傳 第十九",
+      "locator": "本機固定修訂 oldid=2549307 全文比對（textSha256 已驗）：鐵劍利而倡優拙、今武安君既死，而鄭安平等畔，內無良將而外多敵國，吾是以憂、欲以激勵應侯、懼，不知所出、聞秦之有太后、穰侯、華陽、高陵、涇陽，不聞其有王也。夫擅國之謂王，能利害之謂王，制殺生之威之謂王、收穰侯之印，使歸陶…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073",
+      "title": "史記·卷七十三 白起王翦列傳 第十三",
+      "locator": "本機固定修訂 oldid=7909285 全文比對（textSha256 已驗）：王自之河內，賜民爵各一級，發年十五以上悉詣長平，遮絕趙救及糧食、益發兵佐陵、八九月圍邯鄲，不能拔、邯鄲實未易攻也。且諸侯救日至、終辭不肯行，遂稱病、免武安君為士伍，遷之陰密…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "秦昭襄王，帝王；soul-only 續補，分析段沿用已發布之 ChatGPT 稿。"
+    },
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "臨朝嘆息、欲以激勵應侯，原文核對。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "自之河內發年十五以上、益發兵佐陵、圍邯鄲不能拔，原文核對。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "不聞其有王也、收穰侯印、寶器多於王室；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "邯鄲未易攻、終辭稱病、免為士伍、賜劍，原文核對。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "王稽鄭安平之任、秦人憐之、武安君既死；心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "擅國利害殺生之謂王；錯殺之判斷標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "收權與白起之死；非其罪。"
+    },
+    {
+      "id": "consistency",
+      "passed": true,
+      "detail": "與已發布 analysis 之外戚收權、遠交近攻、長平、白起悲劇主軸一致。"
+    }
+  ],
+  "materialIssues": []
+}

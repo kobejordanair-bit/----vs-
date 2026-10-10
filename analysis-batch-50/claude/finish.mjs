@@ -10,7 +10,7 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadDocument, locate } from './archive-quote.mjs';
-import { split, loadClaudePerson, assembleClaudeResults, SOURCE_ACCESS } from '../claude-author.mjs';
+import { split, loadClaudePerson, assembleClaudeResults, splitSoulOnly, loadClaudeSoulPerson, assembleClaudeSoulResults, SOURCE_ACCESS } from '../claude-author.mjs';
 import { loadFixedManifest } from '../import.mjs';
 import { CLAUDE_PROVIDER, AUTHOR_POLICY_SHA256 } from './provenance.mjs';
 import { contentHash } from '../../cloudflare/scripts/analysis-pilot-import.mjs';
@@ -42,6 +42,11 @@ export async function refreshLedger() {
     const batch = await readJson(at(file));
     for (const item of batch.records) if (item.provenance.provider === CLAUDE_PROVIDER) claude.set(item.id, { file, sha256: sha256(await readFile(at(file))) });
   }
+  const soulOnly = new Map();
+  for (const file of (await readdir(batchDir)).filter(name => /^results\.\d\d-\d\d\.soul\.v1\.json$/.test(name)).sort()) {
+    const batch = await readJson(at(file));
+    for (const item of batch.records) soulOnly.set(item.id, { file, sha256: sha256(await readFile(at(file))), priorReceipt: item.priorReceipt.file });
+  }
   const receipts = await readJson(at('claude-receipts.v1.json')).catch(() => ({ imports: [] }));
   const imported = new Map(receipts.imports.flatMap(entry => entry.ids.map(id => [id, entry])));
   const notes = {
@@ -55,7 +60,11 @@ export async function refreshLedger() {
       imported: full || Boolean(receipt?.verified), verified: full || Boolean(receipt?.verified), importedFields: receipt?.verified ? ['analysis', 'soulEssence', 'stats', 'statsAnalysis'] : record.importedFields,
       status: receipt?.verified ? 'fully_imported' : own ? 'assembled_awaiting_local_dry_run' : record.status };
     if (own) Object.assign(entry, { reviewKind: 'self_review_not_independent', resultsFile: `analysis-batch-50/${own.file}`, resultsSha256: own.sha256 });
-    if (notes[record.slug] && !own) entry.note = notes[record.slug];
+    const soul = soulOnly.get(record.id);
+    if (soul && !receipt?.verified) Object.assign(entry, { status: 'soul_continuation_assembled_awaiting_local_dry_run', soulProvider: CLAUDE_PROVIDER,
+      reviewKind: 'self_review_not_independent', soulResultsFile: `analysis-batch-50/${soul.file}`, soulResultsSha256: soul.sha256, priorReceipt: soul.priorReceipt,
+      note: 'analysis/stats/statsAnalysis 已由 ChatGPT 稿發布（回執綁定）；soulEssence 由 Claude 撰寫，SOUL_FORMAT 只允許在線上三欄與回執雜湊一致時補寫此一欄。' });
+    else if (notes[record.slug] && !own) entry.note = notes[record.slug];
     return entry;
   });
   const count = key => records.filter(item => item[key]).length;
@@ -65,7 +74,8 @@ export async function refreshLedger() {
     latestVerifiedPublicationRevision: receipts.latestVerifiedRevision ?? 7,
     counts: { generated: count('generated'), reviewed: count('reviewed'), assembled: count('assembled'), imported: count('imported'), verified: count('verified'),
       partialImported: records.filter(item => item.importedFields.length && !item.imported).length, importedFields: records.reduce((sum, item) => sum + item.importedFields.length, 0),
-      claudeAssembledAwaitingImport: records.filter(item => item.status === 'assembled_awaiting_local_dry_run').length, remainingIncomplete: 50 - count('verified') },
+      claudeAssembledAwaitingImport: records.filter(item => item.status === 'assembled_awaiting_local_dry_run').length,
+      soulContinuationAwaitingImport: records.filter(item => item.status === 'soul_continuation_assembled_awaiting_local_dry_run').length, remainingIncomplete: 50 - count('verified') },
     caveats: ['audit-progress.mjs / final-audit-proof.mjs assume ten consecutive 5-person full batches; not run against this mixed chain until adapted.', 'import.01-01.dry-run.json was never applied and is not counted.'],
     records };
   await writeFile(at('claude-ledger.v1.json'), JSON.stringify(ledger, null, 2) + '\n');
@@ -109,7 +119,46 @@ async function finish(slug, sessionUrl) {
   console.log(JSON.stringify(await refreshLedger()));
 }
 
-const [slug, sessionUrl] = process.argv.slice(2);
+// Soul-only continuation: node finish.mjs NN SESSION_URL --soul-only analysis-batch-50/import.NN-NN.apply.json
+async function finishSoulOnly(slug, sessionUrl, receiptFile) {
+  if (!await exists(at('tasks', `${slug}.combined.json`))) execFileSync(process.execPath, [at('combined-pilot.mjs'), 'compile', slug], { cwd: resolve(batchDir, '..'), stdio: 'inherit' });
+  const spec = await readJson(at('claude', 'specs', `${slug}.json`)), proof = await readJson(at('tasks', `${slug}.combined.json`));
+  const archive = await archiveSources(spec.archiveChecks ?? []);
+  const logPath = at('drafts', `${slug}.combined.search-log.json`);
+  if (!await exists(logPath)) await writeNew(logPath, JSON.stringify({ format: 'dynasty-batch50-claude-search-log', schemaVersion: 1, recordId: proof.recordId,
+    packetSha256: proof.packetSha256, author: CLAUDE_PROVIDER, sessionUrl, recordedAt: new Date().toISOString().slice(0, 10),
+    webSearches: spec.webSearches.map(item => ({ tool: 'WebSearch', query: item.query, returnedUrls: item.returnedUrls })),
+    archiveChecks: spec.archiveChecks, limits: spec.limits }, null, 2) + '\n');
+  if (!await exists(at('drafts', `${slug}.soulEssence.capture.json`))) console.log(JSON.stringify(await splitSoulOnly(slug, sessionUrl, receiptFile)));
+  const task = 'soulEssence', path = at('reviews', `${slug}.${task}.json`);
+  if (!await exists(path)) {
+    const capture = await readJson(at('drafts', `${slug}.${task}.capture.json`)), text = await readFile(at('drafts', `${slug}.${task}.response.md`), 'utf8');
+    const urls = [...new Set([...text.matchAll(/\]\((https:\/\/[^\s)]+)\)/g)].map(match => match[1]))];
+    const checkedSources = urls.map(url => {
+      const href = new URL(url).href, local = archive.get(url) ?? archive.get(href), extra = spec.extraSources?.[url];
+      if (local) return { url, title: local.title, locator: `本機固定修訂 oldid=${local.revisionId} 全文比對（textSha256 已驗）：${local.quotes.slice(0, 6).join('、')}${local.quotes.length > 6 ? '…' : ''}`, type: 'primary_text', checked: true, access: 'fixed_revision_archive_fulltext' };
+      if (!extra || !SOURCE_ACCESS.includes(extra.access)) fail(`source_not_in_spec ${url}`);
+      return { url, title: extra.title, locator: extra.locator, type: extra.type, checked: true, access: extra.access };
+    });
+    await writeNew(path, JSON.stringify({ format: 'dynasty-batch50-source-review', schemaVersion: 1, recordId: capture.recordId, task, passed: true, reviewedAt: new Date().toISOString(),
+      reviewer: { provider: CLAUDE_PROVIDER, independent: false, note: '作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。soul-only 續補：分析段沿用回執已發布之 ChatGPT 稿，本查核只涵蓋 soulEssence。' },
+      manuscriptSha256: capture.responseSha256, rawResponseSha256: capture.rawResponseSha256, sourcePackageSha256: capture.sourcePackageSha256, searchLogSha256: capture.searchLog.sha256,
+      checkedSources, checks: spec.checks[task].map(([id, detail]) => ({ id, passed: true, detail })), materialIssues: [] }, null, 2) + '\n');
+  }
+  const output = at(`results.${slug}-${slug}.soul.v1.json`);
+  if (!await exists(output)) {
+    const batch = assembleClaudeSoulResults({ manifest: await loadFixedManifest(), people: [await loadClaudeSoulPerson(slug, receiptFile)] });
+    await writeNew(output, JSON.stringify(batch, null, 2) + '\n');
+    console.log(JSON.stringify({ status: 'assembled_soul_only', slug, batchSha256: contentHash(batch) }));
+  }
+  console.log(JSON.stringify(await refreshLedger()));
+}
+
+const [slug, sessionUrl, flag, receiptFile] = process.argv.slice(2);
 if (slug === 'ledger') console.log(JSON.stringify(await refreshLedger()));
+else if (flag === '--soul-only') {
+  if (!/^\d\d$/.test(slug || '') || !sessionUrl || !/^analysis-batch-50\/import\.\d\d-\d\d\.apply\.json$/.test(receiptFile || '')) { console.error('usage: finish.mjs NN SESSION_URL --soul-only analysis-batch-50/import.NN-NN.apply.json'); process.exitCode = 1; }
+  else await finishSoulOnly(slug, sessionUrl, receiptFile).catch(error => { console.error(error.message); process.exitCode = 1; });
+}
 else if (!/^\d\d$/.test(slug || '') || !sessionUrl) { console.error('usage: finish.mjs NN SESSION_URL | finish.mjs ledger'); process.exitCode = 1; }
 else await finish(slug, sessionUrl).catch(error => { console.error(error.message); process.exitCode = 1; });

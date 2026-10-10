@@ -16,7 +16,14 @@ export const FIXED_MANIFEST_SHA256 = '2a3b89a666da387061414e92b372b85f0c6562e19f
 export const COMPLETION_FIELDS = Object.freeze(['analysis', 'soulEssence', 'stats', 'statsAnalysis']);
 export const ANALYSIS_FIELDS = Object.freeze(['analysis', 'stats', 'statsAnalysis']);
 export const ANALYSIS_FORMAT = 'dynasty-analysis-batch50-analysis-results';
-export const batchFields = batch => batch.format === ANALYSIS_FORMAT ? ANALYSIS_FIELDS : COMPLETION_FIELDS;
+// Soul-only continuation for a person whose analysis/stats/statsAnalysis were
+// already published by a verified apply receipt. Each record names that
+// receipt; the live document must still hold exactly the receipted three
+// fields, so this format can add soulEssence and nothing else.
+export const SOUL_FIELDS = Object.freeze(['soulEssence']);
+export const SOUL_FORMAT = 'dynasty-analysis-batch50-soul-results';
+export const batchFields = batch => batch.format === ANALYSIS_FORMAT ? ANALYSIS_FIELDS : batch.format === SOUL_FORMAT ? SOUL_FIELDS : COMPLETION_FIELDS;
+const fieldHash = (field, value) => field === 'stats' ? contentHash(value) : sha256(value);
 export const EXPECTED_TOTAL = 962;
 const own = (value, key) => Object.hasOwn(value, key);
 const bad = (code, report = null) => { throw new PilotError(code, report); };
@@ -124,18 +131,42 @@ function validateFields(fields, allowedFields) {
     if (typeof fields[field] !== 'string' || !fields[field].trim() || fields[field].includes('\0')
       || /<!--\s*(?:BATCH50_COMPLETE|STATS_REASONS_BEGIN)\b/.test(fields[field])) bad('incomplete_completion_field');
   }
-  validateSections(fields.analysis, ['歷史局勢與定位', '深度功過剖析', '人性與性格側寫', '如果生在現代'], 800);
+  if (allowedFields.includes('analysis')) validateSections(fields.analysis, ['歷史局勢與定位', '深度功過剖析', '人性與性格側寫', '如果生在現代'], 800);
   if (allowedFields.includes('soulEssence')) {
     const soulSections = validateSections(fields.soulEssence, ['說話邏輯', '壓力反應', '核心驅動', '慣性盲點', '情感結構', '參照系', '內在裂縫'], 1000);
     if (soulSections.some(body => !/\[(?:史載|推斷|詮釋)\]/.test(body))) bad('soul_annotations_missing');
   }
-  validateStatsAnalysis(fields.statsAnalysis, fields.stats);
+  if (allowedFields.includes('statsAnalysis')) validateStatsAnalysis(fields.statsAnalysis, fields.stats);
   return fields;
+}
+
+export function validatePriorReceipt(prior) {
+  if (!record(prior) || !sameKeys(Object.keys(prior), ['file', 'sha256', 'afterRevision', 'fieldHashes'])
+    || typeof prior.file !== 'string' || !/^analysis-batch-50\/import\.\d\d-\d\d\.apply\.json$/.test(prior.file)
+    || !hashOk(prior.sha256) || !validRevision(prior.afterRevision)
+    || !record(prior.fieldHashes) || !sameKeys(Object.keys(prior.fieldHashes), ANALYSIS_FIELDS)
+    || ANALYSIS_FIELDS.some(field => !hashOk(prior.fieldHashes[field]))) bad('invalid_prior_receipt');
+  return prior;
+}
+
+// The receipt must be a verified apply of exactly these three fields for this
+// person; anything else (dry-run, failed write, other fields) cannot unlock a
+// soul-only continuation.
+export function validatePriorReceiptDocument(receipt, item, manifest = authority) {
+  validatePriorReceipt(item?.priorReceipt);
+  const written = Array.isArray(receipt?.writtenFieldHashes) ? receipt.writtenFieldHashes.filter(entry => entry?.id === item.id) : [];
+  if (!record(receipt) || receipt.format !== 'dynasty-analysis-batch50-import' || receipt.mode !== 'apply' || receipt.status !== 'applied_verified'
+    || receipt.passed !== true || receipt.writeSucceeded !== true || receipt.verification?.passed !== true
+    || receipt.manifestSha256 !== contentHash(manifest) || contentHash(receipt) !== item.priorReceipt.sha256
+    || receipt.verification.afterRevision !== item.priorReceipt.afterRevision
+    || !sameKeys(written.map(entry => entry.field), ANALYSIS_FIELDS) || written.length !== ANALYSIS_FIELDS.length
+    || written.some(entry => entry.sha256 !== item.priorReceipt.fieldHashes[entry.field])) bad('prior_receipt_mismatch');
+  return true;
 }
 
 export function validateChunk(batch, manifest = authority) {
   validateManifest(manifest);
-  if (!record(batch) || !['dynasty-analysis-batch50-results', ANALYSIS_FORMAT].includes(batch.format) || batch.schemaVersion !== 1
+  if (!record(batch) || !['dynasty-analysis-batch50-results', ANALYSIS_FORMAT, SOUL_FORMAT].includes(batch.format) || batch.schemaVersion !== 1
     || batch.manifestSha256 !== contentHash(manifest) || !Array.isArray(batch.records) || !batch.records.length || batch.records.length > 5) bad('invalid_completion_chunk');
   const seen = new Set();
   for (const item of batch.records) {
@@ -143,6 +174,7 @@ export function validateChunk(batch, manifest = authority) {
     if (!record(item) || !target || seen.has(item.id) || item.inputSha256 !== target.inputSha256 || !hashOk(item.promptSha256)
       || !record(item.fields) || !sameKeys(Object.keys(item.fields), batchFields(batch))) bad('invalid_completion_record');
     validateFields(item.fields, batchFields(batch));
+    if (batch.format === SOUL_FORMAT) validatePriorReceipt(item.priorReceipt); else if (own(item, 'priorReceipt')) bad('invalid_completion_record');
     validateProvenance(item.provenance);
     seen.add(item.id);
   }
@@ -156,8 +188,19 @@ export function planBatch50Import(source, latest, base, batch, manifest = author
   validateLibrary(before, base);
   for (const item of batch.records) {
     const live = figureInput(before, base, item.id);
-    if (COMPLETION_FIELDS.some(field => !missing(live[field], field))) bad('existing_live_field');
-    if (contentHash(live) !== item.inputSha256) bad('live_input_changed');
+    if (batch.format === SOUL_FORMAT) {
+      // Exactly the receipted fields may be present; their removal must give
+      // back the sealed original input. soulEssence must still be empty.
+      if (before.revision < item.priorReceipt.afterRevision) bad('prior_receipt_not_applied');
+      if (SOUL_FIELDS.some(field => !missing(live[field], field))) bad('existing_live_field');
+      if (ANALYSIS_FIELDS.some(field => missing(live[field], field) || fieldHash(field, live[field]) !== item.priorReceipt.fieldHashes[field])) bad('prior_receipt_fields_changed');
+      const original = { ...live };
+      for (const field of ANALYSIS_FIELDS) delete original[field];
+      if (contentHash(original) !== item.inputSha256) bad('live_input_changed');
+    } else {
+      if (COMPLETION_FIELDS.some(field => !missing(live[field], field))) bad('existing_live_field');
+      if (contentHash(live) !== item.inputSha256) bad('live_input_changed');
+    }
     Object.defineProperty(modifications, item.id, { value: { ...(own(modifications, item.id) ? modifications[item.id] : {}), ...structuredClone(item.fields) }, writable: true, enumerable: true, configurable: true });
   }
   const patch = { revision: before.revision, modifiedLegends: modifications };
@@ -170,8 +213,17 @@ export function planBatch50Import(source, latest, base, batch, manifest = author
     provenanceFieldsWritten: 0, manifestSha256: contentHash(manifest), batchSha256: contentHash(batch), sourceSha256: contentHash(baseline), baseLibrarySha256: contentHash(base),
     beforeSha256: contentHash(before), plannedAfterSha256: contentHash(after), beforeRevision: before.revision, plannedAfterRevision: after.revision,
     patchBytes: bytes(patch), plannedDocumentBytes: bytes(after),
-    writtenFieldHashes: batch.records.flatMap(item => batchFields(batch).map(field => ({ id: item.id, field, sha256: field === 'stats' ? contentHash(item.fields[field]) : sha256(item.fields[field]) }))),
+    writtenFieldHashes: batch.records.flatMap(item => batchFields(batch).map(field => ({ id: item.id, field, sha256: fieldHash(field, item.fields[field]) }))),
+    ...(batch.format === SOUL_FORMAT ? { priorReceipts: batch.records.map(item => ({ id: item.id, file: item.priorReceipt.file, sha256: item.priorReceipt.sha256 })) } : {}),
   } };
+}
+
+// Offline pre-check before any read. A soul-only continuation is planned
+// against the live document (which already holds the receipted fields), so
+// offline it can only check the sealed baseline and the chunk itself.
+export function precheckBatch50Import(source, base, batch, manifest = authority) {
+  if (batch?.format === SOUL_FORMAT) { validateBaseline(source, base, manifest); validateChunk(batch, manifest); return true; }
+  planBatch50Import(source, source, base, batch, manifest); return true;
 }
 
 export function verifyBatch50Write(plan, observed, batch) {
@@ -206,6 +258,18 @@ export async function validateBatch50Evidence({ batch, manifest = authority }) {
   validateChunk(batch, manifest);
   const providers = new Set(batch.records.map(item => item.provenance.provider));
   if (providers.size !== 1) bad('mixed_provider_batch');
+  if (batch.format === SOUL_FORMAT) {
+    if (!providers.has(CLAUDE_PROVIDER)) bad('soul_continuation_requires_claude');
+    const { loadClaudeSoulPerson, assembleClaudeSoulResults } = await import('./claude-author.mjs');
+    const people = [];
+    for (const item of batch.records) {
+      const receipt = strictJsonParse(await readFile(resolve(here, '..', item.priorReceipt.file), 'utf8'));
+      validatePriorReceiptDocument(receipt, item, manifest);
+      people.push(await loadClaudeSoulPerson(manifest.records.find(value => value.id === item.id).slug, item.priorReceipt.file));
+    }
+    if (contentHash(assembleClaudeSoulResults({ manifest, people })) !== contentHash(batch)) bad('batch_evidence_changed');
+    return true;
+  }
   if (providers.has(CLAUDE_PROVIDER)) {
     if (batch.format === ANALYSIS_FORMAT) bad('claude_analysis_only_unsupported');
     const { loadClaudePerson, assembleClaudeResults } = await import('./claude-author.mjs');
@@ -236,7 +300,7 @@ async function requireEvidence(validateEvidence, batch, manifest) {
 }
 
 export async function runBatch50Import({ source, base, batch, manifest = authority, request, apply = false, approvedReport = null, saveSnapshot = null, validateEvidence = null, maxConflicts = 3 }) {
-  planBatch50Import(source, source, base, batch, manifest);
+  precheckBatch50Import(source, base, batch, manifest);
   if (typeof request !== 'function') bad('request_adapter_required');
   if (!Number.isSafeInteger(maxConflicts) || maxConflicts < 0 || maxConflicts > 3) bad('invalid_retry_limit');
   if (apply && !approved(approvedReport, source, base, batch, manifest)) bad('dry_run_approval_required');
@@ -297,7 +361,7 @@ export async function main(values = process.argv.slice(2)) {
     try { await lstat(output); bad('output_exists'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
     const source = await readRegularJson(resolve(args.sourceFile)), batch = await readRegularJson(resolve(args.resultsFile));
     const { base } = await loadBaseLibrary();
-    planBatch50Import(source, source, base, batch, manifest);
+    precheckBatch50Import(source, base, batch, manifest);
     const approvedReport = args.apply ? await readRegularJson(resolve(args.approvedReportFile)) : null;
     if (args.apply && !approved(approvedReport, source, base, batch, manifest)) bad('dry_run_approval_required');
     // Check evidence before even loading credentials or authenticating. The

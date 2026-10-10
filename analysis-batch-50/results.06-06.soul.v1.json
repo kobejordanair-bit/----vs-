@@ -1,0 +1,106 @@
+{
+  "format": "dynasty-analysis-batch50-soul-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "emperor_秦昭襄王_7247317",
+      "inputSha256": "8a0e61c9dc587cf48c1a23bb665558dc931a35611d2e2d4b3d58f378a7704691",
+      "promptSha256": "1704ac67a82c18376a53e45d918be12fefa71f429ab1a5c559220fbc3e0f7c8d",
+      "fields": {
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「以國家的危機感激勵臣下，讓對方自己感到責任」。范雎死前，他「臨朝嘆息」，范雎問他為何憂慮，他說楚國「鐵劍利而倡優拙」，又說「今武安君既死，而鄭安平等畔，內無良將而外多敵國，吾是以憂」；《史記》明言他的用意是「欲以激勵應侯」（[《史記·范睢蔡澤列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079)）[史載]。他話語中的潛台詞是：「國家的問題已經擺在這裡，你自己知道該怎麼做。」這種說話方式不直接下令，卻讓臣下感受到巨大的壓力——范雎聽完「懼，不知所出」[史載]。他很少與臣下辯論，而是透過情緒與暗示表達自己的意志[推斷]。\n\n【壓力反應】\n面對壓力，他的第一反應是「傾全國之力壓上去」。\n長平之戰中，他得知趙軍糧道已斷，「王自之河內，賜民爵各一級，發年十五以上悉詣長平，遮絕趙救及糧食」（[《史記·白起王翦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073)）[史載]；邯鄲之戰中王陵進攻不利，他「益發兵佐陵」，白起拒絕出征後他又改派王齕，「八九月圍邯鄲，不能拔」[史載]。兩次相隔約兩年，共同結構是：只要他認定目標正確，壓力越大就投入越多[推斷]。長平時這種做法帶來決定性勝利，邯鄲時卻變成在國力疲憊之際的硬撐，最後諸侯救兵至，「秦軍數卻」[史載]。\n\n【核心驅動】\n他真正追求的是「讓國家的一切權力與勝利都歸於王」。\n范雎打動他的關鍵一番話是：「聞秦之有太后、穰侯、華陽、高陵、涇陽，不聞其有王也。夫擅國之謂王，能利害之謂王，制殺生之威之謂王。」（[《史記·范睢蔡澤列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079)）[史載]他隨即拜范雎為相，「收穰侯之印，使歸陶」；穰侯出關時「寶器珍怪多於王室」[史載]。這段經歷顯示，他最在意的不只是秦國的強大，而是秦國的強大是否掌握在自己手中[詮釋：此為從其收權過程歸納的動機]。\n\n【慣性盲點】\n他最大的優點「堅決集中權力」，讓他把臣下的拒絕視為對王權的挑戰。\n白起認為「邯鄲實未易攻也。且諸侯救日至」，拒絕出征（[《史記·白起王翦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073)）[史載]；秦王親自下令，白起不行，又派范雎去請，白起「終辭不肯行，遂稱病」，秦王最後「免武安君為士伍，遷之陰密」，並與范雎等人議定「其意尚怏怏不服，有餘言」，「乃使使者賜之劍，自裁」[史載]。共同結構是：他能接受白起在戰場上的判斷，卻不能接受白起在戰略上說「不」；一旦拒絕觸及王命，他便把軍事判斷轉化為忠誠問題[推斷]。\n\n【情感結構】\n他的情感表現內斂，主要以對權力的掌控與對人才的倚重呈現。\n他重用范雎後，按范雎之請，讓當年帶范雎入秦的王稽「拜為河東守，三歲不上計」，又任鄭安平為將軍（[《史記·范睢蔡澤列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079)）[史載]，可見他願意為信任的臣子破格施恩。白起死後，「秦人憐之，鄉邑皆祭祀焉」（[《史記·白起王翦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073)）[史載]，而他晚年在朝堂上感嘆「武安君既死」[史載]，似乎也意識到這是一個無法挽回的損失。他最脆弱的時刻，或許就是那次「臨朝嘆息」——名將已死、鄭安平叛降、國中無人可用[詮釋：其內心感受史書僅以「憂」概括]。\n\n【參照系】\n他習慣以「王權是否被分割」作為理解政治問題的參照系。范雎以「擅國之謂王，能利害之謂王，制殺生之威之謂王」說動他（[《史記·范睢蔡澤列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079)）[史載]，此後他把「誰在替王做決定」視為判斷一切的核心[推斷]。\n類比準確之處：以這套參照系審視太后與穰侯，他看清了外戚集團以國家戰果擴大私人封邑的問題，並成功收回王權[史載：穰侯寶器多於王室]。\n類比失準之處：白起拒絕攻邯鄲，並非要分割王權，而是基於「諸侯救日至」的軍事判斷（[《史記·白起王翦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073)）[史載]；用「權力是否被挑戰」的框架去理解一位將軍的專業判斷，使他錯殺了秦國最出色的統帥[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（讓權力與勝利都歸於王）與【慣性盲點】（把拒絕視為對王權的挑戰）之間。\n這個衝突的結構是：他越是需要證明秦國的勝利屬於王，就越需要將領按照王命出戰；而將領越是依專業判斷拒絕王命，他就越把這種拒絕視為不服。\n第一次體現在收權：他聽范雎「不聞其有王」之言，罷黜太后與穰侯，王權由此集中（[《史記·范睢蔡澤列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079)）[史載]。\n第二次體現在白起之死：白起以「邯鄲實未易攻」拒絕出征，被賜劍自裁；《史記》說白起「死而非其罪，秦人憐之」（[《史記·白起王翦列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073)）[史載]。\n兩次事件的共同點在於：他以同一套「王權不可分」的標準對待外戚與將領，卻沒有區分「私人擴權」與「專業異議」[推斷]。他是否意識到這個衝突？他後來嘆「內無良將而外多敵國」，說明他感受到了後果；但他把這番話用來「激勵應侯」，而非反省自己，顯示他仍以臣下的責任來理解這個困境[詮釋]。"
+      },
+      "priorReceipt": {
+        "file": "analysis-batch-50/import.06-06.apply.json",
+        "sha256": "58d66ca908ca2815756cf6eab5ae3282d1000da9e4e86d22f299d1fb35455de2",
+        "afterRevision": 6,
+        "fieldHashes": {
+          "analysis": "26b7b6a9df0c18e849e5eb90d4ad4ddec4a62a86e8eb241bc754a4765fb74acb",
+          "stats": "a2971a0807f96afb3c3b1d9891994182b967037ce3941c7349d10568196c6f82",
+          "statsAnalysis": "967686a95d483a810b3096023629de01ae5dbc343a3dbeeec9aa9f2578a6f8a7"
+        }
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T07:25:00.797Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "史記·卷七十九 范睢蔡澤列傳 第十九",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079",
+            "locator": "本機固定修訂 oldid=2549307 全文比對（textSha256 已驗）：鐵劍利而倡優拙、今武安君既死，而鄭安平等畔，內無良將而外多敵國，吾是以憂、欲以激勵應侯、懼，不知所出、聞秦之有太后、穰侯、華陽、高陵、涇陽，不聞其有王也。夫擅國之謂王，能利害之謂王，制殺生之威之謂王、收穰侯之印，使歸陶…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·卷七十三 白起王翦列傳 第十三",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073",
+            "locator": "本機固定修訂 oldid=7909285 全文比對（textSha256 已驗）：王自之河內，賜民爵各一級，發年十五以上悉詣長平，遮絕趙救及糧食、益發兵佐陵、八九月圍邯鄲，不能拔、邯鄲實未易攻也。且諸侯救日至、終辭不肯行，遂稱病、免武安君為士伍，遷之陰密…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "dd99f2752c77b2e071a062092d3b8a547af3e12537593bd1eca36890374adfd3",
+        "sourcePackageSha256": "81b94dabc934c74ad1bd03dbbc09d666dc94df7c504ba4462b3aee8b0e0de9cd",
+        "preservedDeepSha256": "f449d3d37030275f1fc76f75734682ec03790f8ddf3f6888a4fb08da1f764742",
+        "perTask": {
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "1704ac67a82c18376a53e45d918be12fefa71f429ab1a5c559220fbc3e0f7c8d",
+            "requestSha256": "dd99f2752c77b2e071a062092d3b8a547af3e12537593bd1eca36890374adfd3",
+            "inputSha256": "8a0e61c9dc587cf48c1a23bb665558dc931a35611d2e2d4b3d58f378a7704691",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "c7ef63366890f518e2c623ee60f6a59a7b3ed21b93a4a92df6d3a7672310edcf",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "81b94dabc934c74ad1bd03dbbc09d666dc94df7c504ba4462b3aee8b0e0de9cd",
+            "preservedDeepSha256": "f449d3d37030275f1fc76f75734682ec03790f8ddf3f6888a4fb08da1f764742",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T07:25:00.797Z",
+            "rawResponseFile": "analysis-batch-50/drafts/06.soulEssence.raw.md",
+            "rawResponseSha256": "5feebbe66539ecfce81a81f832a08c90ce1edc1efdfeae8d98dfb21721da66ca",
+            "responseFile": "analysis-batch-50/drafts/06.soulEssence.response.md",
+            "responseSha256": "5feebbe66539ecfce81a81f832a08c90ce1edc1efdfeae8d98dfb21721da66ca",
+            "fieldsHashes": {
+              "soulEssence": "c0b2a15e10bbaef1b516a589a241cd4f010ca57b65168ceba0895b28c9f1551f"
+            },
+            "captureFile": "analysis-batch-50/drafts/06.soulEssence.capture.json",
+            "captureSha256": "ed537a0538cd13e5267a4e0a940122e75d0d0ff3155eb77526f6232ed6194d58",
+            "sourceReviewFile": "analysis-batch-50/reviews/06.soulEssence.json",
+            "sourceReviewSha256": "f7fced1dc8cba12cc518eefc04729c9947ec6707c286f8f74d50a6cb599cb054",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/06.combined.search-log.json",
+              "sha256": "f5bf62e0e8ca55b9441468acaae54bdcee02dc3c105ead73a629443893286d82",
+              "webSearchCount": 1,
+              "archiveCheckCount": 24
+            },
+            "checkedSources": [
+              {
+                "title": "史記·卷七十九 范睢蔡澤列傳 第十九",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079",
+                "locator": "本機固定修訂 oldid=2549307 全文比對（textSha256 已驗）：鐵劍利而倡優拙、今武安君既死，而鄭安平等畔，內無良將而外多敵國，吾是以憂、欲以激勵應侯、懼，不知所出、聞秦之有太后、穰侯、華陽、高陵、涇陽，不聞其有王也。夫擅國之謂王，能利害之謂王，制殺生之威之謂王、收穰侯之印，使歸陶…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷七十三 白起王翦列傳 第十三",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073",
+                "locator": "本機固定修訂 oldid=7909285 全文比對（textSha256 已驗）：王自之河內，賜民爵各一級，發年十五以上悉詣長平，遮絕趙救及糧食、益發兵佐陵、八九月圍邯鄲，不能拔、邯鄲實未易攻也。且諸侯救日至、終辭不肯行，遂稱病、免武安君為士伍，遷之陰密…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/06.analysis.md",
+            "analysisContextSha256": "a47d7d2894773b4f74444a916d576d53875c50759d225924d40a79871c6ee035"
+          }
+        }
+      }
+    }
+  ]
+}

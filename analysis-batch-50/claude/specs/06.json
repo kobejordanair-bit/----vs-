@@ -1,0 +1,181 @@
+{
+ "webSearches": [
+  {
+   "query": "秦昭襄王 白起之死 邯鄲之戰 范雎 研究 論文 杜郵 賜死",
+   "returnedUrls": [
+    "https://en.wikipedia.org/wiki/Bai_Qi",
+    "https://www.rthk.hk/oldassets/files/extra_file/20260415145018_372748794.pdf",
+    "https://www.chinatimes.com/opinion/20220702000001-262107",
+    "https://www.ntdtv.com/b5/2019/07/30/a102633901.html"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "鐵劍利而倡優拙"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "今武安君既死，而鄭安平等畔，內無良將而外多敵國，吾是以憂"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "欲以激勵應侯"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "懼，不知所出"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "王自之河內，賜民爵各一級，發年十五以上悉詣長平，遮絕趙救及糧食"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "益發兵佐陵"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "八九月圍邯鄲，不能拔"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "聞秦之有太后、穰侯、華陽、高陵、涇陽，不聞其有王也。夫擅國之謂王，能利害之謂王，制殺生之威之謂王"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "收穰侯之印，使歸陶"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "寶器珍怪多於王室"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "邯鄲實未易攻也。且諸侯救日至"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "終辭不肯行，遂稱病"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "免武安君為士伍，遷之陰密"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "其意尚怏怏不服，有餘言"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "乃使使者賜之劍，自裁"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "拜為河東守，三歲不上計"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "秦人憐之，鄉邑皆祭祀焉"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "武安君既死"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "擅國之謂王，能利害之謂王，制殺生之威之謂王"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "諸侯救日至"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "不聞其有王"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "邯鄲實未易攻"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷073",
+   "quote": "死而非其罪，秦人憐之"
+  },
+  {
+   "book": "shiji",
+   "title": "史記/卷079",
+   "quote": "內無良將而外多敵國"
+  }
+ ],
+ "extraSources": {},
+ "limits": [
+  "Soul-only continuation: analysis/stats/statsAnalysis are the ChatGPT-authored fields already published under analysis-batch-50/import.06-06.apply.json and are not rewritten; soulEssence is written against that published analysis (drafts/06.analysis.md, hash-bound to the receipt).",
+  "Page fetches remain blocked; 史記卷73、卷79 verified in the repository archive.",
+  "搜尋未得白起之死的同行評審論文，正文只引史記；白起與范雎交惡之背景依史記本傳，不採通俗戲劇化敘事。"
+ ],
+ "checks": {
+  "soulEssence": [
+   [
+    "identity",
+    "秦昭襄王，帝王；soul-only 續補，分析段沿用已發布之 ChatGPT 稿。"
+   ],
+   [
+    "speech",
+    "臨朝嘆息、欲以激勵應侯，原文核對。"
+   ],
+   [
+    "pressure",
+    "自之河內發年十五以上、益發兵佐陵、圍邯鄲不能拔，原文核對。"
+   ],
+   [
+    "drive",
+    "不聞其有王也、收穰侯印、寶器多於王室；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "邯鄲未易攻、終辭稱病、免為士伍、賜劍，原文核對。"
+   ],
+   [
+    "emotion",
+    "王稽鄭安平之任、秦人憐之、武安君既死；心境標[詮釋]。"
+   ],
+   [
+    "frame",
+    "擅國利害殺生之謂王；錯殺之判斷標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "收權與白起之死；非其罪。"
+   ],
+   [
+    "consistency",
+    "與已發布 analysis 之外戚收權、遠交近攻、長平、白起悲劇主軸一致。"
+   ]
+  ]
+ }
+}

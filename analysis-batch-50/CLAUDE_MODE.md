@@ -43,8 +43,23 @@ node analysis-batch-50/import.mjs --origin https://dynasty.piamamba.com \
 
 寫入結果不明（`write_outcome_unknown`）時就停下來人工核對，不要自動重試，也不要整庫回滾。發布後到網站確認賞析、五維、五維理由、靈魂七欄都看得到，並把結果記進 `claude-ledger.v1.json`。
 
+## 06 秦昭襄王：soul-only 續補（SOUL_FORMAT）
+
+06 的 analysis／stats／statsAnalysis 已由 ChatGPT 稿發布（`import.06-06.apply.json`，revision 6）。靈魂內核由 Claude 依**已發布的分析**撰寫（`drafts/06.analysis.md`，其雜湊與回執一致），組成 `results.06-06.soul.v1.json`（format `dynasty-analysis-batch50-soul-results`）。
+
+```sh
+node analysis-batch-50/claude/finish.mjs 06 https://claude.ai/code/session_... --soul-only analysis-batch-50/import.06-06.apply.json
+```
+
+importer 對這個格式的限制（見 `soul-continuation.test.mjs`）：
+
+- 每筆只能有 `soulEssence` 一欄，並必須帶 `priorReceipt`（回執路徑、回執 contentHash、afterRevision、三欄雜湊）；其他格式帶 `priorReceipt` 一律拒收。
+- 證據閘門會讀回執檔：必須是 `mode: apply`、`status: applied_verified`、讀回驗證通過，且這個人恰好寫了 analysis／stats／statsAnalysis 三欄、雜湊相符。
+- 規劃時對線上文件檢查：revision 不早於回執、三欄仍與回執雜湊完全一致、`soulEssence` 仍空，且拿掉三欄後與封存的原始輸入雜湊相同。任何一項不符就停，不會覆寫。
+- 本機發布指令與一般批次相同，只把 `--results` 換成 `results.06-06.soul.v1.json`；乾跑報告應為 `changedFields=1`，並列出 `priorReceipts`。
+
 ## 尚未處理的限制
 
-- 05 唐高宗：ChatGPT 稿史實錯誤（666 任命／668 克平壤），未匯入，等待修正稿。
-- 06 秦昭襄王：只缺靈魂內核。現有 importer 要求四欄全缺，需先另寫一條綁定 `import.06-06.apply.json` 的補欄路徑，只允許寫 `soulEssence`；不得放寬成任意覆蓋。
+- 05 唐高宗：原 ChatGPT 稿（年代錯誤）保留於 `attempts/05.analysisStats.1/`；已由 Claude 重寫為 `results.05-05.v1.json`（李勣乾封元年任命、總章元年拔平壤，並註明本紀十月／通鑑十二月之差），待本機乾跑與發布。
 - `audit-progress.mjs` / `final-audit-proof.mjs` 假設連續十批、每批五人全套，在改寫成依實際發布鏈計算之前不要執行，以免覆寫 `progress.v1.json`。
+- 所有 Claude 稿都是自我查核（`independent:false`）；發布前建議專案擁有者抽查。

@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { isDeepStrictEqual } from 'node:util';
 import { strictJsonParse, record } from '../cloudflare/src/contracts.mjs';
 import { PilotError, sha256, contentHash } from '../cloudflare/scripts/analysis-pilot-import.mjs';
-import { loadFixedManifest, validateManifest, validateChunk } from './import.mjs';
+import { loadFixedManifest, validateManifest, validateChunk, SOUL_FORMAT, validatePriorReceiptDocument } from './import.mjs';
 import { TASKS, ANALYSIS_LABELS, validateRequest, validateArticleSections, parseManuscript, fieldHashes, readRegularText } from './capture.mjs';
 import { verifyOriginalPromptBinding, recheckOriginalPromptMaterials } from './prompt-bindings.mjs';
 import { validateSourceReview } from './assemble.mjs';
@@ -133,6 +133,74 @@ export async function split(slug, sessionUrl, generatedAt = new Date().toISOStri
     composition: COMPOSITION }, null, 2) + '\n']);
   await writeAllNew(outputs);
   return { status: 'split', slug, stats: analysis.fields.stats, analysisCharacters: analysis.fields.analysis.length, soulCharacters: soul.fields.soulEssence.length };
+}
+
+// Soul-only continuation (author-policy.v2.json, 06): the manuscript holds
+// only the seven soul sections, written against the analysis that a verified
+// apply receipt already published. It may not carry an analysis marker.
+export function splitClaudeSoul(raw, id) {
+  if (typeof raw !== 'string' || raw.includes('\0') || raw.includes('\r')) bad('invalid_claude_manuscript');
+  const lines = raw.trimEnd().split('\n');
+  if (lines.at(-1) !== `<!-- BATCH50_COMPLETE ${id} soulEssence -->` || lines.some(line => line === `<!-- BATCH50_COMPLETE ${id} analysisStats -->`)) bad('soul_continuation_incomplete');
+  const text = lines.join('\n').trim() + '\n';
+  return { text, soulFields: parseManuscript(text, id, 'soulEssence') };
+}
+
+const receiptPrior = (receipt, file, id) => ({ file, sha256: contentHash(receipt), afterRevision: receipt?.verification?.afterRevision,
+  fieldHashes: Object.fromEntries((receipt?.writtenFieldHashes ?? []).filter(entry => entry?.id === id).map(entry => [entry.field, entry.sha256])) });
+
+export async function splitSoulOnly(slug, sessionUrl, receiptFile, generatedAt = new Date().toISOString()) {
+  const shared = await loadShared(slug), raw = await readRegularText(resolve(here, 'drafts', `${slug}.soulonly.raw.md`));
+  const receipt = strictJsonParse(await readRegularText(resolve(repo, receiptFile)));
+  const prior = receiptPrior(receipt, receiptFile, shared.target.id);
+  validatePriorReceiptDocument(receipt, { id: shared.target.id, priorReceipt: prior }, shared.manifest);
+  const context = await readRegularText(resolve(repo, shared.request.tasks.soulEssence.contextPath));
+  if (sha256(context.replace(/\n$/, '')) !== prior.fieldHashes.analysis) bad('soul_context_not_published_analysis');
+  const { text } = splitClaudeSoul(raw, shared.target.id);
+  const soul = captureClaudeTask({ ...taskInputs(shared, 'soulEssence', text, context), sessionUrl, generatedAt });
+  const drafts = name => resolve(here, 'drafts', name);
+  await writeAllNew([[drafts(`${slug}.soulEssence.raw.md`), soul.text], [drafts(`${slug}.soulEssence.response.md`), soul.text],
+    [drafts(`${slug}.soulEssence.capture.json`), JSON.stringify(soul.capture, null, 2) + '\n'],
+    [drafts(`${slug}.soulEssence.md`), fieldText('soulEssence', soul.fields.soulEssence)],
+    [drafts(`${slug}.soulonly.capture.json`), JSON.stringify({ format: 'dynasty-batch50-claude-soul-continuation', schemaVersion: 1, slug, recordId: shared.target.id,
+      provider: CLAUDE_PROVIDER, sessionUrl, generatedAt, authorPolicySha256: AUTHOR_POLICY_SHA256, packetSha256: shared.packetSha256,
+      manuscriptFile: `analysis-batch-50/drafts/${slug}.soulonly.raw.md`, manuscriptSha256: sha256(raw), priorReceipt: prior,
+      analysisContextPath: shared.request.tasks.soulEssence.contextPath, composition: COMPOSITION }, null, 2) + '\n']]);
+  return { status: 'split_soul_only', slug, soulCharacters: soul.fields.soulEssence.length, priorReceipt: receiptFile };
+}
+
+export async function loadClaudeSoulPerson(slug, receiptFile) {
+  const shared = await loadShared(slug), task = 'soulEssence';
+  const capture = strictJsonParse(await readRegularText(resolve(here, 'drafts', `${slug}.${task}.capture.json`)));
+  const review = strictJsonParse(await readRegularText(resolve(here, 'reviews', `${slug}.${task}.json`)));
+  const raw = await readRegularText(resolve(here, 'drafts', `${slug}.${task}.raw.md`));
+  const response = await readRegularText(resolve(here, 'drafts', `${slug}.${task}.response.md`));
+  const fieldsFiles = { soulEssence: await readRegularText(resolve(here, 'drafts', `${slug}.soulEssence.md`)) };
+  const analysisContext = await readRegularText(resolve(repo, shared.request.tasks.soulEssence.contextPath));
+  const receipt = strictJsonParse(await readRegularText(resolve(repo, receiptFile)));
+  return { request: shared.request, receiptFile, receipt, task: { ...taskInputs(shared, task, raw, analysisContext), capture, review, response, fieldsFiles } };
+}
+
+export function assembleClaudeSoulResults({ manifest, people }) {
+  validateManifest(manifest);
+  if (!Array.isArray(people) || !people.length || people.length > 5) bad('chunk_requires_one_to_five_people');
+  const seen = new Set();
+  const records = people.map(person => {
+    const request = person?.request, target = validateRequest(manifest, request);
+    if (seen.has(target.id)) bad('duplicate_or_incomplete_person');
+    seen.add(target.id);
+    const priorReceipt = receiptPrior(person.receipt, person.receiptFile, target.id);
+    validatePriorReceiptDocument(person.receipt, { id: target.id, priorReceipt }, manifest);
+    if (typeof person.task?.analysisContext !== 'string' || sha256(person.task.analysisContext.replace(/\n$/, '')) !== priorReceipt.fieldHashes.analysis) bad('soul_context_not_published_analysis');
+    const soul = verifiedClaudeTask(person.task);
+    return { id: target.id, inputSha256: target.inputSha256, promptSha256: request.tasks.soulEssence.promptSha256,
+      fields: { soulEssence: soul.fields.soulEssence }, priorReceipt,
+      provenance: { provider: CLAUDE_PROVIDER, sessionUrl: soul.provenance.sessionUrl, generatedAt: soul.provenance.generatedAt,
+        authorPolicySha256: AUTHOR_POLICY_SHA256, webSearchPerformed: true, checkedSources: soul.checkedSources, requestSha256: contentHash(request),
+        sourcePackageSha256: request.sourceSha256, preservedDeepSha256: request.preservedDeepSha256, perTask: { soulEssence: soul.provenance } } };
+  });
+  const batch = { format: SOUL_FORMAT, schemaVersion: 1, manifestSha256: contentHash(manifest), records };
+  validateChunk(batch, manifest); return batch;
 }
 
 export async function loadClaudePerson(slug) {

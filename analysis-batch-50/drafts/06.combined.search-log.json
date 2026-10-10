@@ -1,0 +1,172 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_秦昭襄王_7247317",
+  "packetSha256": "1236bcf7b4bcb3d40fd2aca9e419b95f61806f081db463c36925cae7442738e0",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "秦昭襄王 白起之死 邯鄲之戰 范雎 研究 論文 杜郵 賜死",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Bai_Qi",
+        "https://www.rthk.hk/oldassets/files/extra_file/20260415145018_372748794.pdf",
+        "https://www.chinatimes.com/opinion/20220702000001-262107",
+        "https://www.ntdtv.com/b5/2019/07/30/a102633901.html"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "鐵劍利而倡優拙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "今武安君既死，而鄭安平等畔，內無良將而外多敵國，吾是以憂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "欲以激勵應侯",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "懼，不知所出",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "王自之河內，賜民爵各一級，發年十五以上悉詣長平，遮絕趙救及糧食",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "益發兵佐陵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "八九月圍邯鄲，不能拔",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "聞秦之有太后、穰侯、華陽、高陵、涇陽，不聞其有王也。夫擅國之謂王，能利害之謂王，制殺生之威之謂王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "收穰侯之印，使歸陶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "寶器珍怪多於王室",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "邯鄲實未易攻也。且諸侯救日至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "終辭不肯行，遂稱病",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "免武安君為士伍，遷之陰密",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "其意尚怏怏不服，有餘言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "乃使使者賜之劍，自裁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "拜為河東守，三歲不上計",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "秦人憐之，鄉邑皆祭祀焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "武安君既死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "擅國之謂王，能利害之謂王，制殺生之威之謂王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "諸侯救日至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "不聞其有王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "邯鄲實未易攻",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷073",
+      "quote": "死而非其罪，秦人憐之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7073"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷079",
+      "quote": "內無良將而外多敵國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7079"
+    }
+  ],
+  "limits": [
+    "Soul-only continuation: analysis/stats/statsAnalysis are the ChatGPT-authored fields already published under analysis-batch-50/import.06-06.apply.json and are not rewritten; soulEssence is written against that published analysis (drafts/06.analysis.md, hash-bound to the receipt).",
+    "Page fetches remain blocked; 史記卷73、卷79 verified in the repository archive.",
+    "搜尋未得白起之死的同行評審論文，正文只引史記；白起與范雎交惡之背景依史記本傳，不採通俗戲劇化敘事。"
+  ]
+}
