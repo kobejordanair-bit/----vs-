@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_張良_2003953844",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:48:02.988Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "332770d3c791313454583430866d03f3198c1d688b582ae4cbaf518c70fc5717",
+  "rawResponseSha256": "332770d3c791313454583430866d03f3198c1d688b582ae4cbaf518c70fc5717",
+  "sourcePackageSha256": "e7241ee0fdbe3063c9e7293c5f7bb418ca3aecd6f3ea1e8ef1907a337678d977",
+  "searchLogSha256": "021ecf0a07e9d31756a060f4275eb21e668c0eaba31d48758116db8d96d74541",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7055",
+      "title": "史記·卷五十五 留侯世家 第二十五",
+      "locator": "本機固定修訂 oldid=2666612 全文比對（textSha256 已驗）：運籌策帷帳中，決勝千里外，子房功也、多病，未嘗特將也、從赤松子游、悉以家財求客刺秦王，為韓報仇、更名姓，亡匿下邳、往來為游兵…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7012",
+      "title": "資治通鑑·卷十二　漢紀四",
+      "locator": "本機固定修訂 oldid=2496498 全文比對（textSha256 已驗）：太子將兵，有功則位不益，無功則從此受禍矣",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7011",
+      "title": "資治通鑑·卷十一　漢紀三",
+      "locator": "本機固定修訂 oldid=7910161 全文比對（textSha256 已驗）：足以知神仙之為虛詭矣、淮陰誅夷，蕭何繫獄、托於神仙，遺棄人間，等功名於外物、所謂明哲保身者，子房有焉",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "張良，名臣；保留原 S 評級與 deepAnalysis。"
+    },
+    {
+      "id": "vetoes",
+      "passed": true,
+      "detail": "入秦宮之諫、藉前箸八不可，原文核對。"
+    },
+    {
+      "id": "positive",
+      "passed": true,
+      "detail": "三人之策、都關中、封雍齒，原文核對。"
+    },
+    {
+      "id": "succession",
+      "passed": true,
+      "detail": "四皓之計、羽翼已成，史記與通鑑卷12核對。"
+    },
+    {
+      "id": "retreat",
+      "passed": true,
+      "detail": "赤松子之語與臣光曰明哲保身，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[72,20,100,90,92] 對照荀彧[85,30,97,97,95]、周恩來[80,40,95,98,98]、姜子牙智謀100、管仲[88,45,98,100,92]、秦檜武力10。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    72,
+    20,
+    100,
+    90,
+    92
+  ]
+}
