@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐穆宗_285776262",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:16:05.355Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e9f179d74d17c20cbfff67ab9093c19202cceb5c2b5bd4d0f286d50f73bdd542",
+  "rawResponseSha256": "e9f179d74d17c20cbfff67ab9093c19202cceb5c2b5bd4d0f286d50f73bdd542",
+  "sourcePackageSha256": "1ddcd6d817fd5c635723f9c229b6f3b647ed4362be5015f2f1babdc65703bab0",
+  "searchLogSha256": "e1deba9757cb5d176b108a500f72656015f80b94eb28e2745b3694fb0eb31915",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716",
+      "title": "舊唐書·本紀第十六　穆宗",
+      "locator": "本機固定修訂 oldid=2601735 全文比對（textSha256 已驗）：山人柳泌輕懷左道。上惑先朝、付京兆府決杖處死、日加躁渴，遽棄萬國、餌金石之藥、悅，召之，求皋不獲、崩於寢殿，時年三十…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：把父親的勝利當作已結束之事來享用；場景為處死柳泌、銷兵、田弘正遇害、擊鞠墜馬、餌金石。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "守成框架、病中與朝廷斷聯、終於理解父親恐懼，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以悅召張皋與不聽李玨、頒賞與擊鞠驚恐、三日一幸、記結局忘過程、郭太后與曲宴、守成框架、柳泌與金石為事件。"
+    }
+  ],
+  "materialIssues": []
+}

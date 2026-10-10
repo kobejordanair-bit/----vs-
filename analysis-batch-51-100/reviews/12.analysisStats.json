@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐穆宗_285776262",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:16:05.354Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "226277f8f00d66e8e207eef29f43fbc608feac740d5f00371ca1a3abdb7afd85",
+  "rawResponseSha256": "226277f8f00d66e8e207eef29f43fbc608feac740d5f00371ca1a3abdb7afd85",
+  "sourcePackageSha256": "1ddcd6d817fd5c635723f9c229b6f3b647ed4362be5015f2f1babdc65703bab0",
+  "searchLogSha256": "e1deba9757cb5d176b108a500f72656015f80b94eb28e2745b3694fb0eb31915",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716",
+      "title": "舊唐書·本紀第十六　穆宗",
+      "locator": "本機固定修訂 oldid=2601735 全文比對（textSha256 已驗）：山人柳泌輕懷左道。上惑先朝、付京兆府決杖處死、日加躁渴，遽棄萬國、餌金石之藥、悅，召之，求皋不獲、崩於寢殿，時年三十…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "憲宗第三子、元和十五年即位、處死柳泌、長慶元年幽鎮軍亂與田弘正遇害、二年魏博自潰與擊鞠中風、四年崩年三十，皆依舊唐書卷16 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：魏博自潰；武力：擊鞠畋獵；智謀：處死柳泌與兩河無虞；政治：減價出糶與濫賞銷兵；魅力：聚則萬乘散則獨夫。對照宋欽宗、晉惠帝、劉禪、唐中宗、宋孝宗。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "銷兵與放回朱克融→幽鎮軍亂；姑息濫賞→軍旅益驕；擊鞠中風→餌金石→崩（[推斷]標示）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    32,
+    28,
+    50,
+    38,
+    48
+  ]
+}

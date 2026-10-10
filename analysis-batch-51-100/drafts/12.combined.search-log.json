@@ -1,0 +1,331 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐穆宗_285776262",
+  "packetSha256": "e8c217cdd96b3d4686462fcc8e5c558a7dd8a9aa3e78591671a5acf90d50fa0c",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "唐穆宗 長慶 銷兵 河朔再失 朱克融 王庭湊 田弘正 研究 論文",
+      "returnedUrls": [
+        "https://zh.wikisource.org/wiki/%E5%94%90%E6%9B%B8%E7%9B%B4%E7%AD%86_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "https://c.m.163.com/news/a/L2KB82P40556DIQ1.html",
+        "https://zh.wikisource.org/wiki/%E5%94%90%E5%8F%B2%E6%BC%94%E7%BE%A9/078",
+        "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B717%E4%B8%8A",
+        "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92_(%E8%83%A1%E4%B8%89%E7%9C%81%E9%9F%B3%E6%B3%A8)/%E5%8D%B7242",
+        "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7142",
+        "https://zh.wikisource.org/zh-hant/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92_(%E8%83%A1%E4%B8%89%E7%9C%81%E9%9F%B3%E6%B3%A8)/%E5%8D%B7243",
+        "https://chinesenotes.com/words/52044.html",
+        "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B718%E4%B8%8A"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "唐代 藩鎮 長慶 消兵 政策 失敗 學術 期刊 唐穆宗 姑息",
+      "returnedUrls": [
+        "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18K01005",
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/249037",
+        "https://www.airitilibrary.com/Article/Detail/16839617-200612-x-10-221-239-a",
+        "https://ah.lib.nccu.edu.tw/handle/140.119/97316",
+        "https://www.xsyk021.com/article/id/16bb904f-582c-42d5-aec7-12e1ce0fe263",
+        "https://www.tsinghua.edu.cn/info/1662/108170.htm",
+        "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B717%E4%B8%8A",
+        "https://irtest.lib.nccu.edu.tw/handle/140.119/94237",
+        "https://www.xsyk021.com/article/Y2021/I10/194"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "山人柳泌輕懷左道。上惑先朝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "付京兆府決杖處死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "日加躁渴，遽棄萬國",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "餌金石之藥",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "悅，召之，求皋不獲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "崩於寢殿，時年三十",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "上表請朝廷命帥",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "左右軍中尉馬進潭、梁守謙、魏弘簡等請立門戟，從之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "元和之政，幾致升平",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "平、勃之佐，繼以文、景之才",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "宰臣蕭俯等不顧遠圖，乃獻銷兵之議，請密詔天下軍鎮，每年限百人內破八人逃死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "情願居農者放，逃戶者不捕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "宰相崔植、杜元穎素不知兵，心無遠慮，謂兩河無虞，不復禍亂矣，遂奏劉總所籍大將並勒還幽州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "節度使田弘正並家屬將佐三百餘口並遇害",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "自潰於南宮縣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "上於馭軍之道，未得其要，常雲宜姑息其臣。故即位之初，傾府庫頒賞之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "非時賜與，不可勝紀。故軍旅益驕，法令益弛，戰則不克，國祚日危",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "名臣扼腕，無如之何",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "盛飾安國、慈恩、千福、開業、章敬等寺，縱吐蕃使者觀之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "三日一幸左右軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "與中宮貴主密宴以樂之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "與內官擊鞠禁中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "足不能履地，風眩就床",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "外不聞上起居者三日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "劉總進馬一萬五千匹",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "不知創業之艱難，不恤黎元之疾苦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "此何人哉，遽主鼎命",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "大合樂於魚藻宮",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "傾府庫頒賞之，長行所獲，人至巨萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "上恐，罷鞠升殿",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "詔五坊鷹隼並解放，獵具皆毀之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "守本官、同平章事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "於馭軍之道，未得其要",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "幸右軍擊鞠，遂畋於城西",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "謂兩河無虞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "據時估減半價出糶",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "傾府庫頒賞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "以大將文符鬻之富賈",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "聚則萬乘，散則獨夫，朝作股肱，暮為仇敵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "傾府庫頒賞之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "欻然墜馬，如物所擊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "上恐，罷鞠升殿，足不能履地，風眩就床",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "五十載已終之土，復入提封",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "密宴以樂之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "上餌金石之藥",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "皇太后移居興慶宮，皇帝與六宮侍從大合宴於南內",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷16",
+      "quote": "曲宴郭釗兄弟、貴戚、主婿等於宣和殿",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B716"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；全部史實引句對 repo 內固定修訂《舊唐書》卷16 全文比對（底本作「蕭俯」，依原字引用）。",
+    "兩次搜尋均未取得長慶銷兵或河朔再失的現代專論摘要，正文未引用現代研究。",
+    "事件年份依本紀長慶年號段落判讀。"
+  ]
+}
