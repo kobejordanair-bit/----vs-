@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 21,
-    "reviewed": 20,
-    "assembled": 20,
+    "generated": 22,
+    "reviewed": 21,
+    "assembled": 21,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 14,
+    "claudeAssembledAwaitingImport": 15,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -376,14 +376,17 @@
       "slug": "22",
       "id": "general_彭德懷_903329142",
       "name": "彭德懷",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.22-22.v1.json",
+      "resultsSha256": "2d70a06f203588095989fd54827fc6a23219448409f600c62f746e173dcd009f"
     },
     {
       "slug": "23",

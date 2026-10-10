@@ -1,0 +1,38 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_彭德懷_903329142",
+  "packetSha256": "305832323ffcade9bcc7dfac6e397edcd4cd76ff0f3be9f211bb5d1b13e86b90",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "彭德懷 志願軍司令員 第五次戰役 1951 失利 第一次戰役 抗美援朝紀念館 百團大戰 1940 八路軍副總指揮",
+      "returnedUrls": [
+        "https://www.cuhk.edu.hk/ics/21c/media/online/0811002.pdf",
+        "https://www.yzwb.net/news/wsj/202310/t20231031_193485.html",
+        "https://www.chinatimes.com/opinion/20220807000001-262107",
+        "https://anzacportal.dva.gov.au/node/704",
+        "https://m.thepaper.cn/baijiahao_9507428"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "彭德懷 1978 平反 追悼會 中共中央 1974年 逝世 廬山會議 罷官 官方 人民網",
+      "returnedUrls": [
+        "https://www.chinanews.com.cn/cul/news/2009/11-25/1982618.shtml",
+        "https://news.ifeng.com/history/2/200708/0809_336_183249_1.shtml",
+        "https://www.marxists.org/archive/peng-dehuai/index.htm",
+        "https://chinadigitaltimes.net/chinese/321546.html"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Two dswxyjy pages relied on only for propositions recorded by the handoff package; others via WebSearch summaries.",
+    "第五次戰役電報內容僅見於引述報導（含立場明顯的評論文章），正文明示未直接核讀；未引用立場偏頗之媒體。來源包所列湖南省頁為 http，未引用。",
+    "1974年去世、廬山後罷免國防部長屬通行史實，未附連結。"
+  ]
+}

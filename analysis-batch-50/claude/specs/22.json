@@ -1,0 +1,121 @@
+{
+ "webSearches": [
+  {
+   "query": "彭德懷 志願軍司令員 第五次戰役 1951 失利 第一次戰役 抗美援朝紀念館 百團大戰 1940 八路軍副總指揮",
+   "returnedUrls": [
+    "https://www.cuhk.edu.hk/ics/21c/media/online/0811002.pdf",
+    "https://www.yzwb.net/news/wsj/202310/t20231031_193485.html",
+    "https://www.chinatimes.com/opinion/20220807000001-262107",
+    "https://anzacportal.dva.gov.au/node/704",
+    "https://m.thepaper.cn/baijiahao_9507428"
+   ]
+  },
+  {
+   "query": "彭德懷 1978 平反 追悼會 中共中央 1974年 逝世 廬山會議 罷官 官方 人民網",
+   "returnedUrls": [
+    "https://www.chinanews.com.cn/cul/news/2009/11-25/1982618.shtml",
+    "https://news.ifeng.com/history/2/200708/0809_336_183249_1.shtml",
+    "https://www.marxists.org/archive/peng-dehuai/index.htm",
+    "https://chinadigitaltimes.net/chinese/321546.html"
+   ]
+  }
+ ],
+ "archiveChecks": [],
+ "extraSources": {
+  "https://www.dswxyjy.org.cn/BIG5/n/2015/0610/c244516-27134656.html": {
+   "title": "〈為什麼要寫信給毛主席〉（彭德懷1959年7–8月筆記節錄，中共中央黨史和文獻研究院）",
+   "locator": "來源包已記錄先前核讀：編輯說明與其後前兩段，寫信動機、工農比例與經濟速度，同時仍肯定大躍進部分做法；非7月14日信全文；本 session 未重新開啟",
+   "type": "primary_text",
+   "access": "source_package_prior_review"
+  },
+  "https://www.dswxyjy.org.cn/n/2015/0610/c244516-27134689.html": {
+   "title": "〈風雲突變的廬山會議〉（參與者回憶，中共中央黨史和文獻研究院）",
+   "locator": "來源包已記錄先前核讀：7月22日小組發言與7月23日毛講話後轉向批判、作者受牽連；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.cuhk.edu.hk/ics/21c/media/online/0811002.pdf": {
+   "title": "香港中文大學中國文化研究所《二十一世紀》網絡版論文",
+   "locator": "WebSearch 結果摘要：彭德懷1950年10月8日至1954年9月5日任志願軍司令兼政委，1952年4月回國治病由陳賡、鄧華代理",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://anzacportal.dva.gov.au/node/704": {
+   "title": "Anzac Portal (Australian Government DVA), \"United Nations forced to retreat south\"",
+   "locator": "WebSearch 結果摘要：1950年冬中國軍隊攻勢迫使聯合國軍南撤",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://www.chinanews.com.cn/cul/news/2009/11-25/1982618.shtml": {
+   "title": "中國新聞網（轉載人民網《大地》）彭德懷、陶鑄追悼大會相關報導",
+   "locator": "WebSearch 結果摘要：十一屆三中全會閉幕兩天後，中共中央、中央軍委在人民大會堂為彭德懷、陶鑄舉行恢復名譽追悼大會",
+   "type": "official_institution",
+   "access": "web_search_result_summary"
+  },
+  "https://www.marxists.org/archive/peng-dehuai/index.htm": {
+   "title": "Marxists Internet Archive, Peng Dehuai Archive",
+   "locator": "WebSearch 結果摘要：posthumously rehabilitated in 1978",
+   "type": "primary_text",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "No classical archive applies; page fetches remain blocked. Two dswxyjy pages relied on only for propositions recorded by the handoff package; others via WebSearch summaries.",
+  "第五次戰役電報內容僅見於引述報導（含立場明顯的評論文章），正文明示未直接核讀；未引用立場偏頗之媒體。來源包所列湖南省頁為 http，未引用。",
+  "1974年去世、廬山後罷免國防部長屬通行史實，未附連結。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "彭德懷，解放軍元帥；保留原 S- 評級與 deepAnalysis。"
+   ],
+   [
+    "korea",
+    "任職起迄依《二十一世紀》論文摘要；聯合國軍南撤依澳洲政府史料摘要；第五次戰役失利與電報自承標明為引述報導。"
+   ],
+   [
+    "lushan",
+    "筆記節錄的動機與仍肯定大躍進部分做法，依來源包記錄；7月22–23日轉向依參與者回憶。"
+   ],
+   [
+    "rehabilitation",
+    "1978年追悼大會依中新網摘要，英文文庫佐證。"
+   ],
+   [
+    "stats-calibration",
+    "[97,65,90,40,94] 對照林彪[99,50,97,45,70]、粟裕[98,55,97,50,88]、岳飛[98,95,88,35,96]、郭子儀[98,85,92,95,100]、韓信[100,70,100,25,60]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "筆記節錄；電報引述標[推斷]並說明未核原文。"
+   ],
+   [
+    "pressure",
+    "第五次戰役後與廬山，相隔八年；戰役部分標[推斷]。"
+   ],
+   [
+    "drive",
+    "志願軍任期與筆記；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "戰場報告與廬山轉向。"
+   ],
+   [
+    "emotion",
+    "筆記、支持者受牽連；晚年心境標[詮釋]。"
+   ],
+   [
+    "frame",
+    "責任倫理；廬山轉向原因標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "第五次戰役與廬山；寫信心理標[詮釋]。"
+   ]
+  ]
+ }
+}

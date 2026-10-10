@@ -1,0 +1,102 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_彭德懷_903329142",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:05:40.297Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b4f116c5ea95824f11e6ba4892da8ba2ae6fcf5b728e61ef99ac61bbc518c470",
+  "rawResponseSha256": "b4f116c5ea95824f11e6ba4892da8ba2ae6fcf5b728e61ef99ac61bbc518c470",
+  "sourcePackageSha256": "17850ef17020128e8ee14391b526ab3606574e8dc5ab5ea56998a1e5b2940ffe",
+  "searchLogSha256": "f520c3a0b9bdb2e60950caa599c9a3fde9940291426f3131f18204ad4322e702",
+  "checkedSources": [
+    {
+      "url": "https://www.cuhk.edu.hk/ics/21c/media/online/0811002.pdf",
+      "title": "香港中文大學中國文化研究所《二十一世紀》網絡版論文",
+      "locator": "WebSearch 結果摘要：彭德懷1950年10月8日至1954年9月5日任志願軍司令兼政委，1952年4月回國治病由陳賡、鄧華代理",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://anzacportal.dva.gov.au/node/704",
+      "title": "Anzac Portal (Australian Government DVA), \"United Nations forced to retreat south\"",
+      "locator": "WebSearch 結果摘要：1950年冬中國軍隊攻勢迫使聯合國軍南撤",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/BIG5/n/2015/0610/c244516-27134656.html",
+      "title": "〈為什麼要寫信給毛主席〉（彭德懷1959年7–8月筆記節錄，中共中央黨史和文獻研究院）",
+      "locator": "來源包已記錄先前核讀：編輯說明與其後前兩段，寫信動機、工農比例與經濟速度，同時仍肯定大躍進部分做法；非7月14日信全文；本 session 未重新開啟",
+      "type": "primary_text",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n/2015/0610/c244516-27134689.html",
+      "title": "〈風雲突變的廬山會議〉（參與者回憶，中共中央黨史和文獻研究院）",
+      "locator": "來源包已記錄先前核讀：7月22日小組發言與7月23日毛講話後轉向批判、作者受牽連；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.chinanews.com.cn/cul/news/2009/11-25/1982618.shtml",
+      "title": "中國新聞網（轉載人民網《大地》）彭德懷、陶鑄追悼大會相關報導",
+      "locator": "WebSearch 結果摘要：十一屆三中全會閉幕兩天後，中共中央、中央軍委在人民大會堂為彭德懷、陶鑄舉行恢復名譽追悼大會",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.marxists.org/archive/peng-dehuai/index.htm",
+      "title": "Marxists Internet Archive, Peng Dehuai Archive",
+      "locator": "WebSearch 結果摘要：posthumously rehabilitated in 1978",
+      "type": "primary_text",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "彭德懷，解放軍元帥；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "korea",
+      "passed": true,
+      "detail": "任職起迄依《二十一世紀》論文摘要；聯合國軍南撤依澳洲政府史料摘要；第五次戰役失利與電報自承標明為引述報導。"
+    },
+    {
+      "id": "lushan",
+      "passed": true,
+      "detail": "筆記節錄的動機與仍肯定大躍進部分做法，依來源包記錄；7月22–23日轉向依參與者回憶。"
+    },
+    {
+      "id": "rehabilitation",
+      "passed": true,
+      "detail": "1978年追悼大會依中新網摘要，英文文庫佐證。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[97,65,90,40,94] 對照林彪[99,50,97,45,70]、粟裕[98,55,97,50,88]、岳飛[98,95,88,35,96]、郭子儀[98,85,92,95,100]、韓信[100,70,100,25,60]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    97,
+    65,
+    90,
+    40,
+    94
+  ]
+}
