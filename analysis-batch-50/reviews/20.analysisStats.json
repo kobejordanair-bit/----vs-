@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_蘇定方_912794063",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:00:59.391Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "a35ad551c24d5ee57f3b98245f0a5822367924ed9decb817006bee6b036c21d2",
+  "rawResponseSha256": "a35ad551c24d5ee57f3b98245f0a5822367924ed9decb817006bee6b036c21d2",
+  "sourcePackageSha256": "3928b221995357139f3824a50bfc288a3eed18ba864c14728a3afa966aa50f70",
+  "searchLogSha256": "fd8979df011042eb9ca030c64a0f8f8883fe1701a1d7de6f33504f847c24463d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111",
+      "title": "新唐書·卷一百一十一\n列傳第三十六　郭二張三王蘇薛程唐",
+      "locator": "本機固定修訂 oldid=3517040 全文比對（textSha256 已驗）：蘇烈，字定方，以字行，冀州武邑人、定方驍悍有氣決，年十五，從父戰，數先登陷陣、率里中數千人爲本郡討賊、會大雪，解圍還、拜涼州安集大使，以定吐蕃、吐谷渾。乾封二年卒，年七十六、定方於國有功，當褒贈，若等不言，何邪",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783",
+      "title": "舊唐書·卷八十三\n列傳第三十三　郭孝恪　張儉　蘇定方　薛仁貴　程務挺　張士貴　趙道興",
+      "locator": "本機固定修訂 oldid=2632780 全文比對（textSha256 已驗）：靖使定方率二百騎為前鋒，乘霧而行，去賊一里許，忽然霧歇，望見其牙帳，馳掩殺數十百人。頡利及隋公主狼狽散走、率五百騎、副大總管王文度害其功、自今正可結為方陣，輜重並納腹中、又矯稱別奉聖旨、不如盡殺，取其資財…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7200",
+      "title": "資治通鑑·卷二百 唐紀十六",
+      "locator": "本機固定修訂 oldid=1996801 全文比對（textSha256 已驗）：蘇定方破高麗於浿江，屢戰皆捷，遂圍平壤城",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "蘇烈字定方，新舊唐書姓名對接；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "campaigns",
+      "passed": true,
+      "detail": "貞觀四年二百騎、顯慶元年鷹娑川與王文度事件、顯慶二年曳咥河（舊傳記為伊麗水）、都曼之役、顯慶五年百濟、龍朔元年平壤、乾封二年卒年七十六，原文核對。"
+    },
+    {
+      "id": "three-kingdoms",
+      "passed": true,
+      "detail": "「前後滅三國，皆生擒其主」依舊唐書原文；賀魯實由蕭嗣業追擒於石國，正文照錄。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[97,90,92,55,82] 對照李靖[100,75,100,85,92]、韋孝寬[96,75,98,92,85]、霍去病[96,92,95,35,88]、李勣[97,80,95,88,90]、岳飛[98,95,88,35,96]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    97,
+    90,
+    92,
+    55,
+    82
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_蘇定方_912794063",
+  "packetSha256": "acf19e7f778bc190e1bdda13432e703b743975ab7a00258ab459339962e174e4",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "蘇定方 曳咥河之戰 西突厥 阿史那賀魯 657 研究 新舊唐書 蘇烈",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Su_Dingfang",
+        "https://en.wikipedia.org/wiki/Battle_of_Irtysh_River",
+        "https://en.wikipedia.org/wiki/Ashina_Helu",
+        "https://data.ctext.org/entity/405533"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "靖使定方率二百騎為前鋒，乘霧而行，去賊一里許，忽然霧歇，望見其牙帳，馳掩殺數十百人。頡利及隋公主狼狽散走",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "率五百騎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "副大總管王文度害其功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "自今正可結為方陣，輜重並納腹中",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "又矯稱別奉聖旨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "不如盡殺，取其資財",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "如此，自作賊耳，何成伐叛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "唯定方一無所取",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "文度坐處死，後得除名",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "眾且十萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "定方率回紇及漢兵萬餘人擊之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "賊輕定方兵少，四面圍之，定方令步卒據原，攢槊外向，親領漢騎陣於北原。賊先擊步軍，三衝不入",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "賊遂大潰，追奔三十里，殺人馬數萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "賀魯獨與處木昆屈律啜數百騎西走",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "其俟斤懶獨祿以眾萬餘帳來降，定方撫之，發其千騎進至突騎施部",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "至於石國，擒之而還",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "定方戎服操賀魯以獻，列其地為州縣，極於西海",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "一日一夜行三百里",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "都曼自知不免，麵縛開門出降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "蔥嶺以西悉定",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "定方自城山濟海，至熊津江口",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "乘山而陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "直趣真都",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "右投城而下，百姓從之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "泰開門頓顙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "其大將禰植又將義慈來降",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "百濟悉平，分其地為六州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "定方前後滅三國，皆生擒其主",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "仍拜其子慶節為尚輦奉禦",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "追奔二十里，殺千五百餘人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷111",
+      "quote": "蘇烈，字定方，以字行，冀州武邑人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷111",
+      "quote": "定方驍悍有氣決，年十五，從父戰，數先登陷陣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷111",
+      "quote": "率里中數千人爲本郡討賊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷111",
+      "quote": "會大雪，解圍還",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷111",
+      "quote": "拜涼州安集大使，以定吐蕃、吐谷渾。乾封二年卒，年七十六",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111"
+    },
+    {
+      "book": "xintangshu",
+      "title": "新唐書/卷111",
+      "quote": "定方於國有功，當褒贈，若等不言，何邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111"
+    },
+    {
+      "book": "zizhitongjian",
+      "title": "資治通鑑/卷200",
+      "quote": "蘇定方破高麗於浿江，屢戰皆捷，遂圍平壤城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7200"
+    },
+    {
+      "book": "jiutangshu",
+      "title": "舊唐書/卷83",
+      "quote": "入夜，諸軍漸至，四面圍之，伐木為攻具，布列城下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; all linked citations verified in the repository archive. The WebSearch returned only Wikipedia-derived pages (with an error naming 程名振 for 程知節); none cited.",
+    "浿江條在通鑑卷200中位於「龍朔元年」之後、「龍朔二年」之前（字元位置 9800/10481/10852）。"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_蘇定方_912794063",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:00:59.393Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4d14b6055f9d38b6d014d760251a077b349b8529cd5d9e3b332b4c60e1445fcd",
+  "rawResponseSha256": "4d14b6055f9d38b6d014d760251a077b349b8529cd5d9e3b332b4c60e1445fcd",
+  "sourcePackageSha256": "3928b221995357139f3824a50bfc288a3eed18ba864c14728a3afa966aa50f70",
+  "searchLogSha256": "fd8979df011042eb9ca030c64a0f8f8883fe1701a1d7de6f33504f847c24463d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783",
+      "title": "舊唐書·卷八十三\n列傳第三十三　郭孝恪　張儉　蘇定方　薛仁貴　程務挺　張士貴　趙道興",
+      "locator": "本機固定修訂 oldid=2632780 全文比對（textSha256 已驗）：靖使定方率二百騎為前鋒，乘霧而行，去賊一里許，忽然霧歇，望見其牙帳，馳掩殺數十百人。頡利及隋公主狼狽散走、率五百騎、副大總管王文度害其功、自今正可結為方陣，輜重並納腹中、又矯稱別奉聖旨、不如盡殺，取其資財…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7111",
+      "title": "新唐書·卷一百一十一\n列傳第三十六　郭二張三王蘇薛程唐",
+      "locator": "本機固定修訂 oldid=3517040 全文比對（textSha256 已驗）：蘇烈，字定方，以字行，冀州武邑人、定方驍悍有氣決，年十五，從父戰，數先登陷陣、率里中數千人爲本郡討賊、會大雪，解圍還、拜涼州安集大使，以定吐蕃、吐谷渾。乾封二年卒，年七十六、定方於國有功，當褒贈，若等不言，何邪",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "自作賊耳之語與一無所取；沉默標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "630霧中二百騎與656鷹娑川，相隔二十六年，另有都曼奔襲。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "先登陷陣與拒屠降；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "王文度事件與身後無人請贈。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "撫降、父邕、子慶節；情感未記，標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "曳咥河與平壤；平壤原因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "分財與身後。"
+    }
+  ],
+  "materialIssues": []
+}
