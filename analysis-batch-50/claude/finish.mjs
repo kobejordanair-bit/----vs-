@@ -6,6 +6,7 @@
 // claude-ledger.v1.json. Never overwrites an existing output.
 import { readFile, writeFile, lstat, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadDocument, locate } from './archive-quote.mjs';
@@ -72,6 +73,8 @@ export async function refreshLedger() {
 }
 
 async function finish(slug, sessionUrl) {
+  // The combined packet is compiled from the unchanged original prompts; create it if missing.
+  if (!await exists(at('tasks', `${slug}.combined.json`))) execFileSync(process.execPath, [at('combined-pilot.mjs'), 'compile', slug], { cwd: resolve(batchDir, '..'), stdio: 'inherit' });
   const spec = await readJson(at('claude', 'specs', `${slug}.json`)), proof = await readJson(at('tasks', `${slug}.combined.json`));
   const archive = await archiveSources(spec.archiveChecks ?? []);
   const logPath = at('drafts', `${slug}.combined.search-log.json`);
