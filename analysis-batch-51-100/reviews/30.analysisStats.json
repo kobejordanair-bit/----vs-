@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李如松_905219635",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:05:48.864Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "89bf984580885205667f339856fe8ceceaacc705f7ea74b89f23d86a0f548329",
+  "rawResponseSha256": "89bf984580885205667f339856fe8ceceaacc705f7ea74b89f23d86a0f548329",
+  "sourcePackageSha256": "c277f93569c9244fb25567ee933db9f495ecbec83d1714277ea0d59a2cd2ba24",
+  "searchLogSha256": "6e397e93650c2f50ad248c7ae99cee5f7152c8572848ba18921e93579052bcd4",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7238",
+      "title": "明史·卷二百三十八 列傳第一百二十六",
+      "locator": "本機固定修訂 oldid=2594866 全文比對（textSha256 已驗）：叱惟敬憸邪，欲斬之、藉惟敬紿倭封，而陰襲之，奇計也、踔風月樓以待，群倭花衣夾道迎、以父廕為都指揮同知、驍果敢戰，少從父諳兵機、數言如松父子不當並居重鎮…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "李成梁長子、廕官、萬曆十一年山西總兵、十五年宣府、二十年寧夏提督、同年東征、二十一年正月平壤與碧蹄館、四月倭棄王京、十二月班師、二十五年遼東總兵、次年搗巢戰死，皆依明史卷238 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：寧夏與平壤分兵、碧蹄後調度；武力：手斬畏縮者、墮塹躍上；智謀：紿倭封陰襲、詭為朝鮮裝、水攻、焚龍山倉；政治：帝眷與言官交攻；魅力：吳惟忠、李有聲與兄弟同陣。對照戚繼光、蘇定方、孟珙、袁崇煥、王忠嗣、霍去病、李光弼、岳飛、關羽。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "沈惟敬言倭願封→李應試奇計→行長以為封使→平壤奇襲克城→四道復；連勝輕敵→信賊棄王京→碧蹄被圍→氣大索→款議復行→班師→詆和親辱國；中旨特用→氣益奮→輕騎搗巢中伏死。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    91,
+    88,
+    86,
+    42,
+    78
+  ]
+}

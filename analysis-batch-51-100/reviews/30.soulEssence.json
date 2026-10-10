@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李如松_905219635",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:05:48.866Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "99c08a7d5996d5d0c1ac58c04c1d9aeef0358d1da15bd003598e3dc68d924de4",
+  "rawResponseSha256": "99c08a7d5996d5d0c1ac58c04c1d9aeef0358d1da15bd003598e3dc68d924de4",
+  "sourcePackageSha256": "c277f93569c9244fb25567ee933db9f495ecbec83d1714277ea0d59a2cd2ba24",
+  "searchLogSha256": "6e397e93650c2f50ad248c7ae99cee5f7152c8572848ba18921e93579052bcd4",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7238",
+      "title": "明史·卷二百三十八 列傳第一百二十六",
+      "locator": "本機固定修訂 oldid=2594866 全文比對（textSha256 已驗）：叱惟敬憸邪，欲斬之、藉惟敬紿倭封，而陰襲之，奇計也、踔風月樓以待，群倭花衣夾道迎、以父廕為都指揮同知、驍果敢戰，少從父諳兵機、數言如松父子不當並居重鎮…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以和議為掩護勝於平壤，終被和議拖住並被詆和親辱國；場景為叱惟敬、花衣夾道迎、碧蹄金甲倭、遼東搗巢。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "三個氣字的情緒驅動、讓敵輕敵卻自己輕敵、以進攻洗和字等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以叱惟敬與無割首級與慰遣之、手斬畏縮與水攻與焚倉、父子不當並居重鎮與感帝知、碧蹄與搗巢、兄弟救援與李有聲、平壤速度與稻畦、款議復行與和親辱國為事件。"
+    }
+  ],
+  "materialIssues": []
+}
