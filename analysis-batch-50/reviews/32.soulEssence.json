@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_戚繼光_904227344",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:33:38.477Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "20ba706710d5ae0f3ac096bb5e7cf1e82556282bf661f3b1dce19ea0e6d963d0",
+  "rawResponseSha256": "20ba706710d5ae0f3ac096bb5e7cf1e82556282bf661f3b1dce19ea0e6d963d0",
+  "sourcePackageSha256": "15ddf7296e6a6b36b66f20a477720dd230e618cfb602ab3c03289c9179437a7a",
+  "searchLogSha256": "ffe9d41b3b5a02d19f8b559233ed7bb6b40dc46cfe8e93662a3fe4329a668a9a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212",
+      "title": "明史·卷二百十二 列傳第一百",
+      "locator": "本機固定修訂 oldid=2594838 全文比對（textSha256 已驗）：在南方戰功特盛，北則專主守、繼光在鎮十六年，邊備修飭，薊門宴然、故成梁擅戰功、世登州衛指揮僉事、見衛所軍不習戰、十七年間，易大將十人，率以罪去…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "七害疏與敵台議；同僚觀感標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "台州與蔡丕嶺相隔三年；北方轉化標[詮釋]。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "募兵、練將、著述；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "倚張居正與罷歸；操行所指標[詮釋]。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "浙兵立雨、咸與善、悒悒不得志；晚年標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "地形兵種匹配；不宜於北之動機標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "興化陷落與薊鎮成法；選擇標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}

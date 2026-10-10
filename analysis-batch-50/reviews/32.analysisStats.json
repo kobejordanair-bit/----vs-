@@ -1,0 +1,70 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_戚繼光_904227344",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:33:38.476Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "6931d0e1dbce49ea151b948f67dbec4762ec8592734290e2f0e28350a29459e9",
+  "rawResponseSha256": "6931d0e1dbce49ea151b948f67dbec4762ec8592734290e2f0e28350a29459e9",
+  "sourcePackageSha256": "15ddf7296e6a6b36b66f20a477720dd230e618cfb602ab3c03289c9179437a7a",
+  "searchLogSha256": "ffe9d41b3b5a02d19f8b559233ed7bb6b40dc46cfe8e93662a3fe4329a668a9a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212",
+      "title": "明史·卷二百十二 列傳第一百",
+      "locator": "本機固定修訂 oldid=2594838 全文比對（textSha256 已驗）：在南方戰功特盛，北則專主守、繼光在鎮十六年，邊備修飭，薊門宴然、故成梁擅戰功、世登州衛指揮僉事、見衛所軍不習戰、十七年間，易大將十人，率以罪去…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://input.cbdb.fas.harvard.edu/basicinformation/29605/texts",
+      "title": "China Biographical Database (CBDB, Harvard) 戚繼光 (29605) 著作條目",
+      "locator": "WebSearch 結果摘要：《紀效新書》十八卷首一卷",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "戚繼光，明將；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "south",
+      "passed": true,
+      "detail": "招募、因地制陣、台州九捷、橫嶼、平海先登，原文核對；岑港免官、通番之劾、興化陷落並陳。"
+    },
+    {
+      "id": "north",
+      "passed": true,
+      "detail": "七害疏、敵台、車營、浙兵立雨、朵顏羈縻，原文核對。"
+    },
+    {
+      "id": "patronage",
+      "passed": true,
+      "detail": "徐階高拱張居正倚任、居正歿半歲改調、罷歸奪俸，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[95,85,92,70,88] 對照孟珙[96,85,94,80,95]、左宗棠[94,45,93,90,85]、高歡[95,78,90,92,96]、岳飛[98,95,88,35,96]、粟裕[98,55,97,50,88]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    95,
+    85,
+    92,
+    70,
+    88
+  ]
+}

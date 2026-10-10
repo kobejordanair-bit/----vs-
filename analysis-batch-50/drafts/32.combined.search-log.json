@@ -1,0 +1,316 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_戚繼光_904227344",
+  "packetSha256": "ea5f76c7dc2272709265398fdd48a5b4e0ee960a6ccfe761390f90a329384460",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "戚繼光 紀效新書 十八卷本 十四卷本 鴛鴦陣 薊鎮 空心敵台 張居正 罷官 研究",
+      "returnedUrls": [
+        "https://input.cbdb.fas.harvard.edu/basicinformation/29605/texts",
+        "https://scholarlypublications.universiteitleiden.nl/access/item%3A2972212/view",
+        "https://irtest.lib.nccu.edu.tw/handle/140.119/101119",
+        "https://dc.tulips.tsukuba.ac.jp/s/pub_en/document/rb_10076701202"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "在南方戰功特盛，北則專主守",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "繼光在鎮十六年，邊備修飭，薊門宴然",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "故成梁擅戰功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "世登州衛指揮僉事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "見衛所軍不習戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "十七年間，易大將十人，率以罪去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "談兵者遵用焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "請召募三千人，教以擊刺法，長短兵迭用，由是繼光一軍特精",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "南方多藪澤，不利馳逐，乃因地形制陣法，審步伐便利，一切戰艦、火器、兵械精求而更置之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "先後九戰皆捷，俘馘一千有奇，焚溺死者無算",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "人持草一束，填壕進。大破其巢，斬首二千六百",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "連克六十營",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "繼光首，顯、大猷次之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "久不克，坐免官，戴罪辦賊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "無功，且通番",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "新倭至者日益眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "練兵之要在先練將",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "當長以衛短，短以救長",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "寇入平原，利車戰。在近邊，利馬戰。在邊外，利步戰。三者迭用，乃可制勝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "薊鎮邊垣，延袤二千里，一瑕則百堅皆瑕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "寇至，火器先發，稍近則步軍持拒馬器排列而前",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "薊門軍容遂為諸邊冠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "天大雨，自朝至日昃，植立不動。邊軍大駭，自是始知軍令",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "亦賴當國大臣徐階、高拱、張居正先後倚任之。居正尤事與商確，欲為繼光難者，輒徙之去",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "居正歿半歲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "悒悒不得志，強一赴，逾年即謝病",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "竟罷歸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "反奪俸",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "幼倜儻負奇氣。家貧，好讀書，通經史大義",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "繼光為將號令嚴，賞罰信，士無敢不用命",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "操行不如，而果毅過之。大猷老將務持重，繼光則飈發電舉，屢摧大寇，名更出大猷上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "臣官為創設，諸將視為綴疣，臣安從展佈？",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "繼光手殲其魁",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "繼光先登",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "身持短兵緣崖上",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "咸與善，動無掣肘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "終繼光在鎮，二寇不敢犯薊門",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "牛酒勞不絕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "七害不除，邊備曷修？",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "專聽臣訓練",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "徒費無益",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "跨牆為台",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "繼之者，踵其成法，數十年得無事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "美觀則不實用，實用則不美觀",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "許通貢如故",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "叩關請死罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "專任繼光",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷212",
+      "quote": "不宜於北",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 明史卷212 verified in the repository archive.",
+    "《紀效新書》版本差異（十八卷／十四卷）僅以「多種刻本、內容有變動」概述；鴛鴦陣淵源（唐順之等）研究未能確定對應網址，未引用。",
+    "戚繼光與張居正往來細節（如饋贈）不在明史本傳，未作主張；「操行不如」所指標[詮釋]。"
+  ]
+}
