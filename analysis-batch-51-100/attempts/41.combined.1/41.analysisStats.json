@@ -4,16 +4,16 @@
   "recordId": "minister_曾國荃_1994631548",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:47:44.014Z",
+  "reviewedAt": "2026-10-10T12:30:26.788Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "6e47d6b1760c7b3c5b546072a92255ebd646a120a248b751de5d9b453d4a6e27",
-  "rawResponseSha256": "6e47d6b1760c7b3c5b546072a92255ebd646a120a248b751de5d9b453d4a6e27",
+  "manuscriptSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
+  "rawResponseSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
   "sourcePackageSha256": "5ee7e6597114b9bb42a24f0c56687156e623b69a53e3f3b24701e14a3f55b752",
-  "searchLogSha256": "3472cba39a382614f2eaaced05935381ba8dce75fdca14c2cbf1494d6aca355b",
+  "searchLogSha256": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413",
@@ -22,22 +22,6 @@
       "type": "primary_text",
       "checked": true,
       "access": "fixed_revision_archive_fulltext"
-    },
-    {
-      "url": "https://www.chinanews.com.cn/cul/2012/05-22/3905885.shtml",
-      "title": "中國新聞網文化頻道轉引《近代中國史綱》論天京陷落",
-      "locator": "WebSearch 結果摘要：引趙烈文日記，記湘軍入城後貪掠奪頗亂伍；二手轉引，日記原文未讀",
-      "type": "official_institution",
-      "checked": true,
-      "access": "web_search_result_summary"
-    },
-    {
-      "url": "https://zh.wikipedia.org/wiki/%E6%B9%98%E5%86%9B%E5%8D%97%E4%BA%AC%E5%B1%A0%E5%9F%8E",
-      "title": "維基百科〈湘軍南京屠城〉條目",
-      "locator": "搜尋結果摘要（百科條目，非官方；類型欄僅三選一）：相關日記條目繫於《能靜居日記》同治三年六月二十三日；郭廷以《近代中國史綱》轉引，內容含湘軍入城搜括財物、沿街死屍多為老者。",
-      "type": "official_institution",
-      "checked": true,
-      "access": "web_search_result_summary"
     }
   ],
   "checks": [
@@ -49,7 +33,7 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：長壕地雷、雨花臺、地道破城、救荒；武力：砲傷頰裹創；智謀：逼城致敵、先固糧道、分別災情；政治：荒政冠各省、總攬宏綱；魅力：生祠、九人誓先登。對照曾國藩、王守仁、張之洞、于謙。［修訂1］依 Codex 審查，劫掠與屠戮獨立成過失一項，篇幅與救荒對稱，並明確統帥責任；統率、魅力弱點補軍紀失控；官書救活／斃敵數字一律寫明史書記稱。五項分數不調。"
+      "detail": "統率：長壕地雷、雨花臺、地道破城、救荒；武力：砲傷頰裹創；智謀：逼城致敵、先固糧道、分別災情；政治：荒政冠各省、總攬宏綱；魅力：生祠、九人誓先登。對照曾國藩、王守仁、張之洞、于謙。"
     },
     {
       "id": "causality",

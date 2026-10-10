@@ -5,20 +5,20 @@
   "recordId": "minister_曾國荃_1994631548",
   "provider": "Claude Code (Anthropic)",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T17:47:43.942Z",
+  "generatedAt": "2026-10-10T12:30:26.728Z",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "packetSha256": "8130a11b7732c0232bcc32716e30cc0f5ddcb922fc0c73c434a3d1928a8e954e",
   "combinedFile": "analysis-batch-51-100/drafts/41.combined.raw.md",
-  "combinedSha256": "1edf7365b5988ba0783f5bcf211141175dcd9dd041c925bc6f8c3a90f61d887c",
-  "searchLogSha256": "3472cba39a382614f2eaaced05935381ba8dce75fdca14c2cbf1494d6aca355b",
+  "combinedSha256": "6498ed259843ada227a17fafa8f8bf595c9d2a2801e2b460f142b1af6e37f9f6",
+  "searchLogSha256": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
   "parts": {
     "analysisStats": {
       "rawFile": "analysis-batch-51-100/drafts/41.analysisStats.raw.md",
-      "rawSha256": "6e47d6b1760c7b3c5b546072a92255ebd646a120a248b751de5d9b453d4a6e27"
+      "rawSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50"
     },
     "soulEssence": {
       "rawFile": "analysis-batch-51-100/drafts/41.soulEssence.raw.md",
-      "rawSha256": "20732b7f74bfc1b5aa201189868ec636135f06283571b25614826f3ef227cd70"
+      "rawSha256": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c"
     }
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."

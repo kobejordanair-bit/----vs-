@@ -6,7 +6,7 @@
   "slug": "41",
   "task": "analysisStats",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T17:47:43.942Z",
+  "generatedAt": "2026-10-10T12:30:26.728Z",
   "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "combinedPacketSha256": "8130a11b7732c0232bcc32716e30cc0f5ddcb922fc0c73c434a3d1928a8e954e",
@@ -21,19 +21,19 @@
   "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
   "originalPromptVerified": true,
   "rawResponseFile": "analysis-batch-51-100/drafts/41.analysisStats.raw.md",
-  "rawResponseSha256": "6e47d6b1760c7b3c5b546072a92255ebd646a120a248b751de5d9b453d4a6e27",
+  "rawResponseSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
   "responseFile": "analysis-batch-51-100/drafts/41.analysisStats.response.md",
-  "responseSha256": "6e47d6b1760c7b3c5b546072a92255ebd646a120a248b751de5d9b453d4a6e27",
+  "responseSha256": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
   "fieldsHashes": {
-    "analysis": "2d8ac08c8d95eec533651dc00a995b9e016ea5428116403ef0153e55c2730c71",
+    "analysis": "d379a1b5e2d2220f2a800e7d956b53698b2162bee80a12fcadd5205feb610be1",
     "stats": "eda5adfbcd68bf1fd1f3233a8968bae01fead5755af98c997beca889304ee453",
-    "statsAnalysis": "5f0cf0593d3976f853ea45a5c4a69cad558ffbb3d6a62a23bb87ed2659897726"
+    "statsAnalysis": "7326e567fe088975a46c68ff832c459c1ac5f910c2175b6600d9c1ff060ff5d1"
   },
   "webSearchPerformed": true,
   "searchLog": {
     "file": "analysis-batch-51-100/drafts/41.combined.search-log.json",
-    "sha256": "3472cba39a382614f2eaaced05935381ba8dce75fdca14c2cbf1494d6aca355b",
-    "webSearchCount": 2,
+    "sha256": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
+    "webSearchCount": 1,
     "archiveCheckCount": 70
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",

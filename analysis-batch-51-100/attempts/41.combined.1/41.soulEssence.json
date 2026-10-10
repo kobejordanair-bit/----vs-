@@ -4,16 +4,16 @@
   "recordId": "minister_曾國荃_1994631548",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:47:44.016Z",
+  "reviewedAt": "2026-10-10T12:30:26.790Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "20732b7f74bfc1b5aa201189868ec636135f06283571b25614826f3ef227cd70",
-  "rawResponseSha256": "20732b7f74bfc1b5aa201189868ec636135f06283571b25614826f3ef227cd70",
+  "manuscriptSha256": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c",
+  "rawResponseSha256": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c",
   "sourcePackageSha256": "5ee7e6597114b9bb42a24f0c56687156e623b69a53e3f3b24701e14a3f55b752",
-  "searchLogSha256": "3472cba39a382614f2eaaced05935381ba8dce75fdca14c2cbf1494d6aca355b",
+  "searchLogSha256": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413",

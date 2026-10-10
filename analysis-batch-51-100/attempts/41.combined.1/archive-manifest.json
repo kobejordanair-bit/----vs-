@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "41",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：入城劫掠僅一句二手摘要、與救荒篇幅及責任判斷不對稱，官書數字未標記稱；補轉引來源並獨立成過失，分數不調",
+  "files": {
+    "41.analysis.md": "b06962c864d92cc13a257827161e3914180cc4ddc6f30670ee619775da5eaf54",
+    "41.analysisStats.capture.json": "0144efd0ee7c696a7028c9905af9c54fa792dd52ffcd663b29b6f1e2cb89f647",
+    "41.soulEssence.capture.json": "c5e62b1bf3bbca48d1e369c29ef09b8ce22fcf028bd752aff738b84e023ed0c8",
+    "41.analysisStats.raw.md": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
+    "41.combined.raw.md": "6498ed259843ada227a17fafa8f8bf595c9d2a2801e2b460f142b1af6e37f9f6",
+    "41.soulEssence.response.md": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c",
+    "41.analysisStats.response.md": "73366394759825f3a4560ddf0c38c25b9433124211fff4c01a4a85f6e78c3e50",
+    "41.statsAnalysis.md": "7db8c8ffa1413536fab1894e43e9c8631148357c7d1aea2f034427e72b8d5b41",
+    "41.soulEssence.md": "bc706963bea5b086f30c598e240c68eb3c5420948e87ae16c950aec2e7e71725",
+    "41.stats.json": "723f062a3b244c7e0911c536bf4d0d6be9b5b2a89524d1a3bce954eda330d081",
+    "41.combined.capture.json": "ba05be23ce4956f9c32101f8e8f373b638340cf27c5c3d11b9cff3917b164987",
+    "41.combined.search-log.json": "fe71c263a3b31c02efa228a915735aba79b6852db7958944a0da50be607d6ce6",
+    "41.soulEssence.raw.md": "e72f27d5ced1190f7f0385910e5281d196e567641a005e312911efbb594bbf9c",
+    "41.soulEssence.json": "35a19dcbc293906259adf19f7e693928adeacdf6a5c6d373bead74068b305149",
+    "41.analysisStats.json": "08a05efd3b0b3266cc5c21a2a43bd10d137fa31ac073fb392cb8abb63fb0a41d",
+    "results.41-41.v1.json": "d6d9c285e1c3c9f7372ed15e22edae3e310a752d1c752a3cd52fa9542e0c1c2b",
+    "spec.41.json": "3ac3ea33e3461c2b709a60abab4e5ddf9f6501cc423dba377ce8a7eb2ae7fbfa",
+    "spec.41.quotes.json": "9a64d40c8ac91afa6f1f32ae4afe151426f7ddbd6d5691bc463a202c29e73576"
+  }
+}

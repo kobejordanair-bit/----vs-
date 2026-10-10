@@ -21,17 +21,6 @@
         "https://data.ctext.org/entity/67867",
         "https://blog.udn.com/teddy5422/4457840"
       ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "趙烈文 能靜居日記 天京 破城 老弱 盡遭殺戮 沿街死屍 十之九皆老者 搜括窖藏 原文",
-      "returnedUrls": [
-        "https://book.douban.com/subject/25740281/",
-        "https://zh.wikipedia.org/wiki/%E6%B9%98%E5%86%9B%E5%8D%97%E4%BA%AC%E5%B1%A0%E5%9F%8E",
-        "https://zh.wikipedia.org/zh-tw/%E8%B5%B5%E7%83%88%E6%96%87",
-        "https://m.163.com/dy/article/JQK11O6L05566PSQ.html?did=65471306",
-        "https://kknews.cc/history/zgr9j5g.html"
-      ]
     }
   ],
   "archiveChecks": [
@@ -236,12 +225,6 @@
     {
       "book": "qingshigao",
       "title": "清史稿/卷413",
-      "quote": "斃賊十餘萬",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
-    },
-    {
-      "book": "qingshigao",
-      "title": "清史稿/卷413",
       "quote": "疏劾其貪庸驕蹇",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
     },
@@ -309,6 +292,12 @@
       "book": "qingshigao",
       "title": "清史稿/卷413",
       "quote": "分別災情輕重、賑期久暫",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷413",
+      "quote": "斃賊十餘萬",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7413"
     },
     {
@@ -459,8 +448,6 @@
   "pageReads": [],
   "limits": [
     "網頁全文無法開啟（WebFetch 被代理拒絕），無 web_page_read；全部史實引句對 repo 內固定修訂《清史稿》卷413（含沈葆楨傳）全文比對。",
-    "湘軍入城劫掠僅據轉引趙烈文日記之搜尋摘要，以粗體標示不作引句；丁戊奇荒山西賑務之現代研究搜尋未得；《曾國荃全集》奏稿與《能靜居日記》原文未比對。",
-    "［修訂1］《清史稿》檢索（含卷413 曾國荃傳及卷475 等）未見天京城破後劫掠的記載；趙烈文《能靜居日記》原文本 session 無法取得，仍為二手轉引（郭廷以書經中國新聞網與維基條目轉述），正文標[史載：二手轉引]、不寫死難確數。",
-    "［修訂1］「活饑民六百萬」「斃賊十餘萬」等數字改標[史載：官書數字]並明言為史書記稱，非獨立統計。"
+    "湘軍入城劫掠僅據轉引趙烈文日記之搜尋摘要，以粗體標示不作引句；丁戊奇荒山西賑務之現代研究搜尋未得；《曾國荃全集》奏稿與《能靜居日記》原文未比對。"
   ]
 }
