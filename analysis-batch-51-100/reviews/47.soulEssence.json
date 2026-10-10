@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_孫科_2003921568",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T16:25:17.001Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e5178cc632a7052ba8d7f0f842633d4cf85d69651adb7821eb557a47baa4f463",
+  "rawResponseSha256": "e5178cc632a7052ba8d7f0f842633d4cf85d69651adb7821eb557a47baa4f463",
+  "sourcePackageSha256": "b75f21b76cf49e8b57c13d3a50022287bcc3b7a55688333c459c8ffeecc9c2ad",
+  "searchLogSha256": "13d62224e577ede2d36c90a8e95ffe92ecc939979a63de4a5c6a77a570d54a7f",
+  "checkedSources": [
+    {
+      "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c047-199712028.pdf",
+      "title": "香港中文大學《二十一世紀》1997年12月號論孫科之文章",
+      "locator": "WebSearch 結果摘要：立法院長十六年主導訓政戰時行憲立法、1943-46主張民主被稱自由主義立法院長；全文未讀",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Sun_Fo",
+      "title": "Sun Fo（英文維基百科）",
+      "locator": "WebSearch 結果摘要：1932年1月行政院長、1949後流亡香港歐洲美國、1965返台、1966-73考試院長、東吳董事長、1973年9月13日卒；部分待考",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：寫下權能區分憲法、自己只握能不握權；場景為五五憲草、吞吞吐吐、四輪投票、兩度短命組閣。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "延續父親藍圖之驅動、條文不敵槍桿之盲點等皆標[詮釋]；事實均標此據搜尋摘要。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以民主主張與吞吞吐吐、被推上台與1932月餘、三階段立法與考試院東吳、條文與一九三二汪精衛接任、四輪投票與海外漂泊、權能區分與選票軍事、五院走遍而無權為事件。"
+    }
+  ],
+  "materialIssues": []
+}

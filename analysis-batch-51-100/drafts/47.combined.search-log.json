@@ -1,0 +1,86 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_孫科_2003921568",
+  "packetSha256": "25c88f736df5d5fcb83a156d1c6ea5851402961d00bcd1d435d20aa0e90a7f0c",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "孫科 生平 1891 1973 立法院長 行政院長 考試院長 國史館 研究",
+      "returnedUrls": [
+        "https://www.chinatimes.com/opinion/20200927000001-262107",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c047-199712028.pdf",
+        "https://www.ey.gov.tw/Page/4ED2F231892187F9/73e92b3d-a0ef-4061-a6cf-17e42ff54601",
+        "https://www.thenewslens.com/article/35564",
+        "https://www.president.gov.tw/File/Doc/68eace68-2ee0-4927-a8b9-82875089bc39",
+        "https://archontology.org/nations/china/china-roc/00_1928_48_g.php"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 五五憲草 立法院 起草 憲法 1936 研究",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/National_Constituent_Assembly_(Republic_of_China)",
+        "https://cityu.edu.hk/upress/pub/media//catalog/product/files/9789629373085_preview.pdf",
+        "https://zh.wikisource.org/wiki/%E4%BA%94%E4%BA%94%E6%86%B2%E8%8D%89",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c131-201203005.pdf",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c047-anyu.pdf"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1948 行政院長 1949 辭職 遷都廣州 李宗仁 不合 研究",
+      "returnedUrls": [
+        "https://www.hk01.com/台灣新聞/434816/史海鉤沉-從北平和談到跟風台獨-國民黨的分裂與質變",
+        "https://www.ey.gov.tw/Page/4ED2F231892187F9/73e92b3d-a0ef-4061-a6cf-17e42ff54601",
+        "https://www.gvm.com.tw/article/2235",
+        "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 廣州市長 1921 市政 建設 太子派 評價",
+      "returnedUrls": [
+        "https://www.info.gov.hk/gia/general/201109/30/P201109300215_print.htm",
+        "https://www.newsgd.com/node_5c070fdd03/b556b15f7b.shtml",
+        "https://jiu-unipa.jiu.ac.jp/kgresult/english/researchersHtml/0097520/REP_CHOSHO/0097520_REP_CHOSHO_9.html",
+        "https://chiculture.org.hk/en/photo-story/2751"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1948 副總統選舉 李宗仁 第四輪 落選 票數",
+      "returnedUrls": [
+        "https://newtalk.tw/citizen/view/62207",
+        "https://search.library.wisc.edu/digital/A3ZRT6AWATPVI383/text/A2PYBPSC6F75MR8R",
+        "https://www.marxists.org/chinese/reference-books/yunyiqun-1948/31.htm"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1932 行政院長 一個月 辭職 寧粵合作 財政困難 胡漢民 蔣介石",
+      "returnedUrls": [
+        "https://www.archontology.org/nations/china/china-roc/00_1928_48_g.php",
+        "https://en.wikipedia.com/wiki/Sun_Fo",
+        "https://history.state.gov/historicaldocuments/frus1932v04/d206"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "孫科 1949 後 旅居美國 1965 返台 考試院長 晚年",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Sun_Fo",
+        "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Sun_Ke"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "pageReads": [],
+  "limits": [
+    "孫科為近代人物，repo archive 無可比對原典；網頁全文無法開啟（WebFetch 被代理拒絕），全部內容僅據搜尋結果摘要，正文以[史載：此據搜尋摘要]標示，摘要語句改以粗體不作引句。",
+    "國史館《孫科先生事略》、《國民大會實錄》副總統選舉票數、孫科日記與回憶錄均未讀；廣州市長任期只依行政院網站列1926-27，早年任期未補，須人工抽查。"
+  ]
+}
