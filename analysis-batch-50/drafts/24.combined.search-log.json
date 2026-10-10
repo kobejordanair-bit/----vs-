@@ -1,0 +1,136 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_孫武_306204690",
+  "packetSha256": "19d5593c81eab422b92fda4f61af20380384062dce76692adc5d4ea4e340abe2",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "銀雀山漢墓竹簡 1972 孫子兵法 孫臏兵法 同時出土 證明 兩人 博物館 臨沂",
+      "returnedUrls": [
+        "https://ir.library.osaka-u.ac.jp/repo/ouka/all/76128/cks_065_115.pdf",
+        "https://www.ctwx.tsinghua.edu.cn/__local/C/CA/C9/E46EA70BC233FB1535CD9E839CA_1BC547B5_630D6.pdf?e=.pdf",
+        "https://www.cuhk.edu.hk/ics/21c/media/articles/c087-200403086.pdf",
+        "https://tdr.lib.ntu.edu.tw/handle/123456789/71270"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "孫子武者，齊人也。以兵法見於吳王闔廬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "子之十三篇，吾盡觀之矣，可以小試勒兵乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "可試以婦人乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "約束不明，申令不熟，將之罪也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "既已明而不如法者，吏士之罪也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "將在軍，君命有所不受",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷065",
+      "quote": "西破彊楚，入郢，北威齊晉，顯名諸侯，孫子與有力焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷031",
+      "quote": "將軍孫武曰：「民勞，未可，待之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷031",
+      "quote": "始子之言郢未可入，今果如何",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷031",
+      "quote": "楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "蔡侯以吳子及楚人戰于柏舉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "楚瓦不仁．其臣莫有死志．先伐之．其卒必奔",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "所謂臣義而行．不待命者．其此之謂也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "以其屬五千．先擊子常之卒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "申包胥如秦乞師",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "申包胥以秦師至．秦子蒲．子虎．帥車五百乘以救楚",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "大敗夫概王于沂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    },
+    {
+      "book": "zuozhuan",
+      "title": "春秋左氏傳/定公",
+      "quote": "夫概王歸．自立也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; primary texts verified in the repository archive.",
+    "「孫武」二字在本機《春秋左氏傳》十三篇全文中出現0次，以程式計數確認。",
+    "《孫子》本文（先為不可勝、全勝、兵貴勝不貴久等）不在本機原典庫，屬通行文本，未附連結。"
+  ]
+}

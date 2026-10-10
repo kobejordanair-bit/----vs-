@@ -1,0 +1,199 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "general_孫武_306204690",
+      "inputSha256": "ad2cd4e5b79d3c17e458f3d94e01580e8f1b56e79cec242181a41ceeeae5ecb7",
+      "promptSha256": "84968a515d54da57f6735ee918d736d9ed3909d6aa07a3c04644649b93875257",
+      "fields": {
+        "analysis": "孫武是中國軍事史上最大的悖論：他的名字幾乎等同於「兵法」本身，但他作為一位實戰將領的事蹟，卻幾乎找不到同時代的直接證據。網站對他的定位是「以十三篇奠定後世戰術圭臬，實戰中指揮柏舉之戰以少勝多」。前半句毫無疑問；後半句，我要提出一個反常識的看法：**柏舉之戰的戰場主角並不是孫武，而他真正的貢獻，恰恰是讓吳國「不打」的那幾年**。孫武是一位戰略節制者，而不是戰場上的衝鋒者；這正是《孫子》的精神，也是他的歷史真相。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n《史記》的記載非常簡短：「孫子武者，齊人也。以兵法見於吳王闔廬。」闔廬讀完他的十三篇後，要他「小試勒兵」，甚至可以「試以婦人」，於是有了著名的宮女練兵故事（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）。\n\n他面對的局是春秋晚期的吳楚爭霸：\n\n1.  **吳國的崛起與局限**：吳國地處東南，國力新興，但與老牌強國楚國相比，人口與資源都處於劣勢。\n2.  **楚國的內部裂痕**：楚國令尹囊瓦（子常）貪婪，得罪了唐、蔡等附庸國。\n3.  **春秋戰爭的轉型**：戰爭正從貴族車戰的禮儀化衝突，走向更講求謀略、欺敵與後勤的全面戰爭。\n\n他在歷史上的位置是**中國兵學的奠基者**。無論他本人打過多少仗，《孫子》十三篇都定義了此後兩千多年東亞軍事思想的框架。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：柏舉之戰的戰場決斷屬於夫概王，孫武的功勞在於「讓吳國等待」。**\n\n先看最早的史料。《春秋左氏傳》詳細記載了定公四年（前506年）的柏舉之戰，但整部《左傳》沒有一次提到孫武的名字（本文以本機固定修訂全文逐篇檢索確認）。《左傳》裡的戰場主角是闔廬的弟弟夫概王：他在柏舉晨請於闔廬，說「楚瓦不仁，其臣莫有死志，先伐之，其卒必奔」，闔廬不許，他便說「所謂臣義而行，不待命者，其此之謂也」，「以其屬五千，先擊子常之卒」，楚軍因此潰亂（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）。\n\n那麼孫武在哪裡？他出現在司馬遷的《吳太伯世家》，而且出現的方式很特別。闔廬三年（前512年），吳軍攻楚拔舒，闔廬想乘勝入郢，「將軍孫武曰：民勞，未可，待之」。到了闔廬九年，闔廬問伍子胥與孫武：「始子之言郢未可入，今果如何？」二人回答：「楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可。」闔廬依計聯合唐、蔡伐楚（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）。\n\n把兩份史料放在一起，孫武的角色就清楚了：他不是在柏舉戰場上親自衝鋒的人，而是在戰前六年反覆勸吳王「不要打」、直到楚國內部出現裂痕、盟友就位後才主張出兵的戰略家。這正是《孫子》「先為不可勝，以待敵之可勝」的實踐。司馬遷在列傳中的評語也很克制：「西破彊楚，入郢，北威齊晉，顯名諸侯，孫子與有力焉」（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）——「與有力焉」，是參與其中、出了力，而不是一人獨佔其功。\n\n**【時代局限：勝利之後的潰散】**\n\n入郢並不是吳國的終點，而是吳國戰略的極限。《左傳》記載，楚臣申包胥「如秦乞師」，次年（前505年）「申包胥以秦師至」，秦將子蒲、子虎「帥車五百乘以救楚」，在沂地「大敗夫概王」；同年九月，夫概王更趁機「歸，自立也」，與闔廬爭位失敗後奔楚（[《春秋左氏傳·定公五年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）。吳國攻下了楚國的都城，卻無法佔領楚國；擊敗了楚軍，卻引來了秦國；最勇猛的戰將，又在勝利後內訌。\n\n這些都是**時代與國力的局限**：以吳國的人口與組織能力，根本不足以吞併楚國這樣的大國。孫武的「待之」能夠選擇最佳的出手時機，卻無法改變吳國體量不足的根本事實。從這個角度看，《孫子》反覆強調「全勝」「不戰而屈人之兵」「兵貴勝，不貴久」，或許正是從吳楚戰爭的教訓中提煉出來的：以小國之力打大國，最好的結果是迫使對方屈服，而不是攻城略地後陷入消耗。\n\n**【功：十三篇——比任何一場戰役都持久的勝利】**\n\n孫武真正無可爭議的功績，是兵法本身。二十世紀曾有學者懷疑《孫子》成書於戰國、甚至懷疑作者是孫臏。一九七二年山東臨沂銀雀山漢墓同時出土了《孫子兵法》與《孫臏兵法》竹簡，簡本《孫子》與今本差異不大，這讓「兩書各自成篇」的事實得到確認，也動搖了以《孫子》為孫臏所作的懷疑論（[香港中文大學《二十一世紀》相關論文](https://www.cuhk.edu.hk/ics/21c/media/articles/c087-200403086.pdf)）。\n\n這一發現的意義是：至遲在西漢初年，《孫子》已經以接近今本的面貌流傳，並與《孫臏兵法》區分開來。至於孫武本人的生平細節，仍屬學術討論的範圍；但他作為《孫子》傳統的源頭，地位已經穩固。\n\n**【宮女練兵：一個關於軍紀的寓言】**\n\n《史記》記載，孫武以闔廬的寵姬二人為隊長，宮女們聽到鼓令後「大笑」。孫武說「約束不明，申令不熟，將之罪也」，再次申令後仍笑，他便說「既已明而不如法者，吏士之罪也」，下令斬殺兩名隊長；闔廬求情，他回答「臣既已受命為將，將在軍，君命有所不受」（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）。\n\n這個故事出自成書於數百年後的《史記》，不應被當成現場紀錄，而應看作一則關於「將權」與「軍紀」的寓言。它表達的核心觀念——命令不清是將領的責任，命令清楚而不執行是部屬的責任——正是《孫子》治軍思想的縮影。\n\n### **3. 【人性與性格側寫】**\n\n*   **極度理性的節制者**：「民勞，未可，待之」（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)），他最重要的一句話是「不要打」。\n*   **重視責任分界**：宮女練兵故事中，他先檢討「將之罪」，再追究「吏士之罪」（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)），這種先問自己、再問部屬的順序，反映了他對指揮責任的理解。\n*   **不戀戰功**：史料中幾乎沒有他爭功或居功的紀錄，連柏舉之戰的勝利，司馬遷也只說他「與有力焉」。\n*   **神秘的退場**：《史記》沒有記載他的結局，他在入郢之後幾乎從史冊中消失。對一位主張「功成不居」的兵家而言，這種消失本身也像是一種性格的註腳，儘管史料無法證實他是主動隱退。\n\n### **4. 【如果生在現代】**\n\n孫武最適合的現代角色是：**一家頂尖戰略顧問公司的創辦人，同時是全球最暢銷的商業戰略書作者。**\n\n*   **擅長說「不」**：當客戶急著擴張時，他會說「現在市場還沒準備好，等競爭對手內部出問題再出手」，並準確預測時機。\n*   **重視聯盟**：他會建議客戶先與受競爭對手壓迫的中小企業結盟，再發動攻勢。\n*   **建立制度**：他會先把公司的指令系統與責任分工講清楚，「命令不清是主管的錯，命令清楚而不執行是員工的錯」。\n*   **把經驗寫成經典**：他留下的那本書，比他參與過的任何一個案子都更有影響力，被翻譯成數十種語言，成為商學院必讀教材。",
+        "soulEssence": "【說話邏輯】\n他最典型的說話方式是「簡短、條件式的判斷」。闔廬想乘勝入郢，他只說：「民勞，未可，待之。」（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）[史載]。六年後闔廬再問，他與伍子胥回答：「楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可。」（同上）[史載]。潛台詞是：「不是不能打，而是條件還不具備；條件一旦具備，我會告訴你。」在宮女練兵中，他也以條件分界說話：「約束不明，申令不熟，將之罪也……既已明而不如法者，吏士之罪也。」（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）[史載：此故事見於數百年後成書的《史記》，屬傳說層次的材料]。他的沉默意味著等待條件成熟[推斷：依據他在闔廬三年至九年間反覆主張暫緩的記載]。\n\n【壓力反應】\n面對君主急於求成的壓力，他的第一反應是「冷靜指出條件不足，堅持等待」。\n闔廬三年，吳軍剛拔舒城，闔廬想直取郢都，孫武以「民勞，未可，待之」勸阻（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）[史載]。宮女練兵時，闔廬見寵姬將被斬，急忙求情，他以「將在軍，君命有所不受」堅持執行（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）[史載：傳說層次]。兩件事的情境不同，一是戰略、一是軍紀，而他兩次都沒有因為對方是君主就改口。共同結構是：他在君主的壓力下，堅守自己認定的原則與條件，不因權威而退讓[推斷]。\n\n【核心驅動】\n他真正追求的是「在條件最有利時取勝，並把勝利的方法變成可傳承的知識」。\n他以兵法十三篇求見闔廬，闔廬說「子之十三篇，吾盡觀之矣」（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）[史載]，說明他在實戰之前就已完成理論體系。他在吳國反覆主張等待時機（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）[史載]。這兩點揭示：他首先是一位思想家，其次才是實踐者[詮釋：孫武生平史料極少，此為從有限記載歸納的動機]。\n\n【慣性盲點】\n他最大的優點「節制與理性」，可能讓他在歷史記錄中被更搶眼的行動者所掩蓋。\n柏舉之戰中，衝鋒陷陣、改變戰局的是夫概王，《左傳》完全沒有提到孫武（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）[史載]。入郢之後，《史記》也沒有記載他的任何作為或結局（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）[史載]。兩者的共同結構是：一位以「不戰」與「待機」為核心的戰略家，在以戰功為中心的史書中，很難留下鮮明的身影[推斷]。\n\n【情感結構】\n他的情感幾乎沒有直接記載，這本身就是理解他的線索。\n宮女練兵中，他面對吳王求情仍下令斬殺寵姬（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）[史載：傳說層次]，展現出一種將職責置於人情之上的冷峻。他對吳王的寵姬毫不留情，卻願意與伍子胥這樣背負家仇的流亡者並肩，可見他看重的是才能與共同目標，而非身分。他與伍子胥共同為吳王謀劃伐楚（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）[史載]，顯示他在吳國有可以並肩的同僚。他最脆弱的時刻，史料沒有任何記載；我們甚至不知道他如何離開歷史舞台[詮釋：關於他晚年隱退的說法多出自後世傳說，本文不採]。\n\n【參照系】\n他習慣以「條件與因果」作為思考一切的參照系。這種思維方式貫穿了他的兵法與他在吳國的建議（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）[史載]。\n類比準確之處：他把吳楚戰爭轉化為條件判斷——民力是否恢復、敵將是否失人心、盟友是否就位——因此提出「必得唐、蔡乃可」（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）[史載]。\n類比失準之處：他的條件式思維適用於戰略規劃，卻未必能預測入郢之後的政治局面；吳軍入郢後，楚國在秦國援助下反攻，夫概王也趁機自立（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）[詮釋：史料未記錄孫武對入郢後局勢的判斷，此處僅能指出其思維框架的可能盲區]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（在條件最有利時取勝）與【慣性盲點】（節制者容易被行動者掩蓋）之間。\n這個衝突的結構是：他的戰略哲學要求忍耐、等待、不輕易出手；但歷史記錄與君主的獎賞，往往偏向那些衝在最前面的人。他越是正確地主張「不戰」，就越難在史冊上留下戰功。\n第一次體現在闔廬三年到九年之間：他反覆主張暫緩攻楚，這段「沒有發生的戰爭」在史書中只有寥寥數語（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)）[史載]。\n第二次體現在柏舉之戰：決定性的衝擊由夫概王完成，《左傳》甚至沒有記下孫武的名字（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）[史載]。\n他是否意識到這個衝突？我們無從得知；但他留下的十三篇兵法，或許正是他對這個衝突的回答——把勝利的方法寫下來，比在戰場上留名更持久[詮釋]。",
+        "stats": [
+          88,
+          55,
+          100,
+          70,
+          82
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：88\n\n《史記》說吳國「西破彊楚，入郢，北威齊晉，顯名諸侯，孫子與有力焉」（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)），但《左傳》對柏舉之戰的記載完全沒有提到孫武，戰場上的決定性衝擊來自夫概王「以其屬五千，先擊子常之卒」（[《春秋左氏傳·定公四年》](https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC)）。他的統率能力缺乏同時代的直接戰場紀錄。評88，與袁崇煥（88）持平，低於李牧（98）與韓信（100）。\n\n### 武力：55\n\n史料中沒有孫武親自上陣搏殺的任何紀錄，宮女練兵故事展現的是他的軍紀與將權觀念，而非個人武藝（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）。他在吳國的角色更接近戰略顧問與將軍，而非前鋒猛將；柏舉戰場上的衝鋒者是夫概王，史書也沒有他披甲上陣的描寫。評55，與粟裕（55）持平，高於諸葛亮（25），低於李牧（82）與韓信（70）。\n\n### 智謀：100\n\n《孫子》十三篇奠定了東亞兵學兩千多年的基本框架；銀雀山漢簡證明簡本與今本差異不大，且與《孫臏兵法》各自成篇（[香港中文大學《二十一世紀》相關論文](https://www.cuhk.edu.hk/ics/21c/media/articles/c087-200403086.pdf)）。他對吳王「民勞，未可，待之」與「必得唐、蔡乃可」的戰略建議（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)），也體現了先求不敗再求勝的思想。評100，與韓信（100）、李靖（100）並列。\n\n### 政治：70\n\n他能在宮女練兵中堅持「將在軍，君命有所不受」，在吳王面前維護將權（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)），又能與伍子胥一同勸諫吳王暫緩攻楚、聯合唐蔡（[《史記·吳太伯世家》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031)），顯示他對君臣關係與聯盟外交有清楚的理解。但史料沒有他參與內政治理的紀錄，結局也不明。評70，高於李牧（35）與韓信（25），低於李靖（85）。\n\n### 魅力：82\n\n他的兵法影響了後世無數將領，連曹操都為之作注。但他本人的領導事蹟極少，宮女練兵中斬殺寵姬的作風更顯嚴厲而非親和（[《史記·孫子吳起列傳》](https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065)）。他的「魅力」主要來自著作的影響力，而非與部屬的情感連結。評82，高於袁崇煥（78），低於李牧（92）與李靖（92）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T06:10:51.134Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "史記·卷六十五 孫子吳起列傳 第五",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065",
+            "locator": "本機固定修訂 oldid=2567048 全文比對（textSha256 已驗）：孫子武者，齊人也。以兵法見於吳王闔廬、子之十三篇，吾盡觀之矣，可以小試勒兵乎、可試以婦人乎、約束不明，申令不熟，將之罪也、既已明而不如法者，吏士之罪也、將在軍，君命有所不受…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "春秋左氏傳/定公",
+            "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+            "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：蔡侯以吳子及楚人戰于柏舉、楚瓦不仁．其臣莫有死志．先伐之．其卒必奔、所謂臣義而行．不待命者．其此之謂也、以其屬五千．先擊子常之卒、申包胥如秦乞師、申包胥以秦師至．秦子蒲．子虎．帥車五百乘以救楚…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "史記·巻三十一 吳太伯世家 第一",
+            "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031",
+            "locator": "本機固定修訂 oldid=7909287 全文比對（textSha256 已驗）：將軍孫武曰：「民勞，未可，待之、始子之言郢未可入，今果如何、楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "香港中文大學中國文化研究所《二十一世紀》論文（銀雀山漢簡與《孫子》辨偽）",
+            "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c087-200403086.pdf",
+            "locator": "WebSearch 結果摘要：1972年4月銀雀山一號漢墓同出《孫子兵法》《孫臏兵法》，簡本與今本差異無多，推翻顧頡剛等人的懷疑",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "fcb0dd969e21aa7bca2e8bfc017df956d8f9470456c3c0b8d2e952a97304728a",
+        "sourcePackageSha256": "ff673b001385dc2e3296e489d30659761aab93ce4bb8bda1ed8d29f1c9eb8512",
+        "preservedDeepSha256": "9e9d9237bfb8a36f500d53750d2a76fc4be8b52d17b2c14c9779c2ce35329eee",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "599dadd229634ef79118e8446f44a9583757d6ff4fb1ab72ea3197f0d1d199e4",
+            "requestSha256": "fcb0dd969e21aa7bca2e8bfc017df956d8f9470456c3c0b8d2e952a97304728a",
+            "inputSha256": "ad2cd4e5b79d3c17e458f3d94e01580e8f1b56e79cec242181a41ceeeae5ecb7",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "b550d1c156fc5fcb2cbbacb32a0bc906a3a65ad2dab4b2e22bc5351b412eb034",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "ff673b001385dc2e3296e489d30659761aab93ce4bb8bda1ed8d29f1c9eb8512",
+            "preservedDeepSha256": "9e9d9237bfb8a36f500d53750d2a76fc4be8b52d17b2c14c9779c2ce35329eee",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:10:51.134Z",
+            "rawResponseFile": "analysis-batch-50/drafts/24.analysisStats.raw.md",
+            "rawResponseSha256": "44ce27f8576187331dc971e3e27bde31a4177a7898dcbc2bf3bd490a342291cd",
+            "responseFile": "analysis-batch-50/drafts/24.analysisStats.response.md",
+            "responseSha256": "44ce27f8576187331dc971e3e27bde31a4177a7898dcbc2bf3bd490a342291cd",
+            "fieldsHashes": {
+              "analysis": "88f20f2cb59342bd5da5c722efdc147bb66f5922a2554fbc668ed05c0d332ee8",
+              "stats": "d3a174966b3044ca7ad80b64abd270b3ff4c89087de7d3bcf169447ebd28aeb6",
+              "statsAnalysis": "ef05c6758fe126c07645ea495f7b14e66a9901f88e5c761f94a4fb1a04ed9f0f"
+            },
+            "captureFile": "analysis-batch-50/drafts/24.analysisStats.capture.json",
+            "captureSha256": "ab01b6a7dc676fab976cc3982773a644242b0aa1a07550268aefb8838fcb0444",
+            "sourceReviewFile": "analysis-batch-50/reviews/24.analysisStats.json",
+            "sourceReviewSha256": "dc3d1a98f9121e135c3e2ef33e5c04464a676edbac42c06de4bd87d769624756",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/24.combined.search-log.json",
+              "sha256": "71e6e324dc78b8f0ea2f7b8bcd86fe84483654f159b398de5033c1ca4461b3fe",
+              "webSearchCount": 1,
+              "archiveCheckCount": 18
+            },
+            "checkedSources": [
+              {
+                "title": "史記·卷六十五 孫子吳起列傳 第五",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065",
+                "locator": "本機固定修訂 oldid=2567048 全文比對（textSha256 已驗）：孫子武者，齊人也。以兵法見於吳王闔廬、子之十三篇，吾盡觀之矣，可以小試勒兵乎、可試以婦人乎、約束不明，申令不熟，將之罪也、既已明而不如法者，吏士之罪也、將在軍，君命有所不受…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/定公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+                "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：蔡侯以吳子及楚人戰于柏舉、楚瓦不仁．其臣莫有死志．先伐之．其卒必奔、所謂臣義而行．不待命者．其此之謂也、以其屬五千．先擊子常之卒、申包胥如秦乞師、申包胥以秦師至．秦子蒲．子虎．帥車五百乘以救楚…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·巻三十一 吳太伯世家 第一",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031",
+                "locator": "本機固定修訂 oldid=7909287 全文比對（textSha256 已驗）：將軍孫武曰：「民勞，未可，待之、始子之言郢未可入，今果如何、楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "香港中文大學中國文化研究所《二十一世紀》論文（銀雀山漢簡與《孫子》辨偽）",
+                "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c087-200403086.pdf",
+                "locator": "WebSearch 結果摘要：1972年4月銀雀山一號漢墓同出《孫子兵法》《孫臏兵法》，簡本與今本差異無多，推翻顧頡剛等人的懷疑",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "aad036e16603ef18bb97dda75cb276578b3bbd1dd5e6f4ba86b83924c901b6bd",
+            "requestSha256": "fcb0dd969e21aa7bca2e8bfc017df956d8f9470456c3c0b8d2e952a97304728a",
+            "inputSha256": "ad2cd4e5b79d3c17e458f3d94e01580e8f1b56e79cec242181a41ceeeae5ecb7",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "b8e766ab887fd316885f61fd3225894f0ff444b75f35eae806a89a4e42662be5",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "ff673b001385dc2e3296e489d30659761aab93ce4bb8bda1ed8d29f1c9eb8512",
+            "preservedDeepSha256": "9e9d9237bfb8a36f500d53750d2a76fc4be8b52d17b2c14c9779c2ce35329eee",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:10:51.134Z",
+            "rawResponseFile": "analysis-batch-50/drafts/24.soulEssence.raw.md",
+            "rawResponseSha256": "84318d4425b642f62b5e8dc1d75e848de0734573881686819cef7546d584c38a",
+            "responseFile": "analysis-batch-50/drafts/24.soulEssence.response.md",
+            "responseSha256": "84318d4425b642f62b5e8dc1d75e848de0734573881686819cef7546d584c38a",
+            "fieldsHashes": {
+              "soulEssence": "25c24f34194f50ffad6bfdb6924d5ae5a3640677510524e51905dfa51912a9b0"
+            },
+            "captureFile": "analysis-batch-50/drafts/24.soulEssence.capture.json",
+            "captureSha256": "2aaae8b47d69b290604ce3f4155ef0d3f00cdb3359a9048c21881f38aad2c16b",
+            "sourceReviewFile": "analysis-batch-50/reviews/24.soulEssence.json",
+            "sourceReviewSha256": "a3b89e4029ad0bcd07b5828abdc7a6e31b2103903e3ae27cdd68aa7405b93864",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/24.combined.search-log.json",
+              "sha256": "71e6e324dc78b8f0ea2f7b8bcd86fe84483654f159b398de5033c1ca4461b3fe",
+              "webSearchCount": 1,
+              "archiveCheckCount": 18
+            },
+            "checkedSources": [
+              {
+                "title": "史記·巻三十一 吳太伯世家 第一",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031",
+                "locator": "本機固定修訂 oldid=7909287 全文比對（textSha256 已驗）：將軍孫武曰：「民勞，未可，待之、始子之言郢未可入，今果如何、楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "史記·卷六十五 孫子吳起列傳 第五",
+                "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065",
+                "locator": "本機固定修訂 oldid=2567048 全文比對（textSha256 已驗）：孫子武者，齊人也。以兵法見於吳王闔廬、子之十三篇，吾盡觀之矣，可以小試勒兵乎、可試以婦人乎、約束不明，申令不熟，將之罪也、既已明而不如法者，吏士之罪也、將在軍，君命有所不受…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "春秋左氏傳/定公",
+                "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+                "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：蔡侯以吳子及楚人戰于柏舉、楚瓦不仁．其臣莫有死志．先伐之．其卒必奔、所謂臣義而行．不待命者．其此之謂也、以其屬五千．先擊子常之卒、申包胥如秦乞師、申包胥以秦師至．秦子蒲．子虎．帥車五百乘以救楚…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/24.analysis.md",
+            "analysisContextSha256": "12e90b26143803346bbed9f23685f487314a718bbc4256bc1d557a93c9b98805"
+          }
+        }
+      }
+    }
+  ]
+}

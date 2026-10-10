@@ -1,0 +1,91 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_孫武_306204690",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:10:51.178Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "44ce27f8576187331dc971e3e27bde31a4177a7898dcbc2bf3bd490a342291cd",
+  "rawResponseSha256": "44ce27f8576187331dc971e3e27bde31a4177a7898dcbc2bf3bd490a342291cd",
+  "sourcePackageSha256": "ff673b001385dc2e3296e489d30659761aab93ce4bb8bda1ed8d29f1c9eb8512",
+  "searchLogSha256": "71e6e324dc78b8f0ea2f7b8bcd86fe84483654f159b398de5033c1ca4461b3fe",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7065",
+      "title": "史記·卷六十五 孫子吳起列傳 第五",
+      "locator": "本機固定修訂 oldid=2567048 全文比對（textSha256 已驗）：孫子武者，齊人也。以兵法見於吳王闔廬、子之十三篇，吾盡觀之矣，可以小試勒兵乎、可試以婦人乎、約束不明，申令不熟，將之罪也、既已明而不如法者，吏士之罪也、將在軍，君命有所不受…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3%2F%E5%AE%9A%E5%85%AC",
+      "title": "春秋左氏傳/定公",
+      "locator": "本機固定修訂 oldid=2371915 全文比對（textSha256 已驗）：蔡侯以吳子及楚人戰于柏舉、楚瓦不仁．其臣莫有死志．先伐之．其卒必奔、所謂臣義而行．不待命者．其此之謂也、以其屬五千．先擊子常之卒、申包胥如秦乞師、申包胥以秦師至．秦子蒲．子虎．帥車五百乘以救楚…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7031",
+      "title": "史記·巻三十一 吳太伯世家 第一",
+      "locator": "本機固定修訂 oldid=7909287 全文比對（textSha256 已驗）：將軍孫武曰：「民勞，未可，待之、始子之言郢未可入，今果如何、楚將子常貪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c087-200403086.pdf",
+      "title": "香港中文大學中國文化研究所《二十一世紀》論文（銀雀山漢簡與《孫子》辨偽）",
+      "locator": "WebSearch 結果摘要：1972年4月銀雀山一號漢墓同出《孫子兵法》《孫臏兵法》，簡本與今本差異無多，推翻顧頡剛等人的懷疑",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "孫武，春秋吳將，《孫子》傳統之源；保留原 A+ 評級與 deepAnalysis。"
+    },
+    {
+      "id": "boju-source-layers",
+      "passed": true,
+      "detail": "左傳定公四年以夫概王為柏舉戰場主角且全書無孫武；吳太伯世家記孫武「民勞未可待之」與「必得唐蔡乃可」；列傳「孫子與有力焉」。修正 deepAnalysis「實戰指揮柏舉之戰」之說，未改該欄位。"
+    },
+    {
+      "id": "after-ying",
+      "passed": true,
+      "detail": "申包胥秦師、沂之敗、夫概王自立，左傳定公五年原文。"
+    },
+    {
+      "id": "yinqueshan",
+      "passed": true,
+      "detail": "依《二十一世紀》論文摘要，說明證明的是兩書各自成篇。"
+    },
+    {
+      "id": "palace-drill",
+      "passed": true,
+      "detail": "明示為數百年後《史記》所載，作寓言看待。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[88,55,100,70,82] 對照韓信[100,70,100,25,60]、李牧[98,82,97,35,92]、諸葛亮[92,25,99,100,96]、袁崇煥[88,65,82,45,78]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    55,
+    100,
+    70,
+    82
+  ]
+}
