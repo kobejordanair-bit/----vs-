@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_和珅_2003865491",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:37:06.835Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4658d45e71b05e3db34f18957d91b4086a16a9113c9310bb2b685c96cb4a1bd1",
+  "rawResponseSha256": "4658d45e71b05e3db34f18957d91b4086a16a9113c9310bb2b685c96cb4a1bd1",
+  "sourcePackageSha256": "850bcbadf61811dd9bd5d3c8c175940a58e0da1cf321286039920e1c48f9f3c2",
+  "searchLogSha256": "41e7cb9c8004ee2b50fba548b64681cb9dc0e82c525ba668d65f10f5e66ab76a",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7319",
+      "title": "清史稿·卷三百十九 列傳一百六",
+      "locator": "本機固定修訂 oldid=1761183 全文比對（textSha256 已驗）：慶成每至一省輒掣肘，待挪移既足，然後啟榷，迄無虧絀、以妄言坐黜、納賄者則為周旋，或故緩其事，以俟上怒之霽、少貧無藉，為文生員、授三等侍衛，挑補黏桿處、授戶部侍郎，命為軍機大臣，兼內務府大臣…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最厲害的是控制時間，唯一無法延緩的是乾隆之死；場景為待挪移既足、故緩其事以俟上怒之霽、先遞如意、燈下懸珠臨鏡自語。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "匱乏轉為佔有、以一人寵信為永恆保障、寬大結束清算等皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以多稱上意與非天子不考文與副本關白、毀屋與起還行館與武舉實錄、珍珠多於大內與劉全、先遞如意與和琳撤廟、阿桂與青蠅賦、宣遺詔日與悉不深究、一獄吏已辦為事件。"
+    }
+  ],
+  "materialIssues": []
+}

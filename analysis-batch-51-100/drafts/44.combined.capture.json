@@ -1,0 +1,25 @@
+{
+  "format": "dynasty-batch50-claude-combined",
+  "schemaVersion": 1,
+  "slug": "44",
+  "recordId": "minister_和珅_2003865491",
+  "provider": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "generatedAt": "2026-10-10T12:37:06.758Z",
+  "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+  "packetSha256": "a0e7ce846da7cca10ddeb022c72e30782e3b74b735041165336efa2d30c902cf",
+  "combinedFile": "analysis-batch-51-100/drafts/44.combined.raw.md",
+  "combinedSha256": "2175278e6d5b51217fa09e9db948d789a2b8641bfc79d26200d2f7361bae4959",
+  "searchLogSha256": "41e7cb9c8004ee2b50fba548b64681cb9dc0e82c525ba668d65f10f5e66ab76a",
+  "parts": {
+    "analysisStats": {
+      "rawFile": "analysis-batch-51-100/drafts/44.analysisStats.raw.md",
+      "rawSha256": "80a72c97fea3e89124820bab236f33a1ba8fe1d5b0864c005e92b7e6ff5ee246"
+    },
+    "soulEssence": {
+      "rawFile": "analysis-batch-51-100/drafts/44.soulEssence.raw.md",
+      "rawSha256": "4658d45e71b05e3db34f18957d91b4086a16a9113c9310bb2b685c96cb4a1bd1"
+    }
+  },
+  "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool."
+}
