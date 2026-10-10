@@ -96,91 +96,13 @@
         "https://www.zdic.net/hant/叶挺",
         "https://wikipedia.classicistranieri.com/en/articles/x/u/e/Xue_Yue_0e50.html"
       ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "薛岳 1998年5月3日 臺北 病逝 嘉義竹崎 萊蕪 海南",
-      "returnedUrls": [
-        "https://en.wikipedia.org/wiki/Xue_Yue",
-        "https://www.bilibili.com/opus/604102204042779361",
-        "https://blog.udn.com/ltj0111/119015904",
-        "https://ir.sinica.edu.tw/handle/201000000A/75239",
-        "https://www.aisixiang.com/data/64983.html"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "薛岳 將軍 1998 逝世 地點 台北 榮民總醫院 或 嘉義",
-      "returnedUrls": [
-        "https://zh.wikipedia.org/zh-hant/%E8%96%9B%E5%B2%B3",
-        "https://zh.wikipedia.org/wiki/%E8%96%9B%E5%B2%B3",
-        "https://baike.sogou.com/v371956.htm",
-        "https://zhuanlan.zhihu.com/p/577621836",
-        "https://m.163.com/dy/article/J4VJ1AOO0553UFXY.html",
-        "https://www.newton.com.tw/wiki/%E8%96%9B%E5%B2%B3"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "薛岳 萊蕪戰役 1947 撤職 徐州綏靖公署 海南島 防衛總司令 1950 撤退",
-      "returnedUrls": [
-        "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island",
-        "https://en.wikipedia.org/wiki/Xue_Yue",
-        "https://m.163.com/dy/article/JDNOGKSR05564SZG.html",
-        "https://www.storm.mg/articles/1151249",
-        "https://cpc.people.com.cn/BIG5/33837/2534578.html"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "薛岳 徐州綏靖公署主任 萊蕪 李仙洲 失利 調任 總統府參軍長",
-      "returnedUrls": [
-        "https://zh.m.wikipedia.org/zh-hant/%E8%96%9B%E5%B2%B3",
-        "https://zh.wikipedia.org/zh-hans/%E8%8E%B1%E8%8A%9C%E6%88%98%E5%BD%B9",
-        "https://zh.wikipedia.org/zh-hans/%E8%96%9B%E5%B2%B3",
-        "https://www.163.com/dy/article/K2O1GA1M0556AWPO.html",
-        "https://k.sina.cn/article_6416048620_17e6d21ec00100ruyu.html",
-        "https://www.newton.com.tw/wiki/%E8%96%9B%E5%B2%B3"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "薛岳 海南防衛總司令 伯陵防線 1950 海南島戰役 撤退臺灣",
-      "returnedUrls": [
-        "https://m.sohu.com/a/915688934_121164139",
-        "https://www.chinanews.com.cn/kong/news/2010/05-05/2263691.shtml",
-        "https://zh.wikipedia.org/zh-hant/%E6%B5%B7%E5%8D%97%E5%B3%B6%E6%88%B0%E5%BD%B9",
-        "https://nccuspe1949.wixsite.com/nccuspe1949/%E8%96%9B%E5%B2%B3-%E8%87%B4%E4%BD%99%E6%BC%A2%E8%AC%80%E4%BF%A1%E6%9C%AD",
-        "https://www.epochtimes.com/b5/19/3/2/n11084282.htm"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "1944年6月18日 長沙失陷 第四次長沙會戰 長衡會戰 薛岳 第九戰區",
-      "returnedUrls": [
-        "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)",
-        "https://zh.ww2db.com/event/today/06/18/1944",
-        "https://chiculture.org.hk/en/photo-story/3308",
-        "https://www.mnd.gov.tw/File/43788"
-      ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "薛岳 1922 陳炯明叛變 警衛團 營長 護送宋慶齡 突圍",
-      "returnedUrls": [
-        "https://www.aisixiang.com/data/72030.html",
-        "https://sunology.culture.tw/detail/8880129191730dd23b06c0720c100bd7/"
-      ]
     }
   ],
   "archiveChecks": [],
   "pageReads": [],
   "limits": [
-    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read，亦無固定修訂原典可比對；網路來源僅搜尋摘要。",
-    "［修訂1］逝世：一九九八年五月三日在臺北病逝、晚年居嘉義竹崎，依維基百科中文條目與百度百科搜尋摘要，並與 Codex 審查實讀之國立公共資訊圖書館人物頁一致；英文維基與部落格摘要記為嘉義，屬來源歧異，正文採臺北。百科類來源未附連結。",
-    "［修訂1］一九四四年六月十八日長沙失陷依搜尋摘要（英文維基 Battle of Changsha (1944)、ww2db）；英文條目網址含括號，現行驗證器無法解析，故未附連結。",
-    "［修訂1］萊蕪責任歸屬（陳誠部署 vs 薛岳轄區）只有百科條目與通俗文章摘要，正文並陳兩面，不下定論。",
-    "［修訂1］個人武力60無可核的親身搏戰紀錄，屬內部低置信估計；一九二二年衛隊營長之說查無可核來源，未採。",
-    "天爐戰法以外的長沙會戰細節（兵力、傷亡）各來源差異大，正文未引用數字。"
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read，亦無固定修訂原典可比對；網路來源僅搜尋摘要，大量細節（生卒、早年經歷、1944年長沙失守經過、海南撤退、晚年）只見維基或部落格，正文未採用或以[推斷]標示。",
+    "天爐戰法以外的長沙會戰細節（兵力、傷亡）各來源差異大，正文未引用數字。",
+    "本稿以戰法分析為主，人物性格部分推論比例偏高，建議人工抽查。"
   ]
 }

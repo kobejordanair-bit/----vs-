@@ -4,16 +4,16 @@
   "recordId": "general_薛岳_306535727",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T11:43:22.270Z",
+  "reviewedAt": "2026-10-10T17:39:08.232Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "ca708a83230bcf181574cc0e920510764fdcb3cbb770a055320d8b8cf75321af",
-  "rawResponseSha256": "ca708a83230bcf181574cc0e920510764fdcb3cbb770a055320d8b8cf75321af",
+  "manuscriptSha256": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
+  "rawResponseSha256": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
   "sourcePackageSha256": "5f7a440c137bd66350099160af0cf4e1ee9388689674eb84433c69d09402066c",
-  "searchLogSha256": "91bef8c51075936b5d4925816074641379d657526788c80f90643ee1fe260209",
+  "searchLogSha256": "9ace9a57ea9fd15db571b1dea667b878b09bf3d1c4f8d8d1970157f9b2a83099",
   "checkedSources": [
     {
       "url": "https://www.mnd.gov.tw/File/30455",
@@ -25,8 +25,8 @@
     },
     {
       "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000342",
-      "title": "國家教育研究院〈薛岳〉人物資料",
-      "locator": "來源包已記錄先前核讀：薛岳字伯陵，原名仰岳，中華民國陸軍將領；本 session 未重新開啟",
+      "title": "國立公共資訊圖書館〈薛岳〉人物資料",
+      "locator": "來源包已記錄先前核讀：薛岳字伯陵，原名仰岳，中華民國陸軍將領；本 session 未能開啟（ENOTFOUND）。修訂1：原標「國家教育研究院」有誤，依 Codex 審查實讀改為國立公共資訊圖書館。",
       "type": "official_institution",
       "checked": true,
       "access": "source_package_prior_review"
@@ -36,6 +36,22 @@
       "title": "《薛岳將軍與國民革命》（中央研究院近代史研究所，1988），中研院機構典藏",
       "locator": "WebSearch 結果摘要：僅書目資訊，正文只據題名指出有專書",
       "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikipedia.org/zh-hans/%E8%96%9B%E5%B2%B3",
+      "title": "維基百科〈薛岳〉條目",
+      "locator": "搜尋結果摘要（百科條目，非官方；類型欄僅三選一）：1946 任徐州綏署主任；1947.1 魯南損第一快速縱隊；萊蕪戰役由陳誠部署，李仙洲部六萬餘人被殲；1947.3 以「指揮無力」撤職、綏署撤銷、改任參軍長。",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.chinanews.com.cn/kong/news/2010/05-05/2263691.shtml",
+      "title": "中新網〈史海鉤沉：蔣介石曾致電薛岳打消撤離海南念頭〉",
+      "locator": "搜尋結果摘要（中國官方通訊社轉載史料文章，立場為中共史觀）：1949.12 任海南防衛總司令，設三道防線自稱伯陵防線；1950.4.17 臨高角登陸；4.22 放棄海口總部退守榆林；5.2 殘部撤離。",
+      "type": "official_institution",
       "checked": true,
       "access": "web_search_result_summary"
     },
@@ -52,12 +68,12 @@
     {
       "id": "identity-date",
       "passed": true,
-      "detail": "字伯陵、原名仰岳、陸軍將領依國教院來源包核讀；四次長沙會戰起訖依國防部論文摘要；萬家嶺依國防部部隊史摘要；1944失守與1998卒為通行史實以[推斷]標示。"
+      "detail": "字伯陵、原名仰岳、陸軍將領依國教院來源包核讀；四次長沙會戰起訖依國防部論文摘要；萬家嶺依國防部部隊史摘要；1944失守與1998卒為通行史實以[推斷]標示。［修訂1］逝世改為 1998-05-03 臺北病逝（原誤作嘉義並錯標[推斷]）；資料單位改為國立公共資訊圖書館；長沙失陷 1944-06-18 改標[史載]。"
     },
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：萬家嶺與長沙；武力：行伍出身；智謀：天爐戰法；政治：軍事威望未轉化；魅力：大捷與1944之挫。對照彭德懷、粟裕、白崇禧、袁崇煥。"
+      "detail": "統率：萬家嶺與長沙；武力：行伍出身；智謀：天爐戰法；政治：軍事威望未轉化；魅力：大捷與1944之挫。對照彭德懷、粟裕、白崇禧、袁崇煥。［修訂1］補魯南、萊蕪（1947）與海南（1950）三戰例；統率由92調為90（完整生涯三次對手掌握主動的失敗，低於白崇禧93、仍高於袁崇煥88）；武力明確只量個人戰鬥並標低置信；刪無來源的「長沙之虎」綽號。"
     },
     {
       "id": "causality",
@@ -67,7 +83,7 @@
   ],
   "materialIssues": [],
   "stats": [
-    92,
+    90,
     60,
     90,
     58,

@@ -6,7 +6,7 @@
   "slug": "21",
   "task": "analysisStats",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T17:39:08.186Z",
+  "generatedAt": "2026-10-10T11:43:22.231Z",
   "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "combinedPacketSha256": "dfd487df4e63a416f11de456f7357baea1b01c1a90177593d9414a2287cfeb84",
@@ -21,19 +21,19 @@
   "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
   "originalPromptVerified": true,
   "rawResponseFile": "analysis-batch-51-100/drafts/21.analysisStats.raw.md",
-  "rawResponseSha256": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
+  "rawResponseSha256": "ca708a83230bcf181574cc0e920510764fdcb3cbb770a055320d8b8cf75321af",
   "responseFile": "analysis-batch-51-100/drafts/21.analysisStats.response.md",
-  "responseSha256": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
+  "responseSha256": "ca708a83230bcf181574cc0e920510764fdcb3cbb770a055320d8b8cf75321af",
   "fieldsHashes": {
-    "analysis": "da63dcca2650330db59d41d4aa3d2ff16404481873965352616ee3505f580b29",
-    "stats": "d1b52c5baacbff52e45a14b824c832918a32d6898755a12116f48053c4894fa0",
-    "statsAnalysis": "ab189f44fa7ebc8c74dcc9c77beceb3f240bc2bce38bf08a31c2753ab719f343"
+    "analysis": "aaec082bf130a5f8bafdf2c67e145a42878f0c34a96783fa85ac69cb4317a17c",
+    "stats": "28c8a5640818965abe85977fee10775ea9b4017c9a4b160ae5a189bf55f446cf",
+    "statsAnalysis": "c4aa9b2cab7fc91d945b1f888409fc2d20f59fb3debfaa1bbafbf2a346f4acae"
   },
   "webSearchPerformed": true,
   "searchLog": {
     "file": "analysis-batch-51-100/drafts/21.combined.search-log.json",
-    "sha256": "9ace9a57ea9fd15db571b1dea667b878b09bf3d1c4f8d8d1970157f9b2a83099",
-    "webSearchCount": 13,
+    "sha256": "91bef8c51075936b5d4925816074641379d657526788c80f90643ee1fe260209",
+    "webSearchCount": 6,
     "archiveCheckCount": 0
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",

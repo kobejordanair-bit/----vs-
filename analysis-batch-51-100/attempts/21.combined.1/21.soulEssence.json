@@ -4,16 +4,16 @@
   "recordId": "general_薛岳_306535727",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:39:08.233Z",
+  "reviewedAt": "2026-10-10T11:43:22.271Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "2b6a7f077989c14f760403ad8f03c414a09f65a123fd99a5108daf95ad4b4b45",
-  "rawResponseSha256": "2b6a7f077989c14f760403ad8f03c414a09f65a123fd99a5108daf95ad4b4b45",
+  "manuscriptSha256": "b199c1008b860845bd26d81e63e70807b1cfd00ac825f09180f4832978b76934",
+  "rawResponseSha256": "b199c1008b860845bd26d81e63e70807b1cfd00ac825f09180f4832978b76934",
   "sourcePackageSha256": "5f7a440c137bd66350099160af0cf4e1ee9388689674eb84433c69d09402066c",
-  "searchLogSha256": "9ace9a57ea9fd15db571b1dea667b878b09bf3d1c4f8d8d1970157f9b2a83099",
+  "searchLogSha256": "91bef8c51075936b5d4925816074641379d657526788c80f90643ee1fe260209",
   "checkedSources": [
     {
       "url": "https://www.mnd.gov.tw/File/30455",
@@ -27,22 +27,6 @@
       "url": "https://www.mnd.gov.tw/File/26270",
       "title": "國防部部隊史資料（第七十四軍與武漢會戰）",
       "locator": "WebSearch 結果摘要：第74軍參與武漢會戰，其中以萬家嶺大捷最具代表性；薛岳任第一兵團總司令一點僅見部落格轉載，正文以推斷標示其聲望關聯",
-      "type": "official_institution",
-      "checked": true,
-      "access": "web_search_result_summary"
-    },
-    {
-      "url": "https://zh.wikipedia.org/zh-hans/%E8%96%9B%E5%B2%B3",
-      "title": "維基百科〈薛岳〉條目",
-      "locator": "搜尋結果摘要（百科條目，非官方；類型欄僅三選一）：1946 任徐州綏署主任；1947.1 魯南損第一快速縱隊；萊蕪戰役由陳誠部署，李仙洲部六萬餘人被殲；1947.3 以「指揮無力」撤職、綏署撤銷、改任參軍長。",
-      "type": "official_institution",
-      "checked": true,
-      "access": "web_search_result_summary"
-    },
-    {
-      "url": "https://www.chinanews.com.cn/kong/news/2010/05-05/2263691.shtml",
-      "title": "中新網〈史海鉤沉：蔣介石曾致電薛岳打消撤離海南念頭〉",
-      "locator": "搜尋結果摘要（中國官方通訊社轉載史料文章，立場為中共史觀）：1949.12 任海南防衛總司令，設三道防線自稱伯陵防線；1950.4.17 臨高角登陸；4.22 放棄海口總部退守榆林；5.2 殘部撤離。",
       "type": "official_institution",
       "checked": true,
       "access": "web_search_result_summary"
@@ -62,7 +46,7 @@
     {
       "id": "seven-fields",
       "passed": true,
-      "detail": "七欄各以戰法即說服、讓地的心理壓力、選擇戰場、方法變信念、戰區與部隊、縱深框架、讓地代價為推論主軸。［修訂1］情感結構改為晚年居嘉義竹崎、臺北病逝；慣性盲點補 1947 華東與 1950 伯陵防線兩次重演；性格側寫以伯陵防線命名取代無來源的「行伍剛直」。"
+      "detail": "七欄各以戰法即說服、讓地的心理壓力、選擇戰場、方法變信念、戰區與部隊、縱深框架、讓地代價為推論主軸。"
     }
   ],
   "materialIssues": []
