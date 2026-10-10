@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_沈一貫_1995924889",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:32:34.426Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "939b77df7fc2a267045c96c205ccf020fdc3b2f3793c16e331583e6d8b9d4351",
+  "rawResponseSha256": "939b77df7fc2a267045c96c205ccf020fdc3b2f3793c16e331583e6d8b9d4351",
+  "sourcePackageSha256": "fba0633dc299bc2e8791cab272ef6b16f145e0bf3fc6628a4b7b3870a16f811b",
+  "searchLogSha256": "57d9b6bee4cf43bf16f30310d19975fb587c2176c4093f1ade656d39f8051891",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7218",
+      "title": "明史·卷二百一八 列傳第一零六",
+      "locator": "本機固定修訂 oldid=2594845 全文比對（textSha256 已驗）：礦稅事，朕因殿工未竣，權宜采取，今可與江南織造、江西陶器俱止勿行，所遣內監皆令還京、中使二十輩至閣中取前諭、一貫欲不予，中使輒搏顙幾流血，一貫惶遽繳入、相公稍持之，礦稅撤矣，何怯也、萬死不敢奉詔、托孤寄命，必忠貞不二心之臣，乃可使百官總己以聽。茍非其人，不若躬親聽覽之為孝也…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：柔而深中，有公論後盾時敢封還詔書，獨自承擔時卻繳回罷礦稅之諭；場景為萬死不敢奉詔、佳兒佳婦付與先生、中使搏顙、田義唾曰何怯也。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "勇氣的方向性、低估歷史時刻、名分框架在民生失靈等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以正名之論與擬旨、楊鎬引咎與嗾劾正域、事志臯惟謹與溫旨內援、繳諭與田義力爭、帝前之哭與搏顙、冊立與滯獄之人、封還詔書與惶遽繳入為事件。"
+    }
+  ],
+  "materialIssues": []
+}
