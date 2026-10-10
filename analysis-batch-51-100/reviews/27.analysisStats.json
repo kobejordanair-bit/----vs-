@@ -1,0 +1,76 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_田單_306403637",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:59:17.643Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "1f6eaaffb108bd61eaf1585a82175e1f3238f2f5da3993a67631557e1501c068",
+  "rawResponseSha256": "1f6eaaffb108bd61eaf1585a82175e1f3238f2f5da3993a67631557e1501c068",
+  "sourcePackageSha256": "b08a8d97d1e83846a1e6db39989145c746d49a30cd795605b5787ef6c27fe3d6",
+  "searchLogSha256": "ab2b7df83a4eb06fc32f6cf91dd936f6cfa909090d6023473926a6ec6e20998d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7082",
+      "title": "史記·卷八十二 田單列傳 第二十二",
+      "locator": "本機固定修訂 oldid=2529471 全文比對（textSha256 已驗）：吾懼燕人掘吾城外冢墓，僇先人，可為寒心、盡掘壟墓，燒死人、皆涕泣，俱欲出戰，怒自十倍、齊諸田疏屬也、臨菑市掾，不見知、既盡降齊城，唯獨莒、即墨不下…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7004",
+      "title": "資治通鑑·第四卷",
+      "locator": "本機固定修訂 oldid=818906 全文比對（textSha256 已驗）：將軍有死之心，士卒先無之氣、黃金橫帶而騁乎淄、澠之間，有生之樂，無死之心，所以不勝也、六月之間，下齊七十餘城，皆為郡縣、禁止侵掠，求齊之逸民，顯而禮之。寬其賦斂，除其暴令、寬其賦斂，除其暴令、臣以即墨破亡餘卒破萬乘之燕，復齊之墟…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7006",
+      "title": "資治通鑑·第六卷　秦紀一",
+      "locator": "本機固定修訂 oldid=2609689 全文比對（textSha256 已驗）：齊田單攻之，歲餘不下、言魯仲連於齊，欲爵之",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7005",
+      "title": "資治通鑑·第五卷　周紀五",
+      "locator": "本機固定修訂 oldid=2594132 全文比對（textSha256 已驗）：又伐韓，取注人、將趙師以伐燕",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "齊諸田疏屬、臨菑市掾、安平鐵籠、即墨推為將、燕惠王立換騎劫、火牛復七十餘城、封安平君、解裘與九子之讒、攻狄三月、將趙師伐燕、為齊相、聊城歲餘不下，皆依史記卷82 與通鑑卷4-6 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：即墨守城與追擊；武力：援袍鼓之；智謀：反間、神師、劓掘、詐降、火牛、鐵籠；政治：解裘、肉袒請罪、迎襄王；魅力：相與推田單、與士卒分功。對照李牧、韋孝寬、孫臏、伍子胥。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "惠王與樂毅有隙→反間→騎劫代樂毅；宣言劓卒掘墓→燕軍如其言→即墨怒自十倍；詐降與賄金→燕軍益懈→火牛夜襲→騎劫死→七十餘城復；富貴→無死之心→攻狄不下→魯仲連點醒→狄人下。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    88,
+    55,
+    97,
+    76,
+    90
+  ]
+}

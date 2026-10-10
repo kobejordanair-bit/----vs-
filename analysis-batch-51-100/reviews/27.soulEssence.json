@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_田單_306403637",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:59:17.644Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "f8ed37971a397264af7f0f3c2fd44c4049d8078e5064324e28716675965b2faf",
+  "rawResponseSha256": "f8ed37971a397264af7f0f3c2fd44c4049d8078e5064324e28716675965b2faf",
+  "sourcePackageSha256": "b08a8d97d1e83846a1e6db39989145c746d49a30cd795605b5787ef6c27fe3d6",
+  "searchLogSha256": "ab2b7df83a4eb06fc32f6cf91dd936f6cfa909090d6023473926a6ec6e20998d",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7082",
+      "title": "史記·卷八十二 田單列傳 第二十二",
+      "locator": "本機固定修訂 oldid=2529471 全文比對（textSha256 已驗）：吾懼燕人掘吾城外冢墓，僇先人，可為寒心、盡掘壟墓，燒死人、皆涕泣，俱欲出戰，怒自十倍、齊諸田疏屬也、臨菑市掾，不見知、既盡降齊城，唯獨莒、即墨不下…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7004",
+      "title": "資治通鑑·第四卷",
+      "locator": "本機固定修訂 oldid=818906 全文比對（textSha256 已驗）：將軍有死之心，士卒先無之氣、黃金橫帶而騁乎淄、澠之間，有生之樂，無死之心，所以不勝也、六月之間，下齊七十餘城，皆為郡縣、禁止侵掠，求齊之逸民，顯而禮之。寬其賦斂，除其暴令、寬其賦斂，除其暴令、臣以即墨破亡餘卒破萬乘之燕，復齊之墟…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最擅操縱人心卻看不見自己心態轉變；場景為掘墓謠言、神師、攻狄黃金橫帶、魯仲連之言。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "說給對手聽的話、以同胞痛苦為資源、人心框架在自己身上失效等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以宣言所懼與子勿言也、等待燕王更替與上車弗謝、鐵籠與迎襄王與王蠋、即墨經驗與小兒謠、解裘與肉袒、畔燕歸單與王之教、怒自十倍與援袍鼓之為事件。"
+    }
+  ],
+  "materialIssues": []
+}
