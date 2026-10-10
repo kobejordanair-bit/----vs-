@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李克用_905157940",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:12:49.624Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "5cd30506aa2564af990a30e105da0676ba36b70897a931497d1f7877beb345c4",
+  "rawResponseSha256": "5cd30506aa2564af990a30e105da0676ba36b70897a931497d1f7877beb345c4",
+  "sourcePackageSha256": "37f16e13a90e891216ed949f57abf449b3a504133b3510efdf7cfb9b51e34076",
+  "searchLogSha256": "61689c72bac027d317aa624af8b717b8f34ff7a3520c80fc744582fa7e36f160",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B704",
+      "title": "新五代史·唐本紀第四",
+      "locator": "本機固定修訂 oldid=1744306 全文比對（textSha256 已驗）：遇雨六十日、天子還自石門，寢未安席，若晉兵渡渭，人情豈復能安？勤王而已，何必朝哉、蓋寓猶不信我，況天下乎、蓋寓猶不信我、本號朱邪，蓋出於西突厥、賜姓名曰李國昌…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：最忠於唐朝名號卻最令唐帝畏懼；場景為蓋寓猶不信我、臣將暮至闕廷、仍稱天復、上源驛。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "怒氣需他人剎車、勤王與部落恩仇兩框架、年號守立場等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以暮至闕廷與禱馬與點檢五萬、大掠與謀奔雲州、功第一與年號、赤地千里與附梁、落落戰死與達靼、阿保機與沙陀世系考辨、犯京師與薄葬為事件。"
+    }
+  ],
+  "materialIssues": []
+}

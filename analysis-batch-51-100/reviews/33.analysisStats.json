@@ -1,0 +1,68 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_李克用_905157940",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:12:49.622Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "74c5194966cff84e7809324973c65ca6794836d19b7cb154eb21ca7a8dd70b5e",
+  "rawResponseSha256": "74c5194966cff84e7809324973c65ca6794836d19b7cb154eb21ca7a8dd70b5e",
+  "sourcePackageSha256": "37f16e13a90e891216ed949f57abf449b3a504133b3510efdf7cfb9b51e34076",
+  "searchLogSha256": "61689c72bac027d317aa624af8b717b8f34ff7a3520c80fc744582fa7e36f160",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B704",
+      "title": "新五代史·唐本紀第四",
+      "locator": "本機固定修訂 oldid=1744306 全文比對（textSha256 已驗）：遇雨六十日、天子還自石門，寢未安席，若晉兵渡渭，人情豈復能安？勤王而已，何必朝哉、蓋寓猶不信我，況天下乎、蓋寓猶不信我、本號朱邪，蓋出於西突厥、賜姓名曰李國昌…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B726",
+      "title": "舊五代史·卷二十六",
+      "locator": "本機固定修訂 oldid=512946 全文比對（textSha256 已驗）：雖茂勤王之績，而非無震主之威、豈有興王之茂業、洎失援於蒲、絳，久垂翅於並、汾、遣令薄葬，發喪後二十七日除服",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B725",
+      "title": "舊五代史·卷二十五",
+      "locator": "本機固定修訂 oldid=982667 全文比對（textSha256 已驗）：燔之，械其使，馳檄諸方鎮，遣使奉表於行在、張目而起，引弓抗賊、與劉夫人相向慟哭、若反戈攻城，則曲在我也，人得以為辭、乃收軍而去、竊發之夜，非仆本心…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "沙陀朱邪、李國昌賜姓、殺段文楚據雲州、亡入達靼、中和三年破黃巢功第一、四年救陳州與上源驛、光啟元年犯京師、大順元年敗張濬、乾寧二年平邠州封晉王、天復二年太原被圍、天祐五年卒年五十三，皆依新五代史卷4、舊五代史卷25/26 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：鵶兒軍、良田坡、陰地、邠州；武力：仰中雙鳧、百步射針；智謀：潛入雲州、以書招鎔；政治：仍稱天復、約阿保機、燔偽詔與犯京師；魅力：羣豪服以為神、侍者救主與義子叛。對照爾朱榮、李光弼、僕固懷恩、白崇禧、霍去病、項羽、孫策、李廣。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "上源驛伏兵→劉夫人勸止→訟於京師→八表不許→信重榮偽詔→犯京師僖宗出奔；全忠賂張濬→討河東→陰地三敗；盟友附梁→失三州與澤潞→太原被圍。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    90,
+    92,
+    72,
+    58,
+    85
+  ]
+}
