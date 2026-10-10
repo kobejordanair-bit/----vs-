@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_常遇春_903418655",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:28:24.430Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "737344b269925a526187bbe518879dd8b4efbda73c51521f44003da35e0ac4ce",
+  "rawResponseSha256": "737344b269925a526187bbe518879dd8b4efbda73c51521f44003da35e0ac4ce",
+  "sourcePackageSha256": "a36a307186f02103932fe2b7b8ffe1eaed6f743ca77dfa3cd6f726647c7d99b4",
+  "searchLogSha256": "9d37dcd42920138d094411fdb6fbfe8ba52ecbe5ace3fcecf3bf6042a9bfef43",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125",
+      "title": "明史·卷一百二十五 列傳第十三",
+      "locator": "本機固定修訂 oldid=2602117 全文比對（textSha256 已驗）：乘勢躍而上，大呼跳蕩，元軍披靡、不慮不能戰，慮輕戰耳。身為大將，顧好與小校角，甚非所望也、貌奇偉，勇力絕人，猿臂善射、察聚終無成、一時名將稱徐、常、諸將乘之，遂拔採石，進取太平…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：猛將被馴化為統帥的過程；場景為採石跳船、九華山坑降、贛州不殺、邵榮之死、柳河川暴卒。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "敗給疾病為最脆弱時刻、框架擴大而時間不夠、一往無前未離開，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以邵榮與坑降之語、鄱陽湖與洛水、自請前鋒、坑降與苟得地無民、徐常與龍江親奠、破陣框架與開平八伏、勇猛與約束為事件。"
+    }
+  ],
+  "materialIssues": []
+}

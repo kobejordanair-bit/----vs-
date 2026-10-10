@@ -1,0 +1,60 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_常遇春_903418655",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:28:24.429Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b319ca122bafce0d110b617fdeddbb568d16bbf0d455cfe679c948b9ba7bbd7c",
+  "rawResponseSha256": "b319ca122bafce0d110b617fdeddbb568d16bbf0d455cfe679c948b9ba7bbd7c",
+  "sourcePackageSha256": "a36a307186f02103932fe2b7b8ffe1eaed6f743ca77dfa3cd6f726647c7d99b4",
+  "searchLogSha256": "9d37dcd42920138d094411fdb6fbfe8ba52ecbe5ace3fcecf3bf6042a9bfef43",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125",
+      "title": "明史·卷一百二十五 列傳第十三",
+      "locator": "本機固定修訂 oldid=2602117 全文比對（textSha256 已驗）：乘勢躍而上，大呼跳蕩，元軍披靡、不慮不能戰，慮輕戰耳。身為大將，顧好與小校角，甚非所望也、貌奇偉，勇力絕人，猿臂善射、察聚終無成、一時名將稱徐、常、諸將乘之，遂拔採石，進取太平…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0066291",
+      "title": "哈佛大學中國歷代人物傳記資料庫（CBDB）常遇春條目（ID 66291）",
+      "locator": "WebSearch 結果摘要：記錄別名「常十萬」與封爵開平王、鄂國公",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "懷遠人、至正十五年歸附、採石登岸、鄱陽湖射張定邊、九華山夜坑降卒、贛州果不殺、太原夜襲、開平、柳河川暴卒年四十，皆依明史卷125 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：全程參與關鍵戰役與開平主將；武力：採石跳船與洛水單騎；智謀：太原夜劫與贛州長圍；政治：用法嚴與坑降；魅力：善撫士卒與常十萬。對照徐達、岳飛、霍去病、關羽、戚繼光、項羽、李廣。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "跳船登岸→拔採石；射張定邊→太祖脫困；坑降→太祖不懌→贛州不殺；贊語暗示妄殺與子孫（[推斷]）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    95,
+    97,
+    86,
+    55,
+    88
+  ]
+}
