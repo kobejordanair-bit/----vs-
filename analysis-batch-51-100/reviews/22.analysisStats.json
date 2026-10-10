@@ -1,0 +1,60 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_裴行儉_913863258",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:45:43.376Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "fe9cb71b748170140f3f1405ed192a18ee622c6423cf67bcb9015d97b2aaec2b",
+  "rawResponseSha256": "fe9cb71b748170140f3f1405ed192a18ee622c6423cf67bcb9015d97b2aaec2b",
+  "sourcePackageSha256": "c4cd3a92bcc0c8a36a2a913ce1ecbbbbf3f793c061ccd6de9ea945662b72d03d",
+  "searchLogSha256": "db403500b891ab234b6c6c625d2cdea50387624cde8dddf1415765072ea19b3c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784",
+      "title": "舊唐書·卷八十四\n列傳第三十四　劉仁軌　郝處俊　裴行儉",
+      "locator": "本機固定修訂 oldid=2632414 全文比對（textSha256 已驗）：率其屬縛溫傅詣軍門請罪、渾、浚前事，古今恥之。但恐殺降之後，無復來者、後謀歸國，事泄遇害、甚奇之，盡以用兵奇術授行儉、突厥阿史德溫傅反，單於管內二十四州並叛應之，眾數十萬、左授西州都督府長史…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=556670",
+      "title": "臺大佛學數位圖書館所收安西四鎮研究論文摘要",
+      "locator": "WebSearch 結果摘要：安西四鎮之設置與棄置次數學界有三置三棄、四置四棄、五置五棄等不同說法",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "絳州聞喜人、蘇定方授兵法、因議廢后左授西州、典選十餘年、儀鳳二年擒都支、調露元年定襄道、永隆伏念降而被斬、永淳元年卒年六十四，皆依舊唐書卷84 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：定襄道三十萬與黑山；武力：儒將少陷陣；智謀：冊送波斯、糧車、反間；政治：長名姓曆榜與西域歸降；魅力：提拔名將與寬恕失手軍吏。對照蘇定方、李勣、王忠嗣、韋孝寬、陳慶之。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "涼秋之後方可漸行→都支不備→擒之；詐為糧車→劫糧者殲；反間→伏念執溫傅降；裴炎害功→殺降→稱疾不出。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    95,
+    55,
+    96,
+    85,
+    90
+  ]
+}

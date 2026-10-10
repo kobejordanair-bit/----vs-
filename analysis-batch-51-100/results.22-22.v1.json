@@ -1,0 +1,151 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "general_裴行儉_913863258",
+      "inputSha256": "e45f2ece2c55489dbd05b77b5dd2026edb10aee10d7ff6d73d6f7f99302e8b95",
+      "promptSha256": "72fec7267e63c60586bed5a242377e7788b9304777f11be596ceee7e3d32da17",
+      "fields": {
+        "analysis": "永隆元年，裴行儉以反間之計讓突厥阿史那伏念與阿史德溫傅互相猜疑。伏念「密送降款」，隨後「率其屬縛溫傅詣軍門請罪」，突厥餘黨盡平。可是侍中裴炎嫉妒他的功勞，讓部將上言伏念是被逼急才投降；朝廷於是不記他的功，還把伏念與溫傅「斬於都市」。裴行儉嘆道：「渾、浚前事，古今恥之。但恐殺降之後，無復來者。」之後「稱疾不出」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。我對他的判斷是：**裴行儉是一位以**讓對手相信某件事**來取勝的將領——讓都支相信他只是路過，讓突厥相信那是一列糧車，讓伏念相信投降會被接納。他的計謀都建立在信用之上：他騙敵人一時，卻要保證投降者能活。當朝廷替他違背了這個承諾，他寧可不再出征，也不願讓自己的話變成謊言。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n裴行儉是絳州聞喜人，父親裴仁基陷於王世充，「後謀歸國，事泄遇害」；他以門蔭補弘文生，貞觀年間舉明經，任左屯衛倉曹參軍時，大將軍蘇定方「甚奇之，盡以用兵奇術授行儉」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。\n\n他面對的局面有三層：\n\n1.  **高宗朝的西域經營**：唐朝在西域設安西都護府與四鎮，但吐蕃崛起、西突厥餘部時叛時服，四鎮屢有置廢。學界對安西四鎮「三置三棄」「四置四棄」「五置五棄」等說法仍有爭議（[臺大佛學數位圖書館所收安西四鎮研究摘要](https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=556670)）。\n2.  **東突厥的復叛**：調露元年，「突厥阿史德溫傅反，單於管內二十四州並叛應之，眾數十萬」，單于都護蕭嗣業討之反敗[史載]。\n3.  **朝廷的政治傾軋**：他曾因反對廢王皇后、立武昭儀，與長孫無忌、褚遂良私議，被「左授西州都督府長史」[史載]。\n\n他同時是一位文官與將領：任吏部侍郎時與李敬玄「同時典選十餘年，甚有能名，時人稱為裴、李」，並「始設長名姓曆榜，引銓注等法」[史載]。史臣稱他與劉仁軌「文雅方略，無謝昔賢……儒將之雄者也」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：裴行儉最有名的勝利，幾乎都沒有經過正面決戰；他的武器是資訊——讓對手看到他想讓對手看到的東西。**\n\n**一、冊送波斯王：一場偽裝成外交的軍事行動**\n\n儀鳳二年，西突厥阿史那都支與李遮匐「扇動蕃落，侵逼安西，連和吐蕃」。議者欲發兵，他建議：吐蕃未平，「安可更為西方生事」；不如以冊立波斯王之名，派使「路由二蕃部落，便宜從事」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。到了西州，他揚言「今正炎蒸，熱阪難冒，涼秋之後，方可漸行」，都支因此「遂不設備」；他又邀四鎮蕃酋子弟隨他「打獵」，招得近萬人，「假為畋遊，教試部伍，數日，遂倍道而進」[史載]。途中經過莫賀延磧，「風沙晦暝，導者益迷」，他下令紮營、「虔誠致祭，令告將吏，泉井非遙」；不久「雲收風靜，行數百步，水草甚豐」，於是「眾皆悅服，比之貳師將軍」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。無論這是對地理的熟悉還是運氣，他懂得在部眾最動搖的時刻給出一個確定的答案[推斷]。到了都支部落十餘里外，他先派人問安、「外示閑暇」，再「趣召相見」；都支措手不及，「自率兒侄首領等五百餘騎就營來謁，遂擒之」[史載]。擒都支後，他又「釋遮匐行人，令先往曉喻其主，兼述都支已擒」，李遮匐隨即來降；將吏「立碑於碎葉城以紀其功」[史載]。高宗讚他「兵不血刃，而凶黨殄滅」[史載]。\n\n**二、定襄道：糧車與營地**\n\n調露元年，他以定襄道行軍大總管統兵三十餘萬，「唐世出師之盛，未之有也」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。他得知蕭嗣業因運糧被劫而兵多餓死，「遂詐為糧車三百乘，每車伏壯士五人，各齎陌刀、勁弩」，突厥來劫，「車中壯士齊發，伏兵亦至，殺獲殆盡」；此後「續遣糧車，無敢近之者」[史載]。紮營時，他在壕塹剛挖好之際「遽令移就崇岡」，將士抱怨，當夜「風雨暴至，前設營所水深丈餘，將士莫不歎伏」[史載]。\n\n**三、反間與受降**\n\n次年阿史那伏念與溫傅合勢，他「縱反間說伏念與溫傅，令相猜貳」；伏念密送降款，他「不泄其事，而密表以聞」[史載]。遠方煙塵漲天，斥候驚惶，他說：「此是伏念執溫傅來降，非他。然受降如受敵，但須嚴備。」果然如此[史載]。\n\n**四、功不錄、降者死**\n\n然而裴炎「害行儉之功」，讓程務挺、張虔勖上言伏念是被逼而降；結果「行儉之功不錄，斬伏念及溫傅於都市」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。他引西晉王渾、王濬爭功之事自嘆，擔心「殺降之後，無復來者」，從此稱疾不出[史載]。\n\n**文與武的交會**：他工於草書，高宗曾以「絹素百卷，令行儉草書《文選》一部」；他撰有《選譜》十卷與「安置軍營、行陣部統、克料勝負、甄別器能等四十六訣」，後來武則天「令秘書監武承嗣詣宅，並密收入內」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。他的兵法與他的選才法，在朝廷眼中同樣是需要收藏的機密。\n\n**連鎖結果**：永淳元年西突厥車薄反叛，朝廷再命他為金牙道大總管，「師未行」，他即病卒，年六十四[史載]。他的反間與受降，被朝廷的殺降抵銷；突厥後來仍屢屢為患[推斷]。\n\n### **3. 【人性與性格側寫】**\n\n*   **識人精準**：他評楊炯、王勃、盧照鄰、駱賓王「才名有之，爵祿蓋寡。楊應至令長，餘並鮮能令終」；又預言蘇味道、王劇「十數年當居衡石」，「皆如其言」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。\n*   **善於提拔**：程務挺、王方翼、李多祚、黑齒常之等皆出其門下，「盡為名將」[史載]。\n*   **寬恕過失**：軍吏王休烈捧馬腦盤跌碎，「叩頭流血」，他笑說「爾非故也，何至於是」[史載]。\n*   **不貪財物**：所賜都支資產金器三千餘事，「並分給親故並副使已下，數日便盡」[史載]。\n*   **自負書法**：他說「不擇筆墨而妍捷者，唯餘及虞世南耳」[史載]。\n\n### **4. 【如果生在現代】**\n\n裴行儉最接近的現代角色是：**一位擅長情報與心理戰、又兼任人事主管的特種作戰指揮官。**\n\n*   **以外交掩護行動**：他以護送外國王子回國為名，一路經過敵對勢力地盤，最後在對方毫無防備時將其首領帶走。\n*   **偽裝的補給車隊**：他把精銳藏在補給車裡，讓專門劫掠補給線的敵人自投羅網。\n*   **對天氣與地形的判斷**：他在大雨前一刻下令全軍移營高地，避開了一場山洪。\n*   **人事眼光**：他在人事部門任職十多年，提拔的部下日後都成為重要將領。\n*   **邊界**：這個比喻只描寫他**以資訊取勝**的手法；他所處的是唐代的邊疆戰爭與宮廷政治，殺降與爭功的後果牽涉部族存亡與王朝邊防，遠非現代軍事行動可以概括。",
+        "soulEssence": "【說話邏輯】\n他特別擅長用一種輕鬆的語氣說最重要的話。在西州，他對蕃酋子弟說：「憶昔此遊，未嘗厭倦，雖還京輦，無時暫忘。今因是行，欲尋舊賞，誰能從吾獵也？」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]——一場遠征被包裝成一次懷舊的打獵。對都支，他先派人「問其安否」，像是老朋友來訪[史載]。他的語言很少帶有威脅，而是讓對方放下戒心；真正的意圖，藏在對方沒有注意到的地方[推斷]。在莫賀延磧的風沙中，他對迷路的將吏只說「泉井非遙」[史載]——一句篤定的話，比任何解釋都更能穩住人心[推斷]。即使在朝廷上議事，他也是以「安可更為西方生事」的低調姿態，提出一個實際上極為大膽的計畫[史載]。\n\n【壓力反應】\n他在壓力下的反應，是冷靜地判斷，然後堅持自己的判斷。\n定襄道紮營，「將士皆以士眾方就安堵，不可勞擾，行儉不從，更令促之」，結果當夜大雨，前營「水深丈餘」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]。煙塵漲天、斥候惶惑時，他平靜地說那是伏念來降，同時仍要求「嚴備」[史載]。他不受眾人情緒左右，也不需要向眾人解釋理由，結果本身就是最好的說明；但他也不輕信自己的判斷——「受降如受敵」這句話，說明他在最有把握的時候仍然保留警戒[推斷]。\n\n【核心驅動】\n他想要的是**以最小的代價完成任務**。\n都支一役，高宗讚他「兵不血刃」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]；伏念一役，他以反間讓敵人自己內鬥，最後讓敵人綁著同伴來降[史載]。他的計謀幾乎都在避免正面流血[推斷]。對李遮匐，他甚至放回對方的使者，讓使者回去告訴主人都支已被擒[史載]——讓事實本身去說服敵人投降，比派兵追擊省事得多[推斷]。這與他的出身有關：他是蘇定方的傳人，也是典選十餘年的文官；他理解戰爭的成本，也理解人才的價值[詮釋：此為從其戰法與經歷歸納的動機]。\n\n【慣性盲點】\n他精準地算計敵人，卻沒有同樣精準地防範同僚。\n他在戰場上能看穿伏念與溫傅之間的裂痕，卻沒有預料到裴炎會「害行儉之功」，讓部將程務挺、張虔勖上言誣其受降之功（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]——諷刺的是，程務挺、張虔勖正是他提拔的部將[史載]。他對人才的眼光極準，卻沒有察覺自己提拔的人也可能在政治壓力下轉向[推斷]。他能預言王勃、駱賓王「鮮能令終」，卻沒能預言自己的部將會在朝中站到對立面——看人的才能容易，看人的處境難[推斷]。\n\n【情感結構】\n他對部屬極為寬厚。醫人遺失犀角、麝香而逃，令史騎壞御賜馬鞍而逃，他都派人找回，說「爾曹豈相輕耶？皆錯誤耳」，「待之如故」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]；王休烈打碎馬腦盤，他笑說「爾非故也」[史載]。他對晚年的子嗣也有遺憾：「有晚年子息，恨不見其成長」，託付蘇味道、王劇日後照顧[史載]。他對後進的看法也帶著一種冷靜的關懷：他說王勃等人「鮮能令終」，不是貶低才華，而是看出才名與命運之間的落差[推斷]。他最脆弱的時刻，大概是伏念被斬於都市之後——他用信用換來的投降，被朝廷變成了殺戮，他只能「稱疾不出」[詮釋]。\n\n【參照系】\n他理解戰爭的框架是**信用與資訊**：敵人相信什麼，就會做什麼[推斷]。\n類比準確之處：都支相信他要等秋涼才行，於是不設防；突厥相信那是糧車，於是來劫；伏念相信投降可以保命，於是綁著溫傅來降（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]。\n類比失準之處：這套框架需要朝廷配合兌現承諾；當朝廷殺了降者，他的信用就被摧毀了，他擔心「殺降之後，無復來者」[史載]。他能控制戰場上的資訊，卻控制不了朝廷的決定[詮釋：此為本文的分析判斷]。而一旦降者被殺，下一次的反間就少了一個可以兌現的籌碼[推斷]。\n\n【內在裂縫】\n他的裂縫在於：他靠欺騙敵人取勝，卻比任何人都在乎承諾是否兌現。\n對都支，他是「外示閑暇，似非討襲」；對突厥，他是「詐為糧車」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）[史載]。但對伏念，他要的是一個被遵守的承諾——伏念的投降是他用反間換來的，他必須保證降者活命，未來才會有人願意投降[推斷]。朝廷斬了伏念，他引「渾、浚前事，古今恥之」自嘆[史載]。他早年因反對立武昭儀而被貶西州[史載]，晚年又因不肯接受殺降而稱疾——兩次退場，都是因為不願附和他認為錯誤的決定[推斷]。他在欺騙中建立了一套信用；當這套信用被自己人打破時，他選擇沉默退場[詮釋]。",
+        "stats": [
+          95,
+          55,
+          96,
+          85,
+          90
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：95\n\n他以定襄道行軍大總管統兵三十餘萬，「唐世出師之盛，未之有也」，黑山「頻戰皆捷，前後殺虜不可勝數」；又以糧車伏兵、移營避洪顯示嚴密的軍隊管理（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。扣分在於其最大戰果多以奇計取得，較少大兵團正面決戰的記錄。評95，低於蘇定方（97）與李勣（97），與王忠嗣（95）持平，高於陳慶之（94）。\n\n### 武力：55\n\n史料中他的勝利多來自計謀而非個人搏戰：擒都支是「外示閑暇」誘其來謁，破突厥是糧車中的壯士與伏兵出擊（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。他出身明經、典選十餘年，是典型的儒將，未見親臨陷陣的記載。評55，高於陳慶之（30），低於韋孝寬（75）、李勣（80）與蘇定方（90），反映其文官出身、以謀代戰的儒將本色。\n\n### 智謀：96\n\n冊送波斯王為名、揚言「涼秋之後，方可漸行」以麻痺都支；「詐為糧車三百乘」伏兵；「縱反間說伏念與溫傅，令相猜貳」；判斷煙塵為「伏念執溫傅來降」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。本傳稱其「每製敵摧凶，必先期捷日」，並撰兵法四十六訣。評96，低於韋孝寬（98），高於李勣（95）與王忠嗣（94），以智取勝而少流血。\n\n### 政治：85\n\n他任吏部侍郎十餘年，「始設長名姓曆榜，引銓注等法，又定州縣升降、官資高下，以為故事」；任安西大都護時「西域諸國多慕義歸降」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）。但他因議論廢后被貶，晚年又受裴炎排擠，未能在朝中保全功勞與承諾。評85，低於李勣（88）與韋孝寬（92），高於王忠嗣（55）與蘇定方（55）。\n\n### 魅力：90\n\n他提拔程務挺、王方翼、黑齒常之等人「盡為名將」；平都支時「蕃酋子弟投募者僅萬人」，莫賀延磧中「眾皆悅服，比之貳師將軍」（[《舊唐書·裴行儉傳》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784)）；他寬恕失手的軍吏，分賜所得給部屬。扣分在於與裴炎等朝臣不協，功勞被奪。評90，與李勣（90）持平，低於王忠嗣（92），高於蘇定方（82）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T11:45:43.306Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書·卷八十四\n列傳第三十四　劉仁軌　郝處俊　裴行儉",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784",
+            "locator": "本機固定修訂 oldid=2632414 全文比對（textSha256 已驗）：率其屬縛溫傅詣軍門請罪、渾、浚前事，古今恥之。但恐殺降之後，無復來者、後謀歸國，事泄遇害、甚奇之，盡以用兵奇術授行儉、突厥阿史德溫傅反，單於管內二十四州並叛應之，眾數十萬、左授西州都督府長史…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "臺大佛學數位圖書館所收安西四鎮研究論文摘要",
+            "url": "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=556670",
+            "locator": "WebSearch 結果摘要：安西四鎮之設置與棄置次數學界有三置三棄、四置四棄、五置五棄等不同說法",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "e73831b35c5d66e9782e7f2f75f029a94e6d87c4ab82f21210ac3b5d1815c26a",
+        "sourcePackageSha256": "c4cd3a92bcc0c8a36a2a913ce1ecbbbbf3f793c061ccd6de9ea945662b72d03d",
+        "preservedDeepSha256": "71ab485a63fe067e01ce36a2f0c1c5326d74cf5f308581f5786b6395d8bb3d13",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "05e54247ecd9bbc8536811393c940f9289ead0858596a1d8ee3006bec0d51dec",
+            "requestSha256": "e73831b35c5d66e9782e7f2f75f029a94e6d87c4ab82f21210ac3b5d1815c26a",
+            "inputSha256": "e45f2ece2c55489dbd05b77b5dd2026edb10aee10d7ff6d73d6f7f99302e8b95",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "351097299c041cd3f940beae3449a3be7df0fa6e8060c86a7497f6bb518f8274",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "c4cd3a92bcc0c8a36a2a913ce1ecbbbbf3f793c061ccd6de9ea945662b72d03d",
+            "preservedDeepSha256": "71ab485a63fe067e01ce36a2f0c1c5326d74cf5f308581f5786b6395d8bb3d13",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:45:43.306Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/22.analysisStats.raw.md",
+            "rawResponseSha256": "fe9cb71b748170140f3f1405ed192a18ee622c6423cf67bcb9015d97b2aaec2b",
+            "responseFile": "analysis-batch-51-100/drafts/22.analysisStats.response.md",
+            "responseSha256": "fe9cb71b748170140f3f1405ed192a18ee622c6423cf67bcb9015d97b2aaec2b",
+            "fieldsHashes": {
+              "analysis": "b30d36cba59904cc6864dd4452eaedf4069fc44349c8d8d5de2c3cbd8b8eb656",
+              "stats": "13cf586a74ff1d617f4838358f584920b032f2c8703b6bd0a26b03aeb411f2ba",
+              "statsAnalysis": "fe14cb85bbd40caae0e103c802ccc3e0ca8d5a9e0fa253ce5c5d0f5259d81b54"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/22.analysisStats.capture.json",
+            "captureSha256": "d6b84e63c3482d176e62d6d817c3af77c697f9b674feb8731bc190f76ef645bb",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/22.analysisStats.json",
+            "sourceReviewSha256": "b0e588a93765a60959a045e8c180df8675793bc450f86a39b9194e6dd7271884",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/22.combined.search-log.json",
+              "sha256": "db403500b891ab234b6c6c625d2cdea50387624cde8dddf1415765072ea19b3c",
+              "webSearchCount": 1,
+              "archiveCheckCount": 58
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·卷八十四\n列傳第三十四　劉仁軌　郝處俊　裴行儉",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784",
+                "locator": "本機固定修訂 oldid=2632414 全文比對（textSha256 已驗）：率其屬縛溫傅詣軍門請罪、渾、浚前事，古今恥之。但恐殺降之後，無復來者、後謀歸國，事泄遇害、甚奇之，盡以用兵奇術授行儉、突厥阿史德溫傅反，單於管內二十四州並叛應之，眾數十萬、左授西州都督府長史…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "臺大佛學數位圖書館所收安西四鎮研究論文摘要",
+                "url": "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=556670",
+                "locator": "WebSearch 結果摘要：安西四鎮之設置與棄置次數學界有三置三棄、四置四棄、五置五棄等不同說法",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "4c105ca315dc0356db24a52046db37bb0dac6e0429a9059f6078ee57f5a15034",
+            "requestSha256": "e73831b35c5d66e9782e7f2f75f029a94e6d87c4ab82f21210ac3b5d1815c26a",
+            "inputSha256": "e45f2ece2c55489dbd05b77b5dd2026edb10aee10d7ff6d73d6f7f99302e8b95",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "45e70628c991e50cfbaac12e0f8c83c68c418169e0451d7ddb80f33af5923cda",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "c4cd3a92bcc0c8a36a2a913ce1ecbbbbf3f793c061ccd6de9ea945662b72d03d",
+            "preservedDeepSha256": "71ab485a63fe067e01ce36a2f0c1c5326d74cf5f308581f5786b6395d8bb3d13",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:45:43.306Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/22.soulEssence.raw.md",
+            "rawResponseSha256": "b4e37a9d9dbb05617f92a0c24f0cfd6ae388c3a68fa26ab9cedc73ee5e4e7025",
+            "responseFile": "analysis-batch-51-100/drafts/22.soulEssence.response.md",
+            "responseSha256": "b4e37a9d9dbb05617f92a0c24f0cfd6ae388c3a68fa26ab9cedc73ee5e4e7025",
+            "fieldsHashes": {
+              "soulEssence": "27679ff8c16ec47ab8b2221295b66132acf936ab5a269e99af0fc12df2640982"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/22.soulEssence.capture.json",
+            "captureSha256": "ff1511ac71fbf618f0d6ac3c82cdca9d1f9eeeb1500726092cf9ef6812f1525f",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/22.soulEssence.json",
+            "sourceReviewSha256": "94a9f46866c265830b08d3e594a1fbe04982c0e46be64e46e914a998fd965eec",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/22.combined.search-log.json",
+              "sha256": "db403500b891ab234b6c6c625d2cdea50387624cde8dddf1415765072ea19b3c",
+              "webSearchCount": 1,
+              "archiveCheckCount": 58
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·卷八十四\n列傳第三十四　劉仁軌　郝處俊　裴行儉",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784",
+                "locator": "本機固定修訂 oldid=2632414 全文比對（textSha256 已驗）：率其屬縛溫傅詣軍門請罪、渾、浚前事，古今恥之。但恐殺降之後，無復來者、後謀歸國，事泄遇害、甚奇之，盡以用兵奇術授行儉、突厥阿史德溫傅反，單於管內二十四州並叛應之，眾數十萬、左授西州都督府長史…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/22.analysis.md",
+            "analysisContextSha256": "22a04fbbf01f2d7f1eeb48715c3415e25db89e2f38b7fd45b0872d7cdda34b4d"
+          }
+        }
+      }
+    }
+  ]
+}

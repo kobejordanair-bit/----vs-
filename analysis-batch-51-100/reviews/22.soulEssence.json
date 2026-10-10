@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_裴行儉_913863258",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:45:43.377Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b4e37a9d9dbb05617f92a0c24f0cfd6ae388c3a68fa26ab9cedc73ee5e4e7025",
+  "rawResponseSha256": "b4e37a9d9dbb05617f92a0c24f0cfd6ae388c3a68fa26ab9cedc73ee5e4e7025",
+  "sourcePackageSha256": "c4cd3a92bcc0c8a36a2a913ce1ecbbbbf3f793c061ccd6de9ea945662b72d03d",
+  "searchLogSha256": "db403500b891ab234b6c6c625d2cdea50387624cde8dddf1415765072ea19b3c",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B784",
+      "title": "舊唐書·卷八十四\n列傳第三十四　劉仁軌　郝處俊　裴行儉",
+      "locator": "本機固定修訂 oldid=2632414 全文比對（textSha256 已驗）：率其屬縛溫傅詣軍門請罪、渾、浚前事，古今恥之。但恐殺降之後，無復來者、後謀歸國，事泄遇害、甚奇之，盡以用兵奇術授行儉、突厥阿史德溫傅反，單於管內二十四州並叛應之，眾數十萬、左授西州都督府長史…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：讓對手相信某事以取勝、卻最在乎承諾兌現；場景為誰能從吾獵也、糧車、受降如受敵、殺降之嘆。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以最小代價為動機、信用被自己人打破而沉默退場，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以獵遊之語與泉井非遙、移營與受降如受敵、兵不血刃、裴炎與程張、寬恕失手者與託孤、信用框架、欺敵與守諾為事件。"
+    }
+  ],
+  "materialIssues": []
+}
