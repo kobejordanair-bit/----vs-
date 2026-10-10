@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_張之洞_1992641166",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:08:33.454Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "10813cbf2309224af0029283b7ce14d865f18269c7387cce01cad2a172f18087",
+  "rawResponseSha256": "10813cbf2309224af0029283b7ce14d865f18269c7387cce01cad2a172f18087",
+  "sourcePackageSha256": "e5a5b97c1269db76ff0a7c90f6d3e1c2b27ee7a94d904873e9d668b88953a7fd",
+  "searchLogSha256": "5b84183a38378687ab9617a19a0a728514fa55f397ae7173310524a4b4f75b03",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437",
+      "title": "清史稿·卷四百三十七 列傳二百二十四",
+      "locator": "本機固定修訂 oldid=2592002 全文比對（textSha256 已驗）：蒞官所至，必有興作。務宏大，不問費多寡、不問費多寡、舉鄉試第一、論奏其失，請斬崇厚，毀俄約、褫崇厚職治罪、往者詞臣率雍容養望，自之洞喜言事，同時寶廷、陳寶琛、張佩綸輩崛起，糾彈時政，號為清流…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://hub.hku.hk/handle/10722/93578",
+      "title": "李培德（香港大學）以光緒二十二年盛宣懷接辦漢陽鐵廠為例之官督商辦研究（港大學術庫）",
+      "locator": "WebSearch 結果摘要：李培德多篇論文以1896年盛宣懷接辦漢陽鐵廠事件為個案探討清末官督商辦企業；摘要未給虧損數字",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "七利與十二事十一事；請斬崇厚。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "勸學篇與東南互保相隔兩年；恥言和。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "必有興作；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "不問費多寡、盛宣懷接辦、海軍緩立。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "恥言和、劾賄、以憂死；記誦絕人。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "廢時文非廢五經；東南互保悖論標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "漢陽鐵廠與晚年爭之不得。"
+    }
+  ],
+  "materialIssues": []
+}

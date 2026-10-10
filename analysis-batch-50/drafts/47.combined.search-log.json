@@ -1,0 +1,334 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_張之洞_1992641166",
+  "packetSha256": "454b3bdee997ec73df00bff20d8967967f0e86866005fada6beb35704dd911d4",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "漢陽鐵廠 張之洞 虧損 1896 盛宣懷 接辦 官督商辦 高爐 礦石 磷 研究 論文",
+      "returnedUrls": [
+        "https://chiculture.org.hk/en/node/134",
+        "https://hub.hku.hk/handle/10722/93578",
+        "https://hub.hku.hk/handle/10722/60402",
+        "https://hub.hku.hk/handle/10722/87519"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "蒞官所至，必有興作。務宏大，不問費多寡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "不問費多寡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "舉鄉試第一",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "論奏其失，請斬崇厚，毀俄約",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "褫崇厚職治罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "往者詞臣率雍容養望，自之洞喜言事，同時寶廷、陳寶琛、張佩綸輩崛起，糾彈時政，號為清流",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "滇、越兩軍合扼鎮南關，殊死戰，遂克諒山",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "獨以籌餉械勞，免議",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "恥言和，則陰自圖強，設廣東水陸師學堂，創槍砲廠，開礦務局",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "修路之利，以通土貨、厚民生為最大，徵兵、轉餉次之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "奏開鍊鐵廠漢陽大別山下，資路用，兼設槍砲鋼藥專廠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "由是湖北財賦稱饒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "務宏大，不問費多寡",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "首劾布政使葆亨、冀寧道王定安等黷貨，舉廉明吏五人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "考鹽法利弊，設兵輪緝私，歲有贏課",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "朝士日議變法",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "廢時文，非廢五經、四書也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "之洞先著勸學篇以見意，得免議",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "同與外國領事定保護東南之約。及聯軍內犯，兩宮西幸，而東南幸無事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "宜變通者十二事，宜採西法者十一事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "尤要者，則設學堂，停科舉，獎遊學",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "親貴浸用事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "移疾，遂卒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "唯之洞一時稱賢，而監國攝政，親貴用事，欲挽救而未能，遂以憂死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "以文儒致清要，遇事敢為大言",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "家不增一畝",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "愛才好客，名流文士爭趨之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "請化除滿、漢畛域，以彰聖德，遏亂萌",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "改築西式砲台",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "募德人教練",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "江南自強軍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "短身巨髯，風儀峻整",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "武科宜罷騎射、刀石，專試火器",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "以通土貨、厚民生為最大",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "示以戰意，乃可居間調解",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "東南幸無事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "湖北財賦稱饒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "設學堂，停科舉，獎遊學",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "皆私自喜得為學塗徑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "內處腹地，無慮引敵",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "海上用兵，漕運無梗",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "請斬崇厚，毀俄約",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "先著勸學篇以見意，得免議",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "同與外國領事定保護東南之約",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "恥言和，則陰自圖強",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "設廣東水陸師學堂，創槍砲廠，開礦務局",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "廣立武備、農工商、鐵路、方言、軍醫諸學堂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "蒞官所至，必有興作",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "海軍費絀可緩立",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "欲挽救而未能，遂以憂死",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    },
+    {
+      "book": "qingshigao",
+      "title": "清史稿/卷437",
+      "quote": "以經義終焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 清史稿卷437 verified in the repository archive.",
+    "漢陽鐵廠虧損數字、高磷礦石與高爐選型等技術問題未取得可靠來源，正文不作具體主張；港大學術庫該 handle 對應李培德同題系列論文之一，正文以系列研究描述。",
+    "《勸學篇》原文未核讀；清史稿卷24未逐段比對。"
+  ]
+}

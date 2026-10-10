@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_張之洞_1992641166",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:08:33.453Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7df512fdf1f97dbf9609b722d8d2a10f44eb3a91dd57af2e3aaaa962965d1f3c",
+  "rawResponseSha256": "7df512fdf1f97dbf9609b722d8d2a10f44eb3a91dd57af2e3aaaa962965d1f3c",
+  "sourcePackageSha256": "e5a5b97c1269db76ff0a7c90f6d3e1c2b27ee7a94d904873e9d668b88953a7fd",
+  "searchLogSha256": "5b84183a38378687ab9617a19a0a728514fa55f397ae7173310524a4b4f75b03",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7437",
+      "title": "清史稿·卷四百三十七 列傳二百二十四",
+      "locator": "本機固定修訂 oldid=2592002 全文比對（textSha256 已驗）：蒞官所至，必有興作。務宏大，不問費多寡、不問費多寡、舉鄉試第一、論奏其失，請斬崇厚，毀俄約、褫崇厚職治罪、往者詞臣率雍容養望，自之洞喜言事，同時寶廷、陳寶琛、張佩綸輩崛起，糾彈時政，號為清流…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://hub.hku.hk/handle/10722/93578",
+      "title": "李培德（香港大學）以光緒二十二年盛宣懷接辦漢陽鐵廠為例之官督商辦研究（港大學術庫）",
+      "locator": "WebSearch 結果摘要：李培德多篇論文以1896年盛宣懷接辦漢陽鐵廠事件為個案探討清末官督商辦企業；摘要未給虧損數字",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "張之洞，名臣；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "qingliu",
+      "passed": true,
+      "detail": "請斬崇厚、清流之號，原文核對。"
+    },
+    {
+      "id": "sino-french",
+      "passed": true,
+      "detail": "諒山、恥言和而自強，原文核對。"
+    },
+    {
+      "id": "hubei",
+      "passed": true,
+      "detail": "七利、漢陽鐵廠、諸局、湖北財賦稱饒，原文核對；盛宣懷接辦依研究摘要。"
+    },
+    {
+      "id": "survival",
+      "passed": true,
+      "detail": "勸學篇得免議、東南互保、變法三疏、停科舉，原文核對；晉省劾貪、兩江鹽法補入。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[82,30,88,92,88] 對照霍光[85,40,88,95,78]、范仲淹[86,40,88,88,96]、李斯[65,30,95,93,70]、姚崇[78,68,97,96,88]、劉基[80,35,96,85,85]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    82,
+    30,
+    88,
+    92,
+    88
+  ]
+}
