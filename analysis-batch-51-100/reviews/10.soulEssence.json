@@ -1,0 +1,61 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_梁武帝_281110767",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:09:39.143Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "32a286a9caa5ea434366ccedf7a4e16d8e47cc05979f84c8189482c5a31dd7c3",
+  "rawResponseSha256": "32a286a9caa5ea434366ccedf7a4e16d8e47cc05979f84c8189482c5a31dd7c3",
+  "sourcePackageSha256": "8ad888d72210d270ab055da621c4cda8c80fb9e65ac0fb3b71c9334b9a4606a2",
+  "searchLogSha256": "f17f3feb4008667fdd1c9d83eeae0f08474b109943ff676ad7140a2f8d4535b1",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738",
+      "title": "梁書·卷三十八 列傳第三十二\n朱异 賀琛",
+      "locator": "本機固定修訂 oldid=1508285 全文比對（textSha256 已驗）：自普通以來，二十餘年，刑役薦起，民力雕流、大怒，召主書於前，口授敕責琛、朕絕房室三十餘年、昔要腹過於十圍，今之瘦削裁二尺餘，舊帶猶存，非爲妄說。爲誰爲之？救物故也、卿可分明顯出：某刺史橫暴，某太守貪殘、止取名字，宣之行路…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703",
+      "title": "梁書·卷三 本紀第三\n武帝下",
+      "locator": "本機固定修訂 oldid=2401780 全文比對（textSha256 已驗）：高祖英武睿哲，義起樊、鄧、三四十年，斯爲盛矣。自魏、晉以降，未或有焉、立五館，置《五經》博士、撰吉凶軍賓嘉五禮，凡一千餘卷、四方郡國，趨學向風、每有疑事，倚立求決…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://buddhism.lib.ntu.edu.tw/DLMBS/search/search_detail.jsp?seq=262549",
+      "title": "臺大佛學數位圖書館：顏尚文梁武帝「皇帝菩薩」系列論文條目",
+      "locator": "WebSearch 綜合摘要：顏尚文〈梁武帝受菩薩戒及捨身同泰寺與「皇帝菩薩」地位的建立〉（《東方宗教研究》新1期，1990）等；武帝以皇帝政治主導、以佛法治世建立佛教國家。此條目與各篇對應依摘要判讀",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以自身潔淨證明國家清明；場景為賀琛敕責、捨身同泰寺、主非堯舜詔、所求不供。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "德位相符動機、修身與治國缺層、交出去的人事，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以敕責賀琛、太清元年捨身與早年拒戰、聖王與菩薩、朱异與侯景、父母之喪與憂憤寢疾、修身框架、主非堯舜對爲誰爲之為事件。"
+    }
+  ],
+  "materialIssues": []
+}

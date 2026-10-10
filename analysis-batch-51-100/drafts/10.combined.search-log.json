@@ -1,0 +1,427 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_梁武帝_281110767",
+  "packetSha256": "cb8e99159b7c0b8ec634a0383a87c91b80df2843be621c6f2d09c9c719b155c0",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "梁武帝 捨身同泰寺 佛教 皇帝菩薩 研究 論文 顏尚文",
+      "returnedUrls": [
+        "https://buddhism.lib.ntu.edu.tw/DLMBS/search/search_detail.jsp?seq=262549",
+        "https://buddhism.lib.ntu.edu.tw/DLMBS/jp/search/search_detail.jsp?seq=262549",
+        "https://cbs.ntu.edu.tw/001/Upload/1716/relfile/111619/223277/6bda7fd0-3673-4273-a804-43296f91e0e3.pdf",
+        "https://buddhism.lib.ntu.edu.tw/en/author/authorinfo.jsp?ID=+62760",
+        "https://cbs.ntu.edu.tw/001/Upload/1734/relfile/112168/223852/c309bad0-ad83-42e5-9bfb-b84bc296e695.pdf",
+        "https://blog.udn.com/kinghung000/2706208",
+        "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=304427",
+        "https://news.ifeng.com/c/7pENjCLTjqZ",
+        "https://buddhism.lib.ntu.edu.tw/search/search_detail.jsp?seq=688590"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "侯景之亂 梁武帝 接納侯景 決策 臺城 548 549 研究 學報",
+      "returnedUrls": [
+        "https://www.thenewslens.com/article/253249",
+        "https://ctext.org/taiping-guangji/139/liangwudi",
+        "https://www.gcores.com/articles/159772",
+        "https://WWW.wikipedia.org/wiki/Xiao_Yan",
+        "https://graphsearch.epfl.ch/en/concept/1492603",
+        "https://www.gcores.com/articles/160443",
+        "https://vocus.cc/article/6198f81ffd8978000163fef0",
+        "https://www.drbachinese.org/vbs/publish/349/vbs349p017.htm",
+        "https://blog.udn.com/redhorse/9839693"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "自普通以來，二十餘年，刑役薦起，民力雕流",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "大怒，召主書於前，口授敕責琛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "朕絕房室三十餘年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "昔要腹過於十圍，今之瘦削裁二尺餘，舊帶猶存，非爲妄說。爲誰爲之？救物故也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷01",
+      "quote": "博學多通，好籌略，有文武才幹",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B701"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷01",
+      "quote": "政出多門，亂其階矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B701"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷01",
+      "quote": "況今有六，而可得乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B701"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷01",
+      "quote": "甲士萬餘人，馬千餘匹，船三千艘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B701"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "高祖英武睿哲，義起樊、鄧",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "三四十年，斯爲盛矣。自魏、晉以降，未或有焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷01",
+      "quote": "獨帥衆距戰，殺數十百人，魏騎稍卻",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B701"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷02",
+      "quote": "謗木肺石傍各置一函",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B702"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "立五館，置《五經》博士",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "撰吉凶軍賓嘉五禮，凡一千餘卷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "四方郡國，趨學向風",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "每有疑事，倚立求決",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "主非堯舜，何得發言便是",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "幸同泰寺捨身",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "公卿以下，以錢一億萬奉贖",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "日止一食，膳無鮮腴",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "身衣布衣，木綿皁帳，一冠三載，一被二年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "五十外便斷房室",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "及乎耄年，委事羣倖。然朱异之徒，作威作福，挾朋樹黨，政以賄成",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "卿可分明顯出：某刺史橫暴，某太守貪殘",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "止取名字，宣之行路",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "東境戶口空虛，良由使命繁多",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "但未知此是何使",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "求以豫、廣、潁、洛",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "等十三州內屬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "以景爲大將軍，封河南王",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "幸同泰寺，設無遮大會，捨身",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "賊攻陷宮城，縱兵大掠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "高祖以所求不供，憂憤寢疾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "崩于淨居殿，時年八十六",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "遂使滔天羯寇，承間掩襲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "塗炭黎元，黍離宮室。嗚呼！天道何其酷焉。雖歷數斯窮，蓋亦人事然也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "雖居小殿暗室，恒理衣冠",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "水漿不入口三日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "每哭輒歐血數升",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "王侯朝臣皆奉表質疑，高祖皆爲解釋",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "爲誰爲之？救物故也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "勇者可使進取，怯者可使守城，貪者可使捍禦，廉者可使牧民",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "南超萬里，西拓五千",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "騎射弓馬，莫不奇妙",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "高祖稱制斷疑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "三四十年，斯爲盛矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "朱异之徒，作威作福，挾朋樹黨，政以賄成",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "刑役薦起，民力雕流",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "名僧碩學，四部聽衆，常萬餘人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "王侯朝臣皆奉表質疑",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "以所求不供，憂憤寢疾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "居處不過一床之地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "日常一食，若晝若夜，無有定時",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "此又是誰？何者復是詭事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "我能上事，明言得失，恨朝廷之不能用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷01",
+      "quote": "獨帥衆距戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B701"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "貪者可使捍禦，廉者可使牧民",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "每至展拜，恒涕泗滂沲",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "常哀矜涕泣，然後可奏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "興文學，脩郊祀，治五禮，定六律",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "其身正，不令而行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷38",
+      "quote": "不免居九品之下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B738"
+    },
+    {
+      "book": "liangshu",
+      "title": "梁書/卷03",
+      "quote": "雖歷數斯窮，蓋亦人事然也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B703"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《梁書》卷1–3、38 全文比對。",
+    "顏尚文論文僅見書目與摘要；侯景之亂相關搜尋未得學術論文，正文只依《梁書》。",
+    "賀琛上書確切年份未核，正文以晚年概稱。"
+  ]
+}
