@@ -1,0 +1,61 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_道光帝_271521568",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:25:48.417Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7da8080e6363896d55795d7971b73f1abff4478a5b0ee04ad6e33a9a72cc1418",
+  "rawResponseSha256": "7da8080e6363896d55795d7971b73f1abff4478a5b0ee04ad6e33a9a72cc1418",
+  "sourcePackageSha256": "e11f39b56f42a4ca01053ba447aee7dfaa08c9e0184c8a5064ac6fb1ca4db3e4",
+  "searchLogSha256": "16e37be09ad5f7b2d264e021d209423143227d6acd2efbdfdb9cbe8b2cb6cecd",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B718",
+      "title": "清史稿·本紀十八　宣宗本纪二",
+      "locator": "本機固定修訂 oldid=2612362 全文比對（textSha256 已驗）：申禁各省種鬻鴉片、申定官民買食鴉片煙罪例、命林則徐為欽差大臣，查辦廣東海口事件，節制該省水師、諭以空言搪塞，切責之、命琦善為欽差大臣，赴廣東查辦、洋船停泊外洋勿問…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B719",
+      "title": "清史稿·本紀十九　宣宗本纪三",
+      "locator": "本機固定修訂 oldid=2630077 全文比對（textSha256 已驗）：宣宗恭儉之德，寬仁之量，守成之令辟也、遠人貿易，構釁興戎、當事大臣先之以操切，繼之以畏葸、所謂有君而無臣，能將順而不能匡救。國步之瀕，肇端於此、有君而無臣、琦善以虎門陷，下部嚴議…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B717",
+      "title": "清史稿·本紀十七　宣宗本纪一",
+      "locator": "本機固定修訂 oldid=1812282 全文比對（textSha256 已驗）：御槍斃二賊，餘賊潰散、事在倉猝，又無禦賊之人，勢不由己，事後愈思愈恐、引弓獲鹿，高宗大喜，賜黃馬褂、花翎、親書上名，緘藏鐍匣、事後愈思愈恐、其不矜不伐如此…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以換人與懲處回應結構問題；場景為事後愈思愈恐、空言搪塞、琦善論斬與林則徐遣戍、朕以民命為重。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "鈐御寶為最脆弱時刻、想要的臣子在懲罰下無法存在，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以切責與議和諭、撤換與畏葸、守成、戰和兩派同罪、母后與鐍匣、邊患框架與回疆、誠實與懲罰為事件。"
+    }
+  ],
+  "materialIssues": []
+}
