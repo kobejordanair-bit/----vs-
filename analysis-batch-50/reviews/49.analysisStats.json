@@ -1,0 +1,102 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_陳雲_2004397497",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:13:58.141Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7b242bf4e8c8c20e973818dcc7725edfb558ca2fa5c42256b0821e4d9d6dabe0",
+  "rawResponseSha256": "7b242bf4e8c8c20e973818dcc7725edfb558ca2fa5c42256b0821e4d9d6dabe0",
+  "sourcePackageSha256": "d769317e5706a3f6bcee7fa5ee41df19914c0bf2f421d8afc56216a6fa47d969",
+  "searchLogSha256": "5df5e7744193cd22384dfa91826fa4323a99d3f449a643fc575c71603c1d5141",
+  "checkedSources": [
+    {
+      "url": "https://www.gov.cn/ldhd/2005-06/14/content_6183.htm",
+      "title": "中國政府網：胡錦濤2005年6月13日紀念陳雲誕辰講話",
+      "locator": "來源包已記錄先前核讀：新中國成立後任政務院副總理兼財政經濟委員會主任之任職段；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2019/0228/c423911-30913009.html",
+      "title": "中共中央黨史和文獻研究院〈陳雲與中央財經工作領導機構的變遷〉",
+      "locator": "來源包已記錄先前核讀：1949年7月12日中財委組建、10月19–21日政務院財委成立與任職；本 session 未重新開啟",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2020/0424/c423731-31686912.html",
+      "title": "中共中央黨史和文獻研究院〈1949—1956年陳雲在經濟工作中的全局思維〉（原刊《黨的文獻》）",
+      "locator": "來源包已記錄先前核讀：米棉之戰、跨地區物資貿易銀行財政協調、國家承擔運輸差價；本 session 未重新開啟",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://ir.sinica.edu.tw/handle/201000000A/60713",
+      "title": "謝國興〈經濟理性與政治正確〉（中研院機構典藏）",
+      "locator": "WebSearch 結果摘要：討論1950年代社會主義改造前後陳雲與毛澤東的關係",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://seijo.repo.nii.ac.jp/record/3863/files/214-fukumitsu.pdf",
+      "title": "福光寬，陳雲經濟政策論研究（成城大學學術庫）",
+      "locator": "WebSearch 結果摘要：含市場的不可欠性、與毛澤東的對立等章節，並重新評價鳥籠理論",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2024/1223/c423731-40387919.html",
+      "title": "中共中央黨史和文獻研究院〈陳雲經濟思想的幾個要點〉（2024）",
+      "locator": "來源包已記錄先前核讀：穩定、比例、市場受計畫指導；進口糧食、外貿與特區段；未讀到鳥籠原話；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "陳雲，名臣；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "1949",
+      "passed": true,
+      "detail": "中財委組建與政務院財委依黨史研究院（來源包記錄）；物價治理依同院研究。"
+    },
+    {
+      "id": "mao",
+      "passed": true,
+      "detail": "與毛分歧依謝國興與福光研究摘要。"
+    },
+    {
+      "id": "reform",
+      "passed": true,
+      "detail": "穩定比例、市場受計畫指導、特區態度依黨史研究院（來源包記錄）；鳥籠原話未核。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[82,30,92,95,82] 對照朱鎔基[85,30,90,94,86]、周恩來[80,40,95,98,98]、張之洞[82,30,88,92,88]、霍光[85,40,88,95,78]、鄧小平[92,75,95,98,85]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    82,
+    30,
+    92,
+    95,
+    82
+  ]
+}

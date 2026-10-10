@@ -1,0 +1,97 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_陳雲_2004397497",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T07:13:58.143Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "bf03ffa37fa7f858fb508696dfc99feed30e25fb9761be0a391d3155dc5ace47",
+  "rawResponseSha256": "bf03ffa37fa7f858fb508696dfc99feed30e25fb9761be0a391d3155dc5ace47",
+  "sourcePackageSha256": "d769317e5706a3f6bcee7fa5ee41df19914c0bf2f421d8afc56216a6fa47d969",
+  "searchLogSha256": "5df5e7744193cd22384dfa91826fa4323a99d3f449a643fc575c71603c1d5141",
+  "checkedSources": [
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2024/1223/c423731-40387919.html",
+      "title": "中共中央黨史和文獻研究院〈陳雲經濟思想的幾個要點〉（2024）",
+      "locator": "來源包已記錄先前核讀：穩定、比例、市場受計畫指導；進口糧食、外貿與特區段；未讀到鳥籠原話；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.dswxyjy.org.cn/n1/2020/0424/c423731-31686912.html",
+      "title": "中共中央黨史和文獻研究院〈1949—1956年陳雲在經濟工作中的全局思維〉（原刊《黨的文獻》）",
+      "locator": "來源包已記錄先前核讀：米棉之戰、跨地區物資貿易銀行財政協調、國家承擔運輸差價；本 session 未重新開啟",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://seijo.repo.nii.ac.jp/record/3863/files/214-fukumitsu.pdf",
+      "title": "福光寬，陳雲經濟政策論研究（成城大學學術庫）",
+      "locator": "WebSearch 結果摘要：含市場的不可欠性、與毛澤東的對立等章節，並重新評價鳥籠理論",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ir.sinica.edu.tw/handle/201000000A/60713",
+      "title": "謝國興〈經濟理性與政治正確〉（中研院機構典藏）",
+      "locator": "WebSearch 結果摘要：討論1950年代社會主義改造前後陳雲與毛澤東的關係",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.gov.cn/ldhd/2005-06/14/content_6183.htm",
+      "title": "中國政府網：胡錦濤2005年6月13日紀念陳雲誕辰講話",
+      "locator": "來源包已記錄先前核讀：新中國成立後任政務院副總理兼財政經濟委員會主任之任職段；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "穩定比例；右傾之視標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "物價風暴與大躍進後調整標[推斷]。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "平衡為最高原則；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "特區保留與鳥籠框架。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "邊緣化與紀念講話；心理標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "集中調度經驗；失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "建國初期與改革時期。"
+    }
+  ],
+  "materialIssues": []
+}

@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_陳雲_2004397497",
+  "packetSha256": "67f682bed3d40769fd153df33cc6d6cf93f23aeec35d5ae2abd39f42b89a2c97",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "陳雲 鳥籠經濟 1982 原話 計劃與市場 1962 西樓會議 調整 1995年4月10日 逝世 研究",
+      "returnedUrls": [
+        "https://seijo.repo.nii.ac.jp/record/3863/files/214-fukumitsu.pdf",
+        "https://ir.sinica.edu.tw/handle/201000000A/60713",
+        "https://www.cw.com.tw/article/5039167",
+        "https://www.thewirechina.com/?p=49123",
+        "https://en.Wikipedia.com/wiki/Chen_Yun"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Four sources from handoff package prior reviews; two via WebSearch summaries.",
+    "鳥籠比喻原始發言與《陳雲文選》頁碼未核實，正文明示不引原話；1962年調整、1995年逝世等屬通行史實，未附連結。",
+    "上海銀元之戰與米棉之戰的先後細節未展開；私營經濟空間壓縮標[推斷]。"
+  ]
+}

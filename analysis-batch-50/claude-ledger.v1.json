@@ -11,14 +11,14 @@
   "basis": "progress.v1.json (unchanged, receipt-bound) plus Claude results files and claude-receipts.v1.json. Only imported+verified counts as complete; import requires a local authorized run.",
   "latestVerifiedPublicationRevision": 7,
   "counts": {
-    "generated": 48,
-    "reviewed": 47,
-    "assembled": 47,
+    "generated": 49,
+    "reviewed": 48,
+    "assembled": 48,
     "imported": 5,
     "verified": 5,
     "partialImported": 1,
     "importedFields": 23,
-    "claudeAssembledAwaitingImport": 41,
+    "claudeAssembledAwaitingImport": 42,
     "remainingIncomplete": 45
   },
   "caveats": [
@@ -808,14 +808,17 @@
       "slug": "49",
       "id": "minister_陳雲_2004397497",
       "name": "陳雲",
-      "provider": null,
-      "generated": false,
-      "reviewed": false,
-      "assembled": false,
+      "provider": "Claude Code (Anthropic)",
+      "generated": true,
+      "reviewed": true,
+      "assembled": true,
       "imported": false,
       "verified": false,
       "importedFields": [],
-      "status": "not_generated"
+      "status": "assembled_awaiting_local_dry_run",
+      "reviewKind": "self_review_not_independent",
+      "resultsFile": "analysis-batch-50/results.49-49.v1.json",
+      "resultsSha256": "32610fbaf94ffae5a8e1dd610b88abb39c8da158a7897a8a15d1a5f028ac5212"
     },
     {
       "slug": "50",

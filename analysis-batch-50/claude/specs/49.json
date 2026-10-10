@@ -1,0 +1,112 @@
+{
+ "webSearches": [
+  {
+   "query": "陳雲 鳥籠經濟 1982 原話 計劃與市場 1962 西樓會議 調整 1995年4月10日 逝世 研究",
+   "returnedUrls": [
+    "https://seijo.repo.nii.ac.jp/record/3863/files/214-fukumitsu.pdf",
+    "https://ir.sinica.edu.tw/handle/201000000A/60713",
+    "https://www.cw.com.tw/article/5039167",
+    "https://www.thewirechina.com/?p=49123",
+    "https://en.Wikipedia.com/wiki/Chen_Yun"
+   ]
+  }
+ ],
+ "archiveChecks": [],
+ "extraSources": {
+  "https://www.gov.cn/ldhd/2005-06/14/content_6183.htm": {
+   "title": "中國政府網：胡錦濤2005年6月13日紀念陳雲誕辰講話",
+   "locator": "來源包已記錄先前核讀：新中國成立後任政務院副總理兼財政經濟委員會主任之任職段；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.dswxyjy.org.cn/n1/2024/1223/c423731-40387919.html": {
+   "title": "中共中央黨史和文獻研究院〈陳雲經濟思想的幾個要點〉（2024）",
+   "locator": "來源包已記錄先前核讀：穩定、比例、市場受計畫指導；進口糧食、外貿與特區段；未讀到鳥籠原話；本 session 未重新開啟",
+   "type": "official_institution",
+   "access": "source_package_prior_review"
+  },
+  "https://www.dswxyjy.org.cn/n1/2020/0424/c423731-31686912.html": {
+   "title": "中共中央黨史和文獻研究院〈1949—1956年陳雲在經濟工作中的全局思維〉（原刊《黨的文獻》）",
+   "locator": "來源包已記錄先前核讀：米棉之戰、跨地區物資貿易銀行財政協調、國家承擔運輸差價；本 session 未重新開啟",
+   "type": "scholarly_primary",
+   "access": "source_package_prior_review"
+  },
+  "https://www.dswxyjy.org.cn/n1/2019/0228/c423911-30913009.html": {
+   "title": "中共中央黨史和文獻研究院〈陳雲與中央財經工作領導機構的變遷〉",
+   "locator": "來源包已記錄先前核讀：1949年7月12日中財委組建、10月19–21日政務院財委成立與任職；本 session 未重新開啟",
+   "type": "scholarly_primary",
+   "access": "source_package_prior_review"
+  },
+  "https://seijo.repo.nii.ac.jp/record/3863/files/214-fukumitsu.pdf": {
+   "title": "福光寬，陳雲經濟政策論研究（成城大學學術庫）",
+   "locator": "WebSearch 結果摘要：含市場的不可欠性、與毛澤東的對立等章節，並重新評價鳥籠理論",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://ir.sinica.edu.tw/handle/201000000A/60713": {
+   "title": "謝國興〈經濟理性與政治正確〉（中研院機構典藏）",
+   "locator": "WebSearch 結果摘要：討論1950年代社會主義改造前後陳雲與毛澤東的關係",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "No classical archive applies; page fetches remain blocked. Four sources from handoff package prior reviews; two via WebSearch summaries.",
+  "鳥籠比喻原始發言與《陳雲文選》頁碼未核實，正文明示不引原話；1962年調整、1995年逝世等屬通行史實，未附連結。",
+  "上海銀元之戰與米棉之戰的先後細節未展開；私營經濟空間壓縮標[推斷]。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity",
+    "陳雲，名臣；保留原 S- 評級與 deepAnalysis。"
+   ],
+   [
+    "1949",
+    "中財委組建與政務院財委依黨史研究院（來源包記錄）；物價治理依同院研究。"
+   ],
+   [
+    "mao",
+    "與毛分歧依謝國興與福光研究摘要。"
+   ],
+   [
+    "reform",
+    "穩定比例、市場受計畫指導、特區態度依黨史研究院（來源包記錄）；鳥籠原話未核。"
+   ],
+   [
+    "stats-calibration",
+    "[82,30,92,95,82] 對照朱鎔基[85,30,90,94,86]、周恩來[80,40,95,98,98]、張之洞[82,30,88,92,88]、霍光[85,40,88,95,78]、鄧小平[92,75,95,98,85]。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "speech",
+    "穩定比例；右傾之視標[推斷]。"
+   ],
+   [
+    "pressure",
+    "物價風暴與大躍進後調整標[推斷]。"
+   ],
+   [
+    "drive",
+    "平衡為最高原則；動機標[詮釋]。"
+   ],
+   [
+    "blind-spot",
+    "特區保留與鳥籠框架。"
+   ],
+   [
+    "emotion",
+    "邊緣化與紀念講話；心理標[詮釋]。"
+   ],
+   [
+    "frame",
+    "集中調度經驗；失準標[詮釋]。"
+   ],
+   [
+    "fracture",
+    "建國初期與改革時期。"
+   ]
+  ]
+ }
+}
