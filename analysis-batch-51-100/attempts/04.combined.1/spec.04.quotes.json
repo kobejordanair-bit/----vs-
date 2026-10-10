@@ -75,16 +75,6 @@
   "quote": "諸族子爭立"
  },
  {
-  "book": "zizhitongjian",
-  "title": "資治通鑑/卷002",
-  "quote": "楚人大敗之，乘勝盡取呉故地"
- },
- {
-  "book": "zizhitongjian",
-  "title": "資治通鑑/卷002",
-  "quote": "依楊寬《戰國史料編年輯証》越君年世之考訂繫於此年"
- },
- {
   "book": "shiji",
   "title": "史記/卷116",
   "quote": "始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西"
@@ -93,11 +83,6 @@
   "book": "shiji",
   "title": "史記/卷116",
   "quote": "以兵威定屬楚"
- },
- {
-  "book": "houhanshu",
-  "title": "後漢書/卷86",
-  "quote": "楚頃襄王時，遣將莊豪從沅水伐夜郎"
  },
  {
   "book": "shiji",
@@ -138,6 +123,11 @@
   "book": "shiji",
   "title": "史記/卷069",
   "quote": "臥不安席，食不甘味"
+ },
+ {
+  "book": "shiji",
+  "title": "史記/卷041",
+  "quote": "大敗越，殺王無彊"
  },
  {
   "book": "shiji",

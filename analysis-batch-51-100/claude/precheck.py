@@ -5,5 +5,8 @@ n=sys.argv[1]; t=open(f'analysis-batch-51-100/drafts/{n}.combined.draft.md',enco
 v=lambda x: len(re.sub(r'\s','',re.sub(r'\]\([^)]*\)',']',x)))
 body=t.split('\n',1)[1]; a,rest=body.split('<!-- STATS_REASONS_BEGIN',1); r,s=rest.split('analysisStats -->',1)
 rs=[v(x) for x in re.split(r'\n### (?:統率|武力|智謀|政治|魅力)',r)[1:]]
+import json
+head=[int(x) for x in re.findall(r'\n### (?:統率|武力|智謀|政治|魅力)：(\d+)',r)]
+if head!=json.loads(t.split('\n',1)[0])['stats']: print(n,'stats header mismatch',head); sys.exit(1)
 ok=v(a)>=2600 and v(s)>=1800 and min(rs)>=150
 print(n,'analysis',v(a),'soul',v(s),'reasons',rs,'OK' if ok else 'SHORT'); sys.exit(0 if ok else 1)

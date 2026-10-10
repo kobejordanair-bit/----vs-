@@ -4,16 +4,16 @@
   "recordId": "emperor_楚威王_281034787",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:43:58.829Z",
+  "reviewedAt": "2026-10-10T10:49:14.425Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "0799731ffea4e66d67e785b3d5481fbb11df84ec414900803d3fb4fe40f5863e",
-  "rawResponseSha256": "0799731ffea4e66d67e785b3d5481fbb11df84ec414900803d3fb4fe40f5863e",
+  "manuscriptSha256": "f521852b174f15b84b1f5cb3d3984b8333ac6626c59b0c014793f0a060cb3dcb",
+  "rawResponseSha256": "f521852b174f15b84b1f5cb3d3984b8333ac6626c59b0c014793f0a060cb3dcb",
   "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
-  "searchLogSha256": "45fe2bd3f7fd87bd8ac4c1ec89729dd142297eaf83b768568ae20afa1d5c9a27",
+  "searchLogSha256": "2b9733b95a079637d0ba832fa064e09f487a29f343993c568da556f7ba2c2e9c",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",

@@ -4,16 +4,16 @@
   "recordId": "emperor_楚威王_281034787",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:43:58.827Z",
+  "reviewedAt": "2026-10-10T10:49:14.424Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "7915aeb214d97393518469f6d555c8794909ee6476fc36ae62e20fd11b4ee7f3",
-  "rawResponseSha256": "7915aeb214d97393518469f6d555c8794909ee6476fc36ae62e20fd11b4ee7f3",
+  "manuscriptSha256": "2cf76439ed1720470db92d246ef0cc4f4e47b7e8ba235deb9568911d16ff89aa",
+  "rawResponseSha256": "2cf76439ed1720470db92d246ef0cc4f4e47b7e8ba235deb9568911d16ff89aa",
   "sourcePackageSha256": "1c9319f885418a60ea7757f01372930468c611669f1ac2f67ce219655f8f2a68",
-  "searchLogSha256": "45fe2bd3f7fd87bd8ac4c1ec89729dd142297eaf83b768568ae20afa1d5c9a27",
+  "searchLogSha256": "2b9733b95a079637d0ba832fa064e09f487a29f343993c568da556f7ba2c2e9c",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7040",
@@ -56,25 +56,9 @@
       "access": "fixed_revision_archive_fulltext"
     },
     {
-      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002",
-      "title": "資治通鑑·第二巻",
-      "locator": "本機固定修訂 oldid=2638853 全文比對（textSha256 已驗）：楚人大敗之，乘勝盡取呉故地、依楊寬《戰國史料編年輯証》越君年世之考訂繫於此年",
-      "type": "primary_text",
-      "checked": true,
-      "access": "fixed_revision_archive_fulltext"
-    },
-    {
       "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116",
       "title": "史記·卷一百一十六 西南夷列傳 第五十六",
       "locator": "本機固定修訂 oldid=7903636 全文比對（textSha256 已驗）：始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西、以兵威定屬楚、以其眾王滇",
-      "type": "primary_text",
-      "checked": true,
-      "access": "fixed_revision_archive_fulltext"
-    },
-    {
-      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B786",
-      "title": "後漢書·卷八十六·南蠻西南夷列傳第七十",
-      "locator": "本機固定修訂 oldid=1523514 全文比對（textSha256 已驗）：楚頃襄王時，遣將莊豪從沅水伐夜郎",
       "type": "primary_text",
       "checked": true,
       "access": "fixed_revision_archive_fulltext"
@@ -113,17 +97,17 @@
     {
       "id": "five-dimensions",
       "passed": true,
-      "detail": "統率：徐州、滅越、莊蹻；武力：無親征明證；智謀：弗逐田嬰與趁越轉攻；政治：版圖與缺乏改革；魅力：莫敖子華與莊周辭聘。對照齊桓公、秦孝公、秦昭襄王、宋孝宗、漢明帝、崇禎帝。［修訂1］依 Codex 審查，莊蹻入滇（《後漢書》卷86 繫於頃襄王、作莊豪）與殺無彊（通鑑只記大敗越、近代有懷王時說）改為「史記說法、有爭議」；開場與統率理由同步改寫，統率 82→80，只以徐州敗齊與大敗越軍兩役為確證依據。"
+      "detail": "統率：徐州、滅越、莊蹻；武力：無親征明證；智謀：弗逐田嬰與趁越轉攻；政治：版圖與缺乏改革；魅力：莫敖子華與莊周辭聘。對照齊桓公、秦孝公、秦昭襄王、宋孝宗、漢明帝、崇禎帝。"
     },
     {
       "id": "causality",
       "passed": true,
-      "detail": "弗逐田嬰→齊續用錯人（[推斷]）；越轉攻→滅越；秦奪巴黔中→莊蹻王滇；死後魏取陘山。［修訂1］新增 archive 比對：後漢書卷86「楚頃襄王時，遣將莊豪從沅水伐夜郎」、資治通鑑卷002「楚人大敗之，乘勝盡取呉故地」及楊寬越君年世校注。"
+      "detail": "弗逐田嬰→齊續用錯人（[推斷]）；越轉攻→滅越；秦奪巴黔中→莊蹻王滇；死後魏取陘山。"
     }
   ],
   "materialIssues": [],
   "stats": [
-    80,
+    82,
     35,
     80,
     72,

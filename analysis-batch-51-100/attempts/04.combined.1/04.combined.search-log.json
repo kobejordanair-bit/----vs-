@@ -50,19 +50,6 @@
         "https://www.hkreadingcity.net/book/details/5774f34d6a0b62c8098b49e3",
         "https://nippon-chugoku-gakkai.org/wp-content/uploads/2024/06/74001近藤氏.pdf"
       ]
-    },
-    {
-      "tool": "WebSearch",
-      "query": "楚威王 滅越 殺無彊 年代 爭議 楊寬 楚懷王 滅越 前306年 竹書紀年",
-      "returnedUrls": [
-        "https://www.sohu.com/a/293936156_392965",
-        "https://zh-classical.wikipedia.org/wiki/%E6%A5%9A%E5%A8%81%E7%8E%8B",
-        "https://ctext.org/datawiki.pl?if=gb&res=441859",
-        "https://zh.wikipedia.org/wiki/%E6%A5%9A%E5%A8%81%E7%8E%8B",
-        "https://zh.wikipedia.org/zh-tw/%E6%A5%9A%E6%87%B7%E7%8E%8B",
-        "https://ja.wikipedia.org/wiki/%E7%84%A1%E5%BD%8A",
-        "https://baike.baidu.com/item/%E6%A5%9A%E5%A8%81%E7%8E%8B"
-      ]
     }
   ],
   "archiveChecks": [
@@ -157,18 +144,6 @@
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041"
     },
     {
-      "book": "zizhitongjian",
-      "title": "資治通鑑/卷002",
-      "quote": "楚人大敗之，乘勝盡取呉故地",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002"
-    },
-    {
-      "book": "zizhitongjian",
-      "title": "資治通鑑/卷002",
-      "quote": "依楊寬《戰國史料編年輯証》越君年世之考訂繫於此年",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7002"
-    },
-    {
       "book": "shiji",
       "title": "史記/卷116",
       "quote": "始楚威王時，使將軍莊蹻將兵循江上，略巴、黔中以西",
@@ -179,12 +154,6 @@
       "title": "史記/卷116",
       "quote": "以兵威定屬楚",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7116"
-    },
-    {
-      "book": "houhanshu",
-      "title": "後漢書/卷86",
-      "quote": "楚頃襄王時，遣將莊豪從沅水伐夜郎",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B786"
     },
     {
       "book": "shiji",
@@ -233,6 +202,12 @@
       "title": "史記/卷069",
       "quote": "臥不安席，食不甘味",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7069"
+    },
+    {
+      "book": "shiji",
+      "title": "史記/卷041",
+      "quote": "大敗越，殺王無彊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7041"
     },
     {
       "book": "shiji",
@@ -306,8 +281,6 @@
     "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《史記》卷15、40、41、63、69、75、116 與《戰國策·楚策一》全文比對。",
     "楚滅越之確切年代學界有異說，搜尋未取得可讀的專論；正文僅依《史記》繫於威王之時。",
     "蘇秦說楚威王一段之年代可疑，正文已註明並以京大論文摘要為據；桑秀雲論文僅見書目。",
-    "《史記·越王句踐世家》固定修訂文本此處作「盡取笔呉地」，疑為底本訛字，正文未直接引用該句。",
-    "［修訂1］越王無彊死於懷王時（約前306年）一說，只見百科類搜尋摘要（中文維基〈楚懷王〉、百度百科），未讀楊寬《戰國史》原文；正文只述「近代另有一說」，未附連結。",
-    "［修訂1］《戰國策·楚策一》引句已逐字比對固定修訂原典，但該書 archive 網址含括號，現行 assemble.mjs／claude-author.mjs 的連結解析與 URL 比對無法接受，故仍不加連結；莫敖子華一段不見於《資治通鑑》，無同段替代連結。"
+    "《史記·越王句踐世家》固定修訂文本此處作「盡取笔呉地」，疑為底本訛字，正文未直接引用該句。"
   ]
 }

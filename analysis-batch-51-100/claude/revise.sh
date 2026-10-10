@@ -9,7 +9,7 @@ N=$1; K=$2; R=$3; cd "$(dirname "$0")/../.."; B=analysis-batch-51-100
 S=/tmp/claude-0/-home-user/19f09199-a4a3-5668-9a0e-17b33a1530b1/scratchpad
 python3 -I $B/claude/precheck.py $N
 [ -d $B/attempts/$N.combined.$K ] || python3 -I $B/claude/rework.py $N $K "$R"
-DOCS=$(python3 -I -c "import json,sys;print(' '.join(sorted({d['book']+':'+d['title'] for d in json.load(open('$B/claude/specs/$N.quotes.json'))})))")
+DOCS=$(python3 -I -c "import json,sys;print(' '.join(sorted({d['book']+':'+d['title'].replace(' ','_') for d in json.load(open('$B/claude/specs/$N.quotes.json'))})))")
 EXTRA=$(cat $S/$N.docs 2>/dev/null || true)
 [ -z "$DOCS$EXTRA" ] || python3 -I $B/claude/quotes.py $N $DOCS $EXTRA
 python3 -I - $N $S/$N.delta.json <<'PY'

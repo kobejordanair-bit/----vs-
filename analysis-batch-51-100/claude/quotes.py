@@ -7,7 +7,7 @@ n,*docs=sys.argv[1:]
 s=open(f'analysis-batch-51-100/drafts/{n}.combined.draft.md',encoding='utf-8').read()
 texts=[]
 for d in docs:
-  book,title=d.split(':',1)
+  book,title=d.split(':',1); title=title.replace('_',' ')
   j=json.load(open(f'backend/static/data/history/archive-books/{book}.json'))
   t=[x for x in j['documents'] if x['title']==title][0]['text']
   texts.append((book,title,re.sub(r'〔[^〕]*〕','',t)))

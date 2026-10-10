@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "04",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：莊蹻入滇與楚滅越系年有爭議，開場與統率理由卻當作確證功績；補後漢書卷86、資治通鑑卷002 異說，統率 82→80",
+  "files": {
+    "04.combined.search-log.json": "2b9733b95a079637d0ba832fa064e09f487a29f343993c568da556f7ba2c2e9c",
+    "04.analysisStats.response.md": "2cf76439ed1720470db92d246ef0cc4f4e47b7e8ba235deb9568911d16ff89aa",
+    "04.statsAnalysis.md": "82046e2ad5e4b4d805a7815d4970b20b1e242d01b3b625c14d39378b2f704d42",
+    "04.stats.json": "842313304facde525a9f47d574bb3c430ad1244b41297478c27bf39baca06c8a",
+    "04.analysis.md": "5e0832e1a04ae81fa1577dec801c5d6d0a466c2bafc90ebbed68af8d4ebba620",
+    "04.combined.raw.md": "226b2af75745af872905dc9dc29f3962d317b73fb3a6a2c2cfe89232d1ffa353",
+    "04.soulEssence.capture.json": "899045d164941df4ccb0c2a482c9ee84ca998dd8527502548382b7b7a898f345",
+    "04.soulEssence.response.md": "f521852b174f15b84b1f5cb3d3984b8333ac6626c59b0c014793f0a060cb3dcb",
+    "04.soulEssence.md": "6c693b3427eb77b304869513d8c4d4bfef217eb1216be47d5302f2f6b50ad668",
+    "04.analysisStats.raw.md": "2cf76439ed1720470db92d246ef0cc4f4e47b7e8ba235deb9568911d16ff89aa",
+    "04.combined.capture.json": "54eed0980b6780ae83a05106411612349c52222ef785144f8779be05cfd42b65",
+    "04.analysisStats.capture.json": "cb1dd0c3f9c2b518a90b4c665db7e102815b7932eec764454ad1cd8c0bc78624",
+    "04.soulEssence.raw.md": "f521852b174f15b84b1f5cb3d3984b8333ac6626c59b0c014793f0a060cb3dcb",
+    "04.analysisStats.json": "3ac4740fb01499d2db80a62dff1ed8bc61c31190df9f8cf985242a5b3578ea47",
+    "04.soulEssence.json": "55ddd7f3be014bd76cb706ac2b6cf44d5829fea9592b115c3994602b9a303816",
+    "results.04-04.v1.json": "f4347c7d12833e7f24af631b22810d8cad3222c694c7f10ba14501615ebc4001",
+    "spec.04.quotes.json": "46130aef0b293366c5a7fe1ec554b5f1e0f4a4764bbcbf7801ed897fe1f0a7a2",
+    "spec.04.json": "7edea1a5052523c3d5b6458cf1f50831ae3e9b971d90a478e0b6105b140e29d6"
+  }
+}
