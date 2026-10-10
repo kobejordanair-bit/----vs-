@@ -1,0 +1,83 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_陳慶之_916874609",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:40:37.011Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "5e9ed342ff520b04c3c3e4f6d7e21ed5bd496629c8d15b20d7caac455100f3b1",
+  "rawResponseSha256": "5e9ed342ff520b04c3c3e4f6d7e21ed5bd496629c8d15b20d7caac455100f3b1",
+  "sourcePackageSha256": "8c21d0b14eb65616c325170bdf574aa45bf13ae303b5e936e5f2e2fd9b4329c1",
+  "searchLogSha256": "c06f59b1875a3d1e968c04cbf97da12a4206ee7be6f4f96574dcf2430cf60872",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B732",
+      "title": "梁書·卷三十二 列傳第二十六\n陳慶之 蘭欽",
+      "locator": "本機固定修訂 oldid=1506956 全文比對（textSha256 已驗）：名師大將莫自牢，千兵萬馬避白袍、射不穿札，馬非所便、幼而隨從高祖、每從夜達旦不輟，等輩皆倦寐，惟慶之不寢，聞呼卽至，甚見親賞、散財聚士，常思效用、本非將種，又非豪家…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B761",
+      "title": "南史·卷六十一",
+      "locator": "本機固定修訂 oldid=1462439 全文比對（textSha256 已驗）：梁世寒門達者唯慶之與俞藥、性祗慎，每奉詔敕，必洗沐拜受、每奉詔敕，必洗沐拜受、初同燕雀之遊，終懷鴻鵠之志",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://tokoha-u.repo.nii.ac.jp/record/1473.1/files/04%E6%95%99%E8%82%B238%E6%97%A5%E9%87%8E%E8%B2%B4%E4%B9%8B.pdf",
+      "title": "日野貴之〈6世紀中国大陸の歴史地理〉（常葉大學教育學部紀要第38號，2017）",
+      "locator": "WebSearch 結果摘要：以《資治通鑑》為核心，比對《梁書》《魏書》《洛陽伽藍記》陳慶之入洛記述",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "陳慶之，梁將；保留原評級與 deepAnalysis，白袍敘事與數字性質分開討論。"
+    },
+    {
+      "id": "guoyang",
+      "passed": true,
+      "detail": "渦陽兩次力排眾議，原文核對；二百騎／五百騎兩書差異並陳。"
+    },
+    {
+      "id": "luoyang",
+      "passed": true,
+      "detail": "睢陽、考城、滎陽、十四旬三十二城，原文核對；屠城略地自述引入。"
+    },
+    {
+      "id": "collapse",
+      "passed": true,
+      "detail": "元延明之言、停軍界首、馬佛念之議、六十五日、剃髮逃歸，原文核對。"
+    },
+    {
+      "id": "later",
+      "passed": true,
+      "detail": "僧強、南北司屯田、破侯景、賑饑，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[94,30,93,72,90] 對照左宗棠[94,45,93,90,85]、戚繼光[95,85,92,70,88]、木華黎[96,88,90,85,92]、諸葛亮武力25、白崇禧[93,60,96,75,82]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    94,
+    30,
+    93,
+    72,
+    90
+  ]
+}

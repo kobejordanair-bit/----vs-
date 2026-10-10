@@ -1,0 +1,73 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_陳慶之_916874609",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:40:37.012Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7f9754f5602da0b94bdacfb99d221c797c09cc804288a073e140c27e81292cd7",
+  "rawResponseSha256": "7f9754f5602da0b94bdacfb99d221c797c09cc804288a073e140c27e81292cd7",
+  "sourcePackageSha256": "8c21d0b14eb65616c325170bdf574aa45bf13ae303b5e936e5f2e2fd9b4329c1",
+  "searchLogSha256": "c06f59b1875a3d1e968c04cbf97da12a4206ee7be6f4f96574dcf2430cf60872",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B732",
+      "title": "梁書·卷三十二 列傳第二十六\n陳慶之 蘭欽",
+      "locator": "本機固定修訂 oldid=1506956 全文比對（textSha256 已驗）：名師大將莫自牢，千兵萬馬避白袍、射不穿札，馬非所便、幼而隨從高祖、每從夜達旦不輟，等輩皆倦寐，惟慶之不寢，聞呼卽至，甚見親賞、散財聚士，常思效用、本非將種，又非豪家…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B761",
+      "title": "南史·卷六十一",
+      "locator": "本機固定修訂 oldid=1462439 全文比對（textSha256 已驗）：梁世寒門達者唯慶之與俞藥、性祗慎，每奉詔敕，必洗沐拜受、每奉詔敕，必洗沐拜受、初同燕雀之遊，終懷鴻鵠之志",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "渦陽與滎陽陣前語。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "渦陽與滎陽相隔兩年；剃髮逃歸。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "侍棋、手詔、洗沐拜受；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "拒馬佛念、不敢復言。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "知遇與不罪；心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "兵法時機地形；失敗原因標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "洛陽與北中郎城。"
+    }
+  ],
+  "materialIssues": []
+}
