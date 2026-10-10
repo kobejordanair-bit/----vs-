@@ -1,0 +1,75 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_于謙(名臣)_924336368",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:52:21.756Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e1d8632e45ddc201dd7cc3786250fd0e82b1da5c52df84b59da467f7e819cae5",
+  "rawResponseSha256": "e1d8632e45ddc201dd7cc3786250fd0e82b1da5c52df84b59da467f7e819cae5",
+  "sourcePackageSha256": "2e3403d73b05994393d9f520f46f546dcd2cea610eb6a1d62dcb42e54b6b9486",
+  "searchLogSha256": "ac6eed7d14ea6743ef7eace9ffef4d24a3fcaaaceac3d3b44983eac2d49e2e85",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170",
+      "title": "明史·卷一百七十 列傳第五十八",
+      "locator": "本機固定修訂 oldid=2594792 全文比對（textSha256 已驗）：言南遷者，可斬也、不殺于謙，此舉為無名、手書謙名授吏部、前後在任十九年、極諫，不聽、京師大震，眾莫知所為…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://cup.cuhk.edu.hk/chinesepress/journal/ICS62/ICS62_107-140.pdf",
+      "title": "任建敏〈「父有天下傳之子」：景泰三年易儲之議及其政治影響〉（《中國文化研究所學報》第62期，頁107–140）",
+      "locator": "WebSearch 結果摘要：易儲之議背景、過程與理論依據；英宗復辟後追究景泰君臣，相關文獻記載可能有掩蓋失真",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity",
+      "passed": true,
+      "detail": "于謙，名臣維度；保留原 S- 評級與 deepAnalysis。"
+    },
+    {
+      "id": "governor",
+      "passed": true,
+      "detail": "預備糧、官屯、吏民伏闕，原文核對。"
+    },
+    {
+      "id": "crisis",
+      "passed": true,
+      "detail": "斥南遷、掖王止、擁立郕王，原文核對。"
+    },
+    {
+      "id": "deshengmen",
+      "passed": true,
+      "detail": "二十二萬列陣、身自督戰、後隊斬前隊、團營、誅喜寧，原文核對。"
+    },
+    {
+      "id": "execution",
+      "passed": true,
+      "detail": "易儲研究摘要；奪門下獄、辯何益、此舉為無名、家無餘貲、平反誥詞，原文核對。"
+    },
+    {
+      "id": "stats-calibration",
+      "passed": true,
+      "detail": "[90,40,90,88,90] 對照姚崇[78,68,97,96,88]、荀彧[85,30,97,97,95]、周恩來[80,40,95,98,98]、曾國藩[98,30,85,99,92]、張良[72,20,100,90,92]。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    90,
+    40,
+    90,
+    88,
+    90
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_于謙(名臣)_924336368",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:52:21.757Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "1de85073d056f471187ae462e26b98870095db0980302eb4edcab91c53f2a645",
+  "rawResponseSha256": "1de85073d056f471187ae462e26b98870095db0980302eb4edcab91c53f2a645",
+  "sourcePackageSha256": "2e3403d73b05994393d9f520f46f546dcd2cea610eb6a1d62dcb42e54b6b9486",
+  "searchLogSha256": "ac6eed7d14ea6743ef7eace9ffef4d24a3fcaaaceac3d3b44983eac2d49e2e85",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170",
+      "title": "明史·卷一百七十 列傳第五十八",
+      "locator": "本機固定修訂 oldid=2594792 全文比對（textSha256 已驗）：言南遷者，可斬也、不殺于謙，此舉為無名、手書謙名授吏部、前後在任十九年、極諫，不聽、京師大震，眾莫知所為…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "斥南遷與和不足恃；徐有貞切齒。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "朝班大亂與德勝門；辯何益。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "社稷為己任、宿直廬、興安語；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "輕勳貴、拒石亨薦子。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "熱血之嘆、伐竹取瀝、蟒衣劍器；獄中感受標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "宋南渡之鑑；宮廷政治失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "正統十四年與景泰八年。"
+    }
+  ],
+  "materialIssues": []
+}

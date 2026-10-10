@@ -1,0 +1,370 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_于謙(名臣)_924336368",
+  "packetSha256": "d5265143a9e5d008bd837baa43732b237ab4ed729703f036dfdd73f7da658e8d",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "于謙 北京保衛戰 1449 奪門之變 1457 被殺 研究 論文 景泰 易儲",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Defense_of_Beijing",
+        "https://cup.cuhk.edu.hk/chinesepress/journal/ICS62/ICS62_107-140.pdf",
+        "https://tokushima-u.repo.nii.ac.jp/record/2004162/files/jhsa_25_86.pdf",
+        "https://chiculture.org.hk/en/china-five-thousand-years/4347"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "言南遷者，可斬也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "不殺于謙，此舉為無名",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "手書謙名授吏部",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "前後在任十九年",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "極諫，不聽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "京師大震，眾莫知所為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "所餘疲卒不及十萬，人心震恐，上下無固志",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "他日救時宰相也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "先菽秫，次黍麥，次稻。俟秋成償官，而免其老疾及貧不能償者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "預備糧有未足，不聽離任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "盡奪鎮將私墾田為官屯，以資邊用",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "山西、河南吏民伏闕上書，請留謙者以千數",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "言南遷者，可斬也。京師天下根本，一動則大事去矣，獨不見宋南渡事乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "排眾直前掖王止",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "順等罪當死，勿論",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "袍袖為之盡裂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "國家正賴公耳。今日雖百王直何能為",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "國無主，太子方幼",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "臣等誠憂國家，非為私計",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "斂兵堅壁老之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "奈何示弱，使敵益輕我",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "率師二十二萬，列陣九門外",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "悉閉諸城門，身自督戰",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "臨陣將不顧軍先退者，斬其將。軍不顧將先退者，後隊斬前隊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "知終弗可得志，又聞勤王師且至",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "分十營團操",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "理當速奉迎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "諸臣皆辭，謙獨辭至再",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "謀迎立襄王子",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "亨等意耳，辯何益",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "于謙實有功",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "視諸選耎大臣、勳舊貴戚，意頗輕之，憤者益眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "于謙被遇景泰朝，死無餘貲，汝言抑何多也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "當國家之多難，保社稷以無虞",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "此一腔熱血，竟灑何地",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "國家多難，臣子何敢自安",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "四郊多壘，卿大夫之恥也，敢邀功賞哉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "我有失，望君面規我，何至爾邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "具實對，無所隱，不避嫌怨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "諸不任職者皆怨",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "所餘疲卒不及十萬",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "後隊斬前隊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "京師天下根本，一動則大事去矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "所論奏無不從者",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "意頗輕之，憤者益眾",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "言南遷者，可斬也。京師天下根本，一動則大事去矣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "和不足恃，明矣。況我與彼不共戴天，理固不可和",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "至軍旅之事，臣身當之，不効則治臣罪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "毅然以社稷安危為己任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "自值也先之變，誓不與賊俱生。嘗留宿直廬，不還私第",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "日夜分國憂，不問家產",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "身往討之，以復前仇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "不聞舉一幽隱，拔一行伍微賤",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "親幸萬歲山，伐竹取瀝以賜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "此舉為無名",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "獨不見宋南渡事乎",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    },
+    {
+      "book": "mingshi",
+      "title": "明史/卷170",
+      "quote": "而也先隨入寇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 明史卷170 verified in the repository archive.",
+    "明英宗實錄、明史卷11未逐段比對；易儲研究僅依摘要，正文不主張于謙對易儲的具體態度，僅引明史『獨辭至再』。",
+    "七歲僧言屬傳記修辭，正文已標示為後世評價之反映。"
+  ]
+}
