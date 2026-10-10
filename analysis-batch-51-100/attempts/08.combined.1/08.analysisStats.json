@@ -4,16 +4,16 @@
   "recordId": "emperor_洪憲帝_280041298",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:36:24.377Z",
+  "reviewedAt": "2026-10-10T11:04:20.636Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "9192bc4201704758e7c1509e4797a8e8f475fd919de7ab3630b333e605b4ba3d",
-  "rawResponseSha256": "9192bc4201704758e7c1509e4797a8e8f475fd919de7ab3630b333e605b4ba3d",
+  "manuscriptSha256": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
+  "rawResponseSha256": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
   "sourcePackageSha256": "9251efd9d3f88221f806ed7d12a8d5508b5f504d221e1c177ba5837ebe760458",
-  "searchLogSha256": "3b45049ed80c3fbc620ae0a5d3ca64fdcfe6a6187c11287e561c0addd02dca2e",
+  "searchLogSha256": "d35e708c4b75b03ced06c45aa7717429fbddba56f21b78288cddc0790d606043",
   "checkedSources": [
     {
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7472",
@@ -26,7 +26,7 @@
     {
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B725",
       "title": "清史稿·宣統皇帝本紀",
-      "locator": "本機固定修訂 oldid=2692357 全文比對（textSha256 已驗）：命前敵諸軍停進兵、皇太后命袁世凱以全權立臨時共和政府、由袁世凱以全權組織臨時共和政府、陸海各軍及長江水師仍聽袁世凱節制調遣、辭內閣總理大臣，溫詔勉之、俱聽袁世凱節制…",
+      "locator": "本機固定修訂 oldid=2692357 全文比對（textSha256 已驗）：命前敵諸軍停進兵、由袁世凱以全權組織臨時共和政府、陸海各軍及長江水師仍聽袁世凱節制調遣、辭內閣總理大臣，溫詔勉之、俱聽袁世凱節制、即由袁世凱以全權組織臨時共和政府，與民軍協商統一辦法…",
       "type": "primary_text",
       "checked": true,
       "access": "fixed_revision_archive_fulltext"
@@ -164,7 +164,7 @@
     {
       "id": "identity-date",
       "passed": true,
-      "detail": "新建陸軍、直隸總督、軍機外務、宣統元年罷、辛亥起用與總理、遜位詔授全權，皆依清史稿卷24、25 等 archive 引句；洪憲帝即袁世凱依行政院國情簡介來源包核讀。［修訂1］開場補時間橋接：清史稿卷25 十二月甲午朔，戊午為二十五日（宣統三年十二月二十五日＝1912-02-12），引「皇太后命袁世凱以全權立臨時共和政府」逐字比對；列傳「於是遜位詔下矣」改為明示其壓縮兩個多月的議和。「唯一一位試圖在民國重建帝制的人」已刪，改述袁世凱以總統身分改行帝制，並與 1917 張勳復辟（恢復舊朝）區分，標[詮釋]。"
+      "detail": "新建陸軍、直隸總督、軍機外務、宣統元年罷、辛亥起用與總理、遜位詔授全權，皆依清史稿卷24、25 等 archive 引句；洪憲帝即袁世凱依行政院國情簡介來源包核讀。"
     },
     {
       "id": "five-dimensions",

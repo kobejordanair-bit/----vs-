@@ -6,7 +6,7 @@
   "slug": "08",
   "task": "analysisStats",
   "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
-  "generatedAt": "2026-10-10T17:36:24.295Z",
+  "generatedAt": "2026-10-10T11:04:20.584Z",
   "authorPolicyFile": "analysis-batch-51-100/author-policy.v2.json",
   "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
   "combinedPacketSha256": "62797b074cd6e422c23ec16341a4e67cbdddceb82be8f82312421c1ca89b3ceb",
@@ -21,20 +21,20 @@
   "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588",
   "originalPromptVerified": true,
   "rawResponseFile": "analysis-batch-51-100/drafts/08.analysisStats.raw.md",
-  "rawResponseSha256": "9192bc4201704758e7c1509e4797a8e8f475fd919de7ab3630b333e605b4ba3d",
+  "rawResponseSha256": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
   "responseFile": "analysis-batch-51-100/drafts/08.analysisStats.response.md",
-  "responseSha256": "9192bc4201704758e7c1509e4797a8e8f475fd919de7ab3630b333e605b4ba3d",
+  "responseSha256": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
   "fieldsHashes": {
-    "analysis": "e77415224d43db2afdd876419c45de0b1ea3f3939e0119e71caf232ab7200c68",
+    "analysis": "e91bd23fed4f3e935db0850bf306e8d0e33a5566fbebaff350dd1278ae1bb67f",
     "stats": "84f86ebb3ff0a2be3c930fd49fff5c0f988654b2b4c96b7830ca095bdc4e9a35",
     "statsAnalysis": "827983d384e7b0e8b9353780d0b172aca2be80f053532bb3c5e07263255bbd93"
   },
   "webSearchPerformed": true,
   "searchLog": {
     "file": "analysis-batch-51-100/drafts/08.combined.search-log.json",
-    "sha256": "3b45049ed80c3fbc620ae0a5d3ca64fdcfe6a6187c11287e561c0addd02dca2e",
+    "sha256": "d35e708c4b75b03ced06c45aa7717429fbddba56f21b78288cddc0790d606043",
     "webSearchCount": 3,
-    "archiveCheckCount": 31
+    "archiveCheckCount": 30
   },
   "composition": "Written directly by Claude from the unchanged compiled packet. Split mechanically at the two completion markers; prose and scores are not rewritten by this tool.",
   "referencePath": "analysis-batch-51-100/stats-reference.v1.json",

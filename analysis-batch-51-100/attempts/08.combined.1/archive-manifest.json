@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "08",
+  "attempt": 1,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "Codex 審查 2026-10-11：開場由漢陽直接接到遜位詔，補 1912-02-12 時間橋接；刪「唯一一位試圖在民國重建帝制的人」（1917 張勳復辟可反駁）；分數不調",
+  "files": {
+    "08.soulEssence.response.md": "58e55166577decbb20768620505506e27e7e99b2eadd49b5cfe023de34c72126",
+    "08.soulEssence.capture.json": "3fc82f7c255940ccead691976c3478251ad328c9bf610ec0cb04aeb9590b7eb5",
+    "08.stats.json": "7d68181311c62f843d70da6974e10320d0c3b04d6b4d8dc7698ffa62a9a911f1",
+    "08.statsAnalysis.md": "baa6c26d28067f0ca297d4edacf058b27e77b92588c6d7765d38acacf034c36e",
+    "08.combined.capture.json": "5ed62432d24237fd1acf37a8412135c6ffde6141f57b8d1c12f0aec479d2d8ec",
+    "08.analysisStats.response.md": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
+    "08.soulEssence.raw.md": "58e55166577decbb20768620505506e27e7e99b2eadd49b5cfe023de34c72126",
+    "08.analysisStats.capture.json": "1c1aeca6fbdf386fcef22d36bd1ae285e9d5f970c8de69c87d51d5724815e627",
+    "08.combined.search-log.json": "d35e708c4b75b03ced06c45aa7717429fbddba56f21b78288cddc0790d606043",
+    "08.analysis.md": "1c9f13e9fcd675851ce0bbda827a42468fc9481526dd45075e69d861ac3da629",
+    "08.combined.raw.md": "4b26f708e49fbfbb6dd196194c9be72e4cf6d21375702659ef1677524bbdcb75",
+    "08.analysisStats.raw.md": "83e8975688a9eaae167a4970a00f8c0fb23c3768ab472da4d73b3dc7f5b4bd31",
+    "08.soulEssence.md": "a8c4b7990757610031d068588edc3a39ea9cbed1618a179249333756a97a07b3",
+    "08.soulEssence.json": "9d50b45b47ad4d0f089997c7c5be3c21671323662c4bd9d164ac8b4375e0db84",
+    "08.analysisStats.json": "6f69c09cbcb010cd2caa0ce35bf939ade39ff16e22b90b50427702aa5fb76e82",
+    "results.08-08.v1.json": "05651cee66986acb462e36b808c829331f636bab24a9a6e184d0be3aeaf7123b",
+    "spec.08.json": "8f4259d9d4b8929f846e68b72780d8151ff883f5809646c17a873376519a5420",
+    "spec.08.quotes.json": "c099eaf748f91fd1480d6e78f525f80ab9cdc0936b5bad4a6e3e5e3234c26c27"
+  }
+}
