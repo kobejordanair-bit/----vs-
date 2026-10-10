@@ -1,0 +1,76 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐玄宗_285829892",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:52:13.633Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "7199ff1b7f1a89d9eaa0d9459de3441d45ec267abdb59cf5e378af2270733061",
+  "rawResponseSha256": "7199ff1b7f1a89d9eaa0d9459de3441d45ec267abdb59cf5e378af2270733061",
+  "sourcePackageSha256": "b01ebf165dd5f2b32d82e3e0a236aee81cb0d3091292f240a93a511e18603dae",
+  "searchLogSha256": "dedf801f19e9ade43c19d78fc48b07064549cf0d5598c0e24b3fbc6c54768ca9",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78",
+      "title": "舊唐書·本紀第八　玄宗上",
+      "locator": "本機固定修訂 oldid=2543063 全文比對（textSha256 已驗）：事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎！若請而從，是王與危事；請而不從，則吾計失矣、性英斷多藝，尤知音律，善八分書、以偽濫還俗者二萬餘人、田收有獲，人不甚饑、並罷知政事、兵部尚書李林甫兼中書令…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79",
+      "title": "舊唐書·本紀第九　玄宗下",
+      "locator": "本機固定修訂 oldid=2307860 全文比對（textSha256 已驗）：後來者何以能濟、朝廷罕有正人，附麗無非險輩、朋比成風，廉恥都盡、廟堂之上，無非經濟之才、貞觀之風，一朝復振、朝堂決杖死之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/war4.pdf",
+      "title": "香港教育局中國歷史科（中四至中六）參考資料〈安史之亂〉",
+      "locator": "WebSearch 結果摘要：成因包括沿邊節度經略使兼領民政財政司法、中央彍騎減少、兵鎮軍力過於集中，及玄宗晚年用人",
+      "type": "official_institution",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ra.lib.hksyu.edu.hk/entities/publication/2a39ea95-4719-4efe-837a-42d35e98b39c",
+      "title": "《新亞學報》第37卷（2020）論文：從天寶酷吏吉溫的仕宦看安史之亂的爆發（香港樹仁大學學術庫）",
+      "locator": "WebSearch 結果摘要：吉溫先後受李林甫、楊國忠與安祿山重用，其在玄宗晚期的政治作用不容忽視",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "睿宗第三子、垂拱元年生、唐隆與先天政變、天寶十四載安祿山起兵、馬嵬驛賜死貴妃，皆依舊唐書卷8–9 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：兩次政變與斬封高；武力：親入禁苑；智謀：搶先與被蒙蔽；政治：開元輪替與天寶小人道長；魅力：父老獻食與馬嵬兵變。對照武則天、唐高宗、漢明帝、宋孝宗、漢高祖、宋仁宗、崇禎帝。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "宰相輪替→開元治；張九齡罷、周子諒死→單一窗口；節度使坐大→安史之亂，推論標層級。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    78,
+    50,
+    84,
+    82,
+    86
+  ]
+}

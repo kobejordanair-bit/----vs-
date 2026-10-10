@@ -1,0 +1,191 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_唐玄宗_285829892",
+      "inputSha256": "c798255e0565bf484ed0ee6147231d0197f824a186756077221cd7bd0e75c973",
+      "promptSha256": "698eb4497fc564024aadbf9cf54c27e110fda7d9163b3bc6f013d3971dda28df",
+      "fields": {
+        "analysis": "唐隆元年，二十多歲的臨淄王李隆基決定起兵誅殺韋后。有人勸他先稟告父親相王，他拒絕了：「事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎！若請而從，是王與危事；請而不從，則吾計失矣。」當夜他率劉幽求等數十人從禁苑南面殺入（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）。四十六年後，同一個人在潼關失守後清晨出逃，楊國忠想燒斷身後的便橋，他說：「後來者何以能濟？」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）我對他的判斷是：**李隆基前半生的本事，是在所有人之前搶先一步；開元年間，他把這份決斷力轉成了選相、考吏、清理冗濫的治理能力。但天寶以後，他把**搶先判斷**整個交給代理人——宰相交給李林甫，邊防交給安祿山這類兼領數鎮的節度使——等到危機真的來臨，他已經失去了親手判斷的習慣，只剩下殺將、出奔、賜死貴妃。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n李隆基是睿宗第三子，垂拱元年生於東都；本紀說他「性英斷多藝，尤知音律，善八分書」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）。他登上歷史舞台時，唐室已在武周與中宗、韋后之間反覆易手。他面對的局有三層：\n\n1.  **宮廷政變成為常態**：武后之後，韋后與太平公主都想重演女主臨朝；唐隆政變誅韋后，先天二年他又搶在太平公主一黨發難前一天動手，斬蕭至忠、岑羲等人（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）。\n2.  **官僚系統的敗壞**：《舊唐書》史臣形容武后以來「朝廷罕有正人，附麗無非險輩」，「朋比成風，廉恥都盡」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。\n3.  **邊防制度的轉型**：府兵日漸廢弛，邊境需要長駐的大軍；節度使集軍政財權於一身，正是在他手上定型。香港教育局的教材歸納安史之亂成因時，便列出邊境節度使兼領民政財政、中央兵力減少而邊鎮兵力過度集中等因素（[香港教育局中國歷史科教材〈安史之亂〉](https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/war4.pdf)）。\n\n作為帝王，他同時是盛世的締造者與亂世的起點；這兩件事都發生在他一個人的四十多年裡。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：開元盛世與天寶之亂不是兩個不同的玄宗，而是同一套**找一個能幹的人、然後放手**的用人方式，在不同的人身上產生的不同結果。**\n\n**開元：選對人，並且輪換**\n\n開元初年，他任姚崇、宋璟為相。姚崇奏請檢責天下僧尼，「以偽濫還俗者二萬餘人」；山東蝗災時，姚崇奏請派御史督促各州「驅撲焚瘞」，結果「田收有獲，人不甚饑」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）。更關鍵的是，開元前期宰相任期都不長：姚崇罷相後宋璟、蘇頲接手，數年後又換成源乾曜、張嘉貞[史載]。宰相輪替，讓任何一人都無法長期壟斷皇帝的耳目[推斷]。史臣說這段時期「廟堂之上，無非經濟之才」，「貞觀之風，一朝復振」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。\n\n**轉折：開元二十四、五年的一連串人事**\n\n開元二十四年，張九齡罷相，李林甫接任中書令，而且一做就是十多年。開元二十五年四月，監察御史周子諒上書忤旨，被「朝堂決杖死之」；已罷知政事的張九齡因「曾薦引子諒，左授荊州長史」；隔一天，「皇太子瑛、鄂王瑤、光王琚並廢為庶人」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。不到一週，他處死了一位諫官、貶逐了最後一位敢直言的名相，又廢掉了太子。同年七月，大理寺奏報天下死刑僅五十八人，他「特推功元輔」，封李林甫為晉國公[史載]。其實早在前一年十一月，張九齡已與裴耀卿「並罷知政事」，由「兵部尚書李林甫兼中書令」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）；開元二十五年的這一週，只是把這次換相的後果一次兌現。從此，皇帝與朝廷之間只剩一個窗口。\n\n**天寶：把判斷交給代理人**\n\n天寶年間，他冊楊太真為貴妃，封貴妃兩位姊姊為韓國、虢國夫人，又任楊國忠兼領劍南節度使；范陽節度使安祿山獲賜實封及鐵券（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。研究天寶政局的學者也注意到，酷吏吉溫先後受李林甫、楊國忠與安祿山重用，在玄宗晚期扮演不可忽視的角色（[《新亞學報》第37卷論文，香港樹仁大學學術庫](https://ra.lib.hksyu.edu.hk/entities/publication/2a39ea95-4719-4efe-837a-42d35e98b39c)）。換言之，他身邊的幾個代理人彼此相連，而他本人已不在第一線。天寶十四載安祿山起兵前夕，吉溫自縊於獄、羅希奭杖死（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)），代理人之間的鬥爭已經以人命收場，而他似乎仍未察覺風暴將至。\n\n**危機：判斷力早已外包**\n\n天寶十四載十一月，安祿山以「誅楊國忠為名」起兵；一個月內洛陽失守，他的反應是「斬封常清、高仙芝於潼關」，改由哥舒翰守關[史載]。隔年六月哥舒翰出戰靈寶西原，「官軍大敗，死者十六七」，潼關不守，他清晨出逃；至馬嵬驛，禁軍殺楊國忠，高力士回報「以貴妃在宮，人情恐懼」，他「即命力士賜貴妃自盡」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。\n\n**連鎖結果**：史臣的總結很精準：「開元之初，賢臣當國」，但「自天寶已還，小人道長」，「獻可替否，靡聞姚、宋之言；妒賢害功，但有甫、忠之奏」，終至「謀之不臧，前功並棄」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。他留下的節度使體制，此後一百五十年都沒有被真正收回[推斷]。\n\n### **3. 【人性與性格側寫】**\n\n*   **少年即敢頂撞權貴**：七歲時金吾將軍武懿宗呵斥他的儀仗，他回叱：「吾家朝堂，干汝何事？敢迫吾騎從！」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）\n*   **行動前不請示**：誅韋后時不先告知父親，理由是「請而不從，則吾計失矣」[史載]。\n*   **懂得示範**：他在苑中親自種麥，帶太子收割，說「亦欲令汝等知稼穡之難也」[史載]。\n*   **晚年愛聽好消息**：天下死刑數少，他歸功於宰相李林甫並封國公（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。\n*   **患難中仍顧念他人**：出逃時不准燒橋，到了咸陽「亭午未進食」，有父老獻飯，他把御膳「頒給從官而後食」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。\n\n### **4. 【如果生在現代】**\n\n唐玄宗最接近的現代角色是：**一位靠兩次奪權登上大位、前十多年締造黃金時代，後期把權力交給一名幕僚長與數名區域司令，最終被區域司令叛變拖垮的總統。**\n\n*   **兩次搶先一步**：他兩次在政敵發難前一天動手，取得權力。\n*   **黃金十年的秘訣**：他定期更換總理級人物，讓每一任都必須拿出成績。\n*   **轉折點**：他在一週內處死一名直言的監察官、貶走前總理、廢除接班人，此後由同一位幕僚長掌控所有資訊十多年。\n*   **區域司令坐大**：他讓一名邊區司令同時掌握數個軍區與財政，並賜予特權；叛亂爆發後，他第一個反應是處決打了敗仗的將領。\n*   **邊界**：這個比喻只描寫他的用人節奏；唐代皇帝沒有選舉與任期，他的錯誤也不是一次政策失誤，而是近二十年累積的人事選擇，造成的是持續八年的戰亂與數以百萬計的死傷。",
+        "soulEssence": "【說話邏輯】\n他年輕時說話，總是先把結果的責任攬到自己身上，再說明為什麼不必徵求別人同意。唐隆政變前他說：「事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）[史載]——表面是體貼父親，實際上是把決定權完全收回自己手中[推斷]。他也擅長用示範代替說教：親自種麥、帶太子收割，再告訴他們「知稼穡之難」[史載]。到了晚年，這種**我來承擔**的語氣消失了；天下死刑數少，他把功勞「特推功元輔」，送給李林甫（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]——說話的重心，從**我做了什麼**變成**誰替我做到了**[推斷]。\n\n【壓力反應】\n年輕時，壓力讓他提早出手；年老時，壓力讓他找人負責。\n先天二年，他「密知」太平公主一黨將在七月四日以羽林軍作亂，七月三日便率親信出武德殿，先斬為首諸人（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）[史載]。天寶十四載洛陽失陷，他的處置是斬封常清、高仙芝；馬嵬驛禁軍不肯前進，他先接受楊國忠被殺，再「即命力士賜貴妃自盡」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]。兩次同樣果斷，差別在於前者是他掌握資訊之後的決斷，後者是他失去資訊之後的切割[推斷]。\n\n【核心驅動】\n他最想要的，是當一個讓天下**看起來**井然有序的君主。\n開元年間，他「焚後庭珠翠之玩」、「禁女樂而出宮嬪」，追求的是一種可以被看見的清明（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]。天寶以後，大同殿產玉芝、群臣請上尊號、改年為「載」[史載]——他要的仍是秩序的景象，只是景象的來源，從賢相的實績變成了祥瑞與頌聲[詮釋：此為從其前後期行為對照歸納的動機]。\n\n【慣性盲點】\n他相信**選對一個人，就能放手**，卻忽略了放手久了，那個人會替他決定他能看見什麼。\n開元前期宰相輪替頻繁，姚崇之後是宋璟、蘇頲，再之後是源乾曜、張嘉貞（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）[史載]；開元二十四年後，李林甫一人久任，敢言者周子諒被杖死，張九齡被貶（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]。史臣說他晚年被「百口百心之讒諂」蒙蔽——但這些讒諂之所以只剩一種聲音，正是因為他自己關掉了其他的窗口[推斷]。\n\n【情感結構】\n他對親近之人的情感很深，但在權力面前，這些情感都可以被犧牲。\n開元二十五年，他在一天之內把三個兒子廢為庶人（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]；天寶年間，他冊楊氏為貴妃，封其兩姊為國夫人，對楊家的寵遇達到頂點[史載]。到了馬嵬驛，禁軍一句「人情恐懼」，他便下令賜死貴妃[史載]。逃難途中，他卻又記得不能燒橋，「後來者何以能濟」；也記得先把食物分給從官[史載]。他對素不相識的隨從與百姓有一種近乎本能的體恤，對最親近的人反而能在關鍵時刻割捨——情感與權力在他身上走的是兩條不同的路[詮釋]。也許正因為對陌生人沒有權力上的顧慮，他才能毫無保留地對他們好[推斷]。\n\n【參照系】\n他的參照系是「貞觀」：他希望自己是太宗之後又一位撥亂反正的明君[推斷]。\n類比準確之處：開元初年他確實重演了太宗的模式——誅除宮廷亂黨、任用賢相、整頓吏治，史臣也稱「貞觀之風，一朝復振」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]。\n類比失準之處：太宗身邊的魏徵能持續直言多年；他卻在開元二十五年杖死諫官、貶走張九齡（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]。天寶三載他甚至下令「改年為載」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]，連紀年方式都要與前代不同。他學到了貞觀的成果，卻沒有保留貞觀賴以運作的諫諍機制；當他自認已經達成「太平」，便不再需要聽反對的聲音[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n他的裂縫在於：他靠「不請示」取得權力，卻在掌權之後，讓所有人都必須透過代理人向他請示。\n唐隆政變時他說，若先稟告父親，「請而從，是王與危事；請而不從，則吾計失矣」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）[史載]——他比誰都清楚，資訊經過一道關卡就會被扭曲或攔下。然而天寶年間，他讓李林甫、楊國忠成為那道關卡，「獻可替否，靡聞姚、宋之言；妒賢害功，但有甫、忠之奏」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）[史載]。年輕的李隆基最懂得繞過關卡，年老的唐玄宗卻親手建起了關卡[推斷]。他在逃難路上那句「後來者何以能濟」，或許是他晚年最清醒的一刻：他終於又想到了那些被擋在身後的人[詮釋]。只是這份清醒，來得比潼關失守晚了一步。",
+        "stats": [
+          78,
+          50,
+          84,
+          82,
+          86
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：78\n\n他兩度親自組織宮廷政變：唐隆元年率數十人攻入禁苑，先天二年率親信十數人「出武德殿，入虔化門」先發制人（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）；開元年間邊境也屢有斬獲。但天寶末他讓節度使擁兵過重，安祿山叛變後又「斬封常清、高仙芝於潼關」，潼關隨即失守（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。評78，高於武則天（72），低於唐高宗（92）與漢明帝（82）。\n\n### 武力：50\n\n他在唐隆政變中親率劉幽求等人夜入禁苑，斬關而進，是少數親身參與武力奪權的皇帝（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）。不過這兩次行動規模僅數十至數百人，主要的廝殺由萬騎完成；即位之後他再未親臨戰陣，安史之亂時也只能出奔（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。評50，高於宋孝宗（35）與唐高宗（25），低於漢明帝（55）與漢高祖（60）。\n\n### 智謀：84\n\n他在唐隆、先天兩次政變中都搶先對手一步，並清楚算到「請而不從，則吾計失矣」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）；開元初年用姚崇治蝗、汰僧，皆是務實之策。但他晚年未能看穿李林甫、楊國忠與安祿山之間的權力結構，史臣直言「以百口百心之讒諂，蔽兩目兩耳之聰明」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）。評84，低於唐高宗（90）與武則天（97），高於宋孝宗（82）。\n\n### 政治：82\n\n開元年間，史臣稱「廟堂之上，無非經濟之才」、「貞觀之風，一朝復振」（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)），姚崇、宋璟等人輪替主政，汰除偽濫僧尼二萬餘人（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)）。但天寶以後「小人道長」，節度使體制失控，一場叛亂讓前半生的成果「前功並棄」。前高後低，必須兩段一起計分。評82，低於唐高宗（93）與武則天（93），高於崇禎帝（65）。\n\n### 魅力：86\n\n逃難途中，「父老獻鋋」、「百姓獻食相繼」，他先分給隨從再自己進食（[《舊唐書·玄宗本紀下》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79)）；他「尤知音律，善八分書」（[《舊唐書·玄宗本紀上》](https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78)），開元盛世更讓四方使節「結轍於象胥」。扣分在於馬嵬驛禁軍先殺宰相、再逼殺貴妃，顯示他晚年已無法約束身邊的軍隊。評86，高於唐高宗（80）與宋孝宗（85），低於宋仁宗（92）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T10:52:13.565Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "舊唐書·本紀第八　玄宗上",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78",
+            "locator": "本機固定修訂 oldid=2543063 全文比對（textSha256 已驗）：事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎！若請而從，是王與危事；請而不從，則吾計失矣、性英斷多藝，尤知音律，善八分書、以偽濫還俗者二萬餘人、田收有獲，人不甚饑、並罷知政事、兵部尚書李林甫兼中書令…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "舊唐書·本紀第九　玄宗下",
+            "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79",
+            "locator": "本機固定修訂 oldid=2307860 全文比對（textSha256 已驗）：後來者何以能濟、朝廷罕有正人，附麗無非險輩、朋比成風，廉恥都盡、廟堂之上，無非經濟之才、貞觀之風，一朝復振、朝堂決杖死之…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "香港教育局中國歷史科（中四至中六）參考資料〈安史之亂〉",
+            "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/war4.pdf",
+            "locator": "WebSearch 結果摘要：成因包括沿邊節度經略使兼領民政財政司法、中央彍騎減少、兵鎮軍力過於集中，及玄宗晚年用人",
+            "type": "official_institution",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "《新亞學報》第37卷（2020）論文：從天寶酷吏吉溫的仕宦看安史之亂的爆發（香港樹仁大學學術庫）",
+            "url": "https://ra.lib.hksyu.edu.hk/entities/publication/2a39ea95-4719-4efe-837a-42d35e98b39c",
+            "locator": "WebSearch 結果摘要：吉溫先後受李林甫、楊國忠與安祿山重用，其在玄宗晚期的政治作用不容忽視",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "fca64c405b81ceda164a51cac7032f34b7d7a4757fae691bd66b56fad594614d",
+        "sourcePackageSha256": "b01ebf165dd5f2b32d82e3e0a236aee81cb0d3091292f240a93a511e18603dae",
+        "preservedDeepSha256": "bc2e9185cdd6a206b5ddd0765c7e728cfc5bafb9319be1409b33b12c3791db3b",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "64c951fd1528f26cf32258758a1432a9f8c9c523cabbf960ae282c0ad340b27c",
+            "requestSha256": "fca64c405b81ceda164a51cac7032f34b7d7a4757fae691bd66b56fad594614d",
+            "inputSha256": "c798255e0565bf484ed0ee6147231d0197f824a186756077221cd7bd0e75c973",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "802d13e66d55aa869d8b230a6e1d0c47001a6097fc3666c43ce98710a494439f",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "b01ebf165dd5f2b32d82e3e0a236aee81cb0d3091292f240a93a511e18603dae",
+            "preservedDeepSha256": "bc2e9185cdd6a206b5ddd0765c7e728cfc5bafb9319be1409b33b12c3791db3b",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T10:52:13.565Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/05.analysisStats.raw.md",
+            "rawResponseSha256": "7199ff1b7f1a89d9eaa0d9459de3441d45ec267abdb59cf5e378af2270733061",
+            "responseFile": "analysis-batch-51-100/drafts/05.analysisStats.response.md",
+            "responseSha256": "7199ff1b7f1a89d9eaa0d9459de3441d45ec267abdb59cf5e378af2270733061",
+            "fieldsHashes": {
+              "analysis": "6811aabac31975068b26ae7152a61aab4058c28a4aade1ca8672829dcceb25a8",
+              "stats": "06a87bd372f0532602f4589c0337a2d75a933a9a5118cad415703fdc88487b9a",
+              "statsAnalysis": "7d9699c890af14fe7933d9d9cbcc83db1d039f83a57c453de0ce7b0bc259b77d"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/05.analysisStats.capture.json",
+            "captureSha256": "823be4e9a61683e524f7adec2eea13333a4181a75ddea8b254280923fa9a52fd",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/05.analysisStats.json",
+            "sourceReviewSha256": "0ed87661dd3fc658f52b219dc069c5fdf036c779bd4e12f8f03fac1e99476361",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/05.combined.search-log.json",
+              "sha256": "dedf801f19e9ade43c19d78fc48b07064549cf0d5598c0e24b3fbc6c54768ca9",
+              "webSearchCount": 2,
+              "archiveCheckCount": 40
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·本紀第八　玄宗上",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78",
+                "locator": "本機固定修訂 oldid=2543063 全文比對（textSha256 已驗）：事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎！若請而從，是王與危事；請而不從，則吾計失矣、性英斷多藝，尤知音律，善八分書、以偽濫還俗者二萬餘人、田收有獲，人不甚饑、並罷知政事、兵部尚書李林甫兼中書令…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第九　玄宗下",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79",
+                "locator": "本機固定修訂 oldid=2307860 全文比對（textSha256 已驗）：後來者何以能濟、朝廷罕有正人，附麗無非險輩、朋比成風，廉恥都盡、廟堂之上，無非經濟之才、貞觀之風，一朝復振、朝堂決杖死之…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "香港教育局中國歷史科（中四至中六）參考資料〈安史之亂〉",
+                "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/pshe/references-and-resources/chinese-history/war4.pdf",
+                "locator": "WebSearch 結果摘要：成因包括沿邊節度經略使兼領民政財政司法、中央彍騎減少、兵鎮軍力過於集中，及玄宗晚年用人",
+                "type": "official_institution",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "《新亞學報》第37卷（2020）論文：從天寶酷吏吉溫的仕宦看安史之亂的爆發（香港樹仁大學學術庫）",
+                "url": "https://ra.lib.hksyu.edu.hk/entities/publication/2a39ea95-4719-4efe-837a-42d35e98b39c",
+                "locator": "WebSearch 結果摘要：吉溫先後受李林甫、楊國忠與安祿山重用，其在玄宗晚期的政治作用不容忽視",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "3ec928a8cbb93a37b193b654bd2d4bb4a36ba911a625a550736974bca97a5b18",
+            "requestSha256": "fca64c405b81ceda164a51cac7032f34b7d7a4757fae691bd66b56fad594614d",
+            "inputSha256": "c798255e0565bf484ed0ee6147231d0197f824a186756077221cd7bd0e75c973",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "0b0347d19dba16708612e35508ee20b1624f142040f632a1aedee5db5440a5d5",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "b01ebf165dd5f2b32d82e3e0a236aee81cb0d3091292f240a93a511e18603dae",
+            "preservedDeepSha256": "bc2e9185cdd6a206b5ddd0765c7e728cfc5bafb9319be1409b33b12c3791db3b",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T10:52:13.565Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/05.soulEssence.raw.md",
+            "rawResponseSha256": "aec106e5cabe6bb1406d63f96577ca7f7109888f35974c83edac46834bece5f0",
+            "responseFile": "analysis-batch-51-100/drafts/05.soulEssence.response.md",
+            "responseSha256": "aec106e5cabe6bb1406d63f96577ca7f7109888f35974c83edac46834bece5f0",
+            "fieldsHashes": {
+              "soulEssence": "a9c2fb8e30bb037fdbc9b0e070cb523c23888d2f8e8adf8ea97fcdfcb94a357e"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/05.soulEssence.capture.json",
+            "captureSha256": "3dee79079c32a853f305bdfd2ddf940485de499f13ada026f588ec7666f18912",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/05.soulEssence.json",
+            "sourceReviewSha256": "3a459a7b79ecc1c4b61ae6d9a5b41fc80bc0a24474774eae8907619b2384d0b5",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/05.combined.search-log.json",
+              "sha256": "dedf801f19e9ade43c19d78fc48b07064549cf0d5598c0e24b3fbc6c54768ca9",
+              "webSearchCount": 2,
+              "archiveCheckCount": 40
+            },
+            "checkedSources": [
+              {
+                "title": "舊唐書·本紀第八　玄宗上",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78",
+                "locator": "本機固定修訂 oldid=2543063 全文比對（textSha256 已驗）：事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎！若請而從，是王與危事；請而不從，則吾計失矣、性英斷多藝，尤知音律，善八分書、以偽濫還俗者二萬餘人、田收有獲，人不甚饑、並罷知政事、兵部尚書李林甫兼中書令…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "舊唐書·本紀第九　玄宗下",
+                "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79",
+                "locator": "本機固定修訂 oldid=2307860 全文比對（textSha256 已驗）：後來者何以能濟、朝廷罕有正人，附麗無非險輩、朋比成風，廉恥都盡、廟堂之上，無非經濟之才、貞觀之風，一朝復振、朝堂決杖死之…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/05.analysis.md",
+            "analysisContextSha256": "63190adfabd0dcadd4cb43943ffc975d5fbe89c1ca7c8dfac9d0f1a341397430"
+          }
+        }
+      }
+    }
+  ]
+}

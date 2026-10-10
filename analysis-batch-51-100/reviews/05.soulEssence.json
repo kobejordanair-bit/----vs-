@@ -1,0 +1,53 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_唐玄宗_285829892",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:52:13.634Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "aec106e5cabe6bb1406d63f96577ca7f7109888f35974c83edac46834bece5f0",
+  "rawResponseSha256": "aec106e5cabe6bb1406d63f96577ca7f7109888f35974c83edac46834bece5f0",
+  "sourcePackageSha256": "b01ebf165dd5f2b32d82e3e0a236aee81cb0d3091292f240a93a511e18603dae",
+  "searchLogSha256": "dedf801f19e9ade43c19d78fc48b07064549cf0d5598c0e24b3fbc6c54768ca9",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B78",
+      "title": "舊唐書·本紀第八　玄宗上",
+      "locator": "本機固定修訂 oldid=2543063 全文比對（textSha256 已驗）：事成福歸於宗社，不成身死於忠孝，安可先請，憂怖大王乎！若請而從，是王與危事；請而不從，則吾計失矣、性英斷多藝，尤知音律，善八分書、以偽濫還俗者二萬餘人、田收有獲，人不甚饑、並罷知政事、兵部尚書李林甫兼中書令…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B79",
+      "title": "舊唐書·本紀第九　玄宗下",
+      "locator": "本機固定修訂 oldid=2307860 全文比對（textSha256 已驗）：後來者何以能濟、朝廷罕有正人，附麗無非險輩、朋比成風，廉恥都盡、廟堂之上，無非經濟之才、貞觀之風，一朝復振、朝堂決杖死之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：前半生搶先判斷、後半生外包判斷；場景為不先啟大王、一週內杖死諫官貶九齡廢太子、斬封高、不准斷橋。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "祥瑞取代實績、對陌生人體恤與對親人割捨、斷橋一語為清醒，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以唐隆對答與推功元輔、先天與馬嵬、焚珠翠與玉芝、宰相輪替對李林甫久任、廢三子與賜死貴妃、貞觀參照、關卡之喻為事件。"
+    }
+  ],
+  "materialIssues": []
+}
