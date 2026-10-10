@@ -1,0 +1,65 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_謝安_2004292326",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:54:35.393Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "df6782fed7cdf81000853278f7a509f43dc2bdee96e14739328c0e393c6cb675",
+  "rawResponseSha256": "df6782fed7cdf81000853278f7a509f43dc2bdee96e14739328c0e393c6cb675",
+  "sourcePackageSha256": "f1eba37e77830ba13bdfa244a9ccc54da2aa78b995c379672b84ca12affa2391",
+  "searchLogSha256": "1e8da8f01e677db0f99e1c999cb9c6198ebf5d62fbed69c515963ddcb1a4d5e5",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079",
+      "title": "晉書·卷七十九 列傳第四十九",
+      "locator": "本機固定修訂 oldid=2645985 全文比對（textSha256 已驗）：小兒輩遂已破賊、不覺屐齒之折、與王羲之及高陽許詢、桑門支遁遊處、始有仕進志、大陳兵衛，將移晉室、欲於坐害之…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "新亭、泛海、清言之辯；別有旨。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "新亭與淝水；矯情鎮物。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "東山之志與謝玄上疏；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "拖延九錫與避道子；獨決宮室。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "十年不聽樂、香囊、屐齒、慨失；羊曇。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "名士雅量；失準標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "讓二州與本志不遂。"
+    }
+  ],
+  "materialIssues": []
+}

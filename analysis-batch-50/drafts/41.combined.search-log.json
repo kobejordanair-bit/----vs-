@@ -1,0 +1,352 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "minister_謝安_2004292326",
+  "packetSha256": "12aeda21f83726226330961ecf0ff449611459291cb4f399f2288b5ac744980d",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "晉書 採世說新語 唐修晉書 小說 謝安 淝水之戰 圍棋 折屐 史料 研究",
+      "returnedUrls": [
+        "https://www.thenewslens.com/article/181420",
+        "https://irtest.lib.nccu.edu.tw/handle/140.119/74252",
+        "https://chinesenotes.com/jinshu/jinshu000i.html",
+        "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=0136120"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "小兒輩遂已破賊",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "不覺屐齒之折",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "與王羲之及高陽許詢、桑門支遁遊處",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "始有仕進志",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "大陳兵衛，將移晉室",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "欲於坐害之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "梁益不守，樊鄧陷沒",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "皆比之王導，謂文雅過之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "流汗沾衣，倒執手版",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "安聞諸侯有道，守在四鄰，明公何須壁後置人邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "正自不能不爾耳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "遂笑語移日",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "晉祚存亡，在此一行",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "見，輒改之，由是曆旬不就",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "安違眾舉親，明也。玄必不負舉，才也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "精銳八千涉渡肥水",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "以總統功，進拜太保",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "夷然無懼色",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "至夜乃還，指授將帥，各當其任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "父子皆著大勳，恐為朝廷所疑，又懼桓氏失職",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "既以三桓據三州，彼此無恐，各得所任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "肴饌亦屢費百金，世頗以此譏焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "奸諂頗相扇構",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "出鎮廣陵之步丘，築壘曰新城以避之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "諸人並懼，安吟嘯自若",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "如此將何歸邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "了無喜色，棋如故",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "虛談廢務，浮文妨要",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "秦任商鞅，二世而亡，豈清言致患邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "常疑劉牢之既不可獨任，又知王味之不宜專城",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "由是識者服其知人",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "雖受朝寄，然東山之志始末不渝，每形於言色",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "征討大都督",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "指授將帥，各當其任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "應機征討，所在克捷",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "出則漁弋山水，入則言詠屬文",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "明公何須壁後置人邪",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "三桓據三州",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "盡忠匡翼，終能輯穆",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "德政既行，文武用命，不存小察，弘以大綱",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "謂文雅過之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "彼此無恐，各得所任",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "少有盛名，時多愛慕",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "京師士庶競市，價增數倍",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "手掩鼻以斅之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "行不由西州路",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "世頗以此譏焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "至夜乃還，指授將帥",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "東山之志始末不渝，每形於言色",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "造泛海之裝，欲須經略粗定，自江道還東",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "從亡叔臣安退身東山，以道養壽",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "十年不聽音樂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "患之，而不欲傷其意，因戲賭取，即焚之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    },
+    {
+      "book": "jinshu",
+      "title": "晉書/卷079",
+      "quote": "自以本志不遂，深自慨失",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7079"
+    }
+  ],
+  "limits": [
+    "Page fetches remain blocked; 晉書卷79（含謝玄傳）verified in the repository archive.",
+    "世說新語原文未比對；圍棋、折屐等明示為帶文學加工之敘事。論文所屬機構以搜尋摘要為準，正文不寫校名。",
+    "晉書卷114苻堅載記未逐段比對，淝水戰況以謝玄傳為主。"
+  ]
+}
