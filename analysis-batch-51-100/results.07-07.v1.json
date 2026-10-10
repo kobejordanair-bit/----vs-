@@ -1,0 +1,263 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_宋真宗_284206980",
+      "inputSha256": "b06dac89e343ebc79c0d21736fc649bc161bc4088dd8c93e58a9c48987c66a63",
+      "promptSha256": "8de682732ee4c784ad87292cf85d28bf4f541ad20bc9f88bff9a4766d86aafe9",
+      "fields": {
+        "analysis": "宋真宗趙恆小時候被太祖抱上萬歲殿的御榻，太祖問他：「天子好作否？」他回答：「由天命耳。」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）這句童言後來像預言一樣貫穿他的一生。景德元年冬天，契丹大軍南下，司天官奏稱天象「宜不戰而却」，他仍然北上，渡過黃河登上澶州北城；簽下和約四年之後，一幅黃帛掛在承天門的鴟尾上，他率群臣迎拜，「號稱天書」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）。我對他的判斷是：**真宗是一位需要「天」來替他作證的皇帝。在澶州，他用親臨前線的勇氣和一筆歲幣換來和平；但和平是花錢買來的，不是打贏的，這讓他始終無法確定自己算不算一位合格的天子。於是他轉向另一種證明——天書、封禪、祥瑞——把一場務實的外交交易，包裝成上天的嘉許，代價則由國庫與朝廷風氣來付。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n趙恆是太宗第三子，至道元年立為皇太子，至道三年太宗崩，於柩前即位（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）。他接手的局面有三個特點：\n\n1.  **對遼戰爭的陰影**：《宋史》贊語直言「宋自太宗幽州之敗，惡言兵矣」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。太宗兩次北伐失敗，宋朝對遼已從進攻轉為防守，契丹騎兵則年年南下。\n2.  **西北的李繼遷**：黨項勢力在西北坐大，宋廷需要同時應付兩面壓力。\n3.  **文官體制的成熟**：宋初的宰相集團已經形成；他的老師與宰相李沆，甚至刻意「數奏災異以杜其侈心」，因為擔心他太聰明、「必多作為」[史載]。\n\n作為太子時，他「留心獄訟，裁決輕重，靡不稱愜，故京獄屢空」，對宮僚李至、李沆「必先拜，迎送降階及門」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）。這是一位守禮、勤政、懂得尊重大臣的儲君。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：澶淵之盟是真宗一生最勇敢的決定，天書封禪則是他最不安的決定；兩者是同一件事的正反面——前者換來了和平，後者是為了讓這份和平看起來不像是買來的。**\n\n**一、澶州：在天象與兵鋒之間北上**\n\n景德元年秋，契丹大舉南下，他「召宰相議親征」；十一月車駕北巡，司天官說「日抱珥，黃氣充塞，宜不戰而却」，他沒有因此折返（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）。途中天寒，左右送上貂帽毳裘，他推辭說：「臣下皆苦寒，朕安用此？」契丹大帥撻覽在澶州城北「中伏弩死」；他隨即「次澶州，渡河，幸北砦，御城北樓，召諸將撫慰」[史載]。早在咸平二年契丹入侵時，他也曾親至大名，「躬御鎧甲於中軍」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）。這兩次北上說明，他並不是一位畏戰的君主。在對遼戰爭屢屢失利、朝廷普遍「惡言兵」的氣氛下，皇帝本人出現在黃河北岸，本身就是一種動員：它讓前線知道朝廷不會放棄河北[推斷]。\n\n**二、和約：一筆冷靜的交易**\n\n契丹那邊早已透過王繼忠多次傳話求和，他對宰相說：「繼忠言契丹請和，雖許之，然河冰已合，且其情多詐，不可不為之備。」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）談判的結果，據《遼史》記載，宋方「以無還地之意」回應契丹的領土要求，最後「以太后為叔母，願歲輸銀十萬兩，絹二十萬匹」（[《遼史·聖宗本紀五》](https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714)）。也就是說，他守住了領土，用每年固定的歲幣換取長期的和平。和約既成，他「戒諸將勿出兵邀其歸路」，赦河北諸州，受戰火蹂躪的百姓「給復二年」[史載]。柳立言的專題研究〈宋遼澶淵之盟新探〉對此盟約有詳細討論（[柳立言〈宋遼澶淵之盟新探〉，《中央研究院歷史語言研究所集刊》61本3分](https://ir.sinica.edu.tw/handle/201000000A/1391)）。\n\n**三、天書：把交易變成天命**\n\n大中祥符元年正月，承天門出現黃帛，他「召群臣拜迎於朝元殿啟封，號稱天書」，隨即大赦改元（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）。同年文武官員、僧道耆老「二萬四千三百七十餘人詣闕請封禪」，他先「不允」，表凡五上之後，才詔以十月封泰山，由王欽若等人主持；接著又祀汾陰后土、作玉清昭應宮[史載]。後來他尊上玉皇聖號，判亳州丁謂一次就「獻芝草三萬七千本」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。\n\n天書封禪的動機，學界看法不一。河北大學學報的研究認為，天書與東封西祀主要是真宗為化解自身統治危機的手段，並非為了洗刷盟約之恥（[《河北大學學報》2019年第2期論文](https://xb-zsb.hbu.edu.cn/CN/Y2019/V44/I2/1)）；香港理工大學的新書則指出，以「城下之盟」解釋天書封禪的傳統敘事，在仁宗時期就已形成（[香港理工大學中國歷史研究中心新書介紹](https://www.polyu.edu.hk/chc/news-and-events/news/2024/book-release/)）。《宋史》贊語另有一說：諸臣知道契丹「一歲祭天不知其幾」，又見皇帝厭兵，遂進「神道設教之言，欲假是以動敵人之聽聞」，結論是「不思修本以制敵，又效尤焉，計亦末矣」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。\n\n**連鎖結果**：澶淵之盟帶來宋遼之間長期的和平，但《宋史》形容封禪以後「一國君臣如病狂然」，連繼位的仁宗都要「以天書殉葬山陵」才能把這段歷史收起來（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。他前期累積的勤政名聲，被後期的祥瑞狂熱沖淡；後人記住的，往往是封禪而不是澶州城樓上的那個皇帝[推斷]。\n\n### **3. 【人性與性格側寫】**\n\n*   **體恤身邊的人**：嚴寒中拒穿貂裘，說「臣下皆苦寒」；回程時「大寒，賜道傍貧民襦袴」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）。\n*   **對利益有分寸**：有司請准許同居者告發違法販茶，他認為「以利敗俗非國體，不許」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。\n*   **在意儀式**：從天書、封禪到汾陰祭祀，他對每一場典禮都親自參與，連執事懈怠者都「罪勿原」[史載]。\n*   **喜歡被請求**：封禪前他讓群臣「表凡五上」才答應（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)），這讓決定看起來是眾望所歸[推斷]。\n*   **對大臣有禮**：作太子時對宮僚「必先拜」，即位後長期倚重王旦等宰相（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）。\n\n### **4. 【如果生在現代】**\n\n宋真宗最接近的現代角色是：**一位在危機中親上談判桌、用賠償金換來長期停戰的國家元首，事後卻花更多錢舉辦盛大的國家典禮，以證明自己的統治受到天意眷顧。**\n\n*   **危機時刻的勇氣**：敵軍壓境、顧問勸他撤退時，他堅持親赴前線，站上最前沿的城樓。\n*   **務實的條約**：他沒有割讓一寸土地，而是答應每年支付固定的金額換取和平。\n*   **事後的不安**：條約簽完後，國內有人說這是城下之盟；他轉而舉辦一連串盛大的宗教與國家典禮。\n*   **身邊的推手**：負責籌辦典禮的官員，不斷上報各地出現的吉兆，數量越報越多。\n*   **邊界**：這個比喻只描述他的心理節奏；北宋的封禪是傳統的天命政治，不能等同現代的公關活動，而他的歲幣與典禮開支，牽涉的是農業帝國的財政與士大夫的道德評價。",
+        "soulEssence": "【說話邏輯】\n他說話很少用命令句，而是用體恤或謙讓的姿態表達決定。天寒時他推開貂裘：「臣下皆苦寒，朕安用此？」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）[史載]這句話既是關心，也是向全軍示範他與將士同甘共苦[推斷]。面對契丹求和，他的表述則是「雖許之……不可不為之備」[史載]——先表態接受，再補上保留。他習慣讓別人先開口，也習慣讓自己的意志藏在儀式之後：封禪要群臣「表凡五上」才答應，天書則由守門卒發現、群臣拜迎[史載]。這種說話方式讓他的每個決定都顯得是順應眾意，而不是出於自己的意志[推斷]。\n\n【壓力反應】\n面對外部的威脅，他的反應是走向前線；面對內心的不安，他的反應是尋求更高的認可。\n景德元年司天官說天象「宜不戰而却」，他仍然北上渡河，「御城北樓，召諸將撫慰」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）[史載]。這是他一生中最清楚的勇氣時刻。但和約簽訂、危機解除之後，他沒有回到「修本」的日常政治，而是在四年後迎來天書[史載]。外患的壓力讓他振作，和平之後的空虛反而讓他不安[推斷]。那份和約保住了土地，卻也讓他每年都要向北方送出銀絹（[《遼史·聖宗本紀五》](https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714)）[史載]——每一次輸送，都是在提醒他：這場和平不是打贏的[推斷]。天書與封禪的熱鬧，或許正是為了蓋過這份每年都會重來的提醒[詮釋]。\n\n【核心驅動】\n他想要確認自己是被天命選中的君主。\n童年時太祖問他「天子好作否」，他答「由天命耳」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）[史載]；本紀也記載他出生時「左足指有文成」一個「天」字的傳說[史載]。到了大中祥符年間，他接受天書、東封泰山、西祀汾陰，又尊上玉皇聖號（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）[史載]。從童言到封禪，他始終把自己的位置理解為「天」的安排——當現實的成就（一場花錢換來的和平）無法完全證明這一點時，他就讓「天」直接說話[詮釋：此為從其一生行為歸納的動機]。\n\n【慣性盲點】\n他分得清「以利敗俗」的小事，卻看不出祥瑞本身就是一場更大的敗俗。\n有司請准同居者告發違法販茶，他說「以利敗俗非國體，不許」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）[史載]——他明白鼓勵告密會敗壞民風。可是同一時期，地方官爭獻祥瑞，丁謂一次獻芝草三萬七千本[史載]，他卻照單全收。對他而言，獻祥瑞是「順天」，不是「逐利」；他沒有意識到，這正是給逢迎之人開了一條升官的捷徑[推斷]。\n\n【情感結構】\n他對臣下與百姓有一種溫和的體恤，對老師與宰相則保有尊敬。\n作太子時對李至、李沆「必先拜，迎送降階及門」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)）[史載]；即位後，李沆「數奏災異以杜其侈心」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）[史載]；李沆在景德元年夏天去世，那年冬天他便北上澶州[史載]。澶州回程時，他「賜道傍貧民襦袴」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）[史載]。這份溫和讓他成為一位不殘暴的君主，也讓他難以拒絕身邊人的熱情獻媚[推斷]。他最脆弱的時刻，或許是李沆去世之後——再也沒有人用災異提醒他節制，身邊的人改用祥瑞稱頌他[詮釋]。\n\n【參照系】\n他理解自身處境的框架，是「天命」——天子之位由天賜予，也必須由天來確認[推斷]。\n類比準確之處：在宋代的政治文化中，封禪確實是向天下宣示太平的最高儀式；河北大學學報的研究也認為他是藉此化解統治危機（[《河北大學學報》2019年論文](https://xb-zsb.hbu.edu.cn/CN/Y2019/V44/I2/1)）[史載]。\n類比失準之處：契丹的強大並不會因為宋朝的天書而減弱；《宋史》批評這套做法「不思修本以制敵，又效尤焉」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）[史載]。他用宗教的框架回應了一個軍事與財政的問題[詮釋：此為本文的分析判斷]。更諷刺的是，《宋史》認為這套做法本身就是模仿契丹「祭天」的習俗——他想證明自己勝過對手，用的卻是對手的語言[推斷]。\n\n【內在裂縫】\n他的裂縫在於：他一生最真實的勇氣，換來的是一份他自己都無法坦然面對的和平。\n在澶州，他不信天象、只信判斷，渡河登城，與群臣將士同寒（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）[史載]；回到汴京之後，他卻開始信天書、信祥瑞，讓天替他作證[史載]。同一個人在前線不聽司天官，在後方卻讓天書主導朝政——前者是他自己做的決定，後者是他希望由天來承擔的評價[推斷]。他死後，仁宗把天書帶入陵墓（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）[史載]；那一場他親手完成的和約，反而比天書更長久地留在歷史之中，也更能說明他是誰[詮釋]。",
+        "stats": [
+          65,
+          30,
+          76,
+          78,
+          72
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：65\n\n他兩度北上禦遼：咸平二年至大名「躬御鎧甲於中軍」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)），景德元年不顧司天官「宜不戰而却」之言，渡河登澶州北城撫慰諸將（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）。但實際戰事由前線將領完成，他也沒有在和約後重整北方防務，最終以歲幣而非戰勝結束戰爭。評65，高於宋仁宗（60），低於宋孝宗（70）與宋太宗（75）。\n\n### 武力：30\n\n他幼時「好作戰陣之狀，自稱元帥」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)），親征時也「躬御鎧甲」，但兩次北上都是坐鎮督戰，沒有臨陣交鋒的紀錄；澶州之役撻覽是「中伏弩死」，並非他親自指揮的戰果（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)）。給予略高於純粹宮廷君主的分數。評30，高於宋仁宗（20）與唐高宗（25），低於宋孝宗（35）與宋太宗（50）。\n\n### 智謀：76\n\n他判斷契丹「其情多詐，不可不為之備」，同時接受和談，最終守住領土、只以歲幣換取和平（[《遼史·聖宗本紀五》](https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714)），是務實的盤算。但和約之後，他接受王欽若等人的天書之議，《宋史》批評「不思修本以制敵，又效尤焉，計亦末矣」（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。評76，低於宋孝宗（82）與宋仁宗（84），高於崇禎帝（75）。\n\n### 政治：78\n\n作太子時「留心獄訟……故京獄屢空」（[《宋史·真宗本紀一》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006)），在位期間對受戰火影響的河北百姓「給復二年」（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)），澶淵之盟後宋遼長期無大戰。但大中祥符年間的封禪、祀汾陰、修玉清昭應宮，讓朝廷「一國君臣如病狂然」，風氣與財政都受損（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)）。評78，低於宋仁宗（90）與宋太宗（92），高於崇禎帝（65）。\n\n### 魅力：72\n\n他在嚴寒中拒穿貂裘，說「臣下皆苦寒，朕安用此」，又賜道旁貧民衣物（[《宋史·真宗本紀二》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007)），能贏得將士與百姓的好感；作太子時對宮僚謙恭有禮。但封禪時期的祥瑞之風，讓朝中逢迎之人得勢，丁謂一次獻芝草三萬七千本（[《宋史·真宗本紀三》](https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008)），損害了他在士大夫心中的形象。評72，低於宋仁宗（92）與宋孝宗（85），高於宋太宗（70）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T11:00:10.146Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "宋史·卷六 本紀第六 真宗一",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006",
+            "locator": "本機固定修訂 oldid=2285027 全文比對（textSha256 已驗）：天子好作否、留心獄訟，裁決輕重，靡不稱愜，故京獄屢空、必先拜，迎送降階及門、躬御鎧甲於中軍、好作戰陣之狀，自稱元帥、故京獄屢空…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋史·卷七 本紀第七 真宗二",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007",
+            "locator": "本機固定修訂 oldid=7908329 全文比對（textSha256 已驗）：宜不戰而却、召宰相議親征、日抱珥，黃氣充塞，宜不戰而却、臣下皆苦寒，朕安用此、次澶州，渡河，幸北砦，御城北樓，召諸將撫慰、繼忠言契丹請和，雖許之，然河冰已合，且其情多詐，不可不為之備…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "宋史·卷八 本紀第八 真宗三",
+            "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008",
+            "locator": "本機固定修訂 oldid=7908326 全文比對（textSha256 已驗）：宋自太宗幽州之敗，惡言兵矣、數奏災異以杜其侈心、獻芝草三萬七千本、一歲祭天不知其幾、神道設教之言，欲假是以動敵人之聽聞、不思修本以制敵，又效尤焉，計亦末矣…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "遼史·卷十四 本紀第十四",
+            "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714",
+            "locator": "本機固定修訂 oldid=1745954 全文比對（textSha256 已驗）：以無還地之意、以太后為叔母，願歲輸銀十萬兩，絹二十萬匹",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "柳立言〈宋遼澶淵之盟新探〉，《中央研究院歷史語言研究所集刊》61本3分（1990）",
+            "url": "https://ir.sinica.edu.tw/handle/201000000A/1391",
+            "locator": "WebSearch 結果摘要：僅書目資訊（頁693–760），正文只據題名指出有專題研究",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "《河北大學學報（哲學社會科學版）》2019年第44卷第2期論文（天書封禪）",
+            "url": "https://xb-zsb.hbu.edu.cn/CN/Y2019/V44/I2/1",
+            "locator": "WebSearch 結果摘要：天書降臨與東封西祀主要為真宗化解自身統治危機之手段，非為滌恥；王欽若等參與策劃，並造成財政負擔",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "香港理工大學中國歷史研究中心2024年新書介紹",
+            "url": "https://www.polyu.edu.hk/chc/news-and-events/news/2024/book-release/",
+            "locator": "WebSearch 結果摘要：反思以城下之盟解釋天書封禪的傳統敘事，並主張該敘事於仁宗時期已形成",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          }
+        ],
+        "requestSha256": "0851b142ae68caf05206700d671976b8b101bc32c6332083fe4fea66d6d42bdf",
+        "sourcePackageSha256": "8bf5705ac1ce1b1d7d0033088fc11ae65b63de08242313a6e3a1c0517685c0f3",
+        "preservedDeepSha256": "69701efdb1a3ef69c0cbcb81e6c3d1369e8d41b5657d51b7ac67c3e9870b8435",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "cd5964195f3b214dba596adcf39b706d25aaf009189cde99595786d42828716f",
+            "requestSha256": "0851b142ae68caf05206700d671976b8b101bc32c6332083fe4fea66d6d42bdf",
+            "inputSha256": "b06dac89e343ebc79c0d21736fc649bc161bc4088dd8c93e58a9c48987c66a63",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "74f55e71f34ff9165c999bd67498d5a654fa0ab4f11196d8edfb88167632cd2a",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "8bf5705ac1ce1b1d7d0033088fc11ae65b63de08242313a6e3a1c0517685c0f3",
+            "preservedDeepSha256": "69701efdb1a3ef69c0cbcb81e6c3d1369e8d41b5657d51b7ac67c3e9870b8435",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:00:10.146Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/07.analysisStats.raw.md",
+            "rawResponseSha256": "15b33fb830eb2d1c96130c4dfd251883c43e41532a9c3aaae29c54a81853b5e0",
+            "responseFile": "analysis-batch-51-100/drafts/07.analysisStats.response.md",
+            "responseSha256": "15b33fb830eb2d1c96130c4dfd251883c43e41532a9c3aaae29c54a81853b5e0",
+            "fieldsHashes": {
+              "analysis": "1c68b7682c267306713010c1a1badb8de131c0edd4d6b8143dd643fd4c74df42",
+              "stats": "9fb38258cdb69c1371da3f4a4c4634afbfe4b4dc55798ecce3bc7bb6c2f8a558",
+              "statsAnalysis": "e5d0ea88d74d0588bb764c76bd8b0cf1fb949c80fd6409ae1973d0875c036ad6"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/07.analysisStats.capture.json",
+            "captureSha256": "0a5b38c73e0bbab46fdf4a8729fa8a67ba83da72e9b03362de4cf61a2225ed06",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/07.analysisStats.json",
+            "sourceReviewSha256": "025c5ad3a8c1bec06738da9780691cc3ed77bff0845a006942207e613d6bd8e6",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/07.combined.search-log.json",
+              "sha256": "a28c6a4089b219ce9dfe661a916e4beaecc4927c77c2d9d922eebabdfee4b068",
+              "webSearchCount": 2,
+              "archiveCheckCount": 34
+            },
+            "checkedSources": [
+              {
+                "title": "宋史·卷六 本紀第六 真宗一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006",
+                "locator": "本機固定修訂 oldid=2285027 全文比對（textSha256 已驗）：天子好作否、留心獄訟，裁決輕重，靡不稱愜，故京獄屢空、必先拜，迎送降階及門、躬御鎧甲於中軍、好作戰陣之狀，自稱元帥、故京獄屢空…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷七 本紀第七 真宗二",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007",
+                "locator": "本機固定修訂 oldid=7908329 全文比對（textSha256 已驗）：宜不戰而却、召宰相議親征、日抱珥，黃氣充塞，宜不戰而却、臣下皆苦寒，朕安用此、次澶州，渡河，幸北砦，御城北樓，召諸將撫慰、繼忠言契丹請和，雖許之，然河冰已合，且其情多詐，不可不為之備…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷八 本紀第八 真宗三",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008",
+                "locator": "本機固定修訂 oldid=7908326 全文比對（textSha256 已驗）：宋自太宗幽州之敗，惡言兵矣、數奏災異以杜其侈心、獻芝草三萬七千本、一歲祭天不知其幾、神道設教之言，欲假是以動敵人之聽聞、不思修本以制敵，又效尤焉，計亦末矣…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "遼史·卷十四 本紀第十四",
+                "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714",
+                "locator": "本機固定修訂 oldid=1745954 全文比對（textSha256 已驗）：以無還地之意、以太后為叔母，願歲輸銀十萬兩，絹二十萬匹",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "柳立言〈宋遼澶淵之盟新探〉，《中央研究院歷史語言研究所集刊》61本3分（1990）",
+                "url": "https://ir.sinica.edu.tw/handle/201000000A/1391",
+                "locator": "WebSearch 結果摘要：僅書目資訊（頁693–760），正文只據題名指出有專題研究",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "《河北大學學報（哲學社會科學版）》2019年第44卷第2期論文（天書封禪）",
+                "url": "https://xb-zsb.hbu.edu.cn/CN/Y2019/V44/I2/1",
+                "locator": "WebSearch 結果摘要：天書降臨與東封西祀主要為真宗化解自身統治危機之手段，非為滌恥；王欽若等參與策劃，並造成財政負擔",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "香港理工大學中國歷史研究中心2024年新書介紹",
+                "url": "https://www.polyu.edu.hk/chc/news-and-events/news/2024/book-release/",
+                "locator": "WebSearch 結果摘要：反思以城下之盟解釋天書封禪的傳統敘事，並主張該敘事於仁宗時期已形成",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "174883bf32e1be1c9091540c24d600c5c549a000a0ca8744549b183547f2d044",
+            "requestSha256": "0851b142ae68caf05206700d671976b8b101bc32c6332083fe4fea66d6d42bdf",
+            "inputSha256": "b06dac89e343ebc79c0d21736fc649bc161bc4088dd8c93e58a9c48987c66a63",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "80733929e015829311d10d3f3e212648fcb95a9d332ae018ec0b7e4e15732fbd",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "8bf5705ac1ce1b1d7d0033088fc11ae65b63de08242313a6e3a1c0517685c0f3",
+            "preservedDeepSha256": "69701efdb1a3ef69c0cbcb81e6c3d1369e8d41b5657d51b7ac67c3e9870b8435",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:00:10.146Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/07.soulEssence.raw.md",
+            "rawResponseSha256": "e9a83a948899f73504958c7a4e32d489816989a6327b759e1b7cd77294fcb326",
+            "responseFile": "analysis-batch-51-100/drafts/07.soulEssence.response.md",
+            "responseSha256": "e9a83a948899f73504958c7a4e32d489816989a6327b759e1b7cd77294fcb326",
+            "fieldsHashes": {
+              "soulEssence": "7e013a4ae0b10403c12bfa4f263d05581def6f859bea5949ae73c017fa7a64e9"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/07.soulEssence.capture.json",
+            "captureSha256": "af87fe52719ad29f0e4b7ad612fc513faacf44e7b33dc1d15b30ce3cf98f0070",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/07.soulEssence.json",
+            "sourceReviewSha256": "25edf4a436275f5da7107fe9fab2ec1067ea17393dc9af613803e1a2a4affb6e",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/07.combined.search-log.json",
+              "sha256": "a28c6a4089b219ce9dfe661a916e4beaecc4927c77c2d9d922eebabdfee4b068",
+              "webSearchCount": 2,
+              "archiveCheckCount": 34
+            },
+            "checkedSources": [
+              {
+                "title": "宋史·卷七 本紀第七 真宗二",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007",
+                "locator": "本機固定修訂 oldid=7908329 全文比對（textSha256 已驗）：宜不戰而却、召宰相議親征、日抱珥，黃氣充塞，宜不戰而却、臣下皆苦寒，朕安用此、次澶州，渡河，幸北砦，御城北樓，召諸將撫慰、繼忠言契丹請和，雖許之，然河冰已合，且其情多詐，不可不為之備…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "遼史·卷十四 本紀第十四",
+                "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714",
+                "locator": "本機固定修訂 oldid=1745954 全文比對（textSha256 已驗）：以無還地之意、以太后為叔母，願歲輸銀十萬兩，絹二十萬匹",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷六 本紀第六 真宗一",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006",
+                "locator": "本機固定修訂 oldid=2285027 全文比對（textSha256 已驗）：天子好作否、留心獄訟，裁決輕重，靡不稱愜，故京獄屢空、必先拜，迎送降階及門、躬御鎧甲於中軍、好作戰陣之狀，自稱元帥、故京獄屢空…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "宋史·卷八 本紀第八 真宗三",
+                "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008",
+                "locator": "本機固定修訂 oldid=7908326 全文比對（textSha256 已驗）：宋自太宗幽州之敗，惡言兵矣、數奏災異以杜其侈心、獻芝草三萬七千本、一歲祭天不知其幾、神道設教之言，欲假是以動敵人之聽聞、不思修本以制敵，又效尤焉，計亦末矣…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "《河北大學學報（哲學社會科學版）》2019年第44卷第2期論文（天書封禪）",
+                "url": "https://xb-zsb.hbu.edu.cn/CN/Y2019/V44/I2/1",
+                "locator": "WebSearch 結果摘要：天書降臨與東封西祀主要為真宗化解自身統治危機之手段，非為滌恥；王欽若等參與策劃，並造成財政負擔",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/07.analysis.md",
+            "analysisContextSha256": "a97df37db2b75f40cf5f65f56712ea6679b9d0696cd69832ef3027ca50b34290"
+          }
+        }
+      }
+    }
+  ]
+}

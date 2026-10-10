@@ -1,0 +1,77 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_宋真宗_284206980",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:00:10.199Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "e9a83a948899f73504958c7a4e32d489816989a6327b759e1b7cd77294fcb326",
+  "rawResponseSha256": "e9a83a948899f73504958c7a4e32d489816989a6327b759e1b7cd77294fcb326",
+  "sourcePackageSha256": "8bf5705ac1ce1b1d7d0033088fc11ae65b63de08242313a6e3a1c0517685c0f3",
+  "searchLogSha256": "a28c6a4089b219ce9dfe661a916e4beaecc4927c77c2d9d922eebabdfee4b068",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7007",
+      "title": "宋史·卷七 本紀第七 真宗二",
+      "locator": "本機固定修訂 oldid=7908329 全文比對（textSha256 已驗）：宜不戰而却、召宰相議親征、日抱珥，黃氣充塞，宜不戰而却、臣下皆苦寒，朕安用此、次澶州，渡河，幸北砦，御城北樓，召諸將撫慰、繼忠言契丹請和，雖許之，然河冰已合，且其情多詐，不可不為之備…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B714",
+      "title": "遼史·卷十四 本紀第十四",
+      "locator": "本機固定修訂 oldid=1745954 全文比對（textSha256 已驗）：以無還地之意、以太后為叔母，願歲輸銀十萬兩，絹二十萬匹",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7006",
+      "title": "宋史·卷六 本紀第六 真宗一",
+      "locator": "本機固定修訂 oldid=2285027 全文比對（textSha256 已驗）：天子好作否、留心獄訟，裁決輕重，靡不稱愜，故京獄屢空、必先拜，迎送降階及門、躬御鎧甲於中軍、好作戰陣之狀，自稱元帥、故京獄屢空…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7008",
+      "title": "宋史·卷八 本紀第八 真宗三",
+      "locator": "本機固定修訂 oldid=7908326 全文比對（textSha256 已驗）：宋自太宗幽州之敗，惡言兵矣、數奏災異以杜其侈心、獻芝草三萬七千本、一歲祭天不知其幾、神道設教之言，欲假是以動敵人之聽聞、不思修本以制敵，又效尤焉，計亦末矣…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://xb-zsb.hbu.edu.cn/CN/Y2019/V44/I2/1",
+      "title": "《河北大學學報（哲學社會科學版）》2019年第44卷第2期論文（天書封禪）",
+      "locator": "WebSearch 結果摘要：天書降臨與東封西祀主要為真宗化解自身統治危機之手段，非為滌恥；王欽若等參與策劃，並造成財政負擔",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：需要天來作證的皇帝；場景為由天命耳、不聽天象渡河、表凡五上、天書與芝草。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以天書蓋過歲幣提醒、用對手的語言、和約比天書長久，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以拒貂裘與雖許之、澶州與天書、童言與封禪、販茶與芝草、李沆與賜襦袴、天命框架、前線與後方對照為事件。"
+    }
+  ],
+  "materialIssues": []
+}
