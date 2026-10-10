@@ -1,0 +1,84 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢元帝_279687371",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:12:55.608Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "b3fa76d22e6e438e95b3a5d473967773f62a5a787bcf5850f7d5b70d784f05cf",
+  "rawResponseSha256": "b3fa76d22e6e438e95b3a5d473967773f62a5a787bcf5850f7d5b70d784f05cf",
+  "sourcePackageSha256": "9644e32153580fecff36beab7f9b8017ada731c2ed927133944d696d317dc6e4",
+  "searchLogSha256": "bfb4350fb391901b3227b8e8e123e1328fb6f455473ef9c26bb712aafa3c9db9",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+      "title": "漢書·卷七十八 蕭望之傳　第四十八",
+      "locator": "本機固定修訂 oldid=1476154 全文比對（textSha256 已驗）：謁者召致廷尉、蕭太傅素剛，安肯就吏、卻食，為之涕泣、皆免冠謝，良久然後已、人命至重，望之所坐，語言薄罪，必亡所憂、朋黨相稱舉…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "title": "漢書·卷九 元帝紀 第九",
+      "locator": "本機固定修訂 oldid=2315084 全文比對（textSha256 已驗）：微時生民間、所用多文法吏，以刑名繩下、漢家自有制度，本以霸王道雜之、陛下持刑太深，宜用儒生、亂我家者，太子也、徵用儒生，委之以政，貢、薛、韋、匡迭為宰相…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf",
+      "title": "黃啟書論文，《臺大中文學報》第52期（2016）",
+      "locator": "WebSearch 結果摘要：以宣、元、成三朝為核心，元帝以後西漢經學各派災異說幾已完備；宣帝王霸雜用與元帝純用儒術對照",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+      "title": "“Han Yuandi (reigned 48 to 33 BCE) and his Advisors,” Early China (Cambridge)",
+      "locator": "WebSearch 結果摘要：元帝本人政治作為不多，宗廟、經濟與官制議題多由公卿提出",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070",
+      "title": "漢書·卷七十 傅常鄭甘陳段傳 第四十",
+      "locator": "本機固定修訂 oldid=1471989 全文比對（textSha256 已驗）：擅興師矯制，幸得不誅、內嘉延壽、湯功，而重違衡、顯之議，議乆不決",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "宣帝太子、二歲宣帝即位、八歲立太子、蕭望之兩度下獄與自殺、建昭三年斬郅支、竟寧元年改元與王檣，皆依漢書卷9、70、78 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：郅支為撟發、罷珠崖；武力：無；智謀：棄珠崖與被石顯欺瞞；政治：省刑罰與優游不斷；魅力：寬弘盡下與追念蕭望之。對照光緒帝、崇禎帝、宋仁宗、漢宣帝、晉惠帝、漢明帝。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "不省召致廷尉→蕭望之下獄；明知素剛仍可其奏→自殺；重違衡顯→議久不決；立王皇后→外戚之起（[推斷]）。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    48,
+    18,
+    66,
+    62,
+    74
+  ]
+}

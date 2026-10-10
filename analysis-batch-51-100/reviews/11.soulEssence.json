@@ -1,0 +1,61 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢元帝_279687371",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T11:12:55.609Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "5a2ce21fb38598ecb683e80e87e82d22fa98e21ca5571f1b73a7a60e9d241f89",
+  "rawResponseSha256": "5a2ce21fb38598ecb683e80e87e82d22fa98e21ca5571f1b73a7a60e9d241f89",
+  "sourcePackageSha256": "9644e32153580fecff36beab7f9b8017ada731c2ed927133944d696d317dc6e4",
+  "searchLogSha256": "bfb4350fb391901b3227b8e8e123e1328fb6f455473ef9c26bb712aafa3c9db9",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+      "title": "漢書·卷九 元帝紀 第九",
+      "locator": "本機固定修訂 oldid=2315084 全文比對（textSha256 已驗）：微時生民間、所用多文法吏，以刑名繩下、漢家自有制度，本以霸王道雜之、陛下持刑太深，宜用儒生、亂我家者，太子也、徵用儒生，委之以政，貢、薛、韋、匡迭為宰相…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+      "title": "漢書·卷七十八 蕭望之傳　第四十八",
+      "locator": "本機固定修訂 oldid=1476154 全文比對（textSha256 已驗）：謁者召致廷尉、蕭太傅素剛，安肯就吏、卻食，為之涕泣、皆免冠謝，良久然後已、人命至重，望之所坐，語言薄罪，必亡所憂、朋黨相稱舉…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070",
+      "title": "漢書·卷七十 傅常鄭甘陳段傳 第四十",
+      "locator": "本機固定修訂 oldid=1471989 全文比對（textSha256 已驗）：擅興師矯制，幸得不誅、內嘉延壽、湯功，而重違衡、顯之議，議乆不決",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：看見危險卻說不出不；場景為召致廷尉、蕭太傅素剛、卻食涕泣、議乆不決、亂我家者太子也。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以仁慈證明父親的擔憂、念舊及於不值得者、不忍，皆標[詮釋]或[推斷]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以咎在朕躬詔、兩次下獄、勸宣帝用儒、石顯程序話術與私怨、祠祭望之冢與太子之位、德治框架、宣帝之言為事件。"
+    }
+  ],
+  "materialIssues": []
+}

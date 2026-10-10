@@ -1,0 +1,215 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "a3a02fac420f353cb79cbdae1605baca1278ce13ae876d17314cc755aa43ec2f",
+  "records": [
+    {
+      "id": "emperor_漢元帝_279687371",
+      "inputSha256": "71ca17eb8f23c8af164982eed86a02e908b2d8b921d81c60294d3c9d03b75e2c",
+      "promptSha256": "42f01a0b8348da8267e8da82f557c4a742577c8d737d7d2720dccac2fa7f081c",
+      "fields": {
+        "analysis": "元帝即位之初，中書令弘恭、石顯奏請把漢元帝的老師蕭望之「謁者召致廷尉」。當時他不明白「謁者召致廷尉」就是下獄，便批准了；等到發現周堪、劉更生都已下獄，他「大驚」，責問二人，卻在他們叩頭謝罪後，仍接受了「宜因決免」的建議。數月後他追念師傅，恩禮如初；可是不久，石顯等人再次請求逮捕蕭望之，元帝明明說了「蕭太傅素剛，安肯就吏？」，最終還是「可其奏」。蕭望之飲鴆自殺，元帝「卻食，為之涕泣」，召石顯等責問，「皆免冠謝，良久然後已」（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。我對他的判斷是：**漢元帝不是看不見危險，而是看見了也說不出「不」。他是一位對所有人都心軟的皇帝——對儒生、對宦官、對百姓、對立功而犯禁的將領都一樣；這份溫和讓他的朝廷沒有酷吏，卻也讓最會利用溫和的人掌握了宮廷。**\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n劉奭是宣帝太子，母親許皇后在宣帝「微時生民間」；他二歲時宣帝即位，八歲立為太子（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。他面對的局面有三層：\n\n1.  **宣帝留下的強勢體制**：宣帝「所用多文法吏，以刑名繩下」，楊惲、蓋寬饒等大臣因譏刺而誅；宣帝自言「漢家自有制度，本以霸王道雜之」[史載]。\n2.  **儒學的崛起**：經學在宣帝朝已成為官僚養成的主流。台大黃啟書的研究以宣、元、成三朝為核心，指出元帝以後西漢各經學流派衍生的災異說幾已完備，並以宣帝的王霸雜用對照元帝的純用儒術（[黃啟書論文，《臺大中文學報》第52期](https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf)）。\n3.  **天災頻仍**：元帝即位後，關東大水、「或人相食」，隴西地震「壓殺人眾」，他多次下詔自責[史載]。\n\n他還是太子時，就曾勸父親「陛下持刑太深，宜用儒生」；宣帝作色，嘆曰：「亂我家者，太子也！」甚至一度想以淮陽王取代他，只因念及許氏舊情才作罷（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：元帝最大的問題不是用了儒生，而是他無法在儒生與宦官之間做出裁決；他讓兩邊都留下來，結果是更懂得利用他的那一方贏了。**\n\n**一、儒生入朝，災異成為政治語言**\n\n即位之後，他「徵用儒生，委之以政，貢、薛、韋、匡迭為宰相」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。每逢災異，他就下詔「咎在朕躬」，省刑罰、罷苑囿、減樂府、假公田予貧民；某次一詔就「省刑罰七十餘事」[史載]。劍橋《Early China》期刊的研究指出，元帝本人在政治上直接作為不多，宗廟制度、經濟措施與官制標準等議題，多由他的公卿提出（[“Han Yuandi (reigned 48 to 33 BCE) and his Advisors,” *Early China*](https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C)）。\n\n**二、宦官的勝利：蕭望之之死**\n\n蕭望之是他的師傅，「傅朕八年」；石顯、弘恭兩度借他的不察或不決，把蕭望之逼上絕路（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。第二次，他明知蕭望之「素剛」，不會受辱，仍聽信石顯「人命至重，望之所坐，語言薄罪，必亡所憂」的保證[史載]。事後他悲慟、責問，卻沒有懲處石顯；元帝紀只淡淡記下「中書令弘恭、石顯等譖望之，令自殺」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。\n\n**三、對外：最大的勝利來自一次矯制**\n\n元帝朝的對外局勢其實不算危急：呼韓邪已經歸附，只剩西遷的郅支單于殺害漢使谷吉，「衛司馬谷吉使匈奴，不還」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。朝廷遲遲沒有對策，最後是邊將自行發兵。\n\n建昭三年，西域都護甘延壽、副校尉陳湯「撟發戊己校尉屯田吏士及西域胡兵攻郅支單于」，斬其首（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。論功時，石顯、匡衡認為二人「擅興師矯制，幸得不誅」；《漢書》記元帝「內嘉延壽、湯功，而重違衡、顯之議，議乆不決」（[《漢書·陳湯傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070)）。直到劉向上疏力爭，他才在竟寧元年封甘延壽為列侯、賜陳湯爵關內侯[史載]。同年，呼韓邪單于來朝，他改元「竟寧」，並以待詔掖庭王檣賜單于為閼氏（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。另一方面，珠崖郡反叛，他採納賈捐之「宜棄珠崖，救民饑饉」之議，「乃罷珠崖」[史載]。\n\n**為什麼他贏不了石顯？** 石顯是中書令，掌管詔令文書的出納；元帝體弱且好儒，政務的文字流程便集中在這位宦官手上[推斷]。蕭望之一派要「匡正國家」、排退外戚許、史，石顯則把這說成「朋黨相稱舉……欲以專擅權勢」（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。儒臣用經義說話，宦官用程序說話；而元帝每一次都在程序上簽了字，再在情感上後悔[推斷]。\n\n**連鎖結果**：班固在贊語中引述外祖兄弟的見聞，說他「牽制文義，優游不斷，孝宣之業衰焉」，但也承認他「寬弘盡下，出於恭儉，號令溫雅，有古之風烈」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。即位當年三月，他「立皇后王氏」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）[史載]；王氏外戚此後坐大，經成帝一朝而愈盛，最終導出王莽篡漢；這條線的起點，正在元帝的寬厚之中[推斷]。\n\n### **3. 【人性與性格側寫】**\n\n*   **多才多藝**：班固記他「善史書。鼓琴瑟，吹洞簫，自度曲，被歌聲，分刌節度，窮極幼眇」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。\n*   **心軟而自責**：災異一至，便下詔「咎在朕躬」，並減膳、省苑馬以賑災[史載]。\n*   **重情念舊**：蕭望之死後，「每歲時遣使者祠祭望之冢，終元帝世」（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。\n*   **不善決斷**：論甘延壽、陳湯之功時，心裡讚許，卻因不願違背匡衡、石顯而「議乆不決」（[《漢書·陳湯傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070)）。\n*   **容易被程序語言欺瞞**：即位之初，他不知道「謁者召致廷尉」就是下獄（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。\n\n### **4. 【如果生在現代】**\n\n漢元帝最接近的現代角色是：**一位人文素養極高、處處體恤員工的財團法人董事長，卻讓一名掌管文書流程的祕書長實質控制了整個組織。**\n\n*   **溫和的治理**：每次出事，他都先公開道歉、減少自己的開支，並撤除不必要的規定。\n*   **程序的漏洞**：祕書長把**請送法務調查**寫在簽呈裡，他沒看懂這等於停職移送，簽了字；事後震驚，卻接受了**既然已經處理，就順勢讓他退休**的建議。\n*   **第二次犯錯**：他明知那位老師脾氣剛烈、受不了羞辱，仍聽信**只是走個程序**的保證再簽一次，結果老師輕生；他哭著責問祕書長，對方道歉後一切照舊。\n*   **立功者的處境**：一位外派主管未經授權發動行動、大獲成功，他私下欣賞，卻因法務與祕書長反對而遲遲不敢表揚。\n*   **邊界**：這個比喻只描述他**心軟而不決**的模式；他手中握的是一個帝國的生殺大權，他的猶豫直接造成了師傅之死與外戚坐大，後果遠非組織內部的人事糾紛可比。",
+        "soulEssence": "【說話邏輯】\n他說話的方式，是把責任攬到自己身上，然後請別人說話。災異一來，他就下詔「咎在朕躬」，又抱怨「群司又未肯極言朕過」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）[史載]。他要的是被糾正，而不是去糾正別人[推斷]。即使面對逼死師傅的石顯，他也只是「責問以議不詳」，讓對方「免冠謝」便罷（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）[史載]。他的語言溫雅而有分寸，卻幾乎沒有一句是命令、懲處或拒絕——班固用「號令溫雅」來形容，恰好說明了這種語言的長處與短處[推斷]。\n\n【壓力反應】\n面對壓力，他的第一反應是退讓，其次是悲傷。\n蕭望之第一次被下獄，他「大驚」，卻接受了「宜因決免」的折衷；第二次他明知結果，仍然「可其奏」，事後「卻食，為之涕泣，哀慟左右」（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）[史載]。論甘延壽、陳湯之功時，他心裡讚許，卻因不願違背匡衡、石顯而「議乆不決」（[《漢書·陳湯傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070)）[史載]。他的悲傷是真的，他的猶豫也是真的；兩者都來自他不願意傷害任何一方[推斷]。可是在權力場上，不願意傷害任何一方，往往等於讓最不怕傷害別人的那一方勝出：石顯敢於逼死蕭望之，而元帝不敢處置石顯[推斷]。\n\n【核心驅動】\n他想成為一位以德化民、讓天下和睦的仁君。\n還是太子時，他就勸宣帝「陛下持刑太深，宜用儒生」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）[史載]。即位後，他把「德化」當作施政的核心：減刑、賑災、徵用儒生；對外，他也樂見呼韓邪「鄉慕禮義」，改元「竟寧」，期望「邊垂長無兵革之事」[史載]。他想證明父親那句「亂我家者，太子也」是錯的——用仁政，而不是用刑名[詮釋：此為從其即位後施政方向歸納的動機]。\n\n【慣性盲點】\n他相信人性本善，卻沒有察覺有些人正是利用這份信任。\n石顯一再以程序與好話說服他：第一次是一句他看不懂的「謁者召致廷尉」，第二次是「人命至重……必亡所憂」的保證（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）[史載]。他兩次都選擇相信對方的善意，兩次都付出了代價[推斷]。石顯也曾想把姊姊嫁給甘延壽，被拒後便與丞相、御史一同反對封賞二人（[《漢書·陳湯傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070)）[史載]——宦官的私怨，就這樣披著**矯制不可開**的公義外衣進入朝議[推斷]。\n\n【情感結構】\n他的情感細膩而長久，但很少轉化為保護他人的行動。\n蕭望之死後，他「每歲時遣使者祠祭望之冢，終元帝世」（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）[史載]；這份追念持續了十多年，卻沒有讓他動過石顯[推斷]。他早年體驗過父親的不滿，宣帝曾想以淮陽王取代他，「以少依許氏，俱從微起，故終不背焉」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）[史載]——他的太子之位，本身就是靠父親念舊而保住的。或許正因如此，他特別難以對身邊的人說出**我不再信任你**[詮釋]。父親曾經差點放棄他，最後選擇了念舊；他也用同樣的方式對待每一個讓他失望的人——包括那些不值得被念舊的人[推斷]。他最脆弱的時刻，大概就是推開午膳、為蕭望之落淚、拊手而嘆的那一刻——他終於確定自己的猶豫害死了老師，卻仍然沒有辦法對石顯說重話[詮釋]。\n\n【參照系】\n他理解治國的框架是儒家的「德治」：君主修德、任賢、恤民，天下自然和順[推斷]。\n類比準確之處：在災荒年間，這套框架讓他願意減膳、省苑囿、假公田予貧民，百姓實際受惠（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）[史載]。\n類比失準之處：德治需要君主能分辨誰是賢者、誰是小人，並且敢於斥退小人；他徵用了儒生，卻讓宦官掌握文書與詔令的流程（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）[史載]。他學到了德治的溫柔，卻沒有學到孔子所說舉直錯諸枉的那一半[詮釋：此為本文的分析判斷]。\n\n【內在裂縫】\n他的裂縫在於：他想用仁慈證明父親錯了，卻恰恰用仁慈證明了父親的擔憂。\n宣帝說「亂我家者，太子也」，認為「俗儒不達時宜……何足委任」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）[史載]；元帝即位後全面任用儒生，卻在儒生與宦官的衝突中無法裁決，連師傅都保不住（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）[史載]。班固說「孝宣之業衰焉」[史載]，但也說他「寬弘盡下」——這兩個評語其實指向同一件事：他對每個人都寬，所以沒有人真正受到約束[推斷]。他對宦官的寬容與對儒生的尊重，在他心中並不矛盾——兩者都是「不忍」[推斷]。他是否意識到這一點？他在詔書中反覆說「明不能燭，德不能綏」[史載]，或許他比任何人都清楚自己的不足，只是始終找不到改變的力氣[詮釋]。",
+        "stats": [
+          48,
+          18,
+          66,
+          62,
+          74
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：48\n\n他在位期間最大的軍事成就——甘延壽、陳湯斬郅支單于——是部將「撟發」兵馬的結果，並非出自他的部署（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）；論功時他「議乆不決」（[《漢書·陳湯傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070)），珠崖反叛則以放棄郡縣收場。他能接受成果，卻不主導用兵。評48，高於光緒帝（35）與崇禎帝（45），低於宋仁宗（60）與漢宣帝（88）。\n\n### 武力：18\n\n史料中沒有他親自領兵或臨陣的任何紀錄；他的形象是「柔仁好儒」，擅長的是琴瑟、洞簫與史書（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。對外的軍事行動全由甘延壽、陳湯等邊將執行，他甚至連獎賞都難以決斷（[《漢書·陳湯傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070)）。評18，略低於宋仁宗（20），高於光緒帝（15）與晉惠帝（5）；這一項幾乎只能反映他與戰事之間的距離。\n\n### 智謀：66\n\n他採納賈捐之「宜棄珠崖，救民饑饉」之議，避免在海外消耗（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）；呼韓邪來朝時，以和親鞏固北方。但他兩度被石顯以程序話術欺瞞，連「謁者召致廷尉」都不明其意，明知蕭望之「素剛」仍批准逮捕（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。評66，低於崇禎帝（75）與宋仁宗（84），高於晉惠帝（20），在西漢諸帝中明顯偏低。\n\n### 政治：62\n\n他省刑罰、罷苑囿、假公田予貧民，「省刑罰七十餘事」，在災年屢次減膳賑災（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)）。但班固直言他「牽制文義，優游不斷，孝宣之業衰焉」；宦官石顯專權、師傅蕭望之被逼死（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)），王氏外戚亦從此起家。評62，低於崇禎帝（65）與宋仁宗（90），遠低於漢宣帝（97），仁政的善意抵不過制度的鬆動。\n\n### 魅力：74\n\n班固稱他「寬弘盡下，出於恭儉，號令溫雅，有古之風烈」（[《漢書·元帝紀》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009)），儒生樂於為他所用，他對蕭望之的追念也「終元帝世」不衰（[《漢書·蕭望之傳》](https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078)）。但他的溫和無法保護身邊的忠臣，石顯、弘恭始終凌駕於朝臣之上。評74，高於漢明帝（65），低於宋仁宗（92）與漢宣帝（86）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T11:12:55.563Z",
+        "authorPolicySha256": "0a3c670b3e45e1137bce38a049fb8076ff8f1aef4f6125ffa6f7fde34a33cb41",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "漢書·卷七十八 蕭望之傳　第四十八",
+            "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+            "locator": "本機固定修訂 oldid=1476154 全文比對（textSha256 已驗）：謁者召致廷尉、蕭太傅素剛，安肯就吏、卻食，為之涕泣、皆免冠謝，良久然後已、人命至重，望之所坐，語言薄罪，必亡所憂、朋黨相稱舉…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "漢書·卷九 元帝紀 第九",
+            "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+            "locator": "本機固定修訂 oldid=2315084 全文比對（textSha256 已驗）：微時生民間、所用多文法吏，以刑名繩下、漢家自有制度，本以霸王道雜之、陛下持刑太深，宜用儒生、亂我家者，太子也、徵用儒生，委之以政，貢、薛、韋、匡迭為宰相…",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          },
+          {
+            "title": "黃啟書論文，《臺大中文學報》第52期（2016）",
+            "url": "https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf",
+            "locator": "WebSearch 結果摘要：以宣、元、成三朝為核心，元帝以後西漢經學各派災異說幾已完備；宣帝王霸雜用與元帝純用儒術對照",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "“Han Yuandi (reigned 48 to 33 BCE) and his Advisors,” Early China (Cambridge)",
+            "url": "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+            "locator": "WebSearch 結果摘要：元帝本人政治作為不多，宗廟、經濟與官制議題多由公卿提出",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "漢書·卷七十 傅常鄭甘陳段傳 第四十",
+            "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070",
+            "locator": "本機固定修訂 oldid=1471989 全文比對（textSha256 已驗）：擅興師矯制，幸得不誅、內嘉延壽、湯功，而重違衡、顯之議，議乆不決",
+            "type": "primary_text",
+            "checked": true,
+            "access": "fixed_revision_archive_fulltext"
+          }
+        ],
+        "requestSha256": "31f4323f4c5c0d36b04c08affc69a7f0f99209da429bc1ce5934cd3e0a35698d",
+        "sourcePackageSha256": "9644e32153580fecff36beab7f9b8017ada731c2ed927133944d696d317dc6e4",
+        "preservedDeepSha256": "7b04373ff69ff607056b475c6f0ed99df7dc5d12d24facc26692505b947e9f2e",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "6849ebaad5447d9841ec8ca19be4ae4e5ceadb271db338b83aa4e6926b3e63a3",
+            "requestSha256": "31f4323f4c5c0d36b04c08affc69a7f0f99209da429bc1ce5934cd3e0a35698d",
+            "inputSha256": "71ca17eb8f23c8af164982eed86a02e908b2d8b921d81c60294d3c9d03b75e2c",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "e4998816b701bb32e39aad63ddc286dc90068d8624c61743e2e8571267ea4636",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "9644e32153580fecff36beab7f9b8017ada731c2ed927133944d696d317dc6e4",
+            "preservedDeepSha256": "7b04373ff69ff607056b475c6f0ed99df7dc5d12d24facc26692505b947e9f2e",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:12:55.563Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/11.analysisStats.raw.md",
+            "rawResponseSha256": "b3fa76d22e6e438e95b3a5d473967773f62a5a787bcf5850f7d5b70d784f05cf",
+            "responseFile": "analysis-batch-51-100/drafts/11.analysisStats.response.md",
+            "responseSha256": "b3fa76d22e6e438e95b3a5d473967773f62a5a787bcf5850f7d5b70d784f05cf",
+            "fieldsHashes": {
+              "analysis": "3903185c24cc0faf06d782a2fe0011d222fe330aae0e8e4a3b00a5f2f4389fa4",
+              "stats": "534e486832cc06ca3323d5a8492bf3b6811f64cc22b45309da5e5464e98f3da0",
+              "statsAnalysis": "9ba6e164831ec819737bc28d978d029db3dd2b5c29042af441a7644e2bfdd1e1"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/11.analysisStats.capture.json",
+            "captureSha256": "b81dd8fa6eb747fce8670855841c76d6a5ce76591a446c786acdf9151d7dca89",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/11.analysisStats.json",
+            "sourceReviewSha256": "c35ac4586d79802a3d0a3ea5c5106b49729c96affcf4511cb077d4b179b6b861",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/11.combined.search-log.json",
+              "sha256": "bfb4350fb391901b3227b8e8e123e1328fb6f455473ef9c26bb712aafa3c9db9",
+              "webSearchCount": 2,
+              "archiveCheckCount": 33
+            },
+            "checkedSources": [
+              {
+                "title": "漢書·卷七十八 蕭望之傳　第四十八",
+                "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+                "locator": "本機固定修訂 oldid=1476154 全文比對（textSha256 已驗）：謁者召致廷尉、蕭太傅素剛，安肯就吏、卻食，為之涕泣、皆免冠謝，良久然後已、人命至重，望之所坐，語言薄罪，必亡所憂、朋黨相稱舉…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "漢書·卷九 元帝紀 第九",
+                "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+                "locator": "本機固定修訂 oldid=2315084 全文比對（textSha256 已驗）：微時生民間、所用多文法吏，以刑名繩下、漢家自有制度，本以霸王道雜之、陛下持刑太深，宜用儒生、亂我家者，太子也、徵用儒生，委之以政，貢、薛、韋、匡迭為宰相…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "黃啟書論文，《臺大中文學報》第52期（2016）",
+                "url": "https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf",
+                "locator": "WebSearch 結果摘要：以宣、元、成三朝為核心，元帝以後西漢經學各派災異說幾已完備；宣帝王霸雜用與元帝純用儒術對照",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "“Han Yuandi (reigned 48 to 33 BCE) and his Advisors,” Early China (Cambridge)",
+                "url": "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+                "locator": "WebSearch 結果摘要：元帝本人政治作為不多，宗廟、經濟與官制議題多由公卿提出",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "漢書·卷七十 傅常鄭甘陳段傳 第四十",
+                "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070",
+                "locator": "本機固定修訂 oldid=1471989 全文比對（textSha256 已驗）：擅興師矯制，幸得不誅、內嘉延壽、湯功，而重違衡、顯之議，議乆不決",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "referencePath": "analysis-batch-51-100/stats-reference.v1.json",
+            "referenceSha256": "58ac242b93d5f9959cdfabb7b2dfd2a038535529e0aa3f84565c0be12b92f57e",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "cd84fea5975ba223d3375f5216004e8dfd9b1deb558911aca6c806f1f8546177",
+            "requestSha256": "31f4323f4c5c0d36b04c08affc69a7f0f99209da429bc1ce5934cd3e0a35698d",
+            "inputSha256": "71ca17eb8f23c8af164982eed86a02e908b2d8b921d81c60294d3c9d03b75e2c",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "7737cd9aed38a7e94e897aef716e60e6a87090f037ee756f0ad20f0bce9fcb9c",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "9644e32153580fecff36beab7f9b8017ada731c2ed927133944d696d317dc6e4",
+            "preservedDeepSha256": "7b04373ff69ff607056b475c6f0ed99df7dc5d12d24facc26692505b947e9f2e",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T11:12:55.563Z",
+            "rawResponseFile": "analysis-batch-51-100/drafts/11.soulEssence.raw.md",
+            "rawResponseSha256": "5a2ce21fb38598ecb683e80e87e82d22fa98e21ca5571f1b73a7a60e9d241f89",
+            "responseFile": "analysis-batch-51-100/drafts/11.soulEssence.response.md",
+            "responseSha256": "5a2ce21fb38598ecb683e80e87e82d22fa98e21ca5571f1b73a7a60e9d241f89",
+            "fieldsHashes": {
+              "soulEssence": "1fe5a00fd93a91295e1a074cb63f9acd646d24c59e984b7c1510246a4525b3c8"
+            },
+            "captureFile": "analysis-batch-51-100/drafts/11.soulEssence.capture.json",
+            "captureSha256": "28840c4990567fbd0e94e0a1d951b21e8e77f1098d24ea480139e58685ed34c6",
+            "sourceReviewFile": "analysis-batch-51-100/reviews/11.soulEssence.json",
+            "sourceReviewSha256": "8f51722b6c5fbd6b3c2f16a0690122e192849084e6957f1357e066d218b1527f",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-51-100/drafts/11.combined.search-log.json",
+              "sha256": "bfb4350fb391901b3227b8e8e123e1328fb6f455473ef9c26bb712aafa3c9db9",
+              "webSearchCount": 2,
+              "archiveCheckCount": 33
+            },
+            "checkedSources": [
+              {
+                "title": "漢書·卷九 元帝紀 第九",
+                "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009",
+                "locator": "本機固定修訂 oldid=2315084 全文比對（textSha256 已驗）：微時生民間、所用多文法吏，以刑名繩下、漢家自有制度，本以霸王道雜之、陛下持刑太深，宜用儒生、亂我家者，太子也、徵用儒生，委之以政，貢、薛、韋、匡迭為宰相…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "漢書·卷七十八 蕭望之傳　第四十八",
+                "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078",
+                "locator": "本機固定修訂 oldid=1476154 全文比對（textSha256 已驗）：謁者召致廷尉、蕭太傅素剛，安肯就吏、卻食，為之涕泣、皆免冠謝，良久然後已、人命至重，望之所坐，語言薄罪，必亡所憂、朋黨相稱舉…",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              },
+              {
+                "title": "漢書·卷七十 傅常鄭甘陳段傳 第四十",
+                "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070",
+                "locator": "本機固定修訂 oldid=1471989 全文比對（textSha256 已驗）：擅興師矯制，幸得不誅、內嘉延壽、湯功，而重違衡、顯之議，議乆不決",
+                "type": "primary_text",
+                "checked": true,
+                "access": "fixed_revision_archive_fulltext"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-51-100/drafts/11.analysis.md",
+            "analysisContextSha256": "cbc2533338ed206747b5e2a99698056e4bbcd7191d375588ff05eb60eae22f7f"
+          }
+        }
+      }
+    }
+  ]
+}

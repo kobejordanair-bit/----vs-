@@ -1,0 +1,249 @@
+{
+ "webSearches": [
+  {
+   "query": "漢元帝 柔仁好儒 優游不斷 石顯 宦官 西漢衰落 研究 論文",
+   "returnedUrls": [
+    "https://zh.wikisource.org/zh-hant/%E6%BC%A2%E6%9B%B8/%E5%8D%B7009",
+    "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%BC%A2%E6%96%87%E7%B4%80_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+    "https://petit.lib.yamaguchi-u.ac.jp/27409",
+    "https://openresearch-repository.anu.edu.au/items/4ab3453c-5a73-4bdb-9d6e-8511ce5eb0d8/full",
+    "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%BC%A2%E5%B9%B4%E7%B4%80_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B723",
+    "https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf",
+    "https://www.taylorfrancis.com/books/9781136573293/chapters/10.4324/9781315018829-9",
+    "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+    "https://mandarin-banana.com/words/101464"
+   ]
+  },
+  {
+   "query": "陳湯 甘延壽 矯詔 郅支單于 前36年 明犯強漢者雖遠必誅 漢元帝 封賞 爭議 研究",
+   "returnedUrls": [
+    "https://en.wikipedia.org/wiki/Chen_Tang_(general)",
+    "https://en.wikipedia.org/wiki/Battle_of_Zhizhi",
+    "https://en.wikipedia.com/wiki/Chen_Tang",
+    "https://library.schlagergroup.com/chapter/9781961844056-book-part-024",
+    "https://en.5000yan.com/history-of-china/western-han/salt-iron-debate.html",
+    "https://zh.wikisource.org/zh/%E6%BC%A2%E6%9B%B8/%E5%8D%B7094%E4%B8%8B",
+    "https://m.inet.qq.com/read/1000803778/81",
+    "https://zh.wikisource.org/zh-hans/%E6%BC%A2%E6%9B%B8/%E5%8D%B7094%E4%B8%8B",
+    "https://e-book.qq.com/read/1000803778/81"
+   ]
+  }
+ ],
+ "archiveChecks": [
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "謁者召致廷尉"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "蕭太傅素剛，安肯就吏"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "卻食，為之涕泣"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "皆免冠謝，良久然後已"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "微時生民間"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "所用多文法吏，以刑名繩下"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "漢家自有制度，本以霸王道雜之"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "陛下持刑太深，宜用儒生"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "亂我家者，太子也"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "徵用儒生，委之以政，貢、薛、韋、匡迭為宰相"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "省刑罰七十餘事"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "人命至重，望之所坐，語言薄罪，必亡所憂"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "中書令弘恭、石顯等譖望之，令自殺"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "衛司馬谷吉使匈奴，不還"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "撟發戊己校尉屯田吏士及西域胡兵攻郅支單于"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷070",
+   "quote": "擅興師矯制，幸得不誅"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷070",
+   "quote": "內嘉延壽、湯功，而重違衡、顯之議，議乆不決"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "宜棄珠崖，救民饑饉"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "朋黨相稱舉"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "欲以專擅權勢"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "牽制文義，優游不斷，孝宣之業衰焉"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "寬弘盡下，出於恭儉，號令溫雅，有古之風烈"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "立皇后王氏"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "善史書。鼓琴瑟，吹洞簫，自度曲，被歌聲，分刌節度，窮極幼眇"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "每歲時遣使者祠祭望之冢，終元帝世"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "群司又未肯極言朕過"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "責問以議不詳"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷078",
+   "quote": "卻食，為之涕泣，哀慟左右"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "邊垂長無兵革之事"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "以少依許氏，俱從微起，故終不背焉"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "俗儒不達時宜"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "孝宣之業衰焉"
+  },
+  {
+   "book": "hanshu",
+   "title": "漢書/卷009",
+   "quote": "明不能燭，德不能綏"
+  }
+ ],
+ "pageReads": [],
+ "extraSources": {
+  "https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf": {
+   "title": "黃啟書論文，《臺大中文學報》第52期（2016）",
+   "locator": "WebSearch 結果摘要：以宣、元、成三朝為核心，元帝以後西漢經學各派災異說幾已完備；宣帝王霸雜用與元帝純用儒術對照",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  },
+  "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C": {
+   "title": "“Han Yuandi (reigned 48 to 33 BCE) and his Advisors,” Early China (Cambridge)",
+   "locator": "WebSearch 結果摘要：元帝本人政治作為不多，宗廟、經濟與官制議題多由公卿提出",
+   "type": "scholarly_primary",
+   "access": "web_search_result_summary"
+  }
+ },
+ "limits": [
+  "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《漢書》卷9、70、78 全文比對（固定修訂文本作「議乆不決」，依原字引用）。",
+  "兩篇研究僅見摘要；元帝紀固定修訂文本部分段落含插入空白，引句已避開。",
+  "事件年份依元帝紀年號段落判讀，未逐一核《資治通鑑》。"
+ ],
+ "checks": {
+  "analysisStats": [
+   [
+    "identity-date",
+    "宣帝太子、二歲宣帝即位、八歲立太子、蕭望之兩度下獄與自殺、建昭三年斬郅支、竟寧元年改元與王檣，皆依漢書卷9、70、78 archive 引句。"
+   ],
+   [
+    "five-dimensions",
+    "統率：郅支為撟發、罷珠崖；武力：無；智謀：棄珠崖與被石顯欺瞞；政治：省刑罰與優游不斷；魅力：寬弘盡下與追念蕭望之。對照光緒帝、崇禎帝、宋仁宗、漢宣帝、晉惠帝、漢明帝。"
+   ],
+   [
+    "causality",
+    "不省召致廷尉→蕭望之下獄；明知素剛仍可其奏→自殺；重違衡顯→議久不決；立王皇后→外戚之起（[推斷]）。"
+   ]
+  ],
+  "soulEssence": [
+   [
+    "distinctive-person",
+    "主論點：看見危險卻說不出不；場景為召致廷尉、蕭太傅素剛、卻食涕泣、議乆不決、亂我家者太子也。"
+   ],
+   [
+    "interpretation",
+    "以仁慈證明父親的擔憂、念舊及於不值得者、不忍，皆標[詮釋]或[推斷]。"
+   ],
+   [
+    "seven-fields",
+    "七欄各以咎在朕躬詔、兩次下獄、勸宣帝用儒、石顯程序話術與私怨、祠祭望之冢與太子之位、德治框架、宣帝之言為事件。"
+   ]
+  ]
+ }
+}

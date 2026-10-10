@@ -1,0 +1,247 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "emperor_漢元帝_279687371",
+  "packetSha256": "bf8da5b98087ef4739a00cfe91d22e0d106855d8830394a98e5d793c2c057dce",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "漢元帝 柔仁好儒 優游不斷 石顯 宦官 西漢衰落 研究 論文",
+      "returnedUrls": [
+        "https://zh.wikisource.org/zh-hant/%E6%BC%A2%E6%9B%B8/%E5%8D%B7009",
+        "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%BC%A2%E6%96%87%E7%B4%80_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+        "https://petit.lib.yamaguchi-u.ac.jp/27409",
+        "https://openresearch-repository.anu.edu.au/items/4ab3453c-5a73-4bdb-9d6e-8511ce5eb0d8/full",
+        "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%BC%A2%E5%B9%B4%E7%B4%80_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B723",
+        "https://scholars.lib.ntu.edu.tw/bitstream/123456789/19618/1/0052_201603_2.pdf",
+        "https://www.taylorfrancis.com/books/9781136573293/chapters/10.4324/9781315018829-9",
+        "https://resolve.cambridge.org/core/journals/early-china/article/abs/han-yuandi-reigned-48-to-33-bce-and-his-advisors/BBF91CCB14F171B7BC298734DCA85A8C",
+        "https://mandarin-banana.com/words/101464"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "陳湯 甘延壽 矯詔 郅支單于 前36年 明犯強漢者雖遠必誅 漢元帝 封賞 爭議 研究",
+      "returnedUrls": [
+        "https://en.wikipedia.org/wiki/Chen_Tang_(general)",
+        "https://en.wikipedia.org/wiki/Battle_of_Zhizhi",
+        "https://en.wikipedia.com/wiki/Chen_Tang",
+        "https://library.schlagergroup.com/chapter/9781961844056-book-part-024",
+        "https://en.5000yan.com/history-of-china/western-han/salt-iron-debate.html",
+        "https://zh.wikisource.org/zh/%E6%BC%A2%E6%9B%B8/%E5%8D%B7094%E4%B8%8B",
+        "https://m.inet.qq.com/read/1000803778/81",
+        "https://zh.wikisource.org/zh-hans/%E6%BC%A2%E6%9B%B8/%E5%8D%B7094%E4%B8%8B",
+        "https://e-book.qq.com/read/1000803778/81"
+      ]
+    }
+  ],
+  "archiveChecks": [
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "謁者召致廷尉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "蕭太傅素剛，安肯就吏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "卻食，為之涕泣",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "皆免冠謝，良久然後已",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "微時生民間",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "所用多文法吏，以刑名繩下",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "漢家自有制度，本以霸王道雜之",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "陛下持刑太深，宜用儒生",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "亂我家者，太子也",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "徵用儒生，委之以政，貢、薛、韋、匡迭為宰相",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "省刑罰七十餘事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "人命至重，望之所坐，語言薄罪，必亡所憂",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "中書令弘恭、石顯等譖望之，令自殺",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "衛司馬谷吉使匈奴，不還",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "撟發戊己校尉屯田吏士及西域胡兵攻郅支單于",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷070",
+      "quote": "擅興師矯制，幸得不誅",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷070",
+      "quote": "內嘉延壽、湯功，而重違衡、顯之議，議乆不決",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7070"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "宜棄珠崖，救民饑饉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "朋黨相稱舉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "欲以專擅權勢",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "牽制文義，優游不斷，孝宣之業衰焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "寬弘盡下，出於恭儉，號令溫雅，有古之風烈",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "立皇后王氏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "善史書。鼓琴瑟，吹洞簫，自度曲，被歌聲，分刌節度，窮極幼眇",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "每歲時遣使者祠祭望之冢，終元帝世",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "群司又未肯極言朕過",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "責問以議不詳",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷078",
+      "quote": "卻食，為之涕泣，哀慟左右",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7078"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "邊垂長無兵革之事",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "以少依許氏，俱從微起，故終不背焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "俗儒不達時宜",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "孝宣之業衰焉",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    },
+    {
+      "book": "hanshu",
+      "title": "漢書/卷009",
+      "quote": "明不能燭，德不能綏",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7009"
+    }
+  ],
+  "pageReads": [],
+  "limits": [
+    "網頁全文無法開啟（WebFetch DNS ENOTFOUND、代理 403），本稿無 web_page_read；史實引句皆對 repo 內固定修訂《漢書》卷9、70、78 全文比對（固定修訂文本作「議乆不決」，依原字引用）。",
+    "兩篇研究僅見摘要；元帝紀固定修訂文本部分段落含插入空白，引句已避開。",
+    "事件年份依元帝紀年號段落判讀，未逐一核《資治通鑑》。"
+  ]
+}
