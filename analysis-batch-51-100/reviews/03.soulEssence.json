@@ -1,0 +1,77 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "emperor_明世宗_281946584",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T10:43:59.057Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "f1ad1f6fd8321b873a0f473268fe4a5caec3bf67640740550389ad548742c49d",
+  "rawResponseSha256": "f1ad1f6fd8321b873a0f473268fe4a5caec3bf67640740550389ad548742c49d",
+  "sourcePackageSha256": "e3ebd3078a0bb6668db8283d51a3bec40402324944a49bc3b1ab56e92c085fc4",
+  "searchLogSha256": "32495cf294a045022bdc3b9e83342683942c15c263ed4c2db2ef3a2cceac5de5",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B717",
+      "title": "明史·本紀第十七　世宗一",
+      "locator": "本機固定修訂 oldid=2594632 全文比對（textSha256 已驗）：一百三十四人、杖馬理等於廷，死者十有六人、帝年十有三，以世子理國事、革錦衣衞冒濫軍校三萬餘人、凡十四萬八千餘人、繼統不繼嗣，請尊崇所生…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B718",
+      "title": "明史·本紀第十八　世宗二",
+      "locator": "本機固定修訂 oldid=2594633 全文比對（textSha256 已驗）：世宗御極之初，力除一切弊政，天下翕然稱治、百餘年富庶治平之業，因以漸替、要亦中材之主也矣、殺曾銑，逮夏言、嚴世蕃伏誅、大舉入寇，攻古北口，薊鎮兵潰…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    },
+    {
+      "url": "https://ming.cnhis.ncnu.edu.tw/wp-content/uploads/2015/10/ming8_YuSJ.pdf",
+      "title": "尤淑君〈公與私：明代大禮議的名分意義〉，《明代研究》第8期（2005）",
+      "locator": "WebSearch 結果摘要：從政治文化角度討論「統嗣孰重」與皇帝身分、皇權公共性問題",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://ah.lib.nccu.edu.tw/handle/140.119/126074",
+      "title": "尤淑君〈從楊廷和到嚴嵩：嘉靖朝內閣首輔的權力交替〉，《政大史粹》第10期（2006），政大學術集成",
+      "locator": "WebSearch 結果摘要：首輔為皇權伸入官僚體系之觸角，皇帝得不直接面對官員；首輔權力擴大引發閣臣爭位",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226",
+      "title": "明史·卷二百二十六 列傳第一百十四",
+      "locator": "本機固定修訂 oldid=2594854 全文比對（textSha256 已驗）：大怒，抵之地、復取讀之，日再三，為感動太息、此人可方比干，第朕非紂耳、海瑞言俱是、使朕能出禦便殿，豈受此人詬詈耶、逮瑞下詔獄",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：以名分定義權治國，政務外包且找人頂罪；場景為伏闕廷杖、殺丁汝夔、停封奏、海瑞疏。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "名分即所有權證明、長生為同一驅動、以朝堂之尺量邊疆，皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以不允與下璁奏、伏闕與庚戌之變、升祔太廟、曾銑夏言、宮人謀逆、拒貢、海瑞疏為事件。"
+    }
+  ],
+  "materialIssues": []
+}
