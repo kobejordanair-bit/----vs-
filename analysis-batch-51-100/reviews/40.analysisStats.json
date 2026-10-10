@@ -1,0 +1,52 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_海瑞_2004063393",
+  "task": "analysisStats",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:28:20.737Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "f55e229b4244e83c104a135b2de6bfbb152bec00eca63ab737ed8cc299b0954d",
+  "rawResponseSha256": "f55e229b4244e83c104a135b2de6bfbb152bec00eca63ab737ed8cc299b0954d",
+  "sourcePackageSha256": "e4d5a419e657b568e1bf90b8f4a9f9e273a5c2b200850c0c055fed520f3ca08d",
+  "searchLogSha256": "08b5d346beb8a12099cd84d0c4926e87a4b7cd05d8fbab1f5e84c4681f4f22b3",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226",
+      "title": "明史·卷二百二十六 列傳第一百十四",
+      "locator": "本機固定修訂 oldid=2594854 全文比對（textSha256 已驗）：二十餘年不視朝，法紀弛矣、蓋天下之人不直陛下久矣、市一棺，訣妻子，待罪於朝、恣飲啖，不顧、即大慟，盡嘔出所飲食，隕絕於地，終夜哭不絕聲、即伏闕上《平黎策》，欲開道置縣，以靖鄉土…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "identity-date",
+      "passed": true,
+      "detail": "瓊山人舉人、平黎策、南平教諭長揖、淳安知縣與胡宗憲子、鄢懋卿、謫興國、戶部主事、嘉靖四十五年二月上疏、下獄論死、世宗崩獲釋、隆慶三年巡撫應天半歲、謝病歸、萬曆十三年復起、十五年卒官，皆依明史卷226 archive 引句。"
+    },
+    {
+      "id": "five-dimensions",
+      "passed": true,
+      "detail": "統率：應天屬吏憚威、浚吳淞白茆；武力：純文臣、市棺死諫；智謀：必非胡公子、天下者陛下之家；政治：清丈一條鞭與被劾不達政體；魅力：號泣載道、百里不絕。對照范仲淹、子產、秦檜。"
+    },
+    {
+      "id": "causality",
+      "passed": true,
+      "detail": "世宗齋醮無人敢言→瑞市棺上疏→帝怒而再三讀之→下獄論死→帝崩→瑞大慟；巡撫應天→奪還民田→奸民告訐、故家被誣→士大夫怨→戴鳳翔劾→改任→謝病歸。"
+    }
+  ],
+  "materialIssues": [],
+  "stats": [
+    55,
+    15,
+    64,
+    52,
+    92
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "minister_海瑞_2004063393",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T12:28:20.738Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "4946598d2c0ba01d5ae7648c90119c73c7728e4ddbcb48baf5faa3d01415fc58",
+  "rawResponseSha256": "4946598d2c0ba01d5ae7648c90119c73c7728e4ddbcb48baf5faa3d01415fc58",
+  "sourcePackageSha256": "e4d5a419e657b568e1bf90b8f4a9f9e273a5c2b200850c0c055fed520f3ca08d",
+  "searchLogSha256": "08b5d346beb8a12099cd84d0c4926e87a4b7cd05d8fbab1f5e84c4681f4f22b3",
+  "checkedSources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226",
+      "title": "明史·卷二百二十六 列傳第一百十四",
+      "locator": "本機固定修訂 oldid=2594854 全文比對（textSha256 已驗）：二十餘年不視朝，法紀弛矣、蓋天下之人不直陛下久矣、市一棺，訣妻子，待罪於朝、恣飲啖，不顧、即大慟，盡嘔出所飲食，隕絕於地，終夜哭不絕聲、即伏闕上《平黎策》，欲開道置縣，以靖鄉土…",
+      "type": "primary_text",
+      "checked": true,
+      "access": "fixed_revision_archive_fulltext"
+    }
+  ],
+  "checks": [
+    {
+      "id": "distinctive-person",
+      "passed": true,
+      "detail": "主論點：罵皇帝最狠亦哭皇帝最傷，剛是對秩序的絕對忠誠，用於己無可挑剔、用於治理常傷無辜；場景為市一棺、大慟嘔出飲食、號泣載道、故家被誣。"
+    },
+    {
+      "id": "interpretation",
+      "passed": true,
+      "detail": "以倫理關係框定責任、原則即結果之盲點、兩面鋒利之刀等皆標[詮釋]。"
+    },
+    {
+      "id": "seven-fields",
+      "passed": true,
+      "detail": "七欄各以陛下之家與必非胡公子、市棺與屍諫、角色歸位與民則何辜、告訐與怨興、肉二斤與終夜哭、太祖法與孫奭天書、治安疏與百里不絕為事件。"
+    }
+  ],
+  "materialIssues": []
+}
