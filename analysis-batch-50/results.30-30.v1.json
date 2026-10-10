@@ -1,0 +1,231 @@
+{
+  "format": "dynasty-analysis-batch50-results",
+  "schemaVersion": 1,
+  "manifestSha256": "2a3b89a666da387061414e92b372b85f0c6562e19f750ff28b9d57e2e0a32700",
+  "records": [
+    {
+      "id": "general_白崇禧_908987622",
+      "inputSha256": "82ee000a9a0eb069d90a4f88b932f7e4d917b41eca96596967e0d2c85b115b61",
+      "promptSha256": "3ddae7b18fe87e8767765ac478789ad4b1d31ec1897bca7e2cc2921b27a9a529",
+      "fields": {
+        "analysis": "白崇禧的綽號「小諸葛」很能說明他在民國軍界的形象：足智多謀、料事如神。但這個綽號也藏著一個陷阱——諸葛亮是一個有完整授權的丞相，而白崇禧一生幾乎從來沒有過完整的授權。我要提出的看法是：**白崇禧最大的特點不是「智」，而是他始終處於「第二號人物」的位置**——在桂系，他是李宗仁的搭檔；在中央，他是蔣中正既倚重又猜忌的參謀長。他擅長提出最好的方案，卻很少能決定方案是否被執行。他的成就與悲劇，都來自這個位置。\n\n---\n\n### **1. 【歷史局勢與定位】**\n\n白崇禧出身廣西，與李宗仁、黃紹竑共同建立了廣西的軍政集團「新桂系」。從一九二〇年代中期到一九四九年，他與李宗仁長期以廣西為根據地，同時參與全國政治與軍事。\n\n他所面對的局有三個層次：\n\n1.  **地方與中央的拉扯**：桂系既是國民政府的一部分，又保有自己的軍隊與地盤，與蔣中正的中央長期處於合作與對抗之間。\n2.  **戰爭的連續性**：從北伐、中原大戰、抗日戰爭到國共內戰，他經歷了民國幾乎所有重大戰爭。\n3.  **派系政治的制約**：民國軍隊不是統一的國家軍隊，而是由各派系拼湊而成，任何戰略都必須考慮派系利益與互信。\n\n他在歷史上的位置是**民國軍界最具代表性的參謀型將領**。一九四六年國防部成立，他是第一任部長，任期從民國三十五年五月三十一日至三十七年五月三十一日（[中華民國國防部〈歷任部長〉](https://www.mnd.gov.tw/About/FormerMinisters)）。中央研究院近代史研究所也正式出版了他的訪問紀錄上下冊（[中研院近史所〈白崇禧先生訪問紀錄〉出版入口](https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0)）。\n\n### **2. 【深度功過剖析】**\n\n**【反常識論點】：白崇禧的悲劇不是能力不足，而是他永遠只能「建議」，不能「決定」。**\n\n他早年在北伐中嶄露頭角。一九二七年夏的龍潭戰役，國民革命軍在南京以東擊退孫傳芳的渡江大軍，白崇禧是主要指揮者之一。他在回憶中把龍潭之役視為北伐最重要的一仗，這個評價來自他本人的訪問紀錄，應與其他當事人的記載相互對照。\n\n這種「對照」並非多餘。中研院近史所《近代史研究所集刊》二〇二三年的一篇研究，以熊式輝的日記、自傳與回憶錄為例，比對相互矛盾的當事人回憶與原始函電；其中討論北伐時期的賴世璜案時，就把《白崇禧先生訪問紀錄》的說法與國史館所藏原函並列檢驗（[〈個人記事與時代印記：以熊式輝的日記、自傳及回憶錄為例〉](https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf)）。這提醒我們：白崇禧的許多「神機妙算」，有一部分來自他自己的口述，需要用其他材料檢驗。\n\n抗戰時期他擔任副參謀總長，是國民政府軍事決策的核心參謀之一。一九三八年春的台兒莊戰役，是第五戰區司令長官李宗仁指揮的勝仗，白崇禧以副參謀總長身分到徐州前線協助策劃。這一仗最能說明桂系搭檔的分工：李宗仁居於指揮名位，白崇禧負責出謀與協調；勝利的名聲屬於戰區與司令長官，而參謀的貢獻則散落在雙方的回憶裡。這也意味著，我們在評價他的戰功時，不能把「參與策劃」直接等同於「決定勝負」，而必須分清他實際握有多少指揮權。戰後他出任首任國防部長，但正是在這個位置上，他的「第二號」處境最為明顯：國防部長名義上統籌全國軍事，但實際的作戰指揮權仍掌握在蔣中正與參謀總長手中。\n\n**【一九四七年：臺灣宣慰的兩面】**\n\n一九四七年二二八事件後，白崇禧奉命來臺宣慰，從三月十七日抵達臺北到四月二日返回南京，前後十六天。據白先勇與廖彥博合著《止痛療傷：白崇禧將軍與二二八》等著作所述，他抵臺後下令「禁止濫殺，公開審判」，使許多原已判死刑的人獲救；但這一說法出自其家屬主導的研究，應與其他史料對照。但學界對他的評價並不一致：中研院許雪姬的研究探討了陳儀對白崇禧宣慰工作的掣肘（[中研院機構典藏，許雪姬相關研究](https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en)），也有論者指出宣慰期間各地的鎮壓與濫殺並未完全停止。\n\n這段經歷再次呈現了他的處境：他有權「宣慰」，卻沒有權完全控制地方軍政；他能提出制止濫殺的命令，卻無法保證每一個地方都執行。這不是推卸責任，而是理解他歷史角色的關鍵：他的功過都必須放在「受制於人」的框架裡衡量。換言之，宣慰期間他下達了什麼命令、這些命令在各地實際被執行到什麼程度、以及未被執行的部分應由誰負責，是三個必須分開回答的問題；把三者混為一談，無論是全盤肯定還是全盤否定，都會失真。\n\n**【一九四九年：協同失靈與敗退】**\n\n國共內戰末期，白崇禧指揮華中部隊。國史館一篇關於滯越軍民接運的研究指出，一九四九年湖南戰局中，白崇禧華中系統與湖南部隊之間出現協同失靈，最終導致西南撤退；研究引用了一九五〇年二月白崇禧的報告（總統府檔案號42828）等檔案（[國史館〈滯越軍民之接運來臺（1949–1953）〉](https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf)）。\n\n這場敗局的原因非常複雜：國軍整體戰略的崩潰、中央與桂系之間長期的不信任、湖南地方將領的動搖，都屬於**時代與結構的局限**；但作為華中最高指揮官，他在部署與協同上的失誤，也是他必須承擔的**個人責任**。\n\n### **3. 【人性與性格側寫】**\n\n*   **自信的參謀**：「小諸葛」的綽號既是讚美，也反映他對自己判斷的高度自信。\n*   **派系忠誠**：他與李宗仁長期合作，在桂系內部始終扮演軍事主導者的角色，這種忠誠也讓蔣中正對他始終保持戒心。\n*   **重程序的一面**：無論是龍潭戰役後的整頓、還是二二八宣慰時「改為公開審判」的命令，他處理亂局的習慣都是先把秩序與程序立起來，而不是單純靠威嚇。這與他參謀出身、重視體系運作的性格一致，但也讓他在面對不受程序約束的地方勢力時顯得力不從心。\n*   **晚年的沉寂**：一九四九年後他來到臺灣，一九六六年在臺北去世。他在臺灣沒有再擔任實際軍職，晚年留下的主要是接受中研院近史所訪問的口述紀錄。\n*   **回憶的自我塑造**：他的訪問紀錄是研究他的重要材料，但也是他晚年回顧一生時的自我陳述，研究者需要與其他史料互證（[〈個人記事與時代印記〉](https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf)）。\n\n### **4. 【如果生在現代】**\n\n白崇禧最適合的現代角色是：**一家大型集團的策略長兼營運長，同時也是某個強勢事業群的實際掌門人。**\n\n*   **頂尖的策略規劃者**：他能在董事會上提出最完整、最有說服力的競爭策略，同業都稱他為「軍師」。\n*   **永遠的第二號人物**：他的事業群與總部之間既合作又競爭，董事長倚重他的能力，卻始終不放心讓他掌握全部權力。\n*   **危機處理的兩面**：公司爆發重大醜聞時，他被派去處理，下令停止報復性的開除與追究，但當地主管並未完全配合，事後外界對他的評價褒貶不一。\n*   **晚年的口述史**：退休後他接受企業史研究機構的長篇訪談，留下大量第一手回憶，但研究者發現其中有些說法與其他當事人的記錄並不一致。",
+        "soulEssence": "【說話邏輯】\n他最常用的說服方式是「以完整的戰略分析說服上級，但最終決定權在別人手中」。他長期擔任參謀職務，抗戰時任副參謀總長，戰後任首任國防部長（[中華民國國防部〈歷任部長〉](https://www.mnd.gov.tw/About/FormerMinisters)）[史載]，他的話語大多以建議與報告的形式出現。一九五〇年二月他向總統府提交的報告，被國史館研究引用為分析湖南戰局的檔案（[國史館〈滯越軍民之接運來臺〉](https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf)）[史載]。他話語中的潛台詞是：「我已經把最好的方案說清楚了，執行與否不在我。」他晚年接受中研院訪問時，對自己的判斷充滿自信，但這些回憶需要與他人材料互證（[〈個人記事與時代印記〉](https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf)）[推斷：依據學界對其訪問紀錄的檢驗方法]。\n\n【壓力反應】\n面對危機，他的第一反應是「親赴現場，以命令與制度穩定局面」。\n一九四七年二二八事件後，他奉命來臺宣慰十六天，下令禁止濫殺、改為公開審判[史載：據白先勇、廖彥博《止痛療傷》，屬家屬主導研究]，但其成效受陳儀掣肘（[許雪姬相關研究](https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en)）[史載]。一九四九年湖南戰局惡化時，他指揮華中部隊並在戰後以報告說明戰局（[國史館〈滯越軍民之接運來臺〉](https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf)）[史載]。兩次危機相隔兩年，共同結構是：他傾向以明確的命令與程序回應危機，但兩次都受制於他人——前者受陳儀掣肘，後者受湖南部隊動搖[推斷]。\n\n【核心驅動】\n他真正追求的是「以專業判斷影響大局」。\n作為「小諸葛」，他一生都在試圖以戰略分析影響國家的軍事決策；首任國防部長的任命，是他在制度上最接近這個目標的時刻（[中華民國國防部〈歷任部長〉](https://www.mnd.gov.tw/About/FormerMinisters)）[史載]。晚年他願意接受中研院長達上下兩冊的訪問（[中研院近史所出版入口](https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0)）[史載]，或許也是希望讓自己的判斷在歷史中被記錄下來[詮釋：此為從其行為歸納的動機，訪問紀錄全書未經本文核讀]。\n\n【慣性盲點】\n他最大的優點「戰略自信」，讓他在派系政治中高估了自己方案的說服力。\n抗戰與戰後時期，他與蔣中正之間長期互不信任，國防部長的職權受到實際指揮系統的限制[推斷：依據民國軍事體制的通行史實]。一九四九年湖南戰局中，華中系統與湖南部隊協同失靈（[國史館〈滯越軍民之接運來臺〉](https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf)）[史載]。兩者的共同結構是：他相信正確的戰略會被採納、正確的命令會被執行，卻低估了派系猜疑與地方利益對執行的破壞[推斷]。\n\n【情感結構】\n他的情感內斂，最深的連結是對桂系同僚與家族的忠誠。\n他與李宗仁長期合作，在桂系內部始終扮演軍事主導者的角色[推斷：依據新桂系的通行史實]。他的兒子白先勇後來投入大量心力研究父親與二二八的關係，與廖彥博合著《止痛療傷》[史載]；而學界對宣慰成效另有獨立研究（[許雪姬相關研究](https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en)）[史載]，顯示家人對他歷史評價的重視。這份重視也反過來說明，他生前並未能親自為自己在二二八中的角色留下足以服眾的完整交代，相關評價至今仍在史料與家族敘事之間拉扯。他最脆弱的時刻，可能是一九四九年後在臺灣的晚年，失去軍職與實權，直到一九六六年去世[詮釋：其晚年心境的可靠第一手材料有限]。\n\n【參照系】\n他習慣以「軍事參謀的全局規劃」作為理解一切問題的參照系。這源自他長期擔任參謀職務的經歷（[中華民國國防部〈歷任部長〉](https://www.mnd.gov.tw/About/FormerMinisters)）[史載]。\n類比準確之處：在北伐與抗戰中，他以全局視野規劃戰略，贏得「小諸葛」的聲譽[推斷]。\n類比失準之處：在二二八宣慰這類高度政治化的事件中，參謀式的命令與程序無法完全約束地方軍政，他的宣慰成效受到陳儀掣肘（[許雪姬相關研究](https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en)）[詮釋：二二八期間的責任歸屬至今仍有爭議，需以國史館檔案進一步核對]。\n\n【內在裂縫】\n最根本的衝突存在於【核心驅動】（以專業判斷影響大局）與【慣性盲點】（低估派系政治對執行的破壞）之間。\n這個衝突的結構是：他的能力讓他成為最好的參謀，但他的派系身分讓他永遠無法成為最高決策者；他越是提出完整的方案，就越是暴露自己無法掌控執行的處境。\n第一次體現在一九四七年的臺灣：他下令禁止濫殺，卻無法完全約束地方的鎮壓，宣慰受陳儀掣肘（[許雪姬相關研究](https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en)）[史載：據學界研究，評價仍有分歧]。\n第二次體現在一九四九年的湖南：他指揮的華中系統與湖南部隊協同失靈，最終敗退（[國史館〈滯越軍民之接運來臺〉](https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf)）[史載]。\n兩次事件的共同點在於：命令本身並無問題，問題出在命令與執行之間那段他無法掌控的距離；而這段距離，恰恰是派系政治與地方利益最活躍的地方[推斷]。\n他是否意識到這個衝突？從他晚年在訪問紀錄中對一生的詳細回顧來看，他顯然在反思自己的處境，但這些反思本身也帶有自我辯護的色彩[詮釋]。",
+        "stats": [
+          93,
+          60,
+          96,
+          75,
+          82
+        ],
+        "statsAnalysis": "### **5. 【五維能力數值】**\n\n### 統率：93\n\n他是北伐龍潭戰役的主要指揮者之一，抗戰時任副參謀總長，戰後出任首任國防部長（[中華民國國防部〈歷任部長〉](https://www.mnd.gov.tw/About/FormerMinisters)），長期指揮桂系與華中部隊。扣分在於一九四九年湖南戰局中華中系統與湖南部隊協同失靈，最終西南撤退（[國史館〈滯越軍民之接運來臺〉](https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf)）。評93，與伍子胥（93）持平，低於粟裕（98）與彭德懷（97）。\n\n### 武力：60\n\n他是職業軍人出身，早年長期在前線作戰，北伐時期曾親赴第一線指揮。但作為高級將領，他的核心能力在於參謀規劃與戰役指揮，關於他個人武勇的具體事蹟多出自回憶或傳聞，缺乏可核實的同期記錄，因此本項不宜以「小諸葛」的智名外推其個人武勇。評60，與司馬懿（60）持平，高於粟裕（55），低於彭德懷（65）與朱德（70）。\n\n### 智謀：96\n\n「小諸葛」的綽號反映了同時代人對其謀略的普遍評價；他長期擔任國民政府軍事決策的核心參謀，並主導桂系的軍事戰略。但他的許多戰略判斷來自本人晚年口述，學界已有研究提醒其回憶需與原始函電互證，故本項以同時代評價與職務為主要依據（[〈個人記事與時代印記〉](https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf)）。評96，與李光弼（96）持平，低於粟裕（97）與林彪（97）。\n\n### 政治：75\n\n他是桂系的核心人物之一，能在地方與中央之間周旋數十年，並在二二八事件後奉命來臺宣慰、據其家屬所著《止痛療傷》，曾下令禁止濫殺。但他與蔣中正之間長期互不信任，宣慰工作也受陳儀掣肘（[許雪姬相關研究](https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en)），一九四九年後在臺灣政治上完全邊緣化。評75，與伍子胥（75）持平，高於彭德懷（40），低於朱德（88）。\n\n### 魅力：82\n\n他在桂系內部享有極高威望，與李宗仁的長期合作展現出可靠的同盟關係；國防部將他列為首任部長（[中華民國國防部〈歷任部長〉](https://www.mnd.gov.tw/About/FormerMinisters)），顯示他在國軍中的地位。但派系色彩使他難以獲得中央系統的全面認同，一九四九年湖南部隊的動搖也說明其號召力有限。評82，與孫武（82）持平，低於朱德（98）與彭德懷（94）。"
+      },
+      "provenance": {
+        "provider": "Claude Code (Anthropic)",
+        "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+        "generatedAt": "2026-10-10T06:28:04.047Z",
+        "authorPolicySha256": "e935180e6406dabe3c4e806f5b135caaeda839f3fecb0b14f7a070226d8746ed",
+        "webSearchPerformed": true,
+        "checkedSources": [
+          {
+            "title": "中華民國國防部〈歷任部長〉",
+            "url": "https://www.mnd.gov.tw/About/FormerMinisters",
+            "locator": "來源包已記錄先前核讀：第一任部長白崇禧，任期35.5.31–37.5.31；本 session 未重新開啟",
+            "type": "official_institution",
+            "checked": true,
+            "access": "source_package_prior_review"
+          },
+          {
+            "title": "中央研究院近代史研究所〈白崇禧先生訪問紀錄〉出版入口",
+            "url": "https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0",
+            "locator": "來源包已記錄先前核讀：僅出版書目資訊（上下冊），未核讀全書內容；本 session 未重新開啟",
+            "type": "official_institution",
+            "checked": true,
+            "access": "source_package_prior_review"
+          },
+          {
+            "title": "〈個人記事與時代印記：以熊式輝的日記、自傳及回憶錄為例〉（《近代史研究所集刊》第121期）",
+            "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf",
+            "locator": "來源包已記錄先前核讀：頁132–133，賴世璜案將《白崇禧先生訪問紀錄》與國史館原函並列檢驗；本 session 未重新開啟",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "source_package_prior_review"
+          },
+          {
+            "title": "中央研究院機構典藏：許雪姬關於白崇禧來臺宣慰之研究",
+            "url": "https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en",
+            "locator": "WebSearch 結果摘要：探討陳儀對白崇禧宣慰工作的掣肘",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "web_search_result_summary"
+          },
+          {
+            "title": "國史館〈滯越軍民之接運來臺（1949–1953）〉",
+            "url": "https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf",
+            "locator": "來源包已記錄先前核讀：頁148–151，1949年湖南戰局華中系統與湖南部隊協同失靈，引白崇禧1950年2月報告（檔號42828、34457）；本 session 未重新開啟",
+            "type": "scholarly_primary",
+            "checked": true,
+            "access": "source_package_prior_review"
+          }
+        ],
+        "requestSha256": "4651b072150a3ee2890749fc22844e3e4245b7be9565e5c8893e40b9bbe6f199",
+        "sourcePackageSha256": "877c46fb5051d068ca25cc7b679dd0d5bc6f77f31ea4a1dfcbda01477880a4e0",
+        "preservedDeepSha256": "604c4a4a67272a29d7f39ea7b500306075d3a389f04c698eeac9c1cebc6da916",
+        "perTask": {
+          "analysisStats": {
+            "task": "analysisStats",
+            "promptSha256": "e8fb8b9bc88d2559a432292577dfbae211f5ac0c1dab8ea3989913742b4fdd77",
+            "requestSha256": "4651b072150a3ee2890749fc22844e3e4245b7be9565e5c8893e40b9bbe6f199",
+            "inputSha256": "82ee000a9a0eb069d90a4f88b932f7e4d917b41eca96596967e0d2c85b115b61",
+            "originalTemplateSha256": "58165ae7d8e13bffca650263d823b86f85ad9bc93014de71e6edc16408f4dc3c",
+            "renderedOriginalSha256": "c2234a2f7bafb86f63f460562ce5e4df083b4bbb10a3a309191e139d32ae8202",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "877c46fb5051d068ca25cc7b679dd0d5bc6f77f31ea4a1dfcbda01477880a4e0",
+            "preservedDeepSha256": "604c4a4a67272a29d7f39ea7b500306075d3a389f04c698eeac9c1cebc6da916",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:28:04.047Z",
+            "rawResponseFile": "analysis-batch-50/drafts/30.analysisStats.raw.md",
+            "rawResponseSha256": "9d36f6eb3ca4140249c8ee668e1810aee8c2a2f104368e83e57cd16e38c7cd30",
+            "responseFile": "analysis-batch-50/drafts/30.analysisStats.response.md",
+            "responseSha256": "9d36f6eb3ca4140249c8ee668e1810aee8c2a2f104368e83e57cd16e38c7cd30",
+            "fieldsHashes": {
+              "analysis": "9d0db548d9c2c570ae36cee4cf64a96eebf994ca12635957ab018196c33ec0b4",
+              "stats": "c9fa909183c6c697aea45c86a119c18894c0002305edc490c34ea2814d90417f",
+              "statsAnalysis": "3f78697b3c155a9abf9bd0d25ebcea44eafb0d6e60afd083d28863679e7f4f12"
+            },
+            "captureFile": "analysis-batch-50/drafts/30.analysisStats.capture.json",
+            "captureSha256": "8f787215be2cac784802c792afa4cd4e3c41859c72c9ce09d50d75a5e21c8c74",
+            "sourceReviewFile": "analysis-batch-50/reviews/30.analysisStats.json",
+            "sourceReviewSha256": "8008f8792777811d1bbcc2b69d27d909a50e03a6530ffb26c3e00eaf35a784d5",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/30.combined.search-log.json",
+              "sha256": "663298e3edd78a11c90b7c8e72f9a959ea7105cd649cdda8e60105715283c51c",
+              "webSearchCount": 3,
+              "archiveCheckCount": 0
+            },
+            "checkedSources": [
+              {
+                "title": "中華民國國防部〈歷任部長〉",
+                "url": "https://www.mnd.gov.tw/About/FormerMinisters",
+                "locator": "來源包已記錄先前核讀：第一任部長白崇禧，任期35.5.31–37.5.31；本 session 未重新開啟",
+                "type": "official_institution",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "中央研究院近代史研究所〈白崇禧先生訪問紀錄〉出版入口",
+                "url": "https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0",
+                "locator": "來源包已記錄先前核讀：僅出版書目資訊（上下冊），未核讀全書內容；本 session 未重新開啟",
+                "type": "official_institution",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "〈個人記事與時代印記：以熊式輝的日記、自傳及回憶錄為例〉（《近代史研究所集刊》第121期）",
+                "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf",
+                "locator": "來源包已記錄先前核讀：頁132–133，賴世璜案將《白崇禧先生訪問紀錄》與國史館原函並列檢驗；本 session 未重新開啟",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "中央研究院機構典藏：許雪姬關於白崇禧來臺宣慰之研究",
+                "url": "https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en",
+                "locator": "WebSearch 結果摘要：探討陳儀對白崇禧宣慰工作的掣肘",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "國史館〈滯越軍民之接運來臺（1949–1953）〉",
+                "url": "https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf",
+                "locator": "來源包已記錄先前核讀：頁148–151，1949年湖南戰局華中系統與湖南部隊協同失靈，引白崇禧1950年2月報告（檔號42828、34457）；本 session 未重新開啟",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "source_package_prior_review"
+              }
+            ],
+            "referencePath": "analysis-batch-50/stats-reference.v1.json",
+            "referenceSha256": "33f4b1d3299124fbc768f91e983b2cdfafd42af5f6f46f644ae2633a27795135",
+            "appendTemplateSha256": "5539d48b65314fc5a7439c96c95755769db5999671f11ec8906bb0e378d92588"
+          },
+          "soulEssence": {
+            "task": "soulEssence",
+            "promptSha256": "c55e732e8806db54f0917580584587709c872b2f159a05d59cb6880e508319e2",
+            "requestSha256": "4651b072150a3ee2890749fc22844e3e4245b7be9565e5c8893e40b9bbe6f199",
+            "inputSha256": "82ee000a9a0eb069d90a4f88b932f7e4d917b41eca96596967e0d2c85b115b61",
+            "originalTemplateSha256": "0c1c495f2957f370ca114c87a97ad3fed2eb5cf049a3cc473dbcb7810011d604",
+            "renderedOriginalSha256": "ee71bebe7e681252c264a3fb3314140f2221200d1ecba13b65b39a2361a3f17a",
+            "originalPromptVerified": true,
+            "sourcePackageSha256": "877c46fb5051d068ca25cc7b679dd0d5bc6f77f31ea4a1dfcbda01477880a4e0",
+            "preservedDeepSha256": "604c4a4a67272a29d7f39ea7b500306075d3a389f04c698eeac9c1cebc6da916",
+            "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+            "generatedAt": "2026-10-10T06:28:04.047Z",
+            "rawResponseFile": "analysis-batch-50/drafts/30.soulEssence.raw.md",
+            "rawResponseSha256": "c3e12fc7e8a0497e07519ed2e65fb85516be296f29ec843b2000d5e4b22c09a1",
+            "responseFile": "analysis-batch-50/drafts/30.soulEssence.response.md",
+            "responseSha256": "c3e12fc7e8a0497e07519ed2e65fb85516be296f29ec843b2000d5e4b22c09a1",
+            "fieldsHashes": {
+              "soulEssence": "315c1f8f5c5ffc8a1c4734cee33a1fc9eb75af0f4a19c00176d850954e235b7f"
+            },
+            "captureFile": "analysis-batch-50/drafts/30.soulEssence.capture.json",
+            "captureSha256": "fbb976db28c6ebc6bf347f9ac0aef3ae6a8dafdaadb5887ddf8ea09b3379740b",
+            "sourceReviewFile": "analysis-batch-50/reviews/30.soulEssence.json",
+            "sourceReviewSha256": "ad8e41e0599e0a2242706f24c926c8a79aee6406e5a37f4d7b15986ba04b697b",
+            "webSearchPerformed": true,
+            "searchLog": {
+              "file": "analysis-batch-50/drafts/30.combined.search-log.json",
+              "sha256": "663298e3edd78a11c90b7c8e72f9a959ea7105cd649cdda8e60105715283c51c",
+              "webSearchCount": 3,
+              "archiveCheckCount": 0
+            },
+            "checkedSources": [
+              {
+                "title": "中華民國國防部〈歷任部長〉",
+                "url": "https://www.mnd.gov.tw/About/FormerMinisters",
+                "locator": "來源包已記錄先前核讀：第一任部長白崇禧，任期35.5.31–37.5.31；本 session 未重新開啟",
+                "type": "official_institution",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "國史館〈滯越軍民之接運來臺（1949–1953）〉",
+                "url": "https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf",
+                "locator": "來源包已記錄先前核讀：頁148–151，1949年湖南戰局華中系統與湖南部隊協同失靈，引白崇禧1950年2月報告（檔號42828、34457）；本 session 未重新開啟",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "〈個人記事與時代印記：以熊式輝的日記、自傳及回憶錄為例〉（《近代史研究所集刊》第121期）",
+                "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf",
+                "locator": "來源包已記錄先前核讀：頁132–133，賴世璜案將《白崇禧先生訪問紀錄》與國史館原函並列檢驗；本 session 未重新開啟",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "source_package_prior_review"
+              },
+              {
+                "title": "中央研究院機構典藏：許雪姬關於白崇禧來臺宣慰之研究",
+                "url": "https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en",
+                "locator": "WebSearch 結果摘要：探討陳儀對白崇禧宣慰工作的掣肘",
+                "type": "scholarly_primary",
+                "checked": true,
+                "access": "web_search_result_summary"
+              },
+              {
+                "title": "中央研究院近代史研究所〈白崇禧先生訪問紀錄〉出版入口",
+                "url": "https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0",
+                "locator": "來源包已記錄先前核讀：僅出版書目資訊（上下冊），未核讀全書內容；本 session 未重新開啟",
+                "type": "official_institution",
+                "checked": true,
+                "access": "source_package_prior_review"
+              }
+            ],
+            "analysisContextPath": "analysis-batch-50/drafts/30.analysis.md",
+            "analysisContextSha256": "228c04883361882d227552edeb81026521960d1431f9e4d732f2ab7f9af564b2"
+          }
+        }
+      }
+    }
+  ]
+}

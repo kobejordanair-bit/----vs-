@@ -1,0 +1,49 @@
+{
+  "format": "dynasty-batch50-claude-search-log",
+  "schemaVersion": 1,
+  "recordId": "general_白崇禧_908987622",
+  "packetSha256": "465f52ad78441e3b4d6a11c96aec586af6a502434ed9ccc8805c1ed43c3cd0d4",
+  "author": "Claude Code (Anthropic)",
+  "sessionUrl": "https://claude.ai/code/session_01PscgfWeyrToHxVpdJ8CXgT",
+  "recordedAt": "2026-10-10",
+  "webSearches": [
+    {
+      "tool": "WebSearch",
+      "query": "白崇禧 台兒莊戰役 1938 李宗仁 副參謀總長 二二八 宣慰 臺灣 1947 國史館 研究",
+      "returnedUrls": [
+        "https://www.gvm.com.tw/article/19441",
+        "https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en",
+        "https://www.cw.com.tw/index.php/article/5068978",
+        "https://www.thenewslens.com/article/114546",
+        "https://nclfile.ncl.edu.tw/files/201604/0e5c4d5c-5927-4c26-897c-8ad47fe99a81.pdf"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "白崇禧 龍潭戰役 1927 北伐 東路軍 前敵總指揮 1966 逝世 臺北 桂系",
+      "returnedUrls": [
+        "https://chiculture.org.hk/en/photo-story/2768",
+        "https://oac.cdlib.org/findaid/ark:/13030/c85b07nx",
+        "https://www.thenewslens.com/article/114546",
+        "https://news.ifeng.com/c/7fjZi4qPscx"
+      ]
+    },
+    {
+      "tool": "WebSearch",
+      "query": "白崇禧 來臺宣慰 1947年3月17日 禁止濫殺 公開審判 國史館 二二八 研究",
+      "returnedUrls": [
+        "https://newtalk.tw/news/view/2014-03-17/45322",
+        "https://nclfile.ncl.edu.tw/files/201604/0e5c4d5c-5927-4c26-897c-8ad47fe99a81.pdf",
+        "https://www.gvm.com.tw/article/19441",
+        "https://www.telltaiwan.org/6993",
+        "https://www.thenewslens.com/article/114546"
+      ]
+    }
+  ],
+  "archiveChecks": [],
+  "limits": [
+    "No classical archive applies; page fetches remain blocked. Four sources relied on only for propositions recorded by the handoff package; two via WebSearch summaries.",
+    "龍潭戰役（1927）、台兒莊戰役（1938）中的角色、1966年臺北逝世屬通行史實，未附連結，正文以「協助策劃」「主要指揮者之一」等保守措辭；龍潭評價明示出自其本人口述。",
+    "二二八宣慰：16天與「禁止濫殺，公開審判」只見於家屬主導的《止痛療傷》及其轉述報導，未找到機構或學術頁可連結，正文以無連結歸屬標示；陳儀掣肘依許雪姬研究摘要；成效分歧並陳，不作定論；訪問紀錄全書未核讀。"
+  ]
+}

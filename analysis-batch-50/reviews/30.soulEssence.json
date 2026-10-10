@@ -1,0 +1,97 @@
+{
+  "format": "dynasty-batch50-source-review",
+  "schemaVersion": 1,
+  "recordId": "general_白崇禧_908987622",
+  "task": "soulEssence",
+  "passed": true,
+  "reviewedAt": "2026-10-10T06:28:04.079Z",
+  "reviewer": {
+    "provider": "Claude Code (Anthropic)",
+    "independent": false,
+    "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
+  },
+  "manuscriptSha256": "c3e12fc7e8a0497e07519ed2e65fb85516be296f29ec843b2000d5e4b22c09a1",
+  "rawResponseSha256": "c3e12fc7e8a0497e07519ed2e65fb85516be296f29ec843b2000d5e4b22c09a1",
+  "sourcePackageSha256": "877c46fb5051d068ca25cc7b679dd0d5bc6f77f31ea4a1dfcbda01477880a4e0",
+  "searchLogSha256": "663298e3edd78a11c90b7c8e72f9a959ea7105cd649cdda8e60105715283c51c",
+  "checkedSources": [
+    {
+      "url": "https://www.mnd.gov.tw/About/FormerMinisters",
+      "title": "中華民國國防部〈歷任部長〉",
+      "locator": "來源包已記錄先前核讀：第一任部長白崇禧，任期35.5.31–37.5.31；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.drnh.gov.tw/var/file/3/1003/img/10/104393477.pdf",
+      "title": "國史館〈滯越軍民之接運來臺（1949–1953）〉",
+      "locator": "來源包已記錄先前核讀：頁148–151，1949年湖南戰局華中系統與湖南部隊協同失靈，引白崇禧1950年2月報告（檔號42828、34457）；本 session 未重新開啟",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_11102.pdf",
+      "title": "〈個人記事與時代印記：以熊式輝的日記、自傳及回憶錄為例〉（《近代史研究所集刊》第121期）",
+      "locator": "來源包已記錄先前核讀：頁132–133，賴世璜案將《白崇禧先生訪問紀錄》與國史館原函並列檢驗；本 session 未重新開啟",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "source_package_prior_review"
+    },
+    {
+      "url": "https://ir.sinica.edu.tw/handle/201000000A/69268?locale=en",
+      "title": "中央研究院機構典藏：許雪姬關於白崇禧來臺宣慰之研究",
+      "locator": "WebSearch 結果摘要：探討陳儀對白崇禧宣慰工作的掣肘",
+      "type": "scholarly_primary",
+      "checked": true,
+      "access": "web_search_result_summary"
+    },
+    {
+      "url": "https://www.mh.sinica.edu.tw/PGTodayMH.aspx?eventID=284&mid=0",
+      "title": "中央研究院近代史研究所〈白崇禧先生訪問紀錄〉出版入口",
+      "locator": "來源包已記錄先前核讀：僅出版書目資訊（上下冊），未核讀全書內容；本 session 未重新開啟",
+      "type": "official_institution",
+      "checked": true,
+      "access": "source_package_prior_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "speech",
+      "passed": true,
+      "detail": "參謀職務與1950年報告；潛台詞標[推斷]。"
+    },
+    {
+      "id": "pressure",
+      "passed": true,
+      "detail": "1947宣慰與1949湖南，相隔兩年。"
+    },
+    {
+      "id": "drive",
+      "passed": true,
+      "detail": "國防部長與口述紀錄；動機標[詮釋]。"
+    },
+    {
+      "id": "blind-spot",
+      "passed": true,
+      "detail": "與蔣互信不足標[推斷]；湖南協同失靈。"
+    },
+    {
+      "id": "emotion",
+      "passed": true,
+      "detail": "白先勇著作為家屬研究並陳獨立研究；晚年心境標[詮釋]。"
+    },
+    {
+      "id": "frame",
+      "passed": true,
+      "detail": "參謀全局觀；二二八責任標[詮釋]。"
+    },
+    {
+      "id": "fracture",
+      "passed": true,
+      "detail": "1947與1949；自我辯護色彩標[詮釋]。"
+    }
+  ],
+  "materialIssues": []
+}
