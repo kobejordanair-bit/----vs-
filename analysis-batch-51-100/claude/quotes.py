@@ -4,6 +4,7 @@
 # file analysis-batch-51-100/claude/specs/NN.quotes.json for spec assembly.
 import json,re,sys
 n,*docs=sys.argv[1:]
+dry='--dry' in docs; docs=[d for d in docs if d!='--dry']  # --dry: report MISS, write nothing, exit 1 on MISS
 s=open(f'analysis-batch-51-100/drafts/{n}.combined.draft.md',encoding='utf-8').read()
 texts=[]
 for d in docs:
@@ -21,5 +22,6 @@ for q in re.findall(r'「([^」]{5,})」',s):
     if hit:
       if not any(o['quote']==p for o in out): out.append({'book':hit[0],'title':hit[1],'quote':p})
     elif p not in miss: miss.append(p)
+if dry: [print('MISS',m) for m in miss]; sys.exit(1 if miss else 0)
 json.dump(out,open(f'analysis-batch-51-100/claude/specs/{n}.quotes.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
 print(len(out),'verified'); [print('MISS',m) for m in miss]

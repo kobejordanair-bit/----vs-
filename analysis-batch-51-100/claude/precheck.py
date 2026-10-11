@@ -9,4 +9,7 @@ import json
 head=[int(x) for x in re.findall(r'\n### (?:統率|武力|智謀|政治|魅力)：(\d+)',r)]
 if head!=json.loads(t.split('\n',1)[0])['stats']: print(n,'stats header mismatch',head); sys.exit(1)
 ok=v(a)>=2600 and v(s)>=1800 and min(rs)>=150
-print(n,'analysis',v(a),'soul',v(s),'reasons',rs,'OK' if ok else 'SHORT'); sys.exit(0 if ok else 1)
+print(n,'analysis',v(a),'soul',v(s),'reasons',rs,'OK' if ok else 'SHORT')
+import subprocess  # calibration / comparison / dated-fact checks (claude/lint.py)
+lr=subprocess.run([sys.executable,'-I','analysis-batch-51-100/claude/lint.py',n],capture_output=True,text=True)
+print(lr.stdout.strip()); sys.exit(0 if ok and lr.returncode==0 else 1)

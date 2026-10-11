@@ -4,7 +4,7 @@
   "recordId": "general_薛岳_306535727",
   "task": "analysisStats",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:39:08.232Z",
+  "reviewedAt": "2026-10-11T08:00:06.588Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
@@ -13,7 +13,7 @@
   "manuscriptSha256": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
   "rawResponseSha256": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
   "sourcePackageSha256": "5f7a440c137bd66350099160af0cf4e1ee9388689674eb84433c69d09402066c",
-  "searchLogSha256": "9ace9a57ea9fd15db571b1dea667b878b09bf3d1c4f8d8d1970157f9b2a83099",
+  "searchLogSha256": "166c902ef9940b0943c3a749f1f08d7d846f80685c63ab06c78416e38edf9659",
   "checkedSources": [
     {
       "url": "https://www.mnd.gov.tw/File/30455",

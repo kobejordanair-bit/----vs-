@@ -1,0 +1,28 @@
+{
+  "format": "dynasty-batch50-attempt-archive",
+  "schemaVersion": 1,
+  "slug": "21",
+  "attempt": 2,
+  "provider": "Claude Code (Anthropic)",
+  "reason": "lint：靈魂段兩處一九四四年長沙失守仍標[推斷]，屬日期事實，改標[史載]；分數不調",
+  "files": {
+    "21.soulEssence.capture.json": "68f8a69b7c7fa1ee4a59df147e7f10ea1546d94c494dd0bab49b94b3e32b299c",
+    "21.analysisStats.response.md": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
+    "21.soulEssence.md": "d83e0630a81743688227285e0b769b759e7c4e35dd24514d489afd97d48b4a63",
+    "21.analysisStats.raw.md": "61a09937a5a8d030878bf82dfcc942ca9fb9f8a32944d8e4ff098cf89e019fcc",
+    "21.analysisStats.capture.json": "bbac62478e562564c0374544027ef6cecf6437f7e8add1996de5edf531e54a15",
+    "21.combined.raw.md": "0597b477f02b7c2a52de49479ee3ca4009fc2b22e1b16ae84520e75485530d35",
+    "21.stats.json": "49b2dc4601793a3c885ef8c9ae9741e616999e22888309ee031cec9c31ef594a",
+    "21.statsAnalysis.md": "0add94b0692c9664ac292378cbf3ec713059fc0aeed46636167583543151b21c",
+    "21.soulEssence.response.md": "2b6a7f077989c14f760403ad8f03c414a09f65a123fd99a5108daf95ad4b4b45",
+    "21.combined.search-log.json": "9ace9a57ea9fd15db571b1dea667b878b09bf3d1c4f8d8d1970157f9b2a83099",
+    "21.combined.capture.json": "613e890ccb2cdc0cb663f40200be2347c280823a154d5899f09a8f1e7ecd5969",
+    "21.soulEssence.raw.md": "2b6a7f077989c14f760403ad8f03c414a09f65a123fd99a5108daf95ad4b4b45",
+    "21.analysis.md": "80cbf125e41ea17d37fb84c12f0de0649e0815b39410c660ab6997c46d5d1633",
+    "21.soulEssence.json": "70dae366dcef1a9cc705c146d27e936a5b68b210786279792863c22561ce9e98",
+    "21.analysisStats.json": "40224530451c9a510941f0b64820716a9a9b12efad3b58024939b1673aa0fd6c",
+    "results.21-21.v1.json": "765c05e3c37443dfd37fb461c665e428c23a392d2f34b46dcb6d997632f6264e",
+    "spec.21.json": "88b08fa802aa76fafa0fd4659d2320ed6575e3ab27b0f9f7eb0f097966860b16",
+    "spec.21.quotes.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

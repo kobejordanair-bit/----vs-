@@ -4,16 +4,16 @@
   "recordId": "general_薛岳_306535727",
   "task": "soulEssence",
   "passed": true,
-  "reviewedAt": "2026-10-10T17:39:08.233Z",
+  "reviewedAt": "2026-10-11T08:00:06.590Z",
   "reviewer": {
     "provider": "Claude Code (Anthropic)",
     "independent": false,
     "note": "作者與查核者為同一 Claude session；這是自我查核，不是獨立審稿。原典引句由 archive-quote.mjs 機械重驗；標 web_search_result_summary 的來源只看過搜尋摘要。建議專案擁有者發布前抽查。"
   },
-  "manuscriptSha256": "2b6a7f077989c14f760403ad8f03c414a09f65a123fd99a5108daf95ad4b4b45",
-  "rawResponseSha256": "2b6a7f077989c14f760403ad8f03c414a09f65a123fd99a5108daf95ad4b4b45",
+  "manuscriptSha256": "d6f72b20192cab8447c27ff7d07344c27d70917b786c4cc9ac57a8e709a10f5f",
+  "rawResponseSha256": "d6f72b20192cab8447c27ff7d07344c27d70917b786c4cc9ac57a8e709a10f5f",
   "sourcePackageSha256": "5f7a440c137bd66350099160af0cf4e1ee9388689674eb84433c69d09402066c",
-  "searchLogSha256": "9ace9a57ea9fd15db571b1dea667b878b09bf3d1c4f8d8d1970157f9b2a83099",
+  "searchLogSha256": "166c902ef9940b0943c3a749f1f08d7d846f80685c63ab06c78416e38edf9659",
   "checkedSources": [
     {
       "url": "https://www.mnd.gov.tw/File/30455",
@@ -57,7 +57,7 @@
     {
       "id": "interpretation",
       "passed": true,
-      "detail": "長沙失守為最脆弱時刻、以勝利證明讓地值得、嘉義與戰爭和解，皆標[詮釋]。"
+      "detail": "長沙失守為最脆弱時刻、以勝利證明讓地值得、嘉義與戰爭和解，皆標[詮釋]。［修訂2］lint 抓出靈魂段兩處「一九四四年長沙失守」仍標[推斷]，改標[史載]；推論只留在其後的判讀句。"
     },
     {
       "id": "seven-fields",
