@@ -20,6 +20,23 @@ export function parseDeployComment(body) {
   const first = String(body || '').replace(/^\s+/, '').split(/\r?\n/, 1)[0].trim();
   return first.match(/^\/deploy-dynasty ([a-f0-9]{40})$/)?.[1] || null;
 }
+export const deployLabel = 'deploy-dynasty';
+// Who asked to deploy which PR at which SHA. A label added to the PR pins the head SHA at the moment
+// it was added; prepare() still rejects the run if the PR head has moved since.
+export function deployRequest(eventName, event) {
+  if (eventName === 'issue_comment') {
+    if (!event.issue?.pull_request || event.action !== 'created') throw new Error('Requires a new PR comment');
+    const requested = parseDeployComment(event.comment.body);
+    if (!requested) throw new Error('Expected /deploy-dynasty followed by exact head SHA on the first line');
+    return {number: event.issue.number, expected: requested, actor: event.comment.user.login};
+  }
+  if (eventName === 'pull_request_target') {
+    if (event.action !== 'labeled' || event.label?.name !== deployLabel) throw new Error(`Requires the ${deployLabel} label being added`);
+    return {number: event.pull_request.number, expected: event.pull_request.head.sha, actor: event.sender.login};
+  }
+  if (eventName === 'workflow_dispatch') return {number: Number(event.inputs.pr), expected: event.inputs.sha, actor: event.sender.login};
+  throw new Error('Unsupported event');
+}
 export function checkEntries(entries) {
   for (const item of entries) {
     if (!allowedFile(item.path)) throw new Error(`Outside frontend release scope: ${item.path}`);
@@ -43,15 +60,7 @@ async function api(endpoint, options = {}) {
 async function prepare() {
   if (process.env.GITHUB_REPOSITORY !== repository) throw new Error('Unexpected repository');
   const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
-  let number, expected, actor;
-  if (process.env.GITHUB_EVENT_NAME === 'issue_comment') {
-    if (!event.issue?.pull_request || event.action !== 'created') throw new Error('Requires a new PR comment');
-    const requested = parseDeployComment(event.comment.body);
-    if (!requested) throw new Error('Expected /deploy-dynasty followed by exact head SHA on the first line');
-    number = event.issue.number; expected = requested; actor = event.comment.user.login;
-  } else if (process.env.GITHUB_EVENT_NAME === 'workflow_dispatch') {
-    number = Number(event.inputs.pr); expected = event.inputs.sha; actor = event.sender.login;
-  } else throw new Error('Unsupported event');
+  const {number, expected, actor} = deployRequest(process.env.GITHUB_EVENT_NAME, event);
   const permission = await api(`collaborators/${encodeURIComponent(actor)}/permission`);
   if (!['admin', 'maintain', 'write'].includes(permission.permission)) throw new Error('Requester needs repository write permission');
   const base = git('rev-parse', 'HEAD').toString().trim();
