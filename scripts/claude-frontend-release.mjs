@@ -14,6 +14,12 @@ export function allowedFile(name) {
   if (/^backend\/static\/(css|js)\/[a-zA-Z0-9_./-]+\.(css|js)$/.test(name)) return true;
   return /^backend\/static\/art\/[a-zA-Z0-9_./-]+\.(png|jpg|jpeg|webp|gif|svg|woff|woff2|ttf)$/.test(name);
 }
+// Only the first line is the command. Text after it (such as an attribution footer added by
+// the posting tool) is ignored; authority still comes from the commenter's write permission and the exact SHA.
+export function parseDeployComment(body) {
+  const first = String(body || '').replace(/^\s+/, '').split(/\r?\n/, 1)[0].trim();
+  return first.match(/^\/deploy-dynasty ([a-f0-9]{40})$/)?.[1] || null;
+}
 export function checkEntries(entries) {
   for (const item of entries) {
     if (!allowedFile(item.path)) throw new Error(`Outside frontend release scope: ${item.path}`);
@@ -40,9 +46,9 @@ async function prepare() {
   let number, expected, actor;
   if (process.env.GITHUB_EVENT_NAME === 'issue_comment') {
     if (!event.issue?.pull_request || event.action !== 'created') throw new Error('Requires a new PR comment');
-    const match = event.comment.body.trim().match(/^\/deploy-dynasty ([a-f0-9]{40})$/);
-    if (!match) throw new Error('Expected /deploy-dynasty followed by exact head SHA');
-    number = event.issue.number; expected = match[1]; actor = event.comment.user.login;
+    const requested = parseDeployComment(event.comment.body);
+    if (!requested) throw new Error('Expected /deploy-dynasty followed by exact head SHA on the first line');
+    number = event.issue.number; expected = requested; actor = event.comment.user.login;
   } else if (process.env.GITHUB_EVENT_NAME === 'workflow_dispatch') {
     number = Number(event.inputs.pr); expected = event.inputs.sha; actor = event.sender.login;
   } else throw new Error('Unsupported event');
