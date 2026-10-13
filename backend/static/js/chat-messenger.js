@@ -9,6 +9,20 @@
         clear: '<path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 10v7M14 10v7"/>'
     };
     const icon = name => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || ''}</svg>`;
+    const DIMENSIONS = ['統率', '武力', '智謀', '政治', '魅力'];
+    // Five-dimension scores and reasons as role context. Links and headings are dropped to keep each request short.
+    function selfAssessment(stats, reasons) {
+        const valid = Array.isArray(stats) && stats.length === 5 && stats.every(value => Number.isInteger(value) && value >= 0 && value <= 100);
+        const text = typeof reasons === 'string' ? reasons
+            .replace(/[（(]\s*\[[^\]]*\]\([^)]*\)(?:\s*[、，,；;]\s*\[[^\]]*\]\([^)]*\))*\s*[)）]/g, '')
+            .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+            .replace(/^#{1,6}\s*\**\s*\d+\.\s*【五維能力數值】\s*\**\s*$/gm, '')
+            .replace(/^#{1,6}\s*/gm, '').replace(/\*\*/g, '')
+            .replace(/\n{3,}/g, '\n\n').trim() : '';
+        if (!valid && !text) return '';
+        const scores = valid ? DIMENSIONS.map((name, index) => `${name}${stats[index]}`).join('、') : '';
+        return [scores && `評分：${scores}（0–100）`, text].filter(Boolean).join('\n');
+    }
     function create(context) {
         const el = id => document.getElementById(id);
         const state = () => context.getState();
@@ -146,8 +160,10 @@
             el('messengerProfile').focus({preventScroll:true});
         }
         function promptContents(legend,id) {
-            const soul=state().modifiedLegends[id]?.soulEssence || legend.soulEssence || '';
-            const prompt=`你現在是${legend.name}（${legend.title || ''}）。\n生平簡介：${legend.desc || ''}。\n性格標籤：${legend.tag || ''}。${soul ? `\n\n【靈魂內核——以下是你作為「活生生的人」的內在運作方式，請用它來塑造你的說話邏輯、壓力反應與情感表達，但絕不要在對話中直接引用這些標籤文字】\n${soul}` : ''}\n請完全沉浸在這個歷史人物的角色中，用符合其時代和性格的語氣（可以使用半文半白，但要讓現代人聽得懂）回答使用者的問題。\n你不知道你死後很久才發生的現代科技（除非你是穿越者），保持歷史沉浸感。嚴禁使用制式化AI開場白。`;
+            const saved=state().modifiedLegends[id] || {};
+            const soul=saved.soulEssence || legend.soulEssence || '';
+            const assessment=selfAssessment(saved.stats || legend.stats, saved.statsAnalysis || legend.statsAnalysis);
+            const prompt=`你現在是${legend.name}（${legend.title || ''}）。\n生平簡介：${legend.desc || ''}。\n性格標籤：${legend.tag || ''}。${assessment ? `\n\n【後世對你的五維評估——這是後人的評價與依據，你可以認同、辯解或不服，但不要照念分數或條列】\n${assessment}` : ''}${soul ? `\n\n【靈魂內核——以下是你作為「活生生的人」的內在運作方式，請用它來塑造你的說話邏輯、壓力反應與情感表達，但絕不要在對話中直接引用這些標籤文字】\n${soul}` : ''}\n請完全沉浸在這個歷史人物的角色中，用符合其時代和性格的語氣（可以使用半文半白，但要讓現代人聽得懂）回答使用者的問題。\n你不知道你死後很久才發生的現代科技（除非你是穿越者），保持歷史沉浸感。嚴禁使用制式化AI開場白。`;
             return [{role:'user',parts:[{text:prompt+'\n\n(系統指示：請直接以上述人物身份開始對話)'}]},
                 {role:'model',parts:[{text:'吾乃'+legend.name+'，已知悉。'}]},
                 ...history(id).slice(-20).map(item=>({role:item.role==='user'?'user':'model',parts:[{text:String(item.content)}]}))];
@@ -230,5 +246,5 @@
         });
         return {open,send,clear,closed,renderContacts};
     }
-    global.DynastyMessenger=Object.freeze({create});
+    global.DynastyMessenger=Object.freeze({create,selfAssessment});
 })(window);
