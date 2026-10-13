@@ -1,0 +1,29 @@
+{
+  "format": "dynasty-live-messenger-assets",
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-13T14:56:48.447Z",
+  "passed": true,
+  "origin": "https://dynasty.piamamba.com",
+  "codeCommit": "139e2703",
+  "versionId": "4efcc07e-4abe-4140-901d-315661a4dc13",
+  "assets": [
+    {
+      "route": "/play",
+      "status": 200,
+      "sha256": "7e78e9b7c18b5e9bb234b42006e8c8db0ee9eff001d0839ba4a53c760d612265",
+      "matchesBuiltSource": true
+    },
+    {
+      "route": "/static/css/chat-messenger.css?v=20261013",
+      "status": 200,
+      "sha256": "724ac964708cc31c921eff55d53250fb557634cc139d7d4a2d3a5c4aaa3aeb2b",
+      "matchesBuiltSource": true
+    },
+    {
+      "route": "/static/js/chat-messenger.js?v=20261013",
+      "status": 200,
+      "sha256": "21938e797d79fea33aee99475c5a2d0a57e352238279430380840c692c7ca337",
+      "matchesBuiltSource": true
+    }
+  ]
+}
