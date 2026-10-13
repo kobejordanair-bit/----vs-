@@ -120,3 +120,4 @@
   .messenger-composer-footer .messenger-keyboard-hint { display:none; }
 }
 @media (prefers-reduced-motion:reduce) { .messenger-typing i { animation:none; } }
+/* Production release pipeline verified on 2026-10-13. */
