@@ -8,7 +8,7 @@
 - 可發布：`backend/index.html`、`history-lab.html`、`source-archive.html`、`manifest.json`、`sw.js`，以及 `backend/static/css/`、`js/`、`art/` 的前端素材。實際格式由 `scripts/claude-frontend-release.mjs` 控管。
 - 維持既有登入、備份、人物及 `appState.chatHistories` 格式；舊對話不可清空。請自行完成 UI 測試、桌機與手機預覽，再發布。
 - 建立以 main 為目標的非草稿 PR，PR 只包含上述前端檔案，更新到最新 main，推送。
-- 取得完整 head SHA，在該 PR 留言：`/deploy-dynasty <40字元SHA>`。留言必須由具儲存庫寫入權限的帳號送出。也可在 main 的 Actions「Claude frontend production release」輸入 PR 編號與 SHA 執行。
+- 取得完整 head SHA，在該 PR 留言，**第一行**必須正好是 `/deploy-dynasty <40字元SHA>`；第一行之後的文字（例如工具自動附加的署名）會被忽略。留言必須由具儲存庫寫入權限的帳號送出。也可在 main 的 Actions「Claude frontend production release」輸入 PR 編號與 SHA 執行。
 - 等待 Actions 成功，核對正式網址及發布回執；流程會在核對上線素材後合併 PR。失敗不要宣稱已完成；若上線後合併失敗，先比對正式版與 main 再處理。
 - 正式網址：https://dynasty.piamamba.com/play
 
