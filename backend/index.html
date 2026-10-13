@@ -6,6 +6,7 @@
     <title>王侯將相 · 世界書桌與全功能整合 (v16.0)</title>
     <link rel="stylesheet" href="/static/css/court.css?v=16.0">
     <link rel="stylesheet" href="/static/css/world.css?v=16.0">
+    <link rel="stylesheet" href="/static/css/chat-messenger.css?v=20261013">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -852,8 +853,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     <!-- AI Modal -->
     <div id="aiModal" class="fixed inset-0 z-[60] hidden">
         <div class="absolute inset-0 modal-overlay" onclick="closeModal()"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] overflow-hidden flex flex-col transition-all border border-[#e5e0d3]">
-            <div class="bg-[#1c1917] text-[#e5e5e5] p-5 flex justify-between items-center shrink-0 border-b-4 border-[#d4af37]">
+        <div class="messenger-modal-shell absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fffdf9] rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] overflow-hidden flex flex-col transition-all border border-[#e5e0d3]">
+            <div class="messenger-shared-header bg-[#1c1917] text-[#e5e5e5] p-5 flex justify-between items-center shrink-0 border-b-4 border-[#d4af37]">
                 <h3 id="modalTitle" class="text-xl font-bold font-serif tracking-wide flex items-center gap-3">
                     <i class="fa-solid fa-scroll text-[#d4af37]"></i> <span>系統推演</span>
                 </h3>
@@ -877,12 +878,46 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
                 <a id="personSourceLink" target="_blank" rel="noopener noreferrer" class="text-xs bg-[#345a49] hover:bg-[#426e59] text-white px-3 py-1.5 rounded transition-colors font-serif">查看史料 ↗</a>
                 <span class="text-xs text-[#57534e] font-serif">回查出處、原文與核對紀錄</span>
             </div>
-            <div id="chatContainer" class="hidden flex flex-col flex-1 min-h-0 bg-[#fcfaf5] overflow-hidden relative">
-                <div id="chatHistory" class="flex-1 overflow-y-auto p-6 flex flex-col gap-4 custom-scrollbar z-10 overscroll-contain"></div>
-                <div class="p-5 border-t border-[#e5e0d3] bg-white flex gap-3 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-20 shrink-0">
-                    <input type="text" id="chatInput" placeholder="請輸入您的問題..." class="flex-1 px-5 py-3 border border-[#d6d3c9] rounded-lg focus:outline-none focus:border-[#d4af37] bg-[#fafaf9] font-serif text-[#2c2826]" onkeypress="if(event.key==='Enter') sendChatMessage()">
-                    <button onclick="sendChatMessage()" class="btn-ink px-6 py-3 rounded-lg font-bold"><i class="fa-solid fa-paper-plane"></i></button>
-                </div>
+            <div id="chatContainer" class="hidden flex-1 min-h-0 overflow-hidden relative" role="dialog" aria-modal="true" aria-labelledby="messengerThreadName">
+                <aside class="messenger-sidebar" aria-label="往來人物">
+                    <div class="messenger-brand">
+                        <span class="messenger-seal" aria-hidden="true">書</span>
+                        <div><h2>時空私訊</h2><p>一封信，抵達千年前。</p></div>
+                        <button id="messengerSidebarClose" class="messenger-icon-button messenger-sidebar-close" type="button" aria-label="關閉人物對話"></button>
+                    </div>
+                    <label class="messenger-search-wrap"><span id="messengerSearchIcon"></span><input id="messengerSearch" type="search" placeholder="尋找姓名、稱號、朝代" aria-label="搜尋對話人物" autocomplete="off"></label>
+                    <div class="messenger-list-tabs" role="tablist" aria-label="人物列表範圍">
+                        <button id="messengerRecentContacts" type="button" role="tab" aria-selected="true">最近往來</button>
+                        <button id="messengerAllContacts" type="button" role="tab" aria-selected="false">尋找人物</button>
+                    </div>
+                    <div id="messengerContacts" class="messenger-contacts" aria-label="人物對話列表"></div>
+                    <div class="messenger-sidebar-footer"><span>王侯將相</span><span id="messengerNotice"></span></div>
+                </aside>
+                <section class="messenger-thread" aria-label="人物私訊">
+                    <header class="messenger-thread-header">
+                        <div class="messenger-thread-person">
+                            <button id="messengerBack" class="messenger-icon-button" type="button" aria-label="返回往來人物列表"></button>
+                            <span id="messengerAvatar"></span>
+                            <div><h3 id="messengerThreadName">人物對話</h3><p id="messengerThreadMeta"></p></div>
+                        </div>
+                        <div class="messenger-header-actions">
+                            <span class="messenger-mode">歷史角色對話</span>
+                            <button id="messengerProfile" class="messenger-icon-button" type="button" aria-label="查看人物小傳" title="人物小傳"></button>
+                            <button id="messengerClear" class="messenger-icon-button" type="button" aria-label="清除這位人物的對話記憶" title="清除對話記憶"></button>
+                            <button id="messengerClose" class="messenger-icon-button" type="button" aria-label="關閉人物對話"></button>
+                        </div>
+                    </header>
+                    <div id="messengerBio" class="messenger-bio" hidden></div>
+                    <div id="chatHistory" class="messenger-history" role="log" aria-label="人物訊息紀錄" aria-live="polite" aria-relevant="additions"></div>
+                    <div class="messenger-composer-wrap">
+                        <div id="messengerSuggestions" class="messenger-suggestions" aria-label="開場問題"></div>
+                        <div class="messenger-composer">
+                            <textarea id="chatInput" class="messenger-input" rows="1" maxlength="4000" placeholder="寫一封穿越時空的訊息…" aria-label="輸入給人物的訊息"></textarea>
+                            <button id="messengerSend" class="messenger-send" type="button" aria-label="傳送訊息" disabled></button>
+                        </div>
+                        <div class="messenger-composer-footer"><span id="messengerStatus" role="status"></span><span class="messenger-keyboard-hint">Enter 傳送 · Shift + Enter 換行</span></div>
+                    </div>
+                </section>
             </div>
             <div id="contentContainer" class="flex flex-col flex-1 min-h-0 overflow-hidden relative bg-[#fffdf9]">
                 <div class="p-10 overflow-y-auto custom-scrollbar flex-grow h-full overscroll-contain">
@@ -1210,6 +1245,7 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
     <script src="/static/js/court-ui.js?v=16.0"></script>
     <script src="/static/js/source-links.js?v=16.0"></script>
     <script src="/static/js/play-context.js?v=16.0"></script>
+    <script src="/static/js/chat-messenger.js?v=20261013"></script>
     <script src="/static/js/world-engine.js?v=16.0"></script>
     <script src="/static/js/workspace-vault.js?v=16.0"></script>
     <script src="/static/js/world-storage.js?v=16.0"></script>
@@ -1571,8 +1607,9 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             _resetStatsView();
             window.DynastySourceLinks?.clear();
             el('aiModal').classList.remove('hidden');
+            el('aiModal').classList.toggle('messenger-active', type === 'chat');
             el('evalTabBar').classList.add('hidden');
-            el('modalTitle').innerHTML = `<i class="fa-solid fa-scroll text-[#d4af37] mr-2"></i> ${title}`;
+            el('modalTitle').innerHTML = `<i class="fa-solid fa-scroll text-[#d4af37] mr-2"></i> ${type === 'chat' ? escapeHtml(title) : title}`;
             if (type === 'chat') {
                 el('chatContainer').classList.remove('hidden');
                 el('contentContainer').classList.add('hidden');
@@ -1596,6 +1633,8 @@ body { font-family: 'Noto Sans TC', sans-serif; background-color: #f2f0e9; trans
             _resetStatsView();
             window.DynastySourceLinks?.clear();
             el('aiModal').classList.add('hidden');
+            el('aiModal').classList.remove('messenger-active');
+            _chatMessenger?.closed();
             el('evalTabBar').classList.add('hidden');
             el('extractScenesBtn').classList.add('hidden');
             appState.chatMode.targetId = null;
@@ -2269,13 +2308,7 @@ name（4-8字標誌性名稱）、year（西元年，BC為負數）、dynasty、
         }
 
         function clearCurrentMemory() {
-            if (appState.chatMode.targetId) {
-                customConfirm("確定要清除與此人物的對話記憶嗎？", () => {
-                    delete appState.chatHistories[appState.chatMode.targetId];
-                    el('chatHistory').innerHTML = '<div class="text-center text-xs text-gray-400 py-4">- 記憶已重置 -</div>';
-                    syncToCloud();
-                });
-            }
+            _chatMessenger?.clear();
         }
 
         // AI Analysis & Stats Caching Logic
@@ -3264,91 +3297,24 @@ if(s1 && s2) {
             }
         }
 
-        // Native Multi-turn Chat Logic
-        function startChat(id) {
-            const legend = legendsData.find(l => l.id === id);
-            if (!legend) return;
-
-            appState.chatMode.targetId = id;
-            openModal(`與 ${legend.name} 對話`, 'chat');
-            
-            const history = appState.chatHistories[id] || [];
-            const chatContainer = el('chatHistory');
-            chatContainer.innerHTML = '';
-            
-            if (history.length === 0) {
-                const intro = `吾乃${legend.title}${legend.name}。後世之人，有何指教？`;
-                addChatBubble('model', intro);
-                appState.chatHistories[id] = [{role: 'model', content: intro}];
-                syncToCloud();
-            } else {
-                history.forEach(msg => addChatBubble(msg.role, msg.content));
-            }
-        }
-
-        function addChatBubble(role, text) {
-            const div = document.createElement('div');
-            // Using 'user' for user, 'model' for AI to match Gemini API naming
-            div.className = `chat-bubble ${role === 'user' ? 'chat-user' : 'chat-ai'}`;
-            div.innerHTML = safeMarkdown(text);
-            el('chatHistory').appendChild(div);
-            el('chatHistory').scrollTop = el('chatHistory').scrollHeight;
-        }
-
-        async function sendChatMessage() {
-            const input = el('chatInput');
-            const text = sanitizeInput(input.value.trim());
-            const targetId = appState.chatMode.targetId;
-            if (!text || !targetId) return;
-
-            addChatBubble('user', text);
-            input.value = '';
-            
-            if (!appState.chatHistories[targetId]) appState.chatHistories[targetId] = [];
-            appState.chatHistories[targetId].push({role: 'user', content: text});
-            syncToCloud();
-
-            const loadingId = 'chat-loading-' + Date.now();
-            const loadingDiv = document.createElement('div');
-            loadingDiv.className = 'chat-bubble chat-ai';
-            loadingDiv.id = loadingId;
-            loadingDiv.innerHTML = '<div class="flex space-x-2"><div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div><div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div><div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div></div>';
-            el('chatHistory').appendChild(loadingDiv);
-            el('chatHistory').scrollTop = el('chatHistory').scrollHeight;
-
-            const legend = legendsData.find(l => l.id === targetId);
-            const soulEssenceForChat = appState.modifiedLegends[targetId]?.soulEssence || '';
-            const systemPrompt = `你現在是${legend.name}（${legend.title}）。
-            生平簡介：${legend.desc}。
-            性格標籤：${legend.tag}。${soulEssenceForChat ? `\n\n【靈魂內核——以下是你作為「活生生的人」的內在運作方式，請用它來塑造你的說話邏輯、壓力反應與情感表達，但絕不要在對話中直接引用這些標籤文字】\n${soulEssenceForChat}` : ''}
-            請完全沉浸在這個歷史人物的角色中，用符合其時代和性格的語氣（可以使用半文半白，但要讓現代人聽得懂）回答使用者的問題。
-            切記：你不知道你死後很久才發生的現代科技（除非你是穿越者），保持歷史沉浸感。嚴禁使用制式化AI開場白。`;
-
-            // Build native Gemini contents array
-            const contents = [
-                { role: "user", parts: [{ text: systemPrompt + "\n\n(系統指示：請直接以上述人物身份開始對話)" }] },
-                { role: "model", parts: [{ text: "吾乃" + legend.name + "，已知悉。" }] } // Ack prompt
-            ];
-            
-            const recentHistory = appState.chatHistories[targetId].slice(-20); // Keep last 20 msgs
-            recentHistory.forEach(h => {
-                contents.push({
-                    role: h.role === 'user' ? 'user' : 'model',
-                    parts: [{ text: h.content }]
-                });
+        // Character messenger uses the existing history, persistence and AI adapters.
+        let _chatMessenger = null;
+        function getChatMessenger() {
+            if (!_chatMessenger) _chatMessenger = DynastyMessenger.create({
+                getState: () => appState,
+                getLegends: () => legendsData,
+                openModal, closeModal,
+                markdown: safeMarkdown,
+                sanitize: sanitizeInput,
+                persist: () => syncToCloud(),
+                generate: contents => callGeminiNative(contents),
+                confirm: customConfirm,
+                showProfile: id => { closeModal(); openEvalModal(id); }
             });
-
-            try {
-                const response = await callGeminiNative(contents);
-                el(loadingId).remove();
-                addChatBubble('model', response);
-                appState.chatHistories[targetId].push({role: 'model', content: response});
-                syncToCloud();
-            } catch (e) {
-                if(el(loadingId)) el(loadingId).remove();
-                addChatBubble('model', `(咳咳... 跨越時空的連線似乎中斷了: ${e.message})`);
-            }
+            return _chatMessenger;
         }
+        function startChat(id) { getChatMessenger().open(id); }
+        function sendChatMessage() { return getChatMessenger().send(); }
 
         // Add/Edit Modal Logic
         async function deepAnalyzeNewLegend() {
