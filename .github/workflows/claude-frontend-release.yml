@@ -1,0 +1,68 @@
+name: Claude frontend production release
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: 'Frontend PR number (0 verifies current main)'
+        required: true
+      sha:
+        description: 'Exact 40-character head SHA'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: dynasty-production-frontend
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.event_name == 'workflow_dispatch' || (github.event.issue.pull_request && startsWith(github.event.comment.body, '/deploy-dynasty '))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: dynasty-frontend-production
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Install trusted deployment tools
+        run: npm ci --prefix cloudflare --ignore-scripts
+      - name: Validate and overlay frontend assets
+        id: prepare
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/claude-frontend-release.mjs prepare
+      - name: Build public assets with trusted main builder
+        run: node cloudflare/scripts/build-assets.mjs
+      - name: Upload fixed Worker with frontend assets
+        working-directory: cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.DYNASTY_FRONTEND_DEPLOY_TOKEN }}
+          WRANGLER_SEND_METRICS: 'false'
+          RELEASE_TAG: ${{ steps.prepare.outputs.tag }}
+        run: node node_modules/wrangler/bin/wrangler.js versions upload --config wrangler.jsonc --keep-vars --tag "$RELEASE_TAG" --message 'Authorized Claude frontend release'
+      - name: Deploy uploaded version
+        working-directory: cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.DYNASTY_FRONTEND_DEPLOY_TOKEN }}
+          WRANGLER_SEND_METRICS: 'false'
+          RELEASE_TAG: ${{ steps.prepare.outputs.tag }}
+        run: node node_modules/wrangler/bin/wrangler.js versions deploy --config wrangler.jsonc --version-tag "$RELEASE_TAG" --yes --message 'Authorized Claude frontend release'
+      - name: Verify live assets and merge exact PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/claude-frontend-release.mjs finish
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: frontend-release-${{ github.run_id }}
+          path: frontend-release.json
+          retention-days: 30
