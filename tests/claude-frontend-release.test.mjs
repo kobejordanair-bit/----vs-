@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {allowedFile, checkEntries, parseDeployComment, verifyLiveAsset} from '../scripts/claude-frontend-release.mjs';
+import {allowedFile, checkEntries, deployRequest, parseDeployComment, verifyLiveAsset} from '../scripts/claude-frontend-release.mjs';
 test('frontend pages and regular UI assets are allowed', () => {
   for (const file of ['backend/index.html','backend/static/css/chat-messenger.css','backend/static/js/chat-messenger.js','backend/static/art/new/portrait.webp']) assert.ok(allowedFile(file));
 });
@@ -39,4 +39,14 @@ test('deploy command must be the exact first line; a trailing footer is ignored'
   assert.equal(parseDeployComment(`/deploy-dynasty ${sha}\r\n\r\n---\r\nfooter`), sha);
   for (const body of ['', null, `please /deploy-dynasty ${sha}`, `/deploy-dynasty ${sha} now`, `/deploy-dynasty ${sha.slice(1)}`,
     `/deploy-dynasty ${sha.toUpperCase()}`, `note\n/deploy-dynasty ${sha}`, `/deploy-dynasty  ${sha}`]) assert.equal(parseDeployComment(body), null, String(body));
+});
+test('adding the deploy-dynasty label requests the PR head SHA at that moment', () => {
+  const sha = 'b92952472c3e5b8a1a44757075d33bcba18d1507';
+  const event = {action:'labeled', label:{name:'deploy-dynasty'}, pull_request:{number:49, head:{sha}}, sender:{login:'kobejordanair-bit'}};
+  assert.deepEqual(deployRequest('pull_request_target', event), {number:49, expected:sha, actor:'kobejordanair-bit'});
+  assert.throws(() => deployRequest('pull_request_target', {...event, label:{name:'bug'}}));
+  assert.throws(() => deployRequest('pull_request_target', {...event, action:'unlabeled'}));
+  assert.throws(() => deployRequest('pull_request', event), /Unsupported event/);
+  const comment = {action:'created', issue:{number:49, pull_request:{}}, comment:{body:`/deploy-dynasty ${sha}`, user:{login:'kobejordanair-bit'}}};
+  assert.deepEqual(deployRequest('issue_comment', comment), {number:49, expected:sha, actor:'kobejordanair-bit'});
 });

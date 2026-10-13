@@ -2,6 +2,9 @@ name: Claude frontend production release
 on:
   issue_comment:
     types: [created]
+  # Runs main's workflow and tools (never the PR's); the PR only supplies frontend file contents.
+  pull_request_target:
+    types: [labeled]
   workflow_dispatch:
     inputs:
       pr:
@@ -17,7 +20,10 @@ concurrency:
   cancel-in-progress: false
 jobs:
   release:
-    if: github.event_name == 'workflow_dispatch' || (github.event.issue.pull_request && startsWith(github.event.comment.body, '/deploy-dynasty '))
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request_target' && github.event.label.name == 'deploy-dynasty') ||
+      (github.event.issue.pull_request && startsWith(github.event.comment.body, '/deploy-dynasty '))
     runs-on: ubuntu-latest
     timeout-minutes: 30
     environment: dynasty-frontend-production
@@ -66,3 +72,9 @@ jobs:
           name: frontend-release-${{ github.run_id }}
           path: frontend-release.json
           retention-days: 30
+      - name: Remove deploy label so it can be added again
+        if: always() && github.event_name == 'pull_request_target'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: gh api -X DELETE "repos/$GITHUB_REPOSITORY/issues/$PR/labels/deploy-dynasty" || true
