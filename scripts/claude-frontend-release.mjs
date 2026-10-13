@@ -84,15 +84,25 @@ async function prepare() {
   fs.writeFileSync('frontend-release.json', JSON.stringify(receipt, null, 2));
   fs.appendFileSync(process.env.GITHUB_OUTPUT, `tag=frontend-${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_ATTEMPT}\n`);
 }
+export async function verifyLiveAsset(name, bytes, {fetchAsset = fetch, pause = ms => new Promise(resolve => setTimeout(resolve, ms)), attempts = 13} = {}) {
+  const route = name === 'backend/index.html' ? '/play' : '/' + name.slice('backend/'.length);
+  const digest = value => crypto.createHash('sha256').update(value).digest('hex');
+  const expected = digest(bytes);
+  for (let attempt = 0; attempt < attempts; attempt++) {
+    try {
+      const response = await fetchAsset(`https://dynasty.piamamba.com${route}?release=${process.env.GITHUB_RUN_ID}&verify=${attempt}`, {cache: 'no-store', signal: AbortSignal.timeout(15000)});
+      if (response.ok && digest(Buffer.from(await response.arrayBuffer())) === expected) return;
+    } catch { /* Retry transient network failures during global propagation. */ }
+    if (attempt + 1 < attempts) await pause(5000);
+  }
+  throw new Error(`Live asset verification failed after bounded propagation retries: ${name}`);
+}
 async function finish() {
   const receipt = JSON.parse(fs.readFileSync('frontend-release.json', 'utf8'));
   // Check public bytes without executing submitted HTML or JavaScript.
   const paths = new Set(['backend/index.html', ...receipt.files.filter(x => x.status !== 'D').map(x => x.path)]);
   for (const name of paths) {
-    const route = name === 'backend/index.html' ? '/play' : '/' + name.slice('backend/'.length);
-    const response = await fetch(`https://dynasty.piamamba.com${route}?release=${process.env.GITHUB_RUN_ID}`);
-    const digest = value => crypto.createHash('sha256').update(value).digest('hex');
-    if (!response.ok || digest(Buffer.from(await response.arrayBuffer())) !== digest(fs.readFileSync(name))) throw new Error(`Live asset verification failed: ${name}`);
+    await verifyLiveAsset(name, fs.readFileSync(name));
   }
   receipt.liveAssetsVerified = true;
   if (receipt.pr) {
